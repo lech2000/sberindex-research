@@ -17,7 +17,7 @@
 
 ## Навигация
 
-- [Состояние и ограничения](docs/STATE.md), [соответствие требованиям конкурса](docs/CONTEST_CHECKLIST.md).
+- [Следующие задания на GitHub](docs/NEXT_STEPS.md), [состояние и ограничения](docs/STATE.md), [соответствие требованиям конкурса](docs/CONTEST_CHECKLIST.md).
 - [Методология Атласа на русском](economic-atlas/METHODOLOGY_RU.md), [лестница A0–A10](economic-atlas/research-ladder.md).
 - [Методология Радара на русском](shock-radar/METHODOLOGY_RU.md), [лестница R0–R10](shock-radar/research-ladder.md).
 - [Данные и происхождение](data/DATA_CATALOG.md), [воспроизведение](docs/REPRODUCIBILITY.md).
