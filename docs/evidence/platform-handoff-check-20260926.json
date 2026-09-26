@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T17:10:00+00:00",
+  "checked_at": "2026-09-26T17:27:15.950Z",
   "method": "joe/Incus source inspection, deployed native tool call, n8n execution_data and independent scientific scripts",
   "native_kb_fix": {
     "prod_commit": "2e4f26219",
@@ -44,6 +44,38 @@
     "research_commit": "829dae6",
     "files": 61,
     "guard_released": true,
-    "source_actions_remain_open": true
+    "source_actions_remain_open": true,
+    "containers": [
+      "aios2",
+      "fixar-devops"
+    ],
+    "drive_prod_commit": "3c85652cc",
+    "installed_sha256": "7a13f9dc958a074475a5d1d07bce021b726e5443f50eb95273e305b752ba56b5",
+    "timer_active": true,
+    "next_tick": "2026-09-26T22:30:00+03:00",
+    "manifest_schema_note": "R8 manifest has no status; partial status is in metrics.json. No data schemas changed."
+  },
+  "curator_message_fix": {
+    "prod_commit": "492bcf856",
+    "executor": "fixar-devops/F7b",
+    "executor_model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "scope": "one node: Передать куратору jsonBody",
+    "independent_tests": "PASS small/huge/unicode/irreducible",
+    "real_R8_fixture": {
+      "message_chars": 2798,
+      "claims_preserved": "3/3",
+      "receipt_document_id": 13885
+    },
+    "live_loop_status": "PASS",
+    "live_execution_id": 3278702,
+    "kb_document_id": 13892
+  },
+  "live_receipt": {
+    "verdict": "accept",
+    "evidence_document_id": 13894,
+    "decision_document_id": 13895,
+    "source_action_id": "act_70e2fe4a16ac4e3d",
+    "gate_closed": false,
+    "kb_verification_document_id": 13896
   }
 }

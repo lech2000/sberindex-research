@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T17:07:03.600453+00:00",
+  "updated_at": "2026-09-26T17:27:15.950Z",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -123,6 +123,19 @@
       "status": "dispatching",
       "note": "0 собственных actions — по замыслу, работает с чужих open_actions",
       "last_dispatch": {
+        "run_key": "research-r8-v2-curator-budget-live-20260926-1723",
+        "source_case_id": "case_008f37d03cf541e5",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "verdict": "accept",
+        "evidence_document_id": 13894,
+        "decision_document_id": 13895,
+        "checked_at": "2026-09-26T17:27:15.950Z",
+        "execution_id": 3278702,
+        "next_action": "Запустить Prophet/TSFM на той же paired mask (171150 точек / 14 окон) без будущих target. Код через fixar-devops/F7b. Новости — отдельно vintage. Не возвращаться к MAE.",
+        "gate_closed": false
+      },
+      "routing": "Адресный webhook связан с открытым source_action_id. Через F7b выложены native KB fix 2e4f26219 и curator message budget 492bcf856. Валидный live accept 26.09: execution3278702, evidence77/13894, decision77/13895; R8 source action открыт.",
+      "previous_dispatch": {
         "run_key": "research-r8-v2-exact-key-20260926-1640",
         "source_case_id": "case_008f37d03cf541e5",
         "source_action_id": "act_70e2fe4a16ac4e3d",
@@ -130,14 +143,6 @@
         "evidence_document_id": 13879,
         "decision_document_id": 13880,
         "operator_diagnosis": "Обрезка native tool результата до4000 исправлена и выложена (2e4f26219). Следующий end-to-end запуск прочитал76/13876 и ingested77/13885, но остановился на n8n message>4000. Прямой компактный review MiMo дал accept и следующий Prophet/TSFM; framing/indexes этого ручного ответа не прошли workflow validation, поэтому это не квитанция полного контура."
-      },
-      "routing": "Адресный webhook связан с открытым source_action_id. Исправление обрезки native KB ответа выложено через F7b: prod commit 2e4f26219, live result 2868 chars, corpus 76/doc 13876. Graph прочитал измеренные MAE и ingested evidence 77/13885. Обнаружен отдельный overflow сообщения Передать куратору (>4000); F7b исправление в работе.",
-      "previous_dispatch": {
-        "run_key": "research-next-a6-20260926-0949",
-        "source_action_id": "act_c475e17b2a584b9a",
-        "verdict": "accept",
-        "evidence_document_id": 13780,
-        "decision_document_id": 13782
       },
       "native_kb_fix": {
         "deployed": true,
@@ -148,11 +153,19 @@
         "kb_document_id": 13888
       },
       "last_workflow_attempt": {
-        "run_key": "research-r8-v2-budget-fixed-20260926-1656",
-        "execution_id": 3278631,
-        "evidence_document_id": 13885,
-        "status": "downstream_message_422",
-        "loop_pass": false
+        "run_key": "research-r8-v2-curator-budget-live-20260926-1723",
+        "execution_id": 3278702,
+        "evidence_document_id": 13894,
+        "decision_document_id": 13895,
+        "status": "accepted",
+        "loop_pass": true
+      },
+      "curator_message_fix": {
+        "deployed": true,
+        "prod_commit": "492bcf856",
+        "real_fixture_chars": 2798,
+        "claims_preserved": "3/3",
+        "kb_document_id": 13892
       }
     }
   },
@@ -160,6 +173,17 @@
     "research_commit": "829dae6",
     "files": 61,
     "date": "2026-09-26",
-    "closed_gates": false
+    "closed_gates": false,
+    "containers": [
+      "aios2",
+      "fixar-devops"
+    ],
+    "drive_commit": "3c85652cc",
+    "installed_script": "/usr/local/bin/fixar_research_drive.sh",
+    "installed_sha256": "7a13f9dc958a074475a5d1d07bce021b726e5443f50eb95273e305b752ba56b5",
+    "timer": "fixar-cmd-research-drive.timer",
+    "timer_active": true,
+    "next_tick": "2026-09-26T22:30:00+03:00",
+    "partial_gates_still_stop_chain": true
   }
 }

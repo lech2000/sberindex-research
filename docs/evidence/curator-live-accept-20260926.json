@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-09-26T17:27:15.950Z",
+  "execution_id": 3278702,
+  "operator_verified": "n8n execution_data; validated DISPATCH/EVIDENCE/CURATOR and integrate receipts",
+  "receipt": {
+    "accepted": true,
+    "workflow": "sberindex-curator-dispatch",
+    "graph_case_id": "case_43de12a8dc2e4abd",
+    "curator_case_id": "case_d058db85c48a487c",
+    "corpus_id": 77,
+    "run_key": "research-r8-v2-curator-budget-live-20260926-1723",
+    "plan_ref": "R8",
+    "source_case_id": "case_008f37d03cf541e5",
+    "source_action_id": "act_70e2fe4a16ac4e3d",
+    "topic": "R8_v2: Верификация отрицательного результата после исправления бюджета куратора",
+    "status": "verified",
+    "source_url": "https://agrigate.pro/v2/#case/case_008f37d03cf541e5",
+    "curator_verdict": "accept",
+    "next_action": "Запустить Prophet/TSFM на той же paired mask (171150 точек / 14 окон) без будущих target. Код через fixar-devops/F7b. Новости — отдельно vintage. Не возвращаться к MAE.",
+    "next_topic": "R8: Prophet/TSFM на paired mask 171150/14, код F7b, новости vintage отдельно",
+    "graph_kb_receipt": {
+      "added": true,
+      "document_id": 13894,
+      "title": "Graph evidence research-r8-v2-curator-budget-live-20260926-1723: R8_v2: Верификация отрицательного результата после исправления бюджета куратора",
+      "corpus_id": 77,
+      "chunks": 4,
+      "vectors": 4
+    },
+    "curator_kb_receipt": {
+      "added": true,
+      "document_id": 13895,
+      "title": "Curator decision research-r8-v2-curator-budget-live-20260926-1723: accept",
+      "corpus_id": 77,
+      "chunks": 2,
+      "vectors": 2
+    }
+  }
+}
