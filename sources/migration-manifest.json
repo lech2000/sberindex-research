@@ -1,0 +1,775 @@
+{
+  "imported_at": "2026-09-26T08:33:07.086101+00:00",
+  "source_project": "ai_OS2",
+  "source_commit": "f7b04954308c8c5b2d56cd9164966c96d18d1775",
+  "source_kind": "live working file snapshot joe, not git-history rewrite",
+  "source_path": "deliverables/sberindex-2026",
+  "repo_url": "https://github.com/lech2000/sberindex-research",
+  "original_snapshot_files": [
+    {
+      "path": "data/schema-report.json",
+      "bytes": 9222,
+      "sha256": "3e7af6afa75b3b38d725d7608e16996b129b4abccfa4606f30bf1f2b96dee84d"
+    },
+    {
+      "path": "data/apify-sberindex-source-discovery-2026-09-20.json",
+      "bytes": 39435,
+      "sha256": "60eb7c2d77ce7f8ed4f7d05d247de4972026f0ede23adf31945c5308428539e4"
+    },
+    {
+      "path": "data/download_hse_population_grid.sh",
+      "bytes": 1253,
+      "sha256": "116dcd4ca034a82e735840bbbbba04e6d40145c38defa81b29c8bfc2305ead11"
+    },
+    {
+      "path": "data/DATA_CATALOG.md",
+      "bytes": 13818,
+      "sha256": "b22dc61df9a08a3dfbf004d32acbbdd1fdff462b525548dfe47f54a549dd5cc7"
+    },
+    {
+      "path": "data/SEMANTIC_CORPORA.md",
+      "bytes": 4850,
+      "sha256": "7b700e1a77d022a820bf9b318db9554cc306340ad63b6ad1d66403cad0fac74a"
+    },
+    {
+      "path": "data/availability_audit.csv",
+      "bytes": 358,
+      "sha256": "7399f04580b081477710bb2b34d201befa01d4d476e4c22c48b9cb76d45b690e"
+    },
+    {
+      "path": "data/kb-receipts.json",
+      "bytes": 2660,
+      "sha256": "8abddc3d7a98eb66fe93db4b5685952ae7faf9600b0ca84be26823743f208fec"
+    },
+    {
+      "path": "data/push_metadata_to_kb.py",
+      "bytes": 6599,
+      "sha256": "4ed8a753a662c4c79372e12fb326fb9bc2a60a83c0b1c5074b051a295d1d5a6a"
+    },
+    {
+      "path": "data/semantic-corpora-receipts.json",
+      "bytes": 4107,
+      "sha256": "5c81ae72ed76d5afd6d0cb3d78db0b8e1480e9c5374ecd4bb5afb3da06cacd7d"
+    },
+    {
+      "path": "data/build_catalog.py",
+      "bytes": 12021,
+      "sha256": "283580c4b06860878d04a8db37ffc993045018b7afaa1f4c252b15f8572dfa4f"
+    },
+    {
+      "path": "data/curated/russia-production-calendar.csv",
+      "bytes": 82221,
+      "sha256": "1e08d54c15fc28544aea89952537e34fd9ccc881e99d636814d63986aac16129"
+    },
+    {
+      "path": "data/curated/cbr-macro-monthly.csv",
+      "bytes": 101482,
+      "sha256": "b9c734d72eb14d911514cc243d9f3413c3ee79f6279f8291e2a3aa2f229097cd"
+    },
+    {
+      "path": "data/curated/preparation-report.json",
+      "bytes": 468,
+      "sha256": "cb543aad3ad0b400fa41b089192d79193eb865047f5ea34282d19cce36291f79"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2109,
+      "sha256": "6bc5d603c827c17f208fdd2bee238bcafb29f52edc1c5134381b3838b0c6c69a"
+    },
+    {
+      "path": "data/fixar-data-receipts.json",
+      "bytes": 3758,
+      "sha256": "2be0bb9abb623cf0b9e2feb8457aa20d5ebf51c84714c34ef4dd035095385477"
+    },
+    {
+      "path": "data/sync_materials_to_fixar.py",
+      "bytes": 4933,
+      "sha256": "a6b15a9d902f65df6561776799fc5ce34c772503c3265466e3785916fbf2b3f6"
+    },
+    {
+      "path": "data/download_sberindex_2025.sh",
+      "bytes": 1787,
+      "sha256": "3edd99f7b9885ed47142bb4ee1365465f94c5fe38c7fe45345ebd9055faba356"
+    },
+    {
+      "path": "data/sync_research_agents_to_fixar.py",
+      "bytes": 4490,
+      "sha256": "b4be459c37c3783832f13658e9daa25cec0835457bc289333b47fca178590b84"
+    },
+    {
+      "path": "data/download_sberindex_current.py",
+      "bytes": 7465,
+      "sha256": "f91f61dc891f2e8b254b4b02edc793ddd8986386805fa44bf3decb695ee17200"
+    },
+    {
+      "path": "data/setup_semantic_corpora.py",
+      "bytes": 6302,
+      "sha256": "754434cf3e23221b2830b068323e5c057d578a6ec036a62d0b26922b158f39ec"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 8131,
+      "sha256": "6cd64dac05ad7e8dee00bd42f40225585057621b47920bac2fc1858adf8fb276"
+    },
+    {
+      "path": "data/.gitignore",
+      "bytes": 42,
+      "sha256": "bac94403c5b0a44337a968672dfef13f2ed26f9c357b8bf1364c270904f992dc"
+    },
+    {
+      "path": "data/prepare_supplementary_data.py",
+      "bytes": 4675,
+      "sha256": "bcfe3356b1c812cf9ca592578cce9635480ae2863fbaeb11ede05b6deefe2b33"
+    },
+    {
+      "path": "sources/provenance.json",
+      "bytes": 727,
+      "sha256": "8f0fec95891cf3a14fd19a2153fd134bbc009e63e7a0ca3771dc3d7c31eb1b87"
+    },
+    {
+      "path": "shock-radar/events/news_features.parquet",
+      "bytes": 5108,
+      "sha256": "ae1a6168999206588ebf9f16942fadbd7ceb00214a61a0dac7d165a4afd2f404"
+    },
+    {
+      "path": "shock-radar/events/registry.parquet",
+      "bytes": 6419,
+      "sha256": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070"
+    },
+    {
+      "path": "shock-radar/events/news_events.json",
+      "bytes": 65489,
+      "sha256": "125e775fe5a89084cdfff75919b284f1584355a7c356c6a3ec429acbaa5cd7af"
+    },
+    {
+      "path": "shock-radar/events/registry_rules.json",
+      "bytes": 205,
+      "sha256": "66d8054ee649e4991168028aa9e0dd2eda572b374d1a30d73ee0a7af6d4e836f"
+    },
+    {
+      "path": "shock-radar/protocol/forecast_contract.yaml",
+      "bytes": 6963,
+      "sha256": "40423c21a70c5327b0c147b50d392e35ceaece5a58594d9c55887ce1e9c7e01f"
+    },
+    {
+      "path": "shock-radar/protocol/event_taxonomy.yaml",
+      "bytes": 5761,
+      "sha256": "d9028a514530971884617a8b80558af14da662cb5ff386abba7e736a6106c31a"
+    },
+    {
+      "path": "shock-radar/research-plan.md",
+      "bytes": 25785,
+      "sha256": "e87da84902ca0762b4838a632f4de8ae11cdf14cf2dfa7377abe78f978997268"
+    },
+    {
+      "path": "shock-radar/features/external_weather_partial.parquet",
+      "bytes": 63262,
+      "sha256": "b205109194d0ae29333919d7ccfb31e1f5506b59c1713a9eff3822827a2b054b"
+    },
+    {
+      "path": "shock-radar/features/external.parquet",
+      "bytes": 83608,
+      "sha256": "0f0d515ef21d729e5689c06712c495d4857f9cf5624913c4479272477464c650"
+    },
+    {
+      "path": "shock-radar/data-manifest.json",
+      "bytes": 652,
+      "sha256": "462085b93e4830d7543a082ba136118ec7537b8004aaa299eb0b6879dc483f6f"
+    },
+    {
+      "path": "shock-radar/config.json",
+      "bytes": 1270,
+      "sha256": "13916698af377ee1dd38433edbe9307a0b7b87b003d46359d449fdc429c478a5"
+    },
+    {
+      "path": "shock-radar/src/f04_tsfm_zeroshot.py",
+      "bytes": 3843,
+      "sha256": "483f8cde5f9c3855dda3b0809bc8425a666adedc396beb619656154aca80d44d"
+    },
+    {
+      "path": "shock-radar/src/r8_news_audit.py",
+      "bytes": 26368,
+      "sha256": "7ce833b52db10d2d9ed2526f0bd3d82c046b9465a385e17c30ca57a389f6d51f"
+    },
+    {
+      "path": "shock-radar/src/d01_events_registry.py",
+      "bytes": 3624,
+      "sha256": "d197be18c35e6ea8f6d6c1927989d3713b41fce15b7a792c90ec231b1683e65a"
+    },
+    {
+      "path": "shock-radar/src/d02_d03_detectors.py",
+      "bytes": 36993,
+      "sha256": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7"
+    },
+    {
+      "path": "shock-radar/src/f03_global_boosting.py",
+      "bytes": 4219,
+      "sha256": "7e9a8cc2fc43ba41f47618d867f10a41ad4de1951191d2255d09fd823c1ff03b"
+    },
+    {
+      "path": "shock-radar/src/r7_causal_signal.py",
+      "bytes": 21819,
+      "sha256": "6ee66e8333f75f9374c6351c69eb120bfd0987c891c425fad01d16c86d5ed06a"
+    },
+    {
+      "path": "shock-radar/src/contracts.py",
+      "bytes": 971,
+      "sha256": "ff78f5dc47e5cd2032ce85ef11db079c43719430a0667c28e123abf2c41da9cc"
+    },
+    {
+      "path": "shock-radar/src/d01_finalize.py",
+      "bytes": 2589,
+      "sha256": "3bb715be4e3f74277880dd9cad2b74d3d5edae5b0809fb99a59d3f5fdeed42f8"
+    },
+    {
+      "path": "shock-radar/src/__init__.py",
+      "bytes": 61,
+      "sha256": "ef3d973eaf5285184a12b46f73cd64b3884b97e09c37f9dfb11f39f819874227"
+    },
+    {
+      "path": "shock-radar/src/d01_threshold.py",
+      "bytes": 6400,
+      "sha256": "1eb73d5eee0259c64b7384063d3c4d1600c6cc5447cea46f86906f3bde46cb49"
+    },
+    {
+      "path": "shock-radar/research-ladder.md",
+      "bytes": 5872,
+      "sha256": "e7917d9bcb65bfd33560d42e72c61cd70cf2512c9830b5e924a0f39df65f6cab"
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "bytes": 5011,
+      "sha256": "45232daa7ba42333844d7ff095e4396aa491f34f099267f69a372ac1cf40272a"
+    },
+    {
+      "path": "shock-radar/runs/R4/metrics.json",
+      "bytes": 788,
+      "sha256": "0e53b47d5477bf2678ceaeecdf86dc52355a6e49fe6c687fbd2ab88ee211843f"
+    },
+    {
+      "path": "shock-radar/runs/R4/model_card.md",
+      "bytes": 1688,
+      "sha256": "254bfa73fb31a558c65678f724c2d12263897e3ff1f6969e8643c3127ac94d48"
+    },
+    {
+      "path": "shock-radar/runs/R7/metrics.json",
+      "bytes": 58713,
+      "sha256": "d7e7df96937c742975012d117e4fcfbd260b5d0103687d441e102a0aa9e626c5"
+    },
+    {
+      "path": "shock-radar/runs/R7/alerts.parquet",
+      "bytes": 21311,
+      "sha256": "74e7b7aaaf31d84b6f0e66c221e3f64c51524cb43b3406e6f499f281c749327f"
+    },
+    {
+      "path": "shock-radar/runs/R7/manifest.json",
+      "bytes": 2210,
+      "sha256": "6abda1bdc21f6bde5af5aeb234171bc48f38c3ba6e461d26cd1939b3e55a438c"
+    },
+    {
+      "path": "shock-radar/runs/R8/news_audit.json",
+      "bytes": 24919,
+      "sha256": "03eaf09fa7ac537b7332b52c8f8c405b685e74f4a8849eb36d7056d4ab0ab93a"
+    },
+    {
+      "path": "shock-radar/runs/R8/metrics.json",
+      "bytes": 2321,
+      "sha256": "1382ad6784206a7e8fbf9c1f490b7587b07eee15604080aaa42954b50e6acbc2"
+    },
+    {
+      "path": "shock-radar/runs/R8/asof_features.parquet",
+      "bytes": 4208,
+      "sha256": "3b0d98df32f6b08549c9a9c1a9b8922844fc0339987e6d5e6756fb0ab6e4fc19"
+    },
+    {
+      "path": "shock-radar/runs/R8/README.md",
+      "bytes": 4120,
+      "sha256": "776ed107ed9fb30ac2e367b3569c22dbb927dc0db8eab923b6f31345c496e3e3"
+    },
+    {
+      "path": "shock-radar/runs/R8/quarantined.json",
+      "bytes": 11264,
+      "sha256": "2731ff0582ff291bcf1385ef82a287fc0e6919c50b89a92faef22997b58ef73a"
+    },
+    {
+      "path": "shock-radar/runs/R5_cus.parquet",
+      "bytes": 9186592,
+      "sha256": "dfa8ecfdbdf62cefb3bf5a89304e3e63dca82ca93aafeebb4e2a9cead6d52047"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/metrics.json",
+      "bytes": 44688,
+      "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/signal/pretrain_audit.parquet",
+      "bytes": 22686,
+      "sha256": "81eeee82604a69b40db2f79bdeeb215d2068f73ec98c49e42a20dcdadf8932b6"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/signal/manifest.json",
+      "bytes": 3894,
+      "sha256": "0bb2b01de417d48bb316360ddf6d46fd38b710c49482a63f68dd86064d4f4cc3"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/signal/signal.parquet",
+      "bytes": 3978670,
+      "sha256": "6a912ad1ec50bab75ba6139c143edf90a23551879207e961b7375578ba35e474"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/README.md",
+      "bytes": 3053,
+      "sha256": "4beb26fa28cc7db5cf66050a745222084108ba692f859db23e3f416bf5768494"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/operator_run_manifest.json",
+      "bytes": 2342,
+      "sha256": "32fd9ec139b69a1774397da03ac62ab779450e08e11ef227339ef54859270849"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/requirements.txt",
+      "bytes": 203,
+      "sha256": "c5383d08355776cc74fcc27e550a0e877d27768cd9136c805221fd687b859207"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/alerts.parquet",
+      "bytes": 8650,
+      "sha256": "9efc418e8e16cee070024feec56abd8d58115d890e5704ef8bd12a1f065391c3"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/registry_eligible.parquet",
+      "bytes": 6354,
+      "sha256": "84c07d414064fd8d40ebc4529f5ffbb7946b8969a0711c1b28574782eb677be6"
+    },
+    {
+      "path": "shock-radar/runs/R7_v2/manifest.json",
+      "bytes": 3738,
+      "sha256": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15"
+    },
+    {
+      "path": "shock-radar/runs/R3/metrics.json",
+      "bytes": 564,
+      "sha256": "acac48f23a03df52473f34d15b6522733347d207addd8e0f20741313910020c5"
+    },
+    {
+      "path": "shock-radar/runs/R3/run_manifest.json",
+      "bytes": 1865,
+      "sha256": "1a7701ee2d3b8a203ad15cc01d7abfcfc5660d688601c85b5b32025833ecc43a"
+    },
+    {
+      "path": "shock-radar/runs/R5/alerts.parquet",
+      "bytes": 62085,
+      "sha256": "624bed09dce4fb23395f479d3c6d762f7dcfb5ad81580d7c6587463d4466112c"
+    },
+    {
+      "path": "shock-radar/runs/R5/alerts.json",
+      "bytes": 703,
+      "sha256": "845cf37a3f4c9e457a8dd8098318ff0c17b84efb55f62545d8aebf8a1291debe"
+    },
+    {
+      "path": "shock-radar/runs/R2/metrics.csv",
+      "bytes": 368,
+      "sha256": "5b7ec8f74e4b1df0adc9faa8a26484b404d9f95edb9cc8b579caac17cf4f9b07"
+    },
+    {
+      "path": "shock-radar/experiments.json",
+      "bytes": 5655,
+      "sha256": "7d1bc5edda8357c671d3712fab5ca98a6cede6cd5e8baef0f57e36329aeac0f2"
+    },
+    {
+      "path": "shock-radar/actions.json",
+      "bytes": 5839,
+      "sha256": "1308c3776be9dee4704e4581f5e50ea888d9c8a5cd8d79a238d4e9f1c1f3a2de"
+    },
+    {
+      "path": "agents/gate-artifact-receipts.json",
+      "bytes": 725,
+      "sha256": "26cc238e7dbae2219a581be0eb973ab2e0b3b524076694cd509a8b0c2f8fdec5"
+    },
+    {
+      "path": "agents/retry-receipts.json",
+      "bytes": 15329,
+      "sha256": "b98f01de172a2336f848be550127312dbf898c46d551410479e546c4c8156af1"
+    },
+    {
+      "path": "agents/retry_gates_v2.py",
+      "bytes": 4489,
+      "sha256": "10c5313e7713f63595faac8d6e548e5fe4de9a153fe3e9d0b7484b26c2e0a09d"
+    },
+    {
+      "path": "agents/verify_live_mcp.py",
+      "bytes": 5792,
+      "sha256": "b4500a845e3aa992fb66c9a1b6f4182789d2f76ec0a1992db68d2257f253f058"
+    },
+    {
+      "path": "agents/source-queue.json",
+      "bytes": 4406,
+      "sha256": "3a84d02eb85a3ed7b718c7f5bee57746964dedd4fd5492c7aac506744172a2b8"
+    },
+    {
+      "path": "agents/review_r0.py",
+      "bytes": 2773,
+      "sha256": "3a17d3d4379a970beaf75d4cf968e4adace1b23d4dd1e7e812ccddc91a9c5375"
+    },
+    {
+      "path": "agents/deploy_and_start_v2.py",
+      "bytes": 8381,
+      "sha256": "e21c78aa936e6a295179e7ab199017c2e80ac17ad3059c51df60542bd8af780a"
+    },
+    {
+      "path": "agents/continue_v4_atomic.py",
+      "bytes": 3799,
+      "sha256": "bcd4ae9de7a7580a105669fb546c3810c4a4251cb6919957bc7ebc999b18f254"
+    },
+    {
+      "path": "agents/continue_v4.py",
+      "bytes": 4093,
+      "sha256": "6ee4ff12202510ba0dcc3b6c6b68eb041e694417ed623394eebc653bf1378227"
+    },
+    {
+      "path": "agents/r0-methodology-review.json",
+      "bytes": 3994,
+      "sha256": "629b5e5e0958b3e40a0cd5bb7c5cbe09d6a3a7c8093b915aa88dfc37f93bdfb2"
+    },
+    {
+      "path": "agents/README.md",
+      "bytes": 7602,
+      "sha256": "09fe434d124d80759b8d590e8c0488ba4334f55038fd1db545700da2de6ccd7e"
+    },
+    {
+      "path": "agents/start_next_v3.py",
+      "bytes": 7765,
+      "sha256": "8aacbb07bd56e55db011924396a7d54a63bc35b12110218354b5380ac65bef29"
+    },
+    {
+      "path": "agents/progress.json",
+      "bytes": 4475,
+      "sha256": "3effa1675f53a6dd839f5f8dea33f5dd6d089ed157d642432e75cb4edfe356b9"
+    },
+    {
+      "path": "agents/attach_gate_artifacts.py",
+      "bytes": 3248,
+      "sha256": "7e060496fc2a5ca6d2913da3a339b0621dcd27a9a393f86a8669396dffe1d32f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8821,
+      "sha256": "eca56c8f7df220f0f301332dbbe1b0eea62564e3d1192903f9bdcf8e949bb2f4"
+    },
+    {
+      "path": "model-lab/kb-receipts.json",
+      "bytes": 3255,
+      "sha256": "f049edffa55f6bdd242489572711f92ba466c9ae4fcbfb7a2fce7ab5ff400e20"
+    },
+    {
+      "path": "model-lab/GPU_RUNTIME.md",
+      "bytes": 3734,
+      "sha256": "fd4df5f4ed7f778941825bacb62cb91eb37624ec76897eea484f3ec157e62fb2"
+    },
+    {
+      "path": "model-lab/attach_plan_to_fixar.py",
+      "bytes": 3140,
+      "sha256": "c4a5ac6397dc375aa454d28bb4a5177d0fc8cd02676dd10c8c67e584c85db07c"
+    },
+    {
+      "path": "model-lab/ARCHITECTURE.md",
+      "bytes": 50247,
+      "sha256": "0cfc73e3f4f8144f9393993469567368bd9ff8f9ff2230491ed757e67e7b5542"
+    },
+    {
+      "path": "model-lab/sync_plan_to_kb.py",
+      "bytes": 4793,
+      "sha256": "6baee23e038a1afed96eb30ffc3225fed7a56fa6363f284963c136dbeffbf0f4"
+    },
+    {
+      "path": "model-lab/fixar-receipts.json",
+      "bytes": 1047,
+      "sha256": "7eee27c43aaa5931d9eef2901e6297ded1d06af8a3a168da1f3db014efe8ee85"
+    },
+    {
+      "path": "model-lab/audit_loaded_data.py",
+      "bytes": 4115,
+      "sha256": "083d9a4483629452dcbf1ce923f2800c9d1e47a6d2d1d26958ea1ccf18749e3d"
+    },
+    {
+      "path": "model-lab/PLATFORM_VERIFICATION.md",
+      "bytes": 3057,
+      "sha256": "b0311fb222dd74c339265e8d42ccf64168b5bd44c6d5e1b2f2a1a61ccf537da4"
+    },
+    {
+      "path": "model-lab/loaded-data-audit.json",
+      "bytes": 8017,
+      "sha256": "bf8cd2507adbdc64ccf730664c501154547adff124a03c8c99dcf400e0096258"
+    },
+    {
+      "path": "model-lab/kb-search-verification.json",
+      "bytes": 4028,
+      "sha256": "3cffbc52f130d23254fb84bc6ed7a3cb9c55c6851e2915142fa87d3b027a68c9"
+    },
+    {
+      "path": "model-lab/ANALYTIC_TOOLS.md",
+      "bytes": 4160,
+      "sha256": "96f916b1b5d516ba294f67240e4f8587cb418633bcf36ada555477d9910ef08c"
+    },
+    {
+      "path": "fixar-receipts.json",
+      "bytes": 7380,
+      "sha256": "4b4a8ae029657cdb8e3db20639aef4c164e6f2ce599dde9980787dfd6d4f7e34"
+    },
+    {
+      "path": "literature/attach_literature_to_fixar.py",
+      "bytes": 3854,
+      "sha256": "28765099f3351be43c7cbd7097587dc22446d47dce3043f27f775d29d5dabba4"
+    },
+    {
+      "path": "literature/fixar-literature-receipts.json",
+      "bytes": 1368,
+      "sha256": "f0055f2909f28fa79c0e91c866b5e3fc563009fb36856768bf4bdfa2fd78d74d"
+    },
+    {
+      "path": "literature/economic-atlas-literature-review.md",
+      "bytes": 7997,
+      "sha256": "d33b291ea8e47e8a6d8ac42b79589d4c42a5770b371635cedb2758b0b7623b18"
+    },
+    {
+      "path": "literature/ingest-receipts.json",
+      "bytes": 15600,
+      "sha256": "6c4da04653c6dcaa33c73508f206e6744c80471d9efad4674cbbc102b738762d"
+    },
+    {
+      "path": "literature/build_literature_corpora.py",
+      "bytes": 53897,
+      "sha256": "397d91d401dc49918c4c21052c475690bc68e629524ab38233fc58e56b012b59"
+    },
+    {
+      "path": "literature/shock-radar-literature-review.md",
+      "bytes": 8867,
+      "sha256": "20e9f5cf739c40cdd5e3df49523af589e14c9261ff39199fd048812e4b781920"
+    },
+    {
+      "path": "literature/papers.json",
+      "bytes": 43487,
+      "sha256": "b9d91cf1a1a004198cdc8209f370ac89508ca80a0009a45310a3291fe30715b2"
+    },
+    {
+      "path": "check_scaffold.py",
+      "bytes": 1334,
+      "sha256": "2a8a70f3c3f69b213d0e592b2dfc7e6c65bb78a07a2d9469fe33144dadfac8f4"
+    },
+    {
+      "path": "graph/OPERATIONS.md",
+      "bytes": 9085,
+      "sha256": "8ac20548b96970b250e24b36d6c9b81da92d04b51557ae5a040102ad6ac1214d"
+    },
+    {
+      "path": "graph/seed_corpus77.py",
+      "bytes": 1979,
+      "sha256": "8da3a2440fed41fdbd14d2cffaa29aeb1a0ce7bbee9f4ce3615383d13f012d2b"
+    },
+    {
+      "path": "graph/evidence.schema.json",
+      "bytes": 3630,
+      "sha256": "6a1e0015f014c333b6c93a301d28a14073b6aaae0368e745083e4ba71e6b15f3"
+    },
+    {
+      "path": "graph/create_curator_case.py",
+      "bytes": 928,
+      "sha256": "a1e75c0cae06bc7b12f12ee5d0af0a53462e821bd5eba530f56d8ba8950ab868"
+    },
+    {
+      "path": "graph/setup_fixar.py",
+      "bytes": 6080,
+      "sha256": "f064ebb1362eeb580247165ef1effeea60acb242da64bdc06c17a481369c6b58"
+    },
+    {
+      "path": "graph/curator.schema.json",
+      "bytes": 1985,
+      "sha256": "e4be8dd9558c64d90e52b1fc39b4421f4ed30b6e96456a3602d2163aa67e8533"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 269,
+      "sha256": "00f99cec4eb392d4868b3e7d079164a396ace24c6dd5de8f91c1d7c9260a82ee"
+    },
+    {
+      "path": "economic-atlas/data/panel_v1.parquet",
+      "bytes": 851409,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    },
+    {
+      "path": "economic-atlas/data/panel_passport.json",
+      "bytes": 1339,
+      "sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd"
+    },
+    {
+      "path": "economic-atlas/protocol/question.md",
+      "bytes": 4606,
+      "sha256": "32084e99499d37a910e96202de40e062f970da21712a0b7cd58c89d6edf4e448"
+    },
+    {
+      "path": "economic-atlas/research-plan.md",
+      "bytes": 24010,
+      "sha256": "f664bb8b9fea6c64d52c815e3b3a0be5f61ae5ca1809793a0c83176d9503d6b2"
+    },
+    {
+      "path": "economic-atlas/features/spec.yaml",
+      "bytes": 5072,
+      "sha256": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1"
+    },
+    {
+      "path": "economic-atlas/data-manifest.json",
+      "bytes": 646,
+      "sha256": "11f989a1838a7e764c1be0d286294e0e427fc4ab627e6a35a977b3bf3334ab7a"
+    },
+    {
+      "path": "economic-atlas/config.json",
+      "bytes": 1117,
+      "sha256": "00f6faa824aec6fff2cd5c393c73048121d96f502e3515c48e173637512b3ca9"
+    },
+    {
+      "path": "economic-atlas/src/a4_metrics.py",
+      "bytes": 8858,
+      "sha256": "15a5881419e54e6aff95cc2539499f18140090a948f1ff31f1a52af53a585e57"
+    },
+    {
+      "path": "economic-atlas/src/a5_graph.py",
+      "bytes": 27042,
+      "sha256": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759"
+    },
+    {
+      "path": "economic-atlas/src/contracts.py",
+      "bytes": 971,
+      "sha256": "ff78f5dc47e5cd2032ce85ef11db079c43719430a0667c28e123abf2c41da9cc"
+    },
+    {
+      "path": "economic-atlas/src/a6_temporal.py",
+      "bytes": 38704,
+      "sha256": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474"
+    },
+    {
+      "path": "economic-atlas/src/__init__.py",
+      "bytes": 61,
+      "sha256": "ef3d973eaf5285184a12b46f73cd64b3884b97e09c37f9dfb11f39f819874227"
+    },
+    {
+      "path": "economic-atlas/research-ladder.md",
+      "bytes": 6276,
+      "sha256": "3dd3809c772ae1f15c77b6073074c6e9c9246800844ef33879b7c6fc0d47ad78"
+    },
+    {
+      "path": "economic-atlas/landing/index.html",
+      "bytes": 5049,
+      "sha256": "ed469e3f4162bb41ca8dea914c8fdc4c548f4cbbc3a58f50044348a701a1e5c4"
+    },
+    {
+      "path": "economic-atlas/runs/A5/edges.parquet",
+      "bytes": 99742,
+      "sha256": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4"
+    },
+    {
+      "path": "economic-atlas/runs/A5/metrics.json",
+      "bytes": 7510,
+      "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+    },
+    {
+      "path": "economic-atlas/runs/A5/graph_manifest.json",
+      "bytes": 2015,
+      "sha256": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615"
+    },
+    {
+      "path": "economic-atlas/runs/A5/README.md",
+      "bytes": 5586,
+      "sha256": "210c069e7ae9aa5ba87d7f10181d0f7374e6989a12c2aa6a34e94310988c3ec0"
+    },
+    {
+      "path": "economic-atlas/runs/A5/vertices.parquet",
+      "bytes": 12466,
+      "sha256": "ab2e63062c2e10f184e5504d0716a955db36b23d069fb4323104644914bcb97e"
+    },
+    {
+      "path": "economic-atlas/runs/A5/features.parquet",
+      "bytes": 199227,
+      "sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6"
+    },
+    {
+      "path": "economic-atlas/runs/A5/assignments.parquet",
+      "bytes": 17058,
+      "sha256": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183"
+    },
+    {
+      "path": "economic-atlas/runs/A4/agglomerative.json",
+      "bytes": 83738,
+      "sha256": "7bf95a9bec06903c34ac56aac159c635b0666739d21b411771e5122319eb5480"
+    },
+    {
+      "path": "economic-atlas/runs/A4/metrics.json",
+      "bytes": 4572,
+      "sha256": "0d82662f94d69af0888330109d5c1f9f3fc4d34dcc8f8b5be76f8a9724dce49f"
+    },
+    {
+      "path": "economic-atlas/runs/A4/kmeans.json",
+      "bytes": 83730,
+      "sha256": "67aad2e7b69f767913d74e99500ff28e580ea6dbf3cc9d4ec4c8aed11e435bb7"
+    },
+    {
+      "path": "economic-atlas/runs/A2/missing.json",
+      "bytes": 502,
+      "sha256": "eb8cab00394c089cc34e913d27b195a54fb07b7e2072c50e188d4f51d976104b"
+    },
+    {
+      "path": "economic-atlas/runs/A6/metrics.json",
+      "bytes": 39073,
+      "sha256": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204"
+    },
+    {
+      "path": "economic-atlas/runs/A6/transitions.parquet",
+      "bytes": 109574,
+      "sha256": "7c73192acb2779b45fdd96b406804d1ad79c0b7bef0ddfc72a5cba89814dc33a"
+    },
+    {
+      "path": "economic-atlas/runs/A6/README.md",
+      "bytes": 6720,
+      "sha256": "ce81fff477715253bcc04063dcd689d975acc1bbef3c315225b7ac296a5e3aff"
+    },
+    {
+      "path": "economic-atlas/runs/A6/temporal_manifest.json",
+      "bytes": 2049,
+      "sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2"
+    },
+    {
+      "path": "economic-atlas/runs/A6/manifest.json",
+      "bytes": 2049,
+      "sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2"
+    },
+    {
+      "path": "economic-atlas/experiments.json",
+      "bytes": 3336,
+      "sha256": "26054e943a4e8026a040618a1b7de51615505953291dddd944e401d86925a3fb"
+    },
+    {
+      "path": "economic-atlas/actions.json",
+      "bytes": 6100,
+      "sha256": "7967a40f5269f42ac8ae6d182db8b19399e0516407a42432a78eb28c595ec0a2"
+    },
+    {
+      "path": "IMPLEMENTATION_PROPOSAL.md",
+      "bytes": 7004,
+      "sha256": "07fdc194b04391bfcdac9d1c87f4e0d2dc32d73ed69756f1da95d0a9f7c56570"
+    }
+  ],
+  "additional_sources": [
+    "Mac methods/ATF_METHODS_TRANSFER.md",
+    "Mac public OSM presentation preview",
+    "kb-forge corpora74–77 indexes; own notes74–76; current gate receipts77",
+    "case-service live actions fourcases",
+    "fixar-devops F7b repository-tools",
+    "software pack four researchagents, credential-free workflow, optional sberindex tools"
+  ],
+  "excluded": [
+    "large/raw datasets",
+    "HSE proprietary-web-layer municipal-2021.js outside publicOSM preview",
+    "external article fulltexts",
+    "secrets and platform credentials",
+    "virtual environments"
+  ]
+}

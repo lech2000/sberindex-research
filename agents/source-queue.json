@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-09-24",
+  "policy": "mimo_pro_hosted_search_discovery -> official_api_or_file_or_jina_verification -> apify_paid_complex_escalation -> recon_mcp_allowlisted_passive -> human_handoff",
+  "items": [
+    {
+      "id": "sber-municipality-dictionary",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "blocked_tls",
+      "official_url": "https://rosstat.gov.ru/opendata/7708234640-oktmo/data-20260901T1609-structure-20260210T1102.csv",
+      "official_version_date": "2026-09-01",
+      "official_actual_through": "2026-12-31",
+      "next_attempt": "official mirror or corrected certificate chain; do not disable TLS",
+      "acceptance": "archive hash, license, stable Sber municipality id, municipality name and region"
+    },
+    {
+      "id": "rosstat-oktmo-2026-09-01",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "blocked_tls",
+      "next_attempt": "official mirror or corrected certificate chain; do not disable TLS",
+      "acceptance": "CSV hash, version date, unique current OKTMO and hierarchy fields"
+    },
+    {
+      "id": "rosstat-municipal-employment-8423005",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "confirmed_export_missing",
+      "next_attempt": "BDMO official export or regional official bulk tables with a documented coverage merge",
+      "acceptance": "municipality x OKVED x period table, units, publication date, coverage and duplicate audit"
+    },
+    {
+      "id": "municipality-crosswalk",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "waiting_inputs",
+      "depends_on": [
+        "sber-municipality-dictionary",
+        "rosstat-oktmo-2026-09-01"
+      ],
+      "acceptance": "versioned Sber id <-> OKTMO crosswalk with unmatched, split and merge reports"
+    },
+    {
+      "id": "era5-land-municipal-weather",
+      "priority": "P1",
+      "projects": [
+        "radar"
+      ],
+      "status": "waiting_crosswalk",
+      "depends_on": [
+        "municipality-crosswalk"
+      ],
+      "next_attempt": "Copernicus ERA5-Land, area-weighted aggregation after reliable municipality geometry",
+      "acceptance": "temperature and precipitation features with source vintage and no forecast-origin leakage"
+    },
+    {
+      "id": "news-event-corpus",
+      "priority": "P1",
+      "projects": [
+        "radar"
+      ],
+      "status": "archive_listing_pilot_60_not_model_ready",
+      "next_attempt": "verify full primary articles; assign geography/OKTMO and topic; audit 2023–2024 revision and as-of eligibility before F06",
+      "acceptance": "URL, source, title, published_at, first_seen_at, updated_at, geography, topic, content hash and deduplication report",
+      "taxonomy": "shock-radar/protocol/event_taxonomy.yaml (FROZEN v1 2026-09-23)",
+      "coverage": "60 unique DISCOVERED news candidates on 2026-09-24: 20 current RSS + 40 official 50.mchs.gov.ru archive listing cards (31 dated 2024, 9 dated 2023); archive as_of_eligible=false, no geography/topic/full article text, F06 unmeasured",
+      "checked_at": "2026-09-24",
+      "kb_documents": [
+        13257,
+        13259
+      ]
+    },
+    {
+      "id": "sber-spending-current",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "verified",
+      "artifact": "data/raw/sberindex-current/spending.parquet",
+      "rows": 303126,
+      "period": "2023-01/2024-12"
+    },
+    {
+      "id": "sber-mobility-current",
+      "priority": "P1",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "verified_limited",
+      "artifact": "data/raw/sberindex-current/mobility.parquet",
+      "rows": 594,
+      "limitation": "297 Northwestern municipalities, two observations; distance index, not an origin-destination matrix"
+    },
+    {
+      "id": "apify-official-source-discovery-2026-09-20",
+      "priority": "P0",
+      "projects": [
+        "atlas",
+        "radar"
+      ],
+      "status": "discovery_complete_verification_pending",
+      "artifact": "data/apify-sberindex-source-discovery-2026-09-20.json",
+      "results": 3,
+      "billing_credits": 11,
+      "use": "candidate URLs only; accept a dataset after official-file validation, hash and license check"
+    }
+  ]
+}

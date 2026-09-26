@@ -1,0 +1,13 @@
+{
+  "id": 13782,
+  "title": "Curator decision research-next-a6-20260926-0949: accept",
+  "filename": "Curator decision research-next-a6-20260926-0949: accept.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "extract_status": "ok",
+  "text_chars": 1404,
+  "truncated": false,
+  "text": "# Решение куратора исследований\n\nrun_key: research-next-a6-20260926-0949\nverdict: accept\nreviewed_at: 2026-09-26T09:55:00.000Z\nsource: https://agrigate.pro/v2/#case/case_66cae4a89ba6473f\n\n{\n  \"schema_version\": \"1.0\",\n  \"run_key\": \"research-next-a6-20260926-0949\",\n  \"verdict\": \"accept\",\n  \"applies_to\": [\n    \"atlas\"\n  ],\n  \"plan_refs\": [\n    \"A6\"\n  ],\n  \"accepted_claim_indexes\": [\n    0,\n    1,\n    2\n  ],\n  \"rejected_claim_indexes\": [],\n  \"gaps\": [\n    {\n      \"statement\": \"Явные определения критериев ATF-M2 (Bhattacharyya overlap) и ATF-M3 (split/merge detection) не найдены в корпусах 74–77. Найдены ссылки на ATF-методы и описание M5 (биографический L2), но формулы и пороги для рождения, split/merge и исчезновения кластеров не извлечены.\",\n      \"severity\": \"medium\",\n      \"required_evidence\": \"Полный текст документа 'СберИндекс 2026 — методы, перенесённые из ATF' из корпуса 74 с формулами и порогами для ATF-M2 и ATF-M3\"\n    }\n  ],\n  \"next_action\": \"Прочитать полный текст документа 'СберИндекс 2026 — методы, перенесённые из ATF' из корпуса 74 через sberindex_graph_kb_search с уточнённым запросом для извлечения формул и порогов ATF-M2 и ATF-M3.\",\n  \"next_topic\": \"A6: Извлечь формулы и пороги ATF-M2 (Bhattacharyya overlap) и ATF-M3 (split/merge detection) из документа 'СберИндекс 2026 — методы, перенесённые из ATF'\",\n  \"reviewed_at\": \"2026-09-26T09:55:00.000Z\",\n  \"confidence\": 0.95\n}",
+  "note": null
+}

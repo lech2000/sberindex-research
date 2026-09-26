@@ -1,0 +1,89 @@
+{
+  "synced_on": "2026-09-20",
+  "cases": [
+    {
+      "slug": "economic-atlas",
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_b9b372f6e57f448b",
+          "title": "Каталог данных, покрытие и ограничения — 20.09.2026.md",
+          "sha256": "a5d34356e8f264ca20128b943e22bb99a1dd8c1aad79ab0691a21876d7934a14",
+          "verified": true
+        },
+        {
+          "id": "mat_c50352ed848445e6",
+          "title": "Схемы, пропуски и SHA-256 загруженных данных.json",
+          "sha256": "9b4ba7dcea97b52fe4987be114d4ccb7a3ac812e5b535d88542f620031693379",
+          "verified": true
+        },
+        {
+          "id": "mat_74a2b5ab215f423e",
+          "title": "Манифест данных проекта.json",
+          "sha256": "11f989a1838a7e764c1be0d286294e0e427fc4ab627e6a35a977b3bf3334ab7a",
+          "verified": true
+        },
+        {
+          "id": "mat_11dfb9c3b7f8428b",
+          "title": "План исследований и разработки — обновлено после загрузки данных.md",
+          "sha256": "c949acd13c82668c9639636ffd1a36ca6ec4cc27f409af7a0d6ee298ff3a10e4",
+          "verified": true
+        },
+        {
+          "id": "mat_8fdb161fbada4434",
+          "title": "Каркас проекта — обновлён после загрузки данных.zip",
+          "sha256": "191c0e0719174127930a4392de3efdc76a6d75d2f6c3b9be79e7f2d5fd109fd8",
+          "verified": true
+        },
+        {
+          "id": "mat_0791cbdc767c48e9",
+          "title": "Семантические корпуса и будущие аналитические инструменты.md",
+          "sha256": "7b700e1a77d022a820bf9b318db9554cc306340ad63b6ad1d66403cad0fac74a",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "shock-radar",
+      "case_id": "case_008f37d03cf541e5",
+      "materials": [
+        {
+          "id": "mat_01c6ed54fcf24467",
+          "title": "Каталог данных, покрытие и ограничения — 20.09.2026.md",
+          "sha256": "a5d34356e8f264ca20128b943e22bb99a1dd8c1aad79ab0691a21876d7934a14",
+          "verified": true
+        },
+        {
+          "id": "mat_331983a1668b4ebd",
+          "title": "Схемы, пропуски и SHA-256 загруженных данных.json",
+          "sha256": "9b4ba7dcea97b52fe4987be114d4ccb7a3ac812e5b535d88542f620031693379",
+          "verified": true
+        },
+        {
+          "id": "mat_b431ace0635444cc",
+          "title": "Манифест данных проекта.json",
+          "sha256": "462085b93e4830d7543a082ba136118ec7537b8004aaa299eb0b6879dc483f6f",
+          "verified": true
+        },
+        {
+          "id": "mat_efc9457dc1a04ed1",
+          "title": "План исследований и разработки — обновлено после загрузки данных.md",
+          "sha256": "445c06e318acd5f6def798c2d6ba34541fa6b33caca62dab16bcfd38cc70616a",
+          "verified": true
+        },
+        {
+          "id": "mat_1646a82af5c34563",
+          "title": "Каркас проекта — обновлён после загрузки данных.zip",
+          "sha256": "023f422ad5b10eb55d03b9cff21557d2774304531ef45d1b2ca99adb4db1350c",
+          "verified": true
+        },
+        {
+          "id": "mat_58c94bef9ee647bc",
+          "title": "Семантические корпуса и будущие аналитические инструменты.md",
+          "sha256": "7b700e1a77d022a820bf9b318db9554cc306340ad63b6ad1d66403cad0fac74a",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}

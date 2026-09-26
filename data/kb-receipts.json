@@ -1,0 +1,79 @@
+{
+  "corpus_id": 61,
+  "corpus_name": "practice:software:developer:prn_fbab9aa00cd46169",
+  "integrated_on": "2026-09-20",
+  "documents": [
+    {
+      "title": "СберИндекс 2026 — общий каталог данных",
+      "file": "data/DATA_CATALOG.md",
+      "result": {
+        "added": true,
+        "document_id": 12106,
+        "title": "СберИндекс 2026 — общий каталог данных",
+        "corpus_id": 61,
+        "chunks": 6,
+        "vectors": 6
+      }
+    },
+    {
+      "title": "СберИндекс 2026 — схема и качество загруженных данных",
+      "file": "data/schema-report.json",
+      "result": {
+        "added": true,
+        "document_id": 12107,
+        "title": "СберИндекс 2026 — схема и качество загруженных данных",
+        "corpus_id": 61,
+        "chunks": 6,
+        "vectors": 6
+      }
+    },
+    {
+      "title": "СберИндекс 2026 — Экономический атлас — план исследований",
+      "file": "economic-atlas/research-plan.md",
+      "result": {
+        "added": true,
+        "document_id": 12108,
+        "title": "СберИндекс 2026 — Экономический атлас — план исследований",
+        "corpus_id": 61,
+        "chunks": 13,
+        "vectors": 13
+      }
+    },
+    {
+      "title": "СберИндекс 2026 — Экономический атлас — манифест данных",
+      "file": "economic-atlas/data-manifest.json",
+      "result": {
+        "added": true,
+        "document_id": 12109,
+        "title": "СберИндекс 2026 — Экономический атлас — манифест данных",
+        "corpus_id": 61,
+        "chunks": 1,
+        "vectors": 1
+      }
+    },
+    {
+      "title": "СберИндекс 2026 — Радар — план исследований",
+      "file": "shock-radar/research-plan.md",
+      "result": {
+        "added": true,
+        "document_id": 12110,
+        "title": "СберИндекс 2026 — Радар — план исследований",
+        "corpus_id": 61,
+        "chunks": 16,
+        "vectors": 16
+      }
+    },
+    {
+      "title": "СберИндекс 2026 — Радар — манифест данных",
+      "file": "shock-radar/data-manifest.json",
+      "result": {
+        "added": true,
+        "document_id": 12111,
+        "title": "СберИндекс 2026 — Радар — манифест данных",
+        "corpus_id": 61,
+        "chunks": 1,
+        "vectors": 1
+      }
+    }
+  ]
+}

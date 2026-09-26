@@ -1,0 +1,77 @@
+{
+  "run": "F03",
+  "method": "HistGradientBoostingRegressor(max_iter=200, max_depth=6, lr=0.06, seed=42)",
+  "why_not_catboost": "CatBoost/LightGBM нет в контуре tool-service; взят тот же класс (листовой градиентный бустинг) из sklearn",
+  "features": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag12",
+    "roll3",
+    "roll12",
+    "std3",
+    "std12",
+    "month",
+    "tid",
+    "cat(ordinal)"
+  ],
+  "fit_rule": "fit только внутри train: история строго до origin, без будущего",
+  "conservative_lag": "2m synthetic_assumption (availability_audit.csv)",
+  "metrics": {
+    "1": {
+      "mae_boost": 199.39434482561538,
+      "mae_last_value": 627.540555870675,
+      "n": 74046,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ]
+    },
+    "2": {
+      "mae_boost": 234.0192372394396,
+      "mae_last_value": 793.6804961089495,
+      "n": 61680,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ]
+    },
+    "3": {
+      "mae_boost": 263.64360053104525,
+      "mae_last_value": 986.1843587872893,
+      "n": 49344,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10"
+      ]
+    }
+  },
+  "paired_comparison_R2": {
+    "1": {
+      "boost": 199.39434482561538,
+      "last_value_R2": 627.540555870675,
+      "improvement_pct": 68.2
+    },
+    "2": {
+      "boost": 234.0192372394396,
+      "last_value_R2": 793.6804961089495,
+      "improvement_pct": 70.5
+    },
+    "3": {
+      "boost": 263.64360053104525,
+      "last_value_R2": 986.1843587872893,
+      "improvement_pct": 73.3
+    }
+  },
+  "code": "shock-radar/src/f03_global_boosting.py",
+  "date": "2026-09-22"
+}

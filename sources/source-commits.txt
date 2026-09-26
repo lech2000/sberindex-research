@@ -1,0 +1,30 @@
+f7b04954308c8c5b2d56cd9164966c96d18d1775 2026-09-26T07:26:18Z research: record accepted R8 curator dispatch
+a296be61d83c853c08fca292c8b288ae4406d849 2026-09-26T07:21:08Z research: bound curator context and dispatch only requested action
+af70220369b2aa8314b1653ed105a7343ec6a0cc 2026-09-26T07:09:18Z research: sync case completion, advance Radar R8 and clear skipped Balashikha
+9211e62a20ce7259f81d5a68db4bebf1070d3759 2026-09-26T07:04:05Z research: run causal R7 comparison and fix Bayesian log-state support
+391ff1313841e580307cfe0a3d4d36e8c418436b 2026-09-26T06:54:03Z research: measure A6 temporal sensitivity with frozen labels and shift control
+e7c0f26564addbe1a768a9c501e7e55c65379359 2026-09-26T06:50:40Z research: audit R8 historical news availability and quarantine quality flags
+c0874ad0e2f111806779921304186bfdd15f3c8f 2026-09-26T06:45:00Z research: pin requested curator action and guard incomplete A6/R8
+da86066d0628c1cdfe30339581fe7d6737b52e28 2026-09-26T06:41:50Z research: record reviewed Atlas A5 PASS and start A6
+ed378e9f7bd4bb815a331fd92a2ea39f982d31a2 2026-09-26T06:33:33Z research: compute A5 graph ablations and separate gate completion
+507c0562eb3cd87f9fb6b0a9180e73fb90a57baf 2026-09-25T19:07:56Z fix(research-drive): wait for E08 evidence at Adam F6
+ca00d21e22be7f957e60ad5669fe2677dbd7f539 2026-09-25T17:57:31Z fix(sberindex): bound curator context to focused case
+c43b54d07f6b46166375a5022e44e7cac84ce3e5 2026-09-25T17:46:22Z fix(sberindex): expose active research actions to curator
+7b065e348b7cb665d0f550a7b8fa7c695a5a9fb0 2026-09-25T13:27:19Z fix(sberindex): skip unchanged blocked research gates
+b1e6102c9ef4cd186b0931cf9d02e5a10d0f1a9f 2026-09-25T13:24:12Z research(sberindex): record Atlas A4 PASS and A5 gate
+3e3ff1eb64b3635c26475b58a74b281142a28848 2026-09-25T13:18:46Z fix(sberindex): accept measured A4 baseline before A9
+96680723941c798e11b07485bf3dd60944927a84 2026-09-25T13:17:23Z research(sberindex): make A4 agreement reproducible
+3b765a053a575a497db5699278a9a2203bf187a1 2026-09-25T13:09:53Z fix(sberindex): use verified A4 and R7 KB receipts
+3e210c92a3035aa980836ec1f2a67ee4647e594b 2026-09-25T13:03:55Z fix(sberindex): retrieve measured A4 comparison evidence
+5bfc5e8d4b87130e6c064da82637b646e32e0c5d 2026-09-25T13:00:45Z research(sberindex): record leakage-free R7 detector comparison
+f06275df89d2f044f14170542577c7121b59344d 2026-09-25T12:58:15Z feat(sberindex): compare A4 clustering and prepare R7 detector evaluation
+5bfdf1ae56301205de6982d35ea991de1644155f 2026-09-25T12:38:23Z fix(sberindex): route A4 and R7 research gates
+6a3232f02c439d385020f9b870d2f6aa7ba97624 2026-09-25T06:03:02Z fix(devops): recover headless loops and surface blockers
+cc1f01b7144673b6762ccb21586f1e90c1221e06 2026-09-24T11:36:21Z research-drive-notify-only-human-required
+883a755d339a4d1998dacd1d131de66435317827 2026-09-24T17:28:12+03:00 radar: R6 PASS (external 45504 + новости 64), current_gate R7
+4fc5caa5acc5ba85134902c0b4a19cc26258050c 2026-09-24T17:23:34+03:00 radar: R6 external.parquet + новостной корпус 64 события
+f83c37ebb0468d59ee096ace382639be2af6ba31 2026-09-24T16:24:18+03:00 radar: погода partial 774 tid (tmean ERA5-Land) + atlas A4
+38aa61a52000599e45605cdcb617bb1ca8910197 2026-09-24T16:21:45+03:00 atlas: A3 PASS (схема подтверждена, 30102 объяснены), current_gate A4
+cd5624f76b936fbaf7aa86b047b0d356e6ddb358 2026-09-24T16:20:31+03:00 atlas: A3 spec v1 — протокол фильтрации 303126->273024
+ced7abaf398c16a2b63101230c2db2474ba241e1 2026-09-24T14:48:46+03:00 atlas: признаки A3 FROZEN v1 — доли, лог, темпы
+db36f571646a78037ed52918ee2ade85fd9ac5d9 2026-09-24T11:05:13Z docs: record 60 news candidates and as-of limits

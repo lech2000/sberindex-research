@@ -1,0 +1,271 @@
+{
+  "agreement": {
+    "ARI": {
+      "E01_kmeans": {
+        "E01_kmeans": 1.0,
+        "E02_louvain": 0.07332247178409165,
+        "E03_spectral_a0": 0.14456911393989372,
+        "E03_spectral_a0.5": 0.07426208734680972,
+        "E03_spectral_a1": 0.0017542892705031247
+      },
+      "E02_louvain": {
+        "E01_kmeans": 0.07332247178409165,
+        "E02_louvain": 1.0,
+        "E03_spectral_a0": 0.014162929605094738,
+        "E03_spectral_a0.5": 0.028287016151496213,
+        "E03_spectral_a1": 0.014657981309914633
+      },
+      "E03_spectral_a0": {
+        "E01_kmeans": 0.14456911393989372,
+        "E02_louvain": 0.014162929605094738,
+        "E03_spectral_a0": 1.0,
+        "E03_spectral_a0.5": 0.4064789932289639,
+        "E03_spectral_a1": -0.027812463425797983
+      },
+      "E03_spectral_a0.5": {
+        "E01_kmeans": 0.07426208734680972,
+        "E02_louvain": 0.028287016151496213,
+        "E03_spectral_a0": 0.4064789932289639,
+        "E03_spectral_a0.5": 1.0,
+        "E03_spectral_a1": 0.4053519383741139
+      },
+      "E03_spectral_a1": {
+        "E01_kmeans": 0.0017542892705031247,
+        "E02_louvain": 0.014657981309914633,
+        "E03_spectral_a0": -0.027812463425797983,
+        "E03_spectral_a0.5": 0.4053519383741139,
+        "E03_spectral_a1": 1.0
+      }
+    },
+    "NMI": {
+      "E01_kmeans": {
+        "E01_kmeans": 1.0,
+        "E02_louvain": 0.22216010383016221,
+        "E03_spectral_a0": 0.3501173197649792,
+        "E03_spectral_a0.5": 0.23357691942519535,
+        "E03_spectral_a1": 0.07258031303019728
+      },
+      "E02_louvain": {
+        "E01_kmeans": 0.22216010383016227,
+        "E02_louvain": 1.0,
+        "E03_spectral_a0": 0.11534579021682612,
+        "E03_spectral_a0.5": 0.25891792647056305,
+        "E03_spectral_a1": 0.17832105023102404
+      },
+      "E03_spectral_a0": {
+        "E01_kmeans": 0.3501173197649791,
+        "E02_louvain": 0.1153457902168261,
+        "E03_spectral_a0": 1.0,
+        "E03_spectral_a0.5": 0.33529907072749193,
+        "E03_spectral_a1": 0.04135055296244594
+      },
+      "E03_spectral_a0.5": {
+        "E01_kmeans": 0.23357691942519535,
+        "E02_louvain": 0.25891792647056305,
+        "E03_spectral_a0": 0.33529907072749193,
+        "E03_spectral_a0.5": 1.0,
+        "E03_spectral_a1": 0.37066279517456036
+      },
+      "E03_spectral_a1": {
+        "E01_kmeans": 0.0725803130301973,
+        "E02_louvain": 0.17832105023102407,
+        "E03_spectral_a0": 0.04135055296244595,
+        "E03_spectral_a0.5": 0.37066279517456036,
+        "E03_spectral_a1": 1.0
+      }
+    }
+  },
+  "alphas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "feature_audit": {
+    "excluded_tids": {},
+    "formula": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m); feature=mean_m(share); z=(feature-mean_tids)/std_tids(ddof=0). Denominator is the 'Все категории' row, never sum6. No fillna(0).",
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_excluded": 0,
+    "n_feature_valid": 1896,
+    "n_months": 24,
+    "zero_variance_features": [],
+    "zscore_mean": {
+      "Здоровье": 0.04850869068123049,
+      "Маркетплейсы": 0.13991997491671831,
+      "Общественное питание": 0.030999235135395566,
+      "Продовольствие": 0.4447764311668819,
+      "Транспорт": 0.057592520000652035
+    },
+    "zscore_std": {
+      "Здоровье": 0.007784672972983397,
+      "Маркетплейсы": 0.032818384822533,
+      "Общественное питание": 0.020401039718559444,
+      "Продовольствие": 0.06160471379913327,
+      "Транспорт": 0.013233288693441309
+    }
+  },
+  "feature_knn_audit": {
+    "k_feat": 5,
+    "kernel": "exp(-d^2/(2*sigma^2)), symmetrisation=max",
+    "sigma_feat": 0.4805992618221754
+  },
+  "gate": "A5",
+  "graph_audit": {
+    "components": [
+      1878,
+      18
+    ],
+    "duplicate_unordered_pairs_min_collapsed": 0,
+    "isolated_tids_no_positive_edge": [],
+    "k_geo": 8,
+    "median_positive_knn_distance": 77.1,
+    "n_components": 2,
+    "n_covered_tids": 1896,
+    "n_directed_kNN_darts": 15168,
+    "n_undirected_edges": 9372,
+    "positive_finite_selected_rows": 1796396,
+    "raw_rows": 3303736,
+    "weight_formula": "w=exp(-distance/median_positive_knn_distance), symmetrisation=max, no self-loops"
+  },
+  "k": 5,
+  "k_feat": 5,
+  "k_geo": 8,
+  "mask": {
+    "geo_excluded_tids": [],
+    "n": 1896,
+    "n_feature_valid": 1896,
+    "n_geo_excluded": 0,
+    "rule": "feature-valid tids INTERSECT tids with >=1 positive finite distance edge to a selected tid; isolates excluded, never bridged"
+  },
+  "methods": {
+    "E01_kmeans": {
+      "calinski_harabasz": 672.9548993212047,
+      "davies_bouldin": 1.3836762181977402,
+      "modularity_geo": 0.3476891114305469,
+      "n_clusters": 5,
+      "silhouette": 0.20971898868646746,
+      "sizes": [
+        251,
+        449,
+        403,
+        402,
+        391
+      ]
+    },
+    "E02_louvain": {
+      "calinski_harabasz": 54.1008763462953,
+      "davies_bouldin": 5.501406395747124,
+      "modularity_geo": 0.8884265919195125,
+      "n_clusters": 33,
+      "silhouette": -0.14027716475877464,
+      "sizes": [
+        9,
+        88,
+        108,
+        53,
+        13,
+        97,
+        15,
+        8,
+        5,
+        58,
+        103,
+        27,
+        74,
+        64,
+        78,
+        2,
+        18,
+        81,
+        30,
+        73,
+        44,
+        71,
+        55,
+        63,
+        67,
+        40,
+        122,
+        52,
+        99,
+        83,
+        101,
+        30,
+        65
+      ]
+    },
+    "E03_spectral_a0": {
+      "calinski_harabasz": 298.62910810046594,
+      "davies_bouldin": 0.7856588399103046,
+      "modularity_geo": 0.2726221494814249,
+      "n_clusters": 5,
+      "silhouette": 0.29275196268803794,
+      "sizes": [
+        1507,
+        2,
+        7,
+        60,
+        320
+      ]
+    },
+    "E03_spectral_a0.5": {
+      "calinski_harabasz": 220.2818886471492,
+      "davies_bouldin": 1.2357174058047158,
+      "modularity_geo": 0.3819242862317956,
+      "n_clusters": 5,
+      "silhouette": 0.19865336410600962,
+      "sizes": [
+        173,
+        1589,
+        13,
+        108,
+        13
+      ]
+    },
+    "E03_spectral_a1": {
+      "calinski_harabasz": 37.08803794597303,
+      "davies_bouldin": 2.4105920177888964,
+      "modularity_geo": 0.05990226995540991,
+      "n_clusters": 5,
+      "silhouette": 0.1111601889312144,
+      "sizes": [
+        1742,
+        5,
+        130,
+        18,
+        1
+      ]
+    }
+  },
+  "mobility": {
+    "note": "mobility-index (594 rows: 297 MO x 2 dates) is a per-territory km index, not an OD matrix; no verified crosswalk to panel tids. No mobility edges invented.",
+    "status": "excluded_no_OD_no_verified_crosswalk"
+  },
+  "note_A4": "A4 labels (2190 tids, 6 share features incl. 'share:Все категории') use a different feature definition and a different mask -- they are NOT a same-mask comparison. E01 above is recomputed on the 1896-mask with the 5-share A3 definition.",
+  "resolution_louvain": 1.0,
+  "seed": 20260921
+}

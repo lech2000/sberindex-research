@@ -1,0 +1,23 @@
+{
+  "cbr_macro": {
+    "file": "curated/cbr-macro-monthly.csv",
+    "rows": 448,
+    "non_null_values": 436,
+    "series": 8,
+    "period_min": "2022-02-01",
+    "period_max": "2026-09-01"
+  },
+  "production_calendar": {
+    "file": "curated/russia-production-calendar.csv",
+    "rows": 1826,
+    "period_min": "2022-01-01",
+    "period_max": "2026-12-31",
+    "status_counts": {
+      "0": 1217,
+      "1": 520,
+      "2": 19,
+      "4": 0,
+      "8": 70
+    }
+  }
+}

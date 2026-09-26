@@ -1,0 +1,13 @@
+{
+  "id": 12120,
+  "title": "Экономический атлас — манифест данных",
+  "filename": "Экономический атлас — манифест данных.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "extract_status": "ok",
+  "text_chars": 644,
+  "truncated": false,
+  "text": "{\n  \"case_id\": \"case_66cae4a89ba6473f\",\n  \"common_datasets\": [\n    \"sberindex_consumer_spending_current\",\n    \"sberindex_mobility_current\",\n    \"sberindex_data_sense_2025_pack\",\n    \"rosstat_municipal_employment_by_industry\"\n  ],\n  \"project_specific\": [\n    \"hse_population_grid_2021\",\n    \"sberindex_municipal_dictionary\",\n    \"rosstat_oktmo_2026_09_01\"\n  ],\n  \"target_table\": \"one row per stable municipality × month with spending shares, population/migration, salary/employment structure, accessibility and mobility where observed\",\n  \"priority_gap\": \"stable municipality crosswalk and a nationwide municipal employment-by-industry export\"\n}",
+  "note": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": 13247,
+  "title": "SberIndex news-event-corpus: RSS discovery started, supersedes waiting_taxonomy (24.09.2026)",
+  "filename": "SberIndex news-event-corpus: RSS discovery started, supersedes waiting_taxonomy (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "repo://ai_OS2/deliverables/sberindex-2026/data/raw/news/manifest.json",
+  "extract_status": "ok",
+  "text_chars": 1715,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 10:27–10:38 UTC на joe: systemd sberindex-news-collect.service в incus aios2, raw manifest и candidates.jsonl, поиск kb-forge по корпусу 76, прямой вызов sberindex_radar_kb_search из tool-service. ОБНОВЛЕНИЕ СОСТОЯНИЯ источника news-event-corpus: старые карточки корпуса 74 со статусами waiting_taxonomy и planned_taxonomy_first устарели. Таксономия R6/R7 FROZEN v1 лежит в shock-radar/protocol/event_taxonomy.yaml. RSS discovery_started: официальный федеральный МЧС https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/rss и МЧС Московской области https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/rss. Первый успешный снимок 24.09.2026 09:55 UTC: 10+10 items, 20 candidate rows, исходные XML, SHA256 и per-run manifest в /opt/aios2/deliverables/sberindex-2026/data/raw/news/raw; сводный candidates.jsonl — 20 idempotent records. У кандидатов есть URL, заголовок, published_at из RSS и first_seen_at фактической загрузки. Статус только DISCOVERED: geography/topic не назначены, исторический корпус 2023–2024 и доступность на forecast origin не доказаны, F06 не измерен. 10:15 плановый тик пропущен из-за deploy lock; 10:27 ручной компенсирующий тик сохранил 10 федеральных, региональный feed ответил TLS timeout; предыдущие 10 региональных item сохранились. Подробные аудиты в корпусе 76: documents 13218, 13219, 13221, 13223, 13229. При поиске R6 сверять эту датированную карточку и документы 13223/13229, не повторять старое \"корпус новостей не собран\" без уточнения различия между кандидатом и модельным событием. Следующее: исторический backfill официальных архивов, геопривязка, topic, deduplication, as-of revision audit, F06 news/no-news. Модельный R6 пока BLOCKED.",
+  "note": null
+}

@@ -1,0 +1,903 @@
+{
+  "name": "СберИндекс — смотритель муниципального графа",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "7 * * * *"
+            }
+          ]
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000001",
+      "name": "Каждый час в :07",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        260,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sberindex-graph-steward",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "g0000000-0000-0000-0000-000000000002",
+      "name": "Запрос живого исследователя",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        260,
+        420
+      ],
+      "webhookId": "sberindex-graph-steward"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const OWNER = 'prn_fbab9aa00cd46169';\nconst body = ($json && typeof $json.body === 'object' && $json.body) ? $json.body : {};\nconst now = new Date();\nconst explicit = typeof body.topic === 'string' && body.topic.trim().length >= 5;\nconst sourceCaseId = typeof body.source_case_id === 'string' ? body.source_case_id.trim() : '';\nconst rawActionId = typeof body.source_action_id === 'string' ? body.source_action_id.trim() : '';\nif (rawActionId && !/^act_[a-f0-9]+$/.test(rawActionId)) throw new Error('Подготовить контекст запуска: source_action_id должен соответствовать ^act_[a-f0-9]+$');\nconst requestedActionId = /^act_[a-f0-9]+$/.test(rawActionId) ? rawActionId : '';\nconst scheduledFocus = ['atlas','radar','graph'][now.getUTCHours() % 3];\nconst proposedKey = explicit && typeof body.run_key === 'string' ? body.run_key : `curator-${now.toISOString().slice(0,13).replace(/[-T:]/g,'')}`;\nconst runKey = String(proposedKey).replace(/[^A-Za-z0-9_.:-]/g, '-').slice(0, 160);\nreturn [{json: {\n  owner: OWNER,\n  run_key: runKey,\n  trigger: explicit ? 'researcher' : 'schedule',\n  requested_topic: explicit ? body.topic.trim().slice(0, 500) : `Плановый фокус ${scheduledFocus}: выбери одно незакрытое действие этого дела и продолжай машинно.`,\n  source_case_id: sourceCaseId,\n  requested_source_action_id: requestedActionId,\n  requested_by: String(body.requested_by || OWNER).slice(0, 64),\n  requested_at: now.toISOString()\n}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000011",
+      "name": "Подготовить контекст запуска",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://case-service:8013/cases/case_66cae4a89ba6473f/actions?principal_id=prn_fbab9aa00cd46169",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000012",
+      "name": "Открытые задачи Atlas",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        760,
+        320
+      ],
+      "alwaysOutputData": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://case-service:8013/cases/case_008f37d03cf541e5/actions?principal_id=prn_fbab9aa00cd46169",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000013",
+      "name": "Открытые задачи Radar",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1020,
+        320
+      ],
+      "alwaysOutputData": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://case-service:8013/cases/case_43de12a8dc2e4abd/actions?principal_id=prn_fbab9aa00cd46169",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000014",
+      "name": "Открытые задачи Graph",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1280,
+        320
+      ],
+      "alwaysOutputData": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Подготовить контекст запуска').item.json;\nconst all = name => $(name).all()\n  .flatMap(item => Array.isArray(item.json) ? item.json : [item.json])\n  .filter(item => item && typeof item === 'object' && item.id && item.done !== true);\nconst compactFocus = (items, requestedId) => {\n  const picked = requestedId ? items.filter(item => String(item.id) === requestedId) : items;\n  return picked.slice(0, requestedId ? 1 : 5).map(item => ({\n    id: String(item.id), case_id: String(item.case_id || ''),\n    what: String(item.what || '').slice(0, 120)\n  }));\n};\nconst atlas = all('Открытые задачи Atlas');\nconst radar = all('Открытые задачи Radar');\nconst graph = all('Открытые задачи Graph');\nconst byCase = {case_66cae4a89ba6473f:'atlas', case_008f37d03cf541e5:'radar', case_43de12a8dc2e4abd:'graph'};\nlet focus = byCase[String(ctx.source_case_id || '').trim()] || '';\nif (!focus) {\n  const topic = String(ctx.requested_topic || '').toLowerCase();\n  if (topic.includes('atlas')) focus = 'atlas';\n  else if (topic.includes('radar')) focus = 'radar';\n  else if (topic.includes('graph')) focus = 'graph';\n}\nif (!focus) focus = 'graph';\nconst requestedId = String(ctx.requested_source_action_id || '');\nif (requestedId) {\n  const reqFocus = byCase[String(ctx.source_case_id || '').trim()] || '';\n  if (!reqFocus) throw new Error(`Собрать незакрытые задачи: requested_source_action_id ${requestedId} требует source_case_id одного из дел atlas/radar/graph`);\n  focus = reqFocus;\n  const focusList = focus === 'atlas' ? atlas : focus === 'radar' ? radar : graph;\n  if (!focusList.some(item => String(item.id) === requestedId)) throw new Error(`Собрать незакрытые задачи: запрошенное действие ${requestedId} не найдено среди незакрытых действий дела ${focus} (закрыто или отсутствует); другое действие не выбирается`);\n}\nreturn [{json: {...ctx,\n  focus,\n  open_actions: {atlas: focus === 'atlas' ? compactFocus(atlas, requestedId) : [], radar: focus === 'radar' ? compactFocus(radar, requestedId) : [], graph: focus === 'graph' ? compactFocus(graph, requestedId) : []},\n  open_counts: {atlas:atlas.length, radar:radar.length, graph:graph.length}\n}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000015",
+      "name": "Собрать незакрытые задачи",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1540,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://dialog-service:8021/dialog",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ case_id: 'case_d058db85c48a487c', case_title: 'СберИндекс 2026 — Куратор исследований', message: `Из open_actions верни 1 DISPATCH_JSON…END_DISPATCH_JSON (один native call; данные не добывай). waiting_human только: закрытый доступ/согласие/решение владельца. hint приоритетен; tool_name только из списка; при call <tool_name> в hint и совпадении действия скопируй его аргументы. Формат: {\\\"schema_version\\\":\\\"1.0\\\",\\\"run_key\\\":\\\"${$json.run_key}\\\",\\\"status\\\":\\\"ready|waiting_human\\\",\\\"needs_human\\\":false,\\\"applies_to\\\":\\\"atlas|radar|graph\\\",\\\"plan_ref\\\":\\\"A1|R0|G0...\\\",\\\"source_case_id\\\":\\\"case_...\\\",\\\"source_action_id\\\":\\\"act_...\\\",\\\"topic\\\":\\\"...\\\",\\\"instruction\\\":\\\"один шаг\\\",\\\"tool_name\\\":\\\"sberindex_data_catalog|sberindex_query_data|sberindex_graph_kb_search|sberindex_directive_kb_search|sberindex_public_channel_record|jina_search_web|jina_read_url|apify_web_research|apify_web_research_results\\\",\\\"tool_args\\\":{},\\\"reason\\\":\\\"...\\\",\\\"human_request\\\":\\\"\\\",\\\"issued_at\\\":\\\"ISO 8601\\\"}. source_action_id только из open_actions; tool_args по схеме инструмента. tool_args: sberindex_data_catalog={dataset?}; sberindex_query_data={dataset,columns?,filters?,limit 1..200}; sberindex_graph_kb_search={query,limit 1..12}; sberindex_directive_kb_search={query,limit 1..12}; sberindex_public_channel_record={label,platform,public_url,channel_kind,officiality,source_ref,checked_at,oktmo,latitude,longitude,geocode_precision,municipality_label,valid_from?}; jina_search_web={query,site?}; jina_read_url={url:https}; apify_web_research={query без site: или https URL,max_results 1..5,wait_seconds:0}; apify_web_research_results={run_id,receipt:64hex,limit 1..5}. apify_web_research_results: run_id — 17-значный id из ответа apify_web_research, receipt — 64 hex оттуда же; run_key контура не подходит; без свежего run_id выбери другой инструмент, run_id не выдумывай; первый Apify всегда wait_seconds=0. Правило: requested_source_action_id непуст→source_action_id=${$json.requested_source_action_id}, иначе любой 1 из open_actions. Вход: ${JSON.stringify({hint:$json.requested_topic,from_case:$json.source_case_id,requested_source_action_id:$json.requested_source_action_id,open_counts:$json.open_counts,open_actions:$json.open_actions})}`, domain: 'software', agent: 'sberindex_research_curator', agent_version: 2, assurance: 2, principal_id: $json.owner, client_message_id: $json.run_key + ':dispatch' }) }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000016",
+      "name": "Попросить куратора выдать задачу",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1800,
+        320
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Собрать незакрытые задачи').item.json;\nconst reply = String($json.reply || '');\nconst match = reply.match(/DISPATCH_JSON\\s*([\\s\\S]*?)\\s*END_DISPATCH_JSON/i) || reply.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\nif (!match) throw new Error('Research Curator не вернул ограниченный DISPATCH_JSON');\nlet raw = match[1].trim().replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/, '');\nlet dispatch;\ntry { dispatch = JSON.parse(raw); } catch (error) { throw new Error(`DISPATCH_JSON не JSON: ${error.message}`); }\nconst fail = message => { throw new Error(`DISPATCH_JSON: ${message}`); };\nif (!dispatch || typeof dispatch !== 'object' || Array.isArray(dispatch)) fail('нужен объект');\nif (dispatch.schema_version !== '1.0' || dispatch.run_key !== ctx.run_key) fail('schema_version/run_key');\nif (!['ready','waiting_human'].includes(dispatch.status)) fail('status');\nif (typeof dispatch.needs_human !== 'boolean' || dispatch.needs_human !== (dispatch.status === 'waiting_human')) fail('needs_human/status');\nif (!['atlas','radar','graph'].includes(dispatch.applies_to)) fail('applies_to');\nconst allowedTools = new Set(['sberindex_data_catalog','sberindex_query_data','sberindex_graph_kb_search','sberindex_directive_kb_search','sberindex_public_channel_record','jina_search_web','jina_read_url','apify_web_research','apify_web_research_results']);\nif (!allowedTools.has(dispatch.tool_name)) fail('tool_name');\nif (!dispatch.tool_args || typeof dispatch.tool_args !== 'object' || Array.isArray(dispatch.tool_args) || JSON.stringify(dispatch.tool_args).length > 2200) fail('tool_args');\nconst schemas = {\n  sberindex_data_catalog: {allowed:['dataset'], required:[]},\n  sberindex_query_data: {allowed:['dataset','columns','filters','limit'], required:['dataset']},\n  sberindex_graph_kb_search: {allowed:['query','limit'], required:['query']},\n  sberindex_directive_kb_search: {allowed:['query','limit'], required:['query']},\n  sberindex_public_channel_record: {allowed:['label','platform','public_url','channel_kind','officiality','source_ref','checked_at','oktmo','latitude','longitude','geocode_precision','municipality_label','valid_from'], required:['label','platform','public_url','channel_kind','officiality','source_ref','checked_at','oktmo','latitude','longitude','geocode_precision','municipality_label']},\n  jina_search_web: {allowed:['query','site'], required:['query']},\n  jina_read_url: {allowed:['url'], required:['url']},\n  apify_web_research: {allowed:['query','max_results','wait_seconds'], required:['query','wait_seconds']},\n  apify_web_research_results: {allowed:['run_id','receipt','limit'], required:['run_id','receipt']}\n};\nconst spec = schemas[dispatch.tool_name];\nconst argKeys = Object.keys(dispatch.tool_args);\nif (argKeys.some(key => !spec.allowed.includes(key)) || spec.required.some(key => !(key in dispatch.tool_args))) fail('tool_args не соответствуют схеме инструмента');\nif (['sberindex_graph_kb_search','sberindex_directive_kb_search','jina_search_web','apify_web_research'].includes(dispatch.tool_name) && (typeof dispatch.tool_args.query !== 'string' || dispatch.tool_args.query.trim().length < 2)) fail('tool_args.query');\nif (dispatch.tool_name === 'jina_read_url' && (typeof dispatch.tool_args.url !== 'string' || !/^https:\\/\\//.test(dispatch.tool_args.url))) fail('tool_args.url');\nif (dispatch.tool_name === 'sberindex_query_data' && typeof dispatch.tool_args.dataset !== 'string') fail('tool_args.dataset');\nif (dispatch.tool_name === 'apify_web_research') {\n  const apifyQuery = dispatch.tool_args.query.trim();\n  if (/^[A-Za-z][A-Za-z0-9+.-]*:/.test(apifyQuery) && !/^https:\\/\\//i.test(apifyQuery)) fail('Apify query: псевдосхемы вроде site: запрещены; нужен естественный текст или полный https URL');\n  if (dispatch.tool_args.wait_seconds !== 0) fail('apify_web_research обязан быть асинхронным: wait_seconds=0');\n  if ('max_results' in dispatch.tool_args && (!Number.isInteger(dispatch.tool_args.max_results) || dispatch.tool_args.max_results < 1 || dispatch.tool_args.max_results > 5)) fail('tool_args.max_results');\n}\nif (dispatch.tool_name === 'apify_web_research_results') {\n  if (typeof dispatch.tool_args.run_id !== 'string' || !/^[A-Za-z0-9]{17}$/.test(dispatch.tool_args.run_id)) fail('tool_args.run_id [hint: run_id — это 17-значный id Apify-запуска из ответа apify_web_research (поле run_id), а НЕ run_key контура вида curator-YYYYMMDDHH; receipt — 64 hex-символа из того же ответа]');\n  if (typeof dispatch.tool_args.receipt !== 'string' || !/^[A-Fa-f0-9]{64}$/.test(dispatch.tool_args.receipt)) fail('tool_args.receipt [hint: receipt — 64 hex-символа capability из ответа apify_web_research (поле receipt для ЭТОГО run_id и ЭТОГО плательщика); чек чужого запуска не подойдёт]');\n}\nif (typeof dispatch.plan_ref !== 'string' || !/^[ARG]\\d{1,2}(?:[.-][A-Za-z0-9]+)?$/.test(dispatch.plan_ref)) fail('plan_ref');\nconst cases = {atlas:'case_66cae4a89ba6473f', radar:'case_008f37d03cf541e5', graph:'case_43de12a8dc2e4abd'};\nif (dispatch.source_case_id !== cases[dispatch.applies_to]) fail('source_case_id не совпадает с applies_to');\nconst action = (ctx.open_actions[dispatch.applies_to] || []).find(item => item.id === dispatch.source_action_id);\nif (!action) fail('source_action_id не найден среди незакрытых действий');\nconst requestedId = String(ctx.requested_source_action_id || '');\nif (requestedId && dispatch.source_action_id !== requestedId) fail(`source_action_id ${dispatch.source_action_id} не совпадает с запрошенным ${requestedId}`);\nif (requestedId && dispatch.applies_to !== ctx.focus) fail(`applies_to ${dispatch.applies_to} не совпадает с focus ${ctx.focus} запрошенного действия`);\nfor (const [field, min, max] of [['topic',5,500],['instruction',10,500],['reason',5,1000]]) {\n  if (typeof dispatch[field] !== 'string' || dispatch[field].trim().length < min || dispatch[field].length > max) fail(field);\n}\nif (!dispatch.issued_at || Number.isNaN(Date.parse(dispatch.issued_at))) fail('issued_at');\ndispatch.issued_at = new Date().toISOString();\nif (dispatch.needs_human && (typeof dispatch.human_request !== 'string' || dispatch.human_request.trim().length < 5)) fail('human_request');\nif (!dispatch.needs_human) dispatch.human_request = '';\nconst url = 'https://agrigate.pro/v2/#case/case_d058db85c48a487c';\nconst text = `# Задание Research Curator\\n\\nrun_key: ${ctx.run_key}\\nstatus: ${dispatch.status}\\nplan_ref: ${dispatch.plan_ref}\\nsource_case_id: ${dispatch.source_case_id}\\nsource_action_id: ${dispatch.source_action_id}\\nissued_at: ${dispatch.issued_at}\\n\\n${JSON.stringify(dispatch, null, 2)}`;\nreturn [{json: {...ctx, dispatch, title: `Curator dispatch ${ctx.run_key}: ${dispatch.plan_ref}`.slice(0,300), url, text, meta: {project:'sberindex-2026', kind:'research_curator_dispatch', curator_case_id:'case_d058db85c48a487c', run_key:ctx.run_key, status:dispatch.status, applies_to:dispatch.applies_to, plan_ref:dispatch.plan_ref, source_case_id:dispatch.source_case_id, source_action_id:dispatch.source_action_id, issued_at:dispatch.issued_at, schema_version:'1.0'}}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000017",
+      "name": "Проверить DISPATCH_JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2060,
+        320
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://10.189.141.165:8300/api/corpora/77/documents/integrate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ title: $json.title, url: $json.url, text: $json.text, meta: $json.meta }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000018",
+      "name": "Ingest задания куратора",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2320,
+        320
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "needs-human-condition",
+              "leftValue": "={{ $('Проверить DISPATCH_JSON').item.json.dispatch.needs_human }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "g0000000-0000-0000-0000-000000000019",
+      "name": "Нужен человек?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2580,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const base = $('Проверить DISPATCH_JSON').item.json;\nconst d = base.dispatch;\nconst state = $getWorkflowStaticData('global');\nconst key = `${d.source_action_id}:${d.human_request}`;\nif (state.lastHumanRequestKey === key) return [];\nstate.lastHumanRequestKey = key;\nconst caseUrl = `https://agrigate.pro/v2/#case/${d.source_case_id}`;\nconst text = `🧭 СберИндекс: нужен Сергей\\n\\n${d.plan_ref}: ${d.topic}\\n\\nЧто нужно: ${d.human_request}\\n\\nПочему агент не может продолжить сам: ${d.reason}\\n\\nДело: ${caseUrl}\\nrun_key: ${base.run_key}`.slice(0,3900);\nreturn [{json:{chat_id:'30706370', text, run_key:base.run_key, notification_key:key}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000020",
+      "name": "Подготовить сообщение человеку",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2840,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{$env.FAM_BOT_TOKEN}}/sendMessage",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.chat_id, text: $json.text, disable_web_page_preview: true }) }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000021",
+      "name": "Telegram: нужен человек",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3100,
+        120
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const base = $('Проверить DISPATCH_JSON').item.json;\nconst d = base.dispatch;\nconst CASE_ID = 'case_43de12a8dc2e4abd';\nconst topic = d.topic.trim().slice(0, 500);\nconst args = JSON.stringify(d.tool_args);\nconst instruction = d.instruction.trim().slice(0, 500);\nconst channelSchema = /public_channel|t\\.me|max\\.ru/i.test(`${topic} ${d.instruction}`) ? ' Для Telegram/MAX entity_id public_channel:* ОБЯЗАТЕЛЬНО entity_type=public_channel и поля: platform=telegram|max, public_url, channel_kind=channel|chat, officiality=confirmed|candidate|unverified, source_ref HTTPS, checked_at ISO, oktmo 8 или 11 цифр, latitude, longitude, geocode_precision=building|street|settlement|municipality_centroid. Нельзя использовать entity_type=source, channel_kind=municipal_administration или geocode_precision=centroid_from_boundary. Все обязательные поля должны физически лежать внутри объекта entities[], а не только в claim или таблице GATE_REPORT. Если хотя бы одного поля нет в результате инструмента, не создавай сущность: status=blocked. Добавь связь OPERATED_BY, SERVES_TERRITORY либо LOCATED_IN.' : '';\nconst discoveryBoundary = /discovery-only|entities\\s*=\\s*\\[\\]/i.test(`${topic} ${instruction}`) ? ' Это discovery-only проход: entities ОБЯЗАН быть [], relations ОБЯЗАН быть []; кандидаты и ссылки перечисли только в claims. Не создавай вершину public_channel даже если поиск вернул канал.' : '';\nconst persistenceBoundary = d.tool_name === 'sberindex_public_channel_record' ? ' ВАЖНО: инструмент только детерминированно нормализует запись и ничего сам не сохраняет. Не утверждай, что инструмент уже записал сущность в corpus 77. Скажи, что валидная запись подготовлена; n8n выполнит ingest после проверки EVIDENCE_JSON.' : '';\nconst message = `Один атомарный проход по заданию Research Curator. run_key=${base.run_key}. plan_ref=${d.plan_ref}. source_case_id=${d.source_case_id}. source_action_id=${d.source_action_id}. Тема: ${topic}. Инструкция куратора: ${instruction}. Сделай РОВНО ОДИН настоящий native-вызов инструмента ${d.tool_name} с аргументами ${args}. Другие инструменты не вызывай. После фактического результата сразу верни EVIDENCE_JSON ... END_EVIDENCE_JSON schema_version 1.0 с полями run_key, topic, source_url, checked_at, status, entities, relations, claims, confidence и короткий GATE_REPORT. Не печатай псевдовызов. Для локального набора или корпуса используй source_url=https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd и назови набор/корпус в claim. Для веба используй фактический HTTPS URL. Если инструмент не закрыл пробел или Apify ещё выполняется, status=blocked либо proposed и зафиксируй квитанцию/следующий машинный шаг. Не проси человека, пока доступен машинный путь. Не смешивай observed, source_estimate, model_estimate и synthetic_assumption.${channelSchema}${discoveryBoundary}${persistenceBoundary}`;\nreturn [{json: {...base, case_id: CASE_ID, topic, message}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000003",
+      "name": "Подготовить атомарный проход",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2840,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://dialog-service:8021/dialog",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ case_id: $json.case_id, case_title: 'СберИндекс 2026 — Граф муниципалитетов', message: $json.message, domain: 'software', agent: 'sberindex_graph_steward', agent_version: 2, assurance: 2, principal_id: $json.owner, client_message_id: $json.run_key }) }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000004",
+      "name": "Запустить Graph Steward",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3100,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Подготовить атомарный проход').item.json;\nconst reply = String($json.reply || '');\nconst match = reply.match(/EVIDENCE_JSON\\s*([\\s\\S]*?)\\s*END_EVIDENCE_JSON/i);\nif (!match) throw new Error('Graph Steward не вернул ограниченный EVIDENCE_JSON');\nlet raw = match[1].trim().replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/, '');\nlet evidence;\ntry { evidence = JSON.parse(raw); } catch (error) { throw new Error(`EVIDENCE_JSON не JSON: ${error.message}`); }\nconst fail = message => { throw new Error(`EVIDENCE_JSON: ${message}`); };\nconst provenance = new Set(['observed','source_estimate','model_estimate','synthetic_assumption']);\nif (!evidence || typeof evidence !== 'object' || Array.isArray(evidence)) fail('нужен объект');\nif (evidence.schema_version !== '1.0') fail('schema_version должен быть 1.0');\nif (evidence.run_key !== ctx.run_key) fail('run_key не совпал с заданием');\nif (String(evidence.topic || '').trim().length < 5) fail('topic пуст');\nconst https = value => typeof value === 'string' && /^https:\\/\\/[^\\s]+$/i.test(value);\nif (!https(evidence.source_url)) fail('source_url обязан быть https URL');\nif (!evidence.checked_at || Number.isNaN(Date.parse(evidence.checked_at))) fail('checked_at обязан быть ISO-временем');\nif (!['verified','proposed','blocked'].includes(evidence.status)) fail('неизвестный status');\nif (typeof evidence.confidence !== 'number' || evidence.confidence < 0 || evidence.confidence > 1) fail('confidence вне 0..1');\nfor (const [name, max] of [['entities',100],['relations',200],['claims',100]]) {\n  if (!Array.isArray(evidence[name]) || evidence[name].length > max) fail(`${name}: неверный тип или размер`);\n}\nconst discoveryOnly = /discovery-only|entities\\s*=\\s*\\[\\]/i.test(`${ctx.topic || ''} ${ctx.dispatch?.instruction || ''}`);\nif (discoveryOnly && (evidence.entities.length || evidence.relations.length)) fail('discovery-only требует entities=[] и relations=[]');\nconst ids = new Set();\nconst channelIds = new Set();\nconst linkedChannelIds = new Set();\nfor (const entity of evidence.entities) {\n  if (!entity || typeof entity.entity_id !== 'string' || entity.entity_id.length < 3 || ids.has(entity.entity_id)) fail('entity_id пуст или повторён');\n  if (!['municipality','organization','public_channel','dataset','indicator','event','source','synthetic_actor'].includes(entity.entity_type)) fail(`entity_type ${entity.entity_type}`);\n  const channelLike = entity.entity_id.startsWith('public_channel:') || (typeof entity.source_ref === 'string' && /^https:\\/\\/(?:t\\.me|telegram\\.me|max\\.ru)\\//i.test(entity.source_ref));\n  if (channelLike && entity.entity_type !== 'public_channel') fail('Telegram/MAX площадка обязана иметь entity_type public_channel');\n  if (!provenance.has(entity.provenance_class)) fail('неверный provenance сущности');\n  if (entity.provenance_class === 'synthetic_assumption' && entity.entity_type !== 'synthetic_actor') fail('синтетическая сущность обязана иметь тип synthetic_actor');\n  if (entity.entity_type === 'public_channel') {\n    if (!['telegram','max'].includes(entity.platform)) fail('public_channel platform');\n    if (typeof entity.public_url !== 'string' || !/^https:\\/\\/(?:t\\.me|telegram\\.me|max\\.ru)\\/[^\\s/?#]+\\/?$/i.test(entity.public_url)) fail('public_channel public_url');\n    if (!['channel','chat'].includes(entity.channel_kind)) fail('public_channel channel_kind');\n    if (!['confirmed','candidate','unverified'].includes(entity.officiality)) fail('public_channel officiality');\n    if (!https(entity.source_ref) || !entity.checked_at || Number.isNaN(Date.parse(entity.checked_at))) fail('public_channel source_ref/checked_at');\n    if (typeof entity.oktmo !== 'string' || !/^[0-9]{8}(?:[0-9]{3})?$/.test(entity.oktmo)) fail('public_channel oktmo');\n    if (typeof entity.latitude !== 'number' || entity.latitude < -90 || entity.latitude > 90 || typeof entity.longitude !== 'number' || entity.longitude < -180 || entity.longitude > 180) fail('public_channel coordinates');\n    if (!['building','street','settlement','municipality_centroid'].includes(entity.geocode_precision)) fail('public_channel geocode_precision');\n    channelIds.add(entity.entity_id);\n  }\n  ids.add(entity.entity_id);\n}\nfor (const relation of evidence.relations) {\n  if (!ids.has(relation.source_entity_id) || !ids.has(relation.target_entity_id)) fail('relation ссылается на неизвестную сущность');\n  if (!provenance.has(relation.provenance_class) || !https(relation.evidence_url)) fail('relation без provenance/https evidence');\n  if (typeof relation.confidence !== 'number' || relation.confidence < 0 || relation.confidence > 1) fail('relation confidence вне 0..1');\n  const channelId = channelIds.has(relation.source_entity_id) ? relation.source_entity_id : (channelIds.has(relation.target_entity_id) ? relation.target_entity_id : '');\n  if (channelId) {\n    if (!['OPERATED_BY','SERVES_TERRITORY','LOCATED_IN'].includes(relation.relation_type)) fail('public_channel relation_type');\n    linkedChannelIds.add(channelId);\n  }\n}\nfor (const channelId of channelIds) if (!linkedChannelIds.has(channelId)) fail('public_channel обязан быть связан с municipality или organization');\nfor (const claim of evidence.claims) {\n  if (typeof claim.statement !== 'string' || claim.statement.trim().length < 3) fail('claim без statement');\n  if (!provenance.has(claim.provenance_class) || !https(claim.evidence_url)) fail('claim без provenance/https evidence');\n  if (typeof claim.confidence !== 'number' || claim.confidence < 0 || claim.confidence > 1) fail('claim confidence вне 0..1');\n}\nif (ctx.dispatch && ctx.dispatch.tool_name === 'sberindex_public_channel_record' && evidence.claims.some(claim => /инструмент.+(?:записал|сохранил).+(?:corpus|корпус|staging)/i.test(String(claim.statement || '')))) fail('sberindex_public_channel_record нормализует, но не записывает; ingest выполняет n8n после этой проверки');\nif (evidence.status === 'verified' && evidence.claims.length === 0) fail('verified требует хотя бы один claim');\nconst text = `# Муниципальный граф — staging evidence\\n\\nrun_key: ${ctx.run_key}\\ntrigger: ${ctx.trigger}\\nstatus: ${evidence.status}\\nchecked_at: ${evidence.checked_at}\\nsource: ${evidence.source_url}\\n\\n${JSON.stringify(evidence, null, 2)}`;\nreturn [{json: {title: `Graph evidence ${ctx.run_key}: ${ctx.topic}`.slice(0, 300), url: evidence.source_url, text, meta: {project: 'sberindex-2026', kind: 'municipality_graph_evidence', case_id: ctx.case_id, run_key: ctx.run_key, topic: ctx.topic, trigger: ctx.trigger, status: evidence.status, checked_at: evidence.checked_at, schema_version: '1.0'}, evidence}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000005",
+      "name": "Проверить EVIDENCE_JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3360,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://10.189.141.165:8300/api/corpora/77/documents/integrate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ title: $json.title, url: $json.url, text: $json.text, meta: $json.meta }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000006",
+      "name": "Ingest в corpus 77",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3620,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://dialog-service:8021/dialog",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ case_id: 'case_d058db85c48a487c', case_title: 'СберИндекс 2026 — Куратор исследований', message: `Прими один staging-результат Graph Steward и сверь его с планами A0–A10, R0–R10 и G0–G5. Не добывай новые внешние данные. Верни ровно CURATOR_JSON … END_CURATOR_JSON по схеме 1.0 и затем CURATOR_REPORT. run_key обязан совпасть. Evidence уже записано в corpus 77 предыдущим узлом n8n; квитанция ingest ниже является авторитетным подтверждением сохранения. Если квитанция содержит document_id/id или duplicate=true, не отправляй повторно проверять наличие семантическим поиском. Входное evidence:\n${JSON.stringify($('Проверить EVIDENCE_JSON').item.json.evidence)}\nКвитанция ingest corpus 77:\n${JSON.stringify($('Ingest в corpus 77').item.json)}`, domain: 'software', agent: 'sberindex_research_curator', agent_version: 2, assurance: 2, principal_id: 'prn_fbab9aa00cd46169', client_message_id: $('Подготовить атомарный проход').item.json.run_key + ':curator' }) }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000008",
+      "name": "Передать куратору",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3880,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Подготовить атомарный проход').item.json;\nconst evidence = $('Проверить EVIDENCE_JSON').item.json.evidence;\nconst reply = String($json.reply || '');\nconst match = reply.match(/CURATOR_JSON\\s*([\\s\\S]*?)\\s*END_CURATOR_JSON/i) || reply.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\nif (!match) throw new Error('Curator не вернул ограниченный CURATOR_JSON');\nlet raw = match[1].trim().replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/, '');\nlet decision;\ntry { decision = JSON.parse(raw); } catch (error) { throw new Error(`CURATOR_JSON не JSON: ${error.message}`); }\nconst fail = message => { throw new Error(`CURATOR_JSON: ${message}`); };\nif (!decision || typeof decision !== 'object' || Array.isArray(decision)) fail('нужен объект');\nif (decision.schema_version !== '1.0' || decision.run_key !== ctx.run_key) fail('schema_version/run_key');\nif (!['accept','rework','blocked'].includes(decision.verdict)) fail('verdict');\nif (!Array.isArray(decision.applies_to) || decision.applies_to.length < 1 || decision.applies_to.length > 3 || decision.applies_to.some(x => !['graph','atlas','radar'].includes(x))) fail('applies_to');\nif (!Array.isArray(decision.plan_refs) || decision.plan_refs.length > 20 || decision.plan_refs.some(x => typeof x !== 'string' || !x.trim())) fail('plan_refs');\nfor (const field of ['accepted_claim_indexes','rejected_claim_indexes']) {\n  if (!Array.isArray(decision[field]) || decision[field].length > 100 || decision[field].some(x => !Number.isInteger(x) || x < 0 || x >= evidence.claims.length)) fail(field);\n}\nconst overlap = decision.accepted_claim_indexes.filter(x => decision.rejected_claim_indexes.includes(x));\nif (overlap.length) fail('claim одновременно принят и отклонён');\nif (!Array.isArray(decision.gaps) || decision.gaps.length > 50) fail('gaps');\nfor (const gap of decision.gaps) {\n  if (!gap || typeof gap.statement !== 'string' || gap.statement.trim().length < 3 || !['low','medium','high','blocking'].includes(gap.severity) || typeof gap.required_evidence !== 'string' || gap.required_evidence.trim().length < 3) fail('gap');\n}\nif (typeof decision.next_action !== 'string' || decision.next_action.trim().length < 5 || decision.next_action.length > 1000) fail('next_action');\nif (typeof decision.next_topic !== 'string' || decision.next_topic.trim().length < 5 || decision.next_topic.length > 500) fail('next_topic');\nif (!decision.reviewed_at || Number.isNaN(Date.parse(decision.reviewed_at))) fail('reviewed_at');\nif (typeof decision.confidence !== 'number' || decision.confidence < 0 || decision.confidence > 1) fail('confidence');\nif (decision.verdict === 'accept' && evidence.claims.length && decision.accepted_claim_indexes.length === 0) fail('accept без принятого claim');\nconst text = `# Решение куратора исследований\\n\\nrun_key: ${ctx.run_key}\\nverdict: ${decision.verdict}\\nreviewed_at: ${decision.reviewed_at}\\nsource: ${evidence.source_url}\\n\\n${JSON.stringify(decision, null, 2)}`;\nreturn [{json: {title: `Curator decision ${ctx.run_key}: ${decision.verdict}`.slice(0, 300), url: evidence.source_url, text, meta: {project: 'sberindex-2026', kind: 'research_curator_decision', curator_case_id: 'case_d058db85c48a487c', source_case_id: ctx.case_id, run_key: ctx.run_key, verdict: decision.verdict, applies_to: decision.applies_to, reviewed_at: decision.reviewed_at, schema_version: '1.0'}, decision}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000009",
+      "name": "Проверить CURATOR_JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4140,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://10.189.141.165:8300/api/corpora/77/documents/integrate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ title: $json.title, url: $json.url, text: $json.text, meta: $json.meta }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000010",
+      "name": "Ingest решения куратора",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4400,
+        420
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Подготовить атомарный проход').item.json;\nconst dispatch = $('Проверить DISPATCH_JSON').item.json.dispatch;\nconst checked = $('Проверить EVIDENCE_JSON').item.json;\nconst curated = $('Проверить CURATOR_JSON').item.json;\nconst graphReceipt = $('Ingest в corpus 77').item.json;\nreturn [{json: {accepted:true, workflow:'sberindex-curator-dispatch', graph_case_id:ctx.case_id, curator_case_id:'case_d058db85c48a487c', corpus_id:77, run_key:ctx.run_key, plan_ref:dispatch.plan_ref, source_case_id:dispatch.source_case_id, source_action_id:dispatch.source_action_id, topic:ctx.topic, status:checked.evidence.status, source_url:checked.evidence.source_url, curator_verdict:curated.decision.verdict, next_action:curated.decision.next_action, next_topic:curated.decision.next_topic, graph_kb_receipt:graphReceipt, curator_kb_receipt:$json}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000007",
+      "name": "Вернуть квитанцию",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4660,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const ctx = $('Подготовить контекст запуска').item.json;\nconst raw = $json && typeof $json === 'object' ? $json : {};\nconst message = String(raw.error?.message || raw.message || raw.description || JSON.stringify(raw)).slice(0, 1200);\nconst node = String(raw.error?.node?.name || raw.node || 'sberindex-curator-loop').slice(0, 160);\nconst day = new Date().toISOString().slice(0,10);\nconst signature = `${day}:${node}:${message.slice(0,300)}`;\nconst state = $getWorkflowStaticData('global');\nif (state.lastF7bSignature === signature) return [];\nstate.lastF7bSignature = signature;\nconst body = `[F7b] Сбой исследовательского контура СберИндекса. Узел: ${node}. run_key=${ctx.run_key}. Ошибка: ${message}`.slice(0,2000);\nconst context = {case:'case_d058db85c48a487c', domain:'software', scenario:'sberindex_curator_dispatch', errors:[{path:node,status:'workflow_error',reason:message,at:new Date().toISOString()}]};\nconst lessonText = `Сбой контура Research Curator → Graph Steward\\nДата: ${new Date().toISOString()}\\nrun_key: ${ctx.run_key}\\nУзел: ${node}\\nОшибка: ${message}\\nТребуется воспроизвести, исправить маршрут или runtime и проверить сквозным smoke.`;\nconst telegramText = `🚨 СберИндекс: системный сбой\\n\\nКуратор не смог выдать или провести исполнимое задание. Создан вход F7b и problem report.\\n\\nУзел: ${node}\\nОшибка: ${message.slice(0,900)}\\nrun_key: ${ctx.run_key}`.slice(0,3900);\nreturn [{json:{run_key:ctx.run_key, report_payload:{principal_id:ctx.owner,body,context}, lesson_payload:{title:`F7b SberIndex curator failure ${ctx.run_key}`.slice(0,300),url:'https://agrigate.pro/v2/#case/case_d058db85c48a487c',text:lessonText,meta:{kind:'lesson',date:day,direction:'platform',severity:'major',target_loop:'F7b',proposed_action:'code_fix',status:'proposed',project:'sberindex-2026',run_key:ctx.run_key}}, telegram_text:telegramText}}];"
+      },
+      "id": "g0000000-0000-0000-0000-000000000022",
+      "name": "Сформировать F7b bug report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2840,
+        760
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://identity-service:8010/reports",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.report_payload) }}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000023",
+      "name": "Создать problem report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3100,
+        760
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://10.189.141.165:8300/api/corpora/62/documents/integrate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ (() => { const bug=$('Сформировать F7b bug report').item.json; const reportId=String($json.id || ''); const payload=JSON.parse(JSON.stringify(bug.lesson_payload)); payload.meta.source_report_ids=reportId.startsWith('rep_')?[reportId]:[]; return JSON.stringify(payload); })() }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000024",
+      "name": "Ingest F7b в corpus 62",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3360,
+        760
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{$env.FAM_BOT_TOKEN}}/sendMessage",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: '30706370', text: $('Сформировать F7b bug report').item.json.telegram_text, disable_web_page_preview: true }) }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "g0000000-0000-0000-0000-000000000025",
+      "name": "Telegram: системный сбой",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3620,
+        760
+      ],
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "connections": {
+    "Каждый час в :07": {
+      "main": [
+        [
+          {
+            "node": "Подготовить контекст запуска",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Запрос живого исследователя": {
+      "main": [
+        [
+          {
+            "node": "Подготовить контекст запуска",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Подготовить контекст запуска": {
+      "main": [
+        [
+          {
+            "node": "Открытые задачи Atlas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Открытые задачи Atlas": {
+      "main": [
+        [
+          {
+            "node": "Открытые задачи Radar",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Открытые задачи Radar": {
+      "main": [
+        [
+          {
+            "node": "Открытые задачи Graph",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Открытые задачи Graph": {
+      "main": [
+        [
+          {
+            "node": "Собрать незакрытые задачи",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Собрать незакрытые задачи": {
+      "main": [
+        [
+          {
+            "node": "Попросить куратора выдать задачу",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Попросить куратора выдать задачу": {
+      "main": [
+        [
+          {
+            "node": "Проверить DISPATCH_JSON",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Проверить DISPATCH_JSON": {
+      "main": [
+        [
+          {
+            "node": "Ingest задания куратора",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ingest задания куратора": {
+      "main": [
+        [
+          {
+            "node": "Нужен человек?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Нужен человек?": {
+      "main": [
+        [
+          {
+            "node": "Подготовить сообщение человеку",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Подготовить атомарный проход",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Подготовить сообщение человеку": {
+      "main": [
+        [
+          {
+            "node": "Telegram: нужен человек",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Подготовить атомарный проход": {
+      "main": [
+        [
+          {
+            "node": "Запустить Graph Steward",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Запустить Graph Steward": {
+      "main": [
+        [
+          {
+            "node": "Проверить EVIDENCE_JSON",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Проверить EVIDENCE_JSON": {
+      "main": [
+        [
+          {
+            "node": "Ingest в corpus 77",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ingest в corpus 77": {
+      "main": [
+        [
+          {
+            "node": "Передать куратору",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Передать куратору": {
+      "main": [
+        [
+          {
+            "node": "Проверить CURATOR_JSON",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Проверить CURATOR_JSON": {
+      "main": [
+        [
+          {
+            "node": "Ingest решения куратора",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ingest решения куратора": {
+      "main": [
+        [
+          {
+            "node": "Вернуть квитанцию",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Сформировать F7b bug report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Сформировать F7b bug report": {
+      "main": [
+        [
+          {
+            "node": "Создать problem report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Создать problem report": {
+      "main": [
+        [
+          {
+            "node": "Ingest F7b в corpus 62",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ingest F7b в corpus 62": {
+      "main": [
+        [
+          {
+            "node": "Telegram: системный сбой",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "c77abdf0-8e9b-49ab-89ca-24503e90e2c8",
+  "meta": null,
+  "pinData": {},
+  "staticData": null,
+  "notes": "Research Curator dispatches one live open action before every Graph Steward pass. waiting_human sends one deduplicated Telegram request; workflow failures create a problem_report, immediate F7b lesson in corpus 62, and Telegram alert."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 13562,
+  "title": "SberIndex R7: D01/D02/D03 без утечки, проверка 25.09.2026",
+  "filename": "SberIndex R7: D01/D02/D03 без утечки, проверка 25.09.2026.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_008f37d03cf541e5",
+  "extract_status": "ok",
+  "text_chars": 1566,
+  "truncated": false,
+  "text": "Проверено 25.09.2026: F7b-модуль d02_d03_detectors.py (prod коммит f06275df8) прошёл self_check включая future-alarm leak probe и полный прогон на 111522 строках R5_cus.parquet (SHA256 dfa8ecfdbdf62cefb3bf5a89304e3e63dca82ca93aafeebb4e2a9cead6d52047), registry.parquet 60 синтетических инъекций (SHA256 6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070). Validation [2024-03,2024-07), test с 2024-07; matching ±1 месяц, cooldown 3 месяца на ряд. Validation строго до test; лимит тестовых тревог = round(287 D01 validation alarms / 3 validation months × 6 test months) = 574, одинаков для D01/D02/D03. Результаты test: D01: hits 16/28, recall 0.571, precision 0.0279, false_alarms 558, delay_signed_mean 1.0, lead_mean_m 0.0; D02: hits 7/28, recall 0.25, precision 0.0122, false_alarms 567, delay_signed_mean 0.14, lead_mean_m 0.0; D03: hits 0/28, recall 0.0, precision 0.0, false_alarms 574, delay_signed_mean None, lead_mean_m 0.0. Полные артефакты: deliverables/sberindex-2026/shock-radar/runs/R7/manifest.json, metrics.json, alerts.parquet; Git prod 5bfc5e8d4. Ограничение: ряд остатков только апрель–декабрь 2024, нет отдельной pre-train части до марта, validation 3 месяца; это технический exploratory test на синтетике, не подтверждение раннего предупреждения реальных шоков. При равном бюджете D01 лучше D02/D03 по recall и precision, но 558 ложных тревог и нулевая lead time делают R7 BLOCKED для прикладного предупреждения. Ранее D01 recall 0.964 считался по другому протоколу (окно ±2 месяца и иной бюджет), эти цифры напрямую не сравнивать.",
+  "note": null
+}

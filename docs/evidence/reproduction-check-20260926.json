@@ -1,0 +1,33 @@
+{
+  "a5": {
+    "numeric_fields_compared": 165,
+    "differences": [],
+    "relative_absolute_tolerance": 1e-08
+  },
+  "a6": {
+    "numeric_fields_compared": 1042,
+    "differences": [],
+    "relative_absolute_tolerance": 1e-08
+  },
+  "r8": {
+    "numeric_fields_compared": 12,
+    "differences": [],
+    "relative_absolute_tolerance": 1e-08
+  },
+  "verified_at": "2026-09-26T08:32:14.046205+00:00",
+  "runtime": {
+    "python": "3.14.4",
+    "platform": "Mac arm64",
+    "requirements": "requirements.txt"
+  },
+  "self_check_modules": 6,
+  "r7_detectors_full_repeat": false,
+  "r7_note": "R7 detector code unchanged; meaningful native selfchecks passed. Prior full calculation retained; no new full9minute detector claim.",
+  "r7_signal": {
+    "rows": 287268,
+    "columns": 6,
+    "matches_archived": true,
+    "rtol": 1e-10,
+    "atol": 1e-10
+  }
+}

@@ -1,0 +1,60 @@
+{
+ "run_id": "R8-news-asof-audit",
+ "status": "PARTIAL_NOT_GATE_PASS",
+ "gate_pass": false,
+ "gate_pass_reason": "R8 is an as-of news audit, not a forecasting gate; PASS is forbidden by design, including at 0 eligible events",
+ "completed_components": [
+  "asof_audit",
+  "temporal_controls"
+ ],
+ "pending_components": [
+  "causal_paired_forecasting",
+  "ablations",
+  "calendar",
+  "strict_lag",
+  "shuffle",
+  "geography_reviewed"
+ ],
+ "news_only_evaluation": "NA",
+ "na_reason": "audit covers news as-of availability/coverage only; no paired forecasting target exists at this stage",
+ "forecast_metrics": null,
+ "coverage": {
+  "n_events_total": 64,
+  "n_eligible": 0,
+  "n_quarantined": 0,
+  "n_excluded_future_unknown": 64,
+  "n_feature_rows_total": 3380,
+  "n_asof_feature_rows": 0,
+  "quality_audit_all_inputs": {
+   "n_events_scanned": 64,
+   "n_suspected_topic_error": 18,
+   "n_ambiguous_city_multi_tid": 4,
+   "n_items": 22
+  },
+  "zero_eligible_is_valid_audit": true
+ },
+ "asof_features_file": "/tmp/sberindex-R8-20260926/asof_features.parquet",
+ "asof_features_format": "parquet",
+ "provenance": {
+  "run_utc": "2026-09-26T06:48:05+00:00",
+  "command": "/tmp/sberindex-radar-src-20260926/r8_news_audit.py --news-events /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_events.json --news-features /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_features.parquet --cutoff 2024-12-31 --outdir /tmp/sberindex-R8-20260926",
+  "cutoff": "2024-12-31T23:59:59+00:00",
+  "inputs": {
+   "news_events": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_events.json",
+   "news_events_sha256": "125e775fe5a89084cdfff75919b284f1584355a7c356c6a3ec429acbaa5cd7af",
+   "news_events_n": 64,
+   "news_features": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_features.parquet",
+   "news_features_sha256": "ae1a6168999206588ebf9f16942fadbd7ceb00214a61a0dac7d165a4afd2f404",
+   "news_features_rows": 3380,
+   "news_features_status": "read_parquet"
+  },
+  "code_sha256": "7ce833b52db10d2d9ed2526f0bd3d82c046b9465a385e17c30ca57a389f6d51f",
+  "git_commit": null,
+  "versions": {
+   "python": "3.14.5",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "numpy": "2.5.3"
+  }
+ }
+}

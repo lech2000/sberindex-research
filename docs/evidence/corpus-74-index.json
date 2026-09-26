@@ -1,0 +1,193 @@
+{
+  "corpus_id": 74,
+  "retrieved_at": "2026-09-26T08:21:44.346539+00:00",
+  "documents": [
+    {
+      "id": 13365,
+      "title": "СберИндекс 2026 — методы, перенесённые из ATF (спектральный счёт кластеров, идентичность и переходы кластеров, абляция каналов)",
+      "filename": "СберИндекс 2026 — методы, перенесённые из ATF (спектральный счёт кластеров, идентичность и переходы кластеров, абляция каналов).txt",
+      "ext": "txt",
+      "bytes": 25013,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 14943,
+      "created_at": "2026-09-24T17:38:50.311861Z"
+    },
+    {
+      "id": 13319,
+      "title": "R6 артефакт news_events.json sha 125e775fe5a89084 (проект sberindex-2026, дело case_008f37d03cf541e5)",
+      "filename": "R6 артефакт news_events.json sha 125e775fe5a89084 (проект sberindex-2026, дело case_008f37d03cf541e5).txt",
+      "ext": "txt",
+      "bytes": 442,
+      "origin": "agent",
+      "extract_status": "ok",
+      "text_chars": 363,
+      "created_at": "2026-09-24T14:23:02.324056Z"
+    },
+    {
+      "id": 13259,
+      "title": "SberIndex news-event-corpus: 60 DISCOVERED, RSS + archive pilot, not F06-ready (24.09.2026)",
+      "filename": "SberIndex news-event-corpus: 60 DISCOVERED, RSS + archive pilot, not F06-ready (24.09.2026).txt",
+      "ext": "txt",
+      "bytes": 1703,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 1157,
+      "created_at": "2026-09-24T10:59:55.631672Z"
+    },
+    {
+      "id": 13247,
+      "title": "SberIndex news-event-corpus: RSS discovery started, supersedes waiting_taxonomy (24.09.2026)",
+      "filename": "SberIndex news-event-corpus: RSS discovery started, supersedes waiting_taxonomy (24.09.2026).txt",
+      "ext": "txt",
+      "bytes": 2393,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 1715,
+      "created_at": "2026-09-24T10:39:56.571055Z"
+    },
+    {
+      "id": 13107,
+      "title": "Таксономия событий R6/R7 FROZEN v1 (проект sberindex-2026, дело case_008f37d03cf541e5, файл shock-radar/protocol/event_taxonomy.yaml)",
+      "filename": "Таксономия событий R6/R7 FROZEN v1 (проект sberindex-2026, дело case_008f37d03cf541e5, файл shock-radar/protocol/event_taxonomy.yaml).txt",
+      "ext": "txt",
+      "bytes": 5760,
+      "origin": "agent",
+      "extract_status": "ok",
+      "text_chars": 3830,
+      "created_at": "2026-09-23T20:09:37.309144Z"
+    },
+    {
+      "id": 13093,
+      "title": "Словарь муниципалитетов СберИндекса — координаты для G2/R6 (вручную, 23.09.2026) [проект sberindex-2026, дело case_43de12a8dc2e4abd, kind municipal_dictionary_coords, проверено 2026-09-23, файл data/r",
+      "filename": "Словарь муниципалитетов СберИндекса — координаты для G2/R6 (вручную, 23.09.2026) [проект sberindex-2026, дело case_43de12a8dc2e4abd, kind municipal_dictionary_coords, проверено 2026-09-23, файл data/r.txt",
+      "ext": "txt",
+      "bytes": 1565,
+      "origin": "agent",
+      "extract_status": "ok",
+      "text_chars": 1159,
+      "created_at": "2026-09-23T19:50:20.955347Z"
+    },
+    {
+      "id": 12219,
+      "title": "СберИндекс — запросы, нормализация и научные метрики 20.09.2026",
+      "filename": "СберИндекс — запросы, нормализация и научные метрики 20.09.2026.txt",
+      "ext": "txt",
+      "bytes": 4158,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 2832,
+      "created_at": "2026-09-20T11:25:28.714800Z"
+    },
+    {
+      "id": 12202,
+      "title": "СберИндекс — уточнённый каталог: средние расходы, периоды, дорожные расстояния 20.09.2026",
+      "filename": "СберИндекс — уточнённый каталог: средние расходы, периоды, дорожные расстояния 20.09.2026.txt",
+      "ext": "txt",
+      "bytes": 13817,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 8316,
+      "created_at": "2026-09-20T09:43:56.002040Z"
+    },
+    {
+      "id": 12145,
+      "title": "СберИндекс 2026 — предложение реализации",
+      "filename": "СберИндекс 2026 — предложение реализации.txt",
+      "ext": "txt",
+      "bytes": 7003,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 4316,
+      "created_at": "2026-09-20T09:00:40.039615Z"
+    },
+    {
+      "id": 12144,
+      "title": "СберИндекс 2026 — Apify: обнаружение официальных источников 20.09.2026",
+      "filename": "СберИндекс 2026 — Apify: обнаружение официальных источников 20.09.2026.txt",
+      "ext": "txt",
+      "bytes": 39434,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 26650,
+      "created_at": "2026-09-20T09:00:30.043487Z"
+    },
+    {
+      "id": 12143,
+      "title": "СберИндекс 2026 — очередь источников",
+      "filename": "СберИндекс 2026 — очередь источников.txt",
+      "ext": "txt",
+      "bytes": 3675,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 3675,
+      "created_at": "2026-09-20T09:00:28.239182Z"
+    },
+    {
+      "id": 12142,
+      "title": "СберИндекс 2026 — исследовательские агенты",
+      "filename": "СберИндекс 2026 — исследовательские агенты.txt",
+      "ext": "txt",
+      "bytes": 5201,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 3170,
+      "created_at": "2026-09-20T09:00:26.960007Z"
+    },
+    {
+      "id": 12136,
+      "title": "СберИндекс 2026 — общий каталог данных",
+      "filename": "СберИндекс 2026 — общий каталог данных.txt",
+      "ext": "txt",
+      "bytes": 10705,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 6469,
+      "created_at": "2026-09-20T08:59:15.900533Z"
+    },
+    {
+      "id": 12118,
+      "title": "СберИндекс 2026 — правила семантических корпусов",
+      "filename": "СберИндекс 2026 — правила семантических корпусов.txt",
+      "ext": "txt",
+      "bytes": 4849,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 3008,
+      "created_at": "2026-09-20T07:36:08.408008Z"
+    },
+    {
+      "id": 12117,
+      "title": "СберИндекс 2026 — полный манифест источников",
+      "filename": "СберИндекс 2026 — полный манифест источников.txt",
+      "ext": "txt",
+      "bytes": 6608,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 6495,
+      "created_at": "2026-09-20T07:36:06.114466Z"
+    },
+    {
+      "id": 12116,
+      "title": "СберИндекс 2026 — схема и качество данных",
+      "filename": "СберИндекс 2026 — схема и качество данных.txt",
+      "ext": "txt",
+      "bytes": 9186,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 9161,
+      "created_at": "2026-09-20T07:36:03.328842Z"
+    },
+    {
+      "id": 12115,
+      "title": "СберИндекс 2026 — общий каталог данных",
+      "filename": "СберИндекс 2026 — общий каталог данных.txt",
+      "ext": "txt",
+      "bytes": 9688,
+      "origin": "api",
+      "extract_status": "ok",
+      "text_chars": 5863,
+      "created_at": "2026-09-20T07:36:01.271481Z"
+    }
+  ]
+}

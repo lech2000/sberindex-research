@@ -1,0 +1,10 @@
+horizon,model,mae_micro,mae_macro,n_obs,n_terr
+1,last_value,627.38,629.68,74142,2072
+1,seasonal_naive,1292.34,,74142,2072
+1,train_mean,1305.98,,74142,2072
+2,last_value,742.07,,74142,2072
+2,seasonal_naive,1608.14,,74142,2072
+2,train_mean,1305.98,,74142,2072
+3,last_value,866.5,,74142,2072
+3,seasonal_naive,1717.98,,74142,2072
+3,train_mean,1305.98,,74142,2072

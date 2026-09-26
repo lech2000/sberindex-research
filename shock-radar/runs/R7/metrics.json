@@ -1,0 +1,2774 @@
+{
+ "validation": {
+  "D01": {
+   "events": 32,
+   "alarms": 287,
+   "hits": 6,
+   "recall": 0.188,
+   "precision": 0.0209,
+   "false_alarms": 281,
+   "delay_signed_mean": 1.0,
+   "delay_abs_mean": 1.0,
+   "lead_mean_m": 0.0,
+   "frac_early": 0.0,
+   "matches": [
+    {
+     "event_id": "EV044",
+     "tid": 592,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-05",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV055",
+     "tid": 325,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV040",
+     "tid": 1638,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV009",
+     "tid": 18,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV030",
+     "tid": 769,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV015",
+     "tid": 1144,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    }
+   ]
+  },
+  "D02": {
+   "events": 32,
+   "alarms": 1002,
+   "hits": 10,
+   "recall": 0.312,
+   "precision": 0.01,
+   "false_alarms": 992,
+   "delay_signed_mean": 0.0,
+   "delay_abs_mean": 0.2,
+   "lead_mean_m": 1.0,
+   "frac_early": 0.1,
+   "matches": [
+    {
+     "event_id": "EV055",
+     "tid": 325,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-05",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV040",
+     "tid": 1638,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-05",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV030",
+     "tid": 769,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-05",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV015",
+     "tid": 1144,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-06",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV054",
+     "tid": 1264,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-05",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV034",
+     "tid": 930,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-06",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV006",
+     "tid": 2600,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-06",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV046",
+     "tid": 2595,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-06",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV026",
+     "tid": 1040,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-06",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV014",
+     "tid": 1733,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-06",
+     "delay_m": 0
+    }
+   ]
+  },
+  "D03": {
+   "events": 32,
+   "alarms": 12438,
+   "hits": 22,
+   "recall": 0.688,
+   "precision": 0.0018,
+   "false_alarms": 12416,
+   "delay_signed_mean": 0.09,
+   "delay_abs_mean": 0.64,
+   "lead_mean_m": 1.0,
+   "frac_early": 0.273,
+   "matches": [
+    {
+     "event_id": "EV020",
+     "tid": 1637,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV043",
+     "tid": 2182,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV035",
+     "tid": 1128,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV008",
+     "tid": 386,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV023",
+     "tid": 2253,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV011",
+     "tid": 605,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV049",
+     "tid": 1272,
+     "cat": "Общественное питание",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV017",
+     "tid": 1523,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV039",
+     "tid": 1922,
+     "cat": "Общественное питание",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV044",
+     "tid": 592,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV032",
+     "tid": 424,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV031",
+     "tid": 1703,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV022",
+     "tid": 57,
+     "cat": "Общественное питание",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV018",
+     "tid": 1167,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV041",
+     "tid": 736,
+     "cat": "Общественное питание",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV010",
+     "tid": 2607,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-04",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV055",
+     "tid": 325,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV051",
+     "tid": 2338,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV040",
+     "tid": 1638,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV009",
+     "tid": 18,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV030",
+     "tid": 769,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    },
+    {
+     "event_id": "EV015",
+     "tid": 1144,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-04",
+     "delay_m": -1
+    }
+   ]
+  }
+ },
+ "test": {
+  "D01": {
+   "events": 28,
+   "alarms": 574,
+   "hits": 16,
+   "recall": 0.571,
+   "precision": 0.0279,
+   "false_alarms": 558,
+   "delay_signed_mean": 1.0,
+   "delay_abs_mean": 1.0,
+   "lead_mean_m": 0.0,
+   "frac_early": 0.0,
+   "matches": [
+    {
+     "event_id": "EV025",
+     "tid": 725,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-08",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV047",
+     "tid": 1545,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-08",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV019",
+     "tid": 533,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-08",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV037",
+     "tid": 922,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-08",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV048",
+     "tid": 690,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV045",
+     "tid": 1478,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV028",
+     "tid": 2366,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV003",
+     "tid": 2242,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV004",
+     "tid": 1726,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV005",
+     "tid": 782,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV038",
+     "tid": 2577,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV056",
+     "tid": 1706,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV016",
+     "tid": 213,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV024",
+     "tid": 2473,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV050",
+     "tid": 836,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV000",
+     "tid": 185,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-10",
+     "delay_m": 1
+    }
+   ],
+   "budget": 574
+  },
+  "D02": {
+   "events": 28,
+   "alarms": 574,
+   "hits": 7,
+   "recall": 0.25,
+   "precision": 0.0122,
+   "false_alarms": 567,
+   "delay_signed_mean": 0.14,
+   "delay_abs_mean": 0.14,
+   "lead_mean_m": 0.0,
+   "frac_early": 0.0,
+   "matches": [
+    {
+     "event_id": "EV058",
+     "tid": 401,
+     "cat": "Общественное питание",
+     "alarm_ym": "2024-07",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV047",
+     "tid": 1545,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-07",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV029",
+     "tid": 2217,
+     "cat": "Транспорт",
+     "alarm_ym": "2024-09",
+     "delay_m": 1
+    },
+    {
+     "event_id": "EV003",
+     "tid": 2242,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-08",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV005",
+     "tid": 782,
+     "cat": "Продовольствие",
+     "alarm_ym": "2024-08",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV056",
+     "tid": 1706,
+     "cat": "Здоровье",
+     "alarm_ym": "2024-09",
+     "delay_m": 0
+    },
+    {
+     "event_id": "EV012",
+     "tid": 447,
+     "cat": "Маркетплейсы",
+     "alarm_ym": "2024-09",
+     "delay_m": 0
+    }
+   ],
+   "budget": 574
+  },
+  "D03": {
+   "events": 28,
+   "alarms": 574,
+   "hits": 0,
+   "recall": 0.0,
+   "precision": 0.0,
+   "false_alarms": 574,
+   "delay_signed_mean": null,
+   "delay_abs_mean": null,
+   "lead_mean_m": 0.0,
+   "frac_early": 0.0,
+   "matches": [],
+   "budget": 574
+  }
+ },
+ "fitted_thresholds": {
+  "D01": {
+   "k": 4.0
+  },
+  "D02": {
+   "delta": 0.05,
+   "lambda": 0.2
+  },
+  "D03": {
+   "tau": 0.3
+  }
+ },
+ "budget": 574,
+ "validation_trials": {
+  "D01": [
+   {
+    "threshold": 4.0,
+    "f1": 0.0376,
+    "metrics": {
+     "events": 32,
+     "alarms": 287,
+     "hits": 6,
+     "recall": 0.188,
+     "precision": 0.0209,
+     "false_alarms": 281,
+     "delay_signed_mean": 1.0,
+     "delay_abs_mean": 1.0,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 3.5,
+    "f1": 0.0346,
+    "metrics": {
+     "events": 32,
+     "alarms": 373,
+     "hits": 7,
+     "recall": 0.219,
+     "precision": 0.0188,
+     "false_alarms": 366,
+     "delay_signed_mean": 1.0,
+     "delay_abs_mean": 1.0,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 2.5,
+    "f1": 0.0312,
+    "metrics": {
+     "events": 32,
+     "alarms": 736,
+     "hits": 12,
+     "recall": 0.375,
+     "precision": 0.0163,
+     "false_alarms": 724,
+     "delay_signed_mean": 0.92,
+     "delay_abs_mean": 0.92,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 3.0,
+    "f1": 0.0292,
+    "metrics": {
+     "events": 32,
+     "alarms": 517,
+     "hits": 8,
+     "recall": 0.25,
+     "precision": 0.0155,
+     "false_alarms": 509,
+     "delay_signed_mean": 1.0,
+     "delay_abs_mean": 1.0,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 2.0,
+    "f1": 0.0259,
+    "metrics": {
+     "events": 32,
+     "alarms": 1129,
+     "hits": 15,
+     "recall": 0.469,
+     "precision": 0.0133,
+     "false_alarms": 1114,
+     "delay_signed_mean": 0.8,
+     "delay_abs_mean": 0.93,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.067,
+     "matches": [
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV041",
+       "tid": 736,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   }
+  ],
+  "D02": [
+   {
+    "threshold": [
+     0.05,
+     0.2
+    ],
+    "f1": 0.0194,
+    "metrics": {
+     "events": 32,
+     "alarms": 1002,
+     "hits": 10,
+     "recall": 0.312,
+     "precision": 0.01,
+     "false_alarms": 992,
+     "delay_signed_mean": 0.0,
+     "delay_abs_mean": 0.2,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.1,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.02,
+     0.2
+    ],
+    "f1": 0.018,
+    "metrics": {
+     "events": 32,
+     "alarms": 1412,
+     "hits": 13,
+     "recall": 0.406,
+     "precision": 0.0092,
+     "false_alarms": 1399,
+     "delay_signed_mean": 0.0,
+     "delay_abs_mean": 0.15,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.077,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.1,
+     0.1
+    ],
+    "f1": 0.0176,
+    "metrics": {
+     "events": 32,
+     "alarms": 1332,
+     "hits": 12,
+     "recall": 0.375,
+     "precision": 0.009,
+     "false_alarms": 1320,
+     "delay_signed_mean": -0.08,
+     "delay_abs_mean": 0.08,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.083,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.02,
+     0.4
+    ],
+    "f1": 0.0173,
+    "metrics": {
+     "events": 32,
+     "alarms": 317,
+     "hits": 3,
+     "recall": 0.094,
+     "precision": 0.0095,
+     "false_alarms": 314,
+     "delay_signed_mean": 0.67,
+     "delay_abs_mean": 0.67,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.1,
+     0.2
+    ],
+    "f1": 0.0161,
+    "metrics": {
+     "events": 32,
+     "alarms": 591,
+     "hits": 5,
+     "recall": 0.156,
+     "precision": 0.0085,
+     "false_alarms": 586,
+     "delay_signed_mean": 0.2,
+     "delay_abs_mean": 0.2,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.05,
+     0.4
+    ],
+    "f1": 0.0148,
+    "metrics": {
+     "events": 32,
+     "alarms": 237,
+     "hits": 2,
+     "recall": 0.062,
+     "precision": 0.0084,
+     "false_alarms": 235,
+     "delay_signed_mean": 1.0,
+     "delay_abs_mean": 1.0,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.1,
+     0.05
+    ],
+    "f1": 0.0124,
+    "metrics": {
+     "events": 32,
+     "alarms": 2077,
+     "hits": 13,
+     "recall": 0.406,
+     "precision": 0.0063,
+     "false_alarms": 2064,
+     "delay_signed_mean": -0.15,
+     "delay_abs_mean": 0.15,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.154,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.05,
+     0.1
+    ],
+    "f1": 0.012,
+    "metrics": {
+     "events": 32,
+     "alarms": 2312,
+     "hits": 14,
+     "recall": 0.438,
+     "precision": 0.0061,
+     "false_alarms": 2298,
+     "delay_signed_mean": -0.07,
+     "delay_abs_mean": 0.21,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.143,
+     "matches": [
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-06",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.02,
+     0.1
+    ],
+    "f1": 0.0091,
+    "metrics": {
+     "events": 32,
+     "alarms": 3509,
+     "hits": 16,
+     "recall": 0.5,
+     "precision": 0.0046,
+     "false_alarms": 3493,
+     "delay_signed_mean": -0.06,
+     "delay_abs_mean": 0.19,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.125,
+     "matches": [
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV001",
+       "tid": 2228,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.05,
+     0.05
+    ],
+    "f1": 0.0087,
+    "metrics": {
+     "events": 32,
+     "alarms": 3856,
+     "hits": 17,
+     "recall": 0.531,
+     "precision": 0.0044,
+     "false_alarms": 3839,
+     "delay_signed_mean": -0.06,
+     "delay_abs_mean": 0.29,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.176,
+     "matches": [
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV001",
+       "tid": 2228,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.02,
+     0.05
+    ],
+    "f1": 0.0066,
+    "metrics": {
+     "events": 32,
+     "alarms": 5780,
+     "hits": 19,
+     "recall": 0.594,
+     "precision": 0.0033,
+     "false_alarms": 5761,
+     "delay_signed_mean": -0.05,
+     "delay_abs_mean": 0.47,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.263,
+     "matches": [
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-05",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV054",
+       "tid": 1264,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV034",
+       "tid": 930,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV001",
+       "tid": 2228,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV006",
+       "tid": 2600,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV052",
+       "tid": 686,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV046",
+       "tid": 2595,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV026",
+       "tid": 1040,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV014",
+       "tid": 1733,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-05",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV027",
+       "tid": 2360,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-06",
+       "delay_m": 0
+      }
+     ]
+    }
+   },
+   {
+    "threshold": [
+     0.1,
+     0.4
+    ],
+    "f1": 0.0,
+    "metrics": {
+     "events": 32,
+     "alarms": 142,
+     "hits": 0,
+     "recall": 0.0,
+     "precision": 0.0,
+     "false_alarms": 142,
+     "delay_signed_mean": null,
+     "delay_abs_mean": null,
+     "lead_mean_m": 0.0,
+     "frac_early": 0.0,
+     "matches": []
+    }
+   }
+  ],
+  "D03": [
+   {
+    "threshold": 0.3,
+    "f1": 0.0036,
+    "metrics": {
+     "events": 32,
+     "alarms": 12438,
+     "hits": 22,
+     "recall": 0.688,
+     "precision": 0.0018,
+     "false_alarms": 12416,
+     "delay_signed_mean": 0.09,
+     "delay_abs_mean": 0.64,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.273,
+     "matches": [
+      {
+       "event_id": "EV020",
+       "tid": 1637,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV043",
+       "tid": 2182,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV035",
+       "tid": 1128,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV008",
+       "tid": 386,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV023",
+       "tid": 2253,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV011",
+       "tid": 605,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV049",
+       "tid": 1272,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV017",
+       "tid": 1523,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV041",
+       "tid": 736,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 0.5,
+    "f1": 0.0036,
+    "metrics": {
+     "events": 32,
+     "alarms": 12438,
+     "hits": 22,
+     "recall": 0.688,
+     "precision": 0.0018,
+     "false_alarms": 12416,
+     "delay_signed_mean": 0.09,
+     "delay_abs_mean": 0.64,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.273,
+     "matches": [
+      {
+       "event_id": "EV020",
+       "tid": 1637,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV043",
+       "tid": 2182,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV035",
+       "tid": 1128,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV008",
+       "tid": 386,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV023",
+       "tid": 2253,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV011",
+       "tid": 605,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV049",
+       "tid": 1272,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV017",
+       "tid": 1523,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV041",
+       "tid": 736,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 0.7,
+    "f1": 0.0036,
+    "metrics": {
+     "events": 32,
+     "alarms": 12438,
+     "hits": 22,
+     "recall": 0.688,
+     "precision": 0.0018,
+     "false_alarms": 12416,
+     "delay_signed_mean": 0.09,
+     "delay_abs_mean": 0.64,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.273,
+     "matches": [
+      {
+       "event_id": "EV020",
+       "tid": 1637,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV043",
+       "tid": 2182,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV035",
+       "tid": 1128,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV008",
+       "tid": 386,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV023",
+       "tid": 2253,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV011",
+       "tid": 605,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV049",
+       "tid": 1272,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV017",
+       "tid": 1523,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV041",
+       "tid": 736,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      }
+     ]
+    }
+   },
+   {
+    "threshold": 0.9,
+    "f1": 0.0036,
+    "metrics": {
+     "events": 32,
+     "alarms": 12438,
+     "hits": 22,
+     "recall": 0.688,
+     "precision": 0.0018,
+     "false_alarms": 12416,
+     "delay_signed_mean": 0.09,
+     "delay_abs_mean": 0.64,
+     "lead_mean_m": 1.0,
+     "frac_early": 0.273,
+     "matches": [
+      {
+       "event_id": "EV020",
+       "tid": 1637,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV043",
+       "tid": 2182,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV035",
+       "tid": 1128,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV008",
+       "tid": 386,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV023",
+       "tid": 2253,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV011",
+       "tid": 605,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV049",
+       "tid": 1272,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV017",
+       "tid": 1523,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 1
+      },
+      {
+       "event_id": "EV039",
+       "tid": 1922,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV044",
+       "tid": 592,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV032",
+       "tid": 424,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV031",
+       "tid": 1703,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV022",
+       "tid": 57,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV018",
+       "tid": 1167,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV041",
+       "tid": 736,
+       "cat": "Общественное питание",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV010",
+       "tid": 2607,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": 0
+      },
+      {
+       "event_id": "EV055",
+       "tid": 325,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV051",
+       "tid": 2338,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV040",
+       "tid": 1638,
+       "cat": "Здоровье",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV009",
+       "tid": 18,
+       "cat": "Маркетплейсы",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV030",
+       "tid": 769,
+       "cat": "Транспорт",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      },
+      {
+       "event_id": "EV015",
+       "tid": 1144,
+       "cat": "Продовольствие",
+       "alarm_ym": "2024-04",
+       "delay_m": -1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "verdict": "сравнение детекторов на синтетике; выводы только о технической детекции, не о раннем предупреждении"
+}

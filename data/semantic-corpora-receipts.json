@@ -1,0 +1,119 @@
+{
+  "created_or_verified_on": "2026-09-20",
+  "corpora": {
+    "shared": {
+      "id": 74,
+      "name": "research:sberindex-2026:shared:prn_fbab9aa00cd46169",
+      "documents": [
+        {
+          "title": "СберИндекс 2026 — общий каталог данных",
+          "file": "data/DATA_CATALOG.md",
+          "result": {
+            "added": true,
+            "document_id": 12115,
+            "title": "СберИндекс 2026 — общий каталог данных",
+            "corpus_id": 74,
+            "chunks": 6,
+            "vectors": 6
+          }
+        },
+        {
+          "title": "СберИндекс 2026 — схема и качество данных",
+          "file": "data/schema-report.json",
+          "result": {
+            "added": true,
+            "document_id": 12116,
+            "title": "СберИндекс 2026 — схема и качество данных",
+            "corpus_id": 74,
+            "chunks": 6,
+            "vectors": 6
+          }
+        },
+        {
+          "title": "СберИндекс 2026 — полный манифест источников",
+          "file": "data/manifest.json",
+          "result": {
+            "added": true,
+            "document_id": 12117,
+            "title": "СберИндекс 2026 — полный манифест источников",
+            "corpus_id": 74,
+            "chunks": 6,
+            "vectors": 6
+          }
+        },
+        {
+          "title": "СберИндекс 2026 — правила семантических корпусов",
+          "file": "data/SEMANTIC_CORPORA.md",
+          "result": {
+            "added": true,
+            "document_id": 12118,
+            "title": "СберИндекс 2026 — правила семантических корпусов",
+            "corpus_id": 74,
+            "chunks": 3,
+            "vectors": 3
+          }
+        }
+      ]
+    },
+    "economic-atlas": {
+      "id": 75,
+      "name": "research:sberindex-2026:economic-atlas:prn_fbab9aa00cd46169",
+      "documents": [
+        {
+          "title": "Экономический атлас — план исследований",
+          "file": "economic-atlas/research-plan.md",
+          "result": {
+            "added": true,
+            "document_id": 12119,
+            "title": "Экономический атлас — план исследований",
+            "corpus_id": 75,
+            "chunks": 13,
+            "vectors": 13
+          }
+        },
+        {
+          "title": "Экономический атлас — манифест данных",
+          "file": "economic-atlas/data-manifest.json",
+          "result": {
+            "added": true,
+            "document_id": 12120,
+            "title": "Экономический атлас — манифест данных",
+            "corpus_id": 75,
+            "chunks": 1,
+            "vectors": 1
+          }
+        }
+      ]
+    },
+    "shock-radar": {
+      "id": 76,
+      "name": "research:sberindex-2026:shock-radar:prn_fbab9aa00cd46169",
+      "documents": [
+        {
+          "title": "Радар потребительских сдвигов — план исследований",
+          "file": "shock-radar/research-plan.md",
+          "result": {
+            "added": true,
+            "document_id": 12121,
+            "title": "Радар потребительских сдвигов — план исследований",
+            "corpus_id": 76,
+            "chunks": 16,
+            "vectors": 16
+          }
+        },
+        {
+          "title": "Радар потребительских сдвигов — манифест данных",
+          "file": "shock-radar/data-manifest.json",
+          "result": {
+            "added": true,
+            "document_id": 12122,
+            "title": "Радар потребительских сдвигов — манифест данных",
+            "corpus_id": 76,
+            "chunks": 1,
+            "vectors": 1
+          }
+        }
+      ]
+    }
+  }
+}

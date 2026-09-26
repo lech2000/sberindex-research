@@ -1,0 +1,453 @@
+{
+  "ingested_on": "2026-09-20",
+  "documents": [
+    {
+      "project": "economic-atlas",
+      "key": "pankova-2026-demand-structure",
+      "corpus_id": 75,
+      "title": "Структура потребительского спроса и расходы домашних хозяйств в России",
+      "result": {
+        "added": true,
+        "document_id": 12164,
+        "title": "Научная работа — Структура потребительского спроса и расходы домашних хозяйств в России",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "petrykina-2017-municipal-clustering",
+      "corpus_id": 75,
+      "title": "Применение кластерного анализа для типологизации муниципальных образований",
+      "result": {
+        "added": true,
+        "document_id": 12165,
+        "title": "Научная работа — Применение кластерного анализа для типологизации муниципальных образований",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "sobolevsky-2016-city-spending",
+      "corpus_id": 75,
+      "title": "Cities through the Prism of People’s Spending Behavior",
+      "result": {
+        "added": true,
+        "document_id": 12166,
+        "title": "Научная работа — Cities through the Prism of People’s Spending Behavior",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "carpio-pinedo-2022-urban-expenditure",
+      "corpus_id": 75,
+      "title": "Towards a New Urban Geography of Expenditure: Using Bank Card Transactions Data to Analyze Multi-sector Spatiotemporal Distributions",
+      "result": {
+        "added": true,
+        "document_id": 12167,
+        "title": "Научная работа — Towards a New Urban Geography of Expenditure: Using Bank Card Transactions Data to Analyze Multi-sector Spatiotemporal Distributions",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "aladangady-2019-transactions-statistics",
+      "corpus_id": 75,
+      "title": "From Transactions Data to Economic Statistics: Constructing Real-time, High-frequency, Geographic Measures of Consumer Spending",
+      "result": {
+        "added": true,
+        "document_id": 12168,
+        "title": "Научная работа — From Transactions Data to Economic Statistics: Constructing Real-time, High-frequency, Geographic Measures of Consumer Spending",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "agarwal-2017-consumer-mobility",
+      "corpus_id": 75,
+      "title": "Consumer Mobility and the Local Structure of Consumption Industries",
+      "result": {
+        "added": true,
+        "document_id": 12169,
+        "title": "Научная работа — Consumer Mobility and the Local Structure of Consumption Industries",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "di-clemente-2018-purchase-sequences",
+      "corpus_id": 75,
+      "title": "Sequences of Purchases in Credit Card Data Reveal Lifestyles in Urban Populations",
+      "result": {
+        "added": true,
+        "document_id": 12170,
+        "title": "Научная работа — Sequences of Purchases in Credit Card Data Reveal Lifestyles in Urban Populations",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "sobolevsky-2015-regional-indices",
+      "corpus_id": 75,
+      "title": "Predicting Regional Economic Indices Using Big Data of Individual Bank Card Transactions",
+      "result": {
+        "added": true,
+        "document_id": 12171,
+        "title": "Научная работа — Predicting Regional Economic Indices Using Big Data of Individual Bank Card Transactions",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "mucha-2010-multislice-networks",
+      "corpus_id": 75,
+      "title": "Community Structure in Time-dependent, Multiscale, and Multiplex Networks",
+      "result": {
+        "added": true,
+        "document_id": 12172,
+        "title": "Научная работа — Community Structure in Time-dependent, Multiscale, and Multiplex Networks",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "eagle-2010-network-diversity",
+      "corpus_id": 75,
+      "title": "Network Diversity and Economic Development",
+      "result": {
+        "added": true,
+        "document_id": 12173,
+        "title": "Научная работа — Network Diversity and Economic Development",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "rousseeuw-1987-silhouette",
+      "corpus_id": 75,
+      "title": "Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis",
+      "result": {
+        "added": true,
+        "document_id": 12174,
+        "title": "Научная работа — Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "halkidi-2001-clustering-validation",
+      "corpus_id": 75,
+      "title": "On Clustering Validation Techniques",
+      "result": {
+        "added": true,
+        "document_id": 12175,
+        "title": "Научная работа — On Clustering Validation Techniques",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "hidalgo-hausmann-2009-economic-complexity",
+      "corpus_id": 75,
+      "title": "The Building Blocks of Economic Complexity",
+      "result": {
+        "added": true,
+        "document_id": 12176,
+        "title": "Научная работа — The Building Blocks of Economic Complexity",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "mamedli-shibitov-2021-vintages",
+      "corpus_id": 76,
+      "title": "Forecasting Russian CPI with Data Vintages and Machine Learning Techniques",
+      "result": {
+        "added": true,
+        "document_id": 12177,
+        "title": "Научная работа — Forecasting Russian CPI with Data Vintages and Machine Learning Techniques",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "grebenkina-2025-high-frequency",
+      "corpus_id": 76,
+      "title": "Прогнозирование инфляции с использованием высокочастотных данных в моделях временных рядов",
+      "result": {
+        "added": true,
+        "document_id": 12178,
+        "title": "Научная работа — Прогнозирование инфляции с использованием высокочастотных данных в моделях временных рядов",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "taylor-letham-2018-prophet",
+      "corpus_id": 76,
+      "title": "Forecasting at Scale",
+      "result": {
+        "added": true,
+        "document_id": 12179,
+        "title": "Научная работа — Forecasting at Scale",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "montero-manso-2021-global",
+      "corpus_id": 76,
+      "title": "Principles and Algorithms for Forecasting Groups of Time Series: Locality and Globality",
+      "result": {
+        "added": true,
+        "document_id": 12180,
+        "title": "Научная работа — Principles and Algorithms for Forecasting Groups of Time Series: Locality and Globality",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "makridakis-2022-m5",
+      "corpus_id": 76,
+      "title": "M5 Accuracy Competition: Results, Findings, and Conclusions",
+      "result": {
+        "added": true,
+        "document_id": 12181,
+        "title": "Научная работа — M5 Accuracy Competition: Results, Findings, and Conclusions",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "lim-2021-tft",
+      "corpus_id": 76,
+      "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+      "result": {
+        "added": true,
+        "document_id": 12182,
+        "title": "Научная работа — Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "ansari-2024-chronos",
+      "corpus_id": 76,
+      "title": "Chronos: Learning the Language of Time Series",
+      "result": {
+        "added": true,
+        "document_id": 12183,
+        "title": "Научная работа — Chronos: Learning the Language of Time Series",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "das-2024-timesfm",
+      "corpus_id": 76,
+      "title": "A Decoder-only Foundation Model for Time-series Forecasting",
+      "result": {
+        "added": true,
+        "document_id": 12184,
+        "title": "Научная работа — A Decoder-only Foundation Model for Time-series Forecasting",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "killick-2012-pelt",
+      "corpus_id": 76,
+      "title": "Optimal Detection of Changepoints With a Linear Computational Cost",
+      "result": {
+        "added": true,
+        "document_id": 12185,
+        "title": "Научная работа — Optimal Detection of Changepoints With a Linear Computational Cost",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "adams-mackay-2007-bocpd",
+      "corpus_id": 76,
+      "title": "Bayesian Online Changepoint Detection",
+      "result": {
+        "added": true,
+        "document_id": 12186,
+        "title": "Научная работа — Bayesian Online Changepoint Detection",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "page-1954-cusum",
+      "corpus_id": 76,
+      "title": "Continuous Inspection Schemes",
+      "result": {
+        "added": true,
+        "document_id": 12187,
+        "title": "Научная работа — Continuous Inspection Schemes",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "shapiro-2022-news-sentiment",
+      "corpus_id": 76,
+      "title": "Measuring News Sentiment",
+      "result": {
+        "added": true,
+        "document_id": 12188,
+        "title": "Научная работа — Measuring News Sentiment",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "leetaru-schrodt-2013-gdelt",
+      "corpus_id": 76,
+      "title": "GDELT: Global Data on Events, Location and Tone, 1979–2012",
+      "result": {
+        "added": true,
+        "document_id": 12189,
+        "title": "Научная работа — GDELT: Global Data on Events, Location and Tone, 1979–2012",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "barber-2023-conformal",
+      "corpus_id": 76,
+      "title": "Conformal Prediction Beyond Exchangeability",
+      "result": {
+        "added": true,
+        "document_id": 12190,
+        "title": "Научная работа — Conformal Prediction Beyond Exchangeability",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "hyndman-2011-hierarchical",
+      "corpus_id": 76,
+      "title": "Optimal Combination Forecasts for Hierarchical Time Series",
+      "result": {
+        "added": true,
+        "document_id": 12191,
+        "title": "Научная работа — Optimal Combination Forecasts for Hierarchical Time Series",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "bergmeir-2018-cross-validation",
+      "corpus_id": 76,
+      "title": "A Note on the Validity of Cross-validation for Evaluating Autoregressive Time Series Prediction",
+      "result": {
+        "added": true,
+        "document_id": 12192,
+        "title": "Научная работа — A Note on the Validity of Cross-validation for Evaluating Autoregressive Time Series Prediction",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "aladangady-2019-real-time-spending",
+      "corpus_id": 76,
+      "title": "From Transactions Data to Economic Statistics: Constructing Real-time, High-frequency, Geographic Measures of Consumer Spending",
+      "result": {
+        "added": true,
+        "document_id": 12193,
+        "title": "Научная работа — From Transactions Data to Economic Statistics: Constructing Real-time, High-frequency, Geographic Measures of Consumer Spending",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "project": "economic-atlas",
+      "key": "literature-review",
+      "corpus_id": 75,
+      "title": "Научная литература — обзор для проекта Экономический атлас муниципалитетов",
+      "result": {
+        "added": true,
+        "document_id": 12194,
+        "title": "Научная литература — обзор для проекта Экономический атлас муниципалитетов",
+        "corpus_id": 75,
+        "chunks": 7,
+        "vectors": 7
+      }
+    },
+    {
+      "project": "shock-radar",
+      "key": "literature-review",
+      "corpus_id": 76,
+      "title": "Научная литература — обзор для проекта Радар потребительских сдвигов",
+      "result": {
+        "added": true,
+        "document_id": 12195,
+        "title": "Научная литература — обзор для проекта Радар потребительских сдвигов",
+        "corpus_id": 76,
+        "chunks": 7,
+        "vectors": 7
+      }
+    }
+  ]
+}

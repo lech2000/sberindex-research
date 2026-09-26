@@ -1,0 +1,1896 @@
+{
+  "clustering": {
+    "alignment": "Hungarian on squared centroid distance to previous aligned centroids; month 0 keeps raw IDs",
+    "empty_raw_clusters_reused_previous_centroid": 0,
+    "method": "per-month k-means",
+    "n_init": 10,
+    "per_month_seed": "seed + month_index (prefix invariance: future months never alter past outputs)"
+  },
+  "completed_components": [
+    "temporal_sensitivity"
+  ],
+  "completes_case06": false,
+  "e04": "E04 (emergence/disappearance) is incomplete by design at fixed K: births/disappearances cannot be distinguished from relabelling, so they are never reported. A6 lists only split/merge CANDIDATES (overlap >= 0.2) between aligned neighbouring clusters. A6 is a sensitivity analysis of temporal linkage, not cluster biographies.",
+  "e04_incomplete": true,
+  "e04_incomplete_reason": "fixed K: births/disappearances are indistinguishable from relabelling",
+  "frozen_panel": {
+    "expected_shape": [
+      1896,
+      24,
+      6
+    ],
+    "frozen_shape_ok": true,
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_cats": 6,
+    "n_months": 24,
+    "n_tids": 1896
+  },
+  "gate": "A6",
+  "gate_pass": false,
+  "gate_pass_reason": "A6 is a temporal sensitivity analysis at fixed K, not a gate pass: E04 is incomplete by design and case06 completion is never claimed",
+  "k": 5,
+  "lambdas": [
+    0.0,
+    0.5,
+    2.0
+  ],
+  "mask": {
+    "excluded_tids": {},
+    "n": 1896,
+    "n_excluded": 0,
+    "rule": "tids with a complete 24-month x 6-category grid, all finite values, all totals positive; no fillna(0)"
+  },
+  "neighbours": {
+    "merge_candidates": [
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          2,
+          3
+        ],
+        "kind": "merge_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.6090534979423868,
+          0.36901408450704226,
+          0.22525597269624573
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.6548672566371682,
+          0.45535714285714285
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          0,
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.3292181069958848,
+          0.2359882005899705,
+          0.49872122762148335
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.6131221719457014,
+          0.3212669683257919
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          1,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.36548223350253806,
+          0.5862944162436549
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.3341288782816229,
+          0.6367816091954023
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.47297297297297297,
+          0.6771300448430493
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          0,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.5063829787234042,
+          0.33191489361702126
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.45093457943925236,
+          0.742671009771987
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.6912181303116147,
+          0.5982905982905983
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.20085470085470086,
+          0.7147058823529412
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.5058275058275058,
+          0.41025641025641024
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 8,
+        "month_to": 9,
+        "overlaps": [
+          0.7852941176470588,
+          0.21794871794871795
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.25595238095238093,
+          0.7202380952380952
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.7851851851851852,
+          0.37170263788968827
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.6448863636363636,
+          0.5491606714628298
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.6206896551724138,
+          0.2620689655172414
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.6475409836065574,
+          0.3273809523809524
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.7448132780082988,
+          0.3362521891418564
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.39880952380952384,
+          0.6777546777546778
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.8,
+          0.6038251366120219
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.20666666666666667,
+          0.6266666666666667
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.2471131639722864,
+          0.6004618937644342
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          3
+        ],
+        "kind": "merge_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.8244047619047619,
+          0.22040816326530613
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.30656934306569344,
+          0.6390977443609023
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.7180156657963447,
+          0.28888888888888886
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.3433583959899749,
+          0.6353711790393013
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.6636904761904762,
+          0.28939828080229224
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.8074074074074075,
+          0.2709677419354839
+        ]
+      },
+      {
+        "cluster_to": 3,
+        "clusters_from": [
+          0,
+          3
+        ],
+        "kind": "merge_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.29259259259259257,
+          1.0
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          1,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.2987551867219917,
+          0.6804979253112033
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 18,
+        "month_to": 19,
+        "overlaps": [
+          0.8580645161290322,
+          0.24897959183673468
+        ]
+      },
+      {
+        "cluster_to": 0,
+        "clusters_from": [
+          0,
+          1
+        ],
+        "kind": "merge_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.7146974063400576,
+          0.47648902821316613
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.39184952978056425,
+          0.5,
+          0.2159383033419023
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.686046511627907,
+          0.26735218508997427
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          0,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.20905923344947736,
+          0.6933797909407665
+        ]
+      },
+      {
+        "cluster_to": 1,
+        "clusters_from": [
+          1,
+          2,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.4282511210762332,
+          0.21391752577319587,
+          0.5979643765903307
+        ]
+      },
+      {
+        "cluster_to": 2,
+        "clusters_from": [
+          1,
+          2
+        ],
+        "kind": "merge_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.4282511210762332,
+          0.7654639175257731
+        ]
+      },
+      {
+        "cluster_to": 4,
+        "clusters_from": [
+          0,
+          4
+        ],
+        "kind": "merge_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.21951219512195122,
+          0.7804878048780488
+        ]
+      }
+    ],
+    "note": "Candidates only. Births/disappearances are never reported at fixed K.",
+    "overlap_formula": "overlap(a@m,b@m+1)=|a cap b|/min(|a|,|b|)",
+    "overlap_threshold": 0.2,
+    "split_candidates": [
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.6090534979423868,
+          0.3292181069958848
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.6548672566371682,
+          0.2359882005899705
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.36901408450704226,
+          0.45535714285714285
+        ]
+      },
+      {
+        "cluster_from": 3,
+        "clusters_to": [
+          0,
+          3
+        ],
+        "kind": "split_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.22525597269624573,
+          0.9824561403508771
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 0,
+        "month_to": 1,
+        "overlaps": [
+          0.49872122762148335,
+          0.7378435517970402
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.6131221719457014,
+          0.36548223350253806
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.5862944162436549,
+          0.3341288782816229
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 2,
+        "month_to": 3,
+        "overlaps": [
+          0.3212669683257919,
+          0.6367816091954023
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.6986666666666667,
+          0.5063829787234042
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.47297297297297297,
+          0.45093457943925236
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 5,
+        "month_to": 6,
+        "overlaps": [
+          0.6771300448430493,
+          0.33191489361702126
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.7159353348729792,
+          0.5058275058275058
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          0,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.5982905982905983,
+          0.20085470085470086
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 7,
+        "month_to": 8,
+        "overlaps": [
+          0.7147058823529412,
+          0.41025641025641024
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 8,
+        "month_to": 9,
+        "overlaps": [
+          0.21794871794871795,
+          0.812807881773399
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.7569620253164557,
+          0.25595238095238093
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.7202380952380952,
+          0.6448863636363636
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 10,
+        "month_to": 11,
+        "overlaps": [
+          0.37170263788968827,
+          0.5491606714628298
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.6206896551724138,
+          0.6475409836065574
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          0,
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.2620689655172414,
+          0.3273809523809524,
+          0.39880952380952384
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 11,
+        "month_to": 12,
+        "overlaps": [
+          0.3362521891418564,
+          0.6777546777546778
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.6038251366120219,
+          0.20666666666666667
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.8742268041237113,
+          0.2471131639722864
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 12,
+        "month_to": 13,
+        "overlaps": [
+          0.6266666666666667,
+          0.6004618937644342
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.8244047619047619,
+          0.30656934306569344
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.6390977443609023,
+          0.3433583959899749
+        ]
+      },
+      {
+        "cluster_from": 3,
+        "clusters_to": [
+          0,
+          3
+        ],
+        "kind": "split_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.22040816326530613,
+          1.0
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 16,
+        "month_to": 17,
+        "overlaps": [
+          0.28888888888888886,
+          0.6353711790393013
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          3
+        ],
+        "kind": "split_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.6636904761904762,
+          0.29259259259259257
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          0,
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.28939828080229224,
+          0.7018633540372671,
+          0.2987551867219917
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 17,
+        "month_to": 18,
+        "overlaps": [
+          0.2709677419354839,
+          0.6804979253112033
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 18,
+        "month_to": 19,
+        "overlaps": [
+          0.24897959183673468,
+          0.8663239074550129
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.7146974063400576,
+          0.20905923344947736
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          0,
+          1
+        ],
+        "kind": "split_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.47648902821316613,
+          0.39184952978056425
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.5,
+          0.686046511627907
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          1,
+          2,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 19,
+        "month_to": 20,
+        "overlaps": [
+          0.2159383033419023,
+          0.26735218508997427,
+          0.6933797909407665
+        ]
+      },
+      {
+        "cluster_from": 0,
+        "clusters_to": [
+          0,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.8725961538461539,
+          0.21951219512195122
+        ]
+      },
+      {
+        "cluster_from": 1,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.4282511210762332,
+          0.4282511210762332
+        ]
+      },
+      {
+        "cluster_from": 2,
+        "clusters_to": [
+          1,
+          2
+        ],
+        "kind": "split_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.21391752577319587,
+          0.7654639175257731
+        ]
+      },
+      {
+        "cluster_from": 4,
+        "clusters_to": [
+          1,
+          4
+        ],
+        "kind": "split_candidate",
+        "month_from": 22,
+        "month_to": 23,
+        "overlaps": [
+          0.5979643765903307,
+          0.7804878048780488
+        ]
+      }
+    ]
+  },
+  "pending_components": [
+    "e04_emergence_disappearance",
+    "case06_completion"
+  ],
+  "seed": 20260921,
+  "sensitivity": {
+    "aligned_silhouette_mean": 0.21047789415599458,
+    "aligned_switch_rate": 0.27256466703357185,
+    "per_lambda": {
+      "0.0": {
+        "agreement_vs_aligned_ARI_mean": 1.0,
+        "agreement_vs_aligned_NMI_mean": 1.0,
+        "silhouette_mean": 0.21047789415599458,
+        "silhouette_per_month": [
+          0.20714288640139758,
+          0.19008324139334448,
+          0.2022328370025963,
+          0.2031567543965037,
+          0.20614185003301377,
+          0.20705817483562405,
+          0.2333242099386864,
+          0.2238155813593929,
+          0.21102639961940858,
+          0.2179271128325855,
+          0.2081155891410109,
+          0.22097673094202894,
+          0.22874843977966663,
+          0.206255942618553,
+          0.20586130152697577,
+          0.20440660047353312,
+          0.21110705936993934,
+          0.2005947468462507,
+          0.20895188997434205,
+          0.21677135755107785,
+          0.20924190312303229,
+          0.20684359373402603,
+          0.20458863939840663,
+          0.21709661745247302
+        ],
+        "sizes_per_month": [
+          [
+            243,
+            339,
+            448,
+            293,
+            573
+          ],
+          [
+            355,
+            449,
+            391,
+            228,
+            473
+          ],
+          [
+            365,
+            445,
+            419,
+            212,
+            455
+          ],
+          [
+            407,
+            442,
+            394,
+            218,
+            435
+          ],
+          [
+            439,
+            484,
+            379,
+            238,
+            356
+          ],
+          [
+            442,
+            444,
+            446,
+            257,
+            307
+          ],
+          [
+            375,
+            540,
+            235,
+            318,
+            428
+          ],
+          [
+            353,
+            561,
+            234,
+            305,
+            443
+          ],
+          [
+            421,
+            433,
+            340,
+            273,
+            429
+          ],
+          [
+            423,
+            348,
+            390,
+            329,
+            406
+          ],
+          [
+            395,
+            352,
+            405,
+            327,
+            417
+          ],
+          [
+            407,
+            168,
+            482,
+            268,
+            571
+          ],
+          [
+            145,
+            366,
+            581,
+            323,
+            481
+          ],
+          [
+            417,
+            300,
+            485,
+            261,
+            433
+          ],
+          [
+            416,
+            351,
+            428,
+            255,
+            446
+          ],
+          [
+            410,
+            376,
+            430,
+            253,
+            427
+          ],
+          [
+            411,
+            399,
+            383,
+            245,
+            458
+          ],
+          [
+            336,
+            482,
+            405,
+            191,
+            482
+          ],
+          [
+            349,
+            322,
+            465,
+            270,
+            490
+          ],
+          [
+            347,
+            319,
+            529,
+            312,
+            389
+          ],
+          [
+            444,
+            458,
+            430,
+            277,
+            287
+          ],
+          [
+            433,
+            421,
+            406,
+            284,
+            352
+          ],
+          [
+            416,
+            446,
+            388,
+            253,
+            393
+          ],
+          [
+            481,
+            511,
+            502,
+            279,
+            123
+          ]
+        ],
+        "switch_rate": 0.27256466703357185
+      },
+      "0.5": {
+        "agreement_vs_aligned_ARI_mean": 0.8345437978023592,
+        "agreement_vs_aligned_NMI_mean": 0.8182067466790827,
+        "silhouette_mean": 0.2057995652935268,
+        "silhouette_per_month": [
+          0.20714288640139758,
+          0.18450080145503803,
+          0.19564286008623685,
+          0.1976228608272355,
+          0.20064976170044152,
+          0.2026526175274808,
+          0.23149692011625564,
+          0.22151457818074702,
+          0.20968158889390162,
+          0.21255857774849352,
+          0.20065182531044903,
+          0.2180531017499972,
+          0.2244649458349161,
+          0.20440565003809524,
+          0.2021093973312117,
+          0.1983722748952488,
+          0.20527410142054403,
+          0.1948689082701588,
+          0.20295860785231143,
+          0.20933225127836916,
+          0.2042950907287791,
+          0.20156517989054765,
+          0.19907456718112784,
+          0.21030021232565968
+        ],
+        "sizes_per_month": [
+          [
+            243,
+            339,
+            448,
+            293,
+            573
+          ],
+          [
+            341,
+            450,
+            356,
+            254,
+            495
+          ],
+          [
+            348,
+            450,
+            396,
+            227,
+            475
+          ],
+          [
+            398,
+            441,
+            394,
+            221,
+            442
+          ],
+          [
+            412,
+            471,
+            387,
+            236,
+            390
+          ],
+          [
+            447,
+            457,
+            426,
+            247,
+            319
+          ],
+          [
+            377,
+            567,
+            236,
+            310,
+            406
+          ],
+          [
+            370,
+            558,
+            233,
+            306,
+            429
+          ],
+          [
+            419,
+            465,
+            305,
+            284,
+            423
+          ],
+          [
+            430,
+            384,
+            353,
+            312,
+            417
+          ],
+          [
+            418,
+            361,
+            377,
+            315,
+            425
+          ],
+          [
+            413,
+            173,
+            463,
+            282,
+            565
+          ],
+          [
+            154,
+            345,
+            574,
+            323,
+            500
+          ],
+          [
+            390,
+            283,
+            513,
+            275,
+            435
+          ],
+          [
+            396,
+            336,
+            460,
+            269,
+            435
+          ],
+          [
+            399,
+            353,
+            441,
+            261,
+            442
+          ],
+          [
+            400,
+            391,
+            399,
+            253,
+            453
+          ],
+          [
+            348,
+            453,
+            406,
+            206,
+            483
+          ],
+          [
+            360,
+            338,
+            447,
+            257,
+            494
+          ],
+          [
+            352,
+            333,
+            504,
+            295,
+            412
+          ],
+          [
+            440,
+            412,
+            450,
+            279,
+            315
+          ],
+          [
+            434,
+            419,
+            422,
+            281,
+            340
+          ],
+          [
+            422,
+            420,
+            403,
+            270,
+            381
+          ],
+          [
+            463,
+            514,
+            515,
+            275,
+            129
+          ]
+        ],
+        "switch_rate": 0.20597138139790863
+      },
+      "2.0": {
+        "agreement_vs_aligned_ARI_mean": 0.5416067704046574,
+        "agreement_vs_aligned_NMI_mean": 0.5870435856964383,
+        "silhouette_mean": 0.17068662205158577,
+        "silhouette_per_month": [
+          0.20714288640139758,
+          0.13420839490420466,
+          0.13934373075621212,
+          0.1602779974468196,
+          0.1699963804890463,
+          0.16562351523020352,
+          0.18502645133350362,
+          0.1885124649984208,
+          0.17733452211984702,
+          0.17803393126189127,
+          0.1699786140343349,
+          0.17994738530731907,
+          0.18784804518984907,
+          0.173169737569706,
+          0.17431938603326969,
+          0.16598577105070336,
+          0.17091927229951998,
+          0.1660348750595561,
+          0.1627179126416666,
+          0.16671645305751517,
+          0.16240432637212704,
+          0.1666228051192211,
+          0.16683051615709946,
+          0.17748355440462435
+        ],
+        "sizes_per_month": [
+          [
+            243,
+            339,
+            448,
+            293,
+            573
+          ],
+          [
+            308,
+            439,
+            305,
+            288,
+            556
+          ],
+          [
+            312,
+            442,
+            339,
+            274,
+            529
+          ],
+          [
+            350,
+            423,
+            338,
+            267,
+            518
+          ],
+          [
+            370,
+            426,
+            340,
+            266,
+            494
+          ],
+          [
+            394,
+            417,
+            364,
+            266,
+            455
+          ],
+          [
+            366,
+            542,
+            242,
+            282,
+            464
+          ],
+          [
+            360,
+            563,
+            230,
+            283,
+            460
+          ],
+          [
+            402,
+            512,
+            256,
+            283,
+            443
+          ],
+          [
+            437,
+            464,
+            281,
+            286,
+            428
+          ],
+          [
+            441,
+            443,
+            298,
+            283,
+            431
+          ],
+          [
+            434,
+            230,
+            387,
+            284,
+            561
+          ],
+          [
+            224,
+            320,
+            486,
+            315,
+            551
+          ],
+          [
+            333,
+            267,
+            487,
+            308,
+            501
+          ],
+          [
+            343,
+            275,
+            472,
+            306,
+            500
+          ],
+          [
+            346,
+            286,
+            463,
+            300,
+            501
+          ],
+          [
+            341,
+            299,
+            455,
+            295,
+            506
+          ],
+          [
+            337,
+            345,
+            453,
+            254,
+            507
+          ],
+          [
+            359,
+            289,
+            474,
+            258,
+            516
+          ],
+          [
+            371,
+            265,
+            515,
+            263,
+            482
+          ],
+          [
+            401,
+            353,
+            465,
+            261,
+            416
+          ],
+          [
+            424,
+            340,
+            453,
+            261,
+            418
+          ],
+          [
+            426,
+            358,
+            435,
+            261,
+            416
+          ],
+          [
+            432,
+            538,
+            497,
+            262,
+            167
+          ]
+        ],
+        "switch_rate": 0.10975050449458815
+      }
+    }
+  },
+  "share_audit": {
+    "excluded_tids": {},
+    "formula": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m). Denominator is the 'Все категории' row, never sum6. No fillna(0).",
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_excluded": 0,
+    "n_mask": 1896,
+    "n_months": 24
+  },
+  "standardization": {
+    "fit_months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12"
+    ],
+    "formula": "z=(share-mu)/std, mu/std pooled over mask tids x 2023 months only (ddof=0), frozen transform of all months.",
+    "mu": {
+      "Здоровье": 0.04968506508069163,
+      "Маркетплейсы": 0.1183212980757472,
+      "Общественное питание": 0.030665330876084487,
+      "Продовольствие": 0.45398913380350014,
+      "Транспорт": 0.059412799226104464
+    },
+    "retrospective_note": "fit pools ALL 2023 months, so 2023 labels are retrospective (later-2023 months inform early-2023 z-scores); the causality-relevant check concerns 2024 months, which come strictly after the frozen fit.",
+    "sigma": {
+      "Здоровье": 0.009824676460667606,
+      "Маркетплейсы": 0.040153456918748394,
+      "Общественное питание": 0.020334376811954692,
+      "Продовольствие": 0.06569588047972198,
+      "Транспорт": 0.014156951902103084
+    },
+    "zero_variance_features": []
+  },
+  "status": "PARTIAL_NOT_GATE_PASS",
+  "synthetic_control": {
+    "design": "2 groups, 60 nodes, 12 months, 20 members change group at month 7, labels_truth kept in memory only",
+    "finding": "strong smoothing can hide true changes; lambda=0 must recover the shift with ~0 delay",
+    "mapping": "fixed one-to-one predicted->truth mapping learned ONCE on the initial month (Hungarian assignment on the pred x truth contingency table), applied unchanged to ALL months and ALL lambdas; no truth is used per month, so truth can never mask a real shift",
+    "measured": null,
+    "measured_note": "measured recall/time evidence lives only in self-check stdout (toy), never in real-run outputs",
+    "never_in_outputs": true,
+    "observed_labels_used": false,
+    "provenance": "synthetic_assumption",
+    "status": "separate_toy_only_run_under_self_check"
+  },
+  "temporal_linkage": {
+    "formula": "post(tid,m)=argmin_c ||z-C(m,c)||^2 + lambda*[c != post(tid,m-1)], fixed centres",
+    "note": "Temporal linkage is an explicit post-assignment penalty with FIXED per-month k-means centres (no refitting, no transition matrix, no shared temporal objective). It is NOT a joint dynamic model and must never be described as one."
+  }
+}

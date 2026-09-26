@@ -1,0 +1,136 @@
+# protocol/forecast_contract.yaml — R0: целевой контракт прогноза Радара
+# Статус: R0 PASS 21.09.2026 (conservative lag 2m как synthetic_assumption).
+# published_at/available_at отсутствуют в parquet; вместо них принят
+# консервативный лаг 2 мес (Mamedli & Shibitov 2021, WP 70), зафиксирован в
+# data/availability_audit.csv. См. корпус 62 ACCEL_GATES 2026-09-21.
+
+meta:
+  gate: R0
+  as_of_date: "2026-09-20"
+  status: r0_pass_conservative_lag_2m
+  source_estimate: null          # нет внешнего подтверждения горизонтов
+  synthetic_assumption: conservative_release_lag_2m  # принято 21.09.2026, см. data/availability_audit.csv
+
+target:
+  variable: spending_value       # безналичные расходы МО
+  unit: rub_per_month            # средние безналичные расходы жителей
+  dataset: historical_spending
+  rows: 303126
+  sha256: "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
+  categories: 6                  # Продовольствие + 5 др.
+  territories: 2190
+  period_start: "2023-01"
+  period_end: "2024-12"
+  points_per_series: 24          # observed: 2 года × 12 мес
+
+timestamps:
+  observation_period_end: "2024-12"
+  published_at: "unknown"        # отсутствует в parquet; заменён консервативным лагом 2 мес
+  available_at: "unknown"        # отсутствует в parquet; заменён консервативным лагом 2 мес
+  note: >
+    Поле published_at отсутствует в схеме historical_spending.
+    Для корректного as-of прогноза необходимо восстановить дату
+    публикации каждого выпуска из внешнего источника (Росстат / СберИндекс).
+
+horizons:
+  proposed: [1, 2, 3]           # месяцы вперёд от forecast_origin
+  status: hypothesis             # не подтверждены аудитом частоты
+  constraint: >
+    24 точки → годовая сезонность оценивается с высокой
+    неопределённостью. Горизонт 3 мес = 12.5% ряда.
+  recommendation: начать с h=1, затем h=2; h=3 — только если MAE устойчива
+
+forecast_origins:
+  strategy: rolling_origin_expanding
+  min_train_months: 12           # минимум для сезонного наивного
+  candidate_by_horizon:
+    1: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
+        "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"]
+    2: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
+        "2024-07", "2024-08", "2024-09", "2024-10", "2024-11"]
+    3: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
+        "2024-07", "2024-08", "2024-09", "2024-10"]
+  note: >
+    Финальный тест закрыт до выбора модели.
+    Препроцессинг обучается внутри каждого обучающего окна.
+
+event_definition:
+  type: structural_break_or_regime_change
+  detection_target: >
+    Смена режима расходов МО; статус early warning допускается только при
+    положительном lead time относительно независимо размеченного события.
+  matching_rule: >
+    Alert до event_start; успешная детекция ПОСЛЕ события
+    не засчитывается как предупреждение до него
+  status: taxonomy_frozen_v1      # event_taxonomy.yaml FROZEN 2026-09-23
+
+false_alarm_budget:
+  max_fpr: 0.10                   # ≤1 ложная тревога на 10 origins
+  metric: false_positive_rate
+  note: >
+    Предварительный порог для preregistration. Его нельзя подбирать по test;
+    окончательное значение утверждается до открытия test.
+
+temporal_split:
+  train: "2023-01..origin-1"
+  validation: "origin..origin+h-1"  # rolling
+  test: CLOSED                      # не открывается до выбора модели
+  embargo: 0                        # месячные данные, нет внутри-периода утечки
+  note: >
+    Препроцессинг (нормализация, лаги) обучается ТОЛЬКО на train
+    каждого окна. Ревизии данных между train/validation/test не смешиваются.
+
+baseline_metrics:
+  seasonal_naive:
+    lag: 12
+    sample_territory: 1
+    sample_category: "Продовольствие"
+    observations: 24
+    mae: 1153.5                   # observed через sberindex_scientific_metric
+    scope: sample_only_not_panel_metric
+    formula: "MAE_s = mean(|x_t - x_{t-s}|)"
+    source: "sberindex_scientific_metric, audit_id 9f4a8d8723a92121859d22e8"
+  prophet: status_planned
+  global_boosting: status_planned
+  tsfm_chronos2: status_planned
+
+auxiliary_data:
+  mobility:
+    rows: 594
+    territories: 297              # СЗФО
+    slices_total: 2               # 2024-12 и 2025-11
+    retrospective_slices_as_of_2024_12: 1
+    usage: limited_supplementary  # нельзя строить общероссийскую сеть
+  macro_cb:
+    rows: 448
+    series: 8
+    period: "2022-02..2026-09"
+  calendar:
+    rows: 1826
+    period: "2022-01..2026-12"
+  news:
+    status: archive_listing_pilot_60_not_model_ready
+    checked_at: "2026-09-24"
+    candidates_unique: 60
+    current_rss: 20
+    archive_listing_candidates: 40
+    archive_dated_2024: 31
+    archive_dated_2023: 9
+    rss_manifest: data/raw/news/manifest.json
+    archive_manifest: data/raw/news/archive_manifest.json
+    archive_as_of_eligible: false
+    geography: missing
+    topic: missing
+    full_article_text: missing
+    f06: unmeasured
+    usage: discovery_only_not_features
+  weather: not_loaded
+  rosstat_employment: not_downloaded  # TLS-проблема 20.09
+
+limitations:
+  - "24 точки → высокая неопределённость годовой сезонности"
+  - "Мобильность: 297 МО СЗФО, не общефедеральная"
+  - "published_at и available_at отсутствуют в parquet"
+  - "Горизонты h=1/2/3 — гипотеза, не подтверждена аудитом"
+  - "60 кандидатов новостей собраны 24.09.2026, включая 40 архивных карточек; исторический as-of корпус, география, topic, F06 и погодные признаки не готовы"
+  - "TLS-проблема блокирует ОКТМО и занятость Росстата"

@@ -1,0 +1,13 @@
+{
+  "id": 12122,
+  "title": "Радар потребительских сдвигов — манифест данных",
+  "filename": "Радар потребительских сдвигов — манифест данных.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "extract_status": "ok",
+  "text_chars": 649,
+  "truncated": false,
+  "text": "{\n  \"case_id\": \"case_008f37d03cf541e5\",\n  \"common_datasets\": [\n    \"sberindex_consumer_spending_current\",\n    \"sberindex_mobility_current\",\n    \"sberindex_data_sense_2025_pack\",\n    \"rosstat_municipal_employment_by_industry\"\n  ],\n  \"project_specific\": [\n    \"cbr_macro\",\n    \"production_calendar\",\n    \"open_meteo_archive\",\n    \"news_events\",\n    \"rosstat_employment_structure_2025_national\"\n  ],\n  \"target_table\": \"one row per municipality × category × month with lags, calendar, macro, weather and strictly as-of event features\",\n  \"priority_gap\": \"longer spending history and stable municipality coordinates/crosswalk before weather collection\"\n}",
+  "note": null
+}

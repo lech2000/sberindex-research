@@ -1,0 +1,13 @@
+{
+  "id": 13219,
+  "title": "R6 — официальный региональный RSS МЧС по Московской области, муниципальные кандидаты (24.09.2026)",
+  "filename": "R6 — официальный региональный RSS МЧС по Московской области, муниципальные кандидаты (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/rss",
+  "extract_status": "ok",
+  "text_chars": 933,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 на joe в контейнере fixar-devops: curl GET https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/rss вернул HTTP 200, text/xml, 49949 байт; Python xml.etree.ElementTree разобрал 10 item. Примеры полей: title «Сотрудники МЧС провели встречу с кадетским классом в Чехове», link https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831160, pubDate Thu, 24 Sep 26 09:09:00 +0300. Лента источника является текущим потоком, а не историческим корпусом. Заголовок иногда содержит муниципалитет, но совпадение имени не доказывает привязку к territory_id; проверить первичную статью, ОКТМО и релевантность таксономии событий R6. Эта публикация о встрече с кадетами сама по себе не экономическое событие R6. Хранить feed item как discovered candidate, не как model-ready feature. Для backtest 2023–2024 нужен архив официальных страниц с доказательством времени доступности и отдельной проверкой причинного типа события.",
+  "note": null
+}

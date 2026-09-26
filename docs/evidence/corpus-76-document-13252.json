@@ -1,0 +1,13 @@
+{
+  "id": 13252,
+  "title": "R6 — официальный постраничный архив МЧС МО 2023–2024; sitemap устарел (24.09.2026)",
+  "filename": "R6 — официальный постраничный архив МЧС МО 2023–2024; sitemap устарел (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti?page=450",
+  "extract_status": "ok",
+  "text_chars": 1433,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 10:47–10:51 UTC из joe/incus aios2 командами curl -L с TLS и разбором XML/HTML Python stdlib. Сайт https://50.mchs.gov.ru/deyatelnost/press-centr/novosti предоставляет пагинацию ?page=N (на главной странице ссылка на page=1857), карточки по 10 статей: относительный URL /deyatelnost/press-centr/novosti/<id>, заголовок articles-item__title, дата/время articles-item__date в русской локали. Получено: page=400 — 25–26.12.2024; page=450 — 23–28.08.2024; page=500 — 24–25.04.2024; page=550 — 30.12.2023–01.01.2024; page=600 — 03–05.09.2023. Ответы 200, HTML ~147–149 kB каждый (page=900 разово дал timeout). Это официальный путь к ограниченному ретроспективному discovery. ВАЖНО: https://50.mchs.gov.ru/sitemap.xml содержит 4 child sitemap, но проверенные child 0–3 дают новости максимум до 2022-02-16; https://mchs.gov.ru/sitemap.xml тоже имеет lastmod новостей максимум 2022-02-16. Для периода 2023–2024 эти sitemap устарели; не использовать их как полный архив. Дата карточки позволяет выделить published_at кандидата, но впервые скачали в 2026: first_seen_at=2026-09-24. Ни статья, ни редакция текста на старом forecast origin этим не доказаны; as_of_eligible=false до внешнего архивного снимка или консервативной проверки. Следующий шаг F7b: ограниченный allowlisted scraper указанных страниц, сохранение raw HTML/SHA256 и кандидатов без географии/topic; затем отдельный разбор статей и муниципальной привязки.",
+  "note": null
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "verified_on": "2026-09-20",
+  "method": "direct HTTPS GET, HTML text extraction",
+  "sha256": "f70cfe4500e7441f7127d829581864c39808ef696d32be0a893779396e6232fd",
+  "datasets_downloaded": true,
+  "data_catalog": "../data/DATA_CATALOG.md",
+  "manifest": "../data/manifest.json",
+  "schema_report": "../data/schema-report.json",
+  "note": "Downloaded current SberIndex spending and mobility dashboards, the organiser's public Data Sense 2025 pack, CBR macro data, production calendar and HSE population grids. Municipal employment by industry and municipality crosswalk sources are identified but their official bulk downloads remain blocked; see manifest statuses."
+}

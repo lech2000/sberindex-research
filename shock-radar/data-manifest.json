@@ -1,0 +1,18 @@
+{
+  "case_id": "case_008f37d03cf541e5",
+  "common_datasets": [
+    "sberindex_consumer_spending_current",
+    "sberindex_mobility_current",
+    "sberindex_data_sense_2025_pack",
+    "rosstat_municipal_employment_by_industry"
+  ],
+  "project_specific": [
+    "cbr_macro",
+    "production_calendar",
+    "open_meteo_archive",
+    "news_events",
+    "rosstat_employment_structure_2025_national"
+  ],
+  "target_table": "one row per municipality × category × month with lags, calendar, macro, weather and strictly as-of event features",
+  "priority_gap": "longer spending history and stable municipality coordinates/crosswalk before weather collection"
+}

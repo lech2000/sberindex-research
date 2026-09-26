@@ -1,0 +1,13 @@
+{
+  "id": 13093,
+  "title": "Словарь муниципалитетов СберИндекса — координаты для G2/R6 (вручную, 23.09.2026) [проект sberindex-2026, дело case_43de12a8dc2e4abd, kind municipal_dictionary_coords, проверено 2026-09-23, файл data/r",
+  "filename": "Словарь муниципалитетов СберИндекса — координаты для G2/R6 (вручную, 23.09.2026) [проект sberindex-2026, дело case_43de12a8dc2e4abd, kind municipal_dictionary_coords, проверено 2026-09-23, файл data/r.txt",
+  "ext": "txt",
+  "origin": "agent",
+  "url": null,
+  "extract_status": "ok",
+  "text_chars": 1159,
+  "truncated": false,
+  "text": "Координаты МО для графа G2 (distance kNN) и погоды R6 (ERA5-Land по геометрии МО). Файл: data/raw/sberindex-municipal-dictionary/municipal_dictionary.parquet, sha256=9ab519866c52028c26e9ce7ace7c4c56cdad07a68a3cea8406c4c66d4d0d620c. Строк: 2660, колонки: territory_id,name_short,name,type,oktmo,region_code,region_name,lat,lon,year_from,year_to. Покрытие панели Atlas (1896 tids): 1896/1896 (100 процентов). С координатами lat/lon: 1752/1896 (92.4 процента). Без координат: 144 внутригородские территории Москвы (тип внутригородская территория города федерального значения) — точечных lat/lon в словаре нет, для kNN использовать районные/городские центроиды или исключить из distance-графа с пометкой. Винтаж: year_from 2018-2022, year_to 9999/2024/2023/2022/2020 — границы проверять по valid_from/valid_to перед kNN. Исходник: https://sberindex.ru/ru/research/dataset-borders-and-changes-of-municipalities, лицензия CC BY-SA 4.0, архив t_dict_municipal.rar + xlsx + gpkg полигонов в data/raw/sberindex-municipal-dictionary/20241025/. Статус в manifest: identified_download_blocked (TLS 20.09) — снят ручной загрузкой, файл локально верифицирован, sha256 выше.",
+  "note": null
+}

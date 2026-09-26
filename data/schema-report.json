@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-09-20T07:21:33.826325+00:00",
+  "parquet": [
+    {
+      "file": "raw/sberindex-dashboard-current/municipal-consumer-spending.parquet",
+      "bytes": 1555117,
+      "sha256": "dde3f0657e39e19f6c7e0875afb7a4654bfd717e09861487b4f9363f56ebc9e0",
+      "rows": 303126,
+      "columns": [
+        {
+          "name": "indicator_id",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "kpi_id",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "obs_status",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "category_15",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "mo",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "freq",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "decimals",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "unit_measure",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "unit_mult",
+          "type": "string",
+          "nulls": 0
+        }
+      ],
+      "distinct": {
+        "indicator_id": 13140,
+        "period": 24,
+        "category_15": 6,
+        "mo": 2118
+      }
+    },
+    {
+      "file": "raw/sberindex-dashboard-current/mobility-index.parquet",
+      "bytes": 17687,
+      "sha256": "f7af1aa73e6a8b52909abaf130c26e2cdc4e697d1ac65d5548daa1a7d30ba837",
+      "rows": 594,
+      "columns": [
+        {
+          "name": "indicator_id",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "kpi_id",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "obs_status",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "ref_area",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "freq",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "decimals",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "unit_measure",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "unit_mult",
+          "type": "string",
+          "nulls": 0
+        }
+      ],
+      "distinct": {
+        "indicator_id": 297,
+        "period": 2,
+        "ref_area": 297
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/1_market_access.parquet",
+      "bytes": 25163,
+      "sha256": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1",
+      "rows": 2571,
+      "columns": [
+        {
+          "name": "territory_id",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "market_access",
+          "type": "double",
+          "nulls": 0
+        }
+      ],
+      "distinct": {
+        "territory_id": 2571
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/2_bdmo_population.parquet",
+      "bytes": 1365528,
+      "sha256": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+      "rows": 700215,
+      "columns": [
+        {
+          "name": "territory_id",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "year",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "age",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "double",
+          "nulls": 1707
+        }
+      ],
+      "distinct": {
+        "territory_id": 2449,
+        "year": 2,
+        "age": 84
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/3_bdmo_migration.parquet",
+      "bytes": 175303,
+      "sha256": "a7bff6bbf0dbd0cc0a8c83283ddf4b4fd0a13bbff5773ea167e6b79f590c67db",
+      "rows": 106224,
+      "columns": [
+        {
+          "name": "territory_id",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "year",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "age",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "double",
+          "nulls": 16673
+        }
+      ],
+      "distinct": {
+        "territory_id": 2535,
+        "year": 1,
+        "age": 23
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/4_bdmo_salary.parquet",
+      "bytes": 1972259,
+      "sha256": "f9a8956ad68c7ec81fac7b2e61ac2494b02b489887ce06204621b5dff29e62f2",
+      "rows": 369812,
+      "columns": [
+        {
+          "name": "territory_id",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "year",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "okved_name",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "okved_letter",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "double",
+          "nulls": 71740
+        }
+      ],
+      "distinct": {
+        "territory_id": 2617,
+        "year": 2,
+        "period": 4,
+        "okved_letter": 21
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/5_connection.parquet",
+      "bytes": 13162919,
+      "sha256": "696dbc891eff7566bed38a4607331da6fab56a233a562ee738f42813c008e79b",
+      "rows": 3303736,
+      "columns": [
+        {
+          "name": "territory_id_x",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "territory_id_y",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "distance",
+          "type": "double",
+          "nulls": 0
+        }
+      ],
+      "distinct": {
+        "territory_id_x": 2571,
+        "territory_id_y": 2571
+      }
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/8_consumption.parquet",
+      "bytes": 2373939,
+      "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+      "rows": 303126,
+      "columns": [
+        {
+          "name": "date",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "territory_id",
+          "type": "int16",
+          "nulls": 0
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "nulls": 0
+        },
+        {
+          "name": "value",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "__index_level_0__",
+          "type": "int64",
+          "nulls": 0
+        }
+      ],
+      "distinct": {
+        "territory_id": 2190,
+        "date": 24,
+        "category": 6
+      }
+    }
+  ],
+  "other_files": [
+    {
+      "file": "curated/cbr-macro-monthly.csv",
+      "bytes": 101482,
+      "sha256": "b9c734d72eb14d911514cc243d9f3413c3ee79f6279f8291e2a3aa2f229097cd",
+      "rows": 448,
+      "coverage": "2022-02-01..2026-09-01"
+    },
+    {
+      "file": "curated/russia-production-calendar.csv",
+      "bytes": 82221,
+      "sha256": "1e08d54c15fc28544aea89952537e34fd9ccc881e99d636814d63986aac16129",
+      "rows": 1826,
+      "coverage": "2022-01-01..2026-12-31"
+    },
+    {
+      "file": "raw/hse-population-grid/GHS-POP_2021_corrected_for_Russia_HSE.zip",
+      "bytes": 231993832,
+      "sha256": "5a663c6d602886ca04d62f114fb1cbe560f33f52183fd5b62f216027b776ed2e",
+      "coverage": "Russia, corrected GHS-POP 2021, 100 m and 1 km GeoTIFF"
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/basket_emiss_pars_hackathon.xlsx",
+      "bytes": 91610,
+      "sha256": "484383215903e3a1455e583c46ea8860f36ac873511bf36463b158ae4a11f0c0",
+      "role": "regional monthly indicator; metric and units not yet verified"
+    },
+    {
+      "file": "raw/sberindex-data-sense-2025/Описание_данных_для_Хакатона_2025_6_6.docx",
+      "bytes": 33812,
+      "sha256": "d2e462f22a2af8b0168eafef04d2fb554c902bea037a2d7ad92190201cb436d9",
+      "role": "historical pack documentation"
+    }
+  ]
+}

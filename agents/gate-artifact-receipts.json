@@ -1,0 +1,21 @@
+{
+  "attached_at": "2026-09-20T11:52:18.493343+00:00",
+  "receipts": [
+    {
+      "project": "economic-atlas",
+      "case_id": "case_66cae4a89ba6473f",
+      "file": "economic-atlas/protocol/question.md",
+      "sha256": "32084e99499d37a910e96202de40e062f970da21712a0b7cd58c89d6edf4e448",
+      "vault_document_id": "doc_f3396690c0d24a41",
+      "material_id": "mat_89fd6e5574b74be3"
+    },
+    {
+      "project": "shock-radar",
+      "case_id": "case_008f37d03cf541e5",
+      "file": "shock-radar/protocol/forecast_contract.yaml",
+      "sha256": "3fedcbbf3a23217e846c00336957aa72eb180cde4248edbb9801b04cdeca399d",
+      "vault_document_id": "doc_16de75bdf4e54914",
+      "material_id": "mat_f4dd927277c04bf4"
+    }
+  ]
+}

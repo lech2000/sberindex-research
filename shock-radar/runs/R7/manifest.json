@@ -1,0 +1,69 @@
+{
+ "experiment_id": "R7-d02-d03-vs-d01",
+ "run_utc": "2026-09-25T12:59:25+00:00",
+ "git_commit": "2a1495a3",
+ "seed": 20260923,
+ "inputs": {
+  "R5_cus": "deliverables/sberindex-2026/shock-radar/runs/R5_cus.parquet",
+  "R5_cus_sha256": "dfa8ecfdbdf62cefb3bf5a89304e3e63dca82ca93aafeebb4e2a9cead6d52047",
+  "registry": "deliverables/sberindex-2026/shock-radar/events/registry.parquet",
+  "registry_sha256": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070",
+  "n_rows": 111522
+ },
+ "signal_column": "rel",
+ "registry_events": 60,
+ "registry_is_60": true,
+ "split": {
+  "validation": "onset < 2024-07",
+  "test": "onset >= 2024-07",
+  "train_stats_end": "2024-03",
+  "validation_alarm_window": "[2024-03, 2024-07) exclusive end",
+  "no_test_leakage": true
+ },
+ "matching": {
+  "window_m": 1,
+  "cooldown_m": 3
+ },
+ "budget": 574,
+ "budget_source": "derived",
+ "budget_formula": "budget = round(D01_val_alarm_rate * n_test_months), D01_val_alarm_rate = D01_val_alarms_in_[train_end, split) / n_validation_months; D01_val_alarms=287, n_validation_months=3, n_test_months=6; explicit --budget overrides; uses only pre-split validation evidence, never test event/alarms counts",
+ "budget_inputs": {
+  "d01_val_alarms": 287,
+  "n_validation_months": 3,
+  "n_test_months": 6,
+  "validation_months": [
+   "2024-04",
+   "2024-05",
+   "2024-06"
+  ],
+  "test_months": [
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ],
+  "has_pretrain_data": false
+ },
+ "data_limitation": "data limitation: input panel starts at/after train_end 2024-03 — train stats use in-period fallback, pre-split calibration has only 3 validation months",
+ "fitted_on_validation_only": {
+  "D01": {
+   "k": 4.0
+  },
+  "D02": {
+   "delta": 0.05,
+   "lambda": 0.2
+  },
+  "D03": {
+   "tau": 0.3
+  }
+ },
+ "d03_config": {
+  "hazard": 0.02,
+  "n0": 10.0,
+  "rmax": 24,
+  "reset_on_alarm": true
+ },
+ "note": "технический тест детекции на 60 синтетических инжектах; раннее предупреждение о реальных шоках НЕ заявляется; тревога в месяц onset или позже — детекция с лагом"
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "case_66cae4a89ba6473f",
+  "common_datasets": [
+    "sberindex_consumer_spending_current",
+    "sberindex_mobility_current",
+    "sberindex_data_sense_2025_pack",
+    "rosstat_municipal_employment_by_industry"
+  ],
+  "project_specific": [
+    "hse_population_grid_2021",
+    "sberindex_municipal_dictionary",
+    "rosstat_oktmo_2026_09_01"
+  ],
+  "target_table": "one row per stable municipality × month with spending shares, population/migration, salary/employment structure, accessibility and mobility where observed",
+  "priority_gap": "stable municipality crosswalk and a nationwide municipal employment-by-industry export"
+}

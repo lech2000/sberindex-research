@@ -1,0 +1,2 @@
+dataset,target_column,date_range,conservative_release_lag,lag_source,lag_reason,vintage_available,checked_at,confidence,evidence_url
+historical_spending,value,2023-01/2024-12,2_months,synthetic_assumption,Ответ СберИндекса не получен; принято по Mamedli & Shibitov (2021) WP 70,no,2026-09-20,medium,76c075d703d55f4fa7824c93

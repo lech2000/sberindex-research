@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-09-20T07:21:33.827042+00:00",
+  "retrieved_on": "2026-09-20",
+  "storage_policy": "Raw/curated files stay in the workspace; kb-forge stores passports, provenance and analytical findings.",
+  "datasets": [
+    {
+      "id": "sberindex_consumer_spending_current",
+      "status": "downloaded_verified",
+      "source": "https://sberindex.ru/ru/dashboards/potrebitelskie-beznalicnye-rashody-na-urovne-munizipalnyh-obrazovanij",
+      "file": "raw/sberindex-dashboard-current/municipal-consumer-spending.parquet",
+      "rows": 303126,
+      "coverage": "2,190 municipality series × 6 categories, monthly 2023-01..2024-12",
+      "license": "Check contest terms before external redistribution",
+      "mandatory_sberindex": true,
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "sberindex_mobility_current",
+      "status": "downloaded_verified_limited_coverage",
+      "source": "https://sberindex.ru/ru/dashboards/indeks-mobilnosti",
+      "file": "raw/sberindex-dashboard-current/mobility-index.parquet",
+      "rows": 594,
+      "coverage": "297 municipalities in Northwestern Federal District; two observations (2024-12-31 and 2025-11-01 Moscow dates)",
+      "license": "Check contest terms before external redistribution",
+      "mandatory_sberindex": true,
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "sberindex_data_sense_2025_pack",
+      "status": "downloaded_verified_historical_pack",
+      "source": "https://disk.yandex.ru/d/WH8yJOogD4UrOg",
+      "files": [
+        "raw/sberindex-data-sense-2025/1_market_access.parquet",
+        "raw/sberindex-data-sense-2025/2_bdmo_population.parquet",
+        "raw/sberindex-data-sense-2025/3_bdmo_migration.parquet",
+        "raw/sberindex-data-sense-2025/4_bdmo_salary.parquet",
+        "raw/sberindex-data-sense-2025/5_connection.parquet",
+        "raw/sberindex-data-sense-2025/8_consumption.parquet",
+        "raw/sberindex-data-sense-2025/basket_emiss_pars_hackathon.xlsx",
+        "raw/sberindex-data-sense-2025/Описание_данных_для_Хакатона_2025_6_6.docx"
+      ],
+      "coverage": "SberIndex/Rosstat municipal data, mainly 2023-2024; downloaded from the organiser's 2025 public pack",
+      "license": "See supplied documentation and upstream sources",
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "rosstat_municipal_employment_by_industry",
+      "status": "source_confirmed_download_blocked",
+      "source": "https://rosstat.gov.ru/storage/mediabank/Munst.htm",
+      "indicator": "8423005 — Среднесписочная численность работников организаций (без субъектов малого предпринимательства)",
+      "coverage": "Municipal districts/city districts/intracity territories × economic activity; quarterly cumulative",
+      "blocking_reason": "Official BDMO bulk export was not exposed as a stable downloadable URL; Rosstat HTTPS chain failed local verification on 2026-09-20. TLS verification was not bypassed.",
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "rosstat_employment_structure_2025_national",
+      "status": "identified_download_blocked_wrong_geography_for_primary_use",
+      "source": "https://rosstat.gov.ru/opendata/7708234640-employees2025",
+      "coverage": "Russia, annual 2017-2025, enlarged economic activities; not a municipal panel",
+      "blocking_reason": "Official CSV URL identified, but Rosstat HTTPS chain failed local verification on 2026-09-20. TLS verification was not bypassed.",
+      "projects": [
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "cbr_macro",
+      "status": "downloaded_verified",
+      "source": "https://www.cbr.ru/statistics/data-service/APIdocumentation/",
+      "file": "curated/cbr-macro-monthly.csv",
+      "coverage": "M2 components and end-of-month USD/EUR/CNY rates, 2022-2026",
+      "license": "Bank of Russia public statistical data; keep attribution",
+      "projects": [
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "production_calendar",
+      "status": "downloaded_verified",
+      "source": "https://www.isdayoff.ru/docs/",
+      "file": "curated/russia-production-calendar.csv",
+      "coverage": "Daily 2022-2026",
+      "license": "Public API; keep source attribution",
+      "projects": [
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "hse_population_grid_2021",
+      "status": "downloaded_verified",
+      "source": "https://geoportal.hse.ru/portal/home/item.html?id=9ee9d4ad2b124f82949f9f061e0b42c9",
+      "file": "raw/hse-population-grid/GHS-POP_2021_corrected_for_Russia_HSE.zip",
+      "coverage": "Russia, 2021, 100 m and 1 km corrected population rasters",
+      "license": "CC BY 4.0",
+      "projects": [
+        "economic-atlas"
+      ]
+    },
+    {
+      "id": "sberindex_municipal_dictionary",
+      "status": "manual_verified_local_full_coords",
+      "source": "https://sberindex.ru/ru/research/dataset-borders-and-changes-of-municipalities",
+      "download": "https://www.sberbank.com/common/files/t_dict_municipal.rar",
+      "blocking_reason": "TLS 20.09 снят ручной загрузкой 23.09: файл локально верифицирован",
+      "license": "CC BY-SA 4.0",
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ],
+      "local_path": "data/raw/sberindex-municipal-dictionary/municipal_dictionary.parquet",
+      "sha256": "0f111bb2369f9a40488e039ab2a32b2b",
+      "manual_verified_on": "2026-09-23",
+      "rows": 2660,
+      "columns": [
+        "territory_id",
+        "name_short",
+        "name",
+        "type",
+        "oktmo",
+        "region_code",
+        "region_name",
+        "lat",
+        "lon",
+        "year_from",
+        "year_to"
+      ],
+      "panel_coverage": "panel Atlas 1896/1896 (100%), vse s lat/lon",
+      "kb_documents": [
+        13091,
+        13092,
+        13093
+      ],
+      "kb_corpora": [
+        77,
+        76,
+        74
+      ],
+      "coords": "2660/2660 s lat/lon: 2393 tochki slovarya + 267 centroidov iz gpkg-poligonov (t_dict_municipal_districts_poly.gpkg, EPSG:4326, centroid cherez EPSG:3857)",
+      "source_archive": "t_dict_municipal.rar (md5 e2f6ed1bb315670bed5cbcaa548716dc): xlsx 3101 strok s istoriei izmenenii + gpkg 2660 geometrii"
+    },
+    {
+      "id": "rosstat_oktmo_2026_09_01",
+      "status": "identified_download_blocked",
+      "source": "https://rosstat.gov.ru/opendata/7708234640-oktmo",
+      "blocking_reason": "Official URL identified, but Rosstat HTTPS chain failed local verification on 2026-09-20. TLS verification was not bypassed.",
+      "projects": [
+        "economic-atlas",
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "open_meteo_archive",
+      "status": "planned_after_coordinates",
+      "source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "coverage": "Daily weather at selected municipal centroids; request only after a trusted territory crosswalk is available",
+      "license": "CC BY 4.0 with attribution",
+      "projects": [
+        "shock-radar"
+      ]
+    },
+    {
+      "id": "news_events",
+      "status": "archive_listing_pilot_60_not_model_ready",
+      "coverage": "60 unique DISCOVERED news candidates on 2026-09-24: 20 current RSS + 40 official 50.mchs.gov.ru archive listing cards (31 dated 2024, 9 dated 2023); archive as_of_eligible=false, no geography/topic/full article text, F06 unmeasured",
+      "projects": [
+        "shock-radar"
+      ],
+      "taxonomy": "shock-radar/protocol/event_taxonomy.yaml (FROZEN v1 2026-09-23, 10 топиков, as-of правила)",
+      "collection_next": "verify article pages; assign municipality geography and topic; audit historical revision/as-of eligibility; then measure F06",
+      "checked_at": "2026-09-24T10:58:48Z",
+      "snapshot_manifest": "data/raw/news/manifest.json",
+      "archive_manifest": "data/raw/news/archive_manifest.json"
+    }
+  ]
+}

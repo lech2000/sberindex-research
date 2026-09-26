@@ -1,0 +1,96 @@
+{
+  "case_id": "case_43de12a8dc2e4abd",
+  "retrieved_at": "2026-09-26T08:20:55.935447+00:00",
+  "actions": [
+    {
+      "id": "act_fc62e9239c254246",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G1. Утвердить схему публичных коммуникационных узлов: municipality/organization/channel, platform=telegram|max, public_url, officiality, source_url, checked_at, oktmo, coordinates, provenance и confidence; не собирать личные аккаунты, участников и закрытые чаты.",
+      "owner": "sberindex_graph_steward",
+      "due": null,
+      "waiting_for": "",
+      "done": false,
+      "created_at": "2026-09-20T14:55:12.587243Z"
+    },
+    {
+      "id": "act_064c759fe5194d67",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G2. Балашиху пропустить по решению владельца 25.09.2026; не искать её повторно. Для остальных муниципалитетов из проверенного кроссволка найти официальные публичные Telegram- и MAX-каналы/чаты через официальный сайт и публичный поиск; сохранить ссылку-основание, дату проверки и геопривязку.",
+      "owner": "sberindex_graph_steward",
+      "due": null,
+      "waiting_for": "",
+      "done": false,
+      "created_at": "2026-09-20T14:55:12.637565Z"
+    },
+    {
+      "id": "act_ccf32c1b8785494f",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G3. Получить публичный реестр ТСЖ/ТСН/ЖСК по территориям из ГИС ЖКХ, ФИАС, региональных порталов или иных официальных источников; затем найти только публичные каналы/чаты организаций и привязать их к адресу и ОКТМО.",
+      "owner": "sberindex_graph_steward",
+      "due": null,
+      "waiting_for": "",
+      "done": false,
+      "created_at": "2026-09-20T14:55:12.707523Z"
+    },
+    {
+      "id": "act_36531010f65a4117",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G4. Геокодировать найденные публичные площадки на уровне координаты здания либо центроида муниципалитета, явно помечая точность geocode_precision; неоднозначные названия оставить proposed до подтверждения источником.",
+      "owner": "sberindex_graph_steward",
+      "due": null,
+      "waiting_for": "",
+      "done": false,
+      "created_at": "2026-09-20T14:55:12.754094Z"
+    },
+    {
+      "id": "act_d9915c46b80e478c",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G5. Выполнить дедупликацию Telegram/MAX URL и организаций, проверить официальный статус и покрытие по муниципалитетам; настроить инкрементальное обновление, историю изменений и очередь ручной проверки только для неразрешимых неоднозначностей.",
+      "owner": "sberindex_graph_steward",
+      "due": null,
+      "waiting_for": "",
+      "done": false,
+      "created_at": "2026-09-20T14:55:12.824005Z"
+    },
+    {
+      "id": "act_b8cf094fef5d4a63",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G2.1. Собрать и провалидировать первую структурированную запись public_channel для https://t.me/ramenskoye_official из evidence 12318/12321/12324/12327: ОКТМО 46568000, координаты, geocode_precision, officiality, source_ref и связь SERVES_TERRITORY; entity_type source запрещён.",
+      "owner": "sberindex_graph_steward",
+      "due": "2026-09-20T15:30:00Z",
+      "waiting_for": "",
+      "done": true,
+      "created_at": "2026-09-20T15:27:02.283443Z"
+    },
+    {
+      "id": "act_1b7881ee857842ce",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G2.2. Discovery-only для следующего муниципалитета: сделать ровно call jina_search_web с query официальный сайт администрация городской округ Балашиха Telegram MAX. В этом проходе entities=[] и relations=[]; сохранить только кандидаты и HTTPS-источники. Не создавать public_channel до полного набора platform, public_url, channel_kind, officiality, source_ref, checked_at, oktmo, latitude, longitude, geocode_precision. Не повторять Раменское.",
+      "owner": "sberindex_graph_steward",
+      "due": "2026-09-20T18:50:00Z",
+      "waiting_for": "call jina_search_web: {\"query\":\"официальный сайт администрация городской округ Балашиха Telegram MAX\"}",
+      "done": true,
+      "created_at": "2026-09-20T18:48:16.764425Z"
+    },
+    {
+      "id": "act_0a9d9d3143924634",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G2.3. Проверить officiality кандидатов Балашихи: сделать ровно call jina_read_url для https://balashiha.ru/mun/contacts и извлечь прямые ссылки на Telegram/MAX из страницы контактов или подвала. В этом проходе entities=[] и relations=[]; сохранить observed claims с точными HTTPS URL. Не создавать public_channel, пока не подтверждены обратная ссылка, ОКТМО и геоданные.",
+      "owner": "sberindex_graph_steward",
+      "due": "2026-09-20T19:30:00Z",
+      "waiting_for": "call jina_read_url: {\"url\":\"https://balashiha.ru/mun/contacts\"}",
+      "done": true,
+      "created_at": "2026-09-20T18:58:12.634660Z"
+    },
+    {
+      "id": "act_6ee77ab2efd14b0d",
+      "case_id": "case_43de12a8dc2e4abd",
+      "what": "G2.4. Пропущено по решению владельца 25.09.2026: проверку сайта Балашихи и поиск Telegram/MAX по этому муниципалитету не повторять. Подтверждённых ссылок этот пункт не дал. Продолжать другие территории и задачи A5.",
+      "owner": "sberindex_graph_steward",
+      "due": "2026-09-20T20:00:00Z",
+      "waiting_for": "",
+      "done": true,
+      "created_at": "2026-09-20T19:00:22.278858Z"
+    }
+  ]
+}

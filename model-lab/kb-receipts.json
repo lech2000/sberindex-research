@@ -1,0 +1,126 @@
+[
+  {
+    "corpus_id": 75,
+    "file": "ARCHITECTURE.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12198,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 75,
+    "file": "loaded-data-audit.json",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12199,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 76,
+    "file": "ARCHITECTURE.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12200,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 76,
+    "file": "loaded-data-audit.json",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12201,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 74,
+    "file": "DATA_CATALOG.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12202,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 74,
+    "file": "ANALYTIC_TOOLS.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12219,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 62,
+    "file": "PLATFORM_VERIFICATION.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12203,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 62,
+    "file": "GPU_RUNTIME.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12234,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 75,
+    "file": "ANALYTIC_TOOLS.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12222,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 76,
+    "file": "ANALYTIC_TOOLS.md",
+    "result": {
+      "added": false,
+      "duplicate": true,
+      "document_id": 12223,
+      "note": "такой текст в базе уже есть, ничего не изменено"
+    }
+  },
+  {
+    "corpus_id": 75,
+    "file": "question.md",
+    "result": {
+      "added": true,
+      "document_id": 12249,
+      "title": "Экономический атлас — A0 исследовательский вопрос, PASS 20.09.2026",
+      "corpus_id": 75,
+      "chunks": 3,
+      "vectors": 3
+    }
+  },
+  {
+    "corpus_id": 76,
+    "file": "forecast_contract.yaml",
+    "result": {
+      "added": true,
+      "document_id": 12250,
+      "title": "Радар сдвигов — R0 forecast contract, BLOCKED по availability 20.09.2026",
+      "corpus_id": 76,
+      "chunks": 5,
+      "vectors": 5
+    }
+  }
+]

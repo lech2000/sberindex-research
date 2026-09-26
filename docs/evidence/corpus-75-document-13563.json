@@ -1,0 +1,13 @@
+{
+  "id": 13563,
+  "title": "SberIndex A4: k-means vs Ward на 2190 МО, проверка 25.09.2026",
+  "filename": "SberIndex A4: k-means vs Ward на 2190 МО, проверка 25.09.2026.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "extract_status": "ok",
+  "text_chars": 1114,
+  "truncated": false,
+  "text": "Проверено 25.09.2026: F7b-код sberindex_cluster в tool-service prod (коммит f06275df8), реальный вызов метода agglomerative в live-контейнере; полный прогон обоих методов на одном historical_spending 2023–2024. Выборка 2190 territory_id, признаки 6 долей расходов, стандартизация z-score, k=5, seed=20260921. k-means: WCSS=5244.0811, silhouette=0.2186, размеры [659, 495, 165, 341, 530]. Ward agglomerative: WCSS=5887.5465, silhouette=0.1728, размеры [387, 152, 456, 416, 779]. Территории в обоих файлах совпадают 2190/2190; ARI=0.5076373866, NMI=0.5445703145. Хеши полных назначений: kmeans.json SHA256 67aad2e7b69f767913d74e99500ff28e580ea6dbf3cc9d4ec4c8aed11e435bb7; agglomerative.json SHA256 7bf95a9bec06903c34ac56aac159c635b0666739d21b411771e5122319eb5480. Источник: deliverables/sberindex-2026/economic-atlas/runs/A4/*.json, Git prod f06275df8. Интерпретация: силуэт низкий, согласованность умеренная; типология не подтверждена внешними показателями, A4 source action не закрывать до независимой проверки. Прямой join со словарём СберИндекса ранее измерен 2190/2190, но это не официальный territory_id→ОКТМО.",
+  "note": null
+}

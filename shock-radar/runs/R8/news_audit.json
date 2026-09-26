@@ -1,0 +1,655 @@
+{
+ "run_id": "R8-news-asof-audit",
+ "cutoff": "2024-12-31",
+ "availability_rule": "strict_available=max(published_at, first_seen_at): no separate verified immutable archive available_at exists in the data (NO_ARCHIVE_AVAILABLE_AT=true); updated_at is NOT used for availability, its historical integrity is marked unknown",
+ "updated_at_historical_integrity": "unknown",
+ "coverage": {
+  "n_events_total": 64,
+  "n_eligible": 0,
+  "n_quarantined": 0,
+  "n_excluded_future_unknown": 64,
+  "n_feature_rows_total": 3380,
+  "n_asof_feature_rows": 0,
+  "quality_audit_all_inputs": {
+   "n_events_scanned": 64,
+   "n_suspected_topic_error": 18,
+   "n_ambiguous_city_multi_tid": 4,
+   "n_items": 22
+  },
+  "zero_eligible_is_valid_audit": true
+ },
+ "quality_audit_all_inputs": {
+  "n_events_scanned": 64,
+  "n_suspected_topic_error": 18,
+  "n_ambiguous_city_multi_tid": 4,
+  "n_items": 22,
+  "items": [
+   {
+    "index": 0,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179250",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Межведомственные профилактические рейды проведены в Луховицах",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 1,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179233",
+    "reason": "ambiguous_city_multi_tid",
+    "tids": [
+     1484,
+     1791
+    ],
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 2,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179510",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Школьники Раменского поздравили пожарных с Новым годом",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 3,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179299",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Спасатели обеспечат безопасность новогодних и рождественских мероприятий в Подмосковье",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 4,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179617",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Сотрудники МЧС встретились с членами общественной палаты Домодедово",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 6,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179813",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Поздравление главы МЧС России Александра Куренкова с Новым 2024 годом и Рождеством Христовым",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 7,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179378",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "В образовательных учреждениях Подмосковья проведены противопожарные предновогодние инструктажи",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 11,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262293",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "В Рузском округе проверена готовность сил и средств к пожароопасному сезону",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 15,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262685",
+    "reason": "ambiguous_city_multi_tid",
+    "tids": [
+     542,
+     1673,
+     3013
+    ],
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 18,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262750",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Обеспечение пожарной безопасности в образовательных учреждениях обсудили в Ленинском городском округе",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 28,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5349724",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "В Реутове проведено очередное заседание Комиссии по предупреждению и ликвидации чрезвычайных ситуаций и обеспечению пожарной безопасности",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 31,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426358",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "В оздоровительном лагере Ступино проведен противопожарный инструктаж для персонала",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 32,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426362",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Спасатели Подмосковья начинают принимать поздравления с профессиональным праздником",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 34,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5425972",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Вопросы профилактики правонарушений в сфере бизнеса обсуждены в Пушкино",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 35,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426524",
+    "reason": "ambiguous_city_multi_tid",
+    "tids": [
+     1459,
+     1673
+    ],
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 36,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426386",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Школьники поздравляют сотрудников МЧС с новогодними праздниками",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 38,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426401",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Рейды по профилактике пожаров в жилом фонде продолжаются в Дубне",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 39,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426679",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Вопросы обеспечения пожарной безопасности обсудили на заседании КЧС в Чехове",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T10:58:48+00:00"
+   },
+   {
+    "index": 57,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830999",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "В Зарайске проходит месячник пожарной профилактики",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T09:42:06+00:00"
+   },
+   {
+    "index": 61,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831580",
+    "reason": "ambiguous_city_multi_tid",
+    "tids": [
+     1459,
+     1673
+    ],
+    "strict_available_at": "2026-09-24T12:15:00+00:00"
+   },
+   {
+    "index": 62,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831645",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Проверка на прочность: в Подмосковье проходят тренировки по подготовке к отопительному сезону",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T12:15:00+00:00"
+   },
+   {
+    "index": 63,
+    "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831694",
+    "reason": "suspected_topic_error",
+    "topic_original": "natural_disaster",
+    "title": "Комиссия Главного управления оценила готовность городского округа Домодедово: акцент на практической помощи и развитии",
+    "note": "routine/preventive content kept as-is, no relabel",
+    "strict_available_at": "2026-09-24T14:15:04+00:00"
+   }
+  ]
+ },
+ "eligible": [],
+ "excluded": [
+  {
+   "index": 40,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5829278",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 41,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5829375",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 42,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5829543",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 43,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5829720",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 44,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5830160",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 45,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5830271",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 46,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5830575",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 47,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5830776",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 54,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5831180",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 55,
+   "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5831312",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:41:15+00:00"
+  },
+  {
+   "index": 48,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830536",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 49,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830822",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 50,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830564",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 51,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831077",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 52,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831135",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 53,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830875",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 56,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830829",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 57,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5830999",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 58,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831160",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 59,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831469",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T09:42:06+00:00"
+  },
+  {
+   "index": 0,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179250",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 1,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179233",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 2,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179510",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 3,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179299",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 4,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179617",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 5,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5176665",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 6,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179813",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 7,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179378",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 8,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5179359",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 9,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5178322",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 10,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262237",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 11,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262293",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 12,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262300",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 13,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262296",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 14,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262673",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 15,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262685",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 16,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262692",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 17,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262704",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 18,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5262750",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 19,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5261436",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 20,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5350185",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 21,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5347102",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 22,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5347317",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 23,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5347353",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 24,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5345729",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 25,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5347183",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 26,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5345733",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 27,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5348900",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 28,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5349724",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 29,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5350177",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 30,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5425906",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 31,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426358",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 32,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426362",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 33,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5425743",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 34,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5425972",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 35,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426524",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 36,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426386",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 37,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426396",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 38,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426401",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 39,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5426679",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T10:58:48+00:00"
+  },
+  {
+   "index": 60,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831533",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T12:15:00+00:00"
+  },
+  {
+   "index": 61,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831580",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T12:15:00+00:00"
+  },
+  {
+   "index": 62,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831645",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T12:15:00+00:00"
+  },
+  {
+   "index": 63,
+   "url": "https://50.mchs.gov.ru/deyatelnost/press-centr/novosti/5831694",
+   "reason": "future_strict_available",
+   "strict_available_at": "2026-09-24T14:15:04+00:00"
+  }
+ ],
+ "checks": {
+  "prefix_invariance_future_append_postcutoff_edit": true,
+  "shuffle_control": {
+   "diagnostic_only": true,
+   "n_rows": 0,
+   "seed": 20260926,
+   "checksum_ordered": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "checksum_multiset": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "performance_claim": null,
+   "note": "shuffle control is diagnostic evidence only, not a performance claim"
+  }
+ },
+ "forecast_metrics": null,
+ "forecast_metrics_note": "no forecasts are built or claimed; news-only evaluation is NA",
+ "provenance": {
+  "run_utc": "2026-09-26T06:48:05+00:00",
+  "command": "/tmp/sberindex-radar-src-20260926/r8_news_audit.py --news-events /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_events.json --news-features /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_features.parquet --cutoff 2024-12-31 --outdir /tmp/sberindex-R8-20260926",
+  "cutoff": "2024-12-31T23:59:59+00:00",
+  "inputs": {
+   "news_events": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_events.json",
+   "news_events_sha256": "125e775fe5a89084cdfff75919b284f1584355a7c356c6a3ec429acbaa5cd7af",
+   "news_events_n": 64,
+   "news_features": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/events/news_features.parquet",
+   "news_features_sha256": "ae1a6168999206588ebf9f16942fadbd7ceb00214a61a0dac7d165a4afd2f404",
+   "news_features_rows": 3380,
+   "news_features_status": "read_parquet"
+  },
+  "code_sha256": "7ce833b52db10d2d9ed2526f0bd3d82c046b9465a385e17c30ca57a389f6d51f",
+  "git_commit": null,
+  "versions": {
+   "python": "3.14.5",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "numpy": "2.5.3"
+  }
+ }
+}

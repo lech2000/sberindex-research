@@ -1,0 +1,13 @@
+{
+  "id": 13570,
+  "title": "a4_gate:20260925_v2 — A4 baseline PASS criterion",
+  "filename": "a4_gate:20260925_v2 — A4 baseline PASS criterion.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "extract_status": "ok",
+  "text_chars": 927,
+  "truncated": false,
+  "text": "a4_gate:20260925_v2. Проверено 25.09.2026 по research-ladder A4 и live tool-service. A4 критерий: ДВА семейства на одной маске + назначения, прототипы, метрики в runs/A4; внешняя экономическая валидация находится на ПОЗДНИХ воротах A9 и не блокирует PASS A4. Артефакты Git prod: economic-atlas/runs/A4/kmeans.json, agglomerative.json, metrics.json. Одна маска 2190 territory_id, shares z-score, k=5, seed=20260921; k-means silhouette 0.218583/WCSS 5244.081, Ward silhouette 0.172810/WCSS 5887.546, ARI 0.507637, NMI 0.544570. Центры и все назначения сохранены, SHA входных JSON в metrics.json. Live sberindex_crosswalk matched 2190/2190, coverage 1.0 со словарём СберИндекса; официальный ОКТМО-кроссволк отдельно. A4 технический baseline выполнен, source act_bdc9ac74afaf47c8 можно закрыть через case-service после GATE_REPORT A4 PASS; переход A5. Низкий silhouette означает НЕ объявлять группы экономически осмысленными до A9.",
+  "note": null
+}

@@ -1,0 +1,86 @@
+{
+  "updated_at": "2026-09-26T07:26:18.266734+00:00",
+  "policy_version": 2,
+  "projects": {
+    "economic-atlas": {
+      "case_id": "case_66cae4a89ba6473f",
+      "agent": "software:sberindex_atlas_researcher@5",
+      "current_gate": "A6",
+      "status": "in_progress",
+      "last_artifact": "economic-atlas/runs/A6/manifest.json",
+      "last_dialog": "2026-09-26T06:35:59Z",
+      "next_action": "A6: временная чувствительность рассчитана (75/13783); выполнить идентичности с переменным K, рождения/исчезновения и контроли ATF-M2/M3. Действие06 открыто; куратор принял адресное задание 77/13782. A4 и Балашиху не повторять.",
+      "last_gate": {
+        "gate": "A5",
+        "status": "PASS",
+        "checked_at": "2026-09-26T06:36:50.712167+00:00",
+        "source_action": "act_3791c1939bd8452d",
+        "source_action_done": true,
+        "kb_corpus": 75,
+        "kb_document_id": 13776,
+        "commit": "ed378e9f7"
+      },
+      "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
+      "last_dialog_attempt": {
+        "checked_at": "2026-09-26T07:08:40.194479+00:00",
+        "client_message_id": "research-a6-progress-20260926-0956",
+        "status": "timed_out",
+        "gate_changed": false
+      }
+    },
+    "shock-radar": {
+      "case_id": "case_008f37d03cf541e5",
+      "agent": "software:sberindex_radar_researcher@5",
+      "current_gate": "R8",
+      "status": "in_progress",
+      "last_artifact": "shock-radar/runs/R8/metrics.json",
+      "last_dialog": "2026-09-26T07:06:14Z",
+      "next_action": "R8: выполнить парные прогнозные абляции no-news/calendar/strict-lag и shuffle/forward-shift контроли. Аудит76/13781 готов; исторические новости исключены до доказанного vintage и проверки topic/географии. Действие08 открыто.",
+      "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
+      "last_gate": {
+        "gate": "R7",
+        "status": "PASS",
+        "checked_at": "2026-09-26T07:06:14Z",
+        "source_action": "act_75836e1bc8f94869",
+        "source_action_done": true,
+        "kb_corpus": 76,
+        "kb_document_id": 13784,
+        "commit": "9211e62a2",
+        "quality_claim": "Отрицательный технический результат; раннее предупреждение не подтверждено; exploratory-v2"
+      }
+    },
+    "municipality-graph": {
+      "case_id": "case_43de12a8dc2e4abd",
+      "agent": "software:sberindex_graph_steward@3",
+      "open_actions": "5/9",
+      "status": "in_progress_balashikha_skipped",
+      "last_evidence": "sberindex_crosswalk coverage=1.0 (2190/2190), dict sha 9ab519866c52028c, manual 23.09.2026",
+      "next_action": "G2: работать по другим территориям проверенного кроссволка. Балашиха пропущена владельцем25.09; act_6ee77ab2efd14b0d done=true означает пропуск, а не найденные каналы. Не искать её повторно.",
+      "current_gate": "G2",
+      "last_dialog": "2026-09-23T19:55:00Z"
+    },
+    "research-curator": {
+      "case_id": "case_d058db85c48a487c",
+      "agent": "software:sberindex_research_curator@3",
+      "status": "dispatching",
+      "note": "0 собственных actions — по замыслу, работает с чужих open_actions",
+      "last_dispatch": {
+        "run_key": "research-next-r8-20260926-1024",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "source_case_id": "case_008f37d03cf541e5",
+        "plan_ref": "R8",
+        "verdict": "accept",
+        "evidence_document_id": 13792,
+        "decision_document_id": 13793
+      },
+      "routing": "Адресный webhook передаёт ровно одно открытое source_action_id; куратор и ответ проверяют связь с делом. Размер контекста исправлен через F7b, live R8 accept 26.09.2026.",
+      "previous_dispatch": {
+        "run_key": "research-next-a6-20260926-0949",
+        "source_action_id": "act_c475e17b2a584b9a",
+        "verdict": "accept",
+        "evidence_document_id": 13780,
+        "decision_document_id": 13782
+      }
+    }
+  }
+}

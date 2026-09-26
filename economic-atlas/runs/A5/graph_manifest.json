@@ -1,0 +1,55 @@
+{
+  "code": {
+    "file": "sberindex-a5-20260926.py",
+    "sha256": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759"
+  },
+  "command": "/tmp/sberindex-a5-20260926.py --panel /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet --distance /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/5_connection.parquet --outdir /tmp/sberindex-A5-20260926 --seed 20260921 --k 5",
+  "created_at": "2026-09-26T06:32:33.090655+00:00",
+  "formulas": {
+    "affinity": "A(alpha)=alpha*W_geo+(1-alpha)*F_feat; E03 alpha=0.5",
+    "geo_weight": "w=exp(-distance/median_positive_knn_distance), symmetrisation=max, no self-loops",
+    "share": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m); feature=mean_m(share); z=(feature-mean_tids)/std_tids(ddof=0). Denominator is the 'Все категории' row, never sum6. No fillna(0)."
+  },
+  "gate": "A5",
+  "graph": {
+    "components": [
+      1878,
+      18
+    ],
+    "nodes": 1896,
+    "undirected_edges": 9372
+  },
+  "inputs": {
+    "distance": {
+      "path": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/5_connection.parquet",
+      "rows": 3303736,
+      "sha256": "696dbc891eff7566bed38a4607331da6fab56a233a562ee738f42813c008e79b"
+    },
+    "panel": {
+      "path": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet",
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "mobility_status": "excluded_no_OD_no_verified_crosswalk",
+  "params": {
+    "alphas": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "k": 5,
+    "k_feat": 5,
+    "k_geo": 8,
+    "resolution_louvain": 1.0
+  },
+  "seed": 20260921,
+  "versions": {
+    "networkx": "3.7",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "python": "3.14.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

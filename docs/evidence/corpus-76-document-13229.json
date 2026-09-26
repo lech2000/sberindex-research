@@ -1,0 +1,13 @@
+{
+  "id": 13229,
+  "title": "R6: архивная первичная новость 2024 об Орске привязана к tid 1673 как кандидат",
+  "filename": "R6: архивная первичная новость 2024 об Орске привязана к tid 1673 как кандидат.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://56.mchs.gov.ru/deyatelnost/press-centr/novosti/5249015",
+  "extract_status": "ok",
+  "text_chars": 881,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 на joe: curl GET первичной страницы МЧС https://56.mchs.gov.ru/deyatelnost/press-centr/novosti/5249015 вернул HTTP 200, HTML 90087 байт; в raw HTML указано 6 апреля 2024, 08:42. SHA-256 snapshot 2d15419f920421361af6c666f3c42a75c9dbb7db0bd8b866fd67eec33ae45b52. Сохранено в /opt/aios2/deliverables/sberindex-2026/data/raw/news/history/mchs-orsk-2024-04-06.html и sidecar JSON; checked/first_seen 2026-09-24T09:50:40Z. Источник описывает эвакуацию жителей Орска из-за размыва дамбы. Через pandas в tool-service прочитан загруженный municipal_dictionary.parquet: точное name_short Орск соответствует territory_id 1673, ОКТМО 53-723-000-000, valid 2018..9999. status=source_candidate, topic_candidate=natural_disaster; исторический available_at на forecast origin 2024 не доказан. Не использовать как F06 feature до независимого as-of следа и проверки event_start.",
+  "note": null
+}

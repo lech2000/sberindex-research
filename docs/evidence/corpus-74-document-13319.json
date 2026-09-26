@@ -1,0 +1,13 @@
+{
+  "id": 13319,
+  "title": "R6 артефакт news_events.json sha 125e775fe5a89084 (проект sberindex-2026, дело case_008f37d03cf541e5)",
+  "filename": "R6 артефакт news_events.json sha 125e775fe5a89084 (проект sberindex-2026, дело case_008f37d03cf541e5).txt",
+  "ext": "txt",
+  "origin": "agent",
+  "url": null,
+  "extract_status": "ok",
+  "text_chars": 363,
+  "truncated": false,
+  "text": "Артефакт R6: deliverables/sberindex-2026/shock-radar/events/news_events.json, sha256 125e775fe5a89084. external.parquet 45504 строк (tid x ym): tmean ERA5-Land где докачано (774 tid), usd/eur/M2/M1 ЦБ, workdays/holidays календаря, as-of правила (погода ym-01, макро конец M+1). news_events.json 64 события МЧС с topic/geography_tids/as_of_eligible, таксономия v1.",
+  "note": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": 13257,
+  "title": "R6 — архивный пилот МЧС МО: 40 карточек 2023–2024, всего 60 кандидатов (24.09.2026)",
+  "filename": "R6 — архивный пилот МЧС МО: 40 карточек 2023–2024, всего 60 кандидатов (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "repo://ai_OS2/scripts/sberindex_news_archive.py@a44aca5ff",
+  "extract_status": "ok",
+  "text_chars": 1514,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 около 11:00 UTC на joe/incus aios2: F7b-скрипт scripts/sberindex_news_archive.py, 24 unit tests в prod, запуск под deploy_lock codex-sberindex-news-archive. Источник официальный постраничный архив https://50.mchs.gov.ru/deyatelnost/press-centr/novosti?page=400,450,500,550 (каждый URL фактически запрашивался отдельно). Все четыре страницы ответили без ошибки и дали 10 карточек каждая. Исходный HTML сохранён в deliverables/sberindex-2026/data/raw/news/raw/archive_p<page>__<time>.html, SHA256 и per-run сведения — в archive_manifest.json и raw/archive_manifest__<time>.json. После идемпотентного merge candidates.jsonl содержит 60 записей: 20 текущих RSS + 40 архивных карточек (31 опубликована в 2024, 9 в 2023). Все 40 archive candidates: status=discovered, geography_tids=[], topic=null, as_of_eligible=false; опубликованная дата берётся из карточки сайта в часовом поясе Europe/Moscow, first_seen_at — фактическое время нашего сбора 24.09.2026. Архивный пилот только discovery: полный текст статей, точная география/ОКТМО, релевантность экономического шока, историческая редакция и F06 не проверены. Карточки 2023–2024 нельзя пока использовать как доступные модели в старые forecast origins. robots.txt сайта разрешает /*?page=*, но запрещает другие query-страницы; загрузчик ограничен указанным path/host, максимум пять страниц/запуск и минимум 1с между запросами. Продовый commit a44aca5ff. Вырезка страницы 450 проверена дополнительно: 10/10 карточек с валидными заголовком/URL/датой.",
+  "note": null
+}

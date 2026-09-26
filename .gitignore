@@ -1,0 +1,15 @@
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+data/raw/
+output/
+*.part
+*.parallel.part
+sources/contest-page.html
+landing-common/municipal-2021.js
+*.zip

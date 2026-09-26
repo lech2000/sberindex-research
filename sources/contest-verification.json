@@ -1,0 +1,7 @@
+{
+  "url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "checked_at": "2026-09-26T08:26:24.982252+00:00",
+  "method": "direct HTTPS GET status200; HTML text inspected for both submission requirements and dates",
+  "html_sha256": "70df89492fb60340818dbfdc4fa40c02102081b4247ef9a816ea53e4a48b530d",
+  "raw_html_not_redistributed": true
+}

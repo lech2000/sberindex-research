@@ -1,0 +1,11 @@
+# Optional TSFM runtime for shock-radar/src/f04_tsfm_zeroshot.py ONLY.
+# Kept separate on purpose: a4/a5/a6/r7/r8 do not need it, and the archived
+# R4 run pins no versions (model card names transformers+torch without
+# versions, weights amazon/chronos-t5-tiny, device MPS). Versions below are
+# therefore intentionally UNPINNED; pin them only after measuring a fresh
+# run in your own environment. Install with:
+# pip install -r requirements-science.txt -r requirements-tsfm.txt
+chronos-forecasting
+torch
+transformers
+accelerate

@@ -1,0 +1,13 @@
+{
+  "id": 13566,
+  "title": "r7_results:20260925 — точная квитанция R7",
+  "filename": "r7_results:20260925 — точная квитанция R7.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_008f37d03cf541e5",
+  "extract_status": "ok",
+  "text_chars": 827,
+  "truncated": false,
+  "text": "r7_results:20260925. Проверено 25.09.2026, Git f06275df8+5bfc5e8d4. R5_cus 111522 строк, 60 синтетических событий; test 28. Validation только до 2024-07, бюджет 574 тревоги выведен из D01 validation (287 тревог/3 мес × 6 мес), общий для методов; matching ±1 мес, cooldown 3 мес. Test D01: hits 16/28, recall 0.571, precision 0.0279, false alarms 558, delay +1.0 мес, lead 0. D02: hits 7/28, recall 0.250, precision 0.0122, false alarms 567, delay +0.14 мес, lead 0. D03: hits 0/28, recall 0, precision 0, false alarms 574, lead 0. Нет доказанного раннего предупреждения; R7 BLOCKED. Ограничение: остатки только апрель–декабрь 2024, нет отдельного pre-train, validation 3 мес. Полные файлы: shock-radar/runs/R7/manifest.json, metrics.json, alerts.parquet. Старое D01 recall 0.964 использовало другие окно/бюджет и несопоставимо.",
+  "note": null
+}

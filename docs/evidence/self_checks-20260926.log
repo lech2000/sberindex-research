@@ -1,0 +1,83 @@
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/economic-atlas/src/a4_metrics.py --self-check
+self-check identical: ARI=1.0000000000 (want 1.0000000000) NMI=1.0000000000 (want 1.0000000000) PASS
+self-check permuted: ARI=1.0000000000 (want 1.0000000000) NMI=1.0000000000 (want 1.0000000000) PASS
+self-check partial: ARI=0.2424242424 (want 0.2424242424) NMI=0.5158037430 (want 0.5158037430) PASS
+self-check independent: ARI=-0.5000000000 (want -0.5000000000) NMI=0.0000000000 (want 0.0000000000) PASS
+self-check: ALL PASS
+self-check a4_metrics: PASS
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/economic-atlas/src/a5_graph.py --self-check
+self-check no_selfloops: PASS n_edges=12
+self-check symmetric_adjacency: PASS
+self-check dup_min_not_flow: PASS duplicate (3,4): ring 3.0 vs repeats 10.0/7.0 -> min 3.0
+self-check bad_distances_dropped: PASS
+self-check single_mask_ids: PASS n=12 methods=5
+self-check repro_edges: PASS
+self-check repro_labels: PASS
+self-check repro_metrics: PASS
+self-check metrics_finite: PASS
+self-check knn_no_nan_offdiag: PASS
+self-check feat_knn_toy_nn: PASS order=[[1, 2], [0, 2], [1, 0], [2, 1]]
+self-check F_symmetric_no_diag: PASS
+self-check manifest_mobility: PASS
+self-check: ALL PASS
+self-check a5_graph: PASS
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/economic-atlas/src/a6_temporal.py --self-check
+self-check toy_columns: PASS ['territory_id', 'month', 'independent_label', 'aligned_label', 'lambda', 'post_label']
+self-check toy_mask: PASS n_tid=30
+self-check toy_determinism: PASS
+self-check toy_metrics_repro: PASS
+self-check toy_no_switch_l0: PASS switch=0.0
+self-check toy_no_switch_l2: PASS
+self-check toy_silhouette: PASS sil=0.749
+self-check toy_l0_is_aligned: PASS
+self-check toy_frozen_shape_flag_false: PASS
+self-check toy_no_truth_leak: PASS
+self-check toy_status_partial: PASS
+self-check toy_e04_incomplete: PASS
+self-check toy_no_case06: PASS
+self-check toy_manifest_partial: PASS
+self-check toy_synth_measured_slot: PASS
+self-check toy_manifest_copy_identical: PASS
+self-check toy_hash_inputs_equal: PASS
+self-check prefix_same_mask: PASS
+self-check prefix_past_unchanged: PASS rows=1080
+self-check prefix_edited_future_past_unchanged: PASS rows=1080
+self-check prefix_same_2023_fit: PASS
+self-check prefix_edited_future_same_2023_fit: PASS
+self-check synth_detect_l0: PASS {'recall_movers_month7': 1.0, 'mean_movement_delay_months': 0.0}
+self-check synth_smoothing_hides: PASS recall0=1.0 recall50=0.0 delay50=6.0
+self-check synth_provenance_assumption: PASS
+self-check synth_fixed_mapping: PASS
+self-check synthetic evidence: {"mapping": {"fixed_mapping_pred_to_truth": {"0": 1, "1": 0}, "method": "hungarian_contingency_initial_month_only"}, "measured": {"0.0": {"mean_movement_delay_months": 0.0, "recall_movers_month7": 1.0}, "2.0": {"mean_movement_delay_months": 0.0, "recall_movers_month7": 1.0}, "50.0": {"mean_movement_delay_months": 6.0, "recall_movers_month7": 0.0}}, "provenance": "synthetic_assumption", "provenance_note": "measured recall/time evidence only; never observed_labels"}
+self-check: ALL PASS
+self-check a6_temporal: PASS
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/shock-radar/src/r7_causal_signal.py --self-check
+{
+ "signal_rows": 0,
+ "series_included": 0,
+ "series_excluded": 2,
+ "registry_total": 2,
+ "registry_eligible": 0
+}
+{
+ "signal_rows": 5,
+ "series_included": 1,
+ "series_excluded": 1,
+ "registry_total": 2,
+ "registry_eligible": 2
+}
+SELF-CHECK OK
+self-check r7_causal_signal: PASS
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/shock-radar/src/d02_d03_detectors.py --self-check
+D01 {"events": 3, "hits": 2, "recall": 0.667, "precision": 0.5, "false_alarms": 2, "delay_signed_mean": 0.5, "lead_mean_m": 0.0}
+D02 {"events": 3, "hits": 1, "recall": 0.333, "precision": 1.0, "false_alarms": 0, "delay_signed_mean": 0.0, "lead_mean_m": 0.0}
+D03 {"events": 3, "hits": 3, "recall": 1.0, "precision": 0.5, "false_alarms": 3, "delay_signed_mean": 0.33, "lead_mean_m": 1.0}
+LEAK-PROBE {"val_alarms": 2}
+D02-GRID {"best": [0.02, 0.05]}
+MONTHLY-BUDGET {"per_month": 1, "kept": 2, "future_prefix_invariant": true}
+D03-STRICT {"stable_toy_max": 0.019999999999999993, "legacy_all_one": true, "prefix_invariant": true}
+SELF-CHECK OK
+self-check d02_d03_detectors: PASS
++ /Users/sergey/projects/sberindex-research/.venv/bin/python /Users/sergey/projects/sberindex-research/shock-radar/src/r8_news_audit.py --self-check
+SELF-CHECK OK
+self-check r8_news_audit: PASS

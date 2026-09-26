@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-26",
+  "checked_by": "joe isolated uv runtime",
+  "method": "causal last-value residual; D01 threshold, D02 Page-Hinkley, D03 approximate Gaussian online run-length detector",
+  "commands": {
+    "signal": "python src/r7_causal_signal.py --panel ../data/raw/sberindex-data-sense-2025/8_consumption.parquet --registry events/registry.parquet --outdir runs/R7_v2/signal",
+    "detectors": "python src/d02_d03_detectors.py --cus runs/R7_v2/signal/signal.parquet --registry runs/R7_v2/registry_eligible.parquet --outdir runs/R7_v2 --budget-mode monthly_causal"
+  },
+  "code_sha256": {
+    "r7_causal_signal.py": "6ee66e8333f75f9374c6351c69eb120bfd0987c891c425fad01d16c86d5ed06a",
+    "d02_d03_detectors.py": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7"
+  },
+  "versions": {
+    "python": "3.14.5",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "pyarrow": "25.0.1"
+  },
+  "provenance": "synthetic_assumption registry injections over observed SberIndex spending",
+  "registry_filter_rule": "keep event_id in signal/manifest.json registry.eligible_ids; original 60 preserved, excluded EV057 missing onset key",
+  "mask_audit": {
+    "series": 12744,
+    "complete_23": 12096,
+    "noncomplete": 648,
+    "rows": 287268
+  },
+  "clock": "Metrics in observed-month clock. Assumed publication lag2 months, not a verified release timestamp. Operational availability requires alert month+2; detected match delay1 becomes operational delay3. No early-warning claim. Detectors process successive available residuals; 648 gapped series, no zero imputation; interpret as technical experiment, not deployment readiness.",
+  "self_checks": {
+    "signal": "PASS",
+    "detectors": "PASS including monthly prefix invariance and legitimate -inf support",
+    "strict_stable_cp_max": 0.02,
+    "legacy_stable_cp_all_one": true
+  },
+  "test_status": "exploratory-v2; primary runs/R7 unchanged",
+  "outputs_sha256": {
+    "metrics.json": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+    "manifest.json": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15",
+    "alerts.parquet": "9efc418e8e16cee070024feec56abd8d58115d890e5704ef8bd12a1f065391c3",
+    "registry_eligible.parquet": "84c07d414064fd8d40ebc4529f5ffbb7946b8969a0711c1b28574782eb677be6"
+  }
+}

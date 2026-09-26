@@ -1,0 +1,181 @@
+[
+  {
+    "id": "F01",
+    "question": "Базовый прогноз",
+    "method": "seasonal_naive",
+    "protocol": "Единые окна и горизонты",
+    "artifact": "runs/R2/metrics.csv (ниже, измерено 22.09.2026)",
+    "status": "done",
+    "metrics": {
+      "mae_micro": {
+        "h1": {
+          "last_value": 627.38,
+          "seasonal_naive": 1292.34,
+          "train_mean": 1305.98
+        },
+        "h2": {
+          "last_value": 742.07,
+          "seasonal_naive": 1608.14,
+          "train_mean": 1305.98
+        },
+        "h3": {
+          "last_value": 866.5,
+          "seasonal_naive": 1717.98,
+          "train_mean": 1305.98
+        }
+      },
+      "mae_macro_last_value": 629.68,
+      "n_observations": 74142,
+      "n_territories": 2072,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "formula": "MAE=mean(|y-yhat|) on expanding origins",
+      "tool": "sberindex_forecast(dataset=historical_spending)"
+    }
+  },
+  {
+    "id": "F02",
+    "question": "Сравнение с Prophet",
+    "method": "prophet",
+    "protocol": "Подбор на validation",
+    "artifact": "MAE против F01; это собственный baseline",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "F00",
+    "question": "Бейзлайны до сложных моделей (H5)",
+    "method": "sberindex_forecast",
+    "protocol": "horizon 1..3, origins 2024-07.., общая маска, MAE micro/macro",
+    "artifact": "MAE-таблица + GATE_REPORT R2",
+    "status": "ready_to_run",
+    "metrics": null
+  },
+  {
+    "id": "F03",
+    "question": "Общая модель панели",
+    "method": "global_boosting",
+    "protocol": "Лаги и календарь без будущего",
+    "artifact": "shock-radar/runs/R3/run_manifest.json + metrics.json",
+    "status": "done",
+    "metrics": {
+      "1": {
+        "boost": 199.39434482561538,
+        "last_value_R2": 627.540555870675,
+        "improvement_pct": 68.2
+      },
+      "2": {
+        "boost": 234.0192372394396,
+        "last_value_R2": 793.6804961089495,
+        "improvement_pct": 70.5
+      },
+      "3": {
+        "boost": 263.64360053104525,
+        "last_value_R2": 986.1843587872893,
+        "improvement_pct": 73.3
+      }
+    }
+  },
+  {
+    "id": "F04",
+    "question": "Фундаментальная модель",
+    "method": "chronos2",
+    "protocol": "Фиксированная ревизия, zero-shot",
+    "artifact": "shock-radar/runs/R4/model_card.md + metrics.json",
+    "status": "done",
+    "metrics": {
+      "h1_tsfm": 645.19,
+      "h1_lv": 628.57,
+      "h2_tsfm": 817.51,
+      "h2_lv": 902.55,
+      "h3_tsfm": 968.04,
+      "h3_lv": 850.31,
+      "verdict": "negative: tsfm loses to boosting R3 on all horizons"
+    }
+  },
+  {
+    "id": "F05",
+    "question": "Вторая TSFM — опционально",
+    "method": "timesfm",
+    "protocol": "Только после F01–F04",
+    "artifact": "Проверка разнообразия ошибок",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "D01",
+    "question": "Простые тревоги",
+    "method": "threshold",
+    "protocol": "Пороги на validation",
+    "artifact": "shock-radar/runs/R5/alerts.parquet + alerts.json (registry.parquet: 60 событий, matching ±1м, cooldown 3м)",
+    "status": "done",
+    "metrics": {
+      "events": 28,
+      "recall": 0.964,
+      "precision": 0.0134,
+      "fa": 1982,
+      "delay_mean": 1.04,
+      "calibration": "lead 0=в месяц onset: детекция, не предупреждение (lag 2m)"
+    }
+  },
+  {
+    "id": "D02",
+    "question": "Последовательные сдвиги",
+    "method": "cusum_or_page_hinkley",
+    "protocol": "Только прошлые остатки",
+    "artifact": "Задержка при общем бюджете тревог",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "D03",
+    "question": "Онлайн-смена режима",
+    "method": "bayesian_online",
+    "protocol": "Те же события и matching",
+    "artifact": "Precision/recall/delay",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "F06",
+    "question": "Польза новостей",
+    "method": "news_ablation",
+    "protocol": "As-of и отрицательные контроли",
+    "artifact": "Прирост относительно той же модели без новостей",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "W01",
+    "question": "Риск будущего события",
+    "method": "warning_model",
+    "protocol": "Alert до event_start, train/validation embargo",
+    "artifact": "Упреждение и false alarms отдельно от detection",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "F07",
+    "question": "Ансамбль — опционально",
+    "method": "ensemble",
+    "protocol": "Веса только на validation",
+    "artifact": "Имеет смысл лишь при устойчивом выигрыше",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "A01",
+    "question": "Аудит утечек и устойчивости",
+    "method": "negative_controls",
+    "protocol": "Удаление будущих данных, консервативные лаги",
+    "artifact": "Прогноз на origin не меняется от будущего",
+    "status": "planned",
+    "metrics": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "project": "economic-atlas",
+    "case_id": "case_66cae4a89ba6473f",
+    "material_id": "mat_975640f9fc1c42c0",
+    "file": "ARCHITECTURE.md",
+    "sha256": "0cfc73e3f4f8144f9393993469567368bd9ff8f9ff2230491ed757e67e7b5542",
+    "verified": true
+  },
+  {
+    "project": "economic-atlas",
+    "case_id": "case_66cae4a89ba6473f",
+    "material_id": "mat_dca3c10b0a5f4d28",
+    "file": "loaded-data-audit.json",
+    "sha256": "bf8cd2507adbdc64ccf730664c501154547adff124a03c8c99dcf400e0096258",
+    "verified": true
+  },
+  {
+    "project": "shock-radar",
+    "case_id": "case_008f37d03cf541e5",
+    "material_id": "mat_c25cf677fbe14136",
+    "file": "ARCHITECTURE.md",
+    "sha256": "0cfc73e3f4f8144f9393993469567368bd9ff8f9ff2230491ed757e67e7b5542",
+    "verified": true
+  },
+  {
+    "project": "shock-radar",
+    "case_id": "case_008f37d03cf541e5",
+    "material_id": "mat_02cc7f5530fd401c",
+    "file": "loaded-data-audit.json",
+    "sha256": "bf8cd2507adbdc64ccf730664c501154547adff124a03c8c99dcf400e0096258",
+    "verified": true
+  }
+]

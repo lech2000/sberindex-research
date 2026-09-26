@@ -1,0 +1,53 @@
+{
+  "code": {
+    "file": "sberindex-a6-20260926.py",
+    "sha256": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474"
+  },
+  "command": "/tmp/sberindex-a6-20260926.py --panel /home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet --outdir /tmp/sberindex-A6-20260926 --seed 20260921",
+  "completed_components": [
+    "temporal_sensitivity"
+  ],
+  "completes_case06": false,
+  "created_at": "2026-09-26T06:52:10.612322+00:00",
+  "e04": "E04 (emergence/disappearance) is incomplete by design at fixed K: births/disappearances cannot be distinguished from relabelling, so they are never reported. A6 lists only split/merge CANDIDATES (overlap >= 0.2) between aligned neighbouring clusters. A6 is a sensitivity analysis of temporal linkage, not cluster biographies.",
+  "e04_incomplete": true,
+  "formulas": {
+    "overlap": "overlap(a@m,b@m+1)=|a cap b|/min(|a|,|b|)",
+    "share": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m). Denominator is the 'Все категории' row, never sum6. No fillna(0).",
+    "standardization": "z=(share-mu)/std, mu/std pooled over mask tids x 2023 months only (ddof=0), frozen transform of all months.",
+    "temporal_linkage": "post(tid,m)=argmin_c ||z-C(m,c)||^2 + lambda*[c != post(tid,m-1)], fixed centres"
+  },
+  "gate": "A6",
+  "gate_pass": false,
+  "inputs": {
+    "panel": {
+      "path": "/home/serg/mnt/joe/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet",
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "mask": {
+    "n": 1896
+  },
+  "params": {
+    "k": 5,
+    "lambdas": [
+      0.0,
+      0.5,
+      2.0
+    ]
+  },
+  "pending_components": [
+    "e04_emergence_disappearance",
+    "case06_completion"
+  ],
+  "seed": 20260921,
+  "status": "PARTIAL_NOT_GATE_PASS",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "python": "3.14.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": 13271,
+  "title": "Atlas A3: short agent dialog works; features/spec.yaml absent, gate BLOCKED (24.09.2026)",
+  "filename": "Atlas A3: short agent dialog works; features/spec.yaml absent, gate BLOCKED (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "extract_status": "ok",
+  "text_chars": 1208,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 10:35–11:05 UTC на joe/incus fixar-devops и живом деле Atlas case_66cae4a89ba6473f: установленный research-drive перестал пропускать Atlas, но его старый составной A3 prompt вызвал safe timeout через около 90 секунд без GATE_REPORT (case-service events seq 154–155, reply \"Я не успел завершить проверку...\"). Отдельный короткий headless dialog agent sberindex_atlas_researcher@5 с одним sberindex_atlas_kb_search(query=\"Экономический атлас A3 признаки E01\", limit=2) вернул GATE_REPORT A3 BLOCKED. Подтверждено: корпус 75 содержит метод E01 k-means на X и план признаков, но файла economic-atlas/features/spec.yaml нет в Git и corpus; E01 status=planned, metrics=null; сохранён panel_v1.parquet и panel_passport.json, 1 896 МО, 273 024 строки, 24 месяца × 6 категорий. Критерий A3 в research-ladder: features/spec.yaml, распределения до/после, тест инвариантности единиц. Ближайший автоматизируемый шаг — через fixar-devops/F7b подготовить спецификацию признаков с единицами и нормализацией, затем расчёт/проверку E01. Не закрывать act_bdc9ac74afaf47c8 и не объявлять A3 PASS до артефактов. Устаревшие Atlas actions 01–03 тоже остаются открытыми и требуют отдельной сверки с артефактами.",
+  "note": null
+}

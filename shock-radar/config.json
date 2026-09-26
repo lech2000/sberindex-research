@@ -1,0 +1,66 @@
+{
+  "status": "planning_only",
+  "version": 1,
+  "seed": 42,
+  "internal_ready": "2026-10-07",
+  "official_deadline_date": "2026-10-09",
+  "deadline_time_timezone": "unconfirmed",
+  "data": {
+    "snapshot": null,
+    "sha256": null,
+    "frequency": null,
+    "geography_version": null,
+    "available_at_required": true
+  },
+  "execution": {
+    "enabled": false,
+    "paid_cloud_calls": false
+  },
+  "results": null,
+  "project": "shock-radar",
+  "rubric_weights": [
+    10,
+    20,
+    20,
+    15,
+    15,
+    10,
+    10
+  ],
+  "forecast": {
+    "horizons_periods_candidates": [
+      1,
+      2,
+      3
+    ],
+    "confirm_after_audit": true,
+    "models": [
+      "seasonal_naive",
+      "prophet",
+      "global_boosting",
+      "chronos2"
+    ],
+    "optional_models": [
+      "timesfm"
+    ],
+    "model_revisions": {}
+  },
+  "evaluation": {
+    "scheme": "expanding_window_rolling_origin",
+    "splits": null,
+    "primary_metric": "MAE",
+    "secondary_metrics": [
+      "R2",
+      "macro_MAE",
+      "event_precision",
+      "event_recall",
+      "delay",
+      "lead_time",
+      "false_alarms_per_100_municipality_periods"
+    ],
+    "news_asof_join": true,
+    "event_definition": null,
+    "event_matching_window": null,
+    "alert_budget": null
+  }
+}

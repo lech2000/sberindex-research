@@ -1,0 +1,41 @@
+{
+  "synced_on": "2026-09-20",
+  "cases": [
+    {
+      "project": "economic-atlas",
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_b47512311f2d4630",
+          "title": "Научная литература — приоритет чтения.md",
+          "sha256": "d33b291ea8e47e8a6d8ac42b79589d4c42a5770b371635cedb2758b0b7623b18",
+          "verified": true
+        },
+        {
+          "id": "mat_e507378ba68447ed",
+          "title": "Научная литература — реестр 30 работ.json",
+          "sha256": "b9d91cf1a1a004198cdc8209f370ac89508ca80a0009a45310a3291fe30715b2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "project": "shock-radar",
+      "case_id": "case_008f37d03cf541e5",
+      "materials": [
+        {
+          "id": "mat_a5b2ca7ad47d467c",
+          "title": "Научная литература — приоритет чтения.md",
+          "sha256": "20e9f5cf739c40cdd5e3df49523af589e14c9261ff39199fd048812e4b781920",
+          "verified": true
+        },
+        {
+          "id": "mat_a92cc982d0ee455c",
+          "title": "Научная литература — реестр 30 работ.json",
+          "sha256": "b9d91cf1a1a004198cdc8209f370ac89508ca80a0009a45310a3291fe30715b2",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}

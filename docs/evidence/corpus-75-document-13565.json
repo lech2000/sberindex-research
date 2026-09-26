@@ -1,0 +1,13 @@
+{
+  "id": 13565,
+  "title": "a4_results:20260925 — точная квитанция A4",
+  "filename": "a4_results:20260925 — точная квитанция A4.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "extract_status": "ok",
+  "text_chars": 619,
+  "truncated": false,
+  "text": "a4_results:20260925. Проверено 25.09.2026 live tool-service и Git f06275df8: одна маска 2190 territory_id, shares, k=5, seed=20260921. k-means: silhouette 0.218583, WCSS 5244.081, sizes [659,495,165,341,530]. Ward: silhouette 0.172810, WCSS 5887.546, sizes [387,152,456,416,779]. Согласованность ARI 0.507637, NMI 0.544570. Полные назначения: economic-atlas/runs/A4/kmeans.json и agglomerative.json. Live sberindex_crosswalk: panel 2190, dictionary 2660, matched 2190, coverage 1.0; это СберИндекс-словарь, НЕ официальный ОКТМО-кроссволк. A4 BLOCKED до независимой экономической проверки; силуэт не равен осмысленности.",
+  "note": null
+}

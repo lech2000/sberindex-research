@@ -1,0 +1,13 @@
+{
+  "id": 13259,
+  "title": "SberIndex news-event-corpus: 60 DISCOVERED, RSS + archive pilot, not F06-ready (24.09.2026)",
+  "filename": "SberIndex news-event-corpus: 60 DISCOVERED, RSS + archive pilot, not F06-ready (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "repo://ai_OS2/deliverables/sberindex-2026/data/raw/news/archive_manifest.json",
+  "extract_status": "ok",
+  "text_chars": 1157,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 около 11:00 UTC на joe/incus aios2: candidates.jsonl, RSS manifest и archive_manifest, исходный HTML, tests. Это датированное обновление общей карточки news-event-corpus после документа 13247. Статус discovery_started: 60 уникальных кандидатов, 20 текущих из двух официальных RSS МЧС и 40 архивных карточек с официального https://50.mchs.gov.ru/deyatelnost/press-centr/novosti?page=400,450,500,550 (31 дата 2024, 9 дата 2023). Источник и SHA256 каждого сырого ответа зафиксированы. Никаких model-ready событий пока нет: geography/ОКТМО и topic пусты, историческая редакция/доступность на forecast origin не доказана, archive as_of_eligible=false, F06 не рассчитан. Подробности и проверка: corpus 76 documents 13223 (RSS), 13252 (архив/устаревший sitemap), 13257 (40 карточек). Старые записи corpus 74 waiting_taxonomy/planned_taxonomy_first относятся к состоянию до 24.09.2026 и не описывают сегодняшний сбор. Следующий автоматизируемый шаг — первичные страницы статей, строгая геопривязка к словарю муниципалитетов, topic/dedup, исторический as-of audit, затем news/no-news ablation. Не объявлять R6 PASS на основании числа кандидатов.",
+  "note": null
+}

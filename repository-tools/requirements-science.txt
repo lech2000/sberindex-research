@@ -1,0 +1,18 @@
+# Scientific runtime for reproducing stages a4/a5/a6/r7/r8.
+# Pins copied verbatim from shock-radar/runs/R7_v2/requirements.txt
+# (2026-09-26 operator manifest: numpy 2.5.3, pandas 3.0.6, scipy 1.18.1,
+# pyarrow 25.0.1). Install with: pip install -r requirements-science.txt
+# Optional TSFM packages (chronos/torch/transformers) are NOT listed here;
+# see requirements-tsfm.txt. They are not needed for a4/a5/a6/r7/r8.
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.26.0
+networkx==3.7
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+python-dateutil==2.9.0.post0
+scikit-learn==1.9.1
+scipy==1.18.1
+six==1.17.0
+threadpoolctl==3.7.0

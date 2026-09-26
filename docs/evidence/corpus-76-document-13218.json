@@ -1,0 +1,13 @@
+{
+  "id": 13218,
+  "title": "R6 — аудит RSS МЧС: источник датированных новостей, исторический backfill не закрыт (24.09.2026)",
+  "filename": "R6 — аудит RSS МЧС: источник датированных новостей, исторический backfill не закрыт (24.09.2026).txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/rss",
+  "extract_status": "ok",
+  "text_chars": 1432,
+  "truncated": false,
+  "text": "Проверено 24.09.2026 на joe, контейнер fixar-devops: curl GET https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/rss вернул HTTP 200, text/xml, 43163 байта, 10 item. XML разобран Python xml.etree.ElementTree: item содержит title, link, pubDate; пример: «На контроле МЧС России на 24 сентября 2026 г.», https://mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5831312, Thu, 24 Sep 26 07:06:00 +0300. Исследователь Radar v5 выполнил отдельный вызов jina_read_url в деле case_008f37d03cf541e5 24.09.2026 и вернул GATE_REPORT R6 BLOCKED.\nВывод: RSS пригоден для запуска текущего потока кандидатов; сохранять raw XML snapshot с sha256 и checked_at/first_seen_at, URL первичной страницы и pubDate в UTC. Эти 10 текущих item не дают исторический корпус 2023–2024 для backtest. Географию муниципалитета нельзя выводить из заголовка федеральной новости; требуется чтение первичной статьи и подтверждённый crosswalk к territory_id/ОКТМО. Новость становится моделирующим признаком только после проверки исторической доступности на forecast origin, дедупликации и географии. GDELT DOC API — discovery metadata, не первичное доказательство события. Следующий машинный шаг: найти архив официальных статей 2023–2024 через архив сайта/sitemap, проверить даты публикации и муниципальный охват; отдельный сборщик текущего RSS должен сохранять доказательные снимки. Не считать R6 PASS, пока F06 news ablation не измерена.",
+  "note": null
+}

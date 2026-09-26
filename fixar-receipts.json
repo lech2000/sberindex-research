@@ -1,0 +1,170 @@
+{
+  "verified_on": "2026-09-20",
+  "method": "Production case-service readback and byte-for-byte SHA-256 verification of every uploaded attachment; data metadata also indexed in kb-forge corpus 61",
+  "cases": [
+    {
+      "slug": "economic-atlas",
+      "id": "case_66cae4a89ba6473f",
+      "title": "СберИндекс 2026 — Экономический атлас муниципалитетов",
+      "owner_id": "prn_fbab9aa00cd46169",
+      "scope": "pro",
+      "domain": "software",
+      "agent": "cabinet",
+      "state": "active",
+      "actions": 14,
+      "completed_actions": 0,
+      "materials": [
+        {
+          "id": "mat_7c678f20c4f84213",
+          "title": "План исследований и разработки.md",
+          "sha256": "c807c91789399c98aa2446a52d01c00077de30a927c81c62f841c69a3b1c5252",
+          "verified": true
+        },
+        {
+          "id": "mat_ea82e57b926841f4",
+          "title": "Реестр экспериментов.json",
+          "sha256": "873566a62c93ab2788724afaf5ad63bddcc20134c7a832229ae17a6ffbb49887",
+          "verified": true
+        },
+        {
+          "id": "mat_25442a1f43a0401f",
+          "title": "Шаблон лендинга — без результатов.html",
+          "sha256": "ed469e3f4162bb41ca8dea914c8fdc4c548f4cbbc3a58f50044348a701a1e5c4",
+          "verified": true
+        },
+        {
+          "id": "mat_9dcc1b17c8574ecd",
+          "title": "Каркас проекта — конфиги, интерфейсы, план, шаблон.zip",
+          "sha256": "f48adf11f857f852f18d284af8f6f9b7e4555e25aef5e5f2fc8be3c227430460",
+          "verified": true
+        },
+        {
+          "id": "mat_da70bf7df85f4b0f",
+          "title": "Общие условия, данные и организация.md",
+          "sha256": "a9ad041a3b33f38b12da6db77c1d90057561df60f92b8c163a4f4bb6367ac541",
+          "verified": true
+        },
+        {
+          "id": "mat_b9b372f6e57f448b",
+          "title": "Каталог данных, покрытие и ограничения — 20.09.2026.md",
+          "sha256": "a5d34356e8f264ca20128b943e22bb99a1dd8c1aad79ab0691a21876d7934a14",
+          "verified": true
+        },
+        {
+          "id": "mat_c50352ed848445e6",
+          "title": "Схемы, пропуски и SHA-256 загруженных данных.json",
+          "sha256": "9b4ba7dcea97b52fe4987be114d4ccb7a3ac812e5b535d88542f620031693379",
+          "verified": true
+        },
+        {
+          "id": "mat_74a2b5ab215f423e",
+          "title": "Манифест данных проекта.json",
+          "sha256": "11f989a1838a7e764c1be0d286294e0e427fc4ab627e6a35a977b3bf3334ab7a",
+          "verified": true
+        },
+        {
+          "id": "mat_11dfb9c3b7f8428b",
+          "title": "План исследований и разработки — обновлено после загрузки данных.md",
+          "sha256": "c949acd13c82668c9639636ffd1a36ca6ec4cc27f409af7a0d6ee298ff3a10e4",
+          "verified": true
+        },
+        {
+          "id": "mat_8fdb161fbada4434",
+          "title": "Каркас проекта — обновлён после загрузки данных.zip",
+          "sha256": "191c0e0719174127930a4392de3efdc76a6d75d2f6c3b9be79e7f2d5fd109fd8",
+          "verified": true
+        },
+        {
+          "id": "mat_0791cbdc767c48e9",
+          "title": "Семантические корпуса и будущие аналитические инструменты.md",
+          "sha256": "7b700e1a77d022a820bf9b318db9554cc306340ad63b6ad1d66403cad0fac74a",
+          "verified": true
+        }
+      ],
+      "url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+      "material_count": 11
+    },
+    {
+      "slug": "shock-radar",
+      "id": "case_008f37d03cf541e5",
+      "title": "СберИндекс 2026 — Радар потребительских сдвигов",
+      "owner_id": "prn_fbab9aa00cd46169",
+      "scope": "pro",
+      "domain": "software",
+      "agent": "cabinet",
+      "state": "active",
+      "actions": 14,
+      "completed_actions": 0,
+      "materials": [
+        {
+          "id": "mat_31d2855f1d9d4188",
+          "title": "План исследований и разработки.md",
+          "sha256": "cd9d39dfa4a703ec263c323640b57e379f6445f5e541ac74ca0acb043dc59d46",
+          "verified": true
+        },
+        {
+          "id": "mat_c7892c98fa33426f",
+          "title": "Реестр экспериментов.json",
+          "sha256": "aa20e51cd32386aa11db32475f065931b5d4408c890272cd8f77e395a5c62d4d",
+          "verified": true
+        },
+        {
+          "id": "mat_a5790c92035d4c82",
+          "title": "Шаблон лендинга — без результатов.html",
+          "sha256": "45232daa7ba42333844d7ff095e4396aa491f34f099267f69a372ac1cf40272a",
+          "verified": true
+        },
+        {
+          "id": "mat_083fbe34e3c341ae",
+          "title": "Каркас проекта — конфиги, интерфейсы, план, шаблон.zip",
+          "sha256": "b8c076676659dc8c61911f05a4e4f9771a0466279fd107708f20be38e5c433cf",
+          "verified": true
+        },
+        {
+          "id": "mat_138214e071b64901",
+          "title": "Общие условия, данные и организация.md",
+          "sha256": "a9ad041a3b33f38b12da6db77c1d90057561df60f92b8c163a4f4bb6367ac541",
+          "verified": true
+        },
+        {
+          "id": "mat_01c6ed54fcf24467",
+          "title": "Каталог данных, покрытие и ограничения — 20.09.2026.md",
+          "sha256": "a5d34356e8f264ca20128b943e22bb99a1dd8c1aad79ab0691a21876d7934a14",
+          "verified": true
+        },
+        {
+          "id": "mat_331983a1668b4ebd",
+          "title": "Схемы, пропуски и SHA-256 загруженных данных.json",
+          "sha256": "9b4ba7dcea97b52fe4987be114d4ccb7a3ac812e5b535d88542f620031693379",
+          "verified": true
+        },
+        {
+          "id": "mat_b431ace0635444cc",
+          "title": "Манифест данных проекта.json",
+          "sha256": "462085b93e4830d7543a082ba136118ec7537b8004aaa299eb0b6879dc483f6f",
+          "verified": true
+        },
+        {
+          "id": "mat_efc9457dc1a04ed1",
+          "title": "План исследований и разработки — обновлено после загрузки данных.md",
+          "sha256": "445c06e318acd5f6def798c2d6ba34541fa6b33caca62dab16bcfd38cc70616a",
+          "verified": true
+        },
+        {
+          "id": "mat_1646a82af5c34563",
+          "title": "Каркас проекта — обновлён после загрузки данных.zip",
+          "sha256": "023f422ad5b10eb55d03b9cff21557d2774304531ef45d1b2ca99adb4db1350c",
+          "verified": true
+        },
+        {
+          "id": "mat_58c94bef9ee647bc",
+          "title": "Семантические корпуса и будущие аналитические инструменты.md",
+          "sha256": "7b700e1a77d022a820bf9b318db9554cc306340ad63b6ad1d66403cad0fac74a",
+          "verified": true
+        }
+      ],
+      "url": "https://agrigate.pro/v2/#case/case_008f37d03cf541e5",
+      "material_count": 11
+    }
+  ]
+}

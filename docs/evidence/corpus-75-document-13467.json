@@ -1,0 +1,13 @@
+{
+  "id": 13467,
+  "title": "IndustryMap / Урбаника — внутренний источник-кандидат Атласа, 25.09.2026",
+  "filename": "IndustryMap / Урбаника — внутренний источник-кандидат Атласа, 25.09.2026.txt",
+  "ext": "txt",
+  "origin": "api",
+  "url": "https://industrymap.ru/",
+  "extract_status": "ok",
+  "text_chars": 880,
+  "truncated": false,
+  "text": "Проверено 25.09.2026 с Mac: HTTPS industrymap.ru/data/{companies,cities,regions}.json, ingest_industrymap.py, повторное считывание, 2 теста. Снимок 26676ba153b6e4db: 9231 компаний, 1889 городских GeoJSON-точек, 85 регионов, 9177 компаний связаны с городами, 54 без связи; координаты валидны. Контрольные суммы в deliverables/sberindex-2026/data/industrymap-intake.json; полные JSON и Parquet в gitignored data/raw/industrymap/26676ba153b6e4db. По сообщению владельца Урбаника разрешила только внутренний анализ — не публиковать ни карточки, ни агрегаты, ни геослой. Dataset industrymap_urbanica_2025_internal в data/manifest.json имеет status staged_internal_geo_join_pending. Не назначать territory_id по названию города: нужен пространственный кроссволк и проверка исторических границ. Это контекст/валидация Атласа, не полный реестр занятости, не as-of-признак Radar 2023–2024.",
+  "note": null
+}
