@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-09-26T17:10:00+00:00",
+  "method": "joe/Incus source inspection, deployed native tool call, n8n execution_data and independent scientific scripts",
+  "native_kb_fix": {
+    "prod_commit": "2e4f26219",
+    "mock_tests": "PASS",
+    "live_payload_chars": 2868,
+    "first_corpus": 76,
+    "first_document_id": 13876,
+    "kb_document_id": 13888
+  },
+  "workflow_attempt": {
+    "execution_id": 3278631,
+    "run_key": "research-r8-v2-budget-fixed-20260926-1656",
+    "graph_read_measured_results": true,
+    "evidence_ingest": {
+      "corpus_id": 77,
+      "document_id": 13885
+    },
+    "curator_handoff": "422 dialog message >4000",
+    "full_loop_pass": false
+  },
+  "direct_curator_review": {
+    "client_message_id": "research-r8-v2-budget-fixed-review-20260926-1704",
+    "model": "mimo-v2.5-pro",
+    "reported_verdict": "accept",
+    "next_action": "causal Prophet/TSFM on same paired mask",
+    "workflow_validated": false,
+    "limitations": [
+      "Missing initial CURATOR_JSON marker",
+      "Accepted index3 although source evidence has indexes0..2",
+      "Agent reviewed_at timezone inconsistent; operator timestamp is authoritative"
+    ]
+  },
+  "deployment_validator": {
+    "status": "PASS",
+    "passed": 46,
+    "total": 47,
+    "warning": "Tool Service OpenAPI returned403",
+    "checked_at": "2026-09-26T17:05:23Z",
+    "architectural_checks": false
+  },
+  "runtime_science_sync": {
+    "research_commit": "829dae6",
+    "files": 61,
+    "guard_released": true,
+    "source_actions_remain_open": true
+  }
+}

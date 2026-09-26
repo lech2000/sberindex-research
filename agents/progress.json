@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T16:41:50.107921+00:00",
+  "updated_at": "2026-09-26T17:07:03.600453+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -9,7 +9,7 @@
       "status": "in_progress",
       "last_artifact": "economic-atlas/runs/A6_v2/manifest.json",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "A6_v2 и пятьseed готовы: среднийARI0.99854–0.99972. Далее чувствительностьoverlap/margin и независимаяэкономическаяинтерпретация;7неоднозначныхкластерныхсопоставлений, не7МО. Source06открыт.",
+      "next_action": "A6_v2 и пять дополнительных запусков готовы: средний ARI 0.99854–0.99972. Далее чувствительность порогов overlap/margin, сравнение профилей K=2 и K=5 и независимая экономическая интерпретация. Семь неоднозначностей относятся к сопоставлениям кластеров, а не к семи МО. Source action 06 открыт.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -52,7 +52,7 @@
           0.9985416441441014,
           0.9997233190562037
         ],
-        "ambiguity_unit": "cluster-month matching;4438territory-monthassignments inbase",
+        "ambiguity_unit": "cluster-month matching; 4438 territory-month assignments in base",
         "jaccard_range": [
           0.997751798561151,
           1.0
@@ -66,7 +66,7 @@
       "status": "in_progress",
       "last_artifact": "shock-radar/runs/R8_v2/metrics.json",
       "last_dialog": "2026-09-26T07:06:14Z",
-      "next_action": "R8_v2 рассчитан76/13876, research:r8_v2_20260926:171150pairedpoints, MAE880.213/1280.420/961.104/1000.794. Lastavailableлучше; сравнитьcausalProphet/TSFM; восстановитьnews-vintage,22qualityflags. F03/R3invalid76/13864. source08открыт.",
+      "next_action": "R8_v2 рассчитан: 76/13876, ключ research:r8_v2_20260926; 171150 общих точек. MAE: последнее доступное значение 880.213, сезонный прогноз 1280.420, бустинг без новостей 961.104, бустинг с календарём 1000.794. Далее причинные Prophet/TSFM на той же маске; восстановить news-vintage и проверить 22 флага качества. F03/R3 содержит утечку target (76/13864). Source action 08 открыт.",
       "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
       "last_gate": {
         "gate": "R7",
@@ -129,16 +129,37 @@
         "verdict": "blocked",
         "evidence_document_id": 13879,
         "decision_document_id": 13880,
-        "operator_diagnosis": "Новый76/13876 существует и прямойtool-service helperегонаходит; dialogtoolresult обрезаетсядо4000символов, первыекорпуса74/75 вытесняют76/77. F7bисправлениеcompactresearchpayload запущено."
+        "operator_diagnosis": "Обрезка native tool результата до4000 исправлена и выложена (2e4f26219). Следующий end-to-end запуск прочитал76/13876 и ingested77/13885, но остановился на n8n message>4000. Прямой компактный review MiMo дал accept и следующий Prophet/TSFM; framing/indexes этого ручного ответа не прошли workflow validation, поэтому это не квитанция полного контура."
       },
-      "routing": "Адресный webhook передаёт ровно одно открытое source_action_id; куратор и ответ проверяют связь с делом. Размер контекста исправлен через F7b, live R8 accept 26.09.2026.",
+      "routing": "Адресный webhook связан с открытым source_action_id. Исправление обрезки native KB ответа выложено через F7b: prod commit 2e4f26219, live result 2868 chars, corpus 76/doc 13876. Graph прочитал измеренные MAE и ingested evidence 77/13885. Обнаружен отдельный overflow сообщения Передать куратору (>4000); F7b исправление в работе.",
       "previous_dispatch": {
         "run_key": "research-next-a6-20260926-0949",
         "source_action_id": "act_c475e17b2a584b9a",
         "verdict": "accept",
         "evidence_document_id": 13780,
         "decision_document_id": 13782
+      },
+      "native_kb_fix": {
+        "deployed": true,
+        "prod_commit": "2e4f26219",
+        "verified_payload_chars": 2868,
+        "primary_corpus": 76,
+        "primary_document_id": 13876,
+        "kb_document_id": 13888
+      },
+      "last_workflow_attempt": {
+        "run_key": "research-r8-v2-budget-fixed-20260926-1656",
+        "execution_id": 3278631,
+        "evidence_document_id": 13885,
+        "status": "downstream_message_422",
+        "loop_pass": false
       }
     }
+  },
+  "runtime_sync": {
+    "research_commit": "829dae6",
+    "files": 61,
+    "date": "2026-09-26",
+    "closed_gates": false
   }
 }
