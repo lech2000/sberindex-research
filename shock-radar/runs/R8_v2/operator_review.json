@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-26T16:30:48.993441+00:00",
+  "method": "independent exact-calendar baseline calculation on original303126-row raw8; one_to_one joining forecast cells; direct MAE recomputation from171150 paired predictions; sourceAST review and fullrun on finalF7bcode",
+  "source_workflow": "fixar-devops/F7b; operator_review",
+  "results": {
+    "paired_n": 171150,
+    "lastavailable_prediction_maxdiff": 0,
+    "seasonal_prediction_maxdiff": 0,
+    "actual_maxdiff": 0,
+    "future_mutation_prediction_maxdiff": 0
+  },
+  "status": "VERIFIED_COMPUTATIONAL_COMPONENT_NOT_GATE_PASS",
+  "code_sha256": "5c8114783da3ca95bd76b26c74dfa15b421667bc2ea14b33fad4813352758752",
+  "reproduce_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python shock-radar/src/r8_forecast_ablation.py --spending data/raw/sberindex-data-sense-2025/8_consumption.parquet --news-audit shock-radar/runs/R8/news_audit.json --outdir output/r8-v2-reproduced",
+  "limitations": [
+    "territory-only bootstrap does not represent shared national time shocks",
+    "expanding rolling windows may legitimately train on earlier evaluated targets once their assumed availability date has passed",
+    "news effect remainsNA; gateR8 andsourceaction08 remainopen",
+    "F03/R3 archive isINVALID_TARGET_LEAKAGE"
+  ]
+}

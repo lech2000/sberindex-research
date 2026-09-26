@@ -1,0 +1,85 @@
+origin,horizon,model,n_paired,mae,coverage_frac,n_series_total,n_excluded_history,n_excluded_target,n_seasonal_unavailable,na_reason
+2024-06,1,calendar_boost,12246,443.471835623064,0.9319634703196347,13140,288,606,0,
+2024-06,1,lastavailable,12246,651.4503511350645,0.9319634703196347,13140,288,606,0,
+2024-06,1,news_boost,12246,,,13140,288,606,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-06,1,news_only,12246,,,13140,288,606,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-06,1,nonews_boost,12246,445.0183258847761,0.9319634703196347,13140,288,606,0,
+2024-06,1,seasonal_naive,12246,1394.720235178834,0.9319634703196347,13140,288,606,0,
+2024-06,2,calendar_boost,12216,551.8421107546026,0.9296803652968036,13140,348,576,0,
+2024-06,2,lastavailable,12216,672.496643745907,0.9296803652968036,13140,348,576,0,
+2024-06,2,news_boost,12216,,,13140,348,576,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-06,2,news_only,12216,,,13140,348,576,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-06,2,nonews_boost,12216,551.8421107546026,0.9296803652968036,13140,348,576,0,
+2024-06,2,seasonal_naive,12216,1334.3598559266536,0.9296803652968036,13140,348,576,0,
+2024-07,1,calendar_boost,12246,535.7281813411283,0.9319634703196347,13140,318,576,0,
+2024-07,1,lastavailable,12246,603.8790625510371,0.9319634703196347,13140,318,576,0,
+2024-07,1,news_boost,12246,,,13140,318,576,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,1,news_only,12246,,,13140,318,576,0,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,1,nonews_boost,12246,537.961746732526,0.9319634703196347,13140,318,576,0,
+2024-07,1,seasonal_naive,12246,1332.302384452066,0.9319634703196347,13140,318,576,0,
+2024-07,2,calendar_boost,12234,1050.1268701311913,0.9310502283105023,13140,318,540,48,
+2024-07,2,lastavailable,12234,543.277178355403,0.9310502283105023,13140,318,540,48,
+2024-07,2,news_boost,12234,,,13140,318,540,48,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,2,news_only,12234,,,13140,318,540,48,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,2,nonews_boost,12234,1023.8275569500595,0.9310502283105023,13140,318,540,48,
+2024-07,2,seasonal_naive,12234,1138.4107405590976,0.9310502283105023,13140,318,540,48,
+2024-07,3,calendar_boost,12210,894.9048419217631,0.9292237442922374,13140,282,588,60,
+2024-07,3,lastavailable,12210,614.1443898443898,0.9292237442922374,13140,282,588,60,
+2024-07,3,news_boost,12210,,,13140,282,588,60,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,3,news_only,12210,,,13140,282,588,60,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-07,3,nonews_boost,12210,894.9048419217631,0.9292237442922374,13140,282,588,60,
+2024-07,3,seasonal_naive,12210,1334.3052416052417,0.9292237442922374,13140,282,588,60,
+2024-08,1,calendar_boost,12270,1192.3404336910241,0.9337899543378996,13140,264,540,66,
+2024-08,1,lastavailable,12270,607.4881825590872,0.9337899543378996,13140,264,540,66,
+2024-08,1,news_boost,12270,,,13140,264,540,66,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,1,news_only,12270,,,13140,264,540,66,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,1,nonews_boost,12270,1073.0250623757695,0.9337899543378996,13140,264,540,66,
+2024-08,1,seasonal_naive,12270,1137.8989405052976,0.9337899543378996,13140,264,540,66,
+2024-08,2,calendar_boost,12240,852.0765474192765,0.9315068493150684,13140,228,588,84,
+2024-08,2,lastavailable,12240,598.6083333333333,0.9315068493150684,13140,228,588,84,
+2024-08,2,news_boost,12240,,,13140,228,588,84,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,2,news_only,12240,,,13140,228,588,84,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,2,nonews_boost,12240,811.2229800967399,0.9315068493150684,13140,228,588,84,
+2024-08,2,seasonal_naive,12240,1334.6363562091503,0.9315068493150684,13140,228,588,84,
+2024-08,3,calendar_boost,12216,1131.643702713625,0.9296803652968036,13140,264,540,120,
+2024-08,3,lastavailable,12216,736.3581368696791,0.9296803652968036,13140,264,540,120,
+2024-08,3,news_boost,12216,,,13140,264,540,120,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,3,news_only,12216,,,13140,264,540,120,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-08,3,nonews_boost,12216,1114.2059447968527,0.9296803652968036,13140,264,540,120,
+2024-08,3,seasonal_naive,12216,1145.6114112639161,0.9296803652968036,13140,264,540,120,
+2024-09,1,calendar_boost,12246,1018.3482872260687,0.9319634703196347,13140,228,588,78,
+2024-09,1,lastavailable,12246,608.4999183406827,0.9319634703196347,13140,228,588,78,
+2024-09,1,news_boost,12246,,,13140,228,588,78,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,1,news_only,12246,,,13140,228,588,78,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,1,nonews_boost,12246,989.7037673872902,0.9319634703196347,13140,228,588,78,
+2024-09,1,seasonal_naive,12246,1335.1859382655562,0.9319634703196347,13140,228,588,78,
+2024-09,2,calendar_boost,12210,1464.2254932174208,0.9292237442922374,13140,270,540,120,
+2024-09,2,lastavailable,12210,757.125389025389,0.9292237442922374,13140,270,540,120,
+2024-09,2,news_boost,12210,,,13140,270,540,120,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,2,news_only,12210,,,13140,270,540,120,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,2,nonews_boost,12210,1219.4848269210336,0.9292237442922374,13140,270,540,120,
+2024-09,2,seasonal_naive,12210,1144.7029484029483,0.9292237442922374,13140,270,540,120,
+2024-09,3,calendar_boost,12222,1169.370818793389,0.9301369863013699,13140,324,522,72,
+2024-09,3,lastavailable,12222,1607.347324496809,0.9301369863013699,13140,324,522,72,
+2024-09,3,news_boost,12222,,,13140,324,522,72,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,3,news_only,12222,,,13140,324,522,72,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-09,3,nonews_boost,12222,1170.1867833914373,0.9301369863013699,13140,324,522,72,
+2024-09,3,seasonal_naive,12222,1383.3210603829161,0.9301369863013699,13140,324,522,72,
+2024-10,1,calendar_boost,12186,982.5441657092384,0.9273972602739726,13140,348,540,66,
+2024-10,1,lastavailable,12186,590.7183653372723,0.9273972602739726,13140,348,540,66,
+2024-10,1,news_boost,12186,,,13140,348,540,66,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-10,1,news_only,12186,,,13140,348,540,66,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-10,1,nonews_boost,12186,948.2226019462502,0.9273972602739726,13140,348,540,66,
+2024-10,1,seasonal_naive,12186,1143.6577219760381,0.9273972602739726,13140,348,540,66,
+2024-10,2,calendar_boost,12210,1340.1066267330743,0.9292237442922374,13140,378,522,30,
+2024-10,2,lastavailable,12210,1604.8066339066338,0.9292237442922374,13140,378,522,30,
+2024-10,2,news_boost,12210,,,13140,378,522,30,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-10,2,news_only,12210,,,13140,378,522,30,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-10,2,nonews_boost,12210,1203.6776235725047,0.9292237442922374,13140,378,522,30,
+2024-10,2,seasonal_naive,12210,1383.5382473382474,0.9292237442922374,13140,378,522,30,
+2024-11,1,calendar_boost,12198,1387.0052653537039,0.9283105022831051,13140,396,522,24,
+2024-11,1,lastavailable,12198,2131.885473028365,0.9283105022831051,13140,396,522,24,
+2024-11,1,news_boost,12198,,,13140,396,522,24,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-11,1,news_only,12198,,,13140,396,522,24,strict eligible news = 0 (audit 64 total / 0 eligible via coverage.n_eligible): news effects unmeasured; no zeros injected
+2024-11,1,nonews_boost,12198,1474.9559680359553,0.9283105022831051,13140,396,522,24,
+2024-11,1,seasonal_naive,12198,1383.1999508116085,0.9283105022831051,13140,396,522,24,

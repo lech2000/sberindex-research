@@ -1,0 +1,29 @@
+self-check tracker_calib_record: T=0.0000 M=0.9760 Tc=0.0000 ambiguity=False n_self=1200 n_other=2400 (recorded only, calibration NOT claimed validated)
+self-check tracker_A_continuing: PASS continuing(A)=7
+self-check tracker_birth_C: PASS birth=1
+self-check tracker_disappearance_B: PASS disappearance=1
+self-check tracker_dormant_D: PASS dormant=6 (B:3 + D:3 expected)
+self-check tracker_reemergence_D: PASS reemergence=1
+self-check tracker_no_ambiguity: PASS ambiguous=0 conflict=0
+self-check tracker_no_amb_birth: PASS ambiguous-as-birth=0
+self-check tracker_no_fp: PASS unexpected_kinds=0
+self-check split_detected: PASS split=1
+self-check split_counts: detected=1 (expected 1)
+self-check merge_detected: PASS merge=1
+self-check merge_counts: detected=1 (expected 1)
+self-check wrong_geometry_no_split: PASS split=0
+self-check proximity_clean: PASS proximity_events=0 (false positives)
+self-check twins_ambiguous: PASS ambiguous=1 birth=0
+self-check twins_no_birth: PASS birth=0
+self-check pipe_determinism: PASS 
+self-check pipe_metrics_repro: PASS 
+self-check kgrid_honest_argmax: PASS months=12
+self-check pipe_status_partial: PASS 
+self-check pipe_no_case06: PASS 
+self-check pipe_events_candidates: PASS 
+self-check prefix_past_unchanged: PASS rows=360
+self-check prefix_edited_future_past_unchanged: PASS rows=360
+self-check prefix_same_2023_fit: PASS 
+self-check prefix_edited_future_same_2023_fit: PASS 
+self-check prefix_kgrid_unchanged: PASS 
+self-check: ALL PASS

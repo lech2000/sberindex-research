@@ -1,0 +1,82 @@
+{
+ "run_id": "R8-forecast-ablation-v2",
+ "model": {
+  "estimator": "HistGradientBoostingRegressor",
+  "max_iter": 80,
+  "early_stopping": false,
+  "max_depth": 4,
+  "min_samples_leaf": 30,
+  "random_state": 20260926
+ },
+ "features": {
+  "lags": "exact calendar positions O-2/O-3/O-4/O-13",
+  "roll3": "mean of O-2..O-4, no gap compression",
+  "category": "one-hot, levels fixed on train (sorted)",
+  "territory_id": "excluded (never ordinal magnitude)",
+  "calendar_variant": "adds sin/cos of target month"
+ },
+ "per_origin_bounds": {
+  "2024-06": {
+   "max_known": "2024-04",
+   "max_train_label": "2024-04"
+  },
+  "2024-07": {
+   "max_known": "2024-05",
+   "max_train_label": "2024-05"
+  },
+  "2024-08": {
+   "max_known": "2024-06",
+   "max_train_label": "2024-06"
+  },
+  "2024-09": {
+   "max_known": "2024-07",
+   "max_train_label": "2024-07"
+  },
+  "2024-10": {
+   "max_known": "2024-08",
+   "max_train_label": "2024-08"
+  },
+  "2024-11": {
+   "max_known": "2024-09",
+   "max_train_label": "2024-09"
+  }
+ },
+ "outputs": [
+  "predictions.parquet",
+  "paired_metrics.csv",
+  "audit.json",
+  "metrics.json",
+  "manifest.json"
+ ],
+ "limitations": [
+  "exploratory R8_v2, not confirmatory: validation data was already used earlier, so no unopened-test claim is made",
+  "news audit reports 64 total / 0 eligible events: news-enabled and news-only metrics are NA; no quality claim is made where calendar shows no improvement over no-news",
+  "assumed release lag of 2 months is a synthetic assumption, not a measured release timestamp",
+  "24 monthly points per series: yearly seasonality is estimated with high uncertainty; lag12 needs a 14-month warmup so train origins start late and early cells may be skipped",
+  "territory_id is never used as a magnitude feature; category is one-hot with train-fixed levels",
+  "seasonal naive needs value(target-12) present; otherwise the pair is excluded from the paired mask (audited)"
+ ],
+ "provenance": {
+  "run_utc": "2026-09-26T16:29:35+00:00",
+  "command": "shock-radar/src/r8_forecast_ablation.py --spending data/raw/sberindex-data-sense-2025/8_consumption.parquet --news-audit shock-radar/runs/R8/news_audit.json --outdir output/r8-final-20260926",
+  "inputs": {
+   "spending": "data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+   "spending_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+   "spending_rows_kept": 303126,
+   "news_audit": "shock-radar/runs/R8/news_audit.json",
+   "news_audit_sha256": "03eaf09fa7ac537b7332b52c8f8c405b685e74f4a8849eb36d7056d4ab0ab93a",
+   "news_audit_kind": "json",
+   "news_eligibility_column": "coverage.n_eligible"
+  },
+  "code_sha256": "5c8114783da3ca95bd76b26c74dfa15b421667bc2ea14b33fad4813352758752",
+  "git_commit": "070731d",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "sklearn": "1.9.1"
+  },
+  "seed": 20260926
+ }
+}

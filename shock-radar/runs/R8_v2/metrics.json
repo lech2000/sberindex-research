@@ -1,0 +1,125 @@
+{
+ "run_id": "R8-forecast-ablation-v2",
+ "status": "PARTIAL_NOT_GATE_PASS",
+ "gate_pass": false,
+ "gate_pass_reason": "exploratory R8_v2 paired ablation: validation already used earlier and no historical news exists (0 eligible), so PASS is forbidden; do not close the case",
+ "fallback_documented": false,
+ "case_action": "do_not_close",
+ "eval": {
+  "origins": [
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11"
+  ],
+  "horizons": [
+   1,
+   2,
+   3
+  ],
+  "cells_scored": 14,
+  "cells_skipped": 1
+ },
+ "panel_mae": {
+  "lastavailable": 880.2129593923459,
+  "seasonal_naive": 1280.4203856266433,
+  "nonews_boost": 961.1042974419819,
+  "calendar_boost": 1000.793644775331
+ },
+ "per_horizon_mae": {
+  "h1": {
+   "lastavailable": 864.9657592108132,
+   "seasonal_naive": 1287.8339873555701,
+   "nonews_boost": 911.1355099393193,
+   "calendar_boost": 926.3130461715182
+  },
+  "h2": {
+   "lastavailable": 835.0160039273442,
+   "seasonal_naive": 1267.1188185239732,
+   "nonews_boost": 961.9210007137203,
+   "calendar_boost": 1051.527859256598
+  },
+  "h3": {
+   "lastavailable": 986.1125573018992,
+   "seasonal_naive": 1287.7539292730844,
+   "nonews_boost": 1059.810925783487,
+   "calendar_boost": 1065.351389966906
+  }
+ },
+ "bootstrap_calendar_minus_nonews": {
+  "h1": {
+   "point": 15.17753623219899,
+   "lo": 14.471272410890082,
+   "hi": 15.9620581715558,
+   "n_resamples": 200,
+   "n_blocks": 2059,
+   "n_rows": 73392
+  },
+  "h2": {
+   "point": 89.60685854287765,
+   "lo": 88.062892928968,
+   "hi": 90.82124552805162,
+   "n_resamples": 200,
+   "n_blocks": 2053,
+   "n_rows": 61110
+  },
+  "h3": {
+   "point": 5.540464183419109,
+   "lo": 5.021373784517503,
+   "hi": 5.98694326995988,
+   "n_resamples": 200,
+   "n_blocks": 2049,
+   "n_rows": 36648
+  },
+  "panel": {
+   "point": 39.68934733334937,
+   "lo": 39.04038659482509,
+   "hi": 40.29958924519612,
+   "n_resamples": 200,
+   "n_blocks": 2061,
+   "n_rows": 171150
+  }
+ },
+ "permutation_control_panel_mae": 944.0943488570517,
+ "oracle_quarantined_mae": 0.0,
+ "news_enabled_evaluation": "NA",
+ "news_only_evaluation": "NA",
+ "na_reason": "strict eligible news = 0 (64 total / 0 eligible): news effects unmeasured; zeros never injected",
+ "quality_claim": null,
+ "quality_claim_note": "no quality claim is made where calendar shows no improvement over no-news",
+ "limitations": [
+  "exploratory R8_v2, not confirmatory: validation data was already used earlier, so no unopened-test claim is made",
+  "news audit reports 64 total / 0 eligible events: news-enabled and news-only metrics are NA; no quality claim is made where calendar shows no improvement over no-news",
+  "assumed release lag of 2 months is a synthetic assumption, not a measured release timestamp",
+  "24 monthly points per series: yearly seasonality is estimated with high uncertainty; lag12 needs a 14-month warmup so train origins start late and early cells may be skipped",
+  "territory_id is never used as a magnitude feature; category is one-hot with train-fixed levels",
+  "seasonal naive needs value(target-12) present; otherwise the pair is excluded from the paired mask (audited)"
+ ],
+ "predictions_file": "/Users/sergey/projects/sberindex-research/output/r8-final-20260926/predictions.parquet",
+ "predictions_format": "parquet",
+ "provenance": {
+  "run_utc": "2026-09-26T16:29:35+00:00",
+  "command": "shock-radar/src/r8_forecast_ablation.py --spending data/raw/sberindex-data-sense-2025/8_consumption.parquet --news-audit shock-radar/runs/R8/news_audit.json --outdir output/r8-final-20260926",
+  "inputs": {
+   "spending": "data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+   "spending_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+   "spending_rows_kept": 303126,
+   "news_audit": "shock-radar/runs/R8/news_audit.json",
+   "news_audit_sha256": "03eaf09fa7ac537b7332b52c8f8c405b685e74f4a8849eb36d7056d4ab0ab93a",
+   "news_audit_kind": "json",
+   "news_eligibility_column": "coverage.n_eligible"
+  },
+  "code_sha256": "5c8114783da3ca95bd76b26c74dfa15b421667bc2ea14b33fad4813352758752",
+  "git_commit": "070731d",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "sklearn": "1.9.1"
+  },
+  "seed": 20260926
+ }
+}

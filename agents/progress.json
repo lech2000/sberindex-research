@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T07:26:18.266734+00:00",
+  "updated_at": "2026-09-26T16:41:50.107921+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "economic-atlas/runs/A6/manifest.json",
+      "last_artifact": "economic-atlas/runs/A6_v2/manifest.json",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "A6: временная чувствительность рассчитана (75/13783); выполнить идентичности с переменным K, рождения/исчезновения и контроли ATF-M2/M3. Действие06 открыто; куратор принял адресное задание 77/13782. A4 и Балашиху не повторять.",
+      "next_action": "A6_v2 и пятьseed готовы: среднийARI0.99854–0.99972. Далее чувствительностьoverlap/margin и независимаяэкономическаяинтерпретация;7неоднозначныхкластерныхсопоставлений, не7МО. Source06открыт.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -26,6 +26,37 @@
         "client_message_id": "research-a6-progress-20260926-0956",
         "status": "timed_out",
         "gate_changed": false
+      },
+      "last_scientific_run": "2026-09-26T16:36:38.091050+00:00",
+      "scientific_summary": {
+        "n_assignments": 45504,
+        "selected_k": 2,
+        "n_months": 24,
+        "continuing": 36,
+        "reemergence": 3,
+        "ambiguous": 7,
+        "split": 0,
+        "merge": 0,
+        "birth": 0,
+        "kb_document_id": 13875
+      },
+      "robustness": {
+        "seeds": [
+          20260921,
+          20260922,
+          20260923,
+          20260924,
+          20260925
+        ],
+        "ari_mean_range": [
+          0.9985416441441014,
+          0.9997233190562037
+        ],
+        "ambiguity_unit": "cluster-month matching;4438territory-monthassignments inbase",
+        "jaccard_range": [
+          0.997751798561151,
+          1.0
+        ]
       }
     },
     "shock-radar": {
@@ -33,9 +64,9 @@
       "agent": "software:sberindex_radar_researcher@5",
       "current_gate": "R8",
       "status": "in_progress",
-      "last_artifact": "shock-radar/runs/R8/metrics.json",
+      "last_artifact": "shock-radar/runs/R8_v2/metrics.json",
       "last_dialog": "2026-09-26T07:06:14Z",
-      "next_action": "R8: выполнить парные прогнозные абляции no-news/calendar/strict-lag и shuffle/forward-shift контроли. Аудит76/13781 готов; исторические новости исключены до доказанного vintage и проверки topic/географии. Действие08 открыто.",
+      "next_action": "R8_v2 рассчитан76/13876, research:r8_v2_20260926:171150pairedpoints, MAE880.213/1280.420/961.104/1000.794. Lastavailableлучше; сравнитьcausalProphet/TSFM; восстановитьnews-vintage,22qualityflags. F03/R3invalid76/13864. source08открыт.",
       "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
       "last_gate": {
         "gate": "R7",
@@ -47,17 +78,44 @@
         "kb_document_id": 13784,
         "commit": "9211e62a2",
         "quality_claim": "Отрицательный технический результат; раннее предупреждение не подтверждено; exploratory-v2"
+      },
+      "last_scientific_run": "2026-09-26T16:29:35+00:00",
+      "scientific_summary": {
+        "paired_n": 171150,
+        "cells": 14,
+        "mae_lastavailable": 880.2129593923459,
+        "mae_seasonal_naive": 1280.4203856266433,
+        "mae_nonews_boost": 961.1042974419819,
+        "mae_calendar_boost": 1000.793644775331,
+        "historical_news_eligible": 0,
+        "kb_document_id": 13876
       }
     },
     "municipality-graph": {
       "case_id": "case_43de12a8dc2e4abd",
       "agent": "software:sberindex_graph_steward@3",
       "open_actions": "5/9",
-      "status": "in_progress_balashikha_skipped",
+      "status": "blocked_worker_evidence",
       "last_evidence": "sberindex_crosswalk coverage=1.0 (2190/2190), dict sha 9ab519866c52028c, manual 23.09.2026",
-      "next_action": "G2: работать по другим территориям проверенного кроссволка. Балашиха пропущена владельцем25.09; act_6ee77ab2efd14b0d done=true означает пропуск, а не найденные каналы. Не искать её повторно.",
+      "next_action": "Fixar F7b problemreports13865/13867; восстановитьboundeddiscoveryКоломна, entities=[]доисточников. Балашиха/Ramenнеповторять.",
       "current_gate": "G2",
-      "last_dialog": "2026-09-23T19:55:00Z"
+      "last_dialog": "2026-09-23T19:55:00Z",
+      "last_failures": [
+        {
+          "run_key": "research-graph-next-20260926-1618",
+          "problem_report": "rep_9fd0251dd0f94c97",
+          "kb_corpus": 62,
+          "document_id": 13865,
+          "reason": "invalidpublic_channelentity_type; curatorignoredRamen exclusion"
+        },
+        {
+          "run_key": "research-graph-discovery-kolomna-20260926-1625",
+          "problem_report": "rep_d5c4d60e3f56439f",
+          "kb_corpus": 62,
+          "document_id": 13867,
+          "reason": "GraphStewarddialogtimeout; noEVIDENCE_JSON"
+        }
+      ]
     },
     "research-curator": {
       "case_id": "case_d058db85c48a487c",
@@ -65,13 +123,13 @@
       "status": "dispatching",
       "note": "0 собственных actions — по замыслу, работает с чужих open_actions",
       "last_dispatch": {
-        "run_key": "research-next-r8-20260926-1024",
-        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "run_key": "research-r8-v2-exact-key-20260926-1640",
         "source_case_id": "case_008f37d03cf541e5",
-        "plan_ref": "R8",
-        "verdict": "accept",
-        "evidence_document_id": 13792,
-        "decision_document_id": 13793
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "verdict": "blocked",
+        "evidence_document_id": 13879,
+        "decision_document_id": 13880,
+        "operator_diagnosis": "Новый76/13876 существует и прямойtool-service helperегонаходит; dialogtoolresult обрезаетсядо4000символов, первыекорпуса74/75 вытесняют76/77. F7bисправлениеcompactresearchpayload запущено."
       },
       "routing": "Адресный webhook передаёт ровно одно открытое source_action_id; куратор и ответ проверяют связь с делом. Размер контекста исправлен через F7b, live R8 accept 26.09.2026.",
       "previous_dispatch": {

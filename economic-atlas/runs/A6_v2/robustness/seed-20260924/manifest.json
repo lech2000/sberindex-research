@@ -1,0 +1,66 @@
+{
+  "code": {
+    "a6_identities.py": "f630b5a998925de90b1f3f40f33f32f1a9f873e2c9c886de06b29116b9f78f4d",
+    "a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474"
+  },
+  "command": "economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260924 --seed 20260924",
+  "completes_case06": false,
+  "component": "identities",
+  "created_at": "2026-09-26T16:43:19.170097+00:00",
+  "formulas": {
+    "overlap": "Bhattacharyya coefficient, isotropic closed form",
+    "recognition": "overlap>=T and (best-second)>M, one-to-one greedy by overlap; losers ambiguous",
+    "region": "isotropic Gaussian: centre=fitted k-means centre, rms=sqrt(mean||x-mu||^2), var=rms^2/F floored",
+    "share": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m). Denominator is the 'Все категории' row, never sum6. No fillna(0).",
+    "split_merge": "member-point containment in sphere(mu,kappa*r); split needs >=2 children + no recognised continuation; merge needs >=2 parents",
+    "standardization": "z=(share-mu)/std, mu/std pooled over mask tids x 2023 months only (ddof=0), frozen transform of all months."
+  },
+  "gate": "A6",
+  "gate_pass": false,
+  "inputs": {
+    "panel": {
+      "path": "economic-atlas/data/panel_v1.parquet",
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "limitations": [
+    "2023 outputs are retrospective: the frozen scaler pools ALL 2023 months and the calibration pools ALL 2023 months, so later-2023 months inform early-2023 z-scores, thresholds and labels. Causality-relevant months are 2024+, strictly after the frozen fit/calibration.",
+    "Chosen K is a silhouette-argmax heuristic on a <=400 subsample, not an optimal cluster count; K trajectory must be read as-is.",
+    "Identity events (birth/dormant/disappearance/reemergence/split/merge) are algorithmic candidates from geometric overlap/containment, never verified economic changes; ambiguous clusters are never confirmed births; month-0 clusters are 'initial', never births.",
+    "Recognition uses frozen 2023-calibrated T/M; if calibration reports self/other ambiguity the separation is uncertain by measurement."
+  ],
+  "mask": {
+    "n": 1896
+  },
+  "params": {
+    "bootstrap_B": 200,
+    "containment_grid": [
+      0.6,
+      0.75
+    ],
+    "dormant_max_misses": 3,
+    "k_grid": [
+      2,
+      8
+    ],
+    "k_policy": "per-month argmax silhouette over K=2..8 (n_init=10, random_state=seed+month+k) on a deterministic at-most-400 subsample (rng seeded by seed+month, identical subsample across k) of the CURRENT month only; ties -> smallest k. Fixed in advance; chosen K is never claimed optimal.",
+    "kappa_grid": [
+      1.5,
+      2.0,
+      2.5
+    ],
+    "n_init": 10,
+    "silhouette_cap": 400,
+    "var_floor": 1e-06
+  },
+  "seed": 20260924,
+  "status": "PARTIAL_NOT_GATE_PASS",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-09-26T16:46:52.861055+00:00",
+  "method": "five FULL independentruns of a6_identities.py seeds20260921..20260925 vsreference20260926; samefrozenpanel; label-invariantARI/NMI; exactterritory-monthambiguoussets",
+  "code_sha256": "f630b5a998925de90b1f3f40f33f32f1a9f873e2c9c886de06b29116b9f78f4d",
+  "status": "MEASURED_ROBUSTNESS_NOT_ACCURACY",
+  "base_ambiguous_cluster_months": 7,
+  "base_ambiguous_assignment_rows": 4438,
+  "warning": "7 ambiguous refers to cluster-month identity matches, NOT7municipalities. Seed stability does NOT prove economic truth or calibrated threshold accuracy. VariableK grid selected2 at all months, not fixedK config.",
+  "seed_results": [
+    {
+      "seed": 20260921,
+      "all_months_k2": true,
+      "ari_min": 0.9783939956115307,
+      "ari_mean": 0.9987323457518942,
+      "nmi_min": 0.952514813647749,
+      "ambiguous_cluster_months": 7,
+      "ambiguous_assignment_rows": 4448,
+      "ambiguous_assignment_jaccard_vs_base": 0.997751798561151,
+      "same_ambiguous_assignments": false,
+      "continuing": 36,
+      "reemergence": 3
+    },
+    {
+      "seed": 20260922,
+      "all_months_k2": true,
+      "ari_min": 0.982691605671946,
+      "ari_mean": 0.9985416441441014,
+      "nmi_min": 0.9604331474368167,
+      "ambiguous_cluster_months": 7,
+      "ambiguous_assignment_rows": 4445,
+      "ambiguous_assignment_jaccard_vs_base": 0.9979757085020243,
+      "same_ambiguous_assignments": false,
+      "continuing": 36,
+      "reemergence": 3
+    },
+    {
+      "seed": 20260923,
+      "all_months_k2": true,
+      "ari_min": 0.9934086617434431,
+      "ari_mean": 0.9989923452926326,
+      "nmi_min": 0.9821315587894606,
+      "ambiguous_cluster_months": 7,
+      "ambiguous_assignment_rows": 4437,
+      "ambiguous_assignment_jaccard_vs_base": 0.9988738738738738,
+      "same_ambiguous_assignments": false,
+      "continuing": 36,
+      "reemergence": 3
+    },
+    {
+      "seed": 20260924,
+      "all_months_k2": true,
+      "ari_min": 0.9977697435346276,
+      "ari_mean": 0.9995421168696611,
+      "nmi_min": 0.992876147975189,
+      "ambiguous_cluster_months": 7,
+      "ambiguous_assignment_rows": 4437,
+      "ambiguous_assignment_jaccard_vs_base": 0.9997746732762506,
+      "same_ambiguous_assignments": false,
+      "continuing": 36,
+      "reemergence": 3
+    },
+    {
+      "seed": 20260925,
+      "all_months_k2": true,
+      "ari_min": 0.9977697435346276,
+      "ari_mean": 0.9997233190562037,
+      "nmi_min": 0.992876147975189,
+      "ambiguous_cluster_months": 7,
+      "ambiguous_assignment_rows": 4438,
+      "ambiguous_assignment_jaccard_vs_base": 1.0,
+      "same_ambiguous_assignments": true,
+      "continuing": 36,
+      "reemergence": 3
+    }
+  ],
+  "rerun_commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260921 --seed 20260921",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260922 --seed 20260922",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260923 --seed 20260923",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260924 --seed 20260924",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python economic-atlas/src/a6_identities.py --panel economic-atlas/data/panel_v1.parquet --outdir output/a6-seed-20260925 --seed 20260925"
+  ]
+}

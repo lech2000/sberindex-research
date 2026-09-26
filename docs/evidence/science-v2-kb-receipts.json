@@ -1,0 +1,26 @@
+[
+  {
+    "added": true,
+    "document_id": 13875,
+    "title": "СберИндекс research:a6_v2_20260926 — идентичности2групп,7неоднозначностей,контроли",
+    "corpus_id": 75,
+    "chunks": 3,
+    "vectors": 3
+  },
+  {
+    "added": true,
+    "document_id": 13876,
+    "title": "СберИндекс research:r8_v2_20260926 — pairedMAE171150, простойbaselineточнее",
+    "corpus_id": 76,
+    "chunks": 3,
+    "vectors": 3
+  },
+  {
+    "added": true,
+    "document_id": 13877,
+    "title": "Результат research:r8_v2_20260926 для проверки куратором — корпус76 и точныеMAE",
+    "corpus_id": 77,
+    "chunks": 3,
+    "vectors": 3
+  }
+]

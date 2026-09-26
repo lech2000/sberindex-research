@@ -1,0 +1,217 @@
+{
+  "calibration_summary": {
+    "ambiguity": false,
+    "candidate_margin": 0.7189655989109114,
+    "n_other_scores": 4800,
+    "n_self_scores": 4800,
+    "overlap_threshold": 0.2766794745770779,
+    "resemblance_floor": 0.17554505697977096
+  },
+  "completed_components": [
+    "variable_K_typology",
+    "M2_tracking",
+    "M3_candidates",
+    "frozen_2023_calibration"
+  ],
+  "completes_case06": false,
+  "component": "identities",
+  "frozen_panel": {
+    "expected_shape": [
+      1896,
+      24,
+      6
+    ],
+    "frozen_shape_ok": true,
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_cats": 6,
+    "n_months": 24,
+    "n_tids": 1896
+  },
+  "gate": "A6",
+  "gate_pass": false,
+  "gate_pass_reason": "identity/split/merge outputs are algorithmic candidates from geometric overlap/containment, never verified economic changes; no case closure is claimed",
+  "identity_counts": {
+    "ambiguous": 7,
+    "ambiguous_never_confirmed": true,
+    "birth": 0,
+    "birth_candidate": 0,
+    "confirmed_births": 0,
+    "conflict": 0,
+    "continuing": 36,
+    "disappearance": 0,
+    "dormant": 7,
+    "initial": 2,
+    "reemergence": 3
+  },
+  "k_policy": "per-month argmax silhouette over K=2..8 (n_init=10, random_state=seed+month+k) on a deterministic at-most-400 subsample (rng seeded by seed+month, identical subsample across k) of the CURRENT month only; ties -> smallest k. Fixed in advance; chosen K is never claimed optimal.",
+  "k_selection_notes": {},
+  "k_trajectory": {
+    "2023-01": 2,
+    "2023-02": 2,
+    "2023-03": 2,
+    "2023-04": 2,
+    "2023-05": 2,
+    "2023-06": 2,
+    "2023-07": 2,
+    "2023-08": 2,
+    "2023-09": 2,
+    "2023-10": 2,
+    "2023-11": 2,
+    "2023-12": 2,
+    "2024-01": 2,
+    "2024-02": 2,
+    "2024-03": 2,
+    "2024-04": 2,
+    "2024-05": 2,
+    "2024-06": 2,
+    "2024-07": 2,
+    "2024-08": 2,
+    "2024-09": 2,
+    "2024-10": 2,
+    "2024-11": 2,
+    "2024-12": 2
+  },
+  "m3": {
+    "n_merge_candidates": 0,
+    "n_split_candidates": 0,
+    "operating_point": {
+      "containment": 0.6,
+      "kappa": 2.5
+    },
+    "provenance": "containment of member points inside sphere(mu_c, kappa*r_c); proximity alone never suffices; split additionally requires no single recognised continuation; all events are algorithmic candidates, not verified changes.",
+    "sensitivity": {
+      "kappa=1.5_cont=0.6": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      },
+      "kappa=1.5_cont=0.75": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      },
+      "kappa=2.0_cont=0.6": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      },
+      "kappa=2.0_cont=0.75": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      },
+      "kappa=2.5_cont=0.6": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      },
+      "kappa=2.5_cont=0.75": {
+        "n_merge_candidates": 0,
+        "n_split_candidates": 0
+      }
+    }
+  },
+  "mask": {
+    "excluded_tids": {},
+    "n": 1896,
+    "n_excluded": 0
+  },
+  "no_fixed_k": true,
+  "pending_components": [
+    "economic_verification_of_events",
+    "case_closure"
+  ],
+  "seed": 20260924,
+  "share_audit": {
+    "excluded_tids": {},
+    "formula": "share(cat,tid,m)=value(cat,tid,m)/value('Все категории',tid,m). Denominator is the 'Все категории' row, never sum6. No fillna(0).",
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_excluded": 0,
+    "n_mask": 1896,
+    "n_months": 24
+  },
+  "standardization": {
+    "fit_months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12"
+    ],
+    "formula": "z=(share-mu)/std, mu/std pooled over mask tids x 2023 months only (ddof=0), frozen transform of all months.",
+    "mu": {
+      "Здоровье": 0.04968506508069163,
+      "Маркетплейсы": 0.1183212980757472,
+      "Общественное питание": 0.030665330876084487,
+      "Продовольствие": 0.45398913380350014,
+      "Транспорт": 0.059412799226104464
+    },
+    "retrospective_note": "fit pools ALL 2023 months, so 2023 z-scores/labels are retrospective (later-2023 months inform early-2023 transforms); the causality-relevant check concerns 2024 months, strictly after the frozen fit.",
+    "sigma": {
+      "Здоровье": 0.009824676460667606,
+      "Маркетплейсы": 0.040153456918748394,
+      "Общественное питание": 0.020334376811954692,
+      "Продовольствие": 0.06569588047972198,
+      "Транспорт": 0.014156951902103084
+    },
+    "zero_variance_features": []
+  },
+  "status": "PARTIAL_NOT_GATE_PASS",
+  "synthetic_control": {
+    "observed_labels_used": false,
+    "provenance": "no synthetic truth in real-run outputs",
+    "status": "separate_toy_only_run_under_self_check"
+  }
+}

@@ -1,0 +1,604 @@
+{
+ "run_id": "R8-forecast-ablation-v2",
+ "news_audit": {
+  "file": "shock-radar/runs/R8/news_audit.json",
+  "kind": "json",
+  "eligibility_column": "coverage.n_eligible",
+  "n_events_total": 64,
+  "n_eligible": 0
+ },
+ "spending_input": {
+  "n_rows_kept": 303126,
+  "n_rows_value_missing": 0,
+  "n_day_truncated": 0,
+  "n_series": 13140,
+  "panel_range": [
+   "2023-01",
+   "2024-12"
+  ]
+ },
+ "cells": [
+  {
+   "origin": "2024-06",
+   "horizon": 1,
+   "target": "2024-07",
+   "scored": true,
+   "n_train_rows": 24408,
+   "n_train_origins": 2,
+   "train_origins": [
+    "2024-02",
+    "2024-03"
+   ],
+   "max_known": "2024-04",
+   "max_train_label": "2024-04",
+   "n_series_total": 13140,
+   "n_paired": 12246,
+   "n_excluded_history": 288,
+   "n_excluded_target": 606,
+   "n_seasonal_unavailable": 0,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 651.4503511350645,
+    "seasonal_naive": 1394.720235178834,
+    "nonews_boost": 445.0183258847761,
+    "calendar_boost": 443.471835623064
+   },
+   "permutation_control_mae": 442.81408388241414,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-06",
+   "horizon": 2,
+   "target": "2024-08",
+   "scored": true,
+   "n_train_rows": 12198,
+   "n_train_origins": 1,
+   "train_origins": [
+    "2024-02"
+   ],
+   "max_known": "2024-04",
+   "max_train_label": "2024-04",
+   "n_series_total": 13140,
+   "n_paired": 12216,
+   "n_excluded_history": 348,
+   "n_excluded_target": 576,
+   "n_seasonal_unavailable": 0,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 672.496643745907,
+    "seasonal_naive": 1334.3598559266536,
+    "nonews_boost": 551.8421107546026,
+    "calendar_boost": 551.8421107546026
+   },
+   "permutation_control_mae": 551.8421107546026,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-06",
+   "horizon": 3,
+   "target": "2024-09",
+   "scored": false,
+   "skip_reason": "only 0 train rows (< 500): no train origins satisfy history<=j-2 and label<=E-2",
+   "n_train_rows": 0,
+   "n_train_origins": 0,
+   "max_known": "2024-04",
+   "max_train_label": null
+  },
+  {
+   "origin": "2024-07",
+   "horizon": 1,
+   "target": "2024-08",
+   "scored": true,
+   "n_train_rows": 36660,
+   "n_train_origins": 3,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04"
+   ],
+   "max_known": "2024-05",
+   "max_train_label": "2024-05",
+   "n_series_total": 13140,
+   "n_paired": 12246,
+   "n_excluded_history": 318,
+   "n_excluded_target": 576,
+   "n_seasonal_unavailable": 0,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 603.8790625510371,
+    "seasonal_naive": 1332.302384452066,
+    "nonews_boost": 537.961746732526,
+    "calendar_boost": 535.7281813411283
+   },
+   "permutation_control_mae": 529.694612582552,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-07",
+   "horizon": 2,
+   "target": "2024-09",
+   "scored": true,
+   "n_train_rows": 24390,
+   "n_train_origins": 2,
+   "train_origins": [
+    "2024-02",
+    "2024-03"
+   ],
+   "max_known": "2024-05",
+   "max_train_label": "2024-05",
+   "n_series_total": 13140,
+   "n_paired": 12234,
+   "n_excluded_history": 318,
+   "n_excluded_target": 540,
+   "n_seasonal_unavailable": 48,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 543.277178355403,
+    "seasonal_naive": 1138.4107405590976,
+    "nonews_boost": 1023.8275569500595,
+    "calendar_boost": 1050.1268701311913
+   },
+   "permutation_control_mae": 1001.9673563874343,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-07",
+   "horizon": 3,
+   "target": "2024-10",
+   "scored": true,
+   "n_train_rows": 12192,
+   "n_train_origins": 1,
+   "train_origins": [
+    "2024-02"
+   ],
+   "max_known": "2024-05",
+   "max_train_label": "2024-05",
+   "n_series_total": 13140,
+   "n_paired": 12210,
+   "n_excluded_history": 282,
+   "n_excluded_target": 588,
+   "n_seasonal_unavailable": 60,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 614.1443898443898,
+    "seasonal_naive": 1334.3052416052417,
+    "nonews_boost": 894.9048419217631,
+    "calendar_boost": 894.9048419217631
+   },
+   "permutation_control_mae": 894.9048419217631,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-08",
+   "horizon": 1,
+   "target": "2024-09",
+   "scored": true,
+   "n_train_rows": 48906,
+   "n_train_origins": 4,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05"
+   ],
+   "max_known": "2024-06",
+   "max_train_label": "2024-06",
+   "n_series_total": 13140,
+   "n_paired": 12270,
+   "n_excluded_history": 264,
+   "n_excluded_target": 540,
+   "n_seasonal_unavailable": 66,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 607.4881825590872,
+    "seasonal_naive": 1137.8989405052976,
+    "nonews_boost": 1073.0250623757695,
+    "calendar_boost": 1192.3404336910241
+   },
+   "permutation_control_mae": 1038.0164533845425,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-08",
+   "horizon": 2,
+   "target": "2024-10",
+   "scored": true,
+   "n_train_rows": 36606,
+   "n_train_origins": 3,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04"
+   ],
+   "max_known": "2024-06",
+   "max_train_label": "2024-06",
+   "n_series_total": 13140,
+   "n_paired": 12240,
+   "n_excluded_history": 228,
+   "n_excluded_target": 588,
+   "n_seasonal_unavailable": 84,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 598.6083333333333,
+    "seasonal_naive": 1334.6363562091503,
+    "nonews_boost": 811.2229800967399,
+    "calendar_boost": 852.0765474192765
+   },
+   "permutation_control_mae": 819.1864595050167,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-08",
+   "horizon": 3,
+   "target": "2024-11",
+   "scored": true,
+   "n_train_rows": 24360,
+   "n_train_origins": 2,
+   "train_origins": [
+    "2024-02",
+    "2024-03"
+   ],
+   "max_known": "2024-06",
+   "max_train_label": "2024-06",
+   "n_series_total": 13140,
+   "n_paired": 12216,
+   "n_excluded_history": 264,
+   "n_excluded_target": 540,
+   "n_seasonal_unavailable": 120,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 736.3581368696791,
+    "seasonal_naive": 1145.6114112639161,
+    "nonews_boost": 1114.2059447968527,
+    "calendar_boost": 1131.643702713625
+   },
+   "permutation_control_mae": 1092.374506247877,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-09",
+   "horizon": 1,
+   "target": "2024-10",
+   "scored": true,
+   "n_train_rows": 61152,
+   "n_train_origins": 5,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06"
+   ],
+   "max_known": "2024-07",
+   "max_train_label": "2024-07",
+   "n_series_total": 13140,
+   "n_paired": 12246,
+   "n_excluded_history": 228,
+   "n_excluded_target": 588,
+   "n_seasonal_unavailable": 78,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 608.4999183406827,
+    "seasonal_naive": 1335.1859382655562,
+    "nonews_boost": 989.7037673872902,
+    "calendar_boost": 1018.3482872260687
+   },
+   "permutation_control_mae": 922.948564469171,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-09",
+   "horizon": 2,
+   "target": "2024-11",
+   "scored": true,
+   "n_train_rows": 48840,
+   "n_train_origins": 4,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05"
+   ],
+   "max_known": "2024-07",
+   "max_train_label": "2024-07",
+   "n_series_total": 13140,
+   "n_paired": 12210,
+   "n_excluded_history": 270,
+   "n_excluded_target": 540,
+   "n_seasonal_unavailable": 120,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 757.125389025389,
+    "seasonal_naive": 1144.7029484029483,
+    "nonews_boost": 1219.4848269210336,
+    "calendar_boost": 1464.2254932174208
+   },
+   "permutation_control_mae": 1161.160585340047,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-09",
+   "horizon": 3,
+   "target": "2024-12",
+   "scored": true,
+   "n_train_rows": 36570,
+   "n_train_origins": 3,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04"
+   ],
+   "max_known": "2024-07",
+   "max_train_label": "2024-07",
+   "n_series_total": 13140,
+   "n_paired": 12222,
+   "n_excluded_history": 324,
+   "n_excluded_target": 522,
+   "n_seasonal_unavailable": 72,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 1607.347324496809,
+    "seasonal_naive": 1383.3210603829161,
+    "nonews_boost": 1170.1867833914373,
+    "calendar_boost": 1169.370818793389
+   },
+   "permutation_control_mae": 1159.703393679675,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-10",
+   "horizon": 1,
+   "target": "2024-11",
+   "scored": true,
+   "n_train_rows": 73398,
+   "n_train_origins": 6,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07"
+   ],
+   "max_known": "2024-08",
+   "max_train_label": "2024-08",
+   "n_series_total": 13140,
+   "n_paired": 12186,
+   "n_excluded_history": 348,
+   "n_excluded_target": 540,
+   "n_seasonal_unavailable": 66,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 590.7183653372723,
+    "seasonal_naive": 1143.6577219760381,
+    "nonews_boost": 948.2226019462502,
+    "calendar_boost": 982.5441657092384
+   },
+   "permutation_control_mae": 943.4127858800758,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-10",
+   "horizon": 2,
+   "target": "2024-12",
+   "scored": true,
+   "n_train_rows": 61056,
+   "n_train_origins": 5,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06"
+   ],
+   "max_known": "2024-08",
+   "max_train_label": "2024-08",
+   "n_series_total": 13140,
+   "n_paired": 12210,
+   "n_excluded_history": 378,
+   "n_excluded_target": 522,
+   "n_seasonal_unavailable": 30,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 1604.8066339066338,
+    "seasonal_naive": 1383.5382473382474,
+    "nonews_boost": 1203.6776235725047,
+    "calendar_boost": 1340.1066267330743
+   },
+   "permutation_control_mae": 1208.2454357778147,
+   "oracle_mae": 0.0
+  },
+  {
+   "origin": "2024-11",
+   "horizon": 1,
+   "target": "2024-12",
+   "scored": true,
+   "n_train_rows": 85734,
+   "n_train_origins": 7,
+   "train_origins": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08"
+   ],
+   "max_known": "2024-09",
+   "max_train_label": "2024-09",
+   "n_series_total": 13140,
+   "n_paired": 12198,
+   "n_excluded_history": 396,
+   "n_excluded_target": 522,
+   "n_seasonal_unavailable": 24,
+   "category_levels": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+   ],
+   "mae": {
+    "lastavailable": 2131.885473028365,
+    "seasonal_naive": 1383.1999508116085,
+    "nonews_boost": 1474.9559680359553,
+    "calendar_boost": 1387.0052653537039
+   },
+   "permutation_control_mae": 1453.9511794366006,
+   "oracle_mae": 0.0
+  }
+ ],
+ "leak_controls": {
+  "prefix_invariance_probe": {
+   "origin": "2024-06",
+   "horizon": 1,
+   "mutated": "all observations after 2024-04 by +1e6",
+   "max_abs_prediction_diff": 0.0,
+   "passed": true
+  },
+  "permutation_negative_control": {
+   "1": {
+    "mae": 888.1070988109063
+   },
+   "2": {
+    "mae": 948.3989796303812
+   },
+   "3": {
+    "mae": 1049.037600025698
+   }
+  },
+  "future_target_oracle": {
+   "mae": 0.0,
+   "status": "INVALID_LEAKAGE",
+   "note": "measured 0 by construction; quarantined, never in paired_metrics.csv"
+  },
+  "forward_shift_news": {
+   "eligible_at_cutoff": 0,
+   "eligible_after_forward_shift_months": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "6": 0
+   },
+   "informative": false,
+   "note": "0 eligible at cutoff stays 0 under forward shift: non-informative 0, not a measured news effect"
+  }
+ },
+ "train_eval_disjoint": true,
+ "vectorized_pure_crosscheck": "500-row sample per cell passed",
+ "provenance": {
+  "run_utc": "2026-09-26T16:29:35+00:00",
+  "command": "shock-radar/src/r8_forecast_ablation.py --spending data/raw/sberindex-data-sense-2025/8_consumption.parquet --news-audit shock-radar/runs/R8/news_audit.json --outdir output/r8-final-20260926",
+  "inputs": {
+   "spending": "data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+   "spending_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+   "spending_rows_kept": 303126,
+   "news_audit": "shock-radar/runs/R8/news_audit.json",
+   "news_audit_sha256": "03eaf09fa7ac537b7332b52c8f8c405b685e74f4a8849eb36d7056d4ab0ab93a",
+   "news_audit_kind": "json",
+   "news_eligibility_column": "coverage.n_eligible"
+  },
+  "code_sha256": "5c8114783da3ca95bd76b26c74dfa15b421667bc2ea14b33fad4813352758752",
+  "git_commit": "070731d",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "sklearn": "1.9.1"
+  },
+  "seed": 20260926
+ }
+}

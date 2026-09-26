@@ -44,3 +44,6 @@ python3 -m http.server 8765
 Откройте presentation/economic-atlas/landing/ или presentation/shock-radar/landing/.
 Прежние HSE templates в */landing/ — исторический прототип; здесь для показа применяется
 публичный OSM preview. Экономические результаты в template ещё не нанесены.
+
+
+Новые научные модули: `economic-atlas/src/a6_identities.py` и `shock-radar/src/r8_forecast_ablation.py`, оба черезF7b. Прямые команды воспроизведения в runs/A6_v2/README.md и runs/R8_v2/README.md; исходный reproduce.py --stage all воспроизводит прежний снимок, новыеv2 запускаются этими явнымикомандами.

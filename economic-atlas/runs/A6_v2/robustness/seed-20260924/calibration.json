@@ -1,0 +1,46 @@
+{
+  "ambiguity": false,
+  "ambiguity_note": "self q05 >= other q95 at measured quantiles.",
+  "cal_months": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "candidate_margin": 0.7189655989109114,
+  "fallback": false,
+  "fallback_note": "",
+  "method": "bootstrap self-vs-other, B=200, months=2023 only, min_cluster_size=8",
+  "n_clusters_skipped_small": 0,
+  "n_other_scores": 4800,
+  "n_self_scores": 4800,
+  "overlap_threshold": 0.2766794745770779,
+  "quantiles_other": {
+    "q01": 0.10897540238497158,
+    "q05": 0.1172464624233171,
+    "q25": 0.13390218917822205,
+    "q50": 0.17554505697977096,
+    "q75": 0.215086204019396,
+    "q95": 0.2766794745770779,
+    "q99": 0.2886733030661737
+  },
+  "quantiles_self": {
+    "q01": 0.9926166939339804,
+    "q05": 0.9956450734879894,
+    "q25": 0.9981995243320136,
+    "q50": 0.999076075282135,
+    "q75": 0.9995054802238362,
+    "q95": 0.9997981109237324,
+    "q99": 0.9999012278268883
+  },
+  "resemblance_floor": 0.17554505697977096,
+  "retrospective_note": "calibration pools ALL 2023 months; 2023 recognition is retrospective, 2024 recognition is strictly after the frozen calibration."
+}

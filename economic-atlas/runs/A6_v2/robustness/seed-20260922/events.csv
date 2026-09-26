@@ -1,0 +1,56 @@
+month,kind,identity_id,cluster,month_from,extra_ids,overlap,margin,kappa,containment,note
+2023-01,initial,ID0001,0.0,,,,,,,month-0 cluster; never counted as birth
+2023-01,initial,ID0002,1.0,,,,,,,month-0 cluster; never counted as birth
+2023-02,continuing,ID0002,0.0,,,0.9766611385933525,0.7439027043411528,,,recognised live identity (overlap>=T and margin>M)
+2023-02,ambiguous,,1.0,,,0.964861739484145,0.6695266438979561,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2023-02,dormant,ID0001,,,,,,,,unseen 1 month(s); re-emergence possible within 3
+2023-03,ambiguous,,0.0,,,0.9074064381299147,0.650614228351194,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2023-03,continuing,ID0002,1.0,,,0.9768803259897706,0.788825127013894,,,recognised live identity (overlap>=T and margin>M)
+2023-03,dormant,ID0001,,,,,,,,unseen 2 month(s); re-emergence possible within 3
+2023-04,continuing,ID0002,0.0,,,0.8812585478133111,0.7669425369783343,,,recognised live identity (overlap>=T and margin>M)
+2023-04,reemergence,ID0001,1.0,,,0.9453242958381812,0.739742664179345,,,recognised dormant identity (overlap>=T and margin>M)
+2023-05,continuing,ID0001,0.0,,,0.9627800968628552,0.8361908688975155,,,recognised live identity (overlap>=T and margin>M)
+2023-05,continuing,ID0002,1.0,,,0.9760383631878559,0.8615207082875029,,,recognised live identity (overlap>=T and margin>M)
+2023-06,continuing,ID0002,0.0,,,0.9783602688180062,0.8660707507464587,,,recognised live identity (overlap>=T and margin>M)
+2023-06,continuing,ID0001,1.0,,,0.9802363093387227,0.8509963779581874,,,recognised live identity (overlap>=T and margin>M)
+2023-07,continuing,ID0002,0.0,,,0.9765792160904906,0.8419037207538607,,,recognised live identity (overlap>=T and margin>M)
+2023-07,continuing,ID0001,1.0,,,0.9721221983767814,0.8466748668248756,,,recognised live identity (overlap>=T and margin>M)
+2023-08,continuing,ID0002,0.0,,,0.9529362824402949,0.764451890816847,,,recognised live identity (overlap>=T and margin>M)
+2023-08,continuing,ID0001,1.0,,,0.9692802809174175,0.8646137475677804,,,recognised live identity (overlap>=T and margin>M)
+2023-09,continuing,ID0001,0.0,,,0.9525060601286729,0.8035312442751545,,,recognised live identity (overlap>=T and margin>M)
+2023-09,continuing,ID0002,1.0,,,0.9526976111182086,0.8036222619529609,,,recognised live identity (overlap>=T and margin>M)
+2023-10,continuing,ID0002,0.0,,,0.9511550543715863,0.8151836755430435,,,recognised live identity (overlap>=T and margin>M)
+2023-10,continuing,ID0001,1.0,,,0.9650007118205349,0.7566802224638998,,,recognised live identity (overlap>=T and margin>M)
+2023-11,continuing,ID0002,0.0,,,0.9081557332266841,0.7754712257887474,,,recognised live identity (overlap>=T and margin>M)
+2023-11,ambiguous,,1.0,,,0.8984495126737785,0.6580654949759527,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2023-11,dormant,ID0001,,,,,,,,unseen 1 month(s); re-emergence possible within 3
+2023-12,ambiguous,,0.0,,,0.7929492436515989,0.46489744364625124,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2023-12,continuing,ID0002,1.0,,,0.8906384950156,0.8286392128887146,,,recognised live identity (overlap>=T and margin>M)
+2023-12,dormant,ID0001,,,,,,,,unseen 2 month(s); re-emergence possible within 3
+2024-01,ambiguous,,0.0,,,0.7204876369369463,0.5708171845504406,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2024-01,reemergence,ID0001,1.0,,,0.9815729049712295,0.9086375436471019,,,recognised dormant identity (overlap>=T and margin>M)
+2024-01,dormant,ID0002,,,,,,,,unseen 1 month(s); re-emergence possible within 3
+2024-02,continuing,ID0001,0.0,,,0.9564412427718832,0.8559547318351867,,,recognised live identity (overlap>=T and margin>M)
+2024-02,reemergence,ID0002,1.0,,,0.8582801063411315,0.7325976394680669,,,recognised dormant identity (overlap>=T and margin>M)
+2024-03,continuing,ID0002,0.0,,,0.9795453962008968,0.8193860346658863,,,recognised live identity (overlap>=T and margin>M)
+2024-03,continuing,ID0001,1.0,,,0.9684839365619374,0.8002389721910553,,,recognised live identity (overlap>=T and margin>M)
+2024-04,continuing,ID0001,0.0,,,0.9742632157359533,0.8719689041852258,,,recognised live identity (overlap>=T and margin>M)
+2024-04,continuing,ID0002,1.0,,,0.9859859918397995,0.8237361008226529,,,recognised live identity (overlap>=T and margin>M)
+2024-05,continuing,ID0002,0.0,,,0.9548683542451495,0.8669009656707192,,,recognised live identity (overlap>=T and margin>M)
+2024-05,continuing,ID0001,1.0,,,0.9494455382475318,0.8358881938251019,,,recognised live identity (overlap>=T and margin>M)
+2024-06,continuing,ID0002,0.0,,,0.9501757010728449,0.8520012741953124,,,recognised live identity (overlap>=T and margin>M)
+2024-06,continuing,ID0001,1.0,,,0.9551874844344022,0.8742582811048617,,,recognised live identity (overlap>=T and margin>M)
+2024-07,continuing,ID0001,0.0,,,0.9933995577119568,0.9092997477600557,,,recognised live identity (overlap>=T and margin>M)
+2024-07,continuing,ID0002,1.0,,,0.9806021475792775,0.8813663632864623,,,recognised live identity (overlap>=T and margin>M)
+2024-08,continuing,ID0001,0.0,,,0.9720413000869877,0.8929357140565503,,,recognised live identity (overlap>=T and margin>M)
+2024-08,continuing,ID0002,1.0,,,0.899939043176005,0.7776295705503278,,,recognised live identity (overlap>=T and margin>M)
+2024-09,continuing,ID0002,0.0,,,0.8708529744650019,0.7526954543818593,,,recognised live identity (overlap>=T and margin>M)
+2024-09,continuing,ID0001,1.0,,,0.9146835981997831,0.8132175612158277,,,recognised live identity (overlap>=T and margin>M)
+2024-10,continuing,ID0002,0.0,,,0.9684179062196921,0.8543880537060686,,,recognised live identity (overlap>=T and margin>M)
+2024-10,continuing,ID0001,1.0,,,0.9699242009410295,0.8054555737363893,,,recognised live identity (overlap>=T and margin>M)
+2024-11,continuing,ID0002,0.0,,,0.926758780843051,0.8451330127189083,,,recognised live identity (overlap>=T and margin>M)
+2024-11,ambiguous,,1.0,,,0.9399193731360104,0.6866683695305951,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2024-11,dormant,ID0001,,,,,,,,unseen 1 month(s); re-emergence possible within 3
+2024-12,continuing,ID0002,0.0,,,0.8603424133739571,0.8315665766510832,,,recognised live identity (overlap>=T and margin>M)
+2024-12,ambiguous,,1.0,,,0.6760414701718198,0.384355209738416,,,overlap>=T but margin failed or conflict lost; never counted as confirmed birth
+2024-12,dormant,ID0001,,,,,,,,unseen 2 month(s); re-emergence possible within 3
