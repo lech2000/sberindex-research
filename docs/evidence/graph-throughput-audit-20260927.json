@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-09-27T12:23:13.660287+00:00",
+  "method": "live n8n SQLite read-only flatted execution data; kb-forge77 GET documents and146 Graph evidence texts; case-service GET actions; landscape exact-version GET",
+  "period_utc": [
+    "2026-09-26T12:17:00Z",
+    "2026-09-27T12:17:00Z"
+  ],
+  "executions": 36,
+  "receipted": 21,
+  "without_receipt": 15,
+  "scheduled_total": 24,
+  "graph_scheduled_slots": 8,
+  "new_channels_in_receipted_evidence": 0,
+  "kb_documents": 506,
+  "graph_evidence_documents": 146,
+  "formal_channel_records": [
+    {
+      "document_id": 13267,
+      "created_at": "2026-09-24T11:08:23.554154Z",
+      "url": "https://t.me/gorod_balashiha",
+      "officiality": "candidate",
+      "excluded_by_owner": true
+    },
+    {
+      "document_id": 12388,
+      "created_at": "2026-09-20T17:21:37.761852Z",
+      "url": "https://t.me/ramenskoye_official",
+      "officiality": "confirmed",
+      "excluded_by_owner": false
+    }
+  ],
+  "live_pack_versions": {
+    "graph": 3,
+    "curator": 3
+  },
+  "n8n_agent_versions": {
+    "graph": 2,
+    "curator": 2
+  },
+  "config_version2_http": 404,
+  "config_version3_http": 200,
+  "scheduler_context_issue": "compactFocus passes only first5 open actions with what[:120]; waiting_for and next_topic are not forwarded. No per-municipality queue/cursor or success step auto-update in live workflow.",
+  "ideal_bound_assumptions": {
+    "call_slots_daily": 8,
+    "calls_per_municipality": 3,
+    "municipalities_daily": 2.6666666666666665,
+    "days_to2190_no_failures": 821.25
+  },
+  "forecast_note": "Engineering estimates after pipeline repair, not measured performance. Current last24h zero new formal channel records; no defensible completion date at current real rate."
+}
