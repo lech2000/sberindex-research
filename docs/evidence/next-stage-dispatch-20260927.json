@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-27T16:24:12.171392+00:00",
+  "checked_at_utc": "2026-09-27T17:14:18.021292+00:00",
   "checks": "27.09.2026 live case-service actions, systemd units in fixar-devops, native MiMoPro dialog replies, n8n webhook receipts",
   "source_actions_closed": false,
   "case_receipts": [
@@ -7,22 +7,19 @@
       "case": "case_66cae4a89ba6473f",
       "source_action": "act_c475e17b2a584b9a",
       "source_done": false,
-      "next_action": "act_af3a3c40ccec45bc",
-      "waiting_for": "F7bMiMoPro запущен: sber-a6-margin-next-20260927.service; pairedgap2023audit. См.mat_sber_next_stage_20260927. A6OPEN."
+      "waiting_for": "A6.2 выполнен:75/14171,4800paired2023draws,q05gap.721436,oldM.718701,4.229%нижеM. Следующее:temporal2024uncertainty/falsematches ивнешняяэкономическаяпроверка. A6OPEN."
     },
     {
       "case": "case_008f37d03cf541e5",
       "source_action": "act_70e2fe4a16ac4e3d",
       "source_done": false,
-      "next_action": "act_55a3701000d64d78",
-      "waiting_for": "F7bMiMoPro: sber-r8-batch-next-20260927.service пишетresumablerunner. Послепроверки—dryrun/realbatch. Полные171150покаНЕпосчитаны;R8OPEN. mat_sber_next_stage_20260927."
+      "waiting_for": "R8.1/R8.2 выполнены:1020fits/2380points,errors0. R8.3 act_b8c32ef28bc34c59: полныйresume оставшихся72504 запущеннаMac full-resume-job.json. После завершения независимаяпроверка171150forecast/MAE/failures. R8OPEN."
     },
     {
       "case": "case_43de12a8dc2e4abd",
       "source_action": "act_064c759fe5194d67",
       "source_done": false,
-      "next_action": "act_db5342462fdf4664",
-      "waiting_for": "Майкопtimeout→candidate; следующийКраснодарasyncApify(wait0),затемresultsпоrealrun_id/receipt. F7bcontext/pinsвработе. Не повторятьБалашиху/Раменское. mat_sber_next_stage_20260927."
+      "waiting_for": "Новороссийск asyncApify запущен; evidence77/14182, curator77/14184. Следующий G2.5: забрать результаты run1FrR05Ft7TX6WoRLL; receipt в77/14182. Потом normalize/official backlink. G2OPEN. Балашиху/Раменское не повторять."
     }
   ],
   "jobs": [
@@ -39,11 +36,16 @@
     {
       "unit": "sber-r8-batch-next-20260927.service",
       "model": "xiaomi/mimo-v2.5-pro",
-      "status": "first_builder_exit124_QA_failed_repair_v2_running",
+      "status": "repair_v3_completed_selfcheck_and_real_resume_independently_verified",
       "scope": "shock-radar/src/r8_prophet_batch.py",
       "purpose": "resumable real Prophet runner; complete 171150 paired mask has NOT been computed",
-      "repair_unit": "sber-r8-batch-next-20260927-v2.service",
-      "not_executed": "full171150Prophet; unfinished generatedrunner NOTpublished"
+      "repair_unit": "sber-r8-batch-next-20260927-v3.service",
+      "not_executed": "full171150 evaluation remains incomplete",
+      "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+      "kb_receipt": "76/14188",
+      "actual_fits_completed": 20,
+      "actual_forecast_points": 47,
+      "full171150_complete": false
     },
     {
       "unit": "interactive F7b bounded repair",
@@ -54,7 +56,8 @@
       "production_commit": "329752a6a",
       "published_version": "bcf439a4-2b1b-44ea-b599-9b59c5663ca5",
       "max_dispatch_message_chars": 3508,
-      "does_not_implement": "durable per-municipality queue or autonomous case_action closure"
+      "does_not_implement": "durable per-municipality queue or autonomous case_action closure",
+      "functional_check": "PASS: n8n execution3282326 all nodes through return receipt"
     }
   ],
   "graph": {
@@ -62,14 +65,23 @@
     "next_municipality": "Novorossiysk territory_id627",
     "apify_discovery_evidence": "corpus77/14162",
     "curator_decision": "corpus77/14163",
-    "results_fetch": "running",
+    "results_fetch": "Krasnodar Apify run succeeded; canonical candidate receipt77/14173",
     "new_confirmed_channels": 0,
     "candidate_record": "public_channel:telegram:krdru",
     "normalization": "live deployed normalizer + live EVIDENCE validator, operator-assisted, not automatic steward success",
     "candidate_receipt": "77/14173",
     "candidate_officiality": "candidate; reverse official backlink pending",
     "automatic_results_issue": "discovery entity typing/future date invalid; canonical candidate persisted separately",
-    "warmup": "webhook404 before n8n completed active-workflow registration; pending functional retry"
+    "warmup": "Resolved: n8n registered webhook; execution3282326 SUCCESS",
+    "novorossiysk_metadata_receipt": "77/14177",
+    "novorossiysk_metadata_curator_receipt": "77/14178",
+    "novorossiysk_apify": {
+      "run_key": "curator-graph-novorossiysk-apify-next-20260927-170354",
+      "run_id": "1FrR05Ft7TX6WoRLL",
+      "evidence_receipt": "77/14182",
+      "curator_receipt": "77/14184",
+      "status": "async job submitted; next retrieve results; no verified channel claim"
+    }
   },
   "curator_review": {
     "model": "mimo-v2.5-pro",
@@ -82,8 +94,42 @@
   ],
   "completed_subactions": [
     "act_af3a3c40ccec45bc",
-    "act_db5342462fdf4664"
+    "act_db5342462fdf4664",
+    "act_55a3701000d64d78",
+    "act_c1a737b389404635"
   ],
   "platform_validator": "46/47 PASS, warningprotectedtoolopenapi403",
-  "report_submission": "R8 F7b problemreport rejected429 too_many_open_reports (30); case/KB62 fallback records and repair unit used"
+  "report_submission": "R8 F7b problemreport rejected429 too_many_open_reports (30); case/KB62 fallback records and repair unit used",
+  "radar_next_action": "act_b8c32ef28bc34c59",
+  "final_platform_receipts": [
+    "62/14181",
+    "62/14189"
+  ],
+  "runtime_sync": {
+    "A6": "six immutable files SHA matched in production aios2 and fixar-devops; guard released",
+    "radar_compute_environment": "operator Mac existing Prophet venv; code by MiMoPro F7b; code copies do not demonstrate dependencies inside containers"
+  },
+  "radar_next_batch": {
+    "max_new_fits": 1000,
+    "status_at_dispatch": "completed exit0; independent verificationPASS",
+    "wrapper_pid": 40180,
+    "job_path": "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927/batch1000-job.json",
+    "note": "bounded next batch, not full R8; status changes outside this static snapshot"
+  },
+  "radar_verified_latest": {
+    "receipt": "76/14190",
+    "fits": 1020,
+    "actual_forecast_points": 2380,
+    "failures": 0,
+    "proof": "r8-batch1000-20260927.json"
+  },
+  "radar_full_resume": {
+    "status_at_snapshot": "running",
+    "wrapper_pid": 42182,
+    "fits_at_launch": 1020,
+    "remaining_fits_at_launch": 72504,
+    "command": "r8_prophet_batch.py --raw <8_consumption.parquet> --paired-run <R8_v2> --outdir <R8_batch_live_20260927> --max-fits 0 --resume",
+    "job_path": "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927/full-resume-job.json",
+    "compute": "operator Mac CPU, Prophet/CmdStan; full R8 scientific gate remains OPEN"
+  }
 }

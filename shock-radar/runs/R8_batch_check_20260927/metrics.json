@@ -1,0 +1,82 @@
+{
+ "run_id": "R8-prophet-batch",
+ "status": "PARTIAL",
+ "computation_complete": false,
+ "gate_pass": false,
+ "gate_pass_reason": "R8 stays open: full Prophet computation completed but no external MAE win gate applied; status=PARTIAL",
+ "case_action": "never_close_R8_stays_open",
+ "full_r8": {
+  "stays_open": true,
+  "mask_rows": 171150,
+  "this_covers": 171150,
+  "confirmatory": false
+ },
+ "eval": {
+  "horizons": [
+   1,
+   2,
+   3
+  ],
+  "n_origins": 6
+ },
+ "per_horizon_mae": {
+  "h1": {
+   "prophet": 666.0332611991679,
+   "lastavailable": 980.0,
+   "seasonal_naive": 1889.55,
+   "n_common": 20,
+   "n_rows": 73392,
+   "n_prophet": 20
+  },
+  "h2": {
+   "prophet": 690.5342872357805,
+   "lastavailable": 1065.9411764705883,
+   "seasonal_naive": 1881.1764705882354,
+   "n_common": 17,
+   "n_rows": 61110,
+   "n_prophet": 17
+  },
+  "h3": {
+   "prophet": 832.2890223100906,
+   "lastavailable": 1685.7,
+   "seasonal_naive": 1923.8,
+   "n_common": 10,
+   "n_rows": 36648,
+   "n_prophet": 10
+  }
+ },
+ "common_mask_mae": {
+  "prophet": 710.2689006402666,
+  "lastavailable": 1161.2340425531916,
+  "seasonal_naive": 1893.8085106382978,
+  "n_common": 47
+ },
+ "counts": {
+  "total_input_rows": 171150,
+  "n_paired_rows": 171150,
+  "n_joined_rows": 171150,
+  "n_prophet_forecasts": 47,
+  "n_prophet_missing": 171103,
+  "n_failures_recorded": 0,
+  "n_series_total": 12366,
+  "n_origins_total": 73524,
+  "n_fits_ok": 20,
+  "n_fits_failed": 0,
+  "n_fits_missing_checkpoint": 73504,
+  "total_fit_runtime_s": 1.3433219557628036,
+  "total_elapsed_s": 3.9674476659856737
+ },
+ "provenance": {
+  "run_utc": "2026-09-27T17:07:32+00:00",
+  "command": "shock-radar/src/r8_prophet_batch.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_v2 --outdir shock-radar/runs/R8_batch_check_20260927 --max-fits 10 --resume",
+  "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+  "versions": {
+   "python": "3.13.0",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "prophet": "1.4.0",
+   "cmdstanpy": "1.3.0"
+  }
+ }
+}

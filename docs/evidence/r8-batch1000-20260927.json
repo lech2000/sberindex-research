@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-09-27T17:12:37.278071+00:00",
+  "verification": "independent pandas171150key1:1join and actual agreement, MAE on2380common points, preserved20checkpoint bytes,1020 unique checkpoints, prefixprobePASS",
+  "status": "VERIFIED_PARTIAL_NOT_GATE_PASS",
+  "fits_completed": 1020,
+  "actual_forecast_points": 2380,
+  "paired_mask_rows": 171150,
+  "remaining_fits": 72504,
+  "failures": 0,
+  "common_mask_mae": {
+    "prophet": 626.6143929689307,
+    "lastavailable": 796.8168067226891,
+    "seasonal_naive": 1196.4256302521007,
+    "n_common": 2380
+  },
+  "next_full_computation": "launch remaining fits with --resume; scientific R8 gate remains OPEN",
+  "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+  "batch1000_exit": 0,
+  "prefix_probe": {
+    "series": [
+      "1",
+      "Все категории"
+    ],
+    "origin": "2024-06",
+    "horizons": [
+      1,
+      2
+    ],
+    "last_allowed_obs": "2024-04",
+    "mutated": "all raw observations after 2024-04 by +1e+06",
+    "max_abs_forecast_diff_after_mutation": 0.0,
+    "max_abs_forecast_diff_repeat_fit": 0.0,
+    "passed": true
+  }
+}
