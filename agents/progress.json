@@ -242,9 +242,9 @@
     }
   },
   "runtime_sync": {
-    "research_commit": "829dae6",
+    "research_commit": "e724d9c",
     "files": 61,
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "closed_gates": false,
     "containers": [
       "aios2",
@@ -257,9 +257,11 @@
     "timer_active": true,
     "next_tick": "2026-09-26T22:30:00+03:00",
     "partial_gates_still_stop_chain": true,
-    "pending_new_scope": [
+    "new_scientific_scope": [
       "A6_threshold_review_20260927",
       "R8_prophet_pilot_20260927"
-    ]
+    ],
+    "new_files": 20,
+    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
   }
 }

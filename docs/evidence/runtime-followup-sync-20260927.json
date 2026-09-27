@@ -1,0 +1,86 @@
+{
+  "verified_at": "2026-09-27T11:56:18.217722+00:00",
+  "scientific_commit": "e724d9c",
+  "prod_metadata_commit": "64794a968",
+  "method": "read actual artifacts in aios2 and fixar-devops, sha256 byte equality to public research checkout; source06/08 false",
+  "aios2": {
+    "checked_at": "2026-09-27T11:55:11.828083+00:00",
+    "container": "aios2",
+    "files": {
+      "economic-atlas/runs/A6_threshold_review_20260927/README.md": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598",
+      "economic-atlas/runs/A6_threshold_review_20260927/comparison2vs5.csv": "3eadefe15027c51777867158a731d6c39455cc93edc662c912257c67f8262be8",
+      "economic-atlas/runs/A6_threshold_review_20260927/manifest.json": "992a0f27d24b0423ce8a7accf24106ecac10bfedef724536f02be2b3498708e4",
+      "economic-atlas/runs/A6_threshold_review_20260927/metrics.json": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+      "economic-atlas/runs/A6_threshold_review_20260927/operator_review.json": "99770e625e1c47b50cca04c48b8ae000db7d57613f060faa703ef8ce94aec600",
+      "economic-atlas/runs/A6_threshold_review_20260927/raw_s_profiles.csv": "0e5f31f2e3b079c9ee187304f24bb41adda58d342d817c4ae4b7fae8d068e59b",
+      "economic-atlas/runs/A6_threshold_review_20260927/run.log": "345417bb72c46c8f0aea8f89a0fd90762d3f3d13109d2fabf486b5e82563d6e3",
+      "economic-atlas/runs/A6_threshold_review_20260927/threshold_sweep.csv": "0fb74b0f7f8baadce641ca491c775bb496a78fd2427f4b4d53e9322740e7155f",
+      "shock-radar/runs/R8_prophet_pilot_20260927/README.md": "0f7faae1736d11866a3be723aab9a359842a288b63dc834909d621fd986094bf",
+      "shock-radar/runs/R8_prophet_pilot_20260927/audit.json": "4c505d65a658b7166f0f3f769a8b4fa6a68de23897ccb4508628203649cd42a4",
+      "shock-radar/runs/R8_prophet_pilot_20260927/manifest.json": "1be54f7fb330ec94f7a8cf9b61963db891161f38c75f1bc275dfeda5883fa10f",
+      "shock-radar/runs/R8_prophet_pilot_20260927/metrics.json": "14745988ad03d8ea649d0948d922a6e4b956fb2687e47a84f1fcd7e868e04e76",
+      "shock-radar/runs/R8_prophet_pilot_20260927/operator_review.json": "6f02166151649ea5565c57735c29ac8ccdf3917ea44aaa56a172db07ae2f296e",
+      "shock-radar/runs/R8_prophet_pilot_20260927/predictions.parquet": "c1194baf12dd1377188fcb90e786f48e707fe904f07c1e23345d098401b07e4d",
+      "shock-radar/runs/R8_prophet_pilot_20260927/run.log": "faa5b5c3a0a3142369594947a14a1808006038d3700b099e196ad9f3485657cb"
+    },
+    "progress": {
+      "date": "2026-09-27",
+      "research_commit": "e724d9c",
+      "new_scientific_scope": [
+        "A6_threshold_review_20260927",
+        "R8_prophet_pilot_20260927"
+      ],
+      "new_files": 20,
+      "containers": [
+        "aios2",
+        "fixar-devops"
+      ],
+      "closed_gates": false,
+      "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
+    }
+  },
+  "fixar_devops": {
+    "checked_at": "2026-09-27T11:55:12.348707+00:00",
+    "container": "fixar-devops",
+    "files": {
+      "economic-atlas/runs/A6_threshold_review_20260927/README.md": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598",
+      "economic-atlas/runs/A6_threshold_review_20260927/comparison2vs5.csv": "3eadefe15027c51777867158a731d6c39455cc93edc662c912257c67f8262be8",
+      "economic-atlas/runs/A6_threshold_review_20260927/manifest.json": "992a0f27d24b0423ce8a7accf24106ecac10bfedef724536f02be2b3498708e4",
+      "economic-atlas/runs/A6_threshold_review_20260927/metrics.json": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+      "economic-atlas/runs/A6_threshold_review_20260927/operator_review.json": "99770e625e1c47b50cca04c48b8ae000db7d57613f060faa703ef8ce94aec600",
+      "economic-atlas/runs/A6_threshold_review_20260927/raw_s_profiles.csv": "0e5f31f2e3b079c9ee187304f24bb41adda58d342d817c4ae4b7fae8d068e59b",
+      "economic-atlas/runs/A6_threshold_review_20260927/run.log": "345417bb72c46c8f0aea8f89a0fd90762d3f3d13109d2fabf486b5e82563d6e3",
+      "economic-atlas/runs/A6_threshold_review_20260927/threshold_sweep.csv": "0fb74b0f7f8baadce641ca491c775bb496a78fd2427f4b4d53e9322740e7155f",
+      "shock-radar/runs/R8_prophet_pilot_20260927/README.md": "0f7faae1736d11866a3be723aab9a359842a288b63dc834909d621fd986094bf",
+      "shock-radar/runs/R8_prophet_pilot_20260927/audit.json": "4c505d65a658b7166f0f3f769a8b4fa6a68de23897ccb4508628203649cd42a4",
+      "shock-radar/runs/R8_prophet_pilot_20260927/manifest.json": "1be54f7fb330ec94f7a8cf9b61963db891161f38c75f1bc275dfeda5883fa10f",
+      "shock-radar/runs/R8_prophet_pilot_20260927/metrics.json": "14745988ad03d8ea649d0948d922a6e4b956fb2687e47a84f1fcd7e868e04e76",
+      "shock-radar/runs/R8_prophet_pilot_20260927/operator_review.json": "6f02166151649ea5565c57735c29ac8ccdf3917ea44aaa56a172db07ae2f296e",
+      "shock-radar/runs/R8_prophet_pilot_20260927/predictions.parquet": "c1194baf12dd1377188fcb90e786f48e707fe904f07c1e23345d098401b07e4d",
+      "shock-radar/runs/R8_prophet_pilot_20260927/run.log": "faa5b5c3a0a3142369594947a14a1808006038d3700b099e196ad9f3485657cb"
+    },
+    "progress": {
+      "date": "2026-09-27",
+      "scientific_commit": "829dae6",
+      "scope": [
+        "A6_v2",
+        "R8_v2"
+      ],
+      "gates_closed": false,
+      "research_commit": "e724d9c",
+      "new_scientific_scope": [
+        "A6_threshold_review_20260927",
+        "R8_prophet_pilot_20260927"
+      ],
+      "new_files": 20,
+      "containers": [
+        "aios2",
+        "fixar-devops"
+      ],
+      "closed_gates": false,
+      "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
+    }
+  },
+  "lock_released": true,
+  "compute_runtime": "new science calculated on operator Mac; copying files does not install Prophet on native worker"
+}
