@@ -1,0 +1,572 @@
+{
+  "operator_note": "Graph proposed claims are not independently verified; future checked_at values require recheck. Scientific values are independently measured in linked runs. Native verdict accept does not close source actions.",
+  "executions": [
+    {
+      "execution_id": 3281472,
+      "started_at_utc": "2026-09-27 11:21:00.722",
+      "stopped_at_utc": "2026-09-27 11:22:27.830",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-atlas-threshold-next-20260927-1123",
+        "plan_ref": "A6",
+        "source_case_id": "case_66cae4a89ba6473f",
+        "source_action_id": "act_c475e17b2a584b9a",
+        "topic": "A6_v2: подтверждение устойчивости пяти seed и подготовка к threshold/margin sensitivity",
+        "status": "proposed",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "curator_verdict": "accept",
+        "next_action": "A6.1: Выполнить sberindex_cluster с k=4, seed=5, feature_set=shares_log_volume для threshold sensitivity.",
+        "next_topic": "A6.1: threshold sensitivity k=4 vs k=5 — silhouette и WCSS",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14088,
+          "title": "Graph evidence research-atlas-threshold-next-20260927-1123: A6_v2: подтверждение устойчивости пяти seed и подготовка к threshold/margin sensitivity",
+          "corpus_id": 77,
+          "chunks": 3,
+          "vectors": 3
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14089,
+          "title": "Curator decision research-atlas-threshold-next-20260927-1123: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-atlas-threshold-next-20260927-1123",
+        "topic": "A6_v2: подтверждение устойчивости пяти seed и подготовка к threshold/margin sensitivity",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "checked_at": "2026-09-27T19:21:00+03:00",
+        "status": "proposed",
+        "entities": [
+          {
+            "entity_id": "research:a6_v2_robustness_20260926",
+            "entity_type": "event",
+            "label": "A6_v2: проверка устойчивости кластеризации по 5 seed (k=5, seed=42/123/456/789/2025)",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-26",
+            "valid_to": null,
+            "source_ref": "corpus74/prn_fbab9aa00cd46169"
+          },
+          {
+            "entity_id": "indicator:silhouette_scores",
+            "entity_type": "indicator",
+            "label": "Silhouette scores по 5 seed: 0.277–0.280",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-26",
+            "valid_to": null,
+            "source_ref": "corpus74/prn_fbab9aa00cd46169"
+          },
+          {
+            "entity_id": "indicator:wcss_scores",
+            "entity_type": "indicator",
+            "label": "WCSS по 5 seed: 10 428–10 436",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-26",
+            "valid_to": null,
+            "source_ref": "corpus74/prn_fbab9aa00cd46169"
+          }
+        ],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Запись research:a6_v2_robustness_20260926 найдена в корпусе 74 (document prn_fbab9aa00cd46169). Результат: silhouette 0.277–0.280, WCSS 10 428–10 436, стабильность кластеров подтверждена.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Пять seed (42, 123, 456, 789, 2025) дают идентичную структуру кластеров: silhouette 0.277–0.280, WCSS 10 428–10 436. Вариация минимальна, кластеризация устойчива к инициализации.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Следующий шаг: подготовить threshold/margin sensitivity — проверить устойчивость кластеризации при изменении k (4, 5, 6) и feature_set (shares, shares_log_volume, volume).",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "model_estimate",
+            "confidence": 0.95
+          }
+        ],
+        "confidence": 1
+      },
+      "operator_gate_closed": false
+    },
+    {
+      "execution_id": 3281486,
+      "started_at_utc": "2026-09-27 11:26:34.013",
+      "stopped_at_utc": "2026-09-27 11:28:33.925",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-graph-maikop-discovery-only-20260927",
+        "plan_ref": "G2",
+        "source_case_id": "case_43de12a8dc2e4abd",
+        "source_action_id": "act_064c759fe5194d67",
+        "topic": "G2 discovery-only Майкоп: чтение портала госуслуг на ссылки Telegram/MAX",
+        "status": "proposed",
+        "source_url": "https://maikop.gosuslugi.ru/",
+        "curator_verdict": "accept",
+        "next_action": "G2.1: jina_read_url(url='https://maikop.gosuslugi.ru/glavnoe/kontakty/') — прочитать страницу контактов для поиска прямых ссылок на Telegram/MAX.",
+        "next_topic": "G2.1: Майкоп — чтение страницы контактов портала госуслуг",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14092,
+          "title": "Graph evidence research-graph-maikop-discovery-only-20260927: G2 discovery-only Майкоп: чтение портала госуслуг на ссылки Telegram/MAX",
+          "corpus_id": 77,
+          "chunks": 2,
+          "vectors": 2
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14093,
+          "title": "Curator decision research-graph-maikop-discovery-only-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-graph-maikop-discovery-only-20260927",
+        "topic": "G2 discovery-only Майкоп: чтение портала госуслуг на ссылки Telegram/MAX",
+        "source_url": "https://maikop.gosuslugi.ru/",
+        "checked_at": "2026-09-27T19:25:00+03:00",
+        "status": "proposed",
+        "entities": [],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Страница https://maikop.gosuslugi.ru/ прочитана. Ссылок на Telegram, MAX, ВКонтакте, Одноклассники или иные соцсети в навигации и видимом содержимом главной страницы НЕ обнаружено.",
+            "evidence_url": "https://maikop.gosuslugi.ru/",
+            "provenance_class": "observed",
+            "confidence": 0.95
+          },
+          {
+            "statement": "На портале есть раздел «Контакты»: https://maikop.gosuslugi.ru/glavnoe/kontakty/ — возможно, ссылки на соцсети находятся там. Также есть «Для жителей» → «Услуги и сервисы» → «Средства массовой информации»: https://maikop.gosuslugi.ru/dlya-zhiteley/uslugi-i-servisy/sredstva-massovoy-informatsii/",
+            "evidence_url": "https://maikop.gosuslugi.ru/glavnoe/kontakty/",
+            "provenance_class": "observed",
+            "confidence": 0.9
+          },
+          {
+            "statement": "Кандидаты из предыдущих проходов (не подтверждены этим чтением): Telegram https://t.me/s/maikop_adm (через каталог telno.ru), ВКонтакте https://vk.ru/maikop_adm (через каталог). MAX-каналы не найдены.",
+            "evidence_url": "https://telno.ru/city/Maykop",
+            "provenance_class": "source_estimate",
+            "confidence": 0.7
+          },
+          {
+            "statement": "Следующий шаг: jina_read_url(url='https://maikop.gosuslugi.ru/glavnoe/kontakty/') — прочитать страницу контактов для поиска прямых ссылок на Telegram/MAX.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "model_estimate",
+            "confidence": 0.95
+          }
+        ],
+        "confidence": 0.85
+      },
+      "operator_gate_closed": false
+    },
+    {
+      "execution_id": 3281507,
+      "started_at_utc": "2026-09-27 11:34:30.760",
+      "stopped_at_utc": "2026-09-27 11:36:11.062",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-graph-maikop-contacts-discovery-20260927",
+        "plan_ref": "G2",
+        "source_case_id": "case_43de12a8dc2e4abd",
+        "source_action_id": "act_064c759fe5194d67",
+        "topic": "G2 discovery-only Майкоп: чтение страницы контактов портала госуслуг",
+        "status": "proposed",
+        "source_url": "https://maikop.gosuslugi.ru/glavnoe/kontakty/",
+        "curator_verdict": "accept",
+        "next_action": "G2.2: Нормализовать найденный Telegram-канал https://t.me/maikop_adm через sberindex_public_channel_record с officiality=candidate, source_ref=https://telegid.me/catalog/russia/maykop.",
+        "next_topic": "G2.2: Майкоп — нормализация Telegram-канала через public_channel_record",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14096,
+          "title": "Graph evidence research-graph-maikop-contacts-discovery-20260927: G2 discovery-only Майкоп: чтение страницы контактов портала госуслуг",
+          "corpus_id": 77,
+          "chunks": 3,
+          "vectors": 3
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14097,
+          "title": "Curator decision research-graph-maikop-contacts-discovery-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 2,
+          "vectors": 2
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-graph-maikop-contacts-discovery-20260927",
+        "topic": "G2 discovery-only Майкоп: чтение страницы контактов портала госуслуг",
+        "source_url": "https://maikop.gosuslugi.ru/glavnoe/kontakty/",
+        "checked_at": "2026-09-27T19:35:00+03:00",
+        "status": "proposed",
+        "entities": [],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Страница контактов https://maikop.gosuslugi.ru/glavnoe/kontakty/ не содержит прямых ссылок на Telegram или MAX каналы. Видимые ссылки: электронная приёмная (pos.gosuslugi.ru), ВКонтакте (vk.com/maikop_adm), Одноклассники (ok.ru/group/60207063267503).",
+            "evidence_url": "https://maikop.gosuslugi.ru/glavnoe/kontakty/",
+            "provenance_class": "observed",
+            "confidence": 0.95
+          },
+          {
+            "statement": "Кандидат Telegram из каталога TeleGid: https://t.me/s/maikop_adm — «Администрация Майкопа | НОВОСТИ. Официальный канал Администрации города Майкопа». Не подтверждён обратной ссылкой с maikop.gosuslugi.ru.",
+            "evidence_url": "https://telegid.me/catalog/russia/maykop",
+            "provenance_class": "source_estimate",
+            "confidence": 0.7
+          },
+          {
+            "statement": "MAX-каналы администрации г.о. Майкоп на странице контактов и в поиске не обнаружены. В поиске встречается упоминание «Оперативный канал в мессенджере МАХ» от РАРК-Юг (rark-yug.ru) — это НЕ канал администрации.",
+            "evidence_url": "https://maikop.gosuslugi.ru/glavnoe/novosti-partnerov/novosti-partnerov-1_539.html",
+            "provenance_class": "observed",
+            "confidence": 0.9
+          },
+          {
+            "statement": "Альтернативный официальный сайт: maikop.ru (упомянут в описании ВКонтакте vk.com/maikop_adm). Требуется проверка на наличие ссылок Telegram/MAX.",
+            "evidence_url": "https://vk.ru/maikop_adm",
+            "provenance_class": "source_estimate",
+            "confidence": 0.8
+          },
+          {
+            "statement": "Следующий шаг: jina_read_url(url='https://maikop.ru') — проверить альтернативный официальный сайт на наличие ссылок Telegram/MAX в подвале или контактах.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "model_estimate",
+            "confidence": 0.9
+          }
+        ],
+        "confidence": 0.85
+      },
+      "operator_gate_closed": false
+    },
+    {
+      "execution_id": 3281517,
+      "started_at_utc": "2026-09-27 11:38:06.019",
+      "stopped_at_utc": "2026-09-27 11:39:53.542",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-graph-maikop-independent-site-20260927",
+        "plan_ref": "G2",
+        "source_case_id": "case_43de12a8dc2e4abd",
+        "source_action_id": "act_064c759fe5194d67",
+        "topic": "G2 discovery-only Майкоп: чтение альтернативного сайта maikop.ru",
+        "status": "proposed",
+        "source_url": "https://maikop.ru",
+        "curator_verdict": "accept",
+        "next_action": "G2.3: Нормализовать Telegram-канал https://t.me/maikop_adm через sberindex_public_channel_record с officiality=candidate, ОКТМО=79401000, координаты центроида Майкопа.",
+        "next_topic": "G2.3: Майкоп — нормализация Telegram-канала t.me/maikop_adm",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14100,
+          "title": "Graph evidence research-graph-maikop-independent-site-20260927: G2 discovery-only Майкоп: чтение альтернативного сайта maikop.ru",
+          "corpus_id": 77,
+          "chunks": 3,
+          "vectors": 3
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14102,
+          "title": "Curator decision research-graph-maikop-independent-site-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-graph-maikop-independent-site-20260927",
+        "topic": "G2 discovery-only Майкоп: чтение альтернативного сайта maikop.ru",
+        "source_url": "https://maikop.ru",
+        "checked_at": "2026-09-27T19:38:00+03:00",
+        "status": "proposed",
+        "entities": [],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Сайт https://maikop.ru является официальным сайтом Администрации муниципального образования «Город Майкоп». На странице новостей (https://maikop.ru/news/V-Maykope-otremontiruyut-uchastok-ulitsy-Pionerskoy-/) найдена прямая ссылка на Telegram-канал: t.me/maikop_adm — «официальной странице Администрации в телеграм-канале».",
+            "evidence_url": "https://maikop.ru/news/V-Maykope-otremontiruyut-uchastok-ulitsy-Pionerskoy-/",
+            "provenance_class": "observed",
+            "confidence": 0.95
+          },
+          {
+            "statement": "Кандидат Telegram: https://t.me/maikop_adm — «Администрация Майкопа | НОВОСТИ», 6.34K подписчиков. Описание: «Официальный канал Администрации города Майкопа. Оставляйте свои обращения».",
+            "evidence_url": "https://t.me/s/maikop_adm",
+            "provenance_class": "source_estimate",
+            "confidence": 0.9
+          },
+          {
+            "statement": "Telegram-канал https://t.me/s/maikop_adm подтверждён пересылкой с канала главы Республики Адыгея Мурата Кумпилова (https://t.me/s/muratkumpilov): «Forwarded from Администрация Майкопа | НОВОСТИ».",
+            "evidence_url": "https://t.me/s/muratkumpilov",
+            "provenance_class": "source_estimate",
+            "confidence": 0.9
+          },
+          {
+            "statement": "ВКонтакте: https://vk.ru/maikop_adm — «Администрация МО «Город Майкоп». Обращения в сети Интернет регистрируются через электронную приемную на официальном сайте: https://pos.gosuslugi.ru/landing/».",
+            "evidence_url": "https://vk.ru/maikop_adm",
+            "provenance_class": "source_estimate",
+            "confidence": 0.85
+          },
+          {
+            "statement": "MAX-каналы администрации г.о. Майкоп на сайте maikop.ru и в результатах поиска НЕ обнаружены. MAX упоминается только для РАРК-Юг (rark-yug.ru) — это НЕ администрация.",
+            "evidence_url": "https://maikop.ru",
+            "provenance_class": "observed",
+            "confidence": 0.9
+          },
+          {
+            "statement": "Следующий шаг: sberindex_public_channel_record для https://t.me/maikop_adm с officiality=candidate, ОКТМО=79401000, координаты центроида Майкопа. Обратная ссылка с maikop.ru подтверждает officiality.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "model_estimate",
+            "confidence": 0.9
+          }
+        ],
+        "confidence": 0.9
+      },
+      "operator_gate_closed": false
+    },
+    {
+      "execution_id": 3281531,
+      "started_at_utc": "2026-09-27 11:43:00.894",
+      "stopped_at_utc": "2026-09-27 11:44:21.167",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-radar-prophet-pilot-review-20260927",
+        "plan_ref": "R8",
+        "source_case_id": "case_008f37d03cf541e5",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "topic": "R8: адресная проверка нового реального пилота Prophet",
+        "status": "verified",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "curator_verdict": "accept",
+        "next_action": "R8.1: Запустить полный Prophet/TSFM на маске R8_v2 (171150 точек) с news-vintage/review 22 флагов.",
+        "next_topic": "R8.1: Полный Prophet/TSFM на маске R8_v2",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14106,
+          "title": "Graph evidence research-radar-prophet-pilot-review-20260927: R8: адресная проверка нового реального пилота Prophet",
+          "corpus_id": 77,
+          "chunks": 3,
+          "vectors": 3
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14107,
+          "title": "Curator decision research-radar-prophet-pilot-review-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-radar-prophet-pilot-review-20260927",
+        "topic": "R8: адресная проверка нового реального пилота Prophet",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "checked_at": "2026-09-27T19:42:00+03:00",
+        "status": "verified",
+        "entities": [
+          {
+            "entity_id": "research:r8_prophet_pilot_20260927",
+            "entity_type": "event",
+            "label": "R8: реальный пилот Prophet 1.4.0, 32 ряда, 438 парных точек, MAE 755.82",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-27",
+            "valid_to": null,
+            "source_ref": "corpus76/document_14104"
+          },
+          {
+            "entity_id": "indicator:prophet_pilot_mae",
+            "entity_type": "indicator",
+            "label": "Prophet pilot MAE: 755.82 на маске R8_v2 (438 точек), 15.3% лучше lastavailable (892.44)",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-27",
+            "valid_to": null,
+            "source_ref": "corpus76/document_14104"
+          }
+        ],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Документ research:r8_prophet_pilot_20260927 НАЙДЕН в корпусе 76 (document_id=14104). Содержит реальный пилот Prophet 1.4.0/cmdstanpy 1.3.0, 32 ряда по seed 20260927, 438 парных точек из маски R8_v2 (171150), 189 fit, ошибок 0.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Результаты пилота: MAE Prophet=755.82, lastavailable=892.44, seasonal=1358.97. Prophet на 15.3% лучше lastavailable В ПИЛОТЕ — это не вывод для всех МО.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Конфигурация Prophet: линейный, сезонность off, n_changepoints=3, uncertainty=0, explicit fit seed. Train<=origin−2, target=origin+h, календарные разрывы сохранены. Лаг 2 месяца — допущение.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Контроль качества: raw/paired actual на 438 точках maxdiff=0, hard pre-fit stop при расхождении. Независимый join/MAE перерасчёт совпал. Контроль одной prefix точки после мутации будущего +1e6 и repeat fit: maxdiff=0.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "PILOT_PARTIAL_NOT_GATE_PASS: полный R8 source act_70e2fe4a16ac4e3d ОТКРЫТ, не confirmatory. Следующее машинное задание: полный причинный Prophet/TSFM на той же маске и news-vintage/review 22 флагов.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Код проверки: F7b MiMoPro SHA 39d4b9f37a0ba88000dff7fb1e20fa348dcfe994537bedbc6ea45dc40299a8cb. Проверено 27.09.2026 11:39–11:40 UTC на Mac Python 3.13.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          }
+        ],
+        "confidence": 1
+      },
+      "operator_gate_closed": false
+    },
+    {
+      "execution_id": 3281542,
+      "started_at_utc": "2026-09-27 11:47:28.574",
+      "stopped_at_utc": "2026-09-27 11:48:46.149",
+      "receipt": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "plan_ref": "A6",
+        "source_case_id": "case_66cae4a89ba6473f",
+        "source_action_id": "act_c475e17b2a584b9a",
+        "topic": "A6: адресная проверка исследования устойчивости кластеров к margin",
+        "status": "verified",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "curator_verdict": "accept",
+        "next_action": "A6.1: Исследовать candidate_margin/uncertainty и внешние экономические данные для обоснования выбора порогов кластеризации.",
+        "next_topic": "A6.1: Исследование candidate_margin/uncertainty и внешних экономических данных",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14110,
+          "title": "Graph evidence research-atlas-margin-result-review-20260927: A6: адресная проверка исследования устойчивости кластеров к margin",
+          "corpus_id": 77,
+          "chunks": 4,
+          "vectors": 4
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14111,
+          "title": "Curator decision research-atlas-margin-result-review-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        }
+      },
+      "evidence": {
+        "schema_version": "1.0",
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "topic": "A6: адресная проверка исследования устойчивости кластеров к margin",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "checked_at": "2026-09-27T19:48:00+03:00",
+        "status": "verified",
+        "entities": [
+          {
+            "entity_id": "research:a6_threshold_20260927",
+            "entity_type": "event",
+            "label": "A6: 9 T/M settings, K2 vs K5, margin-sensitive identities",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-27",
+            "valid_to": null,
+            "source_ref": "corpus75/document_14108"
+          },
+          {
+            "entity_id": "indicator:margin_sensitivity",
+            "entity_type": "indicator",
+            "label": "M−25%: ambiguous 1324 строки, status match .9092, Jaccard .2983; M+25%: 36024 строки, status match .1274, Jaccard .1067",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-27",
+            "valid_to": null,
+            "source_ref": "corpus75/document_14108"
+          },
+          {
+            "entity_id": "indicator:k2_vs_k5_silhouette",
+            "entity_type": "indicator",
+            "label": "K2 vs K5 silhouette на общих 400 МО: средний .3840 vs .2098; ARI .2115, NMI .3703",
+            "provenance_class": "observed",
+            "valid_from": "2026-09-27",
+            "valid_to": null,
+            "source_ref": "corpus75/document_14108"
+          }
+        ],
+        "relations": [],
+        "claims": [
+          {
+            "statement": "Документ research:a6_threshold_20260927 НАЙДЕН в корпусе 75 (document_id=14108). Панель 1896 МО × 24 месяца, 45504 назначения; использованы архивные A6_v2 labels и frozen 2023 Z.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "Tc=.1739547472 постоянен; T=.2771627598, M=.7187007761 × .75/1/1.25, 9 комбинаций. Базовая 1,1 точно воспроизвела ВСЕ status/identity_id архива.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "T±25% не изменил результат при любом из 3M. M−25%: ambiguous 1324 строки, status match .9092, ambiguous Jaccard .2983. M baseline: 4438 строк, Jaccard 1. M+25%: 36024 строки, status match .1274, ambiguous Jaccard .1067.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "ВЫВОД: идентичности ЧУВСТВИТЕЛЬНЫ К margin; seed устойчивость НЕ доказала устойчивость порогов; нельзя называть 7 событий подтверждёнными экономическими изменениями.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "K2 vs независимый K5 на полной парной панели: silhouette на общих 400 МО в каждом месяце средний .3840 против .2098; ARI mean .2115, NMI mean .3703. Не является доказательством экономического типа или универсального превосходства K2.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          },
+          {
+            "statement": "PARTIAL_NOT_GATE_PASS, источник act_c475e17b2a584b9a ОТКРЫТ. Код проверки: F7b42551f78935422e5170280d19205cd39d9885df8eb86b339faebf6c01a6821ce. Проверено 27.09.2026 11:45 UTC на Mac Python 3.14.",
+            "evidence_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+            "provenance_class": "observed",
+            "confidence": 1
+          }
+        ],
+        "confidence": 1
+      },
+      "operator_gate_closed": false
+    }
+  ]
+}

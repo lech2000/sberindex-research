@@ -1,10 +1,9 @@
-# Следующие задания
+# Следующие задания,27.09.2026
 
-| Проект | GitHub | Живое действие | Критерий завершения |
+|Проект|Дело/источник|Выполнено|Следующий машинный шаг|
 |---|---|---|---|
-| Атлас A6 | [Issue1](https://github.com/lech2000/sberindex-research/issues/1) | act_c475e17b2a584b9a | A6_v2 готов; пять запусков выполнены; чувствительность порогов, 7 кластерных сопоставлений, профили K=2/K=5; экономическая проверка и GATE_REPORT |
-| Радар R8 | [Issue2](https://github.com/lech2000/sberindex-research/issues/2) | act_70e2fe4a16ac4e3d | R8_v2 готов; причинные Prophet/TSFM на общей маске; исторический news-vintage и 22 флага качества; GATE_REPORT |
+|АтласA6|[Атлас](https://agrigate.pro/v2/#case/case_66cae4a89ba6473f),act_c475e17b2a584b9a|5seed,9T/M,2vs5,168профилей|Обосноватьcandidate_margin,неопределённостьидентичностей ивнешнююэкономическуюинтерпретацию. Mчувствителен,неподгонятьпорогирадисобытий.|
+|РадарR8|[Радар](https://agrigate.pro/v2/#case/case_008f37d03cf541e5),act_70e2fe4a16ac4e3d|ПричинныйR8_v2,Prophetпилот32/438,кураторaccept|ПолныйпричинныйProphet/TSFMна171150маске;историческийnews-vintage и22флагаотдельно. Необобщатьпилот.|
+|ГрафG2|[Граф](https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd),act_064c759fe5194d67|ТриМайкопdiscovery,кандидатTelegram|Независимоофициальнаяссылка/ОКТМО/гео,корректныйpublic_channel;исправлятьfuturechecked_atиontology. Балашиху/Раменскоене повторять.|
 
-Текущий подробный статус — [STATE](STATE.md), подготовка комплекта —
-[CONTEST_CHECKLIST](CONTEST_CHECKLIST.md). Статус issue сам по себе не доказывает
-научный результат. До публикации итоговых выводов должны быть пройдены A7–A10/R9–R10.
+Все три source действия открыты. Код только F7b, результат завершения — закрытие act черезcase-service с доказательствами. СменаK не заменяетT/Msensitivity. Подробно[STATE](STATE.md), комплект[CONTEST_CHECKLIST](CONTEST_CHECKLIST.md); до конкурса нужныA7–A10/R9–R10.

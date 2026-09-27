@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-27T11:40:00Z",
+  "method": "independent parquet join/recomputed MAE and separately constructed Prophet fit; Mac Python3.13",
+  "n": 438,
+  "r8_paired_join_exact": true,
+  "independent_mae": {
+    "prophet": 755.8246452421645,
+    "lastavailable": 892.4360730593608,
+    "seasonal_naive": 1358.9657534246576
+  },
+  "independent_prophet_point_maxdiff": 0.0,
+  "code_sha256": "39d4b9f37a0ba88000dff7fb1e20fa348dcfe994537bedbc6ea45dc40299a8cb",
+  "source": "F7b MiMoPro generated; reviewed unpaired-filter/rawactual-contract/fitseed; wrapper reached30turn cap but independent selfcheck and real run PASS",
+  "gate_closed": false
+}

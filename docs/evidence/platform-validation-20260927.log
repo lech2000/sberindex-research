@@ -1,0 +1,33 @@
+  Пропущены (выключены профилем в compose): Board Service
+
+  Validating 11 services...
+  [1/4] Infra (postgres + redis)...
+  [2/4] Services (11 in parallel)...
+        done in 15.8s
+  [4/4] Writing report...
+
+════════════════════════════════════════════════════════════
+  ai_OS2 Deployment Validator
+  2026-09-27T11:48:03Z
+════════════════════════════════════════════════════════════
+
+  Result: ✅ PASSED
+  Checks: 46/47 passed
+  Warnings: 1
+
+  ✓ API Gateway                  5684ms
+  ✓ Agent Service                6542ms
+  ✓ Memory Service               6608ms
+  ✓ Model Service                7817ms
+  ✓ Tool Service                 7033ms
+      └─ [WARNING] openapi_spec: GET http://localhost:8004/openapi.json → 403
+  ✓ Orchestrator                 6319ms
+  ✓ Chat Service                 6424ms
+  ✓ PMR Service                  5934ms
+  ✓ Mem0 MCP                     3765ms
+  ✓ Riskproof Service            3575ms
+  ✓ N8N                          3154ms
+
+════════════════════════════════════════════════════════════
+  Report: deployment-report.json
+

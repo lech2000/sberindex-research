@@ -1,0 +1,13 @@
+A6 threshold review: mask_n=1896 months=24
+  baseline (1,1) exact vs archive: True
+  T*0.75 M*0.75: status_match=0.9092 id_match=0.9316 assignment_jaccard=0.8334 ambiguous_jaccard=0.2983 ambiguous_rows=1324
+  T*0.75 M*1.00: status_match=1.0000 id_match=1.0000 assignment_jaccard=1.0000 ambiguous_jaccard=1.0000 ambiguous_rows=4438
+  T*0.75 M*1.25: status_match=0.1274 id_match=0.1274 assignment_jaccard=0.0680 ambiguous_jaccard=0.1067 ambiguous_rows=36024
+  T*1.00 M*0.75: status_match=0.9092 id_match=0.9316 assignment_jaccard=0.8334 ambiguous_jaccard=0.2983 ambiguous_rows=1324
+  T*1.00 M*1.00: status_match=1.0000 id_match=1.0000 assignment_jaccard=1.0000 ambiguous_jaccard=1.0000 ambiguous_rows=4438
+  T*1.00 M*1.25: status_match=0.1274 id_match=0.1274 assignment_jaccard=0.0680 ambiguous_jaccard=0.1067 ambiguous_rows=36024
+  T*1.25 M*0.75: status_match=0.9092 id_match=0.9316 assignment_jaccard=0.8334 ambiguous_jaccard=0.2983 ambiguous_rows=1324
+  T*1.25 M*1.00: status_match=1.0000 id_match=1.0000 assignment_jaccard=1.0000 ambiguous_jaccard=1.0000 ambiguous_rows=4438
+  T*1.25 M*1.25: status_match=0.1274 id_match=0.1274 assignment_jaccard=0.0680 ambiguous_jaccard=0.1067 ambiguous_rows=36024
+  k5 vs archived k2: sil2=0.3840 sil5=0.2098 ARI=0.2115 NMI=0.3703
+outdir=output/A6_threshold_review_20260927

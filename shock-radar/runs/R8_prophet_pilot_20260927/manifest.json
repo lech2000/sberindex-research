@@ -1,0 +1,96 @@
+{
+ "run_id": "R8-prophet-pilot",
+ "status": "PILOT_PARTIAL_NOT_GATE_PASS",
+ "model": {
+  "estimator": "Prophet",
+  "growth": "linear",
+  "yearly_seasonality": false,
+  "weekly_seasonality": false,
+  "daily_seasonality": false,
+  "n_changepoints": 3,
+  "uncertainty_samples": 0,
+  "deterministic": true
+ },
+ "causal": {
+  "release_lag_months": 2,
+  "train_month_max": "origin - 2",
+  "target": "origin + h",
+  "target_gap_after_last_allowed": "h + 2",
+  "calendar_ds": "real month timestamps, no gap compression"
+ },
+ "subset": {
+  "n_candidates": 12366,
+  "n_selected": 32,
+  "max_series": 32,
+  "all_series": false,
+  "seed": 20260927,
+  "selection": "sorted_keys_seeded_sample",
+  "outcome_independent": true
+ },
+ "outputs": [
+  "predictions.parquet",
+  "metrics.json",
+  "audit.json",
+  "manifest.json"
+ ],
+ "limitations": [
+  "PILOT_PARTIAL_NOT_GATE_PASS: exploratory Prophet followup, NOT confirmatory; the full R8 ablation stays open",
+  "subset is NOT the full 171150-row paired mask (deterministic subset of 32 series, max_series=32); no full-mask or gate claim is made",
+  "assumed release lag of 2 months is a synthetic assumption, not a measured release timestamp",
+  "yearly/weekly/daily seasonality are OFF and n_changepoints=3: this is a bounded linear-trend Prophet, not a seasonal model; it is a causal comparator to lastavailable/seasonal_naive",
+  "Prophet fit is bounded and causal (month <= origin-2), but the 24-ish monthly points per series give high trend uncertainty",
+  "observed target values come from the paired R8_v2 parquet; raw target value agreement is hard-enforced before any fit or metric (PairedContractError on missing/nonfinite raw actual, missing/nonfinite paired actual, or a mismatch beyond tolerance)",
+  "no forecast is ever invented for a failed or missing cell"
+ ],
+ "provenance": {
+  "run_utc": "2026-09-27T11:39:01+00:00",
+  "command": "shock-radar/src/r8_prophet_pilot.py --raw data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_v2 --max-series 32 --seed 20260927 --outdir output/R8_prophet_pilot_20260927",
+  "inputs": {
+   "raw": "data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+   "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+   "raw_rows_kept": 303126,
+   "raw_n_series": 13140,
+   "raw_panel_range": [
+    "2023-01",
+    "2024-12"
+   ],
+   "paired_run": "shock-radar/runs/R8_v2",
+   "paired_predictions": "shock-radar/runs/R8_v2/predictions.parquet",
+   "paired_predictions_sha256": "2fbf07475a2a9eb392e4cf949307563df3a9a7e302347a2f0f5317684c279043",
+   "paired_total_input_rows": 171918,
+   "paired_excluded_unpaired_rows": 768,
+   "paired_n_rows": 171150,
+   "paired_columns": [
+    "territory_id",
+    "category",
+    "origin",
+    "target",
+    "horizon",
+    "actual",
+    "pred_lastavailable",
+    "pred_seasonal_naive",
+    "pred_nonews",
+    "pred_calendar",
+    "paired"
+   ],
+   "join_keys": [
+    "territory_id",
+    "category",
+    "origin",
+    "horizon",
+    "target"
+   ]
+  },
+  "code_sha256": "39d4b9f37a0ba88000dff7fb1e20fa348dcfe994537bedbc6ea45dc40299a8cb",
+  "git_commit": "1e938c6",
+  "versions": {
+   "python": "3.13.0",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "prophet": "1.4.0",
+   "cmdstanpy": "1.3.0"
+  },
+  "seed": 20260927
+ }
+}

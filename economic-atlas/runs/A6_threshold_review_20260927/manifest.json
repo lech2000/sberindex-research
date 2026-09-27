@@ -1,0 +1,60 @@
+{
+  "baseline_exact_repro": true,
+  "code": {
+    "a6_identities.py": "f630b5a998925de90b1f3f40f33f32f1a9f873e2c9c886de06b29116b9f78f4d",
+    "a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "file": "a6_threshold_review.py",
+    "sha256": "42551f78935422e5170280d19205cd39d9885df8eb86b339faebf6c01a6821ce"
+  },
+  "command": "economic-atlas/src/a6_threshold_review.py --panel economic-atlas/data/panel_v1.parquet --base-run economic-atlas/runs/A6_v2 --outdir output/A6_threshold_review_20260927",
+  "completes_case06": false,
+  "component": "threshold_review",
+  "created_at": "2026-09-27T11:44:51.010872+00:00",
+  "gate": "A6",
+  "gate_pass": false,
+  "inputs": {
+    "base_assignments": {
+      "path": "economic-atlas/runs/A6_v2/assignments.parquet",
+      "rows": 45504,
+      "sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b"
+    },
+    "base_calibration": {
+      "path": "economic-atlas/runs/A6_v2/calibration.json",
+      "sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346"
+    },
+    "panel": {
+      "path": "economic-atlas/data/panel_v1.parquet",
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "limitations": [
+    "2023 outputs are retrospective vs the frozen-2024 check: the frozen scaler pools ALL 2023 months and the calibration pools ALL 2023 months, so later-2023 months inform early-2023 z-scores, thresholds and labels; causality-relevant months are 2024+, strictly after the frozen fit/calibration (base calibration.json retrospective_note)."
+  ],
+  "params": {
+    "candidate_margin_base": 0.7187007760980421,
+    "centres": "member means of Z over archived members",
+    "fit_month_seed": "a6_identities.fit_month random_state = seed + month_idx + k (read from the helper source 2026-09-27; seed+month_idx*137+k*1009 not present)",
+    "overlap_threshold_base": 0.27716275979336036,
+    "resemblance_floor_constant": 0.17395474720266485,
+    "resemblance_floor_expected_base": 0.17395474720266485,
+    "resemblance_floor_rule": "Tc read from the base calibration.json, kept constant on all settings; 0 <= Tc < T enforced per setting",
+    "review_k": 5,
+    "seed": 20260926,
+    "silhouette_cap": 400,
+    "silhouette_subsample_seed": "20260926 + month_index",
+    "sweep_factors": [
+      0.75,
+      1.0,
+      1.25
+    ]
+  },
+  "status": "PARTIAL_NOT_GATE_PASS",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-27T11:46:37.265170+00:00",
+  "method": "Mac independent CSV invariants/count reconciliation, archived assignments join, separate first-month silhouette calculation",
+  "rows": 45504,
+  "settings": 9,
+  "comparison_months": 24,
+  "raw_profile_rows": 168,
+  "archive_ambiguous_rows": 4438,
+  "constant_Tc": true,
+  "T_variations_identical_per_M": true,
+  "all24_sil2_gt_sil5": true,
+  "independent_first_month_silhouette_maxdiff": 0.0,
+  "baseline_exact": true,
+  "code_sha256": "42551f78935422e5170280d19205cd39d9885df8eb86b339faebf6c01a6821ce",
+  "gate_closed": false,
+  "interpretation": "Margin-sensitive recognition; no confirmed economic event. K5 integer labels not aligned identities."
+}

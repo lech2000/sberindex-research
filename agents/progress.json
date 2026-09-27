@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T17:27:15.950Z",
+  "updated_at": "2026-09-27T11:49:25.429145+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "economic-atlas/runs/A6_v2/manifest.json",
+      "last_artifact": "economic-atlas/runs/A6_threshold_review_20260927/manifest.json",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "A6_v2 и пять дополнительных запусков готовы: средний ARI 0.99854–0.99972. Далее чувствительность порогов overlap/margin, сравнение профилей K=2 и K=5 и независимая экономическая интерпретация. Семь неоднозначностей относятся к сопоставлениям кластеров, а не к семи МО. Source action 06 открыт.",
+      "next_action": "Девять T/M и K2/K5 выполнены (75/14108). Идентичности margin-sensitive:1324/4438/36024 неоднозначных строк. Далее обоснованность candidate_margin/uncertainty и внешняя экономическая проверка. Не повторять seed/TM без причины; source06 открыт.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -27,7 +27,7 @@
         "status": "timed_out",
         "gate_changed": false
       },
-      "last_scientific_run": "2026-09-26T16:36:38.091050+00:00",
+      "last_scientific_run": "2026-09-27T11:45:00Z",
       "scientific_summary": {
         "n_assignments": 45504,
         "selected_k": 2,
@@ -57,6 +57,26 @@
           0.997751798561151,
           1.0
         ]
+      },
+      "threshold_review": {
+        "settings": 9,
+        "rows": 45504,
+        "baseline_exact": true,
+        "ambiguous_rows_by_margin": [
+          1324,
+          4438,
+          36024
+        ],
+        "margin_factors": [
+          0.75,
+          1,
+          1.25
+        ],
+        "T_changes_no_effect_in_grid": true,
+        "silhouette_k2_mean": 0.384,
+        "silhouette_k5_mean": 0.2098,
+        "kb_document_id": 14108,
+        "gate_closed": false
       }
     },
     "shock-radar": {
@@ -64,9 +84,9 @@
       "agent": "software:sberindex_radar_researcher@5",
       "current_gate": "R8",
       "status": "in_progress",
-      "last_artifact": "shock-radar/runs/R8_v2/metrics.json",
+      "last_artifact": "shock-radar/runs/R8_prophet_pilot_20260927/manifest.json",
       "last_dialog": "2026-09-26T07:06:14Z",
-      "next_action": "R8_v2 рассчитан: 76/13876, ключ research:r8_v2_20260926; 171150 общих точек. MAE: последнее доступное значение 880.213, сезонный прогноз 1280.420, бустинг без новостей 961.104, бустинг с календарём 1000.794. Далее причинные Prophet/TSFM на той же маске; восстановить news-vintage и проверить 22 флага качества. F03/R3 содержит утечку target (76/13864). Source action 08 открыт.",
+      "next_action": "Пилот Prophet выполнен32ряда/438парныхточек (76/14104):MAE755.825 противlastavailable892.436,seasonal1358.966. Далееполное причинноеProphet/TSFM на171150маске иnews-vintage/review22флагов;source08открыт. ПилотнеобобщатьнавсеМО.",
       "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
       "last_gate": {
         "gate": "R7",
@@ -79,7 +99,7 @@
         "commit": "9211e62a2",
         "quality_claim": "Отрицательный технический результат; раннее предупреждение не подтверждено; exploratory-v2"
       },
-      "last_scientific_run": "2026-09-26T16:29:35+00:00",
+      "last_scientific_run": "2026-09-27T11:39:01Z",
       "scientific_summary": {
         "paired_n": 171150,
         "cells": 14,
@@ -89,17 +109,29 @@
         "mae_calendar_boost": 1000.793644775331,
         "historical_news_eligible": 0,
         "kb_document_id": 13876
+      },
+      "prophet_pilot": {
+        "n_series": 32,
+        "paired_n": 438,
+        "fit_count": 189,
+        "mae_prophet": 755.8246452421645,
+        "mae_lastavailable": 892.4360730593608,
+        "mae_seasonal": 1358.9657534246576,
+        "failures": 0,
+        "kb_document_id": 14104,
+        "status": "PILOT_PARTIAL_NOT_GATE_PASS",
+        "gate_closed": false
       }
     },
     "municipality-graph": {
       "case_id": "case_43de12a8dc2e4abd",
       "agent": "software:sberindex_graph_steward@3",
       "open_actions": "5/9",
-      "status": "blocked_worker_evidence",
-      "last_evidence": "sberindex_crosswalk coverage=1.0 (2190/2190), dict sha 9ab519866c52028c, manual 23.09.2026",
-      "next_action": "Fixar F7b problemreports13865/13867; восстановитьboundeddiscoveryКоломна, entities=[]доисточников. Балашиха/Ramenнеповторять.",
+      "status": "in_progress_candidate_verification",
+      "last_evidence": "Майкоп discovery-only:77/14092,14096,14100;candidate t.me/maikop_adm;operator direct official page fetch timed out, no verified entity.",
+      "next_action": "Майкоп discovery принят77/14092–14102. Независимо подтвердить обратнуюофициальнуюссылку/геотеги/ОКТМО,потомpublic_channelнормализатор. Покаentitiesпусты,необъявлятьverified. Nativechecked_atчастично будущий—нужноперепроверить. Балашиху иРаменское не повторять. Автоматическиеhourlyпроходывсёещёлучше проверять:ошибкаentitytype429reportsнеисчезла.",
       "current_gate": "G2",
-      "last_dialog": "2026-09-23T19:55:00Z",
+      "last_dialog": "2026-09-27T11:40:00Z",
       "last_failures": [
         {
           "run_key": "research-graph-next-20260926-1618",
@@ -115,6 +147,11 @@
           "document_id": 13867,
           "reason": "GraphStewarddialogtimeout; noEVIDENCE_JSON"
         }
+      ],
+      "dispatches_today": [
+        "research-graph-maikop-discovery-only-20260927",
+        "research-graph-maikop-contacts-discovery-20260927",
+        "research-graph-maikop-independent-site-20260927"
       ]
     },
     "research-curator": {
@@ -123,15 +160,38 @@
       "status": "dispatching",
       "note": "0 собственных actions — по замыслу, работает с чужих open_actions",
       "last_dispatch": {
-        "run_key": "research-r8-v2-curator-budget-live-20260926-1723",
-        "source_case_id": "case_008f37d03cf541e5",
-        "source_action_id": "act_70e2fe4a16ac4e3d",
-        "verdict": "accept",
-        "evidence_document_id": 13894,
-        "decision_document_id": 13895,
-        "checked_at": "2026-09-26T17:27:15.950Z",
-        "execution_id": 3278702,
-        "next_action": "Запустить Prophet/TSFM на той же paired mask (171150 точек / 14 окон) без будущих target. Код через fixar-devops/F7b. Новости — отдельно vintage. Не возвращаться к MAE.",
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "plan_ref": "A6",
+        "source_case_id": "case_66cae4a89ba6473f",
+        "source_action_id": "act_c475e17b2a584b9a",
+        "topic": "A6: адресная проверка исследования устойчивости кластеров к margin",
+        "status": "verified",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "curator_verdict": "accept",
+        "next_action": "A6.1: Исследовать candidate_margin/uncertainty и внешние экономические данные для обоснования выбора порогов кластеризации.",
+        "next_topic": "A6.1: Исследование candidate_margin/uncertainty и внешних экономических данных",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14110,
+          "title": "Graph evidence research-atlas-margin-result-review-20260927: A6: адресная проверка исследования устойчивости кластеров к margin",
+          "corpus_id": 77,
+          "chunks": 4,
+          "vectors": 4
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14111,
+          "title": "Curator decision research-atlas-margin-result-review-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        },
+        "execution_id": 3281542,
         "gate_closed": false
       },
       "routing": "Адресный webhook связан с открытым source_action_id. Через F7b выложены native KB fix 2e4f26219 и curator message budget 492bcf856. Валидный live accept 26.09: execution3278702, evidence77/13894, decision77/13895; R8 source action открыт.",
@@ -153,12 +213,12 @@
         "kb_document_id": 13888
       },
       "last_workflow_attempt": {
-        "run_key": "research-r8-v2-curator-budget-live-20260926-1723",
-        "execution_id": 3278702,
-        "evidence_document_id": 13894,
-        "decision_document_id": 13895,
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "execution_id": 3281542,
         "status": "accepted",
-        "loop_pass": true
+        "loop_pass": true,
+        "evidence_document_id": 14110,
+        "decision_document_id": 14111
       },
       "curator_message_fix": {
         "deployed": true,
@@ -166,6 +226,18 @@
         "real_fixture_chars": 2798,
         "claims_preserved": "3/3",
         "kb_document_id": 13892
+      },
+      "atlas_dispatch_correction": "77/14089 предложил k4/seed5 как threshold. Исправлено исследователем: K≠T/M, выполнен реальный9T/M, затем2vs5. Следующееmarginобоснование, не повтор k4/5.",
+      "last_dispatch_radar": {
+        "run_key": "research-radar-prophet-pilot-review-20260927",
+        "source_case_id": "case_008f37d03cf541e5",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "verdict": "accept",
+        "evidence_document_id": 14106,
+        "decision_document_id": 14107,
+        "checked_at": "2026-09-27T11:49:25.429145+00:00",
+        "next_action": "Полное причинное сравнение Prophet/TSFM на R8_v2;news-vintage/review22флагов отдельно.",
+        "gate_closed": false
       }
     }
   },
@@ -184,6 +256,10 @@
     "timer": "fixar-cmd-research-drive.timer",
     "timer_active": true,
     "next_tick": "2026-09-26T22:30:00+03:00",
-    "partial_gates_still_stop_chain": true
+    "partial_gates_still_stop_chain": true,
+    "pending_new_scope": [
+      "A6_threshold_review_20260927",
+      "R8_prophet_pilot_20260927"
+    ]
   }
 }

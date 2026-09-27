@@ -47,3 +47,6 @@ python3 -m http.server 8765
 
 
 Новые научные модули: `economic-atlas/src/a6_identities.py` и `shock-radar/src/r8_forecast_ablation.py`, оба черезF7b. Прямые команды воспроизведения в runs/A6_v2/README.md и runs/R8_v2/README.md; исходный reproduce.py --stage all воспроизводит прежний снимок, новыеv2 запускаются этими явнымикомандами.
+
+
+27.09 добавлены `a6_threshold_review.py` и `r8_prophet_pilot.py` (F7b). Явные команды в новых runREADME. Prophet проверен в отдельнойPython3.13 среде с Prophet1.4.0/cmdstanpy1.3.0; его не следует устанавливать в среду базового evaluator без отдельной проверки совместимости. Пилотпо умолчанию32ряда; --max-series0 означает все, требует отдельного бюджета времени. А6 использует основнуюPython3.14.4 среду (точные версии вmanifest). reproduce.py --stage all автоматически эти новыеfollowup не запускает.
