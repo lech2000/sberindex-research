@@ -1,0 +1,9 @@
+metric,value,note
+oldM_from_archive,0.7187007760980421,"M=max(0, q05self-q95other) from the archived calibration; Tc=resemblance_floor, unchanged"
+oldT_from_archive,0.27716275979336036,"T=q95other from the archived calibration, unchanged"
+oldTc_from_archive,0.17395474720266485,"Tc=q50other from the archived calibration, unchanged"
+recomputed_M_marginal,0.7187007760980421,"max(0, q05_self - q95_other) recomputed from this audit's draws; should be close to oldM (same bootstrap procedure, different seed path)"
+frac_gap_le_oldM,0.042291666666666665,measured fraction of paired (self - max_other) <= oldM; diagnostic only
+q05_gap,0.7214357356621658,q05 of paired gap distribution; NOT used to define M
+q95_gap,0.8809728124117177,q95 of paired gap distribution; NOT used to define M
+marginal_quantile_gap,0.7187007760980421,"q05(self) - q95(other), the marginal expression; for correlated pairs this differs from q05(paired_gap); see --self-check demonstration"

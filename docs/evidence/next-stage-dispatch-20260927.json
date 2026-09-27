@@ -1,0 +1,89 @@
+{
+  "checked_at_utc": "2026-09-27T16:24:12.171392+00:00",
+  "checks": "27.09.2026 live case-service actions, systemd units in fixar-devops, native MiMoPro dialog replies, n8n webhook receipts",
+  "source_actions_closed": false,
+  "case_receipts": [
+    {
+      "case": "case_66cae4a89ba6473f",
+      "source_action": "act_c475e17b2a584b9a",
+      "source_done": false,
+      "next_action": "act_af3a3c40ccec45bc",
+      "waiting_for": "F7bMiMoPro запущен: sber-a6-margin-next-20260927.service; pairedgap2023audit. См.mat_sber_next_stage_20260927. A6OPEN."
+    },
+    {
+      "case": "case_008f37d03cf541e5",
+      "source_action": "act_70e2fe4a16ac4e3d",
+      "source_done": false,
+      "next_action": "act_55a3701000d64d78",
+      "waiting_for": "F7bMiMoPro: sber-r8-batch-next-20260927.service пишетresumablerunner. Послепроверки—dryrun/realbatch. Полные171150покаНЕпосчитаны;R8OPEN. mat_sber_next_stage_20260927."
+    },
+    {
+      "case": "case_43de12a8dc2e4abd",
+      "source_action": "act_064c759fe5194d67",
+      "source_done": false,
+      "next_action": "act_db5342462fdf4664",
+      "waiting_for": "Майкопtimeout→candidate; следующийКраснодарasyncApify(wait0),затемresultsпоrealrun_id/receipt. F7bcontext/pinsвработе. Не повторятьБалашиху/Раменское. mat_sber_next_stage_20260927."
+    }
+  ],
+  "jobs": [
+    {
+      "unit": "sber-a6-margin-next-20260927.service",
+      "model": "xiaomi/mimo-v2.5-pro",
+      "status": "completed_and_independently_verified",
+      "scope": "economic-atlas/src/a6_margin_audit.py",
+      "purpose": "paired bootstrap margin diagnostic; original T/M/Tc frozen; no 2024 tuning",
+      "code_sha256": "92c5da2f57d21395f2ed2543948ffa40ef6fd8fddeb346534ef58e0badb20427",
+      "result": "4800 paired2023draws, fracgap<=M .0422916667, q05gap .7214357357, oldM .7187007761 unchanged",
+      "kb_receipt": "75/14171"
+    },
+    {
+      "unit": "sber-r8-batch-next-20260927.service",
+      "model": "xiaomi/mimo-v2.5-pro",
+      "status": "first_builder_exit124_QA_failed_repair_v2_running",
+      "scope": "shock-radar/src/r8_prophet_batch.py",
+      "purpose": "resumable real Prophet runner; complete 171150 paired mask has NOT been computed",
+      "repair_unit": "sber-r8-batch-next-20260927-v2.service",
+      "not_executed": "full171150Prophet; unfinished generatedrunner NOTpublished"
+    },
+    {
+      "unit": "interactive F7b bounded repair",
+      "model": "xiaomi/mimo-v2.5-pro",
+      "status": "reviewed_patch_applied_through_F7b_and_published",
+      "scope": "n8n/workflows/16_sberindex_graph_steward.json",
+      "purpose": "waiting_for/context, action priority, version pins; no durable municipality queue claim",
+      "production_commit": "329752a6a",
+      "published_version": "bcf439a4-2b1b-44ea-b599-9b59c5663ca5",
+      "max_dispatch_message_chars": 3508,
+      "does_not_implement": "durable per-municipality queue or autonomous case_action closure"
+    }
+  ],
+  "graph": {
+    "maikop": "native timeout; no EVIDENCE_JSON; not a completed verification",
+    "next_municipality": "Novorossiysk territory_id627",
+    "apify_discovery_evidence": "corpus77/14162",
+    "curator_decision": "corpus77/14163",
+    "results_fetch": "running",
+    "new_confirmed_channels": 0,
+    "candidate_record": "public_channel:telegram:krdru",
+    "normalization": "live deployed normalizer + live EVIDENCE validator, operator-assisted, not automatic steward success",
+    "candidate_receipt": "77/14173",
+    "candidate_officiality": "candidate; reverse official backlink pending",
+    "automatic_results_issue": "discovery entity typing/future date invalid; canonical candidate persisted separately",
+    "warmup": "webhook404 before n8n completed active-workflow registration; pending functional retry"
+  },
+  "curator_review": {
+    "model": "mimo-v2.5-pro",
+    "verdict": "accept next steps; no gate PASS",
+    "native_reviewed_at": "not used as a measurement timestamp"
+  },
+  "review_corrections": [
+    "Atlas proposed a wrong interpretation of margin and nonexistent input files/formulas; rejected for execution. F7b uses audited A6_v2 inputs and diagnostic paired bootstrap with unchanged thresholds.",
+    "Radar obligatory MAE win and nonempty failure log criteria rejected; negative outcomes and zero-failure empty log accepted."
+  ],
+  "completed_subactions": [
+    "act_af3a3c40ccec45bc",
+    "act_db5342462fdf4664"
+  ],
+  "platform_validator": "46/47 PASS, warningprotectedtoolopenapi403",
+  "report_submission": "R8 F7b problemreport rejected429 too_many_open_reports (30); case/KB62 fallback records and repair unit used"
+}

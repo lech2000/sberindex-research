@@ -1,0 +1,157 @@
+{
+  "2024_excluded_from_calibration": true,
+  "2024_exclusion_note": "bootstrap draws use cal_months_idx from 2023 only; 2024 months are never included in calibration or margin derivation",
+  "archived_other_quantiles": {
+    "q01": 0.10913878262757899,
+    "q05": 0.11784964596112674,
+    "q25": 0.1348863768909583,
+    "q50": 0.17395474720266485,
+    "q75": 0.21467873420026193,
+    "q95": 0.27716275979336036,
+    "q99": 0.29044870837852144
+  },
+  "archived_self_quantiles": {
+    "q01": 0.9932061443329571,
+    "q05": 0.9958635358914024,
+    "q25": 0.9982574192701971,
+    "q50": 0.9991065254420171,
+    "q75": 0.99951816064808,
+    "q95": 0.9998119604756032,
+    "q99": 0.9999040839232994
+  },
+  "audit_bootstrap": {
+    "bootstrap_B": 200,
+    "cal_min_size": 8,
+    "n_clusters_eligible": 24,
+    "n_clusters_skipped_small": 0,
+    "seed": 20816481
+  },
+  "calibration_unchanged": {
+    "candidate_margin_M": 0.7187007760980421,
+    "note": "T, M, Tc read from the archived calibration.json and reported unchanged; no replacement thresholds proposed",
+    "overlap_threshold_T": 0.27716275979336036,
+    "resemblance_floor_Tc": 0.17395474720266485
+  },
+  "completes_case06": false,
+  "component": "margin_audit",
+  "economic_types_invented": false,
+  "gate": "A6",
+  "gate_pass": false,
+  "gate_pass_reason": "diagnostic re-analysis of archived bootstrap margin only; does not propose replacement thresholds, does not claim externally validated births or case closure",
+  "limitations": [
+    "This is a diagnostic re-analysis of the archived bootstrap margin; it does NOT propose replacement thresholds.",
+    "T, M, Tc are read from the archived calibration.json and reported unchanged.",
+    "q05_gap and q95_gap are reported for information only; M is NOT redefined from gap quantiles.",
+    "No thresholds are fit to 2024 data or events.",
+    "2024 summary uses archive statuses only; no calibration or threshold application on 2024.",
+    "No externally validated births or case closure are claimed."
+  ],
+  "margin_comparison": {
+    "frac_gap_le_oldM": 0.042291666666666665,
+    "marginal_q05self_minus_q95other": 0.7187007760980421,
+    "note": "frac_gap_le_oldM is the measured fraction of paired (self-max_other) draws <= oldM. q05_gap and q95_gap are reported for information only; M is NOT redefined as q05_gap - q95_gap.",
+    "oldM": 0.7187007760980421,
+    "q05_gap": 0.7214357356621658,
+    "q95_gap": 0.8809728124117177,
+    "recomputed_M_marginal": 0.7187007760980421
+  },
+  "mask": {
+    "excluded_tids": {},
+    "n": 1896,
+    "n_excluded": 0
+  },
+  "other_quantiles_audit": {
+    "other_mean": 0.18099258166144663,
+    "other_n": 4800,
+    "other_q01": 0.10913878262757899,
+    "other_q05": 0.11784964596112674,
+    "other_q25": 0.1348863768909583,
+    "other_q50": 0.17395474720266485,
+    "other_q75": 0.21467873420026193,
+    "other_q95": 0.27716275979336036,
+    "other_q99": 0.29044870837852144,
+    "other_std": 0.05132486617306406
+  },
+  "paired_gap_quantiles": {
+    "gap_mean": 0.8176414778314065,
+    "gap_n": 4800,
+    "gap_q01": 0.7062848465859975,
+    "gap_q05": 0.7214357356621658,
+    "gap_q25": 0.7839040365715912,
+    "gap_q50": 0.8237388367733901,
+    "gap_q75": 0.8634882200829164,
+    "gap_q95": 0.8809728124117177,
+    "gap_q99": 0.8881103904744128,
+    "gap_std": 0.051416150026755106
+  },
+  "panel_audit": {
+    "base_manifest_panel_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_months": 24,
+    "n_tids": 1896,
+    "panel_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "panel_sha_match": true
+  },
+  "self_quantiles_audit": {
+    "self_mean": 0.998634059492853,
+    "self_n": 4800,
+    "self_q01": 0.9932061443329571,
+    "self_q05": 0.9958635358914024,
+    "self_q25": 0.9982574192701971,
+    "self_q50": 0.9991065254420171,
+    "self_q75": 0.99951816064808,
+    "self_q95": 0.9998119604756032,
+    "self_q99": 0.9999040839232994,
+    "self_std": 0.001387637431505914
+  },
+  "status": "DIAGNOSTIC_PARTIAL_NOT_GATE_PASS",
+  "summary_2024": {
+    "months": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "n_months": 12,
+    "n_rows": 22752,
+    "note": "2024 summary uses archive statuses only; no calibration or threshold application on 2024",
+    "status_counts": {
+      "ambiguous": 2452,
+      "continuing": 18396,
+      "reemergence": 1904
+    }
+  }
+}

@@ -7,3 +7,5 @@
 |ГрафG2|[Граф](https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd),act_064c759fe5194d67|ТриМайкопdiscovery,кандидатTelegram|Независимоофициальнаяссылка/ОКТМО/гео,корректныйpublic_channel;исправлятьfuturechecked_atиontology. Балашиху/Раменскоене повторять.|
 
 Все три source действия открыты. Код только F7b, результат завершения — закрытие act черезcase-service с доказательствами. СменаK не заменяетT/Msensitivity. Подробно[STATE](STATE.md), комплект[CONTEST_CHECKLIST](CONTEST_CHECKLIST.md); до конкурса нужныA7–A10/R9–R10.
+
+27.09 follow-up: A6.2paired-marginаудитвыполнен75/14171; следующийA6—temporaluncertainty2024/externalvalidation. R8.1checkpointbuilderвремонтеv2 послеQA: full171150ещёНЕзапущен. GraphG2.5candidateКраснодаразаписан77/14173,неconfirmed; следующийНовороссийскID627. Дваchildactionзакрыты, триосновныхsourceactionOPEN. Кодконтекста/пинов—329752a6a.

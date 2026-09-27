@@ -1,0 +1,47 @@
+{
+  "code": {
+    "a6_identities.py": "f630b5a998925de90b1f3f40f33f32f1a9f873e2c9c886de06b29116b9f78f4d",
+    "a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "file": "a6_margin_audit.py",
+    "sha256": "92c5da2f57d21395f2ed2543948ffa40ef6fd8fddeb346534ef58e0badb20427"
+  },
+  "command": "economic-atlas/src/a6_margin_audit.py --panel /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet --base-run economic-atlas/runs/A6_v2 --outdir economic-atlas/runs/A6_margin_audit_20260927",
+  "completes_case06": false,
+  "component": "margin_audit",
+  "created_at": "2026-09-27T16:31:09.654000+00:00",
+  "gate": "A6",
+  "gate_pass": false,
+  "inputs": {
+    "base_run": {
+      "assignments_sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+      "calibration_sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+      "manifest_sha256": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de",
+      "path": "economic-atlas/runs/A6_v2"
+    },
+    "panel": {
+      "path": "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet",
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "limitations": [
+    "This is a diagnostic re-analysis of the archived bootstrap margin; it does NOT propose replacement thresholds.",
+    "T, M, Tc are read from the archived calibration.json and reported unchanged.",
+    "q05_gap and q95_gap are reported for information only; M is NOT redefined from gap quantiles.",
+    "No thresholds are fit to 2024 data or events.",
+    "2024 summary uses archive statuses only; no calibration or threshold application on 2024.",
+    "No externally validated births or case closure are claimed."
+  ],
+  "params": {
+    "bootstrap_B": 200,
+    "cal_min_size": 8,
+    "calibration_months": "2023 only",
+    "seed_offset": 555555
+  },
+  "status": "DIAGNOSTIC_PARTIAL_NOT_GATE_PASS",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "python": "3.14.4"
+  }
+}
