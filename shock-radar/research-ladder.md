@@ -1,6 +1,6 @@
 # Лестница исследования R0–R10 — Радар потребительских сдвигов
 
-Версия 20.09.2026. Агент: `software:sberindex_radar_researcher@4`. Входные паспорта: `../data/DATA_CATALOG.md`, `../data/manifest.json`, `data-manifest.json`. Корпуса: 74 общий и 76 проектный.
+Версия лестницы 20.09.2026; агент в живом деле на 28.09.2026: `software:sberindex_radar_researcher@5`. Входные паспорта: `../data/DATA_CATALOG.md`, `../data/manifest.json`, `data-manifest.json`. Корпуса: 74 общий и 76 проектный. Текущая научная проверка R8 — [отдельный протокол](../docs/SCIENTIFIC_EVIDENCE_REVIEW_2026-09-28.md).
 
 | Ворота | Работа | Артефакт и критерий выхода | Если не проходит |
 |---|---|---|---|
