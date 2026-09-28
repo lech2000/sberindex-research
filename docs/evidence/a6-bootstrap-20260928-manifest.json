@@ -1,0 +1,45 @@
+{
+  "archived_sha256": {
+    "assignments_parquet": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+    "calibration_json": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "manifest_json": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de"
+  },
+  "base_run": "economic-atlas/runs/A6_v2",
+  "code_sha256": "c4cf5038c2481dc32625ce65c029949bb45e73c0d5144fb8269d19ab4b8d7be5",
+  "command": "economic-atlas/src/a6_holdout_bootstrap.py --panel economic-atlas/data/panel_v1.parquet --base-run economic-atlas/runs/A6_v2 --outdir economic-atlas/output/A6_bootstrap_20260928 --n-bootstrap 2000 --seed 20260928",
+  "created_at": "2026-09-28T10:46:59.293690+00:00",
+  "expected_rows": 22752,
+  "gate": "A6_holdout_bootstrap",
+  "gate_pass": false,
+  "inputs": {
+    "dependencies": {
+      "a6_holdout_sensitivity.py": "11638c9c8deb69ed8a991d4a535f83708ee7feba902795281b344d03a59d3a12",
+      "a6_identities.py": "f630b5a998925de90b1f3f40f33f32f1a9f873e2c9c886de06b29116b9f78f4d",
+      "a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474"
+    },
+    "panel": {
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "limitations": [
+    "Sensitivity to margin factor is not true-event error rate.",
+    "No claims of true economic births; gate_pass false.",
+    "Thresholds frozen from 2023 calibration; never refit on 2024."
+  ],
+  "m_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "n_bootstrap": 2000,
+  "n_clusters": 1896,
+  "seed": 20260928,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "bootstrap_ci": {
+    "0.75": {
+      "changed_either": {
+        "mean": 0.07484548611111111,
+        "p2.5": 0.06988396624472573,
+        "p97.5": 0.07999406645569619,
+        "std": 0.002557405536903624
+      },
+      "changed_id": {
+        "mean": 0.049663568037974684,
+        "p2.5": 0.046236594585091426,
+        "p97.5": 0.05313928445850914,
+        "std": 0.0017378402577449856
+      },
+      "changed_status": {
+        "mean": 0.07484548611111111,
+        "p2.5": 0.06988396624472573,
+        "p97.5": 0.07999406645569619,
+        "std": 0.002557405536903624
+      },
+      "method": "resample municipalities with replacement, take ALL 12 months per sampled municipality",
+      "n_bootstrap": 2000,
+      "n_clusters": 1896,
+      "seed": 20260928
+    },
+    "1.25": {
+      "changed_either": {
+        "mean": 0.8921850167018285,
+        "p2.5": 0.8902514064697609,
+        "p97.5": 0.8942071026722925,
+        "std": 0.0010115863812960426
+      },
+      "changed_id": {
+        "mean": 0.8921850167018285,
+        "p2.5": 0.8902514064697609,
+        "p97.5": 0.8942071026722925,
+        "std": 0.0010115863812960426
+      },
+      "changed_status": {
+        "mean": 0.8921850167018285,
+        "p2.5": 0.8902514064697609,
+        "p97.5": 0.8942071026722925,
+        "std": 0.0010115863812960426
+      },
+      "method": "resample municipalities with replacement, take ALL 12 months per sampled municipality",
+      "n_bootstrap": 2000,
+      "n_clusters": 1896,
+      "seed": 20260928
+    }
+  },
+  "expected_rows": 22752,
+  "frozen_calibration": {
+    "candidate_margin": 0.7187007760980421,
+    "overlap_threshold": 0.27716275979336036,
+    "resemblance_floor": 0.17395474720266485,
+    "source": "economic-atlas/runs/A6_v2"
+  },
+  "gate": "A6_holdout_bootstrap",
+  "gate_pass": false,
+  "gate_pass_reason": "sensitivity to margin factor is not true-event error rate; no economic claims",
+  "holdout_bootstrap": {
+    "0.75": {
+      "margin": 0.5390255820735316,
+      "margin_factor": 0.75,
+      "muni_distribution": {
+        "0": 1271,
+        "1": 60,
+        "2": 55,
+        "3": 510
+      },
+      "overall": {
+        "count_changed_either": 1700,
+        "count_changed_id": 1128,
+        "count_changed_status": 1700,
+        "frac_changed_either": 0.07471870604781997,
+        "frac_changed_id": 0.049578059071729956,
+        "frac_changed_status": 0.07471870604781997,
+        "n": 22752
+      },
+      "per_month": {
+        "2024-01": {
+          "count_changed_either": 572,
+          "count_changed_id": 0,
+          "count_changed_status": 572,
+          "n": 1896
+        },
+        "2024-02": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-03": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-04": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-05": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-06": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-07": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-08": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-09": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-10": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-11": {
+          "count_changed_either": 574,
+          "count_changed_id": 574,
+          "count_changed_status": 574,
+          "n": 1896
+        },
+        "2024-12": {
+          "count_changed_either": 554,
+          "count_changed_id": 554,
+          "count_changed_status": 554,
+          "n": 1896
+        }
+      }
+    },
+    "1.0": {
+      "margin": 0.7187007760980421,
+      "margin_factor": 1.0,
+      "muni_distribution": {
+        "0": 1896
+      },
+      "overall": {
+        "count_changed_either": 0,
+        "count_changed_id": 0,
+        "count_changed_status": 0,
+        "frac_changed_either": 0.0,
+        "frac_changed_id": 0.0,
+        "frac_changed_status": 0.0,
+        "n": 22752
+      },
+      "per_month": {
+        "2024-01": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-02": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-03": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-04": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-05": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-06": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-07": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-08": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-09": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-10": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-11": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        },
+        "2024-12": {
+          "count_changed_either": 0,
+          "count_changed_id": 0,
+          "count_changed_status": 0,
+          "n": 1896
+        }
+      }
+    },
+    "1.25": {
+      "margin": 0.8983759701225525,
+      "margin_factor": 1.25,
+      "muni_distribution": {
+        "10": 538,
+        "11": 1301,
+        "12": 32,
+        "9": 25
+      },
+      "overall": {
+        "count_changed_either": 20300,
+        "count_changed_id": 20300,
+        "count_changed_status": 20300,
+        "frac_changed_either": 0.8922292545710268,
+        "frac_changed_id": 0.8922292545710268,
+        "frac_changed_status": 0.8922292545710268,
+        "n": 22752
+      },
+      "per_month": {
+        "2024-01": {
+          "count_changed_either": 572,
+          "count_changed_id": 572,
+          "count_changed_status": 572,
+          "n": 1896
+        },
+        "2024-02": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-03": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-04": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-05": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-06": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-07": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-08": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-09": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-10": {
+          "count_changed_either": 1896,
+          "count_changed_id": 1896,
+          "count_changed_status": 1896,
+          "n": 1896
+        },
+        "2024-11": {
+          "count_changed_either": 1322,
+          "count_changed_id": 1322,
+          "count_changed_status": 1322,
+          "n": 1896
+        },
+        "2024-12": {
+          "count_changed_either": 1342,
+          "count_changed_id": 1342,
+          "count_changed_status": 1342,
+          "n": 1896
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Sensitivity to margin factor is not true-event error rate.",
+    "No claims of true economic births; gate_pass false.",
+    "Thresholds frozen from 2023 calibration; never refit on 2024."
+  ],
+  "n_clusters": 1896
+}
