@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-09-28",
+  "checked_on": "Mac /Users/sergey/projects/sberindex-research",
+  "method": "independent recalculation from archived CSV/Parquet; A6 tracker replay with frozen 2023 calibration; no Prophet refit",
+  "atlas_a6": {
+    "source_action_id": "act_c475e17b2a584b9a",
+    "gate_pass": false,
+    "holdout_year": 2024,
+    "holdout_rows": 22752,
+    "margin_factors": [0.75, 1.0, 1.25],
+    "ambiguous_rows": [1324, 2452, 18960],
+    "status_or_identity_changed_vs_base": [1700, 0, 20300],
+    "baseline_exact_reproduction": true,
+    "paired_2023_draws": 4800,
+    "paired_gap_q05": 0.7214357356621658,
+    "archived_margin": 0.7187007760980421,
+    "paired_gap_le_margin_share": 0.042291666666666665,
+    "external_salary_exploratory": {
+      "n_territories": 1871,
+      "n_regions": 72,
+      "n_monthly_label_0": 1324,
+      "n_monthly_label_1": 547,
+      "salary_2024_median_label_0": 54765.7,
+      "salary_2024_median_label_1": 84372.8,
+      "within_region_log_salary24_label1_beta_logpop_control": 0.066749,
+      "effect_percent": 6.903,
+      "region_bootstrap_95_percent_ci": [3.11, 11.167],
+      "beta_after_salary23_logpop_region_control": -0.00543,
+      "effect_after_salary23_percent": -0.542,
+      "region_bootstrap_after_salary23_95_percent_ci": [-1.084, 0.063],
+      "bootstrap_regions_repeats": 1000,
+      "seed": 20260928,
+      "limitation": "exploratory cross-sectional association; label 1 had ambiguous identity in December 2024; no causal or stable-type claim"
+    },
+    "input_sha256": {
+      "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+      "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+      "paired_draws": "24a6c0f0a42ba849af56bbcf912f81998a5b6f57a9eab4d5c9863add33143cda",
+      "salary": "f9a8956ad68c7ec81fac7b2e61ac2494b02b489887ce06204621b5dff29e62f2",
+      "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+      "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+    }
+  },
+  "radar_r8": {
+    "source_action_id": "act_70e2fe4a16ac4e3d",
+    "gate_pass": false,
+    "n_paired_rows": 171150,
+    "n_territories": 2061,
+    "n_series": 12366,
+    "n_series_origin_tasks": 73524,
+    "prophet_mae": 731.3863030799444,
+    "lastavailable_mae": 880.2129593923459,
+    "seasonal_naive_mae": 1280.4203856266433,
+    "paired_gain_mae": 148.82665631240152,
+    "gain_excluding_december_2024": 33.825,
+    "september_2024_gain": -137.905,
+    "territory_cluster_bootstrap_95_ci": [143.74588412593192, 154.15145516011077],
+    "target_month_block_bootstrap_95_ci": [-20.338921502954356, 356.15128442865813],
+    "bootstrap_month_repeats": 10000,
+    "bootstrap_seed": 20260928,
+    "historical_news_eligible": 0,
+    "historical_news_total": 64,
+    "historical_news_effect": null,
+    "release_lag_months": 2,
+    "release_lag_kind": "synthetic_assumption",
+    "input_sha256": {
+      "predictions": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6"
+    },
+    "limitation": "retrospective latest-vintage result; only six target months; month-block interval includes zero; TSFM comparison not completed"
+  }
+}
