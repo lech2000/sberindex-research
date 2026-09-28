@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-28T06:59:01.239358+00:00",
+  "source_run": "curator-2026092722",
+  "corpus_results": [
+    "76/14313",
+    "77/14314"
+  ],
+  "radar_material": "mat_sber_r8_full_resume_20260928",
+  "curator_material": "mat_sber_curator_r8_full_resume_20260928",
+  "closed_child_action": "act_b8c32ef28bc34c59",
+  "open_parent_action": "act_70e2fe4a16ac4e3d",
+  "computation_complete": true,
+  "scientific_R8_complete": false,
+  "full_resume_log": "../../shock-radar/runs/R8_prophet_full_20260927/full-resume.log.gz",
+  "log_integrity": "gzip decompressed SHA matches original runtime log, full record 73524/73524 in log",
+  "review": "../../shock-radar/runs/R8_prophet_full_20260927/operator_review.json"
+}
