@@ -7,9 +7,21 @@
     "gate_pass": false,
     "holdout_year": 2024,
     "holdout_rows": 22752,
-    "margin_factors": [0.75, 1.0, 1.25],
-    "ambiguous_rows": [1324, 2452, 18960],
-    "status_or_identity_changed_vs_base": [1700, 0, 20300],
+    "margin_factors": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "ambiguous_rows": [
+      1324,
+      2452,
+      18960
+    ],
+    "status_or_identity_changed_vs_base": [
+      1700,
+      0,
+      20300
+    ],
     "baseline_exact_reproduction": true,
     "paired_2023_draws": 4800,
     "paired_gap_q05": 0.7214357356621658,
@@ -24,10 +36,16 @@
       "salary_2024_median_label_1": 84372.8,
       "within_region_log_salary24_label1_beta_logpop_control": 0.066749,
       "effect_percent": 6.903,
-      "region_bootstrap_95_percent_ci": [3.11, 11.167],
+      "region_bootstrap_95_percent_ci": [
+        3.11,
+        11.167
+      ],
       "beta_after_salary23_logpop_region_control": -0.00543,
       "effect_after_salary23_percent": -0.542,
-      "region_bootstrap_after_salary23_95_percent_ci": [-1.084, 0.063],
+      "region_bootstrap_after_salary23_95_percent_ci": [
+        -1.084,
+        0.063
+      ],
       "bootstrap_regions_repeats": 1000,
       "seed": 20260928,
       "limitation": "exploratory cross-sectional association; label 1 had ambiguous identity in December 2024; no causal or stable-type claim"
@@ -54,8 +72,14 @@
     "paired_gain_mae": 148.82665631240152,
     "gain_excluding_december_2024": 33.825,
     "september_2024_gain": -137.905,
-    "territory_cluster_bootstrap_95_ci": [143.74588412593192, 154.15145516011077],
-    "target_month_block_bootstrap_95_ci": [-20.338921502954356, 356.15128442865813],
+    "territory_cluster_bootstrap_95_ci": [
+      143.74588412593192,
+      154.15145516011077
+    ],
+    "target_month_block_bootstrap_95_ci": [
+      -20.338921502954356,
+      356.15128442865813
+    ],
     "bootstrap_month_repeats": 10000,
     "bootstrap_seed": 20260928,
     "historical_news_eligible": 0,
@@ -67,5 +91,61 @@
       "predictions": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6"
     },
     "limitation": "retrospective latest-vintage result; only six target months; month-block interval includes zero; TSFM comparison not completed"
+  },
+  "atlas_a6_bootstrap_20260928": {
+    "code_commit": "3ba8b2c",
+    "n_municipalities": 1896,
+    "n_rows_2024": 22752,
+    "m075_changed_either": 1700,
+    "m075_changed_either_fraction": 0.07471870604781997,
+    "m075_municipality_bootstrap_ci95": [
+      0.06988396624472573,
+      0.07999406645569619
+    ],
+    "m125_changed_either": 20300,
+    "m125_changed_either_fraction": 0.8922292545710268,
+    "m125_municipality_bootstrap_ci95": [
+      0.8902514064697609,
+      0.8942071026722925
+    ],
+    "gate_pass": false,
+    "metrics_path": "docs/evidence/a6-bootstrap-20260928-metrics.json",
+    "manifest_path": "docs/evidence/a6-bootstrap-20260928-manifest.json"
+  },
+  "radar_r8_deterministic_20260928": {
+    "code_commit": "197d9d7",
+    "n_paired_rows": 171150,
+    "n_series_origin_tasks": 73524,
+    "model_revision": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+    "seed": 20260928,
+    "mae": {
+      "chronos": 939.0617606977953,
+      "prophet": 731.3863030799444,
+      "lastavailable": 880.2129593923459,
+      "seasonal_naive": 1280.4203856266433
+    },
+    "benefit_chronos_vs_prophet": -207.67545761785092,
+    "month_block_ci95_chronos_vs_prophet": [
+      -516.6638201111735,
+      33.69728605795743
+    ],
+    "benefit_chronos_vs_lastavailable": -58.84880130544936,
+    "month_block_ci95_chronos_vs_lastavailable": [
+      -149.2200666217886,
+      20.21632026580012
+    ],
+    "future_mutation_probe_passed": true,
+    "future_mutation_max_diff": 0.0,
+    "repeat_max_diff": 0.0,
+    "computational_status": "PASS",
+    "gate_pass": false,
+    "metrics_path": "docs/evidence/r8-tsfm-deterministic-20260928-metrics.json",
+    "audit_path": "docs/evidence/r8-tsfm-deterministic-20260928-audit.json",
+    "monthblock_path": "docs/evidence/r8-monthblock-deterministic-20260928-metrics.json",
+    "limitations": [
+      "six target-month blocks",
+      "two-month data release lag is an assumption",
+      "historical vintage unavailable"
+    ]
   }
 }

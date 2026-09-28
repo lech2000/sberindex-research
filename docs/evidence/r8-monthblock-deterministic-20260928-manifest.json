@@ -1,0 +1,45 @@
+{
+ "run_id": "R8-monthblock-compare",
+ "input": {
+  "prophet_run_dir": "/Users/sergey/projects/sberindex-research/shock-radar/runs/R8_prophet_full_20260927",
+  "tsfm_run_dir": "/Users/sergey/projects/sberindex-research/shock-radar/output/R8_tsfm_deterministic_20260928",
+  "prophet_predictions_sha256": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+  "tsfm_predictions_sha256": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676",
+  "expected_mask_rows": 171150
+ },
+ "join": {
+  "keys": [
+   "territory_id",
+   "category",
+   "origin",
+   "target",
+   "horizon"
+  ],
+  "n_joined": 171150,
+  "strict_exact_match": true
+ },
+ "causal": {
+  "release_lag_months": 2,
+  "note": "2-month lag is an assumption until confirmed"
+ },
+ "outputs": [
+  "metrics.json",
+  "manifest.json"
+ ],
+ "provenance": {
+  "run_utc": "2026-09-28T11:43:36+00:00",
+  "command": "shock-radar/src/r8_monthblock_compare.py --prophet-run shock-radar/runs/R8_prophet_full_20260927 --tsfm-run shock-radar/output/R8_tsfm_deterministic_20260928 --outdir shock-radar/output/R8_monthblock_deterministic_20260928 --n-bootstrap 10000 --seed 20260928",
+  "code_sha256": "693d7181826deea4873a9a533d667d1a5b44d825a84cf9872b14d40ef8fd6aed",
+  "prophet_run_sha256": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+  "tsfm_run_sha256": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "2.3.3",
+   "pyarrow": "25.0.1"
+  },
+  "seed": 20260928,
+  "n_bootstrap_month_block": 10000,
+  "n_bootstrap_municipality": 2000
+ }
+}

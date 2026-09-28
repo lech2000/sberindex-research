@@ -1,0 +1,49 @@
+{
+ "run_id": "R8-tsfm-paired",
+ "status": "PASS",
+ "seed": 20260928,
+ "probe_seed": 42,
+ "model": {
+  "estimator": "Chronos-T5-tiny",
+  "model_id": "amazon/chronos-t5-tiny",
+  "model_revision_requested": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+  "model_revision_actual": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+  "mode": "zero-shot",
+  "frozen_weights": true,
+  "no_training_on_target": true,
+  "device": "mps"
+ },
+ "causal": {
+  "release_lag_months": 2,
+  "train_month_max": "origin - 2",
+  "target": "origin + h",
+  "calendar_ds": "real month timestamps, no gap compression",
+  "note": "2-month lag is an assumption until confirmed by source"
+ },
+ "outputs": [
+  "predictions.parquet",
+  "metrics.json",
+  "audit.json",
+  "manifest.json",
+  "checkpoints/",
+  "fingerprint.json",
+  "progress.json"
+ ],
+ "provenance": {
+  "run_utc": "2026-09-28T11:31:55+00:00",
+  "command": "shock-radar/src/r8_tsfm_paired.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_prophet_full_20260927 --outdir shock-radar/output/R8_tsfm_deterministic_20260928 --model-revision 29d808298f1a62493e7b9a5e08529d0d930fa189 --device mps --batch-size 64 --max-series 0 --seed 20260928",
+  "code_sha256": "29f0b7209c9b1c25106b45100954947448b10c7cf6e6ca2f5a7647a7cb125c5c",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "2.3.3",
+   "pyarrow": "25.0.1",
+   "torch": "2.14.0",
+   "chronos": "2.3.2",
+   "transformers": "5.17.0"
+  },
+  "device": "mps",
+  "model_revision_actual": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+  "seed": 20260928
+ }
+}
