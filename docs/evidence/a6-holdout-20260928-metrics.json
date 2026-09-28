@@ -1,0 +1,421 @@
+{
+  "frozen_calibration": {
+    "candidate_margin": 0.7187007760980421,
+    "overlap_threshold": 0.27716275979336036,
+    "resemblance_floor": 0.17395474720266485,
+    "source": "economic-atlas/runs/A6_v2"
+  },
+  "gate": "A6_holdout_sensitivity",
+  "gate_pass": false,
+  "gate_pass_reason": "holdout sensitivity; no economic claims; sensitivity to margin factor only",
+  "holdout_sensitivity": {
+    "0.75": {
+      "margin": 0.5390255820735316,
+      "margin_factor": 0.75,
+      "mean_id_agreement_vs_base": 0.9504219409282699,
+      "mean_status_agreement_vs_base": 0.92528129395218,
+      "n_2024": 22752,
+      "per_month": {
+        "2024-01": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1324,
+          "status_agree_rate": 0.6983122362869199
+        },
+        "2024-02": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-03": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-04": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-05": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-06": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-07": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-08": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-09": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-10": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-11": {
+          "id_agree": 1322,
+          "id_agree_rate": 0.6972573839662447,
+          "n": 1896,
+          "status_agree": 1322,
+          "status_agree_rate": 0.6972573839662447
+        },
+        "2024-12": {
+          "id_agree": 1342,
+          "id_agree_rate": 0.7078059071729957,
+          "n": 1896,
+          "status_agree": 1342,
+          "status_agree_rate": 0.7078059071729957
+        }
+      },
+      "status_distribution_2024": {
+        "2024-01": {
+          "ambiguous": 1324,
+          "continuing": 572
+        },
+        "2024-02": {
+          "continuing": 564,
+          "reemergence": 1332
+        },
+        "2024-03": {
+          "continuing": 1896
+        },
+        "2024-04": {
+          "continuing": 1896
+        },
+        "2024-05": {
+          "continuing": 1896
+        },
+        "2024-06": {
+          "continuing": 1896
+        },
+        "2024-07": {
+          "continuing": 1896
+        },
+        "2024-08": {
+          "continuing": 1896
+        },
+        "2024-09": {
+          "continuing": 1896
+        },
+        "2024-10": {
+          "continuing": 1896
+        },
+        "2024-11": {
+          "continuing": 1896
+        },
+        "2024-12": {
+          "continuing": 1896
+        }
+      }
+    },
+    "1.0": {
+      "margin": 0.7187007760980421,
+      "margin_factor": 1.0,
+      "mean_id_agreement_vs_base": 1.0,
+      "mean_status_agreement_vs_base": 1.0,
+      "n_2024": 22752,
+      "per_month": {
+        "2024-01": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-02": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-03": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-04": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-05": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-06": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-07": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-08": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-09": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-10": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-11": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        },
+        "2024-12": {
+          "id_agree": 1896,
+          "id_agree_rate": 1.0,
+          "n": 1896,
+          "status_agree": 1896,
+          "status_agree_rate": 1.0
+        }
+      },
+      "status_distribution_2024": {
+        "2024-01": {
+          "ambiguous": 1324,
+          "reemergence": 572
+        },
+        "2024-02": {
+          "continuing": 564,
+          "reemergence": 1332
+        },
+        "2024-03": {
+          "continuing": 1896
+        },
+        "2024-04": {
+          "continuing": 1896
+        },
+        "2024-05": {
+          "continuing": 1896
+        },
+        "2024-06": {
+          "continuing": 1896
+        },
+        "2024-07": {
+          "continuing": 1896
+        },
+        "2024-08": {
+          "continuing": 1896
+        },
+        "2024-09": {
+          "continuing": 1896
+        },
+        "2024-10": {
+          "continuing": 1896
+        },
+        "2024-11": {
+          "ambiguous": 574,
+          "continuing": 1322
+        },
+        "2024-12": {
+          "ambiguous": 554,
+          "continuing": 1342
+        }
+      }
+    },
+    "1.25": {
+      "margin": 0.8983759701225525,
+      "margin_factor": 1.25,
+      "mean_id_agreement_vs_base": 0.10777074542897329,
+      "mean_status_agreement_vs_base": 0.10777074542897329,
+      "n_2024": 22752,
+      "per_month": {
+        "2024-01": {
+          "id_agree": 1324,
+          "id_agree_rate": 0.6983122362869199,
+          "n": 1896,
+          "status_agree": 1324,
+          "status_agree_rate": 0.6983122362869199
+        },
+        "2024-02": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-03": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-04": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-05": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-06": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-07": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-08": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-09": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-10": {
+          "id_agree": 0,
+          "id_agree_rate": 0.0,
+          "n": 1896,
+          "status_agree": 0,
+          "status_agree_rate": 0.0
+        },
+        "2024-11": {
+          "id_agree": 574,
+          "id_agree_rate": 0.3027426160337553,
+          "n": 1896,
+          "status_agree": 574,
+          "status_agree_rate": 0.3027426160337553
+        },
+        "2024-12": {
+          "id_agree": 554,
+          "id_agree_rate": 0.2921940928270042,
+          "n": 1896,
+          "status_agree": 554,
+          "status_agree_rate": 0.2921940928270042
+        }
+      },
+      "status_distribution_2024": {
+        "2024-01": {
+          "ambiguous": 1896
+        },
+        "2024-02": {
+          "ambiguous": 1896
+        },
+        "2024-03": {
+          "ambiguous": 1896
+        },
+        "2024-04": {
+          "birth": 1896
+        },
+        "2024-05": {
+          "ambiguous": 1896
+        },
+        "2024-06": {
+          "ambiguous": 1896
+        },
+        "2024-07": {
+          "ambiguous": 1896
+        },
+        "2024-08": {
+          "ambiguous": 1896
+        },
+        "2024-09": {
+          "birth": 1896
+        },
+        "2024-10": {
+          "ambiguous": 1896
+        },
+        "2024-11": {
+          "ambiguous": 1896
+        },
+        "2024-12": {
+          "ambiguous": 1896
+        }
+      }
+    }
+  },
+  "limitations": [
+    "No claims of true economic births; gate_pass false.",
+    "Thresholds frozen from 2023 calibration; never refit on 2024.",
+    "First bounded step; no salary, no synthetic event metrics."
+  ],
+  "reproduction": {
+    "m_1_exact_match": true,
+    "n_base_2024": 22752
+  }
+}

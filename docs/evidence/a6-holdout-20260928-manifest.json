@@ -1,0 +1,34 @@
+{
+  "base_run": "economic-atlas/runs/A6_v2",
+  "code_sha256": "11638c9c8deb69ed8a991d4a535f83708ee7feba902795281b344d03a59d3a12",
+  "command": "economic-atlas/src/a6_holdout_sensitivity.py --panel economic-atlas/data/panel_v1.parquet --base-run economic-atlas/runs/A6_v2 --outdir economic-atlas/output/A6_holdout_20260928",
+  "created_at": "2026-09-28T10:18:35.331391+00:00",
+  "gate": "A6_holdout_sensitivity",
+  "gate_pass": false,
+  "inputs": {
+    "base_run": {
+      "assignments_sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+      "calibration_sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+      "manifest_sha256": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de",
+      "path": "economic-atlas/runs/A6_v2"
+    },
+    "panel": {
+      "rows": 273024,
+      "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    }
+  },
+  "m_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "metrics_output_sha256": "aecaa008b1440f61ca161f5bc96b6ae082a2f911c0ae4a9f1fc4aa4baa310c3a",
+  "seed": 20260926,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}
