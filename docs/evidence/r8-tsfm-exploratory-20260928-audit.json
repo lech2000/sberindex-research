@@ -1,0 +1,48 @@
+{
+ "run_id": "R8-tsfm-paired",
+ "status": "PASS",
+ "missing_and_failures": [],
+ "missing_checkpoints": [],
+ "no_invented_forecasts": true,
+ "train_eval": {
+  "release_lag_months": 2,
+  "train_filter": "observation month <= origin - 2",
+  "target": "origin + h",
+  "calendar_ds": "actual month timestamps, gaps preserved",
+  "model": "zero-shot Chronos-T5-tiny (frozen weights)"
+ },
+ "provenance": {
+  "run_utc": "2026-09-28T10:22:07+00:00",
+  "command": "shock-radar/src/r8_tsfm_paired.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_prophet_full_20260927 --outdir shock-radar/output/R8_tsfm_full_20260928 --model-revision 29d808298f1a62493e7b9a5e08529d0d930fa189 --device mps --batch-size 64 --max-series 0",
+  "code_sha256": "e64f4aa2659be65fc29608932f395f209f1fc88420cbed51e165119dc1c87072",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "2.3.3",
+   "pyarrow": "25.0.1",
+   "torch": "2.14.0",
+   "chronos": "2.3.2",
+   "transformers": "5.17.0"
+  },
+  "device": "mps",
+  "model_revision_actual": "29d808298f1a62493e7b9a5e08529d0d930fa189"
+ },
+ "leak_controls": {
+  "future_mutation_probe": {
+   "series": [
+    "1",
+    "Все категории"
+   ],
+   "origin": "2024-06",
+   "horizons": [
+    1,
+    2
+   ],
+   "last_allowed_obs": "2024-04",
+   "mutated": "all raw observations after 2024-04 by +1e+06",
+   "max_abs_forecast_diff_after_mutation": 655.001953125,
+   "max_abs_forecast_diff_repeat_fit": 842.14453125,
+   "passed": false
+  }
+ }
+}
