@@ -30,6 +30,7 @@ import hashlib
 import json
 import math
 import os
+import random as _py_random
 import sys
 import time
 
@@ -51,6 +52,8 @@ PRED_TOL = 1e-9
 MUTATION_DELTA = 1e6
 DEFAULT_BATCH_SIZE = 64
 DEFAULT_DEVICE = "cpu"
+DEFAULT_SEED = 20260928
+PROBE_SEED = 42
 
 PAIRED_REQUIRED_COLUMNS = (
     "territory_id", "category", "origin", "horizon", "target", "actual",
@@ -133,6 +136,13 @@ def _code_sha256():
         return _sha256(os.path.abspath(__file__))
     except Exception:
         return None
+
+
+def _batch_seed(global_seed, batch_index):
+    """Derive a deterministic 32-bit seed from global seed + batch index."""
+    payload = ("%d:%d" % (global_seed, batch_index)).encode("utf-8")
+    digest = hashlib.sha256(payload).digest()
+    return int.from_bytes(digest[:4], "big")
 
 
 def _versions():
@@ -406,7 +416,7 @@ def _paired_file_sha256(paired_run_dir):
 
 
 def compute_fingerprint(raw_path, paired_run_dir, model_id, model_revision,
-                        device, release_lag, batch_size):
+                        device, release_lag, batch_size, seed):
     return {
         "raw_sha256": _sha256(raw_path),
         "paired_sha256": _paired_file_sha256(paired_run_dir),
@@ -418,6 +428,7 @@ def compute_fingerprint(raw_path, paired_run_dir, model_id, model_revision,
         "horizons": list(HORIZONS),
         "min_train_points": MIN_TRAIN_POINTS,
         "batch_size": int(batch_size),
+        "seed": int(seed),
     }
 
 
@@ -700,12 +711,17 @@ def run_single_fit(tid, cat, origin_m, raw_series, horizons, pipe, device,
 # ---------------------------------------------------------------------------
 
 def run_future_mutation_control(obs, fits_done, pipe, device, max_horizon,
-                                predictor=None):
+                                predictor=None, probe_seed=None):
     """Verify that mutating future (post-cutoff) inputs does not change
     past predictions. This is the key causal integrity check.
 
     Uses one fitted origin; mutates all raw observations AFTER cutoff by
     +MUTATION_DELTA; re-runs inference; checks prediction equality.
+
+    When probe_seed is set, re-seeds random, numpy (if available), and
+    torch (if available) before each of the three inference calls
+    (baseline, mutated, repeat) so that stochastic inference is
+    controlled and the probe measures causal leakage only.
     """
     for (tid, cat, origin_m) in sorted(fits_done.keys()):
         raw_series = obs.get((tid, cat))
@@ -719,10 +735,20 @@ def run_future_mutation_control(obs, fits_done, pipe, device, max_horizon,
         context_vals = [float(v) for _, v in train]
         max_h = max(horizons) if horizons else max(HORIZONS)
 
+        # --- baseline with probe re-seed ---
+        if probe_seed is not None:
+            _py_random.seed(probe_seed)
+            try:
+                import numpy as _np
+                _np.random.seed(probe_seed & 0xFFFFFFFF)
+            except ImportError:
+                pass
         if predictor is not None:
             a1 = predictor(context_vals, max_h)
         else:
             import torch
+            if probe_seed is not None:
+                torch.manual_seed(probe_seed)
             ctx = torch.tensor(context_vals, dtype=torch.float32)
             r1 = tsfm_predict_batch(pipe, [ctx], max_h, device)
             a1 = r1[0] if r1 else [None] * max_h
@@ -737,24 +763,47 @@ def run_future_mutation_control(obs, fits_done, pipe, device, max_horizon,
         m_train = causal_train_window(mutated[(tid, cat)], origin_m)
         m_context = [float(v) for _, v in m_train]
 
+        # --- mutated with probe re-seed ---
+        if probe_seed is not None:
+            _py_random.seed(probe_seed)
+            try:
+                import numpy as _np
+                _np.random.seed(probe_seed & 0xFFFFFFFF)
+            except ImportError:
+                pass
         if predictor is not None:
             b = predictor(m_context, max_h)
         else:
             import torch
+            if probe_seed is not None:
+                torch.manual_seed(probe_seed)
             m_ctx = torch.tensor(m_context, dtype=torch.float32)
             r2 = tsfm_predict_batch(pipe, [m_ctx], max_h, device)
             b = r2[0] if r2 else [None] * max_h
+
+        # Assert causal context equality: mutation must not affect
+        # the allowed-history portion of context
+        causal_context_equal = (context_vals == m_context)
 
         max_diff = 0.0
         for x, y in zip(a1, b):
             if x is not None and y is not None:
                 max_diff = max(max_diff, abs(x - y))
 
-        # Also check determinism: same input -> same output
+        # --- repeat with probe re-seed ---
+        if probe_seed is not None:
+            _py_random.seed(probe_seed)
+            try:
+                import numpy as _np
+                _np.random.seed(probe_seed & 0xFFFFFFFF)
+            except ImportError:
+                pass
         if predictor is not None:
             a2 = predictor(context_vals, max_h)
         else:
             import torch
+            if probe_seed is not None:
+                torch.manual_seed(probe_seed)
             ctx2 = torch.tensor(context_vals, dtype=torch.float32)
             r3 = tsfm_predict_batch(pipe, [ctx2], max_h, device)
             a2 = r3[0] if r3 else [None] * max_h
@@ -772,11 +821,15 @@ def run_future_mutation_control(obs, fits_done, pipe, device, max_horizon,
             "mutated": ("all raw observations after %s by +%g"
                         % (int_to_ym(last_allowed_month(origin_m)),
                            MUTATION_DELTA)),
+            "probe_seed": probe_seed,
+            "causal_context_equal": causal_context_equal,
             "max_abs_forecast_diff_after_mutation": max_diff,
             "max_abs_forecast_diff_repeat_fit": det_diff,
-            "passed": det_diff < PRED_TOL and max_diff < PRED_TOL,
+            "passed": (causal_context_equal
+                       and det_diff < PRED_TOL and max_diff < PRED_TOL),
         }
-    return {"passed": None, "note": "no successful fit available to probe"}
+    return {"passed": None, "probe_seed": probe_seed,
+            "note": "no successful fit available to probe"}
 
 
 # ---------------------------------------------------------------------------
@@ -785,7 +838,7 @@ def run_future_mutation_control(obs, fits_done, pipe, device, max_horizon,
 
 def aggregate_metrics(paired_rows, outdir, tasks, elapsed_total,
                       run_start_utc, actual_revision, device,
-                      expected_mask_rows=FULL_R8_MASK):
+                      expected_mask_rows=FULL_R8_MASK, seed=DEFAULT_SEED):
     """Collect all checkpoint results and compute aggregated metrics.
 
     Returns (metrics_dict, audit_dict, all_results, status).
@@ -927,6 +980,7 @@ def aggregate_metrics(paired_rows, outdir, tasks, elapsed_total,
         "versions": _versions(),
         "device": device,
         "model_revision_actual": actual_revision,
+        "seed": seed,
     }
 
     counts = {
@@ -1024,9 +1078,13 @@ def _write_predictions(pred_rows, out):
 
 def run(raw_path, paired_run_dir, outdir, model_revision, device,
         batch_size, max_series, resume=False, predictor=None,
-        _raw_rows=None, _paired_rows=None, _paired_info=None,
-        expected_mask_rows=FULL_R8_MASK):
+        seed=DEFAULT_SEED, _raw_rows=None, _paired_rows=None,
+        _paired_info=None, expected_mask_rows=FULL_R8_MASK):
     """Main batch run. predictor is injectable for self-check.
+
+    max_series limits how many NEW checkpoints to save in this invocation,
+    NOT batch membership or inference scope.  All tasks always enter the
+    fixed batch partition; only checkpoint saving is gated.
 
     _raw_rows, _paired_rows, _paired_info: direct data injection for
     self-check (bypasses parquet I/O entirely).
@@ -1042,7 +1100,8 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
 
     # --- fingerprint ---
     fp = compute_fingerprint(raw_path, paired_run_dir, model_id,
-                             model_revision, device, RELEASE_LAG, batch_size)
+                             model_revision, device, RELEASE_LAG, batch_size,
+                             seed)
 
     if resume:
         if not os.path.isdir(outdir):
@@ -1091,26 +1150,18 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
 
     # --- check completed ---
     completed_keys = list_completed_keys(outdir)
-    remaining = []
-    n_already_done = 0
-    for (tid, cat, origin_m) in tasks:
-        key = _ckpt_key(tid, cat, origin_ym=int_to_ym(origin_m))
-        if key in completed_keys:
-            n_already_done += 1
-        else:
-            remaining.append((tid, cat, origin_m))
+    n_already_done = sum(
+        1 for (tid, cat, origin_m) in tasks
+        if _ckpt_key(tid, cat, origin_ym=int_to_ym(origin_m))
+        in completed_keys)
 
     print("Tasks total: %d, already completed: %d, remaining: %d"
-          % (len(tasks), n_already_done, len(remaining)))
+          % (len(tasks), n_already_done, len(tasks) - n_already_done))
 
     if max_series is not None and max_series < 0:
         raise ValueError("max-series must be non-negative, got %d" % max_series)
     if max_series is not None and max_series == 0:
         max_series = None  # 0 means unlimited
-
-    n_to_run = len(remaining)
-    if max_series is not None:
-        n_to_run = min(n_to_run, max_series)
 
     # --- group paired rows by (series, origin) ---
     paired_by_so = {}
@@ -1119,93 +1170,115 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
             (r["territory_id"], r["category"]), {}
         ).setdefault(r["origin"], []).append(r)
 
-    # --- run fits (batched inference) ---
+    # --- run fits (deterministic batched inference) ---
+    # Fixed partition: build ALL model-requiring items from full tasks list,
+    # capped by max_series. Partition into stable batch_size chunks.
+    # Non-model failures (missing series, no horizons, contract, history) are
+    # saved immediately without affecting batch partition.
     max_horizon = max(HORIZONS)
     n_new_fits = 0
     n_new_failures = 0
 
-    # Group remaining tasks by (tid, cat) for batched inference
-    tasks_by_series = {}
-    for (tid, cat, origin_m) in remaining[:n_to_run]:
-        tasks_by_series.setdefault((tid, cat), []).append(origin_m)
-
-    # Build batch items: (tid, cat, origin_m, context_vals, horizons)
-    batch_items = []
-    for (tid, cat), origins in tasks_by_series.items():
+    # Build ALL model-requiring items from full tasks list.
+    # No skip of completed checkpoints, no max_series cap on membership.
+    # Non-model failures are saved immediately and don't enter batches.
+    all_batch_items = []
+    for (tid, cat, origin_m) in tasks:
+        origin_ym = int_to_ym(origin_m)
         raw_series = obs.get((tid, cat))
-        origin_ym_first = int_to_ym(origins[0])
         if raw_series is None:
-            for origin_m in origins:
-                result = {
-                    "status": "failed",
-                    "reason": "series_missing_in_raw",
-                    "horizons": [],
-                    "predictions": {},
-                }
-                save_checkpoint(outdir, tid, cat, int_to_ym(origin_m), result)
-                n_new_fits += 1
-                n_new_failures += 1
+            result = {
+                "status": "failed",
+                "reason": "series_missing_in_raw",
+                "horizons": [],
+                "predictions": {},
+            }
+            save_checkpoint(outdir, tid, cat, origin_ym, result)
+            n_new_fits += 1
+            n_new_failures += 1
             continue
-        for origin_m in origins:
-            origin_ym = int_to_ym(origin_m)
-            horizons = sorted({r["horizon"]
-                               for r in paired_by_so.get(
-                                   (tid, cat), {}).get(origin_m, [])})
-            if not horizons:
-                result = {
-                    "status": "failed",
-                    "reason": "no_paired_horizons",
-                    "horizons": [],
-                    "predictions": {},
-                }
-                save_checkpoint(outdir, tid, cat, origin_ym, result)
-                n_new_fits += 1
-                n_new_failures += 1
-                continue
-            sel_rows = paired_by_so[(tid, cat)][origin_m]
-            try:
-                validate_selected_raw_actuals(sel_rows, obs)
-            except PairedContractError as exc:
-                result = {
-                    "status": "failed",
-                    "reason": "raw_actual_contract",
-                    "error": str(exc),
-                    "horizons": horizons,
-                    "predictions": {},
-                }
-                save_checkpoint(outdir, tid, cat, origin_ym, result)
-                n_new_fits += 1
-                n_new_failures += 1
-                continue
-            train = causal_train_window(raw_series, origin_m)
-            if len(train) < MIN_TRAIN_POINTS:
-                result = {
-                    "status": "failed",
-                    "reason": "insufficient_history",
-                    "n_train_points": len(train),
-                    "min_required": MIN_TRAIN_POINTS,
-                    "horizons": horizons,
-                    "predictions": {},
-                }
-                save_checkpoint(outdir, tid, cat, origin_ym, result)
-                n_new_fits += 1
-                n_new_failures += 1
-                continue
-            context_vals = [float(v) for _, v in train]
-            batch_items.append(
-                (tid, cat, origin_m, context_vals, horizons))
+        horizons = sorted({r["horizon"]
+                           for r in paired_by_so.get(
+                               (tid, cat), {}).get(origin_m, [])})
+        if not horizons:
+            result = {
+                "status": "failed",
+                "reason": "no_paired_horizons",
+                "horizons": [],
+                "predictions": {},
+            }
+            save_checkpoint(outdir, tid, cat, origin_ym, result)
+            n_new_fits += 1
+            n_new_failures += 1
+            continue
+        sel_rows = paired_by_so[(tid, cat)][origin_m]
+        try:
+            validate_selected_raw_actuals(sel_rows, obs)
+        except PairedContractError as exc:
+            result = {
+                "status": "failed",
+                "reason": "raw_actual_contract",
+                "error": str(exc),
+                "horizons": horizons,
+                "predictions": {},
+            }
+            save_checkpoint(outdir, tid, cat, origin_ym, result)
+            n_new_fits += 1
+            n_new_failures += 1
+            continue
+        train = causal_train_window(raw_series, origin_m)
+        if len(train) < MIN_TRAIN_POINTS:
+            result = {
+                "status": "failed",
+                "reason": "insufficient_history",
+                "n_train_points": len(train),
+                "min_required": MIN_TRAIN_POINTS,
+                "horizons": horizons,
+                "predictions": {},
+            }
+            save_checkpoint(outdir, tid, cat, origin_ym, result)
+            n_new_fits += 1
+            n_new_failures += 1
+            continue
+        context_vals = [float(v) for _, v in train]
+        all_batch_items.append(
+            (tid, cat, origin_m, context_vals, horizons))
 
-    # Process batch items in chunks of batch_size
+    # Fixed partition: chunk all_batch_items into stable batch_size groups.
+    # Each chunk gets a deterministic seed derived from global seed + chunk index.
+    # If ALL items in a chunk already have ok checkpoints, skip the chunk.
+    # If ANY item needs inference, rerun the WHOLE chunk with the same seed
+    # and contexts; save only missing checkpoints; verify existing.
+    # max_series limits how many NEW checkpoints to save, not batch membership.
     n_batches = 0
-    for batch_start in range(0, len(batch_items), batch_size):
-        chunk = batch_items[batch_start:batch_start + batch_size]
+    new_saves_this_run = 0
+    for batch_idx in range(0, len(all_batch_items), batch_size):
+        chunk = all_batch_items[batch_idx:batch_idx + batch_size]
+        chunk_done = True
+        for tid, cat, origin_m, _, _ in chunk:
+            existing = load_checkpoint(outdir, tid, cat,
+                                       int_to_ym(origin_m))
+            if existing is None:
+                chunk_done = False
+                break
+        if chunk_done:
+            continue
+
         chunk_contexts = [item[3] for item in chunk]
+        batch_seed_val = _batch_seed(seed, batch_idx // batch_size)
+        _py_random.seed(batch_seed_val)
+        try:
+            import numpy as _np
+            _np.random.seed(batch_seed_val & 0xFFFFFFFF)
+        except ImportError:
+            pass
         t0 = time.monotonic()
         try:
             if predictor is not None:
                 yhat_list = predictor(chunk_contexts, max_horizon)
             else:
                 import torch
+                torch.manual_seed(batch_seed_val)
                 ctx_tensors = [torch.tensor(c, dtype=torch.float32)
                                for c in chunk_contexts]
                 raw_results = tsfm_predict_batch(
@@ -1243,28 +1316,48 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
                 "predictions": preds,
                 "runtime_s": elapsed,
             }
-            save_checkpoint(outdir, tid, cat, int_to_ym(origin_m), result)
-            n_new_fits += 1
-            if result["status"] != "ok":
-                n_new_failures += 1
+            existing_ck = load_checkpoint(
+                outdir, tid, cat, int_to_ym(origin_m))
+            if existing_ck is not None and existing_ck["status"] == "ok":
+                if existing_ck["predictions"] != preds:
+                    raise CheckpointIncompatible(
+                        "resume equivalence violated: checkpoint for "
+                        "%s/%s/%s predictions %r != recomputed %r"
+                        % (tid, cat, int_to_ym(origin_m),
+                           existing_ck["predictions"], preds))
+            else:
+                at_limit = (max_series is not None
+                            and new_saves_this_run >= max_series)
+                if not at_limit:
+                    save_checkpoint(outdir, tid, cat, int_to_ym(origin_m),
+                                    result)
+                    n_new_fits += 1
+                    new_saves_this_run += 1
+                    if result["status"] != "ok":
+                        n_new_failures += 1
         n_batches += 1
+        if max_series is not None and new_saves_this_run >= max_series:
+            break
 
     if n_batches > 0:
-        print("  batched inference: %d tasks in %d batches (batch_size=%d)"
-              % (len(batch_items), n_batches, batch_size))
+        print("  batched inference: %d model items in %d batches "
+              "(batch_size=%d, seed=%d)"
+              % (len(all_batch_items), n_batches, batch_size, seed))
 
-    # Save progress after all fits
+    # Save progress
+    n_total_done = sum(
+        1 for (tid, cat, origin_m) in tasks
+        if load_checkpoint(outdir, tid, cat, int_to_ym(origin_m)) is not None)
     if n_new_fits > 0:
         prog = {
-            "n_completed": n_already_done + n_new_fits,
+            "n_completed": n_total_done,
             "n_failures": n_new_failures,
             "n_total_tasks": len(tasks),
-            "last_fit": [tid, cat, int_to_ym(origin_m)]
-            if batch_items else None,
+            "seed": seed,
         }
         save_progress(outdir, prog)
-        print("  progress: %d/%d fits done (%d new failures)"
-              % (prog["n_completed"], len(tasks), n_new_failures))
+        print("  progress: %d/%d fits done (%d new this run)"
+              % (n_total_done, len(tasks), n_new_fits))
 
     elapsed_total = time.monotonic() - t_start
 
@@ -1275,13 +1368,14 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
         if ck is not None and ck["status"] == "ok":
             fits_done[(tid, cat, origin_m)] = ck["horizons"]
     mutation_ctrl = run_future_mutation_control(
-        obs, fits_done, pipe, device, max_horizon, predictor=predictor)
+        obs, fits_done, pipe, device, max_horizon, predictor=predictor,
+        probe_seed=PROBE_SEED)
 
     # --- aggregate ---
     metrics, audit, all_results, status = aggregate_metrics(
         paired_rows, outdir, tasks, elapsed_total, run_start_utc,
         actual_revision, device,
-        expected_mask_rows=expected_mask_rows)
+        expected_mask_rows=expected_mask_rows, seed=seed)
 
     audit["leak_controls"] = {
         "future_mutation_probe": mutation_ctrl,
@@ -1290,9 +1384,18 @@ def run(raw_path, paired_run_dir, outdir, model_revision, device,
     # --- write outputs ---
     pred_format = _write_predictions(all_results, outdir)
 
+    # --- probe gates: failed/absent probe blocks PASS and confirmatory ---
+    probe_passed = mutation_ctrl.get("passed") is True
+    if not probe_passed:
+        status = STATUS_NOT_PASS
+        metrics["status"] = status
+        metrics["full_r8"]["confirmatory"] = False
+
     manifest = {
         "run_id": RUN_ID,
         "status": status,
+        "seed": seed,
+        "probe_seed": PROBE_SEED,
         "model": {
             "estimator": "Chronos-T5-tiny",
             "model_id": model_id,
@@ -1363,6 +1466,15 @@ def self_check():
     12. Missing forecast → failure (repro 2): incomplete status → NOT_PASS.
     13. Batched inference batch call count (repro 3): batching reduces calls.
     14. Model revision validation (repro 4): 40-hex required for CLI.
+    15. Real-mode smaller mask cannot PASS (guard 171150).
+    16. (reserved — see test 15 above)
+    17. Deterministic stochastic mock: full run and partial+resume produce
+        identical per-key forecasts.
+    18. Future-mutation with stochastic mock: probe_seed eliminates false
+        failures from stochastic inference.
+    19. Context-sensitive mock detects altered allowed-history input.
+    20. Deliberately failed probe cannot claim PASS or confirmatory.
+    21. Seed recorded in fingerprint and metrics.
     """
     import tempfile
 
@@ -1518,7 +1630,9 @@ def self_check():
         assert prog1["n_completed"] == 2, \
             "expected 2 completed, got %d" % prog1["n_completed"]
 
-        # Resume with max_series=5 -> should add 5 more (2 already done = 7)
+        # Resume with max_series=5 -> batch 0 re-inferred (stable partition,
+        # all 16 items), 5 new checkpoints saved from missing items;
+        # total checkpoints = 2 (existing) + 5 (new) = 7.
         run(raw_csv, None, out1,
             model_revision="test-rev", device="cpu",
             batch_size=16, max_series=5, resume=True,
@@ -1529,7 +1643,8 @@ def self_check():
             expected_mask_rows=len(paired_records))
         prog2 = load_progress(out1)
         assert prog2["n_completed"] == 7, \
-            "expected 7 after resume (2+5), got %d" % prog2["n_completed"]
+            "expected 7 after resume (2 existing + 5 new), got %d" \
+            % prog2["n_completed"]
         print("  test 5 PASS: checkpoint resume")
 
         # --- Test 6: Fingerprint mismatch ---
@@ -1949,6 +2064,242 @@ def self_check():
             "test 16: covers less than full mask (setup sanity)"
         print("  test 16 PASS: real-mode smaller mask cannot PASS")
 
+        # --- Test 17: Deterministic stochastic mock ---
+        # A mock predictor that uses Python's random module (stochastic)
+        # but is controlled by torch.manual_seed (when torch available)
+        # or by the deterministic batch-seed calling convention.
+        # Full run and partial+resume must produce identical per-key forecasts.
+        import random as _random
+
+        def stochastic_mock(contexts_or_vals, n_horizon):
+            if (contexts_or_vals
+                    and isinstance(contexts_or_vals[0], list)
+                    and not isinstance(contexts_or_vals[0],
+                                      (int, float))):
+                results = []
+                for ctx in contexts_or_vals:
+                    mean_v = sum(ctx) / len(ctx) if ctx else 0.0
+                    preds = [mean_v + i * 10.0
+                             + _random.gauss(0, 0.01)
+                             for i in range(n_horizon)]
+                    results.append(preds)
+                return results
+            mean_v = sum(contexts_or_vals) / len(contexts_or_vals) \
+                if contexts_or_vals else 0.0
+            return [mean_v + i * 10.0 + _random.gauss(0, 0.01)
+                    for i in range(n_horizon)]
+
+        TEST_SEED = 9999
+        # Full run
+        out_s_full = os.path.join(tmpdir, "s_full")
+        run(raw_csv, None, out_s_full,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=False,
+            predictor=stochastic_mock, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        # Partial + resume
+        out_s_part = os.path.join(tmpdir, "s_part")
+        run(raw_csv, None, out_s_part,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=5, resume=False,
+            predictor=stochastic_mock, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        run(raw_csv, None, out_s_part,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=True,
+            predictor=stochastic_mock, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        # Compare all checkpoints
+        for tid in territories:
+            for cat in categories:
+                for origin_m in origins:
+                    ck_f = load_checkpoint(out_s_full, tid, cat,
+                                           int_to_ym(origin_m))
+                    ck_p = load_checkpoint(out_s_part, tid, cat,
+                                           int_to_ym(origin_m))
+                    assert ck_f is not None, \
+                        "test 17: full checkpoint missing %s/%s/%s" \
+                        % (tid, cat, int_to_ym(origin_m))
+                    assert ck_p is not None, \
+                        "test 17: resume checkpoint missing %s/%s/%s" \
+                        % (tid, cat, int_to_ym(origin_m))
+                    assert ck_f["predictions"] == ck_p["predictions"], \
+                        "test 17: predictions differ for %s/%s/%s: " \
+                        "full=%r resume=%r" \
+                        % (tid, cat, int_to_ym(origin_m),
+                           ck_f["predictions"], ck_p["predictions"])
+        print("  test 17 PASS: deterministic stochastic mock "
+              "(full == partial+resume)")
+
+        # --- Test 18: Future-mutation with stochastic mock ---
+        # With probe_seed, the stochastic mock produces identical outputs
+        # for baseline, mutated, and repeat calls.
+        obs_s = {k: dict(v) for k, v in norm["obs"].items()}
+        fits_s = {
+            ("t0", "c0", origins[0]): list(HORIZONS),
+        }
+        probe_s = run_future_mutation_control(
+            obs_s, fits_s, None, "cpu", max(HORIZONS),
+            predictor=stochastic_mock, probe_seed=PROBE_SEED)
+        assert probe_s["passed"] is True, \
+            "test 18: stochastic probe with probe_seed must PASS, got %r" \
+            % probe_s
+        assert probe_s["causal_context_equal"] is True, \
+            "test 18: causal context must be equal"
+        assert probe_s["max_abs_forecast_diff_after_mutation"] < PRED_TOL, \
+            "test 18: mutation diff must be < PRED_TOL, got %r" \
+            % probe_s["max_abs_forecast_diff_after_mutation"]
+        assert probe_s["max_abs_forecast_diff_repeat_fit"] < PRED_TOL, \
+            "test 18: repeat diff must be < PRED_TOL, got %r" \
+            % probe_s["max_abs_forecast_diff_repeat_fit"]
+        assert probe_s["probe_seed"] == PROBE_SEED, \
+            "test 18: probe_seed must be recorded"
+        print("  test 18 PASS: stochastic mock with probe_seed "
+              "(mutation + repeat PASS)")
+
+        # --- Test 19: Context-sensitive mock detects altered history ---
+        # A predictor that uses the sum of context values, so changing
+        # a value within the causal window changes the prediction.
+        def context_sensitive_mock(contexts_or_vals, n_horizon):
+            if (contexts_or_vals
+                    and isinstance(contexts_or_vals[0], list)
+                    and not isinstance(contexts_or_vals[0],
+                                      (int, float))):
+                return [[sum(ctx) + i for i in range(n_horizon)]
+                        for ctx in contexts_or_vals]
+            return [sum(contexts_or_vals) + i for i in range(n_horizon)]
+
+        # Run with original data
+        out_cs1 = os.path.join(tmpdir, "cs1")
+        run(raw_csv, None, out_cs1,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=False,
+            predictor=context_sensitive_mock, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        # Alter a value within the causal window for t0/c0
+        tampered_records = [dict(r) for r in raw_records]
+        for r in tampered_records:
+            if (r["territory_id"] == "t0" and r["category"] == "c0"
+                    and r["date"] == "2022-01"):
+                r["value"] = float(r["value"]) + 999.0
+                break
+        out_cs2 = os.path.join(tmpdir, "cs2")
+        run(raw_csv, None, out_cs2,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=False,
+            predictor=context_sensitive_mock, seed=TEST_SEED,
+            _raw_rows=tampered_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        # At least one prediction must differ
+        any_diff = False
+        for origin_m in origins:
+            ck1 = load_checkpoint(out_cs1, "t0", "c0",
+                                  int_to_ym(origin_m))
+            ck2 = load_checkpoint(out_cs2, "t0", "c0",
+                                  int_to_ym(origin_m))
+            if ck1["predictions"] != ck2["predictions"]:
+                any_diff = True
+                break
+        assert any_diff, \
+            "test 19: context-sensitive mock must detect altered history"
+        print("  test 19 PASS: context-sensitive mock detects "
+              "altered allowed-history")
+
+        # --- Test 20: Deliberately failed probe blocks PASS ---
+        # A stateful predictor that returns different values on each call.
+        _probe_call_count = 0
+
+        def alternating_mock(contexts_or_vals, n_horizon):
+            nonlocal _probe_call_count
+            _probe_call_count += 1
+            if (contexts_or_vals
+                    and isinstance(contexts_or_vals[0], list)
+                    and not isinstance(contexts_or_vals[0],
+                                      (int, float))):
+                return [[_probe_call_count * 100.0 + i
+                         for i in range(n_horizon)]
+                        for _ in contexts_or_vals]
+            return [_probe_call_count * 100.0 + i
+                    for i in range(n_horizon)]
+
+        out_fail = os.path.join(tmpdir, "out_fail")
+        _probe_call_count = 0
+        run(raw_csv, None, out_fail,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=False,
+            predictor=alternating_mock, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        with open(os.path.join(out_fail, "metrics.json")) as f:
+            m_fail = json.load(f)
+        with open(os.path.join(out_fail, "audit.json")) as f:
+            a_fail = json.load(f)
+        probe_fail = a_fail["leak_controls"]["future_mutation_probe"]
+        assert probe_fail["passed"] is not True, \
+            "test 20: alternating mock probe must NOT pass, got %r" \
+            % probe_fail["passed"]
+        assert m_fail["status"] == "NOT_PASS", \
+            "test 20: failed probe must yield NOT_PASS, got %s" \
+            % m_fail["status"]
+        assert m_fail["full_r8"]["confirmatory"] is False, \
+            "test 20: failed probe must block confirmatory"
+        print("  test 20 PASS: failed probe blocks PASS and confirmatory")
+
+        # --- Test 21: Seed recorded in fingerprint and metrics ---
+        out_seed = os.path.join(tmpdir, "out_seed")
+        run(raw_csv, None, out_seed,
+            model_revision="test-rev", device="cpu",
+            batch_size=16, max_series=0, resume=False,
+            predictor=mock_predictor, seed=TEST_SEED,
+            _raw_rows=raw_records,
+            _paired_rows=paired_records,
+            _paired_info=paired_info_stub,
+            expected_mask_rows=len(paired_records))
+        fp_seed = load_fingerprint(out_seed)
+        assert fp_seed["seed"] == TEST_SEED, \
+            "test 21: fingerprint seed must be %d, got %r" \
+            % (TEST_SEED, fp_seed.get("seed"))
+        with open(os.path.join(out_seed, "manifest.json")) as f:
+            man_seed = json.load(f)
+        assert man_seed["seed"] == TEST_SEED, \
+            "test 21: manifest seed must be %d, got %r" \
+            % (TEST_SEED, man_seed.get("seed"))
+        with open(os.path.join(out_seed, "metrics.json")) as f:
+            m_seed = json.load(f)
+        assert m_seed["provenance"]["seed"] == TEST_SEED, \
+            "test 21: metrics provenance seed must be %d, got %r" \
+            % (TEST_SEED, m_seed["provenance"].get("seed"))
+        # Resume with different seed must fail fingerprint check
+        try:
+            run(raw_csv, None, out_seed,
+                model_revision="test-rev", device="cpu",
+                batch_size=16, max_series=1, resume=True,
+                predictor=mock_predictor, seed=TEST_SEED + 1,
+                _raw_rows=raw_records,
+                _paired_rows=paired_records,
+                _paired_info=paired_info_stub)
+            raise AssertionError(
+                "test 21: seed mismatch should raise FingerprintMismatch")
+        except FingerprintMismatch:
+            pass
+        print("  test 21 PASS: seed recorded in fingerprint and metrics")
+
     print("SELF-CHECK OK")
     return 0
 
@@ -1980,6 +2331,9 @@ def main(argv=None):
                         "(0=unlimited); for operator testing before --resume")
     p.add_argument("--resume", action="store_true",
                    help="resume from existing checkpoint in outdir")
+    p.add_argument("--seed", type=int, default=DEFAULT_SEED,
+                   help="global RNG seed for deterministic inference "
+                        "(default: %d)" % DEFAULT_SEED)
     p.add_argument("--self-check", action="store_true",
                    help="run self-tests with mock predictor (no Chronos "
                         "required)")
@@ -2003,7 +2357,7 @@ def main(argv=None):
                 "(got %r); disallow 'main' or tag" % a.model_revision)
 
     run(a.raw, a.paired_run, a.outdir, a.model_revision, a.device,
-        a.batch_size, a.max_series, resume=a.resume)
+        a.batch_size, a.max_series, resume=a.resume, seed=a.seed)
     return 0
 
 
