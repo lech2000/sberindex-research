@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/tmp/sber-prophet-20260927/bin/python",
+    "/Users/sergey/projects/sberindex-research/shock-radar/src/r8_prophet_batch.py",
+    "--raw",
+    "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+    "--paired-run",
+    "/Users/sergey/projects/sberindex-research/shock-radar/runs/R8_v2",
+    "--outdir",
+    "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927",
+    "--max-fits",
+    "0",
+    "--resume"
+  ],
+  "started_at_utc": "2026-09-27T17:12:37.279070+00:00",
+  "status": "completed",
+  "fits_at_start": 1020,
+  "remaining_fits": 72504,
+  "scope": "remaining full Prophet computation; R8 scientific gate stays OPEN",
+  "wrapper_pid": 42182,
+  "exit_code": 0,
+  "finished_at_utc": "2026-09-27T18:38:43.614307+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "published_at_utc": "2026-09-28T06:51:32.502155+00:00",
+  "run": "R8_prophet_full_20260927",
+  "files": {
+    "README.md": {
+      "bytes": 2602,
+      "sha256": "c8e397c9d9f046ab588fccea8a0be6f520aba651163aa77cf256b1ce6a481703"
+    },
+    "audit.json": {
+      "bytes": 1439,
+      "sha256": "4931cd13ba5a11b5da64051facd3fd065d3ce38df5e0fb00866a5343a72a9c21"
+    },
+    "fingerprint.json": {
+      "bytes": 350,
+      "sha256": "c2ac8d8248b6c0872a2aee8509755810419e39d7ecde0f688c8f282d7031f52b"
+    },
+    "full-resume-job.json": {
+      "bytes": 854,
+      "sha256": "b2e708818964d8e926a13a5a59468060b2b16c98f029f0d46d3e96bbbced7622"
+    },
+    "full-resume-tail.log": {
+      "bytes": 2925,
+      "sha256": "ae55e5a519e5c0a82d1e14d9a419266f46c3052fe676f0b3b84ea8033d2ee418"
+    },
+    "full-resume.log.gz": {
+      "bytes": 58060,
+      "sha256": "08da170ee3c928952bc8338e134240762b55f1802455238a98796ca8cc9ee79b"
+    },
+    "manifest.json": {
+      "bytes": 1330,
+      "sha256": "5630c677fb893a25cfacca918cdca8d784f5533fec3e2c719e2987a9fdfe69cc"
+    },
+    "metrics.json": {
+      "bytes": 2343,
+      "sha256": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2"
+    },
+    "operator_review.json": {
+      "bytes": 2093,
+      "sha256": "b4c25257b0b9f81c5a30ab7c211ffbc58cd472b1d6e644261f364111b834e040"
+    },
+    "predictions.parquet": {
+      "bytes": 3029079,
+      "sha256": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6"
+    },
+    "progress.json": {
+      "bytes": 132,
+      "sha256": "846923d1d20664bfad4dab367705143e58d2dbba4b9ecd1d288b0ca7e697b9d4"
+    }
+  },
+  "source_code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1"
+}

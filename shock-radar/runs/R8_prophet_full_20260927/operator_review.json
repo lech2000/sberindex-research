@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-09-28T06:49:48.863182+00:00",
+  "method": "Mac Python/Prophet file audit; independent pandas 1:1 full-mask join and MAE; SHA checks on raw/paired/code; enumerate and parse all origin checkpoints; log tail/progress/exit",
+  "status": "COMPUTATION_COMPLETE_R8_STILL_OPEN",
+  "run_started_at_utc": "2026-09-27T17:12:37.279070+00:00",
+  "run_finished_at_utc": "2026-09-27T18:38:43.614307+00:00",
+  "exit_code": 0,
+  "total_fits": 73524,
+  "checkpoint_statuses": {
+    "ok": 73524
+  },
+  "forecast_points": 171150,
+  "paired_rows": 171150,
+  "horizon_counts": {
+    "1": 73392,
+    "2": 61110,
+    "3": 36648
+  },
+  "missing_prophet_forecasts": 0,
+  "mae": {
+    "prophet": 731.3863030799444,
+    "lastavailable": 880.2129593923459,
+    "seasonal_naive": 1280.4203856266433
+  },
+  "prefix_mutation_probe": {
+    "series": [
+      "1",
+      "Все категории"
+    ],
+    "origin": "2024-06",
+    "horizons": [
+      1,
+      2
+    ],
+    "last_allowed_obs": "2024-04",
+    "mutated": "all raw observations after 2024-04 by +1e+06",
+    "max_abs_forecast_diff_after_mutation": 0.0,
+    "max_abs_forecast_diff_repeat_fit": 0.0,
+    "passed": true
+  },
+  "gate_pass": false,
+  "causal_release_lag_months": 2,
+  "lag_qualification": "two months is a synthetic assumption, not measured published_at/available_at",
+  "source_sha256": {
+    "full-resume-job.json": "b2e708818964d8e926a13a5a59468060b2b16c98f029f0d46d3e96bbbced7622",
+    "full-resume.log": "2134733361547046fcac380aa8c6657d1e1c78c27ee160347e1d442fc6ba5def",
+    "metrics.json": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2",
+    "audit.json": "4931cd13ba5a11b5da64051facd3fd065d3ce38df5e0fb00866a5343a72a9c21",
+    "manifest.json": "5630c677fb893a25cfacca918cdca8d784f5533fec3e2c719e2987a9fdfe69cc",
+    "fingerprint.json": "c2ac8d8248b6c0872a2aee8509755810419e39d7ecde0f688c8f282d7031f52b",
+    "progress.json": "846923d1d20664bfad4dab367705143e58d2dbba4b9ecd1d288b0ca7e697b9d4",
+    "predictions.parquet": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6"
+  }
+}

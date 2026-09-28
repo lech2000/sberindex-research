@@ -1,0 +1,13 @@
+{
+ "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+ "paired_sha256": "2fbf07475a2a9eb392e4cf949307563df3a9a7e302347a2f0f5317684c279043",
+ "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+ "seed": 20260927,
+ "release_lag": 2,
+ "horizons": [
+  1,
+  2,
+  3
+ ],
+ "min_train_points": 6
+}

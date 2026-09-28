@@ -1,0 +1,65 @@
+  progress: 68820/73524 fits done (0 new failures)
+  progress: 68920/73524 fits done (0 new failures)
+  progress: 69020/73524 fits done (0 new failures)
+  progress: 69120/73524 fits done (0 new failures)
+  progress: 69220/73524 fits done (0 new failures)
+  progress: 69320/73524 fits done (0 new failures)
+  progress: 69420/73524 fits done (0 new failures)
+  progress: 69520/73524 fits done (0 new failures)
+  progress: 69620/73524 fits done (0 new failures)
+  progress: 69720/73524 fits done (0 new failures)
+  progress: 69820/73524 fits done (0 new failures)
+  progress: 69920/73524 fits done (0 new failures)
+  progress: 70020/73524 fits done (0 new failures)
+  progress: 70120/73524 fits done (0 new failures)
+  progress: 70220/73524 fits done (0 new failures)
+  progress: 70320/73524 fits done (0 new failures)
+  progress: 70420/73524 fits done (0 new failures)
+  progress: 70520/73524 fits done (0 new failures)
+  progress: 70620/73524 fits done (0 new failures)
+  progress: 70720/73524 fits done (0 new failures)
+  progress: 70820/73524 fits done (0 new failures)
+  progress: 70920/73524 fits done (0 new failures)
+  progress: 71020/73524 fits done (0 new failures)
+  progress: 71120/73524 fits done (0 new failures)
+  progress: 71220/73524 fits done (0 new failures)
+  progress: 71320/73524 fits done (0 new failures)
+  progress: 71420/73524 fits done (0 new failures)
+  progress: 71520/73524 fits done (0 new failures)
+  progress: 71620/73524 fits done (0 new failures)
+  progress: 71720/73524 fits done (0 new failures)
+  progress: 71820/73524 fits done (0 new failures)
+  progress: 71920/73524 fits done (0 new failures)
+  progress: 72020/73524 fits done (0 new failures)
+  progress: 72120/73524 fits done (0 new failures)
+  progress: 72220/73524 fits done (0 new failures)
+  progress: 72320/73524 fits done (0 new failures)
+  progress: 72420/73524 fits done (0 new failures)
+  progress: 72520/73524 fits done (0 new failures)
+  progress: 72620/73524 fits done (0 new failures)
+  progress: 72720/73524 fits done (0 new failures)
+  progress: 72820/73524 fits done (0 new failures)
+  progress: 72920/73524 fits done (0 new failures)
+  progress: 73020/73524 fits done (0 new failures)
+  progress: 73120/73524 fits done (0 new failures)
+  progress: 73220/73524 fits done (0 new failures)
+  progress: 73320/73524 fits done (0 new failures)
+  progress: 73420/73524 fits done (0 new failures)
+  progress: 73520/73524 fits done (0 new failures)
+  progress: 73524/73524 fits done (0 new failures)
+{
+ "status": "PASS",
+ "n_series": 12366,
+ "n_tasks": 73524,
+ "n_completed": 73524,
+ "n_new_fits": 72504,
+ "n_failures": 0,
+ "common_mask_mae": {
+  "prophet": 731.3863030799444,
+  "lastavailable": 880.2129593923459,
+  "seasonal_naive": 1280.4203856266433,
+  "n_common": 171150
+ },
+ "elapsed_s": 5005.003956875065,
+ "outdir": "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927"
+}

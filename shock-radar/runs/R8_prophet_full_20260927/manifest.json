@@ -1,0 +1,42 @@
+{
+ "run_id": "R8-prophet-batch",
+ "status": "PASS",
+ "model": {
+  "estimator": "Prophet",
+  "growth": "linear",
+  "yearly_seasonality": false,
+  "weekly_seasonality": false,
+  "daily_seasonality": false,
+  "n_changepoints": 3,
+  "uncertainty_samples": 0,
+  "deterministic": true
+ },
+ "causal": {
+  "release_lag_months": 2,
+  "train_month_max": "origin - 2",
+  "target": "origin + h",
+  "calendar_ds": "real month timestamps, no gap compression"
+ },
+ "outputs": [
+  "predictions.parquet",
+  "metrics.json",
+  "audit.json",
+  "manifest.json",
+  "checkpoints/",
+  "fingerprint.json",
+  "progress.json"
+ ],
+ "provenance": {
+  "run_utc": "2026-09-27T17:12:38+00:00",
+  "command": "/Users/sergey/projects/sberindex-research/shock-radar/src/r8_prophet_batch.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run /Users/sergey/projects/sberindex-research/shock-radar/runs/R8_v2 --outdir /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927 --max-fits 0 --resume",
+  "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+  "versions": {
+   "python": "3.13.0",
+   "numpy": "2.5.3",
+   "pandas": "3.0.6",
+   "pyarrow": "25.0.1",
+   "prophet": "1.4.0",
+   "cmdstanpy": "1.3.0"
+  }
+ }
+}
