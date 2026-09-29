@@ -1,0 +1,64 @@
+{
+  "status": "DIAGNOSTIC_BASELINE_ONLY_NOT_MODEL_LAG_SENSITIVITY",
+  "release_lags_months": [
+    1,
+    2,
+    3
+  ],
+  "definition": "exact raw observation at origin minus lag; no imputation",
+  "input_sha256": {
+    "raw_panel": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "paired_predictions": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6"
+  },
+  "paired_rows": 171150,
+  "archived_lag2_exact_match_rows": 171150,
+  "individual_mask": {
+    "1": {
+      "n": 171042,
+      "mae": 853.3389226038049
+    },
+    "2": {
+      "n": 171150,
+      "mae": 880.2129593923459
+    },
+    "3": {
+      "n": 171150,
+      "mae": 843.3108442886357
+    }
+  },
+  "common_mask": {
+    "n": 171042,
+    "mae": {
+      "1": 853.3389226038049,
+      "2": 879.5103132563931,
+      "3": 842.9567708516037
+    },
+    "per_horizon": {
+      "1": {
+        "n": 73350,
+        "mae": {
+          "1": 740.8679345603272,
+          "2": 864.3566189502386,
+          "3": 786.1681254260395
+        }
+      },
+      "2": {
+        "n": 61068,
+        "mae": {
+          "1": 908.5866738717496,
+          "2": 834.0153108010742,
+          "3": 801.4240846269732
+        }
+      },
+      "3": {
+        "n": 36624,
+        "mae": {
+          "1": 986.4723132372214,
+          "2": 985.7196920052425,
+          "3": 1025.945117955439
+        }
+      }
+    }
+  },
+  "interpretation_limit": "Only last-observation baseline changes with lag; Prophet, Chronos and boosting were not refit at lag 1 or 3. These retrospective data have no verified historical available_at."
+}
