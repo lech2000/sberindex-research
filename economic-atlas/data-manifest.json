@@ -13,5 +13,5 @@
     "tochno_bdmo_20250918_indicators_8423005_8423007_8213002"
   ],
   "target_table": "one row per stable municipality × month with spending shares, population/migration, salary/employment structure, accessibility and mobility where observed",
-  "priority_gap": "verified SberIndex territory_id to OKTMO crosswalk and audited coverage of the downloaded derivative municipal employment-by-industry export"
+  "priority_gap": "2024 panel/dictionary validity conflicts (326 IDs), missing annual employment/wage values (179 IDs), and verified primary-source spot checks before A6 external validation"
 }

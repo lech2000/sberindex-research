@@ -39,7 +39,9 @@
       "source_manifest": "data/external/tochno_bdmo_20250918/manifest.json",
       "source_page": "https://tochno.st/datasets/bdmo",
       "checked_at": "2026-09-29",
-      "next_attempt": "audit 2024 join coverage against the verified SberIndex territory_id to OKTMO crosswalk; validate a sample against official regional Rosstat tables",
+      "next_attempt": "resolve 326 panel IDs whose dictionary validity ended before 2024 and 179 active IDs without annual total value; investigate three Amurstat 2024 wage discrepancies and repeat primary check over verified TLS",
+      "join_audit": "economic-atlas/runs/A6_external_bdmo_20260929/audit.json",
+      "official_spotcheck": "economic-atlas/runs/A6_external_bdmo_20260929/amur_official_spotcheck.json",
       "acceptance": "municipality x OKVED x period table, units, publication date, coverage and duplicate audit"
     },
     {
