@@ -2,6 +2,8 @@
 
 Версия лестницы 20.09.2026; агент в живом деле на 28.09.2026: `software:sberindex_radar_researcher@5`. Входные паспорта: `../data/DATA_CATALOG.md`, `../data/manifest.json`, `data-manifest.json`. Корпуса: 74 общий и 76 проектный. Текущая научная проверка R8 — [отдельный протокол](../docs/SCIENTIFIC_EVIDENCE_REVIEW_2026-09-28.md).
 
+Обновление 29.09.2026: [R8 завершён как INCONCLUSIVE без научного PASS](runs/R8_closeout_20260929/README.md), исходный `act_70e2fe4a16ac4e3d` закрыт. R9 остаётся закрытым для старых данных: нужен новый независимый временной holdout и подтверждённый исторический vintage.
+
 | Ворота | Работа | Артефакт и критерий выхода | Если не проходит |
 |---|---|---|---|
 | R0. Цель и as-of | Зафиксировать target, горизонты, forecast origin, событие и бюджет тревог | `protocol/forecast_contract.yaml`; каждое поле имеет observed/published/available timestamp | Сократить горизонты и задачи; не начинать признаки |
