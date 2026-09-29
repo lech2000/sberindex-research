@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-24",
+  "as_of": "2026-09-29",
   "policy": "mimo_pro_hosted_search_discovery -> official_api_or_file_or_jina_verification -> apify_paid_complex_escalation -> recon_mcp_allowlisted_passive -> human_handoff",
   "items": [
     {
@@ -34,8 +34,12 @@
         "atlas",
         "radar"
       ],
-      "status": "confirmed_export_missing",
-      "next_attempt": "BDMO official export or regional official bulk tables with a documented coverage merge",
+      "status": "public_derivative_downloaded_official_export_unverified",
+      "artifact": "data/external/tochno_bdmo_20250918/data_Y48423005_112_v20250918.parquet",
+      "source_manifest": "data/external/tochno_bdmo_20250918/manifest.json",
+      "source_page": "https://tochno.st/datasets/bdmo",
+      "checked_at": "2026-09-29",
+      "next_attempt": "audit 2024 join coverage against the verified SberIndex territory_id to OKTMO crosswalk; validate a sample against official regional Rosstat tables",
       "acceptance": "municipality x OKVED x period table, units, publication date, coverage and duplicate audit"
     },
     {
