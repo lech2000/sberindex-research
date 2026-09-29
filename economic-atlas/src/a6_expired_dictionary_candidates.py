@@ -39,7 +39,7 @@ def audit(panel_path: Path, dictionary_path: Path, employment_path: Path, year: 
     }
     dictionary = pq.read_table(
         dictionary_path,
-        columns=["territory_id", "oktmo", "year_from", "year_to", "region_name", "name_short", "name"],
+        columns=["territory_id", "oktmo", "year_from", "year_to", "region_name", "name_short", "name", "type"],
     ).to_pylist()
     by_id: dict[int, list[dict]] = defaultdict(list)
     active_by_name: dict[tuple[str, str], list[dict]] = defaultdict(list)
@@ -79,20 +79,24 @@ def audit(panel_path: Path, dictionary_path: Path, employment_path: Path, year: 
         latest = max(rows, key=lambda row: (row["year_to"], row["year_from"]))
         oktmo = code(latest["oktmo"])
         name_key = (latest["region_name"], latest["name_short"].strip().casefold())
-        same_name = sorted({
-            int(row["territory_id"]) for row in active_by_name[name_key]
-            if int(row["territory_id"]) != territory_id
-        })
+        same_name_collisions = sorted(
+            ({"territory_id": int(row["territory_id"]), "name": row["name"],
+              "type": row["type"], "oktmo_8": code(row["oktmo"])}
+             for row in active_by_name[name_key]
+             if int(row["territory_id"]) != territory_id),
+            key=lambda row: row["territory_id"],
+        )
         records.append({
             "territory_id": territory_id,
             "region_name": latest["region_name"],
             "name": latest["name"],
+            "type": latest["type"],
             "last_dictionary_year_to": latest["year_to"],
             "last_dictionary_oktmo_8": oktmo,
             "same_oktmo_in_2024_annual_total": oktmo in annual_codes,
             "same_oktmo_in_any_2024_value": oktmo in any_codes,
             "same_oktmo_in_2024_stable_code": oktmo in stable_codes,
-            "active_same_region_short_name_ids_unverified": same_name,
+            "active_same_region_short_name_collisions_not_successors": same_name_collisions,
             "expiry_reason": "unknown",
             "successor_id": None,
         })
@@ -101,15 +105,18 @@ def audit(panel_path: Path, dictionary_path: Path, employment_path: Path, year: 
         summary["same_oktmo_in_2024_annual_total"] += record["same_oktmo_in_2024_annual_total"]
         summary["same_oktmo_in_any_2024_value"] += record["same_oktmo_in_any_2024_value"]
         summary["same_oktmo_in_2024_stable_code"] += record["same_oktmo_in_2024_stable_code"]
-        summary["active_same_region_short_name"] += bool(record["active_same_region_short_name_ids_unverified"])
-        summary["any_candidate_signal"] += any((
+        summary["active_same_region_short_name_collision"] += bool(record["active_same_region_short_name_collisions_not_successors"])
+        summary["active_same_name_different_type_collision"] += any(
+            row["type"] != record["type"]
+            for row in record["active_same_region_short_name_collisions_not_successors"]
+        )
+        summary["any_old_oktmo_signal"] += any((
             record["same_oktmo_in_any_2024_value"],
             record["same_oktmo_in_2024_stable_code"],
-            record["active_same_region_short_name_ids_unverified"],
         ))
     return {
         "year": year,
-        "status": "candidate_signals_only_no_verified_successors",
+        "status": "old_oktmo_signals_only_name_collisions_excluded_no_verified_successors",
         "panel_sha256": digest(panel_path),
         "dictionary_sha256": digest(dictionary_path),
         "employment_sha256": digest(employment_path),

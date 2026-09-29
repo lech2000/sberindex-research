@@ -39,7 +39,7 @@
       "source_manifest": "data/external/tochno_bdmo_20250918/manifest.json",
       "source_page": "https://tochno.st/datasets/bdmo",
       "checked_at": "2026-09-29",
-      "next_attempt": "verify the 8 unverified candidate signals among 326 expired panel IDs against dated official municipal-change acts; leave the other 318 and every successor/expiry cause unknown until evidenced; audit 179 active IDs without annual total value; investigate three Amurstat 2024 wage discrepancies and repeat primary check over verified TLS",
+      "next_attempt": "investigate the 3 old-OKTMO signals among 326 expired panel IDs against dated official sources; treat 5 same-short-name city-vs-district records as collisions, not successors; leave the other 323 and every successor/expiry cause unknown until evidenced; audit 179 active IDs without annual total value; investigate three Amurstat 2024 wage discrepancies and repeat primary check over verified TLS",
       "join_audit": "economic-atlas/runs/A6_external_bdmo_20260929/audit.json",
       "expired_dictionary_audit": "economic-atlas/runs/A6_external_bdmo_20260929/expired_dictionary_candidates.json",
       "official_spotcheck": "economic-atlas/runs/A6_external_bdmo_20260929/amur_official_spotcheck.json",
