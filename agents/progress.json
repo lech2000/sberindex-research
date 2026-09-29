@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T11:49:25.429145+00:00",
+  "updated_at": "2026-09-29T20:44:04Z",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -82,24 +82,24 @@
     "shock-radar": {
       "case_id": "case_008f37d03cf541e5",
       "agent": "software:sberindex_radar_researcher@5",
-      "current_gate": "R8",
-      "status": "in_progress",
-      "last_artifact": "shock-radar/runs/R8_prophet_pilot_20260927/manifest.json",
-      "last_dialog": "2026-09-26T07:06:14Z",
-      "next_action": "Пилот Prophet выполнен32ряда/438парныхточек (76/14104):MAE755.825 противlastavailable892.436,seasonal1358.966. Далееполное причинноеProphet/TSFM на171150маске иnews-vintage/review22флагов;source08открыт. ПилотнеобобщатьнавсеМО.",
-      "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
+      "current_gate": "R9_BLOCKED_NEW_DATA",
+      "status": "r8_completed_inconclusive_no_scientific_pass",
+      "last_artifact": "shock-radar/runs/R8_closeout_20260929/decision.json",
+      "last_dialog": "2026-09-29T20:41:21.592079Z",
+      "next_action": "R8 source act_70e2fe4a16ac4e3d закрыт с итогом inconclusive, gate_pass=false. R9 только после нового независимого временного holdout и подтверждённого historical available_at/vintage; новости 0/64 as-of, эффект NA.",
+      "current_artifact_status": "RESEARCH_COMPLETED_INCONCLUSIVE_NO_SCIENTIFIC_PASS",
       "last_gate": {
-        "gate": "R7",
-        "status": "PASS",
-        "checked_at": "2026-09-26T07:06:14Z",
-        "source_action": "act_75836e1bc8f94869",
+        "gate": "R8",
+        "status": "INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+        "checked_at": "2026-09-29T20:42:54.022365Z",
+        "source_action": "act_70e2fe4a16ac4e3d",
         "source_action_done": true,
         "kb_corpus": 76,
-        "kb_document_id": 13784,
-        "commit": "9211e62a2",
-        "quality_claim": "Отрицательный технический результат; раннее предупреждение не подтверждено; exploratory-v2"
+        "kb_document_id": 14696,
+        "commit": "3f85724",
+        "quality_claim": "Нет доказанного prospective выигрыша, historical as-of или early warning; полный вычислительный парный архив сохранён."
       },
-      "last_scientific_run": "2026-09-27T11:39:01Z",
+      "last_scientific_run": "2026-09-29T20:32:31Z",
       "scientific_summary": {
         "paired_n": 171150,
         "cells": 14,
@@ -108,7 +108,9 @@
         "mae_nonews_boost": 961.1042974419819,
         "mae_calendar_boost": 1000.793644775331,
         "historical_news_eligible": 0,
-        "kb_document_id": 13876
+        "kb_document_id": 14696,
+        "mae_prophet": 731.3863030799444,
+        "mae_chronos": 939.0617606977953
       },
       "prophet_pilot": {
         "n_series": 32,

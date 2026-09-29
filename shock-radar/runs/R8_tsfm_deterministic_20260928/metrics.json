@@ -1,0 +1,95 @@
+{
+ "run_id": "R8-tsfm-paired",
+ "status": "PASS",
+ "computation_complete": true,
+ "gate_pass": false,
+ "gate_pass_reason": "R8 stays open: TSFM paired evaluation completed; status=PASS; no external MAE win gate applied",
+ "case_action": "never_close_R8_stays_open",
+ "full_r8": {
+  "stays_open": true,
+  "mask_rows": 171150,
+  "this_covers": 171150,
+  "tsfm_covers": 171150,
+  "confirmatory": true
+ },
+ "eval": {
+  "horizons": [
+   1,
+   2,
+   3
+  ],
+  "n_origins": 6
+ },
+ "per_horizon_mae": {
+  "h1": {
+   "tsfm": 882.0709098539037,
+   "prophet": 719.5748505864337,
+   "lastavailable": 864.9657592108132,
+   "seasonal_naive": 1287.8339873555701,
+   "n_common": 73392,
+   "n_rows": 73392,
+   "n_tsfm": 73392
+  },
+  "h2": {
+   "tsfm": 891.5209431644041,
+   "prophet": 723.5982635109181,
+   "lastavailable": 835.0160039273442,
+   "seasonal_naive": 1267.1188185239732,
+   "n_common": 61110,
+   "n_rows": 61110,
+   "n_tsfm": 61110
+  },
+  "h3": {
+   "tsfm": 1132.4663635301579,
+   "prophet": 768.0265895748944,
+   "lastavailable": 986.1125573018992,
+   "seasonal_naive": 1287.7539292730844,
+   "n_common": 36648,
+   "n_rows": 36648,
+   "n_tsfm": 36648
+  }
+ },
+ "common_mask_mae": {
+  "tsfm": 939.0617606977953,
+  "prophet": 731.3863030799444,
+  "lastavailable": 880.2129593923459,
+  "seasonal_naive": 1280.4203856266433,
+  "n_common": 171150
+ },
+ "tsfm_only_mae": {
+  "tsfm": 939.0617606977953,
+  "n_tsfm_only": 171150
+ },
+ "counts": {
+  "total_input_rows": 171150,
+  "n_paired_rows": 171150,
+  "n_joined_rows": 171150,
+  "n_tsfm_forecasts": 171150,
+  "n_tsfm_missing": 0,
+  "n_failures_recorded": 0,
+  "n_series_total": 12366,
+  "n_origins_total": 73524,
+  "n_fits_ok": 73524,
+  "n_fits_failed": 0,
+  "n_fits_missing_checkpoint": 0,
+  "total_fit_runtime_s": 19667.674505608156,
+  "total_elapsed_s": 360.93167437496595
+ },
+ "provenance": {
+  "run_utc": "2026-09-28T11:31:55+00:00",
+  "command": "shock-radar/src/r8_tsfm_paired.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_prophet_full_20260927 --outdir shock-radar/output/R8_tsfm_deterministic_20260928 --model-revision 29d808298f1a62493e7b9a5e08529d0d930fa189 --device mps --batch-size 64 --max-series 0 --seed 20260928",
+  "code_sha256": "29f0b7209c9b1c25106b45100954947448b10c7cf6e6ca2f5a7647a7cb125c5c",
+  "versions": {
+   "python": "3.14.4",
+   "numpy": "2.5.3",
+   "pandas": "2.3.3",
+   "pyarrow": "25.0.1",
+   "torch": "2.14.0",
+   "chronos": "2.3.2",
+   "transformers": "5.17.0"
+  },
+  "device": "mps",
+  "model_revision_actual": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+  "seed": 20260928
+ }
+}

@@ -1,0 +1,16 @@
+experiment,model,mask_n,mae,status,evidence,limit
+paired_forecast_assumed_lag2,lastavailable,171150,880.2129593923459,OBSERVED_RETROSPECTIVE,R8_closeout_20260929/monthblock/metrics.json,Historical available_at and revisions unverified; six target months only
+paired_forecast_assumed_lag2,seasonal_naive,171150,1280.4203856266433,OBSERVED_RETROSPECTIVE,R8_closeout_20260929/monthblock/metrics.json,Historical available_at and revisions unverified; six target months only
+paired_forecast_assumed_lag2,Prophet,171150,731.3863030799444,OBSERVED_RETROSPECTIVE,R8_closeout_20260929/monthblock/metrics.json,Historical available_at and revisions unverified; six target months only
+paired_forecast_assumed_lag2,Chronos-T5-tiny,171150,939.0617606977953,OBSERVED_RETROSPECTIVE,R8_closeout_20260929/monthblock/metrics.json,Historical available_at and revisions unverified; six target months only
+calendar_ablation_assumed_lag2,boost_no_news,171150,961.1042974419819,OBSERVED_EXPLORATORY,R8_v2/metrics.json,Validation was used earlier; no fresh unopened test
+calendar_ablation_assumed_lag2,boost_calendar,171150,1000.793644775331,OBSERVED_EXPLORATORY,R8_v2/metrics.json,Validation was used earlier; no fresh unopened test
+news_ablation,news_only,,,NA_NO_ELIGIBLE_HISTORICAL_EVENTS,R8/news_audit.json,"64 events, 0 provably available by 2024-12-31"
+news_ablation,news_enabled,,,NA_NO_ELIGIBLE_HISTORICAL_EVENTS,R8/news_audit.json,"64 events, 0 provably available by 2024-12-31"
+baseline_release_lag_sensitivity_common_mask,lastavailable_lag1,171042,853.3389226038049,OBSERVED_DIAGNOSTIC,R8_closeout_20260929/lag_sensitivity.json,Only baseline was recalculated; no model refit or historical release timestamps
+baseline_release_lag_sensitivity_common_mask,lastavailable_lag2,171042,879.5103132563931,OBSERVED_DIAGNOSTIC,R8_closeout_20260929/lag_sensitivity.json,Only baseline was recalculated; no model refit or historical release timestamps
+baseline_release_lag_sensitivity_common_mask,lastavailable_lag3,171042,842.9567708516037,OBSERVED_DIAGNOSTIC,R8_closeout_20260929/lag_sensitivity.json,Only baseline was recalculated; no model refit or historical release timestamps
+target_permutation,boost_no_news_shuffled_labels,171150,944.0943488570517,NEGATIVE_CONTROL_EXPLORATORY,R8_v2/metrics.json,Shuffled booster outperforming unshuffled booster forbids a booster-win claim
+future_mutation,boost_and_Chronos,,,PASS_LOCAL_PROBES,R8_v2/audit.json; R8_tsfm_deterministic_20260928/audit.json,"Two local probes, not exhaustive proof over all origins"
+future_news_shift,news,,,NA_UNINFORMATIVE_ZERO_ELIGIBLE,R8_v2/audit.json,Synthetic filter self-check passes; no real news-effect test
+future_target_oracle,oracle,171150,0.0,INVALID_LEAKAGE_QUARANTINED,R8_v2/audit.json,Never considered a forecasting model

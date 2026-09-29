@@ -68,15 +68,15 @@
     "user_action": null
   },
   {
-    "what": "08. 27.09.2026: реальный причинный пилот Prophet завершён и независимо проверен. 32 ряда,438 прогнозных точек,189fit,ошибок0; MAE Prophet755.825 против lastavailable892.436 и seasonal1358.966 на одинаковой438маске. 768paired=False исключены,actualmaxdiff0,prefix/repeatforecastmaxdiff0 в контрольной точке. Это PILOT_PARTIAL_NOT_GATE_PASS, не полные171150точек и неconfirmatory. Новые архивы shock-radar/runs/R8_prophet_pilot_20260927, корпус76/14104 (ключ research:r8_prophet_pilot_20260927). КодсозданчерезF7b MiMoPro,Prophet1.4.0. Следующее:полныйпричинныйProphet/TSFM иnews-vintage/review22флагов. R8sourceactionостаётсяОТКРЫТ. Балашиху/Раменскоене повторять.",
+    "what": "08. R8 исследование завершено INCONCLUSIVE / NO SCIENTIFIC PASS: 171150 парных прогнозов; Prophet MAE 731.386, Chronos 939.062, lastavailable 880.213. Временные интервалы включают ноль, новости as-of 0/64, historical available_at неизвестен. Без заявлений prospective win / historical as-of / early warning. Доказательства: runs/R8_closeout_20260929, PR #4, KB76/14696, дело Radar mat_2d253279ee6740c0; исходный act_70e2fe4a16ac4e3d done=true.",
     "due": "2026-09-30T18:00:00+03:00",
     "depends_on": [
       "04"
     ],
-    "done": false,
-    "status": "active",
+    "done": true,
+    "status": "completed",
     "user_action": null,
-    "waiting_for": "Машинное продолжение:полныйпричинныйProphet/TSFM натойжемаске; news-vintage и22флага. Пилот32/438проверен(76/14104),не закрывать R8 по пилоту."
+    "waiting_for": "R9: новый независимый временной holdout и подтверждённый historical available_at/vintage; прежние тестовые месяцы не считать закрытым тестом."
   },
   {
     "what": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
