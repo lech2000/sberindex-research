@@ -34,5 +34,11 @@
     "novorossiysk_channel_status": "candidate; no official backlink verified on the homepage",
     "next_step": "Select another municipality from the verified crosswalk; do not repeat Balashikha, Ramenskoye or Novorossiysk without new evidence"
   },
-  "automation_observation": "fixar-cmd-research-drive 08:30 MSK tick made zero research turns: production file still reports A6/R8 partial; this is not evidence of a curator dispatch"
+  "automation_observation": "fixar-cmd-research-drive 08:30 MSK tick made zero research turns: production file still reports A6/R8 partial; this is not evidence of a curator dispatch",
+  "f7b_runtime_drift": {
+    "corpus_62_verified_fact_document_id": 14787,
+    "corpus_62_code_fix_lesson_document_id": 14788,
+    "fixar_devops_r8_closeout_artifact_present": false,
+    "production_code_changed": false
+  }
 }
