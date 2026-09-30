@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-09-29",
+  "status": "partial_primary_source_lead_not_2024_validation",
+  "records": [
+    {
+      "territory_id": 1912,
+      "name": "городской округ ЗАТО Шиханы",
+      "old_dictionary_oktmo_8": "63746000",
+      "source_url": "https://www.nalog.gov.ru/rn64/news/activities_fts/13958683/",
+      "source_authority": "УФНС России по Саратовской области",
+      "source_published_at": "2023-10-27T14:00:00+03:00",
+      "source_is_archived": true,
+      "source_statement": "ФНС перечисляет 63746000 среди исключений для городских округов: г. Шиханы.",
+      "supports": "код применялся ФНС в публикации 2023 года для городского округа г. Шиханы",
+      "does_not_support": [
+        "действительность кода в классификаторе ОКТМО на 2024 год",
+        "причина year_to=2020 в словаре СберИндекса",
+        "автоматическое соединение значений 2024 с territory_id=1912"
+      ],
+      "2024_code_status": "unknown",
+      "expiry_reason": "unknown",
+      "successor_id": null
+    }
+  ]
+}
