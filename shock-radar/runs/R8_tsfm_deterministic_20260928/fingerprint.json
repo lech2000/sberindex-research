@@ -1,0 +1,17 @@
+{
+ "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+ "paired_sha256": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+ "code_sha256": "29f0b7209c9b1c25106b45100954947448b10c7cf6e6ca2f5a7647a7cb125c5c",
+ "model_id": "amazon/chronos-t5-tiny",
+ "model_revision": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+ "device": "mps",
+ "release_lag": 2,
+ "horizons": [
+  1,
+  2,
+  3
+ ],
+ "min_train_points": 6,
+ "batch_size": 64,
+ "seed": 20260928
+}

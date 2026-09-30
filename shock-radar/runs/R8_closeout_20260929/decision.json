@@ -1,0 +1,62 @@
+{
+  "gate": "R8",
+  "disposition": "RESEARCH_COMPLETED_INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+  "gate_pass": false,
+  "source_action": "act_70e2fe4a16ac4e3d",
+  "paired_rows": 171150,
+  "target_month_blocks": 6,
+  "mae": {
+    "lastavailable": 880.2129593923459,
+    "seasonal_naive": 1280.4203856266433,
+    "prophet": 731.3863030799444,
+    "tsfm": 939.0617606977953
+  },
+  "month_block_benefit_95pct": {
+    "prophet_vs_lastavailable": {
+      "point": 148.8266563124015,
+      "lo": -20.512474434467197,
+      "hi": 365.4493437823703,
+      "method": "all_6_to_the_6_target_month_block_resamples_nearest_rank"
+    },
+    "tsfm_vs_prophet": {
+      "point": -207.6754576178508,
+      "lo": -516.6638201111735,
+      "hi": 33.69728605795743
+    },
+    "tsfm_vs_lastavailable": {
+      "point": -58.84880130544936,
+      "lo": -149.2200666217886,
+      "hi": 20.21632026580012
+    }
+  },
+  "news_effect": "NA_0_OF_64_HISTORICALLY_ELIGIBLE",
+  "prospective_forecast_benefit": "NOT_ESTABLISHED",
+  "early_warning": "NOT_ESTABLISHED",
+  "historical_asof": "NOT_ESTABLISHED_NO_VERIFIED_AVAILABLE_AT_OR_VINTAGE",
+  "limitations": [
+    "The two-month release lag is an assumption, not an observed historical publication time.",
+    "Only six 2024 target months are evaluated and their interval includes zero.",
+    "Validation/test material was inspected before this comparison; it is exploratory, not an unopened final test.",
+    "Lag 1/3 sensitivity was measured for the last-observation baseline only; Prophet/Chronos were not refit.",
+    "News effect and false-event forecast response are NA because no historical events pass the as-of filter."
+  ],
+  "next_stage": "R9_ONLY_AFTER_NEW_INDEPENDENT_TIME_HOLDOUT_AND_VERIFIED_VINTAGE",
+  "generation_command": "python3 shock-radar/src/r8_closeout.py --out shock-radar/runs/R8_closeout_20260929",
+  "generation_code_sha256": "2cb95cdc6200209ab1a428c4a55579d22350023d2159d604f3872c026eb2afee",
+  "evidence_sha256": {
+    "paired": "519e962faec9ae44304ceba235618c089c0fbfc3d05e5e5a0e1dd9b2c3de7b6a",
+    "paired_audit": "9ed4af0faac1d7d50267db9a9f39bfe4b087335840d9521fbec930852a41c3fe",
+    "prophet": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2",
+    "tsfm": "4b1979250bf14176007c62de9c086d5f00fa3cc3c049096f0a49f69c7a4ada34",
+    "tsfm_audit": "e8fcf44d168e16511df7a79132b840a843a7e4866deeb5d1af72c09ad697db67",
+    "monthblock": "bb5101637ae6f5d092d21b1f7a543f7ef04174fc6637e31593ae5dfb94a9685a",
+    "monthblock_manifest": "42b16a62c5b073c24f957e1d7e2b9d3437cbec0ff4e1c5f4e9c31e506b9cee1f",
+    "lag": "d3a41357d5a2c7ebd766e67761c5ed5e87617639031e7956dad10271a55b2489",
+    "news": "03eaf09fa7ac537b7332b52c8f8c405b685e74f4a8849eb36d7056d4ab0ab93a"
+  },
+  "predictions_sha256": {
+    "prophet": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+    "tsfm": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676"
+  },
+  "ablation_ledger_sha256": "e903d5b99a6c9531139724166308f1f6f0cf9363521647c80d5b2a2b81b2033f"
+}

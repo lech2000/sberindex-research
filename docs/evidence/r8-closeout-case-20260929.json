@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-29T20:44:04Z",
+  "checked_by": "Mac -> ssh joe -> incus aios2 -> live case-service :8013 actions",
+  "case_id": "case_008f37d03cf541e5",
+  "source_action_id": "act_70e2fe4a16ac4e3d",
+  "source_action_done": true,
+  "source_action_what": "08. R8 исследование завершено с итогом INCONCLUSIVE / NO SCIENTIFIC PASS: общая маска 171150; MAE Prophet 731.386, Chronos 939.062, lastavailable 880.213. Временные интервалы выигрыша включают 0; новости as-of 0/64, эффект NA; исторический available_at/vintage не подтверждён. Исключены claims prospective win, historical as-of и early warning. Доказательства: PR #4 (3f85724), corpus 76/14696, материал mat_2d253279ee6740c0. R9 только с новым независимым holdout и проверенным vintage.",
+  "material_id": "mat_2d253279ee6740c0",
+  "kb76_document_id": 14696,
+  "kb77_document_id": 14697,
+  "research_repo_commit": "3f85724",
+  "pull_request": "https://github.com/lech2000/sberindex-research/pull/4",
+  "scientific_gate_pass": false,
+  "disposition": "RESEARCH_COMPLETED_INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+  "r9_action_id": "act_febbbf8723e94197",
+  "r9_action_done": false,
+  "r9_waiting_for": "new independent time holdout and verified historical available_at/vintage",
+  "dialog_event_id": "evt_5598ef9027ae41b4",
+  "material_event_id": "evt_c3b0061cfe2341da",
+  "action_completed_event_id": "evt_c32fc4bbff8e4a62",
+  "r9_waiting_guard_event_id": "evt_b3e8c569c010434c"
+}
