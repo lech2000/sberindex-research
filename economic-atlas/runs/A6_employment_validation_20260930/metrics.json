@@ -1,0 +1,66 @@
+{
+  "gate": "A6",
+  "status": "EXPLORATORY_EXTERNAL_CHECK_A6_OPEN",
+  "month": "2024-12",
+  "panel_assignments": 1896,
+  "analysis_eligible": 1415,
+  "exclusions": {
+    "no_active_2023_2024_dictionary": 310,
+    "no_both_employment_years_after_dictionary": 171,
+    "no_population_after_other_checks": 0
+  },
+  "coverage_by_label": [
+    {
+      "label": 0,
+      "assignments": 1342,
+      "active_dictionary": 1070,
+      "both_employment_years": 931,
+      "population_2024": 1342,
+      "analysis_eligible": 931,
+      "eligible_stable_identity": 931,
+      "stable_identity_ids": 1,
+      "median_employment_2024": 3074.0,
+      "median_employment_ratio_24_23": 0.9835164835164835
+    },
+    {
+      "label": 1,
+      "assignments": 554,
+      "active_dictionary": 516,
+      "both_employment_years": 484,
+      "population_2024": 554,
+      "analysis_eligible": 484,
+      "eligible_stable_identity": 0,
+      "stable_identity_ids": 0,
+      "median_employment_2024": 14832.0,
+      "median_employment_ratio_24_23": 1.0026834638664401
+    }
+  ],
+  "identity_contrast": "NA",
+  "monthly_label_association": {
+    "specification": "log(E24) ~ label + log(E23) + log(P24) + region FE",
+    "n": 1415,
+    "regions": 67,
+    "beta_label": 0.016233283259665134,
+    "relative_difference": 0.01636575886962563,
+    "bootstrap": {
+      "unit": "region",
+      "repetitions": 1000,
+      "seed": 20260930,
+      "beta_95pct": [
+        0.0028483703908377235,
+        0.029824716585257646
+      ],
+      "relative_difference_95pct": [
+        0.0028524308520966974,
+        0.03027392819312836
+      ]
+    }
+  },
+  "limitations": [
+    "Monthly A6 labels are not confirmed longitudinal identities.",
+    "Employment excludes small enterprises and is not total employment.",
+    "The derivative source has no independently verified historical availability timestamp.",
+    "Labels and hypothesis were inspected before this protocol; inference is exploratory."
+  ],
+  "gate_pass": false
+}
