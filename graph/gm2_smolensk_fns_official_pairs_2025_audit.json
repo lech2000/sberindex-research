@@ -1,0 +1,14 @@
+{
+  "source_page": "https://www.nalog.gov.ru/rn67/news/tax_doc_news/15505089/",
+  "source_xls": "https://www.nalog.gov.ru/html/sites/www.rn67.nalog.ru/document_yfns/kodOKTMO.xls",
+  "source_sha256": "b50e817b6c0066f38311212473c508272547ccfb5ab574fe7f9666d554a4c607",
+  "sheet": "Сопоставление 2025",
+  "sheet_rows": 186,
+  "official_code_pairs": 25,
+  "old_name_mismatches": [
+    76
+  ],
+  "law_texts_independently_verified": false,
+  "attachment_available_at_verified": false,
+  "scope": "official_FNS_code_pairs_not_independent_law_text_verification"
+}

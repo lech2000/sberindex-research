@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-01T22:24:00Z",
+  "transport": "direct HTTPS using scoped Rosstat CA bundle; no TLS bypass",
+  "smolensk_html": {
+    "url": "https://67.rosstat.gov.ru/mosml",
+    "bytes": 737319,
+    "sha256": "57490c56288d8b477ba2a38e6d03e9940724eb83e8c7b48524c639714a147e48",
+    "unique_municipal_codes_found": 25,
+    "all_csv_codes_present": true,
+    "extra_aggregate_code": "66500000000"
+  },
+  "sverdlovsk_html": {
+    "url": "https://66.rosstat.gov.ru/folder/80245",
+    "bytes": 750599,
+    "sha256": "b0c6ad480e01cf44278ddd821978afafbeb0637439a7cd8d06c2193741de2ceb"
+  },
+  "sverdlovsk_pdf": {
+    "url": "https://66.rosstat.gov.ru/storage/mediabank/%D0%9E%D0%9A%D0%A2%D0%9C%D0%9E(1).pdf",
+    "bytes": 1529793,
+    "sha256": "bb7366d63509f496b5eba0397f70ff2725515ca836bff75491d142ab31dc43e6",
+    "pages": 54,
+    "section_1_municipal_codes_found": 53,
+    "exact_csv_code_set_match": true,
+    "visual_page_11_checked": true
+  },
+  "scope": "current_nodes_verified_not_old_to_new_successor_edges"
+}

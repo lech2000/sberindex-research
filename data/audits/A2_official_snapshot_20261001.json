@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-01T17:24:13.589078+00:00",
+  "method": "unique full category-month-value series; names not joined",
+  "official_file_sha256": "dde3f0657e39e19f6c7e0875afb7a4654bfd717e09861487b4f9363f56ebc9e0",
+  "historical_file_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "official_rows": 303126,
+  "historical_rows": 303126,
+  "official_series": 13140,
+  "historical_series": 13140,
+  "official_indicator_ids": 13140,
+  "historical_territory_ids": 2190,
+  "official_distinct_names": 2118,
+  "months": [
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "categories": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+  ],
+  "metadata": {
+    "obs_status": [
+      "A"
+    ],
+    "source": [
+      "Данные СберИндекса"
+    ],
+    "freq": [
+      "Месяц"
+    ],
+    "unit_measure": [
+      "руб."
+    ],
+    "unit_mult": [
+      "0"
+    ]
+  },
+  "month_boundary_ok": true,
+  "indicator_single_category": true,
+  "ambiguous_series": 0,
+  "unmatched_official_series": 0,
+  "unmatched_historical_series": 0,
+  "exact_series_multiset_match": true,
+  "official_duplicate_series_month_keys": 0,
+  "historical_duplicate_series_month_keys": 0,
+  "official_complete_series": 12096,
+  "historical_complete_series": 12096,
+  "official_missing_series_month_cells": 12234,
+  "historical_missing_series_month_cells": 12234,
+  "redistribution_rights": "unverified",
+  "oktmo_crosswalk": "not established by this comparison",
+  "pass": true
+}
