@@ -85,7 +85,9 @@ r9_independent_test:
   historical_published_at_verified: false
   historical_available_at_verified: false
   independent_holdout_available: false
-  prophet_paired_feasibility: pending
+  prophet_paired_feasibility: diagnostic_pilot_completed
+  prophet_pilot: shock-radar/runs/R9_prophet_pilot_20261001/metrics.json
+  prophet_full_panel: pending
   uncertainty_intervals: pending
   decision: no_scientific_pass
 
