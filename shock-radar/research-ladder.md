@@ -2,7 +2,7 @@
 
 Версия лестницы 20.09.2026; агент в живом деле на 28.09.2026: `software:sberindex_radar_researcher@5`. Входные паспорта: `../data/DATA_CATALOG.md`, `../data/manifest.json`, `data-manifest.json`. Корпуса: 74 общий и 76 проектный. Текущая научная проверка R8 — [отдельный протокол](../docs/SCIENTIFIC_EVIDENCE_REVIEW_2026-09-28.md).
 
-Обновление 01.10.2026: [R8 завершён как INCONCLUSIVE без научного PASS](runs/R8_closeout_20260929/README.md), исходный `act_70e2fe4a16ac4e3d` закрыт. На старой панели R9 выполнены только [парные технические baseline](runs/R9_baseline_20261001/README.md) и [ограниченный пилот Prophet](runs/R9_prophet_pilot_20261001/README.md). Для научного PASS всё ещё нужны новый независимый временной holdout и подтверждённый исторический vintage; старые данные его не заменяют.
+Обновление 02.10.2026: [R8 завершён как INCONCLUSIVE без научного PASS](runs/R8_closeout_20260929/README.md), исходный `act_70e2fe4a16ac4e3d` закрыт. На старой панели R9 выполнены [парные технические baseline](runs/R9_baseline_20261001/README.md), [пилот](runs/R9_prophet_pilot_20261001/README.md) и [полный прогон Prophet с независимой механической сверкой](runs/R9_prophet_full_20261001/README.md): 12 468 рядов, 294 570 из 294 792 точек, 222 `insufficient_train`, `incomplete_mask`. Для научного PASS всё ещё нужны новый независимый временной holdout и подтверждённый исторический vintage; старые данные его не заменяют.
 
 | Ворота | Работа | Артефакт и критерий выхода | Если не проходит |
 |---|---|---|---|
