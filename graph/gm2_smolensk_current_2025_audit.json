@@ -1,0 +1,9 @@
+{
+  "source_url": "https://67.rosstat.gov.ru/mosml",
+  "transport": "Jina Reader proxy of official Smolenskstat HTML",
+  "source_capture_sha256": "67cb08edb481918d6c75c2dfa5f5c32613ddc89e600dbf6f04ac47e36b167cca",
+  "checked_at": "2026-10-01T22:11:00Z",
+  "valid_from": "2025-01-01",
+  "municipal_districts": 25,
+  "scope": "dated_current_nodes_only_no_successor_edges"
+}
