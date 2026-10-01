@@ -1,0 +1,9 @@
+# R9 full Prophet: checkpoint recovery after environment loss
+
+Checked 02.10.2026 on Mac against `R9_prophet_full_20261001/metrics.json`, individual checkpoint files, LaunchAgent state, and a reproduced Prophet fit. The first full invocation reached all 12,468 series but **did not pass** the paired mask: 93,204 of 294,792 forecast rows existed, with 142,897 `AttributeError` fit failures and 222 `insufficient_train` failures. The initial `metrics.json` SHA256 was `4e40a0994cfa1c0ea1bf1babd351cf571ab518bcf3c058e0747aa1ea9e12d309`.
+
+The runtime had been installed under `/tmp/sber-prophet-20260927`. After local midnight, its `pyvenv.cfg` and package files were missing. A previously failed fit for territory `2264`, category `Все категории`, origin `2023-07` succeeded when repeated in a persistent Python 3.13 environment with the same Prophet 1.4.0. The timing and reproduction point to environment deletion as the cause of the large `AttributeError` group; this is an inference, not a claim that every failed row was independently diagnosed.
+
+The 8,519 checkpoints containing `AttributeError` were moved intact to `failed_checkpoints_attributeerror_20261001/`, leaving 3,949 checkpoints for safe resume. `resume_repair_2026-10-02.json` records the archive and counts. The LaunchAgent `com.sergey.sberindex.r9-prophet-20261001` now uses `/Users/sergey/projects/sberindex-research-jobs/venv-prophet-py313/bin/python`; its job was restarted with the unchanged raw/code/model fingerprint. The 222 `insufficient_train` failures need a separate paired-mask decision after recomputation. No scientific PASS is claimed.
+
+After the resumed run finishes: independently join raw predictions to the baseline mask, check missing rows and failure reasons, recompute MAE on the **same** rows for all methods, then ask the curator for the next R9 decision. The raw and checkpoint files remain outside Git; only bounded metrics and validation receipts should be committed.
