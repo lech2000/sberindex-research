@@ -373,5 +373,87 @@
       }
     }
   ],
+  "triage_2024_absent_codes": {
+    "n_missing_official_section_1": 171,
+    "also_in_official_section_2": 0,
+    "present_in_2023_section_1": 167,
+    "present_in_2026_section_1": 0,
+    "year_from_counts": {
+      "2018": 169,
+      "2019": 1,
+      "2020": 1
+    },
+    "type_counts": {
+      "муниципальный район": 84,
+      "городской округ": 71,
+      "внутригородская территория города федерального значения": 16
+    },
+    "top_regions": {
+      "Свердловская область": 53,
+      "Смоленская область": 25,
+      "Москва": 16,
+      "Забайкальский край": 11,
+      "Краснодарский край": 5,
+      "Липецкая область": 5,
+      "Рязанская область": 5,
+      "Псковская область": 5,
+      "Республика Коми": 4,
+      "Костромская область": 4
+    },
+    "year_to_9999_count": 171,
+    "sample_unresolved": [
+      {
+        "territory_id": 222,
+        "oktmo": "86-610-000-000",
+        "name_short": "Сортавальский"
+      },
+      {
+        "territory_id": 225,
+        "oktmo": "87-710-000-000",
+        "name_short": "Воркута"
+      },
+      {
+        "territory_id": 227,
+        "oktmo": "87-715-000-000",
+        "name_short": "Инта"
+      },
+      {
+        "territory_id": 229,
+        "oktmo": "87-725-000-000",
+        "name_short": "Ухта"
+      },
+      {
+        "territory_id": 231,
+        "oktmo": "87-608-000-000",
+        "name_short": "Княжпогостский"
+      },
+      {
+        "territory_id": 275,
+        "oktmo": "88-616-000-000",
+        "name_short": "Килемарский"
+      },
+      {
+        "territory_id": 479,
+        "oktmo": "97-704-000-000",
+        "name_short": "Алатырь"
+      },
+      {
+        "territory_id": 480,
+        "oktmo": "97-707-000-000",
+        "name_short": "Канаш"
+      },
+      {
+        "territory_id": 482,
+        "oktmo": "97-713-000-000",
+        "name_short": "Шумерля"
+      },
+      {
+        "territory_id": 527,
+        "oktmo": "01-614-000-000",
+        "name_short": "Змеиногорский"
+      }
+    ],
+    "status": "unresolved_needs_dated_changes_and_source_year_to_passport"
+  },
   "caveat": "code presence does not prove territory_id identity, legal succession or year_to semantics"
 }
