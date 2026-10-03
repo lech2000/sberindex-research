@@ -1,0 +1,81 @@
+{
+  "recorded_before_calculation": "2026-10-03T15:47:36.829018+00:00",
+  "seeds": [
+    20261003,
+    20261004,
+    20261005,
+    20261006,
+    20261007
+  ],
+  "worlds": [
+    "stable",
+    "drift",
+    "birth",
+    "death",
+    "split",
+    "merge",
+    "proximity"
+  ],
+  "margin_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "modes": [
+    "oracle",
+    "unsupervised"
+  ],
+  "fixed_purity_and_recall": 0.8,
+  "n": 200,
+  "dimensions": 5,
+  "months": [
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "frozen_thresholds": {
+    "overlap_threshold": 0.27716275979336036,
+    "candidate_margin": 0.7187007760980421,
+    "resemblance_floor": 0.17395474720266485
+  },
+  "truth_events_2024_only": true,
+  "no_recalibration": true,
+  "bootstrap_seed_blocks": 10000,
+  "recognition_fpr": "FP_known/(FP_known+TN) over current true subject x eligible prior true identity; unknown predictions reported separately",
+  "recognition_fdr": "(FP_known+FP_unknown)/(TP+FP_known+FP_unknown)",
+  "recognition_miss": "FN/(TP+FN), abstentions count as misses of true matches",
+  "coverage": "continuing/reemergence/birth cluster decisions divided by all postinitial cluster decisions; ambiguous/birth_candidate abstain",
+  "event_matching": "exact month/kind/subject/child-or-parent set; subject requires >=.8 purity AND >=.8 coverage; one-to-one; duplicate predictions FP",
+  "identity_binding": "once only at true first appearance; no retrospective remapping of fragmented IDs",
+  "birth_semantics": "new latent component, including split children and merged component; predecessors retire after four misses",
+  "event_fpr": null,
+  "event_fpr_note": "no predefined TN event universe; report FDR/FNR instead",
+  "sha256": {
+    "calibration": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "tracker": "6e1ade98208556e40ecd010a839559d7877d81508d1d159a9cb681581dee74d8",
+    "control_code": "41e19cadcb43e1a73675e6903579de5d574f48ae27419904cd52e0c1647d6f93"
+  },
+  "scientific_pass": false,
+  "empirical_panel_changed": false
+}

@@ -435,6 +435,7 @@ def track_identities(months: list[str], labels_per_month: list[np.ndarray],
                        margin, "overlap>=T but margin failed or conflict "
                        "lost; never counted as confirmed birth")
                 elif best >= Tc:
+                    status = "birth_candidate"
                     iid = _new_iid(counter)
                     counter += 1
                     identities[iid] = {"misses": 0, "last": m,
@@ -448,6 +449,7 @@ def track_identities(months: list[str], labels_per_month: list[np.ndarray],
                        margin, "new cluster with sub-threshold resemblance "
                        "(T_cand<=overlap<T); NOT a confirmed birth")
                 else:
+                    status = "birth"
                     iid = _new_iid(counter)
                     counter += 1
                     identities[iid] = {"misses": 0, "last": m,

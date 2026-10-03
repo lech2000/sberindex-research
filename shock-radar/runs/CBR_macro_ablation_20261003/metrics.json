@@ -1,0 +1,725 @@
+{
+  "checked_at": "2026-10-03T11:25:13.116982+00:00",
+  "status": "computed_ex_post_assumed_lag_scenarios",
+  "primary": {
+    "horizons": [
+      1,
+      3
+    ],
+    "lag_months": 2,
+    "ridge_alpha_normalized_objective": 1.0,
+    "macro_series": [
+      98,
+      12
+    ],
+    "features": [
+      "USD log level",
+      "USD log month change",
+      "M2 log snapshot level",
+      "M2 log snapshot change"
+    ],
+    "train_min_contiguous_months": 6,
+    "min_training_origins": 6,
+    "targets": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ]
+  },
+  "source_rows": 448,
+  "future_cbr_rows_excluded_from_any_feature": 165,
+  "strict_historical_asof_eligible_rows": 0,
+  "historical_asof_verified": false,
+  "independent_new_holdout": false,
+  "scientific_pass": false,
+  "results": [
+    {
+      "horizon": 1,
+      "lag_months_assumed": 2,
+      "n_common": 73374,
+      "n_territories": 2051,
+      "mae": {
+        "control": 596.4639507328792,
+        "macro": 607.158645832447,
+        "last": 625.1483222940006
+      },
+      "benefit_macro_vs_control": -10.694695099567753,
+      "relative_mae_change_macro_vs_control_pct": 1.793016172465589,
+      "month_block": {
+        "point": -10.694695099567838,
+        "ci95": [
+          -37.188436016238384,
+          17.390636514249934
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 12258,
+            "benefit": -19.627345234951484
+          },
+          {
+            "month": "2024-08",
+            "n": 12258,
+            "benefit": 30.801727008132847
+          },
+          {
+            "month": "2024-09",
+            "n": 12234,
+            "benefit": 42.47571622314092
+          },
+          {
+            "month": "2024-10",
+            "n": 12216,
+            "benefit": -51.054748239863194
+          },
+          {
+            "month": "2024-11",
+            "n": 12180,
+            "benefit": -34.44017813829709
+          },
+          {
+            "month": "2024-12",
+            "n": 12228,
+            "benefit": -32.562141647254364
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -8.903078741175065,
+          "2024-08": -19.01760795702243,
+          "2024-09": -21.333995265122613,
+          "2024-10": -2.632979393334017,
+          "2024-11": -5.968415016361604,
+          "2024-12": -6.321634942155892
+        }
+      },
+      "fits": [
+        {
+          "origin": "2024-06",
+          "target": "2024-07",
+          "n_train": 148854,
+          "training_origin_months": 12,
+          "max_train_target": "2024-06",
+          "expected_r9_mask": 12360,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 102
+        },
+        {
+          "origin": "2024-07",
+          "target": "2024-08",
+          "n_train": 161184,
+          "training_origin_months": 13,
+          "max_train_target": "2024-07",
+          "expected_r9_mask": 12318,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 60
+        },
+        {
+          "origin": "2024-08",
+          "target": "2024-09",
+          "n_train": 173514,
+          "training_origin_months": 14,
+          "max_train_target": "2024-08",
+          "expected_r9_mask": 12270,
+          "common_n": 12234,
+          "extra_exclusions_for_contiguous_six_month_history": 36
+        },
+        {
+          "origin": "2024-09",
+          "target": "2024-10",
+          "n_train": 185880,
+          "training_origin_months": 15,
+          "max_train_target": "2024-09",
+          "expected_r9_mask": 12270,
+          "common_n": 12216,
+          "extra_exclusions_for_contiguous_six_month_history": 54
+        },
+        {
+          "origin": "2024-10",
+          "target": "2024-11",
+          "n_train": 198252,
+          "training_origin_months": 16,
+          "max_train_target": "2024-10",
+          "expected_r9_mask": 12240,
+          "common_n": 12180,
+          "extra_exclusions_for_contiguous_six_month_history": 60
+        },
+        {
+          "origin": "2024-11",
+          "target": "2024-12",
+          "n_train": 210636,
+          "training_origin_months": 17,
+          "max_train_target": "2024-11",
+          "expected_r9_mask": 12270,
+          "common_n": 12228,
+          "extra_exclusions_for_contiguous_six_month_history": 42
+        }
+      ],
+      "negative_clipped": {
+        "control": 0,
+        "macro": 0
+      },
+      "row_win_share": 0.4175866110611388,
+      "category_mae": [
+        {
+          "category": "Все категории",
+          "n": 12229,
+          "control": 1882.736424739331,
+          "macro": 1935.3194116243214
+        },
+        {
+          "category": "Здоровье",
+          "n": 12229,
+          "control": 86.44509836608205,
+          "macro": 89.4498187167826
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12229,
+          "control": 453.076554877982,
+          "macro": 454.6470997402478
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12229,
+          "control": 108.41392271088603,
+          "macro": 108.66949293202806
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12229,
+          "control": 925.6760714198368,
+          "macro": 928.1304587792667
+        },
+        {
+          "category": "Транспорт",
+          "n": 12229,
+          "control": 122.4356322831573,
+          "macro": 126.73559320203549
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "lag_months_assumed": 2,
+      "n_common": 73326,
+      "n_territories": 2050,
+      "mae": {
+        "control": 827.5612483545555,
+        "macro": 891.4027007743572,
+        "last": 865.505100510051
+      },
+      "benefit_macro_vs_control": -63.841452419801726,
+      "relative_mae_change_macro_vs_control_pct": 7.714408153685071,
+      "month_block": {
+        "point": -63.84145241980176,
+        "ci95": [
+          -152.35283935066855,
+          18.60511923056384
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 12204,
+            "benefit": 5.0368072544359705
+          },
+          {
+            "month": "2024-08",
+            "n": 12210,
+            "benefit": -90.36002406094356
+          },
+          {
+            "month": "2024-09",
+            "n": 12258,
+            "benefit": -53.804133056415395
+          },
+          {
+            "month": "2024-10",
+            "n": 12246,
+            "benefit": -93.74409657442395
+          },
+          {
+            "month": "2024-11",
+            "n": 12186,
+            "benefit": -246.30348754104492
+          },
+          {
+            "month": "2024-12",
+            "n": 12222,
+            "benefit": 95.69333388542871
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -77.59411563540985,
+          "2024-08": -58.543465644843636,
+          "2024-09": -65.85621400944594,
+          "2024-10": -57.846236632023384,
+          "2024-11": -27.47438732350688,
+          "2024-12": -95.75154272849721
+        }
+      },
+      "fits": [
+        {
+          "origin": "2024-04",
+          "target": "2024-07",
+          "n_train": 99060,
+          "training_origin_months": 8,
+          "max_train_target": "2024-04",
+          "expected_r9_mask": 12336,
+          "common_n": 12204,
+          "extra_exclusions_for_contiguous_six_month_history": 132
+        },
+        {
+          "origin": "2024-05",
+          "target": "2024-08",
+          "n_train": 111300,
+          "training_origin_months": 9,
+          "max_train_target": "2024-05",
+          "expected_r9_mask": 12318,
+          "common_n": 12210,
+          "extra_exclusions_for_contiguous_six_month_history": 108
+        },
+        {
+          "origin": "2024-06",
+          "target": "2024-09",
+          "n_train": 123510,
+          "training_origin_months": 10,
+          "max_train_target": "2024-06",
+          "expected_r9_mask": 12294,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 36
+        },
+        {
+          "origin": "2024-07",
+          "target": "2024-10",
+          "n_train": 135726,
+          "training_origin_months": 11,
+          "max_train_target": "2024-07",
+          "expected_r9_mask": 12258,
+          "common_n": 12246,
+          "extra_exclusions_for_contiguous_six_month_history": 12
+        },
+        {
+          "origin": "2024-08",
+          "target": "2024-11",
+          "n_train": 147942,
+          "training_origin_months": 12,
+          "max_train_target": "2024-08",
+          "expected_r9_mask": 12198,
+          "common_n": 12186,
+          "extra_exclusions_for_contiguous_six_month_history": 12
+        },
+        {
+          "origin": "2024-09",
+          "target": "2024-12",
+          "n_train": 160284,
+          "training_origin_months": 13,
+          "max_train_target": "2024-09",
+          "expected_r9_mask": 12252,
+          "common_n": 12222,
+          "extra_exclusions_for_contiguous_six_month_history": 30
+        }
+      ],
+      "negative_clipped": {
+        "control": 0,
+        "macro": 0
+      },
+      "row_win_share": 0.4343070670703434,
+      "category_mae": [
+        {
+          "category": "Все категории",
+          "n": 12221,
+          "control": 2336.3743772318835,
+          "macro": 2597.2941454126026
+        },
+        {
+          "category": "Здоровье",
+          "n": 12221,
+          "control": 156.65669320513115,
+          "macro": 153.0448886654403
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12221,
+          "control": 613.3393452410609,
+          "macro": 590.0718971209786
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12221,
+          "control": 227.92724523334684,
+          "macro": 238.7029040704086
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12221,
+          "control": 1443.437360356566,
+          "macro": 1571.6842432149326
+        },
+        {
+          "category": "Транспорт",
+          "n": 12221,
+          "control": 187.63246885934464,
+          "macro": 197.6181261617806
+        }
+      ]
+    },
+    {
+      "horizon": 1,
+      "lag_months_assumed": 3,
+      "n_common": 73374,
+      "n_territories": 2051,
+      "mae": {
+        "control": 596.4639507328792,
+        "macro": 601.4287506187378,
+        "last": 625.1483222940006
+      },
+      "benefit_macro_vs_control": -4.964799885858611,
+      "relative_mae_change_macro_vs_control_pct": 0.8323721626023461,
+      "month_block": {
+        "point": -4.964799885858728,
+        "ci95": [
+          -19.92687495419543,
+          13.220772760123559
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 12258,
+            "benefit": -12.247339649411014
+          },
+          {
+            "month": "2024-08",
+            "n": 12258,
+            "benefit": -22.746477750263388
+          },
+          {
+            "month": "2024-09",
+            "n": 12234,
+            "benefit": 36.97725177981893
+          },
+          {
+            "month": "2024-10",
+            "n": 12216,
+            "benefit": -8.587235685378923
+          },
+          {
+            "month": "2024-11",
+            "n": 12180,
+            "benefit": 3.730558371747778
+          },
+          {
+            "month": "2024-12",
+            "n": 12228,
+            "benefit": -26.844066180028886
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -3.504145189516952,
+          "2024-08": -1.398339265695884,
+          "2024-09": -13.357326220139074,
+          "2024-10": -4.241236726060521,
+          "2024-11": -6.695516354428314,
+          "2024-12": -0.5893760111144648
+        }
+      },
+      "fits": [
+        {
+          "origin": "2024-06",
+          "target": "2024-07",
+          "n_train": 148854,
+          "training_origin_months": 12,
+          "max_train_target": "2024-06",
+          "expected_r9_mask": 12360,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 102
+        },
+        {
+          "origin": "2024-07",
+          "target": "2024-08",
+          "n_train": 161184,
+          "training_origin_months": 13,
+          "max_train_target": "2024-07",
+          "expected_r9_mask": 12318,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 60
+        },
+        {
+          "origin": "2024-08",
+          "target": "2024-09",
+          "n_train": 173514,
+          "training_origin_months": 14,
+          "max_train_target": "2024-08",
+          "expected_r9_mask": 12270,
+          "common_n": 12234,
+          "extra_exclusions_for_contiguous_six_month_history": 36
+        },
+        {
+          "origin": "2024-09",
+          "target": "2024-10",
+          "n_train": 185880,
+          "training_origin_months": 15,
+          "max_train_target": "2024-09",
+          "expected_r9_mask": 12270,
+          "common_n": 12216,
+          "extra_exclusions_for_contiguous_six_month_history": 54
+        },
+        {
+          "origin": "2024-10",
+          "target": "2024-11",
+          "n_train": 198252,
+          "training_origin_months": 16,
+          "max_train_target": "2024-10",
+          "expected_r9_mask": 12240,
+          "common_n": 12180,
+          "extra_exclusions_for_contiguous_six_month_history": 60
+        },
+        {
+          "origin": "2024-11",
+          "target": "2024-12",
+          "n_train": 210636,
+          "training_origin_months": 17,
+          "max_train_target": "2024-11",
+          "expected_r9_mask": 12270,
+          "common_n": 12228,
+          "extra_exclusions_for_contiguous_six_month_history": 42
+        }
+      ],
+      "negative_clipped": {
+        "control": 0,
+        "macro": 0
+      },
+      "row_win_share": 0.4597405075367296,
+      "category_mae": [
+        {
+          "category": "Все категории",
+          "n": 12229,
+          "control": 1882.736424739331,
+          "macro": 1903.3283658968226
+        },
+        {
+          "category": "Здоровье",
+          "n": 12229,
+          "control": 86.44509836608205,
+          "macro": 87.53532945692558
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12229,
+          "control": 453.076554877982,
+          "macro": 452.1794382570538
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12229,
+          "control": 108.41392271088603,
+          "macro": 108.39807406149349
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12229,
+          "control": 925.6760714198368,
+          "macro": 933.1124276495889
+        },
+        {
+          "category": "Транспорт",
+          "n": 12229,
+          "control": 122.4356322831573,
+          "macro": 124.01886839054293
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "lag_months_assumed": 3,
+      "n_common": 73326,
+      "n_territories": 2050,
+      "mae": {
+        "control": 827.5612483545555,
+        "macro": 903.6232195557229,
+        "last": 865.505100510051
+      },
+      "benefit_macro_vs_control": -76.06197120116747,
+      "relative_mae_change_macro_vs_control_pct": 9.191098707485622,
+      "month_block": {
+        "point": -76.06197120116747,
+        "ci95": [
+          -162.29812784696654,
+          4.163879054715448
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 12204,
+            "benefit": -35.70212340560854
+          },
+          {
+            "month": "2024-08",
+            "n": 12210,
+            "benefit": -67.70742482903597
+          },
+          {
+            "month": "2024-09",
+            "n": 12258,
+            "benefit": -100.38335046388067
+          },
+          {
+            "month": "2024-10",
+            "n": 12246,
+            "benefit": -81.10734704591714
+          },
+          {
+            "month": "2024-11",
+            "n": 12186,
+            "benefit": -256.91165876258367
+          },
+          {
+            "month": "2024-12",
+            "n": 12222,
+            "benefit": 85.05657228760963
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -84.12047030945911,
+          "2024-08": -77.7310760379324,
+          "2024-09": -71.18001228647665,
+          "2024-10": -75.05041794977906,
+          "2024-11": -40.016268017925434,
+          "2024-12": -108.28884404942345
+        }
+      },
+      "fits": [
+        {
+          "origin": "2024-04",
+          "target": "2024-07",
+          "n_train": 99060,
+          "training_origin_months": 8,
+          "max_train_target": "2024-04",
+          "expected_r9_mask": 12336,
+          "common_n": 12204,
+          "extra_exclusions_for_contiguous_six_month_history": 132
+        },
+        {
+          "origin": "2024-05",
+          "target": "2024-08",
+          "n_train": 111300,
+          "training_origin_months": 9,
+          "max_train_target": "2024-05",
+          "expected_r9_mask": 12318,
+          "common_n": 12210,
+          "extra_exclusions_for_contiguous_six_month_history": 108
+        },
+        {
+          "origin": "2024-06",
+          "target": "2024-09",
+          "n_train": 123510,
+          "training_origin_months": 10,
+          "max_train_target": "2024-06",
+          "expected_r9_mask": 12294,
+          "common_n": 12258,
+          "extra_exclusions_for_contiguous_six_month_history": 36
+        },
+        {
+          "origin": "2024-07",
+          "target": "2024-10",
+          "n_train": 135726,
+          "training_origin_months": 11,
+          "max_train_target": "2024-07",
+          "expected_r9_mask": 12258,
+          "common_n": 12246,
+          "extra_exclusions_for_contiguous_six_month_history": 12
+        },
+        {
+          "origin": "2024-08",
+          "target": "2024-11",
+          "n_train": 147942,
+          "training_origin_months": 12,
+          "max_train_target": "2024-08",
+          "expected_r9_mask": 12198,
+          "common_n": 12186,
+          "extra_exclusions_for_contiguous_six_month_history": 12
+        },
+        {
+          "origin": "2024-09",
+          "target": "2024-12",
+          "n_train": 160284,
+          "training_origin_months": 13,
+          "max_train_target": "2024-09",
+          "expected_r9_mask": 12252,
+          "common_n": 12222,
+          "extra_exclusions_for_contiguous_six_month_history": 30
+        }
+      ],
+      "negative_clipped": {
+        "control": 0,
+        "macro": 0
+      },
+      "row_win_share": 0.4205056869323296,
+      "category_mae": [
+        {
+          "category": "Все категории",
+          "n": 12221,
+          "control": 2336.3743772318835,
+          "macro": 2664.614635900847
+        },
+        {
+          "category": "Здоровье",
+          "n": 12221,
+          "control": 156.65669320513115,
+          "macro": 161.85736734234806
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12221,
+          "control": 613.3393452410609,
+          "macro": 617.497551011294
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12221,
+          "control": 227.92724523334684,
+          "macro": 232.34976956113275
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12221,
+          "control": 1443.437360356566,
+          "macro": 1556.4835661245568
+        },
+        {
+          "category": "Транспорт",
+          "n": 12221,
+          "control": 187.63246885934464,
+          "macro": 188.93642739415895
+        }
+      ]
+    }
+  ],
+  "prediction_rows": 293400,
+  "sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "cbr": "b9c734d72eb14d911514cc243d9f3413c3ee79f6279f8291e2a3aa2f229097cd",
+    "r9_mask": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "code": "3fb45e960ab1d0a2ff05b35cf953c465c4181d5da2fd25c0bdc69477f182b09d",
+    "predictions": "a27dc485b580afe56c7c495f76a26a2ef344ebd97a32a7f8fae0cc54678d0693"
+  },
+  "limits": [
+    "Lag2 and lag3 are assumptions, NOT historical release receipts or verified data vintages",
+    "Current CBR vintage can contain revisions; this is exploratory ex-post model comparison",
+    "Only six target months, adjacent dependence remains; intervals are descriptive within viewed window",
+    "National features repeat across territories; row count is not independent macro sample size",
+    "M2 is a point stock; FX is preceding-month end quote. No future target macro or 2025/26 input",
+    "h6/h12 not fitted: insufficient independent temporal history for new supervised ablation",
+    "No tuning, causal effect, new Prophet fit, production deployment or revision of frozen R9"
+  ]
+}
