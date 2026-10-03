@@ -43,10 +43,13 @@ python3 -m http.server 8765
 
 Откройте presentation/economic-atlas/landing/ или presentation/shock-radar/landing/.
 Прежние HSE templates в */landing/ — исторический прототип; здесь для показа применяется
-публичный OSM preview. Экономические результаты в template ещё не нанесены.
+публичный OSM preview. Результаты на 03.10.2026 нанесены на оба presentation/лендинга; цвета карты по-прежнему являются географическим контекстом, не назначениями экономики.
 
 
 Новые научные модули: `economic-atlas/src/a6_identities.py` и `shock-radar/src/r8_forecast_ablation.py`, оба черезF7b. Прямые команды воспроизведения в runs/A6_v2/README.md и runs/R8_v2/README.md; исходный reproduce.py --stage all воспроизводит прежний снимок, новыеv2 запускаются этими явнымикомандами.
 
 
 27.09 добавлены `a6_threshold_review.py` и `r8_prophet_pilot.py` (F7b). Явные команды в новых runREADME. Prophet проверен в отдельнойPython3.13 среде с Prophet1.4.0/cmdstanpy1.3.0; его не следует устанавливать в среду базового evaluator без отдельной проверки совместимости. Пилотпо умолчанию32ряда; --max-series0 означает все, требует отдельного бюджета времени. А6 использует основнуюPython3.14.4 среду (точные версии вmanifest). reproduce.py --stage all автоматически эти новыеfollowup не запускает.
+
+
+03.10: сезонная гипотеза и реальные официальные кейсы воспроизводятся отдельными CLI, не старым `--stage all`: [R9](../shock-radar/runs/R9_category_seasonal_20261003/README.md), [реестр/кейсы/охват](../shock-radar/runs/Official_cases_20261003/README.md). Проверены Python3.13.0 и `requirements-integration.txt`; модели Prophet повторно не обучались. Загрузчик официальных страниц требует системный curl, TLS остаётся включённым. Новые выходные директории обязательны; архивы не перезаписываются.

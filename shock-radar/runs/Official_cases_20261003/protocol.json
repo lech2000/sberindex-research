@@ -1,0 +1,29 @@
+{
+  "event_registry_sha256": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+  "threshold_manifest_sha256": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15",
+  "parameters": {
+    "D01": {
+      "k": 2.5
+    },
+    "D02": {
+      "delta": 0.1,
+      "lambda": 0.4
+    },
+    "D03": {
+      "tau": 0.3
+    }
+  },
+  "monthly_selected_alert_budgets": [
+    24,
+    96
+  ],
+  "primary_budget": 24,
+  "sensitivity_budget": 96,
+  "cooldown_months": 3,
+  "training_calibration_end_exclusive": "2024-03",
+  "match_window": "2024-03..2024-05 (monthly coincidence, not economic-change truth)",
+  "story_selection": "three municipalities documented in the fixed official intake, not ranked by spending or detector hits",
+  "no_injected_data": true,
+  "is_independent_test": false,
+  "scientific_pass": false
+}

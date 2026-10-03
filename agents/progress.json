@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T20:44:04Z",
+  "updated_at": "2026-10-03T19:10:35.628149+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "economic-atlas/runs/A6_threshold_review_20260927/manifest.json",
+      "last_artifact": "shock-radar/runs/Official_cases_20261003/README.md",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "Девять T/M и K2/K5 выполнены (75/14108). Идентичности margin-sensitive:1324/4438/36024 неоднозначных строк. Далее обоснованность candidate_margin/uncertainty и внешняя экономическая проверка. Не повторять seed/TM без причины; source06 открыт.",
+      "next_action": "A7: S_Dbw по первоисточнику на frozen A5; AVI/AVU/MQ точная спецификация либо SPEC_UNRESOLVED. 210 controls и 3 реальные истории выполнены; далее сводка экономики/критериев, не повторные seed/controls.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -77,17 +77,24 @@
         "silhouette_k5_mean": 0.2098,
         "kb_document_id": 14108,
         "gate_closed": false
+      },
+      "completed_followups_20261003": {
+        "synthetic_configurations": 210,
+        "migration_municipalities": 1040,
+        "mobility_municipalities": 101,
+        "descriptive_municipal_stories": 3,
+        "economic_pass": false
       }
     },
     "shock-radar": {
       "case_id": "case_008f37d03cf541e5",
       "agent": "software:sberindex_radar_researcher@5",
-      "current_gate": "R9_BLOCKED_NEW_DATA",
-      "status": "r8_completed_inconclusive_no_scientific_pass",
-      "last_artifact": "shock-radar/runs/R8_closeout_20260929/decision.json",
+      "current_gate": "R9",
+      "status": "in_progress_exploratory_positive_seasonal",
+      "last_artifact": "shock-radar/runs/R9_category_seasonal_20261003/metrics.json",
       "last_dialog": "2026-09-29T20:41:21.592079Z",
-      "next_action": "R8 source act_70e2fe4a16ac4e3d закрыт с итогом inconclusive, gate_pass=false. R9 только после нового независимого временного holdout и подтверждённого historical available_at/vintage; новости 0/64 as-of, эффект NA.",
-      "current_artifact_status": "RESEARCH_COMPLETED_INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+      "next_action": "Сильный сезонный benchmark с тем же origin/маской, затем критерии R9. 220962 сезонные пары и официальные события выполнены; новый независимый holdout отдельно, не блокирует описательные выводы и отчёт.",
+      "current_artifact_status": "COMPUTED_EXPLORATORY_NOT_INDEPENDENT_PASS",
       "last_gate": {
         "gate": "R8",
         "status": "INCONCLUSIVE_NO_SCIENTIFIC_PASS",
@@ -99,18 +106,34 @@
         "commit": "3f85724",
         "quality_claim": "Нет доказанного prospective выигрыша, historical as-of или early warning; полный вычислительный парный архив сохранён."
       },
-      "last_scientific_run": "2026-09-29T20:32:31Z",
+      "last_scientific_run": "2026-10-03T19:10:35.628460+00:00",
       "scientific_summary": {
-        "paired_n": 171150,
-        "cells": 14,
-        "mae_lastavailable": 880.2129593923459,
-        "mae_seasonal_naive": 1280.4203856266433,
-        "mae_nonews_boost": 961.1042974419819,
-        "mae_calendar_boost": 1000.793644775331,
-        "historical_news_eligible": 0,
-        "kb_document_id": 14696,
-        "mae_prophet": 731.3863030799444,
-        "mae_chronos": 939.0617606977953
+        "paired_n_h1_h3_h6": 220962,
+        "horizons": [
+          1,
+          3,
+          6
+        ],
+        "mae_category_seasonal": [
+          309.6112470488324,
+          449.4587396988097,
+          618.0917250243157
+        ],
+        "mae_prophet": [
+          641.6996454066442,
+          719.9043597195983,
+          740.4359675427706
+        ],
+        "mae_half_ensemble": [
+          381.4306161967624,
+          470.46625004030835,
+          543.1376235299642
+        ],
+        "official_dated_events": 6,
+        "official_sources": 5,
+        "independent_new_holdout": false,
+        "historical_asof_verified": false,
+        "scientific_pass": false
       },
       "prophet_pilot": {
         "n_series": 32,
@@ -123,6 +146,18 @@
         "kb_document_id": 14104,
         "status": "PILOT_PARTIAL_NOT_GATE_PASS",
         "gate_closed": false
+      },
+      "previous_scientific_summary_r8": {
+        "paired_n": 171150,
+        "cells": 14,
+        "mae_lastavailable": 880.2129593923459,
+        "mae_seasonal_naive": 1280.4203856266433,
+        "mae_nonews_boost": 961.1042974419819,
+        "mae_calendar_boost": 1000.793644775331,
+        "historical_news_eligible": 0,
+        "kb_document_id": 14696,
+        "mae_prophet": 731.3863030799444,
+        "mae_chronos": 939.0617606977953
       }
     },
     "municipality-graph": {
@@ -265,5 +300,7 @@
     ],
     "new_files": 20,
     "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
-  }
+  },
+  "latest_scientific_snapshot": "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
+  "research_snapshot_note": "Operator computations and saved artifacts verified 03.10.2026; prior September timer/deployment descriptions below are historical, not a fresh platform audit."
 }

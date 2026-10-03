@@ -1,0 +1,40 @@
+{
+  "method": "last(series,origin) * median(category,target-12) / median(category,origin-12)",
+  "median_cohort": "all observed raw municipalities at each historical category/month; no zero fill",
+  "sensitivity": "same prior municipalities observed in both reference months",
+  "origin_contract": "origin=target-h; exactly R9 training through observation origin, no assumed release lag",
+  "horizons": [
+    1,
+    3,
+    6
+  ],
+  "unsupported_horizon": 12,
+  "target_window": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "fixed_ensemble": "0.5 seasonal + 0.5 stored Prophet; no optimization or selection",
+  "interval": "paired absolute-error difference; target-month cluster bootstrap, 10000 resamples, percentile 95%",
+  "seed": 20261003,
+  "no_december": "declared sensitivity, five remaining month blocks",
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "r9_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+  "scientific_pass": false,
+  "independent_new_holdout": false,
+  "historical_asof_verified": false,
+  "limits": [
+    "User already inspected this target window before this protocol; this is an exploratory audit, not preregistration of unseen data",
+    "One prior year (2023); no evidence of persistence across multiple annual cycles",
+    "Six nearby temporal blocks; intervals describe this sample, not a confirmatory significance test",
+    "Stored Prophet disables yearly seasonality; no claim against a tuned seasonal Prophet",
+    "Category pooling uses shared past information; comparison with a univariate model is an information-set difference",
+    "Observed category medians may change composition; balanced historical cohort is a sensitivity only",
+    "All categories is an aggregate overlapping other categories; six categories are not independent replications",
+    "Source MAE units retained; not asserted monetary rubles; no causal economic interpretation",
+    "No vintage/publication-time evidence; observation-calendar causality is not historical as-of verification"
+  ]
+}
