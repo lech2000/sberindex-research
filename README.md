@@ -17,6 +17,8 @@
 
 ## Навигация
 
+- [A6.3: 210 количественных контролей и исправление tracker](economic-atlas/runs/A6_frozen_controls_20261003/README.md).
+
 - [Миграция, ЦБ и мобильность: результаты 03.10](docs/DATA_INTEGRATION_RESULTS_2026-10-03.md) и [команды воспроизведения](docs/INTEGRATION_REPRODUCE_2026-10-03.md).
 
 - [Следующие задания на GitHub](docs/NEXT_STEPS.md), [состояние и ограничения](docs/STATE.md), [соответствие требованиям конкурса](docs/CONTEST_CHECKLIST.md).

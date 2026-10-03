@@ -1,0 +1,4010 @@
+[
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-05",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-06",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-10",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-11",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-04",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-05",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-06",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-10",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-11",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-04",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261003,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261003,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261004,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261004,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-05",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2023-06",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-05",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2023-06",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": null,
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261005,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-04",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-05",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-04",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261005,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-05",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-11",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-12",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-11",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-12",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261006,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-08",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261006,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-09",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-01",
+    "kind": "birth",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-10",
+    "kind": "disappearance",
+    "subject": "C",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "split_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 0.75,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.0,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A1",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A2",
+    "others": [],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-03",
+    "kind": "merge_candidate",
+    "subject": "A",
+    "others": [
+      "A1",
+      "A2"
+    ],
+    "matched_truth": true
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-05",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "oracle",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-05",
+    "kind": "disappearance",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "birth",
+    "subject": "B",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-06",
+    "kind": "disappearance",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "mode": "unsupervised",
+    "margin_factor": 1.25,
+    "month": "2024-07",
+    "kind": "birth",
+    "subject": "A",
+    "others": [],
+    "matched_truth": false
+  }
+]

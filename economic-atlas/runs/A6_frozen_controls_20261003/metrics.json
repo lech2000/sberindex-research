@@ -1,0 +1,3388 @@
+{
+  "checked_at": "2026-10-03T15:49:03.389863+00:00",
+  "status": "quantitative_frozen_threshold_synthetic_controls",
+  "n_runs": 210,
+  "n_seeds": 5,
+  "primary_margin_factor": 1.0,
+  "summary": [
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1849,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 1,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1869,
+        "abstentions": 1,
+        "birth_candidates": 0,
+        "ambiguous": 1,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0005405405405405405,
+        "cluster_decision_coverage": 0.9994652406417113,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0016216216216216215,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9983957219251337,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1837,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 13,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1857,
+        "abstentions": 13,
+        "birth_candidates": 0,
+        "ambiguous": 13,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 49,
+        "fp": 1,
+        "fn": 1
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.007027027027027027,
+        "cluster_decision_coverage": 0.993048128342246,
+        "event_fdr": 0.02,
+        "event_fnr": 0.02
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.005945945945945946,
+          "hi": 0.008108108108108109,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9919786096256684,
+          "hi": 0.9941176470588236,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.06,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.06,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1665,
+        "fp_known": 0,
+        "fp_unknown": 24,
+        "fn": 185,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1721,
+        "abstentions": 149,
+        "birth_candidates": 0,
+        "ambiguous": 149,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 46,
+        "fp": 28,
+        "fn": 4
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.014209591474245116,
+        "fnr_known_true_matches": 0.1,
+        "cluster_decision_coverage": 0.9203208556149732,
+        "event_fdr": 0.3783783783783784,
+        "event_fnr": 0.08
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.005917159763313609,
+          "hi": 0.022995283018867923,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.08972972972972973,
+          "hi": 0.11027027027027027,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9160427807486631,
+          "hi": 0.9224598930481284,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.2878787878787879,
+          "hi": 0.4772727272727273,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.04,
+          "hi": 0.1,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1847,
+        "fp_known": 0,
+        "fp_unknown": 2,
+        "fn": 3,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1869,
+        "abstentions": 1,
+        "birth_candidates": 0,
+        "ambiguous": 1,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.001081665765278529,
+        "fnr_known_true_matches": 0.0016216216216216215,
+        "cluster_decision_coverage": 0.9994652406417113,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.003244997295835587,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0037837837837837837,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9983957219251337,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1838,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 12,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1858,
+        "abstentions": 12,
+        "birth_candidates": 0,
+        "ambiguous": 12,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 49,
+        "fp": 1,
+        "fn": 1
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.006486486486486486,
+        "cluster_decision_coverage": 0.9935828877005347,
+        "event_fdr": 0.02,
+        "event_fnr": 0.02
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.004324324324324324,
+          "hi": 0.008108108108108109,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9919786096256684,
+          "hi": 0.9957219251336898,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.06,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.06,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1666,
+        "fp_known": 0,
+        "fp_unknown": 24,
+        "fn": 184,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1722,
+        "abstentions": 148,
+        "birth_candidates": 0,
+        "ambiguous": 148,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 46,
+        "fp": 28,
+        "fn": 4
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.014201183431952662,
+        "fnr_known_true_matches": 0.09945945945945946,
+        "cluster_decision_coverage": 0.9208556149732621,
+        "event_fdr": 0.3783783783783784,
+        "event_fnr": 0.08
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.00591016548463357,
+          "hi": 0.022995283018867923,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.08864864864864865,
+          "hi": 0.11027027027027027,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9160427807486631,
+          "hi": 0.9240641711229947,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.28125,
+          "hi": 0.4772727272727273,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.04,
+          "hi": 0.1,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    }
+  ],
+  "by_world": [
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 285,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 290,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 315,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 315,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 290,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 295,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 229,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 1,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 229,
+        "abstentions": 1,
+        "birth_candidates": 0,
+        "ambiguous": 1,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.004347826086956522,
+        "cluster_decision_coverage": 0.9956521739130435,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.013043478260869565,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9869565217391304,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 270,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 280,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 285,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 290,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 312,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 3,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 312,
+        "abstentions": 3,
+        "birth_candidates": 0,
+        "ambiguous": 3,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 1
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.009523809523809525,
+        "cluster_decision_coverage": 0.9904761904761905,
+        "event_fdr": 0.2,
+        "event_fnr": 0.2
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0031746031746031746,
+          "hi": 0.015873015873015872,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9841269841269841,
+          "hi": 0.9968253968253968,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.6,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.6,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 290,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 295,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 220,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 10,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 220,
+        "abstentions": 10,
+        "birth_candidates": 0,
+        "ambiguous": 10,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.043478260869565216,
+        "cluster_decision_coverage": 0.9565217391304348,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.043478260869565216,
+          "hi": 0.043478260869565216,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9565217391304348,
+          "hi": 0.9565217391304348,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 270,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 280,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 252,
+        "fp_known": 0,
+        "fp_unknown": 1,
+        "fn": 33,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 260,
+        "abstentions": 30,
+        "birth_candidates": 0,
+        "ambiguous": 30,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 4,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.003952569169960474,
+        "fnr_known_true_matches": 0.11578947368421053,
+        "cluster_decision_coverage": 0.896551724137931,
+        "event_fdr": 0.4444444444444444,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.012048192771084338,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0912280701754386,
+          "hi": 0.14385964912280702,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.8827586206896552,
+          "hi": 0.9137931034482759,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.6153846153846154,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 256,
+        "fp_known": 0,
+        "fp_unknown": 5,
+        "fn": 59,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 265,
+        "abstentions": 50,
+        "birth_candidates": 0,
+        "ambiguous": 50,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 1,
+        "fp": 12,
+        "fn": 4
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.019157088122605363,
+        "fnr_known_true_matches": 0.1873015873015873,
+        "cluster_decision_coverage": 0.8412698412698413,
+        "event_fdr": 0.9230769230769231,
+        "event_fnr": 0.8
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.05905511811023622,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.13015873015873017,
+          "hi": 0.24444444444444444,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.8063492063492064,
+          "hi": 0.8698412698412699,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.5714285714285714,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.4,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 286,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 4,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 291,
+        "abstentions": 4,
+        "birth_candidates": 0,
+        "ambiguous": 4,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.013793103448275862,
+        "cluster_decision_coverage": 0.9864406779661017,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.034482758620689655,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9661016949152542,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 160,
+        "fp_known": 0,
+        "fp_unknown": 18,
+        "fn": 70,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 184,
+        "abstentions": 46,
+        "birth_candidates": 0,
+        "ambiguous": 46,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.10112359550561797,
+        "fnr_known_true_matches": 0.30434782608695654,
+        "cluster_decision_coverage": 0.8,
+        "event_fdr": 1.0,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.04918032786885246,
+          "hi": 0.16071428571428573,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.24347826086956523,
+          "hi": 0.3869565217391304,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.7695652173913043,
+          "hi": 0.8217391304347826,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 251,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 19,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 261,
+        "abstentions": 19,
+        "birth_candidates": 0,
+        "ambiguous": 19,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.07037037037037037,
+        "cluster_decision_coverage": 0.9321428571428572,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.05925925925925926,
+          "hi": 0.08148148148148149,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9214285714285714,
+          "hi": 0.9428571428571428,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 285,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 290,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 315,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 315,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 290,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 295,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 227,
+        "fp_known": 0,
+        "fp_unknown": 2,
+        "fn": 3,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 229,
+        "abstentions": 1,
+        "birth_candidates": 0,
+        "ambiguous": 1,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.008733624454148471,
+        "fnr_known_true_matches": 0.013043478260869565,
+        "cluster_decision_coverage": 0.9956521739130435,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.026200873362445413,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.030434782608695653,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9869565217391304,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 270,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 280,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 285,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 290,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 312,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 3,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 312,
+        "abstentions": 3,
+        "birth_candidates": 0,
+        "ambiguous": 3,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 1
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.009523809523809525,
+        "cluster_decision_coverage": 0.9904761904761905,
+        "event_fdr": 0.2,
+        "event_fnr": 0.2
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0031746031746031746,
+          "hi": 0.015873015873015872,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9841269841269841,
+          "hi": 0.9968253968253968,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.6,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.6,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 290,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 295,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 221,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 9,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 221,
+        "abstentions": 9,
+        "birth_candidates": 0,
+        "ambiguous": 9,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0391304347826087,
+        "cluster_decision_coverage": 0.9608695652173913,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.030434782608695653,
+          "hi": 0.043478260869565216,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9565217391304348,
+          "hi": 0.9695652173913043,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 270,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 280,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "birth",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 252,
+        "fp_known": 0,
+        "fp_unknown": 1,
+        "fn": 33,
+        "tn": 460,
+        "cluster_decisions": 290,
+        "decided_clusters": 260,
+        "abstentions": 30,
+        "birth_candidates": 0,
+        "ambiguous": 30,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 5,
+        "fp": 4,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.003952569169960474,
+        "fnr_known_true_matches": 0.11578947368421053,
+        "cluster_decision_coverage": 0.896551724137931,
+        "event_fdr": 0.4444444444444444,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.012048192771084338,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0912280701754386,
+          "hi": 0.14043859649122678,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.8827586206896552,
+          "hi": 0.9137931034482759,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.6153846153846154,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "death",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 256,
+        "fp_known": 0,
+        "fp_unknown": 5,
+        "fn": 59,
+        "tn": 610,
+        "cluster_decisions": 315,
+        "decided_clusters": 265,
+        "abstentions": 50,
+        "birth_candidates": 0,
+        "ambiguous": 50,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 1,
+        "fp": 12,
+        "fn": 4
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.019157088122605363,
+        "fnr_known_true_matches": 0.1873015873015873,
+        "cluster_decision_coverage": 0.8412698412698413,
+        "event_fdr": 0.9230769230769231,
+        "event_fnr": 0.8
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.05905511811023622,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.13015873015873017,
+          "hi": 0.24444444444444444,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.8063492063492064,
+          "hi": 0.8698412698412699,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.5714285714285714,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.4,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "drift",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "merge",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 286,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 4,
+        "tn": 565,
+        "cluster_decisions": 295,
+        "decided_clusters": 291,
+        "abstentions": 4,
+        "birth_candidates": 0,
+        "ambiguous": 4,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.013793103448275862,
+        "cluster_decision_coverage": 0.9864406779661017,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.034482758620689655,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9661016949152542,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "proximity",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 161,
+        "fp_known": 0,
+        "fp_unknown": 18,
+        "fn": 69,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 185,
+        "abstentions": 45,
+        "birth_candidates": 0,
+        "ambiguous": 45,
+        "unmatchable_clusters": 2
+      },
+      "events": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.1005586592178771,
+        "fnr_known_true_matches": 0.3,
+        "cluster_decision_coverage": 0.8043478260869565,
+        "event_fdr": 1.0,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.04864864864864865,
+          "hi": 0.16568047337278108,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.23478260869565218,
+          "hi": 0.3826086956521739,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.7695652173913043,
+          "hi": 0.8260869565217391,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "split",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 251,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 19,
+        "tn": 470,
+        "cluster_decisions": 280,
+        "decided_clusters": 261,
+        "abstentions": 19,
+        "birth_candidates": 0,
+        "ambiguous": 19,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.07037037037037037,
+        "cluster_decision_coverage": 0.9321428571428572,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.05925925925925926,
+          "hi": 0.08148148148148149,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 0.9214285714285714,
+          "hi": 0.9428571428571428,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        }
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "world": "stable",
+      "n_runs": 5,
+      "recognition": {
+        "tp": 230,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 230,
+        "cluster_decisions": 230,
+        "decided_clusters": 230,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": null,
+        "event_fnr": null
+      },
+      "seed_block_95ci": {
+        "fpr_known_pairs": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fdr_all_predicted_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "fnr_known_true_matches": {
+          "lo": 0.0,
+          "hi": 0.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "cluster_decision_coverage": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "valid_draws": 10000,
+          "resampled_seeds": 5
+        },
+        "event_fdr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        },
+        "event_fnr": {
+          "lo": null,
+          "hi": null,
+          "valid_draws": 0,
+          "resampled_seeds": 5
+        }
+      }
+    }
+  ],
+  "versions": {
+    "python": "3.13.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "sha256": {
+    "calibration": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "tracker": "6e1ade98208556e40ecd010a839559d7877d81508d1d159a9cb681581dee74d8",
+    "control_code": "41e19cadcb43e1a73675e6903579de5d574f48ae27419904cd52e0c1647d6f93"
+  },
+  "scientific_pass": false,
+  "economic_truth_verified": false,
+  "limits": [
+    "Known generator hypotheses, not real economic events; toy geometries are not calibrated to observed municipal distributions",
+    "Oracle mode receives true membership, Unsupervised K-selection-to-M2/M3 never receives truth; raw-spending/scaler pipeline is not tested by these generators",
+    "Real frozen 2023 T/M/Tc transfer to synthetic five-dimensional stress worlds; no threshold retuning",
+    "Five independent seeds only; descriptive seed-block CIs may degenerate and do not imply zero population error",
+    "False recognition pairs have a fixed known candidate universe; unknown predictions separate. No TN universe claimed for events",
+    "Structural component births/deaths may co-occur with split/merge; ontology and four-miss delay declared before computation",
+    "No arbitrary scientific pass threshold or modification of frozen A6; negative control outcomes are valid evidence"
+  ]
+}

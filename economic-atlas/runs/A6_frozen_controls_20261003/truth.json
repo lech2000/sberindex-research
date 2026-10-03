@@ -1,0 +1,527 @@
+[
+  {
+    "seed": 20261003,
+    "world": "stable",
+    "expected": []
+  },
+  {
+    "seed": 20261003,
+    "world": "drift",
+    "expected": []
+  },
+  {
+    "seed": 20261003,
+    "world": "birth",
+    "expected": [
+      [
+        12,
+        "birth",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261003,
+    "world": "death",
+    "expected": [
+      [
+        21,
+        "disappearance",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261003,
+    "world": "split",
+    "expected": [
+      [
+        14,
+        "split_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        17,
+        "disappearance",
+        "A",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A1",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261003,
+    "world": "merge",
+    "expected": [
+      [
+        14,
+        "merge_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        14,
+        "birth",
+        "A",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A1",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261003,
+    "world": "proximity",
+    "expected": []
+  },
+  {
+    "seed": 20261004,
+    "world": "stable",
+    "expected": []
+  },
+  {
+    "seed": 20261004,
+    "world": "drift",
+    "expected": []
+  },
+  {
+    "seed": 20261004,
+    "world": "birth",
+    "expected": [
+      [
+        12,
+        "birth",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261004,
+    "world": "death",
+    "expected": [
+      [
+        21,
+        "disappearance",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261004,
+    "world": "split",
+    "expected": [
+      [
+        14,
+        "split_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        17,
+        "disappearance",
+        "A",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A1",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261004,
+    "world": "merge",
+    "expected": [
+      [
+        14,
+        "merge_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        14,
+        "birth",
+        "A",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A1",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261004,
+    "world": "proximity",
+    "expected": []
+  },
+  {
+    "seed": 20261005,
+    "world": "stable",
+    "expected": []
+  },
+  {
+    "seed": 20261005,
+    "world": "drift",
+    "expected": []
+  },
+  {
+    "seed": 20261005,
+    "world": "birth",
+    "expected": [
+      [
+        12,
+        "birth",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261005,
+    "world": "death",
+    "expected": [
+      [
+        21,
+        "disappearance",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261005,
+    "world": "split",
+    "expected": [
+      [
+        14,
+        "split_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        17,
+        "disappearance",
+        "A",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A1",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261005,
+    "world": "merge",
+    "expected": [
+      [
+        14,
+        "merge_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        14,
+        "birth",
+        "A",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A1",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261005,
+    "world": "proximity",
+    "expected": []
+  },
+  {
+    "seed": 20261006,
+    "world": "stable",
+    "expected": []
+  },
+  {
+    "seed": 20261006,
+    "world": "drift",
+    "expected": []
+  },
+  {
+    "seed": 20261006,
+    "world": "birth",
+    "expected": [
+      [
+        12,
+        "birth",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261006,
+    "world": "death",
+    "expected": [
+      [
+        21,
+        "disappearance",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261006,
+    "world": "split",
+    "expected": [
+      [
+        14,
+        "split_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        17,
+        "disappearance",
+        "A",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A1",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261006,
+    "world": "merge",
+    "expected": [
+      [
+        14,
+        "merge_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        14,
+        "birth",
+        "A",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A1",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261006,
+    "world": "proximity",
+    "expected": []
+  },
+  {
+    "seed": 20261007,
+    "world": "stable",
+    "expected": []
+  },
+  {
+    "seed": 20261007,
+    "world": "drift",
+    "expected": []
+  },
+  {
+    "seed": 20261007,
+    "world": "birth",
+    "expected": [
+      [
+        12,
+        "birth",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261007,
+    "world": "death",
+    "expected": [
+      [
+        21,
+        "disappearance",
+        "C",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261007,
+    "world": "split",
+    "expected": [
+      [
+        14,
+        "split_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        17,
+        "disappearance",
+        "A",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A1",
+        []
+      ],
+      [
+        14,
+        "birth",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261007,
+    "world": "merge",
+    "expected": [
+      [
+        14,
+        "merge_candidate",
+        "A",
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      [
+        14,
+        "birth",
+        "A",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A1",
+        []
+      ],
+      [
+        17,
+        "disappearance",
+        "A2",
+        []
+      ]
+    ]
+  },
+  {
+    "seed": 20261007,
+    "world": "proximity",
+    "expected": []
+  }
+]
