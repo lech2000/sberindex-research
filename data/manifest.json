@@ -181,6 +181,31 @@
       "checked_at": "2026-09-24T10:58:48Z",
       "snapshot_manifest": "data/raw/news/manifest.json",
       "archive_manifest": "data/raw/news/archive_manifest.json"
+    },
+    {
+      "id": "treasury_annual_regional_budget_2025_owner_intake",
+      "status": "verified_0503317_regional_context_partial_archive",
+      "source": "https://roskazna.gov.ru/ispolnenie-byudzhetov/konsolidirovannye-byudzhety-subektov-rossijskoj-federacii",
+      "source_channel": "owner_supplied_file",
+      "file": "../economic-atlas/data/treasury-2025/budget-cells.parquet",
+      "rows": 43540,
+      "nonmissing_amounts": 23156,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "period": "2025 annual, report date 2026-01-01",
+      "coverage": "91 reporting territories + 1 national summary; local budgets grouped by type, municipality rows 0",
+      "archive_sha256": "092346570e65582300f82425874cf75ac80fe67f3e75cf66c2544ba9b580e770",
+      "normalized_sha256": "cc6dfa1f38afdce50035f188fdc28285b9c5cf06a1126822565ea6b35639740a",
+      "source_published_at": null,
+      "available_at": null,
+      "vintage": null,
+      "municipality_crosswalk_verified": false,
+      "admitted_to_frozen_2023_2024_features": false,
+      "mandatory_sberindex": false,
+      "projects": [
+        "economic-atlas"
+      ],
+      "passport": "../economic-atlas/runs/Treasury_2025_20261004/manifest.json"
     }
   ]
 }

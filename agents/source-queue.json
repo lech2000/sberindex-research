@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-24",
+  "as_of": "2026-10-04",
   "policy": "mimo_pro_hosted_search_discovery -> official_api_or_file_or_jina_verification -> apify_paid_complex_escalation -> recon_mcp_allowlisted_passive -> human_handoff",
   "items": [
     {
@@ -118,6 +118,20 @@
       "results": 3,
       "billing_credits": 11,
       "use": "candidate URLs only; accept a dataset after official-file validation, hash and license check"
+    },
+    {
+      "id": "treasury_2025_regional_context",
+      "project": "economic-atlas",
+      "priority": "bounded_secondary_no_schedule_slip",
+      "status": "0503317_computed_context_geo_review_pending",
+      "source_channel": "owner_supplied_file",
+      "source": "https://roskazna.gov.ru/ispolnenie-byudzhetov/konsolidirovannye-byudzhety-subektov-rossijskoj-federacii",
+      "artifact": "economic-atlas/runs/Treasury_2025_20261004/README.md",
+      "normalized_file": "economic-atlas/data/treasury-2025/budget-cells.parquet",
+      "year": 2025,
+      "n_reporting_territories": 91,
+      "municipality_rows": 0,
+      "next_action": "Confirm reporting geography using authorities; retain conflicts. Do not wait for a replacement ZIP, seek socials, or put 2025 budgets into 2023/2024 predictors."
     }
   ]
 }
