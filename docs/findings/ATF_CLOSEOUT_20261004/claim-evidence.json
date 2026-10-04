@@ -1,0 +1,115 @@
+{
+  "checked_on": "2026-10-04",
+  "kind": "evidence_synthesis_not_new_experiment",
+  "ATF_M1": "no_completed_m_sig_shuffle_economic_run_verified",
+  "ATF_M2": "implemented_real_panel_tracking_synthetic_validation_economic_validity_open",
+  "ATF_M3": "implemented_containment_controls_no_confirmed_real_split_merge",
+  "ATF_M4": "partial_channel_ablation_not_double_dissociation",
+  "ATF_M5": "not_verified_in_economic_panel_deferred_from_submission_claims",
+  "ATF_M6": "partial_leakage_audit_full_feature_audit_open",
+  "real_panel": {
+    "municipalities": 1896,
+    "months": 24,
+    "chosen_K": 2,
+    "mean_ARI_seed_range": [
+      0.9985416441441014,
+      0.9997233190562037
+    ],
+    "identity_counts": {
+      "ambiguous": 7,
+      "ambiguous_never_confirmed": true,
+      "birth": 0,
+      "birth_candidate": 0,
+      "confirmed_births": 0,
+      "conflict": 0,
+      "continuing": 36,
+      "disappearance": 0,
+      "dormant": 7,
+      "initial": 2,
+      "reemergence": 3
+    },
+    "ambiguous_assignment_rows": 4438
+  },
+  "synthetic_controls": {
+    "n_configurations": 210,
+    "primary_n_configurations_unsupervised": 35,
+    "primary_events": {
+      "tp": 49,
+      "fp": 1,
+      "fn": 1
+    },
+    "event_f1": 0.98,
+    "event_fdr": 0.02,
+    "event_fdr_with_margin_125pct": 0.3783783783783784
+  },
+  "radar_seasonal": [
+    {
+      "horizon": 1,
+      "n_common": 73728,
+      "seasonal_mae": 309.6112470488324,
+      "stored_nonseasonal_prophet_mae": 641.6996454066442,
+      "relative_mae_reduction_pct": 51.751376323009794,
+      "ensemble_half_mae": 381.4306161967624
+    },
+    {
+      "horizon": 3,
+      "n_common": 73656,
+      "seasonal_mae": 449.4587396988097,
+      "stored_nonseasonal_prophet_mae": 719.9043597195983,
+      "relative_mae_reduction_pct": 37.56688181831914,
+      "ensemble_half_mae": 470.46625004030835
+    },
+    {
+      "horizon": 6,
+      "n_common": 73578,
+      "seasonal_mae": 618.0917250243157,
+      "stored_nonseasonal_prophet_mae": 740.4359675427706,
+      "relative_mae_reduction_pct": 16.523271137741947,
+      "ensemble_half_mae": 543.1376235299642
+    }
+  ],
+  "new_experiments_run": false,
+  "full_scientific_gate_pass": false,
+  "sources": {
+    "identities": {
+      "path": "economic-atlas/runs/A6_v2/metrics.json",
+      "sha256": "a4cf2fd44a704f428106146bf33b2908c769abfb53dd66e316c390922c22a9ff"
+    },
+    "seeds": {
+      "path": "economic-atlas/runs/A6_v2/robustness/manifest.json",
+      "sha256": "bd8d96430ce16c4d983d5aade8edcf9ef2ab6e3c95f356234ac9fe83b913010a"
+    },
+    "thresholds": {
+      "path": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+      "sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1"
+    },
+    "controls": {
+      "path": "economic-atlas/runs/A6_frozen_controls_20261003/metrics.json",
+      "sha256": "04bee2028f9e4d10a65853eb035c5b64578a0f7200eb50da90304b58fbec3791"
+    },
+    "graph_comparison": {
+      "path": "economic-atlas/runs/A5/metrics.json",
+      "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+    },
+    "mobility": {
+      "path": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+      "sha256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b"
+    },
+    "seasonal": {
+      "path": "shock-radar/runs/R9_category_seasonal_20261003/metrics.json",
+      "sha256": "6667f757c07a6f47d9e84703d712c0456341f6d8281100518e7aea9bc025db6c"
+    },
+    "events": {
+      "path": "shock-radar/runs/Official_cases_20261003/metrics.json",
+      "sha256": "fa4b654421db8c75481fbe187548f14cd875d2340d400f192a04096b531b0c99"
+    },
+    "municipal_pilot": {
+      "path": "economic-atlas/runs/Municipal_budget_pilot_20261004/metrics.json",
+      "sha256": "dc7856860760a85378c4a15bc1215ffc4bd87b98e8731afdb72b5a41ca2219ae"
+    },
+    "budget_supplement": {
+      "path": "economic-atlas/runs/Budget_owner_supplement_20261004/metrics.json",
+      "sha256": "a4bd2865a145f5dec507b8b489237e19b641e61e0a8b585f2286cc8fde781d2a"
+    }
+  }
+}
