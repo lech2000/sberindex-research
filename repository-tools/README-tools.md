@@ -117,3 +117,7 @@ bash repository-tools/selftest.sh
   If the scientific runtime (numpy/pandas/…) is unavailable,
   `selftest.sh` falls back to `--help` + byte-compile checks and reports
   `SKIP` instead of failing.
+
+## A7.S1 — воспроизведение S_Dbw, 04.10.2026
+
+[Протокол и команды](../economic-atlas/runs/A7_SDbw_20261004/README.md): сохранённые A5 features/assignments, без переобучения; семь fixtures и независимый scalar audit. Три конечных значения/два NA; AVI/AVU/MQ SPEC_UNRESOLVED. Запускайте в новый `output/reproduced/A7_SDbw`; входы/SHA не менять.

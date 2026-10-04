@@ -1,0 +1,83 @@
+{
+  "fixtures_passed": [
+    "hand_calculated_1D_scat_radius_density",
+    "overlap_known_density_domains_distinct",
+    "zero_density_denominator_is_NA_not_zero",
+    "singleton_retained_flagged_not_imputed",
+    "invalid_missing_and_degenerate_inputs_rejected",
+    "row_label_translation_uniform_scale_invariance",
+    "independent_scalar_reference_4_seeds_2_conventions"
+  ],
+  "real_audit": [
+    {
+      "method": "E01_kmeans",
+      "convention": "pair_union",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E01_kmeans",
+      "convention": "own_cluster",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E02_louvain",
+      "convention": "pair_union",
+      "pairs_checked": 528,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E02_louvain",
+      "convention": "own_cluster",
+      "pairs_checked": 528,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a0",
+      "convention": "pair_union",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a0",
+      "convention": "own_cluster",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a0.5",
+      "convention": "pair_union",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a0.5",
+      "convention": "own_cluster",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a1",
+      "convention": "pair_union",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    },
+    {
+      "method": "E03_spectral_a1",
+      "convention": "own_cluster",
+      "pairs_checked": 10,
+      "counts_exact": true,
+      "components_match_rtol": 1e-12
+    }
+  ]
+}

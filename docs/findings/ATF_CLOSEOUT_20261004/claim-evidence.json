@@ -136,7 +136,7 @@
       "sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b"
     }
   },
-  "revision": 2,
+  "revision": 3,
   "checked_at": "2026-10-04T17:22:03.374917+00:00",
   "supersedes": "same-day initial closeout synthesis",
   "calibration_audit": {
@@ -569,5 +569,36 @@
     "scientific_pass": false,
     "R9_h6_benefit_ci_includes_zero": true,
     "specification_is_not_optimal_Prophet_search": true
+  },
+  "bounded_A7_SDbw": {
+    "run": "economic-atlas/runs/A7_SDbw_20261004",
+    "status": "COMPUTED_DESCRIPTIVE",
+    "n_municipalities": 1896,
+    "n_assignments": 5,
+    "control_checks": 7,
+    "independent_pair_count_sets": 1136,
+    "jury_indices": [
+      "SW",
+      "CH",
+      "S_Dbw"
+    ],
+    "jury_indices_SPEC_UNRESOLVED": [
+      "AVI",
+      "AVU",
+      "MQ"
+    ],
+    "finite_scores": {
+      "E01_kmeans": 1.122896,
+      "E03_spectral_a0.5": 0.683187,
+      "E03_spectral_a1": 0.661501
+    },
+    "mathematical_NA": {
+      "E02_louvain": "zero density denominator528/528 pairs",
+      "E03_spectral_a0": "zero density denominator1/10 pairs"
+    },
+    "ranking_limit": "geo-only smallest finite score has1742/1896=91.88% in one group and singleton; not economic superiority",
+    "full_A7_gate_pass": false,
+    "source_of_exact_values": "economic-atlas/runs/A7_SDbw_20261004/metrics.json",
+    "artifact_manifest": "economic-atlas/runs/A7_SDbw_20261004/artifact-manifest.json"
   }
 }
