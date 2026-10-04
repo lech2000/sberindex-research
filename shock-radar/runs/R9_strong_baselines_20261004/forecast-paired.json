@@ -1,0 +1,146 @@
+[
+  {
+    "horizon": 1,
+    "model": "profile_ses",
+    "reference": "category_seasonal",
+    "error_delta": -7.144706028512325,
+    "ci95_target_month_blocks": [
+      -36.88533329841165,
+      17.372100881079394
+    ],
+    "n_month_blocks": 6,
+    "n": 72654
+  },
+  {
+    "horizon": 1,
+    "model": "profile_ses",
+    "reference": "growth_naive3",
+    "error_delta": -39.24033753340366,
+    "ci95_target_month_blocks": [
+      -53.83160916487143,
+      -26.795410989964267
+    ],
+    "n_month_blocks": 6,
+    "n": 72654
+  },
+  {
+    "horizon": 1,
+    "model": "profile_ses",
+    "reference": "stored_prophet",
+    "error_delta": -341.43460245426627,
+    "ci95_target_month_blocks": [
+      -652.4733302408258,
+      -131.26174243658005
+    ],
+    "n_month_blocks": 6,
+    "n": 72654
+  },
+  {
+    "horizon": 1,
+    "model": "profile_ses",
+    "reference": "last_value",
+    "error_delta": -324.9936858873477,
+    "ci95_target_month_blocks": [
+      -758.6734185249734,
+      -32.16868156536419
+    ],
+    "n_month_blocks": 6,
+    "n": 72654
+  },
+  {
+    "horizon": 3,
+    "model": "profile_ses",
+    "reference": "category_seasonal",
+    "error_delta": -39.29187626937113,
+    "ci95_target_month_blocks": [
+      -80.12437080803203,
+      6.515144422455477
+    ],
+    "n_month_blocks": 6,
+    "n": 72726
+  },
+  {
+    "horizon": 3,
+    "model": "profile_ses",
+    "reference": "growth_naive3",
+    "error_delta": -61.74128886052981,
+    "ci95_target_month_blocks": [
+      -71.58651747884245,
+      -52.42672336951692
+    ],
+    "n_month_blocks": 6,
+    "n": 72726
+  },
+  {
+    "horizon": 3,
+    "model": "profile_ses",
+    "reference": "stored_prophet",
+    "error_delta": -311.24414713744824,
+    "ci95_target_month_blocks": [
+      -536.0617883870156,
+      -180.46369092182243
+    ],
+    "n_month_blocks": 6,
+    "n": 72726
+  },
+  {
+    "horizon": 3,
+    "model": "profile_ses",
+    "reference": "last_value",
+    "error_delta": -456.97856822441554,
+    "ci95_target_month_blocks": [
+      -963.8095993143712,
+      -167.5686807451829
+    ],
+    "n_month_blocks": 6,
+    "n": 72726
+  },
+  {
+    "horizon": 6,
+    "model": "profile_ses",
+    "reference": "category_seasonal",
+    "error_delta": -26.009974233643284,
+    "ci95_target_month_blocks": [
+      -60.02064343098049,
+      -0.8516531261359229
+    ],
+    "n_month_blocks": 6,
+    "n": 72822
+  },
+  {
+    "horizon": 6,
+    "model": "profile_ses",
+    "reference": "growth_naive3",
+    "error_delta": -73.4413618698067,
+    "ci95_target_month_blocks": [
+      -111.58641254967856,
+      -32.194711417274654
+    ],
+    "n_month_blocks": 6,
+    "n": 72822
+  },
+  {
+    "horizon": 6,
+    "model": "profile_ses",
+    "reference": "stored_prophet",
+    "error_delta": -147.4488898985559,
+    "ci95_target_month_blocks": [
+      -293.52494063650664,
+      -35.46061917578878
+    ],
+    "n_month_blocks": 6,
+    "n": 72822
+  },
+  {
+    "horizon": 6,
+    "model": "profile_ses",
+    "reference": "last_value",
+    "error_delta": -534.7998419361896,
+    "ci95_target_month_blocks": [
+      -915.9871213200732,
+      -182.07442449886562
+    ],
+    "n_month_blocks": 6,
+    "n": 72822
+  }
+]

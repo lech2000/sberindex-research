@@ -1,0 +1,1122 @@
+{
+  "status": "EXPLORATORY_NOT_GATE_PASS",
+  "rows": 221922,
+  "results": [
+    {
+      "window": "R9",
+      "horizon": 1,
+      "original_rows": 73728,
+      "common_rows": 72654,
+      "excluded_rows": 1074,
+      "missing_by_model": {
+        "category_seasonal": 0,
+        "growth_naive1": 132,
+        "growth_naive3": 408,
+        "conditional_ses": 1074,
+        "profile_ses": 1074,
+        "last_value": 0,
+        "stored_prophet": 0
+      },
+      "mae": {
+        "category_seasonal": 307.1043606317089,
+        "growth_naive1": 341.73689836970095,
+        "growth_naive3": 339.1999921366002,
+        "conditional_ses": 302.26613514803853,
+        "profile_ses": 299.95965460319655,
+        "last_value": 624.9533404905442,
+        "stored_prophet": 641.3942570574628
+      },
+      "comparisons": {
+        "growth_naive1": {
+          "seasonal_benefit_mae": 34.63253773799208,
+          "ci95_target_month_blocks": [
+            17.85358526106799,
+            51.41700596319447
+          ],
+          "share_series_seasonal_better": 0.6260504201680672,
+          "n_month_blocks": 6
+        },
+        "growth_naive3": {
+          "seasonal_benefit_mae": 32.09563150489133,
+          "ci95_target_month_blocks": [
+            -3.0485073592783123,
+            63.729879449840595
+          ],
+          "share_series_seasonal_better": 0.6103147141209425,
+          "n_month_blocks": 6
+        },
+        "conditional_ses": {
+          "seasonal_benefit_mae": -4.838225483670346,
+          "ci95_target_month_blocks": [
+            -11.440218512850173,
+            0.28462082261447635
+          ],
+          "share_series_seasonal_better": 0.4931619706706212,
+          "n_month_blocks": 6
+        },
+        "profile_ses": {
+          "seasonal_benefit_mae": -7.144706028512325,
+          "ci95_target_month_blocks": [
+            -36.885333298411645,
+            17.248302700896964
+          ],
+          "share_series_seasonal_better": 0.5,
+          "n_month_blocks": 6
+        },
+        "last_value": {
+          "seasonal_benefit_mae": 317.8489798588353,
+          "ci95_target_month_blocks": [
+            35.98389613116964,
+            715.9551752438571
+          ],
+          "share_series_seasonal_better": 0.8074641621354424,
+          "n_month_blocks": 6
+        },
+        "stored_prophet": {
+          "seasonal_benefit_mae": 334.2898964257539,
+          "ci95_target_month_blocks": [
+            138.3118544826181,
+            614.8339769083119
+          ],
+          "share_series_seasonal_better": 0.8527764046795189,
+          "n_month_blocks": 6
+        }
+      },
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 12138,
+          "mae": {
+            "category_seasonal": 300.77735349854413,
+            "growth_naive1": 307.17304341808193,
+            "growth_naive3": 297.18094714647196,
+            "conditional_ses": 303.90675240367244,
+            "profile_ses": 282.0847462756114,
+            "last_value": 318.23512934585597,
+            "stored_prophet": 435.00436948231334
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 12108,
+          "mae": {
+            "category_seasonal": 270.70710278685107,
+            "growth_naive1": 330.1330139371299,
+            "growth_naive3": 336.05590212222836,
+            "conditional_ses": 267.71008720905354,
+            "profile_ses": 306.88810496921053,
+            "last_value": 335.08572844400396,
+            "stored_prophet": 397.37275020059394
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 12108,
+          "mae": {
+            "category_seasonal": 281.58750388779487,
+            "growth_naive1": 314.16229593166344,
+            "growth_naive3": 365.93955434390386,
+            "conditional_ses": 274.4795685898807,
+            "profile_ses": 294.6037404764643,
+            "last_value": 678.867443012884,
+            "stored_prophet": 737.0081980139443
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 12102,
+          "mae": {
+            "category_seasonal": 267.68990015988055,
+            "growth_naive1": 316.74944988751463,
+            "growth_naive3": 296.7786318885456,
+            "conditional_ses": 269.068937259995,
+            "profile_ses": 256.42258875742533,
+            "last_value": 495.62882168236655,
+            "stored_prophet": 419.4396124638265
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 12102,
+          "mae": {
+            "category_seasonal": 346.4210372011467,
+            "growth_naive1": 400.4296732043146,
+            "growth_naive3": 400.2878289535582,
+            "conditional_ses": 342.68891732347606,
+            "profile_ses": 360.17808742730546,
+            "last_value": 290.8042472318625,
+            "stored_prophet": 500.4818625058576
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 12096,
+          "mae": {
+            "category_seasonal": 375.52670626745055,
+            "growth_naive1": 381.91607585936725,
+            "growth_naive3": 339.0703204551591,
+            "conditional_ses": 355.7951152271124,
+            "profile_ses": 299.632890823696,
+            "last_value": 1632.6276455026455,
+            "stored_prophet": 1360.1026045314018
+          }
+        }
+      ],
+      "by_category": [
+        {
+          "category": "Все категории",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 834.6620563333016,
+            "growth_naive1": 884.6258511268715,
+            "growth_naive3": 845.90325553584,
+            "conditional_ses": 809.4286073949746,
+            "profile_ses": 732.3680660659445,
+            "last_value": 2018.5540507060864,
+            "stored_prophet": 1860.503274371766
+          }
+        },
+        {
+          "category": "Здоровье",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 101.43411623380544,
+            "growth_naive1": 112.40479459982195,
+            "growth_naive3": 94.9473877061508,
+            "conditional_ses": 97.05265079005605,
+            "profile_ses": 89.52641132683645,
+            "last_value": 95.31199933933438,
+            "stored_prophet": 108.67147184887524
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 382.8115951653979,
+            "growth_naive1": 472.4986698372093,
+            "growth_naive3": 491.04759636814725,
+            "conditional_ses": 381.2894132099667,
+            "profile_ses": 437.9717373226777,
+            "last_value": 521.1106614914527,
+            "stored_prophet": 541.9386939784657
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 83.60602857257165,
+            "growth_naive1": 81.98139961312258,
+            "growth_naive3": 82.98285838555958,
+            "conditional_ses": 86.17452879378305,
+            "profile_ses": 66.69360494683706,
+            "last_value": 97.43067140143695,
+            "stored_prophet": 161.42229284038967
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 350.6427131415243,
+            "growth_naive1": 394.72610893826777,
+            "growth_naive3": 416.9003216594687,
+            "conditional_ses": 351.10866971549757,
+            "profile_ses": 385.9417138084359,
+            "last_value": 890.8680320422826,
+            "stored_prophet": 1024.4004765740622
+          }
+        },
+        {
+          "category": "Транспорт",
+          "n": 12109,
+          "mae": {
+            "category_seasonal": 89.46965434365212,
+            "growth_naive1": 104.18456610291248,
+            "growth_naive3": 103.41853316443462,
+            "conditional_ses": 88.54294098395312,
+            "profile_ses": 87.25639414844755,
+            "last_value": 126.4446279626724,
+            "stored_prophet": 151.42933273121793
+          }
+        }
+      ]
+    },
+    {
+      "window": "R9",
+      "horizon": 3,
+      "original_rows": 73656,
+      "common_rows": 72726,
+      "excluded_rows": 930,
+      "missing_by_model": {
+        "category_seasonal": 0,
+        "growth_naive1": 162,
+        "growth_naive3": 432,
+        "conditional_ses": 930,
+        "profile_ses": 930,
+        "last_value": 0,
+        "stored_prophet": 0
+      },
+      "mae": {
+        "category_seasonal": 448.1739906069004,
+        "growth_naive1": 455.9111038817849,
+        "growth_naive3": 470.62340319805907,
+        "conditional_ses": 437.2699289202594,
+        "profile_ses": 408.8821143375293,
+        "last_value": 865.8606825619448,
+        "stored_prophet": 720.1262614749776
+      },
+      "comparisons": {
+        "growth_naive1": {
+          "seasonal_benefit_mae": 7.737113274884528,
+          "ci95_target_month_blocks": [
+            -25.137752895711326,
+            48.374214716635116
+          ],
+          "share_series_seasonal_better": 0.5730401844532279,
+          "n_month_blocks": 6
+        },
+        "growth_naive3": {
+          "seasonal_benefit_mae": 22.449412591158673,
+          "ci95_target_month_blocks": [
+            -18.896872459330027,
+            62.64621879059469
+          ],
+          "share_series_seasonal_better": 0.5638175230566534,
+          "n_month_blocks": 6
+        },
+        "conditional_ses": {
+          "seasonal_benefit_mae": -10.904061686641004,
+          "ci95_target_month_blocks": [
+            -15.093328701194743,
+            -8.229291041116307
+          ],
+          "share_series_seasonal_better": 0.43626482213438733,
+          "n_month_blocks": 6
+        },
+        "profile_ses": {
+          "seasonal_benefit_mae": -39.29187626937113,
+          "ci95_target_month_blocks": [
+            -81.64624180091778,
+            3.486368059537858
+          ],
+          "share_series_seasonal_better": 0.469532279314888,
+          "n_month_blocks": 6
+        },
+        "last_value": {
+          "seasonal_benefit_mae": 417.6866919550444,
+          "ci95_target_month_blocks": [
+            122.14488402934106,
+            945.4776824133793
+          ],
+          "share_series_seasonal_better": 0.8817523056653491,
+          "n_month_blocks": 6
+        },
+        "stored_prophet": {
+          "seasonal_benefit_mae": 271.9522708680771,
+          "ci95_target_month_blocks": [
+            108.07916423760045,
+            524.277976366945
+          ],
+          "share_series_seasonal_better": 0.8064888010540184,
+          "n_month_blocks": 6
+        }
+      },
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 12138,
+          "mae": {
+            "category_seasonal": 463.17477941981446,
+            "growth_naive1": 418.800197815346,
+            "growth_naive3": 405.0220767171247,
+            "conditional_ses": 454.58398158173924,
+            "profile_ses": 358.42111750858015,
+            "last_value": 652.45608831768,
+            "stored_prophet": 581.9805119063584
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 12108,
+          "mae": {
+            "category_seasonal": 444.737863214037,
+            "growth_naive1": 414.23880170346837,
+            "growth_naive3": 423.66855926552887,
+            "conditional_ses": 434.033267517871,
+            "profile_ses": 349.7091295146088,
+            "last_value": 604.0424512718863,
+            "stored_prophet": 501.1643770808727
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 12144,
+          "mae": {
+            "category_seasonal": 412.6199678559587,
+            "growth_naive1": 512.1952790682515,
+            "growth_naive3": 510.89823391481906,
+            "conditional_ses": 405.13571828057786,
+            "profile_ses": 460.6821839979044,
+            "last_value": 606.91534914361,
+            "stored_prophet": 715.9759829953384
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 12132,
+          "mae": {
+            "category_seasonal": 398.67524123123695,
+            "growth_naive1": 411.7596990954254,
+            "growth_naive3": 434.1963871320344,
+            "conditional_ses": 377.7791551491869,
+            "profile_ses": 363.2749474033146,
+            "last_value": 608.8305308275635,
+            "stored_prophet": 543.7555402645706
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 12108,
+          "mae": {
+            "category_seasonal": 539.7579758031306,
+            "growth_naive1": 525.627732375792,
+            "growth_naive3": 562.3866292741665,
+            "conditional_ses": 531.6800755950658,
+            "profile_ses": 484.2242815027841,
+            "last_value": 590.738850346878,
+            "stored_prophet": 679.4685065217852
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 12096,
+          "mae": {
+            "category_seasonal": 430.2269868716713,
+            "growth_naive1": 452.85400188176186,
+            "growth_naive3": 487.7004554897115,
+            "conditional_ses": 420.561379855731,
+            "profile_ses": 437.0703768209203,
+            "last_value": 2135.247023809524,
+            "stored_prophet": 1299.691264208308
+          }
+        }
+      ],
+      "by_category": [
+        {
+          "category": "Все категории",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 1176.9275094692475,
+            "growth_naive1": 1122.2940856733546,
+            "growth_naive3": 1156.0533510533019,
+            "conditional_ses": 1127.487472804479,
+            "profile_ses": 948.5792117988703,
+            "last_value": 2479.657619008333,
+            "stored_prophet": 2027.6115574641988
+          }
+        },
+        {
+          "category": "Здоровье",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 113.31907030213912,
+            "growth_naive1": 113.31497022740166,
+            "growth_naive3": 104.71474158535592,
+            "conditional_ses": 106.54264052859845,
+            "profile_ses": 97.26976000219166,
+            "last_value": 168.55341968484447,
+            "stored_prophet": 137.52735426193803
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 600.5071119363502,
+            "growth_naive1": 702.3926887429892,
+            "growth_naive3": 736.6998899965945,
+            "conditional_ses": 600.3256799631364,
+            "profile_ses": 668.0760191709901,
+            "last_value": 875.2685421994885,
+            "stored_prophet": 622.956688290069
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 155.1773085585882,
+            "growth_naive1": 117.0537466108819,
+            "growth_naive3": 119.18054921031474,
+            "conditional_ses": 153.58551028815776,
+            "profile_ses": 103.2068596810139,
+            "last_value": 206.98349971124495,
+            "stored_prophet": 202.28057509226954
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 513.6409316314279,
+            "growth_naive1": 544.5317137751521,
+            "growth_naive3": 569.7734326631288,
+            "conditional_ses": 511.27947851682615,
+            "profile_ses": 516.2267144052765,
+            "last_value": 1266.0858015015262,
+            "stored_prophet": 1141.8230377527532
+          }
+        },
+        {
+          "category": "Транспорт",
+          "n": 12121,
+          "mae": {
+            "category_seasonal": 129.4720117436495,
+            "growth_naive1": 135.87941826093007,
+            "growth_naive3": 137.31845467965888,
+            "conditional_ses": 124.39879142035873,
+            "profile_ses": 119.93412096683316,
+            "last_value": 198.61521326623216,
+            "stored_prophet": 188.55835598863675
+          }
+        }
+      ]
+    },
+    {
+      "window": "R9",
+      "horizon": 6,
+      "original_rows": 73578,
+      "common_rows": 72822,
+      "excluded_rows": 756,
+      "missing_by_model": {
+        "category_seasonal": 0,
+        "growth_naive1": 264,
+        "growth_naive3": 378,
+        "conditional_ses": 756,
+        "profile_ses": 756,
+        "last_value": 0,
+        "stored_prophet": 0
+      },
+      "mae": {
+        "category_seasonal": 617.9771944490013,
+        "growth_naive1": 659.4931910526658,
+        "growth_naive3": 665.4085820851648,
+        "conditional_ses": 609.2020591614839,
+        "profile_ses": 591.967220215358,
+        "last_value": 1126.7670621515476,
+        "stored_prophet": 739.4161101139139
+      },
+      "comparisons": {
+        "growth_naive1": {
+          "seasonal_benefit_mae": 41.51599660366458,
+          "ci95_target_month_blocks": [
+            -27.629847893351698,
+            99.77994155116266
+          ],
+          "share_series_seasonal_better": 0.5700197238658777,
+          "n_month_blocks": 6
+        },
+        "growth_naive3": {
+          "seasonal_benefit_mae": 47.431387636163414,
+          "ci95_target_month_blocks": [
+            -22.866350979288804,
+            106.83562268165423
+          ],
+          "share_series_seasonal_better": 0.5576923076923077,
+          "n_month_blocks": 6
+        },
+        "conditional_ses": {
+          "seasonal_benefit_mae": -8.775135287517239,
+          "ci95_target_month_blocks": [
+            -12.01623085925381,
+            -4.199044396253607
+          ],
+          "share_series_seasonal_better": 0.394888231426693,
+          "n_month_blocks": 6
+        },
+        "profile_ses": {
+          "seasonal_benefit_mae": -26.009974233643284,
+          "ci95_target_month_blocks": [
+            -60.02064343098049,
+            -0.8365362994038149
+          ],
+          "share_series_seasonal_better": 0.47879684418145957,
+          "n_month_blocks": 6
+        },
+        "last_value": {
+          "seasonal_benefit_mae": 508.7898677025463,
+          "ci95_target_month_blocks": [
+            167.2428604714305,
+            869.0989308896188
+          ],
+          "share_series_seasonal_better": 0.8898750821827744,
+          "n_month_blocks": 6
+        },
+        "stored_prophet": {
+          "seasonal_benefit_mae": 121.43891566491261,
+          "ci95_target_month_blocks": [
+            -1.4267384685096949,
+            277.249098622863
+          ],
+          "share_series_seasonal_better": 0.62146614069691,
+          "n_month_blocks": 6
+        }
+      },
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 12138,
+          "mae": {
+            "category_seasonal": 791.4687097092096,
+            "growth_naive1": 683.9856592403368,
+            "growth_naive3": 683.9856592403368,
+            "conditional_ses": 793.2541133677577,
+            "profile_ses": 690.2488563433062,
+            "last_value": 1909.3713956170704,
+            "stored_prophet": 729.0849958530848
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 12120,
+          "mae": {
+            "category_seasonal": 618.7292026426763,
+            "growth_naive1": 605.4829400558936,
+            "growth_naive3": 619.5243174289285,
+            "conditional_ses": 608.4055021437409,
+            "profile_ses": 579.301861403174,
+            "last_value": 1238.6548679867988,
+            "stored_prophet": 678.3499697232485
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 12156,
+          "mae": {
+            "category_seasonal": 514.4461707791128,
+            "growth_naive1": 604.031298746206,
+            "growth_naive3": 594.0604977925747,
+            "conditional_ses": 506.0631101781649,
+            "profile_ses": 489.7867449667692,
+            "last_value": 533.5503455083909,
+            "stored_prophet": 719.1079562300786
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 12150,
+          "mae": {
+            "category_seasonal": 476.16008397021886,
+            "growth_naive1": 598.3492120919357,
+            "growth_naive3": 605.8171609624795,
+            "conditional_ses": 466.4610992516113,
+            "profile_ses": 474.37851937675885,
+            "last_value": 584.0153909465021,
+            "stored_prophet": 516.6975342882803
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 12150,
+          "mae": {
+            "category_seasonal": 583.298564825832,
+            "growth_naive1": 693.2783544369082,
+            "growth_naive3": 710.1698107984313,
+            "conditional_ses": 569.7389609282833,
+            "profile_ses": 586.5674789283846,
+            "last_value": 714.1751440329218,
+            "stored_prophet": 583.5114722504355
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 12108,
+          "mae": {
+            "category_seasonal": 724.3524847061968,
+            "growth_naive1": 772.1392957231798,
+            "growth_naive3": 779.22778224698,
+            "conditional_ses": 711.8752345313934,
+            "profile_ses": 732.1205963658521,
+            "last_value": 1784.4508589362406,
+            "stored_prophet": 1211.2247202367596
+          }
+        }
+      ],
+      "by_category": [
+        {
+          "category": "Все категории",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 1755.224428248198,
+            "growth_naive1": 1762.285914238038,
+            "growth_naive3": 1839.1419068802297,
+            "conditional_ses": 1719.0311062723242,
+            "profile_ses": 1627.8941230016467,
+            "last_value": 3541.142786520557,
+            "stored_prophet": 2181.6576839022696
+          }
+        },
+        {
+          "category": "Здоровье",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 147.63148413503353,
+            "growth_naive1": 138.90921425363274,
+            "growth_naive3": 140.24302273350318,
+            "conditional_ses": 141.71932272949212,
+            "profile_ses": 130.43612445387936,
+            "last_value": 158.5467578479031,
+            "stored_prophet": 122.04826661681693
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 802.9084105196381,
+            "growth_naive1": 938.5817164646122,
+            "growth_naive3": 935.6580382245244,
+            "conditional_ses": 809.4368515087018,
+            "profile_ses": 852.8754906219616,
+            "last_value": 1257.044327263739,
+            "stored_prophet": 713.7432664049549
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 170.30471487466292,
+            "growth_naive1": 179.3699899631463,
+            "growth_naive3": 181.01417622705432,
+            "conditional_ses": 167.4953742613641,
+            "profile_ses": 156.55956311770552,
+            "last_value": 237.52797231605834,
+            "stored_prophet": 209.92211064377972
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 636.6090913762479,
+            "growth_naive1": 744.0716987978417,
+            "growth_naive3": 695.3655425925448,
+            "conditional_ses": 626.8736821278935,
+            "profile_ses": 606.9245807359067,
+            "last_value": 1298.5685919090386,
+            "stored_prophet": 994.6823036762362
+          }
+        },
+        {
+          "category": "Транспорт",
+          "n": 12137,
+          "mae": {
+            "category_seasonal": 195.18503754022703,
+            "growth_naive1": 193.74061259872386,
+            "growth_naive3": 201.02880585313144,
+            "conditional_ses": 190.65601806912824,
+            "profile_ses": 177.1134393610475,
+            "last_value": 267.77193705198977,
+            "stored_prophet": 214.4430294394257
+          }
+        }
+      ]
+    },
+    {
+      "window": "pre_R9",
+      "horizon": 1,
+      "original_rows": 600,
+      "common_rows": 600,
+      "excluded_rows": 0,
+      "missing_by_model": {
+        "category_seasonal": 0,
+        "growth_naive1": 0,
+        "growth_naive3": 0,
+        "conditional_ses": 0,
+        "profile_ses": 0,
+        "last_value": 0
+      },
+      "mae": {
+        "category_seasonal": 339.2168265439593,
+        "growth_naive1": 351.13234896088215,
+        "growth_naive3": 360.78833581558933,
+        "conditional_ses": 330.2025687964009,
+        "profile_ses": 364.45634127845756,
+        "last_value": 480.145
+      },
+      "comparisons": {
+        "growth_naive1": {
+          "seasonal_benefit_mae": 11.915522416922691,
+          "ci95_target_month_blocks": [
+            -31.775011872238533,
+            44.99947683356296
+          ],
+          "share_series_seasonal_better": 0.5416666666666666,
+          "n_month_blocks": 5
+        },
+        "growth_naive3": {
+          "seasonal_benefit_mae": 21.571509271629957,
+          "ci95_target_month_blocks": [
+            -9.326900151176568,
+            48.49307513902578
+          ],
+          "share_series_seasonal_better": 0.5833333333333334,
+          "n_month_blocks": 5
+        },
+        "conditional_ses": {
+          "seasonal_benefit_mae": -9.014257747558483,
+          "ci95_target_month_blocks": [
+            -22.52262823852571,
+            2.9045707538184975
+          ],
+          "share_series_seasonal_better": 0.39166666666666666,
+          "n_month_blocks": 5
+        },
+        "profile_ses": {
+          "seasonal_benefit_mae": 25.239514734498183,
+          "ci95_target_month_blocks": [
+            -4.091663638552759,
+            54.57069310754912
+          ],
+          "share_series_seasonal_better": 0.6416666666666667,
+          "n_month_blocks": 5
+        },
+        "last_value": {
+          "seasonal_benefit_mae": 140.9281734560406,
+          "ci95_target_month_blocks": [
+            -104.13262308321312,
+            393.96497007579603
+          ],
+          "share_series_seasonal_better": 0.6333333333333333,
+          "n_month_blocks": 5
+        }
+      },
+      "by_month": [
+        {
+          "target": "2024-02",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 272.6803014251653,
+            "growth_naive1": 308.4746397233984,
+            "growth_naive3": 308.4746397233984,
+            "conditional_ses": 272.47001783919325,
+            "profile_ses": 306.88191414453627,
+            "last_value": 686.3166666666667
+          }
+        },
+        {
+          "target": "2024-03",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 269.89159190126423,
+            "growth_naive1": 281.1716179430793,
+            "growth_naive3": 328.8239919114021,
+            "conditional_ses": 235.3403352010883,
+            "profile_ses": 333.7379928035283,
+            "last_value": 804.2583333333333
+          }
+        },
+        {
+          "target": "2024-04",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 544.1141368639697,
+            "growth_naive1": 475.4643289635561,
+            "growth_naive3": 542.7244806282695,
+            "conditional_ses": 553.8256901075132,
+            "profile_ses": 599.593662370893,
+            "last_value": 313.725
+          }
+        },
+        {
+          "target": "2024-05",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 327.42840582539526,
+            "growth_naive1": 390.11967870325213,
+            "growth_naive3": 371.8315245137053,
+            "conditional_ses": 311.88678967625765,
+            "profile_ses": 314.9748378844586,
+            "last_value": 280.51666666666665
+          }
+        },
+        {
+          "target": "2024-06",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 281.9696967040024,
+            "growth_naive1": 300.4314794711245,
+            "growth_naive3": 252.08704230117146,
+            "conditional_ses": 277.4900111579519,
+            "profile_ses": 267.09329918887164,
+            "last_value": 315.90833333333336
+          }
+        }
+      ],
+      "by_category": [
+        {
+          "category": "Все категории",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 1027.921454509477,
+            "growth_naive1": 1006.5695127657237,
+            "growth_naive3": 1078.4143263988794,
+            "conditional_ses": 1000.1379996245144,
+            "profile_ses": 1124.8759598904476,
+            "last_value": 1515.29
+          }
+        },
+        {
+          "category": "Здоровье",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 109.29009375321998,
+            "growth_naive1": 103.76193689691817,
+            "growth_naive3": 99.33372269415503,
+            "conditional_ses": 102.10006375700368,
+            "profile_ses": 99.62638006894572,
+            "last_value": 95.42
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 384.3357718141671,
+            "growth_naive1": 433.70623078108207,
+            "growth_naive3": 382.80604569735755,
+            "conditional_ses": 363.1924750464943,
+            "profile_ses": 345.83422832992784,
+            "last_value": 455.26
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 86.0263751583496,
+            "growth_naive1": 76.52392007435445,
+            "growth_naive3": 91.49319893434968,
+            "conditional_ses": 90.3309564437166,
+            "profile_ses": 104.86807586933632,
+            "last_value": 94.96
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 336.69157953220747,
+            "growth_naive1": 415.7129140758875,
+            "growth_naive3": 422.5011148183937,
+            "conditional_ses": 334.42699192885107,
+            "profile_ses": 401.2372407974957,
+            "last_value": 636.22
+          }
+        },
+        {
+          "category": "Транспорт",
+          "n": 100,
+          "mae": {
+            "category_seasonal": 91.03568449633535,
+            "growth_naive1": 70.51957917132637,
+            "growth_naive3": 90.18160635040068,
+            "conditional_ses": 91.02692597782527,
+            "profile_ses": 110.29616271459217,
+            "last_value": 83.72
+          }
+        }
+      ]
+    },
+    {
+      "window": "pre_R9",
+      "horizon": 3,
+      "original_rows": 360,
+      "common_rows": 360,
+      "excluded_rows": 0,
+      "missing_by_model": {
+        "category_seasonal": 0,
+        "growth_naive1": 0,
+        "growth_naive3": 0,
+        "conditional_ses": 0,
+        "profile_ses": 0,
+        "last_value": 0
+      },
+      "mae": {
+        "category_seasonal": 621.4006931654312,
+        "growth_naive1": 565.418695326738,
+        "growth_naive3": 600.1118160928087,
+        "conditional_ses": 619.3525449370037,
+        "profile_ses": 611.9403275944128,
+        "last_value": 814.45
+      },
+      "comparisons": {
+        "growth_naive1": {
+          "seasonal_benefit_mae": -55.981997838693275,
+          "ci95_target_month_blocks": [
+            -81.41835338418105,
+            -15.512569790990938
+          ],
+          "share_series_seasonal_better": 0.49166666666666664,
+          "n_month_blocks": 3
+        },
+        "growth_naive3": {
+          "seasonal_benefit_mae": -21.28887707262256,
+          "ci95_target_month_blocks": [
+            -81.41835338418105,
+            27.631269784802335
+          ],
+          "share_series_seasonal_better": 0.525,
+          "n_month_blocks": 3
+        },
+        "conditional_ses": {
+          "seasonal_benefit_mae": -2.0481482284274666,
+          "ci95_target_month_blocks": [
+            -47.54342158919405,
+            32.90052310100074
+          ],
+          "share_series_seasonal_better": 0.4666666666666667,
+          "n_month_blocks": 3
+        },
+        "profile_ses": {
+          "seasonal_benefit_mae": -9.460365571018524,
+          "ci95_target_month_blocks": [
+            -37.75411911294175,
+            10.705353734698422
+          ],
+          "share_series_seasonal_better": 0.5416666666666666,
+          "n_month_blocks": 3
+        },
+        "last_value": {
+          "seasonal_benefit_mae": 193.04930683456877,
+          "ci95_target_month_blocks": [
+            -116.44205803016864,
+            481.57963883445353
+          ],
+          "share_series_seasonal_better": 0.5333333333333333,
+          "n_month_blocks": 3
+        }
+      },
+      "by_month": [
+        {
+          "target": "2024-04",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 813.7203611655464,
+            "growth_naive1": 732.3020077813655,
+            "growth_naive3": 732.3020077813655,
+            "conditional_ses": 846.6208842665473,
+            "profile_ses": 775.9662420526048,
+            "last_value": 1295.3
+          }
+        },
+        {
+          "target": "2024-05",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 524.3396603005785,
+            "growth_naive1": 508.82709050958766,
+            "growth_naive3": 551.9709300853809,
+            "conditional_ses": 476.79623871138455,
+            "profile_ses": 523.0073289657663,
+            "last_value": 738.35
+          }
+        },
+        {
+          "target": "2024-06",
+          "n": 120,
+          "mae": {
+            "category_seasonal": 526.1420580301686,
+            "growth_naive1": 455.12698768926083,
+            "growth_naive3": 516.0625104116797,
+            "conditional_ses": 534.6405118330796,
+            "profile_ses": 536.847411764867,
+            "last_value": 409.7
+          }
+        }
+      ],
+      "by_category": [
+        {
+          "category": "Все категории",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 2064.033790737971,
+            "growth_naive1": 1845.6916109136737,
+            "growth_naive3": 1967.137166915145,
+            "conditional_ses": 2076.117016505587,
+            "profile_ses": 2060.898464938988,
+            "last_value": 2565.0333333333333
+          }
+        },
+        {
+          "category": "Здоровье",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 188.48549913339698,
+            "growth_naive1": 141.24921391852828,
+            "growth_naive3": 134.29944909785556,
+            "conditional_ses": 187.05476158011578,
+            "profile_ses": 146.6758593003716,
+            "last_value": 152.11666666666667
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 383.6709749644226,
+            "growth_naive1": 478.27678864505793,
+            "growth_naive3": 515.4314814316866,
+            "conditional_ses": 388.9541916788559,
+            "profile_ses": 419.8220849566338,
+            "last_value": 594.8666666666667
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 210.59318668663673,
+            "growth_naive1": 137.60422597552608,
+            "growth_naive3": 132.1093583445782,
+            "conditional_ses": 212.66421194316928,
+            "profile_ses": 172.89424411690985,
+            "last_value": 155.75
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 607.0114212135952,
+            "growth_naive1": 636.9823055055036,
+            "growth_naive3": 684.6518059393675,
+            "conditional_ses": 577.8596595584588,
+            "profile_ses": 663.0513487080042,
+            "last_value": 1208.5333333333333
+          }
+        },
+        {
+          "category": "Транспорт",
+          "n": 60,
+          "mae": {
+            "category_seasonal": 274.6092862565652,
+            "growth_naive1": 152.70802700213818,
+            "growth_naive3": 167.04163482821934,
+            "conditional_ses": 273.4654283558359,
+            "profile_ses": 208.299963545569,
+            "last_value": 210.4
+          }
+        }
+      ]
+    }
+  ],
+  "scientific_pass": false,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

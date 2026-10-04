@@ -1,0 +1,13 @@
+family,method,events,hits,null_alarm_cells,null_cells,recall,matched_null_fa
+gaussian,energy,4000,3959,5400,180000,0.98975,0.03
+gaussian,glr_two_sided,4000,283,5400,180000,0.07075,0.03
+gaussian,mahalanobis,4000,3992,5400,180000,0.998,0.03
+gaussian,max_absolute,4000,3935,5400,180000,0.98375,0.03
+gaussian,stouffer_down,4000,319,5400,180000,0.07975,0.03
+gaussian,stouffer_two_sided,4000,346,5400,180000,0.0865,0.03
+student5,energy,4000,3281,5400,180000,0.82025,0.03
+student5,glr_two_sided,4000,210,5400,180000,0.0525,0.03
+student5,mahalanobis,4000,3815,5400,180000,0.95375,0.03
+student5,max_absolute,4000,3507,5400,180000,0.87675,0.03
+student5,stouffer_down,4000,349,5400,180000,0.08725,0.03
+student5,stouffer_two_sided,4000,334,5400,180000,0.0835,0.03

@@ -1,0 +1,61 @@
+{
+  "recorded_before_results": "2026-10-04T20:30:13.406879+00:00",
+  "run_id": "D04_multicategory_20261004",
+  "client_date": "2026-10-04",
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "code_sha256": "99f6e8ce0f32ba5217668e90f47fd23fcb43e6f92cc5a2e340663aefd4779650",
+  "methods": [
+    "stouffer_down",
+    "stouffer_two_sided",
+    "max_absolute",
+    "glr_two_sided",
+    "energy",
+    "mahalanobis"
+  ],
+  "primary_categories": "five nonaggregate; exclude overlapping All categories",
+  "real_signal": "adjacent monthly log change minus contemporaneous category median; per-MO median/MAD fitted Feb-Dec2023",
+  "covariance": "LedoitWolf on 2023 standardized residuals, diagonal-normalized correlation; no future fit",
+  "real_threshold_calibration": "Jan-Feb2024 only; evaluation Mar-Dec2024",
+  "target_false_alarm_rates": [
+    0.01,
+    0.03
+  ],
+  "real_false_alarm_rate": null,
+  "synthetic": {
+    "families": [
+      "Gaussian",
+      "Student-t5"
+    ],
+    "correlation": "empirical training correlation",
+    "AR1": 0.3,
+    "calibration": "independent null seed+1000; discard first three months for GLR warmup",
+    "test_seeds": 20,
+    "municipalities_per_seed": 1000,
+    "events_per_seed": 200,
+    "forms": [
+      "common_down",
+      "common_up",
+      "sparse_down",
+      "opposed",
+      "ramp_down"
+    ],
+    "effect": "L2-normalized directions; vector amplitudes 2/4/6 standardized units; 3 months",
+    "matching": "any alert in onset..onset+2, no early warning claim",
+    "primary_cell": "opposed amplitude4 targetFA3%; paired CI by seed vs unsigned Stouffer, maxabs, unsigned GLR"
+  },
+  "known_real_examples": [
+    "Орск",
+    "Оренбург",
+    "Новотроицк"
+  ],
+  "independent_holdout": false,
+  "scientific_pass": false,
+  "limits": [
+    "Exploratory post-discovery specification; real flood examples already viewed",
+    "Simulated event truth only; empirical-correlation noise does not prove real-event power",
+    "Equal calibration FA targets, not forced equal realized held-out FA; publish achieved null FA",
+    "Real targetFA labels are calibration quantiles, not known economic false alarms",
+    "Contemporaneous cross-sectional centering removes national common shocks",
+    "Monthly changes are post-observation detection, not historical as-of forecasting"
+  ]
+}

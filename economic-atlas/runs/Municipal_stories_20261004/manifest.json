@@ -1,0 +1,12 @@
+{
+  "README.md": "97bb5a62c0975ed0ea64286fdc33bf0f15eed3f3e62161765f46de16eed18bcf",
+  "consumption-changes.csv": "e21c20d5d66b13a8eadaf9c5af1e594d2833280bfb0ac09252fbd3a4627b4c65",
+  "independent-story-audit.json": "7c94a5363298e97a2e453d7b6e49ea9bb72d87fdb9b2547d910691550cc4081d",
+  "migration-case-input.parquet": "3adf07ae314ee00b6fbf5775a16b7bf50e7b36bf5e8b426f733f185bea7abe7c",
+  "migration-case-provenance.json": "8c7f9e13d3f2cf251e832a8dcb9a5b01e73db8cfd306e580382e08659c5ebee3",
+  "protocol.json": "94f463594ca42faba8630b41072a9267344470edfb0941a9634e8d4bb8748056",
+  "stories.json": "838aa37c3ed213657d6244db70cdd025f27183a524afb93dfd4ff4268c40c078",
+  "threshold-audit.json": "7049dca56c8d6837221ba1f651d559d3e429e24a227c4379cd4f385fd29ae59e",
+  "threshold-case-thresholds.csv": "72f56c319ffb41369595c92362ce0e8abc48e6e9333d6627f17a24572e2205d0",
+  "threshold-protocol.json": "2b15f3d09f8e006e87680715ca37594487912bbf6fdd5d1a859c22288776c67f"
+}

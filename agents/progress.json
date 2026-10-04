@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T19:10:35.628149+00:00",
+  "updated_at": "2026-10-04T20:51:26.427303+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "shock-radar/runs/Official_cases_20261003/README.md",
+      "last_artifact": "economic-atlas/runs/Municipal_stories_20261004/README.md",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "A7: S_Dbw по первоисточнику на frozen A5; AVI/AVU/MQ точная спецификация либо SPEC_UNRESOLVED. 210 controls и 3 реальные истории выполнены; далее сводка экономики/критериев, не повторные seed/controls.",
+      "next_action": "Собрать отчёт: три бюджета/миграция/траты и threshold/seed limitations, S_Dbw; AVI/AVU отдельно измерить после аудита, MQ convention unresolved; A6/A7 не объявлять PASS.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -84,6 +84,12 @@
         "mobility_municipalities": 101,
         "descriptive_municipal_stories": 3,
         "economic_pass": false
+      },
+      "competitive_experiments_20261004": {
+        "status": "EXPLORATORY_NOT_GATE_PASS",
+        "executed_by": "local scientific runner",
+        "new_agent_dialog": false,
+        "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
       }
     },
     "shock-radar": {
@@ -91,9 +97,9 @@
       "agent": "software:sberindex_radar_researcher@5",
       "current_gate": "R9",
       "status": "in_progress_exploratory_positive_seasonal",
-      "last_artifact": "shock-radar/runs/R9_category_seasonal_20261003/metrics.json",
+      "last_artifact": "shock-radar/runs/R9_strong_baselines_20261004/README.md",
       "last_dialog": "2026-09-29T20:41:21.592079Z",
-      "next_action": "Сильный сезонный benchmark с тем же origin/маской, затем критерии R9. 220962 сезонные пары и официальные события выполнены; новый независимый holdout отдельно, не блокирует описательные выводы и отчёт.",
+      "next_action": "Собрать отчёт с сильными baseline и двумя окнами, D04 covariance как дополнение; h12/as-of/новый holdout unresolved. Не повторять Prophet fits и D04.",
       "current_artifact_status": "COMPUTED_EXPLORATORY_NOT_INDEPENDENT_PASS",
       "last_gate": {
         "gate": "R8",
@@ -158,6 +164,12 @@
         "kb_document_id": 14696,
         "mae_prophet": 731.3863030799444,
         "mae_chronos": 939.0617606977953
+      },
+      "competitive_experiments_20261004": {
+        "status": "EXPLORATORY_NOT_GATE_PASS",
+        "executed_by": "local scientific runner",
+        "new_agent_dialog": false,
+        "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
       }
     },
     "municipality-graph": {

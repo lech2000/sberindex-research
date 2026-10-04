@@ -1,0 +1,20 @@
+{
+  "client_date": "2026-10-04",
+  "purpose": "post-hoc sensitivity; never threshold selection",
+  "fixed": [
+    "A6_v2 labels",
+    "stored fitted centres",
+    "2023 scaler",
+    "T",
+    "Tc"
+  ],
+  "margin_multipliers": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "base_assignment_sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+  "centres_sha256": "874d538ac01ce9e366131c5800d9a24186384957006243d53aee575d5f20469a",
+  "calibration_sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+  "code_sha256": "20e7dd99a99d5512728859761d2c283ac0310466441100e0cbdadf95839f5fca"
+}
