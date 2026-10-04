@@ -1,12 +1,12 @@
 {
   "checked_on": "2026-10-04",
-  "kind": "evidence_synthesis_not_new_experiment",
+  "kind": "corrected_evidence_synthesis_plus_bounded_seasonal_pilot",
   "ATF_M1": "no_completed_m_sig_shuffle_economic_run_verified",
   "ATF_M2": "implemented_real_panel_tracking_synthetic_validation_economic_validity_open",
   "ATF_M3": "implemented_containment_controls_no_confirmed_real_split_merge",
   "ATF_M4": "partial_channel_ablation_not_double_dissociation",
   "ATF_M5": "not_verified_in_economic_panel_deferred_from_submission_claims",
-  "ATF_M6": "partial_leakage_audit_full_feature_audit_open",
+  "ATF_M6": "leakage_invalidated_F03_and_D01_subsequent_positive_detector_results_are_synthetic_only",
   "real_panel": {
     "municipalities": 1896,
     "months": 24,
@@ -28,7 +28,25 @@
       "initial": 2,
       "reemergence": 3
     },
-    "ambiguous_assignment_rows": 4438
+    "ambiguous_assignment_rows": 4438,
+    "ambiguous_rows_by_margin_factor": {
+      "0.75": 1324,
+      "1.0": 4438,
+      "1.25": 36024
+    },
+    "group_2_slice": {
+      "month": "2024-12",
+      "label": 1,
+      "n": 554,
+      "all_ambiguous": true,
+      "all_identity_id_empty": true
+    },
+    "between_method_ARI_range": [
+      -0.0278124634,
+      0.4064789932
+    ],
+    "silhouette_comparison_sample_per_month": 400,
+    "Louvain_silhouette": -0.14027716
   },
   "synthetic_controls": {
     "n_configurations": 210,
@@ -40,7 +58,9 @@
     },
     "event_f1": 0.98,
     "event_fdr": 0.02,
-    "event_fdr_with_margin_125pct": 0.3783783783783784
+    "event_fdr_with_margin_125pct": 0.3783783783783784,
+    "metric_role": "descriptive_not_acceptance",
+    "predeclared_error_budget": null
   },
   "radar_seasonal": [
     {
@@ -68,7 +88,7 @@
       "ensemble_half_mae": 543.1376235299642
     }
   ],
-  "new_experiments_run": false,
+  "new_experiments_run": true,
   "full_scientific_gate_pass": false,
   "sources": {
     "identities": {
@@ -110,6 +130,444 @@
     "budget_supplement": {
       "path": "economic-atlas/runs/Budget_owner_supplement_20261004/metrics.json",
       "sha256": "a4bd2865a145f5dec507b8b489237e19b641e61e0a8b585f2286cc8fde781d2a"
+    },
+    "assignments": {
+      "path": "economic-atlas/runs/A6_v2/assignments.parquet",
+      "sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b"
     }
+  },
+  "revision": 2,
+  "checked_at": "2026-10-04T17:22:03.374917+00:00",
+  "supersedes": "same-day initial closeout synthesis",
+  "calibration_audit": {
+    "calibration_sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "source": "real 2023 bootstrap self vs other",
+    "seven_worlds_used_for_calibration_in_saved_code": false,
+    "global_manual_selection_independence_proven": false,
+    "error_budget_preregistered": false,
+    "economic_gate_pass": false
+  },
+  "radar_pre_R9": {
+    "1": {
+      "n": 61644,
+      "target_months": [
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "mae": {
+        "last_value": 473.245,
+        "seasonal_common": 321.339,
+        "seasonal_naive": 1329.688,
+        "train_mean": 964.037
+      },
+      "comparator": "last_value_not_Prophet",
+      "reduction_pct": 32.098807171760924,
+      "benefit_ci95_months": [
+        -88.65,
+        393.213
+      ],
+      "worse_months": [
+        "2024-04"
+      ],
+      "independent_test": false
+    },
+    "3": {
+      "n": 36906,
+      "target_months": [
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "mae": {
+        "last_value": 855.413,
+        "seasonal_common": 659.423,
+        "seasonal_naive": 1440.065,
+        "train_mean": 1167.967
+      },
+      "comparator": "last_value_not_Prophet",
+      "reduction_pct": 22.911739709356766,
+      "benefit_ci95_months": [
+        -148.232,
+        489.177
+      ],
+      "worse_months": [
+        "2024-06"
+      ],
+      "independent_test": false
+    }
+  },
+  "radar_detector_audit": {
+    "V0_hits": 1,
+    "V3_hits": 13,
+    "test_events": 28,
+    "V3_precision": 0.09285714285714286,
+    "V3_false_alarms": 127,
+    "placebo_hits": 0,
+    "source_fisher_reported_p": 0.00038,
+    "fisher_recomputed_p": 0.00037503784387916104,
+    "paired_discordances": {
+      "V3_only": 13,
+      "V0_only": 1
+    },
+    "paired_exact_p": 0.0018310546875,
+    "confirmatory_significance": false,
+    "bank_mean_recall_23_cells_budget24": 0.323,
+    "bank_repeat_mean_recall": 0.323,
+    "common_monitor_equal_FA_recall_at20pct": {
+      "spike": 0.944,
+      "shift": 0.958
+    },
+    "common_monitor_operational_recall_at20pct": {
+      "spike": 0.917,
+      "shift": 0.938
+    },
+    "common_monitor_control_alarms": 3,
+    "common_monitor_control_rows": 36,
+    "common_monitor_C1_pass": false,
+    "synthetic_only": true,
+    "real_early_warning_proven": false,
+    "equal_FA_calibration_uses_clean_test": true
+  },
+  "F03_causal": {
+    "1": {
+      "mae_boost": 1002.6591106092998,
+      "mae_last_available": 908.3938407940577,
+      "n": 60852,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "skipped": {
+        "2024-12": "target_after_panel"
+      },
+      "train_origins": {
+        "2024-07": [
+          "2024-02",
+          "2024-03",
+          "2024-04"
+        ],
+        "2024-08": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05"
+        ],
+        "2024-09": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05",
+          "2024-06"
+        ],
+        "2024-10": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05",
+          "2024-06",
+          "2024-07"
+        ],
+        "2024-11": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05",
+          "2024-06",
+          "2024-07",
+          "2024-08"
+        ]
+      },
+      "release_lag": 2,
+      "causal": true
+    },
+    "2": {
+      "mae_boost": 957.5054455854893,
+      "mae_last_available": 875.6605493287351,
+      "n": 48714,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10"
+      ],
+      "skipped": {
+        "2024-11": "target_after_panel",
+        "2024-12": "target_after_panel"
+      },
+      "train_origins": {
+        "2024-07": [
+          "2024-02",
+          "2024-03"
+        ],
+        "2024-08": [
+          "2024-02",
+          "2024-03",
+          "2024-04"
+        ],
+        "2024-09": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05"
+        ],
+        "2024-10": [
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05",
+          "2024-06"
+        ]
+      },
+      "release_lag": 2,
+      "causal": true
+    },
+    "3": {
+      "mae_boost": 903.4427284867658,
+      "mae_last_available": 985.8877662778599,
+      "n": 36522,
+      "origins": [
+        "2024-07",
+        "2024-08",
+        "2024-09"
+      ],
+      "skipped": {
+        "2024-10": "target_after_panel",
+        "2024-11": "target_after_panel",
+        "2024-12": "target_after_panel"
+      },
+      "train_origins": {
+        "2024-07": [
+          "2024-02"
+        ],
+        "2024-08": [
+          "2024-02",
+          "2024-03"
+        ],
+        "2024-09": [
+          "2024-02",
+          "2024-03",
+          "2024-04"
+        ]
+      },
+      "release_lag": 2,
+      "causal": true
+    }
+  },
+  "imported_sources": [
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/legacy_budget/manifest.json",
+      "sha256": "ed23f7431f5d5cb78bb0c4d71de4d696a030d72a576c142b5914217093b7dc47",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/legacy_budget/metrics.json",
+      "sha256": "00ec55dc9d150c8470638820f622f8d12581c9c5abc4a01560a063f7177ebd0c",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/manifest.json",
+      "sha256": "fae642515b60ffaa451ba774ef3122791fcb5d6a92f1c31a54173aaee1b625a9",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+      "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/provenance.json",
+      "sha256": "bf366037638cbbeede5ffa2d9f4d6a34fbf85d848f08321074253cf3d720f491",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_causal_recompute_20261001/signal/manifest.json",
+      "sha256": "20194e9f6557a8aae2719b57223751e1f558ef8d0f5c3cc8dee9959d3e7c4b35",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V0_last/manifest.json",
+      "sha256": "e71f4115db88cc52f0b03ea92e5cea633345b4e70d0123cd25a0833717affa08",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V0_last/metrics.json",
+      "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V1_last_cs/manifest.json",
+      "sha256": "dd1d4f253835a72e69728bc0a99f65ecfc8ffbf41947bf049bac95c2e2a4f48c",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V1_last_cs/metrics.json",
+      "sha256": "f5b351a53f95f9d5fc74ca7e30d616d9fd34281d60a994cefc9631eb50634f1f",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V2_med3/manifest.json",
+      "sha256": "89da9b50fc5b20a8e62cd07b2f2d5d64b0fc68129e71849de1624f5eca938b16",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V2_med3/metrics.json",
+      "sha256": "4116b9d2bd4eb3577ec3795cdf45d697491a2a69ac94d09fd04b947704ffa9ce",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/manifest.json",
+      "sha256": "18866453f3a5fe6bf3d0b98e89343fd00fab91bd26fefd3ea5d927cdc3bb6aa2",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json",
+      "sha256": "3104d23a5f72a1d15aa49e51cf53921126b46af8098a04857e810ff955431b23",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V4_med6_cs/manifest.json",
+      "sha256": "f604fa7b067fb557afe36d48cc66c2c9adc1c959e44f3ff504d2f04675041a35",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/V4_med6_cs/metrics.json",
+      "sha256": "172e7dcc0ecb05b95ca91de2ba3b54641c2427afeb908677230369369073ec25",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V0_last/metrics.json",
+      "sha256": "dc9bc5fdd30b73950baf166b98b38c5241757434fa2dc542dc361fa8264b1a78",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json",
+      "sha256": "b04d9518a7121ea7fa57d8eb0df5fe7d28821ae8f1f855abb7c78d727d1d2a4a",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/provenance.json",
+      "sha256": "cd89f6c7424545842e117b015926ba8fabb18b33d32c882781a6691fba4327a0",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitive_signals_20261001/variants_manifest.json",
+      "sha256": "c6174b3c4ab7b8ad5641f4054a7ed1834e5bcb7e74f7799d8583914b0124351d",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_bank_v1_20261003/bank.json",
+      "sha256": "3046dab3ab3727d71ced2b2f6dbe1030b34c87a30390dce345811d67ccc9028b",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_bank_v1_20261003/bank_seed20261003.json",
+      "sha256": "34a3b4d9cf47a72344d3a8ba483cf65f2e092a6d7395c395d7fd7c342416154d",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_bank_v1_20261003/provenance.json",
+      "sha256": "47a78b9e038f71929ef6b79fc36363d02499a0c02d6116d992373954f81e978d",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_shock_shapes_20261002/provenance.json",
+      "sha256": "2bc804036345d35eafdfbaf3c02a17a091a72d9c15b7af69f84adfcde9528096",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_shock_shapes_20261002/shapes.json",
+      "sha256": "efb1049521565c4ed44ab8fb2564871d5e6cb8e6d629913f9acc6e4b0194b946",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_common_monitor_20261003/common_monitor.json",
+      "sha256": "d0928042443180fac009c07707c2d1afb26abd38cd767e24b9dc27463086c15f",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_common_monitor_20261003/provenance.json",
+      "sha256": "c99b48a03b4840c6eb5bb29c87e46857573bfc74c1826ac2305459715510c466",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/D01_sensitivity_curve_20261001/curve.json",
+      "sha256": "99ce41359a2c757ca51b2ba2128b4139af1da91afc217701b6b69cfb1d4972b4",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/seasonal_common_20261004/metrics.json",
+      "sha256": "71eee3584d89c03c2783cd87791ad9e0f552b08c89a8ecc7c3d6ee8f6458443e",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/seasonal_common_20261004/provenance.json",
+      "sha256": "2b2f60826849e57606f11e8d5cde9381a9a9a239f422206fc1981a0f24c04ba5",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "shock-radar/runs/F03_causal/metrics.json",
+      "sha256": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30",
+      "scope": "saved_exploratory_result_not_recomputed"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/d01_bank.py",
+      "sha256": "ae6352d9a83b8d8e88155d546722bb185101d84f90fc49c9ea3ef9650104e72e",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/d01_calendar.py",
+      "sha256": "955c1037bfa19476dcd92c04cb5496e32616620c60027939f5d1310666945992",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/d01_common_monitor.py",
+      "sha256": "19240e1668b6cd03aa7c6935d2cb53c3be4b388aaa1ad8595d495ff9c5f92ee4",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/d01_sensitive_signals.py",
+      "sha256": "206d825042de31285eec8a8e2380064a69125df0af6957f54939e8bf86b2351b",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/d01_shock_shapes.py",
+      "sha256": "ae7c505bac0e882c32837c214bbc774c60fc01332bc23de2261282e5bf3315aa",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/f03_global_boosting.py",
+      "sha256": "1c4a5de08045850ecc496b065cc1cc99b7d96eb9f1a1313503ed5dffaf6022f8",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/r7_causal_signal.py",
+      "sha256": "6ee66e8333f75f9374c6351c69eb120bfd0987c891c425fad01d16c86d5ed06a",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    },
+    {
+      "path": "docs/findings/ATF_CLOSEOUT_20261004/source-code/seasonal_common_forecast.py",
+      "sha256": "596051fd0078ebd90dce528d577def41f3941bb3b97c4f9d35327eb4bf2ccd42",
+      "scope": "source_snapshot_not_installed_into_runtime"
+    }
+  ],
+  "bounded_seasonal_pilot": {
+    "path": "shock-radar/runs/R9_equal_information_pilot_20261004/metrics.json",
+    "sha256": "d3ca7ccd96405488459f92e784120b498981c038d932c40eaf7b928c99375235",
+    "n_series": 120,
+    "successful_fits": 2640,
+    "failures": 0,
+    "rows": 3120,
+    "primary_comparator": "conditional_prophet_yearly",
+    "shared_historical_category_information": true,
+    "independent_test": false,
+    "scientific_pass": false,
+    "R9_h6_benefit_ci_includes_zero": true,
+    "specification_is_not_optimal_Prophet_search": true
   }
 }

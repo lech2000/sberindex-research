@@ -1,0 +1,482 @@
+{
+ "panel": {
+  "series": 13140,
+  "months": [
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ],
+  "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
+ },
+ "r9_window": {
+  "window": [
+   "2024-07",
+   "2024-12"
+  ],
+  "summary": {
+   "1": {
+    "n": 73728,
+    "months": [
+     "2024-07",
+     "2024-08",
+     "2024-09",
+     "2024-10",
+     "2024-11",
+     "2024-12"
+    ],
+    "mae": {
+     "last_value": 625.672,
+     "seasonal_common": 309.611,
+     "seasonal_naive": 1287.502,
+     "train_mean": 1306.692
+    },
+    "gain_vs_last_value": 316.061,
+    "gain_vs_last_value_ci95_months": [
+     35.164,
+     712.197
+    ],
+    "gain_vs_last_value_without_last_month": 129.024,
+    "months_where_seasonal_worse": [
+     "2024-11"
+    ],
+    "gain_by_month": {
+     "2024-07": 15.96,
+     "2024-08": 64.26,
+     "2024-09": 395.07,
+     "2024-10": 226.39,
+     "2024-11": -55.93,
+     "2024-12": 1252.89
+    },
+    "mae_by_category": {
+     "Все категории": {
+      "last_value": 2020.4,
+      "seasonal_common": 843.08,
+      "seasonal_naive": 4278.33,
+      "train_mean": 4291.31
+     },
+     "Здоровье": {
+      "last_value": 95.83,
+      "seasonal_common": 102.07,
+      "seasonal_naive": 180.39,
+      "train_mean": 155.5
+     },
+     "Маркетплейсы": {
+      "last_value": 521.85,
+      "seasonal_common": 384.1,
+      "seasonal_naive": 1718.84,
+      "train_mean": 1767.46
+     },
+     "Общественное питание": {
+      "last_value": 97.69,
+      "seasonal_common": 83.97,
+      "seasonal_naive": 244.33,
+      "train_mean": 233.66
+     },
+     "Продовольствие": {
+      "last_value": 891.42,
+      "seasonal_common": 354.05,
+      "seasonal_naive": 1074.7,
+      "train_mean": 1140.42
+     },
+     "Транспорт": {
+      "last_value": 126.85,
+      "seasonal_common": 90.39,
+      "seasonal_naive": 228.43,
+      "train_mean": 251.81
+     }
+    }
+   },
+   "3": {
+    "n": 73662,
+    "months": [
+     "2024-07",
+     "2024-08",
+     "2024-09",
+     "2024-10",
+     "2024-11",
+     "2024-12"
+    ],
+    "mae": {
+     "last_value": 865.175,
+     "seasonal_common": 449.465,
+     "seasonal_naive": 1287.908,
+     "train_mean": 1408.678
+    },
+    "gain_vs_last_value": 415.71,
+    "gain_vs_last_value_ci95_months": [
+     123.816,
+     939.883
+    ],
+    "gain_vs_last_value_without_last_month": 159.775,
+    "months_where_seasonal_worse": [],
+    "gain_by_month": {
+     "2024-07": 187.23,
+     "2024-08": 157.98,
+     "2024-09": 193.67,
+     "2024-10": 208.63,
+     "2024-11": 50.55,
+     "2024-12": 1698.52
+    },
+    "mae_by_category": {
+     "Все категории": {
+      "last_value": 2475.98,
+      "seasonal_common": 1179.88,
+      "seasonal_naive": 4279.9,
+      "train_mean": 4636.93
+     },
+     "Здоровье": {
+      "last_value": 168.58,
+      "seasonal_common": 114.09,
+      "seasonal_naive": 180.43,
+      "train_mean": 164.79
+     },
+     "Маркетплейсы": {
+      "last_value": 875.5,
+      "seasonal_common": 601.2,
+      "seasonal_naive": 1719.13,
+      "train_mean": 1897.92
+     },
+     "Общественное питание": {
+      "last_value": 206.65,
+      "seasonal_common": 154.87,
+      "seasonal_naive": 244.5,
+      "train_mean": 258.68
+     },
+     "Продовольствие": {
+      "last_value": 1265.62,
+      "seasonal_common": 516.48,
+      "seasonal_naive": 1075.03,
+      "train_mean": 1219.29
+     },
+     "Транспорт": {
+      "last_value": 198.72,
+      "seasonal_common": 130.27,
+      "seasonal_naive": 228.47,
+      "train_mean": 274.46
+     }
+    }
+   },
+   "6": {
+    "n": 73578,
+    "months": [
+     "2024-07",
+     "2024-08",
+     "2024-09",
+     "2024-10",
+     "2024-11",
+     "2024-12"
+    ],
+    "mae": {
+     "last_value": 1125.278,
+     "seasonal_common": 618.092,
+     "seasonal_naive": 1288.396,
+     "train_mean": 1577.187
+    },
+    "gain_vs_last_value": 507.187,
+    "gain_vs_last_value_ci95_months": [
+     163.174,
+     857.377
+    ],
+    "gain_vs_last_value_without_last_month": 397.375,
+    "months_where_seasonal_worse": [],
+    "gain_by_month": {
+     "2024-07": 1113.46,
+     "2024-08": 615.69,
+     "2024-09": 20.4,
+     "2024-10": 107.61,
+     "2024-11": 129.91,
+     "2024-12": 1057.48
+    },
+    "mae_by_category": {
+     "Все категории": {
+      "last_value": 3534.85,
+      "seasonal_common": 1753.07,
+      "seasonal_naive": 4281.89,
+      "train_mean": 5227.23
+     },
+     "Здоровье": {
+      "last_value": 158.63,
+      "seasonal_common": 147.6,
+      "seasonal_naive": 180.49,
+      "train_mean": 173.54
+     },
+     "Маркетплейсы": {
+      "last_value": 1256.82,
+      "seasonal_common": 803.36,
+      "seasonal_naive": 1719.72,
+      "train_mean": 2088.17
+     },
+     "Общественное питание": {
+      "last_value": 237.38,
+      "seasonal_common": 170.55,
+      "seasonal_naive": 244.61,
+      "train_mean": 291.86
+     },
+     "Продовольствие": {
+      "last_value": 1296.38,
+      "seasonal_common": 638.51,
+      "seasonal_naive": 1074.99,
+      "train_mean": 1381.5
+     },
+     "Транспорт": {
+      "last_value": 267.61,
+      "seasonal_common": 195.46,
+      "seasonal_naive": 228.67,
+      "train_mean": 300.82
+     }
+    }
+   }
+  },
+  "skipped": {},
+  "predictions_rows": 220968
+ },
+ "pre_window": {
+  "window": [
+   "2024-02",
+   "2024-06"
+  ],
+  "summary": {
+   "1": {
+    "n": 61644,
+    "months": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05",
+     "2024-06"
+    ],
+    "mae": {
+     "last_value": 473.245,
+     "seasonal_common": 321.339,
+     "seasonal_naive": 1329.688,
+     "train_mean": 964.037
+    },
+    "gain_vs_last_value": 151.906,
+    "gain_vs_last_value_ci95_months": [
+     -88.65,
+     393.213
+    ],
+    "gain_vs_last_value_without_last_month": 181.873,
+    "months_where_seasonal_worse": [
+     "2024-04"
+    ],
+    "gain_by_month": {
+     "2024-02": 415.06,
+     "2024-03": 551.98,
+     "2024-04": -265.11,
+     "2024-05": 27.78,
+     "2024-06": 31.98
+    },
+    "mae_by_category": {
+     "Все категории": {
+      "last_value": 1553.97,
+      "seasonal_common": 1049.24,
+      "seasonal_naive": 4190.79,
+      "train_mean": 3086.72
+     },
+     "Здоровье": {
+      "last_value": 107.89,
+      "seasonal_common": 109.6,
+      "seasonal_naive": 180.26,
+      "train_mean": 144.82
+     },
+     "Маркетплейсы": {
+      "last_value": 346.78,
+      "seasonal_common": 267.43,
+      "seasonal_naive": 1689.42,
+      "train_mean": 1034.07
+     },
+     "Общественное питание": {
+      "last_value": 100.69,
+      "seasonal_common": 95.47,
+      "seasonal_naive": 252.36,
+      "train_mean": 183.34
+     },
+     "Продовольствие": {
+      "last_value": 628.65,
+      "seasonal_common": 297.87,
+      "seasonal_naive": 1427.87,
+      "train_mean": 1183.52
+     },
+     "Транспорт": {
+      "last_value": 101.49,
+      "seasonal_common": 108.42,
+      "seasonal_naive": 237.42,
+      "train_mean": 151.76
+     }
+    }
+   },
+   "3": {
+    "n": 36906,
+    "months": [
+     "2024-04",
+     "2024-05",
+     "2024-06"
+    ],
+    "mae": {
+     "last_value": 855.413,
+     "seasonal_common": 659.423,
+     "seasonal_naive": 1440.065,
+     "train_mean": 1167.967
+    },
+    "gain_vs_last_value": 195.99,
+    "gain_vs_last_value_ci95_months": [
+     -148.232,
+     489.177
+    ],
+    "gain_vs_last_value_without_last_month": 367.807,
+    "months_where_seasonal_worse": [
+     "2024-06"
+    ],
+    "gain_by_month": {
+     "2024-04": 489.18,
+     "2024-05": 246.38,
+     "2024-06": -148.23
+    },
+    "mae_by_category": {
+     "Все категории": {
+      "last_value": 2795.7,
+      "seasonal_common": 2384.71,
+      "seasonal_naive": 4657.36,
+      "train_mean": 3780.54
+     },
+     "Здоровье": {
+      "last_value": 173.93,
+      "seasonal_common": 192.1,
+      "seasonal_naive": 188.16,
+      "train_mean": 131.13
+     },
+     "Маркетплейсы": {
+      "last_value": 524.97,
+      "seasonal_common": 322.68,
+      "seasonal_naive": 1726.94,
+      "train_mean": 1141.73
+     },
+     "Общественное питание": {
+      "last_value": 189.91,
+      "seasonal_common": 256.53,
+      "seasonal_naive": 268.34,
+      "train_mean": 236.66
+     },
+     "Продовольствие": {
+      "last_value": 1240.53,
+      "seasonal_common": 536.77,
+      "seasonal_naive": 1561.48,
+      "train_mean": 1527.43
+     },
+     "Транспорт": {
+      "last_value": 207.44,
+      "seasonal_common": 263.75,
+      "seasonal_naive": 238.11,
+      "train_mean": 190.31
+     }
+    }
+   },
+   "6": null
+  },
+  "skipped": {
+   "3": [
+    "2024-02",
+    "2024-03"
+   ],
+   "6": [
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06"
+   ]
+  }
+ },
+ "control_vs_r9": {
+  "1": {
+   "n_mine": 73728,
+   "n_r9": 73728,
+   "n_equal": true,
+   "last_value": {
+    "mine": 625.672,
+    "r9": 625.672,
+    "diff": 0.0,
+    "within_tolerance": true
+   },
+   "seasonal_naive": {
+    "mine": 1287.502,
+    "r9": 1287.502,
+    "diff": 0.0,
+    "within_tolerance": true
+   },
+   "train_mean": {
+    "mine": 1306.692,
+    "r9": 1306.692,
+    "diff": 0.0,
+    "within_tolerance": true
+   }
+  },
+  "3": {
+   "n_mine": 73662,
+   "n_r9": 73662,
+   "n_equal": true,
+   "last_value": {
+    "mine": 865.175,
+    "r9": 865.218,
+    "diff": -0.043,
+    "within_tolerance": true
+   },
+   "seasonal_naive": {
+    "mine": 1287.908,
+    "r9": 1287.915,
+    "diff": -0.007,
+    "within_tolerance": true
+   },
+   "train_mean": {
+    "mine": 1408.678,
+    "r9": 1408.742,
+    "diff": -0.064,
+    "within_tolerance": true
+   }
+  },
+  "6": {
+   "n_mine": 73578,
+   "n_r9": 73578,
+   "n_equal": true,
+   "last_value": {
+    "mine": 1125.278,
+    "r9": 1125.278,
+    "diff": 0.0,
+    "within_tolerance": true
+   }
+  }
+ },
+ "meta": {
+  "horizons": [
+   1,
+   3,
+   6
+  ],
+  "bootstrap": 10000,
+  "seed": 20261004,
+  "unsupported_horizon": 12,
+  "code_sha256": "596051fd0078ebd90dce528d577def41f3941bb3b97c4f9d35327eb4bf2ccd42"
+ }
+}
