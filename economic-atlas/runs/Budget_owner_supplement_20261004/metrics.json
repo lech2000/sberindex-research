@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-04T11:08:32.977806+00:00",
+  "status": "retrospective_context_only",
+  "identified_observations": 77,
+  "buzuluk_executed_H1": 22,
+  "buzuluk_plan_snapshots": 22,
+  "tyumen_rounded_annual_context": 33,
+  "unassigned_export_cells": 3,
+  "numerical_checks": 229,
+  "failed_numerical_checks": 0,
+  "source_ratio_defects": 1,
+  "buzuluk_profiles": [
+    {
+      "metric": "expense",
+      "actual_H1_2023_RUB": 1115849830.0,
+      "actual_H1_2024_RUB": 1458651230.0,
+      "growth_percent": 30.72110518670779
+    },
+    {
+      "metric": "function_01",
+      "actual_H1_2023_RUB": 74450720.0,
+      "actual_H1_2024_RUB": 90949290.0,
+      "growth_percent": 22.160390121143216
+    },
+    {
+      "metric": "function_03",
+      "actual_H1_2023_RUB": 7840760.0,
+      "actual_H1_2024_RUB": 9500990.0,
+      "growth_percent": 21.17435044562006
+    },
+    {
+      "metric": "function_04",
+      "actual_H1_2023_RUB": 66468670.0,
+      "actual_H1_2024_RUB": 88224720.0,
+      "growth_percent": 32.73128528071947
+    },
+    {
+      "metric": "function_05",
+      "actual_H1_2023_RUB": 115686570.0,
+      "actual_H1_2024_RUB": 80023710.0,
+      "growth_percent": -30.827139226273193
+    },
+    {
+      "metric": "function_07",
+      "actual_H1_2023_RUB": 688222030.0,
+      "actual_H1_2024_RUB": 968354010.0,
+      "growth_percent": 40.70372173352255
+    },
+    {
+      "metric": "function_08",
+      "actual_H1_2023_RUB": 46411850.0,
+      "actual_H1_2024_RUB": 60741090.0,
+      "growth_percent": 30.874097886638864
+    },
+    {
+      "metric": "function_10",
+      "actual_H1_2023_RUB": 64446860.0,
+      "actual_H1_2024_RUB": 65567540.0,
+      "growth_percent": 1.738921027339413
+    },
+    {
+      "metric": "function_11",
+      "actual_H1_2023_RUB": 50455260.0,
+      "actual_H1_2024_RUB": 93110090.0,
+      "growth_percent": 84.53990723662905
+    },
+    {
+      "metric": "function_12",
+      "actual_H1_2023_RUB": 1842010.0,
+      "actual_H1_2024_RUB": 2161660.0,
+      "growth_percent": 17.353325986286716
+    },
+    {
+      "metric": "function_13",
+      "actual_H1_2023_RUB": 25100.0,
+      "actual_H1_2024_RUB": 18130.0,
+      "growth_percent": -27.768924302788843
+    }
+  ],
+  "annual_primary_pilot_observed": 7,
+  "annual_primary_pilot_planned": 12,
+  "scientific_gate_pass": false,
+  "asof_feature_eligible": 0,
+  "primary_observations_sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108",
+  "originals_unchanged": true
+}

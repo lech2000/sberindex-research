@@ -222,6 +222,24 @@
       "forecast_input": false,
       "graph_status": "71 observations added to new local GM3 copy; production_ingestion=false",
       "graph_receipt": "../graph/runs/GM3_municipal_budget_20261004/coverage.json"
+    },
+    {
+      "id": "municipal_budget_owner_supplement_20261004",
+      "status": "retrospective_supplement_with_unassigned_export",
+      "source": null,
+      "source_channel": "owner_supplied_files",
+      "file": "economic-atlas/runs/Budget_owner_supplement_20261004/observations.parquet",
+      "rows": 77,
+      "unassigned_cells": 3,
+      "coverage": "Buzuluk H1 2023/2024 and July 1 plans; Tyumen rounded annual presentation 2023–2025; unknown MO export as of 2026-09-28 excluded",
+      "available_at": null,
+      "vintage": null,
+      "scientific_gate_pass": false,
+      "license": "Raw originals not redistributed; source online identity and distribution rights not assessed",
+      "projects": [
+        "economic-atlas"
+      ],
+      "passport": "economic-atlas/runs/Budget_owner_supplement_20261004/sources.json"
     }
   ]
 }

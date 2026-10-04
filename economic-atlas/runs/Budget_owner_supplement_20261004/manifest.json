@@ -1,0 +1,35 @@
+{
+  "code_sha256": "e0e7f41a07a3ffb5e92f47be4aeb4b92405a1a586cb004e1aee35082837d7978",
+  "files": {
+    "checks.json": {
+      "sha256": "bbac4b053b342dacb953c52c30ef1d8ae8a76b591d86e16961117038eb236444",
+      "bytes": 36101
+    },
+    "metrics.json": {
+      "sha256": "a4bd2865a145f5dec507b8b489237e19b641e61e0a8b585f2286cc8fde781d2a",
+      "bytes": 2475
+    },
+    "observations.parquet": {
+      "sha256": "e55951ced40e8c334eae1bc42ebf5faee9db7dacf7b9f74c4355b70691d310bf",
+      "bytes": 17874
+    },
+    "source_issues.json": {
+      "sha256": "8c15d243dca1dea4251c87563a5098167ceb3ee8581429d8df7d4ef69229e04c",
+      "bytes": 525
+    },
+    "sources.json": {
+      "sha256": "f167834191f8ffeb899b15377fa6d19a069bf1ae7f0fc9a8358da9e90295a85f",
+      "bytes": 1608
+    },
+    "unassigned.json": {
+      "sha256": "9325449850b3f5001b9e15a50744cd6554c788bddb172a0e7d640ecc4e900ab6",
+      "bytes": 1478
+    }
+  },
+  "source_sha256": {
+    "buzuluk-h1-2023-2024.xlsx": "14a2d537b2b57cd0048b771d4cad2526a4fa783da16c9fe3a6f9fbe2ec2392e3",
+    "incoming-report.pdf": "8c8aa1b147858f02657537bf1ba82d7415fbf02a0e7c3c7a8428989a5c242ef9",
+    "budget-export-20261004.xlsx": "66385eb19741a61d36804da60f1bba3405f6ea5ec01752f2eebba9f0e657bd66"
+  },
+  "primary_observations_sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108"
+}
