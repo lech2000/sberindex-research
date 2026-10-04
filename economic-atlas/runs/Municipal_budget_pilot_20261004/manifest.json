@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-04T09:31:42.714924+00:00",
+  "status": "partial_retrospective_descriptive_pilot",
+  "protocol_sha256": "670251e6bac301e9354ce45524b9fef0aef6cd22aedea54e239813c6e1a5b9e6",
+  "revision": "v2_locator_and_source_guards",
+  "files": {
+    "municipal_budget_pilot.py": {
+      "sha256": "97b43d76194695653d9aaeab25e8074784f02e9272173e518a21f1164cda40a6",
+      "bytes": 19021
+    },
+    "observations.parquet": {
+      "sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108",
+      "bytes": 17667
+    },
+    "metrics.json": {
+      "sha256": "dc7856860760a85378c4a15bc1215ffc4bd87b98e8731afdb72b5a41ca2219ae",
+      "bytes": 16762
+    },
+    "sources.json": {
+      "sha256": "77c3bec4adea95d1e77b8eb5f416f83d014d04fca2ecafd4c6b5b4d00ba808eb",
+      "bytes": 4827
+    },
+    "protocol.json": {
+      "sha256": "670251e6bac301e9354ce45524b9fef0aef6cd22aedea54e239813c6e1a5b9e6",
+      "bytes": 5924
+    }
+  }
+}

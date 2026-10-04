@@ -206,6 +206,22 @@
         "economic-atlas"
       ],
       "passport": "../economic-atlas/runs/Treasury_2025_20261004/manifest.json"
+    },
+    {
+      "id": "municipal_budget_pilot_2023_2024",
+      "status": "downloaded_partial_retrospective_descriptive",
+      "file": "../economic-atlas/runs/Municipal_budget_pilot_20261004/observations.parquet",
+      "rows": 71,
+      "coverage": "Frozen six-city pilot; 7/12 municipality-year annual execution reports, 2023-2024",
+      "source_registry": "../economic-atlas/runs/Municipal_budget_pilot_20261004/sources.json",
+      "mandatory_sberindex": false,
+      "projects": [
+        "economic-atlas"
+      ],
+      "scientific_pass": false,
+      "forecast_input": false,
+      "graph_status": "71 observations added to new local GM3 copy; production_ingestion=false",
+      "graph_receipt": "../graph/runs/GM3_municipal_budget_20261004/coverage.json"
     }
   ]
 }
