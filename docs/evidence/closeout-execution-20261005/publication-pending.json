@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-06",
+  "source_commit": "55ea0dde1756caeb3d097e197457986846ef25aa",
+  "github_source_published": true,
+  "pr": "https://github.com/lech2000/sberindex-research/pull/11",
+  "bunny_publication": "PENDING_EXPLICIT_OWNER_APPROVAL",
+  "automatic_approval_review": "rejected publication of HTML/JS and CDN purge because explicit authorization for that publication was not found in trusted context",
+  "bunny_upload_started": false,
+  "deploy_lock_taken": false,
+  "n8n_invoked": false,
+  "reports_and_editorial_actions": "ACCEPTED_TWO_SOURCE_ACTIONS_DONE",
+  "full_release_actions": "OPEN",
+  "scientific_pass": false,
+  "prepared_files": [
+    "economic-atlas/landing/index.html",
+    "shock-radar/landing/index.html",
+    "economic-atlas/demo/index.html",
+    "landing-common/case-forecast.js"
+  ],
+  "new_install_and_technical_repeat": "NOT_STARTED",
+  "rag_upload_e2e": "NOT_TESTED"
+}
