@@ -1,0 +1,11 @@
+A8 population audit NO_EFFECT_ON_A8_EFFECTIVE_INPUT
+coverage {'raw_rows': 303126, 'raw_territories': 2190, 'full_spending_territories': 2016, 'frozen_panel_territories': 1896, 'fully_observed_but_excluded': 120, 'full_and_context_intersection': 1896, 'intersection_exactly_equals_panel': True, 'context_id_counts': {'population': 2449, 'migration': 2535, 'salary': 2617, 'market_access': 2571}, 'interpretation': 'The contextual-ID intersection reproduces the frozen mask exactly.', 'limit': 'Reconstructed filtering rule, not an original decision log. ID presence does not imply complete context values; primary panel remains unchanged.'}
+supplementary without_moscow 2023-12 1752 0
+supplementary without_moscow 2024-12 1752 0
+supplementary type:муниципальный район 2023-12 1317 0
+supplementary type:муниципальный район 2024-12 1317 0
+supplementary type:городской округ 2023-12 426 0
+supplementary type:городской округ 2024-12 426 86
+supplementary type:внутригородская территория города федерального значения 2023-12 144 31
+supplementary type:внутригородская территория города федерального значения 2024-12 144 65
+release data and offline page built

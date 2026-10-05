@@ -1,0 +1,58 @@
+{
+  "status": "SUPPLEMENTARY_EXPLORATORY",
+  "started_at_utc": "2026-10-05T11:00:17.095811+00:00",
+  "finished_at_utc": "2026-10-05T11:02:01.524473+00:00",
+  "input_sha256": {
+    "8_consumption.parquet": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "1_market_access.parquet": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1",
+    "4_bdmo_salary.parquet": "f9a8956ad68c7ec81fac7b2e61ac2494b02b489887ce06204621b5dff29e62f2",
+    "3_bdmo_migration.parquet": "a7bff6bbf0dbd0cc0a8c83283ddf4b4fd0a13bbff5773ea167e6b79f590c67db",
+    "2_bdmo_population.parquet": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "municipal_dictionary.parquet": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "baseline_sha256_unchanged": {
+    "expected_metrics.json": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79",
+    "expected_partitions.parquet": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0",
+    "runs/A8_wages2025_validation_20261005/results.json": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502"
+  },
+  "protocol_sha256": "11dec7778be5645190516836dee5b50790a634f1ba98d0e4c2053dde22d7f043",
+  "code_sha256": "8369e0600c1fb59839aac6b7ad8821ba6e5868f7621bddfbe847aa6d69120744",
+  "output_sha256": {
+    "runs/A14_release_20261005/neighbor_stability.csv": "85ff583dc442f06f636cbc597a1de6755b80c7edf912ec5f2c7d6dfa354014cc",
+    "runs/A14_release_20261005/coverage_audit.json": "6602822cd752869829ccc6bbd986fb947658be29fd483ddff7f4beb6ee3b65bf",
+    "runs/A14_release_20261005/run_a8_corrected.py": "bff5ba4459099e10dee190651224ac108698ce79a4fc6a26d6af39187777412c",
+    "runs/A14_release_20261005/coverage_exclusions.csv": "a037e6aefcef89864c2672bdb90b806c94bdf15319eeeb3ee8ec36f921988b8d",
+    "runs/A14_release_20261005/supplementary_memberships.parquet": "e35cf4ab17369e1f99c63e9b66881ee56732089a7dbf23da5d053778cf5c73d5",
+    "runs/A14_release_20261005/primary_readonly_verification.json": "b1a53de24f9a7b55adab6c007c00f60de0fa8c146f7cca13d864483978470608",
+    "runs/A14_release_20261005/population_changes.csv": "b622604fba3fbed6dd9ccc9b7cf358669364aa7c22f4a091860f26c25dcf63e9",
+    "runs/A14_release_20261005/composition_sensitivity.csv": "32b254695b41bbe9091523ca8af45c019e79fbf693a84f391c703dfbb78c57ca",
+    "runs/A14_release_20261005/a8_correction_receipt.json": "5566af70c04fafa95873744a721a09fc02256b535aef35467a3baf8c79a604bb",
+    "runs/A14_release_20261005/PROTOCOL.md": "11dec7778be5645190516836dee5b50790a634f1ba98d0e4c2053dde22d7f043",
+    "runs/A14_release_20261005/a8_population_audit.json": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+    "site/atlas-20261005/qa.cjs": "caad0978b4de55eb6a2d27b04cd4855f3c396f2684872b806dcee77a4fa0444f",
+    "site/atlas-20261005/index.html": "1b180ab10bba6afa4bb71bdc7bbf6ea9db6f279e5b2920a14078c0f3c50c45b3",
+    "site/atlas-20261005/desktop.png": "f50ad01cd6be75dc0c7df3246910e395f2ca67cb644f4accc50a7a6a19b4188e",
+    "site/atlas-20261005/browser_qa.json": "2debb8edd1adbc99e71dca1ff8723a15a49cfba20bd3a3387331d3f44677b1e5",
+    "site/atlas-20261005/data.json": "d7a3bc876950a51dca839726e70f51b8ce77b1197460cd2db0ce1b0d0c1fd356",
+    "site/atlas-20261005/mobile.png": "dee01a5afe4da148f3547b6c8ebbcbb52629a68a5a4f5a00a8d65ade0e4fa541",
+    "site/atlas-20261005/template.html": "89c47475b9c66d73f3bb6efefa6e332362898838825100480196f0f917d66ce7"
+  },
+  "n_territories": 1896,
+  "n_months": 24,
+  "raw_inputs_published": false,
+  "dependency_code_sha256": {
+    "src/atlas_common.py": "fd24c0ce67eddd396875771ef01be14dd8ceb613be6558e897de6d93184882ce",
+    "src/atlas_a12.py": "b3e96dea9e969b6f06c487709fee003395dd3f735ef918d17ce6cf56b35f8e45",
+    "src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "runs/A7_stories_20261004/build_stories.py": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134",
+    "runs/A8_wages2025_validation_20261005/run_a8.py": "9659a50e71a27ceff0804659abe7e18ab15125945cf34fdb88e2593a4bafe6c7"
+  },
+  "dependency_artifact_sha256": {
+    "data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "runs/A7_stories_20261004/story_inputs.json": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+    "runs/A8_wages2025_validation_20261005/results.json": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+    "runs/A12_stable_cores_20261005/cores_2023-12.parquet": "d8ed5b3ca869707d14655e43fcfa8a4322a3e78eba6b2dba27d613af33d574c7",
+    "runs/A12_stable_cores_20261005/cores_2024-12.parquet": "a5668bed95c697e025092687c319e199e42a46e8b08c591a1b4b50134023f5a9"
+  },
+  "post_build_sealed_at_utc": "2026-10-05T11:08:49.827019+00:00"
+}

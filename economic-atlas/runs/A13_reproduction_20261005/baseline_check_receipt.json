@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-10-05",
+  "location": "isolated Mac checkout of d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "tests_passed": 48,
+  "tests_skipped": 2,
+  "skip_reasons": ["no SBERINDEX_PATTERN_REF", "no SBERINDEX_DATA_SENSE_DIR in first baseline run"],
+  "audit_recomputed_in_separate_directory": true,
+  "audit_edges": 6460,
+  "audit_components": 1,
+  "audit_AVI_A5_kmeans_K5": 0.878,
+  "audit_AVI_A5_geographic_louvain_K33": 0.208,
+  "input_hashes_matched_task": true
+}

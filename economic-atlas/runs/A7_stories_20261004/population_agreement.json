@@ -1,0 +1,178 @@
+{
+ "n_configs": 36,
+ "mean_base_rate_changed": 0.1541,
+ "base_rate_min_max": [
+  0.0158,
+  0.5074
+ ],
+ "pairwise_jaccard_changed_mean": 0.123,
+ "pairwise_jaccard_changed_quartiles": [
+  0.0222,
+  0.0619,
+  0.146
+ ],
+ "mo_flagged_by_all_configs": 0,
+ "mo_flagged_by_none": 293,
+ "mo_flagged_by_some_not_all": 1603,
+ "n_mo": 1896,
+ "by_K_mean_base_rate": {
+  "2": 0.0264,
+  "3": 0.1962,
+  "5": 0.2398
+ },
+ "tau0_by_config_range": [
+  0.0332,
+  0.1034
+ ],
+ "top10_profile_change_post_hoc_not_a_selection": {
+  "abs": [
+   {
+    "tid": 708,
+    "name": "Мотыгинский",
+    "region": "Красноярский край",
+    "distance": 3.922
+   },
+   {
+    "tid": 1662,
+    "name": "Усть-Ишимский",
+    "region": "Омская область",
+    "distance": 3.553
+   },
+   {
+    "tid": 556,
+    "name": "Солтонский",
+    "region": "Алтайский край",
+    "distance": 3.326
+   },
+   {
+    "tid": 1194,
+    "name": "Полесский",
+    "region": "Калининградская область",
+    "distance": 2.882
+   },
+   {
+    "tid": 542,
+    "name": "Зональный",
+    "region": "Алтайский край",
+    "distance": 2.835
+   },
+   {
+    "tid": 491,
+    "name": "Красноармейский",
+    "region": "Чувашская Республика",
+    "distance": 2.811
+   },
+   {
+    "tid": 1297,
+    "name": "Унинский",
+    "region": "Кировская область",
+    "distance": 2.748
+   },
+   {
+    "tid": 1267,
+    "name": "Богородский",
+    "region": "Кировская область",
+    "distance": 2.736
+   },
+   {
+    "tid": 1282,
+    "name": "Нагорский",
+    "region": "Кировская область",
+    "distance": 2.719
+   },
+   {
+    "tid": 687,
+    "name": "Бирилюсский",
+    "region": "Красноярский край",
+    "distance": 2.702
+   }
+  ],
+  "relative_to_monthly_median": [
+   {
+    "tid": 708,
+    "name": "Мотыгинский",
+    "region": "Красноярский край",
+    "distance": 2.768
+   },
+   {
+    "tid": 1662,
+    "name": "Усть-Ишимский",
+    "region": "Омская область",
+    "distance": 2.741
+   },
+   {
+    "tid": 556,
+    "name": "Солтонский",
+    "region": "Алтайский край",
+    "distance": 2.16
+   },
+   {
+    "tid": 1194,
+    "name": "Полесский",
+    "region": "Калининградская область",
+    "distance": 2.078
+   },
+   {
+    "tid": 491,
+    "name": "Красноармейский",
+    "region": "Чувашская Республика",
+    "distance": 1.972
+   },
+   {
+    "tid": 416,
+    "name": "Чеди-Хольский",
+    "region": "Республика Тыва",
+    "distance": 1.875
+   },
+   {
+    "tid": 410,
+    "name": "Тандинский",
+    "region": "Республика Тыва",
+    "distance": 1.775
+   },
+   {
+    "tid": 414,
+    "name": "Улуг-Хемский",
+    "region": "Республика Тыва",
+    "distance": 1.734
+   },
+   {
+    "tid": 542,
+    "name": "Зональный",
+    "region": "Алтайский край",
+    "distance": 1.694
+   },
+   {
+    "tid": 1282,
+    "name": "Нагорский",
+    "region": "Кировская область",
+    "distance": 1.606
+   }
+  ]
+ },
+ "profile_distance_quantiles_abs": {
+  "50": 1.194,
+  "90": 1.715,
+  "95": 1.89,
+  "99": 2.445
+ },
+ "profile_distance_quantiles_relative": {
+  "50": 0.435,
+  "90": 0.761,
+  "95": 0.971,
+  "99": 1.437
+ },
+ "archive_A6_v2": {
+  "n_mo": 1896,
+  "changed_modal_identity_base": 64,
+  "switches_median": 0.0,
+  "switches_p95": 4.0,
+  "changed_modal_identity_by_seed": {
+   "seed-20260921": 64,
+   "seed-20260922": 64,
+   "seed-20260923": 64,
+   "seed-20260924": 64,
+   "seed-20260925": 64
+  }
+ }
+}

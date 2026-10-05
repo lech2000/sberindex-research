@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED",
+  "checked_at_utc": "2026-10-05T17:32:24.429165+00:00",
+  "corpus_id": 75,
+  "document_id": 16583,
+  "source_url": "https://github.com/lech2000/sberindex-research/blob/10edd36b7504ca3cceb547a3dd1e751c3395f398/economic-atlas/runs/consumption_restructuring_20261005/README.md",
+  "source_sha256": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da",
+  "stored_text_sha256": "d3ac71d3129781fc0d88129b889bfba64cf8d050ebcd1c9c555d3f3d51f6e794",
+  "full_text_readback": true,
+  "result": {
+    "added": true,
+    "document_id": 16583,
+    "title": "Потребительская перестройка муниципалитетов и проверка гипотез PDF 05.10.2026",
+    "corpus_id": 75,
+    "chunks": 10,
+    "vectors": 10
+  }
+}

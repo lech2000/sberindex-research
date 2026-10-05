@@ -1,0 +1,222 @@
+{
+  "n_nodes": 1896,
+  "months": {
+    "2023-12": {
+      "n_configs": 36,
+      "consensus_K": 5,
+      "thresholds": [
+        {
+          "threshold": 0.8,
+          "n_core": 789,
+          "fraction": 0.4161392405063291
+        },
+        {
+          "threshold": 0.9,
+          "n_core": 0,
+          "fraction": 0.0
+        },
+        {
+          "threshold": 0.95,
+          "n_core": 0,
+          "fraction": 0.0
+        }
+      ],
+      "n_passports": 0,
+      "n_ambiguous_primary": 1896,
+      "population_missing_total": 0
+    },
+    "2024-12": {
+      "n_configs": 36,
+      "consensus_K": 5,
+      "thresholds": [
+        {
+          "threshold": 0.8,
+          "n_core": 318,
+          "fraction": 0.16772151898734178
+        },
+        {
+          "threshold": 0.9,
+          "n_core": 258,
+          "fraction": 0.1360759493670886
+        },
+        {
+          "threshold": 0.95,
+          "n_core": 0,
+          "fraction": 0.0
+        }
+      ],
+      "n_passports": 1,
+      "n_ambiguous_primary": 1638,
+      "population_missing_total": 0
+    }
+  },
+  "stories": [
+    {
+      "month": "2023-12",
+      "territory_id": 1673,
+      "name": "Орск",
+      "cluster": 4,
+      "mean_coassociation": 0.8343736995422388,
+      "status": "ambiguous",
+      "core_0.80": true,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2023-12",
+      "territory_id": 1333,
+      "name": "Курган",
+      "cluster": 4,
+      "mean_coassociation": 0.7434456928838952,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2023-12",
+      "territory_id": 2192,
+      "name": "Ишим",
+      "cluster": 4,
+      "mean_coassociation": 0.8343736995422388,
+      "status": "ambiguous",
+      "core_0.80": true,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2023-12",
+      "territory_id": 1668,
+      "name": "Бузулук",
+      "cluster": 0,
+      "mean_coassociation": 0.789946483180428,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2023-12",
+      "territory_id": 2190,
+      "name": "Тюмень",
+      "cluster": 0,
+      "mean_coassociation": 0.8589449541284404,
+      "status": "ambiguous",
+      "core_0.80": true,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2024-12",
+      "territory_id": 1673,
+      "name": "Орск",
+      "cluster": 2,
+      "mean_coassociation": 0.7770042194092827,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2024-12",
+      "territory_id": 1333,
+      "name": "Курган",
+      "cluster": 2,
+      "mean_coassociation": 0.7179324894514769,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2024-12",
+      "territory_id": 2192,
+      "name": "Ишим",
+      "cluster": 2,
+      "mean_coassociation": 0.7910689170182841,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2024-12",
+      "territory_id": 1668,
+      "name": "Бузулук",
+      "cluster": 2,
+      "mean_coassociation": 0.5718706047819972,
+      "status": "ambiguous",
+      "core_0.80": false,
+      "core_0.90": false,
+      "core_0.95": false
+    },
+    {
+      "month": "2024-12",
+      "territory_id": 2190,
+      "name": "Тюмень",
+      "cluster": 0,
+      "mean_coassociation": 0.9415708812260535,
+      "status": "core",
+      "core_0.80": true,
+      "core_0.90": true,
+      "core_0.95": false
+    }
+  ],
+  "consensus_ARI_2023_2024": 0.4688712541392007,
+  "aligned_core_jaccard": [
+    {
+      "cluster2023": 0,
+      "cluster2024": 0,
+      "core2023_n": 0,
+      "core2024_n": 258,
+      "core_intersection_n": 0,
+      "core_jaccard": 0.0
+    },
+    {
+      "cluster2023": 1,
+      "cluster2024": 1,
+      "core2023_n": 0,
+      "core2024_n": 0,
+      "core_intersection_n": 0,
+      "core_jaccard": null
+    },
+    {
+      "cluster2023": 2,
+      "cluster2024": 4,
+      "core2023_n": 0,
+      "core2024_n": 0,
+      "core_intersection_n": 0,
+      "core_jaccard": null
+    },
+    {
+      "cluster2023": 3,
+      "cluster2024": 3,
+      "core2023_n": 0,
+      "core2024_n": 0,
+      "core_intersection_n": 0,
+      "core_jaccard": null
+    },
+    {
+      "cluster2023": 4,
+      "cluster2024": 2,
+      "core2023_n": 0,
+      "core2024_n": 0,
+      "core_intersection_n": 0,
+      "core_jaccard": null
+    }
+  ],
+  "primary_threshold": 0.9,
+  "consensus_K_fixed": 5,
+  "bootstrap_repeats": 1000,
+  "population_exact_duplicate_rows_removed": 8,
+  "population_duplicate_tids": [
+    1240,
+    1912
+  ],
+  "limits": [
+    "coassociation depends on K grid; not probability",
+    "27/36 KMeans configs; dependent grid",
+    "score to full consensus group, excludes self; no pruning",
+    "conditional bootstrap does not refit memberships"
+  ]
+}

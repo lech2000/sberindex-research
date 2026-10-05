@@ -1,0 +1,17 @@
+{
+  "raw_rows": 303126,
+  "raw_territories": 2190,
+  "full_spending_territories": 2016,
+  "frozen_panel_territories": 1896,
+  "fully_observed_but_excluded": 120,
+  "full_and_context_intersection": 1896,
+  "intersection_exactly_equals_panel": true,
+  "context_id_counts": {
+    "population": 2449,
+    "migration": 2535,
+    "salary": 2617,
+    "market_access": 2571
+  },
+  "interpretation": "The contextual-ID intersection reproduces the frozen mask exactly.",
+  "limit": "Reconstructed filtering rule, not an original decision log. ID presence does not imply complete context values; primary panel remains unchanged."
+}

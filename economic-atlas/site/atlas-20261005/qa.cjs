@@ -1,0 +1,23 @@
+const { chromium } = require(process.env.ATLAS_PLAYWRIGHT_MODULE || '/Users/sergey/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const crypto=require('crypto'),fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
+(async()=>{
+ const browser=await chromium.launch({channel:"chrome",headless:true});const page=await browser.newPage({viewport:{width:1440,height:1050}});
+ const errors=[],external=[];page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/^https?:/.test(r.url()))external.push(r.url())});
+ const dir=__dirname;await page.goto(pathToFileURL(path.join(dir,'index.html')).href);await page.waitForSelector('#map circle');
+ const assert=(cond,msg)=>{if(!cond)throw new Error(msg)};const text=async id=>(await page.locator('#'+id).innerText()).trim();
+ assert((await page.locator('#map circle').count())===1896,'Map coverage');assert((await text('core-count')).replace(/\s/g,'')==='258','Primary core count');assert(await text('place-name')==='Орск','Initial city');
+ await page.locator('[data-year="2023"]').click();assert(await text('core-count')==='0','2023 empty core');
+ await page.locator('#threshold').selectOption('0.8');assert((await text('core-count')).replace(/\s/g,'')==='789','2023 sensitivity count');
+ await page.locator('[data-year="2024"]').click();assert((await text('core-count')).replace(/\s/g,'')==='318','2024 sensitivity count');
+ await page.locator('#threshold').selectOption('0.95');assert(await text('core-count')==='0','2024 strict count');await page.locator('#threshold').selectOption('0.9');
+ await page.locator('#cases button').filter({hasText:'Тюмень'}).click();assert(await text('place-status')==='В ядре','Tyumen core');
+ await page.locator('#peer-mode').selectOption('all');const before=await text('place-name');await page.locator('#peers button').first().click();assert(await text('place-name')!==before,'Peer navigation');
+ await page.locator('#search').fill('неизвестная территория xyz');await page.locator('#search').dispatchEvent('change');assert((await text('search-status')).includes('не найдена'),'Missing search feedback');
+ const emptyId=await page.evaluate(()=>DATA.territories.find(r=>!r.neighbors.matched['2024'].length).id);
+ await page.locator('#peer-mode').selectOption('matched');await page.locator('#search').fill(String(emptyId));await page.locator('#search').dispatchEvent('change');assert((await text('peers')).includes('Нет кандидатов'),'Explicit empty matched set');
+ await page.locator('#cases button').filter({hasText:'Орск'}).click();await page.screenshot({path:path.join(dir,'desktop.png'),fullPage:true});
+ await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile overflow');await page.screenshot({path:path.join(dir,'mobile.png'),fullPage:true});
+ assert(errors.length===0,'Browser errors '+errors.join(';'));assert(external.length===0,'External network requests');
+ const receipt={status:'PASS',page_sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(dir,'index.html'))).digest('hex'),checked_at_utc:new Date().toISOString(),browser:'Playwright Chromium',desktop:[1440,1050],mobile:[390,844],municipality_points:1896,checks:['year and threshold counts','Tyumen core','neighbor navigation','unknown search','no-candidate state','mobile no overflow','no page errors','no external requests'],errors,external_requests:external};
+ fs.writeFileSync(path.join(dir,'browser_qa.json'),JSON.stringify(receipt,null,2));console.log(JSON.stringify(receipt));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

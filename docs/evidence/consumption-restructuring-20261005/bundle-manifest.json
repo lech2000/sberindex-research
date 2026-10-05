@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-05, isolated Mac",
+  "status": "EXPLORATORY_DESCRIPTIVE_ONLY",
+  "verification": {
+    "portable_json_equals_initial_byte_for_byte": true,
+    "independent_long_table_key_medians_and_1803_count": true
+  },
+  "runtime": {
+    "python": "3.14.4",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3"
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 15573,
+      "sha256": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da"
+    },
+    {
+      "name": "descriptive_probe.py",
+      "bytes": 5632,
+      "sha256": "2b7ba4d1f28ffedcebb720352aaa9bfab39267279c79984c8467df06d27626a7"
+    },
+    {
+      "name": "descriptive_probe.json",
+      "bytes": 8073,
+      "sha256": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2"
+    }
+  ]
+}

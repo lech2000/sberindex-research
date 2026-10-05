@@ -1,0 +1,6 @@
+{
+  "original_code_sha256": "9659a50e71a27ceff0804659abe7e18ab15125945cf34fdb88e2593a4bafe6c7",
+  "corrected_code_sha256": "bff5ba4459099e10dee190651224ac108698ce79a4fc6a26d6af39187777412c",
+  "change": "population input deduplication via audited A12 helper; statistical rules/seeds unchanged",
+  "source_results_sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502"
+}

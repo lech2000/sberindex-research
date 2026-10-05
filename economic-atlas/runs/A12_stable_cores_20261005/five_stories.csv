@@ -1,0 +1,11 @@
+month,territory_id,name,cluster,mean_coassociation,status,core_0.80,core_0.90,core_0.95
+2023-12,1673,Орск,4,0.8343736995422388,ambiguous,True,False,False
+2023-12,1333,Курган,4,0.7434456928838952,ambiguous,False,False,False
+2023-12,2192,Ишим,4,0.8343736995422388,ambiguous,True,False,False
+2023-12,1668,Бузулук,0,0.789946483180428,ambiguous,False,False,False
+2023-12,2190,Тюмень,0,0.8589449541284404,ambiguous,True,False,False
+2024-12,1673,Орск,2,0.7770042194092827,ambiguous,False,False,False
+2024-12,1333,Курган,2,0.7179324894514769,ambiguous,False,False,False
+2024-12,2192,Ишим,2,0.7910689170182841,ambiguous,False,False,False
+2024-12,1668,Бузулук,2,0.5718706047819972,ambiguous,False,False,False
+2024-12,2190,Тюмень,0,0.9415708812260535,core,True,True,False

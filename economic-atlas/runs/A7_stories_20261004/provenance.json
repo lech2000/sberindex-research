@@ -1,0 +1,67 @@
+{
+ "run_id": "A7-stories-20261004",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "panel_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+ "code_sha256": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134",
+ "a6_temporal_sha256": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+ "n_mo": 1896,
+ "months": [
+  "2023-01",
+  "2024-12"
+ ],
+ "configs": [
+  "z2023|kmeans|K2|s0",
+  "z2023|kmeans|K2|s1",
+  "z2023|kmeans|K2|s2",
+  "z2023|ward|K2|s0",
+  "z2023|kmeans|K3|s0",
+  "z2023|kmeans|K3|s1",
+  "z2023|kmeans|K3|s2",
+  "z2023|ward|K3|s0",
+  "z2023|kmeans|K5|s0",
+  "z2023|kmeans|K5|s1",
+  "z2023|kmeans|K5|s2",
+  "z2023|ward|K5|s0",
+  "zall|kmeans|K2|s0",
+  "zall|kmeans|K2|s1",
+  "zall|kmeans|K2|s2",
+  "zall|ward|K2|s0",
+  "zall|kmeans|K3|s0",
+  "zall|kmeans|K3|s1",
+  "zall|kmeans|K3|s2",
+  "zall|ward|K3|s0",
+  "zall|kmeans|K5|s0",
+  "zall|kmeans|K5|s1",
+  "zall|kmeans|K5|s2",
+  "zall|ward|K5|s0",
+  "logz2023|kmeans|K2|s0",
+  "logz2023|kmeans|K2|s1",
+  "logz2023|kmeans|K2|s2",
+  "logz2023|ward|K2|s0",
+  "logz2023|kmeans|K3|s0",
+  "logz2023|kmeans|K3|s1",
+  "logz2023|kmeans|K3|s2",
+  "logz2023|ward|K3|s0",
+  "logz2023|kmeans|K5|s0",
+  "logz2023|kmeans|K5|s1",
+  "logz2023|kmeans|K5|s2",
+  "logz2023|ward|K5|s0"
+ ],
+ "inputs_from_mac": {
+  "employment_parquet_sha256": "cb5a60b43ad0f82e078cef6ed4860f6232c47cb148b13ff644125ef79f58a6da",
+  "a6_v2_assignments_sha256": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+  "budget_pilot_observations_sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108",
+  "budget_supplement_observations_sha256": "e55951ced40e8c334eae1bc42ebf5faee9db7dacf7b9f74c4355b70691d310bf",
+  "mac_working_copies": [
+   "/Users/sergey/projects/sberindex-research-bdmo (занятость, A6_v2)",
+   "/Users/sergey/projects/sberindex-research-accelerated-public-20261003 (бюджетные наблюдения)"
+  ]
+ },
+ "selection_rule": "города фиксированной выборки бюджетного пилота; истории — с ≥ 1 парой бюджетных наблюдений (Орск, Курган, Ишим, Бузулук, Тюмень); Шадринск — контрольный без бюджетов",
+ "not_available": [
+  "миграция 2024 (проверенное ядро БДПМО 8112023 — только 2023)",
+  "годовые бюджеты Бузулука/Тюмени 2024 и Шадринска (не получены оператором)"
+ ],
+ "margin_note": "запас до второго центра — показатель этого прогона, не candidate_margin идентичностей A6",
+ "tau0": "10-й процентиль запаса по МО-месяцам 2023 для каждой конфигурации, затем множители 0,75/1/1,25"
+}
