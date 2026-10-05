@@ -132,3 +132,7 @@ Original scientific CLIs and independent audits, with explicit new output direct
 
 The historical Prophet cache is an input to the comparison, not another fit.
 All full-mask exclusions are published; independent holdout and economic truth remain unverified.
+
+## Radar final reproduction
+
+`make radar` — [frozen inputs, references, future checks and limitations](RADAR_REPRODUCE.md).

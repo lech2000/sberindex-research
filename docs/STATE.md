@@ -1,5 +1,19 @@
 # Состояние исследований — 05.10.2026
 
+## Радар: ключевые прогоны и новые данные —05.10.2026
+
+[Итог четырех шагов](RADAR_FINAL_PUSH_2026-10-05.md). `make radar`
+воспроизводит R9/D04 и новые R10-H12,D05-joint,Floodpartial с SHA/эталонами.
+H12 национальный growth benchmark:73608 строк,MAE651,269 против1109,523
+cached Prophet; current2026 vintage,unequalinformation,нетholdout.
+Маркетплейсы хуже50,33%; без агрегата выигрыш22,01% (posthoc).
+D05 общийFA3%: помогаетcoherent/ramp,ухудшаетsparse/opposed.
+Паводковыйакт:1/7 exactidentity,6historicalcrosswalk blocked;
+partialresiduals,неcausal effect и не groundtruth recall.
+Научные R8/R9 не закрыты. Следующие шаги: equal-info/historicalnational
+и official district→okrug mapping,initialacts/реально затопленныеМО.
+
+
 ## Экономическая сеть и AVI AVU проверены — 05.10.2026
 
 [A7: результаты, формулы, аудит](../economic-atlas/runs/A7_network_20261005/README.md).

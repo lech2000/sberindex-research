@@ -1,0 +1,15 @@
+{
+  "status": "PARTIAL_IDENTITY_BLOCKED",
+  "scientific_pass": false,
+  "act_territories": 7,
+  "strict_matches": 1,
+  "identity_blocked": 6,
+  "rows": 36,
+  "missing_predictions": [],
+  "labels": "legal administrative emergency zone, not ground truth of economic damage or inundation",
+  "causal_effect_estimated": false,
+  "precision_recall": null,
+  "independent_holdout": false,
+  "unpublished_30_list_used": false,
+  "warning": "Governor act original PDF unavailable from Mac and joe; act text retrieved from legal mirror; regional type changes not silently joined"
+}

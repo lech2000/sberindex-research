@@ -1,0 +1,13 @@
+{
+  "bundle_filename": "radar-frozen-inputs-20261005.zip",
+  "sha256": "644f3303dd56e1bfcfccb4ac7048d9d9788a54142cd88b125d9036feb6c2b032",
+  "bytes": 6962047,
+  "storage": "private owner Radar case, uploaded separately; not raw public redistribution",
+  "contents": {
+    "8_consumption.parquet": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "municipal-dictionary.parquet": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "national-consumer-spending.parquet": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030",
+    "predictions-pilot.parquet": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2",
+    "predictions-r9.parquet": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-05",
+  "source": "local verified R9/pilot/dictionary snapshots; Mac isolated scientific worktree",
+  "sha256": {
+    "8_consumption.parquet": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "predictions-r9.parquet": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "predictions-pilot.parquet": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2",
+    "municipal-dictionary.parquet": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "national-consumer-spending.parquet": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+  },
+  "raw_download": "https://disk.yandex.ru/d/WH8yJOogD4UrOg",
+  "prophet_cache": "R9_prophet_full_20261001, original 294570 predictions",
+  "pilot_cache": "seasonal pilot, 120 series, 3120 predictions",
+  "public_binaries": false,
+  "reproduction_scope": "existing prediction cache, not full Prophet refit",
+  "national_source": "https://sberindex.ru/ru/dashboards/consumer-spending"
+}
