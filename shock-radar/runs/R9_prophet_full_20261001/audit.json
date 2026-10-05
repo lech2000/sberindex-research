@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-01T22:39:54.094989+00:00",
+  "source_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "technical_run_complete": true,
+  "expected_paired_rows": 294792,
+  "predicted_rows": 294570,
+  "missing_rows": 222,
+  "failure_reasons": {
+    "insufficient_train": 222
+  },
+  "unexpected_fit_failure": false,
+  "by_horizon": [
+    {
+      "horizon": 1,
+      "n_common": 73728,
+      "n_baseline_mask": 73728,
+      "mae_common": {
+        "prophet": 641.6996454066442,
+        "last_value": 625.6724175347222,
+        "seasonal_naive": 1287.501980251736,
+        "train_mean": 1306.6923303706676
+      }
+    },
+    {
+      "horizon": 3,
+      "n_common": 73656,
+      "n_baseline_mask": 73662,
+      "mae_common": {
+        "prophet": 719.9043597195983,
+        "last_value": 865.2184614966873,
+        "seasonal_naive": 1287.9150510481156,
+        "train_mean": 1408.7419897867426
+      }
+    },
+    {
+      "horizon": 6,
+      "n_common": 73578,
+      "n_baseline_mask": 73578,
+      "mae_common": {
+        "prophet": 740.4359675427706,
+        "last_value": 1125.2783304792192,
+        "seasonal_naive": 1288.3963141156323,
+        "train_mean": 1577.1873061402703
+      }
+    },
+    {
+      "horizon": 12,
+      "n_common": 73608,
+      "n_baseline_mask": 73824,
+      "mae_common": {
+        "prophet": 1109.5225902290215,
+        "last_value": 1288.2514264753831,
+        "seasonal_naive": 1288.2514264753831,
+        "train_mean": 1874.3124877500336
+      }
+    }
+  ],
+  "independent_new_holdout": false,
+  "historical_asof_verified": false,
+  "r9_scientific_pass": false
+}

@@ -1,0 +1,280 @@
+{
+  "checked_at": "2026-10-01T20:15:33.137670+00:00",
+  "dictionary_sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+  "spending_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "source_class": "SberIndex dictionary snapshot; official Rosstat acts unverified",
+  "interval_semantics": "unknown; both half-open and inclusive-end audited",
+  "dictionary_rows": 2660,
+  "dictionary_unique_territory_ids": 2660,
+  "dictionary_unique_oktmo": 2632,
+  "finite_year_to_rows": 495,
+  "expired_without_same_code_contiguous_candidate": 467,
+  "global_spending_ids_in_dictionary": 2190,
+  "yearly": [
+    {
+      "year": 2023,
+      "alternatives": {
+        "half_open": {
+          "dictionary_active_rows": 2253,
+          "spending_ids": 2161,
+          "matched_spending_ids": 1832,
+          "unmatched_spending_ids": 329,
+          "matched_spending_rows": 129384,
+          "unmatched_spending_rows": 23340,
+          "code_collision_count": 0,
+          "code_collision_examples": []
+        },
+        "inclusive_end": {
+          "dictionary_active_rows": 2386,
+          "spending_ids": 2161,
+          "matched_spending_ids": 1948,
+          "unmatched_spending_ids": 213,
+          "matched_spending_rows": 137592,
+          "unmatched_spending_rows": 15132,
+          "code_collision_count": 7,
+          "code_collision_examples": [
+            "22-703-000-000",
+            "46-783-000-000",
+            "63-701-000-000",
+            "68-640-000-000",
+            "68-701-000-000",
+            "75-638-000-000",
+            "75-712-000-000"
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "alternatives": {
+        "half_open": {
+          "dictionary_active_rows": 2165,
+          "spending_ids": 2127,
+          "matched_spending_ids": 1720,
+          "unmatched_spending_ids": 407,
+          "matched_spending_rows": 121374,
+          "unmatched_spending_rows": 29028,
+          "code_collision_count": 0,
+          "code_collision_examples": []
+        },
+        "inclusive_end": {
+          "dictionary_active_rows": 2255,
+          "spending_ids": 2127,
+          "matched_spending_ids": 1801,
+          "unmatched_spending_ids": 326,
+          "matched_spending_rows": 127188,
+          "unmatched_spending_rows": 23214,
+          "code_collision_count": 1,
+          "code_collision_examples": [
+            "46-759-000-000"
+          ]
+        }
+      }
+    }
+  ],
+  "same_code_contiguous_successor_candidates": [
+    {
+      "oktmo": "03-726-000-000",
+      "older_territory_id": 628,
+      "newer_territory_id": 2812,
+      "transition_year": 2021,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "07-715-000-000",
+      "older_territory_id": 816,
+      "newer_territory_id": 2876,
+      "transition_year": 2022,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "15-720-000-000",
+      "older_territory_id": 955,
+      "newer_territory_id": 2650,
+      "transition_year": 2020,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "22-703-000-000",
+      "older_territory_id": 1524,
+      "newer_territory_id": 3005,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "28-714-000-000",
+      "older_territory_id": 2102,
+      "newer_territory_id": 2710,
+      "transition_year": 2020,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "29-606-000-000",
+      "older_territory_id": 1202,
+      "newer_territory_id": 2647,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "29-715-000-000",
+      "older_territory_id": 1199,
+      "newer_territory_id": 2646,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "34-714-000-000",
+      "older_territory_id": 1307,
+      "newer_territory_id": 2618,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-659-000-000",
+      "older_territory_id": 1505,
+      "newer_territory_id": 2649,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-738-000-000",
+      "older_territory_id": 1455,
+      "newer_territory_id": 2808,
+      "transition_year": 2021,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-742-000-000",
+      "older_territory_id": 1462,
+      "newer_territory_id": 2648,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-757-000-000",
+      "older_territory_id": 1470,
+      "newer_territory_id": 2652,
+      "transition_year": 2020,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-759-000-000",
+      "older_territory_id": 1471,
+      "newer_territory_id": 3014,
+      "transition_year": 2024,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-770-000-000",
+      "older_territory_id": 1479,
+      "newer_territory_id": 2644,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-783-000-000",
+      "older_territory_id": 1482,
+      "newer_territory_id": 3008,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "46-786-000-000",
+      "older_territory_id": 1485,
+      "newer_territory_id": 2813,
+      "transition_year": 2021,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "57-708-000-000",
+      "older_territory_id": 728,
+      "newer_territory_id": 2621,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "57-730-000-000",
+      "older_territory_id": 732,
+      "newer_territory_id": 2620,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "63-643-000-000",
+      "older_territory_id": 1946,
+      "newer_territory_id": 2878,
+      "transition_year": 2022,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "63-701-000-000",
+      "older_territory_id": 1911,
+      "newer_territory_id": 2877,
+      "transition_year": 2022,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "63-701-000-000",
+      "older_territory_id": 2877,
+      "newer_territory_id": 2887,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "68-640-000-000",
+      "older_territory_id": 2097,
+      "newer_territory_id": 3010,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "68-701-000-000",
+      "older_territory_id": 2071,
+      "newer_territory_id": 3009,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "71-952-000-000",
+      "older_territory_id": 2239,
+      "newer_territory_id": 2879,
+      "transition_year": 2022,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "71-953-000-000",
+      "older_territory_id": 2240,
+      "newer_territory_id": 2880,
+      "transition_year": 2022,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "75-638-000-000",
+      "older_territory_id": 2306,
+      "newer_territory_id": 3012,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "75-712-000-000",
+      "older_territory_id": 2277,
+      "newer_territory_id": 3011,
+      "transition_year": 2023,
+      "status": "successor_candidate_not_officially_verified"
+    },
+    {
+      "oktmo": "78-705-000-000",
+      "older_territory_id": 2319,
+      "newer_territory_id": 2619,
+      "transition_year": 2019,
+      "status": "successor_candidate_not_officially_verified"
+    }
+  ],
+  "half_open_overlapping_code_pairs": [],
+  "status": "candidate_crosswalk_only",
+  "prohibitions": [
+    "do not join by name",
+    "do not treat code reuse as proof of legal successor",
+    "do not claim official OKTMO validity without source acts"
+  ]
+}
