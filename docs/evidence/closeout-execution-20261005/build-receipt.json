@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-06",
   "source_base_commit": "54cf607f1e74b880b7bef7ffa51dff76eafec244",
-  "status": "REPORTS_AND_CONTRACTS_BUILT_PENDING_CASE_ACCEPTANCE",
+  "status": "EDITORIAL_ACTIONS_ACCEPTED_FULL_RELEASE_PENDING",
   "scientific_pass": false,
   "new_fits": 0,
   "new_data_downloads": 0,
@@ -30,5 +30,7 @@
     "relative_report_links": "PASS",
     "git_diff_check": "PASS",
     "frozen_runs_diff": "empty"
-  }
+  },
+  "case_acceptance": "case-acceptance.json",
+  "public_deployed": false
 }

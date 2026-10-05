@@ -231,3 +231,5 @@ HTTPS-загрузкой 26.09.2026. Приём работ: 14.09–09.10.2026, 
 составе команды и подаче двух направлений отмечены отдельно в checklist.
 
 </details>
+
+Текущие страницы собираются из `presentation/economic-atlas/landing/` и `presentation/shock-radar/landing/`; прежние файлы в корневых `*/landing/` — исторические шаблоны. Демо Атласа включено в `presentation/economic-atlas/demo/`. Отчёты приняты в делах по двум ограниченным редакционным действиям; [квитанции](docs/evidence/closeout-execution-20261005/case-acceptance.json). Полный релиз и научные ограничения проверяются отдельно.
