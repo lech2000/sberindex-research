@@ -1,0 +1,457 @@
+{
+  "checked_on": "2026-10-05",
+  "git_source_revisions": {
+    "main": "642d8a397dc2a9d130732ab743185f9be98539a5",
+    "atlas_pr7": "7a5874e12e57a1948c13840326b8a3818f0f34b7",
+    "radar_pr6": "33965b384c04dd3eb868313cb486e7a79515c2fd"
+  },
+  "case_action_snapshot": [
+    {
+      "project": "atlas",
+      "case_id": "case_66cae4a89ba6473f",
+      "checked_at": "2026-10-05T19:35:05.843797+00:00",
+      "all_count": 38,
+      "open_count": 22,
+      "open_actions": [
+        {
+          "id": "act_0924fb12ebc44307",
+          "what": "03. Согласовать ОКТМО и версии границ, описать пропуски/подавления; утвердить паспорт данных.",
+          "waiting_for": "После пунктов 02"
+        },
+        {
+          "id": "act_4d0536caf3a546ac",
+          "what": "ATF-M1. К E03/H4: число кластеров из спектра графа сходства месяца — m (собств. значения у 1), sig=gap_to_bulk/bulk_spread, shuffle-контроль по сырому разрыву (p95); sig* калибровать на синтетике pos/neg того же размера; m=1 фиксировать как «структуры нет». Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB74/16260: M1 — дальнейшая работа после сборки. Экономический m/sig/shuffle-run не подтверждён; K2 выбран silhouette, не M1. Не заявлять завершённым. Приоритет сейчас S_Dbw и отчёт, без расширения объёма."
+        },
+        {
+          "id": "act_efc1dff55c5d4dae",
+          "what": "ATF-M6. Аудит утечек через кодирование в признаках Атласа: доли vs log_volume из одних расходов (H5), индикаторы пропусков vs размер МО; скачущие между окнами связи — сначала искать общий источник в коде. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB78/16286: M6 исключил утечку F03/D01; positive V3/банк/монитор только synthetic. Это не полный аудит признаков Атласа. Отдельно проверить общий источник долей/log_volume/пропусков; прежние высокий recall не цитировать."
+        },
+        {
+          "id": "act_b6659ef0c8e049b1",
+          "what": "ATF-M2. К E04: хранилище идентичностей кластеров — область (центр+радиус; эллипсоид при ≥10 членах), узнавание по перекрытию Бхаттачарии ≥θ_ov и отрыву от второго ≥spec_gap, дрейф, рождение, dormant/возвращение; θ_ov/spec_gap (старт 0.55/0.30) перекалибровать на бутстрепе; кластеризация месяца без перекрытия окон (ловушка плеча). Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB75/16283: M2 36/3/7; 1324/4438/36024 ambiguous при margin×.75/1/1.25. Декабрь: все 554 МО label1 без identity. Seed устойчив, методы ARI−.028… .406. Контроли не заменяют экономическую валидацию; не повторять run."
+        },
+        {
+          "id": "act_a1e77e09fb854cca",
+          "what": "ATF-M3. К E04: split/merge через вложение (>60% членов внутри области, Махаланобис<2.5) вместо близости центров; контроль на мирах part-whole и proximity, чувствительность порогов. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB75/16283: M3 real 0 кандидатов. Synthetic 49TP/1FP/1FN,F1=.98 — описательный, error budget не задан. T/M/Tc реально2023, SHA проверен, по 7 мирам не калибруются. Приёмка/экономическая истина открыты; не повторять210."
+        },
+        {
+          "id": "act_a0d924d8af6548e2",
+          "what": "ATF-M4. К E05/H1: двойная дивергенция каналов (доли / динамика / мобильность СЗФО) — синтетический мир на каждый канал; канал должен строить структуру на своём мире и воздерживаться (m=1 по M1) на чужом. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": ""
+        },
+        {
+          "id": "act_82e6846e4c3d42a4",
+          "what": "07. Рассчитать SW, CH, S_Dbw, AVI, AVU, MQ; проверить определения на контрольных примерах.",
+          "waiting_for": "SW/CH/S_Dbw готовы (75/16309). AVI/AVU: определения и код найдены (75/16316), нужны аудит и расчёт нашей сети. MQ не установлен. Общий A7 открыт; не повторять S_Dbw и не блокировать истории/отчёт (75/16332)."
+        },
+        {
+          "id": "act_a32a69fed5be431c",
+          "what": "08. Выполнить E05: абляции признаков, мобильности, географии и временной связи.",
+          "waiting_for": "Часть E05mobility выполнена75/15904: same101МО,5seed,K2,weights0/.25/1,общийspendingmetricspace. Remaining geography/features/time и зависимости A6 остаются. Не повторять уже измеренную mobilityчасть."
+        },
+        {
+          "id": "act_64ac761e4e4945ca",
+          "what": "ATF-M5. После E04: биографический L2 — матрица совместного присутствия МО в идентичностях, спектральный разрыв против перемешивания с сохранением возраста; ноль — валидный ответ. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB74/16260: M5 не подтверждён на МО; оставить в дальнейшей работе после подачи. Не заявлять найденные надтипы и не задерживать сборку новым L2-опытом. Действие остаётся открытым."
+        },
+        {
+          "id": "act_d08e9e8179c246a3",
+          "what": "MANUAL конкурс: уточнить у организатора, допускаются ли две отдельные заявки одной команды; точный час и часовой пояс закрытия 09.10.2026; операционные определения AVI, AVU, MQ. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует A6/аудит данных.",
+          "waiting_for": "Письменный ответ организатора или опубликованный URL; указать дату и источник."
+        },
+        {
+          "id": "act_fd3cbf9ca7c54554",
+          "what": "A2 source audit (KB74/14908): сверить уже скачанные SberIndex расходы МО и мобильность с официальными экспортами CSV/Parquet: URL, SHA256, схема, единицы, права использования, реальные N МО/месяцев/категорий/пропусков, ID и кроссволк. Мобильность только 297 МО СЗФО и агрегат янв–сен 2024/2025 до доказательства иного. Записать паспорт и применимость к A6/E05; GATE_REPORT с квитанцией. Не ждать MANUAL условий конкурса.",
+          "waiting_for": "KB77/15890,15905: officialREF_AREA297nativecodes;215name/typeagree,82mismatch. Текущая sourcebinding подтверждена, historicalграницы/rights/asof OPEN. Абляция75/15904: cohort101. Не повторять fuzzy-name поиск."
+        },
+        {
+          "id": "act_1b485908c3264584",
+          "what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+          "waiting_for": "После пунктов 08"
+        },
+        {
+          "id": "act_a3f272cfc5594ec7",
+          "what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+          "waiting_for": "KB75/16258: готовая сводка ATF и тезисов опубликована; использовать3истории и бюджетный контекст7/12+supplement. Формулировать ограничения/контрпример; не искать подтверждения типов по красивым событиям."
+        },
+        {
+          "id": "act_63eabe3fd8aa4770",
+          "what": "A6.3: при замороженных калибровках 2023 (T=0.2771627598, M=0.7187007761, Tc=0.1739547472) задать синтетические миры с известной истиной: стабильность, новое рождение, исчезновение, split, merge и близкие ложные события. До прогона зафиксировать состав миров и допуск ошибок; через fixar-devops/F7b посчитать false match, false miss, coverage/abstention и чувствительность M±25%. Сохранить код, seed, SHA, таблицу ошибок и GATE_REP",
+          "waiting_for": "KB75/15958:210 controls completed, child done; frozenT/M/Tc, bugfixed62/15959. Далее formalacceptance/errorbudget и научная сводка, не повтор210runs/подборM. Только synthetic, A6OPEN."
+        },
+        {
+          "id": "act_c527b10e254147a6",
+          "what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
+          "waiting_for": "KB75/16127: Курганская/Оренбургская/Тюменская области. Ждёт 5 геопаспортов GOV-B1. Только описание последующего периода; S_Dbw приоритет, сроки7/8.10 без сдвига."
+        },
+        {
+          "id": "act_11eb834a09874fac",
+          "what": "11. Наполнить шаблон лендинга проверенными картой, профилями и переходами; убрать все заглушки результатов.",
+          "waiting_for": "PR6 6eca2c8: лендинг с метриками и 3 историями проверен локально. Карта OSM — контекст; экономическая привязка карты и внешний deploy ещё не приняты. Полная приёмка источника отдельна."
+        },
+        {
+          "id": "act_de2edf39ffa94713",
+          "what": "Включить совместную проверку Атласа и Радара и отрицательный A8 в итоговый отчёт",
+          "waiting_for": "KB75/16597, KB76/16599, KB77/16600; таблица36строк,чистыйповторPASS. Без причинности/экономическихтипов; данные2025уже просмотрены. Не повторятьA8/Prophet."
+        },
+        {
+          "id": "act_c475e17b2a584b9a",
+          "what": "06. 27.09.2026: A6threshold выполнен на1896МО×24месяца,45504назначения,9T/Msettings. Tcпостоянен. Baseline1,1точновоспроизвёлвсеID/status. T±25%не влияетвэтомдиапазоне; marginM−25%/base/+25%даёт1324/4438/36024ambiguousстроки, Jaccard.2983/1/.1067. Следовательноидентичностичувствительныкmargin,5seedне доказалиустойчивостьпорогов. K2vsK5:mean silhouette.3840vs.2098,ARI.2115,NMI.3703,168помесячныхrawshareпрофилей безпридуманныхти",
+          "waiting_for": "Внешние данные75/15903,15904 и controls75/15958 выполнены. M+25% eventFDR37.8%; никакого automaticPASS. Далее научная сводка A6/критерии; не повторять вычисления. cutoff05.10, выводы07.10."
+        },
+        {
+          "id": "act_c5ab2585bf8146b8",
+          "what": "12. Завершить русский отчёт, README, конфиги и релиз-кандидат GitHub; проверить матрицу критериев.",
+          "waiting_for": "KB75 №16332, KB74 №16326: три истории и S_Dbw готовы. Собрать отчёт: бюджеты, миграция 2023, траты, пределы identity. AVI/AVU — аудит отдельно (75/16316); MQ открыт. Не повторять расчёты. Кандидат 07.10, проверка 08.10."
+        },
+        {
+          "id": "act_3abcbb174d4f4511",
+          "what": "13. Воспроизвести итог из чистого окружения; проверить доступность ссылок и лицензионные ограничения данных.",
+          "waiting_for": "После пунктов 12"
+        },
+        {
+          "id": "act_5533c9a1b45646d1",
+          "what": "14. Владелец: проверить финальный комплект, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+          "waiting_for": "После пунктов 13"
+        },
+        {
+          "id": "act_f4e3dc55ba964ec9",
+          "what": "MANUAL-20260921: скачать словарь муниципалитетов СберИндекса (sber-municipality-dictionary, P0) — второй ключ кроссволка territory_id→ОКТМО. ОКТМО-2026 уже лежит в data/raw/rosstat-oktmo-2026-09-01 (12693 кода, куратор accept 2026-09-21). Без словаря СберИндекса связка territory_id→название невозможна: 2190 внутренних ID не стыкуются с 12693 кодами ОКТМО.",
+          "waiting_for": "ручная загрузка владельцем"
+        }
+      ]
+    },
+    {
+      "project": "radar",
+      "case_id": "case_008f37d03cf541e5",
+      "checked_at": "2026-10-05T19:35:05.855781+00:00",
+      "all_count": 33,
+      "open_count": 14,
+      "open_actions": [
+        {
+          "id": "act_0c71cedc50ad4508",
+          "what": "05. Выполнить F04 Chronos-2 с ревизией и замером ресурсов; F05 TimesFM только при запасе времени.",
+          "waiting_for": "После пунктов 04"
+        },
+        {
+          "id": "act_24f1b02785b349d7",
+          "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
+          "waiting_for": "После пунктов 03"
+        },
+        {
+          "id": "act_dd090deaf69340b0",
+          "what": "ATF-N1/N2. К H4: спектральное/метастабильное раннее предупреждение не делать (24 точки — вне рабочего режима); оставить порог/CUSUM/BOCPD. Добавить синтетический ряд «режим 1→2→1» как положительный контроль задержки детекторов. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": ""
+        },
+        {
+          "id": "act_16ce6d42a8534f00",
+          "what": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
+          "waiting_for": "Письменный ответ организатора или опубликованный URL; указать дату и источник."
+        },
+        {
+          "id": "act_af3ef33f2761488e",
+          "what": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
+          "waiting_for": "После пунктов 05, 07, 08"
+        },
+        {
+          "id": "act_febbbf8723e94197",
+          "what": "10. Зафиксировать выбор модели, затем однократно открыть финальный тест; сохранить все отрицательные результаты.",
+          "waiting_for": "После пункта 09 И только при новом независимом временном holdout и подтверждённом историческом available_at/vintage; R8 завершён inconclusive, прежние месяцы не считать закрытым тестом."
+        },
+        {
+          "id": "act_b0fb2a4894954801",
+          "what": "11. Наполнить шаблон реальными прогнозами, тревогами и 3–5 разборами, включая неудачи; разделить warning и detection.",
+          "waiting_for": "PR6 6eca2c8: лендинги с таблицами и 3 историями готовы локально. Индивидуальные графики прогнозов и внешний deploy ещё не приняты. Описательное представление не блокируется новым holdout; scientific PASS не заявлять."
+        },
+        {
+          "id": "act_d68aea4a7c6840d8",
+          "what": "Включить сезонные отклонения и плацебо совместного эксперимента в отчёт Радара",
+          "waiting_for": "KB75/16597, KB76/16599, KB77/16600; origin03.2024,профили2023. Разрывс10сопоставлениями описательный; все3города одного профиля. Только сборка/сверка,без новогоProphet."
+        },
+        {
+          "id": "act_e9f99bf520984925",
+          "what": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция",
+          "waiting_for": "KB76/16477: новый H1273608,MAE651,269;current2026vintage,unequalinformation. Нужны historic source receipts/equalinfo protocol; не повторять готовый make."
+        },
+        {
+          "id": "act_8a0815d5461f4745",
+          "what": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отч",
+          "waiting_for": "KB76/16475–16477:make PASS;new H12MAE651,269/73608,Prophet1109,523. Current2026 vintage,не equalinfo. Следующий R9.NATIONAL-CONTROL; scientificR9OPEN;seasonalH12unsupported."
+        },
+        {
+          "id": "act_e346385f69e54019",
+          "what": "12. Подготовить русский отчёт, архитектуру, README, конфиги, ревизии весов и релиз-кандидат GitHub.",
+          "waiting_for": "KB76 №16330/16331: сильные модели и D04 готовы. Собрать отчёт: общая маска, оба окна, пилот 120 рядов, реальные пределы. h12, as-of и новый holdout отдельно. Не повторять Prophet/D04. Кандидат 07.10, проверка 08.10."
+        },
+        {
+          "id": "act_d0c376d044354f2e",
+          "what": "13. Провести чистое воспроизведение и аудит утечек; проверить все ссылки и комплект по весам жюри.",
+          "waiting_for": "После пунктов 12"
+        },
+        {
+          "id": "act_398bedb2669a4e2a",
+          "what": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+          "waiting_for": "После пунктов 13"
+        },
+        {
+          "id": "act_906d8781db364e7b",
+          "what": "MANUAL R9: запросить у организаторов помесячные расходы МО за 2025–2026 (territory_id, месяц, категория, значение, единица, признак пропуска), исторические снимки и журнал выпусков (published_at/available_at с часовым поясом, revision/vintage/хеш), версии справочника territory_id→ОКТМО и правило лага. Готовый текст: GitHub data/REQUEST_SBERINDEX_VINTAGES_20260930.md. Если архива нет — письменное подтверждение и календарь будущ",
+          "waiting_for": "Ответ/архив СберИндекса либо письменный отказ; приложить к делу Radar с источником, датой, условиями использования и SHA-256."
+        }
+      ]
+    },
+    {
+      "project": "graph",
+      "case_id": "case_43de12a8dc2e4abd",
+      "checked_at": "2026-10-05T19:35:05.865587+00:00",
+      "all_count": 23,
+      "open_count": 6,
+      "open_actions": [
+        {
+          "id": "act_41a1db5fbc0b442f",
+          "what": "GM2. На 2024 панели расходов СберИндекса построить версионированный territory_id↔ОКТМО: действующий словарь, 326 истёкших записей из аудита PR#3, официальные акты реорганизаций и явные unknown successor. Отчёт: matched/unmatched/conflict по году и контроль отсутствия соединения по одному имени. Не искать соцсети.",
+          "waiting_for": "KB77/16478:1/7 exactmatch,6 район→округ unresolved. Приоритет GM2.FLOOD6:official acts/границы/validity,не join по имени; остальное UNKNOWN. Источники и candidateIDs в материале дела."
+        },
+        {
+          "id": "act_9651a4c259e6441d",
+          "what": "GM3. Добавить узлы выпусков и наблюдений из доступных данных: СберИндекс расходы, население, мобильность как индекс (не потоки МО→МО), Tochno/БДМО занятость и зарплата. Каждое ребро к МО имеет год, единицу, источник, версию и маску покрытия. Не смешивать 2025 derivative vintage с исторической доступностью 2024; не искать соцсети.",
+          "waiting_for": "KB75 №16332, KB77 №16333: бюджеты готовы в локальном графе, истории собраны. Проверить lineage; не повторять загрузки и поиск соцсетей. Даты доступности неизвестны, production ingest не подтверждён. GM3 открыт."
+        },
+        {
+          "id": "act_0fd8ae3b4bf44287",
+          "what": "GOV-E1: скачать два официальных отчёта Кургана или Тюмени о паводках/экономике 2024. Нормализовать событие, ОКТМО, единицы, даты публикации и first_seen, SHA. Не повторять готовые три истории и не искать соцсети.",
+          "waiting_for": "KB77/16013: 5 источников и 6 событий уже проверены. Новые отчёты выбирать независимо от расходов; неизвестные available_at/vintage оставить null. Apify — для сложного разбора."
+        },
+        {
+          "id": "act_aa129ecf4e4643d4",
+          "what": "GOV-B1: по бюджетному источнику 77/16128 проверить пять геопаспортов файлов 36/42/43/53/67: финансовый орган, отчётная территория и уровень. Связать с официальным справочником, сохранить конфликты шапок; никаких сумм отдельных МО или соцсетей.",
+          "waiting_for": "Паспорта77/16128 готовы к review. Dispatch scope-v3 HTTP500; report rep_ffb1bab11bba4941, F7b62/16137. Данных хватает; ждёт repair orchestration, не владельца. 5 геопаспортов после accepted; 92 XLS не повторять."
+        },
+        {
+          "id": "act_0d7cb34d8a8c4aee",
+          "what": "GM4. Ввести инкрементальную проверку графа: конфликтующие ОКТМО и годы, дубли наблюдений, пропуски, истёкшие источники, as-of запросы и разделение synthetic/observed. Выдать воспроизводимые SQL/graph queries и отчёт различий между двумя выпусками; нерешённое оставить proposed. Не искать соцсети.",
+          "waiting_for": "KB77/16186: real incremental copy+77; base preserved, typed money/units/period, rounded provenance. GM4OPEN: further revision & synth separation; primary7/12 unchanged, unknown export excluded, productionfalse."
+        },
+        {
+          "id": "act_b231cd5eba674acb",
+          "what": "GM2.FLOOD6-20261005: По KB77/16478 найти официальную связь район→округ valid2024 для Белозерского,Звериноголовского,Кетовского,Куртамышского,Притобольного,Целинного. Старые candidate territory_id/ОКТМО в crosswalk.json. Нужны акт,номер,дата,границы,valid_from/to,successor; отсутствие отмечать UNKNOWN, по имени не соединять. Получить initial PDF/приложения актов103-ук04.04,6208.04,3608.04; regime zone отделить от реального зато",
+          "waiting_for": "KB77/16478:1/7 exact match,6 lineage blocked. Официальный портал timeout; альтернативные official mirrors/administration reports разрешены. Primary PDFs и фактическое затопление пока неизвестны."
+        }
+      ]
+    }
+  ],
+  "kb_document_reads": [
+    {
+      "corpus_id": 74,
+      "document_id": 16497,
+      "title": "Атлас 05.10.2026 — economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "length": 3535,
+      "text_sha256": "cbe84fec92398f404f286c37016c25a8f439ec75828ef816a5d4aec9ba1d5311",
+      "checked_at": "2026-10-05T19:41:33.000943+00:00"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16499,
+      "title": "Атлас 05.10.2026 — economic-atlas/RELEASE_REPORT_2026-10-05.md",
+      "length": 8913,
+      "text_sha256": "ffb72222a80e2b08cfdbeeea5ff492d4d27633da10646b4766abdb7872b1bf76",
+      "checked_at": "2026-10-05T19:41:33.059953+00:00"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16583,
+      "title": "Потребительская перестройка муниципалитетов и проверка гипотез PDF 05.10.2026",
+      "length": 9021,
+      "text_sha256": "d3ac71d3129781fc0d88129b889bfba64cf8d050ebcd1c9c555d3f3d51f6e794",
+      "checked_at": "2026-10-05T19:41:33.111227+00:00"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16597,
+      "title": "Атлас и Радар сезонная проверка до события и внешний A8 2025 проверено 05.10.2026",
+      "length": 7700,
+      "text_sha256": "59a29a61f3ac93f1a8e3c5f9368598bc7e387049257ea82c1799a7d9040c1b0f",
+      "checked_at": "2026-10-05T19:41:33.162904+00:00"
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16475,
+      "title": "Радар05.10.2026 — четыре шага, make radar, национальный H12 и пределы доказательства",
+      "length": 4339,
+      "text_sha256": "1decd2a3daec4953430cd9574b0d8588e9fa632813617f2ebfe034faba35ee11",
+      "checked_at": "2026-10-05T19:41:33.211569+00:00"
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16599,
+      "title": "Радар и Атлас паводковые отклонения и сопоставления проверено 05.10.2026",
+      "length": 7700,
+      "text_sha256": "59a29a61f3ac93f1a8e3c5f9368598bc7e387049257ea82c1799a7d9040c1b0f",
+      "checked_at": "2026-10-05T19:41:33.260611+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16611,
+      "title": "Curator decision atlas-radar-joint-20261005-lineage-recovery-1: accept",
+      "length": 3253,
+      "text_sha256": "6f60be741ad4f21ff3ab437b177a420207d69203b10a6d0812d723848809f951",
+      "checked_at": "2026-10-05T19:41:33.309668+00:00"
+    },
+    {
+      "corpus_id": 62,
+      "document_id": 16614,
+      "title": "F7b SberIndex доказан fanout action GET и ложный аварийный webhook проверено05.10.2026",
+      "length": 1725,
+      "text_sha256": "bceb970ad158c081655e52323b34270d4d67812614fb7298a5181c1069c2414f",
+      "checked_at": "2026-10-05T19:41:33.357867+00:00"
+    }
+  ],
+  "public_page_reads": [
+    {
+      "page": "atlas",
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/",
+      "status": 200,
+      "checked_at": "2026-10-05T19:39:49.521529+00:00",
+      "html_sha256": "a585ce3df0f75e359a07b070230272fdf460d0707867c860f8612d3d19682556",
+      "length": 21569,
+      "links": [
+        "../../economic-atlas/landing/",
+        "../../economic-atlas/landing/",
+        "../../shock-radar/landing/",
+        "#research-chat",
+        "/v2/",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/economic-atlas/runs/A6_frozen_controls_20261003/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/economic-atlas/runs/A7_SDbw_20261004/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/docs/DATA_INTEGRATION_RESULTS_2026-10-03.md",
+        "https://56.mchs.gov.ru/deyatelnost/press-centr/novosti/5249015",
+        "https://56.mchs.gov.ru/deyatelnost/press-centr/vse_novosti/5252131",
+        "https://56.mchs.gov.ru/deyatelnost/press-centr/vse_novosti/5252131",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/runs/Official_cases_20261003/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/economic-atlas/METHODOLOGY_RU.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/repository-tools/README-tools.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/economic-atlas/runs/Municipal_stories_20261004/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/economic-atlas/runs/A7_network_20261005/README.md",
+        "https://www.openstreetmap.org/copyright",
+        "https://osm-boundaries.com/about/documentation",
+        "https://sber.ru/sberindex/konkurs_sberindex",
+        "../../landing-common/DATA_LICENSE.txt"
+      ],
+      "scripts": [
+        "../../landing-common/municipal-2021.js",
+        "../../landing-common/map.js",
+        "/core/config.js",
+        "../../landing-common/regions-2021.js?v=20261005",
+        "../../landing-common/holographic.js?v=20261005-pulse2",
+        "../../landing-common/research-chat.js?v=20261005-datasets1"
+      ],
+      "upload_input": true
+    },
+    {
+      "page": "radar",
+      "url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/",
+      "status": 200,
+      "checked_at": "2026-10-05T19:39:53.471636+00:00",
+      "html_sha256": "14bec5df1a7b31027977040fc49125941134290db5a4089f8be742710d2bfcd3",
+      "length": 18730,
+      "links": [
+        "../../economic-atlas/landing/",
+        "../../economic-atlas/landing/",
+        "../../shock-radar/landing/",
+        "#research-chat",
+        "/v2/",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/runs/Official_cases_20261003/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/runs/R9_category_seasonal_20261003/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/METHODOLOGY_RU.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/runs/R9_strong_baselines_20261004/README.md",
+        "https://github.com/lech2000/sberindex-research/blob/codex/sberindex-accelerated-public-20261003/shock-radar/runs/D04_multicategory_20261004/README.md",
+        "https://www.openstreetmap.org/copyright",
+        "https://osm-boundaries.com/about/documentation",
+        "https://sber.ru/sberindex/konkurs_sberindex",
+        "../../landing-common/DATA_LICENSE.txt"
+      ],
+      "scripts": [
+        "../../landing-common/municipal-2021.js",
+        "../../landing-common/map.js",
+        "/core/config.js",
+        "../../landing-common/regions-2021.js?v=20261005",
+        "../../landing-common/holographic.js?v=20261005-pulse2",
+        "../../landing-common/research-chat.js?v=20261005-datasets1"
+      ],
+      "upload_input": true
+    },
+    {
+      "page": "contest",
+      "url": "https://sber.ru/sberindex/konkurs_sberindex",
+      "status": 200,
+      "checked_at": "2026-10-05T19:39:56.574014+00:00",
+      "html_sha256": "95d7221c16f296506d3cfbec515a6a1fc299dc0fca5b6a54261a64776337444e",
+      "length": 643444,
+      "links": [
+        "#forma",
+        " #claster",
+        "#prognoz",
+        "https://sberindex.ru/ru/dashboards/potrebitelskie-beznalicnye-rashody-na-urovne-munizipalnyh-obrazovanij",
+        "https://www.sberbank.com/common/img/uploaded/files/pdf/sberindex/hackathonlicence.zip",
+        "https://sberindex.ru/ru/research/dataset-borders-and-changes-of-municipalities",
+        "https://sberindex.ru/ru/dashboards/indeks-mobilnosti",
+        "https://www.sberindex.ru/ru/dashboards/",
+        "https://sberindex.ru/ru/dashboards/?category=CONSUMERS",
+        "https://www.sberbank.com/common/img/uploaded/files/pdf/sberindex/hackathonlicence.zip",
+        "https://sberindex.ru/ru/research/dataset-borders-and-changes-of-municipalities",
+        "#forma",
+        "target=_blank",
+        "https://adm.sberlive.sber.ru/sbercraft-admin/project/1035/page/872#_msocom_1",
+        "https://adm.sberlive.sber.ru/sbercraft-admin/project/1035/page/872#_msocom_2",
+        "target=_blank",
+        "target=_blank",
+        "target=_blank",
+        "target=_blank",
+        "target=_blank",
+        "https://t.me/+Hx0J3KuEqgNhMWUy",
+        "https://t.me/+EqqcDRdYF5tjYThi",
+        "https://www.sberbank.ru/privacy/policy#pdn",
+        "https://www.sberbank.ru/",
+        "https://www.sberbank.ru/"
+      ],
+      "scripts": [
+        "/proxy/static/node-page-renderer/client/main.js?v=?v=-2033093206"
+      ],
+      "date_fragments": [
+        "у Отправить работу Отправить работу Онлайн-конкурс СберИндекса по анализу данных, машинному обучению и экономике Подать работу до 9 октября Призовой фонд 1 200 000 рублей Команда 1–4 человека О конкурсе Приглашаем исследователей, специалистов по анализу данных, эконометрике, машинному обучению, анализу сложн",
+        " Отправить работу Отправить работу Отправить работу Важные даты Старт приема работ Завершение приема работ Объявление победителей 14 сентября 2026 9 октября 2026 30 октября 2026 2026 Жюри Оценивать проекты будут специалисты Лаборатории СберИндекс и приглашенные эксперты Дарья Цыплакова Директор Лаборатории Cбе",
+        " Отправить работу Отправить работу Важные даты Старт приема работ Завершение приема работ Объявление победителей 14 сентября 2026 9 октября 2026 30 октября 2026 2026 Жюри Оценивать проекты будут специалисты Лаборатории СберИндекс и приглашенные эксперты Дарья Цыплакова Директор Лаборатории CберИндекс Соруш Ш",
+        "ту Отправить работу Важные даты Старт приема работ Завершение приема работ Объявление победителей 14 сентября 2026 9 октября 2026 30 октября 2026 2026 Жюри Оценивать проекты будут специалисты Лаборатории СберИндекс и приглашенные эксперты Дарья Цыплакова Директор Лаборатории CберИндекс Соруш Шалилех Исполните"
+      ]
+    }
+  ],
+  "runtime_config_read": {
+    "workflow_id": "SberindexGraph1",
+    "updated_at": "2026-10-04 13:16:30",
+    "nodes": [
+      {
+        "name": "Открытые задачи Atlas",
+        "execute_once": false,
+        "on_error": "continueErrorOutput"
+      },
+      {
+        "name": "Открытые задачи Radar",
+        "execute_once": false,
+        "on_error": "continueErrorOutput"
+      },
+      {
+        "name": "Открытые задачи Graph",
+        "execute_once": false,
+        "on_error": "continueErrorOutput"
+      }
+    ]
+  },
+  "scope": "read audit and proposed closeout plan; no new scientific runs, action completions, PR merges or runtime deployment in this audit",
+  "browser_end_to_end_checked": false,
+  "raw_html_redistributed": false
+}
