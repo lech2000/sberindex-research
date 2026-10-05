@@ -11,6 +11,7 @@
     path.setAttribute('fill-rule', 'evenodd');
     path.classList.add('region-shape');
     path.style.setProperty('--i', index);
+    path.style.setProperty('--pulse-period', `${7.4 + (index % 7) * 0.35}s`);
     fragment.append(path);
   });
   group.append(fragment);
