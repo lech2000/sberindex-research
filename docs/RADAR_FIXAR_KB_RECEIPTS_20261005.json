@@ -157,6 +157,60 @@
     "r9_independent_validation": "OPEN",
     "new_positive_scientific_pass": false,
     "historical_receipts_preserved": true,
-    "note": "The earlier phrase R8/R9 remain open is inaccurate for formal R8 status. scientific_gates_closed:false in the original receipt means this technical run closed no new scientific gate; it is not the status of all previous gates."
+    "note": "The earlier phrase R8/R9 remain open is inaccurate for formal R8 status. scientific_gates_closed:false in the original receipt means this technical run closed no new scientific gate; it is not the status of all previous gates.",
+    "publication_receipts": {
+      "verified_on": "2026-10-05",
+      "source_commit": "995e1f86b921e37849467d52d372c753a325be8c",
+      "url": "https://github.com/lech2000/sberindex-research/blob/995e1f86b921e37849467d52d372c753a325be8c/docs/RADAR_STATUS_CLARIFICATION_20261005.md",
+      "fixar": {
+        "verified_on": "2026-10-05",
+        "r8_source": {
+          "case_id": "case_008f37d03cf541e5",
+          "action_id": "act_70e2fe4a16ac4e3d",
+          "what": "08. R8 исследование завершено с итогом INCONCLUSIVE / NO SCIENTIFIC PASS: общая маска 171150; MAE Prophet 731.386, Chronos 939.062, lastavailable 880.213. Временные интервалы выигрыша включают 0; новости as-of 0/64, эффект NA; исторический available_at/vintage не подтверждён. Исключены claims prospective win, historical as-of и early warning. Доказательства: PR #4 (3f85724), corpus 76/14696, материал mat_2d253279ee6740c0. R9 только с новым независимым holdout и проверенным vintage.",
+          "done": true,
+          "owner": "sberindex_radar_researcher"
+        },
+        "materials": [
+          {
+            "case_id": "case_008f37d03cf541e5",
+            "material_id": "mat_a6237727732b4f94",
+            "sha256": "0d44da5fa1e13b8750d0c3815538c2e506c5baae95ec1747027600ff4a5128c6",
+            "roundtrip_verified": true
+          },
+          {
+            "case_id": "case_d058db85c48a487c",
+            "material_id": "mat_96e6a296bb174551",
+            "sha256": "0d44da5fa1e13b8750d0c3815538c2e506c5baae95ec1747027600ff4a5128c6",
+            "roundtrip_verified": true
+          }
+        ],
+        "completed_actions_modified": false
+      },
+      "kb": [
+        {
+          "corpus_id": 76,
+          "response": {
+            "added": true,
+            "document_id": 16484,
+            "title": "Уточнение05.10.2026: R8 CLOSED_INCONCLUSIVE, новый technical PASS не научный PASS, R9 pending",
+            "corpus_id": 76,
+            "chunks": 2,
+            "vectors": 2
+          }
+        },
+        {
+          "corpus_id": 77,
+          "response": {
+            "added": true,
+            "document_id": 16485,
+            "title": "Уточнение05.10.2026: R8 CLOSED_INCONCLUSIVE, новый technical PASS не научный PASS, R9 pending",
+            "corpus_id": 77,
+            "chunks": 2,
+            "vectors": 2
+          }
+        }
+      ]
+    }
   }
 }
