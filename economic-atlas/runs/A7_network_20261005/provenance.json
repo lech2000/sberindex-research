@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-10-05",
+  "place": "Mac isolated research worktree; numerical run in /tmp/sber-a7-network-20261005/run-v2",
+  "base_commit": "1456b2dbbb62644e656f6bfff5a8153665437bfc",
+  "source_sha256": {
+    "a5_builder": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+    "implementation": "652b6973c7b168f16e0b086cede12e5d20e68b16e2067fb7a3ed0029505c64e5",
+    "tests": "b17231dd9e9804f2fbce44ae314ab9307bf0ded395bff316a11dcee3a833ca49",
+    "reference_read_only": "f0de1764428b6d99f36dd85a3d17b64516ba6fcc1b4543c98883cb2dff4c90bb"
+  },
+  "reference_external_code_executed": false,
+  "reference_external_code_copied": false,
+  "audit_sha256": "0f0b91eecb3a6af7d2062ff1eff91df8e2021988ef2107c387577f5e985b7053",
+  "related_kb_document": "75/16316; correction applies to missing economic graph and unqualified AVU constancy"
+}

@@ -1,0 +1,28 @@
+{
+  "fixtures": [
+    "hand_weighted_graph",
+    "disconnected_AVU_counterexample",
+    "edgeless_Q_NA",
+    "20_random_scalar_reference",
+    "weight_scale_label_and_vertex_permutation",
+    "K2_K3_with_cross_edges",
+    "invalid_inputs",
+    "knn_ties_and_duplicates"
+  ],
+  "real_audit": {
+    "A5_reconstructed_matrix_bitwise_equal": true,
+    "real_comparisons": [
+      "economic_knn5:label_E01_kmeans",
+      "economic_knn5:label_E02_louvain",
+      "economic_knn5:label_E03_spectral_a0",
+      "economic_knn5:label_E03_spectral_a0.5",
+      "economic_knn5:label_E03_spectral_a1",
+      "geographic_A5_control:label_E01_kmeans",
+      "geographic_A5_control:label_E02_louvain",
+      "geographic_A5_control:label_E03_spectral_a0",
+      "geographic_A5_control:label_E03_spectral_a0.5",
+      "geographic_A5_control:label_E03_spectral_a1"
+    ],
+    "test_code_sha256": "b17231dd9e9804f2fbce44ae314ab9307bf0ded395bff316a11dcee3a833ca49"
+  }
+}
