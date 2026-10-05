@@ -1,0 +1,8 @@
+{
+  "client_date": "2026-10-04",
+  "kind": "independent scalar audit plus post-hoc sensitivity",
+  "matched_null": "Thresholds fitted on pooled held-out null noise at 3%; descriptive ROC comparison, not independent prospective calibration",
+  "primary_protocol_unchanged": true,
+  "forecast_sample": "up to 3 deterministic random rows per category/window/origin/target",
+  "real_selection": "top 24/month from March2024; previous 3-month cooldown; selection budget, not measured economic false alarms"
+}

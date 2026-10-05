@@ -1,0 +1,36 @@
+{
+ "run_id": "D01-common-monitor-20261003",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "date": "2026-10-03",
+ "motivation": "runs/D01_bank_v1_20261003: срез по категории (V1) стирает общие шоки; нужен монитор уровня категории",
+ "preregistered_criteria": {
+  "C1": "seasonal: не более 2 ложных тревог из 36 чистых категория-месяцев теста (порог = max на валидации)",
+  "C2": "минимально обнаружимый общий всплеск и сдвиг не более 20% в каждой категории и не более 10% минимум в трёх",
+  "C3": "seasonal не хуже none по среднему recall при тех же правилах порога"
+ },
+ "corrections_after_first_run": "первый прогон показал 13 ложных тревог из 36 у none и сделал recall при малых амплитудах нечитаемым; добавлены нулевая амплитуда (база), критерий MDA «recall >= 50% и превышение базы >= 30 п.п.» и сравнение при равных ложных тревогах (не более 3 из 36)",
+ "selection_note": "сезонная поправка выбрана основной по T1 из runs/D01_calendar_20261003 на тех же данных; независимой проверкой не является",
+ "controls": {
+  "J_equals_calendar_common_diff": true,
+  "seasonal_residual_rmse_equals_T1_seasonal_naive": true
+ },
+ "inputs": {
+  "clean_signal_sha256": "5da09c8503a862ca4fd423c79328a429fe87338cb3536f6a0d7920b1d93fa25b",
+  "calendar_sha256": "1e08d54c15fc28544aea89952537e34fd9ccc881e99d636814d63986aac16129"
+ },
+ "code_sha256": {
+  "d01_common_monitor.py": "19240e1668b6cd03aa7c6935d2cb53c3be4b388aaa1ad8595d495ff9c5f92ee4",
+  "d01_calendar.py": "955c1037bfa19476dcd92c04cb5496e32616620c60027939f5d1310666945992",
+  "d01_sensitivity_curve.py": "c41b913c3d30c39cf964c5f42bb390107e4691e999d353930126b44fb87c87d5",
+  "d01_sensitive_signals.py": "206d825042de31285eec8a8e2380064a69125df0af6957f54939e8bf86b2351b"
+ },
+ "outputs_sha256": {
+  "common_monitor.json": "d0928042443180fac009c07707c2d1afb26abd38cd767e24b9dc27463086c15f"
+ },
+ "events": {
+  "spike": 72,
+  "shift": 48,
+  "ramp": 12
+ },
+ "command": "python3 src/d01_common_monitor.py --clean-signal <плацебо signal.parquet> --calendar data/curated/russia-production-calendar.csv --outdir OUT"
+}

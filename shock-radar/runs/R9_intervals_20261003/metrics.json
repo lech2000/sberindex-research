@@ -1,0 +1,335 @@
+{
+  "checked_at": "2026-10-03T09:11:43.006084+00:00",
+  "method": "existing R8 sum/count cluster bootstrap, percentile 95% interval",
+  "seed": 20261003,
+  "month_reps": 10000,
+  "benefit_convention": "positive means Prophet lower MAE than last value",
+  "results": [
+    {
+      "horizon": 1,
+      "n_common": 73728,
+      "expected_mask_rows": 73728,
+      "excluded_before_pairing": 0,
+      "n_target_months": 6,
+      "mae": {
+        "pred_prophet": 641.6996454066442,
+        "pred_last": 625.6724175347222,
+        "pred_seasonal": 1287.501980251736,
+        "pred_mean": 1306.6923303706676
+      },
+      "benefit_prophet_vs_last": -16.027227871921962,
+      "row_win_share": 0.4323594835069444,
+      "zero_diff_share": 0.0,
+      "per_target_month": {
+        "2024-07": {
+          "n": 12360,
+          "benefit": -115.20598734790202
+        },
+        "2024-08": {
+          "n": 12318,
+          "benefit": -61.37583919581762
+        },
+        "2024-09": {
+          "n": 12270,
+          "benefit": -56.864648427864296
+        },
+        "2024-10": {
+          "n": 12270,
+          "benefit": 76.02884476809596
+        },
+        "2024-11": {
+          "n": 12240,
+          "benefit": -210.24204388865317
+        },
+        "2024-12": {
+          "n": 12270,
+          "benefit": 271.92632945359094
+        }
+      },
+      "month_block": {
+        "point": -16.027227871922076,
+        "lo": -128.04756959205253,
+        "hi": 118.31007104157383,
+        "n_resamples": 10000,
+        "n_blocks": 6,
+        "n_rows": 73728,
+        "cluster_labels": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      "municipality_secondary": {
+        "point": -16.027227871921962,
+        "lo": -19.72256054166016,
+        "hi": -12.458455382718006,
+        "n_resamples": 2000,
+        "n_blocks": 2070,
+        "n_rows": 73728
+      },
+      "jackknife_drop_target_month": {
+        "2024-07": 3.948157787104137,
+        "2024-08": -6.93092117451524,
+        "2024-09": -7.874096461504889,
+        "2024-10": -34.40608841559439,
+        "2024-11": 22.63380107754444,
+        "2024-12": -73.51673531414336
+      },
+      "max_territory_row_weight": 0.00048828125
+    },
+    {
+      "horizon": 3,
+      "n_common": 73656,
+      "expected_mask_rows": 73662,
+      "excluded_before_pairing": 6,
+      "n_target_months": 6,
+      "mae": {
+        "pred_prophet": 719.9043597195983,
+        "pred_last": 865.2184614966873,
+        "pred_seasonal": 1287.9150510481156,
+        "pred_mean": 1408.7419897867426
+      },
+      "benefit_prophet_vs_last": 145.3141017770889,
+      "row_win_share": 0.5669191919191919,
+      "zero_diff_share": 0.0,
+      "per_target_month": {
+        "2024-07": {
+          "n": 12336,
+          "benefit": 69.2745068408466
+        },
+        "2024-08": {
+          "n": 12318,
+          "benefit": 102.38551803605188
+        },
+        "2024-09": {
+          "n": 12294,
+          "benefit": -108.01287077973208
+        },
+        "2024-10": {
+          "n": 12258,
+          "benefit": 64.73351493031825
+        },
+        "2024-11": {
+          "n": 12198,
+          "benefit": -88.37066817021042
+        },
+        "2024-12": {
+          "n": 12252,
+          "benefit": 832.5051069724861
+        }
+      },
+      "month_block": {
+        "point": 145.31410177708872,
+        "lo": -42.99705815607896,
+        "hi": 429.43425185263646,
+        "n_resamples": 10000,
+        "n_blocks": 6,
+        "n_rows": 73656,
+        "cluster_labels": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      "municipality_secondary": {
+        "point": 145.3141017770889,
+        "lo": 139.53666696803796,
+        "hi": 151.15347456750084,
+        "n_resamples": 2000,
+        "n_blocks": 2066,
+        "n_rows": 73656
+      },
+      "jackknife_drop_target_month": {
+        "2024-07": 160.61130404606288,
+        "2024-08": 153.93509193852378,
+        "2024-09": 196.06866976075233,
+        "2024-10": 161.40187065502815,
+        "2024-11": 191.69515589237344,
+        "2024-12": 8.198210374997705
+      },
+      "max_territory_row_weight": 0.0004887585532746823
+    },
+    {
+      "horizon": 6,
+      "n_common": 73578,
+      "expected_mask_rows": 73578,
+      "excluded_before_pairing": 0,
+      "n_target_months": 6,
+      "mae": {
+        "pred_prophet": 740.4359675427706,
+        "pred_last": 1125.2783304792192,
+        "pred_seasonal": 1288.3963141156323,
+        "pred_mean": 1577.1873061402703
+      },
+      "benefit_prophet_vs_last": 384.84236293644875,
+      "row_win_share": 0.6100328902661122,
+      "zero_diff_share": 0.0,
+      "per_target_month": {
+        "2024-07": {
+          "n": 12264,
+          "benefit": 1172.4169803631653
+        },
+        "2024-08": {
+          "n": 12276,
+          "benefit": 554.5612416691184
+        },
+        "2024-09": {
+          "n": 12294,
+          "benefit": -184.8501023812833
+        },
+        "2024-10": {
+          "n": 12264,
+          "benefit": 66.83881808241432
+        },
+        "2024-11": {
+          "n": 12240,
+          "benefit": 129.94447063436527
+        },
+        "2024-12": {
+          "n": 12240,
+          "benefit": 571.2362175965856
+        }
+      },
+      "month_block": {
+        "point": 384.8423629364494,
+        "lo": 45.77695236035606,
+        "hi": 766.1296072127843,
+        "n_resamples": 10000,
+        "n_blocks": 6,
+        "n_rows": 73578,
+        "cluster_labels": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      "municipality_secondary": {
+        "point": 384.8423629364488,
+        "lo": 374.118903549033,
+        "hi": 394.8771752713728,
+        "n_resamples": 2000,
+        "n_blocks": 2060,
+        "n_rows": 73578
+      },
+      "jackknife_drop_target_month": {
+        "2024-07": 227.3120255237657,
+        "2024-08": 350.85539749776405,
+        "2024-09": 499.1266650155591,
+        "2024-10": 448.4492956775826,
+        "2024-11": 435.7072460721477,
+        "2024-12": 347.6474628575405
+      },
+      "max_territory_row_weight": 0.0004892766859659137
+    },
+    {
+      "horizon": 12,
+      "n_common": 73608,
+      "expected_mask_rows": 73824,
+      "excluded_before_pairing": 216,
+      "n_target_months": 6,
+      "mae": {
+        "pred_prophet": 1109.5225902290215,
+        "pred_last": 1288.2514264753831,
+        "pred_seasonal": 1288.2514264753831,
+        "pred_mean": 1874.3124877500336
+      },
+      "benefit_prophet_vs_last": 178.7288362463615,
+      "row_win_share": 0.4883980002173677,
+      "zero_diff_share": 0.0,
+      "per_target_month": {
+        "2024-07": {
+          "n": 12294,
+          "benefit": 43.25536051999525
+        },
+        "2024-08": {
+          "n": 12276,
+          "benefit": 12.771619084236317
+        },
+        "2024-09": {
+          "n": 12288,
+          "benefit": -109.78533108521212
+        },
+        "2024-10": {
+          "n": 12252,
+          "benefit": 354.8236500236921
+        },
+        "2024-11": {
+          "n": 12240,
+          "benefit": 266.1391346488186
+        },
+        "2024-12": {
+          "n": 12258,
+          "benefit": 506.73080114982395
+        }
+      },
+      "month_block": {
+        "point": 178.72883624636185,
+        "lo": 13.418270948021728,
+        "hi": 351.93680313018075,
+        "n_resamples": 10000,
+        "n_blocks": 6,
+        "n_rows": 73608,
+        "cluster_labels": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      "municipality_secondary": {
+        "point": 178.72883624636148,
+        "lo": 150.469366672359,
+        "hi": 206.4718868542541,
+        "n_resamples": 2000,
+        "n_blocks": 2071,
+        "n_rows": 73608
+      },
+      "jackknife_drop_target_month": {
+        "2024-07": 205.89246788970468,
+        "2024-08": 211.94625615574398,
+        "2024-09": 236.54459110889206,
+        "2024-10": 143.5649784590244,
+        "2024-11": 161.29463515709548,
+        "2024-12": 113.19260012921978
+      },
+      "max_territory_row_weight": 0.000489077274209325
+    }
+  ],
+  "independent_new_holdout": false,
+  "historical_asof_verified": false,
+  "scientific_pass": false,
+  "limits": [
+    "Six target-month blocks; percentile CI describes this sample only, not unseen future performance",
+    "Adjacent months may remain dependent; no inferential significance or hypothesis rejection claimed",
+    "Secondary territory CI cannot replace primary temporal uncertainty",
+    "MAE unit remains source-value unit, not asserted rubles; raw-MAE estimand retained",
+    "No model/horizon/threshold selection by these already viewed results"
+  ],
+  "provenance": {
+    "predictions_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "code_sha256": "2ae4bdad7448973bde18a1133b9076b507175638789b6a89d189d8e8556c3e75",
+    "bootstrap_code_sha256": "693d7181826deea4873a9a533d667d1a5b44d825a84cf9872b14d40ef8fd6aed",
+    "python": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "pandas": "3.0.6",
+    "command": [
+      "python",
+      "shock-radar/src/r9_pair_intervals.py",
+      "--predictions",
+      "<audited-R9-predictions.parquet>",
+      "--out",
+      "<NEW-metrics.json>"
+    ]
+  },
+  "publication_note": "Scientific metrics retained; private execution paths and optional territory block label listing omitted from public report."
+}

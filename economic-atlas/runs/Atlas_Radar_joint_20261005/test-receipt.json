@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-05",
+  "command": "python tests/test_atlas_radar_joint.py",
+  "checks_passed": 4,
+  "interpreter": "Python3.13 existing scientific venv",
+  "scientific_pass": false
+}

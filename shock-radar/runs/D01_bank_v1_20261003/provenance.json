@@ -1,0 +1,285 @@
+{
+ "run_id": "D01-bank-v1-20261003",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "date": "2026-10-03",
+ "extends": [
+  "runs/D01_bank_20261002",
+  "runs/D01_bank_vol_ph_20261003"
+ ],
+ "motivation": "runs/D01_calendar_20261003: V1 сильнее V0 (идея возникла после просмотра, на тех же событиях; повтор на новых событиях seed 20261003)",
+ "members": [
+  "V0_last",
+  "V3_med3_cs",
+  "V4_med6_cs",
+  "PHn@V3",
+  "VOL@V3",
+  "V1_last_cs"
+ ],
+ "banks_preregistered": {
+  "V0": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "V3": [
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "V4": [
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "PHn_V3": [
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  "VOL_V3": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0
+  ],
+  "B2_V0V3": [
+   0.5,
+   0.5,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "B3_equal": [
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "B3_v3heavy": [
+   0.25,
+   0.5,
+   0.25,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "B4_vol": [
+   0.25,
+   0.25,
+   0.25,
+   0.0,
+   0.25,
+   0.0
+  ],
+  "B4_ph": [
+   0.25,
+   0.25,
+   0.25,
+   0.25,
+   0.0,
+   0.0
+  ],
+  "B5_equal": [
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.0
+  ],
+  "V1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "B2_V1V3": [
+   0.0,
+   0.5,
+   0.0,
+   0.0,
+   0.0,
+   0.5
+  ],
+  "B3_V1_equal": [
+   0.0,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.0,
+   0.0,
+   0.3333333333333333
+  ],
+  "B3_V1_v3heavy": [
+   0.0,
+   0.5,
+   0.25,
+   0.0,
+   0.0,
+   0.25
+  ],
+  "B4_V1_vol": [
+   0.0,
+   0.25,
+   0.25,
+   0.0,
+   0.25,
+   0.25
+  ],
+  "B4_V0V1": [
+   0.25,
+   0.25,
+   0.25,
+   0.0,
+   0.0,
+   0.25
+  ],
+  "B5_V0V1_vol": [
+   0.2,
+   0.2,
+   0.2,
+   0.0,
+   0.2,
+   0.2
+  ]
+ },
+ "paired_comparisons": [
+  {
+   "first": "B4_vol",
+   "second": "B3_equal",
+   "post_hoc": false
+  },
+  {
+   "first": "B4_ph",
+   "second": "B3_equal",
+   "post_hoc": false
+  },
+  {
+   "first": "B5_equal",
+   "second": "B3_equal",
+   "post_hoc": false
+  },
+  {
+   "first": "VOL_V3",
+   "second": "B3_equal",
+   "post_hoc": true
+  },
+  {
+   "first": "B3_V1_equal",
+   "second": "B3_equal",
+   "post_hoc": false
+  },
+  {
+   "first": "B4_V1_vol",
+   "second": "B4_vol",
+   "post_hoc": false
+  },
+  {
+   "first": "B2_V1V3",
+   "second": "B2_V0V3",
+   "post_hoc": false
+  },
+  {
+   "first": "B4_V0V1",
+   "second": "B3_equal",
+   "post_hoc": false
+  },
+  {
+   "first": "B5_V0V1_vol",
+   "second": "B4_vol",
+   "post_hoc": false
+  },
+  {
+   "first": "B3_V1_equal",
+   "second": "V3",
+   "post_hoc": false
+  },
+  {
+   "first": "B4_V1_vol",
+   "second": "VOL_V3",
+   "post_hoc": false
+  },
+  {
+   "first": "B4_V1_vol",
+   "second": "B3_V1_equal",
+   "post_hoc": true
+  },
+  {
+   "first": "B3_V1_equal",
+   "second": "VOL_V3",
+   "post_hoc": true
+  }
+ ],
+ "post_hoc_pairs": [
+  "B4_V1_vol vs B3_V1_equal",
+  "B3_V1_equal vs VOL_V3",
+  "VOL_V3 vs B3_equal"
+ ],
+ "common_shocks": [
+  [
+   "cspike",
+   0.2,
+   1
+  ],
+  [
+   "cshift",
+   0.2,
+   3
+  ]
+ ],
+ "controls": {
+  "earlier_banks_seed20261002": {
+   "banks": 11,
+   "records": 550,
+   "differences": 0,
+   "old_paired_entries": 8,
+   "old_paired_differences": 0
+  },
+  "earlier_banks_seed20261003": {
+   "banks": 11,
+   "records": 550,
+   "differences": 0,
+   "old_paired_entries": 8,
+   "old_paired_differences": 0
+  },
+  "V1_single_vs_D01_calendar": {
+   "records": 48,
+   "differences": 0
+  }
+ },
+ "inputs": {
+  "clean_signal_sha256": "5da09c8503a862ca4fd423c79328a429fe87338cb3536f6a0d7920b1d93fa25b"
+ },
+ "code_sha256": {
+  "d01_bank.py": "ae6352d9a83b8d8e88155d546722bb185101d84f90fc49c9ea3ef9650104e72e",
+  "d01_shock_shapes.py": "ae7c505bac0e882c32837c214bbc774c60fc01332bc23de2261282e5bf3315aa",
+  "d01_sensitivity_curve.py": "c41b913c3d30c39cf964c5f42bb390107e4691e999d353930126b44fb87c87d5",
+  "d01_sensitive_signals.py": "206d825042de31285eec8a8e2380064a69125df0af6957f54939e8bf86b2351b"
+ },
+ "outputs_sha256": {
+  "bank.json": "3046dab3ab3727d71ced2b2f6dbe1030b34c87a30390dce345811d67ccc9028b",
+  "bank_seed20261003.json": "34a3b4d9cf47a72344d3a8ba483cf65f2e092a6d7395c395d7fd7c342416154d"
+ },
+ "seed": 20261002,
+ "replication_seed": 20261003,
+ "events_per_cell": 500,
+ "command": "python3 src/d01_bank.py --clean-signal <плацебо signal.parquet> --outdir OUT [--seed 20261003]"
+}

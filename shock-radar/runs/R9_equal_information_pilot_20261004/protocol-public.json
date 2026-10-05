@@ -1,0 +1,42 @@
+{
+  "recorded_before_fits": "2026-10-04T17:19:05.897971+00:00",
+  "seed": 20261004,
+  "n_series": 120,
+  "selection": "2023 mean quartiles within six categories, 5 per quartile; complete 24 months and all 18 R9 points; no selection by model error",
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "r9_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+  "code_sha256": "30cfe1fadb62cc03746e441eb81ed109c1c0c1dc57bb389ca76fcf4624b53a7a",
+  "expected_fits": 2640,
+  "max_fits": 3600,
+  "prophet_config": {
+    "growth": "linear",
+    "yearly_seasonality": 3,
+    "weekly_seasonality": false,
+    "daily_seasonality": false,
+    "seasonality_mode": "multiplicative",
+    "seasonality_prior_scale": 1.0,
+    "n_changepoints": 0,
+    "uncertainty_samples": 0
+  },
+  "information_contract": "Both main comparisons can use own observations and all observed category medians only through origin. Conditional Prophet fits own/category median and scales its target forecast by median(category,origin)*prior-year category ratio. Pure yearly Prophet is an information-poorer secondary comparator.",
+  "primary_comparator": "conditional_prophet_yearly",
+  "secondary_comparator": "conditional_median3",
+  "other_comparator": "prophet_yearly",
+  "windows": "pre_R9 Feb-Jun2024 h1/h3; R9 Jul-Dec2024 h1/h3/h6; h12 unsupported",
+  "no_tuning": true,
+  "no_clipping": true,
+  "asof_verified": false,
+  "independent_holdout": false,
+  "scientific_pass": false,
+  "limits": [
+    "Both windows already viewed; specifications now frozen but post-discovery",
+    "One prior annual cycle, explicit yearly Fourier order 3 is a limited seasonal benchmark, not optimally tuned Prophet",
+    "Aggregate category overlaps other five; no six independent replications",
+    "No actual historical release times; observation clock only",
+    "Equal-information comparison addresses access to category pooling; complete-case cohort is not full Russia",
+    "No prior error budget or confirmatory threshold; new computation is exploratory"
+  ],
+  "private_selection_manifest_sha256": "b32ef927130bb9fcfc06a6f9c763ad787d2e6cc6585d69326850c596b67ae9e8",
+  "publication_scope": "aggregate metrics and reproducible code only; row predictions and territory selection manifest remain local",
+  "original_private_protocol_sha256": "053d00c7bbdbaa9ba314ef04004326f0763a2efea0f0d664a7a39025ff4c4925"
+}

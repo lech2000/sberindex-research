@@ -1,0 +1,3749 @@
+[
+  {
+    "report_entity_id": "treasury_0503317_01",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 84671393788
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 82081403788
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 82081403788
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2589990000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_02",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 124361832574
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 124361832574
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 124361832574
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_03",
+    "checked": 32,
+    "skipped_incomplete": 8,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 22233819781
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 22233819781
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 22260479781
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -26650000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -10000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 20,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_04",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 39164134584
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -19883019070
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -19998019070
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 115000000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 59047153654
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_05",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 289822033589
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 289822033589
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 284742092209
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -3013307521
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 8093248901
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_06",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 554764559613
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 553558299613
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 553460608562
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -114506379
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 1069173892
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -678610891
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -178365571
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1206260000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_07",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 931566382110
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 931566382110
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 961657911488
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -2461924229
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -24292521250
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -3302169641
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -34689169
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -225089
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_08",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -109823312035
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -109823312035
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -18400814255
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -95018623250
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 3595025470
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 1100000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_09",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 505017157116
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 502273332772
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 502273332772
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2743824344
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_10",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 73686775374
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 66760323322
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 54539342265
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 8113557552
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 4310047805
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -10000000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -192624300
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 6926452052
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_11",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 127510000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 127510000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 127510000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_12",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 251082867
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 251082867
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 251082867
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_13",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 7600787426
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 5845907426
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 5845907426
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1754880000
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 44,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_14",
+    "checked": 26,
+    "skipped_incomplete": 14,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 177492864797
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 177492864797
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 177492864797
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 38,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_15",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 4012831302
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 4002221302
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 4002221302
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 10610000
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 44,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_16",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 2502219602765
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 2502219602765
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 2502212602765
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 7000000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_17",
+    "checked": 29,
+    "skipped_incomplete": 11,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -25172912142
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -98953152142
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -84180271365
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -335604363
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -15195994031
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -212893488
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 971611105
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 27,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_18",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 631569702196
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 630369082196
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 682860020000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -6491846438
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -12569530000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -33210770000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -218791366
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1200620000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_19",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 588835860093
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 588641536395
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 654295321186
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -65653784791
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 194323698
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_20",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 220893467856
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 219292427856
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 150847286001
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -9625718929
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 78436626449
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -402297141
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 36531476
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1601040000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_21",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -28164354336
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -28164354336
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -39007115111
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 6863237111
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 3979523664
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_22",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 607996477999
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 593810074432
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 187385207000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -2120024836
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 395412749371
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 12816837002
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 51359475
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 263946420
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 14186403567
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_23",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 175091464625
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 172625290870
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 172625290870
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2466173755
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_24",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 1279806417179
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 1279806417179
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 1072182309299
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 22747586900
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 182497721260
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 2377948520
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 851200
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_25",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -54224945353
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -54475675353
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -21339658749
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -20230687147
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -13789854586
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -743579544
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 1628104673
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 250730000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_26",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 355380625842
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 342580230000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 342572730000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 7500000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 12800395842
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_27",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -85680135685
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -85680135685
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -130982756919
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -584108102
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 43591662362
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 2295066974
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_28",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 849683539216
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 847120595321
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 807330065660
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -2073911491
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 20080028658
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 21806100000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -21687506
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2562943895
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_29",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -3960183442
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -3960183442
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -5170875833
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 1178075797
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -1791626332
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 1832283926
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -21714400
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 13673400
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_30",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_31",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_32",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 263277237352
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 255250307352
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 257782171969
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -2531864617
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 8026930000
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_33",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 82861889529
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 82440889529
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 82285933953
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 154955576
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 421000000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_34",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 1457477383410
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 1453425566566
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 1291151306720
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 164201811917
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -195335260
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -1655077697
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -77139114
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 4051816844
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_35",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_36",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -209154350748
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -209161600748
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -176395603871
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -23067805476
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -6927720087
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -2770471314
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 7250000
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_37",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -112449355139
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -113229405139
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -113229405139
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 780050000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_38",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -176463714457
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -177073334457
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -168945225988
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -290695931
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -2104090898
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -4805359063
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -624970511
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -302992066
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 609620000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_39",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 991763683887
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 986370503887
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 865904137714
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 120466366173
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 5393180000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_40",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 20968350000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 19913770000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 7377550000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 12536220000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1054580000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_41",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -1631030000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -1441200000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -1441200000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": -189830000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_42",
+    "checked": 32,
+    "skipped_incomplete": 8,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 49026636443
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 41569000857
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 32215752096
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs_with_districts",
+        "residual_kopecks": 10179895902
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "intracity_districts",
+        "residual_kopecks": -826647141
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 7457635586
+      }
+    ],
+    "function_sum_checks": 24,
+    "accounting_only_blank_components": 16,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_43",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 44,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_44",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 750598594268
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 750598605803
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 592656133219
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 107561627942
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 50511903142
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -131832000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 773500
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": -11535
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_45",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 51513752797
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 32147936811
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 38874203771
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -714770905
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -73624198
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 37955793813
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -43108777897
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -784887773
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 19365815986
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_46",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_47",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 44,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_48",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -1065895660434
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -1138215020434
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -515959957999
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -259885490815
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -362369571620
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 72319360000
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_49",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 1171510958762
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 1170205938762
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 1131706996281
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 6874337309
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 32999384027
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -1532829977
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 378341601
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -220290479
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1305020000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_50",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_51",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 86408968442
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 84072068442
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 84072068442
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2336900000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_52",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_53",
+    "checked": 27,
+    "skipped_incomplete": 13,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 75786822954
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 20016260465
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 39858403144
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 2030480500
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -19609054479
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -2114538700
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -149030000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 29,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_54",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -21943166118
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -21943166118
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -21943166118
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_55",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -21328264486
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -22001314486
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -22001314486
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 673050000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_56",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 3837922674188
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 3837922674188
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 2508410187842
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 780271634586
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 549240851760
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_57",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -46163549511
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -46897459511
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -36282929490
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -329414884
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -9257929646
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -1053685229
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 16093
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 26483645
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 733910000
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_58",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 325921850298
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 319758310298
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 334629810000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -3672974218
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -10487464884
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -119360700
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -591699900
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 6163540000
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_59",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -22361405403
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -22361405403
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -22361405403
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_60",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_61",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -43542291020
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -45711531020
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -5942620000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -26525782009
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -13243129011
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2169240000
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_62",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 199440174659
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 187891494653
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 90619232709
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -96082017432
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 193354279376
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 11548680006
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_63",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 18072334005
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 18071774005
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 31332174455
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -3038848619
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -10221551831
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 560000
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 44,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_64",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 7496016844
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 7491066844
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -2097126448
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 9588193292
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 4950000
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_65",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_66",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 226511477357
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 226511477357
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -125220134615
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -2068844161
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 351535154325
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 2221525029
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 51360632
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -7583853
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_67",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 984160394473
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 984156331316
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 319627009472
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 707345478
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 658161614165
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 2291731910
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 3368630291
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 4063157
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_68",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_69",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -60482857006
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -60482857006
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -34233781372
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -24494088256
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -1778919159
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 23931781
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_70",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -31671137780
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -32933392441
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -33039826903
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 724096312
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -617661850
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1262254661
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_71",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -48124454253
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -53521551635
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -23540937700
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -6036764000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -12186110720
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -12311149215
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 553410000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 5397097382
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_72",
+    "checked": 22,
+    "skipped_incomplete": 18,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 141215289000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -3014590000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -2965070000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "intracity_municipalities",
+        "residual_kopecks": -49520000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 144229879000
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 46,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_73",
+    "checked": 21,
+    "skipped_incomplete": 19,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 53746574439459
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 51403174140000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 51403174140000
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 47,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_74",
+    "checked": 22,
+    "skipped_incomplete": 18,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -159872624651
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -160087089965
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -160087089965
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 214465314
+      }
+    ],
+    "function_sum_checks": 14,
+    "accounting_only_blank_components": 46,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_75",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 813400614281
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 813282104281
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 744066741006
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 61457605270
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 10811363386
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -325103734
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": -2728501647
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 118510000
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_76",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -156778015
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -156778015
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -156778015
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_77",
+    "checked": 26,
+    "skipped_incomplete": 14,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 26900132288
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 26900132288
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 26916689062
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": -16556774
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 38,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_78",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 108094791846
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 106427143446
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 102599261121
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 3827882325
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 1667648400
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_79",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_80",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 15874531093
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -7259273452
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -13559700000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 6300426548
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 23133804545
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_81",
+    "checked": 18,
+    "skipped_incomplete": 22,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 6,
+    "accounting_only_blank_components": 66,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_82",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -731120697117
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -731120697117
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -764882569424
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": -605518160
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 34367390467
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_83",
+    "checked": 23,
+    "skipped_incomplete": 17,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 69210268809
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 35544698219
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 38601833209
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -3057134990
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 41,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_84",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -8572019657
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -8572019657
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -8572019657
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_87",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 680974284752
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 662769213560
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 772791602098
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -128269035456
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 11246488053
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": 6999854043
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 304822
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 18205071192
+      }
+    ],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 28,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_88",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -3351500000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -3351500000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -7051500000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 3700000000
+      }
+    ],
+    "function_sum_checks": 22,
+    "accounting_only_blank_components": 22,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_90",
+    "checked": 24,
+    "skipped_incomplete": 16,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": -9586201518
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": -9586210640
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": -80079207
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 2314324506
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": -11820455939
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 9122
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 40,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_91",
+    "checked": 30,
+    "skipped_incomplete": 10,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 20,
+    "accounting_only_blank_components": 26,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_94",
+    "checked": 28,
+    "skipped_incomplete": 12,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 33387572096
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 33387572096
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 33387572096
+      }
+    ],
+    "function_sum_checks": 18,
+    "accounting_only_blank_components": 32,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_95",
+    "checked": 36,
+    "skipped_incomplete": 4,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 73215794213342
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 70261161816632
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 67629722573056
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "intracity_municipalities",
+        "residual_kopecks": -49520000
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 384184540002
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs",
+        "residual_kopecks": 2167375113813
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_okrugs_with_districts",
+        "residual_kopecks": 10179895902
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "intracity_districts",
+        "residual_kopecks": -826647141
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_districts",
+        "residual_kopecks": 87197522050
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "urban_settlements",
+        "residual_kopecks": -17613274699
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "rural_settlements",
+        "residual_kopecks": 991613649
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "territorial_fund",
+        "residual_kopecks": 2954632396710
+      }
+    ],
+    "function_sum_checks": 28,
+    "accounting_only_blank_components": 4,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_96",
+    "checked": 20,
+    "skipped_incomplete": 20,
+    "errors": [],
+    "approved_balance_diagnostics": [],
+    "function_sum_checks": 8,
+    "accounting_only_blank_components": 60,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  },
+  {
+    "report_entity_id": "treasury_0503317_97",
+    "checked": 22,
+    "skipped_incomplete": 18,
+    "errors": [],
+    "approved_balance_diagnostics": [
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_with_territorial_fund",
+        "residual_kopecks": 34089667664
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "consolidated_region",
+        "residual_kopecks": 34081793959
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "regional_budget",
+        "residual_kopecks": 33343193167
+      },
+      {
+        "check": "expense_minus_revenue_minus_financing",
+        "kind": "approved",
+        "scope": "municipal_okrugs",
+        "residual_kopecks": 738600792
+      }
+    ],
+    "function_sum_checks": 16,
+    "accounting_only_blank_components": 42,
+    "tolerance_kopecks": 10,
+    "nullable_source_cells_unchanged": true
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-05T09:45:39.180987+00:00",
+  "kind": "offline_frozen_reproduction",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.1"
+  },
+  "inputs": {
+    "raw": {
+      "file": "inputs/8_consumption.parquet",
+      "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
+    },
+    "r9": {
+      "file": "inputs/predictions-r9.parquet",
+      "sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+    },
+    "pilot": {
+      "file": "inputs/predictions-pilot.parquet",
+      "sha256": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2"
+    },
+    "dictionary": {
+      "file": "inputs/municipal-dictionary.parquet",
+      "sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+    },
+    "national": {
+      "file": "inputs/national-consumer-spending.parquet",
+      "sha256": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+    }
+  },
+  "scientific_code_sha256": {
+    "d01_joint_bank.py": "5055b5a568cc8425c27182a488432f032cfb10616908dbd7c9b2163382cc6785",
+    "radar_external_checks.py": "503d372b55bfad8e9166ca8f553150016f33f557bd532f0dc3a2117668aa9889",
+    "detector_bank.py": "c1c3478ba3f5eb2cf37658a67cb36a2c3db4890e41fc138c932116c17a2b2c4b",
+    "r9_strong_baselines.py": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+    "multicategory_shocks.py": "99f6e8ce0f32ba5217668e90f47fd23fcb43e6f92cc5a2e340663aefd4779650",
+    "competitive_audit.py": "8ad28f14287b0d270236786b07575f3626abdfdf3a46d030667c5eebbde485d6"
+  },
+  "driver_sha256": "d927d40113478b0a231136e3a5b43d862e17b463a616b78f75c139be02a889e2",
+  "bank_entry_sha256": "c1c3478ba3f5eb2cf37658a67cb36a2c3db4890e41fc138c932116c17a2b2c4b",
+  "reference_manifests": {
+    "baseline": {
+      "README.md": "c63874e2e58c7abaf3c266318f47d562001a926935818f95edc8e0a066f5855a",
+      "forecast-equal-information-pilot.json": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519",
+      "forecast-mae.png": "1a9e563e6ee958a8b92c05689be7bd8f7139a119242c2d6d77d6472f8f02c2fd",
+      "forecast-paired.json": "46ef17cac3662a3b3c699c5f50aa6b43b6ee2e09e7d33709367ae8baf38d387a",
+      "independent-audit.json": "2899a27132b2cd99f6ac6cb300eb67ebe806f08a99cfb4ffb6b2bd672429b64c",
+      "metrics.json": "26766abd086eeeb57ea4131e3ed9495c4472b5f7ddc4d9edb573cf5bfae658ee",
+      "protocol.json": "4d8a5530ab4f3689c69d147c9c92ba29dfeff0b80a3d09bbd2b5ab0b35f8999b"
+    },
+    "bank": {
+      "README.md": "9bbe1a0942f5d05029d8c3bd44eab55b799cdf2dd455b34704570240b6436f30",
+      "independent-audit.json": "2899a27132b2cd99f6ac6cb300eb67ebe806f08a99cfb4ffb6b2bd672429b64c",
+      "matched-null-by-seed.csv": "a6f371a88f8dded5bc02ee2193b0f6cf2573b322d22139d086648201393a4990",
+      "matched-null-paired.json": "977f724bd917f5d7f96cd1dd875786b674cbeee30f8b4673e0c3d9cc47b53209",
+      "matched-null-summary.csv": "82ea503b8cbdff6ccf438b807fde6ae268955dde59bc3819394daa49cfed06f4",
+      "matched-null-thresholds.json": "1615b99ec79872051ad833c9ffbf58b1076c857bbd76c77c85f839c7bc035208",
+      "metrics.json": "9300b7121ece88a68e768dbe281e7612bd77d960b59cca71a5ac6a0a7edc2d67",
+      "opposed-recall.png": "967f7985edba5f3460dc628f02af441f53cffd7a5cc86c5536a5237c9fca5902",
+      "paired-comparisons.json": "ebf0380a7bb94aac303eea90bef6b8178d1caf6042797f746346d11acb0ab703",
+      "protocol.json": "cdc2b2714efa149dea78a3e260f9dce0f46420f2cf0dd0c7bfa034d6b21e570b",
+      "real-alert-volume.csv": "d7f7865010d40ef4e18e0c39f95c829d167e52d2c75e6c2038a9533259760a18",
+      "real-cases.csv": "4f81facad4f5d8853498df0a2ca12d50c0e9f49ee4536e70bdb9d9532d80071e",
+      "real-fixed-budget-cases.csv": "dc4dadce71cf2d4a5f1dc2a091f53016a8556516c4174fbc66dfeed21703280e",
+      "real-fixed-budget-volume.csv": "21be19fa4398c2c19e760cb8f62a0d54c083491dd01e3f8d970e94f4c1b28c70",
+      "real-thresholds.json": "d5112aff44ffa52d1ff69f241ab56b314d9dbae92443bce0683342371a37b876",
+      "sensitivity-protocol.json": "fa2b15a6eb7b6e31c64d11efa32589623bd2d1fff9640e97a92a7c7d6efe0e91",
+      "synthetic-by-seed.csv": "65a17de3e2f4a19c3d0f16a3316cd6da2bb6f604b2a9d185e9b0d3183468e688",
+      "synthetic-summary.csv": "3e85bc5e36c760a0dc49166630e7f8cb4bc1c9afc6a2a42ca5bec6180606b742",
+      "synthetic-thresholds.json": "bedb224d7fe9669323439a3563c1c773c40f4b51044a5176ed41e49243119ca9",
+      "training.json": "106631dce68b793fc0660f66fd91da929c74bc998ea66b01f449591d5cd237aa"
+    },
+    "national": {
+      "README.md": "fd2f0388209745a054d79c229374a491223a551b392d05c098e1e1de6ad2036f",
+      "by-category.csv": "1bf22bfeb97284f90e672226cf39d281bcf3c47ad959164b7632e100ab7d721c",
+      "by-month.csv": "d907e323b5872ba62517d503197a4fdf11c69be0a5dd7d0d27a99dc2ef4f8f4f",
+      "data-passport.json": "977cb9368131d946660c3dd2ad9e04795b0300a0cbb7a36ef03981e6e89ae175",
+      "metrics.json": "fd548e856e5ffe702e6d51ccc8657f1b424ba3f05a77ccd42fe3e056fda2d37d",
+      "protocol.json": "a0fe4f83631b959d1960de684ff982f5c968a4ae4732154d67171ae147dab428"
+    },
+    "flood": {
+      "README.md": "4c5050a976662802713be555ee404ccb1905b7b3f3f57405bd48b2956917005a",
+      "crosswalk.json": "bb2d0d3f4de6c81ccb7d98817f7d3c18a28696f21689a47d8ef1f505c3d38730",
+      "descriptive-peer-residuals.csv": "1aa2735cd9944f16aaacf74ccfd951c3bdfe6bf46875d3d7b40b8eaed66a3c7b",
+      "metrics.json": "7ca127e03e2125f9523206db4775b92f5304da1b4f908cb5a7c1e55000102ca9",
+      "protocol.json": "8595f3d71625ec3b6ba3e07e4497e019ed4f8b01c7a3e90e9f8817132c938579",
+      "seasonal-residuals.csv": "d4ac5b7cae1af071d23dc43cb3048e60027623eee4c7a760c7265dac56ee52b8",
+      "source-passports.json": "beebd120813147f0445b6fd174b6ca04e9d717637f4860ffebfae1be23cb033b"
+    },
+    "joint": {
+      "README.md": "2d6c1fe1ff12524fa4fd6c1ff242d746c0722a3ce38da8d1a25b01f013a6a643",
+      "by-seed.csv": "6b0727c0afcf293559f7a6cd52a37509053820f386348e85a7288a88392c9a17",
+      "calibration.json": "39151362e63a208c20f700b3122d5e6cb7ee0a62ba1dfa23ba925a59eb9b31dc",
+      "metrics.json": "b2d25a779ba54cf5830f0466e73856cceaf6f1d06e3c656e85036e5771d2c856",
+      "paired.json": "c9565068ee23700420046fd035c509bdf918b12f7c52133d817421d6a6936864",
+      "protocol.json": "656c76211c915b2abe154aacd6181635093f8da9d2266a481ae02b1e76c00ad2",
+      "summary.csv": "849fa3b3bedcada805a4ac9f9ce62198a62031dfdcc01303eacb60efacea67d3",
+      "training.json": "000aa1afae170668d8a07fd12d44133e0998089b74075bfe6575b357904a01c2"
+    }
+  },
+  "prophet_cache_reused": true,
+  "prophet_refit": false,
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "scientific_pass": false
+}

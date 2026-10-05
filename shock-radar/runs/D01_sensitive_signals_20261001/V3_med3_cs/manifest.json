@@ -1,0 +1,83 @@
+{
+ "experiment_id": "R7-d02-d03-vs-d01",
+ "run_utc": "2026-10-01T18:16:08+00:00",
+ "git_commit": "f9b976285",
+ "seed": 20260923,
+ "inputs": {
+  "R5_cus": "/tmp/claude-1000/-home-serg/2ebfcc65-4917-40ab-99b1-0f797ceb4b92/scratchpad/d01_sens/V3_med3_cs/signal.parquet",
+  "R5_cus_sha256": "ae92f1217333f72686488563cd5111cff916a90600263f72b9da5223f6d4b1cf",
+  "registry": "/tmp/claude-1000/-home-serg/2ebfcc65-4917-40ab-99b1-0f797ceb4b92/scratchpad/d01_recompute/registry_eligible.parquet",
+  "registry_sha256": "84c07d414064fd8d40ebc4529f5ffbb7946b8969a0711c1b28574782eb677be6",
+  "n_rows": 287268
+ },
+ "signal_column": "rel",
+ "registry_events": 59,
+ "registry_is_60": false,
+ "split": {
+  "validation": "onset < 2024-07",
+  "test": "onset >= 2024-07",
+  "train_stats_end": "2024-03",
+  "validation_alarm_window": "[2024-03, 2024-07) exclusive end",
+  "no_test_leakage": true
+ },
+ "matching": {
+  "window_m": 1,
+  "cooldown_m": 3
+ },
+ "budget": 144,
+ "budget_source": "explicit --budget override (monthly budget)",
+ "budget_formula": "monthly_budget = round(D01_val_cooled_alarms_in_[train_end, split) / n_validation_months), минимум 0, без подбора на тесте; общий бюджет = monthly_budget * n_test_months; D01_val_alarms=111, n_validation_months=4, n_test_months=6; explicit --budget overrides как месячный бюджет; uses only pre-split validation evidence, never test event/alarms counts",
+ "budget_inputs": {
+  "d01_val_alarms": 111,
+  "n_validation_months": 4,
+  "n_test_months": 6,
+  "validation_months": [
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06"
+  ],
+  "test_months": [
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ],
+  "has_pretrain_data": true,
+  "monthly_budget": 24
+ },
+ "data_limitation": null,
+ "fitted_on_validation_only": {
+  "D01": {
+   "k": 4.0
+  },
+  "D02": {
+   "delta": 0.1,
+   "lambda": 0.4
+  },
+  "D03": {
+   "tau": 0.3
+  }
+ },
+ "d03_config": {
+  "hazard": 0.02,
+  "n0": 10.0,
+  "rmax": 24,
+  "reset_on_alarm": true,
+  "strict_log_support": true
+ },
+ "note": "технический тест детекции на 59 синтетических инжектах; раннее предупреждение о реальных шоках НЕ заявляется; тревога в месяц onset или позже — детекция с лагом",
+ "budget_mode": "monthly_causal",
+ "monthly_budget": 24,
+ "d03_strict_log_support": true,
+ "d03_legacy_note": "old D03 legacy numerical bug (reset on any -inf in normalized log-posterior) retained only for repro; monthly_causal runs use strict_log_support=True",
+ "online_budget_rule": "cooldown сначала, затем обработка строго хронологически, ранжирование (top score) только внутри текущего месяца; тревоги будущих месяцев не вытесняют тревоги текущего; общий бюджет и matching одинаковы для D01/D02/D03",
+ "calibration": "per-series: D01 — MAD-масштаб на train (ym < train_end); D03 — mu0/var ряда на train; D02 — последовательный, без калибровки",
+ "test_status": "test already opened (R7 primary runs/R7, 2026-09-25 counts as exploratory); этот прогон — exploratory, первичный результат runs/R7 не переписывается",
+ "limitations": [
+  "синтетические инжекты известного сдвига — технический тест детекции, раннее предупреждение о реальных шоках НЕ заявляется",
+  "отрицательный результат — валидный исход эксперимента, не провал протокола"
+ ]
+}

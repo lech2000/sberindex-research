@@ -1,0 +1,29 @@
+{
+  "recorded_before_story_assembly": "2026-10-04T20:33:29.364417+00:00",
+  "client_date": "2026-10-04",
+  "selection": "three already acquired complete annual budget pairs; predefined contrasts from previous budget pilot",
+  "cities": [
+    "Орск",
+    "Курган",
+    "Ишим"
+  ],
+  "sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+    "methods": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+    "budget": "dc7856860760a85378c4a15bc1215ffc4bd87b98e8731afdb72b5a41ca2219ae",
+    "budget_observations": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108",
+    "migration": "842fb970b89b0ab5102f342add31d147a24e40690122e5ecc40d665c7829733a"
+  },
+  "scientific_pass": false,
+  "limits": [
+    "Retrospective descriptions, not causal mechanisms",
+    "All three anchor identities already known ambiguous at Dec2024; no selection on positive transitions",
+    "Budget expenditure nominal, not household spending or inflation-adjusted activity",
+    "Migration 2023 only, not 2024 flood consequence; ratio uses Jan1 population, not official coefficient",
+    "Across-method cluster labels not aligned; compare co-membership with predetermined contrast only",
+    "No complete annual budget contrast pairs; population imbalance disclosed",
+    "Common spring flood family does not create three independent shocks",
+    "No historical publication/vintage verification; sources stay descriptive"
+  ]
+}

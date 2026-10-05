@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "base_reproduced_exactly": true,
+  "counts": [
+    {
+      "margin_multiplier": 0.75,
+      "ambiguous_rows": 1324,
+      "rows": 45504
+    },
+    {
+      "margin_multiplier": 1.0,
+      "ambiguous_rows": 4438,
+      "rows": 45504
+    },
+    {
+      "margin_multiplier": 1.25,
+      "ambiguous_rows": 36024,
+      "rows": 45504
+    }
+  ],
+  "scientific_pass": false
+}

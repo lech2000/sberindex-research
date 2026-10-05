@@ -1,0 +1,134 @@
+{
+  "experiment": "ATLAS_RADAR_FLOOD_20261005",
+  "status": "EXPLORATORY_PROTOCOL",
+  "anchors": [
+    {
+      "name": "Орск",
+      "territory_id": 1673,
+      "region_code": 56
+    },
+    {
+      "name": "Курган",
+      "territory_id": 1333,
+      "region_code": 45
+    },
+    {
+      "name": "Ишим",
+      "territory_id": 2192,
+      "region_code": 72
+    }
+  ],
+  "feature_window": [
+    "2023-01",
+    "2023-12"
+  ],
+  "forecast_origin": "2024-03",
+  "targets": [
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "primary_model": "profile_ses",
+  "sensitivity_model": "category_seasonal",
+  "cluster_method": {
+    "method": "kmeans",
+    "K": 2,
+    "seed": 20261005,
+    "n_init": 20,
+    "feature_set": "five 2023 mean monthly category/all ratios; StandardScaler on 2023 only",
+    "use": "descriptive exposure profiles, not presumed economic types"
+  },
+  "comparison": {
+    "nearest": 10,
+    "exclude_regions": [
+      45,
+      56,
+      72
+    ],
+    "same_dictionary_type": true,
+    "matching_features": [
+      "five 2023 mean monthly expense ratios",
+      "log Jan1 population2023",
+      "log mean all-spending2023",
+      "slope of log all-spending2023 per month",
+      "std log all-spending2023"
+    ],
+    "scale": "StandardScaler across eligible pre-event panel",
+    "distance": "Euclidean",
+    "tiebreak": "territory_id",
+    "replacement": true,
+    "outcome_access": "no 2024 values used for matching",
+    "exposure": "unknown; outside 3 selected regions does not prove absence of shocks",
+    "causal": false,
+    "population_caliper": "absolute log population difference <= log(2)",
+    "minimum_peers": 5,
+    "max_standardized_distance": 3,
+    "if_insufficient": "NO_MATCH_SUPPORT; no relaxing calipers after outcomes"
+  },
+  "primary_outcome": "April model residual percent, all five nonaggregate categories reported; aggregate separate",
+  "quarter_outcome": "100*(sum(actual Apr-Jun)/sum(forecasts Apr-Jun)-1)",
+  "relative_comparison": "anchor residual minus median of selected comparisons; no causal effect label",
+  "recovery": {
+    "initial_drop": "April residual <= -10%",
+    "rule": "first pair of consecutive months May-Dec with abs(residual)<=10%; if April not below -10%, NOT_APPLICABLE_NO_INITIAL_DROP",
+    "sensitivity_bands": [
+      5,
+      20
+    ],
+    "interpretation": "model-defined normalization, not proven economic recovery"
+  },
+  "placebo": {
+    "dates": [
+      "2024-02",
+      "2024-03"
+    ],
+    "origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "horizon": 1,
+    "use": "two limited pre-event descriptive diagnostics; not independent replicates"
+  },
+  "uncertainty": "no general-population significance or CI from three related selected cases; comparison spread shown descriptively",
+  "prior_access": "all case outcomes and R9 models previously viewed; this is not preregistration or unseen holdout",
+  "external_validation": "reuse reported KB75/16427 A8 2025, audit provenance; no retuning clusters to obtain significance",
+  "checks": [
+    "SHA inputs",
+    "input key uniqueness and positivity",
+    "mutating all future values changes neither features/labels/peers nor forecasts",
+    "independent scalar forecasts for anchors/controls",
+    "repeat output and source manifest"
+  ],
+  "scientific_pass": false,
+  "claimed_economic_sovereignty": false,
+  "claimed_causal_transmission": false,
+  "created_at": "2026-10-05T18:10:13.784Z",
+  "limits": [
+    "Atlas panel membership was defined using 2023-2024 completeness; retrospective selection, not historical online population",
+    "dictionary current snapshot/native keys; no new official boundary-successorship proof",
+    "Only three previously viewed cities from a shared flood family; no pooled causal inference",
+    "No causal interpretation of comparison residual gap or regional network transmission",
+    "Failure to reenter forecast band by December is RIGHT_CENSORED, not permanent loss"
+  ],
+  "population_rule": "2023 total-age two sexes; collapse identical finite duplicates, unique finite plus missing retains finite; conflicting finite values remain missing and excluded from matching; no population imputation",
+  "protocol_revision": "v2, population duplicate handling specified after pre-outcome input failure; no case outcomes computed",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "forecast_code": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+    "code": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95"
+  },
+  "population_quality_before_outcomes": {
+    "rows": 4883,
+    "unique_keys": 4875,
+    "conflicting_nonmissing_keys": 0,
+    "duplicate_extra_rows": 8
+  }
+}

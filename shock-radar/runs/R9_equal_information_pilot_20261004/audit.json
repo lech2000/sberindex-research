@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-04T17:19:55.456986+00:00",
+  "technical_complete": true,
+  "scientific_pass": false,
+  "n_series": 120,
+  "n_fits": 2640,
+  "rows": 3120,
+  "duplicate_keys": 0,
+  "fit_failures": 0,
+  "independent_frozen_formula_agreement": true,
+  "source_actual_and_last_exact": true,
+  "stored_Prophet_2160_rows_exact": true,
+  "future_mutation_checks": 18,
+  "all_aggregate_MAE_recomputed": true,
+  "quota_strata": 24,
+  "limits": "Pilot on viewed windows, fixed seasonal specification; not an optimal Prophet search or independent holdout"
+}

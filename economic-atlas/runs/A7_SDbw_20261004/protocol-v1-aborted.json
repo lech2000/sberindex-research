@@ -1,0 +1,72 @@
+{
+  "protocol_id": "A7_SDBW_FROZEN_A5_20261004_v1",
+  "frozen_before_computation_at": "2026-10-04T18:56:52.337778+00:00",
+  "original_paper": {
+    "title": "Clustering Validity Assessment: Finding the optimal partitioning of a data set",
+    "authors": "Maria Halkidi; Michalis Vazirgiannis",
+    "year": 2001,
+    "doi": "10.1109/ICDM.2001.989517",
+    "url": "https://doi.org/10.1109/ICDM.2001.989517",
+    "section": "3, equations 1--5, PDF page 3",
+    "read_via": "author-uploaded ResearchGate full paper; web extraction"
+  },
+  "visual_formula_check": {
+    "url": "https://www.cs.helsinki.fi/events/ecmlpkdd/pdf/halkidi-2.pdf",
+    "title": "An Introduction to Quality Assessment in Data Mining; Halkidi/Vazirgiannis PKDD August 2002",
+    "pdf_pages": [
+      69,
+      70,
+      71
+    ],
+    "checked_at": "2026-10-04",
+    "download_sha256": "e02b22d769bdf97731343761d17151b7334fb56ec4dbbc31446613ad95637fa3",
+    "method": "local Poppler rendered PDF pages69/70 viewed; page71 population-variance definition extracted"
+  },
+  "n_municipalities": 1896,
+  "feature_columns": [
+    "z_Здоровье",
+    "z_Маркетплейсы",
+    "z_Общественное питание",
+    "z_Продовольствие",
+    "z_Транспорт"
+  ],
+  "feature_scope": "frozen A5 z-scores of mean monthly category share, 24months2023-2024; no rescaling",
+  "methods": [
+    "E01_kmeans",
+    "E02_louvain",
+    "E03_spectral_a0",
+    "E03_spectral_a0.5",
+    "E03_spectral_a1"
+  ],
+  "formula": {
+    "variance": "population coordinate-wise variance, ddof=0",
+    "norm": "Euclidean norm of variance vector",
+    "Scat": "mean_i(norm(variance(C_i))) / norm(variance(X))",
+    "radius": "sqrt(sum_i(norm(variance(C_i)))) / k",
+    "density": "closed Euclidean ball, distance <= radius; raw counts, not divided by cluster size",
+    "Dens_bw": "mean over unordered i<j of density(midpoint)/max(density(centre_i),density(centre_j)); equals ordered sum/(k*(k-1))",
+    "S_Dbw": "Scat + Dens_bw; lower is preferable under this declared convention"
+  },
+  "primary_centre_sample_domain": "pair_union: literal shared C_i union C_j sample domain from eq2",
+  "sensitivity_centre_sample_domain": "own_cluster: numerator still pair_union; centre counts own cluster",
+  "degenerate_rules": [
+    "reject missing/non-finite, zero total variance, k<2 or k>=n",
+    "keep singleton clusters, flag their zero variance",
+    "zero density denominator in any pair => Dens_bw/S_Dbw null (NA), no epsilon/zero substitution"
+  ],
+  "implementation_sha256": "b631079ad9d67a78848d60f513bec796f2df00314346c3b8017eb2e55520aa0e",
+  "independent_test_sha256": "737093f3681c21f4add9baac07d2575e64547d5430986663ff0748e01e0ce695",
+  "input_sha256": {
+    "features.parquet": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+    "assignments.parquet": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+    "metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615"
+  },
+  "outcome_scope": "descriptive saved partition evaluation; no economic truth/forecast/causal claim; no retuning",
+  "jury_indices_spec_unresolved": [
+    "AVI",
+    "AVU",
+    "MQ"
+  ],
+  "full_A7_gate_pass": false
+}

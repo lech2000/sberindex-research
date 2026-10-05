@@ -1,0 +1,8 @@
+{
+  "verified_core_sha256": "842fb970b89b0ab5102f342add31d147a24e40690122e5ecc40d665c7829733a",
+  "subset_sha256": "3adf07ae314ee00b6fbf5775a16b7bf50e7b36bf5e8b426f733f185bea7abe7c",
+  "rows": 3,
+  "indicator": "BDPMO 8112023,2023",
+  "eligibility": "descriptive only",
+  "ratio": "net/start Jan1 population x1000; not official migration coefficient"
+}

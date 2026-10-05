@@ -1,0 +1,22 @@
+{
+  "url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "checked_at": "2026-10-03T19:08:34.187080+00:00",
+  "method": "direct HTTPS GET via system curl, HTTP200, visible HTML text inspected; TLS verification enabled",
+  "html_sha256": "2109274f76f158ebed4c92afac97c551b70175b4669abb489628df1025218175",
+  "raw_html_not_redistributed": true,
+  "closing_date_visible": "2026-10-09",
+  "closing_clock_and_timezone_not_found": true,
+  "named_indices": [
+    "SW",
+    "CH",
+    "S_Dbw",
+    "AVI",
+    "AVU",
+    "MQ"
+  ],
+  "formula_specification_not_found_for": [
+    "AVI",
+    "AVU",
+    "MQ"
+  ]
+}

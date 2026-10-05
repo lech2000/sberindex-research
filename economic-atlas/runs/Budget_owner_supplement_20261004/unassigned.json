@@ -1,0 +1,47 @@
+[
+  {
+    "metric": "expense",
+    "value_kopecks": 61626129532,
+    "source_literal": "616261.29532",
+    "source_locator": "data!B8",
+    "as_of_date": "2026-09-28",
+    "period_start": null,
+    "territory_id": null,
+    "city": null,
+    "source_sha256": "66385eb19741a61d36804da60f1bba3405f6ea5ec01752f2eebba9f0e657bd66",
+    "source_unit": "thousand_RUB",
+    "source_resolution_RUB": "0.01",
+    "available_at": null,
+    "status": "unassigned_geography_and_period_start"
+  },
+  {
+    "metric": "revenue",
+    "value_kopecks": 60726407875,
+    "source_literal": "607264.07875",
+    "source_locator": "data!B10",
+    "as_of_date": "2026-09-28",
+    "period_start": null,
+    "territory_id": null,
+    "city": null,
+    "source_sha256": "66385eb19741a61d36804da60f1bba3405f6ea5ec01752f2eebba9f0e657bd66",
+    "source_unit": "thousand_RUB",
+    "source_resolution_RUB": "0.01",
+    "available_at": null,
+    "status": "unassigned_geography_and_period_start"
+  },
+  {
+    "metric": "signed_balance_revenue_minus_expense",
+    "value_kopecks": -899721657,
+    "source_literal": "-8997.21657",
+    "source_locator": "data!B12",
+    "as_of_date": "2026-09-28",
+    "period_start": null,
+    "territory_id": null,
+    "city": null,
+    "source_sha256": "66385eb19741a61d36804da60f1bba3405f6ea5ec01752f2eebba9f0e657bd66",
+    "source_unit": "thousand_RUB",
+    "source_resolution_RUB": "0.01",
+    "available_at": null,
+    "status": "unassigned_geography_and_period_start"
+  }
+]

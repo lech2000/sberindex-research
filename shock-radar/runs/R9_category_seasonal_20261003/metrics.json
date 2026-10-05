@@ -1,0 +1,1690 @@
+{
+  "method": "last(series,origin) * median(category,target-12) / median(category,origin-12)",
+  "median_cohort": "all observed raw municipalities at each historical category/month; no zero fill",
+  "sensitivity": "same prior municipalities observed in both reference months",
+  "origin_contract": "origin=target-h; exactly R9 training through observation origin, no assumed release lag",
+  "horizons": [
+    1,
+    3,
+    6
+  ],
+  "unsupported_horizon": 12,
+  "target_window": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "fixed_ensemble": "0.5 seasonal + 0.5 stored Prophet; no optimization or selection",
+  "interval": "paired absolute-error difference; target-month cluster bootstrap, 10000 resamples, percentile 95%",
+  "seed": 20261003,
+  "no_december": "declared sensitivity, five remaining month blocks",
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "r9_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+  "scientific_pass": false,
+  "independent_new_holdout": false,
+  "historical_asof_verified": false,
+  "limits": [
+    "User already inspected this target window before this protocol; this is an exploratory audit, not preregistration of unseen data",
+    "One prior year (2023); no evidence of persistence across multiple annual cycles",
+    "Six nearby temporal blocks; intervals describe this sample, not a confirmatory significance test",
+    "Stored Prophet disables yearly seasonality; no claim against a tuned seasonal Prophet",
+    "Category pooling uses shared past information; comparison with a univariate model is an information-set difference",
+    "Observed category medians may change composition; balanced historical cohort is a sensitivity only",
+    "All categories is an aggregate overlapping other categories; six categories are not independent replications",
+    "Source MAE units retained; not asserted monetary rubles; no causal economic interpretation",
+    "No vintage/publication-time evidence; observation-calendar causality is not historical as-of verification"
+  ],
+  "checked_at": "2026-10-03T18:43:16.631388+00:00",
+  "results": [
+    {
+      "horizon": 1,
+      "n_r9": 73728,
+      "n_common": 73728,
+      "excluded": 0,
+      "all_months": {
+        "n": 73728,
+        "n_month_blocks": 6,
+        "mae": {
+          "pred_category_seasonal": 309.6112470488324,
+          "pred_prophet": 641.6996454066442,
+          "pred_last": 625.6724175347222,
+          "pred_ensemble_half": 381.4306161967624,
+          "pred_balanced_prior": 312.0062213040085
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 332.08839835781174,
+            "relative_mae_reduction_pct": 51.75137632300979,
+            "row_win_share": 0.6804470486111112,
+            "month_block_ci": {
+              "point": 332.0883983578113,
+              "lo": 137.26494903749537,
+              "hi": 612.3321760534881,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73728,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 372.55517064379364,
+              "2024-08": 373.49989336501,
+              "2024-09": 308.16041576328337,
+              "2024-10": 368.3700032058362,
+              "2024-11": 367.4781015240486,
+              "2024-12": 202.54113396946346
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 316.0611704858898,
+            "relative_mae_reduction_pct": 50.51543933025459,
+            "row_win_share": 0.6344265407986112,
+            "month_block_ci": {
+              "point": 316.06117048588993,
+              "lo": 35.16397185825561,
+              "hi": 712.1965338444177,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73728,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 376.5033284308978,
+              "2024-08": 366.5689721904947,
+              "2024-09": 300.28631930177846,
+              "2024-10": 333.96391479024186,
+              "2024-11": 390.11190260159304,
+              "2024-12": 129.02439865532008
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 260.2690292098817,
+            "relative_mae_reduction_pct": 40.55932258540515,
+            "row_win_share": 0.7735053168402778,
+            "month_block_ci": {
+              "point": 260.269029209881,
+              "lo": 143.6147720902953,
+              "hi": 435.6203940906824,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73728,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 281.0636140389652,
+              "2024-08": 292.0104259076576,
+              "2024-09": 254.03563320351972,
+              "2024-10": 275.79165099935705,
+              "2024-11": 279.98135617538014,
+              "2024-12": 178.77711519324004
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": -2.3949742551759976,
+            "relative_mae_reduction_pct": -0.7735423948595533,
+            "row_win_share": 0.3997395833333333,
+            "month_block_ci": {
+              "point": -2.3949742551759985,
+              "lo": -6.365421942527345,
+              "hi": 0.9756727446468176,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73728,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": -2.359267230131687,
+              "2024-08": -2.982082194679822,
+              "2024-09": -2.82583515272239,
+              "2024-10": -2.0551726889637147,
+              "2024-11": -3.564674036544905,
+              "2024-12": -0.5826495066655739
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12360,
+            "mae": {
+              "pred_category_seasonal": 303.21183507796536,
+              "pred_prophet": 434.3807446294555,
+              "pred_last": 319.1747572815534,
+              "pred_ensemble_half": 277.3578385418389,
+              "pred_balanced_prior": 305.7840964458371
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12318,
+            "mae": {
+              "pred_category_seasonal": 273.5784709071765,
+              "pred_prophet": 399.2145305418154,
+              "pred_last": 337.83869134599774,
+              "pred_ensemble_half": 297.1886553512887,
+              "pred_balanced_prior": 273.0464847333112
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12270,
+            "mae": {
+              "pred_category_seasonal": 283.1906792229029,
+              "pred_prophet": 735.1296036030884,
+              "pred_last": 678.2649551752241,
+              "pred_ensemble_half": 443.6387282840792,
+              "pred_balanced_prior": 283.4275565716888
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12270,
+            "mae": {
+              "pred_category_seasonal": 271.11339018704155,
+              "pred_prophet": 421.4744152156041,
+              "pred_last": 497.5032599837001,
+              "pred_ensemble_half": 238.955124386943,
+              "pred_balanced_prior": 275.21036319171014
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12240,
+            "mae": {
+              "pred_category_seasonal": 349.1370661424077,
+              "pred_prophet": 503.4442497710061,
+              "pred_last": 293.2022058823529,
+              "pred_ensemble_half": 342.2006748466283,
+              "pred_balanced_prior": 345.6560191429422
+            }
+          },
+          {
+            "target": "2024-12",
+            "n": 12270,
+            "mae": {
+              "pred_category_seasonal": 377.72057986756136,
+              "pred_prophet": 1358.6855694869143,
+              "pred_last": 1630.6118989405054,
+              "pred_ensemble_half": 690.239681953091,
+              "pred_balanced_prior": 389.19312986796587
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 843.0790534001675,
+              "pred_prophet": 1862.336811236303,
+              "pred_last": 2020.3994954427083,
+              "pred_ensemble_half": 1099.516478816449,
+              "pred_balanced_prior": 849.072551659342
+            },
+            "seasonal_gain_vs_last_pct": 58.271665811546214,
+            "seasonal_gain_vs_prophet_pct": 54.73004408689674
+          },
+          {
+            "category": "Здоровье",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 102.06805615840888,
+              "pred_prophet": 109.13523410224458,
+              "pred_last": 95.83447265625,
+              "pred_ensemble_half": 85.97513864348286,
+              "pred_balanced_prior": 102.93262681438459
+            },
+            "seasonal_gain_vs_last_pct": -6.5045315421291106,
+            "seasonal_gain_vs_prophet_pct": 6.475615324391696
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 384.1026743858121,
+              "pred_prophet": 542.0148490020155,
+              "pred_last": 521.8473307291666,
+              "pred_ensemble_half": 379.9461976088805,
+              "pred_balanced_prior": 382.47098299984185
+            },
+            "seasonal_gain_vs_last_pct": 26.39558511315689,
+            "seasonal_gain_vs_prophet_pct": 29.134289384683655
+          },
+          {
+            "category": "Общественное питание",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 83.97306057521529,
+              "pred_prophet": 161.3153908144478,
+              "pred_last": 97.685791015625,
+              "pred_ensemble_half": 84.92797037362924,
+              "pred_balanced_prior": 85.83661406336103
+            },
+            "seasonal_gain_vs_last_pct": 14.037589600125509,
+            "seasonal_gain_vs_prophet_pct": 47.94479302238131
+          },
+          {
+            "category": "Продовольствие",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 354.05460377099644,
+              "pred_prophet": 1023.7205229808415,
+              "pred_last": 891.4208170572916,
+              "pred_ensemble_half": 544.7636976495572,
+              "pred_balanced_prior": 361.333346760486
+            },
+            "seasonal_gain_vs_last_pct": 60.28199061585956,
+            "seasonal_gain_vs_prophet_pct": 65.41491590497083
+          },
+          {
+            "category": "Транспорт",
+            "n": 12288,
+            "mae": {
+              "pred_category_seasonal": 90.39003400239456,
+              "pred_prophet": 151.67506430401292,
+              "pred_last": 126.84659830729167,
+              "pred_ensemble_half": 93.45421408857572,
+              "pred_balanced_prior": 90.39120552663519
+            },
+            "seasonal_gain_vs_last_pct": 28.74067163912384,
+            "seasonal_gain_vs_prophet_pct": 40.40547507451884
+          }
+        ]
+      },
+      "without_december": {
+        "n": 61458,
+        "n_month_blocks": 5,
+        "mae": {
+          "pred_category_seasonal": 296.01331815941523,
+          "pred_prophet": 498.5544521288786,
+          "pred_last": 425.0377168147353,
+          "pred_ensemble_half": 319.7773369356385,
+          "pred_balanced_prior": 296.5959676660808
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 202.54113396946343,
+            "relative_mae_reduction_pct": 40.625679522987305,
+            "row_win_share": 0.6601906993393862,
+            "month_block_ci": {
+              "point": 202.54113396946303,
+              "lo": 132.77829465440306,
+              "hi": 327.18179208319475,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61458,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 220.50847874534333,
+              "2024-08": 221.81904820748474,
+              "2024-09": 140.32858439762558,
+              "2024-10": 215.55751879309628,
+              "2024-11": 214.53641114797915
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 129.02439865532006,
+            "relative_mae_reduction_pct": 30.355988080831658,
+            "row_win_share": 0.6041687005760031,
+            "month_block_ci": {
+              "point": 129.02439865531989,
+              "lo": -2.9767636614981092,
+              "hi": 271.29558236508177,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61458,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 157.4866547338448,
+              "2024-08": 145.25893563681848,
+              "2024-09": 62.65796793168411,
+              "2024-10": 104.73647617617426,
+              "2024-11": 175.02182498560956
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 178.77711519324004,
+            "relative_mae_reduction_pct": 35.85909511585815,
+            "row_win_share": 0.7559471508998015,
+            "month_block_ci": {
+              "point": 178.77711519323987,
+              "lo": 129.10137388771966,
+              "hi": 239.46845871498567,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61458,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 184.25355057850027,
+              "2024-08": 198.01646754068454,
+              "2024-09": 150.6605453643552,
+              "2024-10": 177.84362541836373,
+              "2024-11": 183.13752262326307
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": -0.582649506665574,
+            "relative_mae_reduction_pct": -0.19683219332442156,
+            "row_win_share": 0.3888183800318917,
+            "month_block_ci": {
+              "point": -0.5826495066655775,
+              "lo": -2.8631557559048124,
+              "hi": 1.6708019968589949,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61458,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": -0.08178180116824006,
+              "2024-08": -0.8620569611380696,
+              "2024-09": -0.6689027468295018,
+              "2024-10": 0.29400230516856024,
+              "2024-11": -1.5932481745318785
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12360,
+            "mae": {
+              "pred_category_seasonal": 303.21183507796536,
+              "pred_prophet": 434.3807446294555,
+              "pred_last": 319.1747572815534,
+              "pred_ensemble_half": 277.3578385418389,
+              "pred_balanced_prior": 305.7840964458371
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12318,
+            "mae": {
+              "pred_category_seasonal": 273.5784709071765,
+              "pred_prophet": 399.2145305418154,
+              "pred_last": 337.83869134599774,
+              "pred_ensemble_half": 297.1886553512887,
+              "pred_balanced_prior": 273.0464847333112
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12270,
+            "mae": {
+              "pred_category_seasonal": 283.1906792229029,
+              "pred_prophet": 735.1296036030884,
+              "pred_last": 678.2649551752241,
+              "pred_ensemble_half": 443.6387282840792,
+              "pred_balanced_prior": 283.4275565716888
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12270,
+            "mae": {
+              "pred_category_seasonal": 271.11339018704155,
+              "pred_prophet": 421.4744152156041,
+              "pred_last": 497.5032599837001,
+              "pred_ensemble_half": 238.955124386943,
+              "pred_balanced_prior": 275.21036319171014
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12240,
+            "mae": {
+              "pred_category_seasonal": 349.1370661424077,
+              "pred_prophet": 503.4442497710061,
+              "pred_last": 293.2022058823529,
+              "pred_ensemble_half": 342.2006748466283,
+              "pred_balanced_prior": 345.6560191429422
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 804.1188417736253,
+              "pred_prophet": 1310.762919740039,
+              "pred_last": 1282.480425656546,
+              "pred_ensemble_half": 873.492423299836,
+              "pred_balanced_prior": 802.6485378388022
+            },
+            "seasonal_gain_vs_last_pct": 37.299718133166124,
+            "seasonal_gain_vs_prophet_pct": 38.65260989126054
+          },
+          {
+            "category": "Здоровье",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 101.70622616301745,
+              "pred_prophet": 110.36763016429708,
+              "pred_last": 99.04676364346383,
+              "pred_ensemble_half": 90.07144317199986,
+              "pred_balanced_prior": 102.17741601805298
+            },
+            "seasonal_gain_vs_last_pct": -2.6850574634894833,
+            "seasonal_gain_vs_prophet_pct": 7.847775646161804
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 361.5129994892753,
+              "pred_prophet": 375.88281552910956,
+              "pred_last": 405.632822415308,
+              "pred_ensemble_half": 275.822330027218,
+              "pred_balanced_prior": 360.36803946598707
+            },
+            "seasonal_gain_vs_last_pct": 10.876788190690483,
+            "seasonal_gain_vs_prophet_pct": 3.822951049147243
+          },
+          {
+            "category": "Общественное питание",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 86.08683836077104,
+              "pred_prophet": 167.75844675932765,
+              "pred_last": 101.60080054671484,
+              "pred_ensemble_half": 89.39439576559509,
+              "pred_balanced_prior": 88.91938833766044
+            },
+            "seasonal_gain_vs_last_pct": 15.26952750614466,
+            "seasonal_gain_vs_prophet_pct": 48.68405137043601
+          },
+          {
+            "category": "Продовольствие",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 330.03625461679195,
+              "pred_prophet": 865.356812760092,
+              "pred_last": 537.7418724982915,
+              "pred_ensemble_half": 493.98168897404815,
+              "pred_balanced_prior": 332.85815055529827
+            },
+            "seasonal_gain_vs_last_pct": 38.6255243461926,
+            "seasonal_gain_vs_prophet_pct": 61.86125194252214
+          },
+          {
+            "category": "Транспорт",
+            "n": 10243,
+            "mae": {
+              "pred_category_seasonal": 92.61874855301035,
+              "pred_prophet": 161.1980878204064,
+              "pred_last": 123.72361612808747,
+              "pred_ensemble_half": 95.90174037513425,
+              "pred_balanced_prior": 92.60427378068387
+            },
+            "seasonal_gain_vs_last_pct": 25.140606578193736,
+            "seasonal_gain_vs_prophet_pct": 42.543519091741025
+          }
+        ]
+      }
+    },
+    {
+      "horizon": 3,
+      "n_r9": 73656,
+      "n_common": 73656,
+      "excluded": 0,
+      "all_months": {
+        "n": 73656,
+        "n_month_blocks": 6,
+        "mae": {
+          "pred_category_seasonal": 449.4587396988097,
+          "pred_prophet": 719.9043597195983,
+          "pred_last": 865.2184614966873,
+          "pred_ensemble_half": 470.46625004030835,
+          "pred_balanced_prior": 450.4448039425721
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 270.4456200207887,
+            "relative_mae_reduction_pct": 37.56688181831914,
+            "row_win_share": 0.6403687411751928,
+            "month_block_ci": {
+              "point": 270.4456200207883,
+              "lo": 105.82108368742722,
+              "hi": 515.9701783380447,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73656,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 301.0854405327656,
+              "2024-08": 313.5917807888474,
+              "2024-09": 264.18685633915305,
+              "2024-10": 295.7117179743283,
+              "2024-11": 296.5502556020688,
+              "2024-12": 151.6111903149255
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 415.7597217978775,
+            "relative_mae_reduction_pct": 48.05257172606799,
+            "row_win_share": 0.6836781796459216,
+            "month_block_ci": {
+              "point": 415.75972179787755,
+              "lo": 123.84155070369813,
+              "hi": 938.5954303187315,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73656,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 461.69674457882843,
+              "2024-08": 467.5268727273711,
+              "2024-09": 460.25552609990535,
+              "2024-10": 457.1135886293564,
+              "2024-11": 488.2454114944422,
+              "2024-12": 159.80940068992314
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 249.43810967929014,
+            "relative_mae_reduction_pct": 34.64878442692662,
+            "row_win_share": 0.7379303790594113,
+            "month_block_ci": {
+              "point": 249.4381096792895,
+              "lo": 137.89642349978485,
+              "hi": 428.0012038955082,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73656,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 266.72838114381346,
+              "2024-08": 281.7270205689359,
+              "2024-09": 264.17198621258495,
+              "2024-10": 265.4056216635962,
+              "2024-11": 254.70703257310967,
+              "2024-12": 163.95397903290734
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": -0.9860642437623208,
+            "relative_mae_reduction_pct": -0.2193892690624172,
+            "row_win_share": 0.44276094276094274,
+            "month_block_ci": {
+              "point": -0.9860642437623226,
+              "lo": -4.579183813460261,
+              "hi": 3.223491007566125,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73656,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": -1.2106481532606788,
+              "2024-08": -0.5809126603845887,
+              "2024-09": -2.752715100263929,
+              "2024-10": 0.4519615359652827,
+              "2024-11": -1.0628803338403983,
+              "2024-12": -0.762062813787552
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12336,
+            "mae": {
+              "pred_category_seasonal": 463.5772786015963,
+              "pred_prophet": 581.7179542486476,
+              "pred_last": 650.9924610894942,
+              "pred_ensemble_half": 418.22662198542207,
+              "pred_balanced_prior": 463.44697730300777
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12318,
+            "mae": {
+              "pred_category_seasonal": 447.18105622723033,
+              "pred_prophet": 502.7785508062926,
+              "pred_last": 605.1640688423446,
+              "pred_ensemble_half": 414.1244333456334,
+              "pred_balanced_prior": 450.1845898508613
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12294,
+            "mae": {
+              "pred_category_seasonal": 413.39901771579025,
+              "pred_prophet": 715.0834743261775,
+              "pred_last": 607.0706035464455,
+              "pred_ensemble_half": 539.185313551722,
+              "pred_balanced_prior": 405.56734730389525
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12258,
+            "mae": {
+              "pred_category_seasonal": 399.81930542672194,
+              "pred_prophet": 543.7118268872703,
+              "pred_last": 608.4453418175885,
+              "pred_ensemble_half": 374.25196005448237,
+              "pred_balanced_prior": 408.0081683997808
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12198,
+            "mae": {
+              "pred_category_seasonal": 539.9671610822231,
+              "pred_prophet": 678.8880480685544,
+              "pred_last": 590.517379898344,
+              "pred_ensemble_half": 455.9967053353506,
+              "pred_balanced_prior": 540.5661976768613
+            }
+          },
+          {
+            "target": "2024-12",
+            "n": 12252,
+            "mae": {
+              "pred_category_seasonal": 433.270924846521,
+              "pred_prophet": 1299.2853762139325,
+              "pred_last": 2131.7904831864184,
+              "pred_ensemble_half": 621.4219026585005,
+              "pred_balanced_prior": 435.3796289699904
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 1179.8231236641745,
+              "pred_prophet": 2025.862678389799,
+              "pred_last": 2476.1835288367547,
+              "pred_ensemble_half": 1299.5164154878232,
+              "pred_balanced_prior": 1185.0901065861756
+            },
+            "seasonal_gain_vs_last_pct": 52.3531632480237,
+            "seasonal_gain_vs_prophet_pct": 41.76193992566542
+          },
+          {
+            "category": "Здоровье",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 114.09671163573827,
+              "pred_prophet": 138.05170663107748,
+              "pred_last": 168.58211143695016,
+              "pred_ensemble_half": 111.52390087606689,
+              "pred_balanced_prior": 114.41873656413644
+            },
+            "seasonal_gain_vs_last_pct": 32.31979913929923,
+            "seasonal_gain_vs_prophet_pct": 17.352190407435778
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 601.1636560514639,
+              "pred_prophet": 623.3290683300297,
+              "pred_last": 875.5270446399479,
+              "pred_ensemble_half": 457.30866408555187,
+              "pred_balanced_prior": 598.5039962437802
+            },
+            "seasonal_gain_vs_last_pct": 31.336940448403084,
+            "seasonal_gain_vs_prophet_pct": 3.555972824747203
+          },
+          {
+            "category": "Общественное питание",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 154.87448450527415,
+              "pred_prophet": 202.0521150183963,
+              "pred_last": 206.65697295536006,
+              "pred_ensemble_half": 113.42574191572432,
+              "pred_balanced_prior": 158.27978619559977
+            },
+            "seasonal_gain_vs_last_pct": 25.057218108614915,
+            "seasonal_gain_vs_prophet_pct": 23.349238640153185
+          },
+          {
+            "category": "Продовольствие",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 516.5136243921893,
+              "pred_prophet": 1141.2752993652512,
+              "pred_last": 1265.646953405018,
+              "pred_ensemble_half": 717.1832110436236,
+              "pred_balanced_prior": 516.8025943929603
+            },
+            "seasonal_gain_vs_last_pct": 59.18975485204676,
+            "seasonal_gain_vs_prophet_pct": 54.74241625316335
+          },
+          {
+            "category": "Транспорт",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 130.28083794401832,
+              "pred_prophet": 188.85529058303678,
+              "pred_last": 198.7141577060932,
+              "pred_ensemble_half": 123.83956683305972,
+              "pred_balanced_prior": 129.57360367278028
+            },
+            "seasonal_gain_vs_last_pct": 34.43806951253605,
+            "seasonal_gain_vs_prophet_pct": 31.015521174009248
+          }
+        ]
+      },
+      "without_december": {
+        "n": 61404,
+        "n_month_blocks": 5,
+        "mae": {
+          "pred_category_seasonal": 452.68871018233267,
+          "pred_prophet": 604.2999004972582,
+          "pred_last": 612.4981108722559,
+          "pred_ensemble_half": 440.34592146435085,
+          "pred_balanced_prior": 453.45077299612024
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 151.61119031492547,
+            "relative_mae_reduction_pct": 25.08873329123003,
+            "row_win_share": 0.6210344602957462,
+            "month_block_ci": {
+              "point": 151.6111903149256,
+              "lo": 89.77269699067476,
+              "hi": 233.39098235977863,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61404,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 160.02588561416115,
+              "2024-08": 175.7055696506701,
+              "2024-09": 114.04245205721001,
+              "2024-10": 153.53638143560582,
+              "2024-11": 154.75707333736568
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 159.80940068992314,
+            "relative_mae_reduction_pct": 26.091411198369144,
+            "row_win_share": 0.666373526154648,
+            "month_block_ci": {
+              "point": 159.80940068992325,
+              "lo": 103.86149110396167,
+              "hi": 198.38259361545173,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61404,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 152.86913566465583,
+              "2024-08": 160.26772787701307,
+              "2024-09": 151.3324773724693,
+              "2024-10": 147.63355076475807,
+              "2024-11": 186.89438017406414
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 163.95397903290734,
+            "relative_mae_reduction_pct": 27.13122720986635,
+            "row_win_share": 0.7166796951338675,
+            "month_block_ci": {
+              "point": 163.95397903290723,
+              "lo": 121.06140101327463,
+              "hi": 200.21170684471338,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61404,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 164.07029130466884,
+              "2024-08": 182.85027726146438,
+              "2024-09": 160.9639205859394,
+              "2024-10": 162.58069997355486,
+              "2024-11": 149.3436070779381
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": -0.7620628137875519,
+            "relative_mae_reduction_pct": -0.16834146658542115,
+            "row_win_share": 0.4744316331183636,
+            "month_block_ci": {
+              "point": -0.7620628137875533,
+              "lo": -5.071591771191975,
+              "hi": 3.9829162606962916,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61404,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": -0.9864086948153208,
+              "2024-08": -0.19957172802679451,
+              "2024-09": -2.913383446582132,
+              "2024-10": 1.0903303891658138,
+              "2024-11": -0.8024764588955927
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12336,
+            "mae": {
+              "pred_category_seasonal": 463.5772786015963,
+              "pred_prophet": 581.7179542486476,
+              "pred_last": 650.9924610894942,
+              "pred_ensemble_half": 418.22662198542207,
+              "pred_balanced_prior": 463.44697730300777
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12318,
+            "mae": {
+              "pred_category_seasonal": 447.18105622723033,
+              "pred_prophet": 502.7785508062926,
+              "pred_last": 605.1640688423446,
+              "pred_ensemble_half": 414.1244333456334,
+              "pred_balanced_prior": 450.1845898508613
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12294,
+            "mae": {
+              "pred_category_seasonal": 413.39901771579025,
+              "pred_prophet": 715.0834743261775,
+              "pred_last": 607.0706035464455,
+              "pred_ensemble_half": 539.185313551722,
+              "pred_balanced_prior": 405.56734730389525
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12258,
+            "mae": {
+              "pred_category_seasonal": 399.81930542672194,
+              "pred_prophet": 543.7118268872703,
+              "pred_last": 608.4453418175885,
+              "pred_ensemble_half": 374.25196005448237,
+              "pred_balanced_prior": 408.0081683997808
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12198,
+            "mae": {
+              "pred_category_seasonal": 539.9671610822231,
+              "pred_prophet": 678.8880480685544,
+              "pred_last": 590.517379898344,
+              "pred_ensemble_half": 455.9967053353506,
+              "pred_balanced_prior": 540.5661976768613
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 1175.2727528639396,
+              "pred_prophet": 1563.9919636591378,
+              "pred_last": 1524.0680085987883,
+              "pred_ensemble_half": 1151.99986902642,
+              "pred_balanced_prior": 1179.584763134895
+            },
+            "seasonal_gain_vs_last_pct": 22.885806523524323,
+            "seasonal_gain_vs_prophet_pct": 24.85429719764961
+          },
+          {
+            "category": "Здоровье",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 112.63148184419352,
+              "pred_prophet": 137.7670953511498,
+              "pred_last": 173.171975767051,
+              "pred_ensemble_half": 116.34911870527989,
+              "pred_balanced_prior": 112.77597992278753
+            },
+            "seasonal_gain_vs_last_pct": 34.95975238181487,
+            "seasonal_gain_vs_prophet_pct": 18.245005052105505
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 612.2393086802347,
+              "pred_prophet": 447.56323812583275,
+              "pred_last": 622.6995309751808,
+              "pred_ensemble_half": 425.1564310652384,
+              "pred_balanced_prior": 608.6746360426472
+            },
+            "seasonal_gain_vs_last_pct": 1.6798185600950812,
+            "seasonal_gain_vs_prophet_pct": -36.793922406134506
+          },
+          {
+            "category": "Общественное питание",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 161.45089538615815,
+              "pred_prophet": 206.9396056894716,
+              "pred_last": 230.50205198358412,
+              "pred_ensemble_half": 119.13165086273408,
+              "pred_balanced_prior": 165.66929276232517
+            },
+            "seasonal_gain_vs_last_pct": 29.95685114436363,
+            "seasonal_gain_vs_prophet_pct": 21.98163572978517
+          },
+          {
+            "category": "Продовольствие",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 522.049039996277,
+              "pred_prophet": 1068.5679378592104,
+              "pred_last": 912.8586085597029,
+              "pred_ensemble_half": 702.5543515138721,
+              "pred_balanced_prior": 522.3595332059328
+            },
+            "seasonal_gain_vs_last_pct": 42.81162108774331,
+            "seasonal_gain_vs_prophet_pct": 51.14498372072064
+          },
+          {
+            "category": "Транспорт",
+            "n": 10234,
+            "mae": {
+              "pred_category_seasonal": 132.48878232319325,
+              "pred_prophet": 200.9695622987467,
+              "pred_last": 211.68848934922806,
+              "pred_ensemble_half": 126.88410761256047,
+              "pred_balanced_prior": 131.64043290813385
+            },
+            "seasonal_gain_vs_last_pct": 37.413327134371,
+            "seasonal_gain_vs_prophet_pct": 34.075199842329816
+          }
+        ]
+      }
+    },
+    {
+      "horizon": 6,
+      "n_r9": 73578,
+      "n_common": 73578,
+      "excluded": 0,
+      "all_months": {
+        "n": 73578,
+        "n_month_blocks": 6,
+        "mae": {
+          "pred_category_seasonal": 618.0917250243157,
+          "pred_prophet": 740.4359675427706,
+          "pred_last": 1125.2783304792192,
+          "pred_ensemble_half": 543.1376235299642,
+          "pred_balanced_prior": 615.9153129848655
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 122.34424251845486,
+            "relative_mae_reduction_pct": 16.523271137741947,
+            "row_win_share": 0.5843322732338471,
+            "month_block_ci": {
+              "point": 122.34424251845464,
+              "lo": 0.3461697462093682,
+              "hi": 277.42462219986203,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73578,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 158.60741949241665,
+              "2024-08": 134.60379173462846,
+              "2024-09": 105.71267433930426,
+              "2024-10": 138.6614369890443,
+              "2024-11": 146.76582061738492,
+              "2024-12": 49.727438678385255
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 507.1866054549036,
+            "relative_mae_reduction_pct": 45.07210276047077,
+            "row_win_share": 0.6999238902932942,
+            "month_block_ci": {
+              "point": 507.1866054549041,
+              "lo": 163.17430466533224,
+              "hi": 857.376514500213,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73578,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 385.9194450161823,
+              "2024-08": 485.4591892323924,
+              "2024-09": 604.8393393548633,
+              "2024-10": 587.1107326666269,
+              "2024-11": 582.4730666895326,
+              "2024-12": 397.3749015359257
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 197.2983440128063,
+            "relative_mae_reduction_pct": 26.64623987237757,
+            "row_win_share": 0.6747261409660497,
+            "month_block_ci": {
+              "point": 197.29834401280615,
+              "lo": 55.72099633183374,
+              "hi": 415.6960501160112,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73578,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 231.23478323704632,
+              "2024-08": 222.78274788082754,
+              "2024-09": 189.11563394903214,
+              "2024-10": 223.20337991856934,
+              "2024-11": 222.00803923314373,
+              "2024-12": 95.47664761065481
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": 2.176412039450194,
+            "relative_mae_reduction_pct": 0.35211797073719703,
+            "row_win_share": 0.4892223218896953,
+            "month_block_ci": {
+              "point": 2.1764120394502,
+              "lo": -2.1079651281203855,
+              "hi": 6.453093555976382,
+              "n_resamples": 10000,
+              "n_blocks": 6,
+              "n_rows": 73578,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 2.6532595131723014,
+              "2024-08": 3.109462874029109,
+              "2024-09": 3.769032631681294,
+              "2024-10": 0.6848731225638475,
+              "2024-11": 1.5640769323198818,
+              "2024-12": 1.2793198504594168
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12264,
+            "mae": {
+              "pred_category_seasonal": 790.051679351052,
+              "pred_prophet": 731.097778280018,
+              "pred_last": 1903.5147586431833,
+              "pred_ensemble_half": 703.4650274338011,
+              "pred_balanced_prior": 790.2592713888847
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 619.0132911504744,
+              "pred_prophet": 680.1376830620643,
+              "pred_last": 1234.6989247311828,
+              "pred_ensemble_half": 610.0994340246115,
+              "pred_balanced_prior": 621.4962048084302
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12294,
+            "mae": {
+              "pred_category_seasonal": 514.2807887475636,
+              "pred_prophet": 719.5312476554008,
+              "pred_last": 534.6811452741175,
+              "pred_ensemble_half": 481.44315225587445,
+              "pred_balanced_prior": 520.0433843845645
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12264,
+            "mae": {
+              "pred_category_seasonal": 477.3489405219063,
+              "pred_prophet": 518.1151936592687,
+              "pred_last": 584.954011741683,
+              "pred_ensemble_half": 450.3293554786506,
+              "pred_balanced_prior": 467.7155636137371
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12240,
+            "mae": {
+              "pred_category_seasonal": 584.152443500135,
+              "pred_prophet": 584.113454202236,
+              "pred_last": 714.0579248366013,
+              "pred_ensemble_half": 510.64217599213043,
+              "pred_balanced_prior": 578.9074521468646
+            }
+          },
+          {
+            "target": "2024-12",
+            "n": 12240,
+            "mae": {
+              "pred_category_seasonal": 724.0972756739965,
+              "pred_prophet": 1210.3442562596235,
+              "pred_last": 1781.5804738562092,
+              "pred_ensemble_half": 502.7894405217219,
+              "pred_balanced_prior": 717.4252884149125
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 1753.0700920117526,
+              "pred_prophet": 2183.8469237449654,
+              "pred_last": 3534.8505259724375,
+              "pred_ensemble_half": 1531.6520665385601,
+              "pred_balanced_prior": 1757.9473449835034
+            },
+            "seasonal_gain_vs_last_pct": 50.40610404510716,
+            "seasonal_gain_vs_prophet_pct": 19.725596471500662
+          },
+          {
+            "category": "Здоровье",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 147.60331865712234,
+              "pred_prophet": 123.160882623621,
+              "pred_last": 158.62733425752262,
+              "pred_ensemble_half": 103.44046357949802,
+              "pred_balanced_prior": 147.66688952273168
+            },
+            "seasonal_gain_vs_last_pct": 6.949631759242327,
+            "seasonal_gain_vs_prophet_pct": -19.84594094554948
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 803.3622799734256,
+              "pred_prophet": 715.3367671233781,
+              "pred_last": 1256.8227187474517,
+              "pred_ensemble_half": 547.6303763259757,
+              "pred_balanced_prior": 792.4113350537305
+            },
+            "seasonal_gain_vs_last_pct": 36.07990466833257,
+            "seasonal_gain_vs_prophet_pct": -12.305464628084092
+          },
+          {
+            "category": "Общественное питание",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 170.54692371323597,
+              "pred_prophet": 210.32288004414218,
+              "pred_last": 237.38122808448176,
+              "pred_ensemble_half": 179.2877649949096,
+              "pred_balanced_prior": 169.46742983923906
+            },
+            "seasonal_gain_vs_last_pct": 28.15483975315019,
+            "seasonal_gain_vs_prophet_pct": 18.911854156123244
+          },
+          {
+            "category": "Продовольствие",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 638.5056811641576,
+              "pred_prophet": 994.6415711317372,
+              "pred_last": 1296.3768245943081,
+              "pred_ensemble_half": 707.1139734066865,
+              "pred_balanced_prior": 631.5265884390136
+            },
+            "seasonal_gain_vs_last_pct": 50.746907145306814,
+            "seasonal_gain_vs_prophet_pct": 35.80544995342955
+          },
+          {
+            "category": "Транспорт",
+            "n": 12263,
+            "mae": {
+              "pred_category_seasonal": 195.46205462620037,
+              "pred_prophet": 215.30678058877953,
+              "pred_last": 267.6113512191144,
+              "pred_ensemble_half": 189.70109633415544,
+              "pred_balanced_prior": 196.4722900709745
+            },
+            "seasonal_gain_vs_last_pct": 26.960476924553078,
+            "seasonal_gain_vs_prophet_pct": 9.216953552652464
+          }
+        ]
+      },
+      "without_december": {
+        "n": 61338,
+        "n_month_blocks": 5,
+        "mae": {
+          "pred_category_seasonal": 596.9383137629102,
+          "pred_prophet": 646.6657524412955,
+          "pred_last": 994.313215298836,
+          "pred_ensemble_half": 551.1891048306408,
+          "pred_balanced_prior": 595.6589939124507
+        },
+        "comparisons": {
+          "pred_category_seasonal_vs_pred_prophet": {
+            "benefit": 49.72743867838528,
+            "relative_mae_reduction_pct": 7.68982097639376,
+            "row_win_share": 0.5777006097362157,
+            "month_block_ci": {
+              "point": 49.72743867838518,
+              "lo": -19.065839387675382,
+              "hi": 135.50821250756087,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61338,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 76.88780772690139,
+              "2024-08": 46.875761252050836,
+              "2024-09": 10.742037595666067,
+              "2024-10": 51.96691333859446,
+              "2024-11": 62.134075983972444
+            }
+          },
+          "pred_category_seasonal_vs_pred_last": {
+            "benefit": 397.3749015359258,
+            "relative_mae_reduction_pct": 39.964761145862546,
+            "row_win_share": 0.6919038768789332,
+            "month_block_ci": {
+              "point": 397.3749015359269,
+              "lo": 77.1071165772205,
+              "hi": 812.6974343669274,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61338,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 218.41852113078045,
+              "2024-08": 342.7504967708989,
+              "2024-09": 491.8721908342134,
+              "2024-10": 469.79078772815086,
+              "2024-11": 464.0543121685663
+            }
+          },
+          "pred_ensemble_half_vs_pred_prophet": {
+            "benefit": 95.47664761065484,
+            "relative_mae_reduction_pct": 14.764450916135706,
+            "row_win_share": 0.6518797482800222,
+            "month_block_ci": {
+              "point": 95.47664761065484,
+              "lo": 45.27536634059959,
+              "hi": 170.49721922366916,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61338,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 112.43140063504794,
+              "2024-08": 101.84169145078828,
+              "2024-09": 59.72782738562455,
+              "2024-10": 102.39681076935335,
+              "2024-11": 100.9625273096797
+            }
+          },
+          "pred_balanced_prior_vs_pred_category_seasonal": {
+            "benefit": 1.279319850459417,
+            "relative_mae_reduction_pct": 0.21431357662319808,
+            "row_win_share": 0.4670025106785353,
+            "month_block_ci": {
+              "point": 1.2793198504594114,
+              "lo": -3.341754713124433,
+              "hi": 6.331141927714541,
+              "n_resamples": 10000,
+              "n_blocks": 5,
+              "n_rows": 61338,
+              "cluster_labels": [
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11"
+              ]
+            },
+            "leave_one_month_out": {
+              "2024-07": 1.6509114753119751,
+              "2024-08": 2.2206834016661734,
+              "2024-09": 3.0445369820726245,
+              "2024-10": -0.8084283615418933,
+              "2024-11": 0.29068855805634225
+            }
+          }
+        },
+        "by_target": [
+          {
+            "target": "2024-07",
+            "n": 12264,
+            "mae": {
+              "pred_category_seasonal": 790.051679351052,
+              "pred_prophet": 731.097778280018,
+              "pred_last": 1903.5147586431833,
+              "pred_ensemble_half": 703.4650274338011,
+              "pred_balanced_prior": 790.2592713888847
+            }
+          },
+          {
+            "target": "2024-08",
+            "n": 12276,
+            "mae": {
+              "pred_category_seasonal": 619.0132911504744,
+              "pred_prophet": 680.1376830620643,
+              "pred_last": 1234.6989247311828,
+              "pred_ensemble_half": 610.0994340246115,
+              "pred_balanced_prior": 621.4962048084302
+            }
+          },
+          {
+            "target": "2024-09",
+            "n": 12294,
+            "mae": {
+              "pred_category_seasonal": 514.2807887475636,
+              "pred_prophet": 719.5312476554008,
+              "pred_last": 534.6811452741175,
+              "pred_ensemble_half": 481.44315225587445,
+              "pred_balanced_prior": 520.0433843845645
+            }
+          },
+          {
+            "target": "2024-10",
+            "n": 12264,
+            "mae": {
+              "pred_category_seasonal": 477.3489405219063,
+              "pred_prophet": 518.1151936592687,
+              "pred_last": 584.954011741683,
+              "pred_ensemble_half": 450.3293554786506,
+              "pred_balanced_prior": 467.7155636137371
+            }
+          },
+          {
+            "target": "2024-11",
+            "n": 12240,
+            "mae": {
+              "pred_category_seasonal": 584.152443500135,
+              "pred_prophet": 584.113454202236,
+              "pred_last": 714.0579248366013,
+              "pred_ensemble_half": 510.64217599213043,
+              "pred_balanced_prior": 578.9074521468646
+            }
+          }
+        ],
+        "by_category": [
+          {
+            "category": "Все категории",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 1738.4396500980592,
+              "pred_prophet": 1768.8716086723537,
+              "pred_last": 3049.522547197496,
+              "pred_ensemble_half": 1494.2677403153655,
+              "pred_balanced_prior": 1751.2653310737446
+            },
+            "seasonal_gain_vs_last_pct": 42.993054709640326,
+            "seasonal_gain_vs_prophet_pct": 1.7204164748359243
+          },
+          {
+            "category": "Здоровье",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 149.71479036360134,
+              "pred_prophet": 124.35448932637864,
+              "pred_last": 136.89552968795851,
+              "pred_ensemble_half": 104.8146083275335,
+              "pred_balanced_prior": 150.17748158399792
+            },
+            "seasonal_gain_vs_last_pct": -9.364265367074596,
+            "seasonal_gain_vs_prophet_pct": -20.393554888607593
+          },
+          {
+            "category": "Маркетплейсы",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 731.8765067116769,
+              "pred_prophet": 582.343362613165,
+              "pred_last": 1004.0188789983371,
+              "pred_ensemble_half": 577.1396810166216,
+              "pred_balanced_prior": 720.1797326218204
+            },
+            "seasonal_gain_vs_last_pct": 27.10530429050935,
+            "seasonal_gain_vs_prophet_pct": -25.677830932511675
+          },
+          {
+            "category": "Общественное питание",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 182.17547853364636,
+              "pred_prophet": 224.67448861515862,
+              "pred_last": 255.8197202386775,
+              "pred_ensemble_half": 196.64122143136166,
+              "pred_balanced_prior": 180.32477614728205
+            },
+            "seasonal_gain_vs_last_pct": 28.787554624921693,
+            "seasonal_gain_vs_prophet_pct": 18.915814760930935
+          },
+          {
+            "category": "Продовольствие",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 573.6133866999771,
+              "pred_prophet": 954.3241763773126,
+              "pred_last": 1228.7500733639831,
+              "pred_ensemble_half": 733.1472960365329,
+              "pred_balanced_prior": 564.7679447739409
+            },
+            "seasonal_gain_vs_last_pct": 53.31732635184469,
+            "seasonal_gain_vs_prophet_pct": 39.89323534928589
+          },
+          {
+            "category": "Транспорт",
+            "n": 10223,
+            "mae": {
+              "pred_category_seasonal": 205.8100701705001,
+              "pred_prophet": 225.42638904340387,
+              "pred_last": 290.8725423065636,
+              "pred_ensemble_half": 201.12408185642857,
+              "pred_balanced_prior": 207.23869727391863
+            },
+            "seasonal_gain_vs_last_pct": 29.2438988780221,
+            "seasonal_gain_vs_prophet_pct": 8.701873350385267
+          }
+        ]
+      }
+    },
+    {
+      "horizon": 12,
+      "n_r9": 73608,
+      "n_common": 0,
+      "excluded": 73608,
+      "status": "NA: origin-12 is outside source history"
+    }
+  ],
+  "provenance": {
+    "code_sha256": "0fb6144166aee99162f52da543b78d858abe0b42611309ad2ab01b6ce645ccd4",
+    "bootstrap_code_sha256": "693d7181826deea4873a9a533d667d1a5b44d825a84cf9872b14d40ef8fd6aed",
+    "predictions_sha256": "40e8148e4e6ba778f2c5e51483e2fdba97f60ae0274daa1c65b68d332a68514a",
+    "python": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "pandas": "3.0.6",
+    "command": [
+      "python",
+      "shock-radar/src/r9_category_seasonal.py",
+      "--raw",
+      "<frozen-8_consumption.parquet>",
+      "--predictions",
+      "<audited-R9-predictions.parquet>",
+      "--outdir",
+      "<NEW-run-directory>"
+    ]
+  }
+}

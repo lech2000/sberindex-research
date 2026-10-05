@@ -1,0 +1,114 @@
+[
+  {
+    "act_name": "Курган",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1333,
+        "name_short": "Курган",
+        "type": "городской округ",
+        "year_from": 2018,
+        "year_to": 9999,
+        "oktmo": "37-701-000-000"
+      }
+    ],
+    "status": "EXACT_VALID_IDENTITY",
+    "territory_id": "1333"
+  },
+  {
+    "act_name": "Целинный",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1352,
+        "name_short": "Целинный",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2022,
+        "oktmo": "37-634-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  },
+  {
+    "act_name": "Звериноголовский",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1339,
+        "name_short": "Звериноголовский",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2023,
+        "oktmo": "37-609-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  },
+  {
+    "act_name": "Притобольный",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1350,
+        "name_short": "Притобольный",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2024,
+        "oktmo": "37-630-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  },
+  {
+    "act_name": "Куртамышский",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1343,
+        "name_short": "Куртамышский",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2022,
+        "oktmo": "37-616-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  },
+  {
+    "act_name": "Кетовский",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1342,
+        "name_short": "Кетовский",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2023,
+        "oktmo": "37-614-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  },
+  {
+    "act_name": "Белозерский",
+    "region_code": 45,
+    "dictionary_candidates": [
+      {
+        "territory_id": 1336,
+        "name_short": "Белозерский",
+        "type": "муниципальный район",
+        "year_from": 2018,
+        "year_to": 2023,
+        "oktmo": "37-604-000-000"
+      }
+    ],
+    "status": "BLOCKED_HISTORICAL_IDENTITY",
+    "reason": "No unique valid2024 legal type; district-to-okrug crosswalk needed"
+  }
+]

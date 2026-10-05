@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-05T09:34:36.637659+00:00",
+  "verification": "Mac, official SberIndex SOWA API, verified HTTPS, exact470-record download and H12 computation",
+  "publisher": "СберИндекс / ПАО Сбербанк",
+  "dataset_id": "consumer-spending",
+  "source_url": "https://sberindex.ru/ru/dashboards/consumer-spending",
+  "api_url": "https://sberindex.ru/api/sowa",
+  "api_route": "/dataset/v1/consumer-spending?limit=10000&offset=0",
+  "rows": 470,
+  "monthly_points_per_type": 94,
+  "types": [
+    "Всего",
+    "Непродовольственные товары",
+    "Общественное питание",
+    "Продовольственные товары",
+    "Услуги"
+  ],
+  "range_moscow_month": [
+    "2018-12",
+    "2026-09"
+  ],
+  "unit": "номинальные млрд руб.",
+  "frequency": "monthly",
+  "retrieved_at": "2026-10-05T09:15:50.375011+00:00",
+  "publisher_last_update_at": "2026-10-05T05:58:40.092000+00:00",
+  "available_at": null,
+  "historical_vintage": null,
+  "historical_asof_verified": false,
+  "release_lag": [
+    1,
+    2,
+    3
+  ],
+  "lag_status": "assumptions, not verified publication delay",
+  "sha256": {
+    "metadata.json": "b89dbda0786ab6b98c235505837a3894989f79483dacd0d041bdb81628b12cb7",
+    "api-decoded.json": "346c21efd205dd7e3228adac202159d0f1c91be50daf7d7e9556b6714d872d4b",
+    "consumer-spending.parquet": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+  },
+  "license_status": "CC_BY_SA_NOT_CONFIRMED_FOR_THIS_DATASET",
+  "publisher_footer": "© Все права защищены. При копировании необходимо упоминание.",
+  "license_evidence_api_route": "/i18n",
+  "license_evidence_sha256": "d5831dc413390a18705603740dc038cbf6d57a9209443d1a36ececd63bf4376a",
+  "attribution": "Источник: СберИндекс, https://sberindex.ru/ru/dashboards/consumer-spending, загрузка05.10.2026",
+  "raw_storage": "local gitignored data/raw/sberindex-national-20261005; public passport and derived benchmark only",
+  "transform": "UTC timestamp converted to Europe/Moscow then month; only dimensionless YoY ratio carried into municipal forecasts",
+  "scope": "national broad categories, not exact municipal six-category counterpart; primary total factor applies to all categories",
+  "next_scientific_checks": [
+    "verified2022/2023 release snapshots",
+    "Prophet with same national exogenous input",
+    "unseen later municipal holdout"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+ "run_id": "D01-sensitive-signals-20261001",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "date": "2026-10-01",
+ "preregistered_variants": [
+  "V0_last",
+  "V1_last_cs",
+  "V2_med3",
+  "V3_med3_cs",
+  "V4_med6_cs"
+ ],
+ "selection": "V3_med3_cs: лучший D01 на validation (9/31, precision 0.081); выбран до просмотра теста; тест уже открывался в R7, поэтому числа exploratory",
+ "inputs": {
+  "panel_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "registry_sha256": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070",
+  "base_signal_sha256": "6a912ad1ec50bab75ba6139c143edf90a23551879207e961b7375578ba35e474"
+ },
+ "code_sha256": {
+  "d01_sensitive_signals.py": "206d825042de31285eec8a8e2380064a69125df0af6957f54939e8bf86b2351b",
+  "d02_d03_detectors.py": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7",
+  "r7_causal_signal.py": "6ee66e8333f75f9374c6351c69eb120bfd0987c891c425fad01d16c86d5ed06a"
+ },
+ "commands": [
+  "python3 src/d01_sensitive_signals.py --signal <runs/R7_v2 signal.parquet> --outdir var",
+  "python3 src/d02_d03_detectors.py --cus var/<V>/signal.parquet --registry registry_eligible.parquet --outdir var/<V>/det --budget-mode monthly_causal --budget 24"
+ ],
+ "fixed_budget": {
+  "alarms_per_test_month": 24,
+  "test_months": 6,
+  "total": 144
+ },
+ "placebo": {
+  "method": "тот же реестр с rel_size=0, сигнал и детекторы пересобраны; матчинг с настоящими событиями",
+  "registry_cells_changed_by_injection": 179,
+  "variants_manifest": {
+   "V0_last": {
+    "window": 1,
+    "cs": false,
+    "rows": 287268,
+    "base_fallback_share": 0.0,
+    "nan_rel": 0,
+    "abs_rel_quantiles": {
+     "0.5": 0.0626,
+     "0.9": 0.2055,
+     "0.99": 0.4229,
+     "0.998": 0.7252
+    },
+    "sha256": "5da09c8503a862ca4fd423c79328a429fe87338cb3536f6a0d7920b1d93fa25b"
+   },
+   "V1_last_cs": {
+    "window": 1,
+    "cs": true,
+    "rows": 287268,
+    "base_fallback_share": 0.0,
+    "nan_rel": 0,
+    "abs_rel_quantiles": {
+     "0.5": 0.0308,
+     "0.9": 0.1278,
+     "0.99": 0.3622,
+     "0.998": 0.6791
+    },
+    "sha256": "8ca29ff12f6b8e9659a53002e3d9e45e2fbc2c20d2ffa2647e4b1d543a506cee"
+   },
+   "V2_med3": {
+    "window": 3,
+    "cs": false,
+    "rows": 287268,
+    "base_fallback_share": 0.0451,
+    "nan_rel": 0,
+    "abs_rel_quantiles": {
+     "0.5": 0.0739,
+     "0.9": 0.2304,
+     "0.99": 0.5103,
+     "0.998": 0.8745
+    },
+    "sha256": "95e1e3bf0fedf989c4ceb1b6512bf9a756a1883d7ed0948f69a8836626fa97c8"
+   },
+   "V3_med3_cs": {
+    "window": 3,
+    "cs": true,
+    "rows": 287268,
+    "base_fallback_share": 0.0451,
+    "nan_rel": 0,
+    "abs_rel_quantiles": {
+     "0.5": 0.035,
+     "0.9": 0.1404,
+     "0.99": 0.4068,
+     "0.998": 0.7638
+    },
+    "sha256": "c82da06538cd049e2d73ea23b846c6e69dcb92ce8f63f766209a452eb6aec963"
+   },
+   "V4_med6_cs": {
+    "window": 6,
+    "cs": true,
+    "rows": 287268,
+    "base_fallback_share": 0.0895,
+    "nan_rel": 0,
+    "abs_rel_quantiles": {
+     "0.5": 0.0388,
+     "0.9": 0.1528,
+     "0.99": 0.4357,
+     "0.998": 0.8705
+    },
+    "sha256": "eedf763c97d0de9c90fb258ee97d8a4d80fdd16828f3785c71078cbf41c6245a"
+   }
+  }
+ },
+ "stats": {
+  "V0_last": {
+   "hits": 1,
+   "n": 28,
+   "recall": 0.036,
+   "wilson95": [
+    0.006,
+    0.177
+   ]
+  },
+  "V3_med3_cs": {
+   "hits": 13,
+   "n": 28,
+   "recall": 0.464,
+   "wilson95": [
+    0.295,
+    0.642
+   ]
+  },
+  "fisher_exact_two_sided_V3_vs_V0_p": 0.00038
+ }
+}

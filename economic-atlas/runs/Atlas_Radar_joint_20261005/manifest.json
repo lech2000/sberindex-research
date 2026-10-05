@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-05T18:24:44.125401+00:00",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "forecast_code": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+    "protocol": "6ad1abd102e7e4db4baaf71ad885f768f71269673ce2d46986f8bb8c67f03af7",
+    "code": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95"
+  },
+  "files": {
+    "README.md": "1537dc0ccb725ee12a927660609743afb21d2e229de08248386259019b9f6f4c",
+    "atlas-radar-comparison.png": "58eb28b94f749c75cf9efd19118835d09cdbfe12f24bae896ecf33e549f4ae5c",
+    "audit-source.py": "ed5f27322e1a2cac9590f4203e7626591b0fb24f2860a12782e111daab08b6c0",
+    "case-summary.json": "7fa27e65a494b9df1653a8955100a662567694d6b235cdab7d037c78bd43e3ad",
+    "clean-reproduction-receipt.json": "8033f71a6bcc89b6e389af482054ad7e5ad83941704999696960ec90a4afba23",
+    "comparisons.csv": "d10cc159768503043d29b6bba3d7db3d7e16d2f3a657e2def3a3af6cadb4b8f5",
+    "external-2025/A14-correction-receipt.json": "5566af70c04fafa95873744a721a09fc02256b535aef35467a3baf8c79a604bb",
+    "external-2025/A14-population-audit.json": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+    "external-2025/A8-PROTOCOL.md": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069",
+    "external-2025/A8-README.md": "e8a63eb1034f84c3f8958f624546e5ae0a02e6520fca9b7e0e00cd4fa44f3d1f",
+    "external-2025/A8-provenance.json": "bacabfb6bddc28e0816b2c0c039c1b4d5b6538c5a6468dedd6173a67e26d92ac",
+    "external-2025/A8-results.json": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+    "external-2025/source-receipt.json": "8aa1961355a1f721732183de5d36839b1566a05de5a73c3b4eaef19174623c98",
+    "independent-numeric-audit.json": "eb2601df99b015f314083d3d8ee91dd5eed5b626f951bc2bb988050a71b684c8",
+    "metrics.json": "68e451346bb5a98b740bfe25060a2e377f0f2adf4499554123a2d098a20d429d",
+    "placebo-comparisons.csv": "36d0d785ef36a353f4850ecacf0fa828cb44b53e3789d8f692c59e262077b750",
+    "pre-event-features.parquet": "fb7a9b21b2b658663d52b37b069f521079e252ce5fce7c7f95c69dceca9c73e7",
+    "pre-event-placebos.csv": "3ec377e298826a3d77c7f601cbfd5305be804e408551276997c9b6922b770f21",
+    "pre-outcome-repairs.json": "cb344f5b035bd0bd824ab9158f1c574ec2a3ad23b63171dc06cca19febabf444",
+    "profile-summary.json": "410fd6c70e10aef4b184a5b504e47175aa524a607f7adb51485a91a8b2e341ad",
+    "protocol-v1-pre-outcome.json": "1bab0ba8ba1fff2c925ed9b541314d40e0f36369ca89c1a51c31ab24b4da5f8c",
+    "protocol.json": "6ad1abd102e7e4db4baaf71ad885f768f71269673ce2d46986f8bb8c67f03af7",
+    "selected-residuals.parquet": "85fc9b92bd60f68fc6e19ae9a8ed8c6d3f30291cf81fe2cfc643650d17e2bbb6",
+    "source-v1-pre-outcome.py": "7f69d66c526f8a1ce70fd1faf94c179718007ac14494066a23d61e0e3cbb1d25",
+    "test-receipt.json": "55e3ed5c1adcaf4dc4a560ace34816bb727fd8b37b4dd748d08bdfa8d958728c"
+  },
+  "scientific_pass": false
+}

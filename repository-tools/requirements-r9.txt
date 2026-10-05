@@ -1,0 +1,4 @@
+# Optional dependency to regenerate the audited R9 forecast run.
+# The graph/interval analysis only needs requirements-science.txt.
+-r requirements-science.txt
+prophet==1.4.0

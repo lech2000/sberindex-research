@@ -1,0 +1,10 @@
+{
+  "initial_protocol_sha256": "1bab0ba8ba1fff2c925ed9b541314d40e0f36369ca89c1a51c31ab24b4da5f8c",
+  "exact_v1_recovered_by_sha": true,
+  "failures_before_any_outcomes": [
+    "initial interpreter lacked sklearn; switched to existing scientific venv",
+    "input duplicate population keys; declared conservative unique-finite handling in v2"
+  ],
+  "scientific_choices_changed": false,
+  "external_model_review": "Not performed; automatic approval rejected external Sonnet egress; local numeric audit completed"
+}

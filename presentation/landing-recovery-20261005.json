@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-05",
+  "cause": "General FixAR shell upload overwrote independently published SberIndex pages with old repository copies",
+  "old_atlas_sha256": "f7011704129f13d92af31a54525edd81f500fd5ebf9e5256af1ff69ad6aac7a3",
+  "old_radar_sha256": "e533d0c2c403b047f010dc29f777607a177cfc21e596b2e60bfa10b6ba7258d8",
+  "restored": {
+    "scope": "/sberindex-2026/",
+    "files": [
+      {
+        "path": "landing-common/DATA_LICENSE.txt",
+        "sha256": "de86189067aa430c3645b31597350dcfcc8a07c1eaa37f4346e786ddacc8492b",
+        "bytes": 1090
+      },
+      {
+        "path": "landing-common/holographic.css",
+        "sha256": "cbc27c3f181420c38e32bbfbea19f95a536e5b834abd093226331d5bf3635376",
+        "bytes": 10551
+      },
+      {
+        "path": "landing-common/research-chat.js",
+        "sha256": "56fa15421ea153cc076428b75f74d19738577cd07f51087158bcd3efd882c05e",
+        "bytes": 11429
+      },
+      {
+        "path": "economic-atlas/landing/index.html",
+        "sha256": "a585ce3df0f75e359a07b070230272fdf460d0707867c860f8612d3d19682556",
+        "bytes": 21569
+      },
+      {
+        "path": "shock-radar/landing/index.html",
+        "sha256": "14bec5df1a7b31027977040fc49125941134290db5a4089f8be742710d2bfcd3",
+        "bytes": 18730
+      }
+    ]
+  },
+  "protection_commit": "3943c1b10a022376142c1fbcf5364a3f4d9b3c4a",
+  "review": {
+    "verdict": "ok",
+    "mode": "enforce",
+    "model": "claude-sonnet-4-6",
+    "kb62_document_id": 16548
+  },
+  "regression_tests_passed": 45,
+  "canonical_urls_sha_verified": true,
+  "browser_upload_controls_visible": true,
+  "product_services_rebuilt": false,
+  "kb_documents": {
+    "62": 16554,
+    "77": 16555
+  }
+}

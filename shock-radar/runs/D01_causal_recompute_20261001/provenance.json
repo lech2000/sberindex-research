@@ -1,0 +1,41 @@
+{
+ "run_id": "D01-causal-recompute-20261001",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "date": "2026-10-01",
+ "purpose": "пересчёт D01/D02/D03 на причинном сигнале взамен runs/R5 и runs/R7 (внутривыборочные остатки бустинга)",
+ "inputs": {
+  "panel": "8_consumption.parquet",
+  "panel_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "registry": "events/registry.parquet",
+  "registry_sha256": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070",
+  "signal_sha256": "6a912ad1ec50bab75ba6139c143edf90a23551879207e961b7375578ba35e474",
+  "signal_sha256_matches_runs_R7_v2": true
+ },
+ "code_sha256": {
+  "r7_causal_signal.py": "6ee66e8333f75f9374c6351c69eb120bfd0987c891c425fad01d16c86d5ed06a",
+  "d02_d03_detectors.py": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7",
+  "leakage_guard.py": "233ce3e65ee9075d6ccb45e0b81762ed0e846878622ca92f2df03575bbf9430b"
+ },
+ "commands": [
+  "python3 src/r7_causal_signal.py --panel <8_consumption.parquet> --registry events/registry.parquet --outdir signal",
+  "python3 src/d02_d03_detectors.py --cus signal/signal.parquet --registry registry_eligible.parquet --outdir monthly_causal --budget-mode monthly_causal",
+  "python3 src/d02_d03_detectors.py --cus signal/signal.parquet --registry registry_eligible.parquet --outdir legacy_budget --budget-mode legacy"
+ ],
+ "reproduced_runs_R7_v2_metrics": true,
+ "positive_control": {
+  "event_rel_size": {
+   "min": 0.15,
+   "median": 0.25,
+   "max": 0.4
+  },
+  "median_abs_rel_at_onset": 0.257,
+  "noise_abs_rel_test_months_outside_events": {
+   "median": 0.06,
+   "p90": 0.196,
+   "p99": 0.375,
+   "p99_8": 0.606
+  },
+  "share_events_above_noise_p99_8": 0.03,
+  "share_events_above_noise_p99": 0.29
+ }
+}

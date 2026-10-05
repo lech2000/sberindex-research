@@ -1,0 +1,47 @@
+[
+  {
+    "file": "buzuluk-h1-2023-2024.xlsx",
+    "sha256": "14a2d537b2b57cd0048b771d4cad2526a4fa783da16c9fe3a6f9fbe2ec2392e3",
+    "city": "Бузулук",
+    "territory_id": 1668,
+    "status": "identified_supplement",
+    "scope": "H1 executed spending and July 1 budget plan snapshots",
+    "unit": "thousand_RUB",
+    "source_channel": "owner_supplied_file",
+    "source_url": null,
+    "available_at": null,
+    "vintage": null,
+    "historical_boundary_verified": false,
+    "official_online_identity_verified": false
+  },
+  {
+    "file": "incoming-report.pdf",
+    "sha256": "8c8aa1b147858f02657537bf1ba82d7415fbf02a0e7c3c7a8428989a5c242ef9",
+    "city": "Тюмень",
+    "territory_id": 2190,
+    "status": "identified_supplement",
+    "scope": "2025 citizen presentation based on draft decision, with rounded 2023/2024 history",
+    "unit": "mixed_explicit",
+    "source_channel": "owner_supplied_file",
+    "source_url": null,
+    "available_at": null,
+    "vintage": null,
+    "historical_boundary_verified": false,
+    "official_online_identity_verified": false
+  },
+  {
+    "file": "budget-export-20261004.xlsx",
+    "sha256": "66385eb19741a61d36804da60f1bba3405f6ea5ec01752f2eebba9f0e657bd66",
+    "city": null,
+    "territory_id": null,
+    "status": "unassigned_geography_and_period_start",
+    "scope": "EPBS_180_002_report, as of 2026-09-28",
+    "unit": "thousand_RUB",
+    "source_channel": "owner_supplied_file",
+    "source_url": null,
+    "available_at": null,
+    "vintage": null,
+    "historical_boundary_verified": false,
+    "official_online_identity_verified": false
+  }
+]

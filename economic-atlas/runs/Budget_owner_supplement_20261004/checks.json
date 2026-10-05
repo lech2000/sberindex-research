@@ -1,0 +1,1556 @@
+[
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D6",
+    "difference_native": "6.8E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E6",
+    "difference_native": "1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F6",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G6",
+    "difference_native": "8E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H6",
+    "difference_native": "1E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I6",
+    "difference_native": "0E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J6",
+    "difference_native": "1.02523278502E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H7",
+    "difference_native": "1.6E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I7",
+    "difference_native": "1E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J7",
+    "difference_native": "1.56033409795E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H8",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I8",
+    "difference_native": "4E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J8",
+    "difference_native": "1.0436432638E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H9",
+    "difference_native": "3E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I9",
+    "difference_native": "1.5E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J9",
+    "difference_native": "2.0343902264E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H10",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I10",
+    "difference_native": "8E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J10",
+    "difference_native": "1.51613029858E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H11",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I11",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H12",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I12",
+    "difference_native": "3.5E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J12",
+    "difference_native": "1.81636460319E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D13",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E13",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F13",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G13",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H13",
+    "difference_native": "1.5E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I13",
+    "difference_native": "4E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J13",
+    "difference_native": "7.4424418041E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H14",
+    "difference_native": "2.73E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I14",
+    "difference_native": "1.36E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J14",
+    "difference_native": "8.53635652854E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H15",
+    "difference_native": "1.1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I15",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J15",
+    "difference_native": "3.0703649756E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D16",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E16",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F16",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G16",
+    "difference_native": "1.0E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H16",
+    "difference_native": "4E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I16",
+    "difference_native": "1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J16",
+    "difference_native": "6.8697282494E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H17",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I17",
+    "difference_native": "6E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J17",
+    "difference_native": "2.02486678508E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H18",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I18",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J18",
+    "difference_native": "0E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H19",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I19",
+    "difference_native": "1.1E-15",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J19",
+    "difference_native": "1.33333333333E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H20",
+    "difference_native": "3E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I20",
+    "difference_native": "3E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J20",
+    "difference_native": "1.57582233963E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H21",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I21",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H22",
+    "difference_native": "9E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I22",
+    "difference_native": "6.5E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J22",
+    "difference_native": "4.2736388911E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D23",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E23",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F23",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G23",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H23",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I23",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J23",
+    "difference_native": "5.6559235873E-18",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H24",
+    "difference_native": "1E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I24",
+    "difference_native": "4E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J24",
+    "difference_native": "2E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H25",
+    "difference_native": "2E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I25",
+    "difference_native": "3E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J25",
+    "difference_native": "8.3679073165E-18",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H26",
+    "difference_native": "3E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I26",
+    "difference_native": "2.3E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J26",
+    "difference_native": "6.42313316328E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H27",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I27",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J27",
+    "difference_native": "1.6545124445E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D28",
+    "difference_native": "1.06E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E28",
+    "difference_native": "1.37E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F28",
+    "difference_native": "5E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G28",
+    "difference_native": "1.9E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H28",
+    "difference_native": "9E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I28",
+    "difference_native": "0E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J28",
+    "difference_native": "9.1551907417E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H29",
+    "difference_native": "2.3E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I29",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J29",
+    "difference_native": "1.17169756840E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H30",
+    "difference_native": "1E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I30",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J30",
+    "difference_native": "3.3614807451E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H31",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I31",
+    "difference_native": "0E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J31",
+    "difference_native": "3.2220721031E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H32",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I32",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H33",
+    "difference_native": "4E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I33",
+    "difference_native": "3.6E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J33",
+    "difference_native": "8.7589553435E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H34",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I34",
+    "difference_native": "1E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J34",
+    "difference_native": "3.3667918847E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D35",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E35",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F35",
+    "difference_native": "1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G35",
+    "difference_native": "4E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H35",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I35",
+    "difference_native": "1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J35",
+    "difference_native": "6.5226445401E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H36",
+    "difference_native": "6E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I36",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J36",
+    "difference_native": "7.7166219865E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H37",
+    "difference_native": "3E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I37",
+    "difference_native": "1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J37",
+    "difference_native": "1.56123429382E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D38",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E38",
+    "difference_native": "1E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F38",
+    "difference_native": "0E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G38",
+    "difference_native": "8E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H38",
+    "difference_native": "4E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I38",
+    "difference_native": "4E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J38",
+    "difference_native": "4.0678226992E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H39",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I39",
+    "difference_native": "6E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J39",
+    "difference_native": "1.20446521803E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H40",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I40",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J40",
+    "difference_native": "0.0",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H41",
+    "difference_native": "4E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I41",
+    "difference_native": "1.16E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J41",
+    "difference_native": "5.1131028887E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D42",
+    "difference_native": "9.1E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E42",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F42",
+    "difference_native": "2.01E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G42",
+    "difference_native": "1.096E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H42",
+    "difference_native": "1.9E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I42",
+    "difference_native": "2E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J42",
+    "difference_native": "1.70189787943E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H43",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I43",
+    "difference_native": "4E-12",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J43",
+    "difference_native": "7.150664961E-18",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H44",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I44",
+    "difference_native": "4.5E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J44",
+    "difference_native": "8.0368851606E-18",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H45",
+    "difference_native": "2E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I45",
+    "difference_native": "1E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J45",
+    "difference_native": "1.7664802363E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D46",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E46",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F46",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G46",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H46",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I46",
+    "difference_native": "1.4E-13",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J46",
+    "difference_native": "6.010825131E-18",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H47",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I47",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J47",
+    "difference_native": "6.6666666667E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H48",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I48",
+    "difference_native": "2.3E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J48",
+    "difference_native": "1.2310909651E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D49",
+    "difference_native": "0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E49",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F49",
+    "difference_native": "0.0",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G49",
+    "difference_native": "0.00",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H49",
+    "difference_native": "9E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I49",
+    "difference_native": "2.4E-15",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J49",
+    "difference_native": "1.037848605578E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H50",
+    "difference_native": "9E-14",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I50",
+    "difference_native": "2.4E-15",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J50",
+    "difference_native": "1.037848605578E-16",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !D51",
+    "difference_native": "1.9E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !E51",
+    "difference_native": "1.59E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !F51",
+    "difference_native": "2.3E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !G51",
+    "difference_native": "5.3E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !H51",
+    "difference_native": "1.8E-10",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !I51",
+    "difference_native": "3E-11",
+    "tolerance_native": "0.00001",
+    "passed": true
+  },
+  {
+    "check": "formula_cache",
+    "locator": "Расходы !J51",
+    "difference_native": "9.7190356197E-17",
+    "tolerance_native": "1E-10",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D6",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E6",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F6",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G6",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D13",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E13",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F13",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G13",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D16",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E16",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F16",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G16",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D23",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E23",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F23",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G23",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D28",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E28",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F28",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G28",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D35",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E35",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F35",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G35",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D38",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E38",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F38",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G38",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D42",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E42",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F42",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G42",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D46",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E46",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F46",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G46",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "D49",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "E49",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "F49",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "function_partition",
+    "locator": "G49",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "total_function_partition",
+    "locator": "D51",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "total_function_partition",
+    "locator": "E51",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "total_function_partition",
+    "locator": "F51",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "total_function_partition",
+    "locator": "G51",
+    "difference_thousand_RUB": "0.00",
+    "passed": true
+  },
+  {
+    "check": "rounded_revenue_partition",
+    "year": 2023,
+    "difference_kopecks": 0,
+    "passed": true
+  },
+  {
+    "check": "rounded_revenue_partition",
+    "year": 2024,
+    "difference_kopecks": 0,
+    "passed": true
+  },
+  {
+    "check": "rounded_revenue_partition",
+    "year": 2025,
+    "difference_kopecks": 0,
+    "passed": true
+  },
+  {
+    "check": "rounded_vs_primary_2023",
+    "metric": "revenue",
+    "difference_kopecks": 31900000,
+    "tolerance_kopecks": 50000000,
+    "passed": true
+  },
+  {
+    "check": "rounded_vs_primary_2023",
+    "metric": "expense",
+    "difference_kopecks": 24900000,
+    "tolerance_kopecks": 50000000,
+    "passed": true
+  },
+  {
+    "check": "unassigned_export_balance",
+    "difference_kopecks": 0,
+    "passed": true
+  }
+]

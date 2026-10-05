@@ -1,0 +1,109 @@
+{
+  "status": "COMPUTED_EXPLORATORY",
+  "scientific_pass": false,
+  "original_rows": 73608,
+  "common_rows": 73608,
+  "excluded_rows": 0,
+  "national_observations": 94,
+  "national_range": [
+    "2018-12",
+    "2026-09"
+  ],
+  "results": [
+    {
+      "model": "national_yoy_lag1",
+      "reference": "pred_last",
+      "rows": 73608,
+      "mae_model": 651.2693177976877,
+      "mae_reference": 1288.2514264753831,
+      "relative_improvement_percent": 49.445480562785725,
+      "benefit_mae": 636.9821086776955,
+      "benefit_ci95_month_blocks": [
+        525.6627198698908,
+        750.4575541471786
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "pred_prophet",
+      "rows": 73608,
+      "mae_model": 651.2693177976877,
+      "mae_reference": 1109.5225902290215,
+      "relative_improvement_percent": 41.301842474135086,
+      "benefit_mae": 458.2532724313338,
+      "benefit_ci95_month_blocks": [
+        252.9213426764695,
+        662.2567389595625
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag2",
+      "reference": "pred_last",
+      "rows": 73608,
+      "mae_model": 651.0588538685377,
+      "mae_reference": 1288.2514264753831,
+      "relative_improvement_percent": 49.46181774082603,
+      "benefit_mae": 637.1925726068455,
+      "benefit_ci95_month_blocks": [
+        540.4057021870427,
+        748.1235198805438
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag2",
+      "reference": "pred_prophet",
+      "rows": 73608,
+      "mae_model": 651.0588538685377,
+      "mae_reference": 1109.5225902290215,
+      "relative_improvement_percent": 41.32081134696413,
+      "benefit_mae": 458.463736360484,
+      "benefit_ci95_month_blocks": [
+        221.5542909149907,
+        672.5305750461835
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag3",
+      "reference": "pred_last",
+      "rows": 73608,
+      "mae_model": 634.5147170441472,
+      "mae_reference": 1288.2514264753831,
+      "relative_improvement_percent": 50.74604972259489,
+      "benefit_mae": 653.7367094312359,
+      "benefit_ci95_month_blocks": [
+        573.0577598117528,
+        735.7806027645817
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag3",
+      "reference": "pred_prophet",
+      "rows": 73608,
+      "mae_model": 634.5147170441472,
+      "mae_reference": 1109.5225902290215,
+      "relative_improvement_percent": 42.81191544615831,
+      "benefit_mae": 475.0078731848743,
+      "benefit_ci95_month_blocks": [
+        258.2021439323419,
+        664.6768400312794
+      ],
+      "month_blocks": 6
+    }
+  ],
+  "checks": {
+    "raw_last_and_actual_all_h12_keys": 73608,
+    "scalar_and_future_mutation_all_forecasts": 220824,
+    "time_zone": "UTC source converted to Europe/Moscow calendar month"
+  },
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "old_category_seasonal_h12": "still UNSUPPORTED; new national model is separate",
+  "full_prophet_refit": false,
+  "vintage": "2026-10-05, revisions unknown",
+  "national_units": "nominal billion RUB; municipal units different, only dimensionless ratio used"
+}
