@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-05T11:29:57.992891+00:00",
+  "location": "isolated scientific repository checkout on Mac",
+  "passed": 87,
+  "skipped": 1,
+  "skip_reason": "Optional GPL Pattern reference not provided",
+  "warning": "pytest-asyncio deprecation for future Python3.16",
+  "seconds": 131.58,
+  "log_sha256": "3f3a3c19cd36ad3518ae40d8df69b173446f7d2d1a68e6705626b3375f6d7c62"
+}

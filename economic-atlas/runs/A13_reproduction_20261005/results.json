@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED",
+  "input_checks": 7,
+  "protocol_checks": 5,
+  "run_receipt_checks": 4,
+  "partition_checks": 19,
+  "errors": [],
+  "expected_metrics_sha256": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79",
+  "expected_partitions_sha256": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0",
+  "rtol": 1e-07,
+  "atol": 1e-08
+}

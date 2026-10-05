@@ -1,0 +1,194 @@
+{
+ "n_nodes": 1896,
+ "features": [
+  "z_Здоровье",
+  "z_Маркетплейсы",
+  "z_Общественное питание",
+  "z_Продовольствие",
+  "z_Транспорт"
+ ],
+ "networks": {
+  "gaussian_weights": {
+   "edges": 6460,
+   "components": 1,
+   "sigma": 0.4806,
+   "rows": [
+    {
+     "partition": "E01_kmeans",
+     "K": 5,
+     "largest_group_share": 0.237,
+     "AVI": 0.8784,
+     "AVU": 0.574,
+     "ANUI": 0.584,
+     "modularity_newman": 0.6718,
+     "avi_null_mean": 0.1996,
+     "avi_z": 128.0,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E02_louvain",
+     "K": 33,
+     "largest_group_share": 0.064,
+     "AVI": 0.2078,
+     "AVU": 0.4201,
+     "ANUI": 0.1911,
+     "modularity_newman": 0.162,
+     "avi_null_mean": 0.0297,
+     "avi_z": 78.7,
+     "uniform_avu_value": 0.5079
+    },
+    {
+     "partition": "E03_spectral_a0",
+     "K": 5,
+     "largest_group_share": 0.795,
+     "AVI": 0.9723,
+     "AVU": 0.4014,
+     "ANUI": 0.6994,
+     "modularity_newman": 0.3579,
+     "avi_null_mean": 0.1991,
+     "avi_z": 173.9,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E03_spectral_a0.5",
+     "K": 5,
+     "largest_group_share": 0.838,
+     "AVI": 0.7668,
+     "AVU": 0.4162,
+     "ANUI": 0.5813,
+     "modularity_newman": 0.2457,
+     "avi_null_mean": 0.2,
+     "avi_z": 103.8,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E03_spectral_a1",
+     "K": 5,
+     "largest_group_share": 0.919,
+     "AVI": 0.3735,
+     "AVU": 0.4105,
+     "ANUI": 0.3238,
+     "modularity_newman": 0.0453,
+     "avi_null_mean": 0.1997,
+     "avi_z": 38.1,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "kmeans_K33_контроль_числа_групп",
+     "K": 33,
+     "largest_group_share": 0.066,
+     "AVI": 0.757,
+     "AVU": 0.4389,
+     "ANUI": 0.5682,
+     "modularity_newman": 0.7189,
+     "avi_null_mean": 0.0296,
+     "avi_z": 325.8,
+     "uniform_avu_value": 0.5079
+    },
+    {
+     "partition": "louvain_на_экономической_сети_потолок",
+     "K": 23,
+     "largest_group_share": 0.09,
+     "AVI": 0.8786,
+     "AVU": 0.4374,
+     "ANUI": 0.6347,
+     "modularity_newman": 0.8148,
+     "avi_null_mean": 0.0429,
+     "avi_z": 299.5,
+     "uniform_avu_value": 0.5116
+    }
+   ]
+  },
+  "unweighted": {
+   "edges": 6460,
+   "components": 1,
+   "sigma": 0.4806,
+   "rows": [
+    {
+     "partition": "E01_kmeans",
+     "K": 5,
+     "largest_group_share": 0.237,
+     "AVI": 0.8728,
+     "AVU": 0.5645,
+     "ANUI": 0.5847,
+     "modularity_newman": 0.6619,
+     "avi_null_mean": 0.1995,
+     "avi_z": 142.2,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E02_louvain",
+     "K": 33,
+     "largest_group_share": 0.064,
+     "AVI": 0.206,
+     "AVU": 0.4488,
+     "ANUI": 0.1886,
+     "modularity_newman": 0.1756,
+     "avi_null_mean": 0.0296,
+     "avi_z": 81.9,
+     "uniform_avu_value": 0.5079
+    },
+    {
+     "partition": "E03_spectral_a0",
+     "K": 5,
+     "largest_group_share": 0.795,
+     "AVI": 0.783,
+     "AVU": 0.4134,
+     "ANUI": 0.5915,
+     "modularity_newman": 0.3209,
+     "avi_null_mean": 0.1992,
+     "avi_z": 138.3,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E03_spectral_a0.5",
+     "K": 5,
+     "largest_group_share": 0.838,
+     "AVI": 0.7743,
+     "AVU": 0.4413,
+     "ANUI": 0.5771,
+     "modularity_newman": 0.2357,
+     "avi_null_mean": 0.2001,
+     "avi_z": 115.2,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "E03_spectral_a1",
+     "K": 5,
+     "largest_group_share": 0.919,
+     "AVI": 0.3715,
+     "AVU": 0.415,
+     "ANUI": 0.3219,
+     "modularity_newman": 0.0839,
+     "avi_null_mean": 0.1997,
+     "avi_z": 39.1,
+     "uniform_avu_value": 0.5714
+    },
+    {
+     "partition": "kmeans_K33_контроль_числа_групп",
+     "K": 33,
+     "largest_group_share": 0.066,
+     "AVI": 0.7381,
+     "AVU": 0.4886,
+     "ANUI": 0.5425,
+     "modularity_newman": 0.7046,
+     "avi_null_mean": 0.0297,
+     "avi_z": 331.8,
+     "uniform_avu_value": 0.5079
+    },
+    {
+     "partition": "louvain_на_экономической_сети_потолок",
+     "K": 18,
+     "largest_group_share": 0.102,
+     "AVI": 0.8547,
+     "AVU": 0.5001,
+     "ANUI": 0.5988,
+     "modularity_newman": 0.7957,
+     "avi_null_mean": 0.0551,
+     "avi_z": 277.9,
+     "uniform_avu_value": 0.5152
+    }
+   ]
+  }
+ }
+}

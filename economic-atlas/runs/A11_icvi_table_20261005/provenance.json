@@ -1,0 +1,54 @@
+{
+  "run_id": "A11_icvi_table_20261005",
+  "status": "COMPUTED_DESCRIPTIVE",
+  "checked_at_utc": "2026-10-05T09:47:34.849366+00:00",
+  "verification_location": "isolated macOS checkout; local Python process",
+  "base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "protocol_sha256": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717",
+  "input_sha256": {
+    "features": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+    "assignments": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+    "geo_edges": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "spec": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1"
+  },
+  "code_sha256": {
+    "src/atlas_a10.py": "a94c91a57bdea50575e93faa9ff722b8c74efce8a12ee5552c83958387c96aac",
+    "src/atlas_a11.py": "890263392273166a58ac6b94bd8980f4fbb7501a930acb960f877eebe6e784ac",
+    "src/atlas_a9.py": "e5cd11d339d5e7557e734b1c332f26895c7f058635a4fb65525576fb7a0588da",
+    "src/atlas_common.py": "fd24c0ce67eddd396875771ef01be14dd8ceb613be6558e897de6d93184882ce",
+    "src/atlas_a12.py": "b3e96dea9e969b6f06c487709fee003395dd3f735ef918d17ce6cf56b35f8e45",
+    "src/atlas_a13.py": "3114bffae05656e3121922d8fcbf93a57d7de806563532cfd6cbc051d26746cc",
+    "src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "runs/A7_stories_20261004/build_stories.py": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134"
+  },
+  "dependency_sha256": {
+    "runs/A9_economic_network_20261005/provenance.json": "c205933ae36eb97156b7fc1479b9a104796b9185fdfd4bc2301d52a2d4ab8c68",
+    "runs/A10_method_comparison_20261005/provenance.json": "6dfb11299306d88c65beeb84893549951aa4bada7afe736100f7e9a8c3c11f5f"
+  },
+  "output_sha256": {
+    "all_networks_validity.csv": "27e872621593b367cd4b4243c17bdf241ccf8430478f9d38674c38d4a0ba9bed",
+    "feature_metrics_all_seeds.csv": "4523ff044d609757fa2e07543be758ead8463b2b819b898060ab46b17b543c00",
+    "results.json": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+    "validity.csv": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96",
+    "README.md": "8d868322f5567565cc3db4b3c37463b34e976da34266ce964910f4ed13804f37",
+    "cross_year_differences.csv": "8aace9dc44412770fc354bf9fe85724d68cd4bcab4fdf365ae6bdff5be141c48",
+    "cross_year_validity.csv": "0ffafa7d600df7981ed01f8f0df28fb685a91eb9f21802e1e5422c7fa29a86df"
+  },
+  "seed": 20261005,
+  "python": "3.14.4",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "networkx": "3.6.1"
+  },
+  "limits": [
+    "descriptive; no new independent 2025 test",
+    "local protocol timestamp, not externally witnessed"
+  ]
+}

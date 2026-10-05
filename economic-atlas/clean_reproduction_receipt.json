@@ -1,0 +1,20 @@
+{
+  "status": "VERIFIED",
+  "started_at_utc": "2026-10-05T09:49:29.480156+00:00",
+  "finished_at_utc": "2026-10-05T09:56:22.871191+00:00",
+  "elapsed_seconds": 413.39,
+  "exit_code": 0,
+  "command": "make atlas",
+  "base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "computed_outputs_present_before_run": false,
+  "regression_baseline_unchanged": true,
+  "tests_passed": 76,
+  "tests_skipped": 1,
+  "skip_reason": "optional SBERINDEX_PATTERN_REF not provided",
+  "runtime": "same pinned dependency versions, independent sparse checkout",
+  "baseline_sha256_before_after": {
+    "expected_metrics.json": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79",
+    "expected_partitions.parquet": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0"
+  },
+  "baseline_sha256_equal_to_clean": true
+}

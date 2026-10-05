@@ -1,0 +1,1509 @@
+{
+ "Орск": {
+  "tid": 1673,
+  "name": "Орск",
+  "story": true,
+  "profile_distance_z2023": {
+   "value": 1.077,
+   "pct_among_mo": 38.6
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.248,
+   "pct_among_mo": 12.2
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": -0.18,
+    "pct_among_mo": 55.0,
+    "robust_z": 0.12
+   },
+   "Маркетплейсы": {
+    "pp": 4.09,
+    "pct_among_mo": 46.9,
+    "robust_z": -0.07
+   },
+   "Общественное питание": {
+    "pp": 0.13,
+    "pct_among_mo": 58.7,
+    "robust_z": 0.23
+   },
+   "Продовольствие": {
+    "pp": -1.88,
+    "pct_among_mo": 42.7,
+    "robust_z": -0.17
+   },
+   "Транспорт": {
+    "pp": -0.06,
+    "pct_among_mo": 81.4,
+    "robust_z": 0.77
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 25758.0,
+   "mean_2024": 31635.0,
+   "yoy": 0.2282,
+   "yoy_pct_among_mo": 98.3,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": -0.66,
+   "Маркетплейсы": -0.65,
+   "Общественное питание": 0.98,
+   "Продовольствие": -0.83,
+   "Транспорт": -0.59
+  },
+  "april_2023_relative_z": {
+   "Здоровье": -0.35,
+   "Маркетплейсы": -0.25,
+   "Общественное питание": 0.99,
+   "Продовольствие": -1.17,
+   "Транспорт": -1.16
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 2,
+   "changed_share": 0.056,
+   "by_K": {
+    "2": 0,
+    "3": 0,
+    "5": 2
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 0,
+    "ward": 2
+   },
+   "ties": 4,
+   "median_switches_24m": 5.5,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.042,
+    "1.0": 0.083,
+    "1.25": 0.167
+   },
+   "rank_of_n_changed_among_mo": 27.4
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 38.6,
+    "relative": 12.2
+   },
+   "zall": {
+    "abs": 37.0,
+    "relative": 12.7
+   },
+   "logz2023": {
+    "abs": 41.3,
+    "relative": 8.0
+   }
+  },
+  "region_peers": {
+   "region": "Оренбургская область",
+   "n_mo_in_region": 39,
+   "yoy_region_median": 0.1281,
+   "yoy_pct_within_region": 98.7,
+   "profile_distance_abs_pct_within_region": 19.2,
+   "profile_distance_rel_pct_within_region": 16.7
+  },
+  "population": {
+   "2023": 190980.0,
+   "2024": 190318.0,
+   "growth": -0.0035,
+   "growth_pct_among_mo": 76.2
+  },
+  "migration_2023_net_total": {
+   "net": 823.0,
+   "per_1000_pop": 4.31,
+   "per_1000_pct_among_mo": 81.9
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 55690.3,
+    "2024": 74043.2,
+    "growth": 0.3296,
+    "growth_pct_among_mo": 98.0
+   },
+   "D": {
+    "2023": 54115.9,
+    "2024": 66448.1,
+    "growth": 0.2279,
+    "growth_pct_among_mo": 86.0
+   },
+   "F": {
+    "2023": 60546.6,
+    "2024": 94631.0,
+    "growth": 0.5629,
+    "growth_pct_among_mo": 92.4
+   },
+   "G": {
+    "2023": 41952.4,
+    "2024": 51775.5,
+    "growth": 0.2341,
+    "growth_pct_among_mo": 77.5
+   },
+   "P": {
+    "2023": 38669.5,
+    "2024": 45499.3,
+    "growth": 0.1766,
+    "growth_pct_among_mo": 41.1
+   },
+   "Q": {
+    "2023": 45925.6,
+    "2024": 53623.7,
+    "growth": 0.1676,
+    "growth_pct_among_mo": 48.2
+   },
+   "H": {
+    "2023": 56722.2,
+    "2024": 67884.1,
+    "growth": 0.1968,
+    "growth_pct_among_mo": 59.6
+   },
+   "I": {
+    "2023": 41328.1,
+    "2024": 54961.2,
+    "growth": 0.3299,
+    "growth_pct_among_mo": 90.9
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "53723000",
+   "workers_2023": 39364.0,
+   "workers_2024": 40175.0,
+   "growth": 0.0206,
+   "growth_pct_national": 81.1,
+   "n_national": 2339,
+   "growth_pct_region": 86.6,
+   "n_region": 41,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел Q Деятельность в области здравоохранения и социальных услуг",
+     "d_workers": -1217.0,
+     "growth": -0.2193
+    },
+    {
+     "section": "Раздел Н Транспортировка и хранение",
+     "d_workers": -232.0,
+     "growth": -0.0473
+    },
+    {
+     "section": "Раздел C Обрабатывающие производства",
+     "d_workers": 2311.0,
+     "growth": 0.2236
+    },
+    {
+     "section": "Раздел В Добыча полезных ископаемых",
+     "d_workers": 131.0,
+     "growth": 0.0935
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 8,
+   "ambiguous_months": 1,
+   "mode_2023": "ID0002",
+   "mode_2024": "ID0002",
+   "changed": false,
+   "dec_2024_ambiguous": true,
+   "sequence": "22222111122212122111222-",
+   "switches_pct_among_mo": 99.4,
+   "changed_in_n_seeds": 0,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 5
+  },
+  "budget_recomputed_from_primary_observations": {
+   "expense_rub": {
+    "2023": 6503418022.92,
+    "2024": 9917425979.2
+   },
+   "expense_change": 0.525,
+   "revenue_change": 0.5526,
+   "grants_change": 0.7537,
+   "tax_nontax_change": 0.224,
+   "function_share": {
+    "function_01": {
+     "2023": 0.0514,
+     "2024": 0.0408,
+     "change": 0.2104
+    },
+    "function_03": {
+     "2023": 0.0094,
+     "2024": 0.0089,
+     "change": 0.4387
+    },
+    "function_04": {
+     "2023": 0.1169,
+     "2024": 0.1834,
+     "change": 1.3927
+    },
+    "function_05": {
+     "2023": 0.0775,
+     "2024": 0.2045,
+     "change": 3.0233
+    },
+    "function_07": {
+     "2023": 0.5902,
+     "2024": 0.4669,
+     "change": 0.2064
+    },
+    "function_08": {
+     "2023": 0.0368,
+     "2024": 0.0263,
+     "change": 0.0886
+    },
+    "function_10": {
+     "2023": 0.0392,
+     "2024": 0.0285,
+     "change": 0.1084
+    },
+    "function_11": {
+     "2023": 0.0784,
+     "2024": 0.0406,
+     "change": -0.2096
+    },
+    "function_12": {
+     "2023": 0.0001,
+     "2024": 0.0001,
+     "change": 0.0
+    },
+    "function_13": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "change": 0.0
+    }
+   },
+   "note": ""
+  }
+ },
+ "Бузулук": {
+  "tid": 1668,
+  "name": "Бузулук",
+  "story": true,
+  "profile_distance_z2023": {
+   "value": 1.028,
+   "pct_among_mo": 32.8
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.276,
+   "pct_among_mo": 16.6
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": -0.07,
+    "pct_among_mo": 79.2,
+    "robust_z": 0.72
+   },
+   "Маркетплейсы": {
+    "pp": 3.89,
+    "pct_among_mo": 39.7,
+    "robust_z": -0.24
+   },
+   "Общественное питание": {
+    "pp": 0.19,
+    "pct_among_mo": 66.7,
+    "robust_z": 0.45
+   },
+   "Продовольствие": {
+    "pp": -2.01,
+    "pct_among_mo": 37.4,
+    "robust_z": -0.31
+   },
+   "Транспорт": {
+    "pp": -0.15,
+    "pct_among_mo": 70.3,
+    "robust_z": 0.53
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 27217.0,
+   "mean_2024": 32480.0,
+   "yoy": 0.1934,
+   "yoy_pct_among_mo": 90.2,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": 0.04,
+   "Маркетплейсы": -0.46,
+   "Общественное питание": 0.87,
+   "Продовольствие": -0.94,
+   "Транспорт": 0.6
+  },
+  "april_2023_relative_z": {
+   "Здоровье": 0.03,
+   "Маркетплейсы": -0.34,
+   "Общественное питание": 0.74,
+   "Продовольствие": -0.79,
+   "Транспорт": 0.38
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 2,
+   "changed_share": 0.056,
+   "by_K": {
+    "2": 0,
+    "3": 0,
+    "5": 2
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 0,
+    "ward": 2
+   },
+   "ties": 9,
+   "median_switches_24m": 4.0,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.0,
+    "1.0": 0.0,
+    "1.25": 0.083
+   },
+   "rank_of_n_changed_among_mo": 27.4
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 32.8,
+    "relative": 16.6
+   },
+   "zall": {
+    "abs": 31.9,
+    "relative": 17.1
+   },
+   "logz2023": {
+    "abs": 38.1,
+    "relative": 9.9
+   }
+  },
+  "region_peers": {
+   "region": "Оренбургская область",
+   "n_mo_in_region": 39,
+   "yoy_region_median": 0.1281,
+   "yoy_pct_within_region": 85.9,
+   "profile_distance_abs_pct_within_region": 11.5,
+   "profile_distance_rel_pct_within_region": 21.8
+  },
+  "population": {
+   "2023": 88419.0,
+   "2024": 88339.0,
+   "growth": -0.0009,
+   "growth_pct_among_mo": 82.7
+  },
+  "migration_2023_net_total": {
+   "net": 237.0,
+   "per_1000_pop": 2.68,
+   "per_1000_pct_among_mo": 75.6
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 66660.6,
+    "2024": 79778.4,
+    "growth": 0.1968,
+    "growth_pct_among_mo": 61.6
+   },
+   "D": {
+    "2023": 51181.8,
+    "2024": 63611.0,
+    "growth": 0.2428,
+    "growth_pct_among_mo": 89.4
+   },
+   "F": {
+    "2023": 65730.1,
+    "2024": 68261.0,
+    "growth": 0.0385,
+    "growth_pct_among_mo": 13.8
+   },
+   "G": {
+    "2023": 42674.0,
+    "2024": 49037.8,
+    "growth": 0.1491,
+    "growth_pct_among_mo": 24.0
+   },
+   "P": {
+    "2023": 40311.9,
+    "2024": 47698.9,
+    "growth": 0.1832,
+    "growth_pct_among_mo": 46.2
+   },
+   "Q": {
+    "2023": 50378.5,
+    "2024": 62284.5,
+    "growth": 0.2363,
+    "growth_pct_among_mo": 88.3
+   },
+   "H": {
+    "2023": 52314.9,
+    "2024": 60412.6,
+    "growth": 0.1548,
+    "growth_pct_among_mo": 37.6
+   },
+   "I": {
+    "2023": 24018.7,
+    "2024": 28113.3,
+    "growth": 0.1705,
+    "growth_pct_among_mo": 40.7
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "53712000",
+   "workers_2023": 27865.0,
+   "workers_2024": 27855.0,
+   "growth": -0.0004,
+   "growth_pct_national": 64.6,
+   "n_national": 2339,
+   "growth_pct_region": 81.7,
+   "n_region": 41,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел Q Деятельность в области здравоохранения и социальных услуг",
+     "d_workers": -269.0,
+     "growth": -0.0948
+    },
+    {
+     "section": "Раздел D Обеспечение электрической энергией, газом и паром, кондиционирование воздуха",
+     "d_workers": -150.0,
+     "growth": -0.0851
+    },
+    {
+     "section": "Раздел G Торговля оптовая и розничная, ремонт автотранспортных средств и мотоциклов",
+     "d_workers": 286.0,
+     "growth": 0.2737
+    },
+    {
+     "section": "Раздел В Добыча полезных ископаемых",
+     "d_workers": 191.0,
+     "growth": 0.0158
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 2,
+   "ambiguous_months": 4,
+   "mode_2023": "ID0001",
+   "mode_2024": "ID0001",
+   "changed": false,
+   "dec_2024_ambiguous": true,
+   "sequence": "1221111111--1111111111--",
+   "switches_pct_among_mo": 88.6,
+   "changed_in_n_seeds": 0,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 5
+  },
+  "budget_recomputed_from_primary_observations": {
+   "period": "первое полугодие (H1), не год",
+   "expense_rub_h1": {
+    "2023": 1115849830.0,
+    "2024": 1458651230.0
+   },
+   "expense_change": 0.3072,
+   "function_share": {
+    "function_01": {
+     "2023": 0.0667,
+     "2024": 0.0624,
+     "change": 0.2216
+    },
+    "function_03": {
+     "2023": 0.007,
+     "2024": 0.0065,
+     "change": 0.2117
+    },
+    "function_04": {
+     "2023": 0.0596,
+     "2024": 0.0605,
+     "change": 0.3273
+    },
+    "function_05": {
+     "2023": 0.1037,
+     "2024": 0.0549,
+     "change": -0.3083
+    },
+    "function_07": {
+     "2023": 0.6168,
+     "2024": 0.6639,
+     "change": 0.407
+    },
+    "function_08": {
+     "2023": 0.0416,
+     "2024": 0.0416,
+     "change": 0.3087
+    },
+    "function_10": {
+     "2023": 0.0578,
+     "2024": 0.045,
+     "change": 0.0174
+    },
+    "function_11": {
+     "2023": 0.0452,
+     "2024": 0.0638,
+     "change": 0.8454
+    },
+    "function_12": {
+     "2023": 0.0017,
+     "2024": 0.0015,
+     "change": 0.1735
+    },
+    "function_13": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "change": -0.2777
+    }
+   }
+  }
+ },
+ "Курган": {
+  "tid": 1333,
+  "name": "Курган",
+  "story": true,
+  "profile_distance_z2023": {
+   "value": 0.999,
+   "pct_among_mo": 29.3
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.347,
+   "pct_among_mo": 31.2
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": -0.02,
+    "pct_among_mo": 87.4,
+    "robust_z": 1.01
+   },
+   "Маркетплейсы": {
+    "pp": 3.62,
+    "pct_among_mo": 29.8,
+    "robust_z": -0.47
+   },
+   "Общественное питание": {
+    "pp": 0.32,
+    "pct_among_mo": 79.9,
+    "robust_z": 0.88
+   },
+   "Продовольствие": {
+    "pp": -2.38,
+    "pct_among_mo": 27.1,
+    "robust_z": -0.71
+   },
+   "Транспорт": {
+    "pp": -0.25,
+    "pct_among_mo": 59.2,
+    "robust_z": 0.25
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 27232.0,
+   "mean_2024": 33206.0,
+   "yoy": 0.2194,
+   "yoy_pct_among_mo": 97.3,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": 0.16,
+   "Маркетплейсы": -0.85,
+   "Общественное питание": 0.92,
+   "Продовольствие": -0.44,
+   "Транспорт": 0.5
+  },
+  "april_2023_relative_z": {
+   "Здоровье": 0.23,
+   "Маркетплейсы": -0.59,
+   "Общественное питание": 0.66,
+   "Продовольствие": -0.39,
+   "Транспорт": 0.46
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 11,
+   "changed_share": 0.306,
+   "by_K": {
+    "2": 7,
+    "3": 3,
+    "5": 1
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 9,
+    "ward": 2
+   },
+   "ties": 3,
+   "median_switches_24m": 5.5,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.0,
+    "1.0": 0.0,
+    "1.25": 0.042
+   },
+   "rank_of_n_changed_among_mo": 89.0
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 29.3,
+    "relative": 31.2
+   },
+   "zall": {
+    "abs": 29.1,
+    "relative": 31.8
+   },
+   "logz2023": {
+    "abs": 48.2,
+    "relative": 16.2
+   }
+  },
+  "region_peers": {
+   "region": "Курганская область",
+   "n_mo_in_region": 24,
+   "yoy_region_median": 0.1262,
+   "yoy_pct_within_region": 97.9,
+   "profile_distance_abs_pct_within_region": 6.2,
+   "profile_distance_rel_pct_within_region": 10.4
+  },
+  "population": {
+   "2023": 305505.0,
+   "2024": 302354.0,
+   "growth": -0.0103,
+   "growth_pct_among_mo": 48.0
+  },
+  "migration_2023_net_total": {
+   "net": -1236.0,
+   "per_1000_pop": -4.05,
+   "per_1000_pct_among_mo": 39.2
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 60705.4,
+    "2024": 75790.7,
+    "growth": 0.2485,
+    "growth_pct_among_mo": 90.0
+   },
+   "D": {
+    "2023": 63615.2,
+    "2024": 74904.0,
+    "growth": 0.1775,
+    "growth_pct_among_mo": 60.4
+   },
+   "F": {
+    "2023": 76370.3,
+    "2024": 94037.0,
+    "growth": 0.2313,
+    "growth_pct_among_mo": 61.3
+   },
+   "G": {
+    "2023": 47222.0,
+    "2024": 56306.2,
+    "growth": 0.1924,
+    "growth_pct_among_mo": 53.5
+   },
+   "P": {
+    "2023": 39612.2,
+    "2024": 50584.9,
+    "growth": 0.277,
+    "growth_pct_among_mo": 94.3
+   },
+   "Q": {
+    "2023": 50107.0,
+    "2024": 61785.8,
+    "growth": 0.2331,
+    "growth_pct_among_mo": 87.0
+   },
+   "H": {
+    "2023": 65691.4,
+    "2024": 77816.6,
+    "growth": 0.1846,
+    "growth_pct_among_mo": 53.1
+   },
+   "I": {
+    "2023": 32671.7,
+    "2024": 40656.6,
+    "growth": 0.2444,
+    "growth_pct_among_mo": 72.9
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "37701000",
+   "workers_2023": 92108.0,
+   "workers_2024": 93321.0,
+   "growth": 0.0132,
+   "growth_pct_national": 76.6,
+   "n_national": 2339,
+   "growth_pct_region": 93.2,
+   "n_region": 22,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел O Государственное управление и обеспечение военной безопасности, социальное обеспечение",
+     "d_workers": -635.0,
+     "growth": -0.0559
+    },
+    {
+     "section": "Раздел P Образование",
+     "d_workers": -342.0,
+     "growth": -0.0324
+    },
+    {
+     "section": "Раздел C Обрабатывающие производства",
+     "d_workers": 2945.0,
+     "growth": 0.0994
+    },
+    {
+     "section": "Раздел G Торговля оптовая и розничная, ремонт автотранспортных средств и мотоциклов",
+     "d_workers": 108.0,
+     "growth": 0.0172
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 1,
+   "ambiguous_months": 4,
+   "mode_2023": "ID0002",
+   "mode_2024": "ID0001",
+   "changed": true,
+   "dec_2024_ambiguous": true,
+   "sequence": "2222222111--1111111111--",
+   "switches_pct_among_mo": 85.1,
+   "changed_in_n_seeds": 5,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 5
+  },
+  "budget_recomputed_from_primary_observations": {
+   "expense_rub": {
+    "2023": 16582687243.37,
+    "2024": 17279923028.64
+   },
+   "expense_change": 0.042,
+   "revenue_change": 0.0297,
+   "grants_change": -0.0095,
+   "tax_nontax_change": 0.1498,
+   "note": ""
+  }
+ },
+ "Ишим": {
+  "tid": 2192,
+  "name": "Ишим",
+  "story": true,
+  "profile_distance_z2023": {
+   "value": 0.917,
+   "pct_among_mo": 20.2
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.355,
+   "pct_among_mo": 32.9
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": 0.02,
+    "pct_among_mo": 91.4,
+    "robust_z": 1.21
+   },
+   "Маркетплейсы": {
+    "pp": 3.38,
+    "pct_among_mo": 22.3,
+    "robust_z": -0.67
+   },
+   "Общественное питание": {
+    "pp": 0.12,
+    "pct_among_mo": 58.5,
+    "robust_z": 0.23
+   },
+   "Продовольствие": {
+    "pp": -1.62,
+    "pct_among_mo": 55.7,
+    "robust_z": 0.12
+   },
+   "Транспорт": {
+    "pp": -0.37,
+    "pct_among_mo": 46.8,
+    "robust_z": -0.1
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 27178.0,
+   "mean_2024": 31945.0,
+   "yoy": 0.1754,
+   "yoy_pct_among_mo": 76.8,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": -0.63,
+   "Маркетплейсы": -0.51,
+   "Общественное питание": 0.63,
+   "Продовольствие": -0.49,
+   "Транспорт": 0.91
+  },
+  "april_2023_relative_z": {
+   "Здоровье": -0.66,
+   "Маркетплейсы": -0.16,
+   "Общественное питание": 0.5,
+   "Продовольствие": -0.63,
+   "Транспорт": 0.94
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 9,
+   "changed_share": 0.25,
+   "by_K": {
+    "2": 6,
+    "3": 3,
+    "5": 0
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 9,
+    "ward": 0
+   },
+   "ties": 2,
+   "median_switches_24m": 7.0,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.0,
+    "1.0": 0.0,
+    "1.25": 0.042
+   },
+   "rank_of_n_changed_among_mo": 78.4
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 20.2,
+    "relative": 32.9
+   },
+   "zall": {
+    "abs": 20.0,
+    "relative": 32.1
+   },
+   "logz2023": {
+    "abs": 25.2,
+    "relative": 14.5
+   }
+  },
+  "region_peers": {
+   "region": "Тюменская область",
+   "n_mo_in_region": 24,
+   "yoy_region_median": 0.1337,
+   "yoy_pct_within_region": 93.7,
+   "profile_distance_abs_pct_within_region": 6.2,
+   "profile_distance_rel_pct_within_region": 31.2
+  },
+  "population": {
+   "2023": 67317.0,
+   "2024": 67329.0,
+   "growth": 0.0002,
+   "growth_pct_among_mo": 84.7
+  },
+  "migration_2023_net_total": {
+   "net": 262.0,
+   "per_1000_pop": 3.89,
+   "per_1000_pct_among_mo": 80.7
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 54901.7,
+    "2024": 64808.8,
+    "growth": 0.1805,
+    "growth_pct_among_mo": 45.9
+   },
+   "D": {
+    "2023": 65739.6,
+    "2024": 73292.1,
+    "growth": 0.1149,
+    "growth_pct_among_mo": 17.7
+   },
+   "F": {
+    "2023": 63595.6,
+    "2024": 76950.4,
+    "growth": 0.21,
+    "growth_pct_among_mo": 57.0
+   },
+   "G": {
+    "2023": 39412.3,
+    "2024": 46945.6,
+    "growth": 0.1911,
+    "growth_pct_among_mo": 52.4
+   },
+   "P": {
+    "2023": 47737.4,
+    "2024": 57465.1,
+    "growth": 0.2038,
+    "growth_pct_among_mo": 63.7
+   },
+   "Q": {
+    "2023": 58038.4,
+    "2024": 69585.0,
+    "growth": 0.1989,
+    "growth_pct_among_mo": 70.5
+   },
+   "H": {
+    "2023": 63738.8,
+    "2024": 75083.6,
+    "growth": 0.178,
+    "growth_pct_among_mo": 49.6
+   },
+   "I": {
+    "2023": 40635.1,
+    "2024": 50175.2,
+    "growth": 0.2348,
+    "growth_pct_among_mo": 69.8
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "71705000",
+   "workers_2023": 14659.0,
+   "workers_2024": 14434.0,
+   "growth": -0.0153,
+   "growth_pct_national": 45.7,
+   "n_national": 2339,
+   "growth_pct_region": 48.4,
+   "n_region": 61,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел O Государственное управление и обеспечение военной безопасности, социальное обеспечение",
+     "d_workers": -126.0,
+     "growth": -0.0725
+    },
+    {
+     "section": "Раздел Н Транспортировка и хранение",
+     "d_workers": -84.0,
+     "growth": -0.0253
+    },
+    {
+     "section": "Раздел G Торговля оптовая и розничная, ремонт автотранспортных средств и мотоциклов",
+     "d_workers": 67.0,
+     "growth": 0.07
+    },
+    {
+     "section": "Раздел Q Деятельность в области здравоохранения и социальных услуг",
+     "d_workers": 35.0,
+     "growth": 0.0158
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 7,
+   "ambiguous_months": 3,
+   "mode_2023": "ID0002",
+   "mode_2024": "ID0001",
+   "changed": true,
+   "dec_2024_ambiguous": true,
+   "sequence": "2222222111-21112221211--",
+   "switches_pct_among_mo": 98.9,
+   "changed_in_n_seeds": 5,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 5
+  },
+  "budget_recomputed_from_primary_observations": {
+   "expense_rub": {
+    "2023": 4056024000.0,
+    "2024": 4006377000.0
+   },
+   "expense_change": -0.0122,
+   "revenue_change": -0.0212,
+   "grants_change": -0.059,
+   "tax_nontax_change": 0.1398,
+   "function_share": {
+    "function_01": {
+     "2023": 0.0411,
+     "2024": 0.0517,
+     "change": 0.243
+    },
+    "function_03": {
+     "2023": 0.0042,
+     "2024": 0.0244,
+     "change": 4.7309
+    },
+    "function_04": {
+     "2023": 0.109,
+     "2024": 0.1435,
+     "change": 0.3005
+    },
+    "function_05": {
+     "2023": 0.0915,
+     "2024": 0.177,
+     "change": 0.9096
+    },
+    "function_06": {
+     "2023": 0.0001,
+     "2024": 0.0001,
+     "change": 0.1707
+    },
+    "function_07": {
+     "2023": 0.5878,
+     "2024": 0.4326,
+     "change": -0.273
+    },
+    "function_08": {
+     "2023": 0.049,
+     "2024": 0.0497,
+     "change": 0.002
+    },
+    "function_10": {
+     "2023": 0.0797,
+     "2024": 0.0848,
+     "change": 0.0517
+    },
+    "function_11": {
+     "2023": 0.0377,
+     "2024": 0.0363,
+     "change": -0.0501
+    }
+   },
+   "note": ""
+  }
+ },
+ "Тюмень": {
+  "tid": 2190,
+  "name": "Тюмень",
+  "story": true,
+  "profile_distance_z2023": {
+   "value": 0.789,
+   "pct_among_mo": 11.1
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.443,
+   "pct_among_mo": 52.2
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": 0.01,
+    "pct_among_mo": 91.1,
+    "robust_z": 1.18
+   },
+   "Маркетплейсы": {
+    "pp": 3.03,
+    "pct_among_mo": 14.5,
+    "robust_z": -0.97
+   },
+   "Общественное питание": {
+    "pp": 0.09,
+    "pct_among_mo": 54.7,
+    "robust_z": 0.13
+   },
+   "Продовольствие": {
+    "pp": -0.92,
+    "pct_among_mo": 85.3,
+    "robust_z": 0.88
+   },
+   "Транспорт": {
+    "pp": -0.25,
+    "pct_among_mo": 59.0,
+    "robust_z": 0.25
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 38406.0,
+   "mean_2024": 44096.0,
+   "yoy": 0.1482,
+   "yoy_pct_among_mo": 49.0,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": 1.2,
+   "Маркетплейсы": -0.86,
+   "Общественное питание": 2.05,
+   "Продовольствие": -1.62,
+   "Транспорт": 1.28
+  },
+  "april_2023_relative_z": {
+   "Здоровье": 1.04,
+   "Маркетплейсы": -0.55,
+   "Общественное питание": 2.09,
+   "Продовольствие": -1.73,
+   "Транспорт": 1.14
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 0,
+   "changed_share": 0.0,
+   "by_K": {
+    "2": 0,
+    "3": 0,
+    "5": 0
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 0,
+    "ward": 0
+   },
+   "ties": 0,
+   "median_switches_24m": 0.0,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.0,
+    "1.0": 0.0,
+    "1.25": 0.0
+   },
+   "rank_of_n_changed_among_mo": 7.7
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 11.1,
+    "relative": 52.2
+   },
+   "zall": {
+    "abs": 10.7,
+    "relative": 50.2
+   },
+   "logz2023": {
+    "abs": 26.0,
+    "relative": 17.7
+   }
+  },
+  "region_peers": {
+   "region": "Тюменская область",
+   "n_mo_in_region": 24,
+   "yoy_region_median": 0.1337,
+   "yoy_pct_within_region": 72.9,
+   "profile_distance_abs_pct_within_region": 2.1,
+   "profile_distance_rel_pct_within_region": 64.6
+  },
+  "population": {
+   "2023": 855618.0,
+   "2024": 861098.0,
+   "growth": 0.0064,
+   "growth_pct_among_mo": 92.1
+  },
+  "migration_2023_net_total": {
+   "net": 2894.0,
+   "per_1000_pop": 3.38,
+   "per_1000_pct_among_mo": 78.6
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 90625.8,
+    "2024": 106290.0,
+    "growth": 0.1728,
+    "growth_pct_among_mo": 37.9
+   },
+   "D": {
+    "2023": 87638.9,
+    "2024": 102551.0,
+    "growth": 0.1702,
+    "growth_pct_among_mo": 55.1
+   },
+   "F": {
+    "2023": 93475.0,
+    "2024": 106682.4,
+    "growth": 0.1413,
+    "growth_pct_among_mo": 35.3
+   },
+   "G": {
+    "2023": 61927.6,
+    "2024": 71350.5,
+    "growth": 0.1522,
+    "growth_pct_among_mo": 26.0
+   },
+   "P": {
+    "2023": 67408.0,
+    "2024": 77572.4,
+    "growth": 0.1508,
+    "growth_pct_among_mo": 24.4
+   },
+   "Q": {
+    "2023": 71986.7,
+    "2024": 85033.7,
+    "growth": 0.1812,
+    "growth_pct_among_mo": 59.1
+   },
+   "H": {
+    "2023": 93177.3,
+    "2024": 106573.5,
+    "growth": 0.1438,
+    "growth_pct_among_mo": 32.5
+   },
+   "I": {
+    "2023": 46580.1,
+    "2024": 52838.8,
+    "growth": 0.1344,
+    "growth_pct_among_mo": 24.9
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "71701000",
+   "workers_2023": 210984.0,
+   "workers_2024": 211835.0,
+   "growth": 0.004,
+   "growth_pct_national": 68.9,
+   "n_national": 2339,
+   "growth_pct_region": 73.0,
+   "n_region": 61,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел F Строительство",
+     "d_workers": -819.0,
+     "growth": -0.0515
+    },
+    {
+     "section": "Раздел C Обрабатывающие производства",
+     "d_workers": -762.0,
+     "growth": -0.0292
+    },
+    {
+     "section": "Раздел G Торговля оптовая и розничная, ремонт автотранспортных средств и мотоциклов",
+     "d_workers": 2090.0,
+     "growth": 0.0943
+    },
+    {
+     "section": "Раздел M Деятельность профессиональная, научная и техническая",
+     "d_workers": 656.0,
+     "growth": 0.0437
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 0,
+   "ambiguous_months": 6,
+   "mode_2023": "ID0001",
+   "mode_2024": "ID0001",
+   "changed": false,
+   "dec_2024_ambiguous": true,
+   "sequence": "1--1111111--1111111111--",
+   "switches_pct_among_mo": 41.8,
+   "changed_in_n_seeds": 0,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 5
+  },
+  "budget_recomputed_from_primary_observations": {
+   "expense_rub": {
+    "2023": 44883751000.0
+   },
+   "note": "2024 отсутствует"
+  }
+ },
+ "Шадринск": {
+  "tid": 1334,
+  "name": "Шадринск",
+  "story": false,
+  "profile_distance_z2023": {
+   "value": 0.963,
+   "pct_among_mo": 24.6
+  },
+  "profile_distance_relative_to_monthly_median": {
+   "value": 0.422,
+   "pct_among_mo": 47.2
+  },
+  "share_shift_pp_2024_minus_2023": {
+   "Здоровье": {
+    "pp": 0.07,
+    "pct_among_mo": 95.2,
+    "robust_z": 1.5
+   },
+   "Маркетплейсы": {
+    "pp": 3.67,
+    "pct_among_mo": 32.1,
+    "robust_z": -0.43
+   },
+   "Общественное питание": {
+    "pp": -0.2,
+    "pct_among_mo": 17.7,
+    "robust_z": -0.85
+   },
+   "Продовольствие": {
+    "pp": -1.8,
+    "pct_among_mo": 47.0,
+    "robust_z": -0.07
+   },
+   "Транспорт": {
+    "pp": -0.08,
+    "pct_among_mo": 79.0,
+    "robust_z": 0.72
+   }
+  },
+  "total_consumption": {
+   "mean_2023": 22892.0,
+   "mean_2024": 27486.0,
+   "yoy": 0.2007,
+   "yoy_pct_among_mo": 93.0,
+   "yoy_median_mo": 0.1489
+  },
+  "april_2024_relative_z": {
+   "Здоровье": 1.05,
+   "Маркетплейсы": -0.62,
+   "Общественное питание": 0.71,
+   "Продовольствие": 0.11,
+   "Транспорт": -0.51
+  },
+  "april_2023_relative_z": {
+   "Здоровье": 0.82,
+   "Маркетплейсы": -0.36,
+   "Общественное питание": 0.81,
+   "Продовольствие": 0.01,
+   "Транспорт": -0.87
+  },
+  "partition_robustness": {
+   "configs": 36,
+   "changed_in_n_configs": 7,
+   "changed_share": 0.194,
+   "by_K": {
+    "2": 0,
+    "3": 4,
+    "5": 3
+   },
+   "of_per_K": {
+    "2": 12,
+    "3": 12,
+    "5": 12
+   },
+   "by_family": {
+    "kmeans": 6,
+    "ward": 1
+   },
+   "ties": 3,
+   "median_switches_24m": 3.0,
+   "ambiguous_fraction_2024_median_over_configs": {
+    "0.75": 0.083,
+    "1.0": 0.083,
+    "1.25": 0.167
+   },
+   "rank_of_n_changed_among_mo": 64.4
+  },
+  "profile_distance_pct_by_normalisation": {
+   "z2023": {
+    "abs": 24.6,
+    "relative": 47.2
+   },
+   "zall": {
+    "abs": 24.1,
+    "relative": 49.8
+   },
+   "logz2023": {
+    "abs": 33.7,
+    "relative": 33.4
+   }
+  },
+  "region_peers": {
+   "region": "Курганская область",
+   "n_mo_in_region": 24,
+   "yoy_region_median": 0.1262,
+   "yoy_pct_within_region": 89.6,
+   "profile_distance_abs_pct_within_region": 2.1,
+   "profile_distance_rel_pct_within_region": 31.2
+  },
+  "population": {
+   "2023": 68102.0,
+   "2024": 67884.0,
+   "growth": -0.0032,
+   "growth_pct_among_mo": 77.0
+  },
+  "migration_2023_net_total": {
+   "net": 320.0,
+   "per_1000_pop": 4.7,
+   "per_1000_pct_among_mo": 82.7
+  },
+  "salary_jan_dec": {
+   "0": {
+    "2023": 52654.7,
+    "2024": 64595.2,
+    "growth": 0.2268,
+    "growth_pct_among_mo": 80.9
+   },
+   "D": {
+    "2023": 47334.8,
+    "2024": 58398.0,
+    "growth": 0.2337,
+    "growth_pct_among_mo": 87.6
+   },
+   "F": {
+    "2023": 52822.4,
+    "2024": 60793.1,
+    "growth": 0.1509,
+    "growth_pct_among_mo": 40.4
+   },
+   "G": {
+    "2023": 40868.6,
+    "2024": 49465.5,
+    "growth": 0.2104,
+    "growth_pct_among_mo": 65.0
+   },
+   "P": {
+    "2023": 38575.9,
+    "2024": 48340.4,
+    "growth": 0.2531,
+    "growth_pct_among_mo": 89.7
+   },
+   "Q": {
+    "2023": 38745.3,
+    "2024": 48540.3,
+    "growth": 0.2528,
+    "growth_pct_among_mo": 92.4
+   },
+   "H": {
+    "2023": 64308.2,
+    "2024": 69357.6,
+    "growth": 0.0785,
+    "growth_pct_among_mo": 9.1
+   },
+   "I": {
+    "2023": 36280.6,
+    "2024": 38587.4,
+    "growth": 0.0636,
+    "growth_pct_among_mo": 9.4
+   }
+  },
+  "employment_organisations_excl_small_business": {
+   "oktmo8": "37705000",
+   "workers_2023": 16864.0,
+   "workers_2024": 16992.0,
+   "growth": 0.0076,
+   "growth_pct_national": 72.4,
+   "n_national": 2339,
+   "growth_pct_region": 88.6,
+   "n_region": 22,
+   "median_growth_national": -0.0126,
+   "largest_section_changes": [
+    {
+     "section": "Раздел D Обеспечение электрической энергией, газом и паром, кондиционирование воздуха",
+     "d_workers": -98.0,
+     "growth": -0.1002
+    },
+    {
+     "section": "Раздел O Государственное управление и обеспечение военной безопасности, социальное обеспечение",
+     "d_workers": -84.0,
+     "growth": -0.0634
+    },
+    {
+     "section": "Раздел C Обрабатывающие производства",
+     "d_workers": 499.0,
+     "growth": 0.0883
+    },
+    {
+     "section": "Раздел G Торговля оптовая и розничная, ремонт автотранспортных средств и мотоциклов",
+     "d_workers": 60.0,
+     "growth": 0.0661
+    }
+   ],
+   "definition": "организации без субъектов малого предпринимательства, январь–декабрь; не занятость всех жителей"
+  },
+  "a6_v2_archive_identity": {
+   "switches": 0,
+   "ambiguous_months": 1,
+   "mode_2023": "ID0002",
+   "mode_2024": "ID0002",
+   "changed": false,
+   "dec_2024_ambiguous": false,
+   "sequence": "222222222222-22222222222",
+   "switches_pct_among_mo": 41.8,
+   "changed_in_n_seeds": 0,
+   "n_seeds": 5,
+   "dec_2024_ambiguous_in_n_seeds": 0
+  },
+  "budget_recomputed_from_primary_observations": null
+ }
+}

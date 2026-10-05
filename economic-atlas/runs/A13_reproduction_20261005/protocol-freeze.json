@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-05T09:19:50.984584+00:00",
+  "base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "protocol_sha256": {
+    "A9_economic_network_20261005": "d34356f4732c70d720e3b1866371144453c933b4d7e3bc9443fc6b39c413f3eb",
+    "A10_method_comparison_20261005": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+    "A11_icvi_table_20261005": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717",
+    "A12_stable_cores_20261005": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250",
+    "A13_reproduction_20261005": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e"
+  },
+  "known_prior_results": [
+    "A5",
+    "A7 audit",
+    "A7 stories",
+    "A8 full results",
+    "local A7 S_Dbw"
+  ],
+  "amendments": [
+    {
+      "run": "A12",
+      "old_sha256": "fb081f77cf9cbff3d2c1ab57e35cfb0e762aab4ed16aa19e86e0a85cddfe0a8f",
+      "new_sha256": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250",
+      "timestamp_utc": "2026-10-05T09:38:49.649978+00:00",
+      "reason": "exact population duplicate rows; abort before A12 outcomes"
+    }
+  ]
+}

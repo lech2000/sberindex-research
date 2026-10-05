@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "stage": "unit tests",
+      "result": "first S_Dbw synthetic fixture produced NA random-label denominator, corrected fixture to finite-density domain without changing implementation/criteria;25 passed"
+    },
+    {
+      "stage": "A10 first attempt",
+      "result": "stopped by upstream code SHA guard: modules packaged after A9 started; no A10 fits written; A9 rerun on final source"
+    },
+    {
+      "stage": "A12 first attempt",
+      "result": "duplicate population keys; aborted before outcomes; v2 protocol/input-cleaning amendment preserving v1"
+    }
+  ]
+}

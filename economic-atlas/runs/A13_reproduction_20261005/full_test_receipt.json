@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-05",
+  "location": "isolated Mac checkout",
+  "passed": 75,
+  "skipped": 1,
+  "skip_reason": "optional SBERINDEX_PATTERN_REF not provided",
+  "elapsed_seconds": 52.78,
+  "test_files": [
+    "test_atlas_a9.py",
+    "test_atlas_a10.py",
+    "test_atlas_a11.py",
+    "test_atlas_a12.py",
+    "test_atlas_a13.py",
+    "test_atlas_network_icvi.py",
+    "test_atlas_network_audit.py",
+    "test_atlas_a8.py",
+    "test_atlas_stories.py"
+  ]
+}

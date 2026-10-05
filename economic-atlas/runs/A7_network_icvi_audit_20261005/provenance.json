@@ -1,0 +1,10 @@
+{
+ "run_id": "A7-network-icvi-audit-20261005",
+ "status": "AUDIT_NOT_SCIENTIFIC_RESULT",
+ "code_sha256": "37c07281ca8531d7216b0d83d985d4b589bcaad92d7b8d331f7fc959202f325a",
+ "network_icvi_sha256": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+ "a5_features_sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+ "a5_assignments_sha256": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+ "seed": 20261005,
+ "k_neighbours": 5
+}
