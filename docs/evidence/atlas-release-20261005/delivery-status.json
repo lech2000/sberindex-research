@@ -1,0 +1,17 @@
+{
+  "status": "KB_AND_CASE_DELIVERY_VERIFIED",
+  "checked_at_utc": "2026-10-05T11:42:16.917812+00:00",
+  "user_authorization": "Explicit owner reply: разрешаю, 2026-10-05",
+  "kb_documents_verified": 17,
+  "corpora": [
+    74,
+    75
+  ],
+  "case_id": "case_66cae4a89ba6473f",
+  "case_url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "materials_verified": 6,
+  "archive_sha256": "3eabbe7e22ff1970c1101d551ed376873b5e1b3e732b64fd87996e8cbeb18a1e",
+  "repository": "lech2000/sberindex-research",
+  "prepared_branch": "codex/atlas-a9-a14-release-20261005",
+  "repository_transfer_note": "Branch publication and PR are verified separately after this receipt is committed. No case actions closed and no contest form submitted."
+}

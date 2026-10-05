@@ -1,0 +1,41 @@
+{
+  "verified_on": "2026-10-05, preserved isolated Mac checkout",
+  "base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "commits_created": 0,
+  "pushes": 0,
+  "runs": {
+    "A9": {
+      "directory": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005",
+      "protocol_sha256": "d34356f4732c70d720e3b1866371144453c933b4d7e3bc9443fc6b39c413f3eb",
+      "provenance_sha256": "c205933ae36eb97156b7fc1479b9a104796b9185fdfd4bc2301d52a2d4ab8c68",
+      "status": "COMPUTED_DESCRIPTIVE"
+    },
+    "A10": {
+      "directory": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005",
+      "protocol_sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+      "provenance_sha256": "6dfb11299306d88c65beeb84893549951aa4bada7afe736100f7e9a8c3c11f5f",
+      "status": "COMPUTED_DESCRIPTIVE"
+    },
+    "A11": {
+      "directory": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005",
+      "protocol_sha256": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717",
+      "provenance_sha256": "1cc7397dfbed2138ad9c495e7d25d2b34e45cd113a1c4d2f17f2d357267224da",
+      "status": "COMPUTED_DESCRIPTIVE"
+    },
+    "A12": {
+      "directory": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005",
+      "protocol_sha256": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250",
+      "provenance_sha256": "f64c01b27024fd707d22754a429fe32abc877c7a4d560241282bb68be2090c96",
+      "status": "COMPUTED_DESCRIPTIVE"
+    },
+    "A13": {
+      "directory": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005",
+      "protocol_sha256": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e",
+      "provenance_sha256": "6a9a2109dbdda6c5fef10381d55009c39259d8e667a4ca9e2ce95ef71f59ba82",
+      "status": "COMPUTED_DESCRIPTIVE"
+    }
+  },
+  "clean_make_atlas_status": "VERIFIED",
+  "tests_passed": 76,
+  "tests_skipped": 1
+}

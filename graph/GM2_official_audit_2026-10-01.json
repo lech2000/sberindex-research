@@ -1,0 +1,459 @@
+{
+  "status": "official_code_existence_audit_not_identity_proof",
+  "dictionary_sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+  "structure_sha256": "29a55d7bc34f52e0a9dfb97916c852183e48b665eeda013fa88c60f15dc2abd7",
+  "snapshots": [
+    {
+      "snapshot_year": 2023,
+      "official_file": "data-20231219T1512-structure-20260210T1102.csv",
+      "official_sha256": "8be058baf8d8ec32bda5431fa6ed5ccdcf0effa0c62869a03576755cbcf956d9",
+      "official_rows": 195608,
+      "official_section_1_unique_codes": 20375,
+      "alternatives": {
+        "half_open": {
+          "dictionary_active_rows": 2253,
+          "codes_present_in_official_section_1": 2160,
+          "codes_absent_from_official_section_1": 93,
+          "absent_examples": [
+            {
+              "territory_id": 208,
+              "oktmo": "86-604-000-000",
+              "name_short": "Беломорский"
+            },
+            {
+              "territory_id": 217,
+              "oktmo": "86-633-000-000",
+              "name_short": "Питкярантский"
+            },
+            {
+              "territory_id": 221,
+              "oktmo": "86-645-000-000",
+              "name_short": "Сегежский"
+            },
+            {
+              "territory_id": 226,
+              "oktmo": "87-712-000-000",
+              "name_short": "Вуктыл"
+            },
+            {
+              "territory_id": 228,
+              "oktmo": "87-723-000-000",
+              "name_short": "Усинск"
+            },
+            {
+              "territory_id": 576,
+              "oktmo": "76-603-000-000",
+              "name_short": "Акшинский"
+            },
+            {
+              "territory_id": 577,
+              "oktmo": "76-604-000-000",
+              "name_short": "Александрово-Заводский"
+            },
+            {
+              "territory_id": 580,
+              "oktmo": "76-610-000-000",
+              "name_short": "Газимуро-Заводский"
+            },
+            {
+              "territory_id": 583,
+              "oktmo": "76-618-000-000",
+              "name_short": "Калганский"
+            },
+            {
+              "territory_id": 588,
+              "oktmo": "76-626-000-000",
+              "name_short": "Могочинский"
+            }
+          ]
+        },
+        "inclusive_end": {
+          "dictionary_active_rows": 2386,
+          "codes_present_in_official_section_1": 2166,
+          "codes_absent_from_official_section_1": 220,
+          "absent_examples": [
+            {
+              "territory_id": 208,
+              "oktmo": "86-604-000-000",
+              "name_short": "Беломорский"
+            },
+            {
+              "territory_id": 217,
+              "oktmo": "86-633-000-000",
+              "name_short": "Питкярантский"
+            },
+            {
+              "territory_id": 221,
+              "oktmo": "86-645-000-000",
+              "name_short": "Сегежский"
+            },
+            {
+              "territory_id": 223,
+              "oktmo": "86-650-000-000",
+              "name_short": "Суоярвский"
+            },
+            {
+              "territory_id": 226,
+              "oktmo": "87-712-000-000",
+              "name_short": "Вуктыл"
+            },
+            {
+              "territory_id": 228,
+              "oktmo": "87-723-000-000",
+              "name_short": "Усинск"
+            },
+            {
+              "territory_id": 483,
+              "oktmo": "97-603-000-000",
+              "name_short": "Алатырский"
+            },
+            {
+              "territory_id": 484,
+              "oktmo": "97-605-000-000",
+              "name_short": "Аликовский"
+            },
+            {
+              "territory_id": 485,
+              "oktmo": "97-607-000-000",
+              "name_short": "Батыревский"
+            },
+            {
+              "territory_id": 486,
+              "oktmo": "97-610-000-000",
+              "name_short": "Вурнарский"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshot_year": 2024,
+      "official_file": "data-20241227T1412-structure-20260210T1102.csv",
+      "official_sha256": "513bd287a1f1b42b9190f04afcfb8239bd31e0e699bb890f67dc49341285c13b",
+      "official_rows": 194023,
+      "official_section_1_unique_codes": 19538,
+      "alternatives": {
+        "half_open": {
+          "dictionary_active_rows": 2165,
+          "codes_present_in_official_section_1": 1994,
+          "codes_absent_from_official_section_1": 171,
+          "absent_examples": [
+            {
+              "territory_id": 222,
+              "oktmo": "86-610-000-000",
+              "name_short": "Сортавальский"
+            },
+            {
+              "territory_id": 225,
+              "oktmo": "87-710-000-000",
+              "name_short": "Воркута"
+            },
+            {
+              "territory_id": 227,
+              "oktmo": "87-715-000-000",
+              "name_short": "Инта"
+            },
+            {
+              "territory_id": 229,
+              "oktmo": "87-725-000-000",
+              "name_short": "Ухта"
+            },
+            {
+              "territory_id": 231,
+              "oktmo": "87-608-000-000",
+              "name_short": "Княжпогостский"
+            },
+            {
+              "territory_id": 275,
+              "oktmo": "88-616-000-000",
+              "name_short": "Килемарский"
+            },
+            {
+              "territory_id": 479,
+              "oktmo": "97-704-000-000",
+              "name_short": "Алатырь"
+            },
+            {
+              "territory_id": 480,
+              "oktmo": "97-707-000-000",
+              "name_short": "Канаш"
+            },
+            {
+              "territory_id": 482,
+              "oktmo": "97-713-000-000",
+              "name_short": "Шумерля"
+            },
+            {
+              "territory_id": 527,
+              "oktmo": "01-614-000-000",
+              "name_short": "Змеиногорский"
+            }
+          ]
+        },
+        "inclusive_end": {
+          "dictionary_active_rows": 2255,
+          "codes_present_in_official_section_1": 1995,
+          "codes_absent_from_official_section_1": 260,
+          "absent_examples": [
+            {
+              "territory_id": 208,
+              "oktmo": "86-604-000-000",
+              "name_short": "Беломорский"
+            },
+            {
+              "territory_id": 217,
+              "oktmo": "86-633-000-000",
+              "name_short": "Питкярантский"
+            },
+            {
+              "territory_id": 221,
+              "oktmo": "86-645-000-000",
+              "name_short": "Сегежский"
+            },
+            {
+              "territory_id": 222,
+              "oktmo": "86-610-000-000",
+              "name_short": "Сортавальский"
+            },
+            {
+              "territory_id": 225,
+              "oktmo": "87-710-000-000",
+              "name_short": "Воркута"
+            },
+            {
+              "territory_id": 226,
+              "oktmo": "87-712-000-000",
+              "name_short": "Вуктыл"
+            },
+            {
+              "territory_id": 227,
+              "oktmo": "87-715-000-000",
+              "name_short": "Инта"
+            },
+            {
+              "territory_id": 228,
+              "oktmo": "87-723-000-000",
+              "name_short": "Усинск"
+            },
+            {
+              "territory_id": 229,
+              "oktmo": "87-725-000-000",
+              "name_short": "Ухта"
+            },
+            {
+              "territory_id": 231,
+              "oktmo": "87-608-000-000",
+              "name_short": "Княжпогостский"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshot_year": 2026,
+      "official_file": "data-20261001T1110-structure-20260210T1102.csv",
+      "official_sha256": "2e3f1d24ebfcbcf050a1a706a77e7e9639a686749194bf5c6a8200ba598cf37a",
+      "official_rows": 186531,
+      "official_section_1_unique_codes": 15642,
+      "alternatives": {
+        "half_open": {
+          "dictionary_active_rows": 2165,
+          "codes_present_in_official_section_1": 1600,
+          "codes_absent_from_official_section_1": 565,
+          "absent_examples": [
+            {
+              "territory_id": 14,
+              "oktmo": "84-625-000-000",
+              "name_short": "Турочакский"
+            },
+            {
+              "territory_id": 19,
+              "oktmo": "84-645-000-000",
+              "name_short": "Чойский"
+            },
+            {
+              "territory_id": 98,
+              "oktmo": "81-635-000-000",
+              "name_short": "Муйский"
+            },
+            {
+              "territory_id": 100,
+              "oktmo": "81-639-000-000",
+              "name_short": "Окинский"
+            },
+            {
+              "territory_id": 207,
+              "oktmo": "86-706-000-000",
+              "name_short": "Костомукшский"
+            },
+            {
+              "territory_id": 210,
+              "oktmo": "86-612-000-000",
+              "name_short": "Кемский"
+            },
+            {
+              "territory_id": 212,
+              "oktmo": "86-618-000-000",
+              "name_short": "Лахденпохский"
+            },
+            {
+              "territory_id": 214,
+              "oktmo": "86-624-000-000",
+              "name_short": "Медвежьегорский"
+            },
+            {
+              "territory_id": 215,
+              "oktmo": "86-627-000-000",
+              "name_short": "Муезерский"
+            },
+            {
+              "territory_id": 222,
+              "oktmo": "86-610-000-000",
+              "name_short": "Сортавальский"
+            }
+          ]
+        },
+        "inclusive_end": {
+          "dictionary_active_rows": 2165,
+          "codes_present_in_official_section_1": 1600,
+          "codes_absent_from_official_section_1": 565,
+          "absent_examples": [
+            {
+              "territory_id": 14,
+              "oktmo": "84-625-000-000",
+              "name_short": "Турочакский"
+            },
+            {
+              "territory_id": 19,
+              "oktmo": "84-645-000-000",
+              "name_short": "Чойский"
+            },
+            {
+              "territory_id": 98,
+              "oktmo": "81-635-000-000",
+              "name_short": "Муйский"
+            },
+            {
+              "territory_id": 100,
+              "oktmo": "81-639-000-000",
+              "name_short": "Окинский"
+            },
+            {
+              "territory_id": 207,
+              "oktmo": "86-706-000-000",
+              "name_short": "Костомукшский"
+            },
+            {
+              "territory_id": 210,
+              "oktmo": "86-612-000-000",
+              "name_short": "Кемский"
+            },
+            {
+              "territory_id": 212,
+              "oktmo": "86-618-000-000",
+              "name_short": "Лахденпохский"
+            },
+            {
+              "territory_id": 214,
+              "oktmo": "86-624-000-000",
+              "name_short": "Медвежьегорский"
+            },
+            {
+              "territory_id": 215,
+              "oktmo": "86-627-000-000",
+              "name_short": "Муезерский"
+            },
+            {
+              "territory_id": 222,
+              "oktmo": "86-610-000-000",
+              "name_short": "Сортавальский"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "triage_2024_absent_codes": {
+    "n_missing_official_section_1": 171,
+    "also_in_official_section_2": 0,
+    "present_in_2023_section_1": 167,
+    "present_in_2026_section_1": 0,
+    "year_from_counts": {
+      "2018": 169,
+      "2019": 1,
+      "2020": 1
+    },
+    "type_counts": {
+      "муниципальный район": 84,
+      "городской округ": 71,
+      "внутригородская территория города федерального значения": 16
+    },
+    "top_regions": {
+      "Свердловская область": 53,
+      "Смоленская область": 25,
+      "Москва": 16,
+      "Забайкальский край": 11,
+      "Краснодарский край": 5,
+      "Липецкая область": 5,
+      "Рязанская область": 5,
+      "Псковская область": 5,
+      "Республика Коми": 4,
+      "Костромская область": 4
+    },
+    "year_to_9999_count": 171,
+    "sample_unresolved": [
+      {
+        "territory_id": 222,
+        "oktmo": "86-610-000-000",
+        "name_short": "Сортавальский"
+      },
+      {
+        "territory_id": 225,
+        "oktmo": "87-710-000-000",
+        "name_short": "Воркута"
+      },
+      {
+        "territory_id": 227,
+        "oktmo": "87-715-000-000",
+        "name_short": "Инта"
+      },
+      {
+        "territory_id": 229,
+        "oktmo": "87-725-000-000",
+        "name_short": "Ухта"
+      },
+      {
+        "territory_id": 231,
+        "oktmo": "87-608-000-000",
+        "name_short": "Княжпогостский"
+      },
+      {
+        "territory_id": 275,
+        "oktmo": "88-616-000-000",
+        "name_short": "Килемарский"
+      },
+      {
+        "territory_id": 479,
+        "oktmo": "97-704-000-000",
+        "name_short": "Алатырь"
+      },
+      {
+        "territory_id": 480,
+        "oktmo": "97-707-000-000",
+        "name_short": "Канаш"
+      },
+      {
+        "territory_id": 482,
+        "oktmo": "97-713-000-000",
+        "name_short": "Шумерля"
+      },
+      {
+        "territory_id": 527,
+        "oktmo": "01-614-000-000",
+        "name_short": "Змеиногорский"
+      }
+    ],
+    "status": "unresolved_needs_dated_changes_and_source_year_to_passport"
+  },
+  "caveat": "code presence does not prove territory_id identity, legal succession or year_to semantics"
+}

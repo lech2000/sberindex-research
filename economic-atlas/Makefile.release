@@ -1,0 +1,22 @@
+PYTHON ?= python3
+export OPENBLAS_NUM_THREADS = 1
+export OMP_NUM_THREADS = 1
+export VECLIB_MAXIMUM_THREADS = 1
+export PYTHONDONTWRITEBYTECODE = 1
+
+.PHONY: release release-data release-docs release-test
+
+release-data:
+	@test -n "$(SBERINDEX_DATA_SENSE_DIR)" || (echo "Set SBERINDEX_DATA_SENSE_DIR to the existing input folder"; exit 1)
+	$(PYTHON) src/atlas_release.py --inputs "$(SBERINDEX_DATA_SENSE_DIR)"
+
+release-docs:
+	$(PYTHON) src/atlas_release_docs.py
+
+release-test:
+	$(PYTHON) -m pytest --noconftest -p no:cacheprovider -q ../tests/test_atlas_release.py
+
+release:
+	$(MAKE) -f Makefile.release release-data
+	$(MAKE) -f Makefile.release release-docs
+	$(MAKE) -f Makefile.release release-test

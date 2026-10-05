@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-10-05",
+  "location": "isolated Mac checkout; direct parquet checks",
+  "status": "PASSED",
+  "graph_files_checked": 36,
+  "assignment_files_checked": 57,
+  "core_months_checked": 2,
+  "contracts": [
+    "canonical positive nonduplicate graph edges with frozen nodes",
+    "assignment mask/order equal to A5",
+    "cores exceed threshold;nested sensitivity sets",
+    "only cores in passports/typical examples;population/region counts reconcile"
+  ]
+}

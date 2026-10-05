@@ -7,13 +7,15 @@
 meta:
   gate: R0
   as_of_date: "2026-09-20"
-  status: r0_pass_conservative_lag_2m
+  status: r0_pass_conservative_lag_2m  # историческое решение R0, не PASS R9
+  r9_scientific_pass: false
   source_estimate: null          # нет внешнего подтверждения горизонтов
   synthetic_assumption: conservative_release_lag_2m  # принято 21.09.2026, см. data/availability_audit.csv
 
 target:
   variable: spending_value       # безналичные расходы МО
-  unit: rub_per_month            # средние безналичные расходы жителей
+  unit: unknown_native_value     # денежная единица поля value источником не подтверждена
+  unit_provenance: unverified
   dataset: historical_spending
   rows: 303126
   sha256: "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
@@ -33,12 +35,15 @@ timestamps:
     публикации каждого выпуска из внешнего источника (Росстат / СберИндекс).
 
 horizons:
-  proposed: [1, 2, 3]           # месяцы вперёд от forecast_origin
-  status: hypothesis             # не подтверждены аудитом частоты
+  historical_r0_proposed: [1, 2, 3]
+  r9_evaluated: [1, 3, 6, 12]   # только технические baseline, июль–декабрь 2024
+  status: technical_baseline_only
   constraint: >
     24 точки → годовая сезонность оценивается с высокой
     неопределённостью. Горизонт 3 мес = 12.5% ряда.
-  recommendation: начать с h=1, затем h=2; h=3 — только если MAE устойчива
+  recommendation: >
+    Новый датированный выпуск и независимый holdout нужны до выбора
+    победившей модели и заявления о раннем предупреждении.
 
 forecast_origins:
   strategy: rolling_origin_expanding
@@ -51,8 +56,40 @@ forecast_origins:
     3: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
         "2024-07", "2024-08", "2024-09", "2024-10"]
   note: >
-    Финальный тест закрыт до выбора модели.
+    Это исходный R0-план, а не фактически исполненная маска R9.
+    Финальный независимый тест закрыт до выбора модели.
     Препроцессинг обучается внутри каждого обучающего окна.
+
+r9_technical_baselines:
+  status: verified_computation_not_independent_test
+  run: shock-radar/runs/R9_baseline_20261001/metrics.json
+  source_sha256: "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
+  target_months: ["2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"]
+  origin_rule: "origin = target - horizon calendar months"
+  history_rule: "inputs <= origin; no filling of missing origin or seasonal month"
+  seasonal_rule: "seasonal_naive = value at target - 12 calendar months"
+  paired_mask: "same territory/category/target rows for last_value, seasonal_naive, train_mean within each horizon"
+  cross_horizon_comparison: forbidden_without_new_common_mask
+  unit: unknown_native_value
+  results:
+    1: {n: 73728, territories: 2070, mae_last: 625.6724175347222, mae_seasonal: 1287.501980251736, mae_mean: 1306.6923303706676, missing_origin: 330, missing_seasonal: 1350}
+    3: {n: 73662, territories: 2067, mae_last: 865.1747712524775, mae_seasonal: 1287.9080801498737, mae_mean: 1408.67840609449, missing_origin: 630, missing_seasonal: 1122}
+    6: {n: 73578, territories: 2060, mae_last: 1125.2783304792192, mae_seasonal: 1288.3963141156323, mae_mean: 1577.1873061402705, missing_origin: 1032, missing_seasonal: 780}
+    12: {n: 73824, territories: 2077, mae_last: 1287.55793508886, mae_seasonal: 1287.55793508886, mae_mean: 1872.888043160821, missing_origin: 1614, missing_seasonal: 0}
+  live_evidence_corpus_77: {1: 15177, 3: 15186, 6: 15170, 12: 15189}
+  correction_corpus_77: 15174  # lag=6 metric is not a horizon-6 forecast
+
+r9_independent_test:
+  status: blocked_missing_dated_release
+  frozen_before_target_seen: false
+  historical_published_at_verified: false
+  historical_available_at_verified: false
+  independent_holdout_available: false
+  prophet_paired_feasibility: diagnostic_pilot_completed
+  prophet_pilot: shock-radar/runs/R9_prophet_pilot_20261001/metrics.json
+  prophet_full_panel: pending
+  uncertainty_intervals: pending
+  decision: no_scientific_pass
 
 event_definition:
   type: structural_break_or_regime_change
@@ -131,6 +168,8 @@ limitations:
   - "24 точки → высокая неопределённость годовой сезонности"
   - "Мобильность: 297 МО СЗФО, не общефедеральная"
   - "published_at и available_at отсутствуют в parquet"
-  - "Горизонты h=1/2/3 — гипотеза, не подтверждена аудитом"
+  - "R0 h=1/2/3 — исходная гипотеза; R9 h=1/3/6/12 проверены только как технические baseline"
+  - "Единица поля spending_value/value не подтверждена источником; MAE не называть рублями"
+  - "Маски разных горизонтов различаются; межгоризонтное изменение MAE не является парным эффектом"
   - "60 кандидатов новостей собраны 24.09.2026, включая 40 архивных карточек; исторический as-of корпус, география, topic, F06 и погодные признаки не готовы"
   - "TLS-проблема блокирует ОКТМО и занятость Росстата"

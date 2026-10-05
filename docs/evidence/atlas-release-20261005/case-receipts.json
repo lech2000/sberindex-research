@@ -1,0 +1,62 @@
+{
+  "case_id": "case_66cae4a89ba6473f",
+  "checked_at_utc": "2026-10-05T11:40:18.072320+00:00",
+  "method": "vault upload, case material attach, byte-for-byte readback SHA-256",
+  "materials": [
+    {
+      "id": "mat_bc3e50c8c9a24d4e",
+      "vault_document_id": "doc_0ecdcbb44e2749e2",
+      "file": "economic-atlas/RELEASE_REPORT_2026-10-05.md",
+      "title": "Атлас A9–A14 — RELEASE_REPORT_2026-10-05.md",
+      "bytes": 14805,
+      "sha256": "c9baab767be605c06225ad6acfbbef2d51b4ef8739bb1e60560db83fc2f16737",
+      "verified": true
+    },
+    {
+      "id": "mat_f3b9e6ee5497423d",
+      "vault_document_id": "doc_a50a3835bfa84816",
+      "file": "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "title": "Атлас A9–A14 — DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "bytes": 5363,
+      "sha256": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d",
+      "verified": true
+    },
+    {
+      "id": "mat_de207eb609454fe4",
+      "vault_document_id": "doc_e67b390725c249a7",
+      "file": "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+      "title": "Атлас A9–A14 — MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+      "bytes": 13618,
+      "sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+      "verified": true
+    },
+    {
+      "id": "mat_c5cd2ae221d3401b",
+      "vault_document_id": "doc_de1ecf16f2724e90",
+      "file": "economic-atlas/RELEASE_README.md",
+      "title": "Атлас A9–A14 — RELEASE_README.md",
+      "bytes": 4243,
+      "sha256": "83b64980fcf15eab029f6c6d3324c4b9d9c6e9fb6d81e81cca054d41ea3ac0ce",
+      "verified": true
+    },
+    {
+      "id": "mat_b7a42a1531574a41",
+      "vault_document_id": "doc_ece8d76bed97469d",
+      "file": "economic-atlas/PUBLICATION_MIGRATION_2026-10-05.md",
+      "title": "Атлас A9–A14 — PUBLICATION_MIGRATION_2026-10-05.md",
+      "bytes": 3407,
+      "sha256": "9d0f7f9572af58c533715cca5b9ad799eb4520a1c187e300fd42cb32563bc424",
+      "verified": true
+    },
+    {
+      "id": "mat_8fe8de2e34464526",
+      "vault_document_id": "doc_2bc9f8db9e3d415b",
+      "file": "ATLAS_RELEASE_2026-10-05.zip",
+      "title": "Атлас A9–A14 — ATLAS_RELEASE_2026-10-05.zip",
+      "bytes": 14455899,
+      "sha256": "3eabbe7e22ff1970c1101d551ed376873b5e1b3e732b64fd87996e8cbeb18a1e",
+      "verified": true
+    }
+  ],
+  "status": "VERIFIED"
+}

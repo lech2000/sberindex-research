@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-10-05",
+  "status": "PASS",
+  "pytest_all": {
+    "command": "python3 -m pytest --noconftest -p no:cacheprovider -q tests",
+    "exit_code": 0,
+    "passed": 90,
+    "skipped": 2,
+    "seconds": 512.5
+  },
+  "pytest_real_panel": {
+    "command": "SBERINDEX_DATA_SENSE_DIR=<existing inputs> python3 -m pytest --noconftest -p no:cacheprovider -q tests/test_atlas_stories.py -k real",
+    "exit_code": 0,
+    "passed": 1,
+    "deselected": 14,
+    "seconds": 40.22
+  },
+  "remaining_skip": "SBERINDEX_PATTERN_REF absent; optional external GPL-3.0 reference excluded from repository",
+  "unique_tests_passed": 91,
+  "self_checks": {
+    "command": "python3 repository-tools/reproduce.py --self-check",
+    "exit_code": 0,
+    "modules": [
+      "a4_metrics",
+      "a5_graph",
+      "a6_temporal",
+      "r7_causal_signal",
+      "d02_d03_detectors",
+      "r8_news_audit"
+    ]
+  },
+  "readme_local_links_checked": 62,
+  "missing_local_links": [],
+  "limits": [
+    "No fresh environment installation or full scientific re-fit in this consolidation",
+    "No case action closure, deployment or contest submission"
+  ],
+  "concurrent_document_addition": {
+    "source_commit": "fbcbf4469ef4b79e77d5ebabdad084c7c2abc454",
+    "files_added": 2,
+    "json_parse": "PASS",
+    "scientific_code_or_results_changed": false,
+    "additional_receipt_commit": "5b20a66acd0cf6dfb5efe04db516c473278efb7c",
+    "additional_files": 4
+  }
+}

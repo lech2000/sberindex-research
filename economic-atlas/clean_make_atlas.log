@@ -1,0 +1,127 @@
+/Library/Developer/CommandLineTools/usr/bin/make atlas-check
+python3 src/atlas_a13.py check
+7 frozen inputs and 5 protocol SHA-256 checks passed
+/Library/Developer/CommandLineTools/usr/bin/make atlas-test
+python3 -m pytest --noconftest -p no:cacheprovider -q ../../../tests/test_atlas_a9.py ../../../tests/test_atlas_a10.py ../../../tests/test_atlas_a11.py ../../../tests/test_atlas_a12.py ../../../tests/test_atlas_a13.py ../../../tests/test_atlas_network_icvi.py ../../../tests/test_atlas_network_audit.py ../../../tests/test_atlas_a8.py ../../../tests/test_atlas_stories.py
+...................................................s.................... [ 93%]
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+tests/test_atlas_a9.py::test_graph_contract_and_same_input_reproducibility[gaussian-union]
+  /opt/homebrew/lib/python3.14/site-packages/pytest_asyncio/plugin.py:1216: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    return asyncio.get_event_loop_policy()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+76 passed, 1 skipped, 1 warning in 36.55s
+/Library/Developer/CommandLineTools/usr/bin/make atlas-a9
+python3 src/atlas_a13.py check
+7 frozen inputs and 5 protocol SHA-256 checks passed
+python3 src/atlas_a9.py
+A9 A5 k5_union_gaussian 6460 edges
+A9 A5 k5_union_binary 6460 edges
+A9 A5 k5_mutual_gaussian 3020 edges
+A9 A5 k5_mutual_binary 3020 edges
+A9 A5 k7_union_gaussian 8958 edges
+A9 A5 k7_union_binary 8958 edges
+A9 A5 k7_mutual_gaussian 4314 edges
+A9 A5 k7_mutual_binary 4314 edges
+A9 A5 k10_union_gaussian 12787 edges
+A9 A5 k10_union_binary 12787 edges
+A9 A5 k10_mutual_gaussian 6173 edges
+A9 A5 k10_mutual_binary 6173 edges
+A9 annual2023 k5_union_gaussian 6477 edges
+A9 annual2023 k5_union_binary 6477 edges
+A9 annual2023 k5_mutual_gaussian 3003 edges
+A9 annual2023 k5_mutual_binary 3003 edges
+A9 annual2023 k7_union_gaussian 9031 edges
+A9 annual2023 k7_union_binary 9031 edges
+A9 annual2023 k7_mutual_gaussian 4241 edges
+A9 annual2023 k7_mutual_binary 4241 edges
+A9 annual2023 k10_union_gaussian 12846 edges
+A9 annual2023 k10_union_binary 12846 edges
+A9 annual2023 k10_mutual_gaussian 6114 edges
+A9 annual2023 k10_mutual_binary 6114 edges
+A9 annual2024 k5_union_gaussian 6479 edges
+A9 annual2024 k5_union_binary 6479 edges
+A9 annual2024 k5_mutual_gaussian 3001 edges
+A9 annual2024 k5_mutual_binary 3001 edges
+A9 annual2024 k7_union_gaussian 9018 edges
+A9 annual2024 k7_union_binary 9018 edges
+A9 annual2024 k7_mutual_gaussian 4254 edges
+A9 annual2024 k7_mutual_binary 4254 edges
+A9 annual2024 k10_union_gaussian 12791 edges
+A9 annual2024 k10_union_binary 12791 edges
+A9 annual2024 k10_mutual_gaussian 6169 edges
+A9 annual2024 k10_mutual_binary 6169 edges
+/Library/Developer/CommandLineTools/usr/bin/make atlas-a10
+python3 src/atlas_a13.py check
+7 frozen inputs and 5 protocol SHA-256 checks passed
+python3 src/atlas_a10.py
+A10 full kmeans_K3
+A10 full kmeans_K5
+A10 full kmeans_K8
+A10 full ward_K3
+A10 full ward_K5
+A10 full ward_K8
+A10 full average_K3
+A10 full average_K5
+A10 full average_K8
+A10 full gmm_diag_K3
+A10 full gmm_diag_K5
+A10 full gmm_diag_K8
+A10 full spectral_K3
+A10 full spectral_K5
+A10 full spectral_K8
+A10 full birch_K3
+A10 full birch_K5
+A10 full birch_K8
+A10 subsample 1 /20
+A10 subsample 2 /20
+A10 subsample 3 /20
+A10 subsample 4 /20
+A10 subsample 5 /20
+A10 subsample 6 /20
+A10 subsample 7 /20
+A10 subsample 8 /20
+A10 subsample 9 /20
+A10 subsample 10 /20
+A10 subsample 11 /20
+A10 subsample 12 /20
+A10 subsample 13 /20
+A10 subsample 14 /20
+A10 subsample 15 /20
+A10 subsample 16 /20
+A10 subsample 17 /20
+A10 subsample 18 /20
+A10 subsample 19 /20
+A10 subsample 20 /20
+A10 cross-year fits annual2023
+A10 cross-year fits annual2024
+/Library/Developer/CommandLineTools/usr/bin/make atlas-a11
+python3 src/atlas_a13.py check
+7 frozen inputs and 5 protocol SHA-256 checks passed
+python3 src/atlas_a11.py
+A11 indices + 300 null permutations k5_union_gaussian
+A11 indices + 300 null permutations k5_union_binary
+A11 indices + 300 null permutations k5_mutual_gaussian
+A11 indices + 300 null permutations k5_mutual_binary
+A11 indices + 300 null permutations k7_union_gaussian
+A11 indices + 300 null permutations k7_union_binary
+A11 indices + 300 null permutations k7_mutual_gaussian
+A11 indices + 300 null permutations k7_mutual_binary
+A11 indices + 300 null permutations k10_union_gaussian
+A11 indices + 300 null permutations k10_union_binary
+A11 indices + 300 null permutations k10_mutual_gaussian
+A11 indices + 300 null permutations k10_mutual_binary
+A11 cross-year annual2023 annual2023
+A11 cross-year annual2023 annual2024
+A11 cross-year annual2024 annual2023
+A11 cross-year annual2024 annual2024
+/Library/Developer/CommandLineTools/usr/bin/make atlas-a12
+python3 src/atlas_a13.py check
+7 frozen inputs and 5 protocol SHA-256 checks passed
+python3 src/atlas_a12.py
+A12 2023-12 36 configurations 0 core nodes
+A12 2024-12 36 configurations 258 core nodes
+/Library/Developer/CommandLineTools/usr/bin/make atlas-verify
+python3 src/atlas_a13.py verify
+atlas-verify: all values/statuses/counts match baseline, 19 label partitions ARI=1

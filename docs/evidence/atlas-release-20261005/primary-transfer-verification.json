@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-05T11:30:35.394820+00:00",
+  "method": "read-only verification of transferred artifacts",
+  "frozen_inputs": 7,
+  "primary_run_receipts": 4,
+  "partitions": {
+    "kmeans_K3": 1.0,
+    "kmeans_K5": 1.0,
+    "kmeans_K8": 1.0,
+    "ward_K3": 1.0,
+    "ward_K5": 1.0,
+    "ward_K8": 1.0,
+    "average_K3": 1.0,
+    "average_K5": 1.0,
+    "average_K8": 1.0,
+    "gmm_diag_K3": 1.0,
+    "gmm_diag_K5": 1.0,
+    "gmm_diag_K8": 1.0,
+    "spectral_K3": 1.0,
+    "spectral_K5": 1.0,
+    "spectral_K8": 1.0,
+    "birch_K3": 1.0,
+    "birch_K5": 1.0,
+    "birch_K8": 1.0,
+    "louvain_natural": 1.0
+  },
+  "errors": [],
+  "expected_metrics_sha256": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79",
+  "expected_partitions_sha256": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0"
+}

@@ -1,0 +1,50 @@
+{
+  "scope": "settlement_recode_only_not_municipal_successor_proof",
+  "before": {
+    "file": "data-20241102T1211-structure-20231110T1511.csv",
+    "sha256": "78cf93f34dbedac060e50d480f25d4abed15877c22247c0d516b0eb92813de91",
+    "unique_rows": 26928,
+    "skipped_nondata_rows": 26
+  },
+  "after": {
+    "file": "data-20250201T1402-structure-20231110T1511.csv",
+    "sha256": "00392ff83b25dd2e5d0e2ef9654828269e89d2ebd7698491d50814d5168af5aa",
+    "unique_rows": 42519,
+    "skipped_nondata_rows": 93
+  },
+  "new_rows": 15591,
+  "new_2024_change_rows": 15534,
+  "region_changes_after": {
+    "Смоленская область": {
+      "740/2024 ОКТМО": 2434,
+      "741/2024 ОКТМО": 2440
+    },
+    "Свердловская область": {
+      "568/2022 ОКТМО": 1,
+      "601/2023 ОКТМО": 1,
+      "674/2023 ОКТМО": 2,
+      "742/2024 ОКТМО": 1,
+      "765/2024 ОКТМО": 1527
+    }
+  },
+  "sample_explicit_pairs": [
+    {
+      "region": "Свердловская область",
+      "old": "65703000001",
+      "new": "65502000001",
+      "change": "765/2024 ОКТМО"
+    },
+    {
+      "region": "Смоленская область",
+      "old": "66603101001",
+      "new": "66503000001",
+      "change": "740/2024 ОКТМО"
+    },
+    {
+      "region": "Смоленская область",
+      "old": "66633101001",
+      "new": "66533000001",
+      "change": "741/2024 ОКТМО"
+    }
+  ]
+}

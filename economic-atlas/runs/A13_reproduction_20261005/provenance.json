@@ -1,0 +1,61 @@
+{
+  "run_id": "A13_reproduction_20261005",
+  "status": "COMPUTED_DESCRIPTIVE",
+  "checked_at_utc": "2026-10-05T09:59:27.757196+00:00",
+  "verification_location": "isolated macOS checkout; local Python process",
+  "base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "protocol_sha256": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e",
+  "input_sha256": {
+    "features": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+    "assignments": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+    "geo_edges": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "spec": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "code_sha256": {
+    "src/atlas_a10.py": "a94c91a57bdea50575e93faa9ff722b8c74efce8a12ee5552c83958387c96aac",
+    "src/atlas_a11.py": "890263392273166a58ac6b94bd8980f4fbb7501a930acb960f877eebe6e784ac",
+    "src/atlas_a9.py": "e5cd11d339d5e7557e734b1c332f26895c7f058635a4fb65525576fb7a0588da",
+    "src/atlas_common.py": "fd24c0ce67eddd396875771ef01be14dd8ceb613be6558e897de6d93184882ce",
+    "src/atlas_a12.py": "b3e96dea9e969b6f06c487709fee003395dd3f735ef918d17ce6cf56b35f8e45",
+    "src/atlas_a13.py": "3114bffae05656e3121922d8fcbf93a57d7de806563532cfd6cbc051d26746cc",
+    "src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "runs/A7_stories_20261004/build_stories.py": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134"
+  },
+  "dependency_sha256": {
+    "runs/A9_economic_network_20261005/provenance.json": "c205933ae36eb97156b7fc1479b9a104796b9185fdfd4bc2301d52a2d4ab8c68",
+    "runs/A10_method_comparison_20261005/provenance.json": "6dfb11299306d88c65beeb84893549951aa4bada7afe736100f7e9a8c3c11f5f",
+    "runs/A11_icvi_table_20261005/provenance.json": "1cc7397dfbed2138ad9c495e7d25d2b34e45cd113a1c4d2f17f2d357267224da",
+    "runs/A12_stable_cores_20261005/provenance.json": "f64c01b27024fd707d22754a429fe32abc877c7a4d560241282bb68be2090c96"
+  },
+  "output_sha256": {
+    "source-task.txt": "34d0b0fbd7f2be7617c45bdc6d2e64c4274e07b5a9ca9a54e75ca4e9d39b8f7c",
+    "source-task-receipt.json": "850601c11099d9d9ebfb012b444d8188e8a5ed0355844ad1bbcf9720cce52449",
+    "results.json": "71345401af94866219f89e6119884184b5c8e64ee74fcb9df6614177557ffcba",
+    "full_test_receipt.json": "22038ab7bccabdf4764207a31206cd82bb61b01451b59e63b671b804889d2d9c",
+    "step_status.json": "d8a2cfb3b4d92d465198147eb7061a25785e0689b860b9be4f385ae23e6f03ee",
+    "TASK_REVIEW_2026-10-05.md": "2363f4e62a1411c2f527e593d55a12f493f406ff79dfc6095d3b495b90942f24",
+    "execution-notes.json": "038abc82f3e1adc66e3b736560f4d0a3172f573126b4a1f833577530d8023652",
+    "protocol-freeze.json": "eaa3c87f3915a835e627748e579661c3c444ee1ceef0698e370a5b746e9265db",
+    "baseline_check_receipt.json": "d92b3102afe6e61a1936bf6b326ac656e10b0412396b22eccd52e3338de1909f",
+    "AVU_ALGEBRA_NOTE_2026-10-05.md": "4ca753e8e1a29374e0b4f1b5804b74f7a5c71d67452b2e74f470b94c7bfbb269"
+  },
+  "seed": 20261005,
+  "python": "3.14.4",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "networkx": "3.6.1"
+  },
+  "limits": [
+    "descriptive; no new independent 2025 test",
+    "local protocol timestamp, not externally witnessed"
+  ]
+}
