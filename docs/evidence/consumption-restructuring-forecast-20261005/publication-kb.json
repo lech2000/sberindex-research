@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-05T21:10:10.216462+00:00",
+  "method": "integrate, full text readback",
+  "source_commit": "094ea62d463e091ba4476622967533109ab12208",
+  "source_url": "https://github.com/lech2000/sberindex-research/blob/094ea62d463e091ba4476622967533109ab12208/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md",
+  "documents": [
+    {
+      "corpus_id": 75,
+      "document_id": 16654,
+      "full_text_readback": true,
+      "sha256": "0c55b98f1446cd41268270bb97b9eaa45f9f064dd917fa12542bd7324f756274",
+      "result": {
+        "added": true,
+        "document_id": 16654,
+        "title": "Потребительская перестройка муниципалитетов и проверка прогноза 6 октября 2026",
+        "corpus_id": 75,
+        "chunks": 17,
+        "vectors": 17
+      }
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16655,
+      "full_text_readback": true,
+      "sha256": "0c55b98f1446cd41268270bb97b9eaa45f9f064dd917fa12542bd7324f756274",
+      "result": {
+        "added": true,
+        "document_id": 16655,
+        "title": "Потребительская перестройка муниципалитетов и проверка прогноза 6 октября 2026",
+        "corpus_id": 76,
+        "chunks": 17,
+        "vectors": 17
+      }
+    }
+  ],
+  "status": "VERIFIED"
+}

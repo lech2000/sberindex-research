@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-10-05T21:10:23.205849+00:00",
+  "case_id": "case_66cae4a89ba6473f",
+  "source_commit": "094ea62d463e091ba4476622967533109ab12208",
+  "method": "vault/material upload and downloaded bytes SHA-256",
+  "materials": [
+    {
+      "id": "mat_64a08450de194462",
+      "vault_document_id": "doc_dd752d3b0e4d4c01",
+      "file": "README.md",
+      "title": "Потребительская перестройка — результаты и отрицательная проверка прогноза",
+      "bytes": 26405,
+      "sha256": "485754a0ac9d6bb70ba8ca0423009fa316d2cd29a77b4e020122a8237764b8cd",
+      "verified": true
+    },
+    {
+      "id": "mat_d81c9c6d9c8c461d",
+      "vault_document_id": "doc_7573f7399599456b",
+      "file": "index.html",
+      "title": "Потребительская перестройка — автономная карта и шесть историй",
+      "bytes": 10080345,
+      "sha256": "d87d4973a0967c99f8896add113e5da5485f5de62714cb9f8555d094ec24c12c",
+      "verified": true
+    },
+    {
+      "id": "mat_3cc072ac3bb64d4d",
+      "vault_document_id": "doc_9b0fcb8340304450",
+      "file": "CONSUMER_RESTRUCTURING_STUDY_20261006.zip",
+      "title": "Потребительская перестройка — код, протокол, результаты и карта",
+      "bytes": 22181942,
+      "sha256": "a73c186114cf402362925ff1af549a97f2176b2ac4513700c6dc7e43915f931d",
+      "verified": true
+    }
+  ],
+  "status": "VERIFIED"
+}
