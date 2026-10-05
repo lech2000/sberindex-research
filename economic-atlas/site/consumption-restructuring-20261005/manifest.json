@@ -1,0 +1,10 @@
+{
+  "source_run": "Consumption_restructuring_forecast_20261005_v2",
+  "source_manifest_sha256": "c5d8873a5bda1db07b45630f6db5281786aeb316618678b590ebf43e2dbbd8ab",
+  "template_sha256": "5581f6b10a1fda65cf18c5fcb6712599ae6f48ec55915c6f4cd4044a0b025f0b",
+  "builder_sha256": "b700da7bb24fae74745a5334db4bea17c40a67e446cc251f899e5ada8aee02d9",
+  "html_sha256": "d87d4973a0967c99f8896add113e5da5485f5de62714cb9f8555d094ec24c12c",
+  "territories": 1896,
+  "supported": 1539,
+  "standalone_no_network": true
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "independent_feature_values": 720,
+  "independent_augmented_lstsq_fits": 24,
+  "real_predictions_checked": 36936,
+  "same_key_mask": true,
+  "unsupported_explicit": 38556,
+  "post_result_calibration_diagnostic": [
+    {
+      "target": "2024-07",
+      "past_mean_log_error": 0.040372194672350516,
+      "subsequent_mean_log_error": -0.015101174529159456
+    },
+    {
+      "target": "2024-08",
+      "past_mean_log_error": 0.031126633138765524,
+      "subsequent_mean_log_error": -0.006179492069123857
+    },
+    {
+      "target": "2024-09",
+      "past_mean_log_error": 0.025797186680495618,
+      "subsequent_mean_log_error": -0.01671816982702635
+    },
+    {
+      "target": "2024-10",
+      "past_mean_log_error": 0.02048276711705537,
+      "subsequent_mean_log_error": 0.01499389793314563
+    },
+    {
+      "target": "2024-11",
+      "past_mean_log_error": 0.019872892763287617,
+      "subsequent_mean_log_error": -0.015563401339816327
+    },
+    {
+      "target": "2024-12",
+      "past_mean_log_error": 0.016329263352977224,
+      "subsequent_mean_log_error": -0.012802366232095979
+    }
+  ],
+  "scope": "Numerical verification; no as-of or unseen-holdout verification"
+}

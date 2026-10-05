@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-05T21:04:24.070Z",
+  "html_sha256": "d87d4973a0967c99f8896add113e5da5485f5de62714cb9f8555d094ec24c12c",
+  "browser": "Playwright Chrome",
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    "1896 points",
+    "1539 supported",
+    "25 persistent signals",
+    "city measured gap",
+    "category and month controls",
+    "zoom",
+    "h1/h6 forecasts and cold-start labels",
+    "unavailable peers",
+    "unknown search",
+    "mobile no overflow",
+    "no browser errors",
+    "no external requests"
+  ],
+  "errors": [],
+  "external_requests": []
+}
