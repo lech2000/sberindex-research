@@ -14,6 +14,10 @@ partialresiduals,неcausal effect и не groundtruth recall.
 и official district→okrug mapping,initialacts/реально затопленныеМО.
 
 
+Квитанции05.10: KB76/16475–16477,KB77/16478–16479; два технических
+act закрыты, два исследовательских назначены. Frozen ZIP5inputs в деле
+Радара, SHA/обратное чтение подтверждены. [Детали](RADAR_FIXAR_KB_RECEIPTS_20261005.json).
+
 ## Экономическая сеть и AVI AVU проверены — 05.10.2026
 
 [A7: результаты, формулы, аудит](../economic-atlas/runs/A7_network_20261005/README.md).

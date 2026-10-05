@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-10-05T10:22:07.637099+00:00",
+  "source_commit": "1c60028ab488e0273298663a5475c11c8480ab64",
+  "kb": [
+    {
+      "corpus_id": 76,
+      "title": "Радар05.10.2026 — четыре шага, make radar, национальный H12 и пределы доказательства",
+      "url": "https://github.com/lech2000/sberindex-research/blob/1c60028/docs/RADAR_FINAL_PUSH_2026-10-05.md",
+      "response": {
+        "added": true,
+        "document_id": 16475,
+        "title": "Радар05.10.2026 — четыре шага, make radar, национальный H12 и пределы доказательства",
+        "corpus_id": 76,
+        "chunks": 5,
+        "vectors": 5
+      }
+    },
+    {
+      "corpus_id": 76,
+      "title": "D05 joint-bank05.10.2026 — Stouffer/GLR при общем FA3%, coherent gain и opposed loss",
+      "url": "https://github.com/lech2000/sberindex-research/blob/1c60028/shock-radar/runs/D05_joint_bank_20261005/README.md",
+      "response": {
+        "added": true,
+        "document_id": 16476,
+        "title": "D05 joint-bank05.10.2026 — Stouffer/GLR при общем FA3%, coherent gain и opposed loss",
+        "corpus_id": 76,
+        "chunks": 6,
+        "vectors": 6
+      }
+    },
+    {
+      "corpus_id": 76,
+      "title": "R10 national H12 05.10.2026 — точная маска73608, no-asof, отрицательные маркетплейсы",
+      "url": "https://github.com/lech2000/sberindex-research/blob/1c60028/shock-radar/runs/R10_national_h12_20261005/README.md",
+      "response": {
+        "added": true,
+        "document_id": 16477,
+        "title": "R10 national H12 05.10.2026 — точная маска73608, no-asof, отрицательные маркетплейсы",
+        "corpus_id": 76,
+        "chunks": 8,
+        "vectors": 8
+      }
+    },
+    {
+      "corpus_id": 77,
+      "title": "Flood legal cohort05.10.2026 — паспорта актов,1 exact identity и6 blocked successors",
+      "url": "https://github.com/lech2000/sberindex-research/blob/1c60028/shock-radar/runs/Flood_legal_cohort_20261005/README.md",
+      "response": {
+        "added": true,
+        "document_id": 16478,
+        "title": "Flood legal cohort05.10.2026 — паспорта актов,1 exact identity и6 blocked successors",
+        "corpus_id": 77,
+        "chunks": 9,
+        "vectors": 9
+      }
+    },
+    {
+      "corpus_id": 77,
+      "title": "Куратор05.10.2026 — закрыть только технические подшаги; next equal-info national и official lineage",
+      "url": "https://github.com/lech2000/sberindex-research/blob/1c60028/docs/RADAR_FINAL_PUSH_2026-10-05.md",
+      "response": {
+        "added": true,
+        "document_id": 16479,
+        "title": "Куратор05.10.2026 — закрыть только технические подшаги; next equal-info national и official lineage",
+        "corpus_id": 77,
+        "chunks": 5,
+        "vectors": 5
+      }
+    }
+  ],
+  "fixar": {
+    "verified_on": "2026-10-05",
+    "materials": [
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "material_id": "mat_50aa35a1c1e843bb",
+        "title": "Радар — четыре шага, результаты, ограничения и make radar —05.10.2026.md",
+        "sha256": "88ad45a742caaff0529e374d90be45bbdc47c52d47c8264b3c6944e49292035b",
+        "roundtrip_verified": true
+      },
+      {
+        "case_id": "case_43de12a8dc2e4abd",
+        "material_id": "mat_76b95c4f451e4c92",
+        "title": "Паводок — акты,7территорий и6блокировок идентичности —05.10.2026.md",
+        "sha256": "87a221fc6ecf0d7d98b0d7c9db45f3efbb551a94dc23ac8a0b8692fa91fc30d2",
+        "roundtrip_verified": true
+      },
+      {
+        "case_id": "case_d058db85c48a487c",
+        "material_id": "mat_2ef04950ba794130",
+        "title": "Куратор — проверенные результаты и следующие задания —05.10.2026.md",
+        "sha256": "88ad45a742caaff0529e374d90be45bbdc47c52d47c8264b3c6944e49292035b",
+        "roundtrip_verified": true
+      }
+    ],
+    "actions": [
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "action_id": "act_bc8df73f7c7244fb",
+        "what": "R9.TECH-20261005: Codex повторил R9/D04/R10/Floodpartial/D05 одним make radar; SHA пяти inputs, immutable snapshots, frozen references и future-invariance сверены; Prophet cache без refit. Квитанция Reproduction_20261005, KB76/16475. Scientific PASS false, большие R8/R9 остаются открыты.",
+        "done": true,
+        "owner": "prn_fbab9aa00cd46169"
+      },
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "action_id": "act_53b7a55d224f4607",
+        "what": "D01.JOINT-20261005: Codex проверил Stouffer/GLR в совместном многомерном банке при общем3% TESTnull FA и отдельной calibration. D05: t5 ramp44,525→72,40%; opposed91,65→71,30%. Все формы опубликованы, универсального улучшения нет. KB76/16476.",
+        "done": true,
+        "owner": "prn_fbab9aa00cd46169"
+      },
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "action_id": "act_e9f99bf520984925",
+        "what": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция corpus76, кодовые задачи через F7b.",
+        "done": false,
+        "owner": "sberindex_radar_researcher"
+      },
+      {
+        "case_id": "case_43de12a8dc2e4abd",
+        "action_id": "act_b231cd5eba674acb",
+        "what": "GM2.FLOOD6-20261005: По KB77/16478 найти официальную связь район→округ valid2024 для Белозерского,Звериноголовского,Кетовского,Куртамышского,Притобольного,Целинного. Старые candidate territory_id/ОКТМО в crosswalk.json. Нужны акт,номер,дата,границы,valid_from/to,successor; отсутствие отмечать UNKNOWN, по имени не соединять. Получить initial PDF/приложения актов103-ук04.04,6208.04,3608.04; regime zone отделить от реального затопления. Записать EVIDENCE_JSON и document_id integrate; частичное не закрывать. Соцсети не искать.",
+        "done": false,
+        "owner": "sberindex_graph_steward"
+      },
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "action_id": "act_8a0815d5461f4745",
+        "done": false,
+        "waiting_for_verified": "KB76/16475–16477:make PASS;new H12MAE651,269/73608,Prophet1109,523. Current2026 vintage,не equalinfo. Следующий R9.NATIONAL-CONTROL; scientificR9OPEN;seasonalH12unsupported."
+      },
+      {
+        "case_id": "case_43de12a8dc2e4abd",
+        "action_id": "act_41a1db5fbc0b442f",
+        "done": false,
+        "waiting_for_verified": "KB77/16478:1/7 exactmatch,6 район→округ unresolved. Приоритет GM2.FLOOD6:official acts/границы/validity,не join по имени; остальное UNKNOWN. Источники и candidateIDs в материале дела."
+      }
+    ],
+    "curator_local_actions": 0,
+    "scientific_gates_closed": false
+  },
+  "frozen_archive": {
+    "case_id": "case_008f37d03cf541e5",
+    "material_id": "mat_radar_inputs_644f3303dd56e1bf",
+    "vault_document_id": "doc_181b15ce335f4a0a",
+    "bytes": 6962047,
+    "sha256": "644f3303dd56e1bfcfccb4ac7048d9d9788a54142cd88b125d9036feb6c2b032",
+    "roundtrip_verified": true,
+    "title": "Радар — пять замороженных входов make radar —05.10.2026.zip"
+  },
+  "scientific_pass": false
+}
