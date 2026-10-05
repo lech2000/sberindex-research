@@ -33,7 +33,9 @@
     log.querySelector('.chat-welcome')?.remove();
     const message=document.createElement('div'); message.className='chat-message '+role;
     const label=document.createElement('span'); label.className='chat-message-label'; label.textContent=role==='user'?'ВАШ ВОПРОС':'ИССЛЕДОВАТЕЛЬ';
-    message.append(label,document.createTextNode(text)); log.append(message); log.scrollTop=log.scrollHeight; return message;
+    message.append(label);
+    String(text).split(/(\*\*[^*\n]+\*\*)/g).forEach(part=>{if(part.startsWith('**')&&part.endsWith('**')){const strong=document.createElement('strong');strong.textContent=part.slice(2,-2);message.append(strong);}else{message.append(document.createTextNode(part));}});
+    log.append(message); log.scrollTop=log.scrollHeight; return message;
   }
   root.querySelectorAll('[data-chat-prompt]').forEach(button=>button.addEventListener('click',()=>{input.value=button.textContent; input.focus();}));
   input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();root.querySelector('form').requestSubmit();}});
