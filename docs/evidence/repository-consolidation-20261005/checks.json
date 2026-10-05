@@ -39,6 +39,8 @@
     "source_commit": "fbcbf4469ef4b79e77d5ebabdad084c7c2abc454",
     "files_added": 2,
     "json_parse": "PASS",
-    "scientific_code_or_results_changed": false
+    "scientific_code_or_results_changed": false,
+    "additional_receipt_commit": "5b20a66acd0cf6dfb5efe04db516c473278efb7c",
+    "additional_files": 4
   }
 }
