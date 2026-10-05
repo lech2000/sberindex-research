@@ -147,5 +147,16 @@
     "roundtrip_verified": true,
     "title": "Радар — пять замороженных входов make radar —05.10.2026.zip"
   },
-  "scientific_pass": false
+  "scientific_pass": false,
+  "status_clarification": {
+    "verified_on": "2026-10-05",
+    "verification": "authenticated case-service actions read via joe/Incus; existing R8 closeout evidence dated2026-09-29",
+    "r8_source_action": "act_70e2fe4a16ac4e3d",
+    "r8_done": true,
+    "r8_outcome": "INCONCLUSIVE / NO SCIENTIFIC PASS",
+    "r9_independent_validation": "OPEN",
+    "new_positive_scientific_pass": false,
+    "historical_receipts_preserved": true,
+    "note": "The earlier phrase R8/R9 remain open is inaccurate for formal R8 status. scientific_gates_closed:false in the original receipt means this technical run closed no new scientific gate; it is not the status of all previous gates."
+  }
 }

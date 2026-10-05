@@ -46,7 +46,8 @@ ramp44,525→72,40%; opposed91,65→71,30%, sparse95,725→71,70%.
    территорий из crosswalk.json, initial acts+appendices трех областей,
    отдельные списки фактического затопления. Соцсети не искать.
 3. Куратор: принять этот отчет как завершение технических подшагов,
-   не закрывать R8/R9 scientific gates; dispatch из source open_actions.
+   R8 сохраняется закрытым как INCONCLUSIVE / NO SCIENTIFIC PASS;
+   независимая научная проверка R9 остаётся открытой. Dispatch из source open_actions.
    Новый holdout/ground-truth остаются научными условиями, не системной ошибкой.
 4. Отчет/лендинг: показать tradeoff D05, отрицательные категории H12 и
    partial flood статус. Старую seasonal H12 не объявлять реализованной.
@@ -66,7 +67,8 @@ GLR здесь — GLR-подобная trailing-window оценка общег�
 точное iid likelihood-доказательство не заявляется.
 
 [Техническая квитанция make](../shock-radar/runs/Reproduction_20261005/README.md):
-exit0, все reference метрики совпали; научные шлюзы остаются открыты.
+exit0, все reference метрики совпали. Это технический PASS; нового
+положительного научного PASS нет. R8 завершён INCONCLUSIVE, проверка R9 открыта.
 
 ## Сохранение в делах и корпусах
 
@@ -74,7 +76,12 @@ exit0, все reference метрики совпали; научные шлюзы
 16475/16476/16477 и KB77 16478/16479 имеют документы, куски и векторы.
 Отчеты добавлены в Radar,Graph,Curator; каждый материал прочитан обратно
 и SHA совпал. Два **технических** подшага закрыты черезcase-service:
-act_bc8df73f7c7244fb и act_53b7a55d224f4607. R8/R9 scientificgates открыты.
+act_bc8df73f7c7244fb и act_53b7a55d224f4607. R8 уже закрыт29.09 как
+INCONCLUSIVE / NO SCIENTIFIC PASS (`act_70e2fe4a16ac4e3d`, done=true);
+независимая проверка R9 остаётся открытой. Неточная фраза в ранней
+квитанции технического шага исправляется добавочным уточнением, без
+изменения завершённого действия и без переоткрытия R8.
+[Уточнение статуса](RADAR_STATUS_CLARIFICATION_20261005.md).
 Радару назначен act_e9f99bf520984925 (historicnational/equalinfo),
 стюарду act_b231cd5eba674acb (sixofficialsuccessors/initialacts).
 Старые parent waiting_for обновлены черезCAS; Curator по-прежнему0localactions.

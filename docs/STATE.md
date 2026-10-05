@@ -10,7 +10,10 @@ cached Prophet; current2026 vintage,unequalinformation,нетholdout.
 D05 общийFA3%: помогаетcoherent/ramp,ухудшаетsparse/opposed.
 Паводковыйакт:1/7 exactidentity,6historicalcrosswalk blocked;
 partialresiduals,неcausal effect и не groundtruth recall.
-Научные R8/R9 не закрыты. Следующие шаги: equal-info/historicalnational
+R8 закрыт29.09 как INCONCLUSIVE / NO SCIENTIFIC PASS; источник
+`act_70e2fe4a16ac4e3d` повторно проверен05.10, done=true. Независимая
+проверка R9 остаётся открытой. [Уточнение](RADAR_STATUS_CLARIFICATION_20261005.md).
+Следующие шаги: equal-info/historicalnational
 и official district→okrug mapping,initialacts/реально затопленныеМО.
 
 
