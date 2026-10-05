@@ -1,0 +1,82 @@
+{
+  "checked_on": "2026-10-06",
+  "kb_full_readbacks": [
+    {
+      "corpus_id": 74,
+      "document_id": 16665,
+      "readback_verified": true,
+      "text_sha256": "f463759190f8502e1d17457536d6724da10b5da29ef3fa07ab47e35087b44dc5"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16666,
+      "readback_verified": true,
+      "text_sha256": "f463759190f8502e1d17457536d6724da10b5da29ef3fa07ab47e35087b44dc5"
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16667,
+      "readback_verified": true,
+      "text_sha256": "f463759190f8502e1d17457536d6724da10b5da29ef3fa07ab47e35087b44dc5"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16669,
+      "readback_verified": true,
+      "text_sha256": "f463759190f8502e1d17457536d6724da10b5da29ef3fa07ab47e35087b44dc5"
+    },
+    {
+      "corpus_id": 62,
+      "document_id": 16670,
+      "readback_verified": true,
+      "text_sha256": "591e571ba4d3964ad77c9f321c4f64f656626a90b1730e80d1044811338ef73a"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_sber_closeout_actual_20261006_atlas",
+      "readback_verified": true,
+      "updated_waiting_for": [
+        "act_11eb834a09874fac",
+        "act_c5ab2585bf8146b8",
+        "act_3abcbb174d4f4511"
+      ],
+      "checked_at": "2026-10-05T21:50:37.388575+00:00"
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_sber_closeout_actual_20261006_radar",
+      "readback_verified": true,
+      "updated_waiting_for": [
+        "act_b0fb2a4894954801",
+        "act_e346385f69e54019",
+        "act_d0c376d044354f2e"
+      ],
+      "checked_at": "2026-10-05T21:50:37.972166+00:00"
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_sber_closeout_actual_20261006_curator",
+      "readback_verified": true,
+      "updated_waiting_for": [],
+      "checked_at": "2026-10-05T21:50:38.080457+00:00"
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_sber_closeout_actual_20261006_graph",
+      "readback_verified": true,
+      "updated_waiting_for": [],
+      "checked_at": "2026-10-05T21:50:38.178343+00:00"
+    }
+  ],
+  "bunny_publication": "PENDING_EXPLICIT_OWNER_APPROVAL",
+  "source_published_commit": "55ea0dde1756caeb3d097e197457986846ef25aa",
+  "n8n_invoked": false,
+  "new_fits": 0,
+  "closed_source_actions": [
+    "act_de2edf39ffa94713",
+    "act_d68aea4a7c6840d8"
+  ],
+  "scientific_pass": false
+}
