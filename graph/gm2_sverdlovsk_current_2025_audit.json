@@ -1,0 +1,12 @@
+{
+  "landing_url": "https://66.rosstat.gov.ru/folder/80245",
+  "pdf_url": "https://66.rosstat.gov.ru/storage/mediabank/%D0%9E%D0%9A%D0%A2%D0%9C%D0%9E(1).pdf",
+  "transport": "Jina Reader proxy of official Sverdlovskstat HTML/PDF",
+  "landing_capture_sha256": "6e0026f270fa689067b9a634269c94e82aa571f5657fa5dbcffc190bd217fcee",
+  "pdf_capture_sha256": "380479d591a602f21bbfb1d23beeacdcc0a397573f9c3bfded1d1dd928bdcfbb",
+  "checked_at": "2026-10-01T22:21:00Z",
+  "valid_from": "2025-01-01",
+  "municipal_districts": 53,
+  "scope": "dated_current_nodes_only_no_successor_edges",
+  "oktmo11_note": "3-zero padding of section-1 eight-digit code for comparison only"
+}

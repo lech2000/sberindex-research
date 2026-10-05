@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-10-05T09:24:49.841708+00:00",
+  "input_sha256": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030",
+  "r9_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+  "scope": "exact stored R9 horizon=12 keys, target July-December2024",
+  "primary_model": "national_yoy_lag1",
+  "formula": "y_origin * N_(origin-1) / N_(origin-13)",
+  "national_type": "Всего",
+  "national_frequency": "monthly nominal billion RUB",
+  "municipal_category_mapping": "same total-national factor for every municipal category; no claim of equivalent categories",
+  "sensitivity_lag_months": [
+    2,
+    3
+  ],
+  "controls": [
+    "pred_last",
+    "pred_prophet"
+  ],
+  "parameter_tuning": false,
+  "mask": "common finite predictions, verify actual and pred_last against raw",
+  "ci": "paired errors block-bootstrap target month, 10000 resamples seed20261005; six time blocks",
+  "cohort": "retrospective original R9 selection unchanged",
+  "historical_available_at": null,
+  "historical_asof_verified": false,
+  "national_vintage": "download2026-10-05; potential revisions unknown",
+  "is_independent_holdout": false,
+  "scientific_pass": false,
+  "stop_rule": "report all lags and negative outcomes; no best-lag selection"
+}

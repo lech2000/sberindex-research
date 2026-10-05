@@ -1,0 +1,128 @@
+{
+  "frozen_at": "2026-10-04T09:01:13.268497+00:00",
+  "selection_before_acquiring_pilot_budget_values": true,
+  "prior_exposure": [
+    "Orsk current 2026 portal budget viewed; not part of historical pilot",
+    "Atlas panel and cluster outcomes previously examined",
+    "2025 regional Treasury budget previously examined"
+  ],
+  "cohort": [
+    {
+      "territory_id": 1673,
+      "name": "Орск",
+      "source_name": "городской округ город Орск",
+      "source_oktmo": "53-723-000-000",
+      "region_code": 56,
+      "region_name": "Оренбургская область",
+      "type": "городской округ",
+      "pair": "Орск",
+      "role": "anchor",
+      "partition_month": "2023-12",
+      "partition_label": 0,
+      "identity_status": "continuing",
+      "population_2023": 190980,
+      "population_ratio_to_anchor": 1.0
+    },
+    {
+      "territory_id": 1668,
+      "name": "Бузулук",
+      "source_name": "городской округ город Бузулук",
+      "source_oktmo": "53-712-000-000",
+      "region_code": 56,
+      "region_name": "Оренбургская область",
+      "type": "городской округ",
+      "pair": "Орск",
+      "role": "contrast",
+      "partition_month": "2023-12",
+      "partition_label": 1,
+      "identity_status": "ambiguous",
+      "population_2023": 88419,
+      "population_ratio_to_anchor": 0.4629751806471882
+    },
+    {
+      "territory_id": 1333,
+      "name": "Курган",
+      "source_name": "городской округ город Курган",
+      "source_oktmo": "37-701-000-000",
+      "region_code": 45,
+      "region_name": "Курганская область",
+      "type": "городской округ",
+      "pair": "Курган",
+      "role": "anchor",
+      "partition_month": "2023-12",
+      "partition_label": 1,
+      "identity_status": "ambiguous",
+      "population_2023": 305505,
+      "population_ratio_to_anchor": 1.0
+    },
+    {
+      "territory_id": 1334,
+      "name": "Шадринск",
+      "source_name": "городской округ город Шадринск",
+      "source_oktmo": "37-705-000-000",
+      "region_code": 45,
+      "region_name": "Курганская область",
+      "type": "городской округ",
+      "pair": "Курган",
+      "role": "contrast",
+      "partition_month": "2023-12",
+      "partition_label": 0,
+      "identity_status": "continuing",
+      "population_2023": 68102,
+      "population_ratio_to_anchor": 0.22291615521840885
+    },
+    {
+      "territory_id": 2190,
+      "name": "Тюмень",
+      "source_name": "городской округ город Тюмень",
+      "source_oktmo": "71-701-000-000",
+      "region_code": 72,
+      "region_name": "Тюменская область",
+      "type": "городской округ",
+      "pair": "Тюмень",
+      "role": "anchor",
+      "partition_month": "2023-12",
+      "partition_label": 1,
+      "identity_status": "ambiguous",
+      "population_2023": 855618,
+      "population_ratio_to_anchor": 1.0
+    },
+    {
+      "territory_id": 2192,
+      "name": "Ишим",
+      "source_name": "городской округ город Ишим",
+      "source_oktmo": "71-705-000-000",
+      "region_code": 72,
+      "region_name": "Тюменская область",
+      "type": "городской округ",
+      "pair": "Тюмень",
+      "role": "contrast",
+      "partition_month": "2023-12",
+      "partition_label": 0,
+      "identity_status": "continuing",
+      "population_2023": 67317,
+      "population_ratio_to_anchor": 0.07867646543200353
+    }
+  ],
+  "years": [
+    2023,
+    2024
+  ],
+  "selection_rule": "Three named case anchors; one opposite December-2023 partition label urban district in same statistical region, nearest absolute log 2023 population, ties by territory_id. No substitutions based on budget availability or values.",
+  "source_sha256": {
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b"
+  },
+  "metrics": {
+    "expense_per_person": "executed expense RUB / source population at start of same year; not mean annual population",
+    "tax_nontax_share": "executed tax and non-tax revenue / executed total revenue; explicitly named measure, not legal definition of own revenues",
+    "deficit_to_revenue": "(executed expense - executed revenue) / executed revenue; signed, surplus negative",
+    "functional_shares": "executed top-level expense functions / executed total expense, only with checked hierarchy; no parent plus child sum"
+  },
+  "acceptance": "Municipality and fiscal year explicit in original official annual execution report or approved decision; source units explicit; plan never treated as execution; source code/authority crosswalk reviewed. Preserve NULL and reject nonpositive denominators.",
+  "analysis": "Municipality-year rows, 12 planned observations. Common observed masks; paired year changes and within-region contrasts only descriptive. Partition labels are December-2023 labels, not stable identity IDs. No causal flood estimate, p-values, adjusted-regression claims, economic PASS, or forecast input. Strong population imbalance disclosed.",
+  "vintage": "Decision date != known online availability; retrieved_at now, available_at/vintage null unless separately evidenced. Historical figures remain retrospective.",
+  "missing_policy": "Unretrievable or unverified report/metric remains NULL, logged separately; no replacement city, no regional amount copied to municipality.",
+  "stop_rule": "One bounded pilot, retain priority and 5-Oct new-data cutoff / 7-8-Oct final assembly. Publish incomplete coverage honestly."
+}

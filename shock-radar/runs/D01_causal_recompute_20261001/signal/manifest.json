@@ -1,0 +1,159 @@
+{
+ "experiment_id": "R7-v2-causal-lastvalue-baseline",
+ "method": "causal last-value relative residual — baseline, NOT R3 boosting",
+ "signal_formula": "pred[m] = actual_inj[m-1] (adjacent calendar month only, observed/injected, no future); rel[m] = (actual_inj[m] - pred[m]) / max(abs(pred[m]), eps); no zero-imputation, missing month pairs yield no row",
+ "run_utc": "2026-10-01T15:25:41+00:00",
+ "git_commit": "56a9a82c4",
+ "seed": 20260923,
+ "eps": 1e-09,
+ "inputs": {
+  "panel": "/tmp/claude-1000/-home-serg/2ebfcc65-4917-40ab-99b1-0f797ceb4b92/scratchpad/rd/sberindex-data-sense-2025/8_consumption.parquet",
+  "panel_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "registry": "events/registry.parquet",
+  "registry_sha256": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070",
+  "n_panel_rows": 303126
+ },
+ "signal_months": [
+  "2023-02",
+  "2024-12"
+ ],
+ "n_signal_months": 23,
+ "n_signal_rows": 287268,
+ "n_signal_rows_before_mask": 289338,
+ "injected_cells": 179,
+ "split": {
+  "train": "ym < 2024-03",
+  "validation": "2024-03 <= ym < 2024-07",
+  "test": "ym >= 2024-07",
+  "disjoint": true,
+  "train_months": [
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02"
+  ],
+  "val_months": [
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06"
+  ],
+  "test_months": [
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ]
+ },
+ "series": {
+  "total": 13140,
+  "included": 12744,
+  "excluded": 396,
+  "min_pretrain_months": 6,
+  "audit_file": "/tmp/claude-1000/-home-serg/2ebfcc65-4917-40ab-99b1-0f797ceb4b92/scratchpad/d01_recompute/signal/pretrain_audit.parquet",
+  "audit_sha256": "81eeee82604a69b40db2f79bdeeb215d2068f73ec98c49e42a20dcdadf8932b6"
+ },
+ "registry": {
+  "total": 60,
+  "eligible": 59,
+  "eligible_ids": [
+   "EV008",
+   "EV011",
+   "EV017",
+   "EV020",
+   "EV023",
+   "EV035",
+   "EV043",
+   "EV049",
+   "EV010",
+   "EV018",
+   "EV022",
+   "EV031",
+   "EV032",
+   "EV039",
+   "EV041",
+   "EV044",
+   "EV009",
+   "EV015",
+   "EV030",
+   "EV040",
+   "EV051",
+   "EV055",
+   "EV001",
+   "EV006",
+   "EV014",
+   "EV026",
+   "EV027",
+   "EV034",
+   "EV046",
+   "EV052",
+   "EV054",
+   "EV019",
+   "EV021",
+   "EV025",
+   "EV037",
+   "EV047",
+   "EV053",
+   "EV058",
+   "EV003",
+   "EV004",
+   "EV005",
+   "EV007",
+   "EV028",
+   "EV029",
+   "EV036",
+   "EV042",
+   "EV045",
+   "EV048",
+   "EV059",
+   "EV000",
+   "EV002",
+   "EV012",
+   "EV013",
+   "EV016",
+   "EV024",
+   "EV033",
+   "EV038",
+   "EV050",
+   "EV056"
+  ],
+  "ineligible": [
+   {
+    "event_id": "EV057",
+    "tid": 86,
+    "cat": "Продовольствие",
+    "onset": "2024-03",
+    "reason": "onset_key_missing_in_signal"
+   }
+  ],
+  "synthetic_marks": {
+   "column": "source",
+   "ok": true
+  }
+ },
+ "checks": {
+  "causal_prefix_invariance": true,
+  "split_disjoint": true,
+  "synthetic_marks": true
+ },
+ "same_mask_for_detectors": "D01/D02/D03 consume this identical signal file; input hash is recorded in the detector manifest",
+ "test_status": "test already opened (R7 primary runs/R7, 2026-09-25 counts as exploratory); R7_v2 is exploratory-v2; runs/R7 is not rewritten",
+ "limitations": [
+  "synthetic injected shifts only — technical detection test, no real early-warning claim",
+  "last-value baseline residual, not a tuned forecaster; negative result is a valid experiment",
+  "registry coverage below total is reported, not rounded up"
+ ],
+ "note": "технический тест детекции на синтетических инжектах; раннее предупреждение о реальных шоках НЕ заявляется",
+ "next_step": "оператор запускает d02_d03_detectors.run на signal.parquet с --budget-mode monthly_causal"
+}

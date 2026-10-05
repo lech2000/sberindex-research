@@ -1,0 +1,54 @@
+{
+  "frozen_at": "2026-10-05T09:41:27.031607+00:00",
+  "scope": "D01 multivariate extension, legacy univariate bank unchanged",
+  "base_channels": [
+    "max_absolute",
+    "energy",
+    "mahalanobis"
+  ],
+  "extended_channels": [
+    "max_absolute",
+    "energy",
+    "mahalanobis",
+    "stouffer_down",
+    "stouffer_two_sided",
+    "glr_two_sided"
+  ],
+  "bank_formula": "max(channel_score / channel_calibration_q97)",
+  "channel_calibration_seed": 20267005,
+  "bank_calibration_seed": 20268005,
+  "test_seed_start": 20269005,
+  "test_seeds": 20,
+  "events_per_seed": 200,
+  "null_municipalities_per_seed": 1000,
+  "families": [
+    "gaussian",
+    "student5"
+  ],
+  "forms": [
+    "common_down",
+    "common_up",
+    "sparse_down",
+    "opposed",
+    "ramp_down"
+  ],
+  "amplitudes": [
+    2,
+    4,
+    6
+  ],
+  "primary_amplitude": 4,
+  "null_fa": 0.03,
+  "modes": [
+    "independent_calibration",
+    "matched_realized_test_null"
+  ],
+  "matched_mode": "retrospective TEST ROC, not independent calibration",
+  "calibration_windows": "months3..11 after GLR warmup",
+  "event_match": "any alert at onset,onset+1,onset+2",
+  "false_alarm_budget": "TOTAL joint bank, not per-channel FA",
+  "real_false_alarm_count": null,
+  "is_independent_holdout": false,
+  "scientific_pass": false,
+  "stop_rule": "report all forms, no tuning or winning-channel selection"
+}

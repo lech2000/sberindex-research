@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-04",
+  "check_location": "Mac; isolated scientific worktree",
+  "status": "COMPUTED_DESCRIPTIVE_NOT_FULL_A7_PASS",
+  "files": {
+    "economic-atlas/runs/A7_SDbw_20261004/metrics.json": "4d1e141811f056943686b098fcb985a5edc0c09c97425edb50fa5c9dfb9a5e7b",
+    "economic-atlas/runs/A7_SDbw_20261004/validity.csv": "bc20886f9bf027f7fcf9b9082ea4d2523d37688126e858f5f3634d0c765f8f71",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol.json": "e2517c7c8c5397ec3afdd2b77dac66dea07e20302d196dfb0b3ac6fd8241ad2e",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol-v1-aborted.json": "f857dbf1428e7afa26d9212e9f4299af4cd9c2e5383dda6a7502dd032e69a9f8",
+    "economic-atlas/runs/A7_SDbw_20261004/independent-audit.json": "30f47874c4814bd1155b8bb803f8187c2dac9bc5d570f1d4aec2ff1820907e07",
+    "economic-atlas/runs/A7_SDbw_20261004/README.md": "f7b087eeafbd681de5f46b21a016f5529c78fb97e0e675a76316f127308a2e33",
+    "economic-atlas/src/a7_sdbw.py": "2379b4b172aa2726c5e00e3f91e8c36d1a229d914f706e2a24f54140d98bfb0b",
+    "economic-atlas/src/test_a7_sdbw.py": "737093f3681c21f4add9baac07d2575e64547d5430986663ff0748e01e0ce695"
+  }
+}

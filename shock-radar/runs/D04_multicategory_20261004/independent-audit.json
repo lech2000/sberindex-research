@@ -1,0 +1,18 @@
+{
+  "client_date": "2026-10-04",
+  "passed": true,
+  "checks": {
+    "frozen_source_hashes": true,
+    "all_stored_keys_actual_last_value": 220962,
+    "forecast_scalar_values": 2340,
+    "forecast_future_mutation_values": 2340,
+    "raw_future_mutation_all_detector_methods": true,
+    "independent_detector_scalar_values": 120,
+    "exact_cyrillic_case_lookup": true,
+    "matched_realized_pooled_null_fa": true
+  },
+  "scientific_pass": false,
+  "audit_code_sha256": "8ad28f14287b0d270236786b07575f3626abdfdf3a46d030667c5eebbde485d6",
+  "detector_code_sha256": "99f6e8ce0f32ba5217668e90f47fd23fcb43e6f92cc5a2e340663aefd4779650",
+  "forecast_code_sha256": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2"
+}

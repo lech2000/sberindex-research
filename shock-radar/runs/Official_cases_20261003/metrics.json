@@ -1,0 +1,873 @@
+{
+  "checked_at": "2026-10-03T18:54:01.663252+00:00",
+  "coverage": {
+    "raw": {
+      "n_rows": 303126,
+      "n_municipalities": 2190,
+      "n_regions": 77,
+      "missing_regions_relative_to_dictionary": [
+        "Белгородская область",
+        "Брянская область",
+        "Воронежская область",
+        "Краснодарский край",
+        "Курская область",
+        "Республика Крым",
+        "Ростовская область",
+        "Севастополь"
+      ],
+      "n_missing_regions": 8
+    },
+    "atlas": {
+      "n_rows": 273024,
+      "n_municipalities": 1896,
+      "n_regions": 72,
+      "missing_regions_relative_to_dictionary": [
+        "Белгородская область",
+        "Брянская область",
+        "Воронежская область",
+        "Краснодарский край",
+        "Курская область",
+        "Республика Бурятия",
+        "Республика Дагестан",
+        "Республика Ингушетия",
+        "Республика Крым",
+        "Ростовская область",
+        "Санкт-Петербург",
+        "Севастополь",
+        "Чеченская Республика"
+      ],
+      "n_missing_regions": 13
+    },
+    "r9": {
+      "n_rows": 294570,
+      "n_municipalities": 2076,
+      "n_regions": 73,
+      "missing_regions_relative_to_dictionary": [
+        "Белгородская область",
+        "Брянская область",
+        "Воронежская область",
+        "Краснодарский край",
+        "Курская область",
+        "Республика Бурятия",
+        "Республика Дагестан",
+        "Республика Ингушетия",
+        "Республика Крым",
+        "Ростовская область",
+        "Севастополь",
+        "Чеченская Республика"
+      ],
+      "n_missing_regions": 12
+    }
+  },
+  "n_official_events": 6,
+  "n_sources": 5,
+  "n_local_case_stories": 3,
+  "protocol": {
+    "event_registry_sha256": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+    "threshold_manifest_sha256": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15",
+    "parameters": {
+      "D01": {
+        "k": 2.5
+      },
+      "D02": {
+        "delta": 0.1,
+        "lambda": 0.4
+      },
+      "D03": {
+        "tau": 0.3
+      }
+    },
+    "monthly_selected_alert_budgets": [
+      24,
+      96
+    ],
+    "primary_budget": 24,
+    "sensitivity_budget": 96,
+    "cooldown_months": 3,
+    "training_calibration_end_exclusive": "2024-03",
+    "match_window": "2024-03..2024-05 (monthly coincidence, not economic-change truth)",
+    "story_selection": "three municipalities documented in the fixed official intake, not ranked by spending or detector hits",
+    "no_injected_data": true,
+    "is_independent_test": false,
+    "scientific_pass": false
+  },
+  "cases": [
+    {
+      "event_id": "flood_orsk_2024",
+      "municipality": "Орск",
+      "territory_id": 1673,
+      "oktmo": "53-723-000-000",
+      "region": "Оренбургская область",
+      "source_url": "https://56.mchs.gov.ru/deyatelnost/press-centr/novosti/5249015",
+      "published_date": "2024-04-06",
+      "event_month": "2024-04",
+      "is_economic_effect_proof": false,
+      "spending": [
+        {
+          "category": "Все категории",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 25396.0,
+              "04": 24168.0,
+              "05": 25464.0
+            },
+            "april_mom_pct": -4.8354071507323955,
+            "may_mom_pct": 5.362462760675268
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 30843.0,
+              "04": 30327.0,
+              "05": 32831.0
+            },
+            "april_mom_pct": -1.6729890088512778,
+            "may_mom_pct": 8.256668974840897
+          }
+        },
+        {
+          "category": "Здоровье",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1260.0,
+              "04": 1129.0,
+              "05": 1133.0
+            },
+            "april_mom_pct": -10.396825396825394,
+            "may_mom_pct": 0.3542958370239102
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1463.0,
+              "04": 1279.0,
+              "05": 1403.0
+            },
+            "april_mom_pct": -12.57689678742311,
+            "may_mom_pct": 9.695074276778737
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 2395.0,
+              "04": 2204.0,
+              "05": 2365.0
+            },
+            "april_mom_pct": -7.974947807933197,
+            "may_mom_pct": 7.304900181488194
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 4325.0,
+              "04": 3754.0,
+              "05": 4647.0
+            },
+            "april_mom_pct": -13.202312138728322,
+            "may_mom_pct": 23.78795950985615
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1074.0,
+              "04": 1022.0,
+              "05": 1170.0
+            },
+            "april_mom_pct": -4.841713221601484,
+            "may_mom_pct": 14.481409001956958
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1380.0,
+              "04": 1288.0,
+              "05": 1625.0
+            },
+            "april_mom_pct": -6.666666666666665,
+            "may_mom_pct": 26.164596273291927
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 9770.0,
+              "04": 9633.0,
+              "05": 10075.0
+            },
+            "april_mom_pct": -1.4022517911975396,
+            "may_mom_pct": 4.5883940620782715
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 11703.0,
+              "04": 12156.0,
+              "05": 12724.0
+            },
+            "april_mom_pct": 3.8708023583696516,
+            "may_mom_pct": 4.672589667653826
+          }
+        },
+        {
+          "category": "Транспорт",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 981.0,
+              "04": 965.0,
+              "05": 1083.0
+            },
+            "april_mom_pct": -1.6309887869520923,
+            "may_mom_pct": 12.22797927461139
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1290.0,
+              "04": 1332.0,
+              "05": 1383.0
+            },
+            "april_mom_pct": 3.2558139534883734,
+            "may_mom_pct": 3.828828828828823
+          }
+        }
+      ],
+      "atlas_identity_assignments": [
+        {
+          "territory_id": 1673,
+          "month": "2024-03",
+          "k": 2,
+          "label": 0,
+          "identity_id": "ID0001",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1673,
+          "month": "2024-04",
+          "k": 2,
+          "label": 0,
+          "identity_id": "ID0002",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1673,
+          "month": "2024-05",
+          "k": 2,
+          "label": 1,
+          "identity_id": "ID0002",
+          "status": "continuing"
+        }
+      ],
+      "detector_coincidences": [
+        {
+          "method": "D01",
+          "budget": 24,
+          "alerts": [
+            {
+              "method": "D01",
+              "tid": 1673,
+              "cat": "Все категории",
+              "ym": "2024-03",
+              "score": 5.477315271056484,
+              "budget": 24
+            }
+          ],
+          "has_any_category_alert_in_window": true,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D01",
+          "budget": 96,
+          "alerts": [
+            {
+              "method": "D01",
+              "tid": 1673,
+              "cat": "Все категории",
+              "ym": "2024-03",
+              "score": 5.477315271056484,
+              "budget": 96
+            }
+          ],
+          "has_any_category_alert_in_window": true,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        }
+      ]
+    },
+    {
+      "event_id": "flood_orenburg_2024",
+      "municipality": "Оренбург",
+      "territory_id": 1665,
+      "oktmo": "53-701-000-000",
+      "region": "Оренбургская область",
+      "source_url": "https://56.mchs.gov.ru/deyatelnost/press-centr/vse_novosti/5252131",
+      "published_date": "2024-04-10",
+      "event_month": "2024-04",
+      "is_economic_effect_proof": false,
+      "spending": [
+        {
+          "category": "Все категории",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 27982.0,
+              "04": 26605.0,
+              "05": 27552.0
+            },
+            "april_mom_pct": -4.921020656136088,
+            "may_mom_pct": 3.5594813005074277
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 33470.0,
+              "04": 32547.0,
+              "05": 32990.0
+            },
+            "april_mom_pct": -2.757693456827004,
+            "may_mom_pct": 1.3611085507112763
+          }
+        },
+        {
+          "category": "Здоровье",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1560.0,
+              "04": 1412.0,
+              "05": 1401.0
+            },
+            "april_mom_pct": -9.487179487179487,
+            "may_mom_pct": -0.7790368271954673
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1839.0,
+              "04": 1668.0,
+              "05": 1642.0
+            },
+            "april_mom_pct": -9.298531810766718,
+            "may_mom_pct": -1.5587529976019199
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 2115.0,
+              "04": 1958.0,
+              "05": 2064.0
+            },
+            "april_mom_pct": -7.423167848699763,
+            "may_mom_pct": 5.413687436159353
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 3988.0,
+              "04": 3553.0,
+              "05": 3736.0
+            },
+            "april_mom_pct": -10.907723169508522,
+            "may_mom_pct": 5.150576977202359
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1604.0,
+              "04": 1525.0,
+              "05": 1677.0
+            },
+            "april_mom_pct": -4.925187032418954,
+            "may_mom_pct": 9.967213114754102
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1897.0,
+              "04": 1909.0,
+              "05": 2050.0
+            },
+            "april_mom_pct": 0.632577754348973,
+            "may_mom_pct": 7.386066003142999
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 10441.0,
+              "04": 10381.0,
+              "05": 10679.0
+            },
+            "april_mom_pct": -0.5746575998467618,
+            "may_mom_pct": 2.870629033811767
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 12376.0,
+              "04": 12244.0,
+              "05": 12672.0
+            },
+            "april_mom_pct": -1.0665804783451804,
+            "may_mom_pct": 3.495589676576283
+          }
+        },
+        {
+          "category": "Транспорт",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1853.0,
+              "04": 1868.0,
+              "05": 1962.0
+            },
+            "april_mom_pct": 0.8094981111710808,
+            "may_mom_pct": 5.032119914346889
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 2215.0,
+              "04": 2273.0,
+              "05": 2307.0
+            },
+            "april_mom_pct": 2.618510158013554,
+            "may_mom_pct": 1.495820501539824
+          }
+        }
+      ],
+      "atlas_identity_assignments": [
+        {
+          "territory_id": 1665,
+          "month": "2024-03",
+          "k": 2,
+          "label": 0,
+          "identity_id": "ID0001",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1665,
+          "month": "2024-04",
+          "k": 2,
+          "label": 1,
+          "identity_id": "ID0001",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1665,
+          "month": "2024-05",
+          "k": 2,
+          "label": 0,
+          "identity_id": "ID0001",
+          "status": "continuing"
+        }
+      ],
+      "detector_coincidences": [
+        {
+          "method": "D01",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D01",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        }
+      ]
+    },
+    {
+      "event_id": "flood_novotroitsk_2024",
+      "municipality": "Новотроицк",
+      "territory_id": 1672,
+      "oktmo": "53-720-000-000",
+      "region": "Оренбургская область",
+      "source_url": "https://56.mchs.gov.ru/deyatelnost/press-centr/vse_novosti/5252131",
+      "published_date": "2024-04-10",
+      "event_month": "2024-04",
+      "is_economic_effect_proof": false,
+      "spending": [
+        {
+          "category": "Все категории",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 23732.0,
+              "04": 22930.0,
+              "05": 24174.0
+            },
+            "april_mom_pct": -3.3794033372661403,
+            "may_mom_pct": 5.42520715220236
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 29132.0,
+              "04": 28985.0,
+              "05": 29432.0
+            },
+            "april_mom_pct": -0.5045997528490997,
+            "may_mom_pct": 1.542176988097288
+          }
+        },
+        {
+          "category": "Здоровье",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1167.0,
+              "04": 1031.0,
+              "05": 1046.0
+            },
+            "april_mom_pct": -11.653813196229645,
+            "may_mom_pct": 1.4548981571290032
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1360.0,
+              "04": 1250.0,
+              "05": 1234.0
+            },
+            "april_mom_pct": -8.088235294117652,
+            "may_mom_pct": -1.2800000000000034
+          }
+        },
+        {
+          "category": "Маркетплейсы",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 2400.0,
+              "04": 2193.0,
+              "05": 2298.0
+            },
+            "april_mom_pct": -8.625000000000005,
+            "may_mom_pct": 4.78796169630642
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 4113.0,
+              "04": 3869.0,
+              "05": 3929.0
+            },
+            "april_mom_pct": -5.932409433503527,
+            "may_mom_pct": 1.5507883173946801
+          }
+        },
+        {
+          "category": "Общественное питание",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 1030.0,
+              "04": 1025.0,
+              "05": 1166.0
+            },
+            "april_mom_pct": -0.4854368932038833,
+            "may_mom_pct": 13.7560975609756
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1400.0,
+              "04": 1376.0,
+              "05": 1604.0
+            },
+            "april_mom_pct": -1.7142857142857126,
+            "may_mom_pct": 16.56976744186047
+          }
+        },
+        {
+          "category": "Продовольствие",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 10112.0,
+              "04": 10066.0,
+              "05": 10541.0
+            },
+            "april_mom_pct": -0.45490506329114444,
+            "may_mom_pct": 4.7188555533479
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 12252.0,
+              "04": 12319.0,
+              "05": 12597.0
+            },
+            "april_mom_pct": 0.5468494939601776,
+            "may_mom_pct": 2.2566766783018055
+          }
+        },
+        {
+          "category": "Транспорт",
+          "2023": {
+            "values_mar_apr_may": {
+              "03": 874.0,
+              "04": 929.0,
+              "05": 961.0
+            },
+            "april_mom_pct": 6.292906178489699,
+            "may_mom_pct": 3.4445640473627526
+          },
+          "2024": {
+            "values_mar_apr_may": {
+              "03": 1130.0,
+              "04": 1149.0,
+              "05": 1188.0
+            },
+            "april_mom_pct": 1.6814159292035447,
+            "may_mom_pct": 3.394255874673635
+          }
+        }
+      ],
+      "atlas_identity_assignments": [
+        {
+          "territory_id": 1672,
+          "month": "2024-03",
+          "k": 2,
+          "label": 1,
+          "identity_id": "ID0002",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1672,
+          "month": "2024-04",
+          "k": 2,
+          "label": 0,
+          "identity_id": "ID0002",
+          "status": "continuing"
+        },
+        {
+          "territory_id": 1672,
+          "month": "2024-05",
+          "k": 2,
+          "label": 1,
+          "identity_id": "ID0002",
+          "status": "continuing"
+        }
+      ],
+      "detector_coincidences": [
+        {
+          "method": "D01",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D01",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D02",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 24,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        },
+        {
+          "method": "D03",
+          "budget": 96,
+          "alerts": [],
+          "has_any_category_alert_in_window": false,
+          "interpretation": "post-selected documented-event coincidence; not verified true positive"
+        }
+      ]
+    }
+  ],
+  "bank": [
+    {
+      "method": "D01",
+      "monthly_selected_alert_budget": 24,
+      "n_selected": 220,
+      "counts_by_month": {
+        "2024-03": 14,
+        "2024-04": 24,
+        "2024-05": 17,
+        "2024-06": 24,
+        "2024-07": 24,
+        "2024-08": 21,
+        "2024-09": 24,
+        "2024-10": 24,
+        "2024-11": 24,
+        "2024-12": 24
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    },
+    {
+      "method": "D01",
+      "monthly_selected_alert_budget": 96,
+      "n_selected": 360,
+      "counts_by_month": {
+        "2024-03": 14,
+        "2024-04": 31,
+        "2024-05": 17,
+        "2024-06": 33,
+        "2024-07": 58,
+        "2024-08": 21,
+        "2024-09": 47,
+        "2024-10": 65,
+        "2024-11": 29,
+        "2024-12": 45
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    },
+    {
+      "method": "D02",
+      "monthly_selected_alert_budget": 24,
+      "n_selected": 240,
+      "counts_by_month": {
+        "2024-03": 24,
+        "2024-04": 24,
+        "2024-05": 24,
+        "2024-06": 24,
+        "2024-07": 24,
+        "2024-08": 24,
+        "2024-09": 24,
+        "2024-10": 24,
+        "2024-11": 24,
+        "2024-12": 24
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    },
+    {
+      "method": "D02",
+      "monthly_selected_alert_budget": 96,
+      "n_selected": 878,
+      "counts_by_month": {
+        "2024-03": 96,
+        "2024-04": 92,
+        "2024-05": 96,
+        "2024-06": 96,
+        "2024-07": 96,
+        "2024-08": 67,
+        "2024-09": 96,
+        "2024-10": 58,
+        "2024-11": 87,
+        "2024-12": 94
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    },
+    {
+      "method": "D03",
+      "monthly_selected_alert_budget": 24,
+      "n_selected": 2,
+      "counts_by_month": {
+        "2024-09": 1,
+        "2024-12": 1
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    },
+    {
+      "method": "D03",
+      "monthly_selected_alert_budget": 96,
+      "n_selected": 2,
+      "counts_by_month": {
+        "2024-09": 1,
+        "2024-12": 1
+      },
+      "false_alarm_count": null,
+      "precision": null,
+      "recall": null
+    }
+  ],
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "limits": [
+    "Cases are descriptive and share a flood family; selection was already suggested/viewed, not independent evaluation",
+    "A documented disaster is not a labeled causal economic shift in every category; no recall/precision/false-alarm estimand assigned",
+    "24/96 are caps on selected alerts per month, not verified false-alarm counts",
+    "Existing R7 thresholds selected on a previously seen synthetic validation period; no new threshold tuning",
+    "Partial regional raw data may fail R9 prior-year mask or Atlas complete coverage; three universes reported separately",
+    "First-seen time is today; historical available_at/vintage remains unverified",
+    "Atlas identity changes are exploratory algorithm assignments, not proven structural economic changes"
+  ],
+  "provenance": {
+    "code_sha256": "cc365994c2914080c6e7c9dd03a45c8968e08a19b94625f86ea1a3529ed02726",
+    "detector_code_sha256": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7",
+    "input_sha256": {
+      "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+      "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+      "atlas": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+      "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+      "predictions": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+      "events": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+      "threshold_manifest": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15"
+    },
+    "python": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "pandas": "3.0.6"
+  }
+}

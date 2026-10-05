@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-01T20:00:07.050012+00:00",
+  "status": "feasibility_pilot_only",
+  "r9_scientific_pass": false,
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "sample_method": "SHA256-ranked territory/category, fixed count per category",
+  "n_selected_series": 60,
+  "n_candidate_rows": 1360,
+  "n_fits": 966,
+  "n_fit_failures": 0,
+  "n_predicted_rows": 1360,
+  "failures": [],
+  "results": [
+    {
+      "horizon": 1,
+      "n_common": 340,
+      "n_territories": 56,
+      "mae": {
+        "prophet": 622.0611138779022,
+        "last_value": 608.4058823529411,
+        "seasonal_naive": 1237.1735294117648,
+        "train_mean": 1265.8680694481207
+      }
+    },
+    {
+      "horizon": 3,
+      "n_common": 340,
+      "n_territories": 56,
+      "mae": {
+        "prophet": 695.9373215235352,
+        "last_value": 843.8470588235294,
+        "seasonal_naive": 1237.1735294117648,
+        "train_mean": 1361.0016040841
+      }
+    },
+    {
+      "horizon": 6,
+      "n_common": 340,
+      "n_territories": 56,
+      "mae": {
+        "prophet": 690.0762751259459,
+        "last_value": 1090.4558823529412,
+        "seasonal_naive": 1237.1735294117648,
+        "train_mean": 1513.9088158304594
+      }
+    },
+    {
+      "horizon": 12,
+      "n_common": 340,
+      "n_territories": 56,
+      "mae": {
+        "prophet": 980.3384672821306,
+        "last_value": 1237.1735294117648,
+        "seasonal_naive": 1237.1735294117648,
+        "train_mean": 1779.2213768992447
+      }
+    }
+  ],
+  "constraints": [
+    "same R9 calendar/missingness mask within each horizon",
+    "Prophet trained only through each origin",
+    "sample is diagnostic and not an independent holdout",
+    "value unit and historical available_at unverified"
+  ]
+}

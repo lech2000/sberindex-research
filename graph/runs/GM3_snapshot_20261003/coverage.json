@@ -1,0 +1,118 @@
+{
+  "recorded_at": "2026-10-03T09:14:45.528384+00:00",
+  "status": "local_graph_partial_real_observations",
+  "gm3_complete": false,
+  "scientific_pass": false,
+  "production_service_ingestion": false,
+  "schema": "GM3-offline-v1",
+  "input_sha256": {
+    "dict": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "spend": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "pop": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "jan": "def4fe436545f6ef7e349607c4c8256a331146fe9b977e12618443ed59ddbff3",
+    "dec": "513bd287a1f1b42b9190f04afcfb8239bd31e0e699bb890f67dc49341285c13b"
+  },
+  "code_sha256": "6b274f80ccb1c17ab3224645d483f84c7e1f48e2f3cf0dd73d8f493a868465ab",
+  "db_sha256": "6560bb06bb2410324081beefe60ef93deaebac6602d8d1022d0dd9f5bab40c05",
+  "receipts": {
+    "spend": {
+      "observations": 303126,
+      "source_nulls": 0,
+      "duplicate_keys_normalized": 0
+    },
+    "pop": {
+      "observations": 9602,
+      "source_nulls": 16,
+      "duplicate_keys_normalized": 16
+    }
+  },
+  "queries": {
+    "counts": [
+      [
+        "municipality",
+        2660
+      ],
+      [
+        "release",
+        5
+      ],
+      [
+        "observation",
+        312728
+      ],
+      [
+        "source_null",
+        16
+      ]
+    ],
+    "orphan_lineage": [
+      [
+        0
+      ]
+    ],
+    "duplicate_version_keys": [
+      [
+        0
+      ]
+    ],
+    "asof_2024_eligible": [
+      [
+        0
+      ]
+    ],
+    "unknown_availability": [
+      [
+        312728
+      ]
+    ],
+    "spend_population_both": [
+      [
+        2089
+      ]
+    ],
+    "spend_population_both_2024": [
+      [
+        2027
+      ]
+    ],
+    "foreign_key_check": []
+  },
+  "query_sql": {
+    "counts": "SELECT 'municipality',COUNT(*) FROM municipality UNION ALL SELECT 'release',COUNT(*) FROM dataset_release UNION ALL SELECT 'observation',COUNT(*) FROM observation UNION ALL SELECT 'source_null',COUNT(*) FROM missing_value",
+    "orphan_lineage": "SELECT COUNT(*) FROM observation o LEFT JOIN dataset_release r ON o.release_id=r.id LEFT JOIN municipality m ON m.tid=o.tid LEFT JOIN indicator i ON i.id=o.indicator_id WHERE r.id IS NULL OR m.tid IS NULL OR i.id IS NULL",
+    "duplicate_version_keys": "SELECT COUNT(*) FROM (SELECT release_id,tid,indicator_id,period,dimensions,COUNT(*) n FROM observation GROUP BY 1,2,3,4,5 HAVING n>1)",
+    "asof_2024_eligible": "SELECT COUNT(*) FROM asof_2024",
+    "unknown_availability": "SELECT COUNT(*) FROM observation WHERE available_at IS NULL",
+    "spend_population_both": "SELECT COUNT(*) FROM (SELECT tid FROM observation WHERE indicator_id='spending' INTERSECT SELECT tid FROM observation WHERE indicator_id='population_total_by_sex')",
+    "spend_population_both_2024": "SELECT COUNT(*) FROM (SELECT tid FROM observation WHERE indicator_id='spending' AND period LIKE '2024-%' INTERSECT SELECT tid FROM observation WHERE indicator_id='population_total_by_sex' AND period='2024-01-01')",
+    "foreign_key_check": "PRAGMA foreign_key_check"
+  },
+  "dated_code_coverage": {
+    "active_halfopen_assumption": 2165,
+    "jan_present": 2150,
+    "dec_present": 1994,
+    "jan_not_dec": 171,
+    "dec_not_jan": 15,
+    "neither": 0
+  },
+  "official_snapshots": {
+    "jan": {
+      "section1_codes": 24848,
+      "future_effective_after_2024": 0
+    },
+    "dec": {
+      "section1_codes": 19538,
+      "future_effective_after_2024": 183
+    }
+  },
+  "limits": [
+    "Internal territory_id is a source key, not verified external legal identity",
+    "Presence/absence in dated code release does not prove succession; successor stays null",
+    "Published_at/available_at unknown; retrieved_on only from current fetch manifest, never copied into asof",
+    "No inferred spending-population derivation edge: independent sources have observation-to-source lineage only",
+    "Only total-age male/female observations; no overlapping-age summation",
+    "Mobility, wages, employment and migration not yet ingested; GM3 source remains OPEN",
+    "Local SQLite proof artifact, not running platform graph/database",
+    "Unknown distribution permission; source DB and raw data stay outside Git"
+  ]
+}

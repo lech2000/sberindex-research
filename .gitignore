@@ -13,3 +13,6 @@ output/
 sources/contest-page.html
 landing-common/municipal-2021.js
 *.zip
+
+# Local immutable Radar inputs; publish SHA/provenance, never accidental row-level caches.
+data/frozen/radar/*.parquet

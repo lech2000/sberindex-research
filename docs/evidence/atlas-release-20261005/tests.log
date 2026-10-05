@@ -1,0 +1,9 @@
+...................................................s.................... [ 81%]
+................                                                         [100%]
+=============================== warnings summary ===============================
+tests/test_atlas_a9.py::test_graph_contract_and_same_input_reproducibility[gaussian-union]
+  /opt/homebrew/lib/python3.14/site-packages/pytest_asyncio/plugin.py:1216: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    return asyncio.get_event_loop_policy()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+87 passed, 1 skipped, 1 warning in 131.58s (0:02:11)

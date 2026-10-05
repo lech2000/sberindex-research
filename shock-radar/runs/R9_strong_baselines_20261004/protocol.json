@@ -1,0 +1,53 @@
+{
+  "recorded_before_results": "2026-10-04T20:30:12.108176+00:00",
+  "client_date": "2026-10-04",
+  "run_id": "R9_strong_baselines_20261004",
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "r9_sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+  "code_sha256": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+  "models": [
+    "growth_naive1",
+    "growth_naive3",
+    "conditional_ses",
+    "profile_ses"
+  ],
+  "alpha_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.39999999999999997,
+    0.44999999999999996,
+    0.49999999999999994,
+    0.5499999999999999,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.7999999999999999,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "alpha_selection": "minimum own historical one-step absolute loss; no future tuning",
+  "profile_shrinkage": 0.7,
+  "category_factor": "observed category median; origin and prior-year bases only",
+  "national_data": false,
+  "fitting": "new SES fits only; no Prophet refits",
+  "main_mask": "exact stored R9 h1/3/6 keys; every original row retained, missing predictors marked unavailable",
+  "early_window": "same 120 series and pre_R9 keys of prior frozen equal-information pilot",
+  "peer_growth_naive": "prior-year target times ratio of sums last 1-3 months; exact formula, separately from one-month ratio",
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "scientific_pass": false,
+  "limits": [
+    "Both windows and peer results already viewed; exploratory specification",
+    "SES profile fitted from one prior year; h12 unsupported",
+    "Masks and all exclusions reported; no silently reusing unequal original MAEs",
+    "Aggregate category overlaps the other five; uncertainty by target month blocks, few blocks",
+    "National factor and foundation models not reproduced by this comparison"
+  ]
+}

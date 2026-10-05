@@ -1,0 +1,13 @@
+window,mode,weight,ari_k5_k10,stable
+A5,union,gaussian,0.5256658597647776,True
+A5,union,binary,0.4564046109940697,False
+A5,mutual,gaussian,0.37946256577033965,False
+A5,mutual,binary,0.372320452484568,False
+annual2023,union,gaussian,0.4542406182316485,False
+annual2023,union,binary,0.36837903206240646,False
+annual2023,mutual,gaussian,0.336643368697958,False
+annual2023,mutual,binary,0.34391778986360033,False
+annual2024,union,gaussian,0.41995889650438184,False
+annual2024,union,binary,0.4862487626358715,False
+annual2024,mutual,gaussian,0.3622640733409716,False
+annual2024,mutual,binary,0.31409040262259286,False

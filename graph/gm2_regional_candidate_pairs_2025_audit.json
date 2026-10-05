@@ -1,0 +1,21 @@
+{
+  "before_sha256": "8be058baf8d8ec32bda5431fa6ed5ccdcf0effa0c62869a03576755cbcf956d9",
+  "after_sha256": "513bd287a1f1b42b9190f04afcfb8239bd31e0e699bb890f67dc49341285c13b",
+  "smolensk_csv_sha256": "7a2a398f97ea3314f1c898be631340d46fb5ac45bb6852f861f2d2cb4922a116",
+  "sverdlovsk_csv_sha256": "d17c73498ec301ef14c700e43a9d7f3d43145bfe6e043c5811c71c91ca3828df",
+  "new_effective_2025_codes": 78,
+  "disappeared_2023_codes": 78,
+  "status_counts": {
+    "unique_name_candidate_not_legal_proof": 76,
+    "unresolved_name_mismatch": 2
+  },
+  "center_comparison_counts": {
+    "same": 72,
+    "missing_or_different": 6
+  },
+  "unresolved_new_codes": [
+    "65530000000",
+    "65536000000"
+  ],
+  "scope": "name_match_candidates_only_no_legal_successor_edges"
+}

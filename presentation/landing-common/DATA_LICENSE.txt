@@ -7,3 +7,5 @@ OSM-Boundaries: https://osm-boundaries.com/about/documentation
 OpenStreetMap copyright: https://www.openstreetmap.org/copyright
 The transformed database is available as municipal-2021.js in this directory under ODbL.
 Simplified 4.5 km; for visual research previews only, not an official or current boundary register.
+
+Holographic region layer added 2026-10-05 from the same source; 87 admin_level=4 geometries in the historical export. Simplified 12 km in Albers projection, for decoration. The count and boundaries are not a claim about the current administrative register. Transformed regional database: regions-2021.js, ODbL.

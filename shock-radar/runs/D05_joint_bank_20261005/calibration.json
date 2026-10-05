@@ -1,0 +1,56 @@
+{
+  "gaussian": {
+    "channel_q97": {
+      "stouffer_down": 2.588865861252637,
+      "stouffer_two_sided": 2.987975032568276,
+      "max_absolute": 2.744555684418878,
+      "glr_two_sided": 14.505359828173548,
+      "energy": 2.6887070808733537,
+      "mahalanobis": 2.5068352326336747
+    },
+    "joint_calibration_thresholds": {
+      "base": 1.1124433643194325,
+      "extended": 1.2378697784950115
+    },
+    "matched_test_thresholds": {
+      "base": 1.1018168090572933,
+      "extended": 1.2340736009591062
+    },
+    "matched_realized_total_null_fa": {
+      "base": 0.03,
+      "extended": 0.03
+    },
+    "independently_calibrated_realized_test_null_fa": {
+      "base": 0.02847777777777778,
+      "extended": 0.029527777777777778
+    },
+    "null_points": 180000
+  },
+  "student5": {
+    "channel_q97": {
+      "stouffer_down": 2.5935209625744817,
+      "stouffer_two_sided": 3.1955666861477963,
+      "max_absolute": 3.285520414017977,
+      "glr_two_sided": 18.57424382327729,
+      "energy": 3.9856241563902475,
+      "mahalanobis": 3.8759200460509873
+    },
+    "joint_calibration_thresholds": {
+      "base": 1.100877000474439,
+      "extended": 1.3320455859018776
+    },
+    "matched_test_thresholds": {
+      "base": 1.0962297529207887,
+      "extended": 1.3564030468784294
+    },
+    "matched_realized_total_null_fa": {
+      "base": 0.03,
+      "extended": 0.03
+    },
+    "independently_calibrated_realized_test_null_fa": {
+      "base": 0.029622222222222223,
+      "extended": 0.03135555555555555
+    },
+    "null_points": 180000
+  }
+}

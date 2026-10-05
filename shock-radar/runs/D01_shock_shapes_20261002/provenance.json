@@ -1,0 +1,39 @@
+{
+ "run_id": "D01-shock-shapes-20261002",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "date": "2026-10-02",
+ "shapes": {
+  "ramp": "линейно за R=3,4,6 мес, затем удержание до конца окна; amp 10/20/30/50%",
+  "vol": "шум уровня ряда в m=1.5,2,3,4 раза, на L=3,6 мес; масштаб = rstd(V0 train)/sqrt(2)",
+  "controls": "spike 30% 1 мес; shift 20% и 30% 3 мес",
+  "placebo": "события без инжекта, окно 5 месяцев"
+ },
+ "detectors": [
+  "D01@V0",
+  "D01@V3",
+  "D01@V4",
+  "U(V0,V3)",
+  "PH@V0",
+  "PH@V3",
+  "VOL@V3",
+  "PHn@V0",
+  "PHn@V3"
+ ],
+ "detectors_added_after_first_run": [
+  "PHn@V0",
+  "PHn@V3"
+ ],
+ "post_hoc_note": "PHn добавлены после первого прогона: ненормированный PH слеп на контролях; прежние 7 детекторов в обоих прогонах дали идентичные числа",
+ "calibration": "на событие-свободном сигнале по тестовым месяцам, равная реальная частота ложных тревог 24 и 96 в месяц",
+ "inputs": {
+  "clean_signal_sha256": "5da09c8503a862ca4fd423c79328a429fe87338cb3536f6a0d7920b1d93fa25b"
+ },
+ "code_sha256": {
+  "d01_shock_shapes.py": "ae7c505bac0e882c32837c214bbc774c60fc01332bc23de2261282e5bf3315aa",
+  "d01_sensitivity_curve.py": "c41b913c3d30c39cf964c5f42bb390107e4691e999d353930126b44fb87c87d5",
+  "d01_sensitive_signals.py": "206d825042de31285eec8a8e2380064a69125df0af6957f54939e8bf86b2351b"
+ },
+ "command": "python3 src/d01_shock_shapes.py --clean-signal <placebo signal.parquet> --outdir OUT",
+ "seed": 20261002,
+ "events_per_cell": 500
+}

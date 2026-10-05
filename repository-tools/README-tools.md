@@ -117,3 +117,22 @@ bash repository-tools/selftest.sh
   If the scientific runtime (numpy/pandas/…) is unavailable,
   `selftest.sh` falls back to `--help` + byte-compile checks and reports
   `SKIP` instead of failing.
+
+## A7.S1 — воспроизведение S_Dbw, 04.10.2026
+
+[Протокол и команды](../economic-atlas/runs/A7_SDbw_20261004/README.md): сохранённые A5 features/assignments, без переобучения; семь fixtures и независимый scalar audit. Три конечных значения/два NA; AVI/AVU/MQ SPEC_UNRESOLVED. Запускайте в новый `output/reproduced/A7_SDbw`; входы/SHA не менять.
+
+## Competitive experiments, 2026-10-04
+
+Original scientific CLIs and independent audits, with explicit new output directories:
+
+- [D04 signed/unsigned/covariance comparisons](../shock-radar/runs/D04_multicategory_20261004/README.md).
+- [Strong growth/SES forecasts and equal-information pilot](../shock-radar/runs/R9_strong_baselines_20261004/README.md).
+- [Three budget/migration/consumption stories and frozen threshold sensitivity](../economic-atlas/runs/Municipal_stories_20261004/README.md).
+
+The historical Prophet cache is an input to the comparison, not another fit.
+All full-mask exclusions are published; independent holdout and economic truth remain unverified.
+
+## Radar final reproduction
+
+`make radar` — [frozen inputs, references, future checks and limitations](RADAR_REPRODUCE.md).

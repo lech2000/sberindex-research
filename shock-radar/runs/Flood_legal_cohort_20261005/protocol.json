@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-10-05T09:24:49.856877+00:00",
+  "source": "Governor of Kurgan act62 dated2024-04-08 clause3",
+  "publication_id": "4500202404080001",
+  "primary_url": "https://publication.pravo.gov.ru/document/4500202404080001",
+  "retrieved_text_url": "https://base.garant.ru/408851493/",
+  "cohort": [
+    "Курган",
+    "Целинный",
+    "Звериноголовский",
+    "Притобольный",
+    "Куртамышский",
+    "Кетовский",
+    "Белозерский"
+  ],
+  "cohort_definition": "administrative emergency zone, not verified inundation ground truth",
+  "region_code": 45,
+  "crosswalk": "strict dictionary name in region45, valid2024; ambiguous or absent excluded and reported",
+  "forecast_origin": "2024-03",
+  "targets": [
+    "2024-04",
+    "2024-05",
+    "2024-06"
+  ],
+  "primary_model": "profile_ses",
+  "sensitivity_model": "category_seasonal",
+  "outcome": "100*(actual/predicted-1), descriptive forecast residual; no causal effect claim",
+  "categories": "all six reported; five non-aggregate primary; aggregate kept separate",
+  "control": "all other complete municipalities same category/month, descriptive contrast only",
+  "independence": "labels from external legal act, outcomes already globally viewed; not unseen holdout",
+  "ground_truth_recall_allowed": false,
+  "historical_available_at": null,
+  "scientific_pass": false,
+  "unpublished_30_district_list": "NOT_USED_UNVERIFIED"
+}

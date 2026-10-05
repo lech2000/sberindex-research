@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-02",
+  "recode_url": "https://rosstat.gov.ru/storage/mediabank/765_24_OKTMO.doc",
+  "recode_doc_sha256": "48d839c6eb3e9d9232ab89c9cadaed17ef6f343b2fc2c17a81142bb6c81150d2",
+  "recode_text_sha256": "cf8ac8cbf2c0bbda331cbce930ec0e5430c52d4d868339144695ba5f1002808a",
+  "law_url": "https://www.pravo.gov66.ru/media/pravo/24-%D0%9E%D0%97_879vsft.pdf",
+  "law_pdf_sha256": "0116d3b2ea55af53a46244dce6621b162255b2fcf48ac9b95fe69b6d24185bf1",
+  "before_sha256": "8be058baf8d8ec32bda5431fa6ed5ccdcf0effa0c62869a03576755cbcf956d9",
+  "current_csv_sha256": "d17c73498ec301ef14c700e43a9d7f3d43145bfe6e043c5811c71c91ca3828df",
+  "settlement_code_pairs": 1527,
+  "unique_parent_prefix_pairs": 53,
+  "name_match_candidates_corrob": 51,
+  "name_exceptions_prefix_resolved": [
+    {
+      "old": "65711000000",
+      "new": "65530000000"
+    },
+    {
+      "old": "65769000000",
+      "new": "65536000000"
+    }
+  ],
+  "law_articles_detected": 54,
+  "source_level": "settlement_recode_projected_to_parent_prefix",
+  "explicit_municipal_successor_pairs_in_source": false,
+  "sberindex_territory_id_joined": false
+}

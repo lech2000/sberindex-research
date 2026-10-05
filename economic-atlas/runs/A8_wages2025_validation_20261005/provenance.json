@@ -1,0 +1,25 @@
+{
+ "run_id": "A8-wages2025-validation-20261005",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "protocol_sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069",
+ "code_sha256": "9659a50e71a27ceff0804659abe7e18ab15125945cf34fdb88e2593a4bafe6c7",
+ "inputs_sha256": {
+  "wages": "6c350c9356f8def9d190b56e2bacaa55960ae2c2aa0eda8d25720db44bfadbe3",
+  "employment": "f643b394c11758f5d28e465380e263943c5e5e9e312a468daedca95b7e2f87d7",
+  "a6v2_assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+  "panel_v1": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+ },
+ "tochno_release": "v20260928 (паспорт: data/tochno-bdmo-v20260928-intake.json)",
+ "seeds": {
+  "main": 20261005,
+  "cv": [
+   20261005,
+   20261006,
+   20261007,
+   20261008,
+   20261009
+  ]
+ },
+ "B_bootstrap": 1000,
+ "B_permutation": 2000
+}

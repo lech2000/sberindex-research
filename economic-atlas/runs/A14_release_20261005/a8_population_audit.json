@@ -1,0 +1,32 @@
+{
+  "status": "NO_EFFECT_ON_A8_EFFECTIVE_INPUT",
+  "n_population_changed": 2,
+  "changed_ids": [
+    {
+      "territory_id": 1240,
+      "name": "Беловский",
+      "year_to": 2022,
+      "population_old": 49646.0,
+      "population_corrected": 24823.0,
+      "changed": true,
+      "a8_current_code": false
+    },
+    {
+      "territory_id": 1912,
+      "name": "Шиханы",
+      "year_to": 2020,
+      "population_old": 9744.0,
+      "population_corrected": 4872.0,
+      "changed": true,
+      "a8_current_code": false
+    }
+  ],
+  "exact_duplicate_rows_removed": 8,
+  "all_changed_excluded_before_a8_models": true,
+  "n_current_population_rows_identical": 1510,
+  "secondary_label_orientation_old": false,
+  "secondary_label_orientation_corrected": false,
+  "proof": "All altered population values have year_to!=9999 and are excluded by the unchanged A8 mask. Current-code population values are exactly identical; secondary orientation is identical. No missingness changes. All subsequent numerical model inputs are unchanged.",
+  "full_statistical_rerun": false,
+  "limits": "Audit of input invariance; original 2025 statistical results retained, not a new independent test."
+}

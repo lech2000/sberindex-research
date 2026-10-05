@@ -1,0 +1,26 @@
+{
+  "case_id": "case_66cae4a89ba6473f",
+  "checked_at_utc": "2026-10-05T17:32:46.786691+00:00",
+  "method": "vault upload, material attachment, SHA-256 of downloaded bytes",
+  "materials": [
+    {
+      "id": "mat_1e5565c6f4d74e49",
+      "vault_document_id": "doc_f5cda1035cc74549",
+      "file": "README.md",
+      "title": "Потребительская перестройка муниципалитетов — разбор PDF и результаты 05.10.2026",
+      "bytes": 15573,
+      "sha256": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da",
+      "verified": true
+    },
+    {
+      "id": "mat_feb7a96074194697",
+      "vault_document_id": "doc_481c3a9443414150",
+      "file": "CONSUMPTION_RESTRUCTURING_2026-10-05.zip",
+      "title": "Потребительская перестройка муниципалитетов — отчёт, код и результаты 05.10.2026",
+      "bytes": 10700,
+      "sha256": "3ad562cd8283cf746cfa2e428f26705d3f236e1546beb8cea406caabc1e36200",
+      "verified": true
+    }
+  ],
+  "status": "VERIFIED"
+}

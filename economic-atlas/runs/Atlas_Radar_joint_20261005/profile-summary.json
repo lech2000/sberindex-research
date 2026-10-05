@@ -1,0 +1,338 @@
+[
+  {
+    "category": "Все категории",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 9.559411028492914,
+    "April_iqr_residual_percent": [
+      7.1295521938100626,
+      12.495631088448445
+    ],
+    "quarter_median_residual_percent": 8.782262236574923,
+    "aggregate": true,
+    "causal": false
+  },
+  {
+    "category": "Все категории",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 4.841597391765551,
+    "April_iqr_residual_percent": [
+      3.8103052577057928,
+      6.672230165987392
+    ],
+    "quarter_median_residual_percent": 3.8789801838115645,
+    "aggregate": true,
+    "causal": false
+  },
+  {
+    "category": "Все категории",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 7.227304868328677,
+    "April_iqr_residual_percent": [
+      5.4515150051092975,
+      9.165161614392915
+    ],
+    "quarter_median_residual_percent": 6.523300669939469,
+    "aggregate": true,
+    "causal": false
+  },
+  {
+    "category": "Все категории",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 6.851579528375673,
+    "April_iqr_residual_percent": [
+      5.974398457878571,
+      7.603057733699625
+    ],
+    "quarter_median_residual_percent": 5.899257059076968,
+    "aggregate": true,
+    "causal": false
+  },
+  {
+    "category": "Здоровье",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 14.95731266393252,
+    "April_iqr_residual_percent": [
+      8.732500169685187,
+      22.06266739043268
+    ],
+    "quarter_median_residual_percent": 11.730134642541623,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Здоровье",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 8.379472870726868,
+    "April_iqr_residual_percent": [
+      5.902852134628667,
+      11.385244193042842
+    ],
+    "quarter_median_residual_percent": 5.493896824945987,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Здоровье",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 16.039908955555916,
+    "April_iqr_residual_percent": [
+      10.60842762043459,
+      21.758321464366716
+    ],
+    "quarter_median_residual_percent": 12.861078709195105,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Здоровье",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 19.31733410525236,
+    "April_iqr_residual_percent": [
+      15.820851207694231,
+      21.93853250944243
+    ],
+    "quarter_median_residual_percent": 16.118597723050975,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Маркетплейсы",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 9.927409190504388,
+    "April_iqr_residual_percent": [
+      5.237151010757102,
+      15.7409814308346
+    ],
+    "quarter_median_residual_percent": 5.5776023589251045,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Маркетплейсы",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 3.8357863065263897,
+    "April_iqr_residual_percent": [
+      2.12868686123594,
+      6.14580490911213
+    ],
+    "quarter_median_residual_percent": 0.5657431191496531,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Маркетплейсы",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 8.408855444390873,
+    "April_iqr_residual_percent": [
+      4.325952918935094,
+      13.69312145110917
+    ],
+    "quarter_median_residual_percent": 3.922343577183929,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Маркетплейсы",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 6.645411508371368,
+    "April_iqr_residual_percent": [
+      5.121082852746495,
+      8.965265972013414
+    ],
+    "quarter_median_residual_percent": 1.7148877277486374,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Общественное питание",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 28.466576808592237,
+    "April_iqr_residual_percent": [
+      17.494915663854194,
+      44.36875172606918
+    ],
+    "quarter_median_residual_percent": 31.060090078882684,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Общественное питание",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 13.648933156777044,
+    "April_iqr_residual_percent": [
+      11.442655062570374,
+      16.791562307529684
+    ],
+    "quarter_median_residual_percent": 13.094056317026915,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Общественное питание",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 22.150566628466994,
+    "April_iqr_residual_percent": [
+      14.518277342015695,
+      30.832496271269004
+    ],
+    "quarter_median_residual_percent": 24.095683910575282,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Общественное питание",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 24.111948159988785,
+    "April_iqr_residual_percent": [
+      20.371967103292842,
+      26.363654239251478
+    ],
+    "quarter_median_residual_percent": 23.0723352426526,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Продовольствие",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 4.368549501508334,
+    "April_iqr_residual_percent": [
+      2.5282392797243203,
+      6.3332390568604735
+    ],
+    "quarter_median_residual_percent": 4.435598017065123,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Продовольствие",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 1.8926573408359904,
+    "April_iqr_residual_percent": [
+      1.234547376948536,
+      2.9677837313360933
+    ],
+    "quarter_median_residual_percent": 2.105787953755489,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Продовольствие",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 2.4279493043108946,
+    "April_iqr_residual_percent": [
+      0.9678299652051692,
+      3.9378291392113907
+    ],
+    "quarter_median_residual_percent": 2.332440005153824,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Продовольствие",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 1.8428639674473057,
+    "April_iqr_residual_percent": [
+      1.2173387923862355,
+      2.5942169562202078
+    ],
+    "quarter_median_residual_percent": 1.7133411585071645,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Транспорт",
+    "model": "profile_ses",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 16.66882625857349,
+    "April_iqr_residual_percent": [
+      9.975343165613793,
+      24.724981353747744
+    ],
+    "quarter_median_residual_percent": 17.14049320301452,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Транспорт",
+    "model": "profile_ses",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 8.462681942801709,
+    "April_iqr_residual_percent": [
+      6.62311654727602,
+      10.693867344599074
+    ],
+    "quarter_median_residual_percent": 8.321230548242875,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Транспорт",
+    "model": "category_seasonal",
+    "profile_2023": 0,
+    "n": 1397,
+    "April_median_residual_percent": 12.038666097792138,
+    "April_iqr_residual_percent": [
+      6.66791246331957,
+      17.605876659856044
+    ],
+    "quarter_median_residual_percent": 12.68031991112637,
+    "aggregate": false,
+    "causal": false
+  },
+  {
+    "category": "Транспорт",
+    "model": "category_seasonal",
+    "profile_2023": 1,
+    "n": 499,
+    "April_median_residual_percent": 14.755620539179848,
+    "April_iqr_residual_percent": [
+      11.26971741946733,
+      17.362276868531602
+    ],
+    "quarter_median_residual_percent": 14.445137548817533,
+    "aggregate": false,
+    "causal": false
+  }
+]

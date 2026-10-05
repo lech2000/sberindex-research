@@ -1,0 +1,2240 @@
+{
+  "checked_on": "2026-10-05",
+  "source_base_commit": "d67f80960895d77515cdc3ea7f9f197be97c2cd2",
+  "public_base_commit": "89195f96184ff58056595e632197a7e763542523",
+  "records": [
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/COMPLETION_REPORT_2026-10-05.md",
+      "public": "economic-atlas/COMPLETION_REPORT_2026-10-05.md",
+      "original_sha256": "bebae587269e42eaeb8a8a4ffdf2a7f04ce504a555379c07635000789947e314",
+      "status": "path_adapted",
+      "public_sha256": "f71c395308bb4ed2543790ab15258c135ef01efabe0d2a656ac234b7d2cefc3d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "public": "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "original_sha256": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d",
+      "status": "identical",
+      "public_sha256": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/DELIVERY_MANIFEST.json",
+      "public": "economic-atlas/DELIVERY_MANIFEST.json",
+      "original_sha256": "298e3a979c68594864579e01af0b2e048cd24af932e5952fbce137ca2adef98c",
+      "status": "identical",
+      "public_sha256": "298e3a979c68594864579e01af0b2e048cd24af932e5952fbce137ca2adef98c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/FINDINGS_ATLAS_2026-10-03.md",
+      "public": "economic-atlas/FINDINGS_ATLAS_2026-10-03.md",
+      "original_sha256": "da070b27a8c81992f9e967a9b95dee90a578d96921fec87e343b1a87fae194a7",
+      "status": "identical",
+      "public_sha256": "da070b27a8c81992f9e967a9b95dee90a578d96921fec87e343b1a87fae194a7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/MQ_QUESTION_FOR_OWNER.md",
+      "public": "economic-atlas/MQ_QUESTION_FOR_OWNER.md",
+      "original_sha256": "19431d997d924f2aefcc4f6aef35960ed376e9e850e4d446ab220d73196749ee",
+      "status": "identical",
+      "public_sha256": "19431d997d924f2aefcc4f6aef35960ed376e9e850e4d446ab220d73196749ee"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+      "public": "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+      "original_sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+      "status": "identical",
+      "public_sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/Makefile",
+      "public": "economic-atlas/Makefile",
+      "original_sha256": "48b5f3ff6ccea7c2a0c987ebec69c1a03826a20a37dacbf972672453fba7e040",
+      "status": "path_adapted",
+      "public_sha256": "810190a6ab4bec0462c6339dae40e854bd6c3f0a701253e8e0e37345e73dabd1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/Makefile.release",
+      "public": "economic-atlas/Makefile.release",
+      "original_sha256": "ff7dca5c29180e80df6ab889370b82d82181460a778dfe68f4e31877be5e9288",
+      "status": "path_adapted",
+      "public_sha256": "45710ceb98b6e4ee7d05d308edc164ca000f3cc89c406c98185ae812c84d859e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/NETWORK_ICVI_NOTES_2026-10-04.md",
+      "public": "economic-atlas/NETWORK_ICVI_NOTES_2026-10-04.md",
+      "original_sha256": "1337d02fd465292aca2d3e579771107f4d33d3ae6c6d33be2e9ec339ac7fcb4d",
+      "status": "identical",
+      "public_sha256": "1337d02fd465292aca2d3e579771107f4d33d3ae6c6d33be2e9ec339ac7fcb4d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/OWNER_NOTE_2026-10-05.md",
+      "public": "economic-atlas/OWNER_NOTE_2026-10-05.md",
+      "original_sha256": "7927beba2a58db9e86f6861e3c24dcc5964bae5bc8a5be2e784f4c182b4222c3",
+      "status": "identical",
+      "public_sha256": "7927beba2a58db9e86f6861e3c24dcc5964bae5bc8a5be2e784f4c182b4222c3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/README.md",
+      "public": "economic-atlas/README.md",
+      "original_sha256": "00026a657dd043d41ec253d21198f95f7208962da98fc6a3ab85e3d93f3b6f39",
+      "status": "identical",
+      "public_sha256": "00026a657dd043d41ec253d21198f95f7208962da98fc6a3ab85e3d93f3b6f39"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/RELEASE_README.md",
+      "public": "economic-atlas/RELEASE_README.md",
+      "original_sha256": "e957bc2885367c4bacbcbb672a5b9cbb40c10f9ca472384c83d02e99d6ac2912",
+      "status": "path_adapted",
+      "public_sha256": "83b64980fcf15eab029f6c6d3324c4b9d9c6e9fb6d81e81cca054d41ea3ac0ce"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/RELEASE_REPORT_2026-10-05.md",
+      "public": "economic-atlas/RELEASE_REPORT_2026-10-05.md",
+      "original_sha256": "c9baab767be605c06225ad6acfbbef2d51b4ef8739bb1e60560db83fc2f16737",
+      "status": "identical",
+      "public_sha256": "c9baab767be605c06225ad6acfbbef2d51b4ef8739bb1e60560db83fc2f16737"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/RELEASE_VERIFICATION.json",
+      "public": "economic-atlas/RELEASE_VERIFICATION.json",
+      "original_sha256": "9768fa9a7dfb2e2b6d2986331518553cfedb601138f86f1cb223aa969055b614",
+      "status": "identical",
+      "public_sha256": "9768fa9a7dfb2e2b6d2986331518553cfedb601138f86f1cb223aa969055b614"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/RUN_RECEIPTS.json",
+      "public": "economic-atlas/RUN_RECEIPTS.json",
+      "original_sha256": "2747da4a559d516963c4e6d29e25d6ffcbf17d806a21a4a2b5b87480d1c97f6c",
+      "status": "identical",
+      "public_sha256": "2747da4a559d516963c4e6d29e25d6ffcbf17d806a21a4a2b5b87480d1c97f6c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/SUBMISSION_CHECKLIST.md",
+      "public": "economic-atlas/SUBMISSION_CHECKLIST.md",
+      "original_sha256": "e3d37ab04907fca19b88c851ef21cc218bac42da7a5413750eb28a40103a4842",
+      "status": "identical",
+      "public_sha256": "e3d37ab04907fca19b88c851ef21cc218bac42da7a5413750eb28a40103a4842"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/actions.json",
+      "public": "economic-atlas/actions.json",
+      "original_sha256": "d34b6c55d6c3557261043a56c707ac4607e061789c0f22f96e36e3530c3be694",
+      "status": "identical",
+      "public_sha256": "d34b6c55d6c3557261043a56c707ac4607e061789c0f22f96e36e3530c3be694"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/artifact_contract_receipt.json",
+      "public": "economic-atlas/artifact_contract_receipt.json",
+      "original_sha256": "1e72501ddf474964c1ba2a4cbf5b179576f5e8f4ad19ef153a5586a0b2a2d68e",
+      "status": "identical",
+      "public_sha256": "1e72501ddf474964c1ba2a4cbf5b179576f5e8f4ad19ef153a5586a0b2a2d68e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/clean_make_atlas.log",
+      "public": "economic-atlas/clean_make_atlas.log",
+      "original_sha256": "b72bb585010aef54cda7665ef945efcebc6f2a28b1fc0042cb09a52c35e0909b",
+      "status": "identical",
+      "public_sha256": "b72bb585010aef54cda7665ef945efcebc6f2a28b1fc0042cb09a52c35e0909b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/clean_reproduction_receipt.json",
+      "public": "economic-atlas/clean_reproduction_receipt.json",
+      "original_sha256": "cb3e83215e98f3e0d0373bf2355ea2a521ffa4c41ac38c5e446ecbc452ddba18",
+      "status": "identical",
+      "public_sha256": "cb3e83215e98f3e0d0373bf2355ea2a521ffa4c41ac38c5e446ecbc452ddba18"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/config.json",
+      "public": "economic-atlas/config.json",
+      "original_sha256": "00f6faa824aec6fff2cd5c393c73048121d96f502e3515c48e173637512b3ca9",
+      "status": "identical",
+      "public_sha256": "00f6faa824aec6fff2cd5c393c73048121d96f502e3515c48e173637512b3ca9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/data/panel_passport.json",
+      "public": "economic-atlas/data/panel_passport.json",
+      "original_sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd",
+      "status": "identical",
+      "public_sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/data/panel_v1.parquet",
+      "public": "economic-atlas/data/panel_v1.parquet",
+      "original_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+      "status": "identical",
+      "public_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/data-manifest.json",
+      "public": "economic-atlas/data-manifest.json",
+      "status": "existing_public_version_preserved",
+      "public_sha256": "11f989a1838a7e764c1be0d286294e0e427fc4ab627e6a35a977b3bf3334ab7a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/expected_metrics.json",
+      "public": "economic-atlas/expected_metrics.json",
+      "original_sha256": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79",
+      "status": "identical",
+      "public_sha256": "d597deba6e00fd68d4a36108458f5d1840747187ca4e4a3a84f9075c3d3d6e79"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/expected_partitions.parquet",
+      "public": "economic-atlas/expected_partitions.parquet",
+      "original_sha256": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0",
+      "status": "identical",
+      "public_sha256": "1851407561ebf840f586eb1f691878ac9adaa34c7f3d52acf82add580d5573b0"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/experiments.json",
+      "public": "economic-atlas/experiments.json",
+      "original_sha256": "26054e943a4e8026a040618a1b7de51615505953291dddd944e401d86925a3fb",
+      "status": "identical",
+      "public_sha256": "26054e943a4e8026a040618a1b7de51615505953291dddd944e401d86925a3fb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/features/spec.yaml",
+      "public": "economic-atlas/features/spec.yaml",
+      "original_sha256": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+      "status": "identical",
+      "public_sha256": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/frozen_inputs.json",
+      "public": "economic-atlas/frozen_inputs.json",
+      "original_sha256": "16e2a5e2bdc63c264551d823a9e8ec11573b297cecf530392227fa845ed88099",
+      "status": "identical",
+      "public_sha256": "16e2a5e2bdc63c264551d823a9e8ec11573b297cecf530392227fa845ed88099"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/landing/index.html",
+      "public": "economic-atlas/landing/index.html",
+      "status": "existing_public_version_preserved",
+      "public_sha256": "ed469e3f4162bb41ca8dea914c8fdc4c548f4cbbc3a58f50044348a701a1e5c4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/protocol/question.md",
+      "public": "economic-atlas/protocol/question.md",
+      "original_sha256": "32084e99499d37a910e96202de40e062f970da21712a0b7cd58c89d6edf4e448",
+      "status": "identical",
+      "public_sha256": "32084e99499d37a910e96202de40e062f970da21712a0b7cd58c89d6edf4e448"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/requirements-atlas.txt",
+      "public": "economic-atlas/requirements-atlas.txt",
+      "original_sha256": "08d001fba60d52a6c24a32817228f2165004ad2338121c9bf18b4567ed4312db",
+      "status": "identical",
+      "public_sha256": "08d001fba60d52a6c24a32817228f2165004ad2338121c9bf18b4567ed4312db"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/research-ladder.md",
+      "public": "economic-atlas/research-ladder.md",
+      "status": "existing_public_version_preserved",
+      "public_sha256": "4d69f1f8791b6aae327167bec25499dd4fb1d8bd1f89cddf2417592a46ed482b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/research-plan.md",
+      "public": "economic-atlas/research-plan.md",
+      "original_sha256": "f664bb8b9fea6c64d52c815e3b3a0be5f61ae5ca1809793a0c83176d9503d6b2",
+      "status": "identical",
+      "public_sha256": "f664bb8b9fea6c64d52c815e3b3a0be5f61ae5ca1809793a0c83176d9503d6b2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+      "original_sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+      "status": "identical",
+      "public_sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/README.md",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/README.md",
+      "original_sha256": "b7c084aa631819a918c40b2a9ef6b5844143a92d6d39892812dfab787bd2a26c",
+      "status": "identical",
+      "public_sha256": "b7c084aa631819a918c40b2a9ef6b5844143a92d6d39892812dfab787bd2a26c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/agreement_ari.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/agreement_ari.csv",
+      "original_sha256": "a3348bace77e0db8e4e5bee01fcb13966fbee9a39c4ddb6fd4aca29be6b41aa3",
+      "status": "identical",
+      "public_sha256": "a3348bace77e0db8e4e5bee01fcb13966fbee9a39c4ddb6fd4aca29be6b41aa3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/agreement_nmi.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/agreement_nmi.csv",
+      "original_sha256": "2dc907df41d8b82919c418f1b274c471117fb0dca9a0bf506d1f56e09153d350",
+      "status": "identical",
+      "public_sha256": "2dc907df41d8b82919c418f1b274c471117fb0dca9a0bf506d1f56e09153d350"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K3.parquet",
+      "original_sha256": "27dc2189cfda3a0c045d0c7f83ebf89aa4bd6f083f8709e52789790cd037c947",
+      "status": "identical",
+      "public_sha256": "27dc2189cfda3a0c045d0c7f83ebf89aa4bd6f083f8709e52789790cd037c947"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K5.parquet",
+      "original_sha256": "b0dbf31fdc9984736d1b419e520fefb5b3b72765ca32a50050626595c2cd207b",
+      "status": "identical",
+      "public_sha256": "b0dbf31fdc9984736d1b419e520fefb5b3b72765ca32a50050626595c2cd207b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_average_K8.parquet",
+      "original_sha256": "6da89dd97586cee90e73d430da5219f00d90f6442b99e7ebd0d7e875bdaeda48",
+      "status": "identical",
+      "public_sha256": "6da89dd97586cee90e73d430da5219f00d90f6442b99e7ebd0d7e875bdaeda48"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K3.parquet",
+      "original_sha256": "01ba890b0afb518b418eb0581bb7043fa6ebb4c69ea4dfe0e2eb72d9cc53a9d3",
+      "status": "identical",
+      "public_sha256": "01ba890b0afb518b418eb0581bb7043fa6ebb4c69ea4dfe0e2eb72d9cc53a9d3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K5.parquet",
+      "original_sha256": "2c5223ba1c3541f58aca15e6ee91e4e7f28da7c09061ddc108f618538f8707b3",
+      "status": "identical",
+      "public_sha256": "2c5223ba1c3541f58aca15e6ee91e4e7f28da7c09061ddc108f618538f8707b3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_birch_K8.parquet",
+      "original_sha256": "377db35c5a11313dfe42ac4eadfad6729a75011f461974312393fb2e3ce589ab",
+      "status": "identical",
+      "public_sha256": "377db35c5a11313dfe42ac4eadfad6729a75011f461974312393fb2e3ce589ab"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K3.parquet",
+      "original_sha256": "9c8348f4276add52984bfc2a642d3034e65899c84331ec3fc046e7770a17da06",
+      "status": "identical",
+      "public_sha256": "9c8348f4276add52984bfc2a642d3034e65899c84331ec3fc046e7770a17da06"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K5.parquet",
+      "original_sha256": "006b15df8c613505c4e16464fd484aefe3d6ddcd141394fa3bfb3ede19719235",
+      "status": "identical",
+      "public_sha256": "006b15df8c613505c4e16464fd484aefe3d6ddcd141394fa3bfb3ede19719235"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_gmm_diag_K8.parquet",
+      "original_sha256": "694ecf4f85e24205ebf2f4026e7f84367121ff24ece4ebb28d4a398dd79854bf",
+      "status": "identical",
+      "public_sha256": "694ecf4f85e24205ebf2f4026e7f84367121ff24ece4ebb28d4a398dd79854bf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K3.parquet",
+      "original_sha256": "c3f1203d83509e2973e15a2d32e25963110b36c993ed55f93f9d6bc379440eec",
+      "status": "identical",
+      "public_sha256": "c3f1203d83509e2973e15a2d32e25963110b36c993ed55f93f9d6bc379440eec"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K5.parquet",
+      "original_sha256": "e999212c7491e450ca5307cf614f3a676c26a595e40440334d49207e78b082c1",
+      "status": "identical",
+      "public_sha256": "e999212c7491e450ca5307cf614f3a676c26a595e40440334d49207e78b082c1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_kmeans_K8.parquet",
+      "original_sha256": "75f5cb16626c25df0909af3452266774ce1d4762458bfcecbc9fdcfc6bf4c9f1",
+      "status": "identical",
+      "public_sha256": "75f5cb16626c25df0909af3452266774ce1d4762458bfcecbc9fdcfc6bf4c9f1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_louvain_natural.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_louvain_natural.parquet",
+      "original_sha256": "70a7a175a6a2f5ab9fa5319233042f03326d254a6454567ad7569756ea5a4ce4",
+      "status": "identical",
+      "public_sha256": "70a7a175a6a2f5ab9fa5319233042f03326d254a6454567ad7569756ea5a4ce4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K3.parquet",
+      "original_sha256": "23d3f12c77dd2c75937512602c92ad9173867b5919a7aa13bffc381d064c9fa1",
+      "status": "identical",
+      "public_sha256": "23d3f12c77dd2c75937512602c92ad9173867b5919a7aa13bffc381d064c9fa1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K5.parquet",
+      "original_sha256": "7634c24796529c1135a5829320c3c57118b68e5264ab37e8f1af93b349ac1677",
+      "status": "identical",
+      "public_sha256": "7634c24796529c1135a5829320c3c57118b68e5264ab37e8f1af93b349ac1677"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_spectral_K8.parquet",
+      "original_sha256": "b7c5f7a233f41b63b4ecc8aa177b4bb29108265bcb80678ba20a28b649a4921c",
+      "status": "identical",
+      "public_sha256": "b7c5f7a233f41b63b4ecc8aa177b4bb29108265bcb80678ba20a28b649a4921c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K3.parquet",
+      "original_sha256": "840bb3c800b83759ec758af5a4d763e928298df75d551403dff700313652a2d9",
+      "status": "identical",
+      "public_sha256": "840bb3c800b83759ec758af5a4d763e928298df75d551403dff700313652a2d9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K5.parquet",
+      "original_sha256": "31ec52820c05598fb3393400329a2b7a6e537e0b0206d39fa39beab20f5f5cae",
+      "status": "identical",
+      "public_sha256": "31ec52820c05598fb3393400329a2b7a6e537e0b0206d39fa39beab20f5f5cae"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_A5_ward_K8.parquet",
+      "original_sha256": "7ace6fc27ad54f787d63c6fd308041acc355056ff93bcbe8c07b27f6b4a7c42c",
+      "status": "identical",
+      "public_sha256": "7ace6fc27ad54f787d63c6fd308041acc355056ff93bcbe8c07b27f6b4a7c42c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K3.parquet",
+      "original_sha256": "fd634c68ebc39d85cfe68498c3c8681a905911e6c47e5d6820fc7dc3262f87d6",
+      "status": "identical",
+      "public_sha256": "fd634c68ebc39d85cfe68498c3c8681a905911e6c47e5d6820fc7dc3262f87d6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K5.parquet",
+      "original_sha256": "90a3a5857faa76ad9ee266b3a989f553aa3d22146a773227191111d6ccc47ca6",
+      "status": "identical",
+      "public_sha256": "90a3a5857faa76ad9ee266b3a989f553aa3d22146a773227191111d6ccc47ca6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_average_K8.parquet",
+      "original_sha256": "2aec182773c2a6a820433960cacac9d3c866a38bb6c74082598a002948ff5e66",
+      "status": "identical",
+      "public_sha256": "2aec182773c2a6a820433960cacac9d3c866a38bb6c74082598a002948ff5e66"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K3.parquet",
+      "original_sha256": "56d5889f1a790c495eedd33d59392592c948f7753b461f119ab1215d95dbadd9",
+      "status": "identical",
+      "public_sha256": "56d5889f1a790c495eedd33d59392592c948f7753b461f119ab1215d95dbadd9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K5.parquet",
+      "original_sha256": "e8e54fecbba03ff29b5d6138ce6b8697a112f347a8a4b5c73f0521f095dcb044",
+      "status": "identical",
+      "public_sha256": "e8e54fecbba03ff29b5d6138ce6b8697a112f347a8a4b5c73f0521f095dcb044"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_birch_K8.parquet",
+      "original_sha256": "dd242b97e797aaa8119cb078c905661d18d9af22def63ba09b42c3aec35974eb",
+      "status": "identical",
+      "public_sha256": "dd242b97e797aaa8119cb078c905661d18d9af22def63ba09b42c3aec35974eb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K3.parquet",
+      "original_sha256": "e58ff853711e8c3ade9fd3c760592d5262b014bc9a2303c04c29fcc657dcb333",
+      "status": "identical",
+      "public_sha256": "e58ff853711e8c3ade9fd3c760592d5262b014bc9a2303c04c29fcc657dcb333"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K5.parquet",
+      "original_sha256": "30914d55e2d23b302fe7c4128988de8c5d3a9a862ce8b747139c0aa578a24f58",
+      "status": "identical",
+      "public_sha256": "30914d55e2d23b302fe7c4128988de8c5d3a9a862ce8b747139c0aa578a24f58"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_gmm_diag_K8.parquet",
+      "original_sha256": "78f5296f397114d7963521d0e69424d2e364a8d4977489e529bf3a185af9af02",
+      "status": "identical",
+      "public_sha256": "78f5296f397114d7963521d0e69424d2e364a8d4977489e529bf3a185af9af02"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K3.parquet",
+      "original_sha256": "f4fdd46e5b90665d56e401607211b29df28fd888cc98cea32b980be16239ed65",
+      "status": "identical",
+      "public_sha256": "f4fdd46e5b90665d56e401607211b29df28fd888cc98cea32b980be16239ed65"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K5.parquet",
+      "original_sha256": "5a0730830f70d1187e337b091592c0f29d63da95b73df0aa63eb6d042c2d3573",
+      "status": "identical",
+      "public_sha256": "5a0730830f70d1187e337b091592c0f29d63da95b73df0aa63eb6d042c2d3573"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_kmeans_K8.parquet",
+      "original_sha256": "70208b2c284f5dc2a34716deba4316c80782b6502515a0328f5ec5c5ca6742cb",
+      "status": "identical",
+      "public_sha256": "70208b2c284f5dc2a34716deba4316c80782b6502515a0328f5ec5c5ca6742cb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_louvain_natural.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_louvain_natural.parquet",
+      "original_sha256": "ced2a737f29484a68711ec536dd14cb89db21d0d4c544c00654965c5ea8f1c6c",
+      "status": "identical",
+      "public_sha256": "ced2a737f29484a68711ec536dd14cb89db21d0d4c544c00654965c5ea8f1c6c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K3.parquet",
+      "original_sha256": "4ab5d8a8b8bc4eae0933fc5ba50b00c25ede6966bdbe336635a099f307548228",
+      "status": "identical",
+      "public_sha256": "4ab5d8a8b8bc4eae0933fc5ba50b00c25ede6966bdbe336635a099f307548228"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K5.parquet",
+      "original_sha256": "e215dc2b6c26d6d9212a0dd58d75cb8530975fcbfe434daf86a4732b766a5010",
+      "status": "identical",
+      "public_sha256": "e215dc2b6c26d6d9212a0dd58d75cb8530975fcbfe434daf86a4732b766a5010"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_spectral_K8.parquet",
+      "original_sha256": "dd2c7deedca381584444b9b6c9c93cae6bc6d77b27d7aec57143e39dbe21f4de",
+      "status": "identical",
+      "public_sha256": "dd2c7deedca381584444b9b6c9c93cae6bc6d77b27d7aec57143e39dbe21f4de"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K3.parquet",
+      "original_sha256": "73076ef0932ddd0934e120dd82f97f8955f4a763b8e2cc89c6154551fd36b67f",
+      "status": "identical",
+      "public_sha256": "73076ef0932ddd0934e120dd82f97f8955f4a763b8e2cc89c6154551fd36b67f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K5.parquet",
+      "original_sha256": "ded5837b39728b4af750702e17ecb8c33b8f7ac6aa31228dbb47251101d175b3",
+      "status": "identical",
+      "public_sha256": "ded5837b39728b4af750702e17ecb8c33b8f7ac6aa31228dbb47251101d175b3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2023_ward_K8.parquet",
+      "original_sha256": "2e63ca7c7ea874bf133ecb2a92babe53166697e739b6d7946e06bea452ddd8dc",
+      "status": "identical",
+      "public_sha256": "2e63ca7c7ea874bf133ecb2a92babe53166697e739b6d7946e06bea452ddd8dc"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K3.parquet",
+      "original_sha256": "4e108a4057fab31e1cb8a6a2915fa54d6ae68031761e338007a71b7ebf69c5ca",
+      "status": "identical",
+      "public_sha256": "4e108a4057fab31e1cb8a6a2915fa54d6ae68031761e338007a71b7ebf69c5ca"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K5.parquet",
+      "original_sha256": "f628f48d387163986e30b153c0f6194af97da58655a3cb1e9e3163557adc191e",
+      "status": "identical",
+      "public_sha256": "f628f48d387163986e30b153c0f6194af97da58655a3cb1e9e3163557adc191e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_average_K8.parquet",
+      "original_sha256": "3b85b54cbd266e6bb10115129ea8ba39a86f78e117ac5edb9e662ff34f6286bb",
+      "status": "identical",
+      "public_sha256": "3b85b54cbd266e6bb10115129ea8ba39a86f78e117ac5edb9e662ff34f6286bb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K3.parquet",
+      "original_sha256": "63358b55eb9266a5afe2d903c2d407b2f4b2de3ed90b78d340e7724468b4d742",
+      "status": "identical",
+      "public_sha256": "63358b55eb9266a5afe2d903c2d407b2f4b2de3ed90b78d340e7724468b4d742"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K5.parquet",
+      "original_sha256": "e7c1d41899c5e300263280d1a24b7ec9e7693a916833d5742b1a0527aac195bd",
+      "status": "identical",
+      "public_sha256": "e7c1d41899c5e300263280d1a24b7ec9e7693a916833d5742b1a0527aac195bd"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_birch_K8.parquet",
+      "original_sha256": "d585e0e7601cd2c09c63bb906a8ae7f971dfcdf1b42e450979db263c91e26b7e",
+      "status": "identical",
+      "public_sha256": "d585e0e7601cd2c09c63bb906a8ae7f971dfcdf1b42e450979db263c91e26b7e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K3.parquet",
+      "original_sha256": "77110cce20325c5a301fd8e2bc233c999a459a9d3593f6d87f4c8fd331350f87",
+      "status": "identical",
+      "public_sha256": "77110cce20325c5a301fd8e2bc233c999a459a9d3593f6d87f4c8fd331350f87"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K5.parquet",
+      "original_sha256": "76be6eb089f1d3d69127bb89472ab30c48413a3052ead605389a7883bb78fdd6",
+      "status": "identical",
+      "public_sha256": "76be6eb089f1d3d69127bb89472ab30c48413a3052ead605389a7883bb78fdd6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_gmm_diag_K8.parquet",
+      "original_sha256": "b80a2de13e345bf0af163a50afd852366f91cdbb7374c6fc3023b08df40afdbd",
+      "status": "identical",
+      "public_sha256": "b80a2de13e345bf0af163a50afd852366f91cdbb7374c6fc3023b08df40afdbd"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K3.parquet",
+      "original_sha256": "f6507d576874a52da95c70299d038d35de9fc6cb0ad1a1a8a1d76057cf2ab7a1",
+      "status": "identical",
+      "public_sha256": "f6507d576874a52da95c70299d038d35de9fc6cb0ad1a1a8a1d76057cf2ab7a1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K5.parquet",
+      "original_sha256": "cad2339ffc150ee82034ad5e2bd8f951eadf3c6a2ca5a8e3edb3e3b9eeb486e8",
+      "status": "identical",
+      "public_sha256": "cad2339ffc150ee82034ad5e2bd8f951eadf3c6a2ca5a8e3edb3e3b9eeb486e8"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_kmeans_K8.parquet",
+      "original_sha256": "cbf2dc826e47f027dfc3176762ef2c184a024be90b3e4d4c405e9624f6a9d0f6",
+      "status": "identical",
+      "public_sha256": "cbf2dc826e47f027dfc3176762ef2c184a024be90b3e4d4c405e9624f6a9d0f6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_louvain_natural.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_louvain_natural.parquet",
+      "original_sha256": "7308c391c2fa4b8cc357c9f36a49ee4a646d183aa6155cc6e93f4fc958f9087c",
+      "status": "identical",
+      "public_sha256": "7308c391c2fa4b8cc357c9f36a49ee4a646d183aa6155cc6e93f4fc958f9087c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K3.parquet",
+      "original_sha256": "025b65663d0c293fef2968de84e9842b9825f47b5226594bc1e3fb7dcfce014f",
+      "status": "identical",
+      "public_sha256": "025b65663d0c293fef2968de84e9842b9825f47b5226594bc1e3fb7dcfce014f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K5.parquet",
+      "original_sha256": "43b7348dec88b4e1258d90373dd615026a0328df0f7ed1f8e3e3173ea5bc4cb7",
+      "status": "identical",
+      "public_sha256": "43b7348dec88b4e1258d90373dd615026a0328df0f7ed1f8e3e3173ea5bc4cb7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_spectral_K8.parquet",
+      "original_sha256": "7797c7601112af76cbec781f1831b2f847fd79de0aac08839d8498eef0f43621",
+      "status": "identical",
+      "public_sha256": "7797c7601112af76cbec781f1831b2f847fd79de0aac08839d8498eef0f43621"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K3.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K3.parquet",
+      "original_sha256": "a8f936cb94f57a2fbb73fdb3f34d1ad74c777506e034b3401d6abf8ff78e21d7",
+      "status": "identical",
+      "public_sha256": "a8f936cb94f57a2fbb73fdb3f34d1ad74c777506e034b3401d6abf8ff78e21d7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K5.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K5.parquet",
+      "original_sha256": "a0306bf8ea1e704f74e61947c06e6974ba28f50f5c686e27ae8ba52c854c12c5",
+      "status": "identical",
+      "public_sha256": "a0306bf8ea1e704f74e61947c06e6974ba28f50f5c686e27ae8ba52c854c12c5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K8.parquet",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/assignments_annual2024_ward_K8.parquet",
+      "original_sha256": "8d285d253725c8b9208dbeebe6aa0e3f234c329be63ab6129648d2db9a13ebe0",
+      "status": "identical",
+      "public_sha256": "8d285d253725c8b9208dbeebe6aa0e3f234c329be63ab6129648d2db9a13ebe0"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/provenance.json",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/provenance.json",
+      "original_sha256": "6dfb11299306d88c65beeb84893549951aa4bada7afe736100f7e9a8c3c11f5f",
+      "status": "identical",
+      "public_sha256": "6dfb11299306d88c65beeb84893549951aa4bada7afe736100f7e9a8c3c11f5f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/results.json",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+      "original_sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43",
+      "status": "identical",
+      "public_sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/same_k_agreement.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/same_k_agreement.csv",
+      "original_sha256": "0dab7b9761ca505950f1e20523da9b8e331e0cb26534a681fe22408e281921b9",
+      "status": "identical",
+      "public_sha256": "0dab7b9761ca505950f1e20523da9b8e331e0cb26534a681fe22408e281921b9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/seed_consistency.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/seed_consistency.csv",
+      "original_sha256": "1dfa4f2f83e4d05af2a9364dab3ee9dbfc46852c509899bd67e91632330cca39",
+      "status": "identical",
+      "public_sha256": "1dfa4f2f83e4d05af2a9364dab3ee9dbfc46852c509899bd67e91632330cca39"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/stability.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/stability.csv",
+      "original_sha256": "d2737ebe9fac35955cc95bdffc9f8858622c8d72f12db73852b677860b790fce",
+      "status": "identical",
+      "public_sha256": "d2737ebe9fac35955cc95bdffc9f8858622c8d72f12db73852b677860b790fce"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A10_method_comparison_20261005/stability_summary.csv",
+      "public": "economic-atlas/runs/A10_method_comparison_20261005/stability_summary.csv",
+      "original_sha256": "7027e3e8088d4d7e6eed1e0e6188a991a47ce7d65e85f012539c8beb0abb4664",
+      "status": "identical",
+      "public_sha256": "7027e3e8088d4d7e6eed1e0e6188a991a47ce7d65e85f012539c8beb0abb4664"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/PROTOCOL.md",
+      "original_sha256": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717",
+      "status": "identical",
+      "public_sha256": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/README.md",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/README.md",
+      "original_sha256": "8d868322f5567565cc3db4b3c37463b34e976da34266ce964910f4ed13804f37",
+      "status": "identical",
+      "public_sha256": "8d868322f5567565cc3db4b3c37463b34e976da34266ce964910f4ed13804f37"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/all_networks_validity.csv",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/all_networks_validity.csv",
+      "original_sha256": "27e872621593b367cd4b4243c17bdf241ccf8430478f9d38674c38d4a0ba9bed",
+      "status": "identical",
+      "public_sha256": "27e872621593b367cd4b4243c17bdf241ccf8430478f9d38674c38d4a0ba9bed"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/cross_year_differences.csv",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/cross_year_differences.csv",
+      "original_sha256": "8aace9dc44412770fc354bf9fe85724d68cd4bcab4fdf365ae6bdff5be141c48",
+      "status": "identical",
+      "public_sha256": "8aace9dc44412770fc354bf9fe85724d68cd4bcab4fdf365ae6bdff5be141c48"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/cross_year_validity.csv",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/cross_year_validity.csv",
+      "original_sha256": "0ffafa7d600df7981ed01f8f0df28fb685a91eb9f21802e1e5422c7fa29a86df",
+      "status": "identical",
+      "public_sha256": "0ffafa7d600df7981ed01f8f0df28fb685a91eb9f21802e1e5422c7fa29a86df"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/feature_metrics_all_seeds.csv",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/feature_metrics_all_seeds.csv",
+      "original_sha256": "4523ff044d609757fa2e07543be758ead8463b2b819b898060ab46b17b543c00",
+      "status": "identical",
+      "public_sha256": "4523ff044d609757fa2e07543be758ead8463b2b819b898060ab46b17b543c00"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/provenance.json",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/provenance.json",
+      "original_sha256": "1cc7397dfbed2138ad9c495e7d25d2b34e45cd113a1c4d2f17f2d357267224da",
+      "status": "identical",
+      "public_sha256": "1cc7397dfbed2138ad9c495e7d25d2b34e45cd113a1c4d2f17f2d357267224da"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/results.json",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/results.json",
+      "original_sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+      "status": "identical",
+      "public_sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A11_icvi_table_20261005/validity.csv",
+      "public": "economic-atlas/runs/A11_icvi_table_20261005/validity.csv",
+      "original_sha256": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96",
+      "status": "identical",
+      "public_sha256": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL.md",
+      "original_sha256": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250",
+      "status": "identical",
+      "public_sha256": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL_v1_before_input_duplicate_audit.md",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL_v1_before_input_duplicate_audit.md",
+      "original_sha256": "fb081f77cf9cbff3d2c1ab57e35cfb0e762aab4ed16aa19e86e0a85cddfe0a8f",
+      "status": "identical",
+      "public_sha256": "fb081f77cf9cbff3d2c1ab57e35cfb0e762aab4ed16aa19e86e0a85cddfe0a8f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/README.md",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/README.md",
+      "original_sha256": "de6a1aaf92bd73a1a304d253506403254f857879a8624bc934cbeb02cf682168",
+      "status": "identical",
+      "public_sha256": "de6a1aaf92bd73a1a304d253506403254f857879a8624bc934cbeb02cf682168"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/coassociation_2023-12.npy",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/coassociation_2023-12.npy",
+      "original_sha256": "f5c691870b90ce88b54e90998ca099531821829792fb81db6cd2adfafb5e4460",
+      "status": "identical",
+      "public_sha256": "f5c691870b90ce88b54e90998ca099531821829792fb81db6cd2adfafb5e4460"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/coassociation_2024-12.npy",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/coassociation_2024-12.npy",
+      "original_sha256": "e5705fbc3743edd7b5ddf6877ec726ed92b5e28a4802ce7b4d95489770a506be",
+      "status": "identical",
+      "public_sha256": "e5705fbc3743edd7b5ddf6877ec726ed92b5e28a4802ce7b4d95489770a506be"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/configurations_2023-12.parquet",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/configurations_2023-12.parquet",
+      "original_sha256": "125535e08fd0998eaced99d1b417325b20bdbea05de3dcd9102d3db37b78ec7e",
+      "status": "identical",
+      "public_sha256": "125535e08fd0998eaced99d1b417325b20bdbea05de3dcd9102d3db37b78ec7e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/configurations_2024-12.parquet",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/configurations_2024-12.parquet",
+      "original_sha256": "efbcd743b43744ddd6f7b7d6607e5af891fa3855dabd5f6290ab2f6bf9a9c978",
+      "status": "identical",
+      "public_sha256": "efbcd743b43744ddd6f7b7d6607e5af891fa3855dabd5f6290ab2f6bf9a9c978"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/cores_2023-12.parquet",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/cores_2023-12.parquet",
+      "original_sha256": "d8ed5b3ca869707d14655e43fcfa8a4322a3e78eba6b2dba27d613af33d574c7",
+      "status": "identical",
+      "public_sha256": "d8ed5b3ca869707d14655e43fcfa8a4322a3e78eba6b2dba27d613af33d574c7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/cores_2024-12.parquet",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/cores_2024-12.parquet",
+      "original_sha256": "a5668bed95c697e025092687c319e199e42a46e8b08c591a1b4b50134023f5a9",
+      "status": "identical",
+      "public_sha256": "a5668bed95c697e025092687c319e199e42a46e8b08c591a1b4b50134023f5a9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/five_stories.csv",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/five_stories.csv",
+      "original_sha256": "da7b21d131f6a6c8f34c4a34787cf7bee66e6f174bc2688ac63e6a4658ba9080",
+      "status": "identical",
+      "public_sha256": "da7b21d131f6a6c8f34c4a34787cf7bee66e6f174bc2688ac63e6a4658ba9080"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/passports_2023-12.json",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/passports_2023-12.json",
+      "original_sha256": "4763f1f300c8d7e4335ad16f2f159b85678523aee4d909ad22e59b7e461c1452",
+      "status": "identical",
+      "public_sha256": "4763f1f300c8d7e4335ad16f2f159b85678523aee4d909ad22e59b7e461c1452"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/passports_2024-12.json",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/passports_2024-12.json",
+      "original_sha256": "a98b7b7e04bc737589d334a4d587c82bb3bd9f22bd745f9d7a4bc6aa9110faa6",
+      "status": "identical",
+      "public_sha256": "a98b7b7e04bc737589d334a4d587c82bb3bd9f22bd745f9d7a4bc6aa9110faa6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/provenance.json",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/provenance.json",
+      "original_sha256": "f64c01b27024fd707d22754a429fe32abc877c7a4d560241282bb68be2090c96",
+      "status": "identical",
+      "public_sha256": "f64c01b27024fd707d22754a429fe32abc877c7a4d560241282bb68be2090c96"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A12_stable_cores_20261005/results.json",
+      "public": "economic-atlas/runs/A12_stable_cores_20261005/results.json",
+      "original_sha256": "3be1c20917535f7bbb7828e7e25d53d1a1623a3680365eff5a06cc0ecd0d374f",
+      "status": "identical",
+      "public_sha256": "3be1c20917535f7bbb7828e7e25d53d1a1623a3680365eff5a06cc0ecd0d374f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/AVU_ALGEBRA_NOTE_2026-10-05.md",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/AVU_ALGEBRA_NOTE_2026-10-05.md",
+      "original_sha256": "4ca753e8e1a29374e0b4f1b5804b74f7a5c71d67452b2e74f470b94c7bfbb269",
+      "status": "identical",
+      "public_sha256": "4ca753e8e1a29374e0b4f1b5804b74f7a5c71d67452b2e74f470b94c7bfbb269"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/PROTOCOL.md",
+      "original_sha256": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e",
+      "status": "identical",
+      "public_sha256": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/TASK_REVIEW_2026-10-05.md",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/TASK_REVIEW_2026-10-05.md",
+      "original_sha256": "2363f4e62a1411c2f527e593d55a12f493f406ff79dfc6095d3b495b90942f24",
+      "status": "identical",
+      "public_sha256": "2363f4e62a1411c2f527e593d55a12f493f406ff79dfc6095d3b495b90942f24"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/baseline_check_receipt.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/baseline_check_receipt.json",
+      "original_sha256": "d92b3102afe6e61a1936bf6b326ac656e10b0412396b22eccd52e3338de1909f",
+      "status": "identical",
+      "public_sha256": "d92b3102afe6e61a1936bf6b326ac656e10b0412396b22eccd52e3338de1909f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/execution-notes.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/execution-notes.json",
+      "original_sha256": "038abc82f3e1adc66e3b736560f4d0a3172f573126b4a1f833577530d8023652",
+      "status": "identical",
+      "public_sha256": "038abc82f3e1adc66e3b736560f4d0a3172f573126b4a1f833577530d8023652"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/full_test_receipt.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/full_test_receipt.json",
+      "original_sha256": "22038ab7bccabdf4764207a31206cd82bb61b01451b59e63b671b804889d2d9c",
+      "status": "identical",
+      "public_sha256": "22038ab7bccabdf4764207a31206cd82bb61b01451b59e63b671b804889d2d9c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/protocol-freeze.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/protocol-freeze.json",
+      "original_sha256": "eaa3c87f3915a835e627748e579661c3c444ee1ceef0698e370a5b746e9265db",
+      "status": "identical",
+      "public_sha256": "eaa3c87f3915a835e627748e579661c3c444ee1ceef0698e370a5b746e9265db"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/provenance.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/provenance.json",
+      "original_sha256": "6a9a2109dbdda6c5fef10381d55009c39259d8e667a4ca9e2ce95ef71f59ba82",
+      "status": "identical",
+      "public_sha256": "6a9a2109dbdda6c5fef10381d55009c39259d8e667a4ca9e2ce95ef71f59ba82"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/results.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/results.json",
+      "original_sha256": "71345401af94866219f89e6119884184b5c8e64ee74fcb9df6614177557ffcba",
+      "status": "identical",
+      "public_sha256": "71345401af94866219f89e6119884184b5c8e64ee74fcb9df6614177557ffcba"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/source-task-receipt.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/source-task-receipt.json",
+      "original_sha256": "850601c11099d9d9ebfb012b444d8188e8a5ed0355844ad1bbcf9720cce52449",
+      "status": "identical",
+      "public_sha256": "850601c11099d9d9ebfb012b444d8188e8a5ed0355844ad1bbcf9720cce52449"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/source-task.txt",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/source-task.txt",
+      "original_sha256": "34d0b0fbd7f2be7617c45bdc6d2e64c4274e07b5a9ca9a54e75ca4e9d39b8f7c",
+      "status": "identical",
+      "public_sha256": "34d0b0fbd7f2be7617c45bdc6d2e64c4274e07b5a9ca9a54e75ca4e9d39b8f7c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A13_reproduction_20261005/step_status.json",
+      "public": "economic-atlas/runs/A13_reproduction_20261005/step_status.json",
+      "original_sha256": "d8a2cfb3b4d92d465198147eb7061a25785e0689b860b9be4f385ae23e6f03ee",
+      "status": "identical",
+      "public_sha256": "d8a2cfb3b4d92d465198147eb7061a25785e0689b860b9be4f385ae23e6f03ee"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A14_release_20261005/PROTOCOL.md",
+      "original_sha256": "11dec7778be5645190516836dee5b50790a634f1ba98d0e4c2053dde22d7f043",
+      "status": "identical",
+      "public_sha256": "11dec7778be5645190516836dee5b50790a634f1ba98d0e4c2053dde22d7f043"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/a8_correction_receipt.json",
+      "public": "economic-atlas/runs/A14_release_20261005/a8_correction_receipt.json",
+      "original_sha256": "5566af70c04fafa95873744a721a09fc02256b535aef35467a3baf8c79a604bb",
+      "status": "identical",
+      "public_sha256": "5566af70c04fafa95873744a721a09fc02256b535aef35467a3baf8c79a604bb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+      "public": "economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+      "original_sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+      "status": "identical",
+      "public_sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/build_demo.log",
+      "public": "economic-atlas/runs/A14_release_20261005/build_demo.log",
+      "original_sha256": "45cc8d9e913ad829af1a6a8d0de6d08769e2e8ed909254f184dafb9675285687",
+      "status": "identical",
+      "public_sha256": "45cc8d9e913ad829af1a6a8d0de6d08769e2e8ed909254f184dafb9675285687"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/composition_sensitivity.csv",
+      "public": "economic-atlas/runs/A14_release_20261005/composition_sensitivity.csv",
+      "original_sha256": "32b254695b41bbe9091523ca8af45c019e79fbf693a84f391c703dfbb78c57ca",
+      "status": "identical",
+      "public_sha256": "32b254695b41bbe9091523ca8af45c019e79fbf693a84f391c703dfbb78c57ca"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/coverage_audit.json",
+      "public": "economic-atlas/runs/A14_release_20261005/coverage_audit.json",
+      "original_sha256": "6602822cd752869829ccc6bbd986fb947658be29fd483ddff7f4beb6ee3b65bf",
+      "status": "identical",
+      "public_sha256": "6602822cd752869829ccc6bbd986fb947658be29fd483ddff7f4beb6ee3b65bf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/coverage_exclusions.csv",
+      "public": "economic-atlas/runs/A14_release_20261005/coverage_exclusions.csv",
+      "original_sha256": "a037e6aefcef89864c2672bdb90b806c94bdf15319eeeb3ee8ec36f921988b8d",
+      "status": "identical",
+      "public_sha256": "a037e6aefcef89864c2672bdb90b806c94bdf15319eeeb3ee8ec36f921988b8d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/execution.log",
+      "public": "economic-atlas/runs/A14_release_20261005/execution.log",
+      "original_sha256": "0ea09857aac15e06738d020ab2da48263b27f2ca820576c888a642fb3faa1ed0",
+      "status": "identical",
+      "public_sha256": "0ea09857aac15e06738d020ab2da48263b27f2ca820576c888a642fb3faa1ed0"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/final_build.log",
+      "public": "economic-atlas/runs/A14_release_20261005/final_build.log",
+      "original_sha256": "45cc8d9e913ad829af1a6a8d0de6d08769e2e8ed909254f184dafb9675285687",
+      "status": "identical",
+      "public_sha256": "45cc8d9e913ad829af1a6a8d0de6d08769e2e8ed909254f184dafb9675285687"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/html_check.log",
+      "public": "economic-atlas/runs/A14_release_20261005/html_check.log",
+      "original_sha256": "d8d655543123364a05b33b17bdf8b4067852e4b1e04360c169182ae1ffc768c9",
+      "status": "identical",
+      "public_sha256": "d8d655543123364a05b33b17bdf8b4067852e4b1e04360c169182ae1ffc768c9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/neighbor_stability.csv",
+      "public": "economic-atlas/runs/A14_release_20261005/neighbor_stability.csv",
+      "original_sha256": "85ff583dc442f06f636cbc597a1de6755b80c7edf912ec5f2c7d6dfa354014cc",
+      "status": "identical",
+      "public_sha256": "85ff583dc442f06f636cbc597a1de6755b80c7edf912ec5f2c7d6dfa354014cc"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/population_changes.csv",
+      "public": "economic-atlas/runs/A14_release_20261005/population_changes.csv",
+      "original_sha256": "b622604fba3fbed6dd9ccc9b7cf358669364aa7c22f4a091860f26c25dcf63e9",
+      "status": "identical",
+      "public_sha256": "b622604fba3fbed6dd9ccc9b7cf358669364aa7c22f4a091860f26c25dcf63e9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/primary_readonly_verification.json",
+      "public": "economic-atlas/runs/A14_release_20261005/primary_readonly_verification.json",
+      "original_sha256": "b1a53de24f9a7b55adab6c007c00f60de0fa8c146f7cca13d864483978470608",
+      "status": "identical",
+      "public_sha256": "b1a53de24f9a7b55adab6c007c00f60de0fa8c146f7cca13d864483978470608"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/provenance.json",
+      "public": "economic-atlas/runs/A14_release_20261005/provenance.json",
+      "original_sha256": "66166f2b27b0fe5d4d24b0b7d3f4606d9b3f4f715ef0c621f147dce7b7aa70a9",
+      "status": "identical",
+      "public_sha256": "66166f2b27b0fe5d4d24b0b7d3f4606d9b3f4f715ef0c621f147dce7b7aa70a9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/run_a8_corrected.py",
+      "public": "economic-atlas/runs/A14_release_20261005/run_a8_corrected.py",
+      "original_sha256": "bff5ba4459099e10dee190651224ac108698ce79a4fc6a26d6af39187777412c",
+      "status": "identical",
+      "public_sha256": "bff5ba4459099e10dee190651224ac108698ce79a4fc6a26d6af39187777412c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/supplementary_memberships.parquet",
+      "public": "economic-atlas/runs/A14_release_20261005/supplementary_memberships.parquet",
+      "original_sha256": "e35cf4ab17369e1f99c63e9b66881ee56732089a7dbf23da5d053778cf5c73d5",
+      "status": "identical",
+      "public_sha256": "e35cf4ab17369e1f99c63e9b66881ee56732089a7dbf23da5d053778cf5c73d5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A14_release_20261005/tests.log",
+      "public": "economic-atlas/runs/A14_release_20261005/tests.log",
+      "original_sha256": "cdca9e39e06a19e002b2b4babf51fc3fbd38658e7a05e6a11dfa27d6d431a6aa",
+      "status": "identical",
+      "public_sha256": "cdca9e39e06a19e002b2b4babf51fc3fbd38658e7a05e6a11dfa27d6d431a6aa"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A2/missing.json",
+      "public": "economic-atlas/runs/A2/missing.json",
+      "original_sha256": "eb8cab00394c089cc34e913d27b195a54fb07b7e2072c50e188d4f51d976104b",
+      "status": "identical",
+      "public_sha256": "eb8cab00394c089cc34e913d27b195a54fb07b7e2072c50e188d4f51d976104b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A4/agglomerative.json",
+      "public": "economic-atlas/runs/A4/agglomerative.json",
+      "original_sha256": "7bf95a9bec06903c34ac56aac159c635b0666739d21b411771e5122319eb5480",
+      "status": "identical",
+      "public_sha256": "7bf95a9bec06903c34ac56aac159c635b0666739d21b411771e5122319eb5480"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A4/kmeans.json",
+      "public": "economic-atlas/runs/A4/kmeans.json",
+      "original_sha256": "67aad2e7b69f767913d74e99500ff28e580ea6dbf3cc9d4ec4c8aed11e435bb7",
+      "status": "identical",
+      "public_sha256": "67aad2e7b69f767913d74e99500ff28e580ea6dbf3cc9d4ec4c8aed11e435bb7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A4/metrics.json",
+      "public": "economic-atlas/runs/A4/metrics.json",
+      "original_sha256": "0d82662f94d69af0888330109d5c1f9f3fc4d34dcc8f8b5be76f8a9724dce49f",
+      "status": "identical",
+      "public_sha256": "0d82662f94d69af0888330109d5c1f9f3fc4d34dcc8f8b5be76f8a9724dce49f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/README.md",
+      "public": "economic-atlas/runs/A5/README.md",
+      "original_sha256": "210c069e7ae9aa5ba87d7f10181d0f7374e6989a12c2aa6a34e94310988c3ec0",
+      "status": "identical",
+      "public_sha256": "210c069e7ae9aa5ba87d7f10181d0f7374e6989a12c2aa6a34e94310988c3ec0"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/assignments.parquet",
+      "public": "economic-atlas/runs/A5/assignments.parquet",
+      "original_sha256": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+      "status": "identical",
+      "public_sha256": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/edges.parquet",
+      "public": "economic-atlas/runs/A5/edges.parquet",
+      "original_sha256": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+      "status": "identical",
+      "public_sha256": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/features.parquet",
+      "public": "economic-atlas/runs/A5/features.parquet",
+      "original_sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+      "status": "identical",
+      "public_sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/graph_manifest.json",
+      "public": "economic-atlas/runs/A5/graph_manifest.json",
+      "original_sha256": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+      "status": "identical",
+      "public_sha256": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/metrics.json",
+      "public": "economic-atlas/runs/A5/metrics.json",
+      "original_sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+      "status": "identical",
+      "public_sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A5/vertices.parquet",
+      "public": "economic-atlas/runs/A5/vertices.parquet",
+      "original_sha256": "ab2e63062c2e10f184e5504d0716a955db36b23d069fb4323104644914bcb97e",
+      "status": "identical",
+      "public_sha256": "ab2e63062c2e10f184e5504d0716a955db36b23d069fb4323104644914bcb97e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6/README.md",
+      "public": "economic-atlas/runs/A6/README.md",
+      "original_sha256": "ce81fff477715253bcc04063dcd689d975acc1bbef3c315225b7ac296a5e3aff",
+      "status": "identical",
+      "public_sha256": "ce81fff477715253bcc04063dcd689d975acc1bbef3c315225b7ac296a5e3aff"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6/manifest.json",
+      "public": "economic-atlas/runs/A6/manifest.json",
+      "original_sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2",
+      "status": "identical",
+      "public_sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6/metrics.json",
+      "public": "economic-atlas/runs/A6/metrics.json",
+      "original_sha256": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+      "status": "identical",
+      "public_sha256": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6/temporal_manifest.json",
+      "public": "economic-atlas/runs/A6/temporal_manifest.json",
+      "original_sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2",
+      "status": "identical",
+      "public_sha256": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6/transitions.parquet",
+      "public": "economic-atlas/runs/A6/transitions.parquet",
+      "original_sha256": "7c73192acb2779b45fdd96b406804d1ad79c0b7bef0ddfc72a5cba89814dc33a",
+      "status": "identical",
+      "public_sha256": "7c73192acb2779b45fdd96b406804d1ad79c0b7bef0ddfc72a5cba89814dc33a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_margin_audit_20260927/manifest.json",
+      "public": "economic-atlas/runs/A6_margin_audit_20260927/manifest.json",
+      "original_sha256": "7ddbfe5f05a55a3925430bb3b69efe404892c36817d2b54d66074e2eb78cb89f",
+      "status": "identical",
+      "public_sha256": "7ddbfe5f05a55a3925430bb3b69efe404892c36817d2b54d66074e2eb78cb89f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_margin_audit_20260927/margin_comparison.csv",
+      "public": "economic-atlas/runs/A6_margin_audit_20260927/margin_comparison.csv",
+      "original_sha256": "2a4d42d977589c8ac15f45568afc2bd600f477ffd76bab64aafdaee8dcefa454",
+      "status": "identical",
+      "public_sha256": "2a4d42d977589c8ac15f45568afc2bd600f477ffd76bab64aafdaee8dcefa454"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_margin_audit_20260927/metrics.json",
+      "public": "economic-atlas/runs/A6_margin_audit_20260927/metrics.json",
+      "original_sha256": "ad7465a7a35579b7f7e4aa765f98b09e3c8114d53441862a44f2f20f37a987f0",
+      "status": "identical",
+      "public_sha256": "ad7465a7a35579b7f7e4aa765f98b09e3c8114d53441862a44f2f20f37a987f0"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_margin_audit_20260927/paired_draws.csv",
+      "public": "economic-atlas/runs/A6_margin_audit_20260927/paired_draws.csv",
+      "original_sha256": "24a6c0f0a42ba849af56bbcf912f81998a5b6f57a9eab4d5c9863add33143cda",
+      "status": "identical",
+      "public_sha256": "24a6c0f0a42ba849af56bbcf912f81998a5b6f57a9eab4d5c9863add33143cda"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_margin_audit_20260927/quantiles.csv",
+      "public": "economic-atlas/runs/A6_margin_audit_20260927/quantiles.csv",
+      "original_sha256": "5f51808054cd3c95a2a652623f73666223bd9816926b2629d9f7d65d5c7d09f5",
+      "status": "identical",
+      "public_sha256": "5f51808054cd3c95a2a652623f73666223bd9816926b2629d9f7d65d5c7d09f5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/README.md",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/README.md",
+      "original_sha256": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598",
+      "status": "identical",
+      "public_sha256": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/comparison2vs5.csv",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/comparison2vs5.csv",
+      "original_sha256": "3eadefe15027c51777867158a731d6c39455cc93edc662c912257c67f8262be8",
+      "status": "identical",
+      "public_sha256": "3eadefe15027c51777867158a731d6c39455cc93edc662c912257c67f8262be8"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/manifest.json",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/manifest.json",
+      "original_sha256": "992a0f27d24b0423ce8a7accf24106ecac10bfedef724536f02be2b3498708e4",
+      "status": "identical",
+      "public_sha256": "992a0f27d24b0423ce8a7accf24106ecac10bfedef724536f02be2b3498708e4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+      "original_sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+      "status": "identical",
+      "public_sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/operator_review.json",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/operator_review.json",
+      "original_sha256": "99770e625e1c47b50cca04c48b8ae000db7d57613f060faa703ef8ce94aec600",
+      "status": "identical",
+      "public_sha256": "99770e625e1c47b50cca04c48b8ae000db7d57613f060faa703ef8ce94aec600"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/raw_s_profiles.csv",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/raw_s_profiles.csv",
+      "original_sha256": "0e5f31f2e3b079c9ee187304f24bb41adda58d342d817c4ae4b7fae8d068e59b",
+      "status": "identical",
+      "public_sha256": "0e5f31f2e3b079c9ee187304f24bb41adda58d342d817c4ae4b7fae8d068e59b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A6_threshold_review_20260927/threshold_sweep.csv",
+      "public": "economic-atlas/runs/A6_threshold_review_20260927/threshold_sweep.csv",
+      "original_sha256": "0fb74b0f7f8baadce641ca491c775bb496a78fd2427f4b4d53e9322740e7155f",
+      "status": "identical",
+      "public_sha256": "0fb74b0f7f8baadce641ca491c775bb496a78fd2427f4b4d53e9322740e7155f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_network_icvi_audit_20261005/README.md",
+      "public": "economic-atlas/runs/A7_network_icvi_audit_20261005/README.md",
+      "original_sha256": "b11547f2c602e32ceed3ddd2c170c7b8d94b3c73932625b919c43921bf7f7aa3",
+      "status": "identical",
+      "public_sha256": "b11547f2c602e32ceed3ddd2c170c7b8d94b3c73932625b919c43921bf7f7aa3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_network_icvi_audit_20261005/audit.py",
+      "public": "economic-atlas/runs/A7_network_icvi_audit_20261005/audit.py",
+      "original_sha256": "37c07281ca8531d7216b0d83d985d4b589bcaad92d7b8d331f7fc959202f325a",
+      "status": "identical",
+      "public_sha256": "37c07281ca8531d7216b0d83d985d4b589bcaad92d7b8d331f7fc959202f325a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_network_icvi_audit_20261005/provenance.json",
+      "public": "economic-atlas/runs/A7_network_icvi_audit_20261005/provenance.json",
+      "original_sha256": "07a553e45795aaa311baf94c4ce90db1d82b680c92a7618620bc637a079aa615",
+      "status": "identical",
+      "public_sha256": "07a553e45795aaa311baf94c4ce90db1d82b680c92a7618620bc637a079aa615"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_network_icvi_audit_20261005/results.json",
+      "public": "economic-atlas/runs/A7_network_icvi_audit_20261005/results.json",
+      "original_sha256": "2f464adcd56672a5592b8887da85fdeb577896b55d4edea8b07e2ab18a227863",
+      "status": "identical",
+      "public_sha256": "2f464adcd56672a5592b8887da85fdeb577896b55d4edea8b07e2ab18a227863"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/MISSING_LINKS_2026-10-05.md",
+      "public": "economic-atlas/runs/A7_stories_20261004/MISSING_LINKS_2026-10-05.md",
+      "original_sha256": "209ff6e29ce161d2d354bd0768baf0427f9eead842a9101a480b87ee861cf7f6",
+      "status": "identical",
+      "public_sha256": "209ff6e29ce161d2d354bd0768baf0427f9eead842a9101a480b87ee861cf7f6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/README.md",
+      "public": "economic-atlas/runs/A7_stories_20261004/README.md",
+      "original_sha256": "38bfc2c2f378a683e82d9176fe907cc4205c4e335f63eabbd28875ceac219035",
+      "status": "identical",
+      "public_sha256": "38bfc2c2f378a683e82d9176fe907cc4205c4e335f63eabbd28875ceac219035"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/build_stories.py",
+      "public": "economic-atlas/runs/A7_stories_20261004/build_stories.py",
+      "original_sha256": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134",
+      "status": "identical",
+      "public_sha256": "a242f3569bfa732fb4cb3dc0e4ccdd11e6399e9337e0bac18df56bcfa9d5c134"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/inputs_from_mac/budget_pilot_observations.parquet",
+      "public": "economic-atlas/runs/A7_stories_20261004/inputs_from_mac/budget_pilot_observations.parquet",
+      "original_sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108",
+      "status": "identical",
+      "public_sha256": "4bca52575311d199ec9ef4255af3dad046eb252ccd919fd1af9f90490b027108"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/inputs_from_mac/budget_supplement_observations.parquet",
+      "public": "economic-atlas/runs/A7_stories_20261004/inputs_from_mac/budget_supplement_observations.parquet",
+      "original_sha256": "e55951ced40e8c334eae1bc42ebf5faee9db7dacf7b9f74c4355b70691d310bf",
+      "status": "identical",
+      "public_sha256": "e55951ced40e8c334eae1bc42ebf5faee9db7dacf7b9f74c4355b70691d310bf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/population_agreement.json",
+      "public": "economic-atlas/runs/A7_stories_20261004/population_agreement.json",
+      "original_sha256": "9920013a0a5fa4b11af60ba1ddec99c00bac0ed0e24cd799a45c7612d1d1ebc6",
+      "status": "identical",
+      "public_sha256": "9920013a0a5fa4b11af60ba1ddec99c00bac0ed0e24cd799a45c7612d1d1ebc6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/provenance.json",
+      "public": "economic-atlas/runs/A7_stories_20261004/provenance.json",
+      "original_sha256": "ad68d75fe1059a6cbcb05250da333d3aa5788720e51163ad92db78dd46256180",
+      "status": "identical",
+      "public_sha256": "ad68d75fe1059a6cbcb05250da333d3aa5788720e51163ad92db78dd46256180"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/robustness_by_config.csv",
+      "public": "economic-atlas/runs/A7_stories_20261004/robustness_by_config.csv",
+      "original_sha256": "8015762ccc3cfcb4c0828a0918e99dec5d08bb51cc8f3bc700d8defd839a9046",
+      "status": "identical",
+      "public_sha256": "8015762ccc3cfcb4c0828a0918e99dec5d08bb51cc8f3bc700d8defd839a9046"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+      "public": "economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+      "original_sha256": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+      "status": "identical",
+      "public_sha256": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/timing_check.json",
+      "public": "economic-atlas/runs/A7_stories_20261004/timing_check.json",
+      "original_sha256": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e",
+      "status": "identical",
+      "public_sha256": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A7_stories_20261004/timing_check.py",
+      "public": "economic-atlas/runs/A7_stories_20261004/timing_check.py",
+      "original_sha256": "e26d6bb570228b0e6274ca545b976dba38eb0c850c3bf124287f9e5312f00ddf",
+      "status": "identical",
+      "public_sha256": "e26d6bb570228b0e6274ca545b976dba38eb0c850c3bf124287f9e5312f00ddf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A8_wages2025_validation_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A8_wages2025_validation_20261005/PROTOCOL.md",
+      "original_sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069",
+      "status": "identical",
+      "public_sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A8_wages2025_validation_20261005/README.md",
+      "public": "economic-atlas/runs/A8_wages2025_validation_20261005/README.md",
+      "original_sha256": "e8a63eb1034f84c3f8958f624546e5ae0a02e6520fca9b7e0e00cd4fa44f3d1f",
+      "status": "identical",
+      "public_sha256": "e8a63eb1034f84c3f8958f624546e5ae0a02e6520fca9b7e0e00cd4fa44f3d1f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A8_wages2025_validation_20261005/provenance.json",
+      "public": "economic-atlas/runs/A8_wages2025_validation_20261005/provenance.json",
+      "original_sha256": "bacabfb6bddc28e0816b2c0c039c1b4d5b6538c5a6468dedd6173a67e26d92ac",
+      "status": "identical",
+      "public_sha256": "bacabfb6bddc28e0816b2c0c039c1b4d5b6538c5a6468dedd6173a67e26d92ac"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+      "public": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+      "original_sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+      "status": "identical",
+      "public_sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A8_wages2025_validation_20261005/run_a8.py",
+      "public": "economic-atlas/runs/A8_wages2025_validation_20261005/run_a8.py",
+      "original_sha256": "9659a50e71a27ceff0804659abe7e18ab15125945cf34fdb88e2593a4bafe6c7",
+      "status": "identical",
+      "public_sha256": "9659a50e71a27ceff0804659abe7e18ab15125945cf34fdb88e2593a4bafe6c7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/PROTOCOL.md",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/PROTOCOL.md",
+      "original_sha256": "d34356f4732c70d720e3b1866371144453c933b4d7e3bc9443fc6b39c413f3eb",
+      "status": "identical",
+      "public_sha256": "d34356f4732c70d720e3b1866371144453c933b4d7e3bc9443fc6b39c413f3eb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/README.md",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/README.md",
+      "original_sha256": "b904d0898e1d08024ee0a37a88b7376192cfb25b7a6973394e7233fb684f6d6f",
+      "status": "identical",
+      "public_sha256": "b904d0898e1d08024ee0a37a88b7376192cfb25b7a6973394e7233fb684f6d6f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/degree_distribution.csv",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/degree_distribution.csv",
+      "original_sha256": "7300c3f26d1dd3fb73b96b6afe6adfc8f700b53df748bfcf9c5f6c4212350595",
+      "status": "identical",
+      "public_sha256": "7300c3f26d1dd3fb73b96b6afe6adfc8f700b53df748bfcf9c5f6c4212350595"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edge_definition_stability.csv",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edge_definition_stability.csv",
+      "original_sha256": "383ff062552e8542759ab75248736de056cfd511a6fb49081abea6cac703ace5",
+      "status": "identical",
+      "public_sha256": "383ff062552e8542759ab75248736de056cfd511a6fb49081abea6cac703ace5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_mutual_binary.parquet",
+      "original_sha256": "30b71488335519e8e2b493acc50f206d016cfb09d902239c3cb97e87ddb389d5",
+      "status": "identical",
+      "public_sha256": "30b71488335519e8e2b493acc50f206d016cfb09d902239c3cb97e87ddb389d5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_mutual_gaussian.parquet",
+      "original_sha256": "f675cf9e13e432e930248febd16d1619948df2f991fca0ca57a876e2cb9c65e5",
+      "status": "identical",
+      "public_sha256": "f675cf9e13e432e930248febd16d1619948df2f991fca0ca57a876e2cb9c65e5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_union_binary.parquet",
+      "original_sha256": "0aa5960ba3018fa1550cad02a377c6a76f711fc1a426aee1cfc392adc0012cf9",
+      "status": "identical",
+      "public_sha256": "0aa5960ba3018fa1550cad02a377c6a76f711fc1a426aee1cfc392adc0012cf9"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k10_union_gaussian.parquet",
+      "original_sha256": "d0f5c9bb75b9f6a6ced02861eb84c565c63d89bec808aa7335d4ba6046c463d2",
+      "status": "identical",
+      "public_sha256": "d0f5c9bb75b9f6a6ced02861eb84c565c63d89bec808aa7335d4ba6046c463d2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_mutual_binary.parquet",
+      "original_sha256": "eef306a116bd7a48fee0c748c70013c1b0bcc6f6dcef960a1674f5a2c9468bb2",
+      "status": "identical",
+      "public_sha256": "eef306a116bd7a48fee0c748c70013c1b0bcc6f6dcef960a1674f5a2c9468bb2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_mutual_gaussian.parquet",
+      "original_sha256": "c86d9f23b2265f14e40949309809802912fbbc19106f0cd4a7a7145c2136a3a4",
+      "status": "identical",
+      "public_sha256": "c86d9f23b2265f14e40949309809802912fbbc19106f0cd4a7a7145c2136a3a4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_union_binary.parquet",
+      "original_sha256": "41f4cb2b1343cbaf3071f31a017ffd5dedc234310b7c2455d8ac39b74acd9f5f",
+      "status": "identical",
+      "public_sha256": "41f4cb2b1343cbaf3071f31a017ffd5dedc234310b7c2455d8ac39b74acd9f5f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k5_union_gaussian.parquet",
+      "original_sha256": "557dadc60072211e12d23558df5dfaf021bbcf2b4501115db2aaaa328471ee6a",
+      "status": "identical",
+      "public_sha256": "557dadc60072211e12d23558df5dfaf021bbcf2b4501115db2aaaa328471ee6a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_mutual_binary.parquet",
+      "original_sha256": "591f76592333d3cbfd2dafbc084dfdff5d501166d26382bf82f40bd566fffc9e",
+      "status": "identical",
+      "public_sha256": "591f76592333d3cbfd2dafbc084dfdff5d501166d26382bf82f40bd566fffc9e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_mutual_gaussian.parquet",
+      "original_sha256": "ea418d607a0e92b2bbcac3540cdf7b939e5a0afc54fd6c98c30ce7dedbbbd614",
+      "status": "identical",
+      "public_sha256": "ea418d607a0e92b2bbcac3540cdf7b939e5a0afc54fd6c98c30ce7dedbbbd614"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_union_binary.parquet",
+      "original_sha256": "8c582f827ec802dd70c9afcd11a32f0d688c1847260a65e3cf5836bd005af353",
+      "status": "identical",
+      "public_sha256": "8c582f827ec802dd70c9afcd11a32f0d688c1847260a65e3cf5836bd005af353"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_A5_k7_union_gaussian.parquet",
+      "original_sha256": "3ce8be68e20de99a288db4ffc6bfe5fc1d3ba152750237b9053904df85b68a68",
+      "status": "identical",
+      "public_sha256": "3ce8be68e20de99a288db4ffc6bfe5fc1d3ba152750237b9053904df85b68a68"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_mutual_binary.parquet",
+      "original_sha256": "db8546ae34392380d546d52ca5cbf270f434fc0141909e808f63dbf13ef4bbce",
+      "status": "identical",
+      "public_sha256": "db8546ae34392380d546d52ca5cbf270f434fc0141909e808f63dbf13ef4bbce"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_mutual_gaussian.parquet",
+      "original_sha256": "7346d30e790981cdd6dc9713f724bda267ba576391bad12a19105a9570bb0869",
+      "status": "identical",
+      "public_sha256": "7346d30e790981cdd6dc9713f724bda267ba576391bad12a19105a9570bb0869"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_union_binary.parquet",
+      "original_sha256": "1a84b7a836115593e65a859c377c3063435a11a57d38a80439bc8bccd21e684c",
+      "status": "identical",
+      "public_sha256": "1a84b7a836115593e65a859c377c3063435a11a57d38a80439bc8bccd21e684c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k10_union_gaussian.parquet",
+      "original_sha256": "00c484982ce94fb2b0eaabf5f8fbd65f527e9b4900c1063c1d27dbd3d263a921",
+      "status": "identical",
+      "public_sha256": "00c484982ce94fb2b0eaabf5f8fbd65f527e9b4900c1063c1d27dbd3d263a921"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_mutual_binary.parquet",
+      "original_sha256": "ceb6ebea24a6f2c5e7bba62ba16da9e2d968f1e73bac40647dd71348a952aad1",
+      "status": "identical",
+      "public_sha256": "ceb6ebea24a6f2c5e7bba62ba16da9e2d968f1e73bac40647dd71348a952aad1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_mutual_gaussian.parquet",
+      "original_sha256": "005c7d939a569f3b2d2215ab8a1c2c8c8ae8341f0557322af98361bdc2c4608b",
+      "status": "identical",
+      "public_sha256": "005c7d939a569f3b2d2215ab8a1c2c8c8ae8341f0557322af98361bdc2c4608b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_union_binary.parquet",
+      "original_sha256": "c61f7c0029e2f169d7f9000ca9573e922e1175c6b3da4be9494d171fc0d1d1ba",
+      "status": "identical",
+      "public_sha256": "c61f7c0029e2f169d7f9000ca9573e922e1175c6b3da4be9494d171fc0d1d1ba"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k5_union_gaussian.parquet",
+      "original_sha256": "496ae2244b0018b51b0f27225577884a405bc34368fa2d3d1e90ab992b76c400",
+      "status": "identical",
+      "public_sha256": "496ae2244b0018b51b0f27225577884a405bc34368fa2d3d1e90ab992b76c400"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_mutual_binary.parquet",
+      "original_sha256": "90feb5d3fea0e8d29b9c041a6ccfcf6203c3f4b647627e89f334338734890531",
+      "status": "identical",
+      "public_sha256": "90feb5d3fea0e8d29b9c041a6ccfcf6203c3f4b647627e89f334338734890531"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_mutual_gaussian.parquet",
+      "original_sha256": "181a590b88bf9c1b7d1b7e79d1e53e2034aeaad0036ec97157e3cef669db05e3",
+      "status": "identical",
+      "public_sha256": "181a590b88bf9c1b7d1b7e79d1e53e2034aeaad0036ec97157e3cef669db05e3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_union_binary.parquet",
+      "original_sha256": "13641324f47aeddfbbfba564b42e9cdac3f440326cff742a61d64928f5571fd6",
+      "status": "identical",
+      "public_sha256": "13641324f47aeddfbbfba564b42e9cdac3f440326cff742a61d64928f5571fd6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2023_k7_union_gaussian.parquet",
+      "original_sha256": "18795c9babb4fa00f9a9ddf6823f0baaa5bc9c930d5f39bb944084d7bd089a7d",
+      "status": "identical",
+      "public_sha256": "18795c9babb4fa00f9a9ddf6823f0baaa5bc9c930d5f39bb944084d7bd089a7d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_mutual_binary.parquet",
+      "original_sha256": "b5dca76ac27f149cf02410a8bf754ee9f89c15301d1a65cf58719aa96edf4d62",
+      "status": "identical",
+      "public_sha256": "b5dca76ac27f149cf02410a8bf754ee9f89c15301d1a65cf58719aa96edf4d62"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_mutual_gaussian.parquet",
+      "original_sha256": "01c33a8a2921454c67affc8230eed605ef2dd392a4d6b084e9f5dc8c40758142",
+      "status": "identical",
+      "public_sha256": "01c33a8a2921454c67affc8230eed605ef2dd392a4d6b084e9f5dc8c40758142"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_union_binary.parquet",
+      "original_sha256": "6d7276b192ba20b10d053407aa90c6c882c38d467cc76f2ec54b49ec7e835e97",
+      "status": "identical",
+      "public_sha256": "6d7276b192ba20b10d053407aa90c6c882c38d467cc76f2ec54b49ec7e835e97"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k10_union_gaussian.parquet",
+      "original_sha256": "ef1c3f9a844bd1ea41f0bb86568dbe5575cf254adb03d02efd91662db749aed2",
+      "status": "identical",
+      "public_sha256": "ef1c3f9a844bd1ea41f0bb86568dbe5575cf254adb03d02efd91662db749aed2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_mutual_binary.parquet",
+      "original_sha256": "b38e7d691223ad563a38bbdd46e224c9c82ec626e21c275362b1726279c1d8cf",
+      "status": "identical",
+      "public_sha256": "b38e7d691223ad563a38bbdd46e224c9c82ec626e21c275362b1726279c1d8cf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_mutual_gaussian.parquet",
+      "original_sha256": "fa679f13953664ad36258965e068dad1c06173829eb7cc16b9903fe4a0431d60",
+      "status": "identical",
+      "public_sha256": "fa679f13953664ad36258965e068dad1c06173829eb7cc16b9903fe4a0431d60"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_union_binary.parquet",
+      "original_sha256": "111e7d9cff4ac8ae9b8d02f1026bbc0f86b847b87f65563ae945f0921bcc123b",
+      "status": "identical",
+      "public_sha256": "111e7d9cff4ac8ae9b8d02f1026bbc0f86b847b87f65563ae945f0921bcc123b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k5_union_gaussian.parquet",
+      "original_sha256": "dc118ca00bb853ace10a23eb9b6c8b07304861e9eacaba60abd330ae9e8b9592",
+      "status": "identical",
+      "public_sha256": "dc118ca00bb853ace10a23eb9b6c8b07304861e9eacaba60abd330ae9e8b9592"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_mutual_binary.parquet",
+      "original_sha256": "a4d47e1eef56f6a3adf900fa471404eeda2a1f64450b7dda115bbe844a28a92a",
+      "status": "identical",
+      "public_sha256": "a4d47e1eef56f6a3adf900fa471404eeda2a1f64450b7dda115bbe844a28a92a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_mutual_gaussian.parquet",
+      "original_sha256": "8910d6a50792c40cadaf28b5591bc0d932e2392fed356a40315f29beada7e1aa",
+      "status": "identical",
+      "public_sha256": "8910d6a50792c40cadaf28b5591bc0d932e2392fed356a40315f29beada7e1aa"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_union_binary.parquet",
+      "original_sha256": "a7fb1a900d119e18028479243cc081a7730e7f859057bb661213d25c9e3e2ede",
+      "status": "identical",
+      "public_sha256": "a7fb1a900d119e18028479243cc081a7730e7f859057bb661213d25c9e3e2ede"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/edges_annual2024_k7_union_gaussian.parquet",
+      "original_sha256": "53758efe68e5b68cd2c662e9653f8f4d6098dcde3bca8af5272da4f6a39b36cd",
+      "status": "identical",
+      "public_sha256": "53758efe68e5b68cd2c662e9653f8f4d6098dcde3bca8af5272da4f6a39b36cd"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_mutual_binary.parquet",
+      "original_sha256": "3c523d325dd476d99081ca23afaf3981788b6f1f70f84c59d6e635d14753c54a",
+      "status": "identical",
+      "public_sha256": "3c523d325dd476d99081ca23afaf3981788b6f1f70f84c59d6e635d14753c54a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_mutual_gaussian.parquet",
+      "original_sha256": "c0a120c8c1cedb44bc70feefe630c0c7af0b292d3bbf2e292140a1e7d29409dd",
+      "status": "identical",
+      "public_sha256": "c0a120c8c1cedb44bc70feefe630c0c7af0b292d3bbf2e292140a1e7d29409dd"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_union_binary.parquet",
+      "original_sha256": "732bbced712669069d1ee51e4eae7857c8eedbd34e248d80b37f8032eaff723a",
+      "status": "identical",
+      "public_sha256": "732bbced712669069d1ee51e4eae7857c8eedbd34e248d80b37f8032eaff723a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k10_union_gaussian.parquet",
+      "original_sha256": "f344f3c9b66b3f8c57918430031ddab4bb3cef9c1ea418e1b6a83e85e6566af7",
+      "status": "identical",
+      "public_sha256": "f344f3c9b66b3f8c57918430031ddab4bb3cef9c1ea418e1b6a83e85e6566af7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_mutual_binary.parquet",
+      "original_sha256": "e7cef49f952434ad2a5af10987ea1e6516fbb65779936a502df298d2333bac6f",
+      "status": "identical",
+      "public_sha256": "e7cef49f952434ad2a5af10987ea1e6516fbb65779936a502df298d2333bac6f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_mutual_gaussian.parquet",
+      "original_sha256": "c11ce3ce96f5e48b0a80371c5be9fa0b3a0d2bddb00d35e8682c06b1ae976ec5",
+      "status": "identical",
+      "public_sha256": "c11ce3ce96f5e48b0a80371c5be9fa0b3a0d2bddb00d35e8682c06b1ae976ec5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_union_binary.parquet",
+      "original_sha256": "534fc3c9c9f3cbab06fc609359de03c98585f83d6aa274495aa87743f39b3e09",
+      "status": "identical",
+      "public_sha256": "534fc3c9c9f3cbab06fc609359de03c98585f83d6aa274495aa87743f39b3e09"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k5_union_gaussian.parquet",
+      "original_sha256": "fb7ab6c4461e07666dad6eb39939ea5cbe52545b73af89884164802858ad0bf6",
+      "status": "identical",
+      "public_sha256": "fb7ab6c4461e07666dad6eb39939ea5cbe52545b73af89884164802858ad0bf6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_mutual_binary.parquet",
+      "original_sha256": "6c4bd13bc66667be7a01a790dcddc8a316ae5da21ae4945a69d5602721460ead",
+      "status": "identical",
+      "public_sha256": "6c4bd13bc66667be7a01a790dcddc8a316ae5da21ae4945a69d5602721460ead"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_mutual_gaussian.parquet",
+      "original_sha256": "e4c58b3bc630682623ecaca10e530f73511c383d5d30ee3d432fac07649d1be2",
+      "status": "identical",
+      "public_sha256": "e4c58b3bc630682623ecaca10e530f73511c383d5d30ee3d432fac07649d1be2"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_union_binary.parquet",
+      "original_sha256": "c19dfd3ae9e287789e19dd652d2fbf380e775034ce00e5953c98f8439469eb73",
+      "status": "identical",
+      "public_sha256": "c19dfd3ae9e287789e19dd652d2fbf380e775034ce00e5953c98f8439469eb73"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_A5_k7_union_gaussian.parquet",
+      "original_sha256": "8c77254c01d4f2cc2572d4e16a1413b3bb55090443f24ae78f888050f4f1a4c4",
+      "status": "identical",
+      "public_sha256": "8c77254c01d4f2cc2572d4e16a1413b3bb55090443f24ae78f888050f4f1a4c4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_mutual_binary.parquet",
+      "original_sha256": "6e6944abbcc38b597a95820d307a4dce69906e5fc982ff4cdc2dcc93559053a6",
+      "status": "identical",
+      "public_sha256": "6e6944abbcc38b597a95820d307a4dce69906e5fc982ff4cdc2dcc93559053a6"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_mutual_gaussian.parquet",
+      "original_sha256": "0b1162786d2d7ea8c9322dd33efe942258705377701d4f486b904f7c0373432a",
+      "status": "identical",
+      "public_sha256": "0b1162786d2d7ea8c9322dd33efe942258705377701d4f486b904f7c0373432a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_union_binary.parquet",
+      "original_sha256": "407dc4b83575a299abba64c81be45cb1cc74bd49810ae3c72b4386e30e5762bf",
+      "status": "identical",
+      "public_sha256": "407dc4b83575a299abba64c81be45cb1cc74bd49810ae3c72b4386e30e5762bf"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k10_union_gaussian.parquet",
+      "original_sha256": "5a842ed2b8734975aeb1ba9d3340b6953ff49c9e8290ad278a8fc4d4ffe4423b",
+      "status": "identical",
+      "public_sha256": "5a842ed2b8734975aeb1ba9d3340b6953ff49c9e8290ad278a8fc4d4ffe4423b"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_mutual_binary.parquet",
+      "original_sha256": "c49642622b6219fbccf5fe37031d8c2eb7649614c9df996822a274f33756c9b4",
+      "status": "identical",
+      "public_sha256": "c49642622b6219fbccf5fe37031d8c2eb7649614c9df996822a274f33756c9b4"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_mutual_gaussian.parquet",
+      "original_sha256": "403fa904bcf8d5ca9307fe1977014e501f1408e446ebd3b5f958697948a9dd08",
+      "status": "identical",
+      "public_sha256": "403fa904bcf8d5ca9307fe1977014e501f1408e446ebd3b5f958697948a9dd08"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_union_binary.parquet",
+      "original_sha256": "615947c0ffb883acc6b881061e8fb816bba706dbadf13f2d4bccff3b26e80b3f",
+      "status": "identical",
+      "public_sha256": "615947c0ffb883acc6b881061e8fb816bba706dbadf13f2d4bccff3b26e80b3f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k5_union_gaussian.parquet",
+      "original_sha256": "2a3734435f2c67dc157e76491d8a0d03d06016bf99ab64c253e819c9a13e711f",
+      "status": "identical",
+      "public_sha256": "2a3734435f2c67dc157e76491d8a0d03d06016bf99ab64c253e819c9a13e711f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_mutual_binary.parquet",
+      "original_sha256": "4cc74e2d4d07706a36395c22138288c899b18bf550e160922de926ec33a78c3f",
+      "status": "identical",
+      "public_sha256": "4cc74e2d4d07706a36395c22138288c899b18bf550e160922de926ec33a78c3f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_mutual_gaussian.parquet",
+      "original_sha256": "bc658f242a5eb9841d2f532019857b06d1d3564097f77ac32d9a48b7c6e06a27",
+      "status": "identical",
+      "public_sha256": "bc658f242a5eb9841d2f532019857b06d1d3564097f77ac32d9a48b7c6e06a27"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_union_binary.parquet",
+      "original_sha256": "8bda7f94324e2f2bb774a240b9de863de674a98606d903e4b5bfeb0132ca1285",
+      "status": "identical",
+      "public_sha256": "8bda7f94324e2f2bb774a240b9de863de674a98606d903e4b5bfeb0132ca1285"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2023_k7_union_gaussian.parquet",
+      "original_sha256": "ced2a737f29484a68711ec536dd14cb89db21d0d4c544c00654965c5ea8f1c6c",
+      "status": "identical",
+      "public_sha256": "ced2a737f29484a68711ec536dd14cb89db21d0d4c544c00654965c5ea8f1c6c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_mutual_binary.parquet",
+      "original_sha256": "d32c0f43af4e9ebd19a1e56ff6d58053c3ce1411ef49f8a3c68c9e0b6c66ae6a",
+      "status": "identical",
+      "public_sha256": "d32c0f43af4e9ebd19a1e56ff6d58053c3ce1411ef49f8a3c68c9e0b6c66ae6a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_mutual_gaussian.parquet",
+      "original_sha256": "5d7b02f6f86ed1a4ca1e4fecd408a9d4885079bfc9eda9de5fe6c425d1134593",
+      "status": "identical",
+      "public_sha256": "5d7b02f6f86ed1a4ca1e4fecd408a9d4885079bfc9eda9de5fe6c425d1134593"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_union_binary.parquet",
+      "original_sha256": "d5f6a88567938f7d244eda7b96ff37729c487b9da696534709e3fa8db2dce0bb",
+      "status": "identical",
+      "public_sha256": "d5f6a88567938f7d244eda7b96ff37729c487b9da696534709e3fa8db2dce0bb"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k10_union_gaussian.parquet",
+      "original_sha256": "bc8cf25d705d7a5cb41c6a063916865e78a9fd400447beaeb45cf774160fcacc",
+      "status": "identical",
+      "public_sha256": "bc8cf25d705d7a5cb41c6a063916865e78a9fd400447beaeb45cf774160fcacc"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_mutual_binary.parquet",
+      "original_sha256": "ebbee6fe07c3d59b41642fc009bc18e62919603bc9e99d4cfdf53cbaf75a1a37",
+      "status": "identical",
+      "public_sha256": "ebbee6fe07c3d59b41642fc009bc18e62919603bc9e99d4cfdf53cbaf75a1a37"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_mutual_gaussian.parquet",
+      "original_sha256": "6a5b80932f060784d4b9fe0c859d0cf45b90dc77e58eb114df28396cfc886cc3",
+      "status": "identical",
+      "public_sha256": "6a5b80932f060784d4b9fe0c859d0cf45b90dc77e58eb114df28396cfc886cc3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_union_binary.parquet",
+      "original_sha256": "d68aa2ba3eabd280686686d482965950892fed913863229ebf7c2d1b5210663c",
+      "status": "identical",
+      "public_sha256": "d68aa2ba3eabd280686686d482965950892fed913863229ebf7c2d1b5210663c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k5_union_gaussian.parquet",
+      "original_sha256": "3dc2e151dd359571d43ea01c8d98e50a98024bebc303f692cc89dc17a95b2f95",
+      "status": "identical",
+      "public_sha256": "3dc2e151dd359571d43ea01c8d98e50a98024bebc303f692cc89dc17a95b2f95"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_mutual_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_mutual_binary.parquet",
+      "original_sha256": "a5cea22f75191fd34a70a92c194b28c8a95e0b893a244d34e2eb360693baf5f1",
+      "status": "identical",
+      "public_sha256": "a5cea22f75191fd34a70a92c194b28c8a95e0b893a244d34e2eb360693baf5f1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_mutual_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_mutual_gaussian.parquet",
+      "original_sha256": "ea9d35de1dd85291fbbd979351c8cee03fbe53b88d7f730238c7709528573322",
+      "status": "identical",
+      "public_sha256": "ea9d35de1dd85291fbbd979351c8cee03fbe53b88d7f730238c7709528573322"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_union_binary.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_union_binary.parquet",
+      "original_sha256": "fe27e3a479b475e1fe8d8426f0793c66e732c8456f82bd81674cdb6b4134759a",
+      "status": "identical",
+      "public_sha256": "fe27e3a479b475e1fe8d8426f0793c66e732c8456f82bd81674cdb6b4134759a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_union_gaussian.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/louvain_annual2024_k7_union_gaussian.parquet",
+      "original_sha256": "7308c391c2fa4b8cc357c9f36a49ee4a646d183aa6155cc6e93f4fc958f9087c",
+      "status": "identical",
+      "public_sha256": "7308c391c2fa4b8cc357c9f36a49ee4a646d183aa6155cc6e93f4fc958f9087c"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/networks_summary.csv",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/networks_summary.csv",
+      "original_sha256": "59838c8a2a98f4313c37f0fbcd8f5ee5571d31c57296ae5e7c1347094916341e",
+      "status": "identical",
+      "public_sha256": "59838c8a2a98f4313c37f0fbcd8f5ee5571d31c57296ae5e7c1347094916341e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/nodes.parquet",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/nodes.parquet",
+      "original_sha256": "e91df094a28402da00f088147ce3532d2d665c627f2c54d3d4d5c62b8f1bec5a",
+      "status": "identical",
+      "public_sha256": "e91df094a28402da00f088147ce3532d2d665c627f2c54d3d4d5c62b8f1bec5a"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/provenance.json",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/provenance.json",
+      "original_sha256": "c205933ae36eb97156b7fc1479b9a104796b9185fdfd4bc2301d52a2d4ab8c68",
+      "status": "identical",
+      "public_sha256": "c205933ae36eb97156b7fc1479b9a104796b9185fdfd4bc2301d52a2d4ab8c68"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/results.json",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/results.json",
+      "original_sha256": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+      "status": "identical",
+      "public_sha256": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/runs/A9_economic_network_20261005/temporal_edges.csv",
+      "public": "economic-atlas/runs/A9_economic_network_20261005/temporal_edges.csv",
+      "original_sha256": "4f5a2ce4037338296a822304813f60fddf05632db4546f7de65402a40e8b231d",
+      "status": "identical",
+      "public_sha256": "4f5a2ce4037338296a822304813f60fddf05632db4546f7de65402a40e8b231d"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/browser_qa.json",
+      "public": "economic-atlas/site/atlas-20261005/browser_qa.json",
+      "original_sha256": "2debb8edd1adbc99e71dca1ff8723a15a49cfba20bd3a3387331d3f44677b1e5",
+      "status": "identical",
+      "public_sha256": "2debb8edd1adbc99e71dca1ff8723a15a49cfba20bd3a3387331d3f44677b1e5"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/data.json",
+      "public": "economic-atlas/site/atlas-20261005/data.json",
+      "original_sha256": "d7a3bc876950a51dca839726e70f51b8ce77b1197460cd2db0ce1b0d0c1fd356",
+      "status": "identical",
+      "public_sha256": "d7a3bc876950a51dca839726e70f51b8ce77b1197460cd2db0ce1b0d0c1fd356"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/desktop.png",
+      "public": "economic-atlas/site/atlas-20261005/desktop.png",
+      "original_sha256": "f50ad01cd6be75dc0c7df3246910e395f2ca67cb644f4accc50a7a6a19b4188e",
+      "status": "identical",
+      "public_sha256": "f50ad01cd6be75dc0c7df3246910e395f2ca67cb644f4accc50a7a6a19b4188e"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/index.html",
+      "public": "economic-atlas/site/atlas-20261005/index.html",
+      "original_sha256": "1b180ab10bba6afa4bb71bdc7bbf6ea9db6f279e5b2920a14078c0f3c50c45b3",
+      "status": "identical",
+      "public_sha256": "1b180ab10bba6afa4bb71bdc7bbf6ea9db6f279e5b2920a14078c0f3c50c45b3"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/mobile.png",
+      "public": "economic-atlas/site/atlas-20261005/mobile.png",
+      "original_sha256": "dee01a5afe4da148f3547b6c8ebbcbb52629a68a5a4f5a00a8d65ade0e4fa541",
+      "status": "identical",
+      "public_sha256": "dee01a5afe4da148f3547b6c8ebbcbb52629a68a5a4f5a00a8d65ade0e4fa541"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/qa.cjs",
+      "public": "economic-atlas/site/atlas-20261005/qa.cjs",
+      "original_sha256": "caad0978b4de55eb6a2d27b04cd4855f3c396f2684872b806dcee77a4fa0444f",
+      "status": "identical",
+      "public_sha256": "caad0978b4de55eb6a2d27b04cd4855f3c396f2684872b806dcee77a4fa0444f"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/site/atlas-20261005/template.html",
+      "public": "economic-atlas/site/atlas-20261005/template.html",
+      "original_sha256": "89c47475b9c66d73f3bb6efefa6e332362898838825100480196f0f917d66ce7",
+      "status": "identical",
+      "public_sha256": "89c47475b9c66d73f3bb6efefa6e332362898838825100480196f0f917d66ce7"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/__init__.py",
+      "public": "economic-atlas/src/__init__.py",
+      "original_sha256": "ef3d973eaf5285184a12b46f73cd64b3884b97e09c37f9dfb11f39f819874227",
+      "status": "identical",
+      "public_sha256": "ef3d973eaf5285184a12b46f73cd64b3884b97e09c37f9dfb11f39f819874227"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/a4_metrics.py",
+      "public": "economic-atlas/src/a4_metrics.py",
+      "original_sha256": "15a5881419e54e6aff95cc2539499f18140090a948f1ff31f1a52af53a585e57",
+      "status": "identical",
+      "public_sha256": "15a5881419e54e6aff95cc2539499f18140090a948f1ff31f1a52af53a585e57"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/a5_graph.py",
+      "public": "economic-atlas/src/a5_graph.py",
+      "original_sha256": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+      "status": "identical",
+      "public_sha256": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/a6_margin_audit.py",
+      "public": "economic-atlas/src/a6_margin_audit.py",
+      "original_sha256": "92c5da2f57d21395f2ed2543948ffa40ef6fd8fddeb346534ef58e0badb20427",
+      "status": "identical",
+      "public_sha256": "92c5da2f57d21395f2ed2543948ffa40ef6fd8fddeb346534ef58e0badb20427"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/a6_temporal.py",
+      "public": "economic-atlas/src/a6_temporal.py",
+      "original_sha256": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+      "status": "identical",
+      "public_sha256": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/a6_threshold_review.py",
+      "public": "economic-atlas/src/a6_threshold_review.py",
+      "original_sha256": "42551f78935422e5170280d19205cd39d9885df8eb86b339faebf6c01a6821ce",
+      "status": "identical",
+      "public_sha256": "42551f78935422e5170280d19205cd39d9885df8eb86b339faebf6c01a6821ce"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_a10.py",
+      "public": "economic-atlas/src/atlas_a10.py",
+      "original_sha256": "a94c91a57bdea50575e93faa9ff722b8c74efce8a12ee5552c83958387c96aac",
+      "status": "identical",
+      "public_sha256": "a94c91a57bdea50575e93faa9ff722b8c74efce8a12ee5552c83958387c96aac"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_a11.py",
+      "public": "economic-atlas/src/atlas_a11.py",
+      "original_sha256": "890263392273166a58ac6b94bd8980f4fbb7501a930acb960f877eebe6e784ac",
+      "status": "identical",
+      "public_sha256": "890263392273166a58ac6b94bd8980f4fbb7501a930acb960f877eebe6e784ac"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_a12.py",
+      "public": "economic-atlas/src/atlas_a12.py",
+      "original_sha256": "b3e96dea9e969b6f06c487709fee003395dd3f735ef918d17ce6cf56b35f8e45",
+      "status": "identical",
+      "public_sha256": "b3e96dea9e969b6f06c487709fee003395dd3f735ef918d17ce6cf56b35f8e45"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_a13.py",
+      "public": "economic-atlas/src/atlas_a13.py",
+      "original_sha256": "3114bffae05656e3121922d8fcbf93a57d7de806563532cfd6cbc051d26746cc",
+      "status": "identical",
+      "public_sha256": "3114bffae05656e3121922d8fcbf93a57d7de806563532cfd6cbc051d26746cc"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_a9.py",
+      "public": "economic-atlas/src/atlas_a9.py",
+      "original_sha256": "e5cd11d339d5e7557e734b1c332f26895c7f058635a4fb65525576fb7a0588da",
+      "status": "identical",
+      "public_sha256": "e5cd11d339d5e7557e734b1c332f26895c7f058635a4fb65525576fb7a0588da"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_common.py",
+      "public": "economic-atlas/src/atlas_common.py",
+      "original_sha256": "fd24c0ce67eddd396875771ef01be14dd8ceb613be6558e897de6d93184882ce",
+      "status": "identical",
+      "public_sha256": "fd24c0ce67eddd396875771ef01be14dd8ceb613be6558e897de6d93184882ce"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_release.py",
+      "public": "economic-atlas/src/atlas_release.py",
+      "original_sha256": "8369e0600c1fb59839aac6b7ad8821ba6e5868f7621bddfbe847aa6d69120744",
+      "status": "identical",
+      "public_sha256": "8369e0600c1fb59839aac6b7ad8821ba6e5868f7621bddfbe847aa6d69120744"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_release_docs.py",
+      "public": "economic-atlas/src/atlas_release_docs.py",
+      "original_sha256": "a3f2f65b2494ea09b3dda257c5d5528692f6338745a825b2fe4ee877dddeb355",
+      "status": "path_adapted",
+      "public_sha256": "c4e2c1f680ccce8a383cd1e13ed8d13b219626d96dab89d57549f139f2519140"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_release_pack.py",
+      "public": "economic-atlas/src/atlas_release_pack.py",
+      "original_sha256": "7e01ba80b209f336f1f8ede92e049ddb36f6813fd68865bd662fff5f33e6024d",
+      "status": "path_adapted",
+      "public_sha256": "a5d73d7b9c03339d81c15f6eff4744d83dc2df63776124b9653cdc0b58983293"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/atlas_sdbw.py",
+      "public": "economic-atlas/src/atlas_sdbw.py",
+      "original_sha256": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+      "status": "identical",
+      "public_sha256": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/contracts.py",
+      "public": "economic-atlas/src/contracts.py",
+      "original_sha256": "ff78f5dc47e5cd2032ce85ef11db079c43719430a0667c28e123abf2c41da9cc",
+      "status": "identical",
+      "public_sha256": "ff78f5dc47e5cd2032ce85ef11db079c43719430a0667c28e123abf2c41da9cc"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/src/network_icvi.py",
+      "public": "economic-atlas/src/network_icvi.py",
+      "original_sha256": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+      "status": "identical",
+      "public_sha256": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404"
+    },
+    {
+      "original": "deliverables/sberindex-2026/economic-atlas/text_secret_scan_receipt.json",
+      "public": "economic-atlas/text_secret_scan_receipt.json",
+      "original_sha256": "e9116284cf540142dae0b057dda15afb2a429a8c0b539d097cb01e2be0b2cd98",
+      "status": "identical",
+      "public_sha256": "e9116284cf540142dae0b057dda15afb2a429a8c0b539d097cb01e2be0b2cd98"
+    },
+    {
+      "original": "tests/test_atlas_a10.py",
+      "public": "tests/test_atlas_a10.py",
+      "original_sha256": "e0305b96950daa5ec26ae18de18e4207fc03da94ff313251e45dd1fa750eae85",
+      "status": "path_adapted",
+      "public_sha256": "c67588502f655f3cfd40424891b2567db59468b9c7a6565f629866f318d3a5c2"
+    },
+    {
+      "original": "tests/test_atlas_a11.py",
+      "public": "tests/test_atlas_a11.py",
+      "original_sha256": "9a5184d6e262afa0aa2d45cf5aeb2222952613616baef3f64767edff27cbb1eb",
+      "status": "path_adapted",
+      "public_sha256": "48aa0cafd00c33e702161d50057df25be393e33588c096fc67cd1634b472e5e0"
+    },
+    {
+      "original": "tests/test_atlas_a12.py",
+      "public": "tests/test_atlas_a12.py",
+      "original_sha256": "892aa9542522cc08b99e3ed5e6110763e5f10c2bed46920d7483e57f9c13dfa5",
+      "status": "path_adapted",
+      "public_sha256": "17619560882afd8428356e067f620fb052fae6647789810a6d9fe3ec318383e2"
+    },
+    {
+      "original": "tests/test_atlas_a13.py",
+      "public": "tests/test_atlas_a13.py",
+      "original_sha256": "9b573fea6b793140f94827c4e127e61f3e73438c3115b0258cd43701f7f627cc",
+      "status": "path_adapted",
+      "public_sha256": "b1593da508c5dfb32ecb07620da1d241c59be45f3abc1d20fe7edfc0885ad68a"
+    },
+    {
+      "original": "tests/test_atlas_a8.py",
+      "public": "tests/test_atlas_a8.py",
+      "original_sha256": "395f0e89de685ed19a7260edd6c2bfa2536e7618ecacf44b00ecafc690f56fa8",
+      "status": "path_adapted",
+      "public_sha256": "9d67e055ee23180e831f4fa195807386b0f8aaaee8ac923755ad47e7378c6f47"
+    },
+    {
+      "original": "tests/test_atlas_a9.py",
+      "public": "tests/test_atlas_a9.py",
+      "original_sha256": "3660b9c7e26fed137d4d13be038bacbf28d26293d6aa656228cdf46ccb1373f7",
+      "status": "path_adapted",
+      "public_sha256": "c8c1ffbd6801cb60232050106ddea8bdb82860fac87b7596c004081064adefe8"
+    },
+    {
+      "original": "tests/test_atlas_network_audit.py",
+      "public": "tests/test_atlas_network_audit.py",
+      "original_sha256": "b27e660ad614ab3cc3540d5c10a89a6a40f0748b33e8bb193ec64bff56a7fb36",
+      "status": "path_adapted",
+      "public_sha256": "de73c76bd5dd10a35dadeaa0f07f97f402e2d534f4ccb20b78ca7618a4fb68de"
+    },
+    {
+      "original": "tests/test_atlas_network_icvi.py",
+      "public": "tests/test_atlas_network_icvi.py",
+      "original_sha256": "eb061421ed42b99842dda4f0a0c0fbe520799a5e807da51591d41e4b3c85d2da",
+      "status": "path_adapted",
+      "public_sha256": "ceeed84755954beab1296f8c1f557cb924a23114215fb8da663b0708903aead7"
+    },
+    {
+      "original": "tests/test_atlas_release.py",
+      "public": "tests/test_atlas_release.py",
+      "original_sha256": "d01bcfd1cbb778525259c5043bd32ad9cb4d1c2e8260f1a6e4560abd3fdbb4b2",
+      "status": "path_adapted",
+      "public_sha256": "198ba4ab56377261c14084a4d3d90cfd638b319afb7684dc3c10869c3fd79e00"
+    },
+    {
+      "original": "tests/test_atlas_stories.py",
+      "public": "tests/test_atlas_stories.py",
+      "original_sha256": "20ae0540100ba96e51c66a094e1dbfcb0e846795c617c98312a4f194ca3606e4",
+      "status": "path_adapted",
+      "public_sha256": "532b300f5b55fe9d0ecb4894d1e316c7a0f3bdb79adaea51651255881de2b614"
+    }
+  ],
+  "path_adaptations": [
+    "tests/test_atlas_*.py",
+    "economic-atlas/Makefile",
+    "economic-atlas/Makefile.release",
+    "economic-atlas/RELEASE_README.md",
+    "economic-atlas/src/atlas_release_docs.py",
+    "economic-atlas/src/atlas_release_pack.py",
+    "economic-atlas/COMPLETION_REPORT_2026-10-05.md"
+  ],
+  "note": "Run protocols, frozen partitions, metrics and archived provenance retained verbatim. Public destination paths and test/package launch paths adapted; original package manifest remains an archival receipt."
+}

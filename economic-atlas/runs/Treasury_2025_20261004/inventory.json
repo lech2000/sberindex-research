@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Доходы_расходы_источники по графам на 01.01.2026.zip",
+    "bytes": 15268246,
+    "status": "quarantined",
+    "reason": "Bad CRC-32 for file 'ä«σ«ñδ_αáßσ«ñδ_¿ßΓ«τ¡¿¬¿ »« úαáΣá¼ ¡á 01.01.2026.zip'"
+  },
+  {
+    "name": "ф. 0503317_01.01.2026_по ФО+Свод_Excel.zip",
+    "bytes": 32281346,
+    "status": "verified_crc",
+    "sha256": "29d91f796d1f1fc34dd3f4d8450c0ccf9ab2e7547e42fdb41f35c4a64ed57dbd",
+    "members": 92,
+    "expanded_bytes": 161569280
+  },
+  {
+    "name": "ф. 0503317_01.01.2026_по_ФО_годовая_html.zip",
+    "bytes": 13326387,
+    "status": "verified_crc",
+    "sha256": "44a361a47691630ab65321f3eb60c97c6062eed17bd8c97761ceb270052abc3f",
+    "members": 94,
+    "expanded_bytes": 215641338
+  },
+  {
+    "name": "ф. 0503320_на 01.01.2026_Сводный + в разрезе субъектов РФ.zip",
+    "bytes": 9447354,
+    "status": "verified_crc",
+    "sha256": "9bdb462f37a421ea92d965b8739dd9a5d297d91c79220e2f2915e754ee0a6bd2",
+    "members": 92,
+    "expanded_bytes": 50099200
+  },
+  {
+    "name": "ф. 0503321_на 01.01.2026_Сводный + в разрезе субъектов РФ.zip",
+    "bytes": 8315634,
+    "status": "verified_crc",
+    "sha256": "61b1bc74752a941dacfafa98aae384aab8f67698c0fd6683728468ef35fafc2b",
+    "members": 92,
+    "expanded_bytes": 46587904
+  },
+  {
+    "name": "ф. 0503323_на 01.01.2026_Сводный + в разрезе субъектов РФ.zip",
+    "bytes": 10659568,
+    "status": "verified_crc",
+    "sha256": "1b7d011e4f37d26433d8777ed48dedf706ce9ed3e30a37be038283204bcfbb96",
+    "members": 92,
+    "expanded_bytes": 43261440
+  }
+]

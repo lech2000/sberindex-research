@@ -1,0 +1,13 @@
+{
+  "client_date": "2026-10-04",
+  "passed": true,
+  "reproduced_from_published_three_row_migration_subset": true,
+  "exact_files": [
+    "stories.json",
+    "consumption-changes.csv"
+  ],
+  "source_code_sha256": "d89745332158808746d22346c9b3446d3f12bad531d31285bb0f9fddf844db18",
+  "base_assignments_reproduced": 45504,
+  "source_panel_rows_per_case": 144,
+  "scientific_pass": false
+}

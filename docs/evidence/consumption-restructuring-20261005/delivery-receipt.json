@@ -1,0 +1,35 @@
+{
+  "status": "VERIFIED",
+  "checked_at_utc": "2026-10-05T17:32:46.786691+00:00",
+  "source_commit": "10edd36b7504ca3cceb547a3dd1e751c3395f398",
+  "source_url": "https://github.com/lech2000/sberindex-research/blob/10edd36b7504ca3cceb547a3dd1e751c3395f398/economic-atlas/runs/consumption_restructuring_20261005/README.md",
+  "remote_report_bytes_match": true,
+  "repository": "https://github.com/lech2000/sberindex-research",
+  "pr_url": "https://github.com/lech2000/sberindex-research/pull/7",
+  "pr_merged": false,
+  "corpus_id": 75,
+  "document_id": 16583,
+  "case_url": "https://agrigate.pro/v2/#case/case_66cae4a89ba6473f",
+  "materials": [
+    {
+      "id": "mat_1e5565c6f4d74e49",
+      "vault_document_id": "doc_f5cda1035cc74549",
+      "file": "README.md",
+      "title": "Потребительская перестройка муниципалитетов — разбор PDF и результаты 05.10.2026",
+      "bytes": 15573,
+      "sha256": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da",
+      "verified": true
+    },
+    {
+      "id": "mat_feb7a96074194697",
+      "vault_document_id": "doc_481c3a9443414150",
+      "file": "CONSUMPTION_RESTRUCTURING_2026-10-05.zip",
+      "title": "Потребительская перестройка муниципалитетов — отчёт, код и результаты 05.10.2026",
+      "bytes": 10700,
+      "sha256": "3ad562cd8283cf746cfa2e428f26705d3f236e1546beb8cea406caabc1e36200",
+      "verified": true
+    }
+  ],
+  "report_sha256": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da",
+  "archive_sha256": "3ad562cd8283cf746cfa2e428f26705d3f236e1546beb8cea406caabc1e36200"
+}

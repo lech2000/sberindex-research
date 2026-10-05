@@ -1,0 +1,36 @@
+{
+  "status": "COMPUTED_EXPLORATORY",
+  "scientific_pass": false,
+  "causal_effect_estimated": false,
+  "independent_holdout": false,
+  "feature_period": "2023 only",
+  "forecast_origin": "2024-03",
+  "n_panel": 1896,
+  "profile_sizes": {
+    "0": 1397,
+    "1": 499
+  },
+  "n_matching_eligible": 1586,
+  "n_selected_unique": 28,
+  "matching_rows": 30,
+  "summary_rows": 36,
+  "checks": {
+    "future_value_mutation_forecasts": 204768,
+    "scalar_forecasts": 3024,
+    "future_mutation_features_labels_peers": true
+  },
+  "versions": {
+    "python": "3.13.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "limits": [
+    "Atlas panel membership was defined using 2023-2024 completeness; retrospective selection, not historical online population",
+    "dictionary current snapshot/native keys; no new official boundary-successorship proof",
+    "Only three previously viewed cities from a shared flood family; no pooled causal inference",
+    "No causal interpretation of comparison residual gap or regional network transmission",
+    "Failure to reenter forecast band by December is RIGHT_CENSORED, not permanent loss"
+  ],
+  "external_2025_source": "KB75/16427, prior completed A8; not independently recomputed by this script"
+}

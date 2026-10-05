@@ -1,0 +1,17 @@
+[
+  {
+    "source": "buzuluk-h1-2023-2024.xlsx",
+    "locator": "Расходы !J18",
+    "formula": "-J24",
+    "cached_value": "-0.89600000000000002",
+    "correct_ratio": null,
+    "severity": "source_ratio_not_used",
+    "reason": "J must be G/E; zero denominator remains NULL"
+  },
+  {
+    "source": "budget-export-20261004.xlsx",
+    "severity": "read_only_raw_XML_fallback",
+    "reason": "Invalid color rgb=black; declared dimension A1 while cells reach B12. Source unchanged.",
+    "declared_dimension": "A1"
+  }
+]

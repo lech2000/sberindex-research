@@ -1,0 +1,44 @@
+{
+  "features": {
+    "sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+    "source": "existing research input; no fresh acquisition",
+    "license": "derived frozen research artifact",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "assignments": {
+    "sha256": "25aba1a23dd5736fa8c16a6649a2649e1b3c497349254dc8ae02f533631be183",
+    "source": "existing research input; no fresh acquisition",
+    "license": "derived frozen research artifact",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "geo_edges": {
+    "sha256": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "source": "existing research input; no fresh acquisition",
+    "license": "derived frozen research artifact",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "panel": {
+    "sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "source": "existing research input; no fresh acquisition",
+    "license": "derived frozen research artifact",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "spec": {
+    "sha256": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "source": "existing research input; no fresh acquisition",
+    "license": "derived frozen research artifact",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "population": {
+    "sha256": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "source": "existing research input; no fresh acquisition",
+    "license": "see supplied dataset documentation; redistribution not authorised by this run",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  },
+  "dictionary": {
+    "sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "source": "existing research input; no fresh acquisition",
+    "license": "CC BY-SA 4.0, per existing data/manifest.json",
+    "checked_at": "2026-10-05, isolated Mac checkout; SHA-256 local file bytes"
+  }
+}

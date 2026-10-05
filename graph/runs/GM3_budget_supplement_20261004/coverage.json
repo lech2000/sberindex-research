@@ -1,0 +1,106 @@
+{
+  "recorded_at": "2026-10-04T11:10:22.888705+00:00",
+  "status": "local_budget_context_increment",
+  "production_ingestion": false,
+  "gm3_complete": false,
+  "gm4_complete": false,
+  "scientific_pass": false,
+  "base_db_sha256": "bba2e1acd2b7ce1d4a40e3e52cde20d6e4b091430008b778c387623e9484ce87",
+  "new_db_sha256": "79aabaaa0a81c1b96001dc12d9d908c619b799b1c9d58f108f153443849ef969",
+  "supplement_manifest_sha256": "3ff4c073d763dd4332b0ce30fd1d1c240de28bbcc1771b8f173380c752af699d",
+  "code_sha256": "91dbf3f6d856c15dd89ea588c7f99e6ce1ab74e070eecfa90ea7873e5d62e441",
+  "before_observations": 312799,
+  "added_observations": 77,
+  "unassigned_export_cells_excluded": 3,
+  "base_unchanged": true,
+  "query_results": {
+    "total_observations": [
+      [
+        312876
+      ]
+    ],
+    "supplement_observations": [
+      [
+        77
+      ]
+    ],
+    "currency_cells": [
+      [
+        71
+      ]
+    ],
+    "noncurrency_cells": [
+      [
+        6
+      ]
+    ],
+    "measure_period_counts": [
+      [
+        "budget_plan_snapshot",
+        "plan_as_of_July_1",
+        22
+      ],
+      [
+        "executed",
+        "H1",
+        22
+      ],
+      [
+        "executed",
+        "annual_presentation",
+        21
+      ],
+      [
+        "reported_context",
+        "annual_presentation",
+        12
+      ]
+    ],
+    "new_releases": [
+      [
+        2
+      ]
+    ],
+    "orphans": [
+      [
+        0
+      ]
+    ],
+    "integer_currency_mismatch": [
+      [
+        0
+      ]
+    ],
+    "duplicate_natural_keys": [
+      [
+        0
+      ]
+    ],
+    "supplement_asof_2024": [
+      [
+        0
+      ]
+    ],
+    "invented_availability_or_synthetic": [
+      [
+        0
+      ]
+    ],
+    "primary_fiscal_cells": [
+      [
+        71
+      ]
+    ],
+    "primary_pilot_coverage": [
+      [
+        "observed",
+        7
+      ],
+      [
+        "report_not_acquired",
+        5
+      ]
+    ],
+    "foreign_key_check": []
+  }
+}

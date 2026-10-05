@@ -1,0 +1,85 @@
+{
+  "recorded_at": "2026-10-04T09:35:42.792556+00:00",
+  "status": "local_incremental_fiscal_observations",
+  "production_ingestion": false,
+  "gm3_complete": false,
+  "gm4_complete": false,
+  "scientific_pass": false,
+  "base_db_sha256": "6560bb06bb2410324081beefe60ef93deaebac6602d8d1022d0dd9f5bab40c05",
+  "new_db_sha256": "bba2e1acd2b7ce1d4a40e3e52cde20d6e4b091430008b778c387623e9484ce87",
+  "pilot_manifest_sha256": "3f1f0345659c5a4fe81e3448a8f2a664a8ec5f51b8053ef802862e00c619d996",
+  "code_sha256": "f9adbe9d450a8359a6a7d69187bb29f8d8f95f826fa3aeb7f1fde851498acd2b",
+  "before_observations": 312728,
+  "added_observations": 71,
+  "query_results": {
+    "total_observations": [
+      [
+        312799
+      ]
+    ],
+    "fiscal_observations": [
+      [
+        71
+      ]
+    ],
+    "fiscal_releases": [
+      [
+        7
+      ]
+    ],
+    "planned_observed_missing": [
+      [
+        "observed",
+        7
+      ],
+      [
+        "report_not_acquired",
+        5
+      ]
+    ],
+    "fiscal_orphans": [
+      [
+        0
+      ]
+    ],
+    "duplicate_natural_keys": [
+      [
+        0
+      ]
+    ],
+    "integer_kopeck_mismatch": [
+      [
+        0
+      ]
+    ],
+    "fiscal_unknown_availability": [
+      [
+        71
+      ]
+    ],
+    "fiscal_synthetic": [
+      [
+        0
+      ]
+    ],
+    "fiscal_asof_2024": [
+      [
+        0
+      ]
+    ],
+    "fiscal_spending_population_pairs": [
+      [
+        7
+      ]
+    ],
+    "foreign_key_check": []
+  },
+  "limits": [
+    "Local copy only; source graph retained unchanged",
+    "Budget scope municipality and source years 2023/2024 explicit; not 2025 regional aggregates",
+    "Legacy observation value is REAL; fiscal_cell stores exact integer kopecks and checks equality",
+    "All available_at unknown; printed publication date and current retrieval never substituted",
+    "Historical legal boundaries unverified; no succession edges",
+    "No forecast input, synthetic node promotion or full graph gate acceptance"
+  ]
+}

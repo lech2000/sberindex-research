@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "page_sha256": "1b180ab10bba6afa4bb71bdc7bbf6ea9db6f279e5b2920a14078c0f3c50c45b3",
+  "checked_at_utc": "2026-10-05T11:07:56.131Z",
+  "browser": "Playwright Chromium",
+  "desktop": [
+    1440,
+    1050
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "municipality_points": 1896,
+  "checks": [
+    "year and threshold counts",
+    "Tyumen core",
+    "neighbor navigation",
+    "unknown search",
+    "no-candidate state",
+    "mobile no overflow",
+    "no page errors",
+    "no external requests"
+  ],
+  "errors": [],
+  "external_requests": []
+}

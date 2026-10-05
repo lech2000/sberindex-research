@@ -1,0 +1,23 @@
+..........F                                                              [100%]
+=================================== FAILURES ===================================
+__________ test_rendered_page_is_offline_and_contains_no_placeholder ___________
+
+    def test_rendered_page_is_offline_and_contains_no_placeholder():
+        html=(ATLAS/"site/atlas-20261005/index.html").read_text()
+        assert "/*__ATLAS_DATA__*/" not in html
+        assert "fetch(" not in html and "XMLHttpRequest" not in html
+        assert '<script src=' not in html and '<link rel="stylesheet" href="http' not in html
+>       assert "MQ: точная спецификация не разрешена" in html
+        ^^^^^^^^^^^^^^^^^^^^^^^
+E       assert 'SPEC_UNRESOLVED' in '<!doctype html>\n<html lang="ru">\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width,in...рте покрытия.\'} Наличие ID не гарантирует полноту значений контекста.`;\nchoose(selected);\n</script></body></html>\n'
+
+tests/test_atlas_release.py:117: AssertionError
+=============================== warnings summary ===============================
+tests/test_atlas_release.py::test_payload_keys_and_monthly_values_match_frozen_input
+  /opt/homebrew/lib/python3.14/site-packages/pytest_asyncio/plugin.py:1216: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    return asyncio.get_event_loop_policy()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_atlas_release.py::test_rendered_page_is_offline_and_contains_no_placeholder
+1 failed, 10 passed, 1 warning in 148.11s (0:02:28)

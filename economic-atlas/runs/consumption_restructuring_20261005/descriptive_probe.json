@@ -1,0 +1,178 @@
+{
+  "checked_at": "2026-10-05, isolated Mac local files",
+  "status": "EXPLORATORY_DESCRIPTIVE_ONLY",
+  "inputs_sha256": {
+    "raw_consumption": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "frozen_features": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "method": {
+    "panel": "Frozen Atlas mask, 1896 territories, 24 months, 6 indicators, no imputation",
+    "category_ratio": "Monthly category value / All categories value; average of 12 monthly ratios per year, times 100",
+    "change": "2024 annual mean ratio minus 2023 annual mean ratio, percentage points",
+    "nominal_growth": "Ratio of annual means of the supplied value indicator, minus 1, times 100",
+    "summary": "Unweighted municipality medians/counts; not a population-weighted national estimate"
+  },
+  "limits": [
+    "Ratios inherit the provider's aggregation; household budget shares and per-person denominators are not verified.",
+    "Five categories do not exhaust All categories; categories are not seller ownership or geographic money flows.",
+    "Shared denominators can mechanically move ratios in opposite directions.",
+    "Prices, quantities, coverage, household liquidity, debt and individual motives are not identified.",
+    "2023/2024 are already inspected data; this probe is not an unseen forecast holdout."
+  ],
+  "all": {
+    "n": 1896,
+    "median_ratio_change_percentage_points": {
+      "Здоровье": -0.20554501085861965,
+      "Маркетплейсы": 4.1727192546821925,
+      "Общественное питание": 0.05665767472831884,
+      "Продовольствие": -1.729702396591179,
+      "Транспорт": -0.3372567402098161
+    },
+    "median_nominal_indicator_growth_pct": {
+      "Все категории": 14.885690265332741,
+      "Здоровье": 9.421748999471603,
+      "Маркетплейсы": 54.749474593916005,
+      "Общественное питание": 17.698637644581737,
+      "Продовольствие": 10.426070682273892,
+      "Транспорт": 8.038267209144689
+    },
+    "count_market_ratio_up": 1896,
+    "count_food_ratio_down": 1834,
+    "count_food_nominal_level_up": 1864,
+    "count_market_up_food_ratio_down_food_level_up": 1803
+  },
+  "median_annual_ratio_pct": {
+    "2023": {
+      "Здоровье": 4.967647891711511,
+      "Маркетплейсы": 11.686694682247321,
+      "Общественное питание": 2.423174443649324,
+      "Продовольствие": 46.42497695484531,
+      "Транспорт": 5.810229355289332
+    },
+    "2024": {
+      "Здоровье": 4.730128664824609,
+      "Маркетплейсы": 16.060698414179313,
+      "Общественное питание": 2.4150397706038538,
+      "Продовольствие": 44.57101856645876,
+      "Транспорт": 5.4075160849548345
+    }
+  },
+  "counts": {
+    "market_up_food_ratio_down": 1834,
+    "market_up_food_ratio_down_food_level_up_all_level_up": 1803,
+    "market_up_food_nominal_level_down": 32
+  },
+  "by_type": {
+    "внутригородская территория города федерального значения": {
+      "n": 144,
+      "median_ratio_change_percentage_points": {
+        "Здоровье": -0.1666060450383009,
+        "Маркетплейсы": 2.3016392605120615,
+        "Общественное питание": 0.33300547810000536,
+        "Продовольствие": -1.508842364275539,
+        "Транспорт": -0.103682769988521
+      },
+      "median_nominal_indicator_growth_pct": {
+        "Все категории": 17.187679941307533,
+        "Здоровье": 13.69564994192315,
+        "Маркетплейсы": 41.08606957789803,
+        "Общественное питание": 22.316382502017895,
+        "Продовольствие": 11.825443667286573,
+        "Транспорт": 15.652490695753063
+      },
+      "count_market_ratio_up": 144,
+      "count_food_ratio_down": 144,
+      "count_food_nominal_level_up": 144,
+      "count_market_up_food_ratio_down_food_level_up": 144
+    },
+    "городской округ": {
+      "n": 426,
+      "median_ratio_change_percentage_points": {
+        "Здоровье": -0.1428033603358554,
+        "Маркетплейсы": 3.628773756990463,
+        "Общественное питание": 0.1251188449759999,
+        "Продовольствие": -1.5112513118282749,
+        "Транспорт": -0.1885323531831915
+      },
+      "median_nominal_indicator_growth_pct": {
+        "Все категории": 16.199962077534167,
+        "Здоровье": 13.05122362368466,
+        "Маркетплейсы": 53.63250049908267,
+        "Общественное питание": 19.715531089519413,
+        "Продовольствие": 12.100948607696704,
+        "Транспорт": 12.912850356005823
+      },
+      "count_market_ratio_up": 426,
+      "count_food_ratio_down": 418,
+      "count_food_nominal_level_up": 415,
+      "count_market_up_food_ratio_down_food_level_up": 408
+    },
+    "муниципальный округ": {
+      "n": 9,
+      "median_ratio_change_percentage_points": {
+        "Здоровье": -0.14004133602239932,
+        "Маркетплейсы": 3.857314346871963,
+        "Общественное питание": 0.20247773470117725,
+        "Продовольствие": -1.5430609739879984,
+        "Транспорт": -0.2998513854432927
+      },
+      "median_nominal_indicator_growth_pct": {
+        "Все категории": 14.746734746734735,
+        "Здоровье": 12.552936476228505,
+        "Маркетплейсы": 51.66234236408616,
+        "Общественное питание": 22.994021397105115,
+        "Продовольствие": 13.026535960696517,
+        "Транспорт": 13.930849278281299
+      },
+      "count_market_ratio_up": 9,
+      "count_food_ratio_down": 9,
+      "count_food_nominal_level_up": 9,
+      "count_market_up_food_ratio_down_food_level_up": 9
+    },
+    "муниципальный район": {
+      "n": 1317,
+      "median_ratio_change_percentage_points": {
+        "Здоровье": -0.2473404793865095,
+        "Маркетплейсы": 4.572237854822637,
+        "Общественное питание": -0.0002482813234347958,
+        "Продовольствие": -1.8853685064310355,
+        "Транспорт": -0.4379559095933132
+      },
+      "median_nominal_indicator_growth_pct": {
+        "Все категории": 13.996475861361057,
+        "Здоровье": 7.656151134412004,
+        "Маркетплейсы": 57.51992871420657,
+        "Общественное питание": 13.963668198730584,
+        "Продовольствие": 9.395424836601318,
+        "Транспорт": 5.589776592810525
+      },
+      "count_market_ratio_up": 1317,
+      "count_food_ratio_down": 1263,
+      "count_food_nominal_level_up": 1296,
+      "count_market_up_food_ratio_down_food_level_up": 1242
+    }
+  },
+  "without_moscow": {
+    "n": 1752,
+    "median_ratio_change_percentage_points": {
+      "Здоровье": -0.22023532061704687,
+      "Маркетплейсы": 4.283446041120342,
+      "Общественное питание": 0.029528242971008645,
+      "Продовольствие": -1.783047991452026,
+      "Транспорт": -0.3760051304186349
+    },
+    "median_nominal_indicator_growth_pct": {
+      "Все категории": 14.533095667139794,
+      "Здоровье": 8.834989705776941,
+      "Маркетплейсы": 56.09154694945808,
+      "Общественное питание": 16.39167255083013,
+      "Продовольствие": 10.106711392046897,
+      "Транспорт": 6.97172934124376
+    },
+    "count_market_ratio_up": 1752,
+    "count_food_ratio_down": 1690,
+    "count_food_nominal_level_up": 1720,
+    "count_market_up_food_ratio_down_food_level_up": 1659
+  }
+}

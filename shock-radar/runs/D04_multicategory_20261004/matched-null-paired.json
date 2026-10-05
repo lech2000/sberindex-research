@@ -1,0 +1,58 @@
+[
+  {
+    "method": "energy",
+    "reference": "max_absolute",
+    "family": "gaussian",
+    "form": "opposed",
+    "amplitude": 4.0,
+    "target_fa": 0.03,
+    "benefit_recall": 0.006,
+    "ci95_by_seed": [
+      0.003,
+      0.009
+    ],
+    "n_seed_blocks": 20
+  },
+  {
+    "method": "mahalanobis",
+    "reference": "max_absolute",
+    "family": "gaussian",
+    "form": "opposed",
+    "amplitude": 4.0,
+    "target_fa": 0.03,
+    "benefit_recall": 0.01425,
+    "ci95_by_seed": [
+      0.0105,
+      0.018
+    ],
+    "n_seed_blocks": 20
+  },
+  {
+    "method": "energy",
+    "reference": "max_absolute",
+    "family": "student5",
+    "form": "opposed",
+    "amplitude": 4.0,
+    "target_fa": 0.03,
+    "benefit_recall": -0.0565,
+    "ci95_by_seed": [
+      -0.0655,
+      -0.0475
+    ],
+    "n_seed_blocks": 20
+  },
+  {
+    "method": "mahalanobis",
+    "reference": "max_absolute",
+    "family": "student5",
+    "form": "opposed",
+    "amplitude": 4.0,
+    "target_fa": 0.03,
+    "benefit_recall": 0.077,
+    "ci95_by_seed": [
+      0.06674375,
+      0.0875
+    ],
+    "n_seed_blocks": 20
+  }
+]

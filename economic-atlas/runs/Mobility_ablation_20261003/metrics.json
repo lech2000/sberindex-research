@@ -1,0 +1,267 @@
+{
+  "primary_mobility_weight": 0.25,
+  "sensitivity_weight": 1.0,
+  "n": 101,
+  "k": 2,
+  "seeds": [
+    20261003,
+    20261004,
+    20261005,
+    20261006,
+    20261007
+  ],
+  "same_observation_mask_all_arms": true,
+  "common_metric_space": "five frozen-standardized spending shares",
+  "spending_feature_variances_cohort": [
+    0.400285146654071,
+    0.6654698846168101,
+    0.50788546361243,
+    0.4140688000060617,
+    0.5263746701472608
+  ],
+  "mobility_squared_weight_to_spending_total_variance_ratio": {
+    "0.25": 0.024859949337089574,
+    "1.0": 0.3977591893934332
+  },
+  "mobility_mean_log1p": 0.8167350083777283,
+  "mobility_std_log1p": 0.5349115978951264,
+  "results": [
+    {
+      "mobility_weight": 0.0,
+      "runs": [
+        {
+          "seed": 20261003,
+          "cluster_sizes": [
+            34,
+            67
+          ],
+          "silhouette_common_spending_space": 0.3504920400073887,
+          "ari_vs_same_seed_control": 1.0,
+          "ari_vs_frozen_december_partition": 0.6639421338155516
+        },
+        {
+          "seed": 20261004,
+          "cluster_sizes": [
+            67,
+            34
+          ],
+          "silhouette_common_spending_space": 0.3504920400073887,
+          "ari_vs_same_seed_control": 1.0,
+          "ari_vs_frozen_december_partition": 0.6639421338155516
+        },
+        {
+          "seed": 20261005,
+          "cluster_sizes": [
+            34,
+            67
+          ],
+          "silhouette_common_spending_space": 0.3504920400073887,
+          "ari_vs_same_seed_control": 1.0,
+          "ari_vs_frozen_december_partition": 0.6639421338155516
+        },
+        {
+          "seed": 20261006,
+          "cluster_sizes": [
+            67,
+            34
+          ],
+          "silhouette_common_spending_space": 0.3504920400073887,
+          "ari_vs_same_seed_control": 1.0,
+          "ari_vs_frozen_december_partition": 0.6639421338155516
+        },
+        {
+          "seed": 20261007,
+          "cluster_sizes": [
+            67,
+            34
+          ],
+          "silhouette_common_spending_space": 0.3504920400073887,
+          "ari_vs_same_seed_control": 1.0,
+          "ari_vs_frozen_december_partition": 0.6639421338155516
+        }
+      ],
+      "seed_stability_pairwise_ari": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "mobility_weight": 0.25,
+      "runs": [
+        {
+          "seed": 20261003,
+          "cluster_sizes": [
+            30,
+            71
+          ],
+          "silhouette_common_spending_space": 0.35804577127425996,
+          "ari_vs_same_seed_control": 0.8439486083280504,
+          "ari_vs_frozen_december_partition": 0.802243524372833
+        },
+        {
+          "seed": 20261004,
+          "cluster_sizes": [
+            71,
+            30
+          ],
+          "silhouette_common_spending_space": 0.35804577127425996,
+          "ari_vs_same_seed_control": 0.8439486083280504,
+          "ari_vs_frozen_december_partition": 0.802243524372833
+        },
+        {
+          "seed": 20261005,
+          "cluster_sizes": [
+            30,
+            71
+          ],
+          "silhouette_common_spending_space": 0.35804577127425996,
+          "ari_vs_same_seed_control": 0.8439486083280504,
+          "ari_vs_frozen_december_partition": 0.802243524372833
+        },
+        {
+          "seed": 20261006,
+          "cluster_sizes": [
+            71,
+            30
+          ],
+          "silhouette_common_spending_space": 0.35804577127425996,
+          "ari_vs_same_seed_control": 0.8439486083280504,
+          "ari_vs_frozen_december_partition": 0.802243524372833
+        },
+        {
+          "seed": 20261007,
+          "cluster_sizes": [
+            71,
+            30
+          ],
+          "silhouette_common_spending_space": 0.35804577127425996,
+          "ari_vs_same_seed_control": 0.8439486083280504,
+          "ari_vs_frozen_december_partition": 0.802243524372833
+        }
+      ],
+      "seed_stability_pairwise_ari": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "mobility_weight": 1.0,
+      "runs": [
+        {
+          "seed": 20261003,
+          "cluster_sizes": [
+            74,
+            27
+          ],
+          "silhouette_common_spending_space": 0.3409970947740285,
+          "ari_vs_same_seed_control": 0.6652446194481235,
+          "ari_vs_frozen_december_partition": 0.7619598924953483
+        },
+        {
+          "seed": 20261004,
+          "cluster_sizes": [
+            27,
+            74
+          ],
+          "silhouette_common_spending_space": 0.3409970947740285,
+          "ari_vs_same_seed_control": 0.6652446194481235,
+          "ari_vs_frozen_december_partition": 0.7619598924953483
+        },
+        {
+          "seed": 20261005,
+          "cluster_sizes": [
+            27,
+            74
+          ],
+          "silhouette_common_spending_space": 0.3409970947740285,
+          "ari_vs_same_seed_control": 0.6652446194481235,
+          "ari_vs_frozen_december_partition": 0.7619598924953483
+        },
+        {
+          "seed": 20261006,
+          "cluster_sizes": [
+            74,
+            27
+          ],
+          "silhouette_common_spending_space": 0.3409970947740285,
+          "ari_vs_same_seed_control": 0.6652446194481235,
+          "ari_vs_frozen_december_partition": 0.7619598924953483
+        },
+        {
+          "seed": 20261007,
+          "cluster_sizes": [
+            74,
+            27
+          ],
+          "silhouette_common_spending_space": 0.3409970947740285,
+          "ari_vs_same_seed_control": 0.6652446194481235,
+          "ari_vs_frozen_december_partition": 0.7619598924953483
+        }
+      ],
+      "seed_stability_pairwise_ari": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "checked_at": "2026-10-03T11:37:23.457257+00:00",
+  "status": "computed_descriptive_restricted_cohort_ablation",
+  "n_ambiguous_frozen_identity": 25,
+  "region_cohort_counts": {
+    "Республика Коми": 18,
+    "Ленинградская область": 18,
+    "Псковская область": 14,
+    "Республика Карелия": 13,
+    "Новгородская область": 13,
+    "Архангельская область": 9,
+    "Калининградская область": 6,
+    "Мурманская область": 5,
+    "Вологодская область": 3,
+    "Ненецкий автономный округ": 2
+  },
+  "source_snapshot": "2024-12-31",
+  "future_2025_mobility_rows_admitted": 0,
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "independent_new_holdout": false,
+  "sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "cohort": "577aada0571938c2b455ca3e0b013c01b6058a84ac079e6a9d0cbbf37797d86a",
+    "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+    "code": "78f225c5cfea6325c99a8d91eff32b69ea612aa041f6384b8462565c2db3d2a6"
+  },
+  "limits": [
+    "Descriptive December 2024 partitions, not causal effects or forecast validation",
+    "Official source native code binding checked today; historical legal boundaries not independently proved",
+    "82 source/dictionary name/type discrepancies excluded; half-open year eligibility remains an assumption",
+    "Restricted NW cohort is not nationally representative; no missing mobility filled",
+    "Fixed K=2, five seeds; no dynamic birth/merge claim; ambiguous A6 identity kept explicit",
+    "Mobility log transform fit on the 2024 descriptive cohort; never backdated to Radar",
+    "Silhouette is measured in the SAME spending space across arms; not evidence of economic validity",
+    "Primary .25/sensitivity1 weights fixed before calculation; no cherry-picking"
+  ]
+}

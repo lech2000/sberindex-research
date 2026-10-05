@@ -1,0 +1,277 @@
+{
+  "checked_at_utc": "2026-10-05T11:32:55.152570+00:00",
+  "method": "integrate; full document text readback and SHA-256",
+  "documents": [
+    {
+      "corpus_id": 74,
+      "document_id": 16497,
+      "file": "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "source_sha256": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d",
+      "stored_text_sha256": "cbe84fec92398f404f286c37016c25a8f439ec75828ef816a5d4aec9ba1d5311",
+      "verified": true,
+      "result": {
+        "added": false,
+        "duplicate": true,
+        "document_id": 16497,
+        "note": "такой текст в базе уже есть, ничего не изменено"
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16499,
+      "file": "economic-atlas/RELEASE_REPORT_2026-10-05.md",
+      "source_sha256": "c9baab767be605c06225ad6acfbbef2d51b4ef8739bb1e60560db83fc2f16737",
+      "stored_text_sha256": "ffb72222a80e2b08cfdbeeea5ff492d4d27633da10646b4766abdb7872b1bf76",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16499,
+        "title": "Атлас 05.10.2026 — economic-atlas/RELEASE_REPORT_2026-10-05.md",
+        "corpus_id": 75,
+        "chunks": 10,
+        "vectors": 10
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16500,
+      "file": "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+      "source_sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+      "stored_text_sha256": "e2b61613f4ecf317aadf607a97b9c01a29e7ac9a933a0b29350e0ebd92525594",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16500,
+        "title": "Атлас 05.10.2026 — economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+        "corpus_id": 75,
+        "chunks": 10,
+        "vectors": 10
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16501,
+      "file": "economic-atlas/RELEASE_README.md",
+      "source_sha256": "83b64980fcf15eab029f6c6d3324c4b9d9c6e9fb6d81e81cca054d41ea3ac0ce",
+      "stored_text_sha256": "cd6f7268477bb69b8c6dc083148d0f367349d112640acac0b5d10fbd215d7c6b",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16501,
+        "title": "Атлас 05.10.2026 — economic-atlas/RELEASE_README.md",
+        "corpus_id": 75,
+        "chunks": 3,
+        "vectors": 3
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16502,
+      "file": "economic-atlas/COMPLETION_REPORT_2026-10-05.md",
+      "source_sha256": "f71c395308bb4ed2543790ab15258c135ef01efabe0d2a656ac234b7d2cefc3d",
+      "stored_text_sha256": "5010cc94e7871131ffdb7a30dc003961470a546b88a57b82c29d7c2fb06451a6",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16502,
+        "title": "Атлас 05.10.2026 — economic-atlas/COMPLETION_REPORT_2026-10-05.md",
+        "corpus_id": 75,
+        "chunks": 7,
+        "vectors": 7
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16503,
+      "file": "economic-atlas/PUBLICATION_MIGRATION_2026-10-05.md",
+      "source_sha256": "9d0f7f9572af58c533715cca5b9ad799eb4520a1c187e300fd42cb32563bc424",
+      "stored_text_sha256": "ec7295ccc3d8c3cc2116d874364c687d57f1c9ad3222fc6ac48283079874327c",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16503,
+        "title": "Атлас 05.10.2026 — economic-atlas/PUBLICATION_MIGRATION_2026-10-05.md",
+        "corpus_id": 75,
+        "chunks": 3,
+        "vectors": 3
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16504,
+      "file": "economic-atlas/runs/A9_economic_network_20261005/README.md",
+      "source_sha256": "b904d0898e1d08024ee0a37a88b7376192cfb25b7a6973394e7233fb684f6d6f",
+      "stored_text_sha256": "50dad537bf812174a781b90d8c3bd00e86c3422b5aeab47cff35742ba4db0ee3",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16504,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A9_economic_network_20261005/README.md",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16505,
+      "file": "economic-atlas/runs/A9_economic_network_20261005/PROTOCOL.md",
+      "source_sha256": "d34356f4732c70d720e3b1866371144453c933b4d7e3bc9443fc6b39c413f3eb",
+      "stored_text_sha256": "184920c35e8fcc0da7f78b4f85f0f711aa64eb26f420a3b4b043ba11fa011e97",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16505,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A9_economic_network_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16506,
+      "file": "economic-atlas/runs/A10_method_comparison_20261005/README.md",
+      "source_sha256": "b7c084aa631819a918c40b2a9ef6b5844143a92d6d39892812dfab787bd2a26c",
+      "stored_text_sha256": "71a3eff7c9d00e4cfb709f750ae9b11c2d0df1a1baef5024a92307fe73c5f52f",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16506,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A10_method_comparison_20261005/README.md",
+        "corpus_id": 75,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16507,
+      "file": "economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+      "source_sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+      "stored_text_sha256": "c876fb4c4825cb25a62aa1e2cc7cac291f4f83fda0cc9b31babbb74765966888",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16507,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16508,
+      "file": "economic-atlas/runs/A11_icvi_table_20261005/README.md",
+      "source_sha256": "8d868322f5567565cc3db4b3c37463b34e976da34266ce964910f4ed13804f37",
+      "stored_text_sha256": "005d2566302d6800bc61ee1fbd39482dbf022464599b6d89b60be7c42ca19b38",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16508,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A11_icvi_table_20261005/README.md",
+        "corpus_id": 75,
+        "chunks": 7,
+        "vectors": 7
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16509,
+      "file": "economic-atlas/runs/A11_icvi_table_20261005/PROTOCOL.md",
+      "source_sha256": "228a545ad611a636101a28c1929929bddc834aacaea2336a16057ec437df8717",
+      "stored_text_sha256": "8e792a1a291b3a2536f0eec8c72da3a39ca578db6b66b623e54625afed76fcf5",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16509,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A11_icvi_table_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16510,
+      "file": "economic-atlas/runs/A12_stable_cores_20261005/README.md",
+      "source_sha256": "de6a1aaf92bd73a1a304d253506403254f857879a8624bc934cbeb02cf682168",
+      "stored_text_sha256": "64e2d18c533edfe5df2d2bda0b32aa34135a7a6462c15299320c3152c724c164",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16510,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A12_stable_cores_20261005/README.md",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16511,
+      "file": "economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL.md",
+      "source_sha256": "f100d540dfe04e9b2f9d8b9b4ae11b6e926364731ffdaed2c913fe54b1216250",
+      "stored_text_sha256": "56db74539387cf6be0473de936e7eff6aa1c511edd1a950f9913a29e3a474983",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16511,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A12_stable_cores_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 6,
+        "vectors": 6
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16512,
+      "file": "economic-atlas/README.md",
+      "source_sha256": "00026a657dd043d41ec253d21198f95f7208962da98fc6a3ab85e3d93f3b6f39",
+      "stored_text_sha256": "98d0f9b61113575f0b0e53c235c834a8f0243a5920ea2fa61995f8288a89183e",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16512,
+        "title": "Атлас 05.10.2026 — economic-atlas/README.md",
+        "corpus_id": 75,
+        "chunks": 5,
+        "vectors": 5
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16513,
+      "file": "economic-atlas/runs/A13_reproduction_20261005/PROTOCOL.md",
+      "source_sha256": "38b6e4ea0d965ae581e309fdd95e23838c0f970b6dbe131487c967695ce3c41e",
+      "stored_text_sha256": "55653425a0945272112b868fe58796c426b04c76804d3a28b5f4b0fc64e58595",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16513,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A13_reproduction_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 3,
+        "vectors": 3
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16514,
+      "file": "economic-atlas/runs/A14_release_20261005/PROTOCOL.md",
+      "source_sha256": "11dec7778be5645190516836dee5b50790a634f1ba98d0e4c2053dde22d7f043",
+      "stored_text_sha256": "ef403df57a895d844cda592eebf9eb105dc8b0218d7523385366a08cf6c2de8a",
+      "verified": true,
+      "result": {
+        "added": true,
+        "document_id": 16514,
+        "title": "Атлас 05.10.2026 — economic-atlas/runs/A14_release_20261005/PROTOCOL.md",
+        "corpus_id": 75,
+        "chunks": 4,
+        "vectors": 4
+      }
+    }
+  ],
+  "status": "VERIFIED"
+}

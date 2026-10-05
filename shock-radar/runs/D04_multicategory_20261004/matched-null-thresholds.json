@@ -1,0 +1,18 @@
+{
+  "gaussian": {
+    "stouffer_down": 2.5473323625219852,
+    "stouffer_two_sided": 2.9467859143524837,
+    "max_absolute": 2.7393321307599208,
+    "glr_two_sided": 14.198198258623925,
+    "energy": 2.661093628666392,
+    "mahalanobis": 2.477767557000176
+  },
+  "student5": {
+    "stouffer_down": 2.5370552487059723,
+    "stouffer_two_sided": 3.1348039607042057,
+    "max_absolute": 3.245172125068107,
+    "glr_two_sided": 17.026681027296227,
+    "energy": 3.8524329896241247,
+    "mahalanobis": 3.7296712657519815
+  }
+}

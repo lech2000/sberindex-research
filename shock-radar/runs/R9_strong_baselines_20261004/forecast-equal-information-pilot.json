@@ -1,0 +1,255 @@
+{
+  "client_date": "2026-10-04",
+  "pilot_sha256": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2",
+  "baseline_sha256": "e6e9af9ecd6a2d406cb1485acd710ac6cfec7aed438445cafc576ab552a29042",
+  "code_sha256": "0ee9766a8bf94e567e6ebd0b7e2ffe6674918d6aac4f610e038b75551bedb256",
+  "status": "EXPLORATORY_120_SERIES_EQUAL_AGGREGATE_INPUT",
+  "results": [
+    {
+      "window": "R9",
+      "horizon": 1,
+      "original_rows": 720,
+      "n": 720,
+      "series": 120,
+      "mae": {
+        "category_seasonal": 316.9271376750941,
+        "profile_ses": 307.29332375382836,
+        "conditional_ses": 319.77740251105956,
+        "growth_naive3": 339.7476188136004,
+        "conditional_prophet_yearly": 415.7112268444624
+      },
+      "comparisons": {
+        "category_seasonal": {
+          "error_delta_vs_conditional_prophet": -98.78408916936831,
+          "ci95_by_target_month": [
+            -133.76147940301664,
+            -64.68951609398246
+          ],
+          "n_blocks": 6
+        },
+        "profile_ses": {
+          "error_delta_vs_conditional_prophet": -108.41790309063401,
+          "ci95_by_target_month": [
+            -142.0079542521265,
+            -81.16382531578212
+          ],
+          "n_blocks": 6
+        },
+        "conditional_ses": {
+          "error_delta_vs_conditional_prophet": -95.93382433340282,
+          "ci95_by_target_month": [
+            -132.97047552270246,
+            -58.788108390874974
+          ],
+          "n_blocks": 6
+        },
+        "growth_naive3": {
+          "error_delta_vs_conditional_prophet": -75.963608030862,
+          "ci95_by_target_month": [
+            -101.58158432937115,
+            -55.23587905850023
+          ],
+          "n_blocks": 6
+        }
+      }
+    },
+    {
+      "window": "R9",
+      "horizon": 3,
+      "original_rows": 720,
+      "n": 720,
+      "series": 120,
+      "mae": {
+        "category_seasonal": 489.0021891349179,
+        "profile_ses": 419.97036770756483,
+        "conditional_ses": 493.00614907644143,
+        "growth_naive3": 458.0441966924327,
+        "conditional_prophet_yearly": 576.6742034024385
+      },
+      "comparisons": {
+        "category_seasonal": {
+          "error_delta_vs_conditional_prophet": -87.67201426752061,
+          "ci95_by_target_month": [
+            -129.7504023535794,
+            -40.19822443224999
+          ],
+          "n_blocks": 6
+        },
+        "profile_ses": {
+          "error_delta_vs_conditional_prophet": -156.70383569487367,
+          "ci95_by_target_month": [
+            -208.85549446507127,
+            -115.40701309673828
+          ],
+          "n_blocks": 6
+        },
+        "conditional_ses": {
+          "error_delta_vs_conditional_prophet": -83.66805432599709,
+          "ci95_by_target_month": [
+            -127.17550894198972,
+            -30.477291727575093
+          ],
+          "n_blocks": 6
+        },
+        "growth_naive3": {
+          "error_delta_vs_conditional_prophet": -118.63000671000574,
+          "ci95_by_target_month": [
+            -172.60377681251342,
+            -73.92189851579747
+          ],
+          "n_blocks": 6
+        }
+      }
+    },
+    {
+      "window": "R9",
+      "horizon": 6,
+      "original_rows": 720,
+      "n": 720,
+      "series": 120,
+      "mae": {
+        "category_seasonal": 651.5822304481768,
+        "profile_ses": 601.1622512686238,
+        "conditional_ses": 647.1200924654792,
+        "growth_naive3": 677.0515672549461,
+        "conditional_prophet_yearly": 728.7593606015923
+      },
+      "comparisons": {
+        "category_seasonal": {
+          "error_delta_vs_conditional_prophet": -77.17713015341539,
+          "ci95_by_target_month": [
+            -181.8705914919721,
+            29.205492044428517
+          ],
+          "n_blocks": 6
+        },
+        "profile_ses": {
+          "error_delta_vs_conditional_prophet": -127.59710933296836,
+          "ci95_by_target_month": [
+            -197.8249767075102,
+            -52.65313727816182
+          ],
+          "n_blocks": 6
+        },
+        "conditional_ses": {
+          "error_delta_vs_conditional_prophet": -81.63926813611306,
+          "ci95_by_target_month": [
+            -181.0873599762477,
+            19.281001013819246
+          ],
+          "n_blocks": 6
+        },
+        "growth_naive3": {
+          "error_delta_vs_conditional_prophet": -51.70779334664597,
+          "ci95_by_target_month": [
+            -112.31655998822693,
+            38.68088780447695
+          ],
+          "n_blocks": 6
+        }
+      }
+    },
+    {
+      "window": "pre_R9",
+      "horizon": 1,
+      "original_rows": 600,
+      "n": 600,
+      "series": 120,
+      "mae": {
+        "category_seasonal": 339.2168265439593,
+        "profile_ses": 364.45634127845756,
+        "conditional_ses": 330.2025687964009,
+        "growth_naive3": 360.78833581558933,
+        "conditional_prophet_yearly": 581.0914940978645
+      },
+      "comparisons": {
+        "category_seasonal": {
+          "error_delta_vs_conditional_prophet": -241.87466755390506,
+          "ci95_by_target_month": [
+            -323.09140740197563,
+            -150.48825039650242
+          ],
+          "n_blocks": 5
+        },
+        "profile_ses": {
+          "error_delta_vs_conditional_prophet": -216.63515281940693,
+          "ci95_by_target_month": [
+            -321.0894361342625,
+            -104.04520022101465
+          ],
+          "n_blocks": 5
+        },
+        "conditional_ses": {
+          "error_delta_vs_conditional_prophet": -250.88892530146356,
+          "ci95_by_target_month": [
+            -341.122307533015,
+            -146.72979925066824
+          ],
+          "n_blocks": 5
+        },
+        "growth_naive3": {
+          "error_delta_vs_conditional_prophet": -220.30315828227515,
+          "ci95_by_target_month": [
+            -296.98548657643306,
+            -138.23293143833143
+          ],
+          "n_blocks": 5
+        }
+      }
+    },
+    {
+      "window": "pre_R9",
+      "horizon": 3,
+      "original_rows": 360,
+      "n": 360,
+      "series": 120,
+      "mae": {
+        "category_seasonal": 621.4006931654312,
+        "profile_ses": 611.9403275944128,
+        "conditional_ses": 619.3525449370037,
+        "growth_naive3": 600.1118160928087,
+        "conditional_prophet_yearly": 761.9932762959135
+      },
+      "comparisons": {
+        "category_seasonal": {
+          "error_delta_vs_conditional_prophet": -140.59258313048218,
+          "ci95_by_target_month": [
+            -180.65296939651842,
+            -75.36061582677233
+          ],
+          "n_blocks": 3
+        },
+        "profile_ses": {
+          "error_delta_vs_conditional_prophet": -150.05294870150072,
+          "ci95_by_target_month": [
+            -218.40708850946015,
+            -64.65526209207391
+          ],
+          "n_blocks": 3
+        },
+        "conditional_ses": {
+          "error_delta_vs_conditional_prophet": -142.64073135890968,
+          "ci95_by_target_month": [
+            -213.30758575735,
+            -66.86216202386146
+          ],
+          "n_blocks": 3
+        },
+        "growth_naive3": {
+          "error_delta_vs_conditional_prophet": -161.88146020310478,
+          "ci95_by_target_month": [
+            -262.07132278069946,
+            -85.44016344526132
+          ],
+          "n_blocks": 3
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Same viewed sample; not independent holdout",
+    "conditional Prophet uses shared category normalization/season factor; functional forms differ",
+    "Growth naive3 uses own-series information only",
+    "No extra Prophet refits"
+  ]
+}

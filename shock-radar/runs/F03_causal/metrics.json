@@ -1,0 +1,157 @@
+{
+ "run_id": "F03-causal-ATF-M6",
+ "status": "EXPLORATORY_NOT_GATE_PASS",
+ "replaces": "runs/R3 (invalidated, см. runs/R3/INVALIDATED.md)",
+ "run_date": "2026-10-01",
+ "conventions": {
+  "release_lag_months": 2,
+  "last_allowed": "origin-2",
+  "target": "origin+h",
+  "baseline": "lastavailable = value at origin-2",
+  "training": "earlier origins whose targets are published at origin (origin'+h <= origin-2)",
+  "evaluation": "origin rows only, out-of-sample"
+ },
+ "inputs": {
+  "panel": "sberindex-data-sense-2025/8_consumption.parquet",
+  "panel_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "rows": 303126
+ },
+ "code_sha256": {
+  "f03_global_boosting.py": "1c4a5de08045850ecc496b065cc1cc99b7d96eb9f1a1313503ed5dffaf6022f8",
+  "leakage_guard.py": "233ce3e65ee9075d6ccb45e0b81762ed0e846878622ca92f2df03575bbf9430b"
+ },
+ "metrics": {
+  "1": {
+   "mae_boost": 1002.6591106092998,
+   "mae_last_available": 908.3938407940577,
+   "n": 60852,
+   "origins": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11"
+   ],
+   "skipped": {
+    "2024-12": "target_after_panel"
+   },
+   "train_origins": {
+    "2024-07": [
+     "2024-02",
+     "2024-03",
+     "2024-04"
+    ],
+    "2024-08": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05"
+    ],
+    "2024-09": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05",
+     "2024-06"
+    ],
+    "2024-10": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05",
+     "2024-06",
+     "2024-07"
+    ],
+    "2024-11": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05",
+     "2024-06",
+     "2024-07",
+     "2024-08"
+    ]
+   },
+   "release_lag": 2,
+   "causal": true
+  },
+  "2": {
+   "mae_boost": 957.5054455854893,
+   "mae_last_available": 875.6605493287351,
+   "n": 48714,
+   "origins": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10"
+   ],
+   "skipped": {
+    "2024-11": "target_after_panel",
+    "2024-12": "target_after_panel"
+   },
+   "train_origins": {
+    "2024-07": [
+     "2024-02",
+     "2024-03"
+    ],
+    "2024-08": [
+     "2024-02",
+     "2024-03",
+     "2024-04"
+    ],
+    "2024-09": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05"
+    ],
+    "2024-10": [
+     "2024-02",
+     "2024-03",
+     "2024-04",
+     "2024-05",
+     "2024-06"
+    ]
+   },
+   "release_lag": 2,
+   "causal": true
+  },
+  "3": {
+   "mae_boost": 903.4427284867658,
+   "mae_last_available": 985.8877662778599,
+   "n": 36522,
+   "origins": [
+    "2024-07",
+    "2024-08",
+    "2024-09"
+   ],
+   "skipped": {
+    "2024-10": "target_after_panel",
+    "2024-11": "target_after_panel",
+    "2024-12": "target_after_panel"
+   },
+   "train_origins": {
+    "2024-07": [
+     "2024-02"
+    ],
+    "2024-08": [
+     "2024-02",
+     "2024-03"
+    ],
+    "2024-09": [
+     "2024-02",
+     "2024-03",
+     "2024-04"
+    ]
+   },
+   "release_lag": 2,
+   "causal": true
+  }
+ },
+ "reading": {
+  "h1": "boost хуже last_available (1002.7 против 908.4)",
+  "h2": "boost хуже last_available (957.5 против 875.7)",
+  "h3": "boost лучше (903.4 против 985.9), но 3 origins и 1-3 обучающих origins — не вывод",
+  "limits": "24 месяца и лаг 2 дают от 1 до 7 обучающих origins; финальный тест не открывался; не независимо от R8; одна модель без настройки"
+ }
+}
