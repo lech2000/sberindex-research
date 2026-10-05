@@ -1,0 +1,114 @@
+{
+  "run_id": "Consumption_restructuring_forecast_20261005",
+  "recorded_before_new_results": true,
+  "recorded_at_utc": "2026-10-05T20:43:29.406Z",
+  "status": "EXPLORATORY_ALREADY_VIEWED_2024",
+  "panel": "Frozen Atlas 1896 x 24 months x 6 categories; retrospectively fixed complete cohort",
+  "peer_features": "2023 only; five mean category/all ratios, log population, log mean all, log all slope, log all std. Current dictionary retrospectively mapped.",
+  "peer_rule": {
+    "same_type": true,
+    "population_ratio": [
+      0.5,
+      2
+    ],
+    "nearest": 10,
+    "minimum_peers": 5,
+    "max_standardized_distance": 3,
+    "tie_break": "territory_id",
+    "exclude_self": true,
+    "scaler_fit": "eligible 2023 features only",
+    "no_region_exclusion": true
+  },
+  "anomaly": {
+    "share_unit": "percentage points of category/all supplied indicators, not household budget",
+    "monthly_change": "same month 2024 minus 2023",
+    "common": "leave-one-out median of all 1896 municipalities",
+    "peer": "median of fixed 2023 peers; own excluded",
+    "robust_score": "peer gap / max(1.4826 peer MAD,0.25 percentage points)",
+    "flag": "abs(peer gap)>=1pp and abs(score)>=3 and peer/common gap same sign",
+    "persistent": "3 consecutive flagged months of same sign in July-December 2024",
+    "ranking": "absolute median peer gap October-December; all qualified retained, no p-values",
+    "nominal_confirmation": "relative nominal YoY growth minus fixed-peer median; abs gap >=5pp for >=3 July-December months",
+    "story_selection": "top 3 positive and top 3 negative persistent marketplace gaps; cities preferred when supported, nationwide full ranking and search retained; Orsk/Kurgan/Ishim context separately"
+  },
+  "forecast": {
+    "primary_target": "Все категории",
+    "secondary_target": "Маркетплейсы",
+    "other_targets": "four remaining categories exploratory",
+    "target_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "horizons": [
+      1,
+      3,
+      6
+    ],
+    "baseline_models": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3"
+    ],
+    "factor": "fixed 1896 panel category median observed at origin; recomputed MAE not same as original R9 mask",
+    "correction_training": "pooled past one-step log(actual/profile_ses) across supported municipalities; origin u >=2024-01, u+1<=forecast origin",
+    "minimum_label_months": 2,
+    "fallback": "zero correction (exact Profile SES), explicit COLD_START; unsupported peers excluded from every primary metric model equally and retained in coverage",
+    "models": [
+      "profile_ses",
+      "calibration",
+      "own_ridge",
+      "peer_ridge",
+      "category_seasonal",
+      "growth_naive3"
+    ],
+    "calibration": "mean historical one-step log residual, clipped [-0.1,0.1]",
+    "own_features": [
+      "marketplace share YoY common gap",
+      "marketplace nominal log YoY common gap",
+      "all nominal log YoY common gap",
+      "food share YoY common gap",
+      "food nominal log YoY common gap"
+    ],
+    "peer_features": "five same quantities minus own fixed-peer medians, appended to five own features",
+    "standardization": "training rows only mean/std; zero training std -> scale 1",
+    "ridge": "mean squared log residual + 0.1 * squared coefficients; intercept unpenalized; fixed before experiment",
+    "correction_clip_log": [
+      -0.1,
+      0.1
+    ],
+    "horizon_rule": "same past one-step learned correction applied multiplicatively at h1/3/6; no claim of h-specific training",
+    "mask": "all forecasts on identical supported-peer municipalities and target keys; no outcome-driven exclusions",
+    "primary_comparison": "peer_ridge vs profile_ses on All categories h1, then peer_ridge vs own_ridge incremental value",
+    "uncertainty": "10000 paired bootstrap resamples of target-month blocks (6); separate region-block sensitivity; no independent-row CI",
+    "no_hyperparameter_search": true,
+    "seed": 20261005
+  },
+  "audit": [
+    "future mutation of entire consumption panel preserves 2023 matches",
+    "future population mutation preserves matches",
+    "future mutation at every forecast origin preserves feature inputs and model predictions",
+    "scalar SES vs vector baseline on sampled real keys",
+    "independent scalar ridge fit and train label cutoffs",
+    "synthetic identical common growth is not unusual; injected persistent exception flags",
+    "coverage/all model same-key checks"
+  ],
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "limits": [
+    "All 2024 outcomes already viewed; no unseen holdout or scientific PASS",
+    "Historical release vintages and availability not verified; prefix invariance conditional on frozen revised files",
+    "Complete-panel membership and dictionary are retrospectively fixed",
+    "One prior year and only six target-month blocks; selected histories are descriptive, not causal",
+    "Category/all ratios have common denominator; nominal confirmation is separate but not independent household evidence",
+    "Correction only learned from past one-step outcomes; h3/h6 persistence assumption explicit",
+    "No prices, transactions, debt, shopper composition or causal crisis labels",
+    "No municipal observations after 2024"
+  ]
+}
