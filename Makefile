@@ -16,3 +16,9 @@ endif
 
 radar-selfcheck:
 	$(PYTHON) repository-tools/radar_reproduce.py --self-check
+
+JOINT_DATA_SENSE ?= data/raw/sberindex-data-sense-2025
+JOINT_OUT ?= output/atlas-radar
+.PHONY: atlas-radar
+atlas-radar:
+	$(PYTHON) repository-tools/atlas_radar_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --out "$(JOINT_OUT)"

@@ -1,0 +1,1082 @@
+[
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "profile_ses",
+    "April_residual_percent": 6.654321034526789,
+    "quarter_residual_percent": 9.176965244630097,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 4.769071108832035,
+    "comparison_April_range_percent": [
+      3.0380652634218963,
+      7.609134952523666
+    ],
+    "anchor_minus_comparison_April_pp": 1.8852499256947537,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "category_seasonal",
+    "April_residual_percent": 7.249454152606094,
+    "quarter_residual_percent": 10.030169081583761,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 6.246457734896382,
+    "comparison_April_range_percent": [
+      5.048375998157506,
+      8.552062113814518
+    ],
+    "anchor_minus_comparison_April_pp": 1.0029964177097117,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": -0.5129030514565702,
+    "quarter_residual_percent": 5.153979077158666,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 8.20201932993626,
+    "comparison_April_range_percent": [
+      1.6195079813632995,
+      11.084766043123961
+    ],
+    "anchor_minus_comparison_April_pp": -8.71492238139283,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 6.221122588802364,
+    "quarter_residual_percent": 14.415290126949465,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 20.20859630052808,
+    "comparison_April_range_percent": [
+      13.782585012839466,
+      23.009820710865682
+    ],
+    "anchor_minus_comparison_April_pp": -13.987473711725716,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": -4.648350188872397,
+    "quarter_residual_percent": 4.742591291639631,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 4.887707328346802,
+    "comparison_April_range_percent": [
+      2.429331365076126,
+      9.142955789116014
+    ],
+    "anchor_minus_comparison_April_pp": -9.536057517219199,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": -3.6441771968777292,
+    "quarter_residual_percent": 6.16685025591901,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 8.47142618804363,
+    "comparison_April_range_percent": [
+      5.001055722894199,
+      10.982878345115799
+    ],
+    "anchor_minus_comparison_April_pp": -12.115603384921359,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 9.310782946513374,
+    "quarter_residual_percent": 16.80057380682063,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 12.80208317324939,
+    "comparison_April_range_percent": [
+      7.044595544432286,
+      22.03197650450135
+    ],
+    "anchor_minus_comparison_April_pp": -3.4913002267360156,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 16.96709585121603,
+    "quarter_residual_percent": 30.757615204373856,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 19.308563586264093,
+    "comparison_April_range_percent": [
+      15.409422661914117,
+      27.106832849669594
+    ],
+    "anchor_minus_comparison_April_pp": -2.341467735048063,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 8.253194629217298,
+    "quarter_residual_percent": 7.113107787169337,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 1.4300961355619424,
+    "comparison_April_range_percent": [
+      0.42936769691117593,
+      4.310647954006819
+    ],
+    "anchor_minus_comparison_April_pp": 6.823098493655355,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 8.054583841163577,
+    "quarter_residual_percent": 7.3948751723649675,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 1.7473862087604708,
+    "comparison_April_range_percent": [
+      0.6766898316576064,
+      4.270087213271001
+    ],
+    "anchor_minus_comparison_April_pp": 6.307197632403106,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 11.046776484802457,
+    "quarter_residual_percent": 6.819676204465042,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 8.027012272100142,
+    "comparison_April_range_percent": [
+      3.2842181937000614,
+      10.74825363278904
+    ],
+    "anchor_minus_comparison_April_pp": 3.0197642127023148,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Орск",
+    "territory_id": 1673,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 13.473612662038171,
+    "quarter_residual_percent": 14.926948280446029,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 13.724451539198112,
+    "comparison_April_range_percent": [
+      8.627075950555163,
+      15.955023257517498
+    ],
+    "anchor_minus_comparison_April_pp": -0.250838877159941,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "profile_ses",
+    "April_residual_percent": 5.235844030890258,
+    "quarter_residual_percent": 5.867170686932788,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 5.296747360150067,
+    "comparison_April_range_percent": [
+      3.0380652634218963,
+      7.682800956463587
+    ],
+    "anchor_minus_comparison_April_pp": -0.06090332925980935,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "category_seasonal",
+    "April_residual_percent": 4.132121904125596,
+    "quarter_residual_percent": 5.3213942755976795,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 6.415601438882545,
+    "comparison_April_range_percent": [
+      3.5236726614886527,
+      8.552062113814518
+    ],
+    "anchor_minus_comparison_April_pp": -2.2834795347569488,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 6.272027100335076,
+    "quarter_residual_percent": 6.173086737065359,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 9.186627122286561,
+    "comparison_April_range_percent": [
+      7.342546401206618,
+      13.77669892035438
+    ],
+    "anchor_minus_comparison_April_pp": -2.914600021951485,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 13.263685888918397,
+    "quarter_residual_percent": 13.348711739190389,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 20.06601601472129,
+    "comparison_April_range_percent": [
+      15.137938743572544,
+      22.62798224405469
+    ],
+    "anchor_minus_comparison_April_pp": -6.802330125802891,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 0.08972838405414407,
+    "quarter_residual_percent": 0.05247527712808342,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 4.4818550063257305,
+    "comparison_April_range_percent": [
+      0.6098160698955413,
+      7.76755448353128
+    ],
+    "anchor_minus_comparison_April_pp": -4.3921266222715865,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 2.3558463382047146,
+    "quarter_residual_percent": 1.8971771086257805,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 7.376823238493446,
+    "comparison_April_range_percent": [
+      2.980283867591882,
+      10.982878345115799
+    ],
+    "anchor_minus_comparison_April_pp": -5.020976900288732,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 25.219444833061445,
+    "quarter_residual_percent": 22.615462680553634,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 14.840992104895445,
+    "comparison_April_range_percent": [
+      10.719940755281865,
+      19.23113113066983
+    ],
+    "anchor_minus_comparison_April_pp": 10.378452728166,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 27.082851715230525,
+    "quarter_residual_percent": 27.395482259524663,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 20.542433992414686,
+    "comparison_April_range_percent": [
+      17.774577016635853,
+      27.106832849669594
+    ],
+    "anchor_minus_comparison_April_pp": 6.540417722815839,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 2.360473076439007,
+    "quarter_residual_percent": 2.648866724998067,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 2.0780342221299875,
+    "comparison_April_range_percent": [
+      1.056592116337285,
+      4.310647954006819
+    ],
+    "anchor_minus_comparison_April_pp": 0.2824388543090195,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 1.4802801090407325,
+    "quarter_residual_percent": 2.265230072623736,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 1.8893564556008768,
+    "comparison_April_range_percent": [
+      0.6766898316576064,
+      4.270087213271001
+    ],
+    "anchor_minus_comparison_April_pp": -0.40907634656014435,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 10.285729096694363,
+    "quarter_residual_percent": 12.288101129651906,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 9.40544884937442,
+    "comparison_April_range_percent": [
+      5.942213017448128,
+      12.646203079729457
+    ],
+    "anchor_minus_comparison_April_pp": 0.8802802473199431,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Курган",
+    "territory_id": 1333,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 12.983591849410804,
+    "quarter_residual_percent": 15.406388887345045,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 14.585100064139489,
+    "comparison_April_range_percent": [
+      11.025233063252804,
+      15.955023257517498
+    ],
+    "anchor_minus_comparison_April_pp": -1.6015082147286854,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "profile_ses",
+    "April_residual_percent": 3.8491461713967112,
+    "quarter_residual_percent": 3.9114056485115567,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 6.5355662069906835,
+    "comparison_April_range_percent": [
+      4.316381346428666,
+      10.084965617521146
+    ],
+    "anchor_minus_comparison_April_pp": -2.6864200355939722,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Все категории",
+    "aggregate": true,
+    "model": "category_seasonal",
+    "April_residual_percent": 4.151221660395321,
+    "quarter_residual_percent": 4.68883864369416,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 6.582923753884318,
+    "comparison_April_range_percent": [
+      5.048375998157506,
+      7.2663746618027325
+    ],
+    "anchor_minus_comparison_April_pp": -2.4317020934889966,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 4.534766299664361,
+    "quarter_residual_percent": 4.374000533125688,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 8.673215011542567,
+    "comparison_April_range_percent": [
+      1.6195079813632995,
+      17.656478978167
+    ],
+    "anchor_minus_comparison_April_pp": -4.138448711878206,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Здоровье",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 14.6744057041577,
+    "quarter_residual_percent": 14.690476803610842,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 17.823653060120826,
+    "comparison_April_range_percent": [
+      13.782585012839466,
+      24.695678343565675
+    ],
+    "anchor_minus_comparison_April_pp": -3.1492473559631264,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": -2.4627901822250498,
+    "quarter_residual_percent": -2.4320735444299024,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 6.437331237358079,
+    "comparison_April_range_percent": [
+      -0.7532726304529613,
+      8.878037412372542
+    ],
+    "anchor_minus_comparison_April_pp": -8.90012141958313,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Маркетплейсы",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 0.3997898833684621,
+    "quarter_residual_percent": 0.6843774907702604,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 8.95498082690005,
+    "comparison_April_range_percent": [
+      5.488346887017603,
+      11.228030196818107
+    ],
+    "anchor_minus_comparison_April_pp": -8.555190943531588,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 14.724084331628973,
+    "quarter_residual_percent": 15.890388117598997,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 14.043457247028146,
+    "comparison_April_range_percent": [
+      12.268622736288815,
+      22.51499451342367
+    ],
+    "anchor_minus_comparison_April_pp": 0.6806270846008271,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Общественное питание",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 17.74629930248246,
+    "quarter_residual_percent": 18.647219090891333,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 19.541722049605802,
+    "comparison_April_range_percent": [
+      16.24345240106788,
+      25.08203790787933
+    ],
+    "anchor_minus_comparison_April_pp": -1.795422747123343,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 3.4516584184865806,
+    "quarter_residual_percent": 2.7268868625806464,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 2.03372382130681,
+    "comparison_April_range_percent": [
+      1.255110460102471,
+      5.655648927600798
+    ],
+    "anchor_minus_comparison_April_pp": 1.4179345971797708,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Продовольствие",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 3.024259242518368,
+    "quarter_residual_percent": 2.902334765693637,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 2.136534297359416,
+    "comparison_April_range_percent": [
+      0.9262731386313394,
+      3.4581328174760673
+    ],
+    "anchor_minus_comparison_April_pp": 0.887724945158952,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "profile_ses",
+    "April_residual_percent": 3.355675855026541,
+    "quarter_residual_percent": 2.251425745982627,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 9.192430112170914,
+    "comparison_April_range_percent": [
+      4.0743927285543435,
+      18.910371320595786
+    ],
+    "anchor_minus_comparison_April_pp": -5.836754257144373,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  },
+  {
+    "municipality": "Ишим",
+    "territory_id": 2192,
+    "profile_2023": 0,
+    "category": "Транспорт",
+    "aggregate": false,
+    "model": "category_seasonal",
+    "April_residual_percent": 12.647217898811935,
+    "quarter_residual_percent": 9.709665680317837,
+    "comparison_count": 10,
+    "comparison_April_median_percent": 10.641059026882726,
+    "comparison_April_range_percent": [
+      6.899552184098545,
+      14.383499655696319
+    ],
+    "anchor_minus_comparison_April_pp": 2.006158871929209,
+    "recovery_status": "NOT_APPLICABLE_NO_INITIAL_DROP",
+    "reentry_month": null,
+    "reentry_confirmed_month": null,
+    "recovery_sensitivity": {
+      "5": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ],
+      "20": [
+        "NOT_APPLICABLE_NO_INITIAL_DROP",
+        null
+      ]
+    }
+  }
+]

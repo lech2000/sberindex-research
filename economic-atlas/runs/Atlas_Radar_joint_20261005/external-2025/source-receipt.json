@@ -1,0 +1,30 @@
+{
+  "git_commit": "7a5874e12e57a1948c13840326b8a3818f0f34b7",
+  "source": "published neighbouring branch, original protocol/results preserved; no statistics rerun",
+  "files": {
+    "A8-README.md": {
+      "source_path": "economic-atlas/runs/A8_wages2025_validation_20261005/README.md",
+      "sha256": "e8a63eb1034f84c3f8958f624546e5ae0a02e6520fca9b7e0e00cd4fa44f3d1f"
+    },
+    "A8-PROTOCOL.md": {
+      "source_path": "economic-atlas/runs/A8_wages2025_validation_20261005/PROTOCOL.md",
+      "sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069"
+    },
+    "A8-results.json": {
+      "source_path": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+      "sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502"
+    },
+    "A8-provenance.json": {
+      "source_path": "economic-atlas/runs/A8_wages2025_validation_20261005/provenance.json",
+      "sha256": "bacabfb6bddc28e0816b2c0c039c1b4d5b6538c5a6468dedd6173a67e26d92ac"
+    },
+    "A14-population-audit.json": {
+      "source_path": "economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+      "sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32"
+    },
+    "A14-correction-receipt.json": {
+      "source_path": "economic-atlas/runs/A14_release_20261005/a8_correction_receipt.json",
+      "sha256": "5566af70c04fafa95873744a721a09fc02256b535aef35467a3baf8c79a604bb"
+    }
+  }
+}
