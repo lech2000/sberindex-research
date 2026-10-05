@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-05",
+  "scientific_commit": "533a3a05fdf922c32669b10804ac9fbc13ff2255",
+  "scientific_status": "COMPUTED_EXPLORATORY",
+  "scientific_pass": false,
+  "verification_sources": [
+    "Mac frozen-input and independent numerical audit",
+    "GitHub published commit",
+    "KB-Forge integrate receipts and text readback",
+    "live case-service material/action readback",
+    "Incus aios2 n8n read-only execution_data3312241"
+  ],
+  "kb_documents": [
+    {
+      "corpus_id": 75,
+      "document_id": 16597,
+      "receipt": {
+        "added": false,
+        "duplicate": true,
+        "document_id": 16597,
+        "note": "такой текст в базе уже есть, ничего не изменено"
+      },
+      "readback_verified": true,
+      "submitted_text_sha256": "50aa97818238c8dbbb35effacb4c46dcfb1722401e9742d23529c4bdaab080f7",
+      "readback_text_sha256": "59a29a61f3ac93f1a8e3c5f9368598bc7e387049257ea82c1799a7d9040c1b0f",
+      "edge_whitespace_normalized": true
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16599,
+      "receipt": {
+        "added": true,
+        "document_id": 16599,
+        "title": "Радар и Атлас паводковые отклонения и сопоставления проверено 05.10.2026",
+        "corpus_id": 76,
+        "chunks": 9,
+        "vectors": 9
+      },
+      "readback_verified": true,
+      "submitted_text_sha256": "50aa97818238c8dbbb35effacb4c46dcfb1722401e9742d23529c4bdaab080f7",
+      "readback_text_sha256": "59a29a61f3ac93f1a8e3c5f9368598bc7e387049257ea82c1799a7d9040c1b0f",
+      "edge_whitespace_normalized": true
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16600,
+      "receipt": {
+        "added": true,
+        "document_id": 16600,
+        "title": "Куратору завершён совместный расчёт Атласа и Радара следующая ступень отчёт 05.10.2026",
+        "corpus_id": 77,
+        "chunks": 2,
+        "vectors": 2
+      },
+      "readback_verified": true,
+      "submitted_text_sha256": "82381d7cbcf9531b84b0f9a765c1ed5d8bd3dcd4d515240d220d929952eec37b",
+      "readback_text_sha256": "f3523cf730f1af4a19d6bbb2e5bc4757879528429919266899fc9d0af6cea111",
+      "edge_whitespace_normalized": true
+    }
+  ],
+  "case_materials_and_actions": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "role": "atlas",
+      "material_id": "mat_sber_joint_20261005_atlas",
+      "bounded_complete_action": "act_b80fd1b65f2e4d6d",
+      "next_action_id": "act_de2edf39ffa94713",
+      "next_action_done": false,
+      "next_action_what": "Включить совместную проверку Атласа и Радара и отрицательный A8 в итоговый отчёт",
+      "material_readback_verified": true
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "role": "radar",
+      "material_id": "mat_sber_joint_20261005_radar",
+      "bounded_complete_action": "act_83638f26dd1e4fa5",
+      "next_action_id": "act_d68aea4a7c6840d8",
+      "next_action_done": false,
+      "next_action_what": "Включить сезонные отклонения и плацебо совместного эксперимента в отчёт Радара",
+      "material_readback_verified": true
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "role": "graph",
+      "material_id": "mat_sber_joint_20261005_graph",
+      "next_action_id": "act_a718a873c75c4fd1",
+      "next_action_done": false,
+      "next_action_what": "Проверить паспорт и смысл единиц совместного отчёта Атласа и Радара",
+      "material_readback_verified": true
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "role": "curator",
+      "material_id": "mat_sber_joint_20261005_curator",
+      "material_readback_verified": true
+    }
+  ],
+  "additional_case_materials": [
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_sber_joint_handoff_20261005_curator",
+      "readback_verified": true
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_sber_joint_handoff_20261005_graph",
+      "readback_verified": true
+    }
+  ],
+  "bounded_graph_action_closure": {
+    "source_case_id": "case_43de12a8dc2e4abd",
+    "source_action_id": "act_a718a873c75c4fd1",
+    "done": true,
+    "readback_verified": true,
+    "bounded_gate": "passport_read_and_numerical_lineage_check",
+    "scientific_pass": false
+  },
+  "curator_handoff": {
+    "execution_id": 3312241,
+    "receipt": {
+      "accepted": true,
+      "workflow": "sberindex-curator-dispatch",
+      "graph_case_id": "case_43de12a8dc2e4abd",
+      "curator_case_id": "case_d058db85c48a487c",
+      "corpus_id": 77,
+      "run_key": "atlas-radar-joint-20261005-lineage-recovery-1",
+      "plan_ref": "G8",
+      "source_case_id": "case_43de12a8dc2e4abd",
+      "source_action_id": "act_a718a873c75c4fd1",
+      "topic": "Graph: applies_to=graph, plan_ref=G8, source_case_id=case_43de12a8dc2e4abd, source_action_id=act_a718a873c75c4fd1. call sberindex_graph_kb_search: {\"query\":\"KB77/16600\",\"limit\":1}. Прочитать этот точный паспорт и сверить pre2023,1896mask,3города одного профиля,current1510 неизменно. Не выдавать научный PASS или причинность. Затем следующий шаг: редакционная сборка итоговых отчётов Atlas/Radar, без новых вычислений.",
+      "status": "proposed",
+      "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+      "curator_verdict": "accept",
+      "next_action": "accept_and_close",
+      "next_topic": "G8: редакционная сборка конкурсного отчёта Atlas/Radar — включить отрицательную внешнюю проверку и описательный сезонный контраст; не повторять Prophet/A8, не возобновлять scientific PASS.",
+      "graph_kb_receipt": {
+        "added": true,
+        "document_id": 16610,
+        "title": "Graph evidence atlas-radar-joint-20261005-lineage-recovery-1: Graph: applies_to=graph, plan_ref=G8, source_case_id=case_43de12a8dc2e4abd, source_action_id=act_a718a873c75c4fd1. call sberindex_graph_kb",
+        "corpus_id": 77,
+        "chunks": 5,
+        "vectors": 5
+      },
+      "curator_kb_receipt": {
+        "added": true,
+        "document_id": 16611,
+        "title": "Curator decision atlas-radar-joint-20261005-lineage-recovery-1: accept",
+        "corpus_id": 77,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    "receipt_source": "persisted successful terminal node, not webhook response",
+    "accepted_claim_indexes": [
+      0,
+      2
+    ],
+    "scientific_validation_note": "Curator acceptance confirms a bounded passport/read step, not independent statistical confirmation."
+  },
+  "next_actions": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "id": "act_de2edf39ffa94713",
+      "what": "Включить совместную проверку Атласа и Радара и отрицательный A8 в итоговый отчёт",
+      "owner": "sberindex_atlas_researcher",
+      "done": false
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "id": "act_d68aea4a7c6840d8",
+      "what": "Включить сезонные отклонения и плацебо совместного эксперимента в отчёт Радара",
+      "owner": "sberindex_radar_researcher",
+      "done": false
+    }
+  ],
+  "runtime_issue": {
+    "status": "REPORTED_NOT_FIXED",
+    "first_execution": 3312216,
+    "first_dispatch_validation_error": "exact KB focus mismatch",
+    "recovery_execution": 3312241,
+    "webhook_error": "socket hang up",
+    "underlying_node": "Открытые задачи Graph",
+    "error_code": "ECONNRESET",
+    "actual_open_counts": {
+      "atlas": 22,
+      "radar": 14,
+      "graph": 7
+    },
+    "workflow_open_counts": {
+      "atlas": 22,
+      "radar": 532,
+      "graph": 6993
+    },
+    "fanout_audit": [
+      {
+        "node": "Открытые задачи Atlas",
+        "execution_id": 3312241,
+        "branches": [
+          {
+            "items": 38,
+            "unique_action_ids": 38,
+            "duplicate_action_items": 0,
+            "error_count": 0
+          },
+          {
+            "items": 0,
+            "unique_action_ids": 0,
+            "duplicate_action_items": 0,
+            "error_count": 0
+          }
+        ]
+      },
+      {
+        "node": "Открытые задачи Radar",
+        "execution_id": 3312241,
+        "branches": [
+          {
+            "items": 1254,
+            "unique_action_ids": 33,
+            "duplicate_action_items": 1221,
+            "error_count": 0
+          },
+          {
+            "items": 0,
+            "unique_action_ids": 0,
+            "duplicate_action_items": 0,
+            "error_count": 0
+          }
+        ]
+      },
+      {
+        "node": "Открытые задачи Graph",
+        "execution_id": 3312241,
+        "branches": [
+          {
+            "items": 22977,
+            "unique_action_ids": 23,
+            "duplicate_action_items": 22954,
+            "error_count": 0
+          },
+          {
+            "items": 255,
+            "unique_action_ids": 33,
+            "duplicate_action_items": 222,
+            "error_count": 255
+          }
+        ]
+      },
+      {
+        "node": "Сформировать F7b bug report",
+        "execution_id": 3312241,
+        "branches": [
+          {
+            "items": 1,
+            "unique_action_ids": 0,
+            "duplicate_action_items": 0,
+            "error_count": 1
+          }
+        ]
+      }
+    ],
+    "problem_report_id": "rep_26f0706d1fc44fc0",
+    "kb62_document": {
+      "corpus_id": 62,
+      "document_id": 16614,
+      "receipt": {
+        "added": true,
+        "document_id": 16614,
+        "title": "F7b SberIndex доказан fanout action GET и ложный аварийный webhook проверено05.10.2026",
+        "corpus_id": 62,
+        "chunks": 2,
+        "vectors": 2
+      },
+      "readback_verified": true
+    },
+    "proposed_fix": "executeOnce for the three action-list HTTP nodes; collector ID deduplication; preserve source binding; a correct terminal success/error contract",
+    "prod_code_changed": false,
+    "deployment_lock_held": false
+  },
+  "privacy_note": "Raw Telegram receipts, user/chat metadata, credentials and complete n8n payloads excluded."
+}
