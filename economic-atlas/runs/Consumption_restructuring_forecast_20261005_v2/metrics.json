@@ -1,0 +1,2834 @@
+{
+  "status": "COMPUTED_EXPLORATORY",
+  "scientific_pass": false,
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "panel": 1896,
+  "matching_eligible": 1586,
+  "supported": 1539,
+  "unsupported": 357,
+  "forecast_rows": 204768,
+  "common_forecast_rows": 166212,
+  "results": [
+    {
+      "category": "Все категории",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 686.416609985477,
+        "calibration": 1222.8114053473648,
+        "own_ridge": 1196.32764324906,
+        "peer_ridge": 1189.0956017843594,
+        "category_seasonal": 830.6450254653167,
+        "growth_naive3": 818.5940202125073
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -502.6789917988825,
+          "gain_percent": -73.2323467244649,
+          "ci95_month_blocks": [
+            -760.7318336770979,
+            -244.62614992066702
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -614.9548104973417,
+            -417.0979518559852
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 7.2320414647007345,
+          "gain_percent": 0.6045201333858267,
+          "ci95_month_blocks": [
+            3.528880514181032,
+            12.165486906503455
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.29350080886299534,
+            17.777606047600017
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -509.9110332635833,
+          "gain_percent": -74.28594032338056,
+          "ci95_month_blocks": [
+            -765.849882719056,
+            -255.9127852221267
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -632.6090942730801,
+            -418.14298306440526
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -536.3947953618878,
+          "gain_percent": -78.14420390748363,
+          "ci95_month_blocks": [
+            -793.2778879501425,
+            -279.51170277363315
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -672.9498010463147,
+            -437.7217678530008
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 714.2927609403527,
+            "calibration": 1795.030143351463,
+            "own_ridge": 1774.479497781574,
+            "peer_ridge": 1771.7780519660814,
+            "category_seasonal": 775.5983811269936,
+            "growth_naive3": 788.5626147362854
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 625.6145572657083,
+            "calibration": 1305.7282888241036,
+            "own_ridge": 1270.6282754410668,
+            "peer_ridge": 1268.6527420894492,
+            "category_seasonal": 594.1662733561308,
+            "growth_naive3": 726.998770313873
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 698.1183266046462,
+            "calibration": 1317.1008764855683,
+            "own_ridge": 1284.645715503186,
+            "peer_ridge": 1279.7903517864704,
+            "category_seasonal": 739.0375669361828,
+            "growth_naive3": 938.4356926216652
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 657.4021567512801,
+            "calibration": 678.8406324728965,
+            "own_ridge": 655.6151448023468,
+            "peer_ridge": 648.6511837681956,
+            "category_seasonal": 906.2698736865798,
+            "growth_naive3": 752.4134551156023
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 673.4718403782118,
+            "calibration": 1119.1290955374113,
+            "own_ridge": 1088.4149152224695,
+            "peer_ridge": 1069.8361741309577,
+            "category_seasonal": 938.9214905142844,
+            "growth_naive3": 839.1295987769515
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 749.6000179726624,
+            "calibration": 1121.0393954127458,
+            "own_ridge": 1104.182310743718,
+            "peer_ridge": 1095.8651069650023,
+            "category_seasonal": 1029.8765671717285,
+            "growth_naive3": 866.0239897106663
+          }
+        }
+      ]
+    },
+    {
+      "category": "Все категории",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 884.6938823891488,
+        "calibration": 1494.4556972652829,
+        "own_ridge": 1454.360104492005,
+        "peer_ridge": 1448.127735530086,
+        "category_seasonal": 1067.5042262113845,
+        "growth_naive3": 1107.1444860824113
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -563.433853140937,
+          "gain_percent": -63.686871171682895,
+          "ci95_month_blocks": [
+            -771.3701355641468,
+            -383.74831960836735
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -735.2015144833057,
+            -432.24964566758086
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 6.232368961919204,
+          "gain_percent": 0.42852997291864764,
+          "ci95_month_blocks": [
+            3.4962295340064866,
+            9.745705227069978
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.4442384973525824,
+            13.662825303002643
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -569.6662221028562,
+          "gain_percent": -64.39133732500233,
+          "ci95_month_blocks": [
+            -776.6390982502934,
+            -391.59012182132807
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -748.0599880808462,
+            -434.3934396493638
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -609.761814876134,
+          "gain_percent": -68.92348042799274,
+          "ci95_month_blocks": [
+            -811.1353124851112,
+            -434.1969830466459
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -810.1917100368461,
+            -462.5614881824103
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 912.4213089800223,
+            "calibration": 1220.9153123055041,
+            "own_ridge": 1176.703529296335,
+            "peer_ridge": 1170.3651378629586,
+            "category_seasonal": 1181.5854823730385,
+            "growth_naive3": 1077.8980853231133
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 725.4684253443555,
+            "calibration": 1472.889909674046,
+            "own_ridge": 1431.2224666006323,
+            "peer_ridge": 1426.8383663416216,
+            "category_seasonal": 880.5876460903107,
+            "growth_naive3": 1001.7057347550082
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1042.782786233213,
+            "calibration": 2105.5231028398503,
+            "own_ridge": 2080.897340611313,
+            "peer_ridge": 2077.190792112013,
+            "category_seasonal": 966.1726986933082,
+            "growth_naive3": 1274.1313295262942
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 757.343597424528,
+            "calibration": 1229.890538049496,
+            "own_ridge": 1180.6056756672097,
+            "peer_ridge": 1178.8209978451573,
+            "category_seasonal": 1172.327074430588,
+            "growth_naive3": 1013.2228586503418
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 913.6199360651752,
+            "calibration": 1522.3655802991054,
+            "own_ridge": 1483.72956762044,
+            "peer_ridge": 1476.8744244005802,
+            "category_seasonal": 1108.5348116913094,
+            "growth_naive3": 1210.2017262947513
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 956.5272402875997,
+            "calibration": 1415.149740423695,
+            "own_ridge": 1373.0020471561002,
+            "peer_ridge": 1358.6766946181851,
+            "category_seasonal": 1095.8176439897518,
+            "growth_naive3": 1065.707181944958
+          }
+        }
+      ]
+    },
+    {
+      "category": "Все категории",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 1542.6266869052672,
+        "calibration": 1924.3952252079594,
+        "own_ridge": 1886.5567025194907,
+        "peer_ridge": 1885.005521611265,
+        "category_seasonal": 1631.1738881341173,
+        "growth_naive3": 1752.4928687367144
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -342.37883470599786,
+          "gain_percent": -22.194535956904744,
+          "ci95_month_blocks": [
+            -800.2529695180283,
+            61.92182541681901
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -506.2351834841126,
+            -216.71894303257866
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 1.5511809082256731,
+          "gain_percent": 0.08222286169051139,
+          "ci95_month_blocks": [
+            -3.926725702883144,
+            6.289421458153686
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.1568117421971075,
+            3.212929414654201
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -343.93001561422346,
+          "gain_percent": -22.295090480004397,
+          "ci95_month_blocks": [
+            -802.4275991924202,
+            64.02608441263962
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -508.615733444439,
+            -217.7102255725351
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -381.7685383026921,
+          "gain_percent": -24.74795370411847,
+          "ci95_month_blocks": [
+            -842.4219407797849,
+            31.04083762380871
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -565.3321052159787,
+            -244.52110844471338
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 2386.845177440826,
+            "calibration": 2386.845177440826,
+            "own_ridge": 2386.845177440826,
+            "peer_ridge": 2386.845177440826,
+            "category_seasonal": 2600.6465093251377,
+            "growth_naive3": 2209.3728232107546
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1953.3518528225163,
+            "calibration": 1953.3518528225163,
+            "own_ridge": 1953.3518528225163,
+            "peer_ridge": 1953.3518528225163,
+            "category_seasonal": 2038.71469798306,
+            "growth_naive3": 1934.4091338317792
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1328.6599583951054,
+            "calibration": 1167.3331002783339,
+            "own_ridge": 1103.3891137582452,
+            "peer_ridge": 1114.3239140006206,
+            "category_seasonal": 1389.0991356650127,
+            "growth_naive3": 1673.8988524291233
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1132.097642931445,
+            "calibration": 1268.5063334221363,
+            "own_ridge": 1198.482825729328,
+            "peer_ridge": 1189.238779219501,
+            "category_seasonal": 959.087526545339,
+            "growth_naive3": 1574.5299155663836
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 947.5558235026169,
+            "calibration": 1961.7884425719574,
+            "own_ridge": 1910.0624690790903,
+            "peer_ridge": 1905.0602744693697,
+            "category_seasonal": 1072.8131779905013,
+            "growth_naive3": 1455.5116315236585
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1507.249666339094,
+            "calibration": 2808.5464447119866,
+            "own_ridge": 2767.208776286939,
+            "peer_ridge": 2761.213131714758,
+            "category_seasonal": 1726.6822812956518,
+            "growth_naive3": 1667.2348558585868
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 86.6372668927308,
+        "calibration": 98.69047079856401,
+        "own_ridge": 98.87756764035713,
+        "peer_ridge": 99.22356092036735,
+        "category_seasonal": 94.00192036132485,
+        "growth_naive3": 91.26469535804554
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -12.586294027636544,
+          "gain_percent": -14.527575117553232,
+          "ci95_month_blocks": [
+            -26.59260210969675,
+            1.4463615255568483
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -18.22190111298992,
+            -8.78538854797742
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.3459932800102033,
+          "gain_percent": -0.3499209054865396,
+          "ci95_month_blocks": [
+            -0.5050544454288703,
+            -0.20426089352140522
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.8145740015761849,
+            -0.011106987215682323
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -12.240300747626339,
+          "gain_percent": -14.128216628511103,
+          "ci95_month_blocks": [
+            -26.35435966647958,
+            1.9444937074904443
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -17.43624075983916,
+            -8.706717627121034
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -12.053203905833223,
+          "gain_percent": -13.912262399455415,
+          "ci95_month_blocks": [
+            -26.293486974060507,
+            2.4450106161350833
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -17.159280914382908,
+            -8.613909000076324
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 63.66851587137289,
+            "calibration": 71.79624923485227,
+            "own_ridge": 71.97104123934426,
+            "peer_ridge": 72.39697929650862,
+            "category_seasonal": 72.67706899828558,
+            "growth_naive3": 69.24871108517597
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 91.41933075619747,
+            "calibration": 128.91541303740647,
+            "own_ridge": 129.04654342719616,
+            "peer_ridge": 129.42336771050964,
+            "category_seasonal": 114.07284407643859,
+            "growth_naive3": 101.39008813254502
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 70.22007365223972,
+            "calibration": 73.69663807949956,
+            "own_ridge": 73.98695129020312,
+            "peer_ridge": 74.27312821869404,
+            "category_seasonal": 89.06027585467042,
+            "growth_naive3": 77.86086184241968
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 96.80011763409364,
+            "calibration": 78.2228504236685,
+            "own_ridge": 79.0676640950002,
+            "peer_ridge": 79.75855747923264,
+            "category_seasonal": 89.89090767540118,
+            "growth_naive3": 93.18183026812422
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 69.93366906224674,
+            "calibration": 82.27233949199731,
+            "own_ridge": 81.95031604376186,
+            "peer_ridge": 82.04244511737292,
+            "category_seasonal": 95.94670487237606,
+            "growth_naive3": 82.34018549535233
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 127.78189438023429,
+            "calibration": 157.23933452396003,
+            "own_ridge": 157.24288974663725,
+            "peer_ridge": 157.44688769988622,
+            "category_seasonal": 102.3637206907773,
+            "growth_naive3": 123.56649532465607
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 91.22723509810808,
+        "calibration": 99.9537588187584,
+        "own_ridge": 99.83445865714766,
+        "peer_ridge": 99.96506178759593,
+        "category_seasonal": 100.73301397677668,
+        "growth_naive3": 100.2548447291494
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -8.737826689487862,
+          "gain_percent": -9.578090007979506,
+          "ci95_month_blocks": [
+            -25.776034679526678,
+            11.201499078939245
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -14.812562759464724,
+            -4.378474079990599
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.1306031304482783,
+          "gain_percent": -0.1308196911216764,
+          "ci95_month_blocks": [
+            -0.35008928936399497,
+            0.1009978608994116
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.612330230725852,
+            0.2219389625869831
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -8.607223559039582,
+          "gain_percent": -9.434927573748295,
+          "ci95_month_blocks": [
+            -25.562084144670617,
+            11.1651422173156
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -14.223252779508321,
+            -4.504835434485721
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -8.726523720650315,
+          "gain_percent": -9.565700101801387,
+          "ci95_month_blocks": [
+            -25.683881157109248,
+            10.901788893330748
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -14.51252887654019,
+            -4.518274023094832
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 113.50114469635076,
+            "calibration": 79.30713531935955,
+            "own_ridge": 78.77989019368817,
+            "peer_ridge": 78.6560639400519,
+            "category_seasonal": 85.07890435530663,
+            "growth_naive3": 102.89262916642652
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 79.93718794178588,
+            "calibration": 117.73752242853115,
+            "own_ridge": 117.9237787838163,
+            "peer_ridge": 118.3032126096224,
+            "category_seasonal": 102.40139653928492,
+            "growth_naive3": 104.32147297743727
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 83.94483982031072,
+            "calibration": 108.6060217978103,
+            "own_ridge": 108.6901443033753,
+            "peer_ridge": 109.17709468954779,
+            "category_seasonal": 94.35070405296891,
+            "growth_naive3": 88.67160441060507
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 88.64441610792466,
+            "calibration": 82.57361582559939,
+            "own_ridge": 82.60330124560194,
+            "peer_ridge": 82.72206002519908,
+            "category_seasonal": 97.31023958128416,
+            "growth_naive3": 96.70124547705295
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 79.81378674141497,
+            "calibration": 88.78653601941474,
+            "own_ridge": 88.912601847143,
+            "peer_ridge": 89.16166889315399,
+            "category_seasonal": 103.948194961032,
+            "growth_naive3": 91.59084726704889
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 101.52203528086146,
+            "calibration": 122.71172152183526,
+            "own_ridge": 122.09703556926124,
+            "peer_ridge": 121.77027056800051,
+            "category_seasonal": 121.3086443707835,
+            "growth_naive3": 117.35126907632575
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 125.37971359759804,
+        "calibration": 130.60503775510247,
+        "own_ridge": 130.57176997801128,
+        "peer_ridge": 130.8249160227679,
+        "category_seasonal": 141.3789334344388,
+        "growth_naive3": 131.28257191242716
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -5.445202425169846,
+          "gain_percent": -4.342969264267136,
+          "ci95_month_blocks": [
+            -27.698232427032526,
+            16.10682294945988
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -9.933128869886456,
+            -2.2010986536899053
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.25314604475663244,
+          "gain_percent": -0.19387501969167079,
+          "ci95_month_blocks": [
+            -0.5378595386032615,
+            -0.0411112740300755
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.7760844467327462,
+            0.1003037997170328
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -5.192056380413213,
+          "gain_percent": -4.141065752532298,
+          "ci95_month_blocks": [
+            -27.078506229990708,
+            16.223590266122816
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -9.165681067420039,
+            -2.236090018154252
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -5.225324157504426,
+          "gain_percent": -4.1675993727940135,
+          "ci95_month_blocks": [
+            -26.998842998952117,
+            15.900492871325078
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -9.160321878216875,
+            -2.3252072577161758
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 153.43343779539325,
+            "calibration": 153.43343779539325,
+            "own_ridge": 153.43343779539325,
+            "peer_ridge": 153.43343779539325,
+            "category_seasonal": 210.4205665033332,
+            "growth_naive3": 136.14539866168417
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 95.62122415946001,
+            "calibration": 95.62122415946001,
+            "own_ridge": 95.62122415946001,
+            "peer_ridge": 95.62122415946001,
+            "category_seasonal": 140.77648774922272,
+            "growth_naive3": 123.72686905996913
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 128.66581205627563,
+            "calibration": 130.91145785804017,
+            "own_ridge": 131.3912150709581,
+            "peer_ridge": 131.6103189091831,
+            "category_seasonal": 172.54233313548906,
+            "growth_naive3": 134.53856644292225
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 145.15453862180868,
+            "calibration": 106.59369063072127,
+            "own_ridge": 105.82594474957108,
+            "peer_ridge": 105.85350855552652,
+            "category_seasonal": 101.91973691836965,
+            "growth_naive3": 140.4184960813429
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 87.34842078123435,
+            "calibration": 105.43850286982487,
+            "own_ridge": 105.33539286189394,
+            "peer_ridge": 105.73967910173565,
+            "category_seasonal": 90.51085963088134,
+            "growth_naive3": 107.31616680253782
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 142.0548481714164,
+            "calibration": 191.63191321717528,
+            "own_ridge": 191.82340523079125,
+            "peer_ridge": 192.6913276153089,
+            "category_seasonal": 132.1036166693367,
+            "growth_naive3": 145.5499344261069
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 428.6653570833363,
+        "calibration": 454.22274742060273,
+        "own_ridge": 459.9488943462897,
+        "peer_ridge": 449.15388194445023,
+        "category_seasonal": 376.91741514891595,
+        "growth_naive3": 478.53326684841966
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -20.48852486111391,
+          "gain_percent": -4.779608270777702,
+          "ci95_month_blocks": [
+            -57.77754505125672,
+            11.727469168051917
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -38.34370213780896,
+            -5.845763006911087
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 10.795012401839488,
+          "gain_percent": 2.3470025767062848,
+          "ci95_month_blocks": [
+            -4.120889910274683,
+            21.20748665358877
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.670278672766488,
+            26.21894835274651
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -31.2835372629534,
+          "gain_percent": -7.297892574246817,
+          "ci95_month_blocks": [
+            -70.46913360800227,
+            5.955205185972397
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -64.20354822172511,
+            -6.828061192198536
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -25.55739033726648,
+          "gain_percent": -5.962084389361536,
+          "ci95_month_blocks": [
+            -61.66469126318245,
+            4.547955220211266
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -37.60451633210612,
+            -16.630223572470396
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 327.13700734464226,
+            "calibration": 435.5187225346496,
+            "own_ridge": 440.13921770690695,
+            "peer_ridge": 431.54172821686933,
+            "category_seasonal": 281.75490697158426,
+            "growth_naive3": 326.4486463877065
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 273.2370444221806,
+            "calibration": 289.16895491819963,
+            "own_ridge": 302.3747353698906,
+            "peer_ridge": 290.9482179480826,
+            "category_seasonal": 262.9036303081919,
+            "growth_naive3": 306.0284812182937
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 338.3541183424036,
+            "calibration": 382.01299578410453,
+            "own_ridge": 400.5211482240446,
+            "peer_ridge": 379.7619474531906,
+            "category_seasonal": 309.23509227910597,
+            "growth_naive3": 434.1537266739467
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 373.19487348098517,
+            "calibration": 387.1581930900151,
+            "own_ridge": 404.852380316739,
+            "peer_ridge": 380.0857133307334,
+            "category_seasonal": 234.87317873227119,
+            "growth_naive3": 454.2782755667942
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 941.6279616076013,
+            "calibration": 925.815675936101,
+            "own_ridge": 931.6115954514264,
+            "peer_ridge": 908.9921086852964,
+            "category_seasonal": 697.6605209581534,
+            "growth_naive3": 964.810957749424
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 318.4411373022049,
+            "calibration": 305.6619422605469,
+            "own_ridge": 280.1942890087309,
+            "peer_ridge": 303.5935760325288,
+            "category_seasonal": 475.0771616441889,
+            "growth_naive3": 385.4795134943525
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 644.4580672386127,
+        "calibration": 744.6127900554019,
+        "own_ridge": 748.2364944281361,
+        "peer_ridge": 732.0764969327228,
+        "category_seasonal": 587.9292389107753,
+        "growth_naive3": 718.3534625635378
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -87.61842969411026,
+          "gain_percent": -13.595675831872123,
+          "ci95_month_blocks": [
+            -131.42741185962208,
+            -42.364307713875455
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -114.44463504716774,
+            -65.49619124629818
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 16.159997495413233,
+          "gain_percent": 2.1597446283028514,
+          "ci95_month_blocks": [
+            9.822476295097788,
+            23.248869212066563
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.2313933664560557,
+            40.450413225841494
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -103.77842718952348,
+          "gain_percent": -16.103208643844813,
+          "ci95_month_blocks": [
+            -143.73997628160572,
+            -65.3380917229487
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -154.7755211092061,
+            -66.17306093349964
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -100.15472281678944,
+          "gain_percent": -15.540921575539349,
+          "ci95_month_blocks": [
+            -144.3169301972135,
+            -57.50328450136094
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -119.94319121092653,
+            -84.17731292919174
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 329.1141596230145,
+            "calibration": 524.4255175625176,
+            "own_ridge": 516.9152214527323,
+            "peer_ridge": 508.4034605384582,
+            "category_seasonal": 552.9280488934419,
+            "growth_naive3": 391.2794413518218
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 365.71258177680073,
+            "calibration": 479.12232999826904,
+            "own_ridge": 479.45813386710654,
+            "peer_ridge": 470.91407855525716,
+            "category_seasonal": 369.91683044734253,
+            "growth_naive3": 396.1286829967442
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 573.3117782665795,
+            "calibration": 697.5414626972487,
+            "own_ridge": 698.289296647721,
+            "peer_ridge": 687.4386355957146,
+            "category_seasonal": 464.82205740186083,
+            "growth_naive3": 602.1887121618608
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 588.44065078116,
+            "calibration": 652.6943666973926,
+            "own_ridge": 659.9862188010292,
+            "peer_ridge": 646.0459489322712,
+            "category_seasonal": 409.34089518472217,
+            "growth_naive3": 664.9929465948863
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1214.820648681865,
+            "calibration": 1294.3821810737581,
+            "own_ridge": 1308.4242187855677,
+            "peer_ridge": 1283.1055042229982,
+            "category_seasonal": 1164.7083680448686,
+            "growth_naive3": 1350.4073922177117
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 795.3485843022554,
+            "calibration": 819.5108823032258,
+            "own_ridge": 826.3458770146594,
+            "peer_ridge": 796.5513537516375,
+            "category_seasonal": 565.8592334924156,
+            "growth_naive3": 905.1236000582026
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 826.3642090925364,
+        "calibration": 974.6629437407056,
+        "own_ridge": 969.7345790655887,
+        "peer_ridge": 962.4061452571268,
+        "category_seasonal": 779.1225193507134,
+        "growth_naive3": 908.5241594303782
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -136.04193616459034,
+          "gain_percent": -16.462709138139395,
+          "ci95_month_blocks": [
+            -222.9278015545805,
+            -44.78202318908372
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -164.2925932953659,
+            -113.95971626845719
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 7.328433808462114,
+          "gain_percent": 0.7557154263307393,
+          "ci95_month_blocks": [
+            3.2286567085501297,
+            11.428210908374098
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -3.125657848185719,
+            21.49444451215043
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -143.37036997305245,
+          "gain_percent": -17.349537697245285,
+          "ci95_month_blocks": [
+            -233.68860849646683,
+            -49.81112525928004
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -185.51977869155147,
+            -112.03202181924021
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -148.29873464816907,
+          "gain_percent": -17.945929048769166,
+          "ci95_month_blocks": [
+            -240.04129250431933,
+            -56.55617679201881
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -172.617104934713,
+            -128.696298029386
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 376.6129972157699,
+            "calibration": 376.6129972157699,
+            "own_ridge": 376.6129972157699,
+            "peer_ridge": 376.6129972157699,
+            "category_seasonal": 375.72656947918387,
+            "growth_naive3": 458.5665541314406
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 432.9185470198404,
+            "calibration": 432.9185470198404,
+            "own_ridge": 432.9185470198404,
+            "peer_ridge": 432.9185470198404,
+            "category_seasonal": 411.2579597141001,
+            "growth_naive3": 513.5064425257027
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 513.5917880931316,
+            "calibration": 632.7628952648788,
+            "own_ridge": 613.2140386116916,
+            "peer_ridge": 603.155834471299,
+            "category_seasonal": 474.30797029312606,
+            "growth_naive3": 615.6447515162913
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 733.9151168186469,
+            "calibration": 1013.5398802954127,
+            "own_ridge": 1006.5090965260094,
+            "peer_ridge": 995.228593836372,
+            "category_seasonal": 953.1297974109501,
+            "growth_naive3": 860.248144111737
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1543.017490868905,
+            "calibration": 1813.8480745290403,
+            "own_ridge": 1812.3329423020289,
+            "peer_ridge": 1803.0192061911202,
+            "category_seasonal": 1312.3709100641454,
+            "growth_naive3": 1583.807791321024
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1358.129314538925,
+            "calibration": 1578.2952681192905,
+            "own_ridge": 1576.8198527181933,
+            "peer_ridge": 1563.5016928083585,
+            "category_seasonal": 1147.9419091427756,
+            "growth_naive3": 1419.3712729760728
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 64.76682717821207,
+        "calibration": 137.78730585728206,
+        "own_ridge": 126.30893817953195,
+        "peer_ridge": 124.35293523108297,
+        "category_seasonal": 73.26021978952728,
+        "growth_naive3": 78.3284541356039
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -59.5861080528709,
+          "gain_percent": -92.00096816370835,
+          "ci95_month_blocks": [
+            -95.38005968140409,
+            -25.705043265391318
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -89.60310657312452,
+            -38.733568658672496
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 1.9560029484489811,
+          "gain_percent": 1.5485863286007313,
+          "ci95_month_blocks": [
+            1.1962830578187924,
+            2.5522989906293088
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.5030668370669821,
+            4.087105751197593
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -61.54211100131988,
+          "gain_percent": -95.0210372849992,
+          "ci95_month_blocks": [
+            -96.5763427392229,
+            -27.707690486933082
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.62288149933042,
+            -39.29814906250142
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -73.02047867907002,
+          "gain_percent": -112.74364031782389,
+          "ci95_month_blocks": [
+            -106.1249113316029,
+            -39.495969313095316
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -117.61558467891288,
+            -43.0299522508945
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 86.03706952009648,
+            "calibration": 213.7266484290234,
+            "own_ridge": 212.59051299100983,
+            "peer_ridge": 212.4251024177926,
+            "category_seasonal": 122.31079919658023,
+            "growth_naive3": 87.87924284197537
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 68.29258256244765,
+            "calibration": 185.95372426630894,
+            "own_ridge": 169.52484843266166,
+            "peer_ridge": 167.13270030103496,
+            "category_seasonal": 56.06030234550651,
+            "growth_naive3": 85.96298936575336
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 63.08296516894249,
+            "calibration": 152.6487857122542,
+            "own_ridge": 134.55092542139792,
+            "peer_ridge": 131.95307760524784,
+            "category_seasonal": 87.2460027522845,
+            "growth_naive3": 102.54112123621562
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 65.30414246797234,
+            "calibration": 78.90273722569971,
+            "own_ridge": 66.15349227497478,
+            "peer_ridge": 63.316682585341404,
+            "category_seasonal": 58.33443012990568,
+            "growth_naive3": 64.85631443218635
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 51.00211826676076,
+            "calibration": 104.30922379779979,
+            "own_ridge": 93.05426497416691,
+            "peer_ridge": 91.00193417358473,
+            "category_seasonal": 49.83784508106989,
+            "growth_naive3": 60.877726464106196
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 54.88208508305264,
+            "calibration": 91.1827157126064,
+            "own_ridge": 81.97958498298055,
+            "peer_ridge": 80.28811430349626,
+            "category_seasonal": 65.77193923181693,
+            "growth_naive3": 67.85333047338646
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 101.70041921040796,
+        "calibration": 140.4753963222698,
+        "own_ridge": 133.72466495249,
+        "peer_ridge": 132.98046860653153,
+        "category_seasonal": 134.0735808795717,
+        "growth_naive3": 111.79230519988565
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -31.28004939612357,
+          "gain_percent": -30.75705059918021,
+          "ci95_month_blocks": [
+            -73.23485826199921,
+            18.95515523202697
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -48.06622361602543,
+            -19.26078420032138
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 0.7441963459584731,
+          "gain_percent": 0.556513898331974,
+          "ci95_month_blocks": [
+            -0.05749858792962221,
+            1.5651447442692543
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.1827736535539506,
+            1.4667583092275436
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -32.024245742082044,
+          "gain_percent": -31.488804068572318,
+          "ci95_month_blocks": [
+            -74.35602697037677,
+            18.681421312866114
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -49.563283512534184,
+            -19.544795830039813
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -38.77497711186184,
+          "gain_percent": -38.12666399303655,
+          "ci95_month_blocks": [
+            -81.8682468637532,
+            13.100235420794718
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -62.88983575180811,
+            -22.275073206924354
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 169.27578871253553,
+            "calibration": 94.5096158570173,
+            "own_ridge": 94.07735084283503,
+            "peer_ridge": 94.27577846365924,
+            "category_seasonal": 180.24119390831234,
+            "growth_naive3": 127.37322632346394
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 99.73587661906541,
+            "calibration": 153.2634362424258,
+            "own_ridge": 152.80033062637082,
+            "peer_ridge": 153.07920871075325,
+            "category_seasonal": 183.88784938577547,
+            "growth_naive3": 124.3389100572057
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 110.86030680861437,
+            "calibration": 219.05167667015675,
+            "own_ridge": 218.10765154777,
+            "peer_ridge": 217.9059245709618,
+            "category_seasonal": 79.80746888999062,
+            "growth_naive3": 141.38645598230542
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 73.31343953930266,
+            "calibration": 153.25197730317535,
+            "own_ridge": 139.30705778205848,
+            "peer_ridge": 137.11793576270736,
+            "category_seasonal": 124.91619083763165,
+            "growth_naive3": 98.80007842189401
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 68.90896616679747,
+            "calibration": 132.1268800833546,
+            "own_ridge": 115.49874801792977,
+            "peer_ridge": 113.27455567560072,
+            "category_seasonal": 126.10346442898954,
+            "growth_naive3": 95.07600694659494
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 88.10813741613232,
+            "calibration": 90.64879177748891,
+            "own_ridge": 82.55685089797593,
+            "peer_ridge": 82.22940845550686,
+            "category_seasonal": 109.48531782673055,
+            "growth_naive3": 83.77915346784981
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 153.76594230204455,
+        "calibration": 158.5311435238977,
+        "own_ridge": 157.72616013321854,
+        "peer_ridge": 157.80372237983988,
+        "category_seasonal": 174.75614639313972,
+        "growth_naive3": 158.62227861194182
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -4.037780077795377,
+          "gain_percent": -2.6259261429061516,
+          "ci95_month_blocks": [
+            -45.98627451338698,
+            33.85683318244101
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -7.800931582778549,
+            -0.5987138716018727
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.07756224662136356,
+          "gain_percent": -0.04917525828046089,
+          "ci95_month_blocks": [
+            -0.19858614197232774,
+            0.03858209672852182
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.226249620871264,
+            0.028437392405516165
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -3.960217831174014,
+          "gain_percent": -2.5754843835281185,
+          "ci95_month_blocks": [
+            -46.04377543572612,
+            34.0551711759109
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -7.743184290536629,
+            -0.502657869433302
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -4.765201221853147,
+          "gain_percent": -3.0989965336360354,
+          "ci95_month_blocks": [
+            -47.00590490857177,
+            33.21623594116901
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -9.027717437122538,
+            -0.9885324697141907
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 205.91752579284366,
+            "calibration": 205.91752579284366,
+            "own_ridge": 205.91752579284366,
+            "peer_ridge": 205.91752579284366,
+            "category_seasonal": 288.66812428092135,
+            "growth_naive3": 181.58537098226213
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 189.7626694191742,
+            "calibration": 189.7626694191742,
+            "own_ridge": 189.7626694191742,
+            "peer_ridge": 189.7626694191742,
+            "category_seasonal": 246.63222994825153,
+            "growth_naive3": 178.94115440856444
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 157.7566808034769,
+            "calibration": 128.6963998702885,
+            "own_ridge": 125.94566562353548,
+            "peer_ridge": 125.9441767325209,
+            "category_seasonal": 217.05646345696817,
+            "growth_naive3": 174.6709816573697
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 173.30830702964286,
+            "calibration": 105.9143895023145,
+            "own_ridge": 105.30591544411426,
+            "peer_ridge": 105.61074176232071,
+            "category_seasonal": 100.1349407535689,
+            "growth_naive3": 146.36044271125877
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 100.64580627088178,
+            "calibration": 132.59042413904115,
+            "own_ridge": 132.13296915194366,
+            "peer_ridge": 132.4100070491582,
+            "category_seasonal": 85.39893974672835,
+            "growth_naive3": 134.7579658727077
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 95.20466449624784,
+            "calibration": 188.30545241972405,
+            "own_ridge": 187.2922153677001,
+            "peer_ridge": 187.17721352302178,
+            "category_seasonal": 110.64618017240001,
+            "growth_naive3": 135.41775603948835
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 376.60667658154637,
+        "calibration": 466.79661198786323,
+        "own_ridge": 463.1402081366318,
+        "peer_ridge": 462.4055238859744,
+        "category_seasonal": 350.66235282883946,
+        "growth_naive3": 404.41733479808755
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -85.79884730442807,
+          "gain_percent": -22.782083441330098,
+          "ci95_month_blocks": [
+            -162.72804586152327,
+            -14.426859981288134
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -94.04415255719087,
+            -78.33233435827661
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 0.7346842506574014,
+          "gain_percent": 0.15863106630566198,
+          "ci95_month_blocks": [
+            -0.4260066734060761,
+            1.9905900306066606
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.7915957638148706,
+            2.2843836638936064
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -86.53353155508547,
+          "gain_percent": -22.977163426986788,
+          "ci95_month_blocks": [
+            -164.4888316863757,
+            -14.010026578456472
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.82637518834329,
+            -79.78059443582119
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -90.18993540631683,
+          "gain_percent": -23.948044741258876,
+          "ci95_month_blocks": [
+            -170.17317583440126,
+            -15.369015716252465
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -98.98025994730777,
+            -82.67316095249679
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 308.64514925929006,
+            "calibration": 543.0965196516552,
+            "own_ridge": 538.2347670023188,
+            "peer_ridge": 535.9756923376557,
+            "category_seasonal": 287.65541716663364,
+            "growth_naive3": 331.5794751802439
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 556.2007741125768,
+            "calibration": 760.2209462085566,
+            "own_ridge": 753.199620927638,
+            "peer_ridge": 750.1880497872108,
+            "category_seasonal": 426.38955738566693,
+            "growth_naive3": 582.1084823337795
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 471.93553894940595,
+            "calibration": 561.6378839761437,
+            "own_ridge": 554.0374365800177,
+            "peer_ridge": 552.8081092295633,
+            "category_seasonal": 271.3422720721089,
+            "growth_naive3": 516.3406100524898
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 222.95651998009,
+            "calibration": 216.48774839029926,
+            "own_ridge": 217.16177410569708,
+            "peer_ridge": 217.74134935845615,
+            "category_seasonal": 357.50534920046584,
+            "growth_naive3": 262.4121549620342
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 279.32175681482244,
+            "calibration": 275.33655275257183,
+            "own_ridge": 276.56393738753115,
+            "peer_ridge": 277.6228222506163,
+            "category_seasonal": 261.4591744195788,
+            "growth_naive3": 291.835882809155
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 420.58032037309283,
+            "calibration": 444.0000209479525,
+            "own_ridge": 439.6437128165882,
+            "peer_ridge": 440.0971203523442,
+            "category_seasonal": 499.62234672858233,
+            "growth_naive3": 442.22740345082275
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 501.82947852398433,
+        "calibration": 673.9254081026405,
+        "own_ridge": 667.0564695789284,
+        "peer_ridge": 664.7157803076227,
+        "category_seasonal": 499.97639735654894,
+        "growth_naive3": 553.3530820347361
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -162.88630178363837,
+          "gain_percent": -32.45849611360633,
+          "ci95_month_blocks": [
+            -253.34634488789672,
+            -72.42625867938007
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -181.7384353573909,
+            -146.14010597821346
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 2.3406892713056573,
+          "gain_percent": 0.3508982189743531,
+          "ci95_month_blocks": [
+            1.8662479423939835,
+            2.87888837026447
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.9314237156927618,
+            3.686300971717764
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -165.22699105494402,
+          "gain_percent": -32.92492731613159,
+          "ci95_month_blocks": [
+            -255.53606534748548,
+            -74.9179167624026
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -184.59732456812972,
+            -148.13880896314862
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -172.0959295786561,
+          "gain_percent": -34.29370671584232,
+          "ci95_month_blocks": [
+            -260.15333319580225,
+            -84.0385259615099
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -194.03003141834148,
+            -153.62951374220938
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 333.99094096813917,
+            "calibration": 486.65558172376717,
+            "own_ridge": 480.712384496783,
+            "peer_ridge": 478.8122333882646,
+            "category_seasonal": 421.10964566525075,
+            "growth_naive3": 401.42789524847876
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 581.3024687257085,
+            "calibration": 925.3857107490624,
+            "own_ridge": 922.3817355381256,
+            "peer_ridge": 920.8080840530204,
+            "category_seasonal": 682.4675726680659,
+            "growth_naive3": 607.282286883362
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 726.2011448341977,
+            "calibration": 1002.4517970442487,
+            "own_ridge": 999.20459698454,
+            "peer_ridge": 996.3966971620004,
+            "category_seasonal": 628.4146706951975,
+            "growth_naive3": 759.3533168884779
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 421.69765868891204,
+            "calibration": 589.2852286412881,
+            "own_ridge": 580.0271693196626,
+            "peer_ridge": 577.5521002859381,
+            "category_seasonal": 373.2096284690152,
+            "growth_naive3": 500.4895662871208
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 402.827985725219,
+            "calibration": 471.7983313704368,
+            "own_ridge": 462.35271411972815,
+            "peer_ridge": 460.5152318487729,
+            "category_seasonal": 421.33348223954954,
+            "growth_naive3": 465.9433973583538
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 544.9566722017298,
+            "calibration": 567.9757990870395,
+            "own_ridge": 557.6602170147313,
+            "peer_ridge": 554.2103351077404,
+            "category_seasonal": 473.3233844022151,
+            "growth_naive3": 585.6220295426228
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 589.3273590808013,
+        "calibration": 778.1191252084947,
+        "own_ridge": 774.8608928508278,
+        "peer_ridge": 773.5925261823088,
+        "category_seasonal": 609.2784507851175,
+        "growth_naive3": 671.1772450915281
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -184.26516710150753,
+          "gain_percent": -31.26703083815991,
+          "ci95_month_blocks": [
+            -291.92579441765764,
+            -76.41258841846678
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -206.47746376800367,
+            -165.90073160147395
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 1.2683666685190125,
+          "gain_percent": 0.1636895964451766,
+          "ci95_month_blocks": [
+            0.3035855904485649,
+            2.443308335302621
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.4038354612691118,
+            2.2202944635631505
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -185.5335337700265,
+          "gain_percent": -31.482253608488662,
+          "ci95_month_blocks": [
+            -294.1991777051135,
+            -76.8313757025118
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -208.52459833808268,
+            -166.7350132934248
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -188.7917661276934,
+          "gain_percent": -32.035126694637064,
+          "ci95_month_blocks": [
+            -299.17752960682867,
+            -78.01140638045
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -213.9282523422868,
+            -168.5127345663704
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 626.0214698114398,
+            "calibration": 626.0214698114398,
+            "own_ridge": 626.0214698114398,
+            "peer_ridge": 626.0214698114398,
+            "category_seasonal": 685.594600236374,
+            "growth_naive3": 682.0532965266273
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 406.92164847699974,
+            "calibration": 406.92164847699974,
+            "own_ridge": 406.92164847699974,
+            "peer_ridge": 406.92164847699974,
+            "category_seasonal": 436.33281532648203,
+            "growth_naive3": 502.03710037896207
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 455.5447478408965,
+            "calibration": 676.4066377867485,
+            "own_ridge": 675.2506684325142,
+            "peer_ridge": 674.7529439601177,
+            "category_seasonal": 506.714218942537,
+            "growth_naive3": 565.7832360419528
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 401.2152685875609,
+            "calibration": 648.4218169244087,
+            "own_ridge": 642.497602211014,
+            "peer_ridge": 640.4826029791403,
+            "category_seasonal": 466.83540281279573,
+            "growth_naive3": 528.927523469879
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 572.7841565079792,
+            "calibration": 893.1366953585355,
+            "own_ridge": 888.2119665918889,
+            "peer_ridge": 886.888177521594,
+            "category_seasonal": 576.4032084403049,
+            "growth_naive3": 644.4782235177337
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1073.4768632599314,
+            "calibration": 1417.8064828928357,
+            "own_ridge": 1410.2620015811103,
+            "peer_ridge": 1406.4883143445613,
+            "category_seasonal": 983.7904589522108,
+            "growth_naive3": 1103.7840906140138
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 83.7866806104579,
+        "calibration": 121.63652652964299,
+        "own_ridge": 117.50208087109866,
+        "peer_ridge": 117.6425736876199,
+        "category_seasonal": 84.78803776820274,
+        "growth_naive3": 99.2314755253688
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -33.85589307716197,
+          "gain_percent": -40.40724949418299,
+          "ci95_month_blocks": [
+            -59.42932012979532,
+            -9.610457740201493
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -46.65110836531492,
+            -24.36841752881744
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.14049281652122847,
+          "gain_percent": -0.11956623702294342,
+          "ci95_month_blocks": [
+            -0.4110613186326455,
+            0.1456895458869833
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.4022377662916762,
+            0.0742781675721165
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -33.71540026064074,
+          "gain_percent": -40.23957031713764,
+          "ci95_month_blocks": [
+            -59.18245894103262,
+            -9.510368638446216
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -46.245888201015966,
+            -24.378894186607916
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -37.8498459191851,
+          "gain_percent": -45.17406065429072,
+          "ci95_month_blocks": [
+            -63.63975714467891,
+            -12.064603673871286
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -54.501024396319195,
+            -25.808009644739663
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.01547085167803,
+            "calibration": 151.93043129530483,
+            "own_ridge": 147.16381435801867,
+            "peer_ridge": 147.23568693043637,
+            "category_seasonal": 90.00938774393082,
+            "growth_naive3": 91.81537994404951
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 104.8060601004888,
+            "calibration": 185.3402038641972,
+            "own_ridge": 179.31057827467603,
+            "peer_ridge": 179.86083970234117,
+            "category_seasonal": 95.29869040158151,
+            "growth_naive3": 117.89084613116562
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 81.51711680451841,
+            "calibration": 127.89646594476294,
+            "own_ridge": 121.26974154292434,
+            "peer_ridge": 121.22729315953924,
+            "category_seasonal": 81.14924974193625,
+            "growth_naive3": 112.15165806546095
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.81453548480577,
+            "calibration": 82.52681221048158,
+            "own_ridge": 78.29345889743348,
+            "peer_ridge": 77.82723065784273,
+            "category_seasonal": 96.64945936219108,
+            "growth_naive3": 93.62971739946026
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 83.99401499177938,
+            "calibration": 80.01938900155581,
+            "own_ridge": 79.63470177057881,
+            "peer_ridge": 79.79972833057161,
+            "category_seasonal": 71.66008202226959,
+            "growth_naive3": 86.42697098427112
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.572885429477,
+            "calibration": 102.10585686155574,
+            "own_ridge": 99.34019038296057,
+            "peer_ridge": 99.90466334498811,
+            "category_seasonal": 73.96135733730718,
+            "growth_naive3": 93.47428062780529
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 0,
+      "mae": {
+        "profile_ses": 113.87983116588167,
+        "calibration": 139.16024445751566,
+        "own_ridge": 134.59042787070823,
+        "peer_ridge": 134.75064492055589,
+        "category_seasonal": 121.79176240708757,
+        "growth_naive3": 129.70798062987242
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -20.870813754674224,
+          "gain_percent": -18.327050137853654,
+          "ci95_month_blocks": [
+            -53.71943934042329,
+            17.20102118342677
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -30.821711752121296,
+            -12.606636332734817
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": -0.16021704984762414,
+          "gain_percent": -0.11904044914808776,
+          "ci95_month_blocks": [
+            -0.6699645493235623,
+            0.2572139790329933
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.4118731722366338,
+            0.07200123591734885
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -20.710596704826603,
+          "gain_percent": -18.1863605634072,
+          "ci95_month_blocks": [
+            -53.788469159615005,
+            17.7744295713783
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -30.442907170109464,
+            -12.533873194613976
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -25.28041329163402,
+          "gain_percent": -22.199201590674658,
+          "ci95_month_blocks": [
+            -59.69543832645527,
+            15.276333132551342
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -38.21603948393308,
+            -14.943505587364175
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 173.11324787948945,
+            "calibration": 107.70193260522024,
+            "own_ridge": 107.25712813788981,
+            "peer_ridge": 108.53462289220619,
+            "category_seasonal": 122.79303536037958,
+            "growth_naive3": 152.93378686064466
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 96.34485316818139,
+            "calibration": 161.6266634451908,
+            "own_ridge": 155.1836322246016,
+            "peer_ridge": 154.5314442134483,
+            "category_seasonal": 121.87151534523503,
+            "growth_naive3": 136.25423649353357
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 117.79311195873952,
+            "calibration": 197.08964508688652,
+            "own_ridge": 192.08978802668562,
+            "peer_ridge": 192.13546542635063,
+            "category_seasonal": 117.82504543846467,
+            "growth_naive3": 138.5709756719839
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 104.43960950561421,
+            "calibration": 151.67564722517855,
+            "own_ridge": 144.79874862322413,
+            "peer_ridge": 145.18180885249296,
+            "category_seasonal": 111.24202783461557,
+            "growth_naive3": 132.94093001428718
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 90.03418733938649,
+            "calibration": 111.8140927682411,
+            "own_ridge": 106.13495293073402,
+            "peer_ridge": 106.20576574739756,
+            "category_seasonal": 138.34104113474226,
+            "growth_naive3": 107.87069889339752
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 101.55397714387883,
+            "calibration": 105.05348561437684,
+            "own_ridge": 102.07831728111432,
+            "peer_ridge": 101.91476239143954,
+            "category_seasonal": 118.67790932908837,
+            "growth_naive3": 109.67725584538772
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "cold_start_rows": 3078,
+      "mae": {
+        "profile_ses": 170.6039865230295,
+        "calibration": 174.10232982053301,
+        "own_ridge": 171.18009823423253,
+        "peer_ridge": 171.1675683476084,
+        "category_seasonal": 191.28568209500003,
+        "growth_naive3": 188.7928214412777
+      },
+      "comparisons": [
+        {
+          "model": "peer_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -0.5635818245788855,
+          "gain_percent": -0.3303450499984704,
+          "ci95_month_blocks": [
+            -29.337040124723526,
+            26.081408906116305
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -5.997255962278767,
+            4.708858086639686
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "peer_ridge",
+          "reference": "own_ridge",
+          "mae_gain": 0.012529886624135171,
+          "gain_percent": 0.007319709915687762,
+          "ci95_month_blocks": [
+            -0.2730865969548077,
+            0.24844664852560489
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.1733582452154312,
+            0.18620887803448008
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "own_ridge",
+          "reference": "profile_ses",
+          "mae_gain": -0.5761117112030202,
+          "gain_percent": -0.33768947780434894,
+          "ci95_month_blocks": [
+            -29.325079024957265,
+            25.991593080277976
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -6.065789929213613,
+            4.754445599847693
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "calibration",
+          "reference": "profile_ses",
+          "mae_gain": -3.4983432975035083,
+          "gain_percent": -2.050563629139624,
+          "ci95_month_blocks": [
+            -33.56428740166837,
+            22.59401780722929
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -10.21765441094433,
+            2.650208683219056
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 243.5326764586481,
+            "calibration": 243.5326764586481,
+            "own_ridge": 243.5326764586481,
+            "peer_ridge": 243.5326764586481,
+            "category_seasonal": 312.9928392511639,
+            "growth_naive3": 226.056036925166
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 199.57810257974253,
+            "calibration": 199.57810257974253,
+            "own_ridge": 199.57810257974253,
+            "peer_ridge": 199.57810257974253,
+            "category_seasonal": 267.5001263655828,
+            "growth_naive3": 221.05651122929007
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 180.43727739470765,
+            "calibration": 156.8504282180673,
+            "own_ridge": 155.81280016633502,
+            "peer_ridge": 156.46456326589225,
+            "category_seasonal": 208.36989612526187,
+            "growth_naive3": 206.53189041196805
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 168.13281784327302,
+            "calibration": 123.9376135982255,
+            "own_ridge": 119.35993330485753,
+            "peer_ridge": 119.09977152078152,
+            "category_seasonal": 115.7801362216335,
+            "growth_naive3": 188.8321015850521
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 112.23785336502209,
+            "calibration": 132.9732643300911,
+            "own_ridge": 127.23142572697334,
+            "peer_ridge": 126.82125302461412,
+            "category_seasonal": 114.97488062134637,
+            "growth_naive3": 143.96889456381544
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 119.70519149678363,
+            "calibration": 187.7418937384235,
+            "own_ridge": 181.56565116883863,
+            "peer_ridge": 181.5090432359718,
+            "category_seasonal": 128.09621398501164,
+            "growth_naive3": 146.31149393237467
+          }
+        }
+      ]
+    }
+  ],
+  "persistent_marketplace": 25,
+  "story_ids": [
+    2037,
+    1179,
+    194,
+    1483,
+    1454,
+    318
+  ],
+  "checks": {
+    "whole_panel_future_invariance_forecasts": 1228608,
+    "scalar_baselines": 972,
+    "past_matching_population_invariance": true,
+    "same_keys": true
+  },
+  "versions": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3"
+  },
+  "limits": [
+    "All 2024 outcomes already viewed; no unseen holdout or scientific PASS",
+    "Historical release vintages and availability not verified; prefix invariance conditional on frozen revised files",
+    "Complete-panel membership and dictionary are retrospectively fixed",
+    "One prior year and only six target-month blocks; selected histories are descriptive, not causal",
+    "Category/all ratios have common denominator; nominal confirmation is separate but not independent household evidence",
+    "Correction only learned from past one-step outcomes; h3/h6 persistence assumption explicit",
+    "No prices, transactions, debt, shopper composition or causal crisis labels",
+    "No municipal observations after 2024"
+  ]
+}

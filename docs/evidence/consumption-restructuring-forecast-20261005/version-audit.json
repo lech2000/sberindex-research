@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "numeric_files_exactly_equal": true,
+  "only_change": "City type priority casefolded to match dictionary; no formula or hyperparameter changes",
+  "first_story_ids": [
+    708,
+    275,
+    2037,
+    1483,
+    318,
+    2606
+  ],
+  "final_story_ids": [
+    2037,
+    1179,
+    194,
+    1483,
+    1454,
+    318
+  ],
+  "protocol_commit": "01b96be",
+  "first_manifest": {
+    "created_at_utc": "2026-10-05T20:47:49.550475+00:00",
+    "input_sha256": {
+      "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+      "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+      "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+    },
+    "code_sha256": {
+      "study": "dd6539f6981fad1234093b15e98e652ea31a68eb4eee7114e2626bd8fd1644d2",
+      "baseline": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+      "pre_features": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95"
+    },
+    "protocol_sha256": "a2db294e78d9e70f0a7c16f9c6b27b0cae52bf3e3e1095194f701dcfdbf70ad8",
+    "files": {
+      "metrics.json": "10073fe47f35683ec6fa316cac4cd958374082d85f6f4a9c03d39ffe658ca265",
+      "anomalies.json": "cb841190b1b1e9adc93f17e7f63658e24cda66f6bbd357fad351c8684970cfe1",
+      "deviations.npz": "57db2d51490811c78166d8b9fd75221195321087b2f72c38181d306e3f928b4f",
+      "pre-2024-features.parquet": "dad26054dd2bcfbeba6a11de28ad5bf8c3a1cc12e7c97772fecfa2266ac2ee62",
+      "peers.csv": "e430412c12cbb6c57551f5279f3d92218378935c87d1e6c7a96e96a3f78e3b94",
+      "protocol.json": "a2db294e78d9e70f0a7c16f9c6b27b0cae52bf3e3e1095194f701dcfdbf70ad8",
+      "predictions.parquet": "21128b9a1f84356190b520ebe07f735b7f0483bbcef85f52594df44c6774dc9b",
+      "fits.json": "5c39deaade9a465a5c0475cb6e9054f25f612faba912fb13ad285ec944a4e628"
+    }
+  }
+}
