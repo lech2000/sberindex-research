@@ -1,0 +1,218 @@
+{
+  "checked_at": "2026-10-05T12:24:42.791664+00:00",
+  "source_commits": [
+    "cf76c0594",
+    "0e9a40d54"
+  ],
+  "deployed_tree_commits": [
+    "551496d4c",
+    "462ca38fc"
+  ],
+  "git_prod_integration": "349038bfc4",
+  "local_tests_passed": 63,
+  "host_validator": {
+    "critical_pass": true,
+    "checks_passed": 46,
+    "checks_total": 47,
+    "preexisting_warning": "tool OpenAPI 403"
+  },
+  "internal_live_tests": [
+    {
+      "test": 0,
+      "status": 200,
+      "seconds": 8.384,
+      "synthetic": true,
+      "rows": 2,
+      "plan_model": "mimo-v2.5-pro",
+      "explanation_model": null,
+      "agent_error": true,
+      "input_sha256": "dc46c1116bf397402b2e608653cb74e7c607850ac00dc3e8b7768a8a6b569f79",
+      "calculation_sha256": "b5f547ad0d8bd44edb62fa5c7746838e420bd175a3c066157474f978ef9fe800",
+      "analysis_receipt_sha256": "a30f5dcc50a05ad6adea36fdd9030f3638ad6d7c139bc09aeea100522ea3fd89",
+      "version_comparison": null
+    },
+    {
+      "test": 1,
+      "status": 200,
+      "seconds": 12.461,
+      "synthetic": true,
+      "rows": 2,
+      "plan_model": "mimo-v2.5-pro",
+      "explanation_model": "mimo-v2.5-pro",
+      "agent_error": false,
+      "input_sha256": "dc46c1116bf397402b2e608653cb74e7c607850ac00dc3e8b7768a8a6b569f79",
+      "calculation_sha256": "84d5862b6b5eb226e44922c5a4124933b86b2b967c1538af32d8115ebabbd7ff",
+      "analysis_receipt_sha256": "ef1da319e2b5a926c6ecff28d954e3e94e56f255f254fe6f37bc9ef4fdd381d2",
+      "version_comparison": {
+        "operation": "compare_versions",
+        "keys": [
+          "id"
+        ],
+        "reference_sha256": "687f1ab7160c80e40a7f4fb5ee6b2117062199aa280233a4f241482ece9c768c",
+        "candidate_sha256": "dc46c1116bf397402b2e608653cb74e7c607850ac00dc3e8b7768a8a6b569f79",
+        "reference_is_frozen_spending": false,
+        "same_file": false,
+        "old_rows": 2,
+        "new_rows": 2,
+        "added_rows": 1,
+        "removed_rows": 1,
+        "common_rows": 1,
+        "revised_common_rows": 1,
+        "column_changes": [
+          {
+            "column": "value",
+            "revised_cells": 1
+          }
+        ],
+        "added_columns": [],
+        "removed_columns": [],
+        "type_changes": [],
+        "periods": {},
+        "coverage": {},
+        "reference_unchanged": true,
+        "candidate_stored": false,
+        "scientific_disposition": "NEW_CANDIDATE_SEPARATE_RUN_REQUIRED",
+        "limitations": [
+          "Новые строки и пересмотренные значения не заменяют замороженный эталон.",
+          "Дата периода не доказывает дату публикации/доступности. Паспорт выпуска нужно подтвердить отдельно.",
+          "territory_id не является подтверждённым историческим ОКТМО; расширение охвата не подтверждает административную идентичность.",
+          "Для повторения экспериментов нужен отдельный протокол, прогон и сохранённый вход; расчёт чата их не запускает."
+        ]
+      }
+    },
+    {
+      "test": 2,
+      "status": 200,
+      "seconds": 15.797,
+      "synthetic": false,
+      "rows": 303126,
+      "plan_model": "mimo-v2.5-pro",
+      "explanation_model": "mimo-v2.5-pro",
+      "agent_error": false,
+      "input_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+      "calculation_sha256": "d34f574aa09aa6fe6ac9b1cca7b9ffbcf927bedec81fb3500ca27e8c44c3a29a",
+      "analysis_receipt_sha256": "627225a86926183c53a14989f447374efc6436b2e19fa8914118950759909430",
+      "version_comparison": {
+        "operation": "compare_versions",
+        "keys": [
+          "date",
+          "territory_id",
+          "category"
+        ],
+        "reference_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+        "candidate_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+        "reference_is_frozen_spending": true,
+        "same_file": true,
+        "old_rows": 303126,
+        "new_rows": 303126,
+        "added_rows": 0,
+        "removed_rows": 0,
+        "common_rows": 303126,
+        "revised_common_rows": 0,
+        "column_changes": [
+          {
+            "column": "value",
+            "revised_cells": 0
+          }
+        ],
+        "added_columns": [],
+        "removed_columns": [],
+        "type_changes": [],
+        "periods": {
+          "date": {
+            "old_distinct": 24,
+            "new_distinct": 24,
+            "added": [],
+            "removed": [],
+            "added_total": 0,
+            "removed_total": 0,
+            "sample_limit": 60
+          }
+        },
+        "coverage": {
+          "territory_id": {
+            "old": 2190,
+            "new": 2190
+          },
+          "category": {
+            "old": 6,
+            "new": 6
+          }
+        },
+        "reference_unchanged": true,
+        "candidate_stored": false,
+        "scientific_disposition": "IDENTICAL_BYTES",
+        "limitations": [
+          "Новые строки и пересмотренные значения не заменяют замороженный эталон.",
+          "Дата периода не доказывает дату публикации/доступности. Паспорт выпуска нужно подтвердить отдельно.",
+          "territory_id не является подтверждённым историческим ОКТМО; расширение охвата не подтверждает административную идентичность.",
+          "Для повторения экспериментов нужен отдельный протокол, прогон и сохранённый вход; расчёт чата их не запускает."
+        ]
+      }
+    }
+  ],
+  "public_guest_status": 401,
+  "public_cors_status": 200,
+  "browser": {
+    "project": "atlas",
+    "authenticated_calculation_status": "passed",
+    "synthetic": true,
+    "run_id": "chat-20261005T122049Z-dc46c1116bf3",
+    "model": "mimo-v2.5-pro",
+    "analysis_receipt_sha256": "487852bd8424a13c27d20a39fbb9cafdda76c75cb4d40aa913bd2d8996d99a59",
+    "download_verified": true,
+    "download_sha256": "3d9da7fbb425d78c86eb472ddd8922daaa0af13f3b119841365fa08841e4ca53"
+  },
+  "frontend": {
+    "scope": "/sberindex-2026/",
+    "files": [
+      {
+        "path": "landing-common/holographic.css",
+        "sha256": "cbc27c3f181420c38e32bbfbea19f95a536e5b834abd093226331d5bf3635376",
+        "bytes": 10551
+      },
+      {
+        "path": "landing-common/research-chat.js",
+        "sha256": "56fa15421ea153cc076428b75f74d19738577cd07f51087158bcd3efd882c05e",
+        "bytes": 11429
+      },
+      {
+        "path": "economic-atlas/landing/index.html",
+        "sha256": "a585ce3df0f75e359a07b070230272fdf460d0707867c860f8612d3d19682556",
+        "bytes": 21569
+      },
+      {
+        "path": "shock-radar/landing/index.html",
+        "sha256": "14bec5df1a7b31027977040fc49125941134290db5a4089f8be742710d2bfcd3",
+        "bytes": 18730
+      }
+    ]
+  },
+  "cdn_sha_verified": true,
+  "scientific_pass": false,
+  "candidate_stored": false,
+  "kb_integrate": [
+    {
+      "corpus": 62,
+      "result": {
+        "added": true,
+        "document_id": 16530,
+        "title": "СберИндекс: загрузка таблиц и сверка новых выпусков, проверено05.10.2026",
+        "corpus_id": 62,
+        "chunks": 4,
+        "vectors": 4
+      }
+    },
+    {
+      "corpus": 77,
+      "result": {
+        "added": true,
+        "document_id": 16531,
+        "title": "СберИндекс: загрузка таблиц и сверка новых выпусков, проверено05.10.2026",
+        "corpus_id": 77,
+        "chunks": 4,
+        "vectors": 4
+      }
+    }
+  ]
+}
