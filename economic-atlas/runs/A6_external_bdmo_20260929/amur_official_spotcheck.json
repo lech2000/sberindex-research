@@ -1,0 +1,42 @@
+{
+  "source_url": "https://28.rosstat.gov.ru/storage/mediabank/8%288%29.pdf",
+  "source_pdf_sha256": "421abf747a8d621ee811737593a5207d23d8048c92db84d978a5a92ae7b6d848",
+  "source_pdf_bytes": 245839,
+  "source_transport": "local copy; original download had unverifiable TLS chain, so this is a provisional spot check",
+  "derivative_file": "data/external/tochno_bdmo_20250918/data_Y48213002_112_v20250918.parquet",
+  "derivative_sha256": "e10c268c5b577494b2f13a5ef27ab0673ae8a8926315493372c8d00dfcc07415",
+  "indicator_code": "Y48213002",
+  "region": "Амурская область",
+  "year": 2024,
+  "compared_municipalities": 28,
+  "exact_matches": 25,
+  "discrepancies": [
+    {
+      "municipality": "г.Благовещенск",
+      "oktmo": "10701000",
+      "official_rub": 89032.3,
+      "derivative_rub": 88876.3,
+      "official_minus_derivative_rub": 156.0,
+      "pdf_page": 1
+    },
+    {
+      "municipality": "г.Белогорск",
+      "oktmo": "10710000",
+      "official_rub": 86583.0,
+      "derivative_rub": 86576.5,
+      "official_minus_derivative_rub": 6.5,
+      "pdf_page": 1
+    },
+    {
+      "municipality": "г.Райчихинск",
+      "oktmo": "10720000",
+      "official_rub": 64419.7,
+      "derivative_rub": 64430.9,
+      "official_minus_derivative_rub": -11.2,
+      "pdf_page": 1
+    }
+  ],
+  "max_absolute_difference_rub": 156.0,
+  "mean_absolute_difference_rub": 6.204,
+  "status": "provisional_spot_check_a6_open"
+}

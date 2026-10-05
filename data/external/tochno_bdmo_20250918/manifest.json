@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-09-29",
+  "source_page": "https://tochno.st/datasets/bdmo",
+  "upstream": "Rosstat BD PMO, processed by Tochno",
+  "license": "CC BY 4.0",
+  "source_version": "v20250918",
+  "page_updated_at": "2025-09-25",
+  "datasets": [
+    {
+      "indicator_code": "Y48423005",
+      "label": "Среднесписочная численность работников организаций (без субъектов малого предпринимательства)",
+      "archive_url": "https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_v20250918/indicators/section32/data_Y48423005_112_v20250918.zip",
+      "archive_sha256": "bd57a9f5dca4cb587ced79959de0b83b45cb41196c69b9407a7771d20f38f464",
+      "parquet_file": "data_Y48423005_112_v20250918.parquet",
+      "parquet_sha256": "cb5a60b43ad0f82e078cef6ed4860f6232c47cb148b13ff644125ef79f58a6da",
+      "rows": 1015399,
+      "rows_2024": 120789,
+      "oktmo_2024": 2541,
+      "regions_2024": 80,
+      "nonnull_values_2024": 120428,
+      "period": "quarterly cumulative",
+      "unit": "people"
+    },
+    {
+      "indicator_code": "Y48423007",
+      "label": "Среднемесячная заработная плата работников организаций (без субъектов малого предпринимательства)",
+      "archive_url": "https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_v20250918/indicators/section32/data_Y48423007_112_v20250918.zip",
+      "archive_sha256": "be97ffd04f1c97344de538ac44f9e73370c43673fc337045d651c4ac7fca4ce5",
+      "parquet_file": "data_Y48423007_112_v20250918.parquet",
+      "parquet_sha256": "9468c7f19e4a2300afc577dadbffd1473cd7c77b20cae28463da0bd5d453d8c3",
+      "rows": 1334223,
+      "rows_2024": 121896,
+      "oktmo_2024": 2541,
+      "regions_2024": 80,
+      "nonnull_values_2024": 121510,
+      "period": "quarterly cumulative",
+      "unit": "rubles"
+    },
+    {
+      "indicator_code": "Y48213002",
+      "label": "Среднемесячная номинальная начисленная заработная плата работников крупных, средних предприятий и НКО городского округа или муниципального района",
+      "archive_url": "https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_v20250918/indicators/section41/data_Y48213002_112_v20250918.zip",
+      "archive_sha256": "0247a205dcbfc6989d788c971a22e4b9bb0455444d84e7760a3041c91b67ea9a",
+      "parquet_file": "data_Y48213002_112_v20250918.parquet",
+      "parquet_sha256": "e10c268c5b577494b2f13a5ef27ab0673ae8a8926315493372c8d00dfcc07415",
+      "rows": 58556,
+      "rows_2024": 2141,
+      "oktmo_2024": 2141,
+      "regions_2024": 74,
+      "nonnull_values_2024": 2141,
+      "period": "annual January-December",
+      "unit": "rubles",
+      "transformation": "CSV to Parquet; oktmo retained as string, year int32, indicator_value numeric"
+    }
+  ]
+}

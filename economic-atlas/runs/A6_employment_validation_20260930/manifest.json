@@ -1,0 +1,14 @@
+{
+  "code_sha256": "2b0b938c140b698d085fc595869a8d4356be229d24a9fe9869ce8fd56c93b1c7",
+  "input_sha256": {
+    "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "employment": "cb5a60b43ad0f82e078cef6ed4860f6232c47cb148b13ff644125ef79f58a6da",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf"
+  },
+  "python": "3.14.4",
+  "pandas": "2.3.3",
+  "numpy": "2.5.3",
+  "n_bootstrap": 1000,
+  "seed": 20260930
+}

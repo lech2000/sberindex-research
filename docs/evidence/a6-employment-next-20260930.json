@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-09-30T06:16:32Z",
+  "checked_via": "Mac worktree, case-service:8013 through Incus aios2, kb-forge:8300 through Incus kb-forge, GitHub PR #3",
+  "research_commit": "6ef327c",
+  "pull_request": "https://github.com/lech2000/sberindex-research/pull/3",
+  "atlas": {
+    "case_id": "case_66cae4a89ba6473f",
+    "source_action_id": "act_c475e17b2a584b9a",
+    "source_action_done": false,
+    "new_action_id": "act_63eabe3fd8aa4770",
+    "new_action_owner": "sberindex_atlas_researcher",
+    "new_action_done": false,
+    "material_id": "mat_sber_a6_emp_20260930",
+    "corpus_75_document_id": 14779,
+    "curator_corpus_77_document_id": 14781,
+    "agent_dialog_client_message_id": "sberindex-a6-employment-next-20260930-0606",
+    "agent_dialog_result": "timed out before GATE_REPORT; no agent result or action closure claimed",
+    "next_step": "Synthetic known-truth positive/negative event controls at frozen T/M through F7b; A6 remains open"
+  },
+  "radar": {
+    "case_id": "case_008f37d03cf541e5",
+    "manual_data_action_id": "act_906d8781db364e7b",
+    "manual_data_action_owner": "prn_fbab9aa00cd46169",
+    "manual_data_action_done": false,
+    "material_id": "mat_sber_r9_data_req_20260930",
+    "request_file": "data/REQUEST_SBERINDEX_VINTAGES_20260930.md",
+    "r9_status": "waiting for independent holdout and verified historical availability/vintage"
+  },
+  "graph": {
+    "case_id": "case_43de12a8dc2e4abd",
+    "source_action_id": "act_064c759fe5194d67",
+    "source_action_done": false,
+    "corpus_77_document_id": 14784,
+    "novorossiysk_channel_status": "candidate; no official backlink verified on the homepage",
+    "next_step": "Select another municipality from the verified crosswalk; do not repeat Balashikha, Ramenskoye or Novorossiysk without new evidence"
+  },
+  "automation_observation": "fixar-cmd-research-drive 08:30 MSK tick made zero research turns: production file still reports A6/R8 partial; this is not evidence of a curator dispatch",
+  "f7b_runtime_drift": {
+    "corpus_62_verified_fact_document_id": 14787,
+    "corpus_62_code_fix_lesson_document_id": 14788,
+    "fixar_devops_r8_closeout_artifact_present": false,
+    "production_code_changed": false
+  }
+}
