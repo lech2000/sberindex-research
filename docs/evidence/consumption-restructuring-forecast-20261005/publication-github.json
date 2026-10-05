@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "source_commit": "783ae7fc99bdf92c42e457a998d5e9291af84aa8",
+  "files_git_blob_checked": 24,
+  "documents": [
+    {
+      "path": "README.md",
+      "sha256": "e35d896f745f7ba48eac421aa84318119c7fbcb154aa954bc14540f1ecec7190",
+      "full_readback": true
+    },
+    {
+      "path": "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md",
+      "sha256": "485754a0ac9d6bb70ba8ca0423009fa316d2cd29a77b4e020122a8237764b8cd",
+      "full_readback": true
+    },
+    {
+      "path": "docs/CONSUMPTION_RESTRUCTURING_DELIVERY_2026-10-06.md",
+      "sha256": "1d40d37cdeb7d427df57301fe14a5b1567e30d711905a6b91b7f05bbd9aeb655",
+      "full_readback": true
+    }
+  ]
+}

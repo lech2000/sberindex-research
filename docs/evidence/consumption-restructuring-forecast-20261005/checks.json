@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-06",
+  "full_suite": {
+    "passed": 96,
+    "skipped": 2,
+    "seconds": 68.17
+  },
+  "new_tests_after_story_case_fix": {
+    "passed": 7,
+    "seconds": 1.9
+  },
+  "distinct_passed_tests": 97,
+  "skips": [
+    "Optional GPL external Pattern convention check",
+    "Optional local real-panel story test (external inputs not supplied for full-suite invocation)"
+  ],
+  "scientific_audit": "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/independent-audit.json",
+  "future_invariance_forecasts": 1228608,
+  "baseline_scalar_checks": 972,
+  "browser_qa": "economic-atlas/site/consumption-restructuring-20261005/browser_qa.json",
+  "status": "PASS_TECHNICAL_EXPLORATORY_SCIENTIFIC_RESULT_NEGATIVE"
+}

@@ -6,13 +6,13 @@
     {
       "path": "presentation/economic-atlas/landing/index.html",
       "previous_public_sha256": "a585ce3df0f75e359a07b070230272fdf460d0707867c860f8612d3d19682556",
-      "new_sha256": "d0e349ab88769b65877167f9b4cb9b86cf80ee082ecd1ae623661bab7af6c413",
+      "new_sha256": "37918e1e641d0aec8a6ebfd81f9f04fed0bb8099ccf0b4cb2df6322c66eae3da",
       "preserved_chat_upload_background": true
     },
     {
       "path": "presentation/shock-radar/landing/index.html",
       "previous_public_sha256": "14bec5df1a7b31027977040fc49125941134290db5a4089f8be742710d2bfcd3",
-      "new_sha256": "54fb0c98abc6cb3bfa214d47d64cfb5efec1af1b4e82c7e9d86e1b51ca79afe1",
+      "new_sha256": "2ea281c739cf10f73a93027ad3e7bfb48746ab9842ae40508671b0f832e7891f",
       "preserved_chat_upload_background": true
     }
   ],
@@ -26,5 +26,6 @@
     "links_and_unique_ids": "PASS",
     "chat_backend_and_upload_e2e": "NOT_TESTED",
     "radar_case_chart_render": "PASS"
-  }
+  },
+  "latest_unit_clarification": "28 total unique municipalities including the three anchors, not 28 additional peers"
 }

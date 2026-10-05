@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-10-06",
+  "status": "COMPUTED_EXPLORATORY_NEGATIVE_FORECAST_RESULT",
+  "files": {
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md": "485754a0ac9d6bb70ba8ca0423009fa316d2cd29a77b4e020122a8237764b8cd",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/anomalies.json": "cb841190b1b1e9adc93f17e7f63658e24cda66f6bbd357fad351c8684970cfe1",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/deviations.npz": "57db2d51490811c78166d8b9fd75221195321087b2f72c38181d306e3f928b4f",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/fits.json": "5c39deaade9a465a5c0475cb6e9054f25f612faba912fb13ad285ec944a4e628",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/independent-audit.json": "fe9b03d42f5e7205a55baab6ce370749334606c26be9fd068d5ba0670369583a",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/manifest.json": "c5d8873a5bda1db07b45630f6db5281786aeb316618678b590ebf43e2dbbd8ab",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/metrics.json": "245b09617220270d5ef56cb69927e89be7cc6dfacaad266866e8d2815331b569",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/peers.csv": "e430412c12cbb6c57551f5279f3d92218378935c87d1e6c7a96e96a3f78e3b94",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/pre-2024-features.parquet": "dad26054dd2bcfbeba6a11de28ad5bf8c3a1cc12e7c97772fecfa2266ac2ee62",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/predictions.parquet": "21128b9a1f84356190b520ebe07f735b7f0483bbcef85f52594df44c6774dc9b",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/protocol.json": "a2db294e78d9e70f0a7c16f9c6b27b0cae52bf3e3e1095194f701dcfdbf70ad8",
+    "economic-atlas/site/consumption-restructuring-20261005/browser_qa.json": "d9e2e82e130dc58896bfac1e5b28b2ff600cd231ec3ec891b9f6ff91935650e7",
+    "economic-atlas/site/consumption-restructuring-20261005/desktop.png": "544f6102bc1047a305ff3c7a9f812d282ef92806e2bc1e4bbfdc587d6192e85c",
+    "economic-atlas/site/consumption-restructuring-20261005/forecast.png": "2f50359adad5194cdce013930140ca275395ca453c055c047ccff3ae0c9729d6",
+    "economic-atlas/site/consumption-restructuring-20261005/index.html": "d87d4973a0967c99f8896add113e5da5485f5de62714cb9f8555d094ec24c12c",
+    "economic-atlas/site/consumption-restructuring-20261005/manifest.json": "c5a96a37a820f69b063f832643bab918cf277a22e4e6864aee3eec710e681729",
+    "economic-atlas/site/consumption-restructuring-20261005/mobile.png": "8a2a0864ac42161b46b00354fb54e35bf9eebcc172556e568992be5f70b8b43a",
+    "economic-atlas/site/consumption-restructuring-20261005/qa.cjs": "99fc5db9b7960de1529c412e8cb78cbf28ead91d9776eb074081a8fb8f0455f4",
+    "economic-atlas/site/consumption-restructuring-template.html": "5581f6b10a1fda65cf18c5fcb6712599ae6f48ec55915c6f4cd4044a0b025f0b",
+    "economic-atlas/src/consumption_restructuring.py": "dbbe59968affe4a043ac8813e404d8cc33a480199ef9c020fccc87b935db5b82",
+    "economic-atlas/src/consumption_restructuring_audit.py": "aa264cae353cb5cd13b99f3336ff80538d81da8a0ba49fc69e77bcd6a166d481",
+    "economic-atlas/src/consumption_restructuring_site.py": "b700da7bb24fae74745a5334db4bea17c40a67e446cc251f899e5ada8aee02d9",
+    "integrations/fixar/sync_consumer_study.py": "1d908a4823eee1182e776b7779a48c188f52388fe3d3eff02d4a50c82dff970d",
+    "tests/test_consumption_restructuring.py": "a585d47ba1570b72112482152f4b3ab6a2a934ecc85fdd95292fd8f15d32173c"
+  },
+  "protocol_before_results_commit": "01b96be",
+  "external_raw_inputs_redistributed": false
+}
