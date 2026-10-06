@@ -1,0 +1,21 @@
+{
+  "status": "FRESH_RETURN_CONTROL_INTEGRATION_PASS",
+  "checked_at": "2026-10-06T22:45:07.274392+00:00",
+  "checked_where": "07.10.2026 Moscow; own isolated Mac worktree, fresh runtime/output",
+  "source_commit": "13953875d878f813e27fc5f132c2e686f0ee29b3",
+  "reviewed_pr20_head": "88db70b60fdfa3f7dbf58c361390317d87ed467f",
+  "frozen_protocol_commit": "1aa596255b8125e1f0da4f29d2d349750bddde68",
+  "by_seed_rows_exact": 720,
+  "summary_cells_exact": 36,
+  "fresh_main_detector_runs": 480,
+  "separate_null_replays": 120,
+  "prefix_future_replays": 12,
+  "transition_series_checks": 14400,
+  "descriptive_intervals": 108,
+  "test_count": 3,
+  "scientific_pass": false,
+  "same_worlds_not_new_scientific_holdout": true,
+  "fresh_metrics_sha256": "ba62760c4e8b5d5354c8eb13ec49ad63709669f3fb558909963d4417976bb071",
+  "fresh_alerts_sha256": "0e5da8d2083697811f8068a21d9439ec68fe7b5c75b54251398054c344bd0d97",
+  "fresh_audit_sha256": "da4f4a4a0804ae71983e9f8a71692e8e4baa717a57561de08c736a9b28761e8f"
+}
