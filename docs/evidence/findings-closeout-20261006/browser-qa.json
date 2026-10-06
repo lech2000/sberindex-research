@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-06",
+  "tool": "CUA Codex in-app browser",
+  "atlas": "public findings before chat; marketplace/peer/25 signals visible",
+  "radar": "public own-series MAE/29.15% and h3 caveat visible; R9 table retained",
+  "screenshots": [
+    "atlas-findings.png",
+    "radar-findings.png"
+  ],
+  "chat_script_blocks_unchanged": true,
+  "fresh_authenticated_model_chat_tested": false
+}

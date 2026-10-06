@@ -1,0 +1,16 @@
+{
+  "prepared_at": "2026-10-06",
+  "source_commit": "7ef3c01d59a408f9d81e4c018b1e54ba0edd27e0",
+  "scope": "reviewable scientific source subset and reports; not a complete raw-input distribution",
+  "raw_inputs_included": false,
+  "private_forecast_cache_included": false,
+  "git_history_included": false,
+  "published": false,
+  "remaining_jury_access": "owner choice required; GitHub still PRIVATE",
+  "full_reproduction_requires": "frozen input files and derived baseline artifacts specified by README and manifests",
+  "archive": "sberindex-source-candidate-20261006.zip",
+  "archive_sha256": "2f5c7815567f6700c4120cc435a53a263d9dab5b8cd337c8ea222cbd0735e3a8",
+  "archive_bytes": 481244,
+  "zip_readback_verified": true,
+  "file_count": 127
+}
