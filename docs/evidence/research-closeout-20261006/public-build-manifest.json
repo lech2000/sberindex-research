@@ -1,0 +1,878 @@
+{
+  "source_commit": "84672fd281feba7c7860aaacaa5bc30a54bf62eb",
+  "compiler": "marked17.0.5, external self stylesheet, script-src none",
+  "source_allowlist": [
+    "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
+    "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md",
+    "docs/CLAIMS_2026-10-06.json",
+    "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md",
+    "docs/DATA_INTEGRATION_RESULTS_2026-10-03.md",
+    "docs/F03_LEAKAGE_AUDIT.md",
+    "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/RESEARCH_FINDINGS_2026-10-06.md",
+    "docs/findings/ATF_CLOSEOUT_20261004/claim-evidence.json",
+    "docs/findings/ATF_CLOSEOUT_20261004/source-audit.md",
+    "economic-atlas/COMPLETION_REPORT_2026-10-05.md",
+    "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+    "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+    "economic-atlas/METHODOLOGY_RU.md",
+    "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+    "economic-atlas/README.md",
+    "economic-atlas/clean_reproduction_receipt.json",
+    "economic-atlas/config.json",
+    "economic-atlas/consumption_restructuring_protocol_20261005.json",
+    "economic-atlas/runs/A11_icvi_table_20261005/validity.csv",
+    "economic-atlas/runs/A12_stable_cores_20261005/five_stories.csv",
+    "economic-atlas/runs/A13_reproduction_20261005/TASK_REVIEW_2026-10-05.md",
+    "economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+    "economic-atlas/runs/A5/metrics.json",
+    "economic-atlas/runs/A6_frozen_controls_20261003/README.md",
+    "economic-atlas/runs/A6_threshold_review_20260927/README.md",
+    "economic-atlas/runs/A6_v2/calibration.json",
+    "economic-atlas/runs/A6_v2/robustness/README.md",
+    "economic-atlas/runs/A7_SDbw_20261004/README.md",
+    "economic-atlas/runs/A7_SDbw_20261004/artifact-manifest.json",
+    "economic-atlas/runs/A7_SDbw_20261004/independent-audit.json",
+    "economic-atlas/runs/A7_SDbw_20261004/metrics.json",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol-v1-aborted.json",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol.json",
+    "economic-atlas/runs/A7_SDbw_20261004/validity.csv",
+    "economic-atlas/runs/A7_network_20261005/README.md",
+    "economic-atlas/runs/A7_network_20261005/audit.json",
+    "economic-atlas/runs/A7_network_20261005/manifest.json",
+    "economic-atlas/runs/A7_network_20261005/provenance.json",
+    "economic-atlas/runs/A7_network_20261005/validity.csv",
+    "economic-atlas/runs/A7_stories_20261004/README.md",
+    "economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+    "economic-atlas/runs/A7_stories_20261004/timing_check.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/PROTOCOL.md",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/README.md",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/ablation-results.png",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/audit.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/external_metrics.csv",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/guard-repair-repeat.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/input-recovery.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/permutation_metrics.csv",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/provenance.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/seed_stability.csv",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/README.md",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/atlas-radar-comparison.png",
+    "economic-atlas/runs/Consumer_closeout_20261006/README.md",
+    "economic-atlas/runs/Consumer_closeout_20261006/closeout-results.png",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/independent-audit.json",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/manifest.json",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/metrics.json",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/peers.csv",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/README.md",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/metrics.json",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/protocol.json",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/sources.json",
+    "economic-atlas/runs/Municipal_stories_20261004/README.md",
+    "economic-atlas/runs/Municipal_stories_20261004/stories.json",
+    "economic-atlas/runs/Municipal_stories_20261004/threshold-case-thresholds.csv",
+    "economic-atlas/runs/Treasury_2025_20261004/README.md",
+    "economic-atlas/runs/Treasury_2025_20261004/books.json",
+    "economic-atlas/runs/Treasury_2025_20261004/consistency.json",
+    "economic-atlas/runs/consumption_restructuring_20261005/README.md",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json",
+    "methods/ATF_METHODS_TRANSFER.md",
+    "repository-tools/RADAR_REPRODUCE.md",
+    "repository-tools/README-tools.md",
+    "shock-radar/FORECAST_COMPARISON_2026-10-05.csv",
+    "shock-radar/FORECAST_PAIRED_2026-10-05.csv",
+    "shock-radar/METHODOLOGY_RU.md",
+    "shock-radar/archive/METHODOLOGY_RU_before_closeout_2026-10-05.md",
+    "shock-radar/config.json",
+    "shock-radar/runs/D01_bank_v1_20261003/bank.json",
+    "shock-radar/runs/D01_bank_v1_20261003/bank_seed20261003.json",
+    "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+    "shock-radar/runs/D01_common_monitor_20261003/common_monitor.json",
+    "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json",
+    "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json",
+    "shock-radar/runs/D01_sensitivity_curve_20261001/curve.json",
+    "shock-radar/runs/D01_shock_shapes_20261002/shapes.json",
+    "shock-radar/runs/D04_multicategory_20261004/README.md",
+    "shock-radar/runs/D04_multicategory_20261004/independent-audit.json",
+    "shock-radar/runs/D04_multicategory_20261004/synthetic-summary.csv",
+    "shock-radar/runs/D05_joint_bank_20261005/README.md",
+    "shock-radar/runs/F03_causal/metrics.json",
+    "shock-radar/runs/Flood_legal_cohort_20261005/README.md",
+    "shock-radar/runs/Flood_legal_cohort_20261005/source-passports.json",
+    "shock-radar/runs/National_equal_information_20261006/README.md",
+    "shock-radar/runs/Official_cases_20261003/README.md",
+    "shock-radar/runs/R10_national_h12_20261005/README.md",
+    "shock-radar/runs/R10_national_h12_20261005/data-passport.json",
+    "shock-radar/runs/R8_closeout_20260929/README.md",
+    "shock-radar/runs/R8_seasonal_followup_20261006/README.md",
+    "shock-radar/runs/R8_seasonal_followup_20261006/automated-review.json",
+    "shock-radar/runs/R8_seasonal_followup_20261006/results.json",
+    "shock-radar/runs/R8_seasonal_followup_20261006/seasonal-month-omission.json",
+    "shock-radar/runs/R8_seasonal_followup_20261006/summary.csv",
+    "shock-radar/runs/R9_category_seasonal_20261003/README.md",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/README.md",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/audit.json",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/metrics.json",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/protocol-public.json",
+    "shock-radar/runs/R9_strong_baselines_20261004/README.md",
+    "shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json",
+    "shock-radar/runs/seasonal_common_20261004/metrics.json"
+  ],
+  "files": [
+    {
+      "path": "economic-atlas/consumer-closeout/closeout.css",
+      "sha256": "2e8c7fe6c557a56d11517b5dde80932b1bb9e837611a5cfe9f76d00becd8330a",
+      "bytes": 1551
+    },
+    {
+      "path": "economic-atlas/consumer-closeout/consumer-map-362c3e245a3d7c81.js",
+      "sha256": "362c3e245a3d7c8157e7613ddc7a97c5878ed6ed128525967e1b123c8efbba49",
+      "bytes": 3568491
+    },
+    {
+      "path": "economic-atlas/consumer-closeout/index.html",
+      "sha256": "625d5428e564230fc469069b4d41a5def378f73264148d8cf91c209ecd1f6f0e",
+      "bytes": 4997
+    },
+    {
+      "path": "economic-atlas/consumer-closeout/manifest.json",
+      "sha256": "47019086a2353c42afbf32529421150b589b1e0e391b4ba79267bb1463a9e561",
+      "bytes": 506
+    },
+    {
+      "path": "economic-atlas/landing/index.html",
+      "sha256": "92e656d64efc26006e505bb11fff91c8e993f5fba153a0eac83f8d3d769283e1",
+      "bytes": 32099
+    },
+    {
+      "path": "reports/docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.html",
+      "sha256": "79d9fdd851525dafb865dbfeb4c79e0ecf8fec287c446acfac71b3198d6bdf59",
+      "bytes": 8415
+    },
+    {
+      "path": "reports/docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.html",
+      "sha256": "68f27addc500c77981c80d6ddc7518c40fc324c86c24f8163311ccc9f1ca60f9",
+      "bytes": 29088
+    },
+    {
+      "path": "reports/docs/CLAIMS_2026-10-06.json",
+      "sha256": "8a4ffe9f80a60aa7c2a66022e79b466a0e508da6f4c229c7eb1da09069e53b53",
+      "bytes": 2428
+    },
+    {
+      "path": "reports/docs/COMPETITIVE_EXPERIMENTS_2026-10-04.html",
+      "sha256": "257ee13ae8acc1826a587fa4d55c9da0b746cdb792adac1a2f88e9aceb0f443e",
+      "bytes": 9354
+    },
+    {
+      "path": "reports/docs/DATA_INTEGRATION_RESULTS_2026-10-03.html",
+      "sha256": "bfab16fa9c82cfd39b8afc2b3d2373aba28d54abd82dc799f54cd033c1607311",
+      "bytes": 11828
+    },
+    {
+      "path": "reports/docs/F03_LEAKAGE_AUDIT.html",
+      "sha256": "77a595b7fee22c28593b20bd627066b25cd44502542112068e89991e1b29bd64",
+      "bytes": 3427
+    },
+    {
+      "path": "reports/docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.html",
+      "sha256": "9a2a06ad1356f4471db9a029d1adf466c3c76fe4411fc380176a935e1a639fe1",
+      "bytes": 11758
+    },
+    {
+      "path": "reports/docs/REPRODUCIBILITY.html",
+      "sha256": "a9e1136b6c3aa97e15d79dfce158115835fd375cc1692230846ea2d974c4e3cc",
+      "bytes": 9325
+    },
+    {
+      "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
+      "sha256": "c7e2dc63452f8dc82384963454d5f4059b427746002abdac68d2370503c75c24",
+      "bytes": 15291
+    },
+    {
+      "path": "reports/docs/findings/ATF_CLOSEOUT_20261004/claim-evidence.json",
+      "sha256": "93c0d62c10e45bda2a7f1b35775998c0ab5f7cfe3ddf94b7a4057f49762919d0",
+      "bytes": 20810
+    },
+    {
+      "path": "reports/docs/findings/ATF_CLOSEOUT_20261004/source-audit.html",
+      "sha256": "9814e223893277c797668a2bd644959e58a73d246e56b6a3e1add9d617727164",
+      "bytes": 5692
+    },
+    {
+      "path": "reports/economic-atlas/COMPLETION_REPORT_2026-10-05.html",
+      "sha256": "edaa5bc61c22cc3d4faa4d278e34eba87d304b0cf723a798d83f9633d673fc67",
+      "bytes": 12293
+    },
+    {
+      "path": "reports/economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.html",
+      "sha256": "fab9be4af806e346be514ec897973e388fcb359d2d7e9d1cf74d75f211c813e0",
+      "bytes": 6890
+    },
+    {
+      "path": "reports/economic-atlas/FINAL_REPORT_RU_2026-10-05.html",
+      "sha256": "c503a4c1b2fc93063526792ffadae453139aa6ef1437dc0f9e2e82d98d1827a4",
+      "bytes": 31270
+    },
+    {
+      "path": "reports/economic-atlas/METHODOLOGY_RU.html",
+      "sha256": "8b3cd6942ab166358521c3fb79cd4dc1b916a7fa771d8f297b4be66eab629107",
+      "bytes": 11738
+    },
+    {
+      "path": "reports/economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.html",
+      "sha256": "c5a611a27a180008ac42ed5e3bc2676bab8c5a9d75ef62ebec44003a5868fd7d",
+      "bytes": 17202
+    },
+    {
+      "path": "reports/economic-atlas/README.html",
+      "sha256": "eb8796c7a9472011736dbcb52204394638593fe3c14a8e5cc545dc5a8ae6303c",
+      "bytes": 6954
+    },
+    {
+      "path": "reports/economic-atlas/clean_reproduction_receipt.json",
+      "sha256": "cb3e83215e98f3e0d0373bf2355ea2a521ffa4c41ac38c5e446ecbc452ddba18",
+      "bytes": 831
+    },
+    {
+      "path": "reports/economic-atlas/config.json",
+      "sha256": "aef4be1d056ac0b20de2b7d5905ff8c4108fded6f40526ff49e687189c0ac895",
+      "bytes": 3305
+    },
+    {
+      "path": "reports/economic-atlas/consumption_restructuring_protocol_20261005.json",
+      "sha256": "a2db294e78d9e70f0a7c16f9c6b27b0cae52bf3e3e1095194f701dcfdbf70ad8",
+      "bytes": 5583
+    },
+    {
+      "path": "reports/economic-atlas/runs/A11_icvi_table_20261005/validity.csv",
+      "sha256": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96",
+      "bytes": 7301
+    },
+    {
+      "path": "reports/economic-atlas/runs/A12_stable_cores_20261005/five_stories.csv",
+      "sha256": "da7b21d131f6a6c8f34c4a34787cf7bee66e6f174bc2688ac63e6a4658ba9080",
+      "bytes": 815
+    },
+    {
+      "path": "reports/economic-atlas/runs/A13_reproduction_20261005/TASK_REVIEW_2026-10-05.html",
+      "sha256": "8c5440cfe61af0ae5b8c738c5d622c9d6d9818ea05a454e8193932e901470ae0",
+      "bytes": 9474
+    },
+    {
+      "path": "reports/economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+      "sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+      "bytes": 1195
+    },
+    {
+      "path": "reports/economic-atlas/runs/A5/metrics.json",
+      "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+      "bytes": 7510
+    },
+    {
+      "path": "reports/economic-atlas/runs/A6_frozen_controls_20261003/README.html",
+      "sha256": "681fba9c5bcb9cce7d722718cba2a96888e407cc3c6df404079ff03017520225",
+      "bytes": 12435
+    },
+    {
+      "path": "reports/economic-atlas/runs/A6_threshold_review_20260927/README.html",
+      "sha256": "265a53d3d08740ae5d8d65692624f0a149cb8668012d9eda379662d91ba1def1",
+      "bytes": 4624
+    },
+    {
+      "path": "reports/economic-atlas/runs/A6_v2/calibration.json",
+      "sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+      "bytes": 1190
+    },
+    {
+      "path": "reports/economic-atlas/runs/A6_v2/robustness/README.html",
+      "sha256": "a6bd7316ba24a826f7204d760a9a130e120afcc0be9a8f6aa2b22452d75ebd05",
+      "bytes": 3188
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/README.html",
+      "sha256": "8ff947491ec9a11d8f3266f12c4dc1ac2973f6548ed06ec4bea83f07d750dc6e",
+      "bytes": 12298
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/artifact-manifest.json",
+      "sha256": "80e0e868415ca714ea196ddd9f424378d469bc038389651d2c5d77d2ac84d6e3",
+      "bytes": 1145
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/independent-audit.json",
+      "sha256": "30f47874c4814bd1155b8bb803f8187c2dac9bc5d570f1d4aec2ff1820907e07",
+      "bytes": 2136
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/metrics.json",
+      "sha256": "4d1e141811f056943686b098fcb985a5edc0c09c97425edb50fa5c9dfb9a5e7b",
+      "bytes": 222314
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/protocol-v1-aborted.json",
+      "sha256": "f857dbf1428e7afa26d9212e9f4299af4cd9c2e5383dda6a7502dd032e69a9f8",
+      "bytes": 3331
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/protocol.json",
+      "sha256": "e2517c7c8c5397ec3afdd2b77dac66dea07e20302d196dfb0b3ac6fd8241ad2e",
+      "bytes": 4054
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_SDbw_20261004/validity.csv",
+      "sha256": "bc20886f9bf027f7fcf9b9082ea4d2523d37688126e858f5f3634d0c765f8f71",
+      "bytes": 1403
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_network_20261005/README.html",
+      "sha256": "3b373659793252a0d3d589aaa6e2c13d0dbf32d7f44a86cbb62d27cb2588efe1",
+      "bytes": 14158
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_network_20261005/audit.json",
+      "sha256": "0f0b91eecb3a6af7d2062ff1eff91df8e2021988ef2107c387577f5e985b7053",
+      "bytes": 949
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_network_20261005/manifest.json",
+      "sha256": "3426547899ae92b4edf31fbb75fef03571ed17504f7f65ab3f8801215b71a4fd",
+      "bytes": 65750
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_network_20261005/provenance.json",
+      "sha256": "79c63da76d6167e196f19adc37e9512113cc1cac013b050957acdb08c4793151",
+      "bytes": 858
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_network_20261005/validity.csv",
+      "sha256": "103834933045169aa581a7a5dcb4bf6d573bd79e6218fb9c15177df208a578a3",
+      "bytes": 1507
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_stories_20261004/README.html",
+      "sha256": "2cfa4ca54e930a66f9c53778a156af9ac45851ab4877ac21fc387053c2064d7c",
+      "bytes": 28959
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+      "sha256": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+      "bytes": 35129
+    },
+    {
+      "path": "reports/economic-atlas/runs/A7_stories_20261004/timing_check.json",
+      "sha256": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e",
+      "bytes": 55387
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/PROTOCOL.html",
+      "sha256": "8bf3ff63916bb15d79a12614c2c5f635efe45da293dc04349ec6326e6c63bb17",
+      "bytes": 6286
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/README.html",
+      "sha256": "d1391fc6618abcf04afe9ae4445ddd142e8dd3b00d8e0d72c3d96d183a555925",
+      "bytes": 19295
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/ablation-results.png",
+      "sha256": "d6201a583b0ffb423a2a77fa6992b644517b1440992ab0002598299f0c0fcc7f",
+      "bytes": 160315
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/audit.json",
+      "sha256": "e581f7d4c9a0489c713ff48f72ae61f4e0bffcb6ffd274aee5e40b2af39e7905",
+      "bytes": 446
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/external_metrics.csv",
+      "sha256": "6cfd33054d8b57e70cfe952c60e9614adc1820f46d4ddb7f3a9ef6d705dfa179",
+      "bytes": 7549
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/guard-repair-repeat.json",
+      "sha256": "1102f08787ac63b76e8d8a20b763e20e245c64821ec9d2b5cbe19993b7087c3a",
+      "bytes": 318
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/input-recovery.json",
+      "sha256": "f597079d5527273c34c6f8e6b13a32d6e053fe3cd669cf4039311e230fca1306",
+      "bytes": 1106
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/permutation_metrics.csv",
+      "sha256": "10a0eb11e691d4652b61bb8b9a65c35424a3124e347f5cd8d3af56ebc6e7c151",
+      "bytes": 6831
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/provenance.json",
+      "sha256": "757fdba9e2db7b45ef993cb9c4f437a67677f0b24074d34438a1f3a6135ef324",
+      "bytes": 1360
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+      "sha256": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d",
+      "bytes": 27646
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/seed_stability.csv",
+      "sha256": "d2c154399c56bd0acd726c64e78ab94fefaeaafb56c6e9ab40deae58f56c1ccb",
+      "bytes": 370
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_joint_20261005/README.html",
+      "sha256": "484517b7b8d5e4fb5547136c6d11ccf6830ecfab7d5b40cb57eb844c31ad279f",
+      "bytes": 14748
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_joint_20261005/atlas-radar-comparison.png",
+      "sha256": "58eb28b94f749c75cf9efd19118835d09cdbfe12f24bae896ecf33e549f4ae5c",
+      "bytes": 145487
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumer_closeout_20261006/README.html",
+      "sha256": "b54e15f189ab3776b8b17644672e5ac94b3f9fa0182a7784baed91573df0b817",
+      "bytes": 18579
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumer_closeout_20261006/closeout-results.png",
+      "sha256": "67412f21972beed09b9def13fedf59bf4c8fbdb63be94295eec518d0952f970c",
+      "bytes": 99771
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.html",
+      "sha256": "71a74dcaf3a198355f3bf9d95cf12af15414892b6fb5c1e150eea8d323eb5d95",
+      "bytes": 29810
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/independent-audit.json",
+      "sha256": "fe9b03d42f5e7205a55baab6ce370749334606c26be9fd068d5ba0670369583a",
+      "bytes": 1205
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/manifest.json",
+      "sha256": "c5d8873a5bda1db07b45630f6db5281786aeb316618678b590ebf43e2dbbd8ab",
+      "bytes": 1441
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/metrics.json",
+      "sha256": "245b09617220270d5ef56cb69927e89be7cc6dfacaad266866e8d2815331b569",
+      "bytes": 85982
+    },
+    {
+      "path": "reports/economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/peers.csv",
+      "sha256": "e430412c12cbb6c57551f5279f3d92218378935c87d1e6c7a96e96a3f78e3b94",
+      "bytes": 1031759
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_budget_pilot_20261004/README.html",
+      "sha256": "e47cce47c01a010eabe359fb16b9b07a4ac77ac8f49af2d3853126a93785d14a",
+      "bytes": 16876
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_budget_pilot_20261004/metrics.json",
+      "sha256": "dc7856860760a85378c4a15bc1215ffc4bd87b98e8731afdb72b5a41ca2219ae",
+      "bytes": 16762
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_budget_pilot_20261004/protocol.json",
+      "sha256": "670251e6bac301e9354ce45524b9fef0aef6cd22aedea54e239813c6e1a5b9e6",
+      "bytes": 5924
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_budget_pilot_20261004/sources.json",
+      "sha256": "77c3bec4adea95d1e77b8eb5f416f83d014d04fca2ecafd4c6b5b4d00ba808eb",
+      "bytes": 4827
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_stories_20261004/README.html",
+      "sha256": "69f3f34bf5301ce66cbff94a4f59f3710ff0ab5d703502ad12f4384d31ddd7ae",
+      "bytes": 9372
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_stories_20261004/stories.json",
+      "sha256": "838aa37c3ed213657d6244db70cdd025f27183a524afb93dfd4ff4268c40c078",
+      "bytes": 41948
+    },
+    {
+      "path": "reports/economic-atlas/runs/Municipal_stories_20261004/threshold-case-thresholds.csv",
+      "sha256": "72f56c319ffb41369595c92362ce0e8abc48e6e9333d6627f17a24572e2205d0",
+      "bytes": 1630
+    },
+    {
+      "path": "reports/economic-atlas/runs/Treasury_2025_20261004/README.html",
+      "sha256": "078d4c8e75aeef5bc0e80cab59c1e30a2568e7554d37e046a99b30c778a54f1d",
+      "bytes": 12951
+    },
+    {
+      "path": "reports/economic-atlas/runs/Treasury_2025_20261004/books.json",
+      "sha256": "9ed4d44f8d675f64213bbad1b5f8730f94605aca1549e394863d8537b5f1fa8a",
+      "bytes": 73334
+    },
+    {
+      "path": "reports/economic-atlas/runs/Treasury_2025_20261004/consistency.json",
+      "sha256": "54ddc5c769d962ccdde7d7d477e3d9b4c45f20e2fd92fc27b677c440461c286a",
+      "bytes": 110189
+    },
+    {
+      "path": "reports/economic-atlas/runs/consumption_restructuring_20261005/README.html",
+      "sha256": "1f84d6ea37f2812842b5a931e474631778d2c8f0977687331ed737d64679bbba",
+      "bytes": 17497
+    },
+    {
+      "path": "reports/economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json",
+      "sha256": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2",
+      "bytes": 8073
+    },
+    {
+      "path": "reports/methods/ATF_METHODS_TRANSFER.html",
+      "sha256": "82b1c2b1c0345a629c2b6e5ad7e38aa6048ccb8d0b5e0041469d9b70079d75bb",
+      "bytes": 28951
+    },
+    {
+      "path": "reports/report.css",
+      "sha256": "0327b52374310424a301fdeac858aa29e7ac04e078ce60da1bb440f22e592163",
+      "bytes": 689
+    },
+    {
+      "path": "reports/repository-tools/RADAR_REPRODUCE.html",
+      "sha256": "2fe1cbb937c00caaf344367d3f330c7e17fb46ea8fd3f16ab5d75dd036e4fb66",
+      "bytes": 8075
+    },
+    {
+      "path": "reports/repository-tools/README-tools.html",
+      "sha256": "725b827d102401d2f53137bd40c0fc58ec39bee714bdbfcab5315de6d359cd8d",
+      "bytes": 9284
+    },
+    {
+      "path": "reports/shock-radar/FORECAST_COMPARISON_2026-10-05.csv",
+      "sha256": "2e7ba00bfe66e74146faa87e2c772739f4aea140fc0673a60062d4a5f252e348",
+      "bytes": 17117
+    },
+    {
+      "path": "reports/shock-radar/FORECAST_PAIRED_2026-10-05.csv",
+      "sha256": "c6705d8a87aebd8f8b34d785e611b085dc172dc5b38e47b1ec17fb2a9e5f6a48",
+      "bytes": 8191
+    },
+    {
+      "path": "reports/shock-radar/METHODOLOGY_RU.html",
+      "sha256": "7a202c6430bc2589e469662df222dd9d14da8b334611c185f2330003a2d16584",
+      "bytes": 26905
+    },
+    {
+      "path": "reports/shock-radar/archive/METHODOLOGY_RU_before_closeout_2026-10-05.html",
+      "sha256": "bc0fee2906a4035d38f3012e9d49a18eb26437ede42e1108928ff12bbfb9ef61",
+      "bytes": 9475
+    },
+    {
+      "path": "reports/shock-radar/config.json",
+      "sha256": "10bd8202eecdd4153996936b32233d8b19cf9b5d66a092fde91dc2f1b3675357",
+      "bytes": 4277
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_bank_v1_20261003/bank.json",
+      "sha256": "3046dab3ab3727d71ced2b2f6dbe1030b34c87a30390dce345811d67ccc9028b",
+      "bytes": 243572
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_bank_v1_20261003/bank_seed20261003.json",
+      "sha256": "34a3b4d9cf47a72344d3a8ba483cf65f2e092a6d7395c395d7fd7c342416154d",
+      "bytes": 243606
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+      "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+      "bytes": 44688
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_common_monitor_20261003/common_monitor.json",
+      "sha256": "d0928042443180fac009c07707c2d1afb26abd38cd767e24b9dc27463086c15f",
+      "bytes": 14417
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json",
+      "sha256": "3104d23a5f72a1d15aa49e51cf53921126b46af8098a04857e810ff955431b23",
+      "bytes": 65735
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json",
+      "sha256": "b04d9518a7121ea7fa57d8eb0df5fe7d28821ae8f1f855abb7c78d727d1d2a4a",
+      "bytes": 20651
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_sensitivity_curve_20261001/curve.json",
+      "sha256": "99ce41359a2c757ca51b2ba2128b4139af1da91afc217701b6b69cfb1d4972b4",
+      "bytes": 113567
+    },
+    {
+      "path": "reports/shock-radar/runs/D01_shock_shapes_20261002/shapes.json",
+      "sha256": "efb1049521565c4ed44ab8fb2564871d5e6cb8e6d629913f9acc6e4b0194b946",
+      "bytes": 133472
+    },
+    {
+      "path": "reports/shock-radar/runs/D04_multicategory_20261004/README.html",
+      "sha256": "2fda05dcfc7ec2152f687e9ea99838d3f5c1ef848c73d9c22fce1dc2e88a6d4f",
+      "bytes": 9991
+    },
+    {
+      "path": "reports/shock-radar/runs/D04_multicategory_20261004/independent-audit.json",
+      "sha256": "2899a27132b2cd99f6ac6cb300eb67ebe806f08a99cfb4ffb6b2bd672429b64c",
+      "bytes": 727
+    },
+    {
+      "path": "reports/shock-radar/runs/D04_multicategory_20261004/synthetic-summary.csv",
+      "sha256": "3e85bc5e36c760a0dc49166630e7f8cb4bc1c9afc6a2a42ca5bec6180606b742",
+      "bytes": 35751
+    },
+    {
+      "path": "reports/shock-radar/runs/D05_joint_bank_20261005/README.html",
+      "sha256": "c2ed4ed9e9b129f959504d45df88d118c90a23f865221c97555387d37dfc17f6",
+      "bytes": 5237
+    },
+    {
+      "path": "reports/shock-radar/runs/F03_causal/metrics.json",
+      "sha256": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30",
+      "bytes": 3432
+    },
+    {
+      "path": "reports/shock-radar/runs/Flood_legal_cohort_20261005/README.html",
+      "sha256": "2b3c7193149a39216755ba33c5ff63015c69a1e3fcbe4016cef37f846f051283",
+      "bytes": 4967
+    },
+    {
+      "path": "reports/shock-radar/runs/Flood_legal_cohort_20261005/source-passports.json",
+      "sha256": "beebd120813147f0445b6fd174b6ca04e9d717637f4860ffebfae1be23cb033b",
+      "bytes": 4248
+    },
+    {
+      "path": "reports/shock-radar/runs/National_equal_information_20261006/README.html",
+      "sha256": "44b6a47208c65e1270b6c5e828fa66d694a3a52d8ee8952c45e13604452a5f9a",
+      "bytes": 5977
+    },
+    {
+      "path": "reports/shock-radar/runs/Official_cases_20261003/README.html",
+      "sha256": "05bca6a7f383e0f97ef8ec22628fe9efd38d098ab382038de36547368b15c2ea",
+      "bytes": 14633
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_national_h12_20261005/README.html",
+      "sha256": "d6f7859b7d7a61feab714f598d1eebb1ac76c617a5acb3e2b58632c67ffc0a8d",
+      "bytes": 6710
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_national_h12_20261005/data-passport.json",
+      "sha256": "977cb9368131d946660c3dd2ad9e04795b0300a0cbb7a36ef03981e6e89ae175",
+      "bytes": 2510
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_closeout_20260929/README.html",
+      "sha256": "ba661923ea3ef288dd454a01b519242307a7604fa3fe50ba1632994d1100bef8",
+      "bytes": 7324
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/README.html",
+      "sha256": "6e731275309744afb5a3c2e40b9ceebcddcf433b4f7c74aaa075fd1d7fcb240c",
+      "bytes": 14943
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/automated-review.json",
+      "sha256": "b7df4ba9ba46ec2ada5c84b6e45d71b67cf9a95cb0391d0a298775fe55eef0a5",
+      "bytes": 2031
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/results.json",
+      "sha256": "d6fa2f02b21448e27313f1ac798e2cd115ed438605dadadbe0ae7d39771a7771",
+      "bytes": 48711
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/seasonal-month-omission.json",
+      "sha256": "66be72348cb44977b0bbce51ce2044c8f769f71f0a60ba07e37d6ac0fedb4146",
+      "bytes": 31871
+    },
+    {
+      "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/summary.csv",
+      "sha256": "fe89c480c083d60def1d1ed2281cde5ada44fc09b8e1fbc24bbc2551d2322929",
+      "bytes": 2294
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_category_seasonal_20261003/README.html",
+      "sha256": "7f22d8d319a6f978a44efd381a9e69e460126d9ca7b7203c96ce535efd5dc8d2",
+      "bytes": 9081
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_equal_information_pilot_20261004/README.html",
+      "sha256": "e536a82b4ca7c7548f40d013beb70a153f6362c1917feac0c6f81ed11c0af376",
+      "bytes": 9384
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_equal_information_pilot_20261004/audit.json",
+      "sha256": "6e2cf2f73892e5b22422a4d0e6cfa592bccdba53ce7cc583c2b18eca67f3d974",
+      "bytes": 557
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_equal_information_pilot_20261004/metrics.json",
+      "sha256": "d3ca7ccd96405488459f92e784120b498981c038d932c40eaf7b928c99375235",
+      "bytes": 30808
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_equal_information_pilot_20261004/protocol-public.json",
+      "sha256": "b55e6ccb834ed6b2132b62c1fe89b2fa07b4e7f226d413efc8bada71d31e7d97",
+      "bytes": 2424
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_strong_baselines_20261004/README.html",
+      "sha256": "3b72951e75dad2c6dec0ac8c3a4ef23657fc80c40eb5cd80c18196adc52d4de4",
+      "bytes": 10109
+    },
+    {
+      "path": "reports/shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json",
+      "sha256": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519",
+      "bytes": 7577
+    },
+    {
+      "path": "reports/shock-radar/runs/seasonal_common_20261004/metrics.json",
+      "sha256": "71eee3584d89c03c2783cd87791ad9e0f552b08c89a8ecc7c3d6ee8f6458443e",
+      "bytes": 10428
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "sha256": "90b0e00f10a4dc670b6581daf8fb363332a7367100424e3e33d04ca531a0a481",
+      "bytes": 34914
+    }
+  ],
+  "public_internal_links_checked": 268,
+  "missing_internal_links": [],
+  "raw_inputs_published": false,
+  "repository_visibility_changed": false,
+  "landing_repairs": [
+    {
+      "path": "economic-atlas/landing/index.html",
+      "replaced_links": 0
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "replaced_links": 0
+    }
+  ],
+  "source_file_sha256": {
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/guard-repair-repeat.json": "1102f08787ac63b76e8d8a20b763e20e245c64821ec9d2b5cbe19993b7087c3a",
+    "economic-atlas/runs/A7_SDbw_20261004/metrics.json": "4d1e141811f056943686b098fcb985a5edc0c09c97425edb50fa5c9dfb9a5e7b",
+    "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d",
+    "shock-radar/runs/R8_seasonal_followup_20261006/README.md": "a389b4128eecdc2efee75a67bea1e121af9d49faa7a03d11c479227374c42158",
+    "shock-radar/runs/R8_closeout_20260929/README.md": "6f00c6b29de406f85265d094cef396f3bd0923a0b4e95f2b122c53ae92ef79a9",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2",
+    "economic-atlas/runs/consumption_restructuring_20261005/README.md": "c7a5df2fd6256ac7629a5f5c2efa54ee26116e3d257830a1a4dd6015d84aa0da",
+    "economic-atlas/consumption_restructuring_protocol_20261005.json": "a2db294e78d9e70f0a7c16f9c6b27b0cae52bf3e3e1095194f701dcfdbf70ad8",
+    "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+    "economic-atlas/runs/Treasury_2025_20261004/consistency.json": "54ddc5c769d962ccdde7d7d477e3d9b4c45f20e2fd92fc27b677c440461c286a",
+    "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md": "b38a717fd4e5d3b92a2a4925770af70cd79b7d0c992358d7dad76e0750a66025",
+    "economic-atlas/runs/Municipal_stories_20261004/threshold-case-thresholds.csv": "72f56c319ffb41369595c92362ce0e8abc48e6e9333d6627f17a24572e2205d0",
+    "economic-atlas/runs/A6_v2/calibration.json": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json": "b04d9518a7121ea7fa57d8eb0df5fe7d28821ae8f1f855abb7c78d727d1d2a4a",
+    "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md": "16131d1bf1d5fab7c4053b261a89df4950592346c61147501a3f9b9cf9a3caf8",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/independent-audit.json": "fe9b03d42f5e7205a55baab6ce370749334606c26be9fd068d5ba0670369583a",
+    "repository-tools/README-tools.md": "f09c3799ae380a334d0b5d18709e5ba8f1f55873cdb3ceca646a667624c0fce0",
+    "shock-radar/runs/D04_multicategory_20261004/synthetic-summary.csv": "3e85bc5e36c760a0dc49166630e7f8cb4bc1c9afc6a2a42ca5bec6180606b742",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/protocol-public.json": "b55e6ccb834ed6b2132b62c1fe89b2fa07b4e7f226d413efc8bada71d31e7d97",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/provenance.json": "757fdba9e2db7b45ef993cb9c4f437a67677f0b24074d34438a1f3a6135ef324",
+    "docs/CLAIMS_2026-10-06.json": "8a4ffe9f80a60aa7c2a66022e79b466a0e508da6f4c229c7eb1da09069e53b53",
+    "shock-radar/runs/D05_joint_bank_20261005/README.md": "2d6c1fe1ff12524fa4fd6c1ff242d746c0722a3ce38da8d1a25b01f013a6a643",
+    "economic-atlas/clean_reproduction_receipt.json": "cb3e83215e98f3e0d0373bf2355ea2a521ffa4c41ac38c5e446ecbc452ddba18",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/peers.csv": "e430412c12cbb6c57551f5279f3d92218378935c87d1e6c7a96e96a3f78e3b94",
+    "economic-atlas/README.md": "00026a657dd043d41ec253d21198f95f7208962da98fc6a3ab85e3d93f3b6f39",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/README.md": "29c010daa50abbe387fae76261fc23769002d1a275d5504d1e823275467cf4d6",
+    "shock-radar/METHODOLOGY_RU.md": "7db1fc96adba2e788f32109b3b8d37ba25c53b8049044c1968a7d721b761e30f",
+    "docs/RESEARCH_FINDINGS_2026-10-06.md": "c44b969e018b3df329416e9eba88f28c02a4c1a67b01d9b30c3a011da7fe8e6b",
+    "economic-atlas/runs/A7_network_20261005/README.md": "efe45d46fc4be9dd2e6ef29ec2f869abe274712b3969b856f272faf920aa4e09",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol.json": "e2517c7c8c5397ec3afdd2b77dac66dea07e20302d196dfb0b3ac6fd8241ad2e",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/input-recovery.json": "f597079d5527273c34c6f8e6b13a32d6e053fe3cd669cf4039311e230fca1306",
+    "shock-radar/runs/National_equal_information_20261006/README.md": "7fc46a9a2e6de56c62c33a509f81f362507fc7714ef2fe478b4bdf6177e999f8",
+    "economic-atlas/runs/Municipal_stories_20261004/README.md": "97bb5a62c0975ed0ea64286fdc33bf0f15eed3f3e62161765f46de16eed18bcf",
+    "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md": "93c43e75877807bff767a751c6e196033e428ab236bbafb9133a98fd1ce144f6",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/metrics.json": "dc7856860760a85378c4a15bc1215ffc4bd87b98e8731afdb72b5a41ca2219ae",
+    "shock-radar/runs/R10_national_h12_20261005/README.md": "fd2f0388209745a054d79c229374a491223a551b392d05c098e1e1de6ad2036f",
+    "economic-atlas/METHODOLOGY_RU.md": "838f5195b227ca3335774f63d0ec8ccf5cda890c3359d1069863a016273e1030",
+    "shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519",
+    "economic-atlas/runs/A7_SDbw_20261004/independent-audit.json": "30f47874c4814bd1155b8bb803f8187c2dac9bc5d570f1d4aec2ff1820907e07",
+    "shock-radar/runs/D04_multicategory_20261004/independent-audit.json": "2899a27132b2cd99f6ac6cb300eb67ebe806f08a99cfb4ffb6b2bd672429b64c",
+    "methods/ATF_METHODS_TRANSFER.md": "328faa6a50a516e9a358d6911244dc02769104b21868d72e49d6882a949804af",
+    "economic-atlas/runs/A6_frozen_controls_20261003/README.md": "b72305b0ec6857ee39c1f7b40dcd4cca68578a03068a6dad2c12375468a6922f",
+    "shock-radar/config.json": "10bd8202eecdd4153996936b32233d8b19cf9b5d66a092fde91dc2f1b3675357",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/metrics.json": "d3ca7ccd96405488459f92e784120b498981c038d932c40eaf7b928c99375235",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/permutation_metrics.csv": "10a0eb11e691d4652b61bb8b9a65c35424a3124e347f5cd8d3af56ebc6e7c151",
+    "repository-tools/RADAR_REPRODUCE.md": "ffa9ec953340401dab98b32b3e4ea7cfcf5d0e8100e8e3a787b08de93fd2ca81",
+    "economic-atlas/FINAL_REPORT_RU_2026-10-05.md": "96bee7de4e2786dc6343f1cc0f34a67d9b3f753a34b5d1b34c6751691f0e345d",
+    "economic-atlas/runs/A14_release_20261005/a8_population_audit.json": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+    "shock-radar/runs/R10_national_h12_20261005/data-passport.json": "977cb9368131d946660c3dd2ad9e04795b0300a0cbb7a36ef03981e6e89ae175",
+    "economic-atlas/runs/A7_network_20261005/manifest.json": "3426547899ae92b4edf31fbb75fef03571ed17504f7f65ab3f8801215b71a4fd",
+    "shock-radar/runs/R9_strong_baselines_20261004/README.md": "c63874e2e58c7abaf3c266318f47d562001a926935818f95edc8e0a066f5855a",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/README.md": "38bad6ecd7967bba3c39bd3c6f45d3d35f3315c6e2465840429bda7b142b9eb1",
+    "shock-radar/runs/D01_common_monitor_20261003/common_monitor.json": "d0928042443180fac009c07707c2d1afb26abd38cd767e24b9dc27463086c15f",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/PROTOCOL.md": "e073cd93901905ba62c159df75b36d86a73a56186f3275719b6b0e954ef07cd7",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/manifest.json": "c5d8873a5bda1db07b45630f6db5281786aeb316618678b590ebf43e2dbbd8ab",
+    "shock-radar/runs/D01_bank_v1_20261003/bank.json": "3046dab3ab3727d71ced2b2f6dbe1030b34c87a30390dce345811d67ccc9028b",
+    "economic-atlas/runs/A13_reproduction_20261005/TASK_REVIEW_2026-10-05.md": "2363f4e62a1411c2f527e593d55a12f493f406ff79dfc6095d3b495b90942f24",
+    "economic-atlas/runs/Treasury_2025_20261004/books.json": "9ed4d44f8d675f64213bbad1b5f8730f94605aca1549e394863d8537b5f1fa8a",
+    "shock-radar/runs/D01_shock_shapes_20261002/shapes.json": "efb1049521565c4ed44ab8fb2564871d5e6cb8e6d629913f9acc6e4b0194b946",
+    "economic-atlas/runs/Consumer_closeout_20261006/closeout-results.png": "67412f21972beed09b9def13fedf59bf4c8fbdb63be94295eec518d0952f970c",
+    "economic-atlas/COMPLETION_REPORT_2026-10-05.md": "a190f23dadeb62b4e6f476162a0f32d3ed95a4670a5178ef2b19b568cd7de09c",
+    "economic-atlas/runs/Consumer_closeout_20261006/README.md": "741d02b498a337ce97788ea8377d9f08ff8c645bc867ae851fc2ee65802f31bf",
+    "economic-atlas/runs/A6_v2/robustness/README.md": "d27e2e7e61d16cf1fd20fd42ca65310a0771c4771ccbdc1236d4756d72c4c0de",
+    "shock-radar/runs/R8_seasonal_followup_20261006/results.json": "d6fa2f02b21448e27313f1ac798e2cd115ed438605dadadbe0ae7d39771a7771",
+    "docs/findings/ATF_CLOSEOUT_20261004/source-audit.md": "11c75894dbe268e98b2f2c97d6830539c596e58e8cb22bcebc0bfe35dc1aaf54",
+    "economic-atlas/runs/A7_network_20261005/provenance.json": "79c63da76d6167e196f19adc37e9512113cc1cac013b050957acdb08c4793151",
+    "shock-radar/runs/Official_cases_20261003/README.md": "534f1aac0d48a542cca658d7d5c30d9c1978bca0fd09cf4a1545d6089408f34b",
+    "economic-atlas/runs/A6_threshold_review_20260927/README.md": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598",
+    "shock-radar/FORECAST_COMPARISON_2026-10-05.csv": "2e7ba00bfe66e74146faa87e2c772739f4aea140fc0673a60062d4a5f252e348",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/atlas-radar-comparison.png": "58eb28b94f749c75cf9efd19118835d09cdbfe12f24bae896ecf33e549f4ae5c",
+    "shock-radar/runs/R9_equal_information_pilot_20261004/audit.json": "6e2cf2f73892e5b22422a4d0e6cfa592bccdba53ce7cc583c2b18eca67f3d974",
+    "shock-radar/runs/R8_seasonal_followup_20261006/seasonal-month-omission.json": "66be72348cb44977b0bbce51ce2044c8f769f71f0a60ba07e37d6ac0fedb4146",
+    "economic-atlas/runs/A7_network_20261005/validity.csv": "103834933045169aa581a7a5dcb4bf6d573bd79e6218fb9c15177df208a578a3",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/README.md": "1537dc0ccb725ee12a927660609743afb21d2e229de08248386259019b9f6f4c",
+    "economic-atlas/runs/A12_stable_cores_20261005/five_stories.csv": "da7b21d131f6a6c8f34c4a34787cf7bee66e6f174bc2688ac63e6a4658ba9080",
+    "economic-atlas/runs/A7_stories_20261004/README.md": "38bfc2c2f378a683e82d9176fe907cc4205c4e335f63eabbd28875ceac219035",
+    "economic-atlas/runs/A7_SDbw_20261004/README.md": "f7b087eeafbd681de5f46b21a016f5529c78fb97e0e675a76316f127308a2e33",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/seed_stability.csv": "d2c154399c56bd0acd726c64e78ab94fefaeaafb56c6e9ab40deae58f56c1ccb",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/external_metrics.csv": "6cfd33054d8b57e70cfe952c60e9614adc1820f46d4ddb7f3a9ef6d705dfa179",
+    "economic-atlas/runs/Treasury_2025_20261004/README.md": "93c127776c0ddd1adeef978091c5fff4a47480333078775c6a2ddf1670864024",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/ablation-results.png": "d6201a583b0ffb423a2a77fa6992b644517b1440992ab0002598299f0c0fcc7f",
+    "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json": "3104d23a5f72a1d15aa49e51cf53921126b46af8098a04857e810ff955431b23",
+    "shock-radar/runs/D01_sensitivity_curve_20261001/curve.json": "99ce41359a2c757ca51b2ba2128b4139af1da91afc217701b6b69cfb1d4972b4",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/audit.json": "e581f7d4c9a0489c713ff48f72ae61f4e0bffcb6ffd274aee5e40b2af39e7905",
+    "shock-radar/runs/seasonal_common_20261004/metrics.json": "71eee3584d89c03c2783cd87791ad9e0f552b08c89a8ecc7c3d6ee8f6458443e",
+    "shock-radar/runs/R8_seasonal_followup_20261006/summary.csv": "fe89c480c083d60def1d1ed2281cde5ada44fc09b8e1fbc24bbc2551d2322929",
+    "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md": "f50db1e7ee5409efef7c9dc02f710d25d74b66afab018aabcd7ff824a9fae016",
+    "docs/findings/ATF_CLOSEOUT_20261004/claim-evidence.json": "93c0d62c10e45bda2a7f1b35775998c0ab5f7cfe3ddf94b7a4057f49762919d0",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/protocol.json": "670251e6bac301e9354ce45524b9fef0aef6cd22aedea54e239813c6e1a5b9e6",
+    "shock-radar/runs/R9_category_seasonal_20261003/README.md": "b7c68a4b4d1933eaca70ad9d2d58053a952b8a50991010d521f3a269ea96931d",
+    "economic-atlas/runs/A7_SDbw_20261004/validity.csv": "bc20886f9bf027f7fcf9b9082ea4d2523d37688126e858f5f3634d0c765f8f71",
+    "economic-atlas/runs/A7_SDbw_20261004/artifact-manifest.json": "80e0e868415ca714ea196ddd9f424378d469bc038389651d2c5d77d2ac84d6e3",
+    "docs/F03_LEAKAGE_AUDIT.md": "b55260c5bed0bf902f79210f62a9e270a88682690bab3c9cfa1aeb346d51ed42",
+    "economic-atlas/runs/Municipal_budget_pilot_20261004/sources.json": "77c3bec4adea95d1e77b8eb5f416f83d014d04fca2ecafd4c6b5b4d00ba808eb",
+    "docs/REPRODUCIBILITY.md": "4223c6feca466881529c1a900fd3ae08c85fb9380e5789defd14f830c003daee",
+    "shock-radar/archive/METHODOLOGY_RU_before_closeout_2026-10-05.md": "1d7b5262cbef70c1349a9ee7822c0362a5e30994e8117996892bd0b78fb325c1",
+    "economic-atlas/runs/A11_icvi_table_20261005/validity.csv": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96",
+    "shock-radar/FORECAST_PAIRED_2026-10-05.csv": "c6705d8a87aebd8f8b34d785e611b085dc172dc5b38e47b1ec17fb2a9e5f6a48",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d",
+    "docs/DATA_INTEGRATION_RESULTS_2026-10-03.md": "9841bba05df62212138765c2633dfcbef85baea0b5e0305b6e3087548e211ece",
+    "shock-radar/runs/Flood_legal_cohort_20261005/README.md": "4c5050a976662802713be555ee404ccb1905b7b3f3f57405bd48b2956917005a",
+    "economic-atlas/runs/A7_SDbw_20261004/protocol-v1-aborted.json": "f857dbf1428e7afa26d9212e9f4299af4cd9c2e5383dda6a7502dd032e69a9f8",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/metrics.json": "245b09617220270d5ef56cb69927e89be7cc6dfacaad266866e8d2815331b569",
+    "shock-radar/runs/F03_causal/metrics.json": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30",
+    "shock-radar/runs/D01_bank_v1_20261003/bank_seed20261003.json": "34a3b4d9cf47a72344d3a8ba483cf65f2e092a6d7395c395d7fd7c342416154d",
+    "shock-radar/runs/D04_multicategory_20261004/README.md": "9bbe1a0942f5d05029d8c3bd44eab55b799cdf2dd455b34704570240b6436f30",
+    "economic-atlas/config.json": "aef4be1d056ac0b20de2b7d5905ff8c4108fded6f40526ff49e687189c0ac895",
+    "shock-radar/runs/Flood_legal_cohort_20261005/source-passports.json": "beebd120813147f0445b6fd174b6ca04e9d717637f4860ffebfae1be23cb033b",
+    "economic-atlas/runs/A7_stories_20261004/story_inputs.json": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+    "economic-atlas/runs/A7_network_20261005/audit.json": "0f0b91eecb3a6af7d2062ff1eff91df8e2021988ef2107c387577f5e985b7053",
+    "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md": "485754a0ac9d6bb70ba8ca0423009fa316d2cd29a77b4e020122a8237764b8cd",
+    "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "shock-radar/runs/R8_seasonal_followup_20261006/automated-review.json": "b7df4ba9ba46ec2ada5c84b6e45d71b67cf9a95cb0391d0a298775fe55eef0a5",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/README.md": "b4a05b81f3a6b5eed8d2efed2dbee9b7e435c070bdb1c268e5d9a91169aa4a05",
+    "economic-atlas/runs/A7_stories_20261004/timing_check.json": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e",
+    "economic-atlas/runs/Municipal_stories_20261004/stories.json": "838aa37c3ed213657d6244db70cdd025f27183a524afb93dfd4ff4268c40c078"
+  }
+}
