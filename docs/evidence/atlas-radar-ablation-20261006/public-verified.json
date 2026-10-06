@@ -1,0 +1,114 @@
+{
+  "status": "PUBLIC_CHANGED_FILES_VERIFIED",
+  "checked_at_utc": "2026-10-06T20:01:49.607371+00:00",
+  "source_commit": "1618da68e85b7c92ecde480dcaa50c0be0e7f519",
+  "changed_files": [
+    {
+      "path": "economic-atlas/landing/index.html",
+      "http_status": 200,
+      "sha256": "af7b3f0ef81420917081c90d5e3e5040d8c8d87324fcff92389e6a68402592fb",
+      "bytes": 31018,
+      "verified": true
+    },
+    {
+      "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
+      "http_status": 200,
+      "sha256": "11f3838f84ce4eef505a499bc9d10ec874edb09d779c134c768df356cb9328eb",
+      "bytes": 13819,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/FINAL_REPORT_RU_2026-10-05.html",
+      "http_status": 200,
+      "sha256": "33ece9bb67c8cc345c4822fd50fd4f1ddea909e399b4e3649d055a00531b712b",
+      "bytes": 29816,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/PROTOCOL.html",
+      "http_status": 200,
+      "sha256": "8bf3ff63916bb15d79a12614c2c5f635efe45da293dc04349ec6326e6c63bb17",
+      "bytes": 6286,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/README.html",
+      "http_status": 200,
+      "sha256": "d1391fc6618abcf04afe9ae4445ddd142e8dd3b00d8e0d72c3d96d183a555925",
+      "bytes": 19295,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/ablation-results.png",
+      "http_status": 200,
+      "sha256": "d6201a583b0ffb423a2a77fa6992b644517b1440992ab0002598299f0c0fcc7f",
+      "bytes": 160315,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/audit.json",
+      "http_status": 200,
+      "sha256": "e581f7d4c9a0489c713ff48f72ae61f4e0bffcb6ffd274aee5e40b2af39e7905",
+      "bytes": 446,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/external_metrics.csv",
+      "http_status": 200,
+      "sha256": "6cfd33054d8b57e70cfe952c60e9614adc1820f46d4ddb7f3a9ef6d705dfa179",
+      "bytes": 7549,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/guard-repair-repeat.json",
+      "http_status": 200,
+      "sha256": "1102f08787ac63b76e8d8a20b763e20e245c64821ec9d2b5cbe19993b7087c3a",
+      "bytes": 318,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/input-recovery.json",
+      "http_status": 200,
+      "sha256": "f597079d5527273c34c6f8e6b13a32d6e053fe3cd669cf4039311e230fca1306",
+      "bytes": 1106,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/permutation_metrics.csv",
+      "http_status": 200,
+      "sha256": "10a0eb11e691d4652b61bb8b9a65c35424a3124e347f5cd8d3af56ebc6e7c151",
+      "bytes": 6831,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/provenance.json",
+      "http_status": 200,
+      "sha256": "757fdba9e2db7b45ef993cb9c4f437a67677f0b24074d34438a1f3a6135ef324",
+      "bytes": 1360,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+      "http_status": 200,
+      "sha256": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d",
+      "bytes": 27646,
+      "verified": true
+    },
+    {
+      "path": "reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/seed_stability.csv",
+      "http_status": 200,
+      "sha256": "d2c154399c56bd0acd726c64e78ab94fefaeaafb56c6e9ab40deae58f56c1ccb",
+      "bytes": 370,
+      "verified": true
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "http_status": 200,
+      "sha256": "07061a20170f31f296a785ae8bdd33842159ecd9677176c1d2c4c4452e77ed1b",
+      "bytes": 33957,
+      "verified": true
+    }
+  ],
+  "internal_links_checked_locally": 253,
+  "raw_inputs_published": false
+}

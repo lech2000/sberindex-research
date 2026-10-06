@@ -1,0 +1,28 @@
+{
+  "status": "MEASUREMENT_COMPUTED_PUBLISHED_AND_DELIVERED",
+  "checked_at_utc": "2026-10-06T20:07:56.479158+00:00",
+  "source_commit": "1618da68e85b7c92ecde480dcaa50c0be0e7f519",
+  "pr": "https://github.com/lech2000/sberindex-research/pull/14",
+  "report_url": "https://agrigate.pro/sberindex-2026/reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/README.html",
+  "scientific_pass": false,
+  "unit_tests": 8,
+  "independent_scalar_checks": 68256,
+  "oof_rows": 119808,
+  "full_make_reference_pass": true,
+  "public_HTTP_SHA_verified_files": 15,
+  "KB_full_readbacks": 4,
+  "case_full_readbacks": 3,
+  "new_measurement_actions_done": 2,
+  "old_A8_R8_preserved": true,
+  "deployment_guard": "Guard completed automatically; subsequent Kev lock was not changed",
+  "next_step": "Final acceptance and owner access/submission; no tuning/reruns to force positive result",
+  "updated_local_source_candidate": {
+    "source_commit": "1618da68e85b7c92ecde480dcaa50c0be0e7f519",
+    "files": 149,
+    "bytes": 747969,
+    "sha256": "8691d9c3f6bd4f8a390bccb16f85c35d5e9c6d7c703c22c3230262ae9d50dd07",
+    "local_archive": "output/atlas-radar-ablation-20261006/sberindex-source-candidate-with-ablation-20261006.zip",
+    "publicly_published": false,
+    "raw_or_OOF_included": false
+  }
+}

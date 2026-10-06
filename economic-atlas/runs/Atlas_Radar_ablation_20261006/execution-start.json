@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-06T19:52:33.096394+00:00",
+  "inputs": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "market": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1",
+    "wages": "6c350c9356f8def9d190b56e2bacaa55960ae2c2aa0eda8d25720db44bfadbe3",
+    "employment": "f643b394c11758f5d28e465380e263943c5e5e9e312a468daedca95b7e2f87d7"
+  },
+  "protocol_sha256": "8f753aa1cd14d544ee5e9bf07ac07755748ed59880e030d64056d77a7e92cb2d",
+  "code_sha256": "7b92147f0496d033b4735c9d71e78a6b4bc34e4d92b04f45a9c0f03409991371",
+  "python": "3.14.4",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3"
+}

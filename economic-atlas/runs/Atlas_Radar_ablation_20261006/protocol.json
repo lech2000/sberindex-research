@@ -1,0 +1,72 @@
+{
+  "experiment": "Atlas_Radar_ablation_20261006",
+  "frozen_at_utc": "2026-10-06T19:44:55.532658+00:00",
+  "base_commit": "43912dfeb6cde49c78466c375492c45ccd62c65f",
+  "status": "EXPLORATORY_PRECOMPUTATION_FREEZE",
+  "seed": 20261006,
+  "seeds": [
+    20261006,
+    20261007,
+    20261008,
+    20261009,
+    20261010,
+    20261011
+  ],
+  "k_primary": 2,
+  "k_sensitivity": 5,
+  "n_init": 20,
+  "folds": 5,
+  "bootstrap_regions": 2000,
+  "permutations": 20,
+  "feature_end": "2024-09",
+  "feature_targets": [
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09"
+  ],
+  "same_publication_lag_months": 2,
+  "arms": [
+    "base2023",
+    "base_plus_radar",
+    "base_plus_raw_yoy",
+    "base_plus_permuted_radar"
+  ],
+  "primary_outcomes": [
+    "log_wage2025",
+    "log_employment2025"
+  ],
+  "primary_comparisons": [
+    "radar_vs_base",
+    "radar_vs_raw"
+  ],
+  "primary_metric": "OOF log MSE, GroupKFold by region; paired region-bootstrap difference conditional on fitted OOF predictions",
+  "secondary_metrics": [
+    "OOF log MAE",
+    "Oct-Dec2024 ratio-space silhouette and within/total dispersion",
+    "seed ARI and cluster sizes"
+  ],
+  "controls": [
+    "intercept",
+    "log outcome2024",
+    "log population2024",
+    "log market access",
+    "latitude",
+    "longitude",
+    "municipality type indicators"
+  ],
+  "block_weights": "Each block: train-only StandardScaler / sqrt(number of columns); baseline and temporal block weights1",
+  "forecast_formula": "target t; origin=t-1; available cutoff c=t-3. Growth1(t)=y[t-12]*y[c]/y[c-12]; radar residual log(y[t]/Growth1(t)). Six-category mean and population SD over Apr-Sep2024. Raw control log(y[t]/y[t-12]), same 12 dimensions/months. No pooled factor.",
+  "permutation": "Shuffle the entire radar block within region and municipality type with seeds seed+100+i, separately inside training and test regions; descriptive null diagnostic, no significance claim",
+  "economic_mask": "Common positive wage and employment2024/2025; current unique municipality dictionary and unique8digitOKTMO; exclude2025 history merging/accession; complete positive total2024 population and market access. No outcome2025 used for fitting feature scalers or clusters. Same mask and region folds for all arms/endpoints.",
+  "secondary_mask": "All panel municipalities with finite positive category values and complete2023/Apr-Sep/Q4 blocks; metric space standardized using2023 share distributions; all arms sameK/mask; Q4 never feeds clusters",
+  "no_selection": "Compute all specified arms, two K, six seeds, two endpoints, both main comparisons. No tuning after outcomes, no replacing old A8/R8 results.",
+  "limits": [
+    "2024 window and2025 external release already examined: supplementary retrospective experiment, not unseen holdout",
+    "External2024 annual controls have unknown historical availability: no real-time claim",
+    "Bootstrap conditions on OOF fits and assumes exchangeable regions; overlapping CV training not independent folds",
+    "No causal claim, no formal scientificPASS, no generalized new-data guarantee"
+  ]
+}
