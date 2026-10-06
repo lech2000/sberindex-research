@@ -65,3 +65,6 @@ make atlas-dimensionless PYTHON=/path/to/science-python \
   ATLAS_DIMENSIONLESS_REFERENCE=/path/to/private-original-H5-run \
   ATLAS_DIMENSIONLESS_OUT=output/dimensionless-fresh
 ```
+
+Свежий `make atlas-dimensionless` выполнен07.10:168новыхfits, все28MSEсовпали,
+34944OOF совпали вплоть до SHA Parquet. [Квитанция полного повторения](reproduction-receipt.json).
