@@ -57,7 +57,8 @@
       "result": "120series/114MO/720H12points;2160freshProphetfits,0failures. National_yoy_lag1MAE679.746vsconditionalProphetlinear1707.224,60.184%lower; target-monthblock descriptive95%benefitCI[592.281,1467.076]. Marketplace37.42%worse;foodCIcrosses0.",
       "source": "shock-radar/runs/R10_equal_information_h12_20261006/README.md",
       "scope": "Same own history throughorigin and national history throughorigin-1; no actualfutureN;July-Dec2024 targets;short7-12monthtrain; previouslychosen120seriescohort",
-      "limit": "Post-discoveryexploratory;notfullpaneloroptimallytunedProphet;historicalvintageunknown;notindependentholdout;oldcategoryH12remainsunsupported"
+      "limit": "Post-discoveryexploratory;notfullpaneloroptimallytunedProphet;historicalvintageunknown;notindependentholdout;oldcategoryH12remainsunsupported",
+      "scale_sensitivity": "Post hoc, same frozen predictions: excluding aggregate All categories, 600 points MAE562.020vs896.580 (37.315% lower); normalized by own past mean44.118% lower;80/100series wins. Not a replacement primary or independent confirmation."
     }
   ]
 }

@@ -1,103 +1,103 @@
 {
   "checked_at": "2026-10-06",
-  "scope": "Researchhypotheses and contestacceptance; operational completion separatedfromscience",
+  "scope": "Проверки исследовательских гипотез и конкурсная приёмка; исполнение опыта отделено от его научного исхода.",
   "scientific_pass": false,
   "items": [
     {
-      "hypothesis": "Atlas identity M2/M3",
+      "hypothesis": "Атлас: идентичность M2/M3",
       "status": "EXECUTED_DESCRIPTIVE_INCONCLUSIVE",
-      "evidence": "A6/frozen controls:36continuations/3returns/7ambiguous; M3zero realcandidates; all554secondgroupambiguous;1324/4438/36024margin;syntheticF1descriptive",
-      "remaining_or_limit": "Audit exact calibration-world split remains unproved; no economic identityPASS"
+      "evidence": "A6: 36 продолжений, 3 возврата, 7 неоднозначных; M3 без реальных кандидатов. Все 554 МО второй группы неоднозначны. При изменении margin: 1324 / 4438 / 36024 неоднозначных строк.",
+      "remaining_or_limit": "Точная независимость миров для калибровки порогов ещё не доказана. Синтетический F1 описательный; экономическая идентичность не подтверждена."
     },
     {
-      "hypothesis": "Atlas spectral M1 / divergence M4 / age M5",
+      "hypothesis": "Атлас: спектральный M1, дивергенция M4, возраст M5",
       "status": "NOT_IMPLEMENTED_DEFERRED_P2",
-      "evidence": "Original05.10closeoutplan explicitlyP2aftercontest",
-      "remaining_or_limit": "Do not silently count themascompleted;boundednewexperiments would neednewprotocol/timebudget"
+      "evidence": "План завершения от 05.10 явно относит эти методы к P2 после конкурса.",
+      "remaining_or_limit": "Не реализованы и не считаются завершёнными. Для отдельных опытов нужны новые протоколы."
     },
     {
-      "hypothesis": "Atlas feature-leakage M6",
+      "hypothesis": "Атлас: утечки признаков M6",
       "status": "PARTIAL",
-      "evidence": "D01/F03 leakage corrected; Atlas expenses/size/encoding coverage audit notallchannels",
-      "remaining_or_limit": "External2025check andintegrationablation measured; fullH5auditremains"
+      "evidence": "Утечки D01/F03 исправлены; выполнены внешняя проверка 2025 и абляция интеграции.",
+      "remaining_or_limit": "Полный аудит H5 по масштабу, расходам и кодированию признаков ещё не выполнен."
     },
     {
-      "hypothesis": "Atlas A7indices",
+      "hypothesis": "Атлас: индексы A7",
       "status": "TECHNICAL_TABLE_REVIEW_PASS_CASE_ACTION_OPEN",
-      "evidence": "19primary+228network+76yearlyrows; SD12numeric7NA; allSWCHAVIAVUfinite; publishedreferenceconvention",
-      "remaining_or_limit": "MQowneromitted/SPEC_UNRESOLVED,NewmanQseparate;noexternal-economicPASS; case-service complete409: owner data-boundaries form required; sourceaction remainsOPEN, no bypass"
+      "evidence": "19 основных, 228 сетевых и 76 межгодовых строк. SW, CH, AVI, AVU конечны; SDbw: 12 чисел и 7 неприменимых основных разбиений.",
+      "remaining_or_limit": "MQ исключён владельцем, SPEC_UNRESOLVED сохранён отдельно от Newman Q. Исходное действие открыто: case-service ошибочно требует решение о границах данных."
     },
     {
-      "hypothesis": "Atlas external-economic validation",
+      "hypothesis": "Атлас: внешняя экономическая проверка",
       "status": "EXECUTED_NEGATIVE",
-      "evidence": "A8allfourprimarynegative; ablationK2noeffectCI",
-      "remaining_or_limit": "Do notretryuntilpositive; K5vsrawmodestimprovementseparate"
+      "evidence": "Все четыре основных исхода A8 отрицательны; прибавка от интеграции при K2 не подтверждена.",
+      "remaining_or_limit": "Не повторять до положительного результата. Небольшой выигрыш K5 относительно сырых изменений описывается отдельно."
     },
     {
-      "hypothesis": "Atlas consumption/localstories",
+      "hypothesis": "Атлас: расходы и местные истории",
       "status": "EXECUTED_DESCRIPTIVE",
-      "evidence": "1896marketplacesharegrowth;1803foodshare-down/nominal-up;25localoutliers/1539eligible;357unsupported",
-      "remaining_or_limit": "Oneviewedpanel;notwelfare/outflow/causality"
+      "evidence": "Рост доли маркетплейсов в 1896 МО; 1803 случая снижения доли продовольствия при росте уровня. 25 локальных отклонений среди 1539 допустимых МО.",
+      "remaining_or_limit": "357 МО без сопоставлений. Один изученный выпуск; выводы не измеряют благосостояние, отток денег или причинность."
     },
     {
-      "hypothesis": "Atlas×Radarintegration",
+      "hypothesis": "Интеграция Атласа и Радара",
       "status": "EXECUTED_EXPLORATORY",
-      "evidence": "Frozenprotocolceec01b;68256scalar/119808OOF/214contracts;K5relative1.403/1.861%;all6seedssame sign",
-      "remaining_or_limit": "K2no confirmedaddedvalue; keepseparatelayers; no newtypology"
+      "evidence": "Протокол ceec01b: 68256 скалярных проверок, 119808 строк OOF, 214 контрактов. При K5 MSE ниже сырого контроля на 1,403% / 1,861%; знак одинаков на шести seed.",
+      "remaining_or_limit": "Основной K2 без подтверждённой прибавки. Расходный профиль и отклонение остаются отдельными слоями; новая типология не внедрена."
     },
     {
-      "hypothesis": "Radar originalR8",
+      "hypothesis": "Радар: исходный R8",
       "status": "EXECUTED_INCONCLUSIVE",
-      "evidence": "171150pairs;0/64historicallyeligible;oldgateunchanged",
-      "remaining_or_limit": "No scientificPASS"
+      "evidence": "171150 пар прогнозов; 0 из 64 событий допустимы для исторической проверки. INCONCLUSIVE сохранён.",
+      "remaining_or_limit": "Научный PASS не заявляется."
     },
     {
-      "hypothesis": "Radar own-seasonalR8followup",
+      "hypothesis": "Радар: собственная сезонность, дополнительный R8",
       "status": "EXECUTED_EXPLORATORY_POSITIVE",
-      "evidence": "Growth1MAE518.160vs731.354;170682common;−29.15%; cutofforigin−2",
-      "remaining_or_limit": "Viewedwindow;h3CI0;noexternalconfirmatorypass"
+      "evidence": "На общей маске 170682 прогнозов Growth1 MAE 518,160 против Prophet 731,354: снижение 29,15%; cutoff origin−2.",
+      "remaining_or_limit": "Просмотренное окно, h3 с интервалом через ноль. Независимого подтверждающего теста нет."
     },
     {
-      "hypothesis": "Radar categoryR9 / Chronos / baselines",
+      "hypothesis": "Радар: R9, Chronos и ориентиры",
       "status": "EXECUTED_RETROSPECTIVE",
-      "evidence": "Fullpairedh1/3/6/12cachedR9; R9categoryequalinfo120series;earlierwindowretained",
-      "remaining_or_limit": "Noinformation-poorProphetcomparisonasgeneralmodelvictory; technicalcase05closuretoreconcile"
+      "evidence": "Полные парные сравнения h1/3/6/12 в frozen cache; категорийный опыт с равной информацией на 120 рядах. Раннее окно сохранено.",
+      "remaining_or_limit": "Нельзя переносить сравнение с информационно бедным Prophet на все модели. Осталось сверить закрытие соответствующего действия дела."
     },
     {
-      "hypothesis": "Radar nationalH12equal-info",
+      "hypothesis": "Радар: H12 с одинаковой национальной информацией",
       "status": "EXECUTED_EXPLORATORY_POSITIVE",
-      "evidence": "Newprotocol1e693af;2160fits/720keys; MAE679.746vs1707.224;3600scalar5MAE/CIaudit",
-      "remaining_or_limit": "Marketplaceworse;shorttrain;original73608maskdifferent;NO_HISTORICAL_ASOF"
+      "evidence": "Новый протокол 1e693af: 2160 fits, 720 ключей. MAE 679,746 против 1707,224; независимые 3600 проверок и повтор пяти MAE/интервалов.",
+      "remaining_or_limit": "Маркетплейсы хуже; короткая история. Полная прежняя маска 73608 другая. Даты доступности выпусков не подтверждены: NO_HISTORICAL_ASOF."
     },
     {
-      "hypothesis": "Radar detectorsrealwarning/newsvalue",
+      "hypothesis": "Радар: реальные предупреждения и ценность новостей",
       "status": "PARTIAL",
-      "evidence": "D04/D05equaljointFA controls;D05coherent94.25/ramp72.4synthetic;6events5officialsources",
-      "remaining_or_limit": "Earlywarning/eventretrievalcausalpredictivebenefitnotmeasured; priorregimeN1/N2notcomplete"
+      "evidence": "D04/D05 при общем бюджете ложных тревог; синтетический D05: 94,25% общих шоков / 72,40% рамп. Шесть событий, пять официальных источников.",
+      "remaining_or_limit": "Прирост качества от новостей и реальное раннее предупреждение не измерены. Проверки прежнего режима N1/N2 не завершены."
     },
     {
-      "hypothesis": "Graph sixdistrictlineages",
+      "hypothesis": "Граф: история шести районов",
       "status": "UNVERIFIED",
-      "evidence": "1/7exactvalid2024; Graph@7currentnativecalltimedout after two-law request",
-      "remaining_or_limit": "Keep historicalterritoryIDs rejected untilofficialboundaries/crosswalk; no socialsearch"
+      "evidence": "Лишь 1 из 7 идентичностей точно допустима для 2024. Последний ограниченный запрос Graph@7 по двум законам завершился тайм-аутом.",
+      "remaining_or_limit": "Исторические territory_id не связывать без официальных границ и кроссволка. Соцсети не искать."
     },
     {
-      "hypothesis": "FreshRAG/datasetrevision",
+      "hypothesis": "Свежий RAG и ревизии загруженных данных",
       "status": "PARTIAL",
-      "evidence": "06.10uploadedrevisiontestMiMoProPASS1added1removed1revised;oldreferencepreserved;RAGstill05.10manifest",
-      "remaining_or_limit": "F7bcorrect10freshpublicKBdocsready;SonnetexecutionawaitsCLI model gate"
+      "evidence": "06.10 сравнение загруженных версий через MiMo Pro прошло: одна добавленная, одна удалённая и одна исправленная строка; эталон сохранён. В RAG пока manifest от 05.10.",
+      "remaining_or_limit": "Подготовлены десять свежих публичных документов KB. F7b требует подтверждения Sonnet вместо закреплённой в CLI модели."
     },
     {
-      "hypothesis": "Independent scientific confirmation",
+      "hypothesis": "Независимое научное подтверждение",
       "status": "UNAVAILABLE",
-      "evidence": "Independentnumericalcodeaudit/freshenvironmentsdone",
-      "remaining_or_limit": "Notexternalpeerrevieworunseen2025/26municipalholdout; datedsnapshotrequiredforfutureconfirmatorytest"
+      "evidence": "Выполнены отдельные численные аудиторы и проверка в новых окружениях.",
+      "remaining_or_limit": "Это техническая независимость кода, а не внешняя научная рецензия и не новый муниципальный holdout 2025/2026."
     },
     {
-      "hypothesis": "Contestpackage/access/submission",
+      "hypothesis": "Конкурсный пакет, доступ и отправка",
       "status": "OPEN_OWNER_ACCEPTANCE",
-      "evidence": "Bothlandings/reports/current125publicfilesHTTP/SHA;freshsourcecandidatebeingupdated",
-      "remaining_or_limit": "PrivateGitaccesschoicepending; twoapplications/team/hour/receiptmustbeconfirmedbyowner"
+      "evidence": "Лендинги и отчёты опубликованы с проверкой HTTP/SHA. Кандидат исходного кода обновляется отдельно.",
+      "remaining_or_limit": "Владелец выбирает доступ жюри к закрытому коду и подтверждает две заявки, команду и квитанции отправки."
     }
   ]
 }
