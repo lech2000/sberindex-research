@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-06T20:38:16.383667+00:00",
+  "status": "INDEPENDENT_NUMERICAL_AUDIT_PASS",
+  "rows": 720,
+  "scalar_raw_cached_formula_clock_checks": 3600,
+  "comparisons_independently_recomputed": 5,
+  "results": [
+    {
+      "model": "national_yoy_lag1",
+      "reference": "conditional_prophet_linear",
+      "mae": 679.7461352252822,
+      "reference_mae": 1707.2244025587302,
+      "ci95": [
+        592.2813702562424,
+        1467.0763054493816
+      ]
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "conditional_prophet_yearly3",
+      "mae": 679.7461352252822,
+      "reference_mae": 27168.670947150662,
+      "ci95": [
+        4086.6512635792747,
+        57886.76905276445
+      ]
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "own_prophet_linear",
+      "mae": 679.7461352252822,
+      "reference_mae": 1275.5723993369318,
+      "ci95": [
+        345.3783243852945,
+        840.4279862763304
+      ]
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "stored_prophet",
+      "mae": 679.7461352252822,
+      "reference_mae": 1263.5602865898586,
+      "ci95": [
+        338.03472554986337,
+        824.2954790197632
+      ]
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "last_value",
+      "mae": 679.7461352252822,
+      "reference_mae": 1272.3111111111111,
+      "ci95": [
+        470.4305616343068,
+        716.3584748690084
+      ]
+    }
+  ],
+  "protocol_sha256": "ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62",
+  "predictions_sha256": "0d422f93c2d024d0835e4ca7ec144428b14d8525b609314a857307335751650a",
+  "audit_code_sha256": "98857ceca1bfcb7217839ae2174233285581a0706b2d33915428a561d6362333",
+  "scientific_pass": false,
+  "scope": "Separate code, same frozen data; independent technical audit, not external scientific validation or unseen holdout"
+}

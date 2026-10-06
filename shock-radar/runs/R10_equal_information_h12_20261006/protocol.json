@@ -1,0 +1,658 @@
+{
+  "recorded_before_fits": "2026-10-06T20:32:38.453498+00:00",
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "r9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "national": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+  },
+  "code_sha256": "0263337f5ec6ce3b20d3933e0c5188856081ab5e94c729ee367dec8042e068e2",
+  "seed": 20261004,
+  "n_series": 120,
+  "expected_rows": 720,
+  "selection": "Original R9 equal-information pilot: six categories × four 2023 mean quartiles × five series. Complete frozen availability mask. No error-based selection.",
+  "selection_manifest": [
+    {
+      "territory_id": "542",
+      "category": "Все категории",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "2090",
+      "category": "Все категории",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1697",
+      "category": "Все категории",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1743",
+      "category": "Все категории",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "71",
+      "category": "Все категории",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1610",
+      "category": "Все категории",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1261",
+      "category": "Все категории",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2143",
+      "category": "Все категории",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2064",
+      "category": "Все категории",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1025",
+      "category": "Все категории",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1770",
+      "category": "Все категории",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2884",
+      "category": "Все категории",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1985",
+      "category": "Все категории",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2009",
+      "category": "Все категории",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2006",
+      "category": "Все категории",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2044",
+      "category": "Все категории",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1598",
+      "category": "Все категории",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "860",
+      "category": "Все категории",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "316",
+      "category": "Все категории",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2510",
+      "category": "Все категории",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "16",
+      "category": "Здоровье",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "2112",
+      "category": "Здоровье",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1585",
+      "category": "Здоровье",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "922",
+      "category": "Здоровье",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1130",
+      "category": "Здоровье",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "714",
+      "category": "Здоровье",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "188",
+      "category": "Здоровье",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "370",
+      "category": "Здоровье",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "831",
+      "category": "Здоровье",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2257",
+      "category": "Здоровье",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1740",
+      "category": "Здоровье",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2028",
+      "category": "Здоровье",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2172",
+      "category": "Здоровье",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "686",
+      "category": "Здоровье",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2229",
+      "category": "Здоровье",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2009",
+      "category": "Здоровье",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "794",
+      "category": "Здоровье",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "666",
+      "category": "Здоровье",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1446",
+      "category": "Здоровье",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2564",
+      "category": "Здоровье",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1355",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "690",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1633",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "480",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1641",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "456",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2127",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "516",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2330",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1320",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1111",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2134",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1594",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2136",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1869",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1860",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2511",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2556",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1486",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1512",
+      "category": "Маркетплейсы",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1854",
+      "category": "Общественное питание",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1762",
+      "category": "Общественное питание",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1320",
+      "category": "Общественное питание",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "2328",
+      "category": "Общественное питание",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "804",
+      "category": "Общественное питание",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1771",
+      "category": "Общественное питание",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "491",
+      "category": "Общественное питание",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "33",
+      "category": "Общественное питание",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1066",
+      "category": "Общественное питание",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "543",
+      "category": "Общественное питание",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1904",
+      "category": "Общественное питание",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2148",
+      "category": "Общественное питание",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2289",
+      "category": "Общественное питание",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1959",
+      "category": "Общественное питание",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "667",
+      "category": "Общественное питание",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "333",
+      "category": "Общественное питание",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2395",
+      "category": "Общественное питание",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1958",
+      "category": "Общественное питание",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2814",
+      "category": "Общественное питание",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2572",
+      "category": "Общественное питание",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2268",
+      "category": "Продовольствие",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1693",
+      "category": "Продовольствие",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1355",
+      "category": "Продовольствие",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "2073",
+      "category": "Продовольствие",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1860",
+      "category": "Продовольствие",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "706",
+      "category": "Продовольствие",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "715",
+      "category": "Продовольствие",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1711",
+      "category": "Продовольствие",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1124",
+      "category": "Продовольствие",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1881",
+      "category": "Продовольствие",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2008",
+      "category": "Продовольствие",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2200",
+      "category": "Продовольствие",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1975",
+      "category": "Продовольствие",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2388",
+      "category": "Продовольствие",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1585",
+      "category": "Продовольствие",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "2621",
+      "category": "Продовольствие",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2375",
+      "category": "Продовольствие",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2235",
+      "category": "Продовольствие",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "325",
+      "category": "Продовольствие",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1510",
+      "category": "Продовольствие",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1127",
+      "category": "Транспорт",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "284",
+      "category": "Транспорт",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "497",
+      "category": "Транспорт",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "562",
+      "category": "Транспорт",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "2296",
+      "category": "Транспорт",
+      "size_stratum_2023": 0
+    },
+    {
+      "territory_id": "1310",
+      "category": "Транспорт",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "181",
+      "category": "Транспорт",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1771",
+      "category": "Транспорт",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "384",
+      "category": "Транспорт",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "1308",
+      "category": "Транспорт",
+      "size_stratum_2023": 1
+    },
+    {
+      "territory_id": "2199",
+      "category": "Транспорт",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "805",
+      "category": "Транспорт",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "818",
+      "category": "Транспорт",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1449",
+      "category": "Транспорт",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "1137",
+      "category": "Транспорт",
+      "size_stratum_2023": 2
+    },
+    {
+      "territory_id": "678",
+      "category": "Транспорт",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "1447",
+      "category": "Транспорт",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2452",
+      "category": "Транспорт",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2512",
+      "category": "Транспорт",
+      "size_stratum_2023": 3
+    },
+    {
+      "territory_id": "2480",
+      "category": "Транспорт",
+      "size_stratum_2023": 3
+    }
+  ],
+  "target_months": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "horizon": 12,
+  "expected_fits": 2160,
+  "workers": 4,
+  "primary_model": "national_yoy_lag1",
+  "primary_reference": "conditional_prophet_linear",
+  "primary_prophet_config": {
+    "growth": "linear",
+    "yearly_seasonality": false,
+    "weekly_seasonality": false,
+    "daily_seasonality": false,
+    "n_changepoints": 0,
+    "uncertainty_samples": 0,
+    "seasonality_mode": "multiplicative",
+    "seasonality_prior_scale": 1.0
+  },
+  "sensitivity": "Same conditional model with yearly_seasonality=3, no best-model selection",
+  "formula": "y_origin × N(origin-1)/N(origin-13)",
+  "conditional_training": "z(t)=y(t)/N(t-1), t<=origin; fit Prophet on z; forecast target then multiply by extrapolated Nhat(target-1)",
+  "future_national_path": "cutoff=origin-1; growth=N(cutoff)/N(cutoff-12); Nhat(target-1)=N(target-13)*growth. H12 target-13=cutoff. Never use actual future national observations.",
+  "information_contract": "Both primary models use own history through origin and the same national history through origin-1. The conditional-last positive control exactly equals national_yoy_lag1.",
+  "ci": "Paired absolute-error difference; 10000 target-month block bootstrap draws seed20261004; six blocks, descriptive not confirmatory",
+  "no_clipping": true,
+  "no_tuning": true,
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "independent_holdout": false,
+  "limitations": [
+    "Windows already viewed; post-discovery bounded exploratory test",
+    "Only seven to twelve own training months; no optimal Prophet claim",
+    "National vintage downloaded2026-10-05; historical revisions/publication dates unknown",
+    "Complete 120-series cohort is not the full panel and its municipality count differs from the Atlas",
+    "National total and local spending categories have different units; only ratios/conditional rescaling are interpreted",
+    "Six shared time blocks/categories are not independent scientific replications"
+  ],
+  "stop_rule": "Every model on every720key; failures invalidate paired acceptance. Report all categories, months and negative predictions. No parameter tuning after observing results."
+}
