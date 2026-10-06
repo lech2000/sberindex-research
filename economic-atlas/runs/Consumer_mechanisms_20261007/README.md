@@ -275,7 +275,8 @@ MAE в единицах исходного показателя, меньше л
 
 Файлы: [протокол](protocol.json), [метрики всех категорий и вариантов](metrics.json),
 [история выбора](selection-trace.json), [SHA-реестр](manifest.json),
-[независимая квитанция](../Consumer_mechanisms_independent_audit_20261007/independent-validation.json).
+[независимая квитанция](../Consumer_mechanisms_independent_audit_20261007/independent-validation.json),
+[свежий полный запуск](../Consumer_mechanisms_independent_audit_20261007/reproduction-validation.json).
 Тяжёлые Parquet и параметры fits находятся в репозитории с доступом и в
 материалах дел; публикация отчёта не означает публикацию исходных датасетов.
 
