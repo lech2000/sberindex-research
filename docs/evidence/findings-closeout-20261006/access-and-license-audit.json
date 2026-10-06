@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-06T13:37:09.803189+00:00",
+  "checked_by": "Mac local reading of project data/manifest.json, DATA_PASSPORT_RELEASE and geographic DATA_LICENSE.txt",
+  "public_scope": "author reports, derived summaries, existing public derived demo; no new row-level dataset export",
+  "raw_or_cache_publication": false,
+  "github_visibility": "PRIVATE (previous gh read and current authenticated access)",
+  "anonymous_github_clone_supported": false,
+  "source_archives_require_access_decision_before_external_delivery": true,
+  "osm_attribution_present": true,
+  "data_licenses": "upstream references retained; exact raw archive terms must be checked before external redistribution",
+  "unlicensed_competitor_code_copied": false,
+  "mq": "SPEC_UNRESOLVED excluded by owner; Newman Q separate",
+  "jury_code_access": "remaining owner choice; public reports have anonymous access"
+}

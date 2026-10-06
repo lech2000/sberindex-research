@@ -1,0 +1,15 @@
+/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/findings-closeout-20261006/venv-radar/bin/python repository-tools/radar_reproduce.py --raw "data/raw/sberindex-data-sense-2025/8_consumption.parquet" --r9 "data/frozen/radar/predictions-r9.parquet" --pilot "data/frozen/radar/predictions-pilot.parquet" --dictionary "data/frozen/radar/municipal-dictionary.parquet" --national "data/raw/sberindex-national-20261005/consumer-spending.parquet" --output-root "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/findings-closeout-20261006/radar-repeat"
+{"run_directory": "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/findings-closeout-20261006/radar-repeat/20261006T095907Z-7943ad89", "snapshots_verified": true}
+{"stage": "r9_strong_baselines.py", "started": true}
+{"stage": "r9_strong_baselines.py", "completed": true}
+{"stage": "detector_bank.py", "started": true}
+{"stage": "detector_bank.py", "completed": true}
+{"stage": "competitive_audit.py", "started": true}
+{"stage": "competitive_audit.py", "completed": true}
+{"stage": "radar_external_checks.py", "started": true}
+{"stage": "radar_external_checks.py", "completed": true}
+{"stage": "radar_external_checks.py", "started": true}
+{"stage": "radar_external_checks.py", "completed": true}
+{"stage": "d01_joint_bank.py", "started": true}
+{"stage": "d01_joint_bank.py", "completed": true}
+{"technical_reproduction_pass": true, "run_directory": "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/findings-closeout-20261006/radar-repeat/20261006T095907Z-7943ad89", "scientific_pass": false}

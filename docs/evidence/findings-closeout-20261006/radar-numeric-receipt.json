@@ -1,0 +1,25 @@
+{
+  "technical_reproduction_pass": true,
+  "reference_metrics_match": true,
+  "reference_tables_match": 7,
+  "checks": {
+    "frozen_source_hashes": true,
+    "all_stored_keys_actual_last_value": 220962,
+    "forecast_scalar_values": 2340,
+    "forecast_future_mutation_values": 2340,
+    "raw_future_mutation_all_detector_methods": true,
+    "independent_detector_scalar_values": 120,
+    "exact_cyrillic_case_lookup": true,
+    "matched_realized_pooled_null_fa": true
+  },
+  "scientific_pass": false,
+  "h12": "new national benchmark reproduced; old category-seasonal unsupported",
+  "national_forecast_future_checks": 220824,
+  "flood": "1 exact legal identity, 6 blocked; reproduced partial result",
+  "D01_bank_extension": "D01-MV-v2: Stouffer/GLR and four controls on shared D04 multivariate signal; legacy univariate bank unchanged",
+  "equal_null_fa": "pooled TEST null 3%; retrospective ROC, not independently calibrated FA",
+  "real_false_alarms": null,
+  "prophet_refit": false,
+  "joint_bank_total_null_fa": 0.03,
+  "joint_bank_universal_improvement": false
+}

@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-06T09:59:03.529223+00:00",
+  "source_commit": "4658266fc9944cec2ecf5c1b275bf0c8bf43c9dd",
+  "acquisition": "fresh --no-local clone of existing authorised checkout, whose HEAD matched origin branch; not anonymous GitHub clone",
+  "new_environments": true,
+  "raw_download": false,
+  "prophet_chronos_refit": false,
+  "technical_only": true,
+  "inputs": [
+    {
+      "path": "data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+      "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/frozen/radar/predictions-r9.parquet",
+      "sha256": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/frozen/radar/predictions-pilot.parquet",
+      "sha256": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/frozen/radar/municipal-dictionary.parquet",
+      "sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/raw/sberindex-national-20261005/consumer-spending.parquet",
+      "sha256": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/raw/sberindex-data-sense-2025/2_bdmo_population.parquet",
+      "sha256": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    },
+    {
+      "path": "data/raw/sberindex-data-sense-2025/municipal_dictionary.parquet",
+      "sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+      "acquisition": "copied existing verified owner snapshot; no raw download"
+    }
+  ],
+  "original_file_count": 1202,
+  "metrics": "pre-existing frozen baselines; no new thresholds or model selection"
+}
