@@ -69,3 +69,5 @@ make atlas-h5 PYTHON=output/findings-closeout-20261006/venv-atlas/bin/python ATL
 ```
 
 Пути к словарю, населению, доступности рынка, зарплатам и занятости можно задать через `JOINT_DATA_SENSE`, `ABLATION_WAGES`, `ABLATION_EMPLOYMENT`; `economic-atlas/data/panel_v1.parquet` — отдельный замороженный вход. Аудитор повторяет исходные ответы, маски, 196 MSE и 48 парных сравнений. Техническое воспроизведение не меняет научный исход.
+
+Полные диагностические таблицы: [84 разбиения, размеры, silhouette и чувствительность единиц](full_metrics.json), [все ARI между кодировками](partition_comparisons.csv), [региональные folds](fold_receipts.json), [протокол пропусков](missingness-protocol.json).
