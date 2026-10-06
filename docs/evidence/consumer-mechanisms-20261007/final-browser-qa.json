@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-10-06T22:53:43.713Z",
+  "report": {
+    "url": "https://agrigate.pro/sberindex-2026/reports/shock-radar/runs/N1_N2_return_control_20261007/README.html",
+    "mobile": {
+      "documentWidth": 390,
+      "heading": "N1/N2: что тревога говорит о сдвиге и возврате",
+      "images": [
+        {
+          "loaded": true,
+          "width": 341.9921875
+        }
+      ],
+      "metaWrap": "anywhere",
+      "width": 390
+    },
+    "desktop": {
+      "documentWidth": 1280,
+      "images": [
+        {
+          "loaded": true
+        }
+      ],
+      "width": 1280
+    }
+  },
+  "landings": {
+    "atlas_mobile": {
+      "documentWidth": 390,
+      "latestNote": true,
+      "width": 390
+    },
+    "atlas_desktop": {
+      "documentWidth": 1280,
+      "latestLinks": [
+        {
+          "label": "Категории, сезонность и контроль соседей ↗",
+          "url": "/sberindex-2026/reports/economic-atlas/runs/Consumer_mechanisms_20261007/README.html"
+        },
+        {
+          "label": "Кодировки, единицы и пропуски ↗",
+          "url": "/sberindex-2026/reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/README.html"
+        }
+      ],
+      "width": 1280
+    },
+    "radar_mobile": {
+      "documentWidth": 390,
+      "latestLinks": [
+        {
+          "label": "Замороженный контроль и все варианты ↗",
+          "url": "/sberindex-2026/reports/shock-radar/runs/N1_N2_return_control_20261007/README.html"
+        },
+        {
+          "label": "Новостная абляция и ограничения ↗",
+          "url": "/sberindex-2026/reports/shock-radar/runs/N3_official_news_value_20261007/README.html"
+        },
+        {
+          "label": "Маска, категории и чувствительность масштаба ↗",
+          "url": "/sberindex-2026/reports/shock-radar/runs/R10_equal_information_h12_20261006/README.html"
+        }
+      ],
+      "width": 390
+    }
+  },
+  "viewport_reset": true,
+  "screenshot": "return-public-desktop.png",
+  "method": "Codex in-app browser; rendered visible text, image load and DOM geometry"
+}
