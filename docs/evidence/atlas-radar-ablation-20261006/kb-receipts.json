@@ -1,0 +1,30 @@
+[
+  {
+    "corpus_id": 74,
+    "document_id": 16920,
+    "full_readback_verified": true,
+    "text_sha256": "bb7fb763a194f50cb32daa58a5e79bfbc76403f6313355fe345622bdcbb7b409",
+    "checked_at": "2026-10-06T20:00:22.938963+00:00"
+  },
+  {
+    "corpus_id": 75,
+    "document_id": 16921,
+    "full_readback_verified": true,
+    "text_sha256": "bb7fb763a194f50cb32daa58a5e79bfbc76403f6313355fe345622bdcbb7b409",
+    "checked_at": "2026-10-06T20:00:26.340649+00:00"
+  },
+  {
+    "corpus_id": 76,
+    "document_id": 16922,
+    "full_readback_verified": true,
+    "text_sha256": "bb7fb763a194f50cb32daa58a5e79bfbc76403f6313355fe345622bdcbb7b409",
+    "checked_at": "2026-10-06T20:00:29.149013+00:00"
+  },
+  {
+    "corpus_id": 77,
+    "document_id": 16923,
+    "full_readback_verified": true,
+    "text_sha256": "bb7fb763a194f50cb32daa58a5e79bfbc76403f6313355fe345622bdcbb7b409",
+    "checked_at": "2026-10-06T20:00:36.514487+00:00"
+  }
+]
