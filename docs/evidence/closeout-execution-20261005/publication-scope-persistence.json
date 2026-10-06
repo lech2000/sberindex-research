@@ -1,0 +1,38 @@
+{
+  "kb": [
+    {
+      "corpus_id": 74,
+      "document_id": 16768,
+      "full_readback_verified": true,
+      "text_sha256": "34e413dc968ae37fe369ddadbf5fde6bdda6570213ba941688c7261830611e40"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16767,
+      "full_readback_verified": true,
+      "text_sha256": "34e413dc968ae37fe369ddadbf5fde6bdda6570213ba941688c7261830611e40"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_sber_publication_scope_20261006_atlas",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_sber_publication_scope_20261006_radar",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_sber_publication_scope_20261006_curator",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_sber_publication_scope_20261006_graph",
+      "full_readback_verified": true
+    }
+  ]
+}

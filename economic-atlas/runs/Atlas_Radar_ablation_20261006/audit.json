@@ -1,0 +1,12 @@
+{
+  "status": "TECHNICAL_AUDIT_PASS",
+  "scientific_pass": false,
+  "checked_at_utc": "2026-10-06T19:53:08.293542+00:00",
+  "method": "Independent scalar aggregation of saved OOF predictions; exact masks/region folds; SHA output readback. Not independent scientific review.",
+  "oof_rows": 119808,
+  "checked_metrics_and_contracts": 214,
+  "scalar_growth1_checks": 68256,
+  "future_mutation_invariance": true,
+  "regions": 70,
+  "mask_n": 1248
+}

@@ -1,0 +1,195 @@
+{
+  "checked_on": "2026-10-05",
+  "method": "isolated Mac worktree; SHA-pinned local cached predictions, finite common masks and direct error averages; no model fits or new data",
+  "cached_prediction_sha256": {
+    "strong": "e6e9af9ecd6a2d406cb1485acd710ac6cfec7aed438445cafc576ab552a29042",
+    "pilot": "eb350fffcd1b72ca70d05477f0b20968ecaf6636cd4ee734e668ab3b48053aa2",
+    "full_R9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  },
+  "sources_sha256": {
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/case-summary.json": "7fa27e65a494b9df1653a8955100a662567694d6b235cdab7d037c78bd43e3ad",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json": "68e451346bb5a98b740bfe25060a2e377f0f2adf4499554123a2d098a20d429d",
+    "shock-radar/runs/R8_closeout_20260929/decision.json": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81",
+    "shock-radar/runs/R9_strong_baselines_20261004/metrics.json": "26766abd086eeeb57ea4131e3ed9495c4472b5f7ddc4d9edb573cf5bfae658ee",
+    "shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519",
+    "shock-radar/runs/R10_national_h12_20261005/metrics.json": "fd548e856e5ffe702e6d51ccc8657f1b424ba3f05a77ccd42fe3e056fda2d37d",
+    "shock-radar/runs/D04_multicategory_20261004/metrics.json": "9300b7121ece88a68e768dbe281e7612bd77d960b59cca71a5ac6a0a7edc2d67",
+    "shock-radar/runs/D05_joint_bank_20261005/metrics.json": "b2d25a779ba54cf5830f0466e73856cceaf6f1d06e3c656e85036e5771d2c856"
+  },
+  "verified_counts_and_mae": [
+    {
+      "scope": "strong_common",
+      "window": "R9",
+      "horizon": 1,
+      "n_points": 72654,
+      "n_municipalities": 2023,
+      "n_series": 12138,
+      "models": [
+        "category_seasonal",
+        "growth_naive1",
+        "growth_naive3",
+        "conditional_ses",
+        "profile_ses",
+        "last_value",
+        "stored_prophet"
+      ]
+    },
+    {
+      "scope": "strong_common",
+      "window": "R9",
+      "horizon": 3,
+      "n_points": 72726,
+      "n_municipalities": 2024,
+      "n_series": 12144,
+      "models": [
+        "category_seasonal",
+        "growth_naive1",
+        "growth_naive3",
+        "conditional_ses",
+        "profile_ses",
+        "last_value",
+        "stored_prophet"
+      ]
+    },
+    {
+      "scope": "strong_common",
+      "window": "R9",
+      "horizon": 6,
+      "n_points": 72822,
+      "n_municipalities": 2028,
+      "n_series": 12168,
+      "models": [
+        "category_seasonal",
+        "growth_naive1",
+        "growth_naive3",
+        "conditional_ses",
+        "profile_ses",
+        "last_value",
+        "stored_prophet"
+      ]
+    },
+    {
+      "scope": "strong_common",
+      "window": "pre_R9",
+      "horizon": 1,
+      "n_points": 600,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "growth_naive1",
+        "growth_naive3",
+        "conditional_ses",
+        "profile_ses",
+        "last_value"
+      ]
+    },
+    {
+      "scope": "strong_common",
+      "window": "pre_R9",
+      "horizon": 3,
+      "n_points": 360,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "growth_naive1",
+        "growth_naive3",
+        "conditional_ses",
+        "profile_ses",
+        "last_value"
+      ]
+    },
+    {
+      "scope": "equal_information_pilot",
+      "window": "R9",
+      "horizon": 1,
+      "n_points": 720,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "profile_ses",
+        "conditional_ses",
+        "growth_naive3",
+        "conditional_prophet_yearly"
+      ]
+    },
+    {
+      "scope": "equal_information_pilot",
+      "window": "R9",
+      "horizon": 3,
+      "n_points": 720,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "profile_ses",
+        "conditional_ses",
+        "growth_naive3",
+        "conditional_prophet_yearly"
+      ]
+    },
+    {
+      "scope": "equal_information_pilot",
+      "window": "R9",
+      "horizon": 6,
+      "n_points": 720,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "profile_ses",
+        "conditional_ses",
+        "growth_naive3",
+        "conditional_prophet_yearly"
+      ]
+    },
+    {
+      "scope": "equal_information_pilot",
+      "window": "pre_R9",
+      "horizon": 1,
+      "n_points": 600,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "profile_ses",
+        "conditional_ses",
+        "growth_naive3",
+        "conditional_prophet_yearly"
+      ]
+    },
+    {
+      "scope": "equal_information_pilot",
+      "window": "pre_R9",
+      "horizon": 3,
+      "n_points": 360,
+      "n_municipalities": 114,
+      "n_series": 120,
+      "models": [
+        "category_seasonal",
+        "profile_ses",
+        "conditional_ses",
+        "growth_naive3",
+        "conditional_prophet_yearly"
+      ]
+    },
+    {
+      "scope": "national_h12",
+      "n_municipalities": 2071,
+      "n_series": 12426,
+      "n_points": 73608,
+      "models": [
+        "stored_prophet",
+        "last_value"
+      ],
+      "mae_checks": "pass"
+    }
+  ],
+  "scientific_pass": false,
+  "new_fits": 0,
+  "raw_records_published": false,
+  "additional_verified_at": "2026-10-05T21:09:19.488084+00:00"
+}

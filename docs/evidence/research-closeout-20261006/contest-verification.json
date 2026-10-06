@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-06T20:17:47.543362+00:00",
+  "source_url": "https://sber.ru/sberindex/konkurs_sberindex",
+  "method": "HTTPS GET with certificate verification; visible-text extraction",
+  "html_sha256": "2f9d28379f0ffabfe06749ea12bceb03c3699eaed8bd468509894e2035938a1c",
+  "closing_date_visible": "2026-10-09",
+  "closing_time_timezone_not_found": true,
+  "requirements": [
+    "Code/scripts and saved configurations",
+    "Data processing, methods, MAE for forecasts",
+    "PDF or interactive landing with interpretation",
+    "Submission form with viewing links"
+  ],
+  "MQ": "SPEC_UNRESOLVED; six metric names listed, formula absent",
+  "team_limit": "Russian citizens18+, maximum4 members",
+  "submission_status": "NOT_SUBMITTED; owner identity and contacts missing"
+}

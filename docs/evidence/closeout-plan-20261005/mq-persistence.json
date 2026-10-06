@@ -1,0 +1,176 @@
+{
+  "checked_at": "2026-10-05T20:15:31.230131+00:00",
+  "source_commit": "e2e1bf3e97f98d56ccd2639658823144a852ef85",
+  "status": "OWNER_SCOPE_CORRECTION_APPLIED",
+  "mq_status": "SPEC_UNRESOLVED",
+  "mq_is_release_blocker": false,
+  "scientific_pass": false,
+  "source_actions_closed": false,
+  "new_actions_created": false,
+  "frozen_runs_changed": false,
+  "platform_code_changed": false,
+  "kb": [
+    {
+      "corpus_id": 74,
+      "document_id": 16636,
+      "readback_verified": true,
+      "checked_at": "2026-10-05T20:10:36.784188+00:00",
+      "text_sha256": "f90a4f0c14bf22e8d988e9226b53b978f3c38553236025423cf550352f5a892f",
+      "receipt": {
+        "added": true,
+        "document_id": 16636,
+        "title": "СберИндекс решение владельца: MQ не будет, без ожидания —05.10.2026 (KB74)",
+        "corpus_id": 74,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16637,
+      "readback_verified": true,
+      "checked_at": "2026-10-05T20:10:38.159688+00:00",
+      "text_sha256": "f90a4f0c14bf22e8d988e9226b53b978f3c38553236025423cf550352f5a892f",
+      "receipt": {
+        "added": true,
+        "document_id": 16637,
+        "title": "СберИндекс решение владельца: MQ не будет, без ожидания —05.10.2026 (KB75)",
+        "corpus_id": 75,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16638,
+      "readback_verified": true,
+      "checked_at": "2026-10-05T20:10:39.453323+00:00",
+      "text_sha256": "f90a4f0c14bf22e8d988e9226b53b978f3c38553236025423cf550352f5a892f",
+      "receipt": {
+        "added": true,
+        "document_id": 16638,
+        "title": "СберИндекс решение владельца: MQ не будет, без ожидания —05.10.2026 (KB76)",
+        "corpus_id": 76,
+        "chunks": 2,
+        "vectors": 2
+      }
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16639,
+      "readback_verified": true,
+      "checked_at": "2026-10-05T20:10:40.750091+00:00",
+      "text_sha256": "f90a4f0c14bf22e8d988e9226b53b978f3c38553236025423cf550352f5a892f",
+      "receipt": {
+        "added": true,
+        "document_id": 16639,
+        "title": "СберИндекс решение владельца: MQ не будет, без ожидания —05.10.2026 (KB77)",
+        "corpus_id": 77,
+        "chunks": 2,
+        "vectors": 2
+      }
+    }
+  ],
+  "case_receipts": [
+    {
+      "kind": "material",
+      "case_id": "case_66cae4a89ba6473f",
+      "role": "atlas",
+      "material_id": "mat_sber_mq_owner_decision_20261005_atlas",
+      "readback_verified": true,
+      "text_sha256": "cf623e478f55e0f391a6a960d1bf4f91a42dcdbfaebd6a09f834ab8e9d13f4bf",
+      "checked_at": "2026-10-05T20:13:47.177080+00:00"
+    },
+    {
+      "kind": "material",
+      "case_id": "case_008f37d03cf541e5",
+      "role": "radar",
+      "material_id": "mat_sber_mq_owner_decision_20261005_radar",
+      "readback_verified": true,
+      "text_sha256": "cf623e478f55e0f391a6a960d1bf4f91a42dcdbfaebd6a09f834ab8e9d13f4bf",
+      "checked_at": "2026-10-05T20:13:47.281707+00:00"
+    },
+    {
+      "kind": "material",
+      "case_id": "case_d058db85c48a487c",
+      "role": "curator",
+      "material_id": "mat_sber_mq_owner_decision_20261005_curator",
+      "readback_verified": true,
+      "text_sha256": "cf623e478f55e0f391a6a960d1bf4f91a42dcdbfaebd6a09f834ab8e9d13f4bf",
+      "checked_at": "2026-10-05T20:13:47.469566+00:00"
+    },
+    {
+      "kind": "material",
+      "case_id": "case_43de12a8dc2e4abd",
+      "role": "graph",
+      "material_id": "mat_sber_mq_owner_decision_20261005_graph",
+      "readback_verified": true,
+      "text_sha256": "cf623e478f55e0f391a6a960d1bf4f91a42dcdbfaebd6a09f834ab8e9d13f4bf",
+      "checked_at": "2026-10-05T20:13:47.558606+00:00"
+    },
+    {
+      "kind": "action_edit",
+      "case_id": "case_66cae4a89ba6473f",
+      "action_id": "act_82e6846e4c3d42a4",
+      "readback_verified": true,
+      "before": {
+        "what": "07. Рассчитать SW, CH, S_Dbw, AVI, AVU, MQ; проверить определения на контрольных примерах.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-09-29T15:00:00Z",
+        "waiting_for": "SW/CH/S_Dbw готовы (75/16309). AVI/AVU: определения и код найдены (75/16316), нужны аудит и расчёт нашей сети. MQ не установлен. Общий A7 открыт; не повторять S_Dbw и не блокировать истории/отчёт (75/16332)."
+      },
+      "after": {
+        "what": "07. Принять SW, CH, S_Dbw, AVI, AVU и проверки определений; включить результаты в итоговый отчёт. MQ исключён из расчётов релиза решением владельца05.10: SPEC_UNRESOLVED, без запроса и ожидания; Newman Q отдельно.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-09-29T15:00:00Z",
+        "waiting_for": "Индексы готовы в A7/PR7 A9–A14. Приёмка таблиц и включение в отчёт; не повторять расчёты. Решение KB75/16637: MQ не будет, релиз не блокирует; Newman Q отдельно. Научный PASS не установлен."
+      },
+      "source_action_closed": false,
+      "new_action_created": false,
+      "checked_at": "2026-10-05T20:13:47.636880+00:00"
+    },
+    {
+      "kind": "action_edit",
+      "case_id": "case_66cae4a89ba6473f",
+      "action_id": "act_d08e9e8179c246a3",
+      "readback_verified": true,
+      "before": {
+        "what": "MANUAL конкурс: уточнить у организатора, допускаются ли две отдельные заявки одной команды; точный час и часовой пояс закрытия 09.10.2026; операционные определения AVI, AVU, MQ. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует A6/аудит данных.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-01T15:00:00Z",
+        "waiting_for": "Письменный ответ организатора или опубликованный URL; указать дату и источник."
+      },
+      "after": {
+        "what": "MANUAL конкурс: уточнить у организатора, допускаются ли две отдельные заявки одной команды; точный час и часовой пояс закрытия09.10.2026. Запрос и ожидание MQ исключены решением владельца05.10 (KB75/16637). AVI/AVU публикуются с объявленной конвенцией. Не блокирует приёмку расчётов и отчёт.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-01T15:00:00Z",
+        "waiting_for": "Ответ о двух заявках и точном часе/часовом поясе закрытия, с датой и источником. MQ не запрашивать и не ждать; выпуск продолжать по плану."
+      },
+      "source_action_closed": false,
+      "new_action_created": false,
+      "checked_at": "2026-10-05T20:13:47.867878+00:00"
+    },
+    {
+      "kind": "action_edit",
+      "case_id": "case_66cae4a89ba6473f",
+      "action_id": "act_c5ab2585bf8146b8",
+      "readback_verified": true,
+      "before": {
+        "what": "12. Завершить русский отчёт, README, конфиги и релиз-кандидат GitHub; проверить матрицу критериев.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-07T15:00:00Z",
+        "waiting_for": "KB75 №16332, KB74 №16326: три истории и S_Dbw готовы. Собрать отчёт: бюджеты, миграция 2023, траты, пределы identity. AVI/AVU — аудит отдельно (75/16316); MQ открыт. Не повторять расчёты. Кандидат 07.10, проверка 08.10."
+      },
+      "after": {
+        "what": "12. Завершить русский отчёт, README, конфиги и релиз-кандидат GitHub; проверить матрицу критериев.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-07T15:00:00Z",
+        "waiting_for": "План KB75/16620 с поправкой16637: объединить PR7 A9–A14 и PR6, включить совместный опыт, отрицательный A8, индексы/истории/ограничения. MQ SPEC_UNRESOLVED, без ожидания; Newman Q отдельно. Кандидат07.10, повтор08.10."
+      },
+      "source_action_closed": false,
+      "new_action_created": false,
+      "checked_at": "2026-10-05T20:13:47.938329+00:00"
+    }
+  ],
+  "readback": "Full four corpus and four material texts matched; three action fields matched with owners/due dates preserved"
+}

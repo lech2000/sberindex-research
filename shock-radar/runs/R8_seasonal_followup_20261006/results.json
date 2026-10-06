@@ -1,0 +1,1418 @@
+{
+  "checked_at": "2026-10-06T09:01:28.748054+00:00",
+  "status": "COMPUTED_EXPLORATORY_FIXED_MODEL_TRANSFER",
+  "scientific_pass": false,
+  "historical_asof": false,
+  "independent_holdout": false,
+  "original_R8_gate_pass": false,
+  "original_R8_unchanged": true,
+  "protocol_sha256": "627a2b74c90908cb78c2aab9d764b5313e1b63cd62d14061471fe88b1a2c2b5b",
+  "versions": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3"
+  },
+  "original_full_mask": [
+    {
+      "scope": "all",
+      "rows": 171150,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 731.3863030799444,
+        "pred_lastavailable": 880.2129593923459,
+        "pred_seasonal_naive": 1280.4203856266433,
+        "pred_tsfm": 939.0617606977953
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 148.82665631240152,
+          "lo": -20.5124744344672,
+          "hi": 365.44934378237036,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -400.2074262342974,
+          "lo": -697.3173374191351,
+          "hi": -1.6944452969157588,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -58.84880130544936,
+          "lo": -150.22021308680755,
+          "hi": 20.21632026580012,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -549.0340825466989,
+          "lo": -751.1007674852015,
+          "hi": -342.7559337962581,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -207.67545761785092,
+          "lo": -516.6638201111741,
+          "hi": 34.51043480102579,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h1",
+      "rows": 73392,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 719.5748505864337,
+        "pred_lastavailable": 864.9657592108132,
+        "pred_seasonal_naive": 1287.8339873555701,
+        "pred_tsfm": 882.0709098539037
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 145.39090862437945,
+          "lo": -42.99353390405114,
+          "hi": 430.462001218093,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -422.8682281447569,
+          "lo": -703.9586193745232,
+          "hi": 68.30694421679506,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -17.10515064309047,
+          "lo": -69.31138877379789,
+          "hi": 35.117553503751544,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -568.2591367691364,
+          "lo": -757.6607780865829,
+          "hi": -329.1608435419528,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -162.49605926746992,
+          "lo": -492.8052360096161,
+          "hi": 77.88941075751842,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h2",
+      "rows": 61110,
+      "months": [
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 723.5982635109181,
+        "pred_lastavailable": 835.0160039273442,
+        "pred_seasonal_naive": 1267.1188185239732,
+        "pred_tsfm": 891.5209431644041
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 111.41774041642603,
+          "lo": -58.93019594867684,
+          "hi": 295.2473843654008,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -432.102814596629,
+          "lo": -678.2041670755242,
+          "hi": -92.27642436149313,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -56.50493923705995,
+          "lo": -165.53382711467344,
+          "hi": 52.45973845923576,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -543.5205550130551,
+          "lo": -735.654769665123,
+          "hi": -351.31086782257916,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -167.92267965348597,
+          "lo": -456.65435611739684,
+          "hi": 74.49017913037352,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h3",
+      "rows": 36648,
+      "months": [
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 768.0265895748944,
+        "pred_lastavailable": 986.1125573018992,
+        "pred_seasonal_naive": 1287.7539292730844,
+        "pred_tsfm": 1132.4663635301579
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 218.08596772700483,
+          "lo": 102.07289280082048,
+          "hi": 330.92682961681186,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -301.6413719711853,
+          "lo": -720.1608517608518,
+          "hi": 13.002182214948173,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -146.3538062282588,
+          "lo": -327.00402157327346,
+          "hi": -40.44026006995627,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -519.7273396981901,
+          "lo": -822.2337445616722,
+          "hi": -317.92464740186364,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -364.4397739552636,
+          "lo": -767.6580102487004,
+          "hi": -148.7087216779031,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    }
+  ],
+  "original_exact_interval": {
+    "point": 148.82665631240152,
+    "lo": -20.5124744344672,
+    "hi": 365.44934378237036,
+    "target_blocks": 6,
+    "draws": 46656,
+    "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+  },
+  "original_leave_one_month_out": [
+    {
+      "excluded_target": "2024-07",
+      "rows": 158904,
+      "prophet_benefit": 154.90710504343176
+    },
+    {
+      "excluded_target": "2024-08",
+      "rows": 146688,
+      "prophet_benefit": 154.29757190232053
+    },
+    {
+      "excluded_target": "2024-09",
+      "rows": 146646,
+      "prophet_benefit": 196.73839873389562
+    },
+    {
+      "excluded_target": "2024-10",
+      "rows": 134454,
+      "prophet_benefit": 167.0705125598217
+    },
+    {
+      "excluded_target": "2024-11",
+      "rows": 134538,
+      "prophet_benefit": 180.2097254143756
+    },
+    {
+      "excluded_target": "2024-12",
+      "rows": 134520,
+      "prophet_benefit": 33.82542624189823
+    }
+  ],
+  "same_own_information_models": [
+    "growth_naive1",
+    "growth_naive3"
+  ],
+  "broader_category_information_models": [
+    "category_seasonal",
+    "conditional_ses",
+    "profile_ses"
+  ],
+  "all_models_common_rows": 169740,
+  "all_models_excluded_rows": 1410,
+  "all_models_common_mask": [
+    {
+      "scope": "all",
+      "rows": 169740,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 731.4841642707968,
+        "pred_lastavailable": 880.6498821727348,
+        "pred_seasonal_naive": 1282.3197773064687,
+        "pred_tsfm": 939.6526381725218,
+        "growth_naive1": 517.1153206659227,
+        "growth_naive3": 535.3212041931102,
+        "category_seasonal": 488.419666324069,
+        "conditional_ses": 477.2248004502269,
+        "profile_ses": 463.9823083443597
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 149.165717901938,
+          "lo": -20.645504714002396,
+          "hi": 366.54853846397606,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -401.669895133734,
+          "lo": -699.2892011427944,
+          "hi": -2.6439426767364123,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -59.002755999787055,
+          "lo": -150.82764348762436,
+          "hi": 20.3785596792932,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 363.53456150681205,
+          "lo": 101.61799678501092,
+          "hi": 798.718239431703,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 345.32867797962456,
+          "lo": 86.23245151542984,
+          "hi": 766.480491111553,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 392.23021584866575,
+          "lo": 140.67564065959567,
+          "hi": 808.6396616211184,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 403.42508172250797,
+          "lo": 152.7285444654086,
+          "hi": 816.9100600257628,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 416.6675738283751,
+          "lo": 159.43077719360613,
+          "hi": 827.6472739062666,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -550.8356130356719,
+          "lo": -753.4451984245204,
+          "hi": -344.4284998794229,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -208.16847390172506,
+          "lo": -518.14880808814,
+          "hi": 34.67406494065164,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 214.36884360487406,
+          "lo": 61.937721878881504,
+          "hi": 446.2172773668109,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 196.16296007768653,
+          "lo": 47.58701354363404,
+          "hi": 415.2737401902138,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 243.06449794672773,
+          "lo": 82.44794086770536,
+          "hi": 468.5702304168428,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 254.25936382056994,
+          "lo": 94.99364134812234,
+          "hi": 477.1219184162113,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 267.5018559264371,
+          "lo": 122.53823076788991,
+          "hi": 479.5531205058191,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h1",
+      "rows": 72726,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 720.1262614749776,
+        "pred_lastavailable": 865.8606825619448,
+        "pred_seasonal_naive": 1290.1551714655006,
+        "pred_tsfm": 883.1910304920124,
+        "growth_naive1": 455.911103881785,
+        "growth_naive3": 470.6234031980592,
+        "category_seasonal": 448.17399060690036,
+        "conditional_ses": 437.26992892025936,
+        "profile_ses": 408.8821143375293
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 145.7344210869673,
+          "lo": -43.32068729122325,
+          "hi": 431.53257063721475,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -424.2944889035558,
+          "lo": -706.2292113512622,
+          "hi": 67.55632677794304,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -17.330347930067486,
+          "lo": -69.79694985634191,
+          "hi": 35.06688871847914,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 409.9495786801599,
+          "lo": 117.75951025963425,
+          "hi": 927.4564254105994,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 395.23727936388576,
+          "lo": 100.64430875262279,
+          "hi": 909.996067430684,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 417.6866919550444,
+          "lo": 123.19668355314867,
+          "hi": 944.7021654334924,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 428.59075364168547,
+          "lo": 134.08004024276235,
+          "hi": 955.5546535197997,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 456.97856822441554,
+          "lo": 167.5686807451829,
+          "hi": 963.809599314371,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -570.0289099905231,
+          "lo": -760.0887456156202,
+          "hi": -330.7015074365783,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -163.0647690170348,
+          "lo": -494.7258117772117,
+          "hi": 78.25086052525083,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 264.2151575931926,
+          "lo": 125.10693605824856,
+          "hi": 503.00115551434965,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 249.50285827691843,
+          "lo": 110.70474254671514,
+          "hi": 482.1572896894434,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 271.95227086807716,
+          "lo": 106.80604757528504,
+          "hi": 524.277976366945,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 282.85633255471816,
+          "lo": 117.50809047084444,
+          "hi": 533.2203827397649,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 311.24414713744824,
+          "lo": 180.46369092182246,
+          "hi": 536.0617883870156,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h2",
+      "rows": 60624,
+      "months": [
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 723.3208566630666,
+        "pred_lastavailable": 835.0437945368171,
+        "pred_seasonal_naive": 1268.7241686460807,
+        "pred_tsfm": 891.5512482176736,
+        "growth_naive1": 531.1280074084594,
+        "growth_naive3": 546.7607398361408,
+        "category_seasonal": 498.1007991228243,
+        "conditional_ses": 487.17580107991637,
+        "profile_ses": 466.8006875838189
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 111.72293787375048,
+          "lo": -59.35575388119999,
+          "hi": 296.12638100674434,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -433.68037410926365,
+          "lo": -680.3980638564549,
+          "hi": -93.29164189947824,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -56.507453680856464,
+          "lo": -166.11035452833167,
+          "hi": 52.81377518658174,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 303.91578712835764,
+          "lo": 81.51016444605085,
+          "hi": 685.9308747346618,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 288.2830547006763,
+          "lo": 72.82553524296223,
+          "hi": 650.8388239624823,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 336.9429954139928,
+          "lo": 136.86344028161852,
+          "hi": 694.9930155094005,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 347.86799345690076,
+          "lo": 148.0365408895656,
+          "hi": 700.3575110026945,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 368.2431069529982,
+          "lo": 160.3675967239248,
+          "hi": 721.334893665935,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -545.4033119830142,
+          "lo": -737.8983864226087,
+          "hi": -352.87013102566436,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -168.23039155460694,
+          "lo": -458.41745765164575,
+          "hi": 74.72132117852951,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 192.1928492546072,
+          "lo": 39.27905110518223,
+          "hi": 410.8516546778793,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 176.56011682692582,
+          "lo": 41.15990343622444,
+          "hi": 377.96235995393823,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 225.22005754024235,
+          "lo": 73.6949516150688,
+          "hi": 421.45679826157493,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 236.14505558315028,
+          "lo": 88.06272085760646,
+          "hi": 424.7846108907922,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 256.5201690792477,
+          "lo": 112.7242196185966,
+          "hi": 452.5663163257792,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h3",
+      "rows": 36390,
+      "months": [
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 767.782795739326,
+        "pred_lastavailable": 986.1838966749107,
+        "pred_seasonal_naive": 1289.3102500687003,
+        "pred_tsfm": 1132.6266844708305,
+        "growth_naive1": 616.0884657267542,
+        "growth_naive3": 645.5630801574688,
+        "category_seasonal": 552.7229918919465,
+        "conditional_ses": 540.4973622725438,
+        "profile_ses": 569.4056467979943
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 218.40110093558457,
+          "lo": 102.61793582962166,
+          "hi": 331.49015488986174,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -303.1263533937895,
+          "lo": -721.3513669301713,
+          "hi": 12.044569164740839,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -146.44278779591988,
+          "lo": -328.2337786410194,
+          "hi": -40.24748740386795,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 370.09543094815655,
+          "lo": 27.49285125981136,
+          "hi": 685.570655476941,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 340.62081651744194,
+          "lo": 24.009704114731303,
+          "hi": 640.0718810735575,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 433.4609047829641,
+          "lo": 118.65458118023733,
+          "hi": 724.0296251614609,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 445.686534402367,
+          "lo": 134.55499914244433,
+          "hi": 734.6904771758717,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 416.77824987691633,
+          "lo": 83.46569001049886,
+          "hi": 713.6075690805937,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -521.5274543293742,
+          "lo": -823.969302759793,
+          "hi": -319.4455857251209,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -364.8438887315045,
+          "lo": -770.1095264187171,
+          "hi": -148.77513656300073,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 151.69433001257195,
+          "lo": -83.989654564077,
+          "hi": 357.04218590705216,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 122.21971558185737,
+          "lo": -87.47280170915705,
+          "hi": 311.54341150366855,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "category_seasonal": {
+          "point": 215.05980384737947,
+          "lo": 7.1720753563489605,
+          "hi": 395.5011555915721,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "conditional_ses": {
+          "point": 227.2854334667824,
+          "lo": 23.07249331855599,
+          "hi": 406.1620076059828,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "profile_ses": {
+          "point": 198.37714894133174,
+          "lo": -28.016815813389496,
+          "hi": 385.07909951070496,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    }
+  ],
+  "own_models_common_mask": [
+    {
+      "scope": "all",
+      "rows": 170682,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 731.3536707712093,
+        "pred_lastavailable": 880.3801220984052,
+        "pred_seasonal_naive": 1281.1167024056433,
+        "pred_tsfm": 939.2623860799627,
+        "growth_naive1": 518.1603872765876,
+        "growth_naive3": 536.2195144116534
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 149.02645132719599,
+          "lo": -20.387014338403983,
+          "hi": 365.6812674005214,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -400.736580307238,
+          "lo": -697.9265904715088,
+          "hi": -2.1409045215821436,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -58.88226398155747,
+          "lo": -150.39934155920247,
+          "hi": 20.289150518538758,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 362.2197348218176,
+          "lo": 100.91300392220045,
+          "hi": 796.5379496915149,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 344.16060768675163,
+          "lo": 85.6210639750744,
+          "hi": 764.6335407210352,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -549.763031634434,
+          "lo": -751.8682619854603,
+          "hi": -343.4826386307232,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -207.90871530875347,
+          "lo": -517.1691937261534,
+          "hi": 34.4323371260284,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 213.1932834946216,
+          "lo": 61.083386760004196,
+          "hi": 444.44967500913424,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 195.13415635955567,
+          "lo": 46.70325226700053,
+          "hi": 413.82172257616367,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h1",
+      "rows": 73188,
+      "months": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 719.5768709252609,
+        "pred_lastavailable": 865.2884625894956,
+        "pred_seasonal_naive": 1288.4312865497077,
+        "pred_tsfm": 882.4826820307288,
+        "growth_naive1": 457.3731711400062,
+        "growth_naive3": 471.6941105964735
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 145.7115916642347,
+          "lo": -43.02958109684399,
+          "hi": 430.94481990576986,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -423.14282396021207,
+          "lo": -704.6913737059193,
+          "hi": 68.24139016644766,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -17.194219441233276,
+          "lo": -69.43827577144863,
+          "hi": 35.057385378355036,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 407.9152914494895,
+          "lo": 116.63329125545123,
+          "hi": 924.2053408779091,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 393.59435199302203,
+          "lo": 99.91742687895265,
+          "hi": 906.6658128354421,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -568.8544156244467,
+          "lo": -758.5441807574454,
+          "hi": -329.68501169376475,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -162.90581110546796,
+          "lo": -493.70957784316704,
+          "hi": 77.65341881318362,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 262.20369978525474,
+          "lo": 123.07898766463295,
+          "hi": 500.66111803070976,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 247.88276032878736,
+          "lo": 108.71683579050654,
+          "hi": 479.574018449003,
+          "target_blocks": 6,
+          "draws": 46656,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h2",
+      "rows": 60936,
+      "months": [
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 723.4343930469033,
+        "pred_lastavailable": 834.9745306551135,
+        "pred_seasonal_naive": 1267.7293882105816,
+        "pred_tsfm": 891.3932896003457,
+        "growth_naive1": 531.9617676071148,
+        "growth_naive3": 547.7775421549281
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 111.54013760821032,
+          "lo": -58.938139848701205,
+          "hi": 295.5611223614196,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -432.75485755546805,
+          "lo": -678.9061300797009,
+          "hi": -92.76679809429933,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -56.41875894523221,
+          "lo": -165.5800050891522,
+          "hi": 52.59211256068573,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 303.01276304799876,
+          "lo": 80.69185254393093,
+          "hi": 684.5744116008872,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 287.19698850018545,
+          "lo": 71.82345636517599,
+          "hi": 649.982025781781,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -544.2949951636784,
+          "lo": -736.5076662039578,
+          "hi": -352.1580133027808,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -167.95889655344254,
+          "lo": -456.9839928099853,
+          "hi": 74.3919142279494,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 191.4726254397884,
+          "lo": 38.825681981546204,
+          "hi": 409.51391729639255,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 175.65685089197507,
+          "lo": 40.58120820930819,
+          "hi": 376.66937376722535,
+          "target_blocks": 5,
+          "draws": 3125,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    },
+    {
+      "scope": "h3",
+      "rows": 36558,
+      "months": [
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "mae": {
+        "pred_prophet": 768.1305604953075,
+        "pred_lastavailable": 986.276601564637,
+        "pred_seasonal_naive": 1288.7875157284316,
+        "pred_tsfm": 1132.723304156369,
+        "growth_naive1": 616.8499726692,
+        "growth_naive3": 646.1321265857665
+      },
+      "benefit_vs_last": {
+        "pred_prophet": {
+          "point": 218.14604106932958,
+          "lo": 102.38144735895982,
+          "hi": 330.8829635169993,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_seasonal_naive": {
+          "point": -302.5109141637945,
+          "lo": -720.606902770946,
+          "hi": 12.253530377668309,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -146.44670259173208,
+          "lo": -327.63206154928224,
+          "hi": -40.35850180287781,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 369.42662889543703,
+          "lo": 27.230082497529793,
+          "hi": 683.8518006006384,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 340.1444749788705,
+          "lo": 24.051381470366472,
+          "hi": 638.6388750409202,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      },
+      "benefit_vs_prophet": {
+        "pred_seasonal_naive": {
+          "point": -520.6569552331241,
+          "lo": -822.9883501299058,
+          "hi": -318.629433139331,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "pred_tsfm": {
+          "point": -364.59274366106166,
+          "lo": -768.053195570891,
+          "hi": -149.02030548946132,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive1": {
+          "point": 151.2805878261074,
+          "lo": -84.57654001025048,
+          "hi": 356.2215221485627,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        },
+        "growth_naive3": {
+          "point": 121.99843390954086,
+          "lo": -87.75524103741381,
+          "hi": 311.00859658884457,
+          "target_blocks": 3,
+          "draws": 27,
+          "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+        }
+      }
+    }
+  ],
+  "per_model_full_valid_mask": [
+    {
+      "model": "growth_naive1",
+      "rows": 170976,
+      "missing_rows": 174,
+      "mae": 518.7919770289269,
+      "mae_prophet_same_rows": 731.3793431868787,
+      "mae_last_same_rows": 880.3148219633165,
+      "benefit_vs_last": {
+        "point": 361.5228449343897,
+        "lo": 100.41105708720251,
+        "hi": 795.1471058879699,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      },
+      "benefit_vs_prophet": {
+        "point": 212.5873661579518,
+        "lo": 60.6536897620019,
+        "hi": 443.60864668180585,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      }
+    },
+    {
+      "model": "growth_naive3",
+      "rows": 170682,
+      "missing_rows": 468,
+      "mae": 536.2195144116534,
+      "mae_prophet_same_rows": 731.3536707712093,
+      "mae_last_same_rows": 880.3801220984052,
+      "benefit_vs_last": {
+        "point": 344.16060768675163,
+        "lo": 85.6210639750744,
+        "hi": 764.6335407210352,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      },
+      "benefit_vs_prophet": {
+        "point": 195.13415635955567,
+        "lo": 46.70325226700053,
+        "hi": 413.82172257616367,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      }
+    },
+    {
+      "model": "category_seasonal",
+      "rows": 171150,
+      "missing_rows": 0,
+      "mae": 488.89457217635066,
+      "mae_prophet_same_rows": 731.3863030799444,
+      "mae_last_same_rows": 880.2129593923459,
+      "benefit_vs_last": {
+        "point": 391.31838721599513,
+        "lo": 140.1264173815586,
+        "hi": 806.3701743285799,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      },
+      "benefit_vs_prophet": {
+        "point": 242.49173090359366,
+        "lo": 82.0025121431247,
+        "hi": 467.67561363512567,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      }
+    },
+    {
+      "model": "conditional_ses",
+      "rows": 169740,
+      "missing_rows": 1410,
+      "mae": 477.2248004502269,
+      "mae_prophet_same_rows": 731.4841642707968,
+      "mae_last_same_rows": 880.6498821727348,
+      "benefit_vs_last": {
+        "point": 403.42508172250797,
+        "lo": 152.7285444654086,
+        "hi": 816.9100600257628,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      },
+      "benefit_vs_prophet": {
+        "point": 254.25936382056994,
+        "lo": 94.99364134812234,
+        "hi": 477.1219184162113,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      }
+    },
+    {
+      "model": "profile_ses",
+      "rows": 169740,
+      "missing_rows": 1410,
+      "mae": 463.9823083443597,
+      "mae_prophet_same_rows": 731.4841642707968,
+      "mae_last_same_rows": 880.6498821727348,
+      "benefit_vs_last": {
+        "point": 416.6675738283751,
+        "lo": 159.43077719360613,
+        "hi": 827.6472739062666,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      },
+      "benefit_vs_prophet": {
+        "point": 267.5018559264371,
+        "lo": 122.53823076788991,
+        "hi": 479.5531205058191,
+        "target_blocks": 6,
+        "draws": 46656,
+        "method": "exact month-block all k^k; ratio-of-sums nearest-rank percentiles; descriptive"
+      }
+    }
+  ],
+  "checks": {
+    "raw_target_truth_rows": 171150,
+    "stored_last_actual_cutoff_rows": 171150,
+    "future_mutation_valid_forecasts": 852288,
+    "independent_scalar_own_forecasts": 341658,
+    "exact_join_rows": 171150,
+    "stored_controls_identical": true
+  },
+  "limits": [
+    "Post hoc inspected six-month window, no preregistration or independent test",
+    "Two-month lag assumed; historical revision/vintage unknown",
+    "Month bootstrap uses few shared shock/seasonal blocks; descriptive CIs only",
+    "No news effects or early-warning conclusion; no new fits of Prophet/Chronos",
+    "Own information comparators receive own history only; category models receive more information",
+    "No subgroup/model winner chosen after observing results; all five fixed transfers shown"
+  ]
+}

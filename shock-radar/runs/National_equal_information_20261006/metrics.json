@@ -1,0 +1,328 @@
+{
+  "status": "COMPUTED_EXPLORATORY",
+  "rows": 720,
+  "series": 120,
+  "municipalities": 20,
+  "models": [
+    "fresh_plain_prophet",
+    "national_prophet",
+    "national_yoy_lag1",
+    "stored_prophet"
+  ],
+  "mae": {
+    "fresh_plain_prophet": 947.1822428382936,
+    "national_prophet": 946.1427947440353,
+    "national_yoy_lag1": 598.0916651328823,
+    "stored_prophet": 947.1822428382936
+  },
+  "comparisons": [
+    {
+      "model": "national_prophet",
+      "reference": "fresh_plain_prophet",
+      "rows": 720,
+      "mae_model": 946.1427947440353,
+      "mae_reference": 947.1822428382936,
+      "relative_improvement_percent": 0.10974108753808443,
+      "benefit_mae": 1.0394480942581092,
+      "benefit_ci95_month_blocks": [
+        -45.674902266357854,
+        41.242608486560215
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "national_prophet",
+      "rows": 720,
+      "mae_model": 598.0916651328823,
+      "mae_reference": 946.1427947440353,
+      "relative_improvement_percent": 36.7863214246971,
+      "benefit_mae": 348.0511296111531,
+      "benefit_ci95_month_blocks": [
+        166.50266495651934,
+        518.8809205394148
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "fresh_plain_prophet",
+      "rows": 720,
+      "mae_model": 598.0916651328823,
+      "mae_reference": 947.1822428382936,
+      "relative_improvement_percent": 36.855692803038465,
+      "benefit_mae": 349.0905777054112,
+      "benefit_ci95_month_blocks": [
+        194.5495934351028,
+        493.8536432871072
+      ],
+      "month_blocks": 6
+    }
+  ],
+  "by_category": [
+    {
+      "category": "Все категории",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 2711.3349152835494,
+        "national_prophet": 2669.1278242428516,
+        "national_yoy_lag1": 1059.258674843924,
+        "stored_prophet": 2711.3349152835494
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 1059.258674843924,
+          "mae_reference": 2669.1278242428516,
+          "relative_improvement_percent": 60.31442686172579,
+          "benefit_mae": 1609.8691493989281,
+          "benefit_ci95_month_blocks": [
+            1259.810446098931,
+            1937.0399569613621
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 2669.1278242428516,
+          "mae_reference": 2711.3349152835494,
+          "relative_improvement_percent": 1.5566904259145642,
+          "benefit_mae": 42.20709104069765,
+          "benefit_ci95_month_blocks": [
+            -77.37796053897306,
+            145.00784385983758
+          ],
+          "month_blocks": 6
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 407.9241231378631,
+        "national_prophet": 446.5230749027009,
+        "national_yoy_lag1": 135.7474389970853,
+        "stored_prophet": 407.9241231378631
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 135.7474389970853,
+          "mae_reference": 446.5230749027009,
+          "relative_improvement_percent": 69.59900918297107,
+          "benefit_mae": 310.7756359056156,
+          "benefit_ci95_month_blocks": [
+            154.67144465994554,
+            480.3711793066548
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 446.5230749027009,
+          "mae_reference": 407.9241231378631,
+          "relative_improvement_percent": -9.462287120439017,
+          "benefit_mae": -38.59895176483781,
+          "benefit_ci95_month_blocks": [
+            -83.58640014734333,
+            -1.124229176494425
+          ],
+          "month_blocks": 6
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 644.5043290244862,
+        "national_prophet": 702.1324696482499,
+        "national_yoy_lag1": 1074.5672451291264,
+        "stored_prophet": 644.5043290244862
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 1074.5672451291264,
+          "mae_reference": 702.1324696482499,
+          "relative_improvement_percent": -53.04337736545024,
+          "benefit_mae": -372.43477548087674,
+          "benefit_ci95_month_blocks": [
+            -490.5319889037645,
+            -204.2059804401002
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 702.1324696482499,
+          "mae_reference": 644.5043290244862,
+          "relative_improvement_percent": -8.941466803021925,
+          "benefit_mae": -57.628140623763585,
+          "benefit_ci95_month_blocks": [
+            -125.86774728642665,
+            -1.1318325233341056
+          ],
+          "month_blocks": 6
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 234.02500676737617,
+        "national_prophet": 235.55518334710106,
+        "national_yoy_lag1": 101.61559334612109,
+        "stored_prophet": 234.02500676737617
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 101.61559334612109,
+          "mae_reference": 235.55518334710106,
+          "relative_improvement_percent": 56.86123654668809,
+          "benefit_mae": 133.93959000098002,
+          "benefit_ci95_month_blocks": [
+            85.08487444682575,
+            175.75898341178856
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 235.55518334710106,
+          "mae_reference": 234.02500676737617,
+          "relative_improvement_percent": -0.6538517404022226,
+          "benefit_mae": -1.530176579724929,
+          "benefit_ci95_month_blocks": [
+            -5.091338907678877,
+            1.152021362428006
+          ],
+          "month_blocks": 6
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 1222.490585037123,
+        "national_prophet": 1143.0224183957648,
+        "national_yoy_lag1": 1100.5536778471271,
+        "stored_prophet": 1222.490585037123
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 1100.5536778471271,
+          "mae_reference": 1143.0224183957648,
+          "relative_improvement_percent": 3.715477480156748,
+          "benefit_mae": 42.46874054863794,
+          "benefit_ci95_month_blocks": [
+            -434.6146864656168,
+            518.238630525546
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 1143.0224183957648,
+          "mae_reference": 1222.490585037123,
+          "relative_improvement_percent": 6.500513592008161,
+          "benefit_mae": 79.46816664135841,
+          "benefit_ci95_month_blocks": [
+            -50.85170326113988,
+            185.8432207048972
+          ],
+          "month_blocks": 6
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "n": 120,
+      "mae": {
+        "fresh_plain_prophet": 462.81449777936285,
+        "national_prophet": 480.4957979275439,
+        "national_yoy_lag1": 116.80736063391032,
+        "stored_prophet": 462.81449777936285
+      },
+      "comparisons": [
+        {
+          "model": "national_yoy_lag1",
+          "reference": "national_prophet",
+          "rows": 120,
+          "mae_model": 116.80736063391032,
+          "mae_reference": 480.4957979275439,
+          "relative_improvement_percent": 75.69024304942533,
+          "benefit_mae": 363.6884372936336,
+          "benefit_ci95_month_blocks": [
+            281.17910811673426,
+            435.63648158643525
+          ],
+          "month_blocks": 6
+        },
+        {
+          "model": "national_prophet",
+          "reference": "fresh_plain_prophet",
+          "rows": 120,
+          "mae_model": 480.4957979275439,
+          "mae_reference": 462.81449777936285,
+          "relative_improvement_percent": -3.820385971705287,
+          "benefit_mae": -17.681300148181084,
+          "benefit_ci95_month_blocks": [
+            -38.57357358239235,
+            -0.006188578451374838
+          ],
+          "month_blocks": 6
+        }
+      ]
+    }
+  ],
+  "fresh_plain_vs_stored_max_abs_difference": 0.0,
+  "checks": {
+    "raw_actual_and_last_keys": 720,
+    "future_mutation_fresh_refits": 12,
+    "fit_failures": 0,
+    "same_keys": true
+  },
+  "new_fits": 1452,
+  "elapsed_seconds": 62.27150370899835,
+  "versions": {
+    "prophet": "1.4.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "scientific_pass": false,
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "limits": [
+    "Small pilot; no general full-panel superiority claim",
+    "2024 already viewed",
+    "National series is a later vintage, no historical asof verification",
+    "Only6 target months and7-12 own training observations per fit",
+    "No paid model API"
+  ]
+}

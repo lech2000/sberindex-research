@@ -1,0 +1,11 @@
+{
+  "url": "https://agrigate.pro/sberindex-2026/reports/docs/REPRODUCIBILITY.html",
+  "checked_at": "2026-10-06T18:56:00.079588+00:00",
+  "source_commit": "7ef3c01d59a408f9d81e4c018b1e54ba0edd27e0",
+  "status": 200,
+  "expected_sha256": "406b878e767e4286152c48913e68ff3ac7dc1065f1ecd7bb2e527fec953a09f5",
+  "actual_sha256": "406b878e767e4286152c48913e68ff3ac7dc1065f1ecd7bb2e527fec953a09f5",
+  "bytes": 6438,
+  "verified": true,
+  "supersedes": "publication-receipt.json: reports/docs/REPRODUCIBILITY.html only; other107 checks remain valid"
+}

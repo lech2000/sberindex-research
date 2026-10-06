@@ -1,0 +1,39 @@
+{
+  "scope": "additional automated editorial reviews; not independent scientific proof",
+  "attempts": [
+    {
+      "project": "atlas",
+      "received_at": "2026-10-06T13:15:14.950924+00:00",
+      "reply_sha256": null,
+      "local_assessment": "UNAVAILABLE",
+      "error": "HTTP Error 502: Bad Gateway",
+      "reason": "No completed numerical review"
+    },
+    {
+      "project": "radar",
+      "received_at": "2026-10-06T13:15:14.951007+00:00",
+      "reply_sha256": null,
+      "local_assessment": "UNAVAILABLE",
+      "error": "HTTP Error 502: Bad Gateway",
+      "reason": "No completed numerical review"
+    },
+    {
+      "project": "atlas",
+      "received_at": "2026-10-06T13:31:53.222899+00:00",
+      "reply_sha256": "960227ccec4be773090aa259bacf549dfba9d7935997cb4a2fef1c6d8aadf24e",
+      "local_assessment": "INCOMPLETE",
+      "error": null,
+      "reason": "No completed numerical review"
+    },
+    {
+      "project": "radar",
+      "received_at": "2026-10-06T13:31:16.638083+00:00",
+      "reply_sha256": "28d2566b3a34bea3922c1fc29d4616155c1dea27cd04c0c4004e1837bbfdb44b",
+      "local_assessment": "REWORK_EXTRACT",
+      "error": null,
+      "reason": "Radar extract conflates six official events with three joint cities and overstates universal dominance; no automatic acceptance"
+    }
+  ],
+  "accepted_external_scientific_review": false,
+  "numerical_authority": "frozen results and executed technical receipts"
+}

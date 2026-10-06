@@ -1,0 +1,65 @@
+{
+  "status": "planning_only",
+  "version": 1,
+  "seed": 42,
+  "internal_ready": "2026-10-07",
+  "official_deadline_date": "2026-10-09",
+  "deadline_time_timezone": "unconfirmed",
+  "data": {
+    "snapshot": null,
+    "sha256": null,
+    "frequency": null,
+    "geography_version": null,
+    "available_at_required": true
+  },
+  "execution": {
+    "enabled": false,
+    "paid_cloud_calls": false
+  },
+  "results": null,
+  "project": "economic-atlas",
+  "rubric_weights": [
+    15,
+    15,
+    15,
+    15,
+    30,
+    10
+  ],
+  "graph": {
+    "kind": "knn",
+    "k_candidates": [
+      10,
+      20,
+      40
+    ],
+    "k_confirm_after_data_audit": true,
+    "similarity": "cosine",
+    "zero_vector_policy": "exclude_and_report",
+    "mobility_schema": "unconfirmed",
+    "mobility_weight_candidates": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  "evaluation": {
+    "required_metrics": [
+      "SW",
+      "CH",
+      "S_Dbw",
+      "AVI",
+      "AVU",
+      "MQ"
+    ],
+    "metric_definitions_confirmed": false,
+    "seeds": [
+      13,
+      29,
+      42,
+      73,
+      101
+    ],
+    "final_period": null
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-10-06T20:48:49.569052+00:00",
+  "method": "Codex in-app browser, actual public website",
+  "desktop": {
+    "width": 1280,
+    "body_scroll_width": 1280,
+    "h6_note_correct": true
+  },
+  "mobile": {
+    "width": 390,
+    "body_scroll_width": 390,
+    "municipality": "Черноголовка",
+    "category": "Маркетплейсы",
+    "horizon": 3,
+    "forecast_rows": 6
+  },
+  "search": "Адыгейск exact name selection passed",
+  "unsupported": {
+    "rows_empty": true,
+    "local_error_empty": true,
+    "availability_note_visible": true
+  },
+  "screenshots": [
+    "map-desktop.png",
+    "map-mobile.png"
+  ],
+  "viewport_reset": true,
+  "paid_chat_e2e_run": false
+}

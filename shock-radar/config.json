@@ -1,23 +1,9 @@
 {
-  "status": "planning_only",
-  "version": 1,
+  "project": "shock-radar",
   "seed": 42,
   "internal_ready": "2026-10-07",
   "official_deadline_date": "2026-10-09",
   "deadline_time_timezone": "unconfirmed",
-  "data": {
-    "snapshot": null,
-    "sha256": null,
-    "frequency": null,
-    "geography_version": null,
-    "available_at_required": true
-  },
-  "execution": {
-    "enabled": false,
-    "paid_cloud_calls": false
-  },
-  "results": null,
-  "project": "shock-radar",
   "rubric_weights": [
     10,
     20,
@@ -27,40 +13,120 @@
     10,
     10
   ],
+  "version": 4,
+  "status": "computed_exploratory_release_candidate",
+  "scientific_pass": false,
+  "checked_on": "2026-10-06",
+  "planning_config": "archive/config.planning-v1.json",
+  "execution": {
+    "enabled": false,
+    "paid_cloud_calls": false,
+    "meaning": "describes completed artifacts; does not start compute or deployment"
+  },
+  "data": {
+    "snapshot": "Data Sense2025 municipal spending, observations2023-01..2024-12",
+    "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "frequency": "monthly",
+    "units": "nominal supplied value; per-person denominator unverified",
+    "historical_asof_verified": false,
+    "geography": "native territory_id; per-run masks and current dictionary; historical boundary lineage not fully verified"
+  },
+  "acceptance_matrix": "../docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
   "forecast": {
-    "horizons_periods_candidates": [
+    "horizons_months": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "reported_category_seasonal_horizons": [
+      1,
+      3,
+      6
+    ],
+    "reported_profile_ses_horizons": [
+      1,
+      3,
+      6
+    ],
+    "national_benchmark_horizons": [
+      12
+    ],
+    "models": [
+      "last_value",
+      "seasonal_naive",
+      "growth_naive1",
+      "growth_naive3",
+      "conditional_ses",
+      "profile_ses",
+      "prophet",
+      "conditional_prophet_yearly",
+      "chronos_t5_tiny",
+      "national_yoy_lag1"
+    ],
+    "cached_models": [
+      "prophet",
+      "conditional_prophet_yearly",
+      "chronos_t5_tiny"
+    ],
+    "primary_protocols": [
+      "runs/R9_strong_baselines_20261004/protocol.json",
+      "runs/R9_equal_information_pilot_20261004/protocol-public.json",
+      "runs/R10_national_h12_20261005/protocol.json"
+    ],
+    "legacy_R8_contract": "runs/R8_prophet_full_20260927/fingerprint.json",
+    "annual_seasonality_history_years": 1,
+    "independent_holdout": false
+  },
+  "evaluation": {
+    "primary_metric": "MAE",
+    "pairing": [
+      "territory_id",
+      "category",
+      "origin",
+      "target",
+      "horizon"
+    ],
+    "interval_unit": "target_month_block; few time blocks; retrospective",
+    "R8_status": "RESEARCH_COMPLETED_INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+    "R9_common_h1_h3_h6_points": 218202,
+    "equal_information_series": 120,
+    "equal_information_municipalities": 114,
+    "national_h12_points": 73608,
+    "news_effect": "NA_HISTORICAL_AVAILABILITY_NOT_ESTABLISHED",
+    "early_warning": "NOT_ESTABLISHED",
+    "real_detector_ground_truth": "INCOMPLETE",
+    "full_detector_bank_false_alarm_budget": "per-protocol; no summing individual channel budgets",
+    "national_h12_municipalities": 2071,
+    "national_h12_series": 12426,
+    "R8_followup_status": "OBSERVED_RETROSPECTIVE_OWN_SERIES_SEASONAL_BENEFIT_NO_SCIENTIFIC_PASS",
+    "R8_followup_own_common_rows": 170682,
+    "R8_followup_horizons": [
       1,
       2,
       3
-    ],
-    "confirm_after_audit": true,
-    "models": [
-      "seasonal_naive",
-      "prophet",
-      "global_boosting",
-      "chronos2"
-    ],
-    "optional_models": [
-      "timesfm"
-    ],
-    "model_revisions": {}
+    ]
   },
-  "evaluation": {
-    "scheme": "expanding_window_rolling_origin",
-    "splits": null,
-    "primary_metric": "MAE",
-    "secondary_metrics": [
-      "R2",
-      "macro_MAE",
-      "event_precision",
-      "event_recall",
-      "delay",
-      "lead_time",
-      "false_alarms_per_100_municipality_periods"
-    ],
-    "news_asof_join": true,
-    "event_definition": null,
-    "event_matching_window": null,
-    "alert_budget": null
+  "results": {
+    "report": "METHODOLOGY_RU.md",
+    "comparison": "FORECAST_COMPARISON_2026-10-05.csv",
+    "R8": "runs/R8_closeout_20260929/decision.json",
+    "R9": "runs/R9_strong_baselines_20261004/metrics.json",
+    "equal_information": "runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json",
+    "R10": "runs/R10_national_h12_20261005/metrics.json",
+    "D04": "runs/D04_multicategory_20261004/metrics.json",
+    "D05": "runs/D05_joint_bank_20261005/metrics.json",
+    "joint": "../economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json",
+    "website_current_release_verified": false,
+    "paired_comparison": "FORECAST_PAIRED_2026-10-05.csv",
+    "R8_followup": "runs/R8_seasonal_followup_20261006/results.json"
+  },
+  "additional_experiments_20261006": {
+    "consumer": "economic-atlas/runs/Consumer_closeout_20261006",
+    "national_prophet_pilot": "shock-radar/runs/National_equal_information_20261006",
+    "status": "computed_exploratory_already_viewed_2024",
+    "scientific_pass": false,
+    "full_prophet_national_panel": false,
+    "direct_h6_training": "unsupported_no_completed_labels"
   }
 }

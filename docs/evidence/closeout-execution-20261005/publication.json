@@ -1,0 +1,164 @@
+{
+  "checked_on": "2026-10-06",
+  "status": "PUBLIC_PAGES_VERIFIED",
+  "source_commit": "3af57bb0780e51e5b0a8bd4140397784cdf2a897",
+  "initial_publication": {
+    "scope": "/sberindex-2026/",
+    "files": [
+      {
+        "path": "landing-common/case-forecast.js",
+        "sha256": "b49492275b7d081d762d9188e7261d3ef62194bad78de9e27c501cb6dc050111",
+        "bytes": 2758
+      },
+      {
+        "path": "economic-atlas/demo/index.html",
+        "sha256": "1b180ab10bba6afa4bb71bdc7bbf6ea9db6f279e5b2920a14078c0f3c50c45b3",
+        "bytes": 4618667
+      },
+      {
+        "path": "economic-atlas/landing/index.html",
+        "sha256": "37918e1e641d0aec8a6ebfd81f9f04fed0bb8099ccf0b4cb2df6322c66eae3da",
+        "bytes": 29340
+      },
+      {
+        "path": "shock-radar/landing/index.html",
+        "sha256": "2ea281c739cf10f73a93027ad3e7bfb48746ab9842ae40508671b0f832e7891f",
+        "bytes": 33141
+      }
+    ],
+    "source_commit": "568c81ddfe2c7febbc23e080a386ec0f1e5c3e93",
+    "started_at": "2026-10-06T03:41:09.454882+00:00",
+    "completed_at": "2026-10-06T03:41:20.103642+00:00",
+    "owner_authorization": "2026-10-06: explicit user reply разрешаю to Bunny HTML/JS publication and CDN purge",
+    "guard_owner": "Codex SberIndex landing RAG",
+    "guard_exit_code": 0,
+    "api_dns_address_from_mac": "79.127.134.225",
+    "tls_certificate_validation": true,
+    "persistent_network_change": false,
+    "n8n_invoked": false,
+    "scientific_pass": false
+  },
+  "demo_csp_correction": {
+    "scope": "/sberindex-2026/",
+    "files": [
+      {
+        "path": "economic-atlas/demo/atlas-demo-f2098ff9a110.js",
+        "sha256": "f2098ff9a110a7e093bbdd6c9a191c22fbcf61888b1f835b545d0f06b4a6227e",
+        "bytes": 4601379
+      },
+      {
+        "path": "economic-atlas/demo/index.html",
+        "sha256": "cbade9c49c89a666758bc4be3ba399c60838a57718e3e46092c9b36921bb09a7",
+        "bytes": 17329
+      }
+    ],
+    "source_commit": "3af57bb0780e51e5b0a8bd4140397784cdf2a897",
+    "started_at": "2026-10-06T03:50:50.760189+00:00",
+    "completed_at": "2026-10-06T03:51:01.252540+00:00",
+    "owner_authorization": "2026-10-06: explicit user reply разрешаю to Bunny HTML/JS publication and CDN purge",
+    "guard_owner": "Codex SberIndex landing RAG",
+    "guard_exit_code": 0,
+    "api_dns_address_from_mac": "143.244.56.52",
+    "tls_certificate_validation": true,
+    "persistent_network_change": false,
+    "n8n_invoked": false,
+    "scientific_pass": false
+  },
+  "public_readbacks": [
+    {
+      "url": "https://agrigate.pro/sberindex-2026/landing-common/case-forecast.js",
+      "http_status": 200,
+      "sha256": "b49492275b7d081d762d9188e7261d3ef62194bad78de9e27c501cb6dc050111",
+      "matches": true,
+      "bytes": 2758,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:56:56.558120+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/demo/index.html",
+      "http_status": 200,
+      "sha256": "cbade9c49c89a666758bc4be3ba399c60838a57718e3e46092c9b36921bb09a7",
+      "matches": true,
+      "bytes": 17329,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:56:56.644284+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/index.html",
+      "http_status": 200,
+      "sha256": "37918e1e641d0aec8a6ebfd81f9f04fed0bb8099ccf0b4cb2df6322c66eae3da",
+      "matches": true,
+      "bytes": 29340,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:56:57.347326+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/index.html",
+      "http_status": 200,
+      "sha256": "2ea281c739cf10f73a93027ad3e7bfb48746ab9842ae40508671b0f832e7891f",
+      "matches": true,
+      "bytes": 33141,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:56:55.568519+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/demo/atlas-demo-f2098ff9a110.js",
+      "http_status": 200,
+      "sha256": "f2098ff9a110a7e093bbdd6c9a191c22fbcf61888b1f835b545d0f06b4a6227e",
+      "matches": true,
+      "bytes": 4601379,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:58:45.974076+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/",
+      "http_status": 200,
+      "sha256": "37918e1e641d0aec8a6ebfd81f9f04fed0bb8099ccf0b4cb2df6322c66eae3da",
+      "matches": true,
+      "bytes": 29340,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:57:01.742504+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/",
+      "http_status": 200,
+      "sha256": "2ea281c739cf10f73a93027ad3e7bfb48746ab9842ae40508671b0f832e7891f",
+      "matches": true,
+      "bytes": 33141,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:57:01.813376+00:00"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/demo/",
+      "http_status": 200,
+      "sha256": "cbade9c49c89a666758bc4be3ba399c60838a57718e3e46092c9b36921bb09a7",
+      "matches": true,
+      "bytes": 17329,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.agrigate.pro; frame-src 'self' blob:; object-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "checked_at": "2026-10-06T03:57:01.812922+00:00"
+    }
+  ],
+  "browser_checks": {
+    "atlas_demo": {
+      "core": "0",
+      "mapPoints": 1896,
+      "options": 1896,
+      "peerCount": 5,
+      "place": "Ишим",
+      "searchValue": "Ишим · Тюменская область · 2192",
+      "threshold": "0.95"
+    },
+    "radar_selector": "Ишим / Все категории; апрель 3.85%, май 2.46%, июнь 5.41%",
+    "current_landing_version": "06.10.2026 visible on both pages"
+  },
+  "csp_unchanged": true,
+  "n8n_invoked": false,
+  "new_fits": 0,
+  "rag_upload_e2e": {
+    "historical_20261005": "PASS: Atlas upload, version comparison, MiMo explanation and downloaded receipt; KB62/16530,KB77/16531",
+    "current_20261006": "FORM_AND_JS_PRESERVED; no fresh authenticated run",
+    "chat_js_sha256": "56fa15421ea153cc076428b75f74d19738577cd07f51087158bcd3efd882c05e"
+  },
+  "full_release_actions": "OPEN",
+  "scientific_pass": false
+}

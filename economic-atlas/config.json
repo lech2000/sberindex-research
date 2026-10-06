@@ -1,23 +1,9 @@
 {
-  "status": "planning_only",
-  "version": 1,
+  "project": "economic-atlas",
   "seed": 42,
   "internal_ready": "2026-10-07",
   "official_deadline_date": "2026-10-09",
   "deadline_time_timezone": "unconfirmed",
-  "data": {
-    "snapshot": null,
-    "sha256": null,
-    "frequency": null,
-    "geography_version": null,
-    "available_at_required": true
-  },
-  "execution": {
-    "enabled": false,
-    "paid_cloud_calls": false
-  },
-  "results": null,
-  "project": "economic-atlas",
   "rubric_weights": [
     15,
     15,
@@ -26,25 +12,40 @@
     30,
     10
   ],
+  "version": 3,
+  "status": "computed_exploratory_release_candidate",
+  "scientific_pass": false,
+  "checked_on": "2026-10-06",
+  "planning_config": "archive/config.planning-v1.json",
+  "execution": {
+    "enabled": false,
+    "paid_cloud_calls": false,
+    "meaning": "describes completed artifacts; does not start compute or deployment"
+  },
+  "data": {
+    "snapshot": "Data Sense2025 municipal spending, observations2023-01..2024-12",
+    "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "frequency": "monthly",
+    "units": "nominal supplied value; per-person denominator unverified",
+    "historical_asof_verified": false,
+    "geography": "native territory_id; per-run masks and current dictionary; historical boundary lineage not fully verified",
+    "n_municipalities": 1896,
+    "n_observations": 273024,
+    "frozen_features_sha256": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6"
+  },
+  "acceptance_matrix": "../docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
   "graph": {
-    "kind": "knn",
-    "k_candidates": [
-      10,
-      20,
-      40
-    ],
-    "k_confirm_after_data_audit": true,
-    "similarity": "cosine",
-    "zero_vector_policy": "exclude_and_report",
-    "mobility_schema": "unconfirmed",
-    "mobility_weight_candidates": [
-      0,
-      0.5,
-      1
-    ]
+    "primary_rule": "k7 union Gaussian",
+    "k": 7,
+    "rules": 12,
+    "windows": 3,
+    "primary_result_edges": 8958,
+    "mobility_flows_observed": false,
+    "source": "runs/A9_economic_network_20261005/README.md",
+    "geographical_roads_are_context_not_economic_flows": true
   },
   "evaluation": {
-    "required_metrics": [
+    "organizer_metrics": [
       "SW",
       "CH",
       "S_Dbw",
@@ -52,14 +53,47 @@
       "AVU",
       "MQ"
     ],
-    "metric_definitions_confirmed": false,
-    "seeds": [
-      13,
-      29,
-      42,
-      73,
-      101
+    "computed_release_metrics": [
+      "SW",
+      "CH",
+      "S_Dbw",
+      "AVI",
+      "AVU"
     ],
-    "final_period": null
+    "diagnostics": [
+      "DB",
+      "ANUI",
+      "Newman_Q"
+    ],
+    "metric_convention": "explicit reference convention with same-K and size/permutation controls; no organizer waiver asserted",
+    "omitted_metrics": {
+      "MQ": {
+        "status": "SPEC_UNRESOLVED",
+        "owner_decision": "mq не будет",
+        "request_or_wait": false,
+        "release_blocker": false,
+        "equals_Newman_Q": false
+      }
+    },
+    "source": "runs/A11_icvi_table_20261005/README.md",
+    "seed_and_subsample_contract": "runs/A10_method_comparison_20261005/PROTOCOL.md"
+  },
+  "results": {
+    "report": "FINAL_REPORT_RU_2026-10-05.md",
+    "core": "runs/A12_stable_cores_20261005/results.json",
+    "external_validation": "runs/Atlas_Radar_joint_20261005/external-2025/A8-results.json",
+    "external_validation_status": "four_primary_checks_negative",
+    "consumer_restructuring": "runs/consumption_restructuring_20261005/descriptive_probe.json",
+    "joint": "runs/Atlas_Radar_joint_20261005/metrics.json",
+    "demo": "site/atlas-20261005/index.html",
+    "website_current_release_verified": false
+  },
+  "additional_experiments_20261006": {
+    "consumer": "economic-atlas/runs/Consumer_closeout_20261006",
+    "national_prophet_pilot": "shock-radar/runs/National_equal_information_20261006",
+    "status": "computed_exploratory_already_viewed_2024",
+    "scientific_pass": false,
+    "full_prophet_national_panel": false,
+    "direct_h6_training": "unsupported_no_completed_labels"
   }
 }

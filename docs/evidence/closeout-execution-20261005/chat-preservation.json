@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-06T04:10:02.012866+00:00",
+  "forms": [
+    {
+      "project": "economic-atlas",
+      "current_chat_section_sha256": "2dee708184dd6dc7a6bc2cebbf386c229b4fc47c28cdfc503f4e509c4df108e0",
+      "controls_and_form_unchanged_since_20261005": true,
+      "text_only_changes": [
+        "spacing of до 8 МБ"
+      ]
+    },
+    {
+      "project": "shock-radar",
+      "current_chat_section_sha256": "869d1af1d70c4671420f5d011f354917335a7e962f53a762c59c8e76e9638414",
+      "controls_and_form_unchanged_since_20261005": true,
+      "text_only_changes": [
+        "spacing of до 8 МБ",
+        "example question placeholder uses Radar topic"
+      ]
+    }
+  ],
+  "public_chat_js_sha256": "56fa15421ea153cc076428b75f74d19738577cd07f51087158bcd3efd882c05e",
+  "historical_acceptance_receipt": "presentation/dataset-chat-release-20261005.json",
+  "authenticated_test_20261005": "PASS; Atlas upload+version comparison+MiMo+download SHA",
+  "prior_kb_full_readbacks": [
+    {
+      "corpus": 62,
+      "document_id": 16530
+    },
+    {
+      "corpus": 77,
+      "document_id": 16531
+    }
+  ],
+  "fresh_authenticated_test_20261006": "NOT_REPEATED",
+  "scientific_pass": false
+}

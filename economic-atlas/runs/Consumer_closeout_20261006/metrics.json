@@ -1,0 +1,3811 @@
+{
+  "status": "COMPUTED_EXPLORATORY",
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "scientific_pass": false,
+  "panel": 1896,
+  "supported": 1539,
+  "eligible": 1586,
+  "same_key_forecasts": 204768,
+  "results": [
+    {
+      "category": "Все категории",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 686.416609985477,
+        "one_step_zero_own": 668.8167504103586,
+        "one_step_zero_peer": 667.9508693956427,
+        "direct_zero_own": 668.8167504103586,
+        "direct_zero_peer": 667.9508693956427,
+        "direct_intercept_own": 1196.32764324906,
+        "direct_intercept_peer": 1189.0956017843594,
+        "direct_calibration": 1222.8114053473648
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 17.59985957511831,
+          "gain_percent": 2.5640200599881586,
+          "ci95_month_blocks": [
+            6.332550837286896,
+            26.4227746409609
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            9.25485309319709,
+            26.664483674554532
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 18.465740589834223,
+          "gain_percent": 2.6901651739203856,
+          "ci95_month_blocks": [
+            4.812196744823906,
+            28.936501111028143
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            8.37200122092798,
+            29.575959264524695
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 17.59985957511831,
+          "gain_percent": 2.5640200599881586,
+          "ci95_month_blocks": [
+            6.332550837286896,
+            26.4227746409609
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            9.25485309319709,
+            26.664483674554532
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 18.465740589834223,
+          "gain_percent": 2.6901651739203856,
+          "ci95_month_blocks": [
+            4.812196744823906,
+            28.936501111028143
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            8.37200122092798,
+            29.575959264524695
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -509.9110332635833,
+          "gain_percent": -74.28594032338056,
+          "ci95_month_blocks": [
+            -765.849882719056,
+            -245.82941697141632
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -630.4028131352641,
+            -418.29069450697847
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -502.6789917988825,
+          "gain_percent": -73.2323467244649,
+          "ci95_month_blocks": [
+            -760.7318336770978,
+            -236.27627579393274
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -613.5084280659498,
+            -416.9779271507315
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -536.3947953618878,
+          "gain_percent": -78.14420390748363,
+          "ci95_month_blocks": [
+            -793.2778879501425,
+            -272.6239448402739
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -670.4779698149617,
+            -437.83691774357624
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 714.2927609403527,
+            "one_step_zero_own": 684.4196664999702,
+            "one_step_zero_peer": 683.1958615321037,
+            "direct_zero_own": 684.4196664999702,
+            "direct_zero_peer": 683.1958615321037,
+            "direct_intercept_own": 1774.479497781574,
+            "direct_intercept_peer": 1771.7780519660814,
+            "direct_calibration": 1795.030143351463
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 625.6145572657083,
+            "one_step_zero_own": 602.5045733006077,
+            "one_step_zero_peer": 602.8217395409317,
+            "direct_zero_own": 602.5045733006077,
+            "direct_zero_peer": 602.8217395409317,
+            "direct_intercept_own": 1270.6282754410668,
+            "direct_intercept_peer": 1268.6527420894492,
+            "direct_calibration": 1305.7282888241036
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 698.1183266046462,
+            "one_step_zero_own": 671.199161319833,
+            "one_step_zero_peer": 668.4105373627305,
+            "direct_zero_own": 671.199161319833,
+            "direct_zero_peer": 668.4105373627305,
+            "direct_intercept_own": 1284.645715503186,
+            "direct_intercept_peer": 1279.7903517864704,
+            "direct_calibration": 1317.1008764855683
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 657.4021567512801,
+            "one_step_zero_own": 663.2889263119113,
+            "one_step_zero_peer": 668.9004878448216,
+            "direct_zero_own": 663.2889263119113,
+            "direct_zero_peer": 668.9004878448216,
+            "direct_intercept_own": 655.6151448023468,
+            "direct_intercept_peer": 648.6511837681956,
+            "direct_calibration": 678.8406324728965
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 673.4718403782118,
+            "one_step_zero_own": 650.7744437837947,
+            "one_step_zero_peer": 644.2550287371486,
+            "direct_zero_own": 650.7744437837947,
+            "direct_zero_peer": 644.2550287371486,
+            "direct_intercept_own": 1088.4149152224695,
+            "direct_intercept_peer": 1069.8361741309577,
+            "direct_calibration": 1119.1290955374113
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 749.6000179726624,
+            "one_step_zero_own": 740.7137312460346,
+            "one_step_zero_peer": 740.12156135612,
+            "direct_zero_own": 740.7137312460346,
+            "direct_zero_peer": 740.12156135612,
+            "direct_intercept_own": 1104.182310743718,
+            "direct_intercept_peer": 1095.8651069650023,
+            "direct_calibration": 1121.0393954127458
+          }
+        }
+      ]
+    },
+    {
+      "category": "Все категории",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 884.6938823891488,
+        "one_step_zero_own": 859.0299652861498,
+        "one_step_zero_peer": 857.0600416092756,
+        "direct_zero_own": 856.2715899598512,
+        "direct_zero_peer": 851.1723482044648,
+        "direct_intercept_own": 2293.8488302896653,
+        "direct_intercept_peer": 2281.9618735355584,
+        "direct_calibration": 2379.591110641538
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 25.663917102999033,
+          "gain_percent": 2.900881040760977,
+          "ci95_month_blocks": [
+            16.558451716585665,
+            33.42656872856309
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            17.086848274472803,
+            34.3290496246765
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 27.633840779873385,
+          "gain_percent": 3.1235483063641367,
+          "ci95_month_blocks": [
+            15.774768141593244,
+            37.17106842264638
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            18.067977630147826,
+            37.35423605732779
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 28.42229242929777,
+          "gain_percent": 3.212669714923574,
+          "ci95_month_blocks": [
+            5.353297546605719,
+            49.00350832883858
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            5.250945899177261,
+            54.417976592747195
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 33.52153418468401,
+          "gain_percent": 3.7890545930031587,
+          "ci95_month_blocks": [
+            5.437337036984065,
+            58.28552572548559
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            6.364610976565225,
+            65.95652572004751
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -1409.1549479005166,
+          "gain_percent": -159.28164260558026,
+          "ci95_month_blocks": [
+            -1974.5941265904157,
+            -765.3473994527604
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1710.5338938206598,
+            -1185.2542203165012
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -1397.2679911464095,
+          "gain_percent": -157.93801889677763,
+          "ci95_month_blocks": [
+            -1959.9667776122585,
+            -758.6669597745557
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1679.6050005993504,
+            -1185.40731456449
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -1494.8972282523887,
+          "gain_percent": -168.97338819788862,
+          "ci95_month_blocks": [
+            -2088.584804631232,
+            -822.9713105530617
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1843.0942176240835,
+            -1243.87677855328
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 912.4213089800223,
+            "one_step_zero_own": 907.0851377929755,
+            "one_step_zero_peer": 911.0377524249761,
+            "direct_zero_own": 912.4213089800223,
+            "direct_zero_peer": 912.4213089800223,
+            "direct_intercept_own": 912.4213089800223,
+            "direct_intercept_peer": 912.4213089800223,
+            "direct_calibration": 912.4213089800223
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 725.4684253443555,
+            "one_step_zero_own": 707.3900655048865,
+            "one_step_zero_peer": 707.5582518623628,
+            "direct_zero_own": 745.8338548489888,
+            "direct_zero_peer": 751.6439062499446,
+            "direct_intercept_own": 2800.4508164064973,
+            "direct_intercept_peer": 2787.38826885483,
+            "direct_calibration": 2959.6673330420895
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1042.782786233213,
+            "one_step_zero_own": 1007.200738514817,
+            "one_step_zero_peer": 1004.6617096480251,
+            "direct_zero_own": 998.8941271393085,
+            "direct_zero_peer": 985.1850492296614,
+            "direct_intercept_own": 3443.863222306368,
+            "direct_intercept_peer": 3427.302143508009,
+            "direct_calibration": 3536.168766403563
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 757.343597424528,
+            "one_step_zero_own": 722.9003090175149,
+            "one_step_zero_peer": 722.6019655839858,
+            "direct_zero_own": 716.8191215472702,
+            "direct_zero_peer": 710.0451167536065,
+            "direct_intercept_own": 2191.017848083043,
+            "direct_intercept_peer": 2177.179030571211,
+            "direct_calibration": 2284.725896426411
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 913.6199360651752,
+            "one_step_zero_own": 883.9349456605861,
+            "one_step_zero_peer": 879.1532469479348,
+            "direct_zero_own": 856.4613016555473,
+            "direct_zero_peer": 844.9415558850455,
+            "direct_intercept_own": 2375.3847906785586,
+            "direct_intercept_peer": 2360.7067670214997,
+            "direct_calibration": 2451.789462090788
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 956.5272402875997,
+            "one_step_zero_own": 925.6685952261192,
+            "one_step_zero_peer": 917.3473231883684,
+            "direct_zero_own": 907.1998255879696,
+            "direct_zero_peer": 902.7971521285089,
+            "direct_intercept_own": 2039.9549952835039,
+            "direct_intercept_peer": 2026.7737222777764,
+            "direct_calibration": 2132.7738969063525
+          }
+        }
+      ]
+    },
+    {
+      "category": "Все категории",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 1542.6266869052672,
+        "one_step_zero_own": 1513.918719801496,
+        "one_step_zero_peer": 1512.3467727232007,
+        "direct_zero_own": 1542.6266869052672,
+        "direct_zero_peer": 1542.6266869052672,
+        "direct_intercept_own": 1542.6266869052672,
+        "direct_intercept_peer": 1542.6266869052672,
+        "direct_calibration": 1542.6266869052672
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 28.707967103771367,
+          "gain_percent": 1.8609795453081206,
+          "ci95_month_blocks": [
+            8.653623380698468,
+            49.076030671146846
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            20.786156215310687,
+            37.090567161367105
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 30.27991418206672,
+          "gain_percent": 1.9628802249501216,
+          "ci95_month_blocks": [
+            8.361621360597933,
+            52.43494967593562
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            21.97359823434941,
+            39.06479055072764
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 2386.845177440826,
+            "one_step_zero_own": 2386.845177440826,
+            "one_step_zero_peer": 2386.845177440826,
+            "direct_zero_own": 2386.845177440826,
+            "direct_zero_peer": 2386.845177440826,
+            "direct_intercept_own": 2386.845177440826,
+            "direct_intercept_peer": 2386.845177440826,
+            "direct_calibration": 2386.845177440826
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1953.3518528225163,
+            "one_step_zero_own": 1953.3518528225163,
+            "one_step_zero_peer": 1953.3518528225163,
+            "direct_zero_own": 1953.3518528225163,
+            "direct_zero_peer": 1953.3518528225163,
+            "direct_intercept_own": 1953.3518528225163,
+            "direct_intercept_peer": 1953.3518528225163,
+            "direct_calibration": 1953.3518528225163
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1328.6599583951054,
+            "one_step_zero_own": 1302.6990882530101,
+            "one_step_zero_peer": 1303.5750943133116,
+            "direct_zero_own": 1328.6599583951054,
+            "direct_zero_peer": 1328.6599583951054,
+            "direct_intercept_own": 1328.6599583951054,
+            "direct_intercept_peer": 1328.6599583951054,
+            "direct_calibration": 1328.6599583951054
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1132.097642931445,
+            "one_step_zero_own": 1107.9499144343142,
+            "one_step_zero_peer": 1107.7230068668516,
+            "direct_zero_own": 1132.097642931445,
+            "direct_zero_peer": 1132.097642931445,
+            "direct_intercept_own": 1132.097642931445,
+            "direct_intercept_peer": 1132.097642931445,
+            "direct_calibration": 1132.097642931445
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 947.5558235026169,
+            "one_step_zero_own": 886.5208102213414,
+            "one_step_zero_peer": 883.2924129538503,
+            "direct_zero_own": 947.5558235026169,
+            "direct_zero_peer": 947.5558235026169,
+            "direct_intercept_own": 947.5558235026169,
+            "direct_intercept_peer": 947.5558235026169,
+            "direct_calibration": 947.5558235026169
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1507.249666339094,
+            "one_step_zero_own": 1446.1454756369676,
+            "one_step_zero_peer": 1439.2930919418475,
+            "direct_zero_own": 1507.249666339094,
+            "direct_zero_peer": 1507.249666339094,
+            "direct_intercept_own": 1507.249666339094,
+            "direct_intercept_peer": 1507.249666339094,
+            "direct_calibration": 1507.249666339094
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 86.6372668927308,
+        "one_step_zero_own": 86.91672681046097,
+        "one_step_zero_peer": 87.16430501009698,
+        "direct_zero_own": 86.91672681046097,
+        "direct_zero_peer": 87.16430501009698,
+        "direct_intercept_own": 98.87756764035713,
+        "direct_intercept_peer": 99.22356092036735,
+        "direct_calibration": 98.69047079856401
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -0.27945991773017226,
+          "gain_percent": -0.3225631737392907,
+          "ci95_month_blocks": [
+            -0.5657641291691425,
+            -0.04994488526747655
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.5709302906782768,
+            -0.05842354832786755
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -0.5270381173661931,
+          "gain_percent": -0.6083272663930417,
+          "ci95_month_blocks": [
+            -1.007921668513172,
+            -0.2262848334902417
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.0890939535728223,
+            -0.11827018707772781
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -0.27945991773017226,
+          "gain_percent": -0.3225631737392907,
+          "ci95_month_blocks": [
+            -0.5657641291691425,
+            -0.04994488526747655
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.5709302906782768,
+            -0.05842354832786755
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": -0.5270381173661931,
+          "gain_percent": -0.6083272663930417,
+          "ci95_month_blocks": [
+            -1.007921668513172,
+            -0.2262848334902417
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.0890939535728223,
+            -0.11827018707772781
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -12.240300747626339,
+          "gain_percent": -14.128216628511103,
+          "ci95_month_blocks": [
+            -26.35435966647958,
+            2.024604530463596
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -17.40984757222373,
+            -8.690302623539724
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -12.586294027636544,
+          "gain_percent": -14.527575117553232,
+          "ci95_month_blocks": [
+            -26.59260210969675,
+            1.6358634258721536
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -18.22714081954807,
+            -8.767167116619326
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -12.053203905833223,
+          "gain_percent": -13.912262399455415,
+          "ci95_month_blocks": [
+            -26.293486974060507,
+            2.565698092374859
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -17.14613228018692,
+            -8.594272731829575
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 63.66851587137289,
+            "one_step_zero_own": 63.646811461274254,
+            "one_step_zero_peer": 63.83105245995391,
+            "direct_zero_own": 63.646811461274254,
+            "direct_zero_peer": 63.83105245995391,
+            "direct_intercept_own": 71.97104123934426,
+            "direct_intercept_peer": 72.39697929650862,
+            "direct_calibration": 71.79624923485227
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 91.41933075619747,
+            "one_step_zero_own": 91.5821998556341,
+            "one_step_zero_peer": 91.8443767869705,
+            "direct_zero_own": 91.5821998556341,
+            "direct_zero_peer": 91.8443767869705,
+            "direct_intercept_own": 129.04654342719616,
+            "direct_intercept_peer": 129.42336771050964,
+            "direct_calibration": 128.91541303740647
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 70.22007365223972,
+            "one_step_zero_own": 70.3675732415945,
+            "one_step_zero_peer": 70.49850759548336,
+            "direct_zero_own": 70.3675732415945,
+            "direct_zero_peer": 70.49850759548336,
+            "direct_intercept_own": 73.98695129020312,
+            "direct_intercept_peer": 74.27312821869404,
+            "direct_calibration": 73.69663807949956
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 96.80011763409364,
+            "one_step_zero_own": 97.72168260866815,
+            "one_step_zero_peer": 98.4632535534469,
+            "direct_zero_own": 97.72168260866815,
+            "direct_zero_peer": 98.4632535534469,
+            "direct_intercept_own": 79.0676640950002,
+            "direct_intercept_peer": 79.75855747923264,
+            "direct_calibration": 78.2228504236685
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 69.93366906224674,
+            "one_step_zero_own": 70.39653097105649,
+            "one_step_zero_peer": 70.40012602331122,
+            "direct_zero_own": 70.39653097105649,
+            "direct_zero_peer": 70.40012602331122,
+            "direct_intercept_own": 81.95031604376186,
+            "direct_intercept_peer": 82.04244511737292,
+            "direct_calibration": 82.27233949199731
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 127.78189438023429,
+            "one_step_zero_own": 127.78556272453832,
+            "one_step_zero_peer": 127.94851364141604,
+            "direct_zero_own": 127.78556272453832,
+            "direct_zero_peer": 127.94851364141604,
+            "direct_intercept_own": 157.24288974663725,
+            "direct_intercept_peer": 157.44688769988622,
+            "direct_calibration": 157.23933452396003
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 91.22723509810808,
+        "one_step_zero_own": 90.99172675539796,
+        "one_step_zero_peer": 91.04381334202472,
+        "direct_zero_own": 91.3015097103899,
+        "direct_zero_peer": 91.19089365834456,
+        "direct_intercept_own": 150.49240994094797,
+        "direct_intercept_peer": 151.60451271375757,
+        "direct_calibration": 154.51029569063544
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 0.2355083427101267,
+          "gain_percent": 0.25815573875154174,
+          "ci95_month_blocks": [
+            0.020332123339967145,
+            0.5336932287845731
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.054435449591904196,
+            0.4387926748768881
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 0.18342175608336145,
+          "gain_percent": 0.20106030385126222,
+          "ci95_month_blocks": [
+            -0.269801154174363,
+            0.7385288596764691
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.029808203412337267,
+            0.3545768981270504
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -0.07427461228180686,
+          "gain_percent": -0.08141714719505645,
+          "ci95_month_blocks": [
+            -1.4343663798686452,
+            0.9962652419844787
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.022047548523317,
+            1.1633210379022578
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.03634143976351862,
+          "gain_percent": 0.03983617362121752,
+          "ci95_month_blocks": [
+            -1.1131056481407942,
+            1.0365041371023611
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.7536593955259653,
+            1.033257761715131
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -59.26517484283987,
+          "gain_percent": -64.96434401317173,
+          "ci95_month_blocks": [
+            -85.98638815127839,
+            -30.5056150542175
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -81.66611155513131,
+            -43.81947134253399
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -60.37727761564947,
+          "gain_percent": -66.18339090373419,
+          "ci95_month_blocks": [
+            -87.31979702570374,
+            -31.621771057926484
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -83.8526945274375,
+            -44.240663755503796
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -63.28306059252736,
+          "gain_percent": -69.3686052465266,
+          "ci95_month_blocks": [
+            -90.93838204833082,
+            -33.61262707572644
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -87.73838689905791,
+            -46.43043294152049
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 113.50114469635076,
+            "one_step_zero_own": 112.56683760978675,
+            "one_step_zero_peer": 112.0355389508729,
+            "direct_zero_own": 113.50114469635076,
+            "direct_zero_peer": 113.50114469635076,
+            "direct_intercept_own": 113.50114469635076,
+            "direct_intercept_peer": 113.50114469635076,
+            "direct_calibration": 113.50114469635076
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 79.93718794178588,
+            "one_step_zero_own": 79.96146901800624,
+            "one_step_zero_peer": 80.28088269070419,
+            "direct_zero_own": 79.56403017911144,
+            "direct_zero_peer": 79.57589332470619,
+            "direct_intercept_own": 186.5561477153841,
+            "direct_intercept_peer": 187.7152094005912,
+            "direct_calibration": 189.56246335217173
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 83.94483982031072,
+            "one_step_zero_own": 84.0078538743001,
+            "one_step_zero_peer": 84.48240988071103,
+            "direct_zero_own": 82.32646412650219,
+            "direct_zero_peer": 82.08509122243257,
+            "direct_intercept_own": 172.9754953700981,
+            "direct_intercept_peer": 174.1537080991529,
+            "direct_calibration": 181.4794428647118
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 88.64441610792466,
+            "one_step_zero_own": 88.49035201813611,
+            "one_step_zero_peer": 88.48605084539206,
+            "direct_zero_own": 91.72892468244369,
+            "direct_zero_peer": 91.03582810684973,
+            "direct_intercept_own": 123.96675158067912,
+            "direct_intercept_peer": 124.97618938524643,
+            "direct_calibration": 130.18587516283193
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 79.81378674141497,
+            "one_step_zero_own": 79.67126783074423,
+            "one_step_zero_peer": 79.74192539461943,
+            "direct_zero_own": 80.3707593746529,
+            "direct_zero_peer": 80.4944858237557,
+            "direct_intercept_own": 136.00829643131303,
+            "direct_intercept_peer": 138.34732663787264,
+            "direct_calibration": 139.11020891368702
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 101.52203528086146,
+            "one_step_zero_own": 101.25258018141427,
+            "one_step_zero_peer": 101.23607228984869,
+            "direct_zero_own": 100.31773520327832,
+            "direct_zero_peer": 100.45291877597238,
+            "direct_intercept_own": 169.94662385186265,
+            "direct_intercept_peer": 170.93349806333129,
+            "direct_calibration": 173.22263915405938
+          }
+        }
+      ]
+    },
+    {
+      "category": "Здоровье",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 125.37971359759804,
+        "one_step_zero_own": 125.33009525128719,
+        "one_step_zero_peer": 125.4576976095663,
+        "direct_zero_own": 125.37971359759804,
+        "direct_zero_peer": 125.37971359759804,
+        "direct_intercept_own": 125.37971359759804,
+        "direct_intercept_peer": 125.37971359759804,
+        "direct_calibration": 125.37971359759804
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 0.0496183463108517,
+          "gain_percent": 0.039574461359913535,
+          "ci95_month_blocks": [
+            -0.3652360059451937,
+            0.5496188247109596
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.10727558557846215,
+            0.23082881371785013
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -0.07798401196824734,
+          "gain_percent": -0.062198269345656976,
+          "ci95_month_blocks": [
+            -0.7087040806023418,
+            0.6500946614563724
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.45509046348610005,
+            0.24297509085690264
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 153.43343779539325,
+            "one_step_zero_own": 153.43343779539325,
+            "one_step_zero_peer": 153.43343779539325,
+            "direct_zero_own": 153.43343779539325,
+            "direct_zero_peer": 153.43343779539325,
+            "direct_intercept_own": 153.43343779539325,
+            "direct_intercept_peer": 153.43343779539325,
+            "direct_calibration": 153.43343779539325
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 95.62122415946001,
+            "one_step_zero_own": 95.62122415946001,
+            "one_step_zero_peer": 95.62122415946001,
+            "direct_zero_own": 95.62122415946001,
+            "direct_zero_peer": 95.62122415946001,
+            "direct_intercept_own": 95.62122415946001,
+            "direct_intercept_peer": 95.62122415946001,
+            "direct_calibration": 95.62122415946001
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 128.66581205627563,
+            "one_step_zero_own": 129.4371545874784,
+            "one_step_zero_peer": 129.73253498396278,
+            "direct_zero_own": 128.66581205627563,
+            "direct_zero_peer": 128.66581205627563,
+            "direct_intercept_own": 128.66581205627563,
+            "direct_intercept_peer": 128.66581205627563,
+            "direct_calibration": 128.66581205627563
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 145.15453862180868,
+            "one_step_zero_own": 144.04020845220975,
+            "one_step_zero_peer": 143.5036640653784,
+            "direct_zero_own": 145.15453862180868,
+            "direct_zero_peer": 145.15453862180868,
+            "direct_intercept_own": 145.15453862180868,
+            "direct_intercept_peer": 145.15453862180868,
+            "direct_calibration": 145.15453862180868
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 87.34842078123435,
+            "one_step_zero_own": 87.22580922329718,
+            "one_step_zero_peer": 87.34696749402036,
+            "direct_zero_own": 87.34842078123435,
+            "direct_zero_peer": 87.34842078123435,
+            "direct_intercept_own": 87.34842078123435,
+            "direct_intercept_peer": 87.34842078123435,
+            "direct_calibration": 87.34842078123435
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 142.0548481714164,
+            "one_step_zero_own": 142.22273728988463,
+            "one_step_zero_peer": 143.10835715918304,
+            "direct_zero_own": 142.0548481714164,
+            "direct_zero_peer": 142.0548481714164,
+            "direct_intercept_own": 142.0548481714164,
+            "direct_intercept_peer": 142.0548481714164,
+            "direct_calibration": 142.0548481714164
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 428.6653570833363,
+        "one_step_zero_own": 438.2912937637257,
+        "one_step_zero_peer": 423.4568775704129,
+        "direct_zero_own": 438.2912937637257,
+        "direct_zero_peer": 423.4568775704129,
+        "direct_intercept_own": 459.9488943462897,
+        "direct_intercept_peer": 449.15388194445023,
+        "direct_calibration": 454.22274742060273
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -9.625936680389394,
+          "gain_percent": -2.245559740559587,
+          "ci95_month_blocks": [
+            -15.81875776233322,
+            -2.7406768958543197
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -34.04759519271251,
+            8.613923789593851
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 5.208479512923339,
+          "gain_percent": 1.2150455890259322,
+          "ci95_month_blocks": [
+            0.8419969275386812,
+            10.371019940451081
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.326552230670697,
+            11.6650070039755
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -9.625936680389394,
+          "gain_percent": -2.245559740559587,
+          "ci95_month_blocks": [
+            -15.81875776233322,
+            -2.7406768958543197
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -34.04759519271251,
+            8.613923789593851
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 5.208479512923339,
+          "gain_percent": 1.2150455890259322,
+          "ci95_month_blocks": [
+            0.8419969275386812,
+            10.371019940451081
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.326552230670697,
+            11.6650070039755
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -31.2835372629534,
+          "gain_percent": -7.297892574246817,
+          "ci95_month_blocks": [
+            -70.46913360800227,
+            5.955205185972397
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -64.23625417456589,
+            -7.0292215900368165
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -20.48852486111391,
+          "gain_percent": -4.779608270777702,
+          "ci95_month_blocks": [
+            -57.77754505125672,
+            11.401093423808446
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -38.28861006357595,
+            -6.093049763267821
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -25.55739033726648,
+          "gain_percent": -5.962084389361536,
+          "ci95_month_blocks": [
+            -61.66469126318245,
+            4.383879837712264
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -37.59698427084011,
+            -16.615823023098784
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 327.13700734464226,
+            "one_step_zero_own": 332.9434425609887,
+            "one_step_zero_peer": 323.6588813361745,
+            "direct_zero_own": 332.9434425609887,
+            "direct_zero_peer": 323.6588813361745,
+            "direct_intercept_own": 440.13921770690695,
+            "direct_intercept_peer": 431.54172821686933,
+            "direct_calibration": 435.5187225346496
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 273.2370444221806,
+            "one_step_zero_own": 286.6645720082564,
+            "one_step_zero_peer": 276.150282135232,
+            "direct_zero_own": 286.6645720082564,
+            "direct_zero_peer": 276.150282135232,
+            "direct_intercept_own": 302.3747353698906,
+            "direct_intercept_peer": 290.9482179480826,
+            "direct_calibration": 289.16895491819963
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 338.3541183424036,
+            "one_step_zero_own": 357.6030536984448,
+            "one_step_zero_peer": 336.3930158552039,
+            "direct_zero_own": 357.6030536984448,
+            "direct_zero_peer": 336.3930158552039,
+            "direct_intercept_own": 400.5211482240446,
+            "direct_intercept_peer": 379.7619474531906,
+            "direct_calibration": 382.01299578410453
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 373.19487348098517,
+            "one_step_zero_own": 391.1266511844388,
+            "one_step_zero_peer": 366.1461210248055,
+            "direct_zero_own": 391.1266511844388,
+            "direct_zero_peer": 366.1461210248055,
+            "direct_intercept_own": 404.852380316739,
+            "direct_intercept_peer": 380.0857133307334,
+            "direct_calibration": 387.1581930900151
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 941.6279616076013,
+            "one_step_zero_own": 947.2864537105675,
+            "one_step_zero_peer": 924.7152121295829,
+            "direct_zero_own": 947.2864537105675,
+            "direct_zero_peer": 924.7152121295829,
+            "direct_intercept_own": 931.6115954514264,
+            "direct_intercept_peer": 908.9921086852964,
+            "direct_calibration": 925.815675936101
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 318.4411373022049,
+            "one_step_zero_own": 314.1235894196581,
+            "one_step_zero_peer": 313.677752941479,
+            "direct_zero_own": 314.1235894196581,
+            "direct_zero_peer": 313.677752941479,
+            "direct_intercept_own": 280.1942890087309,
+            "direct_intercept_peer": 303.5935760325288,
+            "direct_calibration": 305.6619422605469
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 644.4580672386127,
+        "one_step_zero_own": 648.7990536444923,
+        "one_step_zero_peer": 631.9031804750229,
+        "direct_zero_own": 668.4047833888269,
+        "direct_zero_peer": 641.9681181867884,
+        "direct_intercept_own": 813.9531413516802,
+        "direct_intercept_peer": 788.2863105718701,
+        "direct_calibration": 799.92474521282
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -4.340986405879837,
+          "gain_percent": -0.6735871000079471,
+          "ci95_month_blocks": [
+            -9.363995631044956,
+            1.2095182658530557
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -34.60351503830947,
+            18.43314243977141
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 12.554886763589693,
+          "gain_percent": 1.9481309028196563,
+          "ci95_month_blocks": [
+            7.867767087674416,
+            17.69914196289619
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            2.5115315921917873,
+            22.567710511610457
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -23.946716150214456,
+          "gain_percent": -3.715791200011173,
+          "ci95_month_blocks": [
+            -32.03410393670045,
+            -13.71159504504403
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -75.81281022459434,
+            14.855292678318428
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 2.4899490518241234,
+          "gain_percent": 0.38636323733103517,
+          "ci95_month_blocks": [
+            -4.676477112069434,
+            11.85683287848315
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -15.276035471934565,
+            20.13752421979479
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -169.4950741130677,
+          "gain_percent": -26.300403816701944,
+          "ci95_month_blocks": [
+            -255.6397061791206,
+            -77.7467263905134
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -248.53011574162826,
+            -110.76694904729234
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -143.82824333325757,
+          "gain_percent": -22.317703919750098,
+          "ci95_month_blocks": [
+            -233.1772625410574,
+            -49.961417059538825
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -186.03499148132997,
+            -109.78906043190756
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -155.46667797420736,
+          "gain_percent": -24.12362974062133,
+          "ci95_month_blocks": [
+            -246.47367117723581,
+            -59.367903590048286
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -182.65317091892288,
+            -133.60933057696695
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 329.1141596230145,
+            "one_step_zero_own": 321.06020808021646,
+            "one_step_zero_peer": 310.14703155695634,
+            "direct_zero_own": 329.1141596230145,
+            "direct_zero_peer": 329.1141596230145,
+            "direct_intercept_own": 329.1141596230145,
+            "direct_intercept_peer": 329.1141596230145,
+            "direct_calibration": 329.1141596230145
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 365.71258177680073,
+            "one_step_zero_own": 368.82240412393816,
+            "one_step_zero_peer": 358.52617851582454,
+            "direct_zero_own": 391.4586431364364,
+            "direct_zero_peer": 376.1046066278832,
+            "direct_intercept_own": 641.0761796149042,
+            "direct_intercept_peer": 631.3564137989231,
+            "direct_calibration": 648.5476079421162
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 573.3117782665795,
+            "one_step_zero_own": 575.5244766391988,
+            "one_step_zero_peer": 563.811890797425,
+            "direct_zero_own": 593.9492683825863,
+            "direct_zero_peer": 573.7909450899273,
+            "direct_intercept_own": 875.42228762444,
+            "direct_intercept_peer": 856.4495502791066,
+            "direct_calibration": 870.6349204694883
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 588.44065078116,
+            "one_step_zero_own": 596.0593878921794,
+            "one_step_zero_peer": 582.2869559047815,
+            "direct_zero_own": 616.8678236272028,
+            "direct_zero_peer": 591.5988904429381,
+            "direct_intercept_own": 786.7876259534466,
+            "direct_intercept_peer": 760.2803748839416,
+            "direct_calibration": 764.7612094853746
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1214.820648681865,
+            "one_step_zero_own": 1229.0496936696536,
+            "one_step_zero_peer": 1204.0410913638975,
+            "direct_zero_own": 1252.8741811843377,
+            "direct_zero_peer": 1209.7249110661278,
+            "direct_intercept_own": 1405.9374091868422,
+            "direct_intercept_peer": 1361.9752317465338,
+            "direct_calibration": 1371.5138963422103
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 795.3485843022554,
+            "one_step_zero_own": 802.2781514617678,
+            "one_step_zero_peer": 772.6059347112522,
+            "direct_zero_own": 826.1646243793842,
+            "direct_zero_peer": 771.4751962708401,
+            "direct_intercept_own": 845.3811861074341,
+            "direct_intercept_peer": 790.5421330997011,
+            "direct_calibration": 814.9766774147158
+          }
+        }
+      ]
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 826.3642090925364,
+        "one_step_zero_own": 821.2058304516472,
+        "one_step_zero_peer": 813.6016443421332,
+        "direct_zero_own": 826.3642090925364,
+        "direct_zero_peer": 826.3642090925364,
+        "direct_intercept_own": 826.3642090925364,
+        "direct_intercept_peer": 826.3642090925364,
+        "direct_calibration": 826.3642090925364
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 5.158378640889234,
+          "gain_percent": 0.6242258055384389,
+          "ci95_month_blocks": [
+            0.5750799487891072,
+            11.643449807981726
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -13.466440924774298,
+            20.816661194080233
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 12.762564750403294,
+          "gain_percent": 1.5444237068808169,
+          "ci95_month_blocks": [
+            4.278658730705608,
+            21.960303309280675
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            3.488047218960267,
+            22.15280415261579
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 376.6129972157699,
+            "one_step_zero_own": 376.6129972157699,
+            "one_step_zero_peer": 376.6129972157699,
+            "direct_zero_own": 376.6129972157699,
+            "direct_zero_peer": 376.6129972157699,
+            "direct_intercept_own": 376.6129972157699,
+            "direct_intercept_peer": 376.6129972157699,
+            "direct_calibration": 376.6129972157699
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 432.9185470198404,
+            "one_step_zero_own": 432.9185470198404,
+            "one_step_zero_peer": 432.9185470198404,
+            "direct_zero_own": 432.9185470198404,
+            "direct_zero_peer": 432.9185470198404,
+            "direct_intercept_own": 432.9185470198404,
+            "direct_intercept_peer": 432.9185470198404,
+            "direct_calibration": 432.9185470198404
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 513.5917880931316,
+            "one_step_zero_own": 492.9911746627065,
+            "one_step_zero_peer": 482.3824772051318,
+            "direct_zero_own": 513.5917880931316,
+            "direct_zero_peer": 513.5917880931316,
+            "direct_intercept_own": 513.5917880931316,
+            "direct_intercept_peer": 513.5917880931316,
+            "direct_calibration": 513.5917880931316
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 733.9151168186469,
+            "one_step_zero_own": 727.0159380964711,
+            "one_step_zero_peer": 714.2209915884606,
+            "direct_zero_own": 733.9151168186469,
+            "direct_zero_peer": 733.9151168186469,
+            "direct_intercept_own": 733.9151168186469,
+            "direct_intercept_peer": 733.9151168186469,
+            "direct_calibration": 733.9151168186469
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1543.017490868905,
+            "one_step_zero_own": 1541.8578110344658,
+            "one_step_zero_peer": 1532.7566684797794,
+            "direct_zero_own": 1543.017490868905,
+            "direct_zero_peer": 1543.017490868905,
+            "direct_intercept_own": 1543.017490868905,
+            "direct_intercept_peer": 1543.017490868905,
+            "direct_calibration": 1543.017490868905
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1358.129314538925,
+            "one_step_zero_own": 1355.8385146806297,
+            "one_step_zero_peer": 1342.7181845438167,
+            "direct_zero_own": 1358.129314538925,
+            "direct_zero_peer": 1358.129314538925,
+            "direct_intercept_own": 1358.129314538925,
+            "direct_intercept_peer": 1358.129314538925,
+            "direct_calibration": 1358.129314538925
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 64.76682717821207,
+        "one_step_zero_own": 64.31316436665038,
+        "one_step_zero_peer": 64.7691936234334,
+        "direct_zero_own": 64.31316436665038,
+        "direct_zero_peer": 64.7691936234334,
+        "direct_intercept_own": 126.30893817953195,
+        "direct_intercept_peer": 124.35293523108297,
+        "direct_calibration": 137.78730585728206
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 0.45366281156167737,
+          "gain_percent": 0.700455512994918,
+          "ci95_month_blocks": [
+            -6.79313313163809,
+            7.5269615666014325
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.03559401215633993,
+            0.8824164765303525
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -0.002366445221338586,
+          "gain_percent": -0.003653792110005771,
+          "ci95_month_blocks": [
+            -8.747839324980118,
+            8.46793276463588
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.9198081825193722,
+            0.8177996955990369
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.45366281156167737,
+          "gain_percent": 0.700455512994918,
+          "ci95_month_blocks": [
+            -6.79313313163809,
+            7.5269615666014325
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.03559401215633993,
+            0.8824164765303525
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": -0.002366445221338586,
+          "gain_percent": -0.003653792110005771,
+          "ci95_month_blocks": [
+            -8.747839324980118,
+            8.46793276463588
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.9198081825193722,
+            0.8177996955990369
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -61.54211100131988,
+          "gain_percent": -95.0210372849992,
+          "ci95_month_blocks": [
+            -94.86564859012086,
+            -27.707690486933082
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.39690388376295,
+            -39.32436344925791
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -59.5861080528709,
+          "gain_percent": -92.00096816370835,
+          "ci95_month_blocks": [
+            -93.22654819165925,
+            -25.705043265391314
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -89.24099595894246,
+            -38.74386160843751
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -73.02047867907002,
+          "gain_percent": -112.74364031782389,
+          "ci95_month_blocks": [
+            -105.59572788332117,
+            -39.48936617806334
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -117.1412445151563,
+            -43.055403112603436
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 86.03706952009648,
+            "one_step_zero_own": 73.55922378869505,
+            "one_step_zero_peer": 71.47045789860691,
+            "direct_zero_own": 73.55922378869505,
+            "direct_zero_peer": 71.47045789860691,
+            "direct_intercept_own": 212.59051299100983,
+            "direct_intercept_peer": 212.4251024177926,
+            "direct_calibration": 213.7266484290234
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 68.29258256244765,
+            "one_step_zero_own": 61.016970365997615,
+            "one_step_zero_peer": 60.45055644300996,
+            "direct_zero_own": 61.016970365997615,
+            "direct_zero_peer": 60.45055644300996,
+            "direct_intercept_own": 169.52484843266166,
+            "direct_intercept_peer": 167.13270030103496,
+            "direct_calibration": 185.95372426630894
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 63.08296516894249,
+            "one_step_zero_own": 56.12433058265526,
+            "one_step_zero_peer": 55.68213135453014,
+            "direct_zero_own": 56.12433058265526,
+            "direct_zero_peer": 55.68213135453014,
+            "direct_intercept_own": 134.55092542139792,
+            "direct_intercept_peer": 131.95307760524784,
+            "direct_calibration": 152.6487857122542
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 65.30414246797234,
+            "one_step_zero_own": 77.18922198693821,
+            "one_step_zero_peer": 80.55683838929771,
+            "direct_zero_own": 77.18922198693821,
+            "direct_zero_peer": 80.55683838929771,
+            "direct_intercept_own": 66.15349227497478,
+            "direct_intercept_peer": 63.316682585341404,
+            "direct_calibration": 78.90273722569971
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 51.00211826676076,
+            "one_step_zero_own": 57.19115523393093,
+            "one_step_zero_peer": 58.69602417223892,
+            "direct_zero_own": 57.19115523393093,
+            "direct_zero_peer": 58.69602417223892,
+            "direct_intercept_own": 93.05426497416691,
+            "direct_intercept_peer": 91.00193417358473,
+            "direct_calibration": 104.30922379779979
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 54.88208508305264,
+            "one_step_zero_own": 60.79808424168524,
+            "one_step_zero_peer": 61.759153482916766,
+            "direct_zero_own": 60.79808424168524,
+            "direct_zero_peer": 61.759153482916766,
+            "direct_intercept_own": 81.97958498298055,
+            "direct_intercept_peer": 80.28811430349626,
+            "direct_calibration": 91.1827157126064
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 101.70041921040796,
+        "one_step_zero_own": 105.39556640915593,
+        "one_step_zero_peer": 106.32113371322589,
+        "direct_zero_own": 115.56743321729697,
+        "direct_zero_peer": 118.71787294469216,
+        "direct_intercept_own": 158.681249542727,
+        "direct_intercept_peer": 158.9214049627683,
+        "direct_calibration": 159.5157829256028
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -3.6951471987479745,
+          "gain_percent": -3.6333647662779893,
+          "ci95_month_blocks": [
+            -8.366633218030906,
+            2.7643160805557
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -9.973099825627274,
+            0.27486679613943416
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -4.620714502817929,
+          "gain_percent": -4.54345669240373,
+          "ci95_month_blocks": [
+            -10.582114377624963,
+            3.4448314923289436
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -11.96016095151054,
+            0.053867924469569964
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -13.867014006888988,
+          "gain_percent": -13.635159141477605,
+          "ci95_month_blocks": [
+            -27.68454359396671,
+            3.0274798423839417
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -31.54637403942166,
+            -2.7559341099728627
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": -17.017453734284206,
+          "gain_percent": -16.732923882129533,
+          "ci95_month_blocks": [
+            -33.58356831433714,
+            4.018876844301387
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -38.9127472870942,
+            -3.2535811042467295
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -56.98083033231902,
+          "gain_percent": -56.0281174598026,
+          "ci95_month_blocks": [
+            -84.47362849152758,
+            -26.131685999657353
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.34375655210351,
+            -32.460785284530246
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -57.22098575236033,
+          "gain_percent": -56.26425750908249,
+          "ci95_month_blocks": [
+            -84.75826962481852,
+            -26.289951129482063
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.23746543550187,
+            -32.899315936459935
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -57.815363715194835,
+          "gain_percent": -56.848697541335255,
+          "ci95_month_blocks": [
+            -84.98246821279065,
+            -26.953154914150474
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -94.55097934017154,
+            -33.12724201573623
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 169.27578871253553,
+            "one_step_zero_own": 177.54013088352104,
+            "one_step_zero_peer": 178.37986423014175,
+            "direct_zero_own": 169.27578871253553,
+            "direct_zero_peer": 169.27578871253553,
+            "direct_intercept_own": 169.27578871253553,
+            "direct_intercept_peer": 169.27578871253553,
+            "direct_calibration": 169.27578871253553
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 99.73587661906541,
+            "one_step_zero_own": 104.79367867858014,
+            "one_step_zero_peer": 105.91894957140012,
+            "direct_zero_own": 128.65589653680223,
+            "direct_zero_peer": 134.34289644181115,
+            "direct_intercept_own": 152.5677142609748,
+            "direct_intercept_peer": 153.3015284722515,
+            "direct_calibration": 153.2634362424258
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 110.86030680861437,
+            "one_step_zero_own": 99.32157948663193,
+            "one_step_zero_peer": 96.7489452927668,
+            "direct_zero_own": 87.3178573225941,
+            "direct_zero_peer": 81.5001663643373,
+            "direct_intercept_own": 218.81983760730725,
+            "direct_intercept_peer": 219.03171566361857,
+            "direct_calibration": 219.05167667015675
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 73.31343953930266,
+            "one_step_zero_own": 75.70911588891549,
+            "one_step_zero_peer": 76.90523338603263,
+            "direct_zero_own": 93.84912449971037,
+            "direct_zero_peer": 101.00006342768918,
+            "direct_intercept_own": 152.80405226797896,
+            "direct_intercept_peer": 153.1616806352707,
+            "direct_calibration": 153.25197730317535
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 68.90896616679747,
+            "one_step_zero_own": 76.27923312881217,
+            "one_step_zero_peer": 77.87819239603029,
+            "direct_zero_own": 95.75508669729788,
+            "direct_zero_peer": 102.65065809235267,
+            "direct_intercept_own": 146.2084694360653,
+            "direct_intercept_peer": 146.32376504906284,
+            "direct_calibration": 147.17454661219324
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 88.10813741613232,
+            "one_step_zero_own": 98.72966038847481,
+            "one_step_zero_peer": 102.09561740298372,
+            "direct_zero_own": 118.55084553484154,
+            "direct_zero_peer": 123.53766462942714,
+            "direct_intercept_own": 112.41163497149991,
+            "direct_intercept_peer": 112.43395124387054,
+            "direct_calibration": 115.07727201313007
+          }
+        }
+      ]
+    },
+    {
+      "category": "Общественное питание",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 153.76594230204455,
+        "one_step_zero_own": 155.74801396359808,
+        "one_step_zero_peer": 156.24941107252508,
+        "direct_zero_own": 153.76594230204455,
+        "direct_zero_peer": 153.76594230204455,
+        "direct_intercept_own": 153.76594230204455,
+        "direct_intercept_peer": 153.76594230204455,
+        "direct_calibration": 153.76594230204455
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -1.9820716615535414,
+          "gain_percent": -1.2890186421516743,
+          "ci95_month_blocks": [
+            -4.894323048944065,
+            1.0265590942599094
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -5.685903841725224,
+            0.36482516863859005
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -2.483468770480543,
+          "gain_percent": -1.61509677195112,
+          "ci95_month_blocks": [
+            -5.576441843967197,
+            0.4808216686811322
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -6.442289500673687,
+            0.027787897681159045
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 205.91752579284366,
+            "one_step_zero_own": 205.91752579284366,
+            "one_step_zero_peer": 205.91752579284366,
+            "direct_zero_own": 205.91752579284366,
+            "direct_zero_peer": 205.91752579284366,
+            "direct_intercept_own": 205.91752579284366,
+            "direct_intercept_peer": 205.91752579284366,
+            "direct_calibration": 205.91752579284366
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 189.7626694191742,
+            "one_step_zero_own": 189.7626694191742,
+            "one_step_zero_peer": 189.7626694191742,
+            "direct_zero_own": 189.7626694191742,
+            "direct_zero_peer": 189.7626694191742,
+            "direct_intercept_own": 189.7626694191742,
+            "direct_intercept_peer": 189.7626694191742,
+            "direct_calibration": 189.7626694191742
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 157.7566808034769,
+            "one_step_zero_own": 161.21553293719347,
+            "one_step_zero_peer": 161.45086049917683,
+            "direct_zero_own": 157.7566808034769,
+            "direct_zero_peer": 157.7566808034769,
+            "direct_intercept_own": 157.7566808034769,
+            "direct_intercept_peer": 157.7566808034769,
+            "direct_calibration": 157.7566808034769
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 173.30830702964286,
+            "one_step_zero_own": 180.09300177881696,
+            "one_step_zero_peer": 180.98301167716613,
+            "direct_zero_own": 173.30830702964286,
+            "direct_zero_peer": 173.30830702964286,
+            "direct_intercept_own": 173.30830702964286,
+            "direct_intercept_peer": 173.30830702964286,
+            "direct_calibration": 173.30830702964286
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 100.64580627088178,
+            "one_step_zero_own": 106.1988081833074,
+            "one_step_zero_peer": 107.38616369641525,
+            "direct_zero_own": 100.64580627088178,
+            "direct_zero_peer": 100.64580627088178,
+            "direct_intercept_own": 100.64580627088178,
+            "direct_intercept_peer": 100.64580627088178,
+            "direct_calibration": 100.64580627088178
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 95.20466449624784,
+            "one_step_zero_own": 91.30054567025279,
+            "one_step_zero_peer": 91.9962353503744,
+            "direct_zero_own": 95.20466449624784,
+            "direct_zero_peer": 95.20466449624784,
+            "direct_intercept_own": 95.20466449624784,
+            "direct_intercept_peer": 95.20466449624784,
+            "direct_calibration": 95.20466449624784
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 376.60667658154637,
+        "one_step_zero_own": 372.6583435594642,
+        "one_step_zero_peer": 372.38490885856737,
+        "direct_zero_own": 372.6583435594642,
+        "direct_zero_peer": 372.38490885856737,
+        "direct_intercept_own": 463.1402081366318,
+        "direct_intercept_peer": 462.4055238859744,
+        "direct_calibration": 466.79661198786323
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 3.9483330220821276,
+          "gain_percent": 1.0483969795546622,
+          "ci95_month_blocks": [
+            0.625967762419683,
+            7.199605914013422
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            1.582561883486429,
+            6.106301882481167
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 4.221767722978989,
+          "gain_percent": 1.1210018264412933,
+          "ci95_month_blocks": [
+            0.10115994391517898,
+            8.297003230021298
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            2.3363093683899825,
+            5.914737155406142
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 3.9483330220821276,
+          "gain_percent": 1.0483969795546622,
+          "ci95_month_blocks": [
+            0.625967762419683,
+            7.199605914013422
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            1.582561883486429,
+            6.106301882481167
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 4.221767722978989,
+          "gain_percent": 1.1210018264412933,
+          "ci95_month_blocks": [
+            0.10115994391517898,
+            8.297003230021298
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            2.3363093683899825,
+            5.914737155406142
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -86.53353155508547,
+          "gain_percent": -22.977163426986788,
+          "ci95_month_blocks": [
+            -160.8519630412446,
+            -14.010026578456474
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.70491969606238,
+            -79.8383142705507
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -85.79884730442807,
+          "gain_percent": -22.782083441330098,
+          "ci95_month_blocks": [
+            -159.19209010428034,
+            -14.426859981288137
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -93.93998972390588,
+            -78.39670205691314
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -90.18993540631683,
+          "gain_percent": -23.948044741258876,
+          "ci95_month_blocks": [
+            -165.5152373729271,
+            -15.369015716252465
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -98.78325880323398,
+            -82.6539694402538
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 308.64514925929006,
+            "one_step_zero_own": 300.78742638296626,
+            "one_step_zero_peer": 299.75873172745577,
+            "direct_zero_own": 300.78742638296626,
+            "direct_zero_peer": 299.75873172745577,
+            "direct_intercept_own": 538.2347670023188,
+            "direct_intercept_peer": 535.9756923376557,
+            "direct_calibration": 543.0965196516552
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 556.2007741125768,
+            "one_step_zero_own": 548.9104875738756,
+            "one_step_zero_peer": 546.6026483518871,
+            "direct_zero_own": 548.9104875738756,
+            "direct_zero_peer": 546.6026483518871,
+            "direct_intercept_own": 753.199620927638,
+            "direct_intercept_peer": 750.1880497872108,
+            "direct_calibration": 760.2209462085566
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 471.93553894940595,
+            "one_step_zero_own": 463.7911769528569,
+            "one_step_zero_peer": 463.0270103810278,
+            "direct_zero_own": 463.7911769528569,
+            "direct_zero_peer": 463.0270103810278,
+            "direct_intercept_own": 554.0374365800177,
+            "direct_intercept_peer": 552.8081092295633,
+            "direct_calibration": 561.6378839761437
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 222.95651998009,
+            "one_step_zero_own": 224.77681633365157,
+            "one_step_zero_peer": 226.00248550385115,
+            "direct_zero_own": 224.77681633365157,
+            "direct_zero_peer": 226.00248550385115,
+            "direct_intercept_own": 217.16177410569708,
+            "direct_intercept_peer": 217.74134935845615,
+            "direct_calibration": 216.48774839029926
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 279.32175681482244,
+            "one_step_zero_own": 281.28781015737337,
+            "one_step_zero_peer": 282.22055000424723,
+            "direct_zero_own": 281.28781015737337,
+            "direct_zero_peer": 282.22055000424723,
+            "direct_intercept_own": 276.56393738753115,
+            "direct_intercept_peer": 277.6228222506163,
+            "direct_calibration": 275.33655275257183
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 420.58032037309283,
+            "one_step_zero_own": 416.3963439560615,
+            "one_step_zero_peer": 416.69802718293505,
+            "direct_zero_own": 416.3963439560615,
+            "direct_zero_peer": 416.69802718293505,
+            "direct_intercept_own": 439.6437128165882,
+            "direct_intercept_peer": 440.0971203523442,
+            "direct_calibration": 444.0000209479525
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 501.82947852398433,
+        "one_step_zero_own": 494.39824708999623,
+        "one_step_zero_peer": 492.6816621709791,
+        "direct_zero_own": 491.348795818414,
+        "direct_zero_peer": 488.08124359064533,
+        "direct_intercept_own": 823.7478931096733,
+        "direct_intercept_peer": 819.9064326476072,
+        "direct_calibration": 833.90372307379
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 7.43123143398815,
+          "gain_percent": 1.4808280007474657,
+          "ci95_month_blocks": [
+            5.691940397761527,
+            9.418318950095438
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            4.483473692929193,
+            10.167118380460508
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 9.147816353005203,
+          "gain_percent": 1.8228933820132278,
+          "ci95_month_blocks": [
+            7.203051139091952,
+            11.229556224401302
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            6.274779586041261,
+            11.842469263715431
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 10.480682705570414,
+          "gain_percent": 2.0884948282426383,
+          "ci95_month_blocks": [
+            2.4187752718404307,
+            18.94774908388121
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            1.437518325100839,
+            18.69249561438083
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 13.74823493333906,
+          "gain_percent": 2.739622824425604,
+          "ci95_month_blocks": [
+            5.156588790812536,
+            22.87130719462881
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            4.594097526848588,
+            22.272735685215988
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -321.91841458568894,
+          "gain_percent": -64.14896461095465,
+          "ci95_month_blocks": [
+            -538.6999832442579,
+            -111.32774514786004
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -341.0359302377577,
+            -303.3119621190205
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -318.0769541236228,
+          "gain_percent": -63.38347341793726,
+          "ci95_month_blocks": [
+            -534.4370597650287,
+            -108.39241064386503
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -335.8529457597146,
+            -300.262365342918
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -332.0742445498056,
+          "gain_percent": -66.17272574869962,
+          "ci95_month_blocks": [
+            -539.2007296962432,
+            -127.2349235338214
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -357.4119268899077,
+            -309.4531338681287
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 333.99094096813917,
+            "one_step_zero_own": 327.6791214428279,
+            "one_step_zero_peer": 327.1760748537777,
+            "direct_zero_own": 333.99094096813917,
+            "direct_zero_peer": 333.99094096813917,
+            "direct_intercept_own": 333.99094096813917,
+            "direct_intercept_peer": 333.99094096813917,
+            "direct_calibration": 333.99094096813917
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 581.3024687257085,
+            "one_step_zero_own": 576.0329462305597,
+            "one_step_zero_peer": 574.3810841360167,
+            "direct_zero_own": 577.4264819083827,
+            "direct_zero_peer": 574.1355280168277,
+            "direct_intercept_own": 1288.665689212334,
+            "direct_intercept_peer": 1285.622161763768,
+            "direct_calibration": 1288.1809232743012
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 726.2011448341977,
+            "one_step_zero_own": 721.4500551010153,
+            "one_step_zero_peer": 719.0145043976717,
+            "direct_zero_own": 728.19700227042,
+            "direct_zero_peer": 722.896869612002,
+            "direct_intercept_own": 1331.7246173439246,
+            "direct_intercept_peer": 1325.2013788446782,
+            "direct_calibration": 1326.0101993090188
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 421.69765868891204,
+            "one_step_zero_own": 410.6972240595845,
+            "one_step_zero_peer": 409.2173167617284,
+            "direct_zero_own": 400.76233851794,
+            "direct_zero_peer": 397.28317240592327,
+            "direct_intercept_own": 810.3205974001232,
+            "direct_intercept_peer": 804.1371277787531,
+            "direct_calibration": 826.671975548761
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 402.827985725219,
+            "one_step_zero_own": 395.5478200825901,
+            "one_step_zero_peer": 394.37533921063033,
+            "direct_zero_own": 388.19960603905764,
+            "direct_zero_peer": 386.1769654775595,
+            "direct_intercept_own": 583.4861651624105,
+            "direct_intercept_peer": 580.317648158581,
+            "direct_calibration": 605.9600442132805
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 544.9566722017298,
+            "one_step_zero_own": 534.9823156233999,
+            "one_step_zero_peer": 531.9256536660503,
+            "direct_zero_own": 519.5164052065443,
+            "direct_zero_peer": 514.0039850634201,
+            "direct_intercept_own": 594.2993485711087,
+            "direct_intercept_peer": 590.1693383717235,
+            "direct_calibration": 622.608255129239
+          }
+        }
+      ]
+    },
+    {
+      "category": "Продовольствие",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 589.3273590808013,
+        "one_step_zero_own": 584.8424793505585,
+        "one_step_zero_peer": 583.7366714302976,
+        "direct_zero_own": 589.3273590808013,
+        "direct_zero_peer": 589.3273590808013,
+        "direct_intercept_own": 589.3273590808013,
+        "direct_intercept_peer": 589.3273590808013,
+        "direct_calibration": 589.3273590808013
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 4.484879730242739,
+          "gain_percent": 0.7610167186600659,
+          "ci95_month_blocks": [
+            1.3898163803401336,
+            7.751191913032132
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            2.177970502193219,
+            6.814954420261113
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 5.5906876505036465,
+          "gain_percent": 0.9486557113560241,
+          "ci95_month_blocks": [
+            1.6218419283257237,
+            9.831716297816692
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            2.95921328286122,
+            8.516291662943571
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 626.0214698114398,
+            "one_step_zero_own": 626.0214698114398,
+            "one_step_zero_peer": 626.0214698114398,
+            "direct_zero_own": 626.0214698114398,
+            "direct_zero_peer": 626.0214698114398,
+            "direct_intercept_own": 626.0214698114398,
+            "direct_intercept_peer": 626.0214698114398,
+            "direct_calibration": 626.0214698114398
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 406.92164847699974,
+            "one_step_zero_own": 406.92164847699974,
+            "one_step_zero_peer": 406.92164847699974,
+            "direct_zero_own": 406.92164847699974,
+            "direct_zero_peer": 406.92164847699974,
+            "direct_intercept_own": 406.92164847699974,
+            "direct_intercept_peer": 406.92164847699974,
+            "direct_calibration": 406.92164847699974
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 455.5447478408965,
+            "one_step_zero_own": 453.85402088786833,
+            "one_step_zero_peer": 453.57618086013906,
+            "direct_zero_own": 455.5447478408965,
+            "direct_zero_peer": 455.5447478408965,
+            "direct_intercept_own": 455.5447478408965,
+            "direct_intercept_peer": 455.5447478408965,
+            "direct_calibration": 455.5447478408965
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 401.2152685875609,
+            "one_step_zero_own": 391.41633203919264,
+            "one_step_zero_peer": 389.8111275132735,
+            "direct_zero_own": 401.2152685875609,
+            "direct_zero_peer": 401.2152685875609,
+            "direct_intercept_own": 401.2152685875609,
+            "direct_intercept_peer": 401.2152685875609,
+            "direct_calibration": 401.2152685875609
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 572.7841565079792,
+            "one_step_zero_own": 566.1359851789665,
+            "one_step_zero_peer": 565.0216719187822,
+            "direct_zero_own": 572.7841565079792,
+            "direct_zero_peer": 572.7841565079792,
+            "direct_intercept_own": 572.7841565079792,
+            "direct_intercept_peer": 572.7841565079792,
+            "direct_calibration": 572.7841565079792
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 1073.4768632599314,
+            "one_step_zero_own": 1064.705419708884,
+            "one_step_zero_peer": 1061.0679300011514,
+            "direct_zero_own": 1073.4768632599314,
+            "direct_zero_peer": 1073.4768632599314,
+            "direct_intercept_own": 1073.4768632599314,
+            "direct_intercept_peer": 1073.4768632599314,
+            "direct_calibration": 1073.4768632599314
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 1,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 83.7866806104579,
+        "one_step_zero_own": 83.39541368650684,
+        "one_step_zero_peer": 83.62005243389922,
+        "direct_zero_own": 83.39541368650684,
+        "direct_zero_peer": 83.62005243389922,
+        "direct_intercept_own": 117.50208087109866,
+        "direct_intercept_peer": 117.6425736876199,
+        "direct_calibration": 121.63652652964299
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 0.39126692395106366,
+          "gain_percent": 0.46697986016434617,
+          "ci95_month_blocks": [
+            -2.2032847728338156,
+            3.153262345558441
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.094652298520416,
+            0.9113946652731415
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": 0.1666281765586999,
+          "gain_percent": 0.19887191537446114,
+          "ci95_month_blocks": [
+            -2.5905135255805525,
+            2.9977481986149233
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.1800640990667248,
+            0.4880311373808023
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.39126692395106366,
+          "gain_percent": 0.46697986016434617,
+          "ci95_month_blocks": [
+            -2.2032847728338156,
+            3.153262345558441
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.094652298520416,
+            0.9113946652731415
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.1666281765586999,
+          "gain_percent": 0.19887191537446114,
+          "ci95_month_blocks": [
+            -2.5905135255805525,
+            2.9977481986149233
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.1800640990667248,
+            0.4880311373808023
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -33.71540026064074,
+          "gain_percent": -40.23957031713764,
+          "ci95_month_blocks": [
+            -58.47094217549086,
+            -9.766231118095344
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -46.3828963286441,
+            -24.35651947985053
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -33.85589307716197,
+          "gain_percent": -40.40724949418299,
+          "ci95_month_blocks": [
+            -58.76532427195888,
+            -9.715054688343038
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -46.752313947293004,
+            -24.35746036867784
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -37.8498459191851,
+          "gain_percent": -45.17406065429072,
+          "ci95_month_blocks": [
+            -63.63508816449892,
+            -13.005803207398204
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -54.486736055201725,
+            -25.83884954462537
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.01547085167803,
+            "one_step_zero_own": 76.48928338350048,
+            "one_step_zero_peer": 76.75424657407571,
+            "direct_zero_own": 76.48928338350048,
+            "direct_zero_peer": 76.75424657407571,
+            "direct_intercept_own": 147.16381435801867,
+            "direct_intercept_peer": 147.23568693043637,
+            "direct_calibration": 151.93043129530483
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 104.8060601004888,
+            "one_step_zero_own": 99.30072255526441,
+            "one_step_zero_peer": 99.67457782948873,
+            "direct_zero_own": 99.30072255526441,
+            "direct_zero_peer": 99.67457782948873,
+            "direct_intercept_own": 179.31057827467603,
+            "direct_intercept_peer": 179.86083970234117,
+            "direct_calibration": 185.3402038641972
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 81.51711680451841,
+            "one_step_zero_own": 77.70903690966736,
+            "one_step_zero_peer": 77.60251462418202,
+            "direct_zero_own": 77.70903690966736,
+            "direct_zero_peer": 77.60251462418202,
+            "direct_intercept_own": 121.26974154292434,
+            "direct_intercept_peer": 121.22729315953924,
+            "direct_calibration": 127.89646594476294
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.81453548480577,
+            "one_step_zero_own": 81.32987618645713,
+            "one_step_zero_peer": 81.67551195330476,
+            "direct_zero_own": 81.32987618645713,
+            "direct_zero_peer": 81.67551195330476,
+            "direct_intercept_own": 78.29345889743348,
+            "direct_intercept_peer": 77.82723065784273,
+            "direct_calibration": 82.52681221048158
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 83.99401499177938,
+            "one_step_zero_own": 87.12096136209628,
+            "one_step_zero_peer": 87.77929829204344,
+            "direct_zero_own": 87.12096136209628,
+            "direct_zero_peer": 87.77929829204344,
+            "direct_intercept_own": 79.63470177057881,
+            "direct_intercept_peer": 79.79972833057161,
+            "direct_calibration": 80.01938900155581
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 77.572885429477,
+            "one_step_zero_own": 78.42260172205538,
+            "one_step_zero_peer": 78.23416533030054,
+            "direct_zero_own": 78.42260172205538,
+            "direct_zero_peer": 78.23416533030054,
+            "direct_intercept_own": 99.34019038296057,
+            "direct_intercept_peer": 99.90466334498811,
+            "direct_calibration": 102.10585686155574
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 3,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 113.87983116588167,
+        "one_step_zero_own": 113.65147894604142,
+        "one_step_zero_peer": 113.93201097686381,
+        "direct_zero_own": 116.19252116558128,
+        "direct_zero_peer": 114.32467344607346,
+        "direct_intercept_own": 196.45614139284885,
+        "direct_intercept_peer": 198.72427245590882,
+        "direct_calibration": 203.8986218438586
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": 0.22835221984020798,
+          "gain_percent": 0.2005203357806015,
+          "ci95_month_blocks": [
+            -2.6176519061800603,
+            3.154261386235513
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -0.5733531236554941,
+            0.9543542362877693
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -0.05217981098215402,
+          "gain_percent": -0.045820063524810585,
+          "ci95_month_blocks": [
+            -3.203998798296825,
+            3.236173447229036
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.2718957072174009,
+            0.933596455833648
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": -2.3126899996996326,
+          "gain_percent": -2.0308161471813926,
+          "ci95_month_blocks": [
+            -8.519512623870682,
+            4.2267496250676295
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -3.5012664879107147,
+            -1.1471683221893623
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": -0.4448422801918181,
+          "gain_percent": -0.3906242884605651,
+          "ci95_month_blocks": [
+            -6.024505441745187,
+            5.5165642526664245
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.8017197064240946,
+            0.8130519451221677
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": -82.5763102269672,
+          "gain_percent": -72.51179544399167,
+          "ci95_month_blocks": [
+            -115.34140316100026,
+            -45.05600271846762
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -118.83593969058683,
+            -56.436052972737215
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": -84.84444129002716,
+          "gain_percent": -74.50348355929643,
+          "ci95_month_blocks": [
+            -117.08485003438234,
+            -47.168697421849295
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -122.798552803388,
+            -57.6126984382249
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": -90.01879067797692,
+          "gain_percent": -79.04717609464326,
+          "ci95_month_blocks": [
+            -120.8936263992176,
+            -50.08715392583981
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -129.21555287663747,
+            -61.820073788132845
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 173.11324787948945,
+            "one_step_zero_own": 177.65777689204205,
+            "one_step_zero_peer": 178.82402016853163,
+            "direct_zero_own": 173.11324787948945,
+            "direct_zero_peer": 173.11324787948945,
+            "direct_intercept_own": 173.11324787948945,
+            "direct_intercept_peer": 173.11324787948945,
+            "direct_calibration": 173.11324787948945
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 96.34485316818139,
+            "one_step_zero_own": 96.69263739569472,
+            "one_step_zero_peer": 96.84247246869356,
+            "direct_zero_own": 108.7985970295135,
+            "direct_zero_peer": 107.12921022718476,
+            "direct_intercept_own": 210.1381930602286,
+            "direct_intercept_peer": 210.8436915231315,
+            "direct_calibration": 212.80815117530037
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 117.79311195873952,
+            "one_step_zero_own": 112.51576875330375,
+            "one_step_zero_peer": 112.17701458814616,
+            "direct_zero_own": 108.76992968519711,
+            "direct_zero_peer": 107.69339267198364,
+            "direct_intercept_own": 252.96112011414235,
+            "direct_intercept_peer": 253.99050714636454,
+            "direct_calibration": 255.95529555285486
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 104.43960950561421,
+            "one_step_zero_own": 99.62416022907635,
+            "one_step_zero_peer": 99.80773676187098,
+            "direct_zero_own": 97.7708504008331,
+            "direct_zero_peer": 96.74254436596823,
+            "direct_intercept_own": 214.37175088309363,
+            "direct_intercept_peer": 215.99523435973137,
+            "direct_calibration": 219.12276777974378
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 90.03418733938649,
+            "one_step_zero_own": 91.4109432837824,
+            "one_step_zero_peer": 91.43467320955241,
+            "direct_zero_own": 98.41199551438908,
+            "direct_zero_peer": 94.93102482330153,
+            "direct_intercept_own": 174.22776883300853,
+            "direct_intercept_peer": 179.59519560641314,
+            "direct_calibration": 191.461824258094
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 101.55397714387883,
+            "one_step_zero_own": 104.00758712234936,
+            "one_step_zero_peer": 104.50614866438804,
+            "direct_zero_own": 110.29050648406546,
+            "direct_zero_peer": 106.3386207085132,
+            "direct_intercept_own": 153.92476758713062,
+            "direct_intercept_peer": 158.80775822032288,
+            "direct_calibration": 170.93044441766912
+          }
+        }
+      ]
+    },
+    {
+      "category": "Транспорт",
+      "horizon": 6,
+      "n": 9234,
+      "municipalities": 1539,
+      "mae": {
+        "profile_ses": 170.6039865230295,
+        "one_step_zero_own": 170.63843507294837,
+        "one_step_zero_peer": 170.95809883657392,
+        "direct_zero_own": 170.6039865230295,
+        "direct_zero_peer": 170.6039865230295,
+        "direct_intercept_own": 170.6039865230295,
+        "direct_intercept_peer": 170.6039865230295,
+        "direct_calibration": 170.6039865230295
+      },
+      "comparisons": [
+        {
+          "model": "one_step_zero_own",
+          "mae_gain": -0.03444854991889374,
+          "gain_percent": -0.02019211310413523,
+          "ci95_month_blocks": [
+            -1.539275432014239,
+            2.019390689417053
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -1.8042744511485496,
+            1.2574075715385562
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "one_step_zero_peer",
+          "mae_gain": -0.35411231354442646,
+          "gain_percent": -0.20756391498309187,
+          "ci95_month_blocks": [
+            -2.1957382041284514,
+            1.9601413464081696
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            -2.5147919074770435,
+            1.1910441680886257
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_zero_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_own",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_intercept_peer",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        },
+        {
+          "model": "direct_calibration",
+          "mae_gain": 0.0,
+          "gain_percent": 0.0,
+          "ci95_month_blocks": [
+            0.0,
+            0.0
+          ],
+          "month_blocks": 6,
+          "ci95_region_blocks_sensitivity": [
+            0.0,
+            0.0
+          ],
+          "region_blocks": 71
+        }
+      ],
+      "by_month": [
+        {
+          "target": "2024-07",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 243.5326764586481,
+            "one_step_zero_own": 243.5326764586481,
+            "one_step_zero_peer": 243.5326764586481,
+            "direct_zero_own": 243.5326764586481,
+            "direct_zero_peer": 243.5326764586481,
+            "direct_intercept_own": 243.5326764586481,
+            "direct_intercept_peer": 243.5326764586481,
+            "direct_calibration": 243.5326764586481
+          }
+        },
+        {
+          "target": "2024-08",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 199.57810257974253,
+            "one_step_zero_own": 199.57810257974253,
+            "one_step_zero_peer": 199.57810257974253,
+            "direct_zero_own": 199.57810257974253,
+            "direct_zero_peer": 199.57810257974253,
+            "direct_intercept_own": 199.57810257974253,
+            "direct_intercept_peer": 199.57810257974253,
+            "direct_calibration": 199.57810257974253
+          }
+        },
+        {
+          "target": "2024-09",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 180.43727739470765,
+            "one_step_zero_own": 181.7178084921824,
+            "one_step_zero_peer": 182.20586903454804,
+            "direct_zero_own": 180.43727739470765,
+            "direct_zero_peer": 180.43727739470765,
+            "direct_intercept_own": 180.43727739470765,
+            "direct_intercept_peer": 180.43727739470765,
+            "direct_calibration": 180.43727739470765
+          }
+        },
+        {
+          "target": "2024-10",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 168.13281784327302,
+            "one_step_zero_own": 170.35305218875527,
+            "one_step_zero_peer": 171.32466670091054,
+            "direct_zero_own": 168.13281784327302,
+            "direct_zero_peer": 168.13281784327302,
+            "direct_intercept_own": 168.13281784327302,
+            "direct_intercept_peer": 168.13281784327302,
+            "direct_calibration": 168.13281784327302
+          }
+        },
+        {
+          "target": "2024-11",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 112.23785336502209,
+            "one_step_zero_own": 113.72263871557332,
+            "one_step_zero_peer": 114.38631906083951,
+            "direct_zero_own": 112.23785336502209,
+            "direct_zero_peer": 112.23785336502209,
+            "direct_intercept_own": 112.23785336502209,
+            "direct_intercept_peer": 112.23785336502209,
+            "direct_calibration": 112.23785336502209
+          }
+        },
+        {
+          "target": "2024-12",
+          "n": 1539,
+          "mae": {
+            "profile_ses": 119.70519149678363,
+            "one_step_zero_own": 114.92633200278877,
+            "one_step_zero_peer": 114.72095918475478,
+            "direct_zero_own": 119.70519149678363,
+            "direct_zero_peer": 119.70519149678363,
+            "direct_intercept_own": 119.70519149678363,
+            "direct_intercept_peer": 119.70519149678363,
+            "direct_calibration": 119.70519149678363
+          }
+        }
+      ]
+    }
+  ],
+  "robustness": {
+    "configurations": 45,
+    "original_signals": 25,
+    "original_core80": 9,
+    "core80_all": 9,
+    "original_min_max_retained": [
+      7,
+      25
+    ]
+  },
+  "denominator": {
+    "signals": 25,
+    "nominal_confirmed": 22,
+    "ratio_to_food_same_direction": 24,
+    "denominator_dominates_magnitude": 3,
+    "max_additive_identity_error": 5.861977570020827e-14,
+    "positive_aggregate_minus_marketplace_histories": 1896,
+    "supported_balance_histories": 1539
+  },
+  "checks": {
+    "real_future_mutation_predictions": 1638144,
+    "old_baseline_actual_exact_match_rows": 204768,
+    "unique_keys": true
+  },
+  "direct_h6": "UNSUPPORTED_TRAINING_ALL36_CATEGORY_TARGET_BLOCKS_COLD_START",
+  "versions": {
+    "python": "3.13.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "limits": [
+    "2024 was already viewed; all new specifications are post hoc",
+    "No new municipality observations after2024",
+    "Retrospective panel, dictionary and unknown source publication vintage",
+    "No quantity, household income or crisis labels",
+    "No paid model calls or CMD use"
+  ]
+}

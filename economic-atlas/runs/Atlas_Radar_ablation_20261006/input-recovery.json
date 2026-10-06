@@ -1,0 +1,26 @@
+[
+  {
+    "indicator": "Y48423007",
+    "archive_url": "https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_v20260928/indicators/section32/data_Y48423007_112_v20260928.zip",
+    "member": "data_Y48423007_112_v20260928.parquet",
+    "sha256": "6c350c9356f8def9d190b56e2bacaa55960ae2c2aa0eda8d25720db44bfadbe3",
+    "bytes": 8621400,
+    "downloaded_bytes": 9626124,
+    "requests": 13,
+    "etag": "\"b05bdf311a7321f65b1ea4c6aa7724a6\"",
+    "checked_at_utc": "2026-10-06T19:47:22.927956+00:00",
+    "matches_A8_frozen_sha": true
+  },
+  {
+    "indicator": "Y48423005",
+    "archive_url": "https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_v20260928/indicators/section32/data_Y48423005_112_v20260928.zip",
+    "member": "data_Y48423005_112_v20260928.parquet",
+    "sha256": "f643b394c11758f5d28e465380e263943c5e5e9e312a468daedca95b7e2f87d7",
+    "bytes": 3305237,
+    "downloaded_bytes": 4696810,
+    "requests": 8,
+    "etag": "\"c4655bd0286177a271c364ce70aa15ac\"",
+    "checked_at_utc": "2026-10-06T19:47:26.716941+00:00",
+    "matches_A8_frozen_sha": true
+  }
+]

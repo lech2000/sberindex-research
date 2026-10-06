@@ -1,0 +1,38 @@
+[
+  {
+    "role": "atlas",
+    "case_id": "case_66cae4a89ba6473f",
+    "material_id": "mat_atlas_radar_ablation_20261006_atlas",
+    "full_readback_verified": true,
+    "new_measurement_action_id": "act_fcbfc42f8099430d",
+    "measurement_action_done": true,
+    "scientific_pass": false,
+    "acceptance_still_open": true,
+    "text_sha256": "3f90cdef11066a964346b48f71f571a756ca9fe9e8e78eefef5d13729935154a",
+    "checked_at_utc": "2026-10-06T20:05:50.473845+00:00"
+  },
+  {
+    "role": "radar",
+    "case_id": "case_008f37d03cf541e5",
+    "material_id": "mat_atlas_radar_ablation_20261006_radar",
+    "full_readback_verified": true,
+    "new_measurement_action_id": "act_145b105e336548c5",
+    "measurement_action_done": true,
+    "scientific_pass": false,
+    "acceptance_still_open": true,
+    "text_sha256": "3f90cdef11066a964346b48f71f571a756ca9fe9e8e78eefef5d13729935154a",
+    "checked_at_utc": "2026-10-06T20:05:51.489578+00:00"
+  },
+  {
+    "role": "curator",
+    "case_id": "case_d058db85c48a487c",
+    "material_id": "mat_atlas_radar_ablation_20261006_curator",
+    "full_readback_verified": true,
+    "new_measurement_action_id": null,
+    "measurement_action_done": false,
+    "scientific_pass": false,
+    "acceptance_still_open": false,
+    "text_sha256": "3f90cdef11066a964346b48f71f571a756ca9fe9e8e78eefef5d13729935154a",
+    "checked_at_utc": "2026-10-06T20:05:51.639578+00:00"
+  }
+]

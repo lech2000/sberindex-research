@@ -1,0 +1,16 @@
+{
+  "code_sha256": "eb96cc995df8c53898c6a7919a6e1783c9b57e3fae94df0e5759f9c390623857",
+  "protocol_sha256": "627a2b74c90908cb78c2aab9d764b5313e1b63cd62d14061471fe88b1a2c2b5b",
+  "inputs": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "prophet": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+    "tsfm": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676",
+    "frozen_models": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+    "old_decision": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+  },
+  "outputs": {
+    "summary.csv": "fe89c480c083d60def1d1ed2281cde5ada44fc09b8e1fbc24bbc2551d2322929",
+    "results.json": "d6fa2f02b21448e27313f1ac798e2cd115ed438605dadadbe0ae7d39771a7771",
+    "predictions.parquet": "0c74be54444694c9e58c1e5bffe3d121dc1558fddd0d98309ee4f73f1a26db11"
+  }
+}

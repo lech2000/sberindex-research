@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "authority": "owner message in this Codex conversation",
+  "verbatim": "mq не будет",
+  "scope": "Atlas MQ omitted from this release; no request or wait; continue other closeout tasks",
+  "mq_scientific_status": "SPEC_UNRESOLVED",
+  "mq_is_release_blocker": false,
+  "mq_equals_newman_q": false,
+  "organizer_waiver_confirmed": false,
+  "scientific_pass": false,
+  "frozen_runs_changed": false,
+  "verification": "05.10.2026 Mac: owner message and exact replacements in isolated research worktree; live receipts to follow",
+  "supersedes": [
+    "MQ request in CLOSEOUT_PLAN_2026-10-05.md",
+    "MQ wait in KB74/16619, KB75/16620, KB77/16622"
+  ]
+}

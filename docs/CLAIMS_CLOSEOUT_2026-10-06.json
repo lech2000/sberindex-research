@@ -1,0 +1,27 @@
+{
+  "consumer_all_h1": {
+    "baseline_mae": 686.416609985477,
+    "zero_peer_mae": 667.9508693956427,
+    "gain_percent": 2.690165173920389,
+    "source": "economic-atlas/runs/Consumer_closeout_20261006/metrics.json",
+    "scope": "1539MO,6months,already viewed2024"
+  },
+  "robust_signals": {
+    "original": 25,
+    "core80": 9,
+    "configurations": 45,
+    "false_alarm_calibration": "synthetic_only_not_real_precision"
+  },
+  "national_prophet_pilot": {
+    "series": 120,
+    "rows": 720,
+    "fresh_fits": 1452,
+    "pooled_national_simple_gain_percent": 36.7863214246971,
+    "marketplace_simple_loss_percent": 53.04337736545024,
+    "full_panel": false
+  },
+  "independent_holdout": false,
+  "historic_asof_verified": false,
+  "scientific_pass": false,
+  "crisis6months_supported": false
+}

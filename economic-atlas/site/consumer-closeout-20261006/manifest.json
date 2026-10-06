@@ -1,0 +1,13 @@
+{
+  "municipalities": 1896,
+  "supported": 1539,
+  "signals": 25,
+  "core80": 9,
+  "forecast_precision": 6,
+  "source_prediction_sha256": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+  "files": {
+    "index.html": "c5e86c5fbd65d06db76b20ac854cde647ea67702fa0a672a0531bb019847ee27",
+    "closeout.css": "2e8c7fe6c557a56d11517b5dde80932b1bb9e837611a5cfe9f76d00becd8330a",
+    "consumer-map-13ba906aae73551e.js": "13ba906aae73551ebffe9c5b8de168943da6c61ac0816d63588c3791cf0f7a19"
+  }
+}

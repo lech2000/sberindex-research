@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-06T19:01:07.094461+00:00",
+  "model": "mimo-v2.5-pro",
+  "version": 6,
+  "reply_sha256": "8d12a39790a09601d8be761520b131e9c39efbfdac5fa8b7405c76928deffdbd",
+  "response_received": true,
+  "dispatch_json_present": false,
+  "accepted_as_execution": false,
+  "assessment": "REWORK_DISPATCH",
+  "reason": "Acknowledges source13 DONE and source12 OPEN, but returns old A6/R9 tasks and F7b forecast_contract instead of bounded final candidate checks; reviewed_at does not match receipt. Not dispatched as fresh numerical work.",
+  "authoritative_next_stage": "Current case actions12/14 and KB74/16897,75/16898,76/16899,77/16900; final candidate acceptance and owner code-access choice",
+  "scientific_pass": false
+}

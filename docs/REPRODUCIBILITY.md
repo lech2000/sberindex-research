@@ -1,55 +1,63 @@
-# Воспроизведение
+# Повторить результаты Атласа и Радара
 
-Базовая проверенная среда научных расчётов: Python3.14.5, версии библиотек
-в requirements.txt. Установите uv, создайте локальную среду; ключи/API не нужны.
+Проверено 06.10.2026 на Mac: свежий локальный клон commit4658266, два новых окружения, make atlas/radar/atlas-radar завершены успешно. [Полные журналы и SHA](evidence/findings-closeout-20261006/README.md). Это технический повтор тем же оператором; новый holdout и внешняя научная рецензия отдельно не заявляются.
+
+## Подготовить входы
+
+Репозиторий PRIVATE: сначала получить разрешённый доступ. Исходные расходы и private forecast cache предоставляются отдельно, публичная страница отчёта не является полным входным комплектом. Для Радара нужен owner ZIP из дела либо точные пять файлов data/frozen/radar/manifest.json; для Атласа также население и словарь, проверяемые economic-atlas/frozen_inputs.json. Raw не скачивается и не заменяется скрыто во время повтора. Иной SHA останавливает запуск.
+
+## Создать отдельные окружения
+
+~~~sh
+uv venv --python 3.14.4 .venv-atlas
+uv pip install --python .venv-atlas/bin/python -r economic-atlas/requirements-atlas.txt
+uv venv --python 3.13.0 .venv-radar
+uv pip install --python .venv-radar/bin/python -r repository-tools/requirements-science.txt
+~~~
+
+Новые среды06.10: Atlas pandas2.3.3/networkx3.6.1; Radar pandas3.0.6/networkx3.7. Общие numpy2.5.3/pyarrow25.0.1; полные версии в журналах. Все вычисления выполняйте в новой копии: make atlas перезаписывает только свои генерируемые A9–A13 выходы. Эталон freeze-regression повторно не выполняется.
+
+## Три команды
+
+~~~sh
+export SBERINDEX_DATA_SENSE_DIR=/path/to/existing/sberindex-data-sense-2025
+export SBERINDEX_MUNICIPAL_DICTIONARY=/path/to/existing/municipal_dictionary.parquet
+make -C economic-atlas atlas PYTHON="$PWD/.venv-atlas/bin/python"
+make radar PYTHON="$PWD/.venv-radar/bin/python" RADAR_OUT=/path/to/new-radar-output
+make atlas-radar PYTHON="$PWD/.venv-radar/bin/python" JOINT_DATA_SENSE="$SBERINDEX_DATA_SENSE_DIR" JOINT_OUT=/path/to/new-joint-output
+~~~
+
+При необходимости передайте RADAR_RAW/R9/PILOT/DICTIONARY/NATIONAL как описано в [одном make radar](../repository-tools/RADAR_REPRODUCE.md). Полные входы/SHA, новые результаты и stage-logs сохраняются отдельно. Atlas сравнивает 19 разбиений с ARI=1 и эталонные значения; Radar — MAE, семь таблиц и тесты будущего; совместный опыт — 36 строк. SHA исходников и замороженных входов проверяются отдельно от численных допусков.
+
+## Дополнительная сезонная сверка R8
+
+~~~sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv-atlas/bin/python shock-radar/src/r8_seasonal_followup.py --repo "$PWD" --out output/r8-new-repeat --protocol shock-radar/runs/R8_seasonal_followup_20261006/protocol.json
+~~~
+
+Нужны исходный raw и два сохранённых R8 forecast cache по SHA протокола. Скрипт переносит фиксированные сезонные формулы, проверяет точные ключи и доступность истории; архивный decision.json не меняет. Все маски и пропуски публикуются; h3 неопределён.
+
+## Что повторяется и что остаётся фиксированным
+
+Простые модели, детекторы и совместные формулы пересчитываются. Prophet/Chronos используются из frozen cache; полного повторного обучения нет. Путь установки Prophet дополнительно проверен в третьей новой Python3.13 среде: Prophet1.4.0/cmdstanpy1.3.0, одно реальное обучение через существующую функцию, три конечных прогноза. Это проверка установки/исполнения, не замена бенчмарка.
+
+Тест изменения будущих значений проверяет формулы, а не реальный historical available_at. Повтор просмотренного окна не превращает результаты в независимое научное доказательство. Практические выводы и области применения — [общий итог](RESEARCH_FINDINGS_2026-10-06.md). Ранние инструкции сохранены в датированном архиве; они не являются текущим порядком приёмки.
+
+
+## Дополнительные расчёты06.10
+
+Новая Python3.13.0 среда действительно выполнила потребительские расчёты, независимую численную сверку и1452обучения Prophet; прежняя оговорка про frozen cache относится к старому повтору. Все28установленных версий: [requirements-closeout](../repository-tools/requirements-closeout.txt). Платные модели не вызывались.
 
 ```sh
-uv venv --python 3.14.5
-uv pip install --python .venv/bin/python -r requirements.txt
-.venv/bin/python repository-tools/validate_repository.py
-.venv/bin/python repository-tools/reproduce.py --self-check
+uv venv --python 3.13.0 .venv-closeout
+uv pip install --python .venv-closeout/bin/python -r repository-tools/requirements-closeout.txt
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+.venv-closeout/bin/python economic-atlas/src/consumer_closeout.py --data-dir /path/to/frozen-inputs --protocol economic-atlas/consumer_closeout_protocol_20261006.json --out /path/to/new-consumer-run
+.venv-closeout/bin/python shock-radar/src/national_prophet_closeout.py --raw /path/to/frozen-inputs/8_consumption.parquet --r9 /path/to/predictions-r9.parquet --national /path/to/national-consumer-spending.parquet --protocol shock-radar/national_prophet_protocol_20261006.json --out /path/to/new-national-run
+.venv-closeout/bin/python repository-tools/audit_consumer_closeout.py --repo "$PWD" --data-dir /path/to/frozen-inputs --out /path/to/new-independent-audit
+.venv-closeout/bin/python -m pytest -q tests/test_consumer_closeout.py tests/test_national_prophet_closeout.py tests/test_consumption_restructuring.py tests/test_atlas_radar_ablation.py
 ```
 
-Самопроверки запускают A4/A5/A6/R7signal/D02-D03/R8 на синтетических примерах.
-Они проверяют формулы и временную причинность, а не достаточность конкурсного результата.
+Последняя независимая команда сверяет сохранённый новый run в репозитории, а не каталог /path/to/new-consumer-run. Для нового независимого повтора поместите новый run в тот же относительный путь в отдельной копии; старый эталон не перезаписывайте. Скрипт карты также проверяет сохранённый run.
 
-```sh
-bash data/download_sberindex_2025.sh
-.venv/bin/python repository-tools/reproduce.py --stage all
-```
-
-Загрузчик использует публичный Яндекс.Диск организаторов и проверяет каждый SHA.
-Текущие дашборды могут меняться, поэтому download_sberindex_current.py не является
-способом восстановить исторический vintage. Для A5/A6 используется включённая
-замороженная panel_v1.parquet; паспорт и raw sourceSHA рядом. Для R7 нужны
-8_consumption.parquet и сохранённый synthetic registry. A5 требует5_connection.parquet.
-R8 использует сохранённые events/news_events.json и events/news_features.parquet.
-
-Новые outputs — output/reproduced, архивные runs не перезаписываются.
-Некоторые parquet/manifest bytes отличаются из-за даты запуска и версий writer;
-сравниваются научные метрики, назначения, покрытия и параметры, а входы — поSHA.
-LegacyR7 и R7_v2 не смешиваются. R7_v2 exploratory, тест уже раскрыт.
-
-Прямые воспроизводимые команды дополнительно есть в runs/*/README.md и
-R7_v2/operator_run_manifest.json. Стандартные модули имеют --help/--self-check.
-TSFM f04 требует собственных весов/dependencies; полная конкурсная оценка R9/R10
-и A7–A10 ещё не реализована. Продвинуть partial в PASS одной успешной самопроверкой нельзя.
-
-Локальная презентация:
-
-```sh
-python3 -m http.server 8765
-```
-
-Откройте presentation/economic-atlas/landing/ или presentation/shock-radar/landing/.
-Прежние HSE templates в */landing/ — исторический прототип; здесь для показа применяется
-публичный OSM preview. Результаты на 03.10.2026 нанесены на оба presentation/лендинга; цвета карты по-прежнему являются географическим контекстом, не назначениями экономики.
-
-
-Новые научные модули: `economic-atlas/src/a6_identities.py` и `shock-radar/src/r8_forecast_ablation.py`, оба черезF7b. Прямые команды воспроизведения в runs/A6_v2/README.md и runs/R8_v2/README.md; исходный reproduce.py --stage all воспроизводит прежний снимок, новыеv2 запускаются этими явнымикомандами.
-
-
-27.09 добавлены `a6_threshold_review.py` и `r8_prophet_pilot.py` (F7b). Явные команды в новых runREADME. Prophet проверен в отдельнойPython3.13 среде с Prophet1.4.0/cmdstanpy1.3.0; его не следует устанавливать в среду базового evaluator без отдельной проверки совместимости. Пилотпо умолчанию32ряда; --max-series0 означает все, требует отдельного бюджета времени. А6 использует основнуюPython3.14.4 среду (точные версии вmanifest). reproduce.py --stage all автоматически эти новыеfollowup не запускает.
-
-
-03.10: сезонная гипотеза и реальные официальные кейсы воспроизводятся отдельными CLI, не старым `--stage all`: [R9](../shock-radar/runs/R9_category_seasonal_20261003/README.md), [реестр/кейсы/охват](../shock-radar/runs/Official_cases_20261003/README.md). Проверены Python3.13.0 и `requirements-integration.txt`; модели Prophet повторно не обучались. Загрузчик официальных страниц требует системный curl, TLS остаётся включённым. Новые выходные директории обязательны; архивы не перезаписываются.
+Потребительскому расчёту дополнительно нужны сохранённая панель economic-atlas/data/panel_v1.parquet и прежний производный run Consumption_restructuring_forecast_20261005_v2 с прогнозами. Независимой сверке нужен raw8_consumption. Все входные SHA находятся в manifest.json новых runs; подмена останавливает расчёт. Архив авторского кода не содержит эти бинарные входы и не заменяет разрешённый полный комплект данных.

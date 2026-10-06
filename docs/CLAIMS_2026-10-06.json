@@ -1,0 +1,49 @@
+{
+  "recorded_on": "2026-10-06",
+  "purpose": "freeze allowed primary conclusions for current descriptive contest candidate",
+  "scientific_pass": false,
+  "claims": [
+    {
+      "id": "atlas-category-shift",
+      "result": "1896/1896 positive marketplace share change; median +4.173 pp; 1803 food share-down and nominal-up",
+      "source": "economic-atlas/runs/consumption_restructuring_20261005/README.md",
+      "scope": "1896 municipal panel; 2023–2024; descriptive",
+      "limit": "not household budget, real consumption, money outflow or causality"
+    },
+    {
+      "id": "atlas-comparable-neighbours",
+      "result": "1895 lists; 86 unchanged five-neighbour sets; median Jaccard0.25",
+      "source": "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+      "scope": "same municipal type/population0.5–2, fixed2023 scaling",
+      "limit": "does not imply universal economic validity"
+    },
+    {
+      "id": "atlas-local-change",
+      "result": "25 sustained marketplace divergences among1539;19positive/6negative;2withanothercategory",
+      "source": "economic-atlas/runs/Consumption_restructuring_forecast_20261005_v2/README.md",
+      "scope": "peers fixed2023;Jul–Dec2024;357 no eligible peers",
+      "limit": "not p-value/crisis/causal event or forecast gain"
+    },
+    {
+      "id": "radar-own-seasonality",
+      "result": "own-common170682;Growth1 MAE518.160 vscachedProphet731.354;29.15%lower",
+      "source": "shock-radar/runs/R8_seasonal_followup_20261006/README.md",
+      "scope": "cutofforigin−2, Prophet yearly off, reviewed old R8 window",
+      "limit": "h3 CI crosses zero, descriptive intervals, no new holdout; oldINCONCLUSIVE preserved"
+    },
+    {
+      "id": "radar-shock-form",
+      "result": "D05coherent70.20→94.25%;ramp44.525→72.40%;opposed/sparse decrease",
+      "source": "shock-radar/runs/D05_joint_bank_20261005/README.md",
+      "scope": "synthetic t5amp4;whole-bank TEST-null3%;retrospective",
+      "limit": "not measured real early warning or independent false-alarm guarantee"
+    },
+    {
+      "id": "joint-municipal-context",
+      "result": "April marketplace gapsOrsk−9.54,Kurgan−4.39,Ishim−8.90pp;36rows",
+      "source": "economic-atlas/runs/Atlas_Radar_joint_20261005/README.md",
+      "scope": "threecities,28uniqueMO,10matches each;origin03.2024",
+      "limit": "not causal flood effect;two placebos not proof of parallel trends"
+    }
+  ]
+}
