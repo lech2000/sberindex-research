@@ -1,0 +1,86 @@
+{
+  "status": "PUBLIC_CHANGED_FILES_VERIFIED",
+  "checked_at_utc": "2026-10-06T20:43:26.709655+00:00",
+  "source_commit": "3d4002088af4bb5aedb88b4a45aa78bcca325049",
+  "changed_files": [
+    {
+      "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
+      "http_status": 200,
+      "sha256": "2908330a83ded36aa952e5232f43c813175c3617dbfd3ca66c3c9b52182bae35",
+      "bytes": 15496,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/METHODOLOGY_RU.html",
+      "http_status": 200,
+      "sha256": "e7d397a73572a46e551875e01da881c0cea5fdec28ae51db2ec65a6774cecda4",
+      "bytes": 27110,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/README.html",
+      "http_status": 200,
+      "sha256": "b2433962f6de91c00f265bd7f3dfbcea4439a19ed1f5310d6b2d9fdacda64e10",
+      "bytes": 11940,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/by-category.csv",
+      "http_status": 200,
+      "sha256": "f9af07f862faf26beff745ff9c3d43ac788fb28dda180232ddbe07ec87cdff77",
+      "bytes": 5677,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/by-month.csv",
+      "http_status": 200,
+      "sha256": "051414f2e7c2324dd3ba313a2c5771142bc26ca9295cf2c8ee92955f63bcfe1b",
+      "bytes": 1810,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/comparison.png",
+      "http_status": 200,
+      "sha256": "4aa5ee045c275c5ec0163e712c533d6f9404bb4e78c748a90f6bb1c391d3c1e5",
+      "bytes": 63308,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/failures.json",
+      "http_status": 200,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/independent-audit.json",
+      "http_status": 200,
+      "sha256": "3462761009d6e088dd4b259a77921e0508f9015ceb7bff1e87dad8b5f9139f51",
+      "bytes": 1879,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/metrics.json",
+      "http_status": 200,
+      "sha256": "c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274",
+      "bytes": 3162,
+      "verified": true
+    },
+    {
+      "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/protocol.json",
+      "http_status": 200,
+      "sha256": "ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62",
+      "bytes": 17191,
+      "verified": true
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "http_status": 200,
+      "sha256": "1fbbb42aa771641c0e49ce51e2f7ee5fa3b549a6233998234b5c47709d6bc703",
+      "bytes": 34762,
+      "verified": true
+    }
+  ],
+  "internal_links_checked_locally": 264,
+  "raw_inputs_published": false
+}

@@ -99,3 +99,11 @@ CSP демо сохранена: идентичный встроенный ко�
 (KB62/16530,77/16531); текущие формы и JS сохранены, а новый
 аутентифицированный запуск06.10 не повторялся.
 Новых научных утверждений и закрытия полного релиза нет.
+
+### Новые измерения и узкие места · ночь06–07.10
+
+[H12equal-information](../shock-radar/runs/R10_equal_information_h12_20261006/README.md) завершён:2160freshfits/720keys,0failures,3600scalar5MAE/CIaudit;120series/114MO,MAE679,746vs1707,224;marketplace−37,42%,foodCI0,NO_HISTORICAL_ASOF. [Вклад интеграции](../economic-atlas/runs/Atlas_Radar_ablation_20261006/README.md) измерен отдельно,8pytest/119808OOF,primaryK2неподтверждён,K5vsraw1,403/1,861%;baselineрасходныегруппыне заменены. Отчёты125publicfiles/264internallinks;11изменённыхH12файловHTTPSHA06.10PASS.
+
+СвежийuploadrevisionMiMoProPASS:1added/1removed/1revised,referenceunchanged. RAGостаётся05.10;10publicKBdocumentsготовы(75/16935,76/16936идетальныеисточники),F7bограничен2файлами. CMD_MODEL_APPROVAL_REQUIRED/exit78дляSonnet5.5,одобренныйCMDMuseнеизменён;запросточноймоделивладельцувчате. A7CSV19/228/76проверены,source07OPEN:формаprivacyсрабатываетнафразуоMQ — bugKB62/16957. Защитанеобойдена;непроситьвладельцаподписатьпостороннююформу.
+
+[Точный реестр проверки гипотез](HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md) различает EXECUTED_NEGATIVE,INCONCLUSIVE,PARTIALиNOT_IMPLEMENTED_P2. Независимыйбудущийдатированныйвыпуск ивнешняянаучнаярецензия не получены; техническийповторнеподменяетих. СледующиеP0: F7bRAG/правильнаяклассификацияформы,сверкаустаревшихactions,доступккоду/кандидат/лицензии,ownerподача.

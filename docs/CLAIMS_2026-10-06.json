@@ -44,6 +44,20 @@
       "source": "economic-atlas/runs/Atlas_Radar_joint_20261005/README.md",
       "scope": "threecities,28uniqueMO,10matches each;origin03.2024",
       "limit": "not causal flood effect;two placebos not proof of parallel trends"
+    },
+    {
+      "id": "atlas-radar-integration-ablation",
+      "result": "K5 sensitivity: Radar-vs-raw YoY wage/employment MSE reductions1.403%/1.861%; six-seed minimum pairwiseARI0.952701vs0.516789. K2 primary benefit vsbase not confirmed; Q4 expense-space silhouette0.358824to0.307216.",
+      "source": "economic-atlas/runs/Atlas_Radar_ablation_20261006/README.md",
+      "scope": "1248MO/70regions common external2025 outcomes; 1896MO Q4 profiles; frozen retrospective protocol before this calculation",
+      "limit": "K5 is sensitivity; no primary economic superiority, independent holdout, causal effect or new deployed groups; baseline seedARI remains higher"
+    },
+    {
+      "id": "radar-h12-equal-national-information",
+      "result": "120series/114MO/720H12points;2160freshProphetfits,0failures. National_yoy_lag1MAE679.746vsconditionalProphetlinear1707.224,60.184%lower; target-monthblock descriptive95%benefitCI[592.281,1467.076]. Marketplace37.42%worse;foodCIcrosses0.",
+      "source": "shock-radar/runs/R10_equal_information_h12_20261006/README.md",
+      "scope": "Same own history throughorigin and national history throughorigin-1; no actualfutureN;July-Dec2024 targets;short7-12monthtrain; previouslychosen120seriescohort",
+      "limit": "Post-discoveryexploratory;notfullpaneloroptimallytunedProphet;historicalvintageunknown;notindependentholdout;oldcategoryH12remainsunsupported"
     }
   ]
 }
