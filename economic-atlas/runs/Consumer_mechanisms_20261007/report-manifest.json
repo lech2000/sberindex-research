@@ -1,0 +1,10 @@
+{
+  "generator_sha256": "e51fc2444e371b6d8414b7c87ad4e814c8f6ec9452a7b83250eea704c347148b",
+  "source_metrics_sha256": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+  "files": {
+    "README.md": "b9cb91cf764c634c6cde72b74b49d30d664669d7300b3756558149cb6ccd80a6",
+    "figures/baseline-comparison.png": "5f725b8c676d579209f0c2ec4d5839a4acf31f25200dc242e8e0c664be6c9e5a",
+    "figures/monthly-selection.png": "92ffcea3faf16a5a8f01a7a2921681f78bd6faf4664693765af49b7ca9515b37",
+    "figures/seasonal-profile-weight.png": "e55017f800eea82b0905ee410056438f83b7ba289edc0ddf6d2b86b83f4f2c0e"
+  }
+}

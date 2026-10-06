@@ -35,3 +35,11 @@ H12_EQUAL_OUT ?= output/radar-h12-equal
 # Explicit fresh-fit target: 2160 CPU fits; existing make radar remains cached.
 radar-h12-equal:
 	$(PYTHON) repository-tools/radar_h12_equal_reproduce.py --raw "$(RADAR_RAW)" --r9 "$(RADAR_R9)" --national "$(RADAR_NATIONAL)" --out "$(H12_EQUAL_OUT)"
+
+CONSUMER_MECHANISMS_OUT ?= output/consumer-mechanisms
+.PHONY: consumer-mechanisms
+# New directories required; fresh CPU forecasts,20 controls and independent audit.
+consumer-mechanisms:
+	$(PYTHON) economic-atlas/src/consumer_mechanisms.py --data-dir "$(JOINT_DATA_SENSE)" --protocol economic-atlas/consumer_mechanisms_protocol_20261007.json --out "$(CONSUMER_MECHANISMS_OUT)/run"
+	$(PYTHON) repository-tools/audit_consumer_mechanisms.py --repo . --data-dir "$(JOINT_DATA_SENSE)" --run "$(CONSUMER_MECHANISMS_OUT)/run" --out "$(CONSUMER_MECHANISMS_OUT)/audit"
+	$(PYTHON) economic-atlas/src/consumer_mechanisms_report.py --run "$(CONSUMER_MECHANISMS_OUT)/run" --audit "$(CONSUMER_MECHANISMS_OUT)/audit"
