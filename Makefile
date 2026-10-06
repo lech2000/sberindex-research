@@ -35,3 +35,8 @@ H12_EQUAL_OUT ?= output/radar-h12-equal
 # Explicit fresh-fit target: 2160 CPU fits; existing make radar remains cached.
 radar-h12-equal:
 	$(PYTHON) repository-tools/radar_h12_equal_reproduce.py --raw "$(RADAR_RAW)" --r9 "$(RADAR_R9)" --national "$(RADAR_NATIONAL)" --out "$(H12_EQUAL_OUT)"
+
+ATLAS_H5_OUT ?= output/atlas-h5
+.PHONY: atlas-h5
+atlas-h5:
+	$(PYTHON) repository-tools/atlas_h5_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --wages "$(ABLATION_WAGES)" --employment "$(ABLATION_EMPLOYMENT)" --out "$(ATLAS_H5_OUT)"

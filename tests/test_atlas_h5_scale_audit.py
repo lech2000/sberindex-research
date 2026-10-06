@@ -65,3 +65,25 @@ def test_test_region_cannot_change_training_scaler_or_partition():
         np.testing.assert_array_equal(first[0],second[0])
         np.testing.assert_array_equal(first[2].mean_,second[2].mean_)
         np.testing.assert_array_equal(first[2].scale_,second[2].scale_)
+
+
+def test_held_out_2025_outcomes_do_not_change_predictions_for_that_region():
+    rng=np.random.default_rng(9);n=30
+    sample=pd.DataFrame({'region_code':np.repeat(np.arange(5),6),
+                         'wage2024':np.exp(rng.normal(10,.1,n)),
+                         'wage2025':np.exp(rng.normal(10,.1,n)),
+                         'employment2024':np.exp(rng.normal(8,.1,n)),
+                         'employment2025':np.exp(rng.normal(8,.1,n)),
+                         'population':np.exp(rng.normal(9,.1,n)),
+                         'market_access':np.exp(rng.normal(2,.1,n)),
+                         'lat':rng.normal(55,2,n),'lon':rng.normal(40,2,n),
+                         'type':['город']*n})
+    features={arm:rng.normal(size=(n,2)) for arm in h5.ARMS}
+    original,folds=h5.oof(sample,features,'kmeans',2,42)
+    changed=sample.copy();held=folds[0]['test_regions']
+    changed.loc[changed.region_code.isin(held),['wage2025','employment2025']]*=1e6
+    mutated,_=h5.oof(changed,features,'kmeans',2,42)
+    one=original.query('fold==0').sort_values(['territory_id','endpoint','arm'])
+    two=mutated.query('fold==0').sort_values(['territory_id','endpoint','arm'])
+    np.testing.assert_array_equal(one.predicted_log2025,two.predicted_log2025)
+    assert not np.array_equal(one.actual_log2025,two.actual_log2025)

@@ -59,6 +59,14 @@
       "scope": "Same own history throughorigin and national history throughorigin-1; no actualfutureN;July-Dec2024 targets;short7-12monthtrain; previouslychosen120seriescohort",
       "limit": "Post-discoveryexploratory;notfullpaneloroptimallytunedProphet;historicalvintageunknown;notindependentholdout;oldcategoryH12remainsunsupported",
       "scale_sensitivity": "Post hoc, same frozen predictions: excluding aggregate All categories, 600 points MAE562.020vs896.580 (37.315% lower); normalized by own past mean44.118% lower;80/100series wins. Not a replacement primary or independent confirmation."
+    },
+    {
+      "id": "atlas-h5-separate-structure-scale",
+      "result": "K5 shares-vs-volume ARI0.125438; shares-vs-mixed0.597955. Shares rubles-to-thousand-rubles ARI1 for kmeans and Ward; mixed Ward0.4260. Mixed-vs-shares wageMSE1.266%worse/employment0.358%better, both descriptive CIs cross0.",
+      "source": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+      "scope": "Frozenbeforefits retrospective six-arm audit;1248MO/70region OOF;1896full partitions; same400MO compactness sample",
+      "limit": "Not economic typology confirmation, unseen holdout or new deployed feature. Volume shown separately; log1p dimensional sensitivity does not mean source units were wrong."
     }
-  ]
+  ],
+  "updated_on": "2026-10-07"
 }
