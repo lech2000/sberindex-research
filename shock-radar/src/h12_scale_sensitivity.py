@@ -84,11 +84,18 @@ def main():
                 result = summarize(pred.loc[mask], scales[mask], reference, normalized, protocol['seed'])
                 result['includes_all_categories_aggregate'] = keep_total
                 results.append(result)
+    diagnostics = pred[['territory_id', 'category']].copy()
+    diagnostics['benefit'] = (pred.actual - pred.conditional_prophet_linear).abs() - (pred.actual - pred.national_yoy_lag1).abs()
+    series = diagnostics.groupby(['territory_id', 'category']).benefit.mean().reset_index()
+    by_category = [{'category': category, 'series_wins': int((g.benefit > 0).sum()),
+                    'series_losses': int((g.benefit < 0).sum())}
+                   for category, g in series.groupby('category')]
     receipt = {'checked_at': datetime.now(timezone.utc).isoformat(),
                'status': 'POST_HOC_SCALE_SENSITIVITY', 'scientific_pass': False,
                'purpose': 'Quantify dependence of pooled MAE on aggregate category and series scale, after viewing primary outcomes.',
                'not_primary_replacement': True, 'historical_asof_verified': False,
                'future_training_scale_mutation_checks': len(pred), 'results': results,
+               'raw_mae_series_by_category': by_category,
                'raw_sha256': digest(args.raw), 'predictions_sha256': digest(args.run / 'predictions.parquet'),
                'code_sha256': digest(__file__),
                'limits': 'Same 720 selected forecast keys, previously viewed window. Six-month block intervals descriptive. Own training mean normalization is not MASE and not household weighting.'}

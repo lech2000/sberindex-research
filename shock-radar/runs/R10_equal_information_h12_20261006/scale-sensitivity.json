@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T21:09:11.581317+00:00",
+  "checked_at": "2026-10-06T21:12:01.966263+00:00",
   "status": "POST_HOC_SCALE_SENSITIVITY",
   "scientific_pass": false,
   "purpose": "Quantify dependence of pooled MAE on aggregate category and series scale, after viewing primary outcomes.",
@@ -144,8 +144,40 @@
       "includes_all_categories_aggregate": false
     }
   ],
+  "raw_mae_series_by_category": [
+    {
+      "category": "Все категории",
+      "series_wins": 20,
+      "series_losses": 0
+    },
+    {
+      "category": "Здоровье",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Маркетплейсы",
+      "series_wins": 5,
+      "series_losses": 15
+    },
+    {
+      "category": "Общественное питание",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Продовольствие",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Транспорт",
+      "series_wins": 18,
+      "series_losses": 2
+    }
+  ],
   "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
   "predictions_sha256": "0d422f93c2d024d0835e4ca7ec144428b14d8525b609314a857307335751650a",
-  "code_sha256": "4cab9db4f98e8a390c29ab24bfd32bd8e3252fa98a59ad1319109494ae677026",
+  "code_sha256": "2b62a8b0b1dbb8d89129bc518b2e266d47498265463e4b6fd53971fb0b0de48c",
   "limits": "Same 720 selected forecast keys, previously viewed window. Six-month block intervals descriptive. Own training mean normalization is not MASE and not household weighting."
 }
