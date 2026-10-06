@@ -1,0 +1,169 @@
+{
+  "status": "PASS_NUMERICAL",
+  "checked_at_utc": "2026-10-06T03:40:31.116860+00:00",
+  "code_sha256": "59749d1fb561020f3430bb7b5ba6a855218a9492193d97b002a9e4933733b540",
+  "versions": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3"
+  },
+  "source_release_sha256": "c00a1ca928081ed53bec4de14b0f1ca49a26d9d66a33de620d9c1318b5964f48",
+  "checks": {
+    "release_file_hashes": 24,
+    "frozen_input_hashes": 3,
+    "panel_raw_records": 273024,
+    "pre_2024_covariates": 17064,
+    "independent_peer_pairs": 15297,
+    "independent_deviation_cells": 1069344,
+    "anomaly_summary_fields": 69255,
+    "independent_baseline_values": 614304,
+    "independent_corrected_predictions": 443232,
+    "independent_regression_fits": 192,
+    "cold_start_values": 55404,
+    "independent_metrics": 108,
+    "independent_bootstrap_intervals": 144,
+    "map_monthly_values": 568800,
+    "map_monthly_flags": 113760,
+    "map_forecast_values": 102384
+  },
+  "independent_imports": "Only numpy/pandas/stdlib; no study source imported",
+  "summary": [
+    {
+      "category": "Все категории",
+      "horizon": 1,
+      "mae": {
+        "profile_ses": 686.416609985477,
+        "calibration": 1222.8114053473648,
+        "own_ridge": 1196.32764324906,
+        "peer_ridge": 1189.0956017843594,
+        "category_seasonal": 830.6450254653167,
+        "growth_naive3": 818.5940202125073
+      }
+    },
+    {
+      "category": "Все категории",
+      "horizon": 3,
+      "mae": {
+        "profile_ses": 884.6938823891488,
+        "calibration": 1494.4556972652829,
+        "own_ridge": 1454.360104492005,
+        "peer_ridge": 1448.127735530086,
+        "category_seasonal": 1067.5042262113845,
+        "growth_naive3": 1107.1444860824113
+      }
+    },
+    {
+      "category": "Все категории",
+      "horizon": 6,
+      "mae": {
+        "profile_ses": 1542.6266869052672,
+        "calibration": 1924.3952252079594,
+        "own_ridge": 1886.5567025194907,
+        "peer_ridge": 1885.005521611265,
+        "category_seasonal": 1631.1738881341173,
+        "growth_naive3": 1752.4928687367144
+      }
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 1,
+      "mae": {
+        "profile_ses": 428.6653570833363,
+        "calibration": 454.22274742060273,
+        "own_ridge": 459.9488943462897,
+        "peer_ridge": 449.15388194445023,
+        "category_seasonal": 376.91741514891595,
+        "growth_naive3": 478.53326684841966
+      }
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 3,
+      "mae": {
+        "profile_ses": 644.4580672386127,
+        "calibration": 744.6127900554019,
+        "own_ridge": 748.2364944281361,
+        "peer_ridge": 732.0764969327228,
+        "category_seasonal": 587.9292389107753,
+        "growth_naive3": 718.3534625635378
+      }
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 6,
+      "mae": {
+        "profile_ses": 826.3642090925364,
+        "calibration": 974.6629437407056,
+        "own_ridge": 969.7345790655887,
+        "peer_ridge": 962.4061452571268,
+        "category_seasonal": 779.1225193507134,
+        "growth_naive3": 908.5241594303782
+      }
+    }
+  ],
+  "calibration_diagnostic": [
+    {
+      "category": "Все категории",
+      "horizon": 1,
+      "calibration_mae": 1222.8114053473648,
+      "bias_corrected_with_own_features_mae": 1196.32764324906,
+      "bias_corrected_with_peers_mae": 1189.0956017843594,
+      "feature_gain_vs_calibration_percent": 2.757236595567065,
+      "peer_increment_vs_own_percent": 0.6045201333858167,
+      "profile_ses_mae": 686.416609985477
+    },
+    {
+      "category": "Все категории",
+      "horizon": 3,
+      "calibration_mae": 1494.4556972652829,
+      "bias_corrected_with_own_features_mae": 1454.360104492005,
+      "bias_corrected_with_peers_mae": 1448.127735530086,
+      "feature_gain_vs_calibration_percent": 3.0999889672188177,
+      "peer_increment_vs_own_percent": 0.42852997291862244,
+      "profile_ses_mae": 884.6938823891488
+    },
+    {
+      "category": "Все категории",
+      "horizon": 6,
+      "calibration_mae": 1924.3952252079594,
+      "bias_corrected_with_own_features_mae": 1886.5567025194907,
+      "bias_corrected_with_peers_mae": 1885.005521611265,
+      "feature_gain_vs_calibration_percent": 2.046861428500876,
+      "peer_increment_vs_own_percent": 0.08222286169051071,
+      "profile_ses_mae": 1542.6266869052672
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 1,
+      "calibration_mae": 454.22274742060273,
+      "bias_corrected_with_own_features_mae": 459.9488943462897,
+      "bias_corrected_with_peers_mae": 449.15388194445023,
+      "feature_gain_vs_calibration_percent": 1.1159426745879837,
+      "peer_increment_vs_own_percent": 2.3470025767062817,
+      "profile_ses_mae": 428.6653570833363
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 3,
+      "calibration_mae": 744.6127900554019,
+      "bias_corrected_with_own_features_mae": 748.2364944281361,
+      "bias_corrected_with_peers_mae": 732.0764969327228,
+      "feature_gain_vs_calibration_percent": 1.6835989510395573,
+      "peer_increment_vs_own_percent": 2.159744628302865,
+      "profile_ses_mae": 644.4580672386127
+    },
+    {
+      "category": "Маркетплейсы",
+      "horizon": 6,
+      "calibration_mae": 974.6629437407056,
+      "bias_corrected_with_own_features_mae": 969.7345790655887,
+      "bias_corrected_with_peers_mae": 962.4061452571268,
+      "feature_gain_vs_calibration_percent": 1.2575422675389543,
+      "peer_increment_vs_own_percent": 0.7557154263307182,
+      "profile_ses_mae": 826.3642090925364
+    }
+  ],
+  "live_browser_rechecked": false,
+  "browser_limit": "Browser tool security policy rejected localhost tab; no workaround used",
+  "scientific_scope": "Already viewed 2024, retrospective complete panel and dictionary; no asof or independent holdout verification"
+}

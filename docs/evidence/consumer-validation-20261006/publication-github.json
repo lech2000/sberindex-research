@@ -1,0 +1,21 @@
+{
+  "status": "VERIFIED",
+  "source_commit": "f3ca9ada3725deb71c31d4bc224c0d36e5039b9c",
+  "files": [
+    {
+      "file": "economic-atlas/runs/Consumer_validation_20261006/README.md",
+      "sha256": "20b01abf907b5f40e02552c53dda8093c7e694e59ba74b3dc1f57a60da56759e",
+      "full_readback": true
+    },
+    {
+      "file": "economic-atlas/runs/Consumer_validation_20261006/independent-validation.json",
+      "sha256": "40e80462b5b6eae020870b136b1728369ad60cf17e76088fd84e1261afc705a6",
+      "full_readback": true
+    },
+    {
+      "file": "economic-atlas/src/consumption_restructuring_independent_validation.py",
+      "sha256": "59749d1fb561020f3430bb7b5ba6a855218a9492193d97b002a9e4933733b540",
+      "full_readback": true
+    }
+  ]
+}
