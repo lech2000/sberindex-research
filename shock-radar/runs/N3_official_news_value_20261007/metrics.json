@@ -1,0 +1,1723 @@
+{
+  "checked_at": "2026-10-06T21:48:50.502481+00:00",
+  "status": "MEASURED_BOUNDED_RETROSPECTIVE_OFFICIAL_NEWS_SENSITIVITY",
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "independent_holdout": false,
+  "events_total": 6,
+  "strict_historically_eligible_events": 0,
+  "sources": 5,
+  "independent_event_families": [
+    "spring_flood_2024",
+    "national_rate_decisions_2024"
+  ],
+  "unique_publication_months": 4,
+  "predictions_rows": 136512,
+  "fits": [
+    {
+      "origin": "2024-06",
+      "target": "2024-07",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-07",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-07",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-07",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-07",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-08",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-08",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-08",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 18,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-08",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-08",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-09",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 10,
+      "train_rows": 113760,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-09",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 10,
+      "train_rows": 113760,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-09",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 10,
+      "train_rows": 113760,
+      "nonzero_news_train_rows": 36,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-09",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 10,
+      "train_rows": 113760,
+      "nonzero_news_train_rows": 18,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-09",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 10,
+      "train_rows": 113760,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-10",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 11,
+      "train_rows": 125136,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-10",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 11,
+      "train_rows": 125136,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-10",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 11,
+      "train_rows": 125136,
+      "nonzero_news_train_rows": 54,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-10",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 11,
+      "train_rows": 125136,
+      "nonzero_news_train_rows": 36,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-10",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 11,
+      "train_rows": 125136,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-10",
+      "target": "2024-11",
+      "cutoff": "2024-08",
+      "max_training_target": "2024-08",
+      "training_origins": 12,
+      "train_rows": 136512,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-10",
+      "target": "2024-11",
+      "cutoff": "2024-08",
+      "max_training_target": "2024-08",
+      "training_origins": 12,
+      "train_rows": 136512,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-10",
+      "target": "2024-11",
+      "cutoff": "2024-08",
+      "max_training_target": "2024-08",
+      "training_origins": 12,
+      "train_rows": 136512,
+      "nonzero_news_train_rows": 11430,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-10",
+      "target": "2024-11",
+      "cutoff": "2024-08",
+      "max_training_target": "2024-08",
+      "training_origins": 12,
+      "train_rows": 136512,
+      "nonzero_news_train_rows": 54,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-10",
+      "target": "2024-11",
+      "cutoff": "2024-08",
+      "max_training_target": "2024-08",
+      "training_origins": 12,
+      "train_rows": 136512,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-11",
+      "target": "2024-12",
+      "cutoff": "2024-09",
+      "max_training_target": "2024-09",
+      "training_origins": 13,
+      "train_rows": 147888,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-11",
+      "target": "2024-12",
+      "cutoff": "2024-09",
+      "max_training_target": "2024-09",
+      "training_origins": 13,
+      "train_rows": 147888,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-11",
+      "target": "2024-12",
+      "cutoff": "2024-09",
+      "max_training_target": "2024-09",
+      "training_origins": 13,
+      "train_rows": 147888,
+      "nonzero_news_train_rows": 22806,
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-11",
+      "target": "2024-12",
+      "cutoff": "2024-09",
+      "max_training_target": "2024-09",
+      "training_origins": 13,
+      "train_rows": 147888,
+      "nonzero_news_train_rows": 11430,
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-11",
+      "target": "2024-12",
+      "cutoff": "2024-09",
+      "max_training_target": "2024-09",
+      "training_origins": 13,
+      "train_rows": 147888,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-04",
+      "target": "2024-07",
+      "cutoff": "2024-02",
+      "max_training_target": "2024-02",
+      "training_origins": 4,
+      "train_rows": 45504,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-04",
+      "target": "2024-07",
+      "cutoff": "2024-02",
+      "max_training_target": "2024-02",
+      "training_origins": 4,
+      "train_rows": 45504,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-04",
+      "target": "2024-07",
+      "cutoff": "2024-02",
+      "max_training_target": "2024-02",
+      "training_origins": 4,
+      "train_rows": 45504,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-04",
+      "target": "2024-07",
+      "cutoff": "2024-02",
+      "max_training_target": "2024-02",
+      "training_origins": 4,
+      "train_rows": 45504,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-04",
+      "target": "2024-07",
+      "cutoff": "2024-02",
+      "max_training_target": "2024-02",
+      "training_origins": 4,
+      "train_rows": 45504,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-05",
+      "target": "2024-08",
+      "cutoff": "2024-03",
+      "max_training_target": "2024-03",
+      "training_origins": 5,
+      "train_rows": 56880,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-05",
+      "target": "2024-08",
+      "cutoff": "2024-03",
+      "max_training_target": "2024-03",
+      "training_origins": 5,
+      "train_rows": 56880,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-05",
+      "target": "2024-08",
+      "cutoff": "2024-03",
+      "max_training_target": "2024-03",
+      "training_origins": 5,
+      "train_rows": 56880,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-05",
+      "target": "2024-08",
+      "cutoff": "2024-03",
+      "max_training_target": "2024-03",
+      "training_origins": 5,
+      "train_rows": 56880,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-05",
+      "target": "2024-08",
+      "cutoff": "2024-03",
+      "max_training_target": "2024-03",
+      "training_origins": 5,
+      "train_rows": 56880,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-09",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 6,
+      "train_rows": 68256,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-09",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 6,
+      "train_rows": 68256,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-09",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 6,
+      "train_rows": 68256,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-09",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 6,
+      "train_rows": 68256,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-06",
+      "target": "2024-09",
+      "cutoff": "2024-04",
+      "max_training_target": "2024-04",
+      "training_origins": 6,
+      "train_rows": 68256,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-10",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 7,
+      "train_rows": 79632,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-10",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 7,
+      "train_rows": 79632,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-10",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 7,
+      "train_rows": 79632,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-10",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 7,
+      "train_rows": 79632,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-07",
+      "target": "2024-10",
+      "cutoff": "2024-05",
+      "max_training_target": "2024-05",
+      "training_origins": 7,
+      "train_rows": 79632,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-11",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-11",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-11",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-11",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-08",
+      "target": "2024-11",
+      "cutoff": "2024-06",
+      "max_training_target": "2024-06",
+      "training_origins": 8,
+      "train_rows": 91008,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-12",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": null,
+      "arm": "control",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-12",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "strict",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-12",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 18,
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-12",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "negative_clipped": 0
+    },
+    {
+      "origin": "2024-09",
+      "target": "2024-12",
+      "cutoff": "2024-07",
+      "max_training_target": "2024-07",
+      "training_origins": 9,
+      "train_rows": 102384,
+      "nonzero_news_train_rows": 0,
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "negative_clipped": 0
+    }
+  ],
+  "metrics": [
+    {
+      "horizon": 1,
+      "arm": "control",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 801.2103412911401,
+      "normalized_mae": 0.13348284253540382,
+      "relative_mae_reduction_vs_control_percent": 0.0,
+      "month_block": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": 0.0
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": 0.0,
+          "2024-08": 0.0,
+          "2024-09": 0.0,
+          "2024-10": 0.0,
+          "2024-11": 0.0,
+          "2024-12": 0.0
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 2250.1430985726593
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 146.34111609511677
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 594.4111963272842
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 214.08610297027235
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1420.890399850618
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 181.39013393088942
+        }
+      ]
+    },
+    {
+      "horizon": 1,
+      "arm": "strict",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 801.2103412911399,
+      "normalized_mae": 0.13348284253540382,
+      "relative_mae_reduction_vs_control_percent": 3.3306690738754696e-14,
+      "month_block": {
+        "point": -2.8496244797083016e-15,
+        "ci95": [
+          -2.0125798199421545e-14,
+          1.0667510007073445e-14
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 1.1926075067337687e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": -9.702506027863393e-15
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 4.776925846600955e-15
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 1.5977217985885517e-15
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": 1.6889131131287896e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -4.25850946942015e-14
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -5.804764389117499e-15,
+          "2024-08": -1.4790481700772831e-15,
+          "2024-09": -4.374934544970153e-15,
+          "2024-10": -3.739093735367672e-15,
+          "2024-11": -6.797375601907541e-15,
+          "2024-12": 5.097469563190339e-15
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 2250.1430985726593
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 146.34111609511677
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 594.4111963272841
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 214.08610297027235
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1420.890399850618
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 181.39013393088942
+        }
+      ]
+    },
+    {
+      "horizon": 1,
+      "arm": "publication_proxy",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 832.5643477888824,
+      "normalized_mae": 0.1355814089405218,
+      "relative_mae_reduction_vs_control_percent": -3.9133302307625906,
+      "month_block": {
+        "point": -31.354006497742233,
+        "ci95": [
+          -98.63010337354038,
+          4.533604178124061
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 1.1926075067337687e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 0.036050798779361466
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 0.055227178555779785
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 0.039774718511668264
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": -197.29187404610326
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": 9.036782363803072
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -37.62480779729068,
+          "2024-08": -37.63201795704656,
+          "2024-09": -37.63585323300183,
+          "2024-10": -37.63276274099301,
+          "2024-11": 1.8335670119299734,
+          "2024-12": -39.43216427005129
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 2384.79780798349
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 143.14760084317322
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 580.6108097186207
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 220.41615811841245
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1476.6469754871457
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 189.76673458245224
+        }
+      ]
+    },
+    {
+      "horizon": 1,
+      "arm": "delayed_one_month",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 839.3141839691482,
+      "normalized_mae": 0.1358749911641455,
+      "relative_mae_reduction_vs_control_percent": -4.755785180780903,
+      "month_block": {
+        "point": -38.10384267800822,
+        "ci95": [
+          -114.3262297791656,
+          0.012191297149592686
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 1.1926075067337687e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": -9.702506027863393e-15
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 0.0011825258447566882
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 0.02201163316569825
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": 0.009313996907134307
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -228.6555642239669
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -45.72461121360986,
+          "2024-08": -45.72461121360986,
+          "2024-09": -45.72484771877881,
+          "2024-10": -45.729013540243,
+          "2024-11": -45.72647401299129,
+          "2024-12": 0.006501631183518979
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 2395.6275617524348
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 150.7979056915146
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 617.8344037612679
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 208.85821170549167
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1479.5851717447474
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 183.18184915943323
+        }
+      ]
+    },
+    {
+      "horizon": 1,
+      "arm": "shifted_twelve_months",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 801.2103412911399,
+      "normalized_mae": 0.13348284253540382,
+      "relative_mae_reduction_vs_control_percent": 3.3306690738754696e-14,
+      "month_block": {
+        "point": -2.8496244797083016e-15,
+        "ci95": [
+          -2.0125798199421545e-14,
+          1.0667510007073445e-14
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 1.1926075067337687e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": -9.702506027863393e-15
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 4.776925846600955e-15
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 1.5977217985885517e-15
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": 1.6889131131287896e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -4.25850946942015e-14
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -5.804764389117499e-15,
+          "2024-08": -1.4790481700772831e-15,
+          "2024-09": -4.374934544970153e-15,
+          "2024-10": -3.739093735367672e-15,
+          "2024-11": -6.797375601907541e-15,
+          "2024-12": 5.097469563190339e-15
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 2250.1430985726593
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 146.34111609511677
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 594.4111963272841
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 214.08610297027235
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1420.890399850618
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 181.39013393088942
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "arm": "control",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 1053.198472818533,
+      "normalized_mae": 0.16977550340044592,
+      "relative_mae_reduction_vs_control_percent": 0.0,
+      "month_block": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": 0.0
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": 0.0
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": 0.0,
+          "2024-08": 0.0,
+          "2024-09": 0.0,
+          "2024-10": 0.0,
+          "2024-11": 0.0,
+          "2024-12": 0.0
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 3042.182504628804
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 265.0781179986144
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 972.0941734469817
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 175.7663055814592
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1717.643723236052
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 146.42601201928778
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "arm": "strict",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 1053.198472818464,
+      "normalized_mae": 0.16977550340044373,
+      "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12,
+      "month_block": {
+        "point": 6.89706610311244e-11,
+        "ci95": [
+          -5.57807693872615e-15,
+          2.0687808365908994e-10
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 8.677165877526033e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 3.814919938005925e-14
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 1.869047189247999e-14
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 4.1372550892315103e-10
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": -3.16671208711648e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -1.3486945581283266e-14
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": 8.274743890559423e-11,
+          "2024-08": 8.275716339747326e-11,
+          "2024-09": 8.276105514297078e-11,
+          "2024-10": 1.9691452719070302e-14,
+          "2024-11": 8.277112666152351e-11,
+          "2024-12": 8.276749062646553e-11
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 3042.182504628529
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 265.0781179986126
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 972.0941734469686
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 175.76630558146124
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1717.6437232359156
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 146.42601201929799
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "arm": "publication_proxy",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 1053.2018685213948,
+      "normalized_mae": 0.16977561437084443,
+      "relative_mae_reduction_vs_control_percent": -0.00032241813385791573,
+      "month_block": {
+        "point": -0.0033957028616280367,
+        "ci95": [
+          -0.010187108791787294,
+          2.068669498866424e-10
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 8.677165877526033e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 3.814919938005925e-14
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 1.869047189247999e-14
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 4.1372550892315103e-10
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": -3.16671208711648e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -0.020374217583605674
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": -0.004074843433970998,
+          "2024-08": -0.004074843433961274,
+          "2024-09": -0.004074843433957382,
+          "2024-10": -0.004074843516698746,
+          "2024-11": -0.00407484343394731,
+          "2024-12": 8.276749062646553e-11
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 3042.197796804782
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 265.0783788184478
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 972.0966571370836
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 175.7655644292198
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1717.6473682413991
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 146.42544569743646
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "arm": "delayed_one_month",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 1053.198472818464,
+      "normalized_mae": 0.16977550340044373,
+      "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12,
+      "month_block": {
+        "point": 6.89706610311244e-11,
+        "ci95": [
+          -5.57807693872615e-15,
+          2.0687808365908994e-10
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 8.677165877526033e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 3.814919938005925e-14
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 1.869047189247999e-14
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 4.1372550892315103e-10
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": -3.16671208711648e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -1.3486945581283266e-14
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": 8.274743890559423e-11,
+          "2024-08": 8.275716339747326e-11,
+          "2024-09": 8.276105514297078e-11,
+          "2024-10": 1.9691452719070302e-14,
+          "2024-11": 8.277112666152351e-11,
+          "2024-12": 8.276749062646553e-11
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 3042.182504628529
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 265.0781179986126
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 972.0941734469686
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 175.76630558146124
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1717.6437232359156
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 146.42601201929799
+        }
+      ]
+    },
+    {
+      "horizon": 3,
+      "arm": "shifted_twelve_months",
+      "n": 68256,
+      "n_municipalities": 1896,
+      "mae": 1053.198472818464,
+      "normalized_mae": 0.16977550340044373,
+      "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12,
+      "month_block": {
+        "point": 6.89706610311244e-11,
+        "ci95": [
+          -5.57807693872615e-15,
+          2.0687808365908994e-10
+        ],
+        "reps": 10000,
+        "target_month_blocks": 6,
+        "per_month": [
+          {
+            "month": "2024-07",
+            "n": 11376,
+            "benefit": 8.677165877526033e-14
+          },
+          {
+            "month": "2024-08",
+            "n": 11376,
+            "benefit": 3.814919938005925e-14
+          },
+          {
+            "month": "2024-09",
+            "n": 11376,
+            "benefit": 1.869047189247999e-14
+          },
+          {
+            "month": "2024-10",
+            "n": 11376,
+            "benefit": 4.1372550892315103e-10
+          },
+          {
+            "month": "2024-11",
+            "n": 11376,
+            "benefit": -3.16671208711648e-14
+          },
+          {
+            "month": "2024-12",
+            "n": 11376,
+            "benefit": -1.3486945581283266e-14
+          }
+        ],
+        "drop_one_month": {
+          "2024-07": 8.274743890559423e-11,
+          "2024-08": 8.275716339747326e-11,
+          "2024-09": 8.276105514297078e-11,
+          "2024-10": 1.9691452719070302e-14,
+          "2024-11": 8.277112666152351e-11,
+          "2024-12": 8.276749062646553e-11
+        }
+      },
+      "categories": [
+        {
+          "category": "Все категории",
+          "n": 11376,
+          "mae": 3042.182504628529
+        },
+        {
+          "category": "Здоровье",
+          "n": 11376,
+          "mae": 265.0781179986126
+        },
+        {
+          "category": "Маркетплейсы",
+          "n": 11376,
+          "mae": 972.0941734469686
+        },
+        {
+          "category": "Общественное питание",
+          "n": 11376,
+          "mae": 175.76630558146124
+        },
+        {
+          "category": "Продовольствие",
+          "n": 11376,
+          "mae": 1717.6437232359156
+        },
+        {
+          "category": "Транспорт",
+          "n": 11376,
+          "mae": 146.42601201929799
+        }
+      ]
+    }
+  ],
+  "future_checks": [
+    {
+      "arm": "control",
+      "horizon": 1,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "strict",
+      "horizon": 1,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "publication_proxy",
+      "horizon": 1,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "delayed_one_month",
+      "horizon": 1,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "shifted_twelve_months",
+      "horizon": 1,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "control",
+      "horizon": 3,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "strict",
+      "horizon": 3,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "publication_proxy",
+      "horizon": 3,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "delayed_one_month",
+      "horizon": 3,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    },
+    {
+      "arm": "shifted_twelve_months",
+      "horizon": 3,
+      "rows": 11376,
+      "future_spending_and_event_mutation_invariant": true
+    }
+  ],
+  "max_strict_control_prediction_difference": 4.816683940589428e-09,
+  "max_shifted_control_prediction_difference": 4.816683940589428e-09,
+  "protocol_sha256": "c11e2e1491d98ace8e04d6b2b51b7674f00571b1d916f67d110cb60c627e664e",
+  "code_sha256": "98738ec264c1d26d75e07ef0f5ce9e5d57f101874437853bf9d28272e7f45656",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "events": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+    "r9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  },
+  "prediction_sha256": "26d65fc8806e96129f2640a0870e6e8a1bb9b1adcff6662e4aeca3f3597a606a",
+  "limits": [
+    "Previously viewed 2024 window; freeze before computation is not scientific preregistration or unseen holdout",
+    "Proxy uses claimed official publication month, not unverified historic available_at. Strict arm0eligible does not prove no news existed",
+    "Only six records, five sources, four months, one flood family and national rates. Municipal rows are not independent news observations",
+    "No national event duplicated as thousands of independent replications; month descriptive intervals only",
+    "Sparse training exposure can make coefficients zero. No tuned hyperparameters, feature selection or winner-picked model",
+    "Not causal disaster/rate effects or economic-event ground truth; no real early-warning claim",
+    "One/twelve-month delay checks encode availability sensitivity, not fake events or backdated first_seen",
+    "Forecast quality pertains to this fixed linear algorithm, not all possible news models"
+  ]
+}

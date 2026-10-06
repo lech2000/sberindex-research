@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-06T22:05:16.786668+00:00",
+  "tests_passed": 13,
+  "duration_seconds": 6.97,
+  "reviewed_pr19_head": "0f8641bc616696059b9e4f931eda8870e9b02c88",
+  "source_sha256": {
+    "tests/test_atlas_h5_scale_audit.py": "92e4825f489ad8887c64bb653c2a58a519c198cf2272fc77cc0114f8b9635bc4",
+    "tests/test_a6_calibration_scalar_audit.py": "d075b78127f84ad5e24bc8fff15025ad70ceda431bacfb2e0f47d9cacaef0911",
+    "tests/test_m6_missingness_contracts.py": "5f4012a382601371ecdaee5b19b5323aa24a5e8a5f59b616c4efd6a922477842",
+    "tests/test_news_value_availability.py": "1ed2b19aa3f82dcc0b74ca53a86428965d3646ee08f8f6b037b3b41962ac0337",
+    "economic-atlas/src/atlas_h5_scale_audit.py": "65a7d60292af3d7db851cc0038c590fbe2a3188dc79894dba88e03272e14dff2",
+    "economic-atlas/src/audit_a6_calibration_source.py": "c7c5d8e6d4f4d6d6e1f8f3f562b83a8edece5c648ab0944067f81cf2952564bc",
+    "economic-atlas/src/audit_missingness_size.py": "e8412c56ad2b1b7f08bcb46cad36acdf7dff8df9788cbaeaabbe3ee3b136e374",
+    "economic-atlas/src/audit_atlas_h5_scale.py": "8338bca062b9108eb15c94e527d54aa16a745e513026a7962f1c38273eea8490",
+    "shock-radar/src/news_value_ablation.py": "98738ec264c1d26d75e07ef0f5ce9e5d57f101874437853bf9d28272e7f45656",
+    "shock-radar/src/audit_news_value_ablation.py": "d3f1e55a2085c72a634bb25980c5dfef4502b14928351e1253a3bc0a13393a1d"
+  },
+  "independent_h5_audit": "h5-integration-audit.json",
+  "independent_news_audit": "news-integration-audit.json",
+  "failed_input_attempts": [
+    "Default data/external v20260928 path absent in integration worktree; no audit performed",
+    "Older v20250918 files rejected by required SHA; not counted as PASS"
+  ],
+  "actual_h5_input_location": "External frozen output/atlas-radar-ablation-20261006/*v20260928.parquet; exact protocol SHA enforced",
+  "scientific_pass": false
+}

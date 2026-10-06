@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-06T21:28:25.836481+00:00",
+  "status": "INDEPENDENT_REAL_2023_CALIBRATION_REPLAY_PASS",
+  "scientific_pass": false,
+  "thresholds": {
+    "overlap_threshold": 0.2771627597933596,
+    "candidate_margin": 0.7187007760980434,
+    "resemblance_floor": 0.1739547472026643,
+    "n_self_scores": 4800,
+    "n_other_scores": 4800,
+    "cal_months": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "raw_calibration_municipalities": 1896,
+  "bootstrap_overlap_values": 9600,
+  "future_2024_mutation_invariant": true,
+  "synthetic_worlds_used_in_numeric_replay": false,
+  "synthetic_protocol_reuses_exact_frozen_thresholds": true,
+  "calibration_file_added": "829dae6a7872963aae6c45921d99f86a586e04e0 2026-09-26T19:52:27+03:00",
+  "controls_protocol_added": "d794c3591eaebe8be85fc78518fcda65258f84d2 2026-10-03T19:00:35+03:00",
+  "calibration_commit_is_ancestor_of_control_commit": true,
+  "sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "assignments": "7f4d3a69a2b1449f6ac793494603951b767c737475b4f2b4ccece01e54b1116b",
+    "calibration": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "controls_protocol": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0"
+  },
+  "code_sha256": "c7c5d8e6d4f4d6d6e1f8f3f562b83a8edece5c648ab0944067f81cf2952564bc",
+  "limits": [
+    "Replay uses archived empirical 2023 labels, not independent clustering or economic ground truth",
+    "Real 2023 threshold provenance is verified; synthetic worlds were designed afterward and may be easy controls",
+    "No predeclared scientific error budget, no confirmatory F1 gate, no real-event validation",
+    "Git chronology is repository evidence, not an external trusted timestamp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-06T22:02:41.155110+00:00",
+  "status": "INDEPENDENT_NEWS_NUMERICAL_AUDIT_PASS",
+  "scientific_pass": false,
+  "scalar_actual_anchor_cutoff_horizon_checks": 546048,
+  "independent_arm_MAE_normalized_error_and_interval_checks": 10,
+  "category_MAE_checks": 60,
+  "training_label_time_receipts": 60,
+  "predictions_sha256": "26d65fc8806e96129f2640a0870e6e8a1bb9b1adcff6662e4aeca3f3597a606a",
+  "code_sha256": "d3f1e55a2085c72a634bb25980c5dfef4502b14928351e1253a3bc0a13393a1d",
+  "scope": "Different numerical audit of same viewed predictions; not new model fits, availability proof or external scientific review"
+}
