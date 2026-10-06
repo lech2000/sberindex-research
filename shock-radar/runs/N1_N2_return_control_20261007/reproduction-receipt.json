@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-07",
+  "checked_where": "Mac; fresh calculation output/return-control-reproduction-20261007",
+  "command": "make radar-return-control PYTHON=output/findings-closeout-20261006/venv-radar/bin/python RETURN_CONTROL_OUT=output/return-control-reproduction-20261007",
+  "status": "FRESH_MAKE_RETURN_CONTROL_REFERENCE_PASS",
+  "reference_summary_cells_equal": 36,
+  "fresh_detector_runs": 480,
+  "fresh_independent_null_replays": 120,
+  "future_prefix_tests_repeated": true,
+  "fresh_metrics_sha256": "93a01c53b391c63230d21ede516646b263d4abc0e78d6ced5ee59ec6a072df0e",
+  "fresh_audit_sha256": "967b8e4771e05ccdb3e6253d36b8b5b802a5f88c455878e947f7fd791a5c8599",
+  "code_commit": "f34e812e7bb1092607e394231a4373fac927fe72",
+  "scientific_pass": false,
+  "scope": "Fresh numerical repeat of identical frozen synthetic worlds, not new scientific holdout"
+}

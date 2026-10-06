@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-07",
+  "checked_where": "Mac; output/findings-closeout-20261006/venv-atlas/bin/python -m pytest -q -p no:cacheprovider tests/test_return_regime_contracts.py",
+  "tests_passed": 3,
+  "tests_failed": 0,
+  "scope": "No pre-onset/late credit; linked loop counts; paired noise restored after regime return",
+  "scientific_pass": false
+}
