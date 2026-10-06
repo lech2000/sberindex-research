@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-06T22:58:19.270629+00:00",
+  "checked_where": "Mac; independent scalar math.fsum and paired month bootstrap, no model-training imports",
+  "status": "SEPARATE_PEER_CONTRIBUTION_SCALAR_AUDIT_PASS",
+  "source_sha256": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+  "auditor_sha256": "9bf5751d2fed5abd99aee44a8a53c5ccd9662a4548853abe5523fccf35b919ab",
+  "scientific_pass": false,
+  "checks": [
+    {
+      "horizon": 1,
+      "rows": 9234,
+      "municipalities": 1539,
+      "base_mae": 686.416609985477,
+      "own_only_mae": 668.8167504103586,
+      "own_plus_peer_mae": 667.9508693956427,
+      "whole_correction_gain_percent": 2.6901651739203882,
+      "incremental_peer_gain_percent": 0.1294646125690843,
+      "incremental_peer_gain_source_units": 0.8658810147159102,
+      "incremental_peer_descriptive_month_ci95": [
+        -2.189903652347611,
+        3.7663374942643086
+      ],
+      "monthly_interval_includes_zero": true
+    },
+    {
+      "horizon": 3,
+      "rows": 9234,
+      "municipalities": 1539,
+      "base_mae": 884.6938823891489,
+      "own_only_mae": 856.2715899598511,
+      "own_plus_peer_mae": 851.1723482044649,
+      "whole_correction_gain_percent": 3.789054593003159,
+      "incremental_peer_gain_percent": 0.5955168681498901,
+      "incremental_peer_gain_source_units": 5.099241755386174,
+      "incremental_peer_descriptive_month_ci95": [
+        -0.2512891621508523,
+        10.272387602237034
+      ],
+      "monthly_interval_includes_zero": true
+    }
+  ],
+  "limit": "Same previously reviewed2024; confidence intervals descriptive across six target months. Numerical recheck does not prove external scientific validity, historicalasof or causal peer influence."
+}

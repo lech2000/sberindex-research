@@ -1,0 +1,29 @@
+{
+  "status": "TECHNICAL_PASS",
+  "created_at_utc": "2026-10-06T21:34:59.732687+00:00",
+  "checks": {
+    "release_file_hashes": 24,
+    "frozen_input_hashes": 3,
+    "panel_raw_records": 273024,
+    "pre_2024_covariates": 17064,
+    "independent_peer_pairs": 15297,
+    "independent_deviation_cells": 1069344,
+    "anomaly_summary_fields": 69255,
+    "new_run_file_hashes": 7,
+    "new_math_source_hashes": 5,
+    "independent_candidate_and_adaptive_predictions": 2047680,
+    "independent_selection_trace": 156,
+    "independent_augmented_lstsq_fits": 1296,
+    "independent_corrected_predictions": 3276288,
+    "cold_fits_exact_base": 432,
+    "independent_control_predictions": 1477440,
+    "pre_strata_history_permutations": 30780,
+    "scalar_mae_values": 468,
+    "independent_paired_intervals": 1656,
+    "control_metrics": 160
+  },
+  "code_sha256": "bf809c2241ce6463325925ca1d61de2f4c36e7317f58753d0d91eff73d7106a6",
+  "frozen_independent_source_sha256": "59749d1fb561020f3430bb7b5ba6a855218a9492193d97b002a9e4933733b540",
+  "independent_scientific_holdout": false,
+  "scientific_pass": false
+}

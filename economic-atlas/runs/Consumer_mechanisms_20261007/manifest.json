@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-10-06T21:25:11.426751+00:00",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "protocol_sha256": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+  "code_sha256": {
+    "economic-atlas/src/consumer_mechanisms.py": "61917385b88b8dab5c9911803625fef08976287bd3bb762b26905fa3197a1a24",
+    "economic-atlas/src/consumer_closeout.py": "e4f3b28e7f887526e08ab9987dde42b5501dfeb8b82967a021f7623e99f82102",
+    "economic-atlas/src/consumption_restructuring.py": "dbbe59968affe4a043ac8813e404d8cc33a480199ef9c020fccc87b935db5b82",
+    "economic-atlas/src/atlas_radar_joint.py": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95",
+    "shock-radar/src/r9_strong_baselines.py": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2"
+  },
+  "files": {
+    "fits.json": "098c4f60995bef06d5210e7317fe4e1ccc1155422314350fb2c164e3813d4acf",
+    "metrics.json": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+    "peer-alignment-mappings.csv": "9071c9c2e8f04d2cd63b813b9deaa31ae5e549352cc64c72eea0ae90e648229b",
+    "peer-alignment-predictions.parquet": "da2ffc1c33240808d25661d7a3059a650ef2827c9bceb8c13a5250969fbd2ba3",
+    "predictions.parquet": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+    "protocol.json": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+    "selection-trace.json": "40879b3e685d7db4adaa392d1e56701033a8e9b819fe551dd934c770751eee3b"
+  }
+}

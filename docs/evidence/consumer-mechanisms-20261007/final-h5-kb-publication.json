@@ -1,0 +1,12 @@
+{
+  "source_commit": "32b27490ccf568c1ba26f576a1cdb97c377ab3d0",
+  "method": "safe integrate + full text SHA/readback",
+  "documents": [
+    {
+      "corpus_id": 75,
+      "document_id": 16991,
+      "stored_text_sha256": "f9d6decee059f80491d362e81fe3116009d8d642518302e6e594038528edd79b",
+      "verified": true
+    }
+  ]
+}

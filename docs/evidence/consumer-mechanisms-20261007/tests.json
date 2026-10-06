@@ -1,0 +1,16 @@
+{
+  "observed_on": "2026-10-07 Europe/Moscow",
+  "command": "python -m pytest -q tests/test_consumer_mechanisms.py tests/test_consumer_closeout.py tests/test_consumption_restructuring.py",
+  "exit_code": 0,
+  "passed": 18,
+  "new_tests": 6,
+  "duration_seconds": 7.17,
+  "scope": "Information cutoffs, scalar past selection, horizon labels, whole-history controls and independent correction formulas; not economic holdout",
+  "source_sha256": {
+    "tests/test_consumer_mechanisms.py": "9c1de14ef724f964b86243cc09507fb7743e5034551290437c7daae8a067cb59",
+    "economic-atlas/src/consumer_mechanisms.py": "61917385b88b8dab5c9911803625fef08976287bd3bb762b26905fa3197a1a24",
+    "economic-atlas/src/consumer_closeout.py": "e4f3b28e7f887526e08ab9987dde42b5501dfeb8b82967a021f7623e99f82102",
+    "tests/test_consumer_closeout.py": "4f597b3764a1009027026587d5ff29486064a1111fb120c752f55c22e41fb38a",
+    "tests/test_consumption_restructuring.py": "a585d47ba1570b72112482152f4b3ab6a2a934ecc85fdd95292fd8f15d32173c"
+  }
+}

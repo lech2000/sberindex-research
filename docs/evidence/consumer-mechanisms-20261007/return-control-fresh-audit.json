@@ -1,0 +1,100 @@
+{
+  "status": "INDEPENDENT_RETURN_REGIME_NUMERICAL_AUDIT_PASS",
+  "checked_at": "2026-10-06T22:45:07.274392+00:00",
+  "checked_where": "Mac; separate scorer, regenerated IDs/noise and original frozen R7 detector helpers",
+  "frozen_commit": "1aa5962",
+  "by_seed_rows_verified": 720,
+  "transition_series_checks": 14400,
+  "summary_cells_verified": 36,
+  "descriptive_seed_intervals_recomputed": 108,
+  "null_detector_runs_replayed": 120,
+  "prefix_or_future_detector_runs_replayed": 12,
+  "prefix_checks": [
+    {
+      "family": "gaussian",
+      "method": "D01",
+      "variant": "prefix",
+      "alerts_verified": 10
+    },
+    {
+      "family": "gaussian",
+      "method": "D02",
+      "variant": "prefix",
+      "alerts_verified": 0
+    },
+    {
+      "family": "gaussian",
+      "method": "D03",
+      "variant": "prefix",
+      "alerts_verified": 0
+    },
+    {
+      "family": "gaussian",
+      "method": "D01",
+      "variant": "future_mutation",
+      "alerts_verified": 10
+    },
+    {
+      "family": "gaussian",
+      "method": "D02",
+      "variant": "future_mutation",
+      "alerts_verified": 0
+    },
+    {
+      "family": "gaussian",
+      "method": "D03",
+      "variant": "future_mutation",
+      "alerts_verified": 0
+    },
+    {
+      "family": "student5",
+      "method": "D01",
+      "variant": "prefix",
+      "alerts_verified": 13
+    },
+    {
+      "family": "student5",
+      "method": "D02",
+      "variant": "prefix",
+      "alerts_verified": 0
+    },
+    {
+      "family": "student5",
+      "method": "D03",
+      "variant": "prefix",
+      "alerts_verified": 0
+    },
+    {
+      "family": "student5",
+      "method": "D01",
+      "variant": "future_mutation",
+      "alerts_verified": 13
+    },
+    {
+      "family": "student5",
+      "method": "D02",
+      "variant": "future_mutation",
+      "alerts_verified": 0
+    },
+    {
+      "family": "student5",
+      "method": "D03",
+      "variant": "future_mutation",
+      "alerts_verified": 0
+    }
+  ],
+  "protocol_sha256": "3be73a6a3277cdfb580df3c3e72f3cc494cca1c6f18b5dbfab4c7832d5422b20",
+  "metrics_sha256": "ba62760c4e8b5d5354c8eb13ec49ad63709669f3fb558909963d4417976bb071",
+  "auditor_sha256": "7107d7cf9f3fd9429910095818ac658e15cf94f292a83db73d6db2ec5b225f75",
+  "scientific_pass": false,
+  "independence_limit": "Numerical reimplementation and null/prefix replay, not external scientific review or new data",
+  "limits": [
+    "Synthetic technical positive control; no real shocks, historical-asof, early warning or causal evidence",
+    "Shared selected-alert cap24/month is not equal actual false-alarm rates. All-null rates measured separately; no ranking at equalFAR claimed",
+    "Parameters inherited from previously viewed R7 validation; no tuning here and no new real holdout",
+    "D01 anchored to baseline is anomaly persistence, not a direction-aware change-point identifier; return can be invisible by construction",
+    "Six target months; descriptive seed intervals reflect simulated worlds only, not municipal sampling uncertainty",
+    "The two regime transitions are linked; both-hit loop metric prevents treating them as independent scientific replications",
+    "Sensitivity amplitudes/window all reported; no selection of a winning configuration after seeing outcomes"
+  ]
+}

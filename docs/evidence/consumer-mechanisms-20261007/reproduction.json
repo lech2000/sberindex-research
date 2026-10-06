@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-06T21:35:55.632669+00:00",
+  "status": "TECHNICAL_PASS",
+  "command": "make consumer-mechanisms PYTHON=<frozen-runtime> JOINT_DATA_SENSE=<frozen-inputs> CONSUMER_MECHANISMS_OUT=<new-directory>",
+  "new_full_cpu_run": true,
+  "predictions_exact_rows": 204768,
+  "control_exact_rows": 738720,
+  "metrics_fits_choices_exact": true,
+  "reported_source_sha256": {
+    "economic-atlas/src/consumer_mechanisms.py": "61917385b88b8dab5c9911803625fef08976287bd3bb762b26905fa3197a1a24",
+    "economic-atlas/src/consumer_closeout.py": "e4f3b28e7f887526e08ab9987dde42b5501dfeb8b82967a021f7623e99f82102",
+    "economic-atlas/src/consumption_restructuring.py": "dbbe59968affe4a043ac8813e404d8cc33a480199ef9c020fccc87b935db5b82",
+    "economic-atlas/src/atlas_radar_joint.py": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95",
+    "shock-radar/src/r9_strong_baselines.py": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2"
+  },
+  "science_holdout": false
+}

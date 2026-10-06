@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-06T22:16:43.754847+00:00",
+  "verification_site": "Mac integration worktree; exact case byte readbacks and archive manifests",
+  "status": "INTEGRATED_SCIENCE_AND_PRIVATE_DELIVERY_PASS",
+  "source_commit": "32b27490ccf568c1ba26f576a1cdb97c377ab3d0",
+  "pr17_head_included": "de55b83933a6ee1e693f8a53c5486776022db2dd",
+  "pr19_head_included": "4b77017f9843405d6b203dc9864bbd2b945893c1",
+  "targeted_tests": 34,
+  "consumer_fresh_full_run": "exact204768keys/738720controlrows",
+  "h5_independent_mse": 196,
+  "h5_paired_intervals": 48,
+  "news_scalar_time_value_checks": 546048,
+  "empirical2023_calibration_overlap_replayed": 9600,
+  "missingness_independent_region_draws": 2000,
+  "private_final_source_members": 846,
+  "private_source_archive_sha256": "0764d75d0d1ba3863fa4a6be078bd816b2271b7225d0ed42fea1c49c2171f9e2",
+  "case_snapshot_versions": "Integrated097ac38 plus final-source32b2749; exact reports/archives in both cases. Frozen raw inputs provided separately.",
+  "scientific_pass": false,
+  "new_independent_holdout": false,
+  "historical_asof_verified": false,
+  "remaining_current_delivery": "Final common public manifest and GitHub merge are verified separately.",
+  "owner_remaining": "One contest direction and form fields/consents; code access decision; human-only administrative CMD account boundary and full billing export.",
+  "fresh_H5_reproduction": {
+    "new_cluster_fits": 588,
+    "partitions_exact_ARI1": 84,
+    "prediction_rows_numeric_exact": 244608,
+    "receipt": "h5-fresh-reproduction.json"
+  }
+}

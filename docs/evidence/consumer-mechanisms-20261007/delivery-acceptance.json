@@ -1,0 +1,102 @@
+{
+  "checked_at_utc": "2026-10-06T21:58:43.617720+00:00",
+  "verification_site": "Mac isolated research worktree; prior exact readbacks from kb-forge/case-service; unauthenticated public CDN and in-app browser",
+  "status": "TECHNICAL_DELIVERY_PASS",
+  "research_objective": "Find and check new hypotheses and practical explanations for consumer restructuring",
+  "source_commit": "8504438d8ea296d7a32ae0910becc4469200a9c7",
+  "science": {
+    "new_hypotheses_checked": 5,
+    "supported_municipalities": 1539,
+    "all_municipalities": 1896,
+    "categories": 6,
+    "horizons": [
+      1,
+      3,
+      6
+    ],
+    "target_months": 6,
+    "fresh_prediction_keys": 204768,
+    "fresh_control_rows": 738720,
+    "tests_passed": 18,
+    "h12_scale_tests_passed": 3,
+    "h12_scale_variants_exact": 8,
+    "independent_augmented_lstsq_fits": 1296,
+    "independent_corrected_predictions": 3276288,
+    "independent_control_predictions": 1477440,
+    "past_cutoffs_verified": true,
+    "direct_h6_trained": false,
+    "viewed_2024_window": true,
+    "scientific_pass": false,
+    "independent_holdout": false,
+    "historical_asof_verified": false
+  },
+  "delivery": {
+    "corpus_documents": [
+      {
+        "corpus_id": 75,
+        "document_id": 16968,
+        "verified": true
+      },
+      {
+        "corpus_id": 76,
+        "document_id": 16969,
+        "verified": true
+      },
+      {
+        "corpus_id": 76,
+        "document_id": 16970,
+        "verified": true
+      },
+      {
+        "corpus_id": 74,
+        "document_id": 16971,
+        "verified": true
+      },
+      {
+        "corpus_id": 77,
+        "document_id": 16972,
+        "verified": true
+      }
+    ],
+    "case_materials": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "verified_materials": [
+          "mat_5d7b263d5f6d4eff",
+          "mat_09d58bdd57054915",
+          "mat_45c5543a21214f51"
+        ]
+      },
+      {
+        "case_id": "case_008f37d03cf541e5",
+        "verified_materials": [
+          "mat_0e294b18cb2a474d",
+          "mat_d04d2fae97b6489b",
+          "mat_b4ef34e21dc84c13"
+        ]
+      }
+    ],
+    "private_archive_bytes": 58705540,
+    "private_archive_members_verified": 37,
+    "complete_standalone_inputs": false,
+    "public_files_http_sha_verified": 147,
+    "internal_links_checked": 311,
+    "browser_widths_checked": [
+      1280,
+      390
+    ],
+    "public_raw_inputs": false,
+    "repository_private": true,
+    "pr17_commits_included": true,
+    "pull_request": "https://github.com/lech2000/sberindex-research/pull/18",
+    "merge_verification": "GitHub merge is the final action; check exact head before merging"
+  },
+  "paid_agent_calls_in_this_research": 0,
+  "model_switches_in_this_research": 0,
+  "separate_owner_requirements": [
+    "One contest direction, identity/contact fields and manual submission consent",
+    "Jury access to private code / publication decision for source archive",
+    "Exclusive human CMD administrative access and complete overnight billing export"
+  ],
+  "next_science_requirement": "New data release or independently frozen future window; do not treat another rerun on viewed2024 as confirmation"
+}

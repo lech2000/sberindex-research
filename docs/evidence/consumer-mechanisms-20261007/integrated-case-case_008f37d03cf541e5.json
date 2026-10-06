@@ -1,0 +1,43 @@
+{
+  "source_commit": "097ac3832bb305d3264b306978c34482a301b4d5",
+  "case_id": "case_008f37d03cf541e5",
+  "method": "vault upload + material + exact byte readback",
+  "materials": [
+    {
+      "id": "mat_4df3ef602bd94e8e",
+      "vault_document_id": "doc_7d2cf83cb2974db3",
+      "file": "docs/RESEARCH_FINDINGS_2026-10-06.md",
+      "title": "SberIndex новые инсайты07.10 — RESEARCH_FINDINGS_2026-10-06.md",
+      "bytes": 23029,
+      "sha256": "c974e922a7c71913660cc6471aed532ff972e2e22bce60ff76de89349ec5fa3f",
+      "verified": true
+    },
+    {
+      "id": "mat_289f0a67fe264b45",
+      "vault_document_id": "doc_9e0d5a34d7584db0",
+      "file": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+      "title": "SberIndex новые инсайты07.10 — README.md",
+      "bytes": 15217,
+      "sha256": "4329f8d03768c5d83baec98db13e8f5df89583fae048eebfc3c2ebf219f37476",
+      "verified": true
+    },
+    {
+      "id": "mat_a02beabc8b1e47ef",
+      "vault_document_id": "doc_900656d7bbfb44c3",
+      "file": "shock-radar/runs/N3_official_news_value_20261007/README.md",
+      "title": "SberIndex новые инсайты07.10 — README.md",
+      "bytes": 8436,
+      "sha256": "af9d5f840301eac33fd47059b176db0d02c765cfa6c40431042a4deac9b81294",
+      "verified": true
+    },
+    {
+      "id": "mat_e93365446bf54292",
+      "vault_document_id": "doc_bee770fb140f4265",
+      "file": "sberindex-integrated-research-source-20261007.zip",
+      "title": "SberIndex новые инсайты07.10 — sberindex-integrated-research-source-20261007.zip",
+      "bytes": 20460034,
+      "sha256": "03fb74b98f6703c54b8da4e1354aa53760ff9e91d8f78ca2e3935d1ace0f519e",
+      "verified": true
+    }
+  ]
+}
