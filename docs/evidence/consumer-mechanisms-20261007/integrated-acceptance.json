@@ -19,5 +19,11 @@
   "new_independent_holdout": false,
   "historical_asof_verified": false,
   "remaining_current_delivery": "Final common public manifest and GitHub merge are verified separately.",
-  "owner_remaining": "One contest direction and form fields/consents; code access decision; human-only administrative CMD account boundary and full billing export."
+  "owner_remaining": "One contest direction and form fields/consents; code access decision; human-only administrative CMD account boundary and full billing export.",
+  "fresh_H5_reproduction": {
+    "new_cluster_fits": 588,
+    "partitions_exact_ARI1": 84,
+    "prediction_rows_numeric_exact": 244608,
+    "receipt": "h5-fresh-reproduction.json"
+  }
 }
