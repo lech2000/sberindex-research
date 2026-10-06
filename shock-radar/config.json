@@ -13,7 +13,7 @@
     10,
     10
   ],
-  "version": 2,
+  "version": 3,
   "status": "computed_exploratory_release_candidate",
   "scientific_pass": false,
   "checked_on": "2026-10-06",
@@ -98,7 +98,14 @@
     "real_detector_ground_truth": "INCOMPLETE",
     "full_detector_bank_false_alarm_budget": "per-protocol; no summing individual channel budgets",
     "national_h12_municipalities": 2071,
-    "national_h12_series": 12426
+    "national_h12_series": 12426,
+    "R8_followup_status": "OBSERVED_RETROSPECTIVE_OWN_SERIES_SEASONAL_BENEFIT_NO_SCIENTIFIC_PASS",
+    "R8_followup_own_common_rows": 170682,
+    "R8_followup_horizons": [
+      1,
+      2,
+      3
+    ]
   },
   "results": {
     "report": "METHODOLOGY_RU.md",
@@ -111,6 +118,7 @@
     "D05": "runs/D05_joint_bank_20261005/metrics.json",
     "joint": "../economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json",
     "website_current_release_verified": false,
-    "paired_comparison": "FORECAST_PAIRED_2026-10-05.csv"
+    "paired_comparison": "FORECAST_PAIRED_2026-10-05.csv",
+    "R8_followup": "runs/R8_seasonal_followup_20261006/results.json"
   }
 }

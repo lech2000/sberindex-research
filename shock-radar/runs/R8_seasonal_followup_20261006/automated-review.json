@@ -1,0 +1,35 @@
+{
+  "received_at": "2026-10-06T09:07:22.864048+00:00",
+  "model": "mimo-v2.5-pro",
+  "agent": "sberindex_radar_researcher@5",
+  "review_type": "automated critique of exact supplied extract, not independent scientist or execution of calculations",
+  "first_review": "REWORK: mixed R8/R9 horizon and stale national H12 claim; superseded, not accepted",
+  "first_retry": "HTTP422 input longer than API limit; no model verdict",
+  "accepted_review": {
+    "gate": "R8",
+    "run_key": "r8-scientific-repair-20261006-v2",
+    "verdict": "RETROSPECTIVE_RESULT_ACCEPTED",
+    "accepted_claims": [
+      "growth_naive1 own-series equal-info MAE 518.16 vs Prophet 731.35 на 170 682",
+      "h1 CI [123.08, +] и h2 CI [38.83, +] выше нуля",
+      "h3 неопределён (lo −84.58)",
+      "post-hoc без декабря 133 446: growth1 508.93 vs Prophet 600.98, CI [54.70, 157.38]",
+      "852 288 future-mutation predictions неизменны",
+      "341 658 независимых own-scalar checks",
+      "5 замороженных R9 моделей × 3h опубликованы, выбора нет"
+    ],
+    "limitations": [
+      "gate_pass=false, INCONCLUSIVE — архив неизменяем",
+      "h3 неопределён, CI включает 0",
+      "6 месяцев просмотрены, CI описательный",
+      "vintage/asof не подтверждены",
+      "news 0/64, вклад не измерен",
+      "category/profile broader information ≠ equal info",
+      "post-hoc удаление декабря — sensitivity, не holdout",
+      "нет поправки множественных тестов"
+    ],
+    "next_action": "Опубликовать все 5×3 без выбора победителя; R9 PASS только с новым непросмотренным holdout 2025/2026 и подтверждённым vintage"
+  },
+  "full_reply_sha256": "bfc309c61c24a5584935b524d10eee4ffaf3620420cd7746b34d53318f7a0b6c",
+  "scientific_pass": false
+}
