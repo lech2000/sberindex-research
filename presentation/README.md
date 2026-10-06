@@ -114,3 +114,6 @@ commit3af57bb. Восемь URL проверены по HTTP/SHA. CSP блоки
 не изменены: только пробелы в лимите и пример вопроса Радара; публичный JS
 совпадает по SHA. Свежий authenticatedrun06.10 не повторялся.
 [Сверка интерфейса](../docs/evidence/closeout-execution-20261005/chat-preservation.json).
+
+
+06.10.2026: GitHub visibility PRIVATE (проверено gh repo view/анонимные404), поэтому ссылки отчётов с лендингов заменены same-origin публичными копиями авторских текстов и производных таблиц. Сырые входы не экспортируются, видимость Git не меняется. Генератор `build_reports.py` использует marked17.0.5; список исходных файлов/сверка относительных ссылок — `public-reports-build-20261006.json`. Сам подготовленный пакет ещё не считается опубликованным до storageSHA/publicSHA receipt. Пример: `python3 presentation/build_reports.py --repo "$PWD" --out /tmp/public-reports-stage --node node --marked-module /path/to/node_modules/marked/lib/marked.esm.js`.
