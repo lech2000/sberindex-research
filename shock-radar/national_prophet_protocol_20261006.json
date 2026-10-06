@@ -1,0 +1,47 @@
+{
+  "run_id": "National_equal_information_20261006",
+  "frozen_at_utc": "2026-10-06T20:14:00.041536+00:00",
+  "status": "EXPLORATORY_ALREADY_VIEWED_2024",
+  "seed": 20261006,
+  "series_selection": "20 municipality IDs by SHA256(seed,id), among IDs with all6 categories and all6 R9 h12 targets; no selection by errors or values",
+  "horizon": 12,
+  "targets": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "national_lag_months": 1,
+  "national_vintage": "Frozen2026-10-05, historical revisions and availability unknown",
+  "regressor": "log total national nominal expenses at municipal date minus1 month; model has access only to values dated<=origin-1",
+  "future_regressor": "logN(origin-1)+months_after_origin/12*log(N(origin-1)/N(origin-13)); no observed future national values",
+  "prophet": "linear,3changepoints,no seasonality,uncertainty_samples0; default priors and additive standardized regressor; seed20261006",
+  "controls": [
+    "Fresh plain Prophet same configs,seed,own history",
+    "Frozen original Prophet",
+    "Own origin times lag1 nationalYoY"
+  ],
+  "mask": "Exact720 paired rows,120 series; any fit failure is explicit incomplete, never silently drop rows",
+  "checks": [
+    "Frozen input SHA",
+    "Raw actual and last values agree on all selected keys",
+    "Future mutation preserves regressor and fresh forecasts",
+    "Plain fit reproducible in clean installed environment"
+  ],
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "r9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "national": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+  },
+  "scientific_pass": false,
+  "independent_holdout": false,
+  "limits": [
+    "Small pilot; no general full-panel superiority claim",
+    "2024 already viewed",
+    "National series is a later vintage, no historical asof verification",
+    "Only6 target months and7-12 own training observations per fit",
+    "No paid model API"
+  ]
+}
