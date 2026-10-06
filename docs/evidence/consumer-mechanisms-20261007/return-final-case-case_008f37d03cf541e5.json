@@ -1,0 +1,34 @@
+{
+  "source_commit": "7cdfabe058e79d3cc9bd2993250c18f5d6040001",
+  "case_id": "case_008f37d03cf541e5",
+  "method": "vault upload + material + exact byte readback",
+  "materials": [
+    {
+      "id": "mat_057e7d467146487c",
+      "vault_document_id": "doc_b6feadb5b1d44a7b",
+      "file": "docs/RESEARCH_FINDINGS_2026-10-06.md",
+      "title": "SberIndex финальная научная сверка07.10 — RESEARCH_FINDINGS_2026-10-06.md",
+      "bytes": 24085,
+      "sha256": "709f42d98b5c8d1056b1ce480405150e0509d45c6d20b021f39c879fe4abb99b",
+      "verified": true
+    },
+    {
+      "id": "mat_ab30dc8c36724f7b",
+      "vault_document_id": "doc_6c210041ea6049a7",
+      "file": "shock-radar/runs/N1_N2_return_control_20261007/README.md",
+      "title": "SberIndex финальная научная сверка07.10 — README.md",
+      "bytes": 8423,
+      "sha256": "eed7ff863f36be48321875a3b6a4f041967a406a739036fd287d5ebd7a62d0ff",
+      "verified": true
+    },
+    {
+      "id": "mat_106e7377ec874c83",
+      "vault_document_id": "doc_3dafd74f87ac4bdf",
+      "file": "sberindex-return-control-final-source-20261007.zip",
+      "title": "SberIndex финальная научная сверка07.10 — sberindex-return-control-final-source-20261007.zip",
+      "bytes": 161047,
+      "sha256": "20fa0969c8e4825fbe05b9ed93ce4f5c4236d57a64658832fabab10365bf0d80",
+      "verified": true
+    }
+  ]
+}
