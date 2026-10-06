@@ -1,6 +1,6 @@
 {
   "run_id": "Consumer_closeout_20261006",
-  "frozen_before_new_results_at_utc": "2026-10-06T20:10:00+00:00",
+  "frozen_before_new_results_at_utc": "2026-10-06T20:07:57+00:00",
   "status": "EXPLORATORY_ALREADY_VIEWED_2024",
   "input_protocol": "economic-atlas/consumption_restructuring_protocol_20261005.json",
   "targets": ["2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"],
