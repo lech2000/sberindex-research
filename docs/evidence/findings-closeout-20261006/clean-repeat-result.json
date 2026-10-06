@@ -1,0 +1,36 @@
+{
+  "finished_at": "2026-10-06T10:42:24.639243+00:00",
+  "source_commit": "4658266fc9944cec2ecf5c1b275bf0c8bf43c9dd",
+  "results": [
+    {
+      "name": "atlas",
+      "started_at": "2026-10-06T09:59:03.537874+00:00",
+      "finished_at": "2026-10-06T10:42:23.261043+00:00",
+      "elapsed_seconds": 330.9408728750004,
+      "exit_code": 0
+    },
+    {
+      "name": "radar",
+      "started_at": "2026-10-06T09:59:03.538002+00:00",
+      "finished_at": "2026-10-06T10:17:48.915600+00:00",
+      "elapsed_seconds": 265.73494933300026,
+      "exit_code": 0
+    },
+    {
+      "name": "joint",
+      "started_at": "2026-10-06T09:59:03.538093+00:00",
+      "finished_at": "2026-10-06T10:00:44.559410+00:00",
+      "elapsed_seconds": 101.02138266700058,
+      "exit_code": 0
+    }
+  ],
+  "new_environments": true,
+  "original_inputs_and_scientific_sources_unchanged": true,
+  "scientific_source_changes": [],
+  "clone_changed_count": 5,
+  "clone_unexpected_changes": [],
+  "technical_pass": true,
+  "scientific_pass_assigned": false,
+  "archive_R8_unchanged": true,
+  "acquisition_scope": "authorised local fresh clone, private input snapshots supplied separately"
+}

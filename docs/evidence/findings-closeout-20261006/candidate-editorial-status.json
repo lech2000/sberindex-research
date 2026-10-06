@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-10-06",
+  "reviews": [
+    {
+      "project": "atlas",
+      "received_at": "2026-10-06T19:07:26.767890+00:00",
+      "model": "mimo-v2.5-pro",
+      "version": 5,
+      "response_sha256": "4dc2126a1e05235207b91ee367a9dcbdc660bf24c3eb8fec342e419f9bfeb8d1",
+      "model_verdict": "BOUNDED_READY_WITH_OWNER_ACCESS_PENDING",
+      "local_assessment": "EXTRACT_WITH_REWORK",
+      "whole_response_accepted": false,
+      "accepted_scope": "Provided bounded findings and owner access/submission remain pending",
+      "rejected_fragments": "Radar structured list: six joint cases is wrong; six official events and three joint cities. Atlas: unsupported A2/criteria/licence prerequisites and demo-only code access are not accepted from a model assertion.",
+      "independent_scientific_review": false
+    },
+    {
+      "project": "radar",
+      "received_at": "2026-10-06T19:10:46.377794+00:00",
+      "model": "mimo-v2.5-pro",
+      "version": 5,
+      "response_sha256": "df9f67691239c59096afd44909a5c8333f2f8891de0fde8994e024b4f2b47ac8",
+      "model_verdict": "BOUNDED_READY_WITH_OWNER_ACCESS_PENDING",
+      "local_assessment": "EXTRACT_WITH_REWORK",
+      "whole_response_accepted": false,
+      "accepted_scope": "Provided bounded findings and owner access/submission remain pending",
+      "rejected_fragments": "Radar structured list: six joint cases is wrong; six official events and three joint cities. Atlas: unsupported A2/criteria/licence prerequisites and demo-only code access are not accepted from a model assertion.",
+      "independent_scientific_review": false
+    }
+  ],
+  "case_actions_closed_by_model": false,
+  "scientific_pass": false,
+  "radar_retry_reason": "tool-service recreated19:07:32UTC during first remote request; one completed Atlas response retained; only Radar retried"
+}

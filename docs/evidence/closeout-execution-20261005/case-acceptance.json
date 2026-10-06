@@ -1,0 +1,141 @@
+{
+  "checked_on": "2026-10-06",
+  "source_report_commit": "39290fb30fb9b104d51d83e30e7c080795dca238",
+  "scientific_pass": false,
+  "n8n_invoked": false,
+  "reports_kb": [
+    {
+      "corpus_id": 75,
+      "document_id": 16656,
+      "readback_verified": true,
+      "text_sha256": "5a5d5fb5764220e18b54a1c1133c8ecd335fbede0f12fe1ada6f1e1611896b7a",
+      "checked_at": "2026-10-05T21:12:11.178283+00:00",
+      "receipt": {
+        "added": true,
+        "document_id": 16656,
+        "title": "Атлас текущий итоговый отчёт и отрицательный A8 — редакция06.10.2026",
+        "corpus_id": 75,
+        "chunks": 14,
+        "vectors": 14
+      }
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16657,
+      "readback_verified": true,
+      "text_sha256": "22f7229d4d3e54789933d00a430be9733ebf99d9b65ecaed99ab2a947f1a6438",
+      "checked_at": "2026-10-05T21:12:25.272103+00:00",
+      "receipt": {
+        "added": true,
+        "document_id": 16657,
+        "title": "Радар текущий отчёт точные маски и все парные интервалы — редакция06.10.2026",
+        "corpus_id": 76,
+        "chunks": 42,
+        "vectors": 42
+      }
+    },
+    {
+      "corpus_id": 74,
+      "document_id": 16658,
+      "readback_verified": true,
+      "text_sha256": "85ec1934b0f4cc2670c23d19a6bd7b7abe377dccdd71733e65d720fc14e8698e",
+      "checked_at": "2026-10-05T21:12:27.960061+00:00",
+      "receipt": {
+        "added": true,
+        "document_id": 16658,
+        "title": "Матрица приёмки Атласа и Радара — редакция06.10.2026",
+        "corpus_id": 74,
+        "chunks": 5,
+        "vectors": 5
+      }
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16659,
+      "readback_verified": true,
+      "text_sha256": "06180d99a783d1419a775157e8b44777d1d36ab035328e1fdc5826adfd1338c9",
+      "checked_at": "2026-10-05T21:12:33.889142+00:00",
+      "receipt": {
+        "added": true,
+        "document_id": 16659,
+        "title": "Куратору исполнение ступени отчётов и следующий этап —06.10.2026",
+        "corpus_id": 77,
+        "chunks": 19,
+        "vectors": 19
+      }
+    }
+  ],
+  "case_materials": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_sber_current_report_20261006_atlas",
+      "readback_verified": true,
+      "text_sha256": "c26afcb6161aafa8917d2db28e18e05c5aa82aeed65a10acf5903b0cf0cf5cc6",
+      "checked_at": "2026-10-05T21:13:56.807418+00:00"
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_sber_current_report_20261006_radar",
+      "readback_verified": true,
+      "text_sha256": "b4a61f9c03ba4994a71d5fa27dc5db6047b8edf15ef97f46dace27b715a20ce9",
+      "checked_at": "2026-10-05T21:13:56.923822+00:00"
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_sber_current_report_20261006_curator",
+      "readback_verified": true,
+      "text_sha256": "bb25daa777e377eb572140fc02c0078904adaec10a48288325936c0fdb9816ae",
+      "checked_at": "2026-10-05T21:13:57.110225+00:00"
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_sber_current_report_20261006_graph",
+      "readback_verified": true,
+      "text_sha256": "bb25daa777e377eb572140fc02c0078904adaec10a48288325936c0fdb9816ae",
+      "checked_at": "2026-10-05T21:13:57.299356+00:00"
+    }
+  ],
+  "curator_decisions": [
+    {
+      "corpus_id": 77,
+      "document_id": 16662,
+      "run_key": "report-editorial-exact-20261006-atlas",
+      "source_action_id": "act_de2edf39ffa94713",
+      "readback_verified": true,
+      "text_sha256": "42cc52fbff37231cb569d9117ad2e1aee30fbc8215e5484593e264f3912d5e19"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16663,
+      "run_key": "report-editorial-exact-20261006-radar",
+      "source_action_id": "act_d68aea4a7c6840d8",
+      "readback_verified": true,
+      "text_sha256": "8167b556da4e4cc3beace6d79ca7d44d8b4b56f2f813f6da064440b3bb0fc97c"
+    }
+  ],
+  "closed_source_actions": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "source_action_id": "act_de2edf39ffa94713",
+      "done": true,
+      "acceptance_document_id": 16662,
+      "material_id": "mat_sber_editorial_accept_20261006_atlas",
+      "readback_verified": true,
+      "open_count": 21,
+      "full_release_action_still_open": "act_c5ab2585bf8146b8",
+      "closed_at": "2026-10-05T21:30:07.910815+00:00"
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "source_action_id": "act_d68aea4a7c6840d8",
+      "done": true,
+      "acceptance_document_id": 16663,
+      "material_id": "mat_sber_editorial_accept_20261006_radar",
+      "readback_verified": true,
+      "open_count": 13,
+      "full_release_action_still_open": "act_e346385f69e54019",
+      "closed_at": "2026-10-05T21:30:08.500220+00:00"
+    }
+  ],
+  "scope": "two editorial actions only; no full scientific or release closure"
+}

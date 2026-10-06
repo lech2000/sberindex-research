@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-06T19:09:01.290432+00:00",
+  "source_commit": "45c46426527b17f79d1cef98db5870ac39d4e678",
+  "url": "https://agrigate.pro/sberindex-2026/reports/docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.html",
+  "status": 200,
+  "sha256": "07d017b53634f32389b487ebe6ae79a778f0feff0484eb381cac7faaefb6bb05",
+  "bytes": 10170,
+  "verified": true,
+  "supersedes": "acceptance matrix only; initial108URL receipt and reproduction supersession retained",
+  "raw_inputs_published": false
+}

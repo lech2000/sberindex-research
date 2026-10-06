@@ -1,0 +1,4 @@
+Importing plotly failed. Interactive plots will not work.
+16:33:32 - cmdstanpy - INFO - Chain [1] start processing
+16:33:33 - cmdstanpy - INFO - Chain [1] done processing
+{"checked_at": "2026-10-06T13:33:33.616360+00:00", "status": "PATH_SMOKE_PASS", "scope": "one real series, one new fit, three finite predictions via existing unchanged prophet_fit_predict; no benchmark update", "python": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]", "prophet": "1.4.0", "cmdstanpy": "1.3.0", "code_sha256": "39d4b9f37a0ba88000dff7fb1e20fa348dcfe994537bedbc6ea45dc40299a8cb", "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61", "cutoff": "2024-04", "origin": "2024-06", "train_points": 16, "fits": 1, "forecast_points": 3, "seed": 42, "target_outcomes_used_for_fit": false, "cached_forecasts_replaced": false, "scientific_pass": false}

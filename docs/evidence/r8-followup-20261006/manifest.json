@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-06",
+  "scope": "R8 follow-up and public report publication; no new holdout or raw input export",
+  "files": [
+    {
+      "path": "publication-receipt.json",
+      "sha256": "0759498a6012f07b6cb9c29ebdad125b80f88cdc4695d6eec46fe0b2ff4f327a",
+      "bytes": 74906
+    },
+    {
+      "path": "publication-label-receipt.json",
+      "sha256": "744ac2de4292347b67348734ed9d6d403236ce6a159f48d68deb3176f0fd04a7",
+      "bytes": 962
+    },
+    {
+      "path": "public-manifest.json",
+      "sha256": "ba33925c89c1fbfcb07bb2fb917faa007dd34d4ec59f5230405278aea73f92bc",
+      "bytes": 38496
+    },
+    {
+      "path": "case-receipts.jsonl",
+      "sha256": "3143905d5eed0bd73a715e1b47b4d33f1c806e98506dc7c07f30ae7ff004be62",
+      "bytes": 825
+    },
+    {
+      "path": "kb-receipts.jsonl",
+      "sha256": "80f4d38d325d20ac2924bc628bfbab9c4628b21eb8e72d43536d330f5c1d8721",
+      "bytes": 615
+    },
+    {
+      "path": "final-case-receipts.jsonl",
+      "sha256": "93902ff7c7529ebf491fe7de2309a85d550a391c06bf9afcb4edd1a80320ffe9",
+      "bytes": 515
+    },
+    {
+      "path": "final-kb-receipts.jsonl",
+      "sha256": "3d2f05bd680e26d2b48c8e2af6c2bb1f3e9bfa14efe4b56290442ddc36fbfdee",
+      "bytes": 410
+    },
+    {
+      "path": "r8-public-table.png",
+      "sha256": "8a97208f0176538f282dc06baeb6111db8ccf3ded9eb27d0e1ba89be4b0db142",
+      "bytes": 110424
+    }
+  ]
+}

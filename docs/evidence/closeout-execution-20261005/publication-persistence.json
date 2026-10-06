@@ -1,0 +1,92 @@
+{
+  "checked_on": "2026-10-06",
+  "kb": [
+    {
+      "corpus_id": 74,
+      "document_id": 16757,
+      "readback_verified": true,
+      "text_sha256": "9df4f1ef3801780da938c6c3d66ab27f8e9bd9a7b8c48cd7968699ec8840cd72"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 16758,
+      "readback_verified": true,
+      "text_sha256": "9df4f1ef3801780da938c6c3d66ab27f8e9bd9a7b8c48cd7968699ec8840cd72"
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16759,
+      "readback_verified": true,
+      "text_sha256": "9df4f1ef3801780da938c6c3d66ab27f8e9bd9a7b8c48cd7968699ec8840cd72"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16760,
+      "readback_verified": true,
+      "text_sha256": "9df4f1ef3801780da938c6c3d66ab27f8e9bd9a7b8c48cd7968699ec8840cd72"
+    },
+    {
+      "corpus_id": 62,
+      "document_id": 16761,
+      "readback_verified": true,
+      "text_sha256": "9cb6647f78f3931b36cb0600c86ac2ab02a562740c7ceb80712a57b724e376b3"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_sber_publication_20261006_atlas",
+      "full_readback_verified": true,
+      "closed_source_actions": [
+        "act_11eb834a09874fac"
+      ],
+      "updated_waiting_for": [
+        "act_c5ab2585bf8146b8",
+        "act_3abcbb174d4f4511",
+        "act_11eb834a09874fac"
+      ],
+      "open_count": 20,
+      "checked_at": "2026-10-06T04:04:45.438929+00:00"
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_sber_publication_20261006_radar",
+      "full_readback_verified": true,
+      "closed_source_actions": [
+        "act_b0fb2a4894954801"
+      ],
+      "updated_waiting_for": [
+        "act_e346385f69e54019",
+        "act_d0c376d044354f2e",
+        "act_b0fb2a4894954801"
+      ],
+      "open_count": 12,
+      "checked_at": "2026-10-06T04:04:45.640337+00:00"
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_sber_publication_20261006_curator",
+      "full_readback_verified": true,
+      "closed_source_actions": [],
+      "updated_waiting_for": [],
+      "open_count": 0,
+      "checked_at": "2026-10-06T04:04:45.546974+00:00"
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_sber_publication_20261006_graph",
+      "full_readback_verified": true,
+      "closed_source_actions": [],
+      "updated_waiting_for": [],
+      "open_count": 6,
+      "checked_at": "2026-10-06T04:04:45.759458+00:00"
+    }
+  ],
+  "full_readbacks_verified": true,
+  "closed_source_actions": [
+    "act_11eb834a09874fac",
+    "act_b0fb2a4894954801"
+  ],
+  "scientific_pass": false,
+  "full_release_actions": "OPEN"
+}

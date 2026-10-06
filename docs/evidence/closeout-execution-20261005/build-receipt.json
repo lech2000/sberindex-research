@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-10-06",
+  "source_base_commit": "54cf607f1e74b880b7bef7ffa51dff76eafec244",
+  "status": "EDITORIAL_ACTIONS_ACCEPTED_FULL_RELEASE_PENDING",
+  "scientific_pass": false,
+  "new_fits": 0,
+  "new_data_downloads": 0,
+  "platform_code_changed": false,
+  "frozen_runs_changed": false,
+  "reports": [
+    "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+    "shock-radar/METHODOLOGY_RU.md"
+  ],
+  "configs": [
+    "economic-atlas/config.json",
+    "shock-radar/config.json"
+  ],
+  "comparison_rows": 67,
+  "input_audit": "input-audit.json",
+  "completed_before_this_step": {
+    "engineering_report": "rep_26f0706d1fc44fc0",
+    "fix": "200d48198",
+    "engineering_verified_receipt": "KB62/16635",
+    "repository_main": "71cf96add4b13ed77cdaaadcc2b5c8218512fea2"
+  },
+  "paired_comparison_rows": 41,
+  "verification_completed_at": "2026-10-05T21:11:03.630062+00:00",
+  "checks": {
+    "repository_validator": "PASS",
+    "relative_report_links": "PASS",
+    "git_diff_check": "PASS",
+    "frozen_runs_diff": "empty"
+  },
+  "case_acceptance": "case-acceptance.json",
+  "public_deployed": false
+}

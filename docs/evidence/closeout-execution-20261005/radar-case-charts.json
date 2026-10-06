@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-06",
+  "source": "economic-atlas/runs/Atlas_Radar_joint_20261005/selected-residuals.parquet",
+  "source_sha256": "85fc9b92bd60f68fc6e19ae9a8ed8c6d3f30291cf81fe2cfc643650d17e2bbb6",
+  "exported_rows": 18,
+  "cities": [
+    "Орск",
+    "Курган",
+    "Ишим"
+  ],
+  "categories": [
+    "Маркетплейсы",
+    "Все категории"
+  ],
+  "origin": "2024-03",
+  "target_range": [
+    "2024-04",
+    "2024-06"
+  ],
+  "model": "profile_ses",
+  "residual_formula_check": "PASS_18_ROWS",
+  "new_fits": 0,
+  "public_deployed": false
+}

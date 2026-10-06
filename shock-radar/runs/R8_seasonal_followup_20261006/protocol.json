@@ -1,0 +1,47 @@
+{
+  "frozen_at": "2026-10-06T08:57:16.611128+00:00",
+  "codebase_commit": "2d814b135e6905a5e7a5981d400e6bb83891e142",
+  "purpose": "diagnose R8 and port already fixed R9 baselines to exact R8 keys; original primary gate immutable",
+  "known_prior_result": "R8 CI includes0,0of64historicaleligible; R9models already inspected",
+  "preregistered_scientific_protocol": false,
+  "scope": "exploratory retrospective followup; no independent holdout",
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "prophet": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+    "tsfm": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676",
+    "frozen_models": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2",
+    "old_decision": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+  },
+  "required_rows": 171150,
+  "keys": [
+    "territory_id",
+    "category",
+    "origin",
+    "target",
+    "horizon"
+  ],
+  "cutoff": "origin minus2 months, assumed availability lag",
+  "models": [
+    "growth_naive1",
+    "growth_naive3",
+    "category_seasonal",
+    "conditional_ses",
+    "profile_ses"
+  ],
+  "tuning": "no changes to archived models or parameters",
+  "missing": "no imputation; common-mask exclusions and full frozen controls shown",
+  "statistics": "target-month exact finite bootstrap; nearest-rank95%, all horizons1/2/3 and aggregate; leave-one-month-out; comparative CIs descriptive, small6monthblocks",
+  "future_controls": "change every value after cutoff and verify all valid predictions unchanged; independent scalar own growth1/growth3 checks",
+  "invalid_claims": [
+    "scientificPASSfromthisrepeat",
+    "historicalasof",
+    "news-effect",
+    "newholdout",
+    "equalinformationforcategorymodels"
+  ],
+  "old_archive_overwrite": false,
+  "fits": {
+    "prophet": 0,
+    "chronos": 0
+  }
+}
