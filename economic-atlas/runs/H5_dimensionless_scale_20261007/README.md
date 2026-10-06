@@ -54,3 +54,14 @@ python economic-atlas/src/dimensionless_scale_audit.py \
 и списки участников folds не входят в публичный отчёт. Исходный H5 run
 восстанавливается через `make atlas-h5` с точными SHA из протокола;
 затем `audit_dimensionless_scale.py` проверяет новый run отдельно.
+
+Для полного нового запуска с независимым аудитом и сверкой28MSE:
+
+```sh
+make atlas-dimensionless PYTHON=/path/to/science-python \
+  JOINT_DATA_SENSE=/path/to/data-sense \
+  ABLATION_WAGES=/path/to/wages20260928.parquet \
+  ABLATION_EMPLOYMENT=/path/to/employment20260928.parquet \
+  ATLAS_DIMENSIONLESS_REFERENCE=/path/to/private-original-H5-run \
+  ATLAS_DIMENSIONLESS_OUT=output/dimensionless-fresh
+```

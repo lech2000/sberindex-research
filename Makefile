@@ -53,3 +53,9 @@ RETURN_CONTROL_OUT ?= output/radar-return-control
 .PHONY: radar-return-control
 radar-return-control:
 	$(PYTHON) repository-tools/radar_return_control_reproduce.py --out "$(RETURN_CONTROL_OUT)"
+
+ATLAS_DIMENSIONLESS_OUT ?= output/atlas-dimensionless
+ATLAS_DIMENSIONLESS_REFERENCE ?= output/atlas-h5
+.PHONY: atlas-dimensionless
+atlas-dimensionless:
+	$(PYTHON) repository-tools/atlas_dimensionless_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --wages "$(ABLATION_WAGES)" --employment "$(ABLATION_EMPLOYMENT)" --reference "$(ATLAS_DIMENSIONLESS_REFERENCE)" --out "$(ATLAS_DIMENSIONLESS_OUT)"
