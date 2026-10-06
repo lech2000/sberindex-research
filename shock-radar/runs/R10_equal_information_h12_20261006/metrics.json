@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-10-06T20:37:01.780264+00:00",
+  "status": "COMPUTED_EXPLORATORY_EQUAL_INFORMATION",
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "independent_holdout": false,
+  "rows": 720,
+  "n_series": 120,
+  "municipalities": 114,
+  "fits_success": 2160,
+  "fits_expected": 2160,
+  "failures": 0,
+  "training_months": [
+    7,
+    12
+  ],
+  "future_mutation_and_conditional_last_checks": 720,
+  "results": [
+    {
+      "model": "national_yoy_lag1",
+      "reference": "conditional_prophet_linear",
+      "rows": 720,
+      "mae_model": 679.7461352252822,
+      "mae_reference": 1707.2244025587302,
+      "benefit_mae": 1027.4782673334482,
+      "relative_improvement_percent": 60.184136648556475,
+      "benefit_ci95_target_months": [
+        592.2813702562424,
+        1467.0763054493814
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "conditional_prophet_yearly3",
+      "rows": 720,
+      "mae_model": 679.7461352252822,
+      "mae_reference": 27168.670947150662,
+      "benefit_mae": 26488.924811925375,
+      "relative_improvement_percent": 97.49805157363956,
+      "benefit_ci95_target_months": [
+        4086.651263579274,
+        57886.76905276445
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "own_prophet_linear",
+      "rows": 720,
+      "mae_model": 679.7461352252822,
+      "mae_reference": 1275.5723993369318,
+      "benefit_mae": 595.8262641116495,
+      "relative_improvement_percent": 46.710501451847975,
+      "benefit_ci95_target_months": [
+        345.37832438529443,
+        840.4279862763304
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "stored_prophet",
+      "rows": 720,
+      "mae_model": 679.7461352252822,
+      "mae_reference": 1263.5602865898586,
+      "benefit_mae": 583.8141513645764,
+      "relative_improvement_percent": 46.2039015914464,
+      "benefit_ci95_target_months": [
+        338.0347255498633,
+        824.2954790197632
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "last_value",
+      "rows": 720,
+      "mae_model": 679.7461352252822,
+      "mae_reference": 1272.3111111111111,
+      "benefit_mae": 592.564975885829,
+      "relative_improvement_percent": 46.573905604608065,
+      "benefit_ci95_target_months": [
+        470.4305616343068,
+        716.3584748690084
+      ],
+      "month_blocks": 6
+    }
+  ],
+  "negative_predictions": {
+    "national_yoy_lag1": 0,
+    "conditional_prophet_linear": 9,
+    "conditional_prophet_yearly3": 248,
+    "own_prophet_linear": 3,
+    "stored_prophet": 3,
+    "last_value": 0
+  },
+  "sha256": {
+    "protocol": "ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62",
+    "code": "0263337f5ec6ce3b20d3933e0c5188856081ab5e94c729ee367dec8042e068e2",
+    "predictions": "0d422f93c2d024d0835e4ca7ec144428b14d8525b609314a857307335751650a"
+  },
+  "versions": {
+    "python": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "prophet": "1.4.0",
+    "pandas": "3.0.6"
+  }
+}
