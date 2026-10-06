@@ -1,0 +1,35 @@
+{
+  "archive_sha256": "de8fbda5172a7fe2f2a84bf216da4f42178633c3512aa5f46397a44e33f440b5",
+  "raw_included": false,
+  "private_owner_cases_only": true,
+  "receipts": [
+    {
+      "case": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_f33d77a5b43c4795",
+          "vault_document_id": "doc_fedd82c5f034435c",
+          "file": "sberindex-derived-closeout-20261006.zip",
+          "title": "SberIndex06.10 — производные прогнозы, все варианты и численный аудит",
+          "bytes": 15043990,
+          "sha256": "de8fbda5172a7fe2f2a84bf216da4f42178633c3512aa5f46397a44e33f440b5",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "case": "case_008f37d03cf541e5",
+      "materials": [
+        {
+          "id": "mat_caa6f3652d254589",
+          "vault_document_id": "doc_fedd82c5f034435c",
+          "file": "sberindex-derived-closeout-20261006.zip",
+          "title": "SberIndex06.10 — производные прогнозы, все варианты и численный аудит",
+          "bytes": 15043990,
+          "sha256": "de8fbda5172a7fe2f2a84bf216da4f42178633c3512aa5f46397a44e33f440b5",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}

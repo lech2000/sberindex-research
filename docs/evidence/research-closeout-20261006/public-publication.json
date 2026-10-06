@@ -1,101 +1,41 @@
 {
-  "source_commit": "84672fd281feba7c7860aaacaa5bc30a54bf62eb",
-  "unchanged_public_files": 108,
+  "source_commit": "f06069d4dc6de7fc27150f23ba5051892a227c6c",
+  "unchanged_public_files": 126,
   "changed_files": [
     {
-      "path": "economic-atlas/consumer-closeout/closeout.css",
-      "sha256": "2e8c7fe6c557a56d11517b5dde80932b1bb9e837611a5cfe9f76d00becd8330a",
-      "bytes": 1551,
-      "content_type": "text/css"
-    },
-    {
-      "path": "economic-atlas/consumer-closeout/consumer-map-362c3e245a3d7c81.js",
-      "sha256": "362c3e245a3d7c8157e7613ddc7a97c5878ed6ed128525967e1b123c8efbba49",
-      "bytes": 3568491,
+      "path": "economic-atlas/consumer-closeout/consumer-map-13ba906aae73551e.js",
+      "sha256": "13ba906aae73551ebffe9c5b8de168943da6c61ac0816d63588c3791cf0f7a19",
+      "bytes": 3568573,
       "content_type": "text/javascript"
     },
     {
       "path": "economic-atlas/consumer-closeout/index.html",
-      "sha256": "625d5428e564230fc469069b4d41a5def378f73264148d8cf91c209ecd1f6f0e",
+      "sha256": "c5e86c5fbd65d06db76b20ac854cde647ea67702fa0a672a0531bb019847ee27",
       "bytes": 4997,
       "content_type": "text/html"
     },
     {
       "path": "economic-atlas/consumer-closeout/manifest.json",
-      "sha256": "47019086a2353c42afbf32529421150b589b1e0e391b4ba79267bb1463a9e561",
+      "sha256": "60d856f411556ed171fa6c38bbb8ddd365520b1de5e809641f9350f781fdf803",
       "bytes": 506,
       "content_type": "application/json"
     },
     {
-      "path": "economic-atlas/landing/index.html",
-      "sha256": "92e656d64efc26006e505bb11fff91c8e993f5fba153a0eac83f8d3d769283e1",
-      "bytes": 32099,
-      "content_type": "text/html"
-    },
-    {
-      "path": "reports/docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.html",
-      "sha256": "9a2a06ad1356f4471db9a029d1adf466c3c76fe4411fc380176a935e1a639fe1",
-      "bytes": 11758,
-      "content_type": "text/html"
-    },
-    {
-      "path": "reports/docs/REPRODUCIBILITY.html",
-      "sha256": "a9e1136b6c3aa97e15d79dfce158115835fd375cc1692230846ea2d974c4e3cc",
-      "bytes": 9325,
-      "content_type": "text/html"
-    },
-    {
       "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
-      "sha256": "c7e2dc63452f8dc82384963454d5f4059b427746002abdac68d2370503c75c24",
-      "bytes": 15291,
+      "sha256": "f8bfecf47e28c1e6c40fb10f0ca7dc5e025a7cfa87970faacc17053707138007",
+      "bytes": 16968,
       "content_type": "text/html"
-    },
-    {
-      "path": "reports/economic-atlas/FINAL_REPORT_RU_2026-10-05.html",
-      "sha256": "c503a4c1b2fc93063526792ffadae453139aa6ef1437dc0f9e2e82d98d1827a4",
-      "bytes": 31270,
-      "content_type": "text/html"
-    },
-    {
-      "path": "reports/economic-atlas/config.json",
-      "sha256": "aef4be1d056ac0b20de2b7d5905ff8c4108fded6f40526ff49e687189c0ac895",
-      "bytes": 3305,
-      "content_type": "application/json"
-    },
-    {
-      "path": "reports/economic-atlas/runs/Consumer_closeout_20261006/README.html",
-      "sha256": "b54e15f189ab3776b8b17644672e5ac94b3f9fa0182a7784baed91573df0b817",
-      "bytes": 18579,
-      "content_type": "text/html"
-    },
-    {
-      "path": "reports/economic-atlas/runs/Consumer_closeout_20261006/closeout-results.png",
-      "sha256": "67412f21972beed09b9def13fedf59bf4c8fbdb63be94295eec518d0952f970c",
-      "bytes": 99771,
-      "content_type": "image/png"
     },
     {
       "path": "reports/shock-radar/METHODOLOGY_RU.html",
-      "sha256": "7a202c6430bc2589e469662df222dd9d14da8b334611c185f2330003a2d16584",
-      "bytes": 26905,
-      "content_type": "text/html"
-    },
-    {
-      "path": "reports/shock-radar/config.json",
-      "sha256": "10bd8202eecdd4153996936b32233d8b19cf9b5d66a092fde91dc2f1b3675357",
-      "bytes": 4277,
-      "content_type": "application/json"
-    },
-    {
-      "path": "reports/shock-radar/runs/National_equal_information_20261006/README.html",
-      "sha256": "44b6a47208c65e1270b6c5e828fa66d694a3a52d8ee8952c45e13604452a5f9a",
-      "bytes": 5977,
+      "sha256": "e49d24b2a1c97dbfed518453ebbb27a86af9d6c2133304b26e4002658cb685b2",
+      "bytes": 29055,
       "content_type": "text/html"
     },
     {
       "path": "shock-radar/landing/index.html",
-      "sha256": "90b0e00f10a4dc670b6581daf8fb363332a7367100424e3e33d04ca531a0a481",
-      "bytes": 34914,
+      "sha256": "3f921daa170c663b10f11103096a190fa1d2f73dcd756e59749c7d91f80f297c",
+      "bytes": 35736,
       "content_type": "text/html"
     }
   ],
