@@ -1,0 +1,23 @@
+{
+  "source_url": "https://sber.ru/common/assets/sber/sberindex_polozhenie_o_konkurse.pdf",
+  "pdf_sha256": "2afee8b042ac0f16baa420a79a10663929a92950cd1b2c6f80a079088c71d0d3",
+  "checked_at_utc": "2026-10-06T21:03:14.259502+00:00",
+  "checked_date_moscow": "2026-10-07",
+  "method": "official HTTPS PDF; pypdf text and visual review of relevant pages2/3",
+  "pages": 12,
+  "single_direction": {
+    "section": "3.1",
+    "required": true
+  },
+  "email_domain": {
+    "section": "3.2",
+    "requirement": "Russian postal domain"
+  },
+  "deadline": {
+    "section": "2.4.1",
+    "date": "2026-10-09",
+    "inclusive": true,
+    "exact_time_zone": "not specified"
+  },
+  "submitted": false
+}
