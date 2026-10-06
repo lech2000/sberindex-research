@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-06T21:52:59.181180+00:00",
+  "status": "M6_MISSINGNESS_SIZE_DESCRIPTIVE_AUDIT",
+  "scientific_pass": false,
+  "source_municipalities": 2190,
+  "source_rows": 303126,
+  "expected_cells_among_source_municipalities": 315360,
+  "absent_cells": 12234,
+  "absent_cell_fraction": 0.03879375951293759,
+  "municipalities_with_absent_cells": 174,
+  "municipalities_complete_present": 2016,
+  "invalid_present_cells": 0,
+  "analysis_population_n": 2078,
+  "excluded_population_or_dictionary": 112,
+  "regions": 76,
+  "spearman_log_population_absent_fraction": -0.12312700875770462,
+  "descriptive_region_block_ci95": [
+    -0.19738299231785997,
+    -0.044813325450112226
+  ],
+  "quintiles": [
+    {
+      "quintile": 1,
+      "n": 416,
+      "population_min": 1525.0,
+      "population_max": 11300.0,
+      "n_with_absent_cells": 60,
+      "municipal_fraction_with_absent_cells": 0.14423076923076922,
+      "absent_cell_fraction": 0.06500400641025642
+    },
+    {
+      "quintile": 2,
+      "n": 415,
+      "population_min": 11348.0,
+      "population_max": 18184.0,
+      "n_with_absent_cells": 24,
+      "municipal_fraction_with_absent_cells": 0.05783132530120482,
+      "absent_cell_fraction": 0.02389558232931727
+    },
+    {
+      "quintile": 3,
+      "n": 416,
+      "population_min": 18197.0,
+      "population_max": 29424.0,
+      "n_with_absent_cells": 33,
+      "municipal_fraction_with_absent_cells": 0.07932692307692307,
+      "absent_cell_fraction": 0.041866987179487176
+    },
+    {
+      "quintile": 4,
+      "n": 415,
+      "population_min": 29498.0,
+      "population_max": 60244.0,
+      "n_with_absent_cells": 27,
+      "municipal_fraction_with_absent_cells": 0.06506024096385542,
+      "absent_cell_fraction": 0.03242971887550201
+    },
+    {
+      "quintile": 5,
+      "n": 416,
+      "population_min": 60290.0,
+      "population_max": 1635338.0,
+      "n_with_absent_cells": 16,
+      "municipal_fraction_with_absent_cells": 0.038461538461538464,
+      "absent_cell_fraction": 0.023137019230769232
+    }
+  ],
+  "panel_municipalities": 1896,
+  "panel_missing_cells": 0,
+  "panel_invalid_present_cells": 0,
+  "missing_indicator_can_affect_H5_clustering": false,
+  "population_quality": {
+    "ambiguous_sex_cells": 0,
+    "missing_or_invalid_totals": 1
+  },
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "code_sha256": "e8412c56ad2b1b7f08bcb46cad36acdf7dff8df9788cbaeaabbe3ee3b136e374",
+  "limits": [
+    "Existing viewed release; descriptive selection audit, not statistical or causal test of suppression mechanism",
+    "Raw missing cells distinguish absence from present0/nonfinite values; no spending imputation",
+    "Population missing or sex conflicts explicitly excluded, two sexes required; no silent summation of partial total",
+    "No historical vintage/date guarantee; no conclusion about welfare or bank coverage causation",
+    "H5 selected complete panel has constant0missing indicator; excluded units do not thereby become exchangeable with selected units"
+  ]
+}
