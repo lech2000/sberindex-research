@@ -1,0 +1,46 @@
+{
+  "source_commit": "f06069d4dc6de7fc27150f23ba5051892a227c6c",
+  "unchanged_public_files": 126,
+  "changed_files": [
+    {
+      "path": "economic-atlas/consumer-closeout/consumer-map-13ba906aae73551e.js",
+      "sha256": "13ba906aae73551ebffe9c5b8de168943da6c61ac0816d63588c3791cf0f7a19",
+      "bytes": 3568573,
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "economic-atlas/consumer-closeout/index.html",
+      "sha256": "c5e86c5fbd65d06db76b20ac854cde647ea67702fa0a672a0531bb019847ee27",
+      "bytes": 4997,
+      "content_type": "text/html"
+    },
+    {
+      "path": "economic-atlas/consumer-closeout/manifest.json",
+      "sha256": "60d856f411556ed171fa6c38bbb8ddd365520b1de5e809641f9350f781fdf803",
+      "bytes": 506,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
+      "sha256": "f8bfecf47e28c1e6c40fb10f0ca7dc5e025a7cfa87970faacc17053707138007",
+      "bytes": 16968,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/shock-radar/METHODOLOGY_RU.html",
+      "sha256": "e49d24b2a1c97dbfed518453ebbb27a86af9d6c2133304b26e4002658cb685b2",
+      "bytes": 29055,
+      "content_type": "text/html"
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "sha256": "3f921daa170c663b10f11103096a190fa1d2f73dcd756e59749c7d91f80f297c",
+      "bytes": 35736,
+      "content_type": "text/html"
+    }
+  ],
+  "scope": "/sberindex-2026/",
+  "repository_private": true,
+  "raw_inputs_published": false,
+  "source_archive_published": false
+}

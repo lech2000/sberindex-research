@@ -1,0 +1,43 @@
+{
+  "source_commit": "f06069d4dc6de7fc27150f23ba5051892a227c6c",
+  "case_id": "case_008f37d03cf541e5",
+  "method": "vault + case material + full byte readback SHA256",
+  "materials": [
+    {
+      "id": "mat_4345931e76914d1d",
+      "vault_document_id": "doc_f4c8800d874e4f18",
+      "file": "shock-radar/runs/National_equal_information_20261006/README.md",
+      "title": "SberIndex дополнительные проверки06.10 — README.md",
+      "bytes": 4323,
+      "sha256": "7fc46a9a2e6de56c62c33a509f81f362507fc7714ef2fe478b4bdf6177e999f8",
+      "verified": true
+    },
+    {
+      "id": "mat_a35468a9db4a442f",
+      "vault_document_id": "doc_b15b814481184472",
+      "file": "shock-radar/runs/R10_equal_information_h12_20261006/README.md",
+      "title": "SberIndex дополнительные проверки06.10 — README.md",
+      "bytes": 9630,
+      "sha256": "24805fcf14c157fa370a597135f3bd97594a6df0939501e8df3bc4cffe1b066e",
+      "verified": true
+    },
+    {
+      "id": "mat_9e2d2ce9ef5b4346",
+      "vault_document_id": "doc_c9d050584f4d42c6",
+      "file": "docs/RESEARCH_CLOSEOUT_2026-10-06.md",
+      "title": "SberIndex дополнительные проверки06.10 — RESEARCH_CLOSEOUT_2026-10-06.md",
+      "bytes": 6375,
+      "sha256": "fee0838fecd473263aaf789b1e2a7e26e22c0a105ac8444c2b28c5a0ca3264b0",
+      "verified": true
+    },
+    {
+      "id": "mat_2ffe94165a414d24",
+      "vault_document_id": "doc_5fa2f06b2a9d4b4a",
+      "file": "sberindex-science-closeout-20261006.zip",
+      "title": "SberIndex дополнительные проверки06.10 — sberindex-science-closeout-20261006.zip",
+      "bytes": 798295,
+      "sha256": "cd128a103b69e6f8c7e1b9bca343dc86705d8daf3111681a1e27f524c4646a7a",
+      "verified": true
+    }
+  ]
+}

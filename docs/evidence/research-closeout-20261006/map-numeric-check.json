@@ -1,0 +1,9 @@
+{
+  "status": "TECHNICAL_PASS",
+  "municipalities": 1896,
+  "source_names_support_and_original_marketplace_fields_exact": true,
+  "forecast_numbers_at_declared_6_decimal_precision": 221616,
+  "signals": 25,
+  "core80": 9,
+  "browser_qa": "SEPARATE"
+}

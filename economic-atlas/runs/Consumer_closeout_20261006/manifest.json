@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-10-06T20:14:46.891213+00:00",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "code_sha256": "e4f3b28e7f887526e08ab9987dde42b5501dfeb8b82967a021f7623e99f82102",
+  "protocol_sha256": "e2f480f34a6f107ed977c741ac786bb0d27c55d45da82eb446d186ea00b08d18",
+  "dependency_code_sha256": {
+    "economic-atlas/src/consumption_restructuring.py": "dbbe59968affe4a043ac8813e404d8cc33a480199ef9c020fccc87b935db5b82",
+    "economic-atlas/src/atlas_radar_joint.py": "b0e4c223de9056efcff7e46cba140d110159d422ada40c12900181e148e29f95",
+    "shock-radar/src/r9_strong_baselines.py": "1cf8829c4cb40c1a49a7986de98060385345c20818e229e6e9e55f9c8a58bdf2"
+  },
+  "files": {
+    "metrics.json": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+    "synthetic-null.json": "b93f9c1c1daf3acea82c17fc205961c270babd3fd7aa6304f679d67d5965baa7",
+    "protocol.json": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+    "denominator-decomposition.csv": "bf381e151aa0a7f27daad98912a5131ecb1dd6a9f32787219f54ed47913f1f4d",
+    "predictions.parquet": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+    "robustness-grid.csv": "8d4710427050d7c02239e831754d0708bb50eff123b1b972856cf013da7e17ed",
+    "fits.json": "6e54c067e55e024a4f5954d06e175054df7e338bb6afd0c20a797fc03fc09be1",
+    "robustness-municipalities.csv": "76fbc414582702a5ee09771473476e47275aafe57ab28f311c4930a34f6651bf"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "shock-radar/runs/National_equal_information_20261006/metrics.json": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+    "shock-radar/runs/National_equal_information_20261006/README.md": "7fc46a9a2e6de56c62c33a509f81f362507fc7714ef2fe478b4bdf6177e999f8",
+    "shock-radar/runs/National_equal_information_20261006/manifest.json": "92f92d862ed2a832dcbbbdee51ccd8bbba7a95d502d1bb95ed629a261b36e01a",
+    "shock-radar/runs/National_equal_information_20261006/selection.json": "ae7ea9d1033a0e26602fde5b2796ff2473cf1be566a326653e07623b282b41cd",
+    "shock-radar/runs/National_equal_information_20261006/protocol.json": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+    "shock-radar/runs/National_equal_information_20261006/progress.json": "0663dcf2b32c399e7b23c07ff922fda03c3c996d619ea8c5a46ecff3d0c313bc",
+    "shock-radar/runs/National_equal_information_20261006/predictions.parquet": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8"
+  }
+}

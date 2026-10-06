@@ -1,0 +1,1 @@
+Verified06.10.2026, isolated worktree, fresh Python3.13.0 after concurrent H12 integration: python repository-tools/validate_repository.py.181Python AST,22JSON, action shapes, seeds, SHA and evidence checks passed. VALIDATE: OK. Two optional raw paths absent; required frozen inputs supplied externally.

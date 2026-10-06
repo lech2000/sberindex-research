@@ -1,0 +1,26 @@
+{
+  "case_id": "case_66cae4a89ba6473f",
+  "source_commit": "f3ca9ada3725deb71c31d4bc224c0d36e5039b9c",
+  "checked_at_utc": "2026-10-06T03:44:39.984509+00:00",
+  "materials": [
+    {
+      "id": "mat_8c1502aec417422e",
+      "vault_document_id": "doc_0f9b3b0e6c674c45",
+      "file": "README.md",
+      "title": "Проверка потребительской перестройки — числа подтверждены, границы вывода",
+      "bytes": 10281,
+      "sha256": "20b01abf907b5f40e02552c53dda8093c7e694e59ba74b3dc1f57a60da56759e",
+      "verified": true
+    },
+    {
+      "id": "mat_e0bdf3db46a140a5",
+      "vault_document_id": "doc_f3e7badc726c4e8c",
+      "file": "CONSUMER_INDEPENDENT_VALIDATION_20261006.zip",
+      "title": "Проверка потребительской перестройки — отдельный код и полная численная сверка",
+      "bytes": 13046,
+      "sha256": "2d63f2ebaa16ee55390ecee62896cee3819829eee145eeca39501f0f2e5ae8ba",
+      "verified": true
+    }
+  ],
+  "status": "VERIFIED"
+}

@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-10-06",
+  "status": "PASS_NUMERICAL_NOT_NEW_HOLDOUT",
+  "files": {
+    "economic-atlas/src/consumption_restructuring_independent_validation.py": "59749d1fb561020f3430bb7b5ba6a855218a9492193d97b002a9e4933733b540",
+    "economic-atlas/runs/Consumer_validation_20261006/README.md": "20b01abf907b5f40e02552c53dda8093c7e694e59ba74b3dc1f57a60da56759e",
+    "economic-atlas/runs/Consumer_validation_20261006/independent-validation.json": "40e80462b5b6eae020870b136b1728369ad60cf17e76088fd84e1261afc705a6"
+  },
+  "tests": {
+    "passed": 11,
+    "seconds": 2.36
+  },
+  "live_browser_rechecked": false,
+  "browser_policy_blocked": true,
+  "old_release_unchanged": true
+}

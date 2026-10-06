@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-06T20:17:02.592359+00:00",
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "r9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44",
+    "national": "940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030"
+  },
+  "code_sha256": "602241dc38b08e2cecdfd2c9294a0f2042057ea69b7d6a184df2a22b2a236acb",
+  "protocol_sha256": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+  "dependency_code_sha256": "503d372b55bfad8e9166ca8f553150016f33f557bd532f0dc3a2117668aa9889",
+  "files": {
+    "metrics.json": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+    "selection.json": "ae7ea9d1033a0e26602fde5b2796ff2473cf1be566a326653e07623b282b41cd",
+    "protocol.json": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+    "progress.json": "0663dcf2b32c399e7b23c07ff922fda03c3c996d619ea8c5a46ecff3d0c313bc",
+    "predictions.parquet": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8"
+  }
+}

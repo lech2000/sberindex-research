@@ -1,0 +1,45 @@
+{
+  "status": "PREPARED_ALTERNATIVES_AWAITING_ONE_DIRECTION_AND_IDENTITY",
+  "deadline_date_seen": "2026-10-09",
+  "deadline_time_zone": "not specified in inspected official page",
+  "identity": {
+    "name": null,
+    "surname": null,
+    "patronymic": null,
+    "email": null,
+    "phone": null,
+    "work_or_study": null,
+    "specialization": null,
+    "team_name": null,
+    "team_size": null,
+    "members": []
+  },
+  "agreements": {
+    "contest_terms": "human confirmation required at submission",
+    "personal_data": "human confirmation required at submission",
+    "advertising": "not selected"
+  },
+  "code_access": "private GitHub;158-file author archive prepared locally, publication awaits owner choice",
+  "alternatives": [
+    {
+      "nomination": "Кластеризация",
+      "project_name": "Экономический атлас и потребительская перестройка муниципалитетов",
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/",
+      "description": "Сопоставляем1896муниципалитетов по расходам2023–2024, населению и профилю потребления. Сравнили шесть методов и36вариантов сети. Основные кластеры чувствительны к постановке и не получили преимущества в исходной внешней проверке. В дополнительном опыте компактный профиль стабилен поseed, а расширенный профиль даёт небольшое ретроспективное улучшение; причинность и универсальные экономические типы не заявляются.25локальных потребительских отклонений проверены45правилами:9устойчивых историй показаны на карте. Код, протоколы, MAE и отрицательные исходы сохранены."
+    },
+    {
+      "nomination": "Прогнозирование",
+      "project_name": "Радар муниципальных расходов",
+      "url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/",
+      "description": "Проверяем прогноз муниципальных расходов против сильных простых сезонных моделей на одинаковых ключах и только прошлой информации. Сохранены218202прогнозаR9, ранние окна и отрицательные категории. Свежий пилот120рядов/720пар сравнивает Prophet и простой прогноз с одинаковым национальным фактором: простая модель лучше суммарно, но хуже на маркетплейсах. Дополнительная поправка по локальным отклонениям снижает MAE общих расходов на2,69% для месяца и3,79% для прямогоh3 на уже изученном2024. Независимый holdout, исторический vintage и кризис за полгода не подтверждены."
+    }
+  ],
+  "single_direction_required": true,
+  "nomination_to_submit": null,
+  "recommended_direction": "Прогнозирование",
+  "email_domain_requirement": "Russian postal domain per official rules3.2",
+  "official_rules_sha256": "2afee8b042ac0f16baa420a79a10663929a92950cd1b2c6f80a079088c71d0d3",
+  "deadline_inclusive": true,
+  "participant_eligibility_confirmation": null,
+  "participant_eligibility_requirements": "18+, Russian citizenship, residence in Russia and Russian tax residency per1.10; owner confirms, no identity documents requested"
+}
