@@ -1,0 +1,39 @@
+{
+  "source_commit": "402fca3ca0c85fe9618e2d50d19274cd73e23392",
+  "kb": {
+    "corpus_id": 74,
+    "document_id": 16959,
+    "verified": true,
+    "stored_text_sha256": "3778f0d8e1b1629d64b89ee856c5a31ffc37b8a317b1071abaa586cb31b580d6"
+  },
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_68a4bdc695d9404c",
+          "vault_document_id": "doc_a745c851e231409b",
+          "file": "docs/CONTEST_RULES_CLARIFICATION_2026-10-07.md",
+          "title": "Подача07.10 — выбрать одно направление по официальному положению",
+          "bytes": 1942,
+          "sha256": "0ea998ac5f99a3b1657b83169b7f46ba4fefee8bb848cdcb084a677faa03caf7",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "materials": [
+        {
+          "id": "mat_2f965fb161664685",
+          "vault_document_id": "doc_a745c851e231409b",
+          "file": "docs/CONTEST_RULES_CLARIFICATION_2026-10-07.md",
+          "title": "Подача07.10 — выбрать одно направление по официальному положению",
+          "bytes": 1942,
+          "sha256": "0ea998ac5f99a3b1657b83169b7f46ba4fefee8bb848cdcb084a677faa03caf7",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
