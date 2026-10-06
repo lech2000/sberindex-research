@@ -1,0 +1,15 @@
+{
+  "status": "INDEPENDENT_DIMENSIONLESS_SCALAR_AND_NORMALIZATION_AUDIT_PASS",
+  "checked_at": "2026-10-06T23:13:52.230382+00:00",
+  "checked_where": "Mac separate scalar math.fsum, region bootstrap and raw2023 normalization; no training-module imports",
+  "scientific_pass": false,
+  "forecast_rows_and_labels_checked": 34944,
+  "mse_values_checked": 28,
+  "paired_region_intervals_checked": 16,
+  "train_only_medians_checked": 70,
+  "unit_normalization_cells_checked": 132720,
+  "full_unit_ARI1": 14,
+  "run_predictions_sha256": "78ac6b40426fcb6e207205418d5c66b6f4ed74e2da1c682291651d2f393c90f5",
+  "auditor_sha256": "22f665761614509faba4d02109700831d925a4781bc466ea8a1e1d9de5e8ad1b",
+  "limits": "Numerical implementation verification on the same reviewed2025 outcomes; no independent future holdout or economic causality."
+}

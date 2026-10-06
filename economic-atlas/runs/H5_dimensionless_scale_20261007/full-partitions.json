@@ -1,0 +1,114 @@
+[
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20260921,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.5979547815455912,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261007,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.6102062829036964,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261008,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.5948734899446422,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261009,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.607196705694222,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261010,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.6021464664605274,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261011,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.594060102643932,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20260921,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.7767536643941396,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261007,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.7730245223686295,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261008,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.7730245223686295,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261009,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.7730245223686295,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261010,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.778792179752023,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261011,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.7730245223686295,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "ward",
+    "k": 5,
+    "seed": 20260921,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.3405896315688025,
+    "ARI_vs_shares_log_volume": 1.0
+  },
+  {
+    "method": "ward",
+    "k": 2,
+    "seed": 20260921,
+    "ruble_to_thousand_ARI": 1.0,
+    "ARI_vs_shares": 0.3160865816035653,
+    "ARI_vs_shares_log_volume": 1.0
+  }
+]
