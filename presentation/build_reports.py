@@ -49,7 +49,8 @@ def main():
   assert not re.search(r'<(?:script|iframe|object|embed)\b|on(?:load|error|click)\s*=',body,re.I)
   title=next((q.lstrip('# ').strip() for q in (r/src).read_text().splitlines() if q.startswith('# ')),src);source_sha=hashlib.sha256((r/src).read_bytes()).hexdigest();dest=dst/pub(src);dest.parent.mkdir(parents=True,exist_ok=True)
   cssrel=posixpath.relpath('report.css',posixpath.dirname(pub(src)) or '.')
-  dest.write_text('<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="script-src \'none\'; object-src \'none\'"><title>'+html.escape(title)+'</title><link rel="stylesheet" href="'+cssrel+'"><main><nav><a href="/sberindex-2026/economic-atlas/landing/">Атлас</a> · <a href="/sberindex-2026/shock-radar/landing/">Радар</a></nav><p class="meta">Авторский отчёт / производные результаты. Копия06.10.2026. Исходные датасеты здесь не размещаются; Git требует доступа. '+html.escape(src)+' · SHA256 '+source_sha+'</p>'+body+'</main></html>\n')
+  cssrel+='?v='+hashlib.sha256(css.encode()).hexdigest()[:12]
+  dest.write_text('<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="script-src \'none\'; object-src \'none\'"><title>'+html.escape(title)+'</title><link rel="stylesheet" href="'+cssrel+'"><main><nav><a href="/sberindex-2026/economic-atlas/landing/">Атлас</a> · <a href="/sberindex-2026/shock-radar/landing/">Радар</a></nav><p class="meta">Авторский отчёт / производные результаты. Публичная копия авторского файла. Исходные датасеты здесь не размещаются; Git требует доступа. '+html.escape(src)+' · SHA256 '+source_sha+'</p>'+body+'</main></html>\n')
  for src in sorted(selected):
   if src.endswith('.md'):continue
   d=dst/src;d.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(r/src,d)
