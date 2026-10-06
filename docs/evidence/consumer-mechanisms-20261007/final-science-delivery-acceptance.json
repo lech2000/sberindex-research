@@ -1,0 +1,56 @@
+{
+  "status": "SCIENCE_AND_DOCUMENT_DELIVERY_ACCEPTED",
+  "checked_at": "2026-10-06T22:54:24.133805+00:00",
+  "checked_where": "Own isolated Mac worktree; Git ancestry, independent numerical code, exact private case readback and unauthenticated public CDN/browser",
+  "source_commit": "af1209bf94a419159b9f3fef5c863c90fb082149",
+  "reviewed_pr20_head": "88db70b60fdfa3f7dbf58c361390317d87ed467f",
+  "prior_pr18_main": "5bb0c4c041f057ce2fae7b8b4ceb36e7fd3a0050",
+  "targeted_tests_total_passed": 37,
+  "fresh_consumer_reproduction": {
+    "prediction_keys_exact": 204768,
+    "control_rows_exact": 738720
+  },
+  "fresh_H5_reproduction": {
+    "fits": 588,
+    "partitions_ARI1": 84,
+    "OOF_rows_numeric_exact": 244608
+  },
+  "fresh_return_control_reproduction": {
+    "detector_runs": 480,
+    "by_seed_rows_exact": 720,
+    "summary_cells_exact": 36,
+    "audited_transition_credits": 14400
+  },
+  "independent_news_value_time_checks": 546048,
+  "empirical_calibration_overlap_checks": 9600,
+  "public_files_HTTP200_SHA256": 175,
+  "public_internal_links_checked": 374,
+  "public_updated_files": 26,
+  "public_unchanged_files": 149,
+  "initial_CDN_check_failed": true,
+  "normal_URL_recheck_all_passed": true,
+  "final_kb_documents": [
+    {
+      "corpus": 76,
+      "document": 17008
+    },
+    {
+      "corpus": 74,
+      "document": 17009
+    },
+    {
+      "corpus": 77,
+      "document": 17010
+    }
+  ],
+  "private_case_return_materials_exact": {
+    "case_66cae4a89ba6473f": 3,
+    "case_008f37d03cf541e5": 3
+  },
+  "scientific_pass": false,
+  "independent_future_holdout": false,
+  "historical_publication_availability_verified": false,
+  "paid_platform_model_calls_started_by_this_scientific_repeat": 0,
+  "project_admin_and_contest_complete": false,
+  "remaining": "One contest direction/identity/contact/consents/private-code access and owner submission; separate exclusive human administrative credentials/full overnight billing; live RAG/F7b and action-closure acceptance tracked separately."
+}

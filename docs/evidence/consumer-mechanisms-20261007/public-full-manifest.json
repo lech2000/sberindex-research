@@ -22,8 +22,8 @@
     },
     {
       "path": "economic-atlas/landing/index.html",
-      "sha256": "d76c8616e5d5d3ceb26721b6e28db93fc9731083e1c8a098c6c75179fbca1524",
-      "bytes": 33436
+      "sha256": "2632765d78b0b05c34778256afc9be6c6aed3975f905550c672be9bf1ed8a8ac",
+      "bytes": 34625
     },
     {
       "path": "reports/docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.html",
@@ -36,14 +36,24 @@
       "bytes": 29144
     },
     {
+      "path": "reports/docs/ATLAS_FINDINGS_2026-10-07.html",
+      "sha256": "3e39ba4a0e3aaea11857620422253840d1e91057b911a8436df5d9155518a137",
+      "bytes": 8644
+    },
+    {
       "path": "reports/docs/CLAIMS_2026-10-06.json",
-      "sha256": "3fa7533517277c3727e0d9d5d831a47f27a4c842392446af6913c70bb17b5e93",
-      "bytes": 4103
+      "sha256": "71c351a0fb18b8a2acd6178f9f05fce8c21ec06cf858110c9a7995e765a53d83",
+      "bytes": 6100
     },
     {
       "path": "reports/docs/COMPETITIVE_EXPERIMENTS_2026-10-04.html",
       "sha256": "e8646415ce24ed2bd28a99447c0e639bee1d3abdf26679defe731cfe2bc58706",
       "bytes": 9410
+    },
+    {
+      "path": "reports/docs/CONSUMER_INSIGHTS_2026-10-07.html",
+      "sha256": "cfde4582fa1049ec47b051a8c5dccce7524563687b8c45d0299250e671fd5717",
+      "bytes": 6048
     },
     {
       "path": "reports/docs/CONTEST_RULES_CLARIFICATION_2026-10-07.html",
@@ -62,18 +72,23 @@
     },
     {
       "path": "reports/docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.html",
-      "sha256": "2938420885b68dda71a5a19473c855273354010c7e7e402cf3f3cbf083d2610d",
-      "bytes": 12334
+      "sha256": "801ee93df9ae3f7167c70f8e5f56c243c507a1315b5e925eacb2927d7e872899",
+      "bytes": 15289
     },
     {
       "path": "reports/docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.json",
-      "sha256": "1ba661918ba8d495e9209c97b787a9f4e65deaeec735da9ac1c1e9be81432536",
-      "bytes": 9765
+      "sha256": "75e8977f6791473e5004c4ed797ffcd2d4ce7987d561eae3ec6ae0cfceee7394",
+      "bytes": 12286
+    },
+    {
+      "path": "reports/docs/RADAR_FINDINGS_2026-10-07.html",
+      "sha256": "e1403a7ff4054ec4c02f605e03de6024ed6baae685d880ef918de9199d53d896",
+      "bytes": 11239
     },
     {
       "path": "reports/docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.html",
-      "sha256": "6d80c28bbf039d1c6eb390e52e616fed376aba8aa5e99511edafd938c2815095",
-      "bytes": 14042
+      "sha256": "0f4747923752b3d44f38ccec7cde9a8e86c32c2e6a670554ffbcfb7f7087240a",
+      "bytes": 16724
     },
     {
       "path": "reports/docs/REPRODUCIBILITY.html",
@@ -82,8 +97,8 @@
     },
     {
       "path": "reports/docs/RESEARCH_FINDINGS_2026-10-06.html",
-      "sha256": "e9fada61f112ee5f4e270fa8ef7185b60255fd258d078426f3f7bc9f81474ce3",
-      "bytes": 18025
+      "sha256": "f5b53aee09748d5c446ec64e4721cc9ea977088171c6e675ad457f0cb2be2eb1",
+      "bytes": 25883
     },
     {
       "path": "reports/docs/findings/ATF_CLOSEOUT_20261004/claim-evidence.json",
@@ -107,8 +122,8 @@
     },
     {
       "path": "reports/economic-atlas/FINAL_REPORT_RU_2026-10-05.html",
-      "sha256": "9ff7b4060cd1b7ce69b7d7801ec74ea7d5765a878e6524a7535d629e9df0350c",
-      "bytes": 31326
+      "sha256": "a86e7eceeb3eaadff1b80326018c311d447e21791c6c3ea526706b891a059b43",
+      "bytes": 33350
     },
     {
       "path": "reports/economic-atlas/METHODOLOGY_RU.html",
@@ -411,6 +426,66 @@
       "bytes": 1031759
     },
     {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/README.html",
+      "sha256": "f5a713ba26c9303f75c3169b4f22698a2d5de0327ebd0f033c24ee0c93f4ffe7",
+      "bytes": 17481
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/a6-calibration-source-audit.json",
+      "sha256": "d344b25de88f2174497aa1d7168e013a8d2a25f0ab4e019df3346fcb3df64828",
+      "bytes": 1847
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/external_metrics.csv",
+      "sha256": "01fd073dbf8cb64581197388b5517f30d20f38a53b98f73539df540c4380d84d",
+      "bytes": 13124
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/fold_receipts.json",
+      "sha256": "d7b92d175e544886782016e4bfec11ca09c722c0b3c257af4e8afe8d20ca5fd3",
+      "bytes": 79967
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/full_metrics.json",
+      "sha256": "a5a890d34f6c155c53e61363feb145d14d88f3051b8bc254b0d13c66edbd8bd0",
+      "bytes": 26834
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/independent-audit.json",
+      "sha256": "a7f1d863a681678254bd5f41889ee748d441541945f8ffbf184830a3045ccdef",
+      "bytes": 733
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/missingness-protocol.json",
+      "sha256": "87813c3e72d796645146d97a47be68aeede1bd3279e7fd00ec1c0c307bd87d5e",
+      "bytes": 1469
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/missingness-size-audit.json",
+      "sha256": "67ede0649c654b83e8bb6267afc5076ef9e668728f5c09698a999cf1f1f8ae9e",
+      "bytes": 3328
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/paired_comparisons.json",
+      "sha256": "7646f0372bce261f0fde9187faa6471cbee1ba768e1dfe2ec0a46dbaa6999305",
+      "bytes": 22689
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/partition_comparisons.csv",
+      "sha256": "c82b9f0d39dc8aefbb4e2ea477efa3c2dd0edf0c527e71aafed18b722366a43c",
+      "bytes": 4364
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/protocol.json",
+      "sha256": "aba811f6acba1af3cc53247b275467dcab6924053574f767648ec97756be9b8a",
+      "bytes": 3512
+    },
+    {
+      "path": "reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/scale-audit.png",
+      "sha256": "8692b828c4d56ec0118ce4543b3ae5a0275e7656236a6779ac28517e2504a976",
+      "bytes": 74170
+    },
+    {
       "path": "reports/economic-atlas/runs/Municipal_budget_pilot_20261004/README.html",
       "sha256": "de7114b9d92549c3ea59b33895eb3e8ec81d831fc430223e68fbf84eb45999c9",
       "bytes": 16932
@@ -502,8 +577,8 @@
     },
     {
       "path": "reports/shock-radar/METHODOLOGY_RU.html",
-      "sha256": "9abcb628fb02bdf0df003ce09dacf3de6d87e60db89a607aed036c575d810034",
-      "bytes": 29111
+      "sha256": "dea2ffc5f803359b6e38201d4657cc083319578aa75ad248c764516665d09c3a",
+      "bytes": 31466
     },
     {
       "path": "reports/shock-radar/archive/METHODOLOGY_RU_before_closeout_2026-10-05.html",
@@ -591,6 +666,66 @@
       "bytes": 4248
     },
     {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/README.html",
+      "sha256": "87e5170f0dadb9be0e514b72802b2c3c603a54c6f3cdcf1cda7599458865cf99",
+      "bytes": 10410
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/all-controls.csv",
+      "sha256": "ff579ac407c280a4c5491dff647f1627f8a352674edff2f47cddbd7eab3e54e6",
+      "bytes": 4747
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/entry-return.png",
+      "sha256": "a456496b95bc7212ac28eaf15cb9aa4fb1ab436f0f44409ecfd77a693d7a5a15",
+      "bytes": 54920
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/independent-audit.json",
+      "sha256": "3f60af8c6712ed5b71ec7f7533ffaa75901d00a5f4f670be5f6a4178a723d3f6",
+      "bytes": 3287
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/metrics.json",
+      "sha256": "172f8268bfd7754c86eebc56ee19fd9861821dc580ba6c0d67f606291af150a5",
+      "bytes": 29235
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/protocol.json",
+      "sha256": "3be73a6a3277cdfb580df3c3e72f3cc494cca1c6f18b5dbfab4c7832d5422b20",
+      "bytes": 2347
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/reproduction-receipt.json",
+      "sha256": "38039413c3ce66a5144fd4b80af51a33db006d178660763e5690a5570258ebf2",
+      "bytes": 873
+    },
+    {
+      "path": "reports/shock-radar/runs/N1_N2_return_control_20261007/test-receipt.json",
+      "sha256": "7efd575fe98daf42d84541ee027ed74a9ed7ffa536a76666763596a82e9c1718",
+      "bytes": 359
+    },
+    {
+      "path": "reports/shock-radar/runs/N3_official_news_value_20261007/README.html",
+      "sha256": "8a594b9c9efcb3fe3aedec71018ae43d222d992c52741665b084e7e1efbf6069",
+      "bytes": 10558
+    },
+    {
+      "path": "reports/shock-radar/runs/N3_official_news_value_20261007/independent-audit.json",
+      "sha256": "9f75c4a19195027bb75323b631c5982c4d7a392e863bfaad9c8f2237f9379e6f",
+      "bytes": 639
+    },
+    {
+      "path": "reports/shock-radar/runs/N3_official_news_value_20261007/metrics.json",
+      "sha256": "31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855",
+      "bytes": 45299
+    },
+    {
+      "path": "reports/shock-radar/runs/N3_official_news_value_20261007/protocol.json",
+      "sha256": "c11e2e1491d98ace8e04d6b2b51b7674f00571b1d916f67d110cb60c627e664e",
+      "bytes": 2339
+    },
+    {
       "path": "reports/shock-radar/runs/National_equal_information_20261006/README.html",
       "sha256": "3afe1164e2e13260daa72b3b6ca93f6a42df10efe7f334cac2bfb363e1509756",
       "bytes": 6033
@@ -599,6 +734,11 @@
       "path": "reports/shock-radar/runs/Official_cases_20261003/README.html",
       "sha256": "00a04cab5b1fcf445fc171a16f5fd2dcfeb0578719031a2ffaa001870f847aa5",
       "bytes": 14689
+    },
+    {
+      "path": "reports/shock-radar/runs/Official_cases_20261003/registry.json",
+      "sha256": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+      "bytes": 8479
     },
     {
       "path": "reports/shock-radar/runs/R10_equal_information_h12_20261006/README.html",
@@ -732,8 +872,8 @@
     },
     {
       "path": "shock-radar/landing/index.html",
-      "sha256": "8dbcd33f2a020045790e7d9d4e13c47e0d156752539714e5e0d56105950af5a9",
-      "bytes": 37073
+      "sha256": "60edbc7cbf7b2724dcb69519c5e00bef57b2ccd3907822c8abf656b97c26db71",
+      "bytes": 39176
     }
   ]
 }
