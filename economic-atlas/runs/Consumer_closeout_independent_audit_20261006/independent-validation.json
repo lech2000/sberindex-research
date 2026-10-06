@@ -1,0 +1,25 @@
+{
+  "status": "TECHNICAL_PASS",
+  "created_at_utc": "2026-10-06T20:23:14.415345+00:00",
+  "checks": {
+    "independent_raw_and_matching": {
+      "release_file_hashes": 24,
+      "frozen_input_hashes": 3,
+      "panel_raw_records": 273024,
+      "pre_2024_covariates": 17064,
+      "independent_peer_pairs": 15297,
+      "independent_deviation_cells": 1069344,
+      "anomaly_summary_fields": 69255
+    },
+    "new_regression_fits": 522,
+    "trained_predictions": 803358,
+    "cold_predictions": 443664,
+    "scalar_mae_metrics": 144,
+    "robustness_configurations": 45,
+    "denominator_rows_exact_decomposition": 25,
+    "source_equations_import_study": false
+  },
+  "new_source_sha256": "efe5953c94d790019828e82fe17963f7b0f61e6aab4cd11961d263a4057b637a",
+  "frozen_independent_source_sha256": "59749d1fb561020f3430bb7b5ba6a855218a9492193d97b002a9e4933733b540",
+  "independent_scientific_holdout": false
+}

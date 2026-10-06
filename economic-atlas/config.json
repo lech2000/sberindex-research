@@ -12,7 +12,7 @@
     30,
     10
   ],
-  "version": 2,
+  "version": 3,
   "status": "computed_exploratory_release_candidate",
   "scientific_pass": false,
   "checked_on": "2026-10-06",
@@ -87,5 +87,13 @@
     "joint": "runs/Atlas_Radar_joint_20261005/metrics.json",
     "demo": "site/atlas-20261005/index.html",
     "website_current_release_verified": false
+  },
+  "additional_experiments_20261006": {
+    "consumer": "economic-atlas/runs/Consumer_closeout_20261006",
+    "national_prophet_pilot": "shock-radar/runs/National_equal_information_20261006",
+    "status": "computed_exploratory_already_viewed_2024",
+    "scientific_pass": false,
+    "full_prophet_national_panel": false,
+    "direct_h6_training": "unsupported_no_completed_labels"
   }
 }

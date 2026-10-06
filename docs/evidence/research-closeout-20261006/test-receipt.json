@@ -1,0 +1,8 @@
+{
+  "verified_at": "2026-10-06",
+  "environment": "fresh Python 3.13.0 offline-cache venv",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q tests/test_consumer_closeout.py tests/test_national_prophet_closeout.py tests/test_consumption_restructuring.py tests/test_atlas_radar_ablation.py",
+  "result": "21 passed in 4.34s",
+  "source": "completed shell test output in this Codex session",
+  "paid_model_calls": 0
+}

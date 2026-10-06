@@ -1,0 +1,36 @@
+{
+  "municipality_ids": [
+    "1037",
+    "1133",
+    "1990",
+    "2876",
+    "2",
+    "2301",
+    "243",
+    "2114",
+    "1179",
+    "1323",
+    "1309",
+    "1134",
+    "2512",
+    "1610",
+    "2308",
+    "841",
+    "1930",
+    "666",
+    "734",
+    "2580"
+  ],
+  "eligible_municipality_ids": 2018,
+  "categories": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+  ],
+  "series": 120,
+  "rows": 720,
+  "rule": "20 municipality IDs by SHA256(seed,id), among IDs with all6 categories and all6 R9 h12 targets; no selection by errors or values"
+}

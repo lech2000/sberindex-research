@@ -1,0 +1,16 @@
+{
+  "files": {
+    "economic-atlas/runs/Consumer_closeout_20261006/metrics.json": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+    "economic-atlas/runs/Consumer_closeout_20261006/closeout-results.png": "67412f21972beed09b9def13fedf59bf4c8fbdb63be94295eec518d0952f970c",
+    "economic-atlas/runs/Consumer_closeout_20261006/closeout-results.svg": "68ab647a1cfc8cb25865c7ff6fe9322b2cfb3cb9cba472bffba39d2d4f2f2334",
+    "economic-atlas/runs/Consumer_closeout_20261006/README.md": "741d02b498a337ce97788ea8377d9f08ff8c645bc867ae851fc2ee65802f31bf",
+    "economic-atlas/runs/Consumer_closeout_20261006/synthetic-null.json": "b93f9c1c1daf3acea82c17fc205961c270babd3fd7aa6304f679d67d5965baa7",
+    "economic-atlas/runs/Consumer_closeout_20261006/manifest.json": "670cd676349fbc55dc1981cf22d7892e6cd0a884e906f2d0060aed80b9956029",
+    "economic-atlas/runs/Consumer_closeout_20261006/protocol.json": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+    "economic-atlas/runs/Consumer_closeout_20261006/denominator-decomposition.csv": "bf381e151aa0a7f27daad98912a5131ecb1dd6a9f32787219f54ed47913f1f4d",
+    "economic-atlas/runs/Consumer_closeout_20261006/predictions.parquet": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-grid.csv": "8d4710427050d7c02239e831754d0708bb50eff123b1b972856cf013da7e17ed",
+    "economic-atlas/runs/Consumer_closeout_20261006/fits.json": "6e54c067e55e024a4f5954d06e175054df7e338bb6afd0c20a797fc03fc09be1",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-municipalities.csv": "76fbc414582702a5ee09771473476e47275aafe57ab28f311c4930a34f6651bf"
+  }
+}
