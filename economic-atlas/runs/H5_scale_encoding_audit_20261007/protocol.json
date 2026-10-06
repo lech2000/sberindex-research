@@ -1,0 +1,81 @@
+{
+  "recorded_before_fits": "2026-10-06T21:24:37.172279+00:00",
+  "hypothesis": "Original H5/E00: compare structure alone, structure plus scale, and scale alone at equal K; audit unit, future, metadata and legacy encoding effects.",
+  "primary_method": "kmeans",
+  "primary_k": 5,
+  "primary_seed": 20260921,
+  "seeds": [
+    20260921,
+    20261007,
+    20261008,
+    20261009,
+    20261010,
+    20261011
+  ],
+  "sensitivity_k": 2,
+  "sensitivity_method": "ward, train linkage and nearest training-centroid assignment outside train",
+  "n_init": 20,
+  "folds": 5,
+  "arms": [
+    "shares",
+    "shares_log_volume",
+    "volume",
+    "legacy_shares6",
+    "legacy_shares6_log_mean6",
+    "legacy_volume_log_mean6"
+  ],
+  "feature_window": "2023 only; 2024 mutated for future invariance; 2025 outcomes never input",
+  "canonical_features": "mean monthly five-category value / same-month All categories; log1p mean total in original rubles",
+  "legacy_features": "six annual category means normalized by their sum, including All categories; optional log1p mean over all six annual category means; semantic compatibility audit, not physical budget shares",
+  "scaling": "StandardScaler fit only on training municipalities in each GroupKFold; full descriptive fit on all 1896 municipalities",
+  "external_control": "Same strict 1248 MO / 70-region mask as frozen Atlas×Radar ablation, 2024 wage/employment, population, market access, coordinates and train-only type dummies; predict log2025, conditional explanatory analysis, not 2023 deployable forecast",
+  "outcomes": [
+    "wage2025",
+    "employment2025"
+  ],
+  "primary_pairs": [
+    [
+      "shares_log_volume",
+      "shares"
+    ],
+    [
+      "shares",
+      "volume"
+    ],
+    [
+      "shares",
+      "controls"
+    ],
+    [
+      "legacy_shares6",
+      "shares"
+    ],
+    [
+      "legacy_shares6_log_mean6",
+      "shares_log_volume"
+    ],
+    [
+      "legacy_volume_log_mean6",
+      "volume"
+    ]
+  ],
+  "metrics": "Squared log2025 OOF errors, 2000 paired region-block descriptive bootstrap draws. All primary pairs reported. Silhouette in ONE Q4 canonical-share space frozen on2023 on common400-MO sample; native-space silhouette not cross-arm comparison.",
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "market": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1",
+    "wages": "6c350c9356f8def9d190b56e2bacaa55960ae2c2aa0eda8d25720db44bfadbe3",
+    "employment": "f643b394c11758f5d28e465380e263943c5e5e9e312a468daedca95b7e2f87d7"
+  },
+  "scientific_pass": false,
+  "limits": [
+    "Already viewed panel and external release; frozen before this calculation does not make an independent holdout",
+    "Cannot establish welfare, economic truth, causality, or absent historical revisions",
+    "Default z-score gives each feature equal coordinate weight; adding volume changes geometry",
+    "log1p is fixed-ruble convention and is not invariant to unit conversion; unit-induced label ARI measured separately",
+    "Missing and duplicate observations rejected; no zero fill",
+    "Ward transfer is explicit nearest fitted training centroid and not native hierarchical prediction",
+    "Descriptive conditional bootstrap intervals and sensitivity variants are not a familywise-confirmatory test"
+  ]
+}

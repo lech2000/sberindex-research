@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-10-06T21:12:01.966263+00:00",
+  "status": "POST_HOC_SCALE_SENSITIVITY",
+  "scientific_pass": false,
+  "purpose": "Quantify dependence of pooled MAE on aggregate category and series scale, after viewing primary outcomes.",
+  "not_primary_replacement": true,
+  "historical_asof_verified": false,
+  "future_training_scale_mutation_checks": 720,
+  "results": [
+    {
+      "reference": "conditional_prophet_linear",
+      "rows": 720,
+      "series": 120,
+      "loss": "absolute_error",
+      "candidate_loss": 679.7461352252822,
+      "reference_loss": 1707.2244025587302,
+      "relative_improvement_percent": 60.184136648556475,
+      "benefit_ci95_target_months": [
+        592.2813702562424,
+        1467.0763054493816
+      ],
+      "series_wins": 100,
+      "series_losses": 20,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": true
+    },
+    {
+      "reference": "conditional_prophet_linear",
+      "rows": 720,
+      "series": 120,
+      "loss": "absolute_error / own_training_mean",
+      "candidate_loss": 0.16977018277542344,
+      "reference_loss": 0.32248491149190367,
+      "relative_improvement_percent": 47.355619836593284,
+      "benefit_ci95_target_months": [
+        0.09262041904204184,
+        0.2059682410209416
+      ],
+      "series_wins": 100,
+      "series_losses": 20,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": true
+    },
+    {
+      "reference": "conditional_prophet_linear",
+      "rows": 600,
+      "series": 100,
+      "loss": "absolute_error",
+      "candidate_loss": 562.0203628052726,
+      "reference_loss": 896.5798823992963,
+      "relative_improvement_percent": 37.31508214290112,
+      "benefit_ci95_target_months": [
+        59.73816231872653,
+        620.4196514493601
+      ],
+      "series_wins": 80,
+      "series_losses": 20,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": false
+    },
+    {
+      "reference": "conditional_prophet_linear",
+      "rows": 600,
+      "series": 100,
+      "loss": "absolute_error / own_training_mean",
+      "candidate_loss": 0.19370990847421307,
+      "reference_loss": 0.3466379774921281,
+      "relative_improvement_percent": 44.117517106557635,
+      "benefit_ci95_target_months": [
+        0.08934693362281033,
+        0.21013998460726455
+      ],
+      "series_wins": 80,
+      "series_losses": 20,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": false
+    },
+    {
+      "reference": "last_value",
+      "rows": 720,
+      "series": 120,
+      "loss": "absolute_error",
+      "candidate_loss": 679.7461352252822,
+      "reference_loss": 1272.3111111111111,
+      "relative_improvement_percent": 46.573905604608065,
+      "benefit_ci95_target_months": [
+        470.4305616343068,
+        716.3584748690084
+      ],
+      "series_wins": 84,
+      "series_losses": 36,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": true
+    },
+    {
+      "reference": "last_value",
+      "rows": 720,
+      "series": 120,
+      "loss": "absolute_error / own_training_mean",
+      "candidate_loss": 0.16977018277542344,
+      "reference_loss": 0.243353921272105,
+      "relative_improvement_percent": 30.237334213490755,
+      "benefit_ci95_target_months": [
+        0.05958707619901019,
+        0.08806520875485357
+      ],
+      "series_wins": 84,
+      "series_losses": 36,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": true
+    },
+    {
+      "reference": "last_value",
+      "rows": 600,
+      "series": 100,
+      "loss": "absolute_error",
+      "candidate_loss": 562.0203628052726,
+      "reference_loss": 672.0533333333333,
+      "relative_improvement_percent": 16.37265453060184,
+      "benefit_ci95_target_months": [
+        48.648286380497844,
+        180.7909463626072
+      ],
+      "series_wins": 65,
+      "series_losses": 35,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": false
+    },
+    {
+      "reference": "last_value",
+      "rows": 600,
+      "series": 100,
+      "loss": "absolute_error / own_training_mean",
+      "candidate_loss": 0.19370990847421307,
+      "reference_loss": 0.25770421431578,
+      "relative_improvement_percent": 24.832463842888874,
+      "benefit_ci95_target_months": [
+        0.050089503881245466,
+        0.07840673366682266
+      ],
+      "series_wins": 65,
+      "series_losses": 35,
+      "series_ties": 0,
+      "includes_all_categories_aggregate": false
+    }
+  ],
+  "raw_mae_series_by_category": [
+    {
+      "category": "Все категории",
+      "series_wins": 20,
+      "series_losses": 0
+    },
+    {
+      "category": "Здоровье",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Маркетплейсы",
+      "series_wins": 5,
+      "series_losses": 15
+    },
+    {
+      "category": "Общественное питание",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Продовольствие",
+      "series_wins": 19,
+      "series_losses": 1
+    },
+    {
+      "category": "Транспорт",
+      "series_wins": 18,
+      "series_losses": 2
+    }
+  ],
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "predictions_sha256": "0d422f93c2d024d0835e4ca7ec144428b14d8525b609314a857307335751650a",
+  "code_sha256": "2b62a8b0b1dbb8d89129bc518b2e266d47498265463e4b6fd53971fb0b0de48c",
+  "limits": "Same 720 selected forecast keys, previously viewed window. Six-month block intervals descriptive. Own training mean normalization is not MASE and not household weighting."
+}

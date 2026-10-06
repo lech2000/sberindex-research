@@ -1,0 +1,9 @@
+python files AST-checked: 187, errors: 0
+json loaded: 22, bad: 0, missing: 0
+actions shape errors: 0
+closed-source flags: {'economic-atlas/actions.json': True, 'shock-radar/actions.json': True}
+progress mentions A6/R8: True/True
+config seeds: {'economic-atlas/config.json': 42, 'shock-radar/config.json': 42}
+sha256 fields: 10, empty: 0
+evidence missing: 0; optional absent: ['data/raw/sberindex-data-sense-2025/5_connection.parquet', 'data/raw/sberindex-data-sense-2025/8_consumption.parquet']
+VALIDATE: OK

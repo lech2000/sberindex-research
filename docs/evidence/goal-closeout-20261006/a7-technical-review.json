@@ -1,0 +1,31 @@
+{
+  "status": "TECHNICAL_A7_REVIEW_PASS",
+  "scientific_pass": false,
+  "checked_at": "2026-10-06",
+  "method": "Full CSV shape, finiteness, explicit NA and all MQ statuses; existing independent formula audits and fresh make atlas19partitionsARI1",
+  "tables": {
+    "validity.csv": {
+      "rows": 19,
+      "S_Dbw_numeric": 12,
+      "S_Dbw_NA": 7,
+      "sha256": "d08fd0846149982211da578ae05468a8d21fbe33a20f608489b109c16ec77c96"
+    },
+    "all_networks_validity.csv": {
+      "rows": 228,
+      "S_Dbw_numeric": 144,
+      "S_Dbw_NA": 84,
+      "sha256": "27e872621593b367cd4b4243c17bdf241ccf8430478f9d38674c38d4a0ba9bed"
+    },
+    "cross_year_validity.csv": {
+      "rows": 76,
+      "S_Dbw_numeric": 48,
+      "S_Dbw_NA": 28,
+      "sha256": "0ffafa7d600df7981ed01f8f0df28fb685a91eb9f21802e1e5422c7fa29a86df"
+    }
+  },
+  "limits": [
+    "MQ omitted by owner; not waived by organizer",
+    "AVI/AVU reference convention; mathematical degeneracy retained",
+    "No external economic validation or whole A6 scientific PASS"
+  ]
+}

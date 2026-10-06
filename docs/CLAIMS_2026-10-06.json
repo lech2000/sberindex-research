@@ -44,6 +44,36 @@
       "source": "economic-atlas/runs/Atlas_Radar_joint_20261005/README.md",
       "scope": "threecities,28uniqueMO,10matches each;origin03.2024",
       "limit": "not causal flood effect;two placebos not proof of parallel trends"
+    },
+    {
+      "id": "atlas-radar-integration-ablation",
+      "result": "K5 sensitivity: Radar-vs-raw YoY wage/employment MSE reductions1.403%/1.861%; six-seed minimum pairwiseARI0.952701vs0.516789. K2 primary benefit vsbase not confirmed; Q4 expense-space silhouette0.358824to0.307216.",
+      "source": "economic-atlas/runs/Atlas_Radar_ablation_20261006/README.md",
+      "scope": "1248MO/70regions common external2025 outcomes; 1896MO Q4 profiles; frozen retrospective protocol before this calculation",
+      "limit": "K5 is sensitivity; no primary economic superiority, independent holdout, causal effect or new deployed groups; baseline seedARI remains higher"
+    },
+    {
+      "id": "radar-h12-equal-national-information",
+      "result": "120series/114MO/720H12points;2160freshProphetfits,0failures. National_yoy_lag1MAE679.746vsconditionalProphetlinear1707.224,60.184%lower; target-monthblock descriptive95%benefitCI[592.281,1467.076]. Marketplace37.42%worse;foodCIcrosses0.",
+      "source": "shock-radar/runs/R10_equal_information_h12_20261006/README.md",
+      "scope": "Same own history throughorigin and national history throughorigin-1; no actualfutureN;July-Dec2024 targets;short7-12monthtrain; previouslychosen120seriescohort",
+      "limit": "Post-discoveryexploratory;notfullpaneloroptimallytunedProphet;historicalvintageunknown;notindependentholdout;oldcategoryH12remainsunsupported",
+      "scale_sensitivity": "Post hoc, same frozen predictions: excluding aggregate All categories, 600 points MAE562.020vs896.580 (37.315% lower); normalized by own past mean44.118% lower;80/100series wins. Not a replacement primary or independent confirmation."
+    },
+    {
+      "id": "atlas-h5-separate-structure-scale",
+      "result": "K5 shares-vs-volume ARI0.125438; shares-vs-mixed0.597955. Shares rubles-to-thousand-rubles ARI1 for kmeans and Ward; mixed Ward0.4260. Mixed-vs-shares wageMSE1.266%worse/employment0.358%better, both descriptive CIs cross0.",
+      "source": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+      "scope": "Frozenbeforefits retrospective six-arm audit;1248MO/70region OOF;1896full partitions; same400MO compactness sample",
+      "limit": "Not economic typology confirmation, unseen holdout or new deployed feature. Volume shown separately; log1p dimensional sensitivity does not mean source units were wrong."
+    },
+    {
+      "id": "radar-official-news-ablation",
+      "result": "136512 paired rows/60fits. Publication-proxy h1MAE832.564vscontrol801.210 (3.913%worse,CIcrosses0); h3essentiallyequal. Strict0/6eligibleand12monthshiftmatchcontrol within4.82e-9.546048scalarverificationchecks.",
+      "source": "shock-radar/runs/N3_official_news_value_20261007/README.md",
+      "scope": "Fixed ridge, ownhistoryorigin-2, fiveprespecifiedarms;1896MO/6categories,July-Dec2024 viewedwindow",
+      "limit": "Sixrecords/fivesources/fourmonths,notindependentreplications. Published-dateproxy not historicalasof; no confirmed newsforecastgain,causal effects,earlywarningoruniversalmodelconclusion."
     }
-  ]
+  ],
+  "updated_on": "2026-10-07"
 }

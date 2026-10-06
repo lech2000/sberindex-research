@@ -1,0 +1,18 @@
+/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/research-closeout-runtime/bin/python repository-tools/atlas_h5_reproduce.py --data-sense-dir "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/atlas-radar-ablation-20261006/data-sense" --wages "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/atlas-radar-ablation-20261006/data_Y48423007_112_v20260928.parquet" --employment "/Users/sergey/projects/sberindex-research-accelerated-public-20261003/output/atlas-radar-ablation-20261006/data_Y48423005_112_v20260928.parquet" --out "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/h5-final-reproduction-20261007"
+{"method": "kmeans", "k": 5, "seed": 20260921, "complete": true}
+{"method": "kmeans", "k": 5, "seed": 20261007, "complete": true}
+{"method": "kmeans", "k": 5, "seed": 20261008, "complete": true}
+{"method": "kmeans", "k": 5, "seed": 20261009, "complete": true}
+{"method": "kmeans", "k": 5, "seed": 20261010, "complete": true}
+{"method": "kmeans", "k": 5, "seed": 20261011, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20260921, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20261007, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20261008, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20261009, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20261010, "complete": true}
+{"method": "kmeans", "k": 2, "seed": 20261011, "complete": true}
+{"method": "ward", "k": 5, "seed": 20260921, "complete": true}
+{"method": "ward", "k": 2, "seed": 20260921, "complete": true}
+{"status": "EXECUTED_RETROSPECTIVE_H5_SCALE_ENCODING_AUDIT", "full_partitions": 84, "oof_rows": 244608, "external_n": 1248, "scientific_pass": false}
+{"status": "INDEPENDENT_H5_NUMERICAL_AUDIT_PASS", "checked_at": "2026-10-06T22:22:55.897936+00:00", "scientific_pass": false, "raw_2025_outcome_and_region_scalar_checks": 489216, "independent_MSE_checks": 196, "independent_paired_comparison_and_interval_checks": 48, "partition_size_checks": 294, "disjoint_region_fold_sets_checked": 14, "oof_sha256": "e937d8773b949c2d271ab8b8a18781a9e894b801bca173d6326b7d5ea23cb793", "partitions_sha256": "d3dda325f39cbfaf6c2c0903d962c90e2b61110971a1976af594a050ebe5d675", "code_sha256": "8338bca062b9108eb15c94e527d54aa16a745e513026a7962f1c38273eea8490", "scope": "Different numerical code, same viewed raw snapshots. Not external scientific review or unseen holdout."}
+H5_REFERENCE_PASS: 196 MSE, disjoint regional folds and 48 paired comparisons; scientific_pass remains false

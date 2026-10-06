@@ -1,0 +1,11 @@
+{
+  "variant_metrics_exact": 8,
+  "series_counts_exact": true,
+  "future_scale_checks": 720,
+  "tests_passed": 3,
+  "raw_sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+  "predictions_sha256": "0d422f93c2d024d0835e4ca7ec144428b14d8525b609314a857307335751650a",
+  "status": "TECHNICAL_PASS",
+  "scientific_pass": false,
+  "note": "Prediction cache found in frozen external pilot output, absent from Git; verified by original SHA, no new Prophet fit."
+}

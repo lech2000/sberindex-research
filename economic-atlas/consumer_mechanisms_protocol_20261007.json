@@ -1,0 +1,120 @@
+{
+  "run_id": "Consumer_mechanisms_20261007",
+  "frozen_before_new_results_at_utc": "2026-10-06T21:21:11+00:00",
+  "status": "EXPLORATORY_ALREADY_VIEWED_2024",
+  "input_protocol": "economic-atlas/consumption_restructuring_protocol_20261005.json",
+  "targets": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "horizons": [
+    1,
+    3,
+    6
+  ],
+  "primary_categories": [
+    "Все категории",
+    "Маркетплейсы"
+  ],
+  "all_categories": true,
+  "hypotheses": [
+    "A correction can look useful against an inferior baseline. Compare every correction to a fixed finite simple-model pool on identical keys, and choose bases by completed past errors.",
+    "Copying the own 2023 seasonal profile may help aggregate expenses but hinder a rapidly changing marketplace category. Evaluate fixed shrinkage values without test-window selection.",
+    "The incremental information in matched peers may be smaller than the total benefit of own-plus-peer features. Compare peer versus own and versus pre-stratified shuffled peer feature histories."
+  ],
+  "baseline_pool_order": [
+    "profile_ses",
+    "category_seasonal",
+    "growth_naive3",
+    "growth_naive1",
+    "conditional_ses"
+  ],
+  "baseline_selection": {
+    "origins": "2024-01 onward, with u+h<=current origin; compute each candidate at u with observations <=u",
+    "mask": "All1539 supported municipalities, same complete comparison mask",
+    "minimum_completed_monthly_origins": 2,
+    "past_pick": "Select minimum pooled mean absolute error within category and current horizon; deterministic ties in declared pool order",
+    "past_mix": "Arithmetic mean of the two models with lowest completed pooled mean absolute errors; stable ties in pool order",
+    "cold_start": "Both selectors exactly Profile SES; do not label them trained",
+    "unsupported_municipalities": "Receive the supported-cohort global selector but no feature correction; excluded from headline supported comparisons",
+    "historical_selected_labels": "Correction residuals for adaptive bases use the baseline that would have been selected at each historical u, never retroactive current selection",
+    "h6": "No completed direct h6 label in this evaluation; selectors and direct corrections are cold, exact Profile SES. One-step corrections transferred to h6 are labelled transfers."
+  },
+  "correction": {
+    "bases": [
+      "profile_ses",
+      "category_seasonal",
+      "past_pick",
+      "past_mix"
+    ],
+    "variants": [
+      "one_step_zero_own",
+      "one_step_zero_peer",
+      "direct_zero_own",
+      "direct_zero_peer"
+    ],
+    "features": "Existing frozen own5 and own5+peer5 from consumption_restructuring; no redefinition",
+    "label": "log(actual[u+k]/base_forecast[u,u+k]), k=1 for one_step, k=current horizon for direct, u+k<=origin",
+    "minimum_completed_origins": 2,
+    "fit": "Training-only mean and population std; zero intercept; ridge0.1; clip predicted log correction to[-0.1,0.1]",
+    "unsupported": "Exactly their uncorrected base; no filling missing peer features"
+  },
+  "seasonal_profile_diagnostic": {
+    "shrinkage": [
+      0,
+      0.35,
+      0.7,
+      1
+    ],
+    "formula": "Existing Profile SES in log own/category-median ratios with own2023 season multiplied by fixed shrinkage; all other formula/alpha grid/factor unchanged",
+    "use": "Report all four; no selection by test outcomes; 0.7 must reproduce Profile SES exactly; diagnostic candidates not added to adaptive selection pool"
+  },
+  "peer_alignment_control": {
+    "base": "past_pick",
+    "variants": [
+      "one_step_zero_peer",
+      "direct_zero_peer"
+    ],
+    "categories": [
+      "Все категории",
+      "Маркетплейсы"
+    ],
+    "horizons": [
+      1,
+      3
+    ],
+    "replicates": 20,
+    "seed": 20261007,
+    "strata": "Supported municipalities only, municipal type x floor(log2(population2023)); sorted strata and IDs",
+    "permutation": "Within each stratum, uniformly permute the entire12month x5 peer-extra feature history; own5 unchanged; one deterministic mapping per replicate across categories/horizons/origins",
+    "singleton": "Retain unchanged; report singleton and self-mapping counts",
+    "fit": "Retrain on shuffled histories, training-only standardization and completed labels, exactly same ridge and clip",
+    "reporting": "Report every replicate MAE, matched-peer versus own gains and empirical control ranks; no permutation p-value or real FDR claim",
+    "limits": "Feature alignment placebo, not a newly matched peer network; exchangeability not established; self mappings reduce perturbation"
+  },
+  "uncertainty": {
+    "metric": "MAE in source units; paired gains on exactly same supported rows",
+    "intervals": "10000 paired target-month block bootstrap; region-block sensitivity separately; seed20261007",
+    "limits": "Six target months, overlapping horizons, many exploratory comparisons; intervals not confirmatory multiplicity-adjusted evidence"
+  },
+  "verification": [
+    "Future mutation of all categories after every evaluation origin must leave candidates, choices, fit metadata and predictions unchanged",
+    "Exact stored actual/Profile SES/category seasonal/Growth3 agreement on old204768 keys",
+    "Independent scalar baseline checks and independent augmented least-squares correction checks",
+    "Every selector/correction label target <= origin; directh6 cold; unsupported feature outputs exactly base",
+    "Shuffled histories preserve full within-history temporal/cross-feature structure and pre-strata membership",
+    "Save every positive and negative category/model result, masks, fit and selection trace, control mappings and SHA"
+  ],
+  "limits": [
+    "All2024 target data already viewed; newly frozen specification is post hoc exploratory",
+    "Retrospective complete panel and current dictionary; historical publication/vintage not verified",
+    "Monthly index cutoffs are idealized information boundaries, not verified historical publication dates",
+    "No new municipality observations after2024, no household quantities/income/prices or crisis labels",
+    "No causal mechanism, crisis forecasting, scientific PASS or independent holdout claim",
+    "No paid provider/CMD calls or model configuration changes"
+  ]
+}

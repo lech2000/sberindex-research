@@ -1,0 +1,14 @@
+{
+  "status": "INDEPENDENT_H5_NUMERICAL_AUDIT_PASS",
+  "checked_at": "2026-10-06T21:33:38.435934+00:00",
+  "scientific_pass": false,
+  "raw_2025_outcome_and_region_scalar_checks": 489216,
+  "independent_MSE_checks": 196,
+  "independent_paired_comparison_and_interval_checks": 48,
+  "partition_size_checks": 294,
+  "disjoint_region_fold_sets_checked": 14,
+  "oof_sha256": "b812991a81b9bad5d8f93642423832d4179c517ac1f569443cc3e30d3aad487d",
+  "partitions_sha256": "2c5837a6fef75d5f116ccbbbd1f9c8fc978e86c8844b90257756be84e7e0e40a",
+  "code_sha256": "8338bca062b9108eb15c94e527d54aa16a745e513026a7962f1c38273eea8490",
+  "scope": "Different numerical code, same viewed raw snapshots. Not external scientific review or unseen holdout."
+}

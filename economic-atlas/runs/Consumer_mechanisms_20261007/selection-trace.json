@@ -1,0 +1,5282 @@
+[
+  {
+    "category": "Все категории",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1073.8578522189491,
+      "category_seasonal": 776.2623804633809,
+      "growth_naive3": 1028.4348899426245,
+      "growth_naive1": 902.1914696722249,
+      "conditional_ses": 738.9145200918092
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1424.9412282874503,
+      "category_seasonal": 1161.6577395745423,
+      "growth_naive3": 1309.6827064820584,
+      "growth_naive1": 1099.9475075597154,
+      "conditional_ses": 1137.9459063033048
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "growth_naive1",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1296.2767706946242,
+      "category_seasonal": 1071.079316762801,
+      "growth_naive3": 1227.4274300842433,
+      "growth_naive1": 1045.6958178785521,
+      "conditional_ses": 1043.7262291109032
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 2407.948477963573,
+      "category_seasonal": 2471.944986231206,
+      "growth_naive3": 2207.497247844948,
+      "growth_naive1": 2079.0413890934137,
+      "conditional_ses": 2470.383034485809
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1199.049796145679,
+      "category_seasonal": 992.931880750805,
+      "growth_naive3": 1139.693994754322,
+      "growth_naive1": 994.9616391833337,
+      "conditional_ses": 968.524440619892
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 2268.2637967965297,
+      "category_seasonal": 2274.0623657965675,
+      "growth_naive3": 2063.295562797774,
+      "growth_naive1": 1872.0057498331523,
+      "conditional_ses": 2270.9148755732544
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1118.2569569447912,
+      "category_seasonal": 956.7096308135032,
+      "growth_naive3": 1081.1720980846492,
+      "growth_naive1": 969.9221294053983,
+      "conditional_ses": 938.1711185240425
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 1929.3031748424028,
+      "category_seasonal": 2000.9431449406852,
+      "growth_naive3": 1816.9461934291087,
+      "growth_naive1": 1689.3362421793888,
+      "conditional_ses": 1988.6200368060797
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 1047.8794712763506,
+      "category_seasonal": 904.9177226053071,
+      "growth_naive3": 1030.5759084031097,
+      "growth_naive1": 936.8089504051507,
+      "conditional_ses": 886.0880936632265
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 1688.5362249427933,
+      "category_seasonal": 1776.8720451706104,
+      "growth_naive3": 1653.8981016942885,
+      "growth_naive1": 1526.9511142482913,
+      "conditional_ses": 1766.6064982274825
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 1004.1593281923876,
+      "category_seasonal": 884.1827031466665,
+      "growth_naive3": 1019.0583814304291,
+      "growth_naive1": 924.0576792788411,
+      "conditional_ses": 864.7991492583999
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 1580.9106518245299,
+      "category_seasonal": 1641.7554874243933,
+      "growth_naive3": 1590.6036396662894,
+      "growth_naive1": 1489.8571159245275,
+      "conditional_ses": 1630.0722176200034
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 965.6307535878202,
+      "category_seasonal": 886.6368332066569,
+      "growth_naive3": 989.4311673954484,
+      "growth_naive1": 917.3086807337046,
+      "conditional_ses": 873.986281510413
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Все категории",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 936.4148622668594,
+      "category_seasonal": 891.8652989374198,
+      "growth_naive3": 974.4010105335987,
+      "growth_naive1": 922.3790678511398,
+      "conditional_ses": 878.7488460904138
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 74.58082696364626,
+      "category_seasonal": 72.71283451519669,
+      "growth_naive3": 86.95710499454552,
+      "growth_naive1": 92.05692540692775,
+      "conditional_ses": 64.49897011538638
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 103.62363197450229,
+      "category_seasonal": 122.19086398349782,
+      "growth_naive3": 105.90265392175054,
+      "growth_naive1": 113.91802328147942,
+      "conditional_ses": 117.84271254883693
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "growth_naive1",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 100.03330052760117,
+      "category_seasonal": 112.79815993062641,
+      "growth_naive3": 101.57786955928385,
+      "growth_naive1": 109.04640116510159,
+      "conditional_ses": 107.13556229919983
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive3",
+      "growth_naive1",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 148.19136220240438,
+      "category_seasonal": 201.0161722331475,
+      "growth_naive3": 134.9691742222197,
+      "growth_naive1": 136.72141354204942,
+      "conditional_ses": 197.52974674134947
+    },
+    "picked": "growth_naive3",
+    "mixture": [
+      "growth_naive3",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 92.748214616327,
+      "category_seasonal": 103.0773233302981,
+      "growth_naive3": 96.2797329415265,
+      "growth_naive1": 103.64398286892758,
+      "conditional_ses": 97.80472905139058
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive3",
+      "growth_naive1",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 132.51919697829928,
+      "category_seasonal": 186.5140529480819,
+      "growth_naive3": 124.32225394818057,
+      "growth_naive1": 127.746792852226,
+      "conditional_ses": 184.76456365315377
+    },
+    "picked": "growth_naive3",
+    "mixture": [
+      "growth_naive3",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 87.90159815883464,
+      "category_seasonal": 98.01061427496268,
+      "growth_naive3": 91.77456263213475,
+      "growth_naive1": 101.34244499374762,
+      "conditional_ses": 93.31940550820296
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 127.76468390781216,
+      "category_seasonal": 161.15526579988807,
+      "growth_naive3": 118.96484775274206,
+      "growth_naive1": 118.11610932214415,
+      "conditional_ses": 157.9654531491306
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 88.40413138702934,
+      "category_seasonal": 100.30521853231639,
+      "growth_naive3": 93.14820913219334,
+      "growth_naive1": 105.18668574814875,
+      "conditional_ses": 96.19097403127697
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive3",
+      "growth_naive1",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 118.1991847146069,
+      "category_seasonal": 149.40449194776744,
+      "growth_naive3": 116.03617279768109,
+      "growth_naive1": 117.84002906649046,
+      "conditional_ses": 145.78951322832467
+    },
+    "picked": "growth_naive3",
+    "mixture": [
+      "growth_naive3",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 86.13112417018064,
+      "category_seasonal": 98.89960069761064,
+      "growth_naive3": 91.23729072097164,
+      "growth_naive1": 105.22814744103557,
+      "conditional_ses": 94.76755471055381
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive3",
+      "profile_ses",
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 112.4901272322242,
+      "category_seasonal": 140.22886063196768,
+      "growth_naive3": 111.47541139983508,
+      "growth_naive1": 114.30840049068676,
+      "conditional_ses": 135.92140217259188
+    },
+    "picked": "growth_naive3",
+    "mixture": [
+      "growth_naive3",
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 87.3165678883932,
+      "category_seasonal": 97.89863480625404,
+      "growth_naive3": 91.45335067065527,
+      "growth_naive1": 104.24649868807359,
+      "conditional_ses": 93.50428216828502
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Здоровье",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 85.57827800577856,
+      "category_seasonal": 97.70344181286623,
+      "growth_naive3": 90.54203415312497,
+      "growth_naive1": 105.12443507525299,
+      "conditional_ses": 93.28256368186227
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 232.8830081953602,
+      "category_seasonal": 217.2861808707186,
+      "growth_naive3": 270.24695117824916,
+      "growth_naive1": 284.5224315418434,
+      "conditional_ses": 227.9773190392853
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 270.7756165889371,
+      "category_seasonal": 261.81464688098276,
+      "growth_naive3": 299.3708581402698,
+      "growth_naive1": 303.5895153627874,
+      "conditional_ses": 266.8834457690406
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 257.9338016756657,
+      "category_seasonal": 283.0710121273597,
+      "growth_naive3": 292.74108756745767,
+      "growth_naive1": 317.10208020701015,
+      "conditional_ses": 288.5727573529661
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 367.001466980137,
+      "category_seasonal": 348.9868595700775,
+      "growth_naive3": 417.91050743795427,
+      "growth_naive1": 423.6719905017949,
+      "conditional_ses": 355.37218000504294
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 249.88101468592123,
+      "category_seasonal": 264.13737770316965,
+      "growth_naive3": 282.7702678259403,
+      "growth_naive1": 305.32961615786655,
+      "conditional_ses": 266.9322067695446
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses",
+      "growth_naive1",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 332.82562614907437,
+      "category_seasonal": 315.09384093946505,
+      "growth_naive3": 388.41410606144524,
+      "growth_naive1": 386.5974184439865,
+      "conditional_ses": 316.59939162372245
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 262.75701346237474,
+      "category_seasonal": 267.07363258123877,
+      "growth_naive3": 290.04999758623467,
+      "growth_naive1": 305.76831531059236,
+      "conditional_ses": 270.0424081937852
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 331.8977595175594,
+      "category_seasonal": 374.55239292795926,
+      "growth_naive3": 389.1304398840394,
+      "growth_naive1": 418.81779558078836,
+      "conditional_ses": 377.7884782402655
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 264.254160742347,
+      "category_seasonal": 266.4779179708035,
+      "growth_naive3": 292.3326381051002,
+      "growth_naive1": 309.5964493002002,
+      "conditional_ses": 267.8935482236317
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 338.6607239694077,
+      "category_seasonal": 373.6252804318359,
+      "growth_naive3": 390.53008850658034,
+      "growth_naive1": 412.1853820775438,
+      "conditional_ses": 373.35320619150815
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "profile_ses",
+      "conditional_ses",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 273.5166554423541,
+      "category_seasonal": 271.8225647593413,
+      "growth_naive3": 310.060274176206,
+      "growth_naive1": 324.0582794357535,
+      "conditional_ses": 274.6797816292866
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 377.7692330189363,
+      "category_seasonal": 388.8247432601734,
+      "growth_naive3": 425.80652578246037,
+      "growth_naive1": 439.0868218058745,
+      "conditional_ses": 388.7152789820797
+    },
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses",
+      "growth_naive1",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 284.592013002202,
+      "category_seasonal": 267.71707742300015,
+      "growth_naive3": 326.084496552938,
+      "growth_naive1": 325.547173198346,
+      "conditional_ses": 269.00720959595986
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Маркетплейсы",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses",
+      "growth_naive1",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 350.2956078627419,
+      "category_seasonal": 310.7114217765155,
+      "growth_naive3": 389.95714267258666,
+      "growth_naive1": 370.5390787581919,
+      "conditional_ses": 309.92276357187836
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "category_seasonal",
+      "conditional_ses",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 76.37900473524475,
+      "category_seasonal": 61.23919163554885,
+      "growth_naive3": 69.23820043791937,
+      "growth_naive1": 64.2069931614532,
+      "conditional_ses": 61.395454337025214
+    },
+    "picked": "category_seasonal",
+    "mixture": [
+      "category_seasonal",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 106.54442376619652,
+      "category_seasonal": 111.92214352366038,
+      "growth_naive3": 80.30679971151898,
+      "growth_naive1": 71.80683152490288,
+      "conditional_ses": 110.8799051156251
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 121.67483769781708,
+      "category_seasonal": 95.71096835576611,
+      "growth_naive3": 81.0692521204843,
+      "growth_naive1": 69.82317522127293,
+      "conditional_ses": 94.9016096995341
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 183.36950160396424,
+      "category_seasonal": 272.2358035603529,
+      "growth_naive3": 131.35866794785778,
+      "growth_naive1": 127.35613953045947,
+      "conditional_ses": 271.988373123475
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 120.54585909062538,
+      "category_seasonal": 93.09294522697014,
+      "growth_naive3": 83.2598750656147,
+      "growth_naive1": 73.10325843131389,
+      "conditional_ses": 91.93324489387982
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 192.14060295826073,
+      "category_seasonal": 263.1223792734117,
+      "growth_naive3": 138.42101327532114,
+      "growth_naive1": 129.38402911775756,
+      "conditional_ses": 261.9142544073336
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 114.7943941622039,
+      "category_seasonal": 97.96258755523849,
+      "growth_naive3": 84.02976969500814,
+      "growth_naive1": 76.58812687721411,
+      "conditional_ses": 98.01026639660795
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 186.42439939682941,
+      "category_seasonal": 242.40208293213684,
+      "growth_naive3": 135.65906653735686,
+      "growth_naive1": 127.78775978814602,
+      "conditional_ses": 241.51467061618013
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 108.15127821938157,
+      "category_seasonal": 91.97654681099107,
+      "growth_naive3": 84.30594393368604,
+      "growth_naive1": 76.58269618433023,
+      "conditional_ses": 92.13883195944673
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 169.0866948412766,
+      "category_seasonal": 230.69923622286456,
+      "growth_naive3": 133.39503524132664,
+      "growth_naive1": 126.69207088028256,
+      "conditional_ses": 229.0486765898383
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 102.51773908807668,
+      "category_seasonal": 91.38522880365275,
+      "growth_naive3": 86.58534109650223,
+      "growth_naive1": 77.62740401202356,
+      "conditional_ses": 91.33658867460545
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 159.3822968358329,
+      "category_seasonal": 205.5506083340522,
+      "growth_naive3": 134.72693869815643,
+      "growth_naive1": 130.13244029028536,
+      "conditional_ses": 204.5558175203764
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 98.3828950191762,
+      "category_seasonal": 87.71291783990307,
+      "growth_naive3": 84.17100480046713,
+      "growth_naive1": 77.58037139729903,
+      "conditional_ses": 88.03297794755736
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Общественное питание",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "category_seasonal",
+      "conditional_ses",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 93.64481734393466,
+      "category_seasonal": 83.92541056401976,
+      "growth_naive3": 81.84167696683105,
+      "growth_naive1": 76.54115258513357,
+      "conditional_ses": 84.31403820610296
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 362.8195099495965,
+      "category_seasonal": 298.9508572773667,
+      "growth_naive3": 365.57010857418805,
+      "growth_naive1": 322.2855727907189,
+      "conditional_ses": 264.4835749410631
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 395.21371355975134,
+      "category_seasonal": 303.55625081814577,
+      "growth_naive3": 394.0825831029875,
+      "growth_naive1": 336.13088381005656,
+      "conditional_ses": 280.66875626161305
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 384.45737724192975,
+      "category_seasonal": 282.10901745134055,
+      "growth_naive3": 392.58914049551095,
+      "growth_naive1": 329.23958165458964,
+      "conditional_ses": 264.9923220234105
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 681.8509441388986,
+      "category_seasonal": 614.594686842175,
+      "growth_naive3": 675.7272660067733,
+      "growth_naive1": 627.9054278767624,
+      "conditional_ses": 588.4260876401956
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 355.33212963253925,
+      "category_seasonal": 278.95636072053776,
+      "growth_naive3": 371.02880253220223,
+      "growth_naive1": 325.69176308676856,
+      "conditional_ses": 264.7969923506197
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 620.0465806676826,
+      "category_seasonal": 535.9821266743585,
+      "growth_naive3": 622.3530142553009,
+      "growth_naive1": 561.2988242497978,
+      "conditional_ses": 517.9369846440077
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 347.55096623699774,
+      "category_seasonal": 280.40620346155373,
+      "growth_naive3": 364.4539146402092,
+      "growth_naive1": 326.32165475120314,
+      "conditional_ses": 269.860106613007
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 548.5326707427968,
+      "category_seasonal": 507.26400642208154,
+      "growth_naive3": 567.1217345035953,
+      "growth_naive1": 523.5179846783523,
+      "conditional_ses": 495.2524493175892
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 377.35808164779473,
+      "category_seasonal": 301.26096830785565,
+      "growth_naive3": 395.54742431071924,
+      "growth_naive1": 352.4229686066006,
+      "conditional_ses": 292.359893167658
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses",
+      "growth_naive1",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 555.0866303393791,
+      "category_seasonal": 542.3047196712785,
+      "growth_naive3": 575.1538449795487,
+      "growth_naive1": 560.2703964193868,
+      "conditional_ses": 531.4912542284596
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 389.1802638104961,
+      "category_seasonal": 297.5211312783873,
+      "growth_naive3": 410.6465725284406,
+      "growth_naive1": 347.9685025847333,
+      "conditional_ses": 290.93060261384
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "profile_ses",
+      "growth_naive1",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 583.6057160885156,
+      "category_seasonal": 556.6563781752649,
+      "growth_naive3": 605.8537569643702,
+      "growth_naive1": 590.1803654689797,
+      "conditional_ses": 549.047386578065
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 370.710958940451,
+      "category_seasonal": 304.1860443808405,
+      "growth_naive3": 394.17608168772875,
+      "growth_naive1": 351.33749829954206,
+      "conditional_ses": 298.9325872153688
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Продовольствие",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 361.5720387278881,
+      "category_seasonal": 299.9133573847143,
+      "growth_naive3": 383.94206179987134,
+      "growth_naive1": 348.8461516206241,
+      "conditional_ses": 295.9149576594119
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-01",
+    "horizon": 1,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-01",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-01",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-02",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-02"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-02",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-02",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-03",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1"
+    ],
+    "past_mae": {
+      "profile_ses": 76.63945248627215,
+      "category_seasonal": 77.89311991299309,
+      "growth_naive3": 82.97642090630043,
+      "growth_naive1": 83.20179288545714,
+      "conditional_ses": 74.77046184975481
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-03",
+    "horizon": 3,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-03",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-04",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 113.83592735512597,
+      "category_seasonal": 119.38519086153224,
+      "growth_naive3": 107.43804869502371,
+      "growth_naive1": 99.87959306647035,
+      "conditional_ses": 117.5280200806177
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-04",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01"
+    ],
+    "training_targets": [
+      "2024-04"
+    ],
+    "monthly_blocks": 1,
+    "municipalities": 1539,
+    "training_rows": 1539,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-04",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-05",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 119.43591318822124,
+      "category_seasonal": 109.4867247505991,
+      "growth_naive3": 109.69182882872379,
+      "growth_naive1": 96.5713211829947,
+      "conditional_ses": 106.57377322994842
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-05",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05"
+    ],
+    "monthly_blocks": 2,
+    "municipalities": 1539,
+    "training_rows": 3078,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 201.0575814209496,
+      "category_seasonal": 266.0484318706282,
+      "growth_naive3": 180.88690790785864,
+      "growth_naive1": 180.86221891637464,
+      "conditional_ses": 264.55499125198617
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-05",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-06",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 117.3488475715194,
+      "category_seasonal": 103.44400310558581,
+      "growth_naive3": 107.50414078579252,
+      "growth_naive1": 94.75527817578127,
+      "conditional_ses": 100.55515288486788
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-06",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "monthly_blocks": 3,
+    "municipalities": 1539,
+    "training_rows": 4617,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 205.79156868078076,
+      "category_seasonal": 256.4619051009281,
+      "growth_naive3": 181.7700190478345,
+      "growth_naive1": 174.65477380818314,
+      "conditional_ses": 255.57194003382756
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-06",
+    "horizon": 6,
+    "training_origins": [],
+    "training_targets": [],
+    "monthly_blocks": 0,
+    "municipalities": 1539,
+    "training_rows": 0,
+    "status": "COLD_START_EXACT_PROFILE",
+    "ranked_pool": [
+      "profile_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "growth_naive1",
+      "conditional_ses"
+    ],
+    "past_mae": null,
+    "picked": "profile_ses",
+    "mixture": [
+      "profile_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-07",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 110.6266181182125,
+      "category_seasonal": 101.20490054530997,
+      "growth_naive3": 104.88934731216868,
+      "growth_naive1": 94.41882352857772,
+      "conditional_ses": 98.54082210018004
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "conditional_ses"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-07",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "monthly_blocks": 4,
+    "municipalities": 1539,
+    "training_rows": 6156,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 197.62198848045793,
+      "category_seasonal": 223.04468766579097,
+      "growth_naive3": 174.56096100103704,
+      "growth_naive1": 163.1424448470106,
+      "conditional_ses": 220.98653620810254
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-08",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 7,
+    "municipalities": 1539,
+    "training_rows": 10773,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "growth_naive1",
+      "category_seasonal",
+      "growth_naive3",
+      "profile_ses"
+    ],
+    "past_mae": {
+      "profile_ses": 109.79510982996626,
+      "category_seasonal": 100.36115623906305,
+      "growth_naive3": 106.7467042863111,
+      "growth_naive1": 98.77084782164654,
+      "conditional_ses": 98.49655998822284
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-08",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "monthly_blocks": 5,
+    "municipalities": 1539,
+    "training_rows": 7695,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 177.36656141800262,
+      "category_seasonal": 202.81005320167978,
+      "growth_naive3": 166.89961609953633,
+      "growth_naive1": 156.42121040096205,
+      "conditional_ses": 200.8671962360224
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-09",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 8,
+    "municipalities": 1539,
+    "training_rows": 12312,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 106.26036070178529,
+      "category_seasonal": 97.95966792692221,
+      "growth_naive3": 107.42232350870484,
+      "growth_naive1": 98.09891013315008,
+      "conditional_ses": 95.69396670782655
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-09",
+    "horizon": 3,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06"
+    ],
+    "training_targets": [
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "monthly_blocks": 6,
+    "municipalities": 1539,
+    "training_rows": 9234,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "growth_naive1",
+      "growth_naive3",
+      "profile_ses",
+      "conditional_ses",
+      "category_seasonal"
+    ],
+    "past_mae": {
+      "profile_ses": 167.4376531747921,
+      "category_seasonal": 188.64588524114393,
+      "growth_naive3": 162.1781760282776,
+      "growth_naive1": 155.17116968455503,
+      "conditional_ses": 186.47150765006586
+    },
+    "picked": "growth_naive1",
+    "mixture": [
+      "growth_naive1",
+      "growth_naive3"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-10",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "monthly_blocks": 9,
+    "municipalities": 1539,
+    "training_rows": 13851,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "growth_naive1",
+      "category_seasonal",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 103.09971345545424,
+      "category_seasonal": 97.81408919750764,
+      "growth_naive3": 105.88981171878876,
+      "growth_naive1": 97.68493698587051,
+      "conditional_ses": 95.92660428508073
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "growth_naive1"
+    ]
+  },
+  {
+    "category": "Транспорт",
+    "origin": "2024-11",
+    "horizon": 1,
+    "training_origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10"
+    ],
+    "training_targets": [
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "monthly_blocks": 10,
+    "municipalities": 1539,
+    "training_rows": 15390,
+    "status": "PAST_SELECTION",
+    "ranked_pool": [
+      "conditional_ses",
+      "category_seasonal",
+      "growth_naive1",
+      "profile_ses",
+      "growth_naive3"
+    ],
+    "past_mae": {
+      "profile_ses": 101.18914360908676,
+      "category_seasonal": 95.19868847998384,
+      "growth_naive3": 103.94352764533701,
+      "growth_naive1": 97.20523511370658,
+      "conditional_ses": 93.54543557367167
+    },
+    "picked": "conditional_ses",
+    "mixture": [
+      "conditional_ses",
+      "category_seasonal"
+    ]
+  }
+]

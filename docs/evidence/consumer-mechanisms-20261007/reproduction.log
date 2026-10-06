@@ -1,0 +1,50 @@
+/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/research-closeout-runtime/bin/python economic-atlas/src/consumer_mechanisms.py --data-dir "../atlas-existing-inputs-20261005" --protocol economic-atlas/consumer_mechanisms_protocol_20261007.json --out "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/run"
+{"phase": "main_predictions", "rows": 204768, "models": 26}
+{"phase": "future_mutation", "prediction_comparisons": 5323968}
+{"phase": "peer_alignment_control", "replicate": 1, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 2, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 3, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 4, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 5, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 6, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 7, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 8, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 9, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 10, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 11, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 12, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 13, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 14, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 15, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 16, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 17, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 18, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 19, "total": 20}
+{"phase": "peer_alignment_control", "replicate": 20, "total": 20}
+{"complete": true, "rows": 204768, "models": 26, "scientific_pass": false}
+/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/research-closeout-runtime/bin/python repository-tools/audit_consumer_mechanisms.py --repo . --data-dir "../atlas-existing-inputs-20261005" --run "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/run" --out "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/audit"
+{"phase": "independent raw, peers, anomalies passed", "checks": {"release_file_hashes": 24, "frozen_input_hashes": 3, "panel_raw_records": 273024, "pre_2024_covariates": 17064, "independent_peer_pairs": 15297, "independent_deviation_cells": 1069344, "anomaly_summary_fields": 69255}}
+{"phase": "independent main forecasts passed", "checks": {"release_file_hashes": 24, "frozen_input_hashes": 3, "panel_raw_records": 273024, "pre_2024_covariates": 17064, "independent_peer_pairs": 15297, "independent_deviation_cells": 1069344, "anomaly_summary_fields": 69255, "new_run_file_hashes": 7, "new_math_source_hashes": 5, "independent_candidate_and_adaptive_predictions": 2047680, "independent_selection_trace": 156, "independent_augmented_lstsq_fits": 1296, "independent_corrected_predictions": 3276288, "cold_fits_exact_base": 432}}
+{"phase": "independent controls passed", "replicate": 1}
+{"phase": "independent controls passed", "replicate": 2}
+{"phase": "independent controls passed", "replicate": 3}
+{"phase": "independent controls passed", "replicate": 4}
+{"phase": "independent controls passed", "replicate": 5}
+{"phase": "independent controls passed", "replicate": 6}
+{"phase": "independent controls passed", "replicate": 7}
+{"phase": "independent controls passed", "replicate": 8}
+{"phase": "independent controls passed", "replicate": 9}
+{"phase": "independent controls passed", "replicate": 10}
+{"phase": "independent controls passed", "replicate": 11}
+{"phase": "independent controls passed", "replicate": 12}
+{"phase": "independent controls passed", "replicate": 13}
+{"phase": "independent controls passed", "replicate": 14}
+{"phase": "independent controls passed", "replicate": 15}
+{"phase": "independent controls passed", "replicate": 16}
+{"phase": "independent controls passed", "replicate": 17}
+{"phase": "independent controls passed", "replicate": 18}
+{"phase": "independent controls passed", "replicate": 19}
+{"phase": "independent controls passed", "replicate": 20}
+{"complete": true, "checks": {"release_file_hashes": 24, "frozen_input_hashes": 3, "panel_raw_records": 273024, "pre_2024_covariates": 17064, "independent_peer_pairs": 15297, "independent_deviation_cells": 1069344, "anomaly_summary_fields": 69255, "new_run_file_hashes": 7, "new_math_source_hashes": 5, "independent_candidate_and_adaptive_predictions": 2047680, "independent_selection_trace": 156, "independent_augmented_lstsq_fits": 1296, "independent_corrected_predictions": 3276288, "cold_fits_exact_base": 432, "independent_control_predictions": 1477440, "pre_strata_history_permutations": 30780, "scalar_mae_values": 468, "independent_paired_intervals": 1656, "control_metrics": 160}}
+/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/research-closeout-runtime/bin/python economic-atlas/src/consumer_mechanisms_report.py --run "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/run" --audit "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/audit"
+{"report": "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/consumer-mechanisms-reproduction-20261007/run/README.md", "figures": 3, "scientific_pass": false}

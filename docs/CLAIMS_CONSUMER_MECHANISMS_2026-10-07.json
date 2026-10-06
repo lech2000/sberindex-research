@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-10-07 Europe/Moscow",
+  "source": "economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json",
+  "scope": "1539 supported municipalities, July–December2024; previously viewed window; six categories, h1/3/6",
+  "scientific_pass": false,
+  "independent_holdout": false,
+  "historical_asof_verified": false,
+  "claims": [
+    {
+      "id": "category-specific-simple-baselines",
+      "result": "Profile SES is best of five fixed simple bases for aggregate expenses. Marketplace h1 conditionalSES374.399 vsProfile428.665; h3 categoryseasonal587.929 vsProfile644.458.",
+      "limit": "Best static base is identified in a viewed test window; it is not a historical operational selection rule."
+    },
+    {
+      "id": "lagging-past-selection",
+      "result": "Selection on completed past errors only can lose: aggregate h1 past_pick818.787 vsProfile686.417.",
+      "limit": "One finite five-model pool and a short nonstationary history; does not imply every adaptive selector is useless."
+    },
+    {
+      "id": "incremental-peer-information",
+      "result": "Aggregate expenses own→peer h1:668.817→667.951,0.1295%; directh3:856.272→851.172,0.5955%.",
+      "limit": "Both target-month95%intervals cross0. Earlier total2.69%/3.79% gains must not be attributed solely to peers."
+    },
+    {
+      "id": "peer-history-alignment",
+      "result": "With past_pick, matched histories beat all20stratified feature shuffles in marketplaceh1/h3 and aggregateh3, and lose to all20 in aggregateh1.",
+      "limit": "Descriptive alignment controls, no exchangeability or permutation p-value; a helpful feature need not beat a strong simple full forecast."
+    },
+    {
+      "id": "seasonal-profile-weight",
+      "result": "Four frozen weights0/0.35/0.7/1 show category-dependent tradeoffs; weaker own2023profile helps marketplaces but does not beat the strongest simple h1 baseline.",
+      "limit": "Do not tune weight by this viewed test window; full weight1 at the earliest origin has floating-point alpha-tie sensitivity."
+    }
+  ],
+  "h6": "Direct correction has no completed training labels; exact cold baseline. One-step correction on h6 is a transfer, with early cold origins. No crisis prediction claim."
+}

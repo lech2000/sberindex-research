@@ -1,0 +1,48 @@
+{
+  "recorded_before_calculation": "2026-10-06T21:48:31.438864+00:00",
+  "primary_horizon": 1,
+  "sensitivity_horizon": 3,
+  "targets": [
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "arms": [
+    "control",
+    "strict",
+    "publication_proxy",
+    "delayed_one_month",
+    "shifted_twelve_months"
+  ],
+  "feature_dictionary": [
+    "local official flood reports in trailing3months, exact unique dictionary identity",
+    "national official key-rate signed ppchanges in trailing3months"
+  ],
+  "history_features": [
+    "own difference1/3/5 normalized to last known at origin-2",
+    "origin calendar sin/cos",
+    "category indicators"
+  ],
+  "training": "Expanding windows, target<=currentorigin-2, equal weight per training origin, normalized ridgealpha1, minimum4origins; no geography pooling as independent event replication",
+  "mask": "1896 complete-panel MO intersect exact frozen R9 mask separately for h1/h3; all arms identical rows",
+  "scientific_pass": false,
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "events": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214",
+    "r9": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  },
+  "limits": [
+    "Previously viewed 2024 window; freeze before computation is not scientific preregistration or unseen holdout",
+    "Proxy uses claimed official publication month, not unverified historic available_at. Strict arm0eligible does not prove no news existed",
+    "Only six records, five sources, four months, one flood family and national rates. Municipal rows are not independent news observations",
+    "No national event duplicated as thousands of independent replications; month descriptive intervals only",
+    "Sparse training exposure can make coefficients zero. No tuned hyperparameters, feature selection or winner-picked model",
+    "Not causal disaster/rate effects or economic-event ground truth; no real early-warning claim",
+    "One/twelve-month delay checks encode availability sensitivity, not fake events or backdated first_seen",
+    "Forecast quality pertains to this fixed linear algorithm, not all possible news models"
+  ]
+}

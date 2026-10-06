@@ -1,0 +1,52 @@
+{
+  "observed_at_utc": "2026-10-06T21:57:42.136Z",
+  "url": "https://agrigate.pro/sberindex-2026/reports/economic-atlas/runs/Consumer_mechanisms_20261007/README.html",
+  "desktop": {
+    "bodyWidth": 1280,
+    "images": [
+      {
+        "loaded": true,
+        "src": "figures/baseline-comparison.png"
+      },
+      {
+        "loaded": true,
+        "src": "figures/monthly-selection.png"
+      },
+      {
+        "loaded": true,
+        "src": "figures/seasonal-profile-weight.png"
+      }
+    ],
+    "metaWrap": "anywhere",
+    "title": "Потребительская перестройка: категория, сезонность и вклад соседей",
+    "width": 1280
+  },
+  "mobile": {
+    "bodyWidth": 390,
+    "headings": [
+      "Потребительская перестройка: категория, сезонность и вклад соседей",
+      "Что нового узнали простыми словами",
+      "Какие данные и сравнения использованы",
+      "Все пять простых моделей и два выбора по прошлому"
+    ],
+    "images": [
+      {
+        "loaded": true,
+        "src": "figures/baseline-comparison.png"
+      },
+      {
+        "loaded": true,
+        "src": "figures/monthly-selection.png"
+      },
+      {
+        "loaded": true,
+        "src": "figures/seasonal-profile-weight.png"
+      }
+    ],
+    "metaWrap": "anywhere",
+    "title": "Потребительская перестройка: категория, сезонность и вклад соседей",
+    "width": 390
+  },
+  "passed": true,
+  "scope": "Public report DOM geometry and loaded figures at 1280 and 390 pixels; mathematical results verified separately"
+}
