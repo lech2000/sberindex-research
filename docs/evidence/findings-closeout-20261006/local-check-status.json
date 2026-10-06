@@ -1,0 +1,7 @@
+{
+  "checked_on": "2026-10-06",
+  "repository_validator": "PASS:165PythonAST/22JSON; missingoptional5_connection only",
+  "diff_check": "PASS",
+  "legacy_check_scaffold": "FAIL: legacy assertion requires empty result/config scaffold; superseded by repository-tools/validate_repository.py. No scientific regression found by executed three make receipts.",
+  "platform_code_modified": false
+}
