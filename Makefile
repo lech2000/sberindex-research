@@ -22,3 +22,10 @@ JOINT_OUT ?= output/atlas-radar
 .PHONY: atlas-radar
 atlas-radar:
 	$(PYTHON) repository-tools/atlas_radar_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --out "$(JOINT_OUT)"
+
+ABLATION_WAGES ?= data/external/tochno_bdmo_20260928/data_Y48423007_112_v20260928.parquet
+ABLATION_EMPLOYMENT ?= data/external/tochno_bdmo_20260928/data_Y48423005_112_v20260928.parquet
+ABLATION_OUT ?= output/atlas-radar-ablation
+.PHONY: atlas-radar-ablation
+atlas-radar-ablation:
+	$(PYTHON) repository-tools/atlas_radar_ablation_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --wages "$(ABLATION_WAGES)" --employment "$(ABLATION_EMPLOYMENT)" --out "$(ABLATION_OUT)"

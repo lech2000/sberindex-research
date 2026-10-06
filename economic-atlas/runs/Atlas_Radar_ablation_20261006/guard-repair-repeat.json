@@ -1,0 +1,10 @@
+{
+  "reason": "Added explicit equal paired index and Q4 ID guards during tests; no data/parameters changed. First run retained.",
+  "outputs_unchanged": {
+    "results.json": true,
+    "oof_predictions.parquet": true,
+    "labels.csv": true,
+    "external_metrics.csv": true,
+    "permutation_metrics.csv": true
+  }
+}
