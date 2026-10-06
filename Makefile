@@ -40,3 +40,8 @@ ATLAS_H5_OUT ?= output/atlas-h5
 .PHONY: atlas-h5
 atlas-h5:
 	$(PYTHON) repository-tools/atlas_h5_reproduce.py --data-sense-dir "$(JOINT_DATA_SENSE)" --wages "$(ABLATION_WAGES)" --employment "$(ABLATION_EMPLOYMENT)" --out "$(ATLAS_H5_OUT)"
+
+RETURN_CONTROL_OUT ?= output/radar-return-control
+.PHONY: radar-return-control
+radar-return-control:
+	$(PYTHON) repository-tools/radar_return_control_reproduce.py --out "$(RETURN_CONTROL_OUT)"
