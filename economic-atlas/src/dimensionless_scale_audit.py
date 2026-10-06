@@ -52,6 +52,10 @@ def run(a):
             y=np.log(sample[endpoint+'2025'].to_numpy());c,d=external.controls(sample,endpoint,tr,te)
             c=np.column_stack([c,(lt[:,None]==np.arange(1,k)).astype(float)]);d=np.column_stack([d,(le[:,None]==np.arange(1,k)).astype(float)])
             pred=d@np.linalg.lstsq(c,y[tr],rcond=None)[0]
+            uc,ud=external.controls(sample,endpoint,tr,te)
+            uc=np.column_stack([uc,(ult[:,None]==np.arange(1,k)).astype(float)]);ud=np.column_stack([ud,(ule[:,None]==np.arange(1,k)).astype(float)])
+            upred=ud@np.linalg.lstsq(uc,y[tr],rcond=None)[0]
+            np.testing.assert_allclose(pred,upred,rtol=1e-10,atol=1e-10)
             rows.extend((int(sample.index[ix]),int(sample.region_code.iloc[ix]),fold,endpoint,'shares_log_relative_volume',method,k,seed,float(y[ix]),float(pred[i])) for i,ix in enumerate(te))
         print(json.dumps({'method':method,'k':k,'seed':seed,'complete':True}),flush=True)
     pred=pd.DataFrame(rows,columns=['territory_id','region','fold','endpoint','arm','method','k','seed','actual_log2025','predicted_log2025']);pred.to_parquet(a.out/'oof_predictions.parquet',index=False)
