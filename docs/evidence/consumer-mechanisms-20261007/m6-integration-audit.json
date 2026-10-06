@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-06T22:15:48.570647+00:00",
+  "status": "INDEPENDENT_M6_ARRAY_RANK_AUDIT_PASS",
+  "scientific_pass": false,
+  "source_counts": {
+    "source_municipalities": 2190,
+    "source_rows": 303126,
+    "expected_cells_among_source_municipalities": 315360,
+    "absent_cells": 12234,
+    "absent_cell_fraction": 0.03879375951293759,
+    "municipalities_with_absent_cells": 174,
+    "municipalities_complete_present": 2016,
+    "invalid_present_cells": 0
+  },
+  "population_association_n": 2078,
+  "regions": 76,
+  "spearman_rho": -0.12312700875770462,
+  "descriptive_region_ci95": [
+    -0.19738299231785997,
+    -0.044813325450112226
+  ],
+  "bootstrap_draws": 2000,
+  "quintiles_checked": 5,
+  "panel_missing_indicator_constant_zero": true,
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a"
+  },
+  "code_sha256": "b34d9819c72654cf9b501c36a849f33cbc3aa5e50e4539434327d557c53565c5",
+  "scope": "Different array/rank implementation on the same viewed raw snapshots. Complete-panel selection is retrospective; no causal suppression or representative-population claim."
+}

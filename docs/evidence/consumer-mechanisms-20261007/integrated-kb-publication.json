@@ -1,0 +1,36 @@
+{
+  "source_commit": "097ac3832bb305d3264b306978c34482a301b4d5",
+  "method": "safe integrate + full text SHA/readback",
+  "documents": [
+    {
+      "corpus_id": 75,
+      "document_id": 16985,
+      "stored_text_sha256": "ab4cceea3cf468cab14ee9102601be1d9b06eec06a9a125ba6a1f7834eafa8a0",
+      "verified": true
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 16986,
+      "stored_text_sha256": "9085a16be4e62a4d60d9669784611a91209b326e8172a5a069cdb91a863f5844",
+      "verified": true
+    },
+    {
+      "corpus_id": 74,
+      "document_id": 16987,
+      "stored_text_sha256": "97cb881d59d83c65914da4533b759976e1be550108a755c9ba67552b1cd7e575",
+      "verified": true
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 16988,
+      "stored_text_sha256": "97cb881d59d83c65914da4533b759976e1be550108a755c9ba67552b1cd7e575",
+      "verified": true
+    },
+    {
+      "corpus_id": 74,
+      "document_id": 16989,
+      "stored_text_sha256": "35ea382a3813e71cbd799e0ccf278e0c8190707cb03ed36bc55b5f61b585cdf4",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source_commit": "32b27490ccf568c1ba26f576a1cdb97c377ab3d0",
+  "case_id": "case_008f37d03cf541e5",
+  "method": "vault upload + material + exact byte readback",
+  "materials": [
+    {
+      "id": "mat_9120f7aea06b4ff3",
+      "vault_document_id": "doc_8b1abd43a4344bbd",
+      "file": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+      "title": "SberIndex новые инсайты07.10 — README.md",
+      "bytes": 15594,
+      "sha256": "be9d10af7c938b7a83d55a1705a8781af51e13d69ce7a83030526b5176f07b09",
+      "verified": true
+    },
+    {
+      "id": "mat_d12469f588be4a92",
+      "vault_document_id": "doc_bc7f45a39fa947df",
+      "file": "sberindex-final-integrated-research-source-20261007.zip",
+      "title": "SberIndex новые инсайты07.10 — sberindex-final-integrated-research-source-20261007.zip",
+      "bytes": 20460140,
+      "sha256": "0764d75d0d1ba3863fa4a6be078bd816b2271b7225d0ed42fea1c49c2171f9e2",
+      "verified": true
+    }
+  ]
+}
