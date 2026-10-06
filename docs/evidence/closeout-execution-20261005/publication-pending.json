@@ -18,5 +18,7 @@
     "landing-common/case-forecast.js"
   ],
   "new_install_and_technical_repeat": "NOT_STARTED",
-  "rag_upload_e2e": "NOT_TESTED"
+  "rag_upload_e2e": "NOT_TESTED",
+  "historical_record": true,
+  "superseded_by": "publication.json"
 }

@@ -197,7 +197,7 @@ R8 завершён 29.09 как **INCONCLUSIVE / NO SCIENTIFIC PASS**. Неза
 - [Данные и происхождение](data/DATA_CATALOG.md), [воспроизведение](docs/REPRODUCIBILITY.md).
 - [Научные работы](literature/), [перенесённые методы ATF](methods/ATF_METHODS_TRANSFER.md).
 - [Граф муниципалитетов](graph/), [архитектура моделей](model-lab/ARCHITECTURE.md).
-- [Публичные шаблоны презентации](presentation/), [необходимые ограничения лицензий](THIRD_PARTY_NOTICES.md).
+- [Текущие публичные страницы и демо](presentation/), [необходимые ограничения лицензий](THIRD_PARTY_NOTICES.md).
 - [Переезд из aiOS2](docs/MIGRATION.md), [интеграция с ФиксАР](integrations/fixar/README.md).
 
 ## Запуск
@@ -244,3 +244,11 @@ HTTPS-загрузкой 26.09.2026. Приём работ: 14.09–09.10.2026, 
 </details>
 
 Текущие страницы собираются из `presentation/economic-atlas/landing/` и `presentation/shock-radar/landing/`; прежние файлы в корневых `*/landing/` — исторические шаблоны. Демо Атласа включено в `presentation/economic-atlas/demo/`. Отчёты приняты в делах по двум ограниченным редакционным действиям; [квитанции](docs/evidence/closeout-execution-20261005/case-acceptance.json). Полный релиз и научные ограничения проверяются отдельно.
+
+
+06.10.2026 опубликованы [Атлас](https://agrigate.pro/sberindex-2026/economic-atlas/landing/),
+[Радар](https://agrigate.pro/sberindex-2026/shock-radar/landing/) и
+[демо Атласа](https://agrigate.pro/sberindex-2026/economic-atlas/demo/index.html).
+HTTP/SHA, карта, профили и переключатели проверены в браузере;
+[квитанции](docs/evidence/closeout-execution-20261005/publication.json).
+Чистое воспроизведение и окончательный конкурсный релиз остаются открытыми.
