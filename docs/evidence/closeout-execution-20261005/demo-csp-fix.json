@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-10-06",
+  "finding": "public CSP script-src self blocked original inline script",
+  "fix": "identical original JavaScript moved to a same-origin file; CSP unchanged",
+  "js_path": "presentation/economic-atlas/demo/atlas-demo-f2098ff9a110.js",
+  "js_sha256": "f2098ff9a110a7e093bbdd6c9a191c22fbcf61888b1f835b545d0f06b4a6227e",
+  "original_script_bytes_preserved": true,
+  "new_fits": 0
+}
