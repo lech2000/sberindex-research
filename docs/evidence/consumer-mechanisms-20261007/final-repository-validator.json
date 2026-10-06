@@ -1,0 +1,73 @@
+{
+ "repo_root": "/Users/sergey/.codex/visualizations/2026/10/05/01a10b52-9555-78d3-8a63-30e7284543b3/research-closeout-20261006",
+ "python_files_checked": 203,
+ "python_ast_errors": [],
+ "json_bad": [],
+ "json_missing": [],
+ "json_loaded": [
+  "agents/progress.json",
+  "data/manifest.json",
+  "economic-atlas/actions.json",
+  "economic-atlas/config.json",
+  "economic-atlas/data-manifest.json",
+  "economic-atlas/experiments.json",
+  "economic-atlas/runs/A4/agglomerative.json",
+  "economic-atlas/runs/A4/kmeans.json",
+  "economic-atlas/runs/A5/graph_manifest.json",
+  "economic-atlas/runs/A6/manifest.json",
+  "economic-atlas/runs/A6/temporal_manifest.json",
+  "shock-radar/actions.json",
+  "shock-radar/config.json",
+  "shock-radar/data-manifest.json",
+  "shock-radar/events/registry_rules.json",
+  "shock-radar/experiments.json",
+  "shock-radar/runs/R7/manifest.json",
+  "shock-radar/runs/R7_v2/manifest.json",
+  "shock-radar/runs/R7_v2/operator_run_manifest.json",
+  "shock-radar/runs/R7_v2/signal/manifest.json",
+  "shock-radar/runs/R8/metrics.json",
+  "shock-radar/runs/R8/news_audit.json"
+ ],
+ "actions_shape_errors": [],
+ "closed_source": {
+  "economic-atlas/actions.json": true,
+  "shock-radar/actions.json": true
+ },
+ "progress_mentions_A6": true,
+ "progress_mentions_R8": true,
+ "config_seeds": {
+  "economic-atlas/config.json": 42,
+  "shock-radar/config.json": 42
+ },
+ "config_problems": [],
+ "sha256_fields": 10,
+ "sha256_empty": [],
+ "evidence_missing": [],
+ "evidence_optional_absent": [
+  "data/raw/sberindex-data-sense-2025/5_connection.parquet",
+  "data/raw/sberindex-data-sense-2025/8_consumption.parquet"
+ ],
+ "hashes_recomputed": {
+  "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+  "economic-atlas/data/panel_passport.json": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd",
+  "economic-atlas/runs/A4/kmeans.json": "67aad2e7b69f767913d74e99500ff28e580ea6dbf3cc9d4ec4c8aed11e435bb7",
+  "economic-atlas/runs/A4/agglomerative.json": "7bf95a9bec06903c34ac56aac159c635b0666739d21b411771e5122319eb5480",
+  "economic-atlas/runs/A5/graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+  "economic-atlas/runs/A6/manifest.json": "842b3b028418b3b2a801aa49bde31fbbdd2db4cb956bda471199511445eb70c2",
+  "shock-radar/events/registry.parquet": "6f74ce5f470f478000d8606cb9aa3c49701feb827b667d571ce8f38a17c07070",
+  "shock-radar/events/news_events.json": "125e775fe5a89084cdfff75919b284f1584355a7c356c6a3ec429acbaa5cd7af",
+  "shock-radar/events/news_features.parquet": "ae1a6168999206588ebf9f16942fadbd7ceb00214a61a0dac7d165a4afd2f404",
+  "shock-radar/runs/R7_v2/signal/signal.parquet": "6a912ad1ec50bab75ba6139c143edf90a23551879207e961b7375578ba35e474",
+  "shock-radar/runs/R7_v2/signal/manifest.json": "0bb2b01de417d48bb316360ddf6d46fd38b710c49482a63f68dd86064d4f4cc3",
+  "shock-radar/runs/R7_v2/registry_eligible.parquet": "84c07d414064fd8d40ebc4529f5ffbb7946b8969a0711c1b28574782eb677be6",
+  "shock-radar/runs/R7_v2/manifest.json": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15",
+  "shock-radar/runs/R8/metrics.json": "1382ad6784206a7e8fbf9c1f490b7587b07eee15604080aaa42954b50e6acbc2",
+  "repository-tools/reproduce.py": "c8acaca8e6d43ba76c18d2d902cc095a87d4b71210d1e5c6fb425ac1357f0afa",
+  "repository-tools/validate_repository.py": "6bf14bf719d4d2d882d96108776c18cee29ebb5faf8a3ef3612f743e5e4d9b41",
+  "repository-tools/requirements-science.txt": "21d2a8cc926ef86b4c8f6e6c81402eba6e0aa83a0d634773d6ec8d767fa9c628",
+  "repository-tools/requirements-tsfm.txt": "89722ef3ccb336b3d325ca32c9105b78b0f92816b97b0af036b700ee79633948"
+ },
+ "hash_errors": [],
+ "failures": [],
+ "ok": true
+}

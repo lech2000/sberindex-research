@@ -1,0 +1,24 @@
+{
+  "source_commit": "7cdfabe058e79d3cc9bd2993250c18f5d6040001",
+  "method": "safe integrate + full text readback",
+  "documents": [
+    {
+      "corpus_id": 76,
+      "document_id": 17008,
+      "stored_text_sha256": "347ddb66f2f09aac39e4f495a7d3a6bcc98a24a5b59fc330150a4f6c9b7684e4",
+      "verified": true
+    },
+    {
+      "corpus_id": 74,
+      "document_id": 17009,
+      "stored_text_sha256": "e41ccbb3c164d640acf1a9a0f81f7345552ea77003dcac6fa90bb20f383e1df6",
+      "verified": true
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17010,
+      "stored_text_sha256": "e41ccbb3c164d640acf1a9a0f81f7345552ea77003dcac6fa90bb20f383e1df6",
+      "verified": true
+    }
+  ]
+}

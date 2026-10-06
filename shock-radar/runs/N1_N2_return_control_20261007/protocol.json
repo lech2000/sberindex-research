@@ -1,0 +1,66 @@
+{
+  "frozen_at": "2026-10-06T22:13:14.649249+00:00",
+  "parameters": {
+    "D01": {
+      "k": 2.5
+    },
+    "D02": {
+      "delta": 0.1,
+      "lambda": 0.4
+    },
+    "D03": {
+      "tau": 0.3
+    }
+  },
+  "r7_manifest_sha256": "3a095362a676d7cfced950cf1276922dda50d7d3d65e28cb4ca12e344c7a5b15",
+  "detector_code_sha256": "94166da64cb47b0c7efe21cb978eb299cb3a1399b44ab250f9f5aa5f6f6300d7",
+  "families": [
+    "gaussian",
+    "student5"
+  ],
+  "seeds": [
+    202610070,
+    202610071,
+    202610072,
+    202610073,
+    202610074,
+    202610075,
+    202610076,
+    202610077,
+    202610078,
+    202610079,
+    202610080,
+    202610081,
+    202610082,
+    202610083,
+    202610084,
+    202610085,
+    202610086,
+    202610087,
+    202610088,
+    202610089
+  ],
+  "amplitudes": [
+    2,
+    4,
+    6
+  ],
+  "primary_amplitude": 4,
+  "primary_window_after_onset": 1,
+  "sensitivity_window_after_onset": 2,
+  "series_per_seed": 100,
+  "modified_per_seed": 10,
+  "noise_std": 0.05,
+  "signal_regimes": "mean0 Jan2023-Jun2024, signed amplitude*0.05 Jul-Sep2024, mean0 Oct-Dec2024; same paired noise; not shift in spending levels",
+  "calibration": "Original R7 frozen parameters; D01/D03 initial stats before2024-03; no tuning on new worlds",
+  "evaluation": "Existing full-path causal detector/cooldown3/month cap24; primary detection onset/onset+1, sensitivity onset..+2. Report enter/return/both, delay among hits and paired all-null alerts on six test months",
+  "limits": [
+    "Synthetic technical positive control; no real shocks, historical-asof, early warning or causal evidence",
+    "Shared selected-alert cap24/month is not equal actual false-alarm rates. All-null rates measured separately; no ranking at equalFAR claimed",
+    "Parameters inherited from previously viewed R7 validation; no tuning here and no new real holdout",
+    "D01 anchored to baseline is anomaly persistence, not a direction-aware change-point identifier; return can be invisible by construction",
+    "Six target months; descriptive seed intervals reflect simulated worlds only, not municipal sampling uncertainty",
+    "The two regime transitions are linked; both-hit loop metric prevents treating them as independent scientific replications",
+    "Sensitivity amplitudes/window all reported; no selection of a winning configuration after seeing outcomes"
+  ]
+}

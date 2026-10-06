@@ -73,6 +73,13 @@
       "source": "shock-radar/runs/N3_official_news_value_20261007/README.md",
       "scope": "Fixed ridge, ownhistoryorigin-2, fiveprespecifiedarms;1896MO/6categories,July-Dec2024 viewedwindow",
       "limit": "Sixrecords/fivesources/fourmonths,notindependentreplications. Published-dateproxy not historicalasof; no confirmed newsforecastgain,causal effects,earlywarningoruniversalmodelconclusion."
+    },
+    {
+      "id": "radar-entry-return-control",
+      "result": "D01 at4sigma:entry82%Gaussian/92%t5;return3.5%/1.5%;both2.5%/1.5%;null82/12000and124/12000.480mainruns;separate14400transitioncredits/108intervals verified.",
+      "source": "shock-radar/runs/N1_N2_return_control_20261007/README.md",
+      "scope": "Frozen oldR7parameters;syntheticmean0→signed0.2→0;20seeds/noisefamily;entryJuly/returnOctober2024,windowonset/onset+1.",
+      "limit": "Notspendinglevels,realwarning,causalreturnorspectralproof.NoequalFARclaim; no parameterretuning on newworlds."
     }
   ],
   "updated_on": "2026-10-07"
