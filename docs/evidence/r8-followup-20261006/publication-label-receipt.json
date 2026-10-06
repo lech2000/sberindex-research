@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-06T09:27:17.797682+00:00",
+  "url": "https://agrigate.pro/sberindex-2026/reports/shock-radar/runs/R8_seasonal_followup_20261006/README.html",
+  "source_commit": "5ea666b3b891c6bb4e0e7d284a8c733198326444",
+  "sha256": "2e90fc4259582bb438736a2b66c647de9569eb14ba0683bab073d979b6923a12",
+  "status": 200,
+  "public_exact_sha_verified": true,
+  "changes": "benefit is MAEProphet−MAEGrowth1; news limitation separate bullet; numbers unchanged",
+  "storage_receipt": {
+    "complete": true,
+    "source_commit": "5ea666b3b891c6bb4e0e7d284a8c733198326444",
+    "scope": "/sberindex-2026/",
+    "files": [
+      {
+        "path": "reports/shock-radar/runs/R8_seasonal_followup_20261006/README.html",
+        "sha256": "2e90fc4259582bb438736a2b66c647de9569eb14ba0683bab073d979b6923a12",
+        "bytes": 14788,
+        "storage_verified": true
+      }
+    ],
+    "api_ip_from_operator_dns": "185.93.2.243",
+    "tls_verification": true
+  }
+}

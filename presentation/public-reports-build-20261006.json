@@ -1,5 +1,5 @@
 {
-  "source_commit": "5f50c17afd6bebb2d09e080a854ec71a654f80af",
+  "source_commit": "5ea666b3b891c6bb4e0e7d284a8c733198326444",
   "source_allowlist": [
     "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
     "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md",
@@ -102,6 +102,12 @@
   "missing_internal_links": [],
   "raw_inputs_published": false,
   "repository_visibility_changed": false,
-  "status": "PREPARED_NOT_YET_PUBLISHED",
-  "compiler": "marked17.0.5"
+  "status": "PUBLICATION_VERIFIED_HTTP_SHA",
+  "compiler": "marked17.0.5",
+  "published_files": 99,
+  "public_urls_verified": 101,
+  "verified_at": "2026-10-06T09:27:17.797682+00:00",
+  "publication_receipt": "../docs/evidence/r8-followup-20261006/publication-receipt.json",
+  "final_label_receipt": "../docs/evidence/r8-followup-20261006/publication-label-receipt.json",
+  "verification_scope": "101 URLs for initial package; one changed report reverified after signed-benefit label clarification; values unchanged"
 }
