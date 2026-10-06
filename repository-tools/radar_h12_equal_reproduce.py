@@ -38,6 +38,17 @@ for reference, measured in zip(expected['results'], actual['results']):
     assert reference['model'] == measured['model'] and reference['reference'] == measured['reference']
     for key in ['mae_model', 'mae_reference', 'benefit_mae', 'relative_improvement_percent']:
         assert math.isclose(reference[key], measured[key], rel_tol=1e-6, abs_tol=1e-8), (key, reference['reference'])
+subprocess.run([sys.executable, str(ROOT / 'shock-radar/src/h12_scale_sensitivity.py'),
+                '--run', str(args.out), '--raw', str(args.raw),
+                '--out', str(args.out / 'scale-sensitivity.json')], check=True)
+expected_scale = json.loads((frozen_dir / 'scale-sensitivity.json').read_text())
+actual_scale = json.loads((args.out / 'scale-sensitivity.json').read_text())
+for ref, measured in zip(expected_scale['results'], actual_scale['results']):
+    for key in ['reference', 'rows', 'series', 'loss', 'includes_all_categories_aggregate',
+                'series_wins', 'series_losses', 'series_ties']:
+        assert ref[key] == measured[key], key
+    for key in ['candidate_loss', 'reference_loss', 'relative_improvement_percent']:
+        assert math.isclose(ref[key], measured[key], rel_tol=1e-6, abs_tol=1e-8), key
 receipt = {'status': 'TECHNICAL_REPEAT_PASS', 'fresh_fits': 2160, 'rows': 720,
            'comparisons': 5, 'relative_tolerance': 1e-6, 'scientific_pass': False}
 (args.out / 'reproduction.json').write_text(json.dumps(receipt, indent=2) + '\n')

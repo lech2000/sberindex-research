@@ -565,3 +565,5 @@ Chronos над Prophet `[−516.66,+33.70]`. [Полный научный отч
 
 
 Также сохранён параллельный [условный национальный H12-пилот](../shock-radar/runs/R10_equal_information_h12_20261006/README.md):120рядов/114МО,2160fits, MAE679,75 против1707,22. Он использует нормирование национальным рядом и другую стратифицированную маску. Его60,18% и результат регрессорного пилота36,79% относятся к разным сравнениям и не объединяются. На маркетплейсах оба простых национальных варианта проигрывают; полный panel и historical vintage открыты.
+
+07.10.2026(Москва): текущаяверсия гипотез/[реестр](HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md), H12пилот2160freshfits/720keys завершён; sourceact_8191987bc13a4341DONE,sciencePASSfalse. A7техническийаудитPASS,sourceactionOPENиз-заошибочногоprivacyguard. RAGF7bprepared/modelapprovalpending,uploadcomparisonPASS. Финальнаяприёмка/историческийholdout/подачаOPEN.
