@@ -1,0 +1,55 @@
+{
+  "run_id": "Consumer_closeout_20261006",
+  "frozen_before_new_results_at_utc": "2026-10-06T20:10:00+00:00",
+  "status": "EXPLORATORY_ALREADY_VIEWED_2024",
+  "input_protocol": "economic-atlas/consumption_restructuring_protocol_20261005.json",
+  "targets": ["2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"],
+  "horizons": [1, 3, 6],
+  "primary_categories": ["Все категории", "Маркетплейсы"],
+  "forecast": {
+    "models": ["one_step_zero_own", "one_step_zero_peer", "direct_zero_own", "direct_zero_peer", "direct_intercept_own", "direct_intercept_peer", "direct_calibration"],
+    "features": "Original own5 and own5+peer5; fixed 2023 neighbors",
+    "baseline": "Unchanged Profile SES; same frozen panel and target keys",
+    "labels": "log(actual_at_u+k / ProfileSES_forecast_from_u_to_u+k); k=1 for one_step and k=h for direct; u>=2024-01 and u+k<=current origin",
+    "standardization": "Training feature mean and population std only; constant scale=1",
+    "zero_intercept": "z=(x-training_mean)/training_std; ridge on uncentered log residual y, no intercept; mean prediction at training feature mean is exactly zero",
+    "with_intercept": "Unpenalized training mean log residual; ridge on centered residual",
+    "ridge": 0.1,
+    "clip_log_correction": [-0.1, 0.1],
+    "minimum_completed_monthly_training_origins": 2,
+    "cold_start": "Exact baseline, explicitly marked; direct h6 has no completed labels in these windows and is not a trained h6 result",
+    "uncertainty": "Paired target-month bootstrap10000, seed20261006; separate region-block sensitivity; six months, overlapping horizons and model multiplicity limit inference"
+  },
+  "robustness": {
+    "peer_configs": [
+      {"name": "main10", "nearest": 10, "population_ratio": [0.5, 2]},
+      {"name": "nearest5", "nearest": 5, "population_ratio": [0.5, 2]},
+      {"name": "nearest15", "nearest": 15, "population_ratio": [0.5, 2]},
+      {"name": "population_narrow", "nearest": 10, "population_ratio": [0.6666666666666666, 1.5]},
+      {"name": "population_wide", "nearest": 10, "population_ratio": [0.3333333333333333, 3]}
+    ],
+    "gap_pp": [0.75, 1.0, 1.25],
+    "absolute_score": [2.5, 3.0, 3.5],
+    "other_rules": "Same municipal type, minimum5 peers, distance<=3, MAD floor0.25pp, sign agrees with leave-one-out common movement, three consecutive same-sign H2 months",
+    "total_configurations": 45,
+    "descriptive_core_fraction": 0.8,
+    "interpretation": "Sensitivity frequency is not a probability or real-world precision"
+  },
+  "synthetic": {
+    "replicates": 100,
+    "seed": 20261006,
+    "null": "Shares2024 start at own2023 same-month shares plus the actual panel common median share change. Zero-noise null is exactly common additive pp movement. No imposed local shock.",
+    "noise": "Logit-share innovations from2023 after subtracting the cross-sectional monthly median, centered per municipality/category; circular3-month global block resampling gives12 increments, preserving within-block cross-category and cross-municipality dependence; cumulated from zero",
+    "aggregate": "Own same-month2023 aggregate times actual common2024 aggregate growth; simulated category=aggregate*logistic(noisy logit share)",
+    "injection": "10 supported municipality IDs selected by SHA256(seed,id), marketplace+3pp in July-Dec with unchanged aggregate; detection and off-target flags recorded",
+    "interpretation": "Conditional model-based synthetic counts, not measured real false alarm rate, precision, p-value or crisis sensitivity; common2024 movement is already observed"
+  },
+  "denominator": {
+    "population": "Original25 persistent marketplace signals; all1896 available for diagnostics",
+    "decomposition": "100*log(category24/category23) minus100*log(all24/all23); subtract arithmetic mean of peer log changes so numerator-denominator decomposition is exactly additive; original median pp detector remains unchanged",
+    "controls": ["marketplace/food log ratio", "marketplace/(all-marketplace) log ratio when positive"],
+    "confirmation": "Same direction as original Q4 pp gap; >=3 July-Dec months of absolute peer-relative numerator log growth>=5 log-points and same direction; descriptive only",
+    "independence": "Multiple category/all shares share a denominator; neither ratios nor nominal corroboration establish causality"
+  },
+  "limits": ["2024 was already viewed; all new specifications are post hoc", "No new municipality observations after2024", "Retrospective panel, dictionary and unknown source publication vintage", "No quantity, household income or crisis labels", "No paid model calls or CMD use"]
+}
