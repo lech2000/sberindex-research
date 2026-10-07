@@ -1,0 +1,73 @@
+{
+  "version": "m1-prospective-v1",
+  "recorded_utc": "2026-10-07T14:51:13.236460+00:00",
+  "base_revision": "76e65e635790f09c6bc62dcf524d8a6ff5e4dbe0",
+  "original_spec_sha256": "f950b5825038366646f7fd0abfbb506c3538477cb031df733b16a49f510b55a5",
+  "panel_sha256": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+  "feature_scope": "monthly five raw shares=value(category)/value(All categories), no forced closure, no zscore,24months exact1896A5mask",
+  "graph_k": [
+    10,
+    20,
+    40
+  ],
+  "graph": "cosine directedkNN excluding self; deterministic distance/index tie ordering; union candidates ranked by cosine then indices; retain E=floor(n*k/2) unique edges, weight1; symmetric. Exact undirected density2E/[n(n-1)] same real/controls. Pruning is prospective interpretation of unspecified symmetrization, recorded, not tuned. Isolate => INCONCLUSIVE_GRAPH_ISOLATE, never bridge.",
+  "tau_lambda": 0.95,
+  "bulk": "full descending spectrum; m=count(lambda>=tau); rawgap=lambda[m-1]-lambda[m]; spread=populationstd(lambda[m:]); <=1e-12 => degenerate bulk, no infinity",
+  "shuffle": "independent per-column permutation, rebuild identical graph;99seeds; raw gap each null at its own m, empirical p95 linear; strictrealgap>p95; rawgap in[0,2]",
+  "sig_star": "per(n,d,k): midpoint strictly between max negsig and min possig; allpositivecontrols must recover R3,4,5; no separation/missing finite stat/isolates => INCONCLUSIVE_CALIBRATION, never tune",
+  "worlds": "positive uniform balancedR3/4/5:0.02+onehot group basis + abs N(0,.015), divide each row by sum then multiply .72; negative .72*Dirichlet(ones5);n,d,k identical to real",
+  "calibration_seeds": [
+    20261008,
+    20261009,
+    20261010,
+    20261011,
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016,
+    20261017
+  ],
+  "validation_seeds": [
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112,
+    20261113,
+    20261114,
+    20261115,
+    20261116,
+    20261117,
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124,
+    20261125,
+    20261126,
+    20261127
+  ],
+  "shuffle_seed_base": 20261208,
+  "main_grid_K": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reports": "all24*3 rows: m,eigenvalues/fullSpectrumSHA,sig,rawgap,nullp95,p,verdict; SW/CH/S_Dbw for spectralK=m if valid and entirefixedKgrid; invalidmetrics reasons; graphdensity and components;no best configuration selection",
+  "error_budget": {
+    "held_negative_false_structured_fraction_max": 0.05,
+    "held_positive_exact_R_fraction_min": 0.9,
+    "calibration_and_held_seeds_disjoint": true,
+    "per_real_shuffle_quantile": 0.95,
+    "familywise_economic_inference": "none; graphmonthverdict descriptive;72comparisons not independent evidence"
+  },
+  "acceptance": "engineering tests separate; formal method validation only if fixed heldcontrols meet both budgets allk and matchedn,d; realrun preservesabstention/negative/inconclusive;noeconomicidentity/holdout/causalPASS",
+  "execution": "CLI rejects existing outdir; calibration artifact SHA and config validated; fresh separate run; BLAS/OMP1; fullreal calibration/control/replay not executed in implementation turn"
+}
