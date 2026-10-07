@@ -18,7 +18,7 @@ class Element {
 }
 const tick = () => new Promise(resolve => setImmediate(resolve));
 
-async function browser(store, {project='atlas', registered=false, cookieAccepted=true}={}) {
+async function browser(store, {project='atlas', registered=false, cookieAccepted=true, staleLegacy=false}={}) {
   const selectors={};
   for (const key of ['form','[data-chat-input]','[data-chat-log]','[data-chat-status]',
     '[data-chat-error]','[data-chat-send]','[data-chat-login]','[data-chat-file]',
@@ -29,7 +29,11 @@ async function browser(store, {project='atlas', registered=false, cookieAccepted
   const fetch=async (url,options={})=>{
     assert.equal(options.credentials,'include');
     assert.equal(options.headers['X-Fixar-Request'],'1');
-    assert.equal(options.headers.Authorization,undefined);
+    if(options.headers.Authorization) {
+      assert.equal(staleLegacy,true);
+      assert.equal(new URL(url).pathname,'/entry/whoami');
+      return {ok:false,status:401,json:async()=>({})};
+    }
     const endpoint=new URL(url).pathname;
     requests.push({endpoint, method:options.method||'GET', body:options.body&&JSON.parse(options.body)});
     let value;
@@ -41,11 +45,11 @@ async function browser(store, {project='atlas', registered=false, cookieAccepted
       else {store.used=true;store.paid++;value={reply:'Проверенный результат [1].',guest_preview:true,preview_remaining:0};}
     } else if(endpoint==='/research/sberindex/chat') {store.paid++;value={reply:'Продолжение [1].'};}
     else throw new Error('Unexpected endpoint '+endpoint);
-    return {ok:true,json:async()=>value};
+    return {ok:true,status:200,json:async()=>value};
   };
   const context={window:{FixarCore:{config:{apiOrigin:'https://api.agrigate.pro'}},addEventListener(){}},
     document:{querySelector:()=>root,createElement:()=>new Element(),createTextNode:text=>({textContent:text}),addEventListener(){}},
-    navigator:{locks:{request:async(_name,fn)=>fn()}},localStorage:{getItem:()=>null,setItem:()=>{throw new Error('Token storage forbidden');}},
+    navigator:{locks:{request:async(_name,fn)=>fn()}},localStorage:{getItem:()=>staleLegacy?'expired-token':null,setItem:()=>{throw new Error('Token storage forbidden');}},
     fetch,AbortSignal,URL,setTimeout,FileReader:class {constructor(){throw new Error('Guest file must not be read');}}};
   vm.runInNewContext(source,context);
   await tick();
@@ -93,4 +97,10 @@ test('registered visitor keeps deeper authenticated chat',async()=>{
   assert.equal(store.paid,2);
   assert.equal(page.requests.filter(x=>x.endpoint==='/research/sberindex/chat').length,2);
   assert.equal(page.requests.filter(x=>x.endpoint==='/entry/anon').length,0);
+});
+test('expired legacy token does not replace an existing authenticated cookie with a guest',async()=>{
+  const store={cookie:true,paid:0};const page=await browser(store,{registered:true,staleLegacy:true});
+  await page.submit('Продолжить');
+  assert.equal(page.requests.filter(x=>x.endpoint==='/entry/anon').length,0);
+  assert.equal(page.requests.filter(x=>x.endpoint==='/research/sberindex/chat').length,1);
 });

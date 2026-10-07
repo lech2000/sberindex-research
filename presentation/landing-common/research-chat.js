@@ -13,6 +13,7 @@
   const refSelect=root.querySelector('[data-chat-reference]');
   const oldInput=root.querySelector('[data-chat-reference-file]');
   let signedIn = false, guestReady = false, previewUsed = false, busy = false;
+  let useLegacyToken = true;
   const registrationUrl = 'https://agrigate.pro/v2/';
   const invitation = 'Для следующего вопроса зарегистрируйтесь в Фиксаре. Там можно продолжить углублённый чат и оставить заявку на доступ к проектам и материалам дел. Доступ предоставляется отдельно после рассмотрения заявки.';
   const history = [];
@@ -23,7 +24,7 @@
   function headers() {
     const h = {'Content-Type':'application/json', 'X-Fixar-Request':'1'};
     // Compatibility with older authenticated FixAR sessions; never put a key in HTML.
-    for (const key of ['fixar.token','fixar.start.token','aios_token']) {
+    for (const key of useLegacyToken ? ['fixar.token','fixar.start.token','aios_token'] : []) {
       try { const token=localStorage.getItem(key); if(token){ h.Authorization='Bearer '+token; break; } } catch (_) {}
     }
     return h;
@@ -31,7 +32,12 @@
   async function session({create=false}={}) {
     if (!api || busy) return;
     const refresh = async () => {
-      const r = await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+      let r = await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+      if (r.status===401 && headers().Authorization) {
+        useLegacyToken=false;
+        r=await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+      }
+      if (!r.ok && r.status!==401) throw new Error('Не удалось проверить сессию Фиксара. Попробуйте позже.');
       let who = r.ok ? await r.json() : {};
       if (!who.principal_id && create) {
         const created = await fetch(api+'/entry/anon',{method:'POST',credentials:'include',headers:headers(),body:JSON.stringify({label:'sberindex-'+root.dataset.project}),signal:AbortSignal.timeout(8000)});
@@ -108,6 +114,7 @@
     error.hidden=true;
     try { await session({create:true}); }
     catch(e){error.textContent=e.message;error.hidden=false;return;}
+    if(busy)return;
     if(!signedIn && (previewUsed || fileInput?.files[0])){showRegistration(question);return;}
     if(!signedIn && !guestReady){error.textContent='Не удалось открыть гостевую сессию. Попробуйте позже.';error.hidden=false;return;}
     busy=true;send.disabled=true;fields().forEach(x=>x.disabled=true);status.textContent=fileInput?.files[0]?'Проверяю файл и выполняю расчёт…':'Ищу источники и готовлю ответ…';
