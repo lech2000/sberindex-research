@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T20:51:26.427303+00:00",
+  "updated_at": "2026-10-07T06:07:38.279292+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "economic-atlas/runs/Municipal_stories_20261004/README.md",
+      "last_artifact": "docs/ATLAS_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "Собрать отчёт: три бюджета/миграция/траты и threshold/seed limitations, S_Dbw; AVI/AVU отдельно измерить после аудита, MQ convention unresolved; A6/A7 не объявлять PASS.",
+      "next_action": "Техническая сборкаsource12DONE:885авторских файлов вделе; опубликованные выводы07.10. Для14 владелец выбирает одно направление/доступжюри/личные поля/согласия. A7F7b/границы/историческийas-of/новыйholdout отдельно; MQ не ждать, выполненные fits/аудиты не повторять.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -20,7 +20,7 @@
         "kb_document_id": 13776,
         "commit": "ed378e9f7"
       },
-      "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
       "last_dialog_attempt": {
         "checked_at": "2026-09-26T07:08:40.194479+00:00",
         "client_message_id": "research-a6-progress-20260926-0956",
@@ -90,6 +90,20 @@
         "executed_by": "local scientific runner",
         "new_agent_dialog": false,
         "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_c5ab2585bf8146b8",
+        "source_action_done": true,
+        "kb_corpus": 75,
+        "kb_document_id": 17086,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
       }
     },
     "shock-radar": {
@@ -97,10 +111,10 @@
       "agent": "software:sberindex_radar_researcher@5",
       "current_gate": "R9",
       "status": "in_progress_exploratory_positive_seasonal",
-      "last_artifact": "shock-radar/runs/R9_strong_baselines_20261004/README.md",
+      "last_artifact": "docs/RADAR_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-29T20:41:21.592079Z",
-      "next_action": "Собрать отчёт с сильными baseline и двумя окнами, D04 covariance как дополнение; h12/as-of/новый holdout unresolved. Не повторять Prophet fits и D04.",
-      "current_artifact_status": "COMPUTED_EXPLORATORY_NOT_INDEPENDENT_PASS",
+      "next_action": "Техническая сборкаsource12DONE:885авторских файлов вделе; опубликованные выводы07.10. Для14 владелец выбирает одно направление/доступжюри/личные поля/согласия. A7F7b/границы/историческийas-of/новыйholdout отдельно; MQ не ждать, выполненные fits/аудиты не повторять.",
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
       "last_gate": {
         "gate": "R8",
         "status": "INCONCLUSIVE_NO_SCIENTIFIC_PASS",
@@ -170,6 +184,20 @@
         "executed_by": "local scientific runner",
         "new_agent_dialog": false,
         "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_e346385f69e54019",
+        "source_action_done": true,
+        "kb_corpus": 76,
+        "kb_document_id": 17087,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
       }
     },
     "municipality-graph": {
@@ -314,5 +342,7 @@
     "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
   },
   "latest_scientific_snapshot": "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
-  "research_snapshot_note": "Operator computations and saved artifacts verified 03.10.2026; prior September timer/deployment descriptions below are historical, not a fresh platform audit."
+  "research_snapshot_note": "Operator computations and saved artifacts verified 03.10.2026; prior September timer/deployment descriptions below are historical, not a fresh platform audit.",
+  "case_actions_snapshot": "docs/evidence/plan-sync-20261007/live-case-actions.json",
+  "initial_plan_is_historical": true
 }

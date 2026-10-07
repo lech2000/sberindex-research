@@ -19,7 +19,7 @@
     "personal_data": "human confirmation required at submission",
     "advertising": "not selected"
   },
-  "code_access": "Private GitHub; refreshed author source archive is being frozen from the latest research branch. Raw inputs and derived snapshots remain separate, with SHA. Public distribution awaits owner choice.",
+  "code_access": "Private GitHub PR24; frozen 885-file author source archive from2edcb34 stored in both owner cases, SHA38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71. Raw inputs, full derived snapshots and two large author files remain separate; not standalone. Jury access/publication awaits owner choice.",
   "alternatives": [
     {
       "nomination": "Кластеризация",
