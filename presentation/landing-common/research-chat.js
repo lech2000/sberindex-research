@@ -14,7 +14,7 @@
   const oldInput=root.querySelector('[data-chat-reference-file]');
   let signedIn = false, guestReady = false, previewUsed = false, busy = false;
   let useLegacyToken = true;
-  const registrationUrl = 'https://agrigate.pro/v2/';
+  const registrationUrl = 'https://agrigate.pro/v2/?research_access='+encodeURIComponent(root.dataset.project);
   const invitation = 'Для следующего вопроса зарегистрируйтесь в Фиксаре. Там можно продолжить углублённый чат и оставить заявку на доступ к проектам и материалам дел. Доступ предоставляется отдельно после рассмотрения заявки.';
   const history = [];
   const notice = document.createElement('p');
@@ -55,7 +55,7 @@
         previewUsed = Number((await quota.json()).preview_remaining) === 0;
       }
       status.textContent = signedIn ? 'Готов к вопросу' : previewUsed ? 'Продолжение — в Фиксаре' : 'Один ответ без регистрации';
-      login.textContent = signedIn ? 'Открыть Фиксар ↗' : 'Зарегистрироваться в Фиксаре ↗';
+      login.textContent = signedIn ? 'Запросить доступ к исследованию ↗' : 'Зарегистрироваться в Фиксаре ↗';
       login.href = registrationUrl;
     };
     try {
