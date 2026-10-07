@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-10-07T06:37:21.263101+00:00",
+  "source_kind": "catalogue_metadata_only; no original Word content acquired",
+  "catalogue_origin_url": "https://rosstat.gov.ru/classification",
+  "catalogue_reader_html_sha256": "087731b9c048f751229dd3e5c6f9e3af21991f2f943bc2bc4aa5c66ffb2e6fcd",
+  "source_attempts": [
+    {
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/551_22_OKTMO.doc",
+      "checked_at": "2026-10-07T06:33:46.715568+00:00",
+      "origin_file_verified": false,
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/OKTMO_tom6_Ural_fo.docx",
+      "checked_at": "2026-10-07T06:33:46.717086+00:00",
+      "origin_file_verified": false,
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "kb_receipt": {
+    "corpus_id": 77,
+    "document_id": 17098,
+    "full_readback_verified": true,
+    "text_sha256": "7b9d4c783a45e85061d41a83ed38569d1b6342a4c61786abb0bc7a86ab57e9c2",
+    "checked_at": "2026-10-07T06:37:23.381713+00:00"
+  },
+  "historical_crosswalk_accepted": 0,
+  "automatic_name_join_allowed": false,
+  "current_2026_tom_proves_2024_boundary": false
+}

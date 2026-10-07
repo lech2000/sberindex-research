@@ -1,0 +1,83 @@
+{
+  "archive": {
+    "source_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+    "checked_at_utc": "2026-10-07T06:40:32.172415+00:00",
+    "related_885_file_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+    "purpose": "Two large authored derived presentation files omitted by the885packet size filter",
+    "files": [
+      {
+        "path": "economic-atlas/site/atlas-20261005/data.json",
+        "bytes": 11334422,
+        "sha256": "d7a3bc876950a51dca839726e70f51b8ce77b1197460cd2db0ce1b0d0c1fd356",
+        "git_blob": "9c56fac3865e4c1c6402b5ac7a470555cfc310e3"
+      },
+      {
+        "path": "economic-atlas/site/consumption-restructuring-20261005/index.html",
+        "bytes": 10080345,
+        "sha256": "d87d4973a0967c99f8896add113e5da5485f5de62714cb9f8555d094ec24c12c",
+        "git_blob": "0ccad96dc43cdcbf833f7b6662fbb42b947f5903"
+      }
+    ],
+    "contains_raw_inputs": false,
+    "standalone_calculation_inputs": false,
+    "private_owner_delivery": true,
+    "external_distribution_approved": false,
+    "archive_path": "/private/tmp/sberindex-large-author-supplement-20261007/sberindex-large-author-supplement-20261007.zip",
+    "archive_bytes": 4667170,
+    "archive_sha256": "ecdd8f4798161ebde33ca5a9ddcaf0834fc6947c478d956409b498d33ab6b43f",
+    "zip_members": 5,
+    "file_count": 2,
+    "verified_git_blobs_and_full_zip_members": true
+  },
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_c8002b34909942ad",
+          "vault_document_id": "doc_b215de8396824b98",
+          "file": "sberindex-large-author-supplement-20261007.zip",
+          "title": "Приложение кпакету885: интерактивныйАтлас — sberindex-large-author-supplement-20261007.zip",
+          "bytes": 4667170,
+          "sha256": "ecdd8f4798161ebde33ca5a9ddcaf0834fc6947c478d956409b498d33ab6b43f",
+          "verified": true
+        },
+        {
+          "id": "mat_3e5d9c587e734794",
+          "vault_document_id": "doc_b133a3beeea24043",
+          "file": "receipt.json",
+          "title": "Приложение кпакету885: интерактивныйАтлас — receipt.json",
+          "bytes": 1334,
+          "sha256": "285790ba5a4a6a315dd3b377bae7b79530ce77b4eb8d30fb84ca7f90da854af5",
+          "verified": true
+        }
+      ],
+      "checked_at_utc": "2026-10-07T06:41:18.152237+00:00"
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "materials": [
+        {
+          "id": "mat_e1690e98966a482c",
+          "vault_document_id": "doc_b215de8396824b98",
+          "file": "sberindex-large-author-supplement-20261007.zip",
+          "title": "Приложение кпакету885: интерактивныйАтлас — sberindex-large-author-supplement-20261007.zip",
+          "bytes": 4667170,
+          "sha256": "ecdd8f4798161ebde33ca5a9ddcaf0834fc6947c478d956409b498d33ab6b43f",
+          "verified": true
+        },
+        {
+          "id": "mat_90794f56dc534233",
+          "vault_document_id": "doc_b133a3beeea24043",
+          "file": "receipt.json",
+          "title": "Приложение кпакету885: интерактивныйАтлас — receipt.json",
+          "bytes": 1334,
+          "sha256": "285790ba5a4a6a315dd3b377bae7b79530ce77b4eb8d30fb84ca7f90da854af5",
+          "verified": true
+        }
+      ],
+      "checked_at_utc": "2026-10-07T06:41:23.904175+00:00"
+    }
+  ],
+  "publicly_distributed": false
+}
