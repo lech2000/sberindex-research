@@ -1,0 +1,18 @@
+{
+  "id": "Chronos2_full_descriptive_MO_cluster_CI_20261007_v1",
+  "recorded_utc": "2026-10-07T15:15:11.687722+00:00",
+  "status": "FROZEN_BEFORE_FULL_RESULTS_REQUIRES_ROOT_F7B_REVIEW",
+  "full_protocol_sha256": "e350b7c0fd9964ad6b085edaf01c498a34d72a10f3d0a698c20eaf54264b1691",
+  "purpose": "Additional paired MO cluster uncertainty requested by root; targetmonth exactCI inV3 remains primary andunchanged. No claiming independent units/holdout.",
+  "unit": "territory_id; retainallcategories/targets for resampledMO",
+  "estimand": "paired AE Chronos2 minus comparator, rowweighted within frozencommonmask",
+  "resamples": 1000,
+  "seed": 20261007,
+  "MO_order": "sorted all-string territory_id",
+  "draw": "sample nMO MOindices withreplacement; all rows ofdrawnMO staytogether; weighted mean sumsAE-difference divided by sumsrowcount",
+  "interval": "NumPy defaultlinear percentiles2.5/97.5",
+  "null_nan_zero_guards": "only finitecommonpairedrows; zeroMO/zero denominator -> NA/fail; missing comparator excluded onlypredeclaredcommonmask",
+  "model_selection": false,
+  "new_forecasting_calls_before_freeze": 0,
+  "no_causal_or_predictive_holdout_conclusion": true
+}
