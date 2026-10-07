@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-07T05:30:23Z",
+  "source_commit": "ebc417571e1e4e90ecc7af2ef5f02bde2a41d880",
+  "files": [
+    {
+      "path": "economic-atlas/landing/index.html",
+      "status": 200,
+      "sha256": "7484334e33bc771bdaafa8de11c7dd7fcc9a478566f8f385332c7717322881ba",
+      "cdn_matches_source": true
+    },
+    {
+      "path": "shock-radar/landing/index.html",
+      "status": 200,
+      "sha256": "c94caa23ae121a8f574607849b6f48c58aa40d26a41cb405c03f96971b840ca6",
+      "cdn_matches_source": true
+    },
+    {
+      "path": "landing-common/research-chat.js",
+      "status": 200,
+      "sha256": "cc111fbabaf38deb2477747b409f7b703c27912f623af63c7cc62847c849c08a",
+      "cdn_matches_source": true
+    }
+  ]
+}
