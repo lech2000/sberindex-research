@@ -1,0 +1,101 @@
+{
+  "checked_at_utc": "2026-10-07T14:19:09.851214+00:00",
+  "verification_site": "Incus fixar-devops isolated manual F7b job, no background units or model calls",
+  "job": "/var/lib/fixar-cmd/jobs/sberindex-scientific-adoption-20261007",
+  "base": "aac02dcf0c16a851d3c35636f2e1183e5f59491f",
+  "head": "77a4731ecd2ce23b20a82abdb0ac53bd86788504",
+  "tree": "2908e39c6eaa288b5f3c22e490fa59df7b6d141a",
+  "changed_files": [
+    "README.md",
+    "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+    "docs/R8_TINY_CALENDAR_ADDENDUM_2026-10-07.md",
+    "docs/RADAR_FINDINGS_2026-10-07.md",
+    "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/RESEARCH_FINDINGS_2026-10-06.md",
+    "docs/SCIENTIFIC_EVIDENCE_REVIEW_2026-09-28.md",
+    "docs/STATE.md",
+    "docs/evidence/r8-calendar-addendum-20261007/calendar-oracle-result.json",
+    "docs/evidence/r8-calendar-addendum-20261007/legacy-r8-calendar-risk.json",
+    "economic-atlas/protocol/geometry-v3-20261007/F7B_SPEC.md",
+    "economic-atlas/protocol/geometry-v3-20261007/README.md",
+    "economic-atlas/protocol/geometry-v3-20261007/protocol.json",
+    "economic-atlas/protocol/geometry-v3-20261007/source-actions.json",
+    "economic-atlas/src/a6_geometry_controls_v3.py",
+    "economic-atlas/src/a6_geometry_v3.py",
+    "economic-atlas/tests/test_geometry_v3.py",
+    "graph/gm3_loaded_layers.py",
+    "graph/gm3_snapshot.py",
+    "graph/test_gm3_asof_boundary.py",
+    "graph/test_gm3_loaded_layers.py",
+    "presentation/shock-radar/landing/index.html",
+    "shock-radar/METHODOLOGY_RU.md",
+    "shock-radar/protocol/chronos2_causal_r9mask_20261007.json",
+    "shock-radar/protocol/event_taxonomy.yaml",
+    "shock-radar/protocol/forecast_contract.yaml",
+    "shock-radar/src/r10_chronos2_causal.py",
+    "tests/test_radar_forecast_contract.py"
+  ],
+  "patches_applied": [
+    {
+      "label": "geometry",
+      "sha256": "353b784db968b890c5a5259f944df219fa65a901397a8babded492f3f10be7f1"
+    },
+    {
+      "label": "graph-utc",
+      "sha256": "cf4f6e9e807b5325868f6575f74663f6ac88f3bf7637d9b6b30e7fb92baf4125"
+    },
+    {
+      "label": "graph-layers",
+      "sha256": "6c57d06406a643c029d82a78296164e6762d611edcf874f8962bde48e1a5de8c"
+    },
+    {
+      "label": "forecast-contract",
+      "sha256": "6f6ea3f4e60ee3d10d88e9a1fb0ff5d05e3418736116bd1efef7e97b69ec931b"
+    },
+    {
+      "label": "chronos2-readiness",
+      "sha256": "088e8008ef019bd05929e715d19fd87171483a9a62a89c823beaaa811afca975"
+    },
+    {
+      "label": "tiny-calendar-notice",
+      "sha256": "9348eb3e0eb5035fd9c1737b2e06c7bad28e25d31d7d85c797ac6562d797d400"
+    }
+  ],
+  "checks": [
+    {
+      "label": "geometry14",
+      "exit": 0,
+      "log_sha256": "eed1a55157101e2c9cb15a51e3814b9e005a95c11c910325e9b040993c3116bb"
+    },
+    {
+      "label": "graph-utc9-controls",
+      "exit": 0,
+      "log_sha256": "196a71af53de1488580566b5cb36e7cca5cabbae3c62e056738839c087f0e8a7"
+    },
+    {
+      "label": "graph-layers4",
+      "exit": 0,
+      "log_sha256": "79284c975b6d17eae79699412faf5d2a6d5fcd8a01cdb33e7884f6239a5850a1"
+    },
+    {
+      "label": "forecast-contract7",
+      "exit": 0,
+      "log_sha256": "c74d402d37f37d61a52ae29c11d7c4a8a16b3213784253890cfc4fdea8487b98"
+    },
+    {
+      "label": "repository-validator",
+      "exit": 0,
+      "log_sha256": "222914d8eb06b219d63bc4e1538caa6688cced0bdee0a1ea1ad59c252c037875"
+    }
+  ],
+  "candidate_patch_sha256": "31630167873088441e9e7ac62c880722b58bb51339e44342f99e3f9b64582b50",
+  "legacy_runs_changed": false,
+  "scientific_pass": false,
+  "synthetic_geometry_budget": "FAIL retained",
+  "chronos2_inference_executed": false,
+  "old_tiny_corrected_metric_measured": false,
+  "production_deployed": false,
+  "case_actions_closed": 0,
+  "paid_calls": 0
+}

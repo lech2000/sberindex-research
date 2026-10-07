@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-07T12:09:19.950709+00:00",
+  "checked_at_utc": "2026-10-07T14:34:03.234224+00:00",
   "verification_site": "joe/serg, Incus aios2, authenticated case-service GET; no research action closure",
   "cases": [
     {
@@ -137,18 +137,6 @@
           "acceptance_criteria": "",
           "done": false,
           "created_at": "2026-09-30T06:09:29.160684Z"
-        },
-        {
-          "id": "act_c527b10e254147a6",
-          "case_id": "case_66cae4a89ba6473f",
-          "what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
-          "owner": "sberindex_atlas_researcher",
-          "due": "2026-10-05T00:00:00Z",
-          "waiting_for": "KB75/16127: Курганская/Оренбургская/Тюменская области. Ждёт 5 геопаспортов GOV-B1. Только описание последующего периода; S_Dbw приоритет, сроки7/8.10 без сдвига.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-10-04T06:37:05.157888Z"
         },
         {
           "id": "act_c475e17b2a584b9a",
@@ -365,6 +353,18 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-10-03T19:33:36.144658Z"
+        },
+        {
+          "id": "act_c527b10e254147a6",
+          "case_id": "case_66cae4a89ba6473f",
+          "what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
+          "owner": "sberindex_atlas_researcher",
+          "due": "2026-10-05T00:00:00Z",
+          "waiting_for": "KB75/17201: ПослеGOV-B1 три региональных контекста2025 включены в частный полный отчёт Атласа; уровни/периоды/единицы отделены. Текст/SHA/readback, безновыхрасчётов/причинности.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-10-04T06:37:05.157888Z"
         },
         {
           "id": "act_b80fd1b65f2e4d6d",
@@ -955,42 +955,6 @@
           "created_at": "2026-09-30T06:32:23.371863Z"
         },
         {
-          "id": "act_9651a4c259e6441d",
-          "case_id": "case_43de12a8dc2e4abd",
-          "what": "GM3. Добавить узлы выпусков и наблюдений из доступных данных: СберИндекс расходы, население, мобильность как индекс (не потоки МО→МО), Tochno/БДМО занятость и зарплата. Каждое ребро к МО имеет год, единицу, источник, версию и маску покрытия. Не смешивать 2025 derivative vintage с исторической доступностью 2024; не искать соцсети.",
-          "owner": "sberindex_graph_steward",
-          "due": "2026-10-04T00:00:00Z",
-          "waiting_for": "KB75 №16332, KB77 №16333: бюджеты готовы в локальном графе, истории собраны. Проверить lineage; не повторять загрузки и поиск соцсетей. Даты доступности неизвестны, production ingest не подтверждён. GM3 открыт.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-30T06:32:23.978802Z"
-        },
-        {
-          "id": "act_aa129ecf4e4643d4",
-          "case_id": "case_43de12a8dc2e4abd",
-          "what": "GOV-B1: по бюджетному источнику 77/16128 проверить пять геопаспортов файлов 36/42/43/53/67: финансовый орган, отчётная территория и уровень. Связать с официальным справочником, сохранить конфликты шапок; никаких сумм отдельных МО или соцсетей.",
-          "owner": "sberindex_graph_steward",
-          "due": "2026-10-05T00:00:00Z",
-          "waiting_for": "Паспорта77/16128 готовы к review. Dispatch scope-v3 HTTP500; report rep_ffb1bab11bba4941, F7b62/16137. Данных хватает; ждёт repair orchestration, не владельца. 5 геопаспортов после accepted; 92 XLS не повторять.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-10-04T06:37:05.051019Z"
-        },
-        {
-          "id": "act_0d7cb34d8a8c4aee",
-          "case_id": "case_43de12a8dc2e4abd",
-          "what": "GM4. Ввести инкрементальную проверку графа: конфликтующие ОКТМО и годы, дубли наблюдений, пропуски, истёкшие источники, as-of запросы и разделение synthetic/observed. Выдать воспроизводимые SQL/graph queries и отчёт различий между двумя выпусками; нерешённое оставить proposed. Не искать соцсети.",
-          "owner": "sberindex_graph_steward",
-          "due": "2026-10-06T00:00:00Z",
-          "waiting_for": "KB77/16186: real incremental copy+77; base preserved, typed money/units/period, rounded provenance. GM4OPEN: further revision & synth separation; primary7/12 unchanged, unknown export excluded, productionfalse.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-30T06:32:24.566200Z"
-        },
-        {
           "id": "act_b231cd5eba674acb",
           "case_id": "case_43de12a8dc2e4abd",
           "what": "GM2.FLOOD6-20261005: По KB77/16478 найти официальную связь район→округ valid2024 для Белозерского,Звериноголовского,Кетовского,Куртамышского,Притобольного,Целинного. Старые candidate territory_id/ОКТМО в crosswalk.json. Нужны акт,номер,дата,границы,valid_from/to,successor; отсутствие отмечать UNKNOWN, по имени не соединять. Получить initial PDF/приложения актов103-ук04.04,6208.04,3608.04; regime zone отделить от реального затопления. Записать EVIDENCE_JSON и document_id integrate; частичное не закрывать. Соцсети не искать.",
@@ -1075,6 +1039,18 @@
           "created_at": "2026-10-03T12:04:46.298896Z"
         },
         {
+          "id": "act_9651a4c259e6441d",
+          "case_id": "case_43de12a8dc2e4abd",
+          "what": "GM3. Добавить узлы выпусков и наблюдений из доступных данных: СберИндекс расходы, население, мобильность как индекс (не потоки МО→МО), Tochno/БДМО занятость и зарплата. Каждое ребро к МО имеет год, единицу, источник, версию и маску покрытия. Не смешивать 2025 derivative vintage с исторической доступностью 2024; не искать соцсети.",
+          "owner": "sberindex_graph_steward",
+          "due": "2026-10-04T00:00:00Z",
+          "waiting_for": "Принято07.10: KB77/17215, F7b77a4731e. Частный граф1037459набл./21release, все слои и coverage/lineage проверены. available_at/expiry unknown, identity proposed. Не SCIENTIFIC_PASS/live ingest; полный отчёт и SHA в материалах.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-30T06:32:23.978802Z"
+        },
+        {
           "id": "act_0fd8ae3b4bf44287",
           "case_id": "case_43de12a8dc2e4abd",
           "what": "GOV-E1: скачать два официальных отчёта Кургана или Тюмени о паводках/экономике 2024. Нормализовать событие, ОКТМО, единицы, даты публикации и first_seen, SHA. Не повторять готовые три истории и не искать соцсети.",
@@ -1109,6 +1085,30 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-10-04T11:18:41.742815Z"
+        },
+        {
+          "id": "act_aa129ecf4e4643d4",
+          "case_id": "case_43de12a8dc2e4abd",
+          "what": "GOV-B1: по бюджетному источнику 77/16128 проверить пять геопаспортов файлов 36/42/43/53/67: финансовый орган, отчётная территория и уровень. Связать с официальным справочником, сохранить конфликты шапок; никаких сумм отдельных МО или соцсетей.",
+          "owner": "sberindex_graph_steward",
+          "due": "2026-10-05T00:00:00Z",
+          "waiting_for": "KB77/17200: Проверены5геопаспортов/3точныхрегиональных кода в3officialsnapshots;2конфликта исключены.32проверки/SHA, безсуммМО/соцсетей. GOV-B1 исполнен.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-10-04T06:37:05.051019Z"
+        },
+        {
+          "id": "act_0d7cb34d8a8c4aee",
+          "case_id": "case_43de12a8dc2e4abd",
+          "what": "GM4. Ввести инкрементальную проверку графа: конфликтующие ОКТМО и годы, дубли наблюдений, пропуски, истёкшие источники, as-of запросы и разделение synthetic/observed. Выдать воспроизводимые SQL/graph queries и отчёт различий между двумя выпусками; нерешённое оставить proposed. Не искать соцсети.",
+          "owner": "sberindex_graph_steward",
+          "due": "2026-10-06T00:00:00Z",
+          "waiting_for": "Принято07.10: KB77/17215, F7b77a4731e. SQL/UTC9controls, real classifier и два экономических выпуска проверены; числовых ревизий2023–24 нет. Missing/expiry/asof/identity unknown/proposed сохранены. Не SCIENTIFIC_PASS/live ingest.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-30T06:32:24.566200Z"
         },
         {
           "id": "act_a718a873c75c4fd1",

@@ -1,0 +1,13 @@
+{
+  "base": "3a12a3f2f148ef04d66b31de5cc69c95085230ae",
+  "head": "3832fc7f928ed7417aeb41d5560355cb0da1c497",
+  "required_tests": 1443,
+  "muse_status": "valid",
+  "muse_verdict": "ok",
+  "remaining_authorized_paid_reviews": 0,
+  "deployed": false,
+  "live_acceptance_completed": false,
+  "own_lock_released": true,
+  "production_divergence_requires_reconciliation": true,
+  "checked_at_utc": "2026-10-07T14:08:56.895319+00:00"
+}

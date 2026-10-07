@@ -11,7 +11,7 @@
     ],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -24,7 +24,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -37,7 +37,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -50,7 +50,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -63,7 +63,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -78,7 +78,7 @@
     ],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -94,7 +94,7 @@
     ],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -107,7 +107,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -120,7 +120,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -133,7 +133,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -146,20 +146,7 @@
     "depends_on": [],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
-    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
-  },
-  {
-    "id": "act_c527b10e254147a6",
-    "what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
-    "owner": "sberindex_atlas_researcher",
-    "due": "2026-10-05T00:00:00Z",
-    "waiting_for": "KB75/16127: Курганская/Оренбургская/Тюменская области. Ждёт 5 геопаспортов GOV-B1. Только описание последующего периода; S_Dbw приоритет, сроки7/8.10 без сдвига.",
-    "done": false,
-    "depends_on": [],
-    "status": "open",
-    "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -174,7 +161,7 @@
     ],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -189,7 +176,7 @@
     ],
     "status": "open",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -204,7 +191,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -219,7 +206,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -232,7 +219,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -247,7 +234,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -260,7 +247,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -273,7 +260,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -286,7 +273,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -299,7 +286,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -312,7 +299,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -327,7 +314,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -340,7 +327,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -353,7 +340,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -366,7 +353,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -379,7 +366,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -392,7 +379,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -405,7 +392,20 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_c527b10e254147a6",
+    "what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
+    "owner": "sberindex_atlas_researcher",
+    "due": "2026-10-05T00:00:00Z",
+    "waiting_for": "KB75/17201: ПослеGOV-B1 три региональных контекста2025 включены в частный полный отчёт Атласа; уровни/периоды/единицы отделены. Текст/SHA/readback, безновыхрасчётов/причинности.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_66cae4a89ba6473f",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -418,7 +418,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -433,7 +433,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -446,7 +446,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -462,7 +462,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -477,7 +477,7 @@
     ],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -490,7 +490,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -503,7 +503,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -516,7 +516,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
@@ -529,7 +529,7 @@
     "depends_on": [],
     "status": "completed",
     "case_id": "case_66cae4a89ba6473f",
-    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
     "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   }
 ]

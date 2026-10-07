@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T12:09:19.950709+00:00",
+  "updated_at": "2026-10-07T14:34:03.234224+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -9,7 +9,7 @@
       "status": "in_progress",
       "last_artifact": "docs/ATLAS_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "Atlas25/39,Radar31/38,Graph18/23:5actionsDONE, материалы/KB75/17162,76/17163,77/17164 приняты. A7F7b9adeef7b:1393mandatory+64extraPASS; prod=e957c9e7, чужойKEVlock занят. ОдинповторMuse разрешён/неизрасходован, новогоinvokeнет; очередьpaused. Готовыеfitsнеповторять. План docs/REMAINING_ACTIONS_EXECUTION_2026-10-07.md.",
+      "next_action": "A7: F7b3832fc7f на3a12a3f2 прошёл1443mandatory+64extra и единственный повторMuse VALID/OK без retries. Разрешение израсходовано, новых платных прогонов нет. KB62/17212. Live acceptance/actA7OPEN: сначала сохранить соседние Kev/UX ветки, затем guarded release; собственный замок отпущен, фоновые очереди paused. geometry-v3.1 принято через F7b77a4731e: полная covariance≥10, сфера<10, Gaussian Bhattacharyya, Mahalanobis<2.5 и containment>0.60;14тестов. Fresh monthly fit1896МО×24,45504назначения/48covariances/168K-grid проверен.210анизотропных контролей FAIL в обоих режимах; без ретюнинга. Старые результаты, пороги и476legacySHA сохранены. A6/M2/M3 quality не PASS; старое отсутствие заранее заданного бюджета не исправлено задним числом. KB75/17216.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -104,6 +104,17 @@
         "contest_submitted": false,
         "raw_inputs_included": false,
         "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "fresh_fit_verified": true,
+        "synthetic_quality": "FAIL",
+        "scientific_pass": false,
+        "industrymap_v2_identity_gate": "INCONCLUSIVE_NOT_COMPUTED",
+        "kb_documents": [
+          17211,
+          17216
+        ]
       }
     },
     "shock-radar": {
@@ -113,7 +124,7 @@
       "status": "in_progress_exploratory_positive_seasonal",
       "last_artifact": "docs/RADAR_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-29T20:41:21.592079Z",
-      "next_action": "Atlas25/39,Radar31/38,Graph18/23:5actionsDONE, материалы/KB75/17162,76/17163,77/17164 приняты. A7F7b9adeef7b:1393mandatory+64extraPASS; prod=e957c9e7, чужойKEVlock занят. ОдинповторMuse разрешён/неизрасходован, новогоinvokeнет; очередьpaused. Готовыеfitsнеповторять. План docs/REMAINING_ACTIONS_EXECUTION_2026-10-07.md.",
+      "next_action": "Forecast_contract.yaml применён через F7b77a4731e;7тестов и полный YAML parse, прежниеR0consumers сохранены. Датированное Tiny дополнение доказало несовпадение даты у actualdeterministicR8; ранжирование отозвано, исправленныйscore не посчитан. Chronos-2 runner/readiness принят, но веса/инференция не запускались; action05OPEN. KB76/17217. Остальныеscientific/vintage/finaltest sourceactionsOPEN.",
       "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
       "last_gate": {
         "gate": "R8",
@@ -198,6 +209,15 @@
         "contest_submitted": false,
         "raw_inputs_included": false,
         "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "tiny_cached_ranking_invalid": true,
+        "corrected_tiny_MAE_measured": false,
+        "chronos2_weights_downloaded": false,
+        "chronos2_inference_executed": false,
+        "kb_document": 17217,
+        "scientific_pass": false
       }
     },
     "municipality-graph": {
@@ -331,7 +351,7 @@
     "installed_script": "/usr/local/bin/fixar_research_drive.sh",
     "installed_sha256": "7a13f9dc958a074475a5d1d07bce021b726e5443f50eb95273e305b752ba56b5",
     "timer": "fixar-cmd-research-drive.timer",
-    "timer_active": true,
+    "timer_active": false,
     "next_tick": "2026-09-26T22:30:00+03:00",
     "partial_gates_still_stop_chain": true,
     "new_scientific_scope": [
@@ -339,10 +359,28 @@
       "R8_prophet_pilot_20260927"
     ],
     "new_files": 20,
-    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
+    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops.",
+    "historical_snapshot": true,
+    "current_state": "PAUSED_COST_HOLD; checked07.10.2026 during manualMuse; no background resume",
+    "checked_current_state_at": "2026-10-07T14:02:11.102448+00:00"
   },
   "latest_scientific_snapshot": "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
-  "research_snapshot_note": "Operator computations and saved artifacts verified 03.10.2026; prior September timer/deployment descriptions below are historical, not a fresh platform audit.",
+  "research_snapshot_note": "07.10: exact F7b code/SQL/SHA and case/KB/Vault readback. Legacy scientific summaries/runs are historical; latest geometry/calendar addenda override current claims. Models/vintage/holdout are not silently relabelled.",
   "case_actions_snapshot": "docs/evidence/plan-sync-20261007/live-case-actions.json",
-  "initial_plan_is_historical": true
+  "initial_plan_is_historical": true,
+  "latest_case_counts": {
+    "checked_at_utc": "2026-10-07T14:34:03.234224+00:00",
+    "atlas": [
+      26,
+      39
+    ],
+    "radar": [
+      31,
+      38
+    ],
+    "graph": [
+      21,
+      23
+    ]
+  }
 }

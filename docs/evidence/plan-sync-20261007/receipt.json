@@ -1,20 +1,20 @@
 {
-  "checked_at_utc": "2026-10-07T12:09:19.950709+00:00",
+  "checked_at_utc": "2026-10-07T14:34:03.234224+00:00",
   "method": "Incus aios2, authenticated case-service GET /cases/{id}/actions, owner principal prn_fbab9aa00cd46169; each id/what/due/owner/waiting_for/done matched exactly in canonical actions.json",
   "canonical_plans": [
     {
       "project": "economic-atlas",
       "live_case_id": "case_66cae4a89ba6473f",
       "rows": 39,
-      "done": 25,
-      "sha256": "30c259cdcab88ac3936e467ddd53c5f7d884e0adf0d1c77cc9aafdfa9e6467dc"
+      "done": 26,
+      "sha256": "f7f99f22b8cf5ea03225b8d757ccc986e00081f77493c5845d6c8d024470993c"
     },
     {
       "project": "shock-radar",
       "live_case_id": "case_008f37d03cf541e5",
       "rows": 38,
       "done": 31,
-      "sha256": "a668bd2b839daa2b05f6011b69e6cef9a008acda73cb025f3c410977be26f190"
+      "sha256": "91d017179eb4c32b8351709c7f7c7fc76f88ee7c472c11d90573afda65b3b973"
     }
   ],
   "initial_14_step_lists_archived": true,

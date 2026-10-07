@@ -1,0 +1,73 @@
+{
+  "checked_at_utc": "2026-10-07T14:08:56.895319+00:00",
+  "private_cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_3322f549e4ee414c",
+          "vault_document_id": "doc_b09f4554a61a4cad",
+          "file": "REPORT_PRIVATE.md",
+          "title": "IndustryMap V2: семантика и предел сопоставления с зарплатами",
+          "bytes": 9362,
+          "sha256": "a902dc010d4711172c69ae1ca35a3ef9619d37eddf368d55da61ec717aea0721",
+          "verified": true
+        },
+        {
+          "id": "mat_d0e10b6e1cf943a3",
+          "vault_document_id": "doc_54a02f7c7de8437a",
+          "file": "IndustryMap-V2-INTERNAL-ONLY-20261007.zip",
+          "title": "IndustryMap V2 — частный протокол и квитанции, без публичной раздачи",
+          "bytes": 15963,
+          "sha256": "f0e62756dc6efe50aa9c457850077d22f302bd2d382ebc3f8e61109165b98986",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "materials": [
+        {
+          "id": "mat_eae71b4e4b1640b7",
+          "vault_document_id": "doc_b09f4554a61a4cad",
+          "file": "REPORT_PRIVATE.md",
+          "title": "IndustryMap V2: семантика и предел сопоставления с зарплатами",
+          "bytes": 9362,
+          "sha256": "a902dc010d4711172c69ae1ca35a3ef9619d37eddf368d55da61ec717aea0721",
+          "verified": true
+        },
+        {
+          "id": "mat_680aa1d1635f40a0",
+          "vault_document_id": "doc_54a02f7c7de8437a",
+          "file": "IndustryMap-V2-INTERNAL-ONLY-20261007.zip",
+          "title": "IndustryMap V2 — частный протокол и квитанции, без публичной раздачи",
+          "bytes": 15963,
+          "sha256": "f0e62756dc6efe50aa9c457850077d22f302bd2d382ebc3f8e61109165b98986",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "kb": [
+    {
+      "corpus_id": 75,
+      "document_id": 17211,
+      "full_readback_verified": true,
+      "text_sha256": "1c17a58c8db3db2d59d5c563042bc8e46d596d16bf5194ca6d91ed683c610593",
+      "checked_at": "2026-10-07T14:08:55.783499+00:00"
+    },
+    {
+      "corpus_id": 62,
+      "document_id": 17212,
+      "full_readback_verified": true,
+      "text_sha256": "eadbb339537adfefb0543627ce6e168838bbc760087f4b58bc61d2950eba3192",
+      "checked_at": "2026-10-07T14:08:56.942672+00:00"
+    }
+  ],
+  "industry_v2_association_executed": false,
+  "a7_review_valid_ok": true,
+  "a7_remaining_authorized_paid_reviews": 0,
+  "a7_deployed": false,
+  "source_actions_closed": 0,
+  "industry_derivatives_public": false
+}

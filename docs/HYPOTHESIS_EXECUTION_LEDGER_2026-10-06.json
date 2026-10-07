@@ -5,9 +5,10 @@
   "items": [
     {
       "hypothesis": "Атлас: идентичность M2/M3",
-      "status": "BOUNDED_SPHERE_IMPLEMENTATION_EXECUTED_PROMISED_GEOMETRY_OPEN",
-      "evidence": "A6: 36 продолжений, 3 возврата, 7 неоднозначных; M3 без реальных кандидатов. Все 554 МО второй группы неоднозначны. При изменении margin: 1324 / 4438 / 36024 неоднозначных строк. Независимый пересчёт 9600 overlap восстановил T/M/Tc только из реальной панели2023; синтетические миры не входили в калибровку.",
-      "remaining_or_limit": "Источник порогов проверен. Реализованы изотропные сферы, не обещанные эллипсоиды M2 для ≥10 участников. M3 dp≤2.5r эквивалентен Mahalanobis≤2.5√5≈5.590 без variance floor, а не <2.5; containment≥0.6 отличается от >0.6. Исходные M2/M3 остаются OPEN. Заранее заданного бюджета ошибок нет; F1 описательный, экономическая идентичность не подтверждена. См. evidence/remaining-actions-20261007/atlas/METHOD_SCOPE_CORRECTION.md."
+      "status": "PROMISED_GEOMETRY_IMPLEMENTED_FRESH_FIT_VERIFIED_SYNTHETIC_BUDGET_FAIL",
+      "evidence": "geometry-v3.1 принято через F7b77a4731e: полная covariance≥10, сфера<10, Gaussian Bhattacharyya, Mahalanobis<2.5 и containment>0.60;14тестов. Fresh monthly fit1896МО×24,45504назначения/48covariances/168K-grid проверен.210анизотропных контролей FAIL в обоих режимах; без ретюнинга. Старые результаты, пороги и476legacySHA сохранены. A6/M2/M3 quality не PASS; старое отсутствие заранее заданного бюджета не исправлено задним числом. KB75/17216.",
+      "remaining_or_limit": "Новый инженерный error budget зафиксирован до этих контролей и FAILED. Не ретюнить после результата. Экономическаяidentity/независимыйholdout и старыйA6.3priorbudget не подтверждены; научные actionsOPEN.",
+      "legacy_evidence": "A6: 36 продолжений, 3 возврата, 7 неоднозначных; M3 без реальных кандидатов. Все 554 МО второй группы неоднозначны. При изменении margin: 1324 / 4438 / 36024 неоднозначных строк. Независимый пересчёт 9600 overlap восстановил T/M/Tc только из реальной панели2023; синтетические миры не входили в калибровку."
     },
     {
       "hypothesis": "Атлас: спектральный M1, дивергенция M4, возраст M5",
@@ -61,7 +62,7 @@
       "hypothesis": "Радар: R9, Chronos и ориентиры",
       "status": "EXECUTED_RETROSPECTIVE",
       "evidence": "Полные парные сравнения h1/3/6/12 в frozen cache; категорийный опыт с равной информацией на 120 рядах. Раннее окно сохранено. Реестр исправлен: выполнена Chronos-T5-tiny29d808298f1a62493e7b9a5e08529d0d930fa189, Chronos-2 не запускался; старая ссылка на выигрыш leakyR3 отменена.",
-      "remaining_or_limit": "Horizon audit принят черезcase-service07.10: h1/3/6/12 и222exclusions проверены; min12+lag2 даёт10/8/5/0origins. Конкретный запрос forecast_contract черезF7b приложен. Chronos-2 остаётся отдельным невыполненным обязательством05; Tiny не заменяет его. Vintage/новыйholdout OPEN."
+      "remaining_or_limit": "Forecast_contract.yaml применён через F7b77a4731e;7тестов и полный YAML parse, прежниеR0consumers сохранены. Датированное Tiny дополнение доказало несовпадение даты у actualdeterministicR8; ранжирование отозвано, исправленныйscore не посчитан. Chronos-2 runner/readiness принят, но веса/инференция не запускались; action05OPEN. KB76/17217. Vintage/newholdout OPEN."
     },
     {
       "hypothesis": "Радар: H12 с одинаковой национальной информацией",
@@ -91,7 +92,7 @@
       "hypothesis": "Свежий RAG и ревизии загруженных данных",
       "status": "PUBLIC_RAG_LIVE_UPLOAD_REVISIONS_TESTED_A7_REPAIR_PENDING",
       "evidence": "F7bf51a4b85/KB62/17066:10тестовPASS; оба публичных чата200/MiMoPro со свежими публичными sourceIDs; guest401/noauth403/modeloverride422. Сравнение загруженных версий: добавленная/удалённая/исправленная строка, эталон сохранён.",
-      "remaining_or_limit": "A7, проверка07.10.2026: совместимый9adeef7b на035a5a51 прошёл1393обязательных проверки, включая17classifier+8materialpriority,0fail/error/skip,producerverify0; отдельно64hosted/analysis/focusedPASS. Полныйreceipt сохранён. После прогонов продобновился доe957c9e7 (3файла:документация иfingerprint ресурсов). Блокировку держит codex-kev-muse-release-20261007 с11:39:43UTC, последняя попытка take вернулаЗАНЯТО; чужая блокировка не снята. Владелец разрешилОДИН повторMuse; не запущен и не израсходован. До него требуется совмещение с текущей базой/точная приёмка; A7OPEN, фонpaused, MQисключён."
+      "remaining_or_limit": "A7: F7b3832fc7f на3a12a3f2 прошёл1443mandatory+64extra и единственный повторMuse VALID/OK без retries. Разрешение израсходовано, новых платных прогонов нет. KB62/17212. Live acceptance/actA7OPEN: сначала сохранить соседние Kev/UX ветки, затем guarded release; собственный замок отпущен, фоновые очереди paused."
     },
     {
       "hypothesis": "Независимое научное подтверждение",
@@ -107,15 +108,31 @@
     }
   ],
   "case_action_acceptance": {
-    "checked_at": "2026-10-07T10:59:38.545664+00:00",
-    "atlas_done": 25,
+    "checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "atlas_done": 26,
     "atlas_total": 39,
     "radar_done": 31,
     "radar_total": 38,
-    "graph_done": 18,
+    "graph_done": 21,
     "graph_total": 23,
     "new_actions_closed": 5,
     "receipt": "evidence/remaining-actions-20261007/case-acceptance-receipt.json",
-    "scientific_pass": false
+    "scientific_pass": false,
+    "latest_completed_actions": [
+      "act_aa129ecf4e4643d4",
+      "act_c527b10e254147a6",
+      "act_9651a4c259e6441d",
+      "act_0d7cb34d8a8c4aee"
+    ],
+    "latest_receipts": [
+      "docs/evidence/scientific-f7b-20261007/budget-case-acceptance.json",
+      "docs/evidence/scientific-f7b-20261007/graph-case-acceptance.json"
+    ]
+  },
+  "latest_addenda": {
+    "scientific_F7b_head": "77a4731ecd2ce23b20a82abdb0ac53bd86788504",
+    "graph_local_acceptance": "GM3/GM4 приняты через case-service: новый частный граф1037459наблюдений/21release,724583added, mobility215nativeМО, migration/employment/wages с source/version/coverage. Реальные экономические double-vintage сравнения не нашли числовых ревизий2023–24 на одинаковых ключах. UTC9controlsPASS; expiry/available_at/identity unknown/proposed сохранены. Не live ingestion и не SCIENTIFIC_PASS. KB77/17215.",
+    "industrymap_usage": "IndustryMap: каталог/геопривязка выполнены, использования в основных A6/A8/A14/исходном GM3 не найдено. Отдельная внутренняяV1 проба не независимое подтверждение. V2 семантика проверена; verified2025citypoint→МО mapping отсутствует, связь с зарплатами не вычислялась. KB75/17190 и17211; производные остаются частными.",
+    "a7_review": "A7: F7b3832fc7f на3a12a3f2 прошёл1443mandatory+64extra и единственный повторMuse VALID/OK без retries. Разрешение израсходовано, новых платных прогонов нет. KB62/17212. Live acceptance/actA7OPEN: сначала сохранить соседние Kev/UX ветки, затем guarded release; собственный замок отпущен, фоновые очереди paused."
   }
 }
