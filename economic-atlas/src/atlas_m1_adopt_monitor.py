@@ -6,7 +6,7 @@ All process discovery is targeted to known PID/known-parent descendants.
 from pathlib import Path
 import argparse,ctypes,datetime,errno,hashlib,importlib.util,json,math,os,platform,signal,sys,time
 sys.dont_write_bytecode=True
-PROSPECTIVE_SHA='288e7dc2930aec7672bc3eb40954e90a7cdf3d039deb9bf195c49b0b47015446'
+PROSPECTIVE_SHA='5299f8353f655a5864ec067fb7056924768301789ebbc9270d9c6c81d1eda054'
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -35,7 +35,7 @@ def parse_args(raw):
 class Native:
  def __init__(self,g):
   if platform.system()!='Darwin':raise RuntimeError('nativeMac required')
-  self.guard=g.NativeMac();self.lib=self.guard.lib;self.libc=ctypes.CDLL('/usr/lib/libSystem.B.dylib',use_errno=True)
+  self.guard=g.NativeMac();self.lib=self.guard.lib;self.lib.proc_pidpath.argtypes=[ctypes.c_int,ctypes.c_void_p,ctypes.c_uint32];self.lib.proc_pidpath.restype=ctypes.c_int;self.libc=ctypes.CDLL('/usr/lib/libSystem.B.dylib',use_errno=True)
   self.libc.sysctl.argtypes=[ctypes.POINTER(ctypes.c_int),ctypes.c_uint,ctypes.c_void_p,ctypes.POINTER(ctypes.c_size_t),ctypes.c_void_p,ctypes.c_size_t];self.libc.sysctl.restype=ctypes.c_int
  def info(self,pid):
   b=ctypes.create_string_buffer(136);ctypes.set_errno(0);size=self.lib.proc_pidinfo(pid,3,0,b,136);err=ctypes.get_errno()
@@ -43,6 +43,10 @@ class Native:
    if err==errno.ESRCH:return None
    raise OSError(err,'knownPID native BSD identity unavailable')
   return parse_bsd(b.raw)
+ def executable(self,pid):
+  b=ctypes.create_string_buffer(4096);ctypes.set_errno(0);size=self.lib.proc_pidpath(pid,b,len(b));err=ctypes.get_errno()
+  if not 0<size<len(b):raise OSError(err,'knownPID native executable path unavailable')
+  return b.value.decode('utf-8',errors='strict')
  def argv(self,pid):
   # KERN_PROCARGS2 is targeted to this knownPID, never KERN_PROC/allPID enumeration.
   mib=(ctypes.c_int*3)(1,49,pid);size=ctypes.c_size_t(0);ctypes.set_errno(0)
@@ -66,19 +70,27 @@ def config(path):
  cmd=json.loads((run/'progress.json').read_text())['command']
  expected=[cmd[0],str(view/'economic-atlas/src/atlas_m1_spectral.py'),'--phase','calibrate','--repo',str(view),'--protocol',str(view/'economic-atlas/protocols/M1_PROSPECTIVE_V1.json'),'--outdir',str(run/'calibrate-v1')]
  if cmd!=expected:raise ValueError('original command scope mismatch')
+ if cmd[0]!=p['original_launcher'] or os.path.realpath(cmd[0])!=p['original_launcher_realpath'] or sha(cmd[0])!=p['original_launcher_sha256']:raise ValueError('original launcher provenance changed')
+ if os.path.realpath(p['reviewed_native_executable'])!=p['reviewed_native_executable'] or sha(p['reviewed_native_executable'])!=p['reviewed_native_executable_sha256']:raise ValueError('reviewed native executable changed')
  return p,g,view,run,cmd,inputs
 
 def verify_live(native,p,expected_argv,pinned=None):
  info=native.info(p['original_pid'])
  if info is None:return None
- if info['pid']!=p['original_pid'] or info['pgid']!=p['original_pgid'] or info['uid']!=os.getuid():raise ValueError('originalPID UID/PGID mismatch')
+ if info['pid']!=p['original_pid'] or info['pgid']!=p['original_pgid'] or info['uid']!=p['expected_uid'] or info['uid']!=os.getuid():raise ValueError('originalPID UID/PGID mismatch')
  sec=int(datetime.datetime.fromisoformat(p['expected_birth_utc_second']).timestamp())
- if info['birth_sec']!=sec or pinned is not None and not match_identity(info,pinned):raise ValueError('PIDreuse/original birth mismatch; no signal/restart')
+ if info['birth_sec']!=sec or info['birth_usec']!=p['expected_birth_usec'] or pinned is not None and not match_identity(info,pinned):raise ValueError('PIDreuse/original birth mismatch; no signal/restart')
  if pinned is None and info['ppid']!=1:raise ValueError('original orphan PPID1 required before adoption')
  if info['status']==5:return {**info,'terminal_zombie':True}
  args=native.argv(info['pid'])
- if len(args)!=len(expected_argv) or os.path.realpath(args[0])!=os.path.realpath(expected_argv[0]) or args[1:]!=expected_argv[1:]:raise ValueError('exact live original command mismatch')
- return info
+ if len(args)!=len(expected_argv) or args[0]!=p['reviewed_native_argv0'] or args[1:]!=expected_argv[1:]:raise ValueError('exact live original command mismatch')
+ executable=native.executable(info['pid'])
+ if executable!=p['reviewed_native_executable'] or sha(executable)!=p['reviewed_native_executable_sha256']:raise ValueError('exact native executable/hash mismatch')
+ if expected_argv[0]!=p['original_launcher'] or os.path.realpath(expected_argv[0])!=p['original_launcher_realpath'] or sha(expected_argv[0])!=p['original_launcher_sha256']:raise ValueError('original launcher provenance changed')
+ after=native.info(info['pid'])
+ if after is None:return None
+ if identity(after)!=identity(info):raise ValueError('PIDreuse during native argv/executable validation; no signal')
+ return {**after,'terminal_zombie':True} if after['status']==5 else after
 
 def elapsed(p,clock=time.time):return clock()-datetime.datetime.fromisoformat(p['original_wall_start_utc']).timestamp()
 def resources(native,info,p,run,out,g):
