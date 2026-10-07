@@ -1,0 +1,14 @@
+{
+ "version":"m1-baseline-operational-v1",
+ "source_sha256":"5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+ "scientific_protocol_sha256":"fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30",
+ "panel_sha256":"8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+ "A5_mask_sha256":"12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6",
+ "CPU_threads":1,"aggregate_own_tree_RSS_bytes":1073741824,
+ "wall_seconds":77881,"minimum_free_disk_bytes":1073741824,"output_budget_bytes":268435456,
+ "monitor_period_seconds":0.25,"disk_monitor_period_seconds":10,
+ "mandatory_preflight":"native knownparent proc_listchildpids recursively discovers ownchild+grandchild; proc_pidinfo returns positive RSS for self+both; isolated own PG cleanup proven before calibration",
+ "execution":"singleforegroundguardlaunch, sequentialfullcalibrate thenreplay, freshoutdironly,no automaticrestart/no resume,no optimization",
+ "scientific_scope":"unchanged1896MO/24months/3k/all99nulls/31320upperrequests; retainallnegativeabstentioninconclusive artifacts",
+ "no_scientific_action_closure_from_guard":true
+}
