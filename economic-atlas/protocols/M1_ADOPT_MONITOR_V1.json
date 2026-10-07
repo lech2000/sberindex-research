@@ -1,0 +1,31 @@
+{
+  "version": "m1-known-live-adopt-monitor-v1",
+  "prospective": true,
+  "scientific_changes": false,
+  "original_pid": 53084,
+  "original_pgid": 53084,
+  "lost_guard_pid": 53072,
+  "expected_birth_utc_second": "2026-10-07T15:47:45+00:00",
+  "original_wall_start_utc": "2026-10-07T15:47:45.854058+00:00",
+  "frozen_view": "/private/tmp/atlas-m1-frozen-execution-view-20261007",
+  "original_run": "/private/tmp/atlas-m1-full-baseline-20261007-v1",
+  "source_sha256": "5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+  "protocol_sha256": "fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30",
+  "guard_sha256": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+  "limits": {
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "wall_seconds_from_original_start": 77881,
+    "free_disk_bytes_min": 1073741824,
+    "combined_output_bytes_max": 268435456,
+    "sample_seconds": 0.5,
+    "disk_sample_seconds": 10
+  },
+  "identity": "Read exact knownPID native BSD birthsec/usec/UID/PGID and targeted knownPID argv, no allPID enumeration. Require originalbirthsecond then freeze actualnative microsecond identity in read-only probe before durableattach. PIDreuse/identity mismatch or unavailable instrumentation fails closed, never restarts science or signals unverifiedPID.",
+  "coverage": "Root authoritative last guard coverage timestamp2026-10-07T20:05:52UTC; disclose gap from that time until actual adoption. Original monotonic guard context lost;77881s cap conservatively anchored to original wallUTC, trusted hostclock precondition; do not reset budget.",
+  "termination": "On resourcecap breach, verify identity immediately again then signal ONLY original scientificPID; never globalPID/PG kill. If identity cannot be verified, emit failedclosed intervention receipt instead of signalling anotherprocess. Darwin PID-signalling is not an atomic birth-token API; disclose residual check-to-signal race. Lost originalchild exitcode unavailable, never fabricatezero.",
+  "completion": "Wait until originalprocess gone/zombie without identityreuse; verify original calibration manifest/result SHA, all3k complete calibration+held exactseeds and99null accounting, retainFAIL. Old calibration outputs never edited. Complete terminal artifacts permit replay, not scientificPASS.",
+  "replay": "Monitoring package never spawns science. On complete verified original calibration, writes resultSHA and exact fresh replay plan only. Actual replay must be a separately adopted/authorized one-use command after independent complete-calibration proof. No automatic restart/refit/resume.",
+  "durability": "Own-user one-shot launchctl job only after F7b adoption and explicit root dispatch; KeepAlive false/no automaticrestart, fresh monitorout. No command executed in preparation.",
+  "coverage_gap_start_utc": "2026-10-07T20:05:52+00:00"
+}
