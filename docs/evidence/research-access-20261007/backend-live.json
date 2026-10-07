@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-07T10:15:08.991505+00:00",
+  "place": "Incus aios2, running case-service image and live service routes",
+  "catalog": [
+    {
+      "project": "atlas",
+      "is_owner": true,
+      "access_granted": true
+    },
+    {
+      "project": "radar",
+      "is_owner": true,
+      "access_granted": true
+    }
+  ],
+  "rights": [
+    "read",
+    "comment"
+  ],
+  "visibility": [
+    "normal"
+  ],
+  "direct_case_without_service_credential": 403,
+  "pending_requests": 0,
+  "telegram_steward": {
+    "configured": true,
+    "chat_linked": true
+  },
+  "health": {
+    "case-service": 200,
+    "identity-service": 200,
+    "public-gateway": 200
+  },
+  "migration": {
+    "scope": "case-platform",
+    "revision": "0279",
+    "checksum": "c0c28c43a11cb811283e392f591c491b170d76ea6771cbd6c977cd457b408810",
+    "applied_at": "2026-10-07T09:52:35.531366+00:00"
+  },
+  "restricted_column": "NO",
+  "production_request_rows": 0
+}

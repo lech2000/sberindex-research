@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-07T10:17:56.585375+00:00",
+  "place": "Codex in-app browser, agrigate.pro/v2/?research_access=atlas",
+  "projects_section_rendered": true,
+  "research_access_card_rendered": true,
+  "guest_login_required": true,
+  "login_providers_loaded": [
+    "telegram",
+    "google",
+    "yandex",
+    "vk",
+    "email",
+    "phone"
+  ],
+  "request_submitted": false,
+  "screenshot": "request-page.jpg"
+}

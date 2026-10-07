@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-07T10:12:35.547515+00:00",
+  "place": "Bunny pullzone 6321535, guarded repair of existing API origin",
+  "before": {
+    "OriginUrl": "https://joe.tail54a262.ts.net:8443",
+    "OriginHostHeader": "joe.tail54a262.ts.net",
+    "VerifyOriginSSL": false
+  },
+  "after": {
+    "OriginUrl": "https://api-origin.agriforest.ru",
+    "OriginHostHeader": "api-origin.agriforest.ru",
+    "VerifyOriginSSL": true
+  },
+  "same_backend": "Incus aios2 public-gateway:8020",
+  "only_fields_changed": [
+    "OriginUrl",
+    "OriginHostHeader",
+    "VerifyOriginSSL"
+  ],
+  "ssl_verification_enabled": true
+}

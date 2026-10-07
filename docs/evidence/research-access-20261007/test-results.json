@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-07",
+  "place": "Mac isolated worktree; dedicated PostgreSQL test database aios_research_access_test_20261007, no production user data",
+  "results": {
+    "postgres_chain": 10,
+    "node_request_ui": 5,
+    "node_guest_chat": 6,
+    "adjacent_platform": 156,
+    "api_catalogue": 31,
+    "selected_telegram_pack_regressions": 4
+  },
+  "adjacent_skipped": 2,
+  "preexisting_failure": "Financial migration migrate_platform_credit_topup_20260927.sql is absent from the baseline manifest; unrelated to migration 0279",
+  "telegram_transport": "mock in dedicated database tests",
+  "paid_model_calls": 0,
+  "production_access_grants": 0
+}

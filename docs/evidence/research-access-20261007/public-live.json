@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-07T10:15:43.844783+00:00",
+  "place": "public HTTPS agrigate.pro / api.agrigate.pro after CDN purge",
+  "files": [
+    {
+      "path": "v2/foundation.js",
+      "sha256": "61291c544fe7c7f4f1be025847f6d3a3269fc2d48a54829bd6cdaba87beae42e",
+      "matches": true
+    },
+    {
+      "path": "v2/shell.js",
+      "sha256": "4a671223708e1a51815601b5a8fae2dff73100e7fe3c36d3ca0b483268f62b7a",
+      "matches": true
+    },
+    {
+      "path": "v2/cases.js",
+      "sha256": "79f8c6f94e70aca4148d475b26d19f3f9a2c5062f632f554f938ad7e166de65f",
+      "matches": true
+    },
+    {
+      "path": "v2/bootstrap.js",
+      "sha256": "22b7d57317e0729cdffb52f198a4a99391dd5439221a13cbe19af5c91ae12359",
+      "matches": true
+    },
+    {
+      "path": "v2/research-access.js",
+      "sha256": "2e887d4058ce8814c645d7df837e7fb3496852a13aae3f2b9b0197d596c8342b",
+      "matches": true
+    },
+    {
+      "path": "v2/index.html",
+      "sha256": "fe542470bfe2c02baa83869f7143fda0266924a3cae4e26369538cfdbc0f0a95",
+      "matches": true
+    },
+    {
+      "path": "sberindex-2026/landing-common/research-chat.js",
+      "sha256": "398b79ea952312b8c6c1347c6ecd8c35d3e43947c35fecce482f7b73a0c84a0c",
+      "matches": true
+    },
+    {
+      "path": "sberindex-2026/economic-atlas/landing/index.html",
+      "sha256": "7931b2922da9a175f1779331f94c78f66f5dc69b4cb1b63449d7915c07f44b61",
+      "matches": true
+    },
+    {
+      "path": "sberindex-2026/shock-radar/landing/index.html",
+      "sha256": "dc59bcd915c84e0509369044bb04bc3169b0e0d2c77f497d53320a17fe26bd61",
+      "matches": true
+    }
+  ],
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/research/sberindex/access",
+      "unauthenticated_status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/research/sberindex/access/requests",
+      "unauthenticated_status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/internal/research/sberindex/access/pending",
+      "unauthenticated_status": 404
+    }
+  ],
+  "tls_verification": true,
+  "paid_model_calls": 0,
+  "production_grants_created_by_check": 0
+}
