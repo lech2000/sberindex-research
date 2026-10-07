@@ -66,17 +66,23 @@
     const link=document.createElement('a'), url=new URL(location.href);
     url.searchParams.set('research_run',value.run_id);url.hash='research-run';
     link.href=url.href;link.textContent='Ссылка на этот запуск — сохраните, чтобы вернуться';output.append(link);
-    const note=document.createElement('p');note.textContent='Хранится до '+new Date(value.expires_at).toLocaleString('ru-RU')+'. '+value.dataset.filename+' · '+value.parameters.method;output.append(note);
+    const methodNames={forecast:'Обучение прогнозных моделей',kmeans:'Кластеризация K-means',ward:'Кластеризация Ward'};
+    const note=document.createElement('p');note.textContent='Хранится до '+new Date(value.expires_at).toLocaleString('ru-RU')+'. '+value.dataset.filename+' · '+methodNames[value.parameters.method];output.append(note);
     if(value.error){const p=document.createElement('p');p.textContent=value.error;output.append(p);}
     if (!value.calculation) return;
     const c=value.calculation;
     table(c.table,'Результат');
     if(c.training){const p=document.createElement('p');p.textContent='Обучение: '+c.training.first_month+' — '+c.training.last_month+'. Проверка: '+c.training.holdout_first+' — '+c.training.holdout_last+'. Рядов: '+c.training.series+'. Меньшие MAE и RMSE означают меньшую ошибку на этом окне.';output.append(p);}
     table(c.future_predictions || c.labels,c.future_predictions ? 'Прогноз после конца файла':'Назначения территорий');
-    const formula=document.createElement('p');formula.textContent=c.formula;output.append(formula);
+    const formula=document.createElement('p');
+    formula.textContent=value.parameters.method==='forecast'
+      ? 'Для проверки модели обучены на ранней истории и предсказывают всё проверочное окно из одной даты. Для будущего прогноза они обучены заново на всей истории файла. Отрицательные прогнозы ограничены нулём. Эта проверка не подтверждает качество на независимых будущих данных.'
+      : 'Территории сгруппированы по долям выбранных категорий расходов за одинаковый период. Силуэт показывает разделимость этих групп; он не подтверждает их экономический смысл.';
+    output.append(formula);
+    if(c.metrics){const p=document.createElement('p');p.textContent='Средний силуэт: '+Number(c.metrics.silhouette_mean).toFixed(3)+'. Территорий в оценке: '+c.metrics.silhouette_sample_size+'.';output.append(p);}
     const details=document.createElement('details'),summary=document.createElement('summary'),pre=document.createElement('pre');
     summary.textContent='Проверка, ограничения и версия метода';
-    pre.textContent=JSON.stringify({training:c.training,period:c.period,metrics:c.metrics,limitations:c.limitations,engine:c.engine,receipt:c.execution_receipt},null,2);
+    pre.textContent=JSON.stringify({training:c.training,period:c.period,metrics:c.metrics,formula:c.formula,limitations:c.limitations,engine:c.engine,receipt:c.execution_receipt},null,2);
     details.append(summary,pre);output.append(details);
     const button=document.createElement('button');button.type='button';button.textContent='Скачать модели, результаты и квитанцию';
     button.addEventListener('click',()=>{const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),href=URL.createObjectURL(blob),a=document.createElement('a');a.href=href;a.download=value.run_id+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(href),1000);});output.append(button);
