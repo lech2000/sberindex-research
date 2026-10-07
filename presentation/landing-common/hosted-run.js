@@ -40,7 +40,7 @@
     root.querySelectorAll('[data-run-cluster]').forEach(el=>el.hidden=forecast);
     root.querySelector('[data-run-requirements]').textContent=forecast
       ? 'Для обучения: минимум 18 месяцев истории плюс проверочное окно; до 100 рядов территория × категория. Нужна полная месячная история.'
-      : 'Для кластеризации: одинаковые категории и месяцы во всех территориях, минимум две категории; до 3000 территорий для K-means и 1500 для Ward.';
+      : 'Для кластеризации: одинаковые категории и месяцы во всех территориях, минимум две категории; до 3000 территорий для K-means и 1500 для Ward. Для смысла долей нужны сопоставимые единицы расходов; индексы в денежные суммы не переводятся.';
   }
   method.value = document.querySelector('[data-research-chat]')?.dataset.project==='atlas' ? 'kmeans':'forecast';
   method.addEventListener('change', refreshMethod); refreshMethod();
