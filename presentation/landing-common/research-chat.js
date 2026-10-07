@@ -12,25 +12,56 @@
   const fileInput=root.querySelector('[data-chat-file]');
   const refSelect=root.querySelector('[data-chat-reference]');
   const oldInput=root.querySelector('[data-chat-reference-file]');
-  let signedIn = false, busy = false;
+  let signedIn = false, guestReady = false, previewUsed = false, busy = false;
+  let useLegacyToken = true;
+  const registrationUrl = 'https://agrigate.pro/v2/';
+  const invitation = 'Для следующего вопроса зарегистрируйтесь в Фиксаре. Там можно продолжить углублённый чат и оставить заявку на доступ к проектам и материалам дел. Доступ предоставляется отдельно после рассмотрения заявки.';
   const history = [];
+  const notice = document.createElement('p');
+  notice.className = 'chat-note';
+  notice.textContent = 'Один ответ исследователя доступен без регистрации. Служебная cookie сохраняет гостевую сессию. Для продолжения и заявки на доступ к материалам потребуется регистрация в Фиксаре.';
+  root.querySelector('form').before(notice);
   function headers() {
     const h = {'Content-Type':'application/json', 'X-Fixar-Request':'1'};
     // Compatibility with older authenticated FixAR sessions; never put a key in HTML.
-    for (const key of ['fixar.token','fixar.start.token','aios_token']) {
+    for (const key of useLegacyToken ? ['fixar.token','fixar.start.token','aios_token'] : []) {
       try { const token=localStorage.getItem(key); if(token){ h.Authorization='Bearer '+token; break; } } catch (_) {}
     }
     return h;
   }
-  async function session() {
+  async function session({create=false}={}) {
     if (!api || busy) return;
-    try {
-      const r = await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
-      const who = r.ok ? await r.json() : {};
+    const refresh = async () => {
+      let r = await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+      if (r.status===401 && headers().Authorization) {
+        useLegacyToken=false;
+        r=await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+      }
+      if (!r.ok && r.status!==401) throw new Error('Не удалось проверить сессию Фиксара. Попробуйте позже.');
+      let who = r.ok ? await r.json() : {};
+      if (!who.principal_id && create) {
+        const created = await fetch(api+'/entry/anon',{method:'POST',credentials:'include',headers:headers(),body:JSON.stringify({label:'sberindex-'+root.dataset.project}),signal:AbortSignal.timeout(8000)});
+        if (!created.ok) throw new Error('Не удалось открыть гостевой чат. Попробуйте позже.');
+        // Identity sets the existing HttpOnly cookie; never store its token in JS.
+        const check = await fetch(api+'/entry/whoami',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+        who = check.ok ? await check.json() : {};
+        if (!who.principal_id) throw new Error('Разрешите служебную cookie сайта, чтобы получить гостевой ответ.');
+      }
       signedIn = !!who.principal_id && Number(who.assurance)>=2;
-      status.textContent = signedIn ? 'Готов к вопросу' : 'Ответы после входа';
-      login.textContent = signedIn ? 'Открыть Фиксар ↗' : 'Войти через Фиксар ↗';
-    } catch (_) { signedIn=false; status.textContent='Проверьте вход в Фиксар'; }
+      guestReady = !!who.principal_id && !signedIn;
+      if (guestReady) {
+        const quota = await fetch(api+'/research/sberindex/preview',{credentials:'include',headers:headers(),signal:AbortSignal.timeout(8000)});
+        if (!quota.ok) throw new Error('Гостевой чат сейчас недоступен. Попробуйте позже.');
+        previewUsed = Number((await quota.json()).preview_remaining) === 0;
+      }
+      status.textContent = signedIn ? 'Готов к вопросу' : previewUsed ? 'Продолжение — в Фиксаре' : 'Один ответ без регистрации';
+      login.textContent = signedIn ? 'Открыть Фиксар ↗' : 'Зарегистрироваться в Фиксаре ↗';
+      login.href = registrationUrl;
+    };
+    try {
+      if (create && navigator.locks) await navigator.locks.request('fixar-guest-session',refresh);
+      else await refresh();
+    } catch (e) { guestReady=false; status.textContent='Гостевой чат недоступен'; if(create)throw e; }
   }
   function addMessage(role, text) {
     log.querySelector('.chat-welcome')?.remove();
@@ -39,6 +70,15 @@
     message.append(label);
     String(text).split(/(\*\*[^*\n]+\*\*)/g).forEach(part=>{if(part.startsWith('**')&&part.endsWith('**')){const strong=document.createElement('strong');strong.textContent=part.slice(2,-2);message.append(strong);}else{message.append(document.createTextNode(part));}});
     log.append(message); log.scrollTop=log.scrollHeight; return message;
+  }
+  function showRegistration(question) {
+    addMessage('user',question);
+    const message = addMessage('agent',invitation);
+    const link = document.createElement('a');
+    link.href = registrationUrl; link.textContent = 'Зарегистрироваться и продолжить в Фиксаре ↗';
+    link.className = 'chat-login'; message.append(document.createElement('br'),link);
+    status.textContent = 'Продолжение и заявка на доступ — в Фиксаре';
+    input.value = question;
   }
   const MAX_FILE=8*1024*1024;
   const fields=()=>[fileInput,refSelect,oldInput,root.querySelector('[data-chat-keys]')].filter(Boolean);
@@ -72,25 +112,31 @@
     event.preventDefault();if(busy)return;
     const question=input.value.trim();if(!question)return;
     error.hidden=true;
-    await session();
-    if(!signedIn){error.textContent='Войдите в Фиксар в соседней вкладке, затем вернитесь сюда и отправьте вопрос.';error.hidden=false;return;}
+    try { await session({create:true}); }
+    catch(e){error.textContent=e.message;error.hidden=false;return;}
+    if(busy)return;
+    if(!signedIn && (previewUsed || fileInput?.files[0])){showRegistration(question);return;}
+    if(!signedIn && !guestReady){error.textContent='Не удалось открыть гостевую сессию. Попробуйте позже.';error.hidden=false;return;}
     busy=true;send.disabled=true;fields().forEach(x=>x.disabled=true);status.textContent=fileInput?.files[0]?'Проверяю файл и выполняю расчёт…':'Ищу источники и готовлю ответ…';
     addMessage('user',question);input.value='';
     try {
       const file=fileInput?.files[0],payload={project:root.dataset.project,message:question,history:history.slice(-6)};
       if(file){payload.filename=file.name;payload.content_b64=await encode(file);payload.reference=refSelect.value;if(payload.reference==='uploaded'){const previous=oldInput.files[0];payload.reference_filename=previous?.name||'';payload.reference_b64=await encode(previous);payload.key_columns=root.querySelector('[data-chat-keys]').value.split(';').map(x=>x.trim()).filter(Boolean);if(!payload.key_columns.length)throw new Error('Укажите ключевые столбцы через ; для сравнения выпусков.');}}
-      const r=await fetch(api+'/research/sberindex/'+(file?'analyze':'chat'),{method:'POST',credentials:'include',headers:headers(),body:JSON.stringify(payload),signal:AbortSignal.timeout(60000)});
+      const route=file?'analyze':signedIn?'chat':'preview';
+      const r=await fetch(api+'/research/sberindex/'+route,{method:'POST',credentials:'include',headers:headers(),body:JSON.stringify(payload),signal:AbortSignal.timeout(60000)});
       const value=await r.json();
       if(!r.ok){const detail=value.detail;throw new Error(typeof detail==='string'?detail:(detail?.message||'Сервис временно недоступен. Попробуйте ещё раз.'));}
       const message=addMessage('agent',value.reply||'Ответ не получен. Попробуйте уточнить вопрос.');
+      if(value.registration_required){previewUsed=true;const a=document.createElement('a');a.href=registrationUrl;a.textContent='Зарегистрироваться в Фиксаре ↗';message.append(document.createElement('br'),a);status.textContent='Продолжение — в Фиксаре';input.value=question;return;}
+      if(value.guest_preview){previewUsed=true;const p=document.createElement('p');p.textContent='Гостевой ответ готов. Следующий вопрос, углублённый чат и заявка на доступ — после регистрации в Фиксаре.';message.append(p);}
       showCalculation(message,value);
       if(value.sources?.length){const list=document.createElement('ol');list.className='chat-sources';value.sources.forEach((source,index)=>{const li=document.createElement('li'),a=document.createElement('a');try{const url=new URL(source.url);if(url.protocol!=='https:')return;a.href=url.href;}catch(_){return;}a.target='_blank';a.rel='noopener noreferrer';a.textContent='['+(index+1)+'] '+source.title;li.append(a);list.append(li);});message.append(list);}
       if(value.model){const receipt=document.createElement('div');receipt.className='chat-receipt';receipt.textContent=value.model+' · '+value.checked_at+(value.receipt_sha256?' · квитанция '+value.receipt_sha256.slice(0,12):'');message.append(receipt);}
       history.push({role:'user',content:question},{role:'assistant',content:value.reply});status.textContent=value.calculation?'Расчёт готов; квитанция доступна':value.sources?.length?'Ответ с источниками':'Источников для ответа нет';
       log.scrollTop=log.scrollHeight;
-    } catch(e){input.value=question;const timedOut=e.name==='TimeoutError'||e.name==='AbortError';error.textContent=timedOut?'Подготовка ответа заняла слишком долго. Повторите вопрос.':e.message;error.hidden=false;status.textContent='Ответ не получен';}
+    } catch(e){input.value=question;const timedOut=e.name==='TimeoutError'||e.name==='AbortError';error.textContent=timedOut?'Подготовка ответа заняла слишком долго.':e.message;if(!signedIn)error.textContent+=' Гостевая попытка могла быть использована; для продолжения зарегистрируйтесь в Фиксаре.';error.hidden=false;status.textContent='Ответ не получен';}
     finally{busy=false;send.disabled=false;fields().forEach(x=>x.disabled=false);}
   });
   window.addEventListener('focus',session); document.addEventListener('visibilitychange',()=>{if(!document.hidden)session();});
-  session();
+  session({create:true}).catch(e=>{error.textContent=e.message;error.hidden=false;});
 })();
