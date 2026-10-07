@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-07T11:01:15.043804+00:00",
+  "checked_at_utc": "2026-10-07T12:09:19.950709+00:00",
   "verification_site": "joe/serg, Incus aios2, authenticated case-service GET; no research action closure",
   "cases": [
     {
@@ -72,7 +72,7 @@
           "what": "07. Принять SW, CH, S_Dbw, AVI, AVU и проверки определений; включить результаты в итоговый отчёт. MQ исключён из расчётов релиза решением владельца05.10: SPEC_UNRESOLVED, без запроса и ожидания; Newman Q отдельно.",
           "owner": "prn_fbab9aa00cd46169",
           "due": "2026-09-29T15:00:00Z",
-          "waiting_for": "KB62/17154:один повтор Muse разрешён, ещё не запущен. F7bf03b4289 на12eb6aed,7файлов; privacy313/release187PASS, полный протокол строится. A7OPEN; MQисключён; готовые расчёты не повторять.",
+          "waiting_for": "KB62/17180: A7F7b9adeef7b1393mandatory+64extraPASS,0ошибок. Продe957c9e7новее; чужойKEVlockзанят. ОдинповторMuseразрешён/неизрасходован. Далееактуальноесовмещение/enforce/live; MQисключён, A7OPEN, фонpaused.",
           "agent_profile": null,
           "acceptance_criteria": "",
           "done": false,

@@ -29,5 +29,19 @@
   "previous_candidate_head": "4f02416524653591a560cd625814c3282c3e2ef2",
   "new_paid_review_started": false,
   "remaining_authorized_paid_reviews": 1,
-  "full_tests": "RUNNING;64hosted-focusedPASS; previous4f1393PASSdifferentbase"
+  "full_tests": "1393mandatory+64extraPASS on035a5a51/9adeef7b",
+  "current_production_head": "e957c9e717361a771088709f37b739c53b024a0b",
+  "production_advanced_after_verification": true,
+  "owned_deploy_lock": false,
+  "review_started": false,
+  "latest_handoff_corpora": [
+    {
+      "corpus_id": 62,
+      "document_id": 17180
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17181
+    }
+  ]
 }
