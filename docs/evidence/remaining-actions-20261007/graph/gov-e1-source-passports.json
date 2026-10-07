@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-10-07T10:55:06.704355+00:00",
+  "verification_site": "Mac urllib TLS GET official HTML+Word, textutil extraction and exact tokens/columns; identity official19.04.2024 act GET",
+  "action_id": "act_0fd8ae3b4bf44287",
+  "source_selection_basis": "two2024 economic reports found by official-domain search, independent of any spending residual",
+  "source_reports": 2,
+  "passports": [
+    {
+      "source_id": "kurgan-strategy-2024",
+      "publisher": "Администрация города Кургана",
+      "territory_name": "муниципальное образование город Курган",
+      "territory_level": "municipality",
+      "report_year": 2024,
+      "event_type": "annual_economic_administrative_report",
+      "event_onset_date": null,
+      "event_scope": "whole_reported_municipality; not flood inundation footprint",
+      "published_at_date": "2025-04-28",
+      "published_time_and_timezone": null,
+      "first_seen_at": "2026-10-07T10:48:39.729416+00:00",
+      "available_at": null,
+      "vintage": null,
+      "historical_asof_verified": false,
+      "origin_html": {
+        "source_id": "kurgan-strategy-2024",
+        "url": "https://www.kurgan-city.ru/newclerk/-1/276231/",
+        "checked_at_utc": "2026-10-07T10:48:39.729416+00:00",
+        "timeout_seconds": 20,
+        "attempt": 1,
+        "tls_verified": true,
+        "status": 200,
+        "resolved_url": "https://www.kurgan-city.ru/newclerk/-1/276231/",
+        "content_type": "text/html; charset=windows-1251",
+        "bytes": 525587,
+        "sha256": "9a14f78c3c6baf7ade7a69075c4a16e37b1489f9f8b6b4ce4d192101ddc58d48"
+      },
+      "original_word": {
+        "source_id": "kurgan-strategy-original",
+        "url": "https://www.kurgan-city.ru/tmp/276231.doc",
+        "checked_at_utc": "2026-10-07T10:51:02.727012+00:00",
+        "timeout_seconds": 20,
+        "attempt": 1,
+        "tls_verified": true,
+        "status": 200,
+        "resolved_url": "https://www.kurgan-city.ru/tmp/276231.doc",
+        "content_type": "application/msword",
+        "bytes": 985600,
+        "sha256": "309c4a403dd7e22e5db3124ca37c1d7ebc3e3cc3f9c3ceabc6a27afeea818f6e",
+        "magic_hex": "d0cf11e0a1b11ae1"
+      },
+      "original_text_sha256": "3fc35dc40c2e0d00557787079631e9d779e58f7d8f0d49fe800e5b757c817964",
+      "document_number": "4377",
+      "geography": {
+        "oktmo_native8": "37701000",
+        "oktmo_source": {
+          "url": "https://www.kurgan-city.ru/newclerk/7242/262255/",
+          "checked_at": "2026-10-07T10:53:14.611216+00:00",
+          "attempt": 1,
+          "status": 200,
+          "sha256": "db967b071aedc484f827b228b663307764afa5b6446fd6357167b4386a2a2bee",
+          "bytes": 116155
+        },
+        "sber_territory_id": "1333",
+        "sber_binding_basis": "Existing frozen Flood_legal_cohort_20261005/crosswalk.json EXACT_VALID_IDENTITY; not newly inferred by name",
+        "new_historical_legal_crosswalk_created": false
+      }
+    },
+    {
+      "source_id": "kurgan-efficiency-2024",
+      "publisher": "Администрация города Кургана",
+      "territory_name": "муниципальное образование город Курган",
+      "territory_level": "municipality",
+      "report_year": 2024,
+      "event_type": "annual_economic_administrative_report",
+      "event_onset_date": null,
+      "event_scope": "whole_reported_municipality; not flood inundation footprint",
+      "published_at_date": "2025-04-25",
+      "published_time_and_timezone": null,
+      "first_seen_at": "2026-10-07T10:48:39.733313+00:00",
+      "available_at": null,
+      "vintage": null,
+      "historical_asof_verified": false,
+      "origin_html": {
+        "source_id": "kurgan-efficiency-2024",
+        "url": "https://www.kurgan-city.ru/about/effect/1223731/",
+        "checked_at_utc": "2026-10-07T10:48:39.733313+00:00",
+        "timeout_seconds": 20,
+        "attempt": 1,
+        "tls_verified": true,
+        "status": 200,
+        "resolved_url": "https://www.kurgan-city.ru/about/effect/1223731/",
+        "content_type": "text/html; charset=windows-1251",
+        "bytes": 139797,
+        "sha256": "7663af23dc3b6ec89261bd60e678c4c5b4eeadb876a8cb7f8730570a00f27cdd"
+      },
+      "original_word": {
+        "source_id": "kurgan-efficiency-original",
+        "url": "https://www.kurgan-city.ru/upload/iblock/137/iuqoe6okgzg1jb0wf8tysfc4t52vm3xk/%D0%94%D0%9E%D0%9A%D0%9B%D0%90%D0%94%20%D0%9F%D0%9E%D0%9A%D0%90%D0%97%D0%90%D0%A2%D0%95%D0%9B%D0%98%20-%202024%20%D0%B3%D0%BE%D0%B4%21.doc",
+        "checked_at_utc": "2026-10-07T10:51:02.728790+00:00",
+        "timeout_seconds": 20,
+        "attempt": 1,
+        "tls_verified": true,
+        "status": 200,
+        "resolved_url": "https://www.kurgan-city.ru/upload/iblock/137/iuqoe6okgzg1jb0wf8tysfc4t52vm3xk/%D0%94%D0%9E%D0%9A%D0%9B%D0%90%D0%94%20%D0%9F%D0%9E%D0%9A%D0%90%D0%97%D0%90%D0%A2%D0%95%D0%9B%D0%98%20-%202024%20%D0%B3%D0%BE%D0%B4%21.doc",
+        "content_type": "application/msword",
+        "bytes": 165376,
+        "sha256": "d5a78e2711e16f2196ef8b726f804c9192c98d3504945da31dd0463b1a4dc367",
+        "magic_hex": "d0cf11e0a1b11ae1"
+      },
+      "original_text_sha256": "4af864ec98ef62c26b205655a3e4289f5de697f7a9ab6a79eff41f2875030c20",
+      "document_number": null,
+      "geography": {
+        "oktmo_native8": "37701000",
+        "oktmo_source": {
+          "url": "https://www.kurgan-city.ru/newclerk/7242/262255/",
+          "checked_at": "2026-10-07T10:53:14.611216+00:00",
+          "attempt": 1,
+          "status": 200,
+          "sha256": "db967b071aedc484f827b228b663307764afa5b6446fd6357167b4386a2a2bee",
+          "bytes": 116155
+        },
+        "sber_territory_id": "1333",
+        "sber_binding_basis": "Existing frozen Flood_legal_cohort_20261005/crosswalk.json EXACT_VALID_IDENTITY; not newly inferred by name",
+        "new_historical_legal_crosswalk_created": false
+      }
+    }
+  ],
+  "observations": [
+    {
+      "source_id": "kurgan-strategy-2024",
+      "source_location": "Annex, Section I, row2, report column2024",
+      "indicator": "housing_commissioned",
+      "value": "215.2",
+      "unit": "thousand_m2",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    },
+    {
+      "source_id": "kurgan-strategy-2024",
+      "source_location": "Annex, Section I,row3, report column2024",
+      "indicator": "nominal_wage_index_large_medium_organizations",
+      "value": "124.4",
+      "unit": "percent_of_previous_year",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    },
+    {
+      "source_id": "kurgan-strategy-2024",
+      "source_location": "Annex, Section I,row4, report column2024",
+      "indicator": "registered_unemployment_year_end",
+      "value": "0.14",
+      "unit": "percent",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    },
+    {
+      "source_id": "kurgan-efficiency-2024",
+      "source_location": "Word appendix,row1, actual2024 column",
+      "indicator": "SME_count_per_10000_people",
+      "value": "392.69",
+      "unit": "entities_per_10000_people",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    },
+    {
+      "source_id": "kurgan-efficiency-2024",
+      "source_location": "Word appendix,row2, actual2024 column",
+      "indicator": "SME_employee_share",
+      "value": "37.43",
+      "unit": "percent",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    },
+    {
+      "source_id": "kurgan-efficiency-2024",
+      "source_location": "Word appendix,row8, large_medium row,actual2024 column",
+      "indicator": "nominal_monthly_accrued_wage_large_medium_enterprises_and_nonprofits",
+      "value": "75790.70",
+      "unit": "RUB_per_month",
+      "measure": "reported_actual",
+      "period_start": "2024-01-01",
+      "period_end_exclusive": "2025-01-01",
+      "oktmo_native8": "37701000",
+      "provenance_class": "source_estimate",
+      "available_at": null
+    }
+  ],
+  "reported_discrepancies": [
+    {
+      "claim": "wage growth2024",
+      "strategy_report_percent_index": "124.4",
+      "efficiency_html_growth_percent": "24.8",
+      "resolution": "UNRESOLVED_DEFINITION_OR_RELEASE_DIFFERENCE; do not consolidate because organizations vs enterprises/nonprofits may differ"
+    }
+  ],
+  "constraints": [
+    "Both reports concern Kurgan; original action says Kurgan OR Tyumen, not both cities.",
+    "Two documents are not independent shock replications; shared215.2 housing value may have common provenance.",
+    "Reports published2025, never use as2024 as-of features.",
+    "No causal spending effect or flood ground truth asserted.",
+    "RawWord/HTML retained privately; publish only passports/derived bounded observations after permission review."
+  ],
+  "ready_for_acceptance": true,
+  "kb_integrated": false,
+  "case_action_closed": false
+}

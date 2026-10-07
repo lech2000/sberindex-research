@@ -1,0 +1,102 @@
+[
+  {
+    "id": "E01",
+    "question": "Атрибуты без графа",
+    "method": "k-means",
+    "protocol": "Калибровочные признаки; одинаковые МО/месяцы",
+    "artifact": "Базовое разбиение и таблица метрик",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E02",
+    "question": "Граф без временной регуляризации",
+    "method": "Leiden или Louvain",
+    "protocol": "Один граф и раскрытый выбор resolution",
+    "artifact": "Метрики, компоненты, изоляты",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E03",
+    "question": "Совместные признаки и сеть",
+    "method": "spectral",
+    "protocol": "Те же данные, сопоставимое K",
+    "artifact": "Качество против E01/E02",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E04",
+    "question": "Временная связность",
+    "method": "multilayer_or_regularized",
+    "protocol": "Независимые слои против временной модели",
+    "artifact": "Устойчивость без подавления реальных переходов",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E05",
+    "question": "Абляции признаков и рёбер",
+    "method": "ablation",
+    "protocol": "Фиксированный протокол выбора",
+    "artifact": "Роль мобильности, масштаба, географии",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E06",
+    "question": "Устойчивость",
+    "method": "robustness",
+    "protocol": "5 seed, блоки времени, возмущения",
+    "artifact": "ARI/NMI, стабильность и слабые места",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E07",
+    "question": "Экономическая проверка",
+    "method": "external_validation",
+    "protocol": "Показатели не использованы при обучении",
+    "artifact": "Профили типов, 3–5 МО и контрпримеры",
+    "status": "planned",
+    "metrics": null
+  },
+  {
+    "id": "E00",
+    "question": "Доли против объёма: нужен ли масштаб для типологии (H5)",
+    "method": "kmeans primary; Ward sensitivity; canonical and legacy encoding audit",
+    "protocol": "Frozen0a8a15c: K5/seed20260921 primary, K2 and six-seed sensitivity, GroupKFold by70regions; six feature arms",
+    "artifact": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+    "status": "executed_inconclusive",
+    "metrics": {
+      "panel_tids": 1896,
+      "external_tids": 1248,
+      "external_regions": 70,
+      "oof_rows": 244608,
+      "cluster_fits": 588,
+      "primary_mixed_vs_shares_wage_reduction_percent": -1.266,
+      "primary_mixed_vs_shares_employment_reduction_percent": 0.358,
+      "primary_intervals_include_zero": true,
+      "scientific_pass": false
+    },
+    "previous_panel_counts": {
+      "panel_tids": 1896,
+      "panel_rows": 273024,
+      "stable_24m_6cat": 2016,
+      "common_all5": 2028,
+      "spending_tids": 2190,
+      "months": 24,
+      "categories": 6
+    }
+  },
+  {
+    "id": "E01b",
+    "question": "Цена пропусков: полные 2 016 МО против полной панели (H6)",
+    "method": "sberindex_cluster",
+    "protocol": "E01 на панели 2 016 полных МО vs все МО, тот же k/seed",
+    "artifact": "Дельта метрик + отчёт покрытия",
+    "status": "ready_to_run",
+    "metrics": null
+  }
+]

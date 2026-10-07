@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-07T06:53:43.270557+00:00",
+  "checked_at_utc": "2026-10-07T11:01:15.043804+00:00",
   "verification_site": "joe/serg, Incus aios2, authenticated case-service GET; no research action closure",
   "cases": [
     {
@@ -72,7 +72,7 @@
           "what": "07. Принять SW, CH, S_Dbw, AVI, AVU и проверки определений; включить результаты в итоговый отчёт. MQ исключён из расчётов релиза решением владельца05.10: SPEC_UNRESOLVED, без запроса и ожидания; Newman Q отдельно.",
           "owner": "prn_fbab9aa00cd46169",
           "due": "2026-09-29T15:00:00Z",
-          "waiting_for": "KB62/17106:F7b1493b230 наd625166;1321mandatory+25focusedPASS,0fail/skip. Museenforceждёт отдельного разрешения; фонпаузе. Далееguard/живаяприёмка. Таблицыготовы; MQисключён,неповторятьрасчёты. A7OPEN.",
+          "waiting_for": "KB62/17154:один повтор Muse разрешён, ещё не запущен. F7bf03b4289 на12eb6aed,7файлов; privacy313/release187PASS, полный протокол строится. A7OPEN; MQисключён; готовые расчёты не повторять.",
           "agent_profile": null,
           "acceptance_criteria": "",
           "done": false,
@@ -125,30 +125,6 @@
           "acceptance_criteria": "",
           "done": false,
           "created_at": "2026-09-20T05:44:54.745092Z"
-        },
-        {
-          "id": "act_1b485908c3264584",
-          "case_id": "case_66cae4a89ba6473f",
-          "what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
-          "owner": "prn_fbab9aa00cd46169",
-          "due": "2026-10-01T15:00:00Z",
-          "waiting_for": "После пунктов 08",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-20T05:44:55.192215Z"
-        },
-        {
-          "id": "act_a3f272cfc5594ec7",
-          "case_id": "case_66cae4a89ba6473f",
-          "what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
-          "owner": "prn_fbab9aa00cd46169",
-          "due": "2026-10-03T15:00:00Z",
-          "waiting_for": "KB75/16258: готовая сводка ATF и тезисов опубликована; использовать3истории и бюджетный контекст7/12+supplement. Формулировать ограничения/контрпример; не искать подтверждения типов по красивым событиям.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-20T05:44:55.336158Z"
         },
         {
           "id": "act_63eabe3fd8aa4770",
@@ -235,6 +211,18 @@
           "created_at": "2026-09-24T18:02:55.396825Z"
         },
         {
+          "id": "act_1b485908c3264584",
+          "case_id": "case_66cae4a89ba6473f",
+          "what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+          "owner": "prn_fbab9aa00cd46169",
+          "due": "2026-10-01T15:00:00Z",
+          "waiting_for": "KB75/17162: E06/E07 выполнены: устойчивость/внешние исходы/интервалы; A8 4/4 отрицательный. Научный PASS=false. A6/08/A7 OPEN.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-20T05:44:55.192215Z"
+        },
+        {
           "id": "act_431fff34024b4e89",
           "case_id": "case_66cae4a89ba6473f",
           "what": "A6.external ACCEL-20261003: проверить описательное сопоставление декабрьских назначений A6 с уже скачанными ФНС МСП и market_access; не заполнять пропуски, показать покрытие/ambiguous/чувствительность адресной маски. Не scientific PASS.",
@@ -293,6 +281,18 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-10-03T19:18:54.781884Z"
+        },
+        {
+          "id": "act_a3f272cfc5594ec7",
+          "case_id": "case_66cae4a89ba6473f",
+          "what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+          "owner": "prn_fbab9aa00cd46169",
+          "due": "2026-10-03T15:00:00Z",
+          "waiting_for": "KB75/17162: Метод и пять описательных историй МО+контроль готовы, источники/периоды/SHA проверены. Причинность/экономическая идентичность не подтверждены.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-20T05:44:55.336158Z"
         },
         {
           "id": "act_e9a2d29508064fbc",
@@ -493,18 +493,6 @@
           "created_at": "2026-09-20T05:44:58.293847Z"
         },
         {
-          "id": "act_24f1b02785b349d7",
-          "case_id": "case_008f37d03cf541e5",
-          "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
-          "owner": "prn_fbab9aa00cd46169",
-          "due": "2026-09-28T15:00:00Z",
-          "waiting_for": "После пунктов 03",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-20T05:44:58.361186Z"
-        },
-        {
           "id": "act_16ce6d42a8534f00",
           "case_id": "case_008f37d03cf541e5",
           "what": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
@@ -551,18 +539,6 @@
           "acceptance_criteria": "",
           "done": false,
           "created_at": "2026-10-05T10:14:59.401625Z"
-        },
-        {
-          "id": "act_8a0815d5461f4745",
-          "case_id": "case_008f37d03cf541e5",
-          "what": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отчёт GATE_REPORT; код через fixar-devops.",
-          "owner": "sberindex_radar_researcher",
-          "due": "2026-10-07T00:00:00Z",
-          "waiting_for": "KB76/17017:два equal-informationH12пилота120рядов/720пар готовы, маски различны. MAE598,09vs946,14 и679,75vs1707,22 несливать. Historicalas-of/vintageOPEN; старыйseasonalH12unsupported. Повторfitsненужен.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-09-30T19:44:44.205616Z"
         },
         {
           "id": "act_398bedb2669a4e2a",
@@ -635,6 +611,18 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-09-24T18:02:57.454844Z"
+        },
+        {
+          "id": "act_24f1b02785b349d7",
+          "case_id": "case_008f37d03cf541e5",
+          "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
+          "owner": "prn_fbab9aa00cd46169",
+          "due": "2026-09-28T15:00:00Z",
+          "waiting_for": "KB76/17163: 06 выполнен: журнал6событий/5источников, matching/cooldown3 и синтетические проверки. Историческийasof0/6; W01 отдельно OPEN.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-20T05:44:58.361186Z"
         },
         {
           "id": "act_75836e1bc8f94869",
@@ -791,6 +779,18 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-10-05T19:00:40.151532Z"
+        },
+        {
+          "id": "act_8a0815d5461f4745",
+          "case_id": "case_008f37d03cf541e5",
+          "what": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отчёт GATE_REPORT; код через fixar-devops.",
+          "owner": "sberindex_radar_researcher",
+          "due": "2026-10-07T00:00:00Z",
+          "waiting_for": "KB76/17163: Horizon audit h1/3/6/12 выполнен; маски/MAE/222exclusions проверены. F7b forecast_contract request и GATE_REPORT приняты. Vintage/holdout OPEN.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-09-30T19:44:44.205616Z"
         },
         {
           "id": "act_e346385f69e54019",
@@ -967,18 +967,6 @@
           "created_at": "2026-09-30T06:32:23.978802Z"
         },
         {
-          "id": "act_0fd8ae3b4bf44287",
-          "case_id": "case_43de12a8dc2e4abd",
-          "what": "GOV-E1: скачать два официальных отчёта Кургана или Тюмени о паводках/экономике 2024. Нормализовать событие, ОКТМО, единицы, даты публикации и first_seen, SHA. Не повторять готовые три истории и не искать соцсети.",
-          "owner": "sberindex_graph_steward",
-          "due": "2026-10-04T00:00:00Z",
-          "waiting_for": "KB77/16013: 5 источников и 6 событий уже проверены. Новые отчёты выбирать независимо от расходов; неизвестные available_at/vintage оставить null. Apify — для сложного разбора.",
-          "agent_profile": null,
-          "acceptance_criteria": "",
-          "done": false,
-          "created_at": "2026-10-03T19:18:55.218559Z"
-        },
-        {
           "id": "act_aa129ecf4e4643d4",
           "case_id": "case_43de12a8dc2e4abd",
           "what": "GOV-B1: по бюджетному источнику 77/16128 проверить пять геопаспортов файлов 36/42/43/53/67: финансовый орган, отчётная территория и уровень. Связать с официальным справочником, сохранить конфликты шапок; никаких сумм отдельных МО или соцсетей.",
@@ -1085,6 +1073,18 @@
           "acceptance_criteria": "",
           "done": true,
           "created_at": "2026-10-03T12:04:46.298896Z"
+        },
+        {
+          "id": "act_0fd8ae3b4bf44287",
+          "case_id": "case_43de12a8dc2e4abd",
+          "what": "GOV-E1: скачать два официальных отчёта Кургана или Тюмени о паводках/экономике 2024. Нормализовать событие, ОКТМО, единицы, даты публикации и first_seen, SHA. Не повторять готовые три истории и не искать соцсети.",
+          "owner": "sberindex_graph_steward",
+          "due": "2026-10-04T00:00:00Z",
+          "waiting_for": "KB77/17164: GOV-E1 выполнен:2официальных экономических отчёта Кургана2024, оригиналыWord/6показателей/ОКТМО/паспорта/SHA. Выпуск2025; historicalasof=false, научныйPASS=false.",
+          "agent_profile": null,
+          "acceptance_criteria": "",
+          "done": true,
+          "created_at": "2026-10-03T19:18:55.218559Z"
         },
         {
           "id": "act_7ad33d76bb2a4b12",

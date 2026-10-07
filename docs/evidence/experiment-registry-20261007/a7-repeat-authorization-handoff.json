@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-07T10:15:18.661804+00:00",
+  "candidate": {
+    "base": "12eb6aed30cad75ce847328e061e88c6395ed681",
+    "head": "f03b428998091340d5e5688210a0e19f79b85fc8",
+    "previous_candidate_head": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+    "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-muse-repeat-current-base-20261007/work",
+    "changed_files": [
+      "infrastructure/agrigate-pro/site/v2/cases.js",
+      "infrastructure/agrigate-pro/site/v2/index.html",
+      "scripts/release_evidence.py",
+      "services/case_service/app.py",
+      "services/dialog_service/app.py",
+      "tests/test_data_boundary_action_classification.py",
+      "tests/test_research_material_id_priority.py"
+    ],
+    "neighbor_research_access_preserved": true,
+    "production_code_changed": false,
+    "new_paid_review_started": false,
+    "remaining_authorized_paid_reviews": 1,
+    "authorization_text": "Разрешаю один повторный прогон",
+    "full_tests": "RUNNING exact current base; earlier1282PASS does not certify this new head",
+    "patch_sha256": "dc7f08d82b8354b6c1599debab7ace2162887091878f45c173f82a5ba0e98cbe",
+    "patch_bytes": 13920,
+    "tree": "bed2727f160dc54ac9f8143da996c316ccdba0ed",
+    "muse_started": false,
+    "live_acceptance_completed": false
+  },
+  "kb": [
+    {
+      "corpus_id": 62,
+      "document_id": 17154,
+      "full_readback_verified": true,
+      "text_sha256": "0661b9fb4691ca822e354bef5b7a0c4bab2e6bf6e501f296c5424ba5dd13eb93",
+      "checked_at": "2026-10-07T10:15:21.381422+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17155,
+      "full_readback_verified": true,
+      "text_sha256": "0661b9fb4691ca822e354bef5b7a0c4bab2e6bf6e501f296c5424ba5dd13eb93",
+      "checked_at": "2026-10-07T10:15:22.898107+00:00"
+    }
+  ],
+  "cases": {
+    "checked_at": "2026-10-07T10:15:26.648252+00:00",
+    "materials": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "material_id": "mat_a7_repeat_authorized_current_base_20261007_atlas",
+        "full_readback_verified": true
+      },
+      {
+        "case_id": "case_d058db85c48a487c",
+        "material_id": "mat_a7_repeat_authorized_current_base_20261007_curator",
+        "full_readback_verified": true
+      }
+    ],
+    "completed_actions": [],
+    "updated_actions": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "action_id": "act_82e6846e4c3d42a4",
+        "done": false,
+        "waiting_for_readback_verified": true
+      }
+    ],
+    "scientific_gates_closed": [],
+    "contest_submitted": false
+  },
+  "new_review_started": false,
+  "new_paid_review_remaining": 1,
+  "previous_paid_review_count": 1
+}

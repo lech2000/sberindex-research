@@ -1,0 +1,420 @@
+{
+  "checked_at_utc": "2026-10-07T10:48:21.475664+00:00",
+  "checked_where": "2026-10-07 Mac; read-only scientific repo, byte hashes/protocol review and local calendar auditor",
+  "source_action_counts": {
+    "total": 38,
+    "done": 29,
+    "open": 9
+  },
+  "eligible_technical_closure_count": 2,
+  "live_actions_closed": 0,
+  "required_evidence_acceptance_before_CAS": true,
+  "scientific_pass": false,
+  "new_independent_holdout": false,
+  "actions": [
+    {
+      "id": "act_0c71cedc50ad4508",
+      "label": "05 / F04 Chronos-2",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "05. Выполнить F04 Chronos-2 с ревизией и замером ресурсов; F05 TimesFM только при запасе времени.",
+      "technically_completed": "Chronos-T5-tiny full R8:171150rows,73524 origin-series forecasts; pinned29d808…; MPS batch64; elapsed360.931s and sum per-work runtime19667.675s, not measured peak RSS. R4 reports OOM at256/~9GB and11465.9s, a different run.",
+      "remaining": "Required Chronos-2 execution absent. Need explicit owner deferral/cancellation OR a new frozen Chronos-2 protocol/revision/resource run; never mark Tiny as Chronos-2. TimesFM optional, unexecuted.",
+      "evidence": [
+        {
+          "path": "shock-radar/runs/R8_tsfm_deterministic_20260928/manifest.json",
+          "sha256": "be9adc52a1cc1e53721dc42b73fa7ffd874e512c35b358f9ed1068ac343352f8"
+        },
+        {
+          "path": "shock-radar/runs/R8_tsfm_deterministic_20260928/metrics.json",
+          "sha256": "4b1979250bf14176007c62de9c086d5f00fa3cc3c049096f0a49f69c7a4ada34"
+        },
+        {
+          "path": "shock-radar/runs/R4/model_card.md",
+          "sha256": "254bfa73fb31a558c65678f724c2d12263897e3ff1f6969e8643c3127ac94d48"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_0c71cedc50ad4508",
+          "what": "05. Выполнить F04 Chronos-2 с ревизией и замером ресурсов; F05 TimesFM только при запасе времени.",
+          "waiting_for": "После пунктов 04",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "F04 Tiny29d808 выполнен и отрицательный относительно Prophet; Chronos-2 НЕ запускался, остаётся исходным обязательством05. TimesFM опционален и не запускался. Нужен явный owner scope decision либо отдельный Chronos-2 протокол/ресурсы; старое leakyR3 сравнение отменено.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_24f1b02785b349d7",
+      "label": "06 / event journal + matching/cooldown/synthetic",
+      "decision": "READY_TECHNICAL_CLOSE_AFTER_EVIDENCE_ACCEPTANCE",
+      "original_promised_scope": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
+      "technically_completed": "Prepared6records/5officialsources independent of detector-hit selection; source URLs/HTML hashes and present-day first_seen separate from claimed publication. Frozen matching and cooldown3; synthetic60-event registry; N1/N2 480runs,14400credits/108intervals; N3 strict0/6 and136512rows/60fits.",
+      "remaining": "No further local preparation required. Preserve historical asof/vintage unknown and onset not economic truth; real W01 remains a separate open obligation.",
+      "evidence": [
+        {
+          "path": "shock-radar/events/registry_rules.json",
+          "sha256": "66d8054ee649e4991168028aa9e0dd2eda572b374d1a30d73ee0a7af6d4e836f"
+        },
+        {
+          "path": "shock-radar/protocol/event_taxonomy.yaml",
+          "sha256": "d9028a514530971884617a8b80558af14da662cb5ff386abba7e736a6106c31a"
+        },
+        {
+          "path": "shock-radar/runs/Official_cases_20261003/registry.json",
+          "sha256": "eb5462a5e34c96ab0a710eb58325f9d0d9bdee1116bc3f685d24791535db4214"
+        },
+        {
+          "path": "shock-radar/runs/Official_cases_20261003/protocol.json",
+          "sha256": "d9c4e732329fd391c9de462b5c9c47b9717a474bc735a97dc0dff38bcaffae2a"
+        },
+        {
+          "path": "shock-radar/runs/N1_N2_return_control_20261007/metrics.json",
+          "sha256": "172f8268bfd7754c86eebc56ee19fd9861821dc580ba6c0d67f606291af150a5"
+        },
+        {
+          "path": "shock-radar/runs/N1_N2_return_control_20261007/independent-audit.json",
+          "sha256": "3f60af8c6712ed5b71ec7f7533ffaa75901d00a5f4f670be5f6a4178a723d3f6"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_24f1b02785b349d7",
+          "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
+          "waiting_for": "После пунктов 03",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "06 технически выполнен: независимый от hits journal6/5, matching и cooldown3, синтетические проверки/N1N2. Результат ограниченный: strict историческийasof0/6, precision/recall реальных шоковNA; это не W01/earlywarning и не SCIENTIFIC_PASS. Доказательства в closeout/audit, принять материал прежде CAS done.",
+          "done": true,
+          "status": "completed"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_16ce6d42a8534f00",
+      "label": "MANUAL contest",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
+      "technically_completed": "Official PDF §3.1 confirms one direction per participant/team; §2.4.1 Oct9 inclusive. Current verified receipt contains date/SHA and visual review.",
+      "remaining": "Exact closing hour/timezone unspecified; organiser baseline code/forecast availability has no verified resolution in package. Need published official URL or written reply; no messaging performed.",
+      "evidence": [
+        {
+          "path": "docs/CONTEST_RULES_CLARIFICATION_2026-10-07.md",
+          "sha256": "0ea998ac5f99a3b1657b83169b7f46ba4fefee8bb848cdcb084a677faa03caf7"
+        },
+        {
+          "path": "docs/evidence/research-closeout-20261006/contest-rules-verification.json",
+          "sha256": "9dccb31f5e53b7d3294fee71de7b1458a94769ac8438f7eb0864cfab8b5e6a12"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_16ce6d42a8534f00",
+          "what": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
+          "waiting_for": "Письменный ответ организатора или опубликованный URL; указать дату и источник.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Exact closing hour/timezone unspecified; organiser baseline code/forecast availability has no verified resolution in package. Need published official URL or written reply; no messaging performed.",
+          "done": false,
+          "status": "open",
+          "what": "MANUAL конкурс: п.3.1 официального положения уже подтверждает одно направление на участника/команду. Уточнить точный час/часовой пояс закрытия09.10.2026 и наличие опубликованных organiser baseline-кода/прогнозов. Приложить письменный ответ или официальныйURL с датой/SHA; не блокирует описательные R9/аудит."
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_af3ef33f2761488e",
+      "label": "09 / W01 + A01",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
+      "technically_completed": "A01 bounded future-mutation and conservative-lag checks executed; N1/N2 and N3/controls/bootstrap executed. News publication-proxy h1 worse3.91%, strict0/6.",
+      "remaining": "W01 warning_model before real independently labeled event_start not executed. Need frozen warning protocol, valid independent event ground truth/asof and unseen temporal holdout. No synthetic detection or retrospective march-alert can close W01.",
+      "evidence": [
+        {
+          "path": "shock-radar/runs/N3_official_news_value_20261007/metrics.json",
+          "sha256": "31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855"
+        },
+        {
+          "path": "shock-radar/runs/N3_official_news_value_20261007/independent-audit.json",
+          "sha256": "9f75c4a19195027bb75323b631c5982c4d7a392e863bfaad9c8f2237f9379e6f"
+        },
+        {
+          "path": "shock-radar/runs/N1_N2_return_control_20261007/metrics.json",
+          "sha256": "172f8268bfd7754c86eebc56ee19fd9861821dc580ba6c0d67f606291af150a5"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_af3ef33f2761488e",
+          "what": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
+          "waiting_for": "KB76/16980:N3выполнен136512rows/60fits,proxyh1+3.91%MAE;strict0/6. N1/N2DONE:480runs/freshmake/audit. RealW01/asofvintageOPEN;неповторятьэтиопыты. СледующийP0RAG/публикация/доступ.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "A01/N1N2/N3 технически выполнены, включая negative/null/bootstrap; W01 НЕ выполнен. Нужны независимые real event_start/историческая доступность, warning model до onset и новый holdout. Повторять готовые480runs/60fits не нужно; закрытие compound09 пока недопустимо.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_febbbf8723e94197",
+      "label": "10 / locked final test",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "10. Зафиксировать выбор модели, затем однократно открыть финальный тест; сохранить все отрицательные результаты.",
+      "technically_completed": "R8 closed INCONCLUSIVE; exploratory R9 and two H12 pilots documented; no new independent final test claimed.",
+      "remaining": "Cannot freeze a selected winner and open final test on old viewed2024. Await unseen period and verified historical release/vintage; lock protocol and model before accessing targets.",
+      "evidence": [
+        {
+          "path": "shock-radar/runs/R9_intervals_20261003/metrics.json",
+          "sha256": "fd39a328a823a493770bcbcf74e57705ad494f283e08e4cf6263baa827c19c46"
+        },
+        {
+          "path": "shock-radar/runs/R10_equal_information_h12_20261006/protocol.json",
+          "sha256": "ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_febbbf8723e94197",
+          "what": "10. Зафиксировать выбор модели, затем однократно открыть финальный тест; сохранить все отрицательные результаты.",
+          "waiting_for": "После пункта 09 И только при новом независимом временном holdout и подтверждённом историческом available_at/vintage; R8 завершён inconclusive, прежние месяцы не считать закрытым тестом.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Cannot freeze a selected winner and open final test on old viewed2024. Await unseen period and verified historical release/vintage; lock protocol and model before accessing targets.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_e9f99bf520984925",
+      "label": "R9 national control",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция corpus76, кодовые задачи через F7b.",
+      "technically_completed": "Frozen conditional120series/720keys/2160fits and regressor120series/720keys/1452fits completed; future national path derived from past; all categories including negative marketplaces retained. Existing KB76/16936 receipt referenced by action.",
+      "remaining": "Historical release/archive investigation to origins2023-07..12 not evidenced by search receipt in reviewed package. NO_HISTORICAL_ASOF is truthful eligibility failure, not archival absence proof. Keep original compound action open or split with explicit residual historical audit retained, never erase obligation.",
+      "evidence": [
+        {
+          "path": "shock-radar/runs/R10_equal_information_h12_20261006/protocol.json",
+          "sha256": "ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62"
+        },
+        {
+          "path": "shock-radar/runs/R10_equal_information_h12_20261006/metrics.json",
+          "sha256": "c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274"
+        },
+        {
+          "path": "shock-radar/runs/R10_equal_information_h12_20261006/independent-audit.json",
+          "sha256": "3462761009d6e088dd4b259a77921e0508f9015ceb7bff1e87dad8b5f9139f51"
+        },
+        {
+          "path": "shock-radar/runs/National_equal_information_20261006/protocol.json",
+          "sha256": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976"
+        },
+        {
+          "path": "shock-radar/runs/National_equal_information_20261006/metrics.json",
+          "sha256": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_e9f99bf520984925",
+          "what": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция corpus76, кодовые задачи через F7b.",
+          "waiting_for": "Equalinfoпилотготов06.10:2160fits/720keys,MAE679,746vs1707,224;KB76/16936,publicreport. Историческийavailable_at/vintageНЕподтверждён: NO_HISTORICAL_ASOF;остаётсяэтачасть,неповторятьfits. НаучныйPASSfalse.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Equal-info control выполнен: два разных пилота720keys,2160/1452fits; negative marketplaces сохранены, будущая nationalactual не читается. Historical release search/архив кorigins2023-07..12 не подтверждён квитанцией: NO_HISTORICAL_ASOF, scientificfalse. Не повторять fits; нужен доказательный архивный аудит либо явное split с сохранённым open residual.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_8a0815d5461f4745",
+      "label": "R9 Horizon audit",
+      "decision": "READY_TECHNICAL_CLOSE_AFTER_EVIDENCE_ACCEPTANCE",
+      "original_promised_scope": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отчёт GATE_REPORT; код через fixar-devops.",
+      "technically_completed": "All four h1/3/6/12 audited: six actual origins each, train months18..23/16..21/13..18/7..12; paired294570rows and222insufficient_train exclusions; exact MAE/Prophet/audit SHA. New local calendar audit documents impossible lag2/min12 H12 and separate pilot masks; concrete F7b contract request prepared.",
+      "remaining": "Technical audit complete. Parent attach GATE_REPORT/audit and F7b request, record acceptance; actual code change goes through F7b. Historical asof/newholdout are explicit limitations in separate open actions, not prerequisites to reporting feasibility.",
+      "evidence": [
+        {
+          "path": "shock-radar/runs/R9_baseline_20261001/metrics.json",
+          "sha256": "d5091592f317254d2ceae410fb01e4867f27fd37b0670103f1a6f278825411e1"
+        },
+        {
+          "path": "shock-radar/runs/R9_prophet_full_20261001/audit.json",
+          "sha256": "13188f07c72b8ef583e089d63cf661fc91e791d4581ca46073e464d343559e04"
+        },
+        {
+          "path": "shock-radar/runs/R9_intervals_20261003/metrics.json",
+          "sha256": "fd39a328a823a493770bcbcf74e57705ad494f283e08e4cf6263baa827c19c46"
+        },
+        {
+          "path": "shock-radar/protocol/forecast_contract.yaml",
+          "sha256": "c4875470aa2b13f0b1131c7472bdf6f99f77367078eab2c2a8171b4b9fc7f25f"
+        },
+        {
+          "path": "shock-radar/runs/R10_equal_information_h12_20261006/metrics.json",
+          "sha256": "c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274"
+        },
+        {
+          "path": "shock-radar/runs/National_equal_information_20261006/metrics.json",
+          "sha256": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_8a0815d5461f4745",
+          "what": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отчёт GATE_REPORT; код через fixar-devops.",
+          "waiting_for": "KB76/17017:два equal-informationH12пилота120рядов/720пар готовы, маски различны. MAE598,09vs946,14 и679,75vs1707,22 несливать. Historicalas-of/vintageOPEN; старыйseasonalH12unsupported. Повторfitsненужен.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Horizon audit технически выполнен: h1/3/6/12,6origins/h,train/test/MAE Prophet и222exclusions проверены SHA. min12+lag2 calendarorigins10/8/5/0; сезонныйH12unsupported. Два short-historynationalH12pilot отдельно. КонкретныйF7b forecast_contract request и GATE_REPORT приложить/принять; historicalasof=false, holdout=false, sciencefalse.",
+          "done": true,
+          "status": "completed"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_398bedb2669a4e2a",
+      "label": "14 / owner submission",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+      "technically_completed": "Author source12 transmission completed; two alternative drafts and published reports exist.",
+      "remaining": "Owner choose single direction, jury access to private code/raw/predictions, team/contact fields and consents; submit and retain timestamped receipt before organiser closing time. No receipt exists.",
+      "evidence": [
+        {
+          "path": "docs/CONTEST_RULES_CLARIFICATION_2026-10-07.md",
+          "sha256": "0ea998ac5f99a3b1657b83169b7f46ba4fefee8bb848cdcb084a677faa03caf7"
+        },
+        {
+          "path": "docs/evidence/research-closeout-20261006/contest-rules-verification.json",
+          "sha256": "9dccb31f5e53b7d3294fee71de7b1458a94769ac8438f7eb0864cfab8b5e6a12"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_398bedb2669a4e2a",
+          "what": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+          "waiting_for": "KB76/17087:source12DONE;885файлов вделе. Владелец выбирает одно направление, доступжюри кPRIVATE-коду,личные поля/согласия иотправляет. PDF:9.10включительно,точныйчаснеуказан. Квитанцииподачинет.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Owner choose single direction, jury access to private code/raw/predictions, team/contact fields and consents; submit and retain timestamped receipt before organiser closing time. No receipt exists.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    },
+    {
+      "id": "act_906d8781db364e7b",
+      "label": "MANUAL R9 / vintage request",
+      "decision": "KEEP_OPEN",
+      "original_promised_scope": "MANUAL R9: запросить у организаторов помесячные расходы МО за 2025–2026 (territory_id, месяц, категория, значение, единица, признак пропуска), исторические снимки и журнал выпусков (published_at/available_at с часовым поясом, revision/vintage/хеш), версии справочника territory_id→ОКТМО и правило лага. Готовый текст: GitHub data/REQUEST_SBERINDEX_VINTAGES_20260930.md. Если архива нет — письменное подтверждение и календарь будущих публикаций; начать проспективный архив. Не открывать R9 на старом тесте.",
+      "technically_completed": "Detailed request text prepared, with schema and prospective archive alternative.",
+      "remaining": "Need explicit authorised organiser contact/response, archive or written refusal with source/date/conditions/SHA. No response/2025–26municipalnewholdout evidenced; preserve obligation beyond descriptive contest submission.",
+      "evidence": [
+        {
+          "path": "data/REQUEST_SBERINDEX_VINTAGES_20260930.md",
+          "sha256": "fa860b8b1d774a157ec1cd57d0c35c2081f9a94fbd7808442bd7fe4e17c0bf65"
+        }
+      ],
+      "cas_proposal": {
+        "operation": "compare_and_set_proposal_only",
+        "expected": {
+          "id": "act_906d8781db364e7b",
+          "what": "MANUAL R9: запросить у организаторов помесячные расходы МО за 2025–2026 (territory_id, месяц, категория, значение, единица, признак пропуска), исторические снимки и журнал выпусков (published_at/available_at с часовым поясом, revision/vintage/хеш), версии справочника territory_id→ОКТМО и правило лага. Готовый текст: GitHub data/REQUEST_SBERINDEX_VINTAGES_20260930.md. Если архива нет — письменное подтверждение и календарь будущих публикаций; начать проспективный архив. Не открывать R9 на старом тесте.",
+          "waiting_for": "Ответ/архив СберИндекса либо письменный отказ; приложить к делу Radar с источником, датой, условиями использования и SHA-256.",
+          "done": false,
+          "status": "open",
+          "source_checked_at": "2026-10-07T10:18:28.831614+00:00"
+        },
+        "set": {
+          "waiting_for": "Need explicit authorised organiser contact/response, archive or written refusal with source/date/conditions/SHA. No response/2025–26municipalnewholdout evidenced; preserve obligation beyond descriptive contest submission.",
+          "done": false,
+          "status": "open"
+        },
+        "requires_fresh_live_read": true,
+        "applied": false
+      },
+      "scientific_pass": false
+    }
+  ],
+  "local_artifacts": [
+    "PROTOCOL.md",
+    "audit.py",
+    "audit.json",
+    "F7B_FORECAST_CONTRACT_REQUEST.md",
+    "CORRECTION_NOTICE.md",
+    "GATE_REPORT.md",
+    "action06-acceptance.json",
+    "forecast_contract.proposed.json",
+    "artifact-manifest.json"
+  ],
+  "submission_tasks": [
+    "Preserve dated descriptive/negative findings; propagate correction notice to current claims and contract through F7b.",
+    "Parent attach and accept technical06/horizon gate evidence and apply fresh CAS only when authorised.",
+    "Resolve single direction, private jury access, team/contact/consents and exact deadline uncertainty with owner; submit and retain receipt."
+  ],
+  "post_submission_scientific_obligations": [
+    "Explicit Chronos-2 disposition or new protocol/run with resource measurement.",
+    "Historical release/archive investigation with dated source receipts.",
+    "Real W01 plus unseen holdout/model lock; no repeat-to-positive experiments.",
+    "Organiser archive request/response and prospective snapshots."
+  ]
+}

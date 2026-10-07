@@ -1,0 +1,88 @@
+{
+  "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+  "checked_by": "Mac, frozen run JSON/SHA and canonical registries",
+  "scope": "Correct current experiment outcomes without rewriting original run artifacts",
+  "scientific_pass": false,
+  "new_fits": 0,
+  "original_registry_archives": [
+    "economic-atlas-experiments-before.json",
+    "shock-radar-experiments-before.json"
+  ],
+  "source_sha256": {
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "economic-atlas/runs/A6/metrics.json": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+    "economic-atlas/runs/A6_v2/metrics.json": "a4cf2fd44a704f428106146bf33b2908c769abfb53dd66e316c390922c22a9ff",
+    "economic-atlas/runs/Mobility_ablation_20261003/metrics.json": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "economic-atlas/runs/H5_scale_encoding_audit_20261007/results.json": "3aea1392f6abb7ec67561536b1bd60018b4ff685b6dd5da3250d0523b10b1c9a",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c",
+    "economic-atlas/runs/A9_economic_network_20261005/results.json": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+    "economic-atlas/runs/A10_method_comparison_20261005/results.json": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43",
+    "economic-atlas/runs/A6_v2/robustness/manifest.json": "bd8d96430ce16c4d983d5aade8edcf9ef2ab6e3c95f356234ac9fe83b913010a",
+    "economic-atlas/runs/A8_wages2025_validation_20261005/results.json": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+    "economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json": "68e451346bb5a98b740bfe25060a2e377f0f2adf4499554123a2d098a20d429d",
+    "economic-atlas/runs/H5_scale_encoding_audit_20261007/missingness-size-audit.json": "67ede0649c654b83e8bb6267afc5076ef9e668728f5c09698a999cf1f1f8ae9e",
+    "shock-radar/runs/R8_prophet_full_20260927/metrics.json": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2",
+    "shock-radar/runs/R8_closeout_20260929/decision.json": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81",
+    "shock-radar/runs/F03_causal/metrics.json": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30",
+    "shock-radar/runs/R8_tsfm_deterministic_20260928/metrics.json": "4b1979250bf14176007c62de9c086d5f00fa3cc3c049096f0a49f69c7a4ada34",
+    "shock-radar/runs/R8_tsfm_deterministic_20260928/manifest.json": "be9adc52a1cc1e53721dc42b73fa7ffd874e512c35b358f9ed1068ac343352f8",
+    "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+    "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json": "3104d23a5f72a1d15aa49e51cf53921126b46af8098a04857e810ff955431b23",
+    "shock-radar/runs/D01_sensitive_signals_20261001/V0_last/metrics.json": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3",
+    "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json": "b04d9518a7121ea7fa57d8eb0df5fe7d28821ae8f1f855abb7c78d727d1d2a4a",
+    "shock-radar/runs/N3_official_news_value_20261007/metrics.json": "31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855",
+    "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d",
+    "shock-radar/runs/R9_strong_baselines_20261004/metrics.json": "26766abd086eeeb57ea4131e3ed9495c4472b5f7ddc4d9edb573cf5bfae658ee",
+    "shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519",
+    "shock-radar/runs/R10_equal_information_h12_20261006/metrics.json": "c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274",
+    "shock-radar/runs/National_equal_information_20261006/metrics.json": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+    "shock-radar/runs/D04_multicategory_20261004/metrics.json": "9300b7121ece88a68e768dbe281e7612bd77d960b59cca71a5ac6a0a7edc2d67",
+    "shock-radar/runs/D04_multicategory_20261004/matched-null-paired.json": "977f724bd917f5d7f96cd1dd875786b674cbeee30f8b4673e0c3d9cc47b53209",
+    "shock-radar/runs/D05_joint_bank_20261005/metrics.json": "b2d25a779ba54cf5830f0466e73856cceaf6f1d06e3c656e85036e5771d2c856",
+    "economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6"
+  },
+  "status_counts": {
+    "atlas": {
+      "executed_bounded_ablation": 1,
+      "executed_bounded_robustness": 1,
+      "executed_descriptive": 3,
+      "executed_exploratory": 1,
+      "executed_inconclusive": 1,
+      "executed_primary_negative": 1,
+      "partially_executed_descriptive_missingness": 1,
+      "partially_executed_fixed_centres": 1
+    },
+    "radar": {
+      "executed_bounded_leakage_audit": 1,
+      "executed_causal_exploratory": 1,
+      "executed_causal_synthetic": 3,
+      "executed_descriptive_baselines": 2,
+      "executed_exploratory_positive": 2,
+      "executed_proxy_strict_unavailable": 1,
+      "executed_scientific_inconclusive": 2,
+      "executed_synthetic_descriptive": 2,
+      "not_executed_deferred_p2": 3
+    }
+  },
+  "history_preserved": true,
+  "registry_before_sha256": {
+    "economic-atlas/experiments.json": "2ba75a4f91ceb2d84c34fb17dd76407dec06c6063322288cd7f235961d1df2f3",
+    "shock-radar/experiments.json": "7d1bc5edda8357c671d3712fab5ca98a6cede6cd5e8baef0f57e36329aeac0f2"
+  },
+  "acceptance_matrix_before_sha256": "f730107f1f9dc00e470a321b0cdb3f4c1f29d4313ddb6c83f556f992cff33138",
+  "new_measured_followup_ids": [
+    "F08",
+    "F09",
+    "D04",
+    "D05",
+    "E08"
+  ],
+  "registry_verification": {
+    "source_hashes": 31,
+    "experiment_rows": 27,
+    "original_ids_preserved": true,
+    "duplicate_ids": 0,
+    "scientific_pass": false,
+    "new_fits": 0
+  }
+}

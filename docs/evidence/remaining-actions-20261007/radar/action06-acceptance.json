@@ -1,0 +1,16 @@
+{
+  "journal_prepared": true,
+  "unique_events": 6,
+  "unique_official_sources": 5,
+  "all_source_urls_crosschecked": true,
+  "claimed_publication_separate_from_2026first_seen": true,
+  "historical_asof_count": 0,
+  "economic_truth_count": 0,
+  "economic_exact_onset_unconfirmed": true,
+  "matching_rules_frozen": true,
+  "cooldown_months": 3,
+  "selection_independent_of_detector_hits": true,
+  "external_independent_event_adjudication": false,
+  "synthetic_controls_verified_by_existing_SHA_audits": true,
+  "scientific_pass": false
+}

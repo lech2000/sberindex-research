@@ -1,0 +1,11 @@
+# Atlas remaining-action acceptance audit — 07.10.2026
+
+Recorded before the audit computation in this directory. This is documentary acceptance and byte/SHA verification of previously completed studies, not a new economic test or independent pre-registration. Results were already read. Source worktree `/private/tmp/sberindex-official-laws-20261007` is read-only and contains the parent session's uncommitted registry repairs.
+
+Compute with Python standard library only: (1) snapshot all 16 currently open source actions; (2) rehash every cited evidence file; (3) verify archived provenance protocol/output hashes for A10/A11/A8 and available related runs; (4) recompute A8 four primary conjunction criteria from stored numbers; (5) check counts, prior calibration/control threshold equality and documented absence of an a-priori error budget; (6) inspect five municipal stories, their explicit periods, counterexample and source links; (7) produce a 16-action matrix, preserving incomplete promised scope and historical numeric dependencies.
+
+Stop closure on missing evidence/SHA mismatch, incomplete promised method, missing preregistered acceptance criteria, or actual manual owner action. Negative/INCONCLUSIVE outcomes may complete execution-only research actions; they never establish economic PASS, temporal identity validity, historical crosswalk or vintage. Do not reinterpret isotropic spheres as promised ellipsoids or Mahalanobis distance. Do not change methods, thresholds or historical outputs. No external calls, paid models, services, live-case updates, KB writes or deployments.
+
+CAS proposals must compare exact source fields to a fresh authenticated action read immediately before update, and stop on mismatch. This protocol does not certify an undocumented server CAS feature. Historical numeric-plan prerequisites are recorded separately from observed scope completion and never marked done by implication.
+
+Supplement recorded before documentary follow-up computation: resolve relative Markdown links in the municipal stories release; compare printed consumption means/growth to archived story_inputs.json (rounding tolerance only). No inference, fit, geography repair or new source extraction.

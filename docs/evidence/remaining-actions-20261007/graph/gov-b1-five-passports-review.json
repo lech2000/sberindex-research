@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-10-07T10:55:06.704355+00:00",
+  "verification_site": "Mac read repository books.json and full KB77/16128 GET via joe/Incus kb-forge",
+  "complete": false,
+  "source_header_records_reviewed": 5,
+  "official_dictionary_bindings_verified": 0,
+  "passports": [
+    {
+      "report_entity_id": "treasury_0503317_36",
+      "source_file_code": "36",
+      "source_filename": "36_01.01.2026_0503317.XLS",
+      "financial_authority": "МИНИСТЕРСТВО ФИНАНСОВ ТВЕРСКОЙ ОБЛАСТИ",
+      "source_budget_name": "Муниципальное образование - город Тверь",
+      "header_oktmo_verbatim": "28000000",
+      "entity_kind": "reporting_territory",
+      "report_date": "2026-01-01",
+      "financial_year": 2025,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "scale": 100,
+      "municipality_crosswalk_verified": false,
+      "sha256": "08bca1dfc3dae72f7f2974bc9f699fe701ddc6f3421a3f61538ee5b71fc63543",
+      "data_sheets": [
+        "0503317_Д",
+        "0503317_Р",
+        "0503317_ИФ",
+        "0503317_Табл"
+      ],
+      "target_level": "UNRESOLVED_HEADER_CONFLICT",
+      "target_territory_id": null,
+      "target_municipality_edges_allowed": false,
+      "official_dictionary_binding_verified": false,
+      "official_file_origin_verified": false,
+      "conflicts": [
+        "Financial authority: oblast; budget label: city Tver; header code28000000. No level assignment until original/report-owner clarification."
+      ],
+      "review_outcome": "CONFLICT_PRESERVED_EXCLUDE_FROM_BINDING"
+    },
+    {
+      "report_entity_id": "treasury_0503317_42",
+      "source_file_code": "42",
+      "source_filename": "42_01.01.2026_0503317.XLS",
+      "financial_authority": "МИНИСТЕРСТВО ФИНАНСОВ САМАРСКОЙ ОБЛАСТИ",
+      "source_budget_name": "Бюджет Самарской области",
+      "header_oktmo_verbatim": "36701325",
+      "entity_kind": "reporting_territory",
+      "report_date": "2026-01-01",
+      "financial_year": 2025,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "scale": 100,
+      "municipality_crosswalk_verified": false,
+      "sha256": "6d6d687971632b8b141a13de5bcc446022a1a7efdea94e92bb047641102f07ea",
+      "data_sheets": [
+        "0503317_Д",
+        "0503317_Р",
+        "0503317_ИФ",
+        "0503317_Табл"
+      ],
+      "target_level": "UNRESOLVED_HEADER_CONFLICT",
+      "target_territory_id": null,
+      "target_municipality_edges_allowed": false,
+      "official_dictionary_binding_verified": false,
+      "official_file_origin_verified": false,
+      "conflicts": [
+        "Oblast financial authority and oblast budget name, but header36701325. Retain original header; do not replace with36000000 or city code by guess."
+      ],
+      "review_outcome": "CONFLICT_PRESERVED_EXCLUDE_FROM_BINDING"
+    },
+    {
+      "report_entity_id": "treasury_0503317_43",
+      "source_file_code": "43",
+      "source_filename": "43_01.01.2026_0503317.XLS",
+      "financial_authority": "ДЕПАРТАМЕНТ ФИНАНСОВ КУРГАНСКОЙ ОБЛАСТИ",
+      "source_budget_name": "Областной бюджет",
+      "header_oktmo_verbatim": "37000000",
+      "entity_kind": "reporting_territory",
+      "report_date": "2026-01-01",
+      "financial_year": 2025,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "scale": 100,
+      "municipality_crosswalk_verified": false,
+      "sha256": "1f1c3509eb5943557472d8dbb6cbe0061baed3c287daacb756b177ea280f1b63",
+      "data_sheets": [
+        "0503317_Д",
+        "0503317_Р",
+        "0503317_ИФ",
+        "0503317_Табл"
+      ],
+      "target_level": "region_candidate",
+      "target_territory_id": null,
+      "target_municipality_edges_allowed": false,
+      "official_dictionary_binding_verified": false,
+      "official_file_origin_verified": false,
+      "conflicts": [],
+      "review_outcome": "PROPOSED_REGIONAL_CONTEXT"
+    },
+    {
+      "report_entity_id": "treasury_0503317_53",
+      "source_file_code": "53",
+      "source_filename": "53_01.01.2026_0503317.XLS",
+      "financial_authority": "МИНИСТЕРСТВО ФИНАНСОВ ОРЕНБУРГСКОЙ ОБЛАСТИ",
+      "source_budget_name": "Бюджет Оренбургской области",
+      "header_oktmo_verbatim": "53000000",
+      "entity_kind": "reporting_territory",
+      "report_date": "2026-01-01",
+      "financial_year": 2025,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "scale": 100,
+      "municipality_crosswalk_verified": false,
+      "sha256": "64826a87795c8bc77b12c7d969d70377877991b5a8276f4165eb2c3d1be21d34",
+      "data_sheets": [
+        "0503317_Д",
+        "0503317_Р",
+        "0503317_ИФ",
+        "0503317_Табл"
+      ],
+      "target_level": "region_candidate",
+      "target_territory_id": null,
+      "target_municipality_edges_allowed": false,
+      "official_dictionary_binding_verified": false,
+      "official_file_origin_verified": false,
+      "conflicts": [],
+      "review_outcome": "PROPOSED_REGIONAL_CONTEXT"
+    },
+    {
+      "report_entity_id": "treasury_0503317_67",
+      "source_file_code": "67",
+      "source_filename": "67_01.01.2026_0503317.XLS",
+      "financial_authority": "ДЕПАРТАМЕНТ ФИНАНСОВ ТЮМЕНСКОЙ ОБЛАСТИ",
+      "source_budget_name": "Областной бюджет",
+      "header_oktmo_verbatim": "71000000",
+      "entity_kind": "reporting_territory",
+      "report_date": "2026-01-01",
+      "financial_year": 2025,
+      "unit_source": "RUB",
+      "unit_storage": "kopeck",
+      "scale": 100,
+      "municipality_crosswalk_verified": false,
+      "sha256": "6f433054edbd5fa6f9f58c98d32560aa7cabf51f9873ec2dabf14436b4811687",
+      "data_sheets": [
+        "0503317_Д",
+        "0503317_Р",
+        "0503317_ИФ",
+        "0503317_Табл"
+      ],
+      "target_level": "region_candidate",
+      "target_territory_id": null,
+      "target_municipality_edges_allowed": false,
+      "official_dictionary_binding_verified": false,
+      "official_file_origin_verified": false,
+      "conflicts": [],
+      "review_outcome": "PROPOSED_REGIONAL_CONTEXT"
+    }
+  ],
+  "external_checks": [
+    {
+      "url": "https://www4.kurganobl.ru/kontakty",
+      "scope": "catalogue lists Department of Finance; not proves XLS target"
+    },
+    {
+      "url": "https://minfin-samara.ru/",
+      "scope": "search indexed official homepage; full direct fetch502; not proves source XLS scope"
+    },
+    {
+      "url": "https://www.tverfin.ru/",
+      "scope": "direct web fetch timeout"
+    },
+    {
+      "url": "https://mf.orb.ru/",
+      "scope": "direct web fetch403"
+    },
+    {
+      "url": "https://depfin.admtyumen.ru/",
+      "scope": "direct web fetch timeout"
+    }
+  ],
+  "next_step": "Attach official region dictionary code+financial-authority registry per file; three consistent regional headers and two conflict exclusions. Review existing passports without reloading92XLS."
+}

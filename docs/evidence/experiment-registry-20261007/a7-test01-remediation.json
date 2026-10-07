@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-07T09:48:02.347692+00:00",
+  "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+  "head": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+  "mandatory_passed": 1393,
+  "blocking_finding": "TEST-01",
+  "remediation_acceptance_criteria_verified": true,
+  "selection_and_junit": [
+    {
+      "suite": "privacy-db",
+      "selection_path": "tests/test_data_boundary_action_classification.py",
+      "junit_classname": "tests.test_data_boundary_action_classification",
+      "junit_testcases": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "technical-documents",
+      "selection_path": "tests/test_research_material_id_priority.py",
+      "junit_classname": "tests.test_research_material_id_priority",
+      "junit_testcases": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "producer_verifier_exit": 0,
+  "remaining_authorized_paid_reviews": 0,
+  "new_muse_started": false,
+  "release_permitted": false,
+  "original_muse_verdict_unchanged": "warn"
+}

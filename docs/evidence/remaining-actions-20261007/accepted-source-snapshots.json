@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-07",
+  "accepted_at_before_corrections": true,
+  "sources": [
+    {
+      "source_path": "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+      "prior_sha256": "fe9de52cd84479e29f8fc5e3aefa9888e17d790766d224a9195a910a296caead",
+      "current_sha256": "decfba1f25cdd1161077b60dbaff8c4083b1877a54487ee30ff7badd57c600ae",
+      "status": "mutable_context_updated_after_acceptance",
+      "prior_uncommitted_bytes_retained": false,
+      "reason": "Dated source SHA was checked during child audit; current plans/documents changed afterward. This context reference is not a frozen numerical input or output."
+    },
+    {
+      "source_path": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+      "prior_sha256": "e29a9d581218c45bd8fa7c4121a739696bf8f2424ada3b98bed2b9c947abd3a2",
+      "current_sha256": "1f559c982ab297e6656a677d08a66b0204ab35e46cabab65337b020c24be4f84",
+      "status": "mutable_context_updated_after_acceptance",
+      "prior_uncommitted_bytes_retained": false,
+      "reason": "Dated source SHA was checked during child audit; current plans/documents changed afterward. This context reference is not a frozen numerical input or output."
+    },
+    {
+      "source_path": "docs/CONTEST_CHECKLIST.md",
+      "prior_sha256": "2505990d4951c0b6769d6bc5e3b8dc53a259023d40073c4c477b05310ca6c451",
+      "current_sha256": "fd431f8f3bdff964ae42fd7339e5961c6b87681beae98bede4f695d4e284c61c",
+      "status": "mutable_context_updated_after_acceptance",
+      "prior_uncommitted_bytes_retained": false,
+      "reason": "Dated source SHA was checked during child audit; current plans/documents changed afterward. This context reference is not a frozen numerical input or output."
+    },
+    {
+      "source_path": "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+      "source_commit": "bd4a3e9dd1728e3319ec1981aac0518a9b1fd0f1",
+      "source_sha256": "52628d21d43a7d0fb1d391047b4d515f344799154360eeb095a19f5f3864d74b",
+      "frozen_copy": "docs/evidence/remaining-actions-20261007/atlas/source-FINAL_REPORT_RU_2026-10-05.md",
+      "reason": "Current report appended a dated correction after acceptance; exact earlier accepted bytes retained"
+    },
+    {
+      "source_path": "docs/evidence/plan-sync-20261007/live-case-actions.json",
+      "prior_sha256": "a4426786b68f73cd4ac7346db58cb6dc626a2c2b33da96ecef80264007f9005c",
+      "current_sha256": "bf0b2c745f428c0be30874c4531b11a2f2a37e174785fa2d7089293a62309565",
+      "status": "mutable_context_updated_after_acceptance",
+      "prior_uncommitted_bytes_retained": false,
+      "reason": "Dated source SHA was checked during child audit; current plans/documents changed afterward. This context reference is not a frozen numerical input or output."
+    },
+    {
+      "source_path": "docs/CLOSEOUT_DELIVERY_2026-10-06.md",
+      "prior_sha256": "c80586cf489eaa1554a1b918591e2a813b704daa42a80d26287a530de773291d",
+      "current_sha256": "01913f0eddfb3f8eba4674eb6302311711256b0c7ff0b8087abfc72f5b90adf7",
+      "status": "mutable_context_updated_after_acceptance",
+      "prior_uncommitted_bytes_retained": false,
+      "reason": "Dated source SHA was checked during child audit; current plans/documents changed afterward. This context reference is not a frozen numerical input or output."
+    }
+  ]
+}

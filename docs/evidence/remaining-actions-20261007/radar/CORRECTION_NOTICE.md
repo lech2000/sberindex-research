@@ -1,0 +1,9 @@
+# Historical wording corrections — keep original scientific artifacts
+
+Verified 2026-10-07 on Mac by byte hashes and primary manifests. Do not modify frozen run metrics or rewrite the historical R4 model card in place.
+
+1. Action05 says Chronos-2. The executed F04 model is Chronos-T5-tiny revision29d808298f1a62493e7b9a5e08529d0d930fa189. Correct the current action waiting_for and add this notice to the current registry/contest documentation. Preserve the original required Chronos-2 obligation as open, or obtain an explicit owner decision to defer/cancel it; no automatic done transition from the Tiny run. TimesFM is optional and unexecuted.
+2. R4/model_card.md compared Tiny to R3 MAE199/234/264 and recommended building detectors on R3. R3 was invalidated for future leakage; those comparisons/recommendations are withdrawn. The card also said Tiny did not beat any baseline, whereas its own h2 table has817.51 versus902.55. Cite corrected causal/R8 runs, not that conclusion. Tiny full R8 MAE939.061761 versus Prophet731.386303 is a bounded negative result; R8 overall remains INCONCLUSIVE.
+3. The current contract has stale planned/pending fields despite completed calculations. Apply F7B_FORECAST_CONTRACT_REQUEST.md through the established code-review workflow.
+4. Official rules §3.1 resolve two directions for one participant/team: only one. Remaining manual clarification concerns exact closing time/timezone and published organiser baseline resources. Draft wording must not continue soliciting two simultaneous submissions.
+5. NO_HISTORICAL_ASOF means no usable archive evidence in this package; it is not proof that historical releases/news never existed. national-control action's archive check remains unverified. Keep manual archive request, real W01 and independent final test open.

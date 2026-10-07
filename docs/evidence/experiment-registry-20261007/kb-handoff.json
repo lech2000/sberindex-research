@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-07T09:38:11.003626+00:00",
+  "kb": [
+    {
+      "corpus_id": 74,
+      "document_id": 17143,
+      "full_readback_verified": true,
+      "text_sha256": "a9b5f5431648248f1b3c441ac49feb1c073477ee9bab090e4957085585ffd252",
+      "checked_at": "2026-10-07T09:38:17.703162+00:00"
+    },
+    {
+      "corpus_id": 75,
+      "document_id": 17144,
+      "full_readback_verified": true,
+      "text_sha256": "a9b5f5431648248f1b3c441ac49feb1c073477ee9bab090e4957085585ffd252",
+      "checked_at": "2026-10-07T09:38:20.893593+00:00"
+    },
+    {
+      "corpus_id": 76,
+      "document_id": 17145,
+      "full_readback_verified": true,
+      "text_sha256": "a9b5f5431648248f1b3c441ac49feb1c073477ee9bab090e4957085585ffd252",
+      "checked_at": "2026-10-07T09:38:24.856109+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17146,
+      "full_readback_verified": true,
+      "text_sha256": "a9b5f5431648248f1b3c441ac49feb1c073477ee9bab090e4957085585ffd252",
+      "checked_at": "2026-10-07T09:38:29.051979+00:00"
+    }
+  ],
+  "new_fits": 0,
+  "scientific_pass": false
+}

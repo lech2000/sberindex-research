@@ -1,0 +1,33 @@
+{
+  "authorized_at_utc": "2026-10-07T10:11:21.551902+00:00",
+  "authorization_source": "Direct human reply to current Codex question",
+  "authorization_text": "Разрешаю один повторный прогон",
+  "original_approved_candidate": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+  "current_base": "12eb6aed30cad75ce847328e061e88c6395ed681",
+  "current_candidate": "4f02416524653591a560cd625814c3282c3e2ef2",
+  "reason_for_reconciliation": "Production advanced to 12eb6aed with owner-approved research access; overlapping changes preserved in isolated F7b worktree",
+  "changed_files": [
+    "infrastructure/agrigate-pro/site/v2/cases.js",
+    "infrastructure/agrigate-pro/site/v2/index.html",
+    "scripts/release_evidence.py",
+    "services/case_service/app.py",
+    "services/dialog_service/app.py",
+    "tests/test_data_boundary_action_classification.py",
+    "tests/test_research_material_id_priority.py"
+  ],
+  "paid_review_limit": 1,
+  "paid_review_started": false,
+  "automatic_retries_authorized": false,
+  "resume_background_queues": false,
+  "full_tests_status": "RUNNING exact final BASE/HEAD after client fingerprint correction",
+  "previous_paid_review_verdict": "warn",
+  "previous_paid_review_head": "3259851a6ed48b9babdac38ed509c1f027d8ee27",
+  "previous_pre_client_fingerprint_candidate": "f03b428998091340d5e5688210a0e19f79b85fc8",
+  "client_fingerprint_check_exit": 0,
+  "current_candidate_head": "9adeef7b44ae4aa5d6b085e70289735ee15478c6",
+  "current_candidate_base": "035a5a5131a7beea004c45aae7b27f93e45b0eda",
+  "previous_candidate_head": "4f02416524653591a560cd625814c3282c3e2ef2",
+  "new_paid_review_started": false,
+  "remaining_authorized_paid_reviews": 1,
+  "full_tests": "RUNNING;64hosted-focusedPASS; previous4f1393PASSdifferentbase"
+}

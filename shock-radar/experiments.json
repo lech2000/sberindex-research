@@ -3,101 +3,429 @@
     "id": "F01",
     "question": "Базовый прогноз",
     "method": "seasonal_naive",
-    "protocol": "Единые окна и горизонты",
-    "artifact": "runs/R2/metrics.csv (ниже, измерено 22.09.2026)",
-    "status": "done",
+    "protocol": "Полная общая R8 маска171150; lag2 assumed, target origin+h; baseline origin−2. Старые R2 имеют другую маску, сохранены в архиве реестра.",
+    "artifact": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+    "status": "executed_descriptive_baselines",
     "metrics": {
-      "mae_micro": {
+      "common_mask_mae": {
+        "lastavailable": 880.2129593923459,
+        "seasonal_naive": 1280.4203856266433,
+        "n_common": 171150
+      },
+      "per_horizon": {
         "h1": {
-          "last_value": 627.38,
-          "seasonal_naive": 1292.34,
-          "train_mean": 1305.98
+          "lastavailable": 864.9657592108132,
+          "seasonal_naive": 1287.8339873555701,
+          "n_common": 73392
         },
         "h2": {
-          "last_value": 742.07,
-          "seasonal_naive": 1608.14,
-          "train_mean": 1305.98
+          "lastavailable": 835.0160039273442,
+          "seasonal_naive": 1267.1188185239732,
+          "n_common": 61110
         },
         "h3": {
-          "last_value": 866.5,
-          "seasonal_naive": 1717.98,
-          "train_mean": 1305.98
+          "lastavailable": 986.1125573018992,
+          "seasonal_naive": 1287.7539292730844,
+          "n_common": 36648
         }
+      }
+    },
+    "historical_plan": {
+      "method": "seasonal_naive",
+      "protocol": "Единые окна и горизонты",
+      "artifact": "runs/R2/metrics.csv (ниже, измерено 22.09.2026)",
+      "status": "done"
+    },
+    "limits": "Историческая available_at/vintage не доказана; ранее просмотренный тест, не независимый holdout.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+        "sha256": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2"
       },
-      "mae_macro_last_value": 629.68,
-      "n_observations": 74142,
-      "n_territories": 2072,
-      "origins": [
-        "2024-07",
-        "2024-08",
-        "2024-09",
-        "2024-10",
-        "2024-11",
-        "2024-12"
-      ],
-      "formula": "MAE=mean(|y-yhat|) on expanding origins",
-      "tool": "sberindex_forecast(dataset=historical_spending)"
-    }
+      {
+        "path": "shock-radar/runs/R8_closeout_20260929/decision.json",
+        "sha256": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+      }
+    ]
   },
   {
     "id": "F02",
     "question": "Сравнение с Prophet",
     "method": "prophet",
-    "protocol": "Подбор на validation",
-    "artifact": "MAE против F01; это собственный baseline",
-    "status": "planned",
-    "metrics": null
+    "protocol": "Полный Prophet73524 fits/171150points; результат исполнен, научный исход по R8 decision INCONCLUSIVE.",
+    "artifact": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+    "status": "executed_scientific_inconclusive",
+    "metrics": {
+      "counts": {
+        "total_input_rows": 171150,
+        "n_paired_rows": 171150,
+        "n_joined_rows": 171150,
+        "n_prophet_forecasts": 171150,
+        "n_prophet_missing": 0,
+        "n_failures_recorded": 0,
+        "n_series_total": 12366,
+        "n_origins_total": 73524,
+        "n_fits_ok": 73524,
+        "n_fits_failed": 0,
+        "n_fits_missing_checkpoint": 0,
+        "total_fit_runtime_s": 4965.155184358126,
+        "total_elapsed_s": 5005.003956875065
+      },
+      "common_mask_mae": {
+        "prophet": 731.3863030799444,
+        "lastavailable": 880.2129593923459,
+        "seasonal_naive": 1280.4203856266433,
+        "n_common": 171150
+      },
+      "per_horizon_mae": {
+        "h1": {
+          "prophet": 719.5748505864337,
+          "lastavailable": 864.9657592108132,
+          "seasonal_naive": 1287.8339873555701,
+          "n_common": 73392,
+          "n_rows": 73392,
+          "n_prophet": 73392
+        },
+        "h2": {
+          "prophet": 723.5982635109181,
+          "lastavailable": 835.0160039273442,
+          "seasonal_naive": 1267.1188185239732,
+          "n_common": 61110,
+          "n_rows": 61110,
+          "n_prophet": 61110
+        },
+        "h3": {
+          "prophet": 768.0265895748944,
+          "lastavailable": 986.1125573018992,
+          "seasonal_naive": 1287.7539292730844,
+          "n_common": 36648,
+          "n_rows": 36648,
+          "n_prophet": 36648
+        }
+      }
+    },
+    "historical_plan": {
+      "method": "prophet",
+      "protocol": "Подбор на validation",
+      "artifact": "MAE против F01; это собственный baseline",
+      "status": "planned"
+    },
+    "limits": "statusPASS первичного run означает полноту вычисления; не научный PASS. Парный интервал основного выигрыша пересекает0.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+        "sha256": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2"
+      },
+      {
+        "path": "shock-radar/runs/R8_closeout_20260929/decision.json",
+        "sha256": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+      }
+    ]
   },
   {
     "id": "F00",
     "question": "Бейзлайны до сложных моделей (H5)",
     "method": "sberindex_forecast",
-    "protocol": "horizon 1..3, origins 2024-07.., общая маска, MAE micro/macro",
-    "artifact": "MAE-таблица + GATE_REPORT R2",
-    "status": "ready_to_run",
-    "metrics": null
+    "protocol": "Полная общая R8 маска171150; lag2 assumed, target origin+h; baseline origin−2. Старые R2 имеют другую маску, сохранены в архиве реестра.",
+    "artifact": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+    "status": "executed_descriptive_baselines",
+    "metrics": {
+      "common_mask_mae": {
+        "lastavailable": 880.2129593923459,
+        "seasonal_naive": 1280.4203856266433,
+        "n_common": 171150
+      },
+      "per_horizon": {
+        "h1": {
+          "lastavailable": 864.9657592108132,
+          "seasonal_naive": 1287.8339873555701,
+          "n_common": 73392
+        },
+        "h2": {
+          "lastavailable": 835.0160039273442,
+          "seasonal_naive": 1267.1188185239732,
+          "n_common": 61110
+        },
+        "h3": {
+          "lastavailable": 986.1125573018992,
+          "seasonal_naive": 1287.7539292730844,
+          "n_common": 36648
+        }
+      }
+    },
+    "historical_plan": {
+      "method": "sberindex_forecast",
+      "protocol": "horizon 1..3, origins 2024-07.., общая маска, MAE micro/macro",
+      "artifact": "MAE-таблица + GATE_REPORT R2",
+      "status": "ready_to_run"
+    },
+    "limits": "Историческая available_at/vintage не доказана; ранее просмотренный тест, не независимый holdout.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R8_prophet_full_20260927/metrics.json",
+        "sha256": "d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2"
+      },
+      {
+        "path": "shock-radar/runs/R8_closeout_20260929/decision.json",
+        "sha256": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+      }
+    ]
   },
   {
     "id": "F03",
     "question": "Общая модель панели",
     "method": "global_boosting",
-    "protocol": "Лаги и календарь без будущего",
-    "artifact": "shock-radar/runs/R3/run_manifest.json + metrics.json",
-    "status": "done",
+    "protocol": "{\"release_lag_months\": 2, \"last_allowed\": \"origin-2\", \"target\": \"origin+h\", \"baseline\": \"lastavailable = value at origin-2\", \"training\": \"earlier origins whose targets are published at origin (origin'+h <= origin-2)\", \"evaluation\": \"origin rows only, out-of-sample\"}",
+    "artifact": "shock-radar/runs/F03_causal/metrics.json",
+    "status": "executed_causal_exploratory",
     "metrics": {
       "1": {
-        "boost": 199.39434482561538,
-        "last_value_R2": 627.540555870675,
-        "improvement_pct": 68.2
+        "mae_boost": 1002.6591106092998,
+        "mae_last_available": 908.3938407940577,
+        "n": 60852,
+        "origins": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11"
+        ],
+        "skipped": {
+          "2024-12": "target_after_panel"
+        },
+        "train_origins": {
+          "2024-07": [
+            "2024-02",
+            "2024-03",
+            "2024-04"
+          ],
+          "2024-08": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05"
+          ],
+          "2024-09": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06"
+          ],
+          "2024-10": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06",
+            "2024-07"
+          ],
+          "2024-11": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06",
+            "2024-07",
+            "2024-08"
+          ]
+        },
+        "release_lag": 2,
+        "causal": true
       },
       "2": {
-        "boost": 234.0192372394396,
-        "last_value_R2": 793.6804961089495,
-        "improvement_pct": 70.5
+        "mae_boost": 957.5054455854893,
+        "mae_last_available": 875.6605493287351,
+        "n": 48714,
+        "origins": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10"
+        ],
+        "skipped": {
+          "2024-11": "target_after_panel",
+          "2024-12": "target_after_panel"
+        },
+        "train_origins": {
+          "2024-07": [
+            "2024-02",
+            "2024-03"
+          ],
+          "2024-08": [
+            "2024-02",
+            "2024-03",
+            "2024-04"
+          ],
+          "2024-09": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05"
+          ],
+          "2024-10": [
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06"
+          ]
+        },
+        "release_lag": 2,
+        "causal": true
       },
       "3": {
-        "boost": 263.64360053104525,
-        "last_value_R2": 986.1843587872893,
-        "improvement_pct": 73.3
+        "mae_boost": 903.4427284867658,
+        "mae_last_available": 985.8877662778599,
+        "n": 36522,
+        "origins": [
+          "2024-07",
+          "2024-08",
+          "2024-09"
+        ],
+        "skipped": {
+          "2024-10": "target_after_panel",
+          "2024-11": "target_after_panel",
+          "2024-12": "target_after_panel"
+        },
+        "train_origins": {
+          "2024-07": [
+            "2024-02"
+          ],
+          "2024-08": [
+            "2024-02",
+            "2024-03"
+          ],
+          "2024-09": [
+            "2024-02",
+            "2024-03",
+            "2024-04"
+          ]
+        },
+        "release_lag": 2,
+        "causal": true
       }
-    }
+    },
+    "historical_plan": {
+      "method": "global_boosting",
+      "protocol": "Лаги и календарь без будущего",
+      "artifact": "shock-radar/runs/R3/run_manifest.json + metrics.json",
+      "status": "done"
+    },
+    "limits": "R3 отменён из-за future leakage, его199/234/264 и68–73% не действующие результаты. Причинная по доступности F03 хуже baseline наh1/h2; h3 имеет лишь3origins. Не оценка причинного экономического эффекта.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/F03_causal/metrics.json",
+        "sha256": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30"
+      }
+    ]
   },
   {
     "id": "F04",
     "question": "Фундаментальная модель",
-    "method": "chronos2",
-    "protocol": "Фиксированная ревизия, zero-shot",
-    "artifact": "shock-radar/runs/R4/model_card.md + metrics.json",
-    "status": "done",
+    "method": "chronos_t5_tiny",
+    "protocol": "Zero-shot amazon/chronos-t5-tiny, exact revision29d808298f1a62493e7b9a5e08529d0d930fa189, fixedseed/MPS, полная парная маскаR8.",
+    "artifact": "shock-radar/runs/R8_tsfm_deterministic_20260928/metrics.json",
+    "status": "executed_scientific_inconclusive",
     "metrics": {
-      "h1_tsfm": 645.19,
-      "h1_lv": 628.57,
-      "h2_tsfm": 817.51,
-      "h2_lv": 902.55,
-      "h3_tsfm": 968.04,
-      "h3_lv": 850.31,
-      "verdict": "negative: tsfm loses to boosting R3 on all horizons"
-    }
+      "model": {
+        "estimator": "Chronos-T5-tiny",
+        "model_id": "amazon/chronos-t5-tiny",
+        "model_revision_requested": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+        "model_revision_actual": "29d808298f1a62493e7b9a5e08529d0d930fa189",
+        "mode": "zero-shot",
+        "frozen_weights": true,
+        "no_training_on_target": true,
+        "device": "mps"
+      },
+      "counts": {
+        "total_input_rows": 171150,
+        "n_paired_rows": 171150,
+        "n_joined_rows": 171150,
+        "n_tsfm_forecasts": 171150,
+        "n_tsfm_missing": 0,
+        "n_failures_recorded": 0,
+        "n_series_total": 12366,
+        "n_origins_total": 73524,
+        "n_fits_ok": 73524,
+        "n_fits_failed": 0,
+        "n_fits_missing_checkpoint": 0,
+        "total_fit_runtime_s": 19667.674505608156,
+        "total_elapsed_s": 360.93167437496595
+      },
+      "common_mask_mae": {
+        "tsfm": 939.0617606977953,
+        "prophet": 731.3863030799444,
+        "lastavailable": 880.2129593923459,
+        "seasonal_naive": 1280.4203856266433,
+        "n_common": 171150
+      },
+      "per_horizon_mae": {
+        "h1": {
+          "tsfm": 882.0709098539037,
+          "prophet": 719.5748505864337,
+          "lastavailable": 864.9657592108132,
+          "seasonal_naive": 1287.8339873555701,
+          "n_common": 73392,
+          "n_rows": 73392,
+          "n_tsfm": 73392
+        },
+        "h2": {
+          "tsfm": 891.5209431644041,
+          "prophet": 723.5982635109181,
+          "lastavailable": 835.0160039273442,
+          "seasonal_naive": 1267.1188185239732,
+          "n_common": 61110,
+          "n_rows": 61110,
+          "n_tsfm": 61110
+        },
+        "h3": {
+          "tsfm": 1132.4663635301579,
+          "prophet": 768.0265895748944,
+          "lastavailable": 986.1125573018992,
+          "seasonal_naive": 1287.7539292730844,
+          "n_common": 36648,
+          "n_rows": 36648,
+          "n_tsfm": 36648
+        }
+      }
+    },
+    "historical_plan": {
+      "method": "chronos2",
+      "protocol": "Фиксированная ревизия, zero-shot",
+      "artifact": "shock-radar/runs/R4/model_card.md + metrics.json",
+      "status": "done"
+    },
+    "limits": "Chronos-2 не запускался; сравнение со старым leakyR3 отменено. R4 имеет иную маску и остаётся историей. Tiny хуже Prophet по точечной полнойR8 MAE; SCIENTIFIC_PASSfalse.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R8_tsfm_deterministic_20260928/metrics.json",
+        "sha256": "4b1979250bf14176007c62de9c086d5f00fa3cc3c049096f0a49f69c7a4ada34"
+      },
+      {
+        "path": "shock-radar/runs/R8_tsfm_deterministic_20260928/manifest.json",
+        "sha256": "be9adc52a1cc1e53721dc42b73fa7ffd874e512c35b358f9ed1068ac343352f8"
+      },
+      {
+        "path": "shock-radar/runs/R8_closeout_20260929/decision.json",
+        "sha256": "7514b60379bdc2270ca62d74a53642e49cf31ef2d99d4b57be3f06de1cdc8c81"
+      }
+    ]
   },
   {
     "id": "F05",
@@ -105,51 +433,282 @@
     "method": "timesfm",
     "protocol": "Только после F01–F04",
     "artifact": "Проверка разнообразия ошибок",
-    "status": "planned",
-    "metrics": null
+    "status": "not_executed_deferred_p2",
+    "metrics": null,
+    "historical_plan": {
+      "method": "timesfm",
+      "protocol": "Только после F01–F04",
+      "artifact": "Проверка разнообразия ошибок",
+      "status": "planned"
+    },
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "scientific_pass": false,
+    "limits": "Не объявлять выполненным; будущий отдельный протокол и независимое окно. TimesFM не обучался и не запускался."
   },
   {
     "id": "D01",
     "question": "Простые тревоги",
     "method": "threshold",
-    "protocol": "Пороги на validation",
-    "artifact": "shock-radar/runs/R5/alerts.parquet + alerts.json (registry.parquet: 60 событий, matching ±1м, cooldown 3м)",
-    "status": "done",
+    "protocol": "Causal signal; cutofforigin−2, порогиvalidation, budgetmode monthly_causal24/mo, cap144/6months; matching±1month/cooldown3. Это cap тревог, не равные FAR.",
+    "artifact": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+    "status": "executed_causal_synthetic",
     "metrics": {
       "events": 28,
-      "recall": 0.964,
-      "precision": 0.0134,
-      "fa": 1982,
-      "delay_mean": 1.04,
-      "calibration": "lead 0=в месяц onset: детекция, не предупреждение (lag 2m)"
-    }
+      "alarms": 141,
+      "hits": 1,
+      "recall": 0.036,
+      "precision": 0.0071,
+      "false_alarms": 140,
+      "delay_signed_mean": 1.0,
+      "delay_abs_mean": 1.0,
+      "lead_mean_m": 0.0,
+      "frac_early": 0.0,
+      "budget": 144,
+      "V3_sensitivity": {
+        "events": 28,
+        "alarms": 140,
+        "hits": 13,
+        "recall": 0.464,
+        "precision": 0.0929,
+        "false_alarms": 127,
+        "delay_signed_mean": 1.0,
+        "delay_abs_mean": 1.0,
+        "lead_mean_m": 0.0,
+        "frac_early": 0.0,
+        "budget": 144
+      },
+      "V0_control": {
+        "events": 28,
+        "alarms": 141,
+        "hits": 1,
+        "recall": 0.036,
+        "precision": 0.0071,
+        "false_alarms": 140,
+        "delay_signed_mean": 1.0,
+        "delay_abs_mean": 1.0,
+        "lead_mean_m": 0.0,
+        "frac_early": 0.0,
+        "budget": 144
+      },
+      "V3_placebo": {
+        "events": 28,
+        "alarms": 144,
+        "hits": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "false_alarms": 144,
+        "delay_signed_mean": null,
+        "delay_abs_mean": null,
+        "lead_mean_m": 0.0,
+        "frac_early": 0.0,
+        "budget": 144
+      }
+    },
+    "historical_plan": {
+      "method": "threshold",
+      "protocol": "Пороги на validation",
+      "artifact": "shock-radar/runs/R5/alerts.parquet + alerts.json (registry.parquet: 60 событий, matching ±1м, cooldown 3м)",
+      "status": "done"
+    },
+    "limits": "28 синтетических событий, не реальные шоки и не раннее предупреждение. ПервичныеR5 future-leaky результаты отменены.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+        "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+      },
+      {
+        "path": "shock-radar/runs/D01_sensitive_signals_20261001/V3_med3_cs/metrics.json",
+        "sha256": "3104d23a5f72a1d15aa49e51cf53921126b46af8098a04857e810ff955431b23"
+      },
+      {
+        "path": "shock-radar/runs/D01_sensitive_signals_20261001/V0_last/metrics.json",
+        "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+      },
+      {
+        "path": "shock-radar/runs/D01_sensitive_signals_20261001/placebo/V3_med3_cs/metrics.json",
+        "sha256": "b04d9518a7121ea7fa57d8eb0df5fe7d28821ae8f1f855abb7c78d727d1d2a4a"
+      }
+    ]
   },
   {
     "id": "D02",
     "question": "Последовательные сдвиги",
     "method": "cusum_or_page_hinkley",
-    "protocol": "Только прошлые остатки",
-    "artifact": "Задержка при общем бюджете тревог",
-    "status": "planned",
-    "metrics": null
+    "protocol": "Causal signal; cutofforigin−2, порогиvalidation, budgetmode monthly_causal24/mo, cap144/6months; matching±1month/cooldown3. Это cap тревог, не равные FAR.",
+    "artifact": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+    "status": "executed_causal_synthetic",
+    "metrics": {
+      "events": 28,
+      "alarms": 144,
+      "hits": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "false_alarms": 144,
+      "delay_signed_mean": null,
+      "delay_abs_mean": null,
+      "lead_mean_m": 0.0,
+      "frac_early": 0.0,
+      "budget": 144
+    },
+    "historical_plan": {
+      "method": "cusum_or_page_hinkley",
+      "protocol": "Только прошлые остатки",
+      "artifact": "Задержка при общем бюджете тревог",
+      "status": "planned"
+    },
+    "limits": "28 синтетических событий, не реальные шоки и не раннее предупреждение. ПервичныеR5 future-leaky результаты отменены.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+        "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+      }
+    ]
   },
   {
     "id": "D03",
     "question": "Онлайн-смена режима",
     "method": "bayesian_online",
-    "protocol": "Те же события и matching",
-    "artifact": "Precision/recall/delay",
-    "status": "planned",
-    "metrics": null
+    "protocol": "Causal signal; cutofforigin−2, порогиvalidation, budgetmode monthly_causal24/mo, cap144/6months; matching±1month/cooldown3. Это cap тревог, не равные FAR.",
+    "artifact": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+    "status": "executed_causal_synthetic",
+    "metrics": {
+      "events": 28,
+      "alarms": 4,
+      "hits": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "false_alarms": 4,
+      "delay_signed_mean": null,
+      "delay_abs_mean": null,
+      "lead_mean_m": 0.0,
+      "frac_early": 0.0,
+      "budget": 144
+    },
+    "historical_plan": {
+      "method": "bayesian_online",
+      "protocol": "Те же события и matching",
+      "artifact": "Precision/recall/delay",
+      "status": "planned"
+    },
+    "limits": "28 синтетических событий, не реальные шоки и не раннее предупреждение. ПервичныеR5 future-leaky результаты отменены.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+        "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+      }
+    ]
   },
   {
     "id": "F06",
     "question": "Польза новостей",
     "method": "news_ablation",
     "protocol": "As-of и отрицательные контроли",
-    "artifact": "Прирост относительно той же модели без новостей",
-    "status": "planned",
-    "metrics": null
+    "artifact": "shock-radar/runs/N3_official_news_value_20261007/metrics.json",
+    "status": "executed_proxy_strict_unavailable",
+    "metrics": {
+      "events_total": 6,
+      "strict_historically_eligible_events": 0,
+      "sources": 5,
+      "fits": 60,
+      "predictions_rows": 136512,
+      "paired": [
+        {
+          "horizon": 1,
+          "arm": "control",
+          "n": 68256,
+          "mae": 801.2103412911401,
+          "relative_mae_reduction_vs_control_percent": 0.0
+        },
+        {
+          "horizon": 1,
+          "arm": "strict",
+          "n": 68256,
+          "mae": 801.2103412911399,
+          "relative_mae_reduction_vs_control_percent": 3.3306690738754696e-14
+        },
+        {
+          "horizon": 1,
+          "arm": "publication_proxy",
+          "n": 68256,
+          "mae": 832.5643477888824,
+          "relative_mae_reduction_vs_control_percent": -3.9133302307625906
+        },
+        {
+          "horizon": 1,
+          "arm": "delayed_one_month",
+          "n": 68256,
+          "mae": 839.3141839691482,
+          "relative_mae_reduction_vs_control_percent": -4.755785180780903
+        },
+        {
+          "horizon": 1,
+          "arm": "shifted_twelve_months",
+          "n": 68256,
+          "mae": 801.2103412911399,
+          "relative_mae_reduction_vs_control_percent": 3.3306690738754696e-14
+        },
+        {
+          "horizon": 3,
+          "arm": "control",
+          "n": 68256,
+          "mae": 1053.198472818533,
+          "relative_mae_reduction_vs_control_percent": 0.0
+        },
+        {
+          "horizon": 3,
+          "arm": "strict",
+          "n": 68256,
+          "mae": 1053.198472818464,
+          "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12
+        },
+        {
+          "horizon": 3,
+          "arm": "publication_proxy",
+          "n": 68256,
+          "mae": 1053.2018685213948,
+          "relative_mae_reduction_vs_control_percent": -0.00032241813385791573
+        },
+        {
+          "horizon": 3,
+          "arm": "delayed_one_month",
+          "n": 68256,
+          "mae": 1053.198472818464,
+          "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12
+        },
+        {
+          "horizon": 3,
+          "arm": "shifted_twelve_months",
+          "n": 68256,
+          "mae": 1053.198472818464,
+          "relative_mae_reduction_vs_control_percent": 6.539213615042172e-12
+        }
+      ]
+    },
+    "historical_plan": {
+      "method": "news_ablation",
+      "protocol": "As-of и отрицательные контроли",
+      "artifact": "Прирост относительно той же модели без новостей",
+      "status": "planned"
+    },
+    "limits": "0/6 strictasof; publication_proxy не заменяет историческую доступность. Прибавка новостей не подтверждена; раннее предупреждение не доказано.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/N3_official_news_value_20261007/metrics.json",
+        "sha256": "31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855"
+      }
+    ]
   },
   {
     "id": "W01",
@@ -157,8 +716,17 @@
     "method": "warning_model",
     "protocol": "Alert до event_start, train/validation embargo",
     "artifact": "Упреждение и false alarms отдельно от detection",
-    "status": "planned",
-    "metrics": null
+    "status": "not_executed_deferred_p2",
+    "metrics": null,
+    "historical_plan": {
+      "method": "warning_model",
+      "protocol": "Alert до event_start, train/validation embargo",
+      "artifact": "Упреждение и false alarms отдельно от detection",
+      "status": "planned"
+    },
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "scientific_pass": false,
+    "limits": "Не объявлять выполненным; будущий отдельный протокол и независимое окно. Синтетическая детекция после onset не доказывает alert до реального события."
   },
   {
     "id": "F07",
@@ -166,16 +734,708 @@
     "method": "ensemble",
     "protocol": "Веса только на validation",
     "artifact": "Имеет смысл лишь при устойчивом выигрыше",
-    "status": "planned",
-    "metrics": null
+    "status": "not_executed_deferred_p2",
+    "metrics": null,
+    "historical_plan": {
+      "method": "ensemble",
+      "protocol": "Веса только на validation",
+      "artifact": "Имеет смысл лишь при устойчивом выигрыше",
+      "status": "planned"
+    },
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "scientific_pass": false,
+    "limits": "Не объявлять выполненным; будущий отдельный протокол и независимое окно."
   },
   {
     "id": "A01",
     "question": "Аудит утечек и устойчивости",
     "method": "negative_controls",
     "protocol": "Удаление будущих данных, консервативные лаги",
-    "artifact": "Прогноз на origin не меняется от будущего",
-    "status": "planned",
-    "metrics": null
+    "artifact": "shock-radar/runs/F03_causal/metrics.json",
+    "status": "executed_bounded_leakage_audit",
+    "metrics": {
+      "invalidated_runs": [
+        "R3",
+        "R5"
+      ],
+      "corrected_forecast_status": "EXPLORATORY_NOT_GATE_PASS",
+      "corrected_detector_recalls": {
+        "D01": 0.036,
+        "D02": 0.0,
+        "D03": 0.0
+      },
+      "joint_future_checks": {
+        "future_value_mutation_forecasts": 204768,
+        "scalar_forecasts": 3024,
+        "future_mutation_features_labels_peers": true
+      },
+      "news_future_checks": [
+        {
+          "arm": "control",
+          "horizon": 1,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "strict",
+          "horizon": 1,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "publication_proxy",
+          "horizon": 1,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "delayed_one_month",
+          "horizon": 1,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "shifted_twelve_months",
+          "horizon": 1,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "control",
+          "horizon": 3,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "strict",
+          "horizon": 3,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "publication_proxy",
+          "horizon": 3,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "delayed_one_month",
+          "horizon": 3,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        },
+        {
+          "arm": "shifted_twelve_months",
+          "horizon": 3,
+          "rows": 11376,
+          "future_spending_and_event_mutation_invariant": true
+        }
+      ]
+    },
+    "historical_plan": {
+      "method": "negative_controls",
+      "protocol": "Удаление будущих данных, консервативные лаги",
+      "artifact": "Прогноз на origin не меняется от будущего",
+      "status": "planned"
+    },
+    "limits": "Проверенные future-prefix контроли не подтверждают неизвестную historicalvintage; это техническая независимость вычисления, не внешняя научная рецензия.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "shock-radar/runs/F03_causal/metrics.json",
+        "sha256": "9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30"
+      },
+      {
+        "path": "shock-radar/runs/D01_causal_recompute_20261001/monthly_causal/metrics.json",
+        "sha256": "02b212e44bea00ce5d72bfd188e1da4b64e5b5fa6a2dc1ab1013ff7f250960f3"
+      },
+      {
+        "path": "economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json",
+        "sha256": "68e451346bb5a98b740bfe25060a2e377f0f2adf4499554123a2d098a20d429d"
+      },
+      {
+        "path": "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+        "sha256": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d"
+      },
+      {
+        "path": "shock-radar/runs/N3_official_news_value_20261007/metrics.json",
+        "sha256": "31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855"
+      }
+    ]
+  },
+  {
+    "id": "F08",
+    "question": "Собственная и категорийная сезонность, сильный baseline",
+    "method": "Growth1/Growth3/Conditional SES/Profile SES",
+    "protocol": "Одна общая R9маска для кандидатов; равная категорийная информация в отдельном120seriesпилоте; раннее окно отдельно",
+    "status": "executed_exploratory_positive",
+    "metrics": {
+      "rows_by_window_horizon": [
+        {
+          "window": "R9",
+          "horizon": 1,
+          "common_rows": 72654,
+          "mae": {
+            "category_seasonal": 307.1043606317089,
+            "growth_naive1": 341.73689836970095,
+            "growth_naive3": 339.1999921366002,
+            "conditional_ses": 302.26613514803853,
+            "profile_ses": 299.95965460319655,
+            "last_value": 624.9533404905442,
+            "stored_prophet": 641.3942570574628
+          }
+        },
+        {
+          "window": "R9",
+          "horizon": 3,
+          "common_rows": 72726,
+          "mae": {
+            "category_seasonal": 448.1739906069004,
+            "growth_naive1": 455.9111038817849,
+            "growth_naive3": 470.62340319805907,
+            "conditional_ses": 437.2699289202594,
+            "profile_ses": 408.8821143375293,
+            "last_value": 865.8606825619448,
+            "stored_prophet": 720.1262614749776
+          }
+        },
+        {
+          "window": "R9",
+          "horizon": 6,
+          "common_rows": 72822,
+          "mae": {
+            "category_seasonal": 617.9771944490013,
+            "growth_naive1": 659.4931910526658,
+            "growth_naive3": 665.4085820851648,
+            "conditional_ses": 609.2020591614839,
+            "profile_ses": 591.967220215358,
+            "last_value": 1126.7670621515476,
+            "stored_prophet": 739.4161101139139
+          }
+        },
+        {
+          "window": "pre_R9",
+          "horizon": 1,
+          "common_rows": 600,
+          "mae": {
+            "category_seasonal": 339.2168265439593,
+            "growth_naive1": 351.13234896088215,
+            "growth_naive3": 360.78833581558933,
+            "conditional_ses": 330.2025687964009,
+            "profile_ses": 364.45634127845756,
+            "last_value": 480.145
+          }
+        },
+        {
+          "window": "pre_R9",
+          "horizon": 3,
+          "common_rows": 360,
+          "mae": {
+            "category_seasonal": 621.4006931654312,
+            "growth_naive1": 565.418695326738,
+            "growth_naive3": 600.1118160928087,
+            "conditional_ses": 619.3525449370037,
+            "profile_ses": 611.9403275944128,
+            "last_value": 814.45
+          }
+        }
+      ]
+    },
+    "artifact": "shock-radar/runs/R9_strong_baselines_20261004/metrics.json",
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R9_strong_baselines_20261004/metrics.json",
+        "sha256": "26766abd086eeeb57ea4131e3ed9495c4472b5f7ddc4d9edb573cf5bfae658ee"
+      },
+      {
+        "path": "shock-radar/runs/R9_strong_baselines_20261004/forecast-equal-information-pilot.json",
+        "sha256": "2498fed0caf42bfa3dbb4d4815bdf080336c93f10a6039e9dded4eb0fa473519"
+      }
+    ],
+    "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+    "verification": "07.10.2026, Mac: frozen JSON/SHA; no new fits",
+    "scientific_pass": false,
+    "limits": "Просмотренные окна и один сезонный образец. Не выдавать старый однорядный Prophet за equalinformation; Profile не лучший во всех ранних сравнениях; h12не поддержан."
+  },
+  {
+    "id": "F09",
+    "question": "Горизонт12 с длинной национальной информацией",
+    "method": "national_yoy_lag1 vs conditional/regressor Prophet",
+    "protocol": "ДВА отдельных frozenпилота: маски и функциональные формы не объединяются",
+    "status": "executed_exploratory_positive",
+    "metrics": {
+      "conditional_pilot": {
+        "rows": 720,
+        "n_series": 120,
+        "fits": 2160,
+        "results": [
+          {
+            "model": "national_yoy_lag1",
+            "reference": "conditional_prophet_linear",
+            "rows": 720,
+            "mae_model": 679.7461352252822,
+            "mae_reference": 1707.2244025587302,
+            "benefit_mae": 1027.4782673334482,
+            "relative_improvement_percent": 60.184136648556475,
+            "benefit_ci95_target_months": [
+              592.2813702562424,
+              1467.0763054493814
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "conditional_prophet_yearly3",
+            "rows": 720,
+            "mae_model": 679.7461352252822,
+            "mae_reference": 27168.670947150662,
+            "benefit_mae": 26488.924811925375,
+            "relative_improvement_percent": 97.49805157363956,
+            "benefit_ci95_target_months": [
+              4086.651263579274,
+              57886.76905276445
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "own_prophet_linear",
+            "rows": 720,
+            "mae_model": 679.7461352252822,
+            "mae_reference": 1275.5723993369318,
+            "benefit_mae": 595.8262641116495,
+            "relative_improvement_percent": 46.710501451847975,
+            "benefit_ci95_target_months": [
+              345.37832438529443,
+              840.4279862763304
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "stored_prophet",
+            "rows": 720,
+            "mae_model": 679.7461352252822,
+            "mae_reference": 1263.5602865898586,
+            "benefit_mae": 583.8141513645764,
+            "relative_improvement_percent": 46.2039015914464,
+            "benefit_ci95_target_months": [
+              338.0347255498633,
+              824.2954790197632
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "last_value",
+            "rows": 720,
+            "mae_model": 679.7461352252822,
+            "mae_reference": 1272.3111111111111,
+            "benefit_mae": 592.564975885829,
+            "relative_improvement_percent": 46.573905604608065,
+            "benefit_ci95_target_months": [
+              470.4305616343068,
+              716.3584748690084
+            ],
+            "month_blocks": 6
+          }
+        ]
+      },
+      "regressor_pilot": {
+        "rows": 720,
+        "series": 120,
+        "fits": 1452,
+        "comparisons": [
+          {
+            "model": "national_prophet",
+            "reference": "fresh_plain_prophet",
+            "rows": 720,
+            "mae_model": 946.1427947440353,
+            "mae_reference": 947.1822428382936,
+            "relative_improvement_percent": 0.10974108753808443,
+            "benefit_mae": 1.0394480942581092,
+            "benefit_ci95_month_blocks": [
+              -45.674902266357854,
+              41.242608486560215
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "national_prophet",
+            "rows": 720,
+            "mae_model": 598.0916651328823,
+            "mae_reference": 946.1427947440353,
+            "relative_improvement_percent": 36.7863214246971,
+            "benefit_mae": 348.0511296111531,
+            "benefit_ci95_month_blocks": [
+              166.50266495651934,
+              518.8809205394148
+            ],
+            "month_blocks": 6
+          },
+          {
+            "model": "national_yoy_lag1",
+            "reference": "fresh_plain_prophet",
+            "rows": 720,
+            "mae_model": 598.0916651328823,
+            "mae_reference": 947.1822428382936,
+            "relative_improvement_percent": 36.855692803038465,
+            "benefit_mae": 349.0905777054112,
+            "benefit_ci95_month_blocks": [
+              194.5495934351028,
+              493.8536432871072
+            ],
+            "month_blocks": 6
+          }
+        ]
+      }
+    },
+    "artifact": "shock-radar/runs/R10_equal_information_h12_20261006/metrics.json",
+    "evidence": [
+      {
+        "path": "shock-radar/runs/R10_equal_information_h12_20261006/metrics.json",
+        "sha256": "c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274"
+      },
+      {
+        "path": "shock-radar/runs/National_equal_information_20261006/metrics.json",
+        "sha256": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328"
+      }
+    ],
+    "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+    "verification": "07.10.2026, Mac: frozen JSON/SHA; no new fits",
+    "scientific_pass": false,
+    "limits": "Пилоты120рядов/720пар, не полная национальная панель. Маркетплейсы хуже; vintage2026не историческийasof, оба окна просмотрены."
+  },
+  {
+    "id": "D04",
+    "question": "Многокатегорийная агрегация: Stouffer/GLR",
+    "method": "Stouffer sum and multivariate GLR",
+    "protocol": "Замороженная калибровка/отрицательные контроли; равные nullfalsealarms там, где это прямо подтверждено matchednullпротоколом",
+    "status": "executed_synthetic_descriptive",
+    "metrics": {
+      "run_status": "EXPLORATORY_SYNTHETIC_AND_DESCRIPTIVE_REAL",
+      "primary_paired_comparisons": [
+        {
+          "method": "energy",
+          "reference": "stouffer_two_sided",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.89525,
+          "ci95_by_seed": [
+            0.88249375,
+            0.90725
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "energy",
+          "reference": "max_absolute",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.004,
+          "ci95_by_seed": [
+            0.00125,
+            0.00675
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "energy",
+          "reference": "glr_two_sided",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.9145,
+          "ci95_by_seed": [
+            0.906,
+            0.9225
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "stouffer_two_sided",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.903,
+          "ci95_by_seed": [
+            0.88975,
+            0.9145
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "max_absolute",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.01175,
+          "ci95_by_seed": [
+            0.00825,
+            0.01525
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "glr_two_sided",
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.92225,
+          "ci95_by_seed": [
+            0.91475,
+            0.9295
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "energy",
+          "reference": "stouffer_two_sided",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.75475,
+          "ci95_by_seed": [
+            0.744,
+            0.76625
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "energy",
+          "reference": "max_absolute",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": -0.04025,
+          "ci95_by_seed": [
+            -0.04775,
+            -0.03275
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "energy",
+          "reference": "glr_two_sided",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.7875,
+          "ci95_by_seed": [
+            0.77575,
+            0.79875
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "stouffer_two_sided",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.867,
+          "ci95_by_seed": [
+            0.85725,
+            0.877
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "max_absolute",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.072,
+          "ci95_by_seed": [
+            0.06325,
+            0.0815
+          ],
+          "n_seed_blocks": 20
+        },
+        {
+          "method": "mahalanobis",
+          "reference": "glr_two_sided",
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4.0,
+          "target_fa": 0.03,
+          "benefit_recall": 0.89975,
+          "ci95_by_seed": [
+            0.893,
+            0.9065
+          ],
+          "n_seed_blocks": 20
+        }
+      ]
+    },
+    "artifact": "shock-radar/runs/D04_multicategory_20261004/metrics.json",
+    "evidence": [
+      {
+        "path": "shock-radar/runs/D04_multicategory_20261004/metrics.json",
+        "sha256": "9300b7121ece88a68e768dbe281e7612bd77d960b59cca71a5ac6a0a7edc2d67"
+      },
+      {
+        "path": "shock-radar/runs/D04_multicategory_20261004/matched-null-paired.json",
+        "sha256": "977f724bd917f5d7f96cd1dd875786b674cbeee30f8b4673e0c3d9cc47b53209"
+      }
+    ],
+    "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+    "verification": "07.10.2026, Mac: frozen JSON/SHA; no new fits",
+    "scientific_pass": false,
+    "limits": "Датчики проверены на синтетике, реальная реакция описательна. Не подменять общим cap проверку равных FAR; реальные шоки/earlywarning не доказаны."
+  },
+  {
+    "id": "D05",
+    "question": "Составной банк сигналов",
+    "method": "univariate + multicategory bank",
+    "protocol": "Единый бюджет всего банка на нулевых контролях, чувствительность к форме шока",
+    "status": "executed_synthetic_descriptive",
+    "metrics": {
+      "run_status": "COMPUTED_EXPLORATORY",
+      "null_fa_budget_total": 0.03,
+      "primary_comparisons": [
+        {
+          "family": "gaussian",
+          "form": "common_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.0415,
+          "ci95_seed_blocks": [
+            0.0345,
+            0.04925624999999991
+          ]
+        },
+        {
+          "family": "gaussian",
+          "form": "common_up",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.03325,
+          "ci95_seed_blocks": [
+            0.02725,
+            0.0395
+          ]
+        },
+        {
+          "family": "gaussian",
+          "form": "opposed",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": -0.008,
+          "ci95_seed_blocks": [
+            -0.01075,
+            -0.00525
+          ]
+        },
+        {
+          "family": "gaussian",
+          "form": "ramp_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.0735,
+          "ci95_seed_blocks": [
+            0.064,
+            0.08275
+          ]
+        },
+        {
+          "family": "gaussian",
+          "form": "sparse_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": -0.0075,
+          "ci95_seed_blocks": [
+            -0.01,
+            -0.00525
+          ]
+        },
+        {
+          "family": "student5",
+          "form": "common_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.2405,
+          "ci95_seed_blocks": [
+            0.2305,
+            0.25075
+          ]
+        },
+        {
+          "family": "student5",
+          "form": "common_up",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.2205,
+          "ci95_seed_blocks": [
+            0.208,
+            0.23225
+          ]
+        },
+        {
+          "family": "student5",
+          "form": "opposed",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": -0.2035,
+          "ci95_seed_blocks": [
+            -0.21625,
+            -0.18925
+          ]
+        },
+        {
+          "family": "student5",
+          "form": "ramp_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": 0.27875,
+          "ci95_seed_blocks": [
+            0.2665,
+            0.2915
+          ]
+        },
+        {
+          "family": "student5",
+          "form": "sparse_down",
+          "amplitude": 4,
+          "mode": "matched_realized_test_null",
+          "extended_benefit_recall": -0.24025,
+          "ci95_seed_blocks": [
+            -0.2555,
+            -0.224
+          ]
+        }
+      ]
+    },
+    "artifact": "shock-radar/runs/D05_joint_bank_20261005/metrics.json",
+    "evidence": [
+      {
+        "path": "shock-radar/runs/D05_joint_bank_20261005/metrics.json",
+        "sha256": "b2d25a779ba54cf5830f0466e73856cceaf6f1d06e3c656e85036e5771d2c856"
+      }
+    ],
+    "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+    "verification": "07.10.2026, Mac: frozen JSON/SHA; no new fits",
+    "scientific_pass": false,
+    "limits": "Не реальные экономические шоки, не независимый будущий holdout. Быстрые общие сдвиги и медленные рампы имеют разные границы чувствительности."
   }
 ]
