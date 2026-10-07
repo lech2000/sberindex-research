@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-10-07",
+  "place": "Mac, isolated worktree; current aiOS2 deterministic engine; Codex in-app browser localhost:8764",
+  "platform_commit": "5984e3b4243eb9e5c51862f09ed2411eb95a3d7a",
+  "scientific_base_commit": "8a8d2b92b4a9dd161d0d8aa34ec21ff0ffdde5b5",
+  "publication_status": "prepared, not published",
+  "report_build": {
+    "files": 183,
+    "source_files": 180,
+    "internal_links_checked": 395,
+    "missing_links": 0
+  },
+  "toy_spending": {
+    "food": 600,
+    "marketplace": 260,
+    "duplicates": 0
+  },
+  "toy_forecasts": {
+    "simple_mae": 10,
+    "test_mae": 2.3333333333333335,
+    "simple_rmse": 12.909944487358056,
+    "test_rmse": 2.3804761428476167
+  },
+  "browser_checks": [
+    "Atlas desktop four-step block visually checked",
+    "Radar desktop four-step block visually checked",
+    "Instruction link opens generated guide",
+    "At actual viewport width 582: two-column steps, no horizontal overflow"
+  ],
+  "limitations": [
+    "390px viewport was not established by the app; no claim of 390px mobile verification",
+    "No authenticated execution through localhost preview",
+    "Full research worker and stored case runs are a proposal, not implemented"
+  ],
+  "public_payload": [
+    "economic-atlas/landing/index.html",
+    "shock-radar/landing/index.html",
+    "reports/docs/USER_DATASET_GUIDE_RU.html",
+    "reports/docs/examples/spending-demo.csv",
+    "reports/docs/examples/forecast-demo.csv"
+  ]
+}
