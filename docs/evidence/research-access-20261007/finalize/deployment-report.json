@@ -1,0 +1,742 @@
+{
+  "timestamp": "2026-10-07T11:32:15Z",
+  "passed": true,
+  "summary": {
+    "total_checks": 47,
+    "passed": 40,
+    "critical_failures": 0,
+    "warnings": 7
+  },
+  "critical_failures": [],
+  "warnings": [
+    {
+      "name": "probe_riskproof_service",
+      "service": "API Gateway",
+      "passed": false,
+      "severity": "warning",
+      "detail": "\u2192 Riskproof Service:8100/health = 0 (want 200)",
+      "latency_ms": 4059.2,
+      "data": {
+        "target": "riskproof_service",
+        "url": "http://localhost:8100/health",
+        "status": 0
+      }
+    },
+    {
+      "name": "openapi_spec",
+      "service": "Tool Service",
+      "passed": false,
+      "severity": "warning",
+      "detail": "GET http://localhost:8004/openapi.json \u2192 403",
+      "latency_ms": 10130.1,
+      "data": {}
+    },
+    {
+      "name": "health_endpoint",
+      "service": "Riskproof Service",
+      "passed": false,
+      "severity": "warning",
+      "detail": "GET http://localhost:8100/health \u2192 0 ()",
+      "latency_ms": 4130.6,
+      "data": {
+        "status_code": 0,
+        "url": "http://localhost:8100/health"
+      }
+    },
+    {
+      "name": "openapi_spec",
+      "service": "Riskproof Service",
+      "passed": false,
+      "severity": "warning",
+      "detail": "GET http://localhost:8100/openapi.json \u2192 0",
+      "latency_ms": 5445.4,
+      "data": {}
+    },
+    {
+      "name": "container_running",
+      "service": "Riskproof Service",
+      "passed": false,
+      "severity": "warning",
+      "detail": "container riskproof-service: not running",
+      "latency_ms": 0.0,
+      "data": {
+        "compose_service": "riskproof-service",
+        "health": ""
+      }
+    },
+    {
+      "name": "health_endpoint",
+      "service": "N8N",
+      "passed": false,
+      "severity": "warning",
+      "detail": "GET http://localhost:5678/healthz \u2192 0 ()",
+      "latency_ms": 4149.9,
+      "data": {
+        "status_code": 0,
+        "url": "http://localhost:5678/healthz"
+      }
+    },
+    {
+      "name": "container_running",
+      "service": "N8N",
+      "passed": false,
+      "severity": "warning",
+      "detail": "container n8n: not running",
+      "latency_ms": 0.0,
+      "data": {
+        "compose_service": "n8n",
+        "health": ""
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_id": "api_gateway",
+      "service_name": "API Gateway",
+      "port": 8000,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8000/health \u2192 200",
+          "latency_ms": 10456.7,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8000/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 135 routes",
+          "latency_ms": 10461.5,
+          "data": {
+            "routes": 135,
+            "title": "aiOS2 API Gateway"
+          }
+        },
+        {
+          "name": "probe_agent_service",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Agent Service:8001/health = 200 (want 200)",
+          "latency_ms": 4831.3,
+          "data": {
+            "target": "agent_service",
+            "url": "http://localhost:8001/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "probe_memory_service",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Memory Service:8002/health = 200 (want 200)",
+          "latency_ms": 3164.4,
+          "data": {
+            "target": "memory_service",
+            "url": "http://localhost:8002/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "probe_orchestrator",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Orchestrator:8005/health = 200 (want 200)",
+          "latency_ms": 4237.1,
+          "data": {
+            "target": "orchestrator",
+            "url": "http://localhost:8005/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "probe_riskproof_service",
+          "service": "API Gateway",
+          "passed": false,
+          "severity": "warning",
+          "detail": "\u2192 Riskproof Service:8100/health = 0 (want 200)",
+          "latency_ms": 4059.2,
+          "data": {
+            "target": "riskproof_service",
+            "url": "http://localhost:8100/health",
+            "status": 0
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "API Gateway",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container api_gateway: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "api_gateway",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "agent_service",
+      "service_name": "Agent Service",
+      "port": 8001,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Agent Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8001/health \u2192 200",
+          "latency_ms": 9451.0,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8001/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Agent Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 32 routes",
+          "latency_ms": 9450.3,
+          "data": {
+            "routes": 32,
+            "title": "Agent Service"
+          }
+        },
+        {
+          "name": "probe_model_service",
+          "service": "Agent Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Model Service:8003/health = 200 (want 200)",
+          "latency_ms": 5522.7,
+          "data": {
+            "target": "model_service",
+            "url": "http://localhost:8003/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "probe_memory_service",
+          "service": "Agent Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Memory Service:8002/health = 200 (want 200)",
+          "latency_ms": 4491.5,
+          "data": {
+            "target": "memory_service",
+            "url": "http://localhost:8002/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Agent Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container agent-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "agent-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "memory_service",
+      "service_name": "Memory Service",
+      "port": 8002,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Memory Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8002/health \u2192 200",
+          "latency_ms": 8936.4,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8002/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Memory Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 52 routes",
+          "latency_ms": 8935.8,
+          "data": {
+            "routes": 52,
+            "title": "Memory Service"
+          }
+        },
+        {
+          "name": "probe_model_service",
+          "service": "Memory Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Model Service:8003/health = 200 (want 200)",
+          "latency_ms": 5923.0,
+          "data": {
+            "target": "model_service",
+            "url": "http://localhost:8003/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Memory Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container memory-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "memory-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "model_service",
+      "service_name": "Model Service",
+      "port": 8003,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Model Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8003/health \u2192 200",
+          "latency_ms": 9859.6,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8003/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Model Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 25 routes",
+          "latency_ms": 8210.2,
+          "data": {
+            "routes": 25,
+            "title": "aiOS Model Service"
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Model Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container model-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "model-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "tool_service",
+      "service_name": "Tool Service",
+      "port": 8004,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Tool Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8004/health \u2192 200",
+          "latency_ms": 7910.5,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8004/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Tool Service",
+          "passed": false,
+          "severity": "warning",
+          "detail": "GET http://localhost:8004/openapi.json \u2192 403",
+          "latency_ms": 10130.1,
+          "data": {}
+        },
+        {
+          "name": "probe_agent_service",
+          "service": "Tool Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Agent Service:8001/health = 200 (want 200)",
+          "latency_ms": 5315.5,
+          "data": {
+            "target": "agent_service",
+            "url": "http://localhost:8001/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Tool Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container tool-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "tool-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "orchestrator",
+      "service_name": "Orchestrator",
+      "port": 8005,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Orchestrator",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8005/health \u2192 200",
+          "latency_ms": 7719.1,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8005/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Orchestrator",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 35 routes",
+          "latency_ms": 7975.4,
+          "data": {
+            "routes": 35,
+            "title": "aiOS Orchestrator"
+          }
+        },
+        {
+          "name": "probe_agent_service",
+          "service": "Orchestrator",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Agent Service:8001/health = 200 (want 200)",
+          "latency_ms": 6698.9,
+          "data": {
+            "target": "agent_service",
+            "url": "http://localhost:8001/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Orchestrator",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container orchestrator: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "orchestrator",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "chat_service",
+      "service_name": "Chat Service",
+      "port": 8006,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Chat Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8006/health \u2192 200",
+          "latency_ms": 7848.9,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8006/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Chat Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 21 routes",
+          "latency_ms": 7955.5,
+          "data": {
+            "routes": 21,
+            "title": "aiOS2 Chat Service"
+          }
+        },
+        {
+          "name": "websocket__ws_validator",
+          "service": "Chat Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "WS ws://localhost:8006/ws/validator \u2192 101 Upgrade OK",
+          "latency_ms": 0.0,
+          "data": {
+            "path": "/ws/validator",
+            "response": "HTTP/1.1 101 Switching Protocols"
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Chat Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container chat-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "chat-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "pmr_service",
+      "service_name": "PMR Service",
+      "port": 8007,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "PMR Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "GET http://localhost:8007/health \u2192 200",
+          "latency_ms": 4880.7,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8007/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "PMR Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 8 routes",
+          "latency_ms": 5890.8,
+          "data": {
+            "routes": 8,
+            "title": "Plan Mode Responder Service"
+          }
+        },
+        {
+          "name": "probe_tool_service",
+          "service": "PMR Service",
+          "passed": true,
+          "severity": "warning",
+          "detail": "\u2192 Tool Service:8004/health = 200 (want 200)",
+          "latency_ms": 6198.5,
+          "data": {
+            "target": "tool_service",
+            "url": "http://localhost:8004/health",
+            "status": 200
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "PMR Service",
+          "passed": true,
+          "severity": "critical",
+          "detail": "container pmr-service: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "pmr-service",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "mem0_mcp",
+      "service_name": "Mem0 MCP",
+      "port": 8009,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Mem0 MCP",
+          "passed": true,
+          "severity": "warning",
+          "detail": "GET http://localhost:8009/health \u2192 200",
+          "latency_ms": 4534.9,
+          "data": {
+            "status_code": 200,
+            "url": "http://localhost:8009/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Mem0 MCP",
+          "passed": true,
+          "severity": "warning",
+          "detail": "OpenAPI has 6 routes",
+          "latency_ms": 4798.8,
+          "data": {
+            "routes": 6,
+            "title": "mem0 MCP Service"
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "Mem0 MCP",
+          "passed": true,
+          "severity": "warning",
+          "detail": "container mem0-mcp: healthy",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "mem0-mcp",
+            "health": "healthy"
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "riskproof_service",
+      "service_name": "Riskproof Service",
+      "port": 8100,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "Riskproof Service",
+          "passed": false,
+          "severity": "warning",
+          "detail": "GET http://localhost:8100/health \u2192 0 ()",
+          "latency_ms": 4130.6,
+          "data": {
+            "status_code": 0,
+            "url": "http://localhost:8100/health"
+          }
+        },
+        {
+          "name": "openapi_spec",
+          "service": "Riskproof Service",
+          "passed": false,
+          "severity": "warning",
+          "detail": "GET http://localhost:8100/openapi.json \u2192 0",
+          "latency_ms": 5445.4,
+          "data": {}
+        },
+        {
+          "name": "container_running",
+          "service": "Riskproof Service",
+          "passed": false,
+          "severity": "warning",
+          "detail": "container riskproof-service: not running",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "riskproof-service",
+            "health": ""
+          }
+        }
+      ]
+    },
+    {
+      "service_id": "n8n",
+      "service_name": "N8N",
+      "port": 5678,
+      "passed": true,
+      "checks": [
+        {
+          "name": "health_endpoint",
+          "service": "N8N",
+          "passed": false,
+          "severity": "warning",
+          "detail": "GET http://localhost:5678/healthz \u2192 0 ()",
+          "latency_ms": 4149.9,
+          "data": {
+            "status_code": 0,
+            "url": "http://localhost:5678/healthz"
+          }
+        },
+        {
+          "name": "container_running",
+          "service": "N8N",
+          "passed": false,
+          "severity": "warning",
+          "detail": "container n8n: not running",
+          "latency_ms": 0.0,
+          "data": {
+            "compose_service": "n8n",
+            "health": ""
+          }
+        }
+      ]
+    }
+  ],
+  "extra_checks": [
+    {
+      "name": "postgres_ready",
+      "service": "postgres",
+      "passed": true,
+      "severity": "critical",
+      "detail": "/var/run/postgresql:5432 - accepting connections",
+      "latency_ms": 0.0,
+      "data": {}
+    },
+    {
+      "name": "redis_ping",
+      "service": "redis",
+      "passed": true,
+      "severity": "critical",
+      "detail": "PONG",
+      "latency_ms": 0.0,
+      "data": {}
+    },
+    {
+      "name": "stream_process_stream",
+      "service": "redis",
+      "passed": true,
+      "severity": "warning",
+      "detail": "stream process:stream: exists",
+      "latency_ms": 0.0,
+      "data": {
+        "stream": "process:stream"
+      }
+    },
+    {
+      "name": "credit_invariants",
+      "service": "postgres",
+      "passed": true,
+      "severity": "critical",
+      "detail": "\u0434\u0435\u043d\u044c\u0433\u0438 \u0441\u0445\u043e\u0434\u044f\u0442\u0441\u044f: \u043f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u043e \u0432\u0438\u0434\u043e\u0432 \u2014 5, \u043f\u043e\u043b\u043e\u043c\u043e\u043a \u043d\u0435\u0442. \u041f\u0440\u0438\u043d\u044f\u0442\u043e \u0438 \u043d\u0435 \u0431\u043b\u043e\u043a\u0438\u0440\u0443\u0435\u0442: platform_split_at_risk: 2",
+      "latency_ms": 0.0,
+      "data": {}
+    }
+  ]
+}

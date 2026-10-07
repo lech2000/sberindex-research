@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-07T11:34:36.116566+00:00",
+  "place": "Public HTTPS agrigate.pro / api.agrigate.pro and SSH joe",
+  "html_sha256": "d1b85900f49231c42ef253dd21176f2a2db6ac9ad76aa2de688b5cd7f5d168e1",
+  "client_version": "86f02f732d021bc01768631e84ad3c0824ac7453cf1febbb2e1aecfa234adf37",
+  "canonical_marker_verified": true,
+  "matches_merged_prod_source": true,
+  "prod_commit": "e957c9e717361a771088709f37b739c53b024a0b",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/research/sberindex/access",
+      "unauthenticated_status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/research/sberindex/access/requests",
+      "unauthenticated_status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/internal/research/sberindex/access/pending",
+      "unauthenticated_status": 404
+    }
+  ],
+  "paid_audit_paused": true,
+  "paid_model_calls": 0,
+  "production_grants_created_by_check": 0,
+  "services_rebuilt": false
+}

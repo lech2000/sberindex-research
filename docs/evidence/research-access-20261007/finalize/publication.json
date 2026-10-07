@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-07T11:32:51.073033+00:00",
+  "place": "Bunny storage and CDN under canonical deploy_lock",
+  "path": "v2/index.html",
+  "before_sha256": "fe542470bfe2c02baa83869f7143fda0266924a3cae4e26369538cfdbc0f0a95",
+  "sha256": "d1b85900f49231c42ef253dd21176f2a2db6ac9ad76aa2de688b5cd7f5d168e1",
+  "public_html_source_commit": "e957c9e717361a771088709f37b739c53b024a0b",
+  "changed": "Canonical client version marker only; all public asset references unchanged",
+  "client_version": "86f02f732d021bc01768631e84ad3c0824ac7453cf1febbb2e1aecfa234adf37",
+  "cdn_purged": true,
+  "tls_verification": true
+}
