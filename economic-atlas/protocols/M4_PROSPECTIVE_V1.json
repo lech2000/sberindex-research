@@ -1,0 +1,103 @@
+{
+  "version": "m4-double-dissociation-v1",
+  "recorded_before_method_results_utc": "2026-10-07T15:50:56.672092+00:00",
+  "source_action": "act_a0d924d8af6548e2",
+  "original_what": "ATF-M4. К E05/H1: двойная дивергенция каналов (доли / динамика / мобильность СЗФО) — синтетический мир на каждый канал; канал должен строить структуру на своём мире и воздерживаться (m=1 по M1) на чужом. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+  "n": 297,
+  "n_semantics": "synthetic same-size cohort bound to original SZFO coverage297; does not fabricate a real crosswalk or nationally extend mobility",
+  "months": 24,
+  "R": [
+    3,
+    4,
+    5
+  ],
+  "channels": [
+    "A",
+    "B",
+    "C"
+  ],
+  "structured_worlds": [
+    "A",
+    "B",
+    "C"
+  ],
+  "k": [
+    10,
+    20,
+    40
+  ],
+  "calibration_seeds": [
+    20262001,
+    20262002,
+    20262003,
+    20262004,
+    20262005,
+    20262006,
+    20262007,
+    20262008,
+    20262009,
+    20262010
+  ],
+  "held_seeds": [
+    20263001,
+    20263002,
+    20263003,
+    20263004,
+    20263005,
+    20263006,
+    20263007,
+    20263008,
+    20263009,
+    20263010,
+    20263011,
+    20263012,
+    20263013,
+    20263014,
+    20263015,
+    20263016,
+    20263017,
+    20263018,
+    20263019,
+    20263020
+  ],
+  "null_seeds_base": 20264001,
+  "null_replicates": 99,
+  "A": "cosine five raw spending shares at first month, denominator separateAllcategories; no temporal average/reclosure of real shares",
+  "B": "Pearson/cosine of centered flattened23monthly log-share changes x5categories, adequate24monthwindow; no level features enter B",
+  "C": "source-compatible index feature augmentation: A five shares z-scored acrosssyntheticcohort +.25*z(log1p kmindex); EuclideanfeaturekNN graph, NOTmobilityflows or OD edges. .25 inherited primary oldablation and fixed beforeworldresults; foreignA may fail because CcontainsA, retainthis",
+  "graph": "directedkNN distance stabletie; union candidates retainfloor(n*k/2) closest uniqueedges, binarysymmetric exactdensity; isolatesINCONCLUSIVEneverbridged",
+  "operator": "unchanged acceptedM1 spectrum(normalizedrandomwalk),tau.95, fulltail populationSTD, no epsilon-infinity; M1sourceSHA5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+  "worlds": "single coherent spendingpanel: initialshares haveR prototypes iffworldA else iidDirichlet(.72total);23logshareincrements haveR zero-mean trajectory prototypes iffworldB else iidGaussian; sourcepanel initial*exp(cumulativeincrements) without forcedclosure; log1pmobindex hasR separatedlevels iffworldC elseiidGaussianaround5. Channels generated from disjoint RNG streams, no group-dependentother-channelparameters",
+  "A_positive": "(.02+onehotgroup+absN(0,.015)) normalize*.72",
+  "B_positive": "5category patterns flattened115length sinwavefrequencygroup1..R +N(0,.10), rowmeanremoved; multiply.03; independentcategory/timevariation",
+  "B_negative": "iidN(0,.03) over23x5; no persistentgroup effect",
+  "C_positive": "exp(5 +1.5*group +N(0,.10))-1; nonnegativekmindex",
+  "C_negative": "exp(5+N(0,.5))-1",
+  "known_truth": "balanced group labels used only to check ownworld R count and worldgenerator invariants; never used by graph/spectrum/threshold/labels",
+  "null": "degree-preserving undirected double-edge swapping,10*E successfulswaps, max100*E attempts; eachseed fixed; density/degrees exactlypreserved; unfinishedrewireINCONCLUSIVE_NULL notresampled. This is originalM1allowed configuration-model alternative, not changingacceptedbaselineM1per-columnshuffles. Chosen uniformlyallchannels beforeM4results; univariateindexrowshufflewouldrenamegraphvertices",
+  "sig_star": "each(n,channel,k): maxnegativeworldsig/minownworldpossig R3/4/5 fromcalibrationseeds; strictmidpoint only, ownm mustmatchR; no separation/invalid => INCONCLUSIVE_CALIBRATION; neverborrow1896M1threshold into297channels",
+  "criteria": "all1620held graphcells retained. Each ownworld REAL_GAP andm=R required; everyforeignworld rawm=1 required regardlesslowSIG/shuffle. Anyfailure=>M4NOTCONFIRMED; anyinconclusive=>notPASS. Full9cellmatrix perR/k/seed; no winnerselection",
+  "dependencies": [
+    "actualM1qualityreceipt verifiedbeforefullM4execution; engineeringPASS is insufficient",
+    "sourcechannelC actualkmindex scope retained; syntheticfeaturebankdoesnotestablishrealnativeIDcrosswalk or legalboundaries"
+  ],
+  "resource_plan": {
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "wall_cap_seconds": 21600,
+    "output_bytes": 268435456,
+    "launch": "rootacceptcodeandM1dependencyreviewbeforeforegroundfullbank; no automaticrestart",
+    "upper_eigendecompositions": 162360,
+    "n": 297,
+    "no_resource_cost_claim_from_smaller_n_tests": true
+  },
+  "not_claimed": [
+    "realMOeconomicrelationship",
+    "causalPASS",
+    "newindependentholdout",
+    "asof/vintage",
+    "M5valididentity",
+    "genuineODsourceavailability"
+  ],
+  "state": "PROSPECTIVE_NOT_EXECUTED"
+}

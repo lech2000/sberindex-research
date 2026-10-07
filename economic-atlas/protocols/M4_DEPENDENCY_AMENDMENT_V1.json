@@ -1,0 +1,19 @@
+{
+  "version": "m4-dependency-qualification-amendment-v1",
+  "recorded_utc": "2026-10-07T16:34:48.441245+00:00",
+  "before_first_M4_bank": true,
+  "base_M4_protocol_sha256": "6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+  "change": "Complete hash-verified actual M1 calibration and held records unlock descriptive M4 even when controls fail. Upstream failure forbids positive M4 scientific qualification; economic/causal/identity claims remain false in all cases.",
+  "unchanged": [
+    "worlds",
+    "seeds",
+    "n",
+    "channels",
+    "nullcount",
+    "thresholds",
+    "density",
+    "cell criteria"
+  ],
+  "partial_or_fabricated_receipt": "BLOCK",
+  "budget": "Old unmeasured21600s is not accepted as evidence; explicit root operational wall cap required after fixed exact-size preflight."
+}

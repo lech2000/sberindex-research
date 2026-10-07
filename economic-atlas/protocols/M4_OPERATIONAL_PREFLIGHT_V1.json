@@ -1,0 +1,21 @@
+{
+  "version": "m4-exact-size-resource-preflight-v1",
+  "purpose": "One operational measurement, no calibration, held assessment, threshold fit or scientific qualification",
+  "n": 297,
+  "months": 24,
+  "dimensions": 5,
+  "R": 1,
+  "world": "NONE",
+  "channel": "B",
+  "k": 40,
+  "seed": 999999,
+  "null_seeds_start": 99999900,
+  "null_replicates": 99,
+  "representative_selection": "Fixed once before numerical results: highest frozen density k40, channelB independent noise, R1; not a worst-case runtime bound or selected fast seed",
+  "operation": "Unchanged world/graph/degree_null and accepted M1 full eigenvalues+eigenvectors; all99 nulls even if original graph isolate; unchanged10E successful swaps and100E attempts cap",
+  "resource_limits": {"CPU_threads": 1, "aggregate_RSS_bytes": 1073741824, "wall_seconds": 600, "free_disk_bytes_min": 1073741824, "output_bytes_max": 268435456},
+  "execution": "One fresh foreground native-guard session after F7b adoption and root authorization. Mandatory ownchild+grandchild native resource probe first. No retry/resume/restart. Limit STOP retains partial times, null meta, failure receipts and logs; never declares full cost measured.",
+  "extrapolation": "Report measured graph/originalfullspectrum/nullswap/nullfullspectrum costs and swap attempts. Compute illustrative fixed-bank scaling only, not a guaranteed bound. Fullbank162360 spectra and5557167000 targetsuccessfulswaps; 55571670000 maximumswap attempts. No automatic fullbank launch.",
+  "interpretation": "No methodPASS/economicPASS/causalPASS; negative or inconclusive outcomes preserved. This separate operational seed is not part of calibration or held banks.",
+  "state": "PROSPECTIVE_NOT_EXECUTED"
+}
