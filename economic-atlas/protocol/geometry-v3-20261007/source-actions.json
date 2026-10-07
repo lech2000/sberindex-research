@@ -1,0 +1,41 @@
+[
+  {
+    "id": "act_b6659ef0c8e049b1",
+    "what": "ATF-M2. К E04: хранилище идентичностей кластеров — область (центр+радиус; эллипсоид при ≥10 членах), узнавание по перекрытию Бхаттачарии ≥θ_ov и отрыву от второго ≥spec_gap, дрейф, рождение, dormant/возвращение; θ_ov/spec_gap (старт 0.55/0.30) перекалибровать на бутстрепе; кластеризация месяца без перекрытия окон (ловушка плеча). Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+    "owner": "",
+    "due": "2026-09-27T15:00:00Z",
+    "waiting_for": "KB75/16979:9600overlap только реально2023; T/M/Tc/SHA совпали, worlds не input. M2real36/3/7,M3real0;554МО безidentity. Геометрии/errorbudget/economictruth не подтверждены. F1 описательный. Не повторять runs.",
+    "done": false,
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_66cae4a89ba6473f",
+    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_a1e77e09fb854cca",
+    "what": "ATF-M3. К E04: split/merge через вложение (>60% членов внутри области, Махаланобис<2.5) вместо близости центров; контроль на мирах part-whole и proximity, чувствительность порогов. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+    "owner": "",
+    "due": "2026-09-27T15:00:00Z",
+    "waiting_for": "KB75/16979:9600overlap только реально2023; T/M/Tc/SHA совпали, worlds не input. M2real36/3/7,M3real0;554МО безidentity. Геометрии/errorbudget/economictruth не подтверждены. F1 описательный. Не повторять runs.",
+    "done": false,
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_66cae4a89ba6473f",
+    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_63eabe3fd8aa4770",
+    "what": "A6.3: при замороженных калибровках 2023 (T=0.2771627598, M=0.7187007761, Tc=0.1739547472) задать синтетические миры с известной истиной: стабильность, новое рождение, исчезновение, split, merge и близкие ложные события. До прогона зафиксировать состав миров и допуск ошибок; через fixar-devops/F7b посчитать false match, false miss, coverage/abstention и чувствительность M±25%. Сохранить код, seed, SHA, таблицу ошибок и GATE_REPORT; по реальным МО не объявлять истинные рождения.",
+    "owner": "sberindex_atlas_researcher",
+    "due": "2026-10-04T00:00:00Z",
+    "waiting_for": "KB75/15958:210 controls completed, child done; frozenT/M/Tc, bugfixed62/15959. Далее formalacceptance/errorbudget и научная сводка, не повтор210runs/подборM. Только synthetic, A6OPEN.",
+    "done": false,
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_66cae4a89ba6473f",
+    "source_checked_at": "2026-10-07T12:09:19.950709+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  }
+]

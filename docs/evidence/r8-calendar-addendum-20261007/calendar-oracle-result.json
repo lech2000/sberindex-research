@@ -1,0 +1,94 @@
+{
+  "status": "CALENDAR_SEMANTICS_ISSUE_CONFIRMED_WITH_RECORDED_ENTRYPOINT_NOT_NUMERIC_RERUN",
+  "runs": {
+    "tiny": {
+      "manifest_sha256": "be9adc52a1cc1e53721dc42b73fa7ffd874e512c35b358f9ed1068ac343352f8",
+      "code_sha256": "29f0b7209c9b1c25106b45100954947448b10c7cf6e6ca2f5a7647a7cb125c5c",
+      "prediction_sha256": "17ba7ea03f01fb7b67142b6ebb339decd2cb37cc85796dc46be8da1400f2a676",
+      "recorded_command": "shock-radar/src/r8_tsfm_paired.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run shock-radar/runs/R8_prophet_full_20260927 --outdir shock-radar/output/R8_tsfm_deterministic_20260928 --model-revision 29d808298f1a62493e7b9a5e08529d0d930fa189 --device mps --batch-size 64 --max-series 0 --seed 20260928",
+      "rows": 171150,
+      "frozen_target_date_contract_verified": true,
+      "horizons": [
+        1,
+        2,
+        3
+      ],
+      "calendar_oracle_rows": [
+        {
+          "horizon": 1,
+          "rows": 73392,
+          "advertised_target_equals_origin_plus_h": true,
+          "forecast_step_h_date_from_declared_cutoff": "origin-2+h",
+          "advertised_target_minus_step_h_months": 2
+        },
+        {
+          "horizon": 2,
+          "rows": 61110,
+          "advertised_target_equals_origin_plus_h": true,
+          "forecast_step_h_date_from_declared_cutoff": "origin-2+h",
+          "advertised_target_minus_step_h_months": 2
+        },
+        {
+          "horizon": 3,
+          "rows": 36648,
+          "advertised_target_equals_origin_plus_h": true,
+          "forecast_step_h_date_from_declared_cutoff": "origin-2+h",
+          "advertised_target_minus_step_h_months": 2
+        }
+      ]
+    },
+    "prophet": {
+      "manifest_sha256": "5630c677fb893a25cfacca918cdca8d784f5533fec3e2c719e2987a9fdfe69cc",
+      "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+      "prediction_sha256": "c450491fb34d3c7d2680e20333e77b95750ad7761feba06bc6b8fe8e0724a7a6",
+      "recorded_command": "/Users/sergey/projects/sberindex-research/shock-radar/src/r8_prophet_batch.py --raw /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet --paired-run /Users/sergey/projects/sberindex-research/shock-radar/runs/R8_v2 --outdir /Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/shock-radar/runs/R8_batch_live_20260927 --max-fits 0 --resume",
+      "rows": 171150,
+      "frozen_target_date_contract_verified": true,
+      "horizons": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "trace": [
+    "manifest recorded command -> main() lines2358-2360 -> run()",
+    "run cutoff causal_train_window line1229 -> context_vals line1243",
+    "run tsfm_predict_batch line1284 prediction_length=max_horizon -> run val=yhat[h-1] line1309"
+  ],
+  "source_assignment_line": 1309,
+  "synthetic_calendar_adapter": [
+    {
+      "horizon": 1,
+      "advertised_target": "2024-07",
+      "selected_step_calendar_date": "2024-05",
+      "month_difference": 2
+    },
+    {
+      "horizon": 2,
+      "advertised_target": "2024-08",
+      "selected_step_calendar_date": "2024-06",
+      "month_difference": 2
+    },
+    {
+      "horizon": 3,
+      "advertised_target": "2024-09",
+      "selected_step_calendar_date": "2024-07",
+      "month_difference": 2
+    }
+  ],
+  "prophet_calendar_oracle": {
+    "tiny_prediction_length": 3,
+    "prophet_train_end": "2024-04",
+    "prophet_requested_target_dates": [
+      "2024-07",
+      "2024-08",
+      "2024-09"
+    ]
+  },
+  "scope": "Recorded command and code SHA match frozen source. Frozen target dates checked for all rows. Synthetic adapter executes exact used batch selection expression and public adapter; no actual Tiny weights/inference or metric reconstruction. This demonstrates horizon/date semantics failure under declared lag2, not the corrected numeric MAE. Prophet uses explicit target dates and does not share step-h calendar error. Missingmonth compression remains separate code finding.",
+  "scientific_pass": false,
+  "old_artifacts_modified": false,
+  "new_model_calls": 0,
+  "prophet_source_anchor": "r8_prophet_batch.py:635 real train ds; 638-639 explicit target ds to predictor; 449 dataframe target ds"
+}

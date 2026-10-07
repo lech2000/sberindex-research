@@ -6,11 +6,18 @@
 
 meta:
   gate: R0
-  as_of_date: "2026-09-20"
-  status: r0_pass_conservative_lag_2m  # историческое решение R0, не PASS R9
+  as_of_date: '2026-09-20'
+  status: r0_pass_conservative_lag_2m
   r9_scientific_pass: false
-  source_estimate: null          # нет внешнего подтверждения горизонтов
-  synthetic_assumption: conservative_release_lag_2m  # принято 21.09.2026, см. data/availability_audit.csv
+  source_estimate: null
+  synthetic_assumption: conservative_release_lag_2m
+  current_revision:
+    revision: 2026-10-07-v1
+    checked_where: Mac; frozen run JSON/SHA and calendar arithmetic; no new fits
+    historical_asof_verified: false
+    independent_holdout: false
+    scientific_pass: false
+    legacy_r0_status_preserved: true
 
 target:
   variable: spending_value       # безналичные расходы МО
@@ -35,49 +42,141 @@ timestamps:
     публикации каждого выпуска из внешнего источника (Росстат / СберИндекс).
 
 horizons:
-  historical_r0_proposed: [1, 2, 3]
-  r9_evaluated: [1, 3, 6, 12]   # только технические baseline, июль–декабрь 2024
-  status: technical_baseline_only
-  constraint: >
-    24 точки → годовая сезонность оценивается с высокой
-    неопределённостью. Горизонт 3 мес = 12.5% ряда.
-  recommendation: >
-    Новый датированный выпуск и независимый holdout нужны до выбора
-    победившей модели и заявления о раннем предупреждении.
+  historical_r0_proposed:
+  - 1
+  - 2
+  - 3
+  r9_evaluated:
+  - 1
+  - 3
+  - 6
+  - 12
+  status: executed_retrospective_only_not_independent_test
+  constraint: Calendar minimum12 observations with assumed lag2 permits10/8/5/0 origins at h1/3/6/12;
+    seasonal H12 under those conditions is unsupported. Distinct short-history national H12 pilots remain
+    exploratory.
+  recommendation: 'Новый датированный выпуск и независимый holdout нужны до выбора победившей модели и
+    заявления о раннем предупреждении.
+
+    '
+  official_contest:
+  - 1
+  - 3
+  - 6
+  - 12
 
 forecast_origins:
   strategy: rolling_origin_expanding
-  min_train_months: 12           # минимум для сезонного наивного
+  min_train_months: 12
   candidate_by_horizon:
-    1: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
-        "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"]
-    2: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
-        "2024-07", "2024-08", "2024-09", "2024-10", "2024-11"]
-    3: ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06",
-        "2024-07", "2024-08", "2024-09", "2024-10"]
-  note: >
-    Это исходный R0-план, а не фактически исполненная маска R9.
-    Финальный независимый тест закрыт до выбора модели.
-    Препроцессинг обучается внутри каждого обучающего окна.
+    1:
+    - 2024-01
+    - 2024-02
+    - 2024-03
+    - 2024-04
+    - 2024-05
+    - 2024-06
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    - 2024-12
+    2:
+    - 2024-01
+    - 2024-02
+    - 2024-03
+    - 2024-04
+    - 2024-05
+    - 2024-06
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    3:
+    - 2024-01
+    - 2024-02
+    - 2024-03
+    - 2024-04
+    - 2024-05
+    - 2024-06
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+  note: 'Это исходный R0-план, а не фактически исполненная маска R9. Финальный независимый тест закрыт
+    до выбора модели. Препроцессинг обучается внутри каждого обучающего окна.
+
+    '
+  min_train_months_scope: historical seasonal protocol requirement; not applied to every actual R9 Prophet
+    fit
+  actual_r9_origins_ref: r9_paired_prophet.results
+  calendar_feasibility_ref: calendar_feasibility
 
 r9_technical_baselines:
   status: verified_computation_not_independent_test
   run: shock-radar/runs/R9_baseline_20261001/metrics.json
-  source_sha256: "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
-  target_months: ["2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"]
-  origin_rule: "origin = target - horizon calendar months"
-  history_rule: "inputs <= origin; no filling of missing origin or seasonal month"
-  seasonal_rule: "seasonal_naive = value at target - 12 calendar months"
-  paired_mask: "same territory/category/target rows for last_value, seasonal_naive, train_mean within each horizon"
+  source_sha256: 9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61
+  target_months:
+  - 2024-07
+  - 2024-08
+  - 2024-09
+  - 2024-10
+  - 2024-11
+  - 2024-12
+  origin_rule: origin = target - horizon calendar months
+  history_rule: inputs <= origin; no filling of missing origin or seasonal month
+  seasonal_rule: seasonal_naive = value at target - 12 calendar months
+  paired_mask: same territory/category/target rows for last_value, seasonal_naive, train_mean within each
+    horizon
   cross_horizon_comparison: forbidden_without_new_common_mask
   unit: unknown_native_value
   results:
-    1: {n: 73728, territories: 2070, mae_last: 625.6724175347222, mae_seasonal: 1287.501980251736, mae_mean: 1306.6923303706676, missing_origin: 330, missing_seasonal: 1350}
-    3: {n: 73662, territories: 2067, mae_last: 865.1747712524775, mae_seasonal: 1287.9080801498737, mae_mean: 1408.67840609449, missing_origin: 630, missing_seasonal: 1122}
-    6: {n: 73578, territories: 2060, mae_last: 1125.2783304792192, mae_seasonal: 1288.3963141156323, mae_mean: 1577.1873061402705, missing_origin: 1032, missing_seasonal: 780}
-    12: {n: 73824, territories: 2077, mae_last: 1287.55793508886, mae_seasonal: 1287.55793508886, mae_mean: 1872.888043160821, missing_origin: 1614, missing_seasonal: 0}
-  live_evidence_corpus_77: {1: 15177, 3: 15186, 6: 15170, 12: 15189}
-  correction_corpus_77: 15174  # lag=6 metric is not a horizon-6 forecast
+    1:
+      n: 73728
+      territories: 2070
+      mae_last: 625.6724175347222
+      mae_seasonal: 1287.501980251736
+      mae_mean: 1306.6923303706676
+      missing_origin: 330
+      missing_seasonal: 1350
+    3:
+      n: 73662
+      territories: 2067
+      mae_last: 865.1747712524775
+      mae_seasonal: 1287.9080801498737
+      mae_mean: 1408.67840609449
+      missing_origin: 630
+      missing_seasonal: 1122
+    6:
+      n: 73578
+      territories: 2060
+      mae_last: 1125.2783304792192
+      mae_seasonal: 1288.3963141156323
+      mae_mean: 1577.1873061402705
+      missing_origin: 1032
+      missing_seasonal: 780
+    12:
+      n: 73824
+      territories: 2077
+      mae_last: 1287.55793508886
+      mae_seasonal: 1287.55793508886
+      mae_mean: 1872.888043160821
+      missing_origin: 1614
+      missing_seasonal: 0
+  live_evidence_corpus_77:
+    1: 15177
+    3: 15186
+    6: 15170
+    12: 15189
+  correction_corpus_77: 15174
+  observation_lag_months: 0
+  availability_lag_verified: false
+  availability_lag2_scope: separate assumption; stored lag0 MAE is never assigned to lag2
+  evidence:
+    path: shock-radar/runs/R9_baseline_20261001/metrics.json
+    sha256: d5091592f317254d2ceae410fb01e4867f27fd37b0670103f1a6f278825411e1
 
 r9_independent_test:
   status: blocked_missing_dated_release
@@ -87,9 +186,15 @@ r9_independent_test:
   independent_holdout_available: false
   prophet_paired_feasibility: diagnostic_pilot_completed
   prophet_pilot: shock-radar/runs/R9_prophet_pilot_20261001/metrics.json
-  prophet_full_panel: pending
-  uncertainty_intervals: pending
+  prophet_full_panel: completed_retrospective_with222_insufficient_train_exclusions
+  uncertainty_intervals: completed_retrospective_six_target_month_blocks
   decision: no_scientific_pass
+  completed_computation_ref: r9_paired_prophet
+  gate_state: CLOSED
+  prerequisites:
+  - new unseen temporal holdout
+  - confirmed historical published_at/available_at/vintage
+  - model and protocol fixed before targets accessed
 
 event_definition:
   type: structural_break_or_regime_change
@@ -109,67 +214,578 @@ false_alarm_budget:
     окончательное значение утверждается до открытия test.
 
 temporal_split:
-  train: "2023-01..origin-1"
-  validation: "origin..origin+h-1"  # rolling
-  test: CLOSED                      # не открывается до выбора модели
-  embargo: 0                        # месячные данные, нет внутри-периода утечки
-  note: >
-    Препроцессинг (нормализация, лаги) обучается ТОЛЬКО на train
-    каждого окна. Ревизии данных между train/validation/test не смешиваются.
+  train: 'per-run cutoff: R9 inputs<=origin; F03/R8/N3 inputs<=origin-2; no silent interchange'
+  validation: previously viewed exploratory windows; no new independent validation declared
+  test: CLOSED
+  embargo: 0
+  note: 'Препроцессинг (нормализация, лаги) обучается ТОЛЬКО на train каждого окна. Ревизии данных между
+    train/validation/test не смешиваются.
+
+    '
+  embargo_scope: historical R0 planning value; real W01 embargo protocol not executed
 
 baseline_metrics:
   seasonal_naive:
     lag: 12
     sample_territory: 1
-    sample_category: "Продовольствие"
+    sample_category: Продовольствие
     observations: 24
-    mae: 1153.5                   # observed через sberindex_scientific_metric
+    mae: 1153.5
     scope: sample_only_not_panel_metric
-    formula: "MAE_s = mean(|x_t - x_{t-s}|)"
-    source: "sberindex_scientific_metric, audit_id 9f4a8d8723a92121859d22e8"
-  prophet: status_planned
-  global_boosting: status_planned
-  tsfm_chronos2: status_planned
+    formula: MAE_s = mean(|x_t - x_{t-s}|)
+    source: sberindex_scientific_metric, audit_id 9f4a8d8723a92121859d22e8
+  prophet:
+    status: executed_retrospective
+    r8:
+      path: shock-radar/runs/R8_prophet_full_20260927/metrics.json
+      sha256: d7c373e2d4bdf1fa3baefdb60e66042caf991275cdaa580fdba2f80ffceac1d2
+    r9_ref: r9_paired_prophet
+    scientific_pass: false
+  global_boosting:
+    status: executed_bounded_causal_exploratory
+    evidence:
+      path: shock-radar/runs/F03_causal/metrics.json
+      sha256: 9a4e3871efd084890a1a9f983072374b20d0273a21bee346d9baef3d3e278d30
+    observation_lag_months: 2
+    invalidated_legacy_run: R3_future_leakage
+    scientific_pass: false
+  tsfm_chronos2:
+    status: not_executed
+    required_action: 05 remains open; actual Tiny does not fulfill Chronos-2
+  tsfm_chronos_t5_tiny:
+    status: executed_scientific_inconclusive
+    model:
+      estimator: Chronos-T5-tiny
+      model_id: amazon/chronos-t5-tiny
+      model_revision_requested: 29d808298f1a62493e7b9a5e08529d0d930fa189
+      model_revision_actual: 29d808298f1a62493e7b9a5e08529d0d930fa189
+      mode: zero-shot
+      frozen_weights: true
+      no_training_on_target: true
+      device: mps
+    evidence:
+    - path: shock-radar/runs/R8_tsfm_deterministic_20260928/manifest.json
+      sha256: be9adc52a1cc1e53721dc42b73fa7ffd874e512c35b358f9ed1068ac343352f8
+    - path: shock-radar/runs/R8_tsfm_deterministic_20260928/metrics.json
+      sha256: 4b1979250bf14176007c62de9c086d5f00fa3cc3c049096f0a49f69c7a4ada34
+    observation_lag_months: 2
+    mae_common:
+      tsfm: 939.0617606977953
+      prophet: 731.3863030799444
+      lastavailable: 880.2129593923459
+      seasonal_naive: 1280.4203856266433
+      n_common: 171150
+    scientific_pass: false
+  timesfm:
+    status: not_executed_optional_deferred_p2
 
 auxiliary_data:
   mobility:
     rows: 594
-    territories: 297              # СЗФО
-    slices_total: 2               # 2024-12 и 2025-11
+    territories: 297
+    slices_total: 2
     retrospective_slices_as_of_2024_12: 1
-    usage: limited_supplementary  # нельзя строить общероссийскую сеть
+    usage: limited_supplementary
   macro_cb:
     rows: 448
     series: 8
-    period: "2022-02..2026-09"
+    period: 2022-02..2026-09
   calendar:
     rows: 1826
-    period: "2022-01..2026-12"
+    period: 2022-01..2026-12
   news:
-    status: archive_listing_pilot_60_not_model_ready
-    checked_at: "2026-09-24"
-    candidates_unique: 60
-    current_rss: 20
-    archive_listing_candidates: 40
-    archive_dated_2024: 31
-    archive_dated_2023: 9
-    rss_manifest: data/raw/news/manifest.json
-    archive_manifest: data/raw/news/archive_manifest.json
-    archive_as_of_eligible: false
-    geography: missing
-    topic: missing
-    full_article_text: missing
-    f06: unmeasured
-    usage: discovery_only_not_features
+    status: bounded_retrospective_official_news_ablation_executed
+    run:
+      path: shock-radar/runs/N3_official_news_value_20261007/metrics.json
+      sha256: 31f84d4671704d42aebd3551ee855accbc06b7892ffcca49176da890f308e855
+    events: 6
+    sources: 5
+    strict_historical_asof_eligible_events: 0
+    observation_lag_months: 2
+    historical_asof_verified: false
+    early_warning_verified: false
+    scientific_pass: false
+    historical_discovery_intake_20260924:
+      status: archive_listing_pilot_60_not_model_ready
+      checked_at: '2026-09-24'
+      candidates_unique: 60
+      current_rss: 20
+      archive_listing_candidates: 40
+      archive_dated_2024: 31
+      archive_dated_2023: 9
+      rss_manifest: data/raw/news/manifest.json
+      archive_manifest: data/raw/news/archive_manifest.json
+      archive_as_of_eligible: false
+      geography: missing
+      topic: missing
+      full_article_text: missing
+      f06: unmeasured
+      usage: discovery_only_not_features
   weather: not_loaded
-  rosstat_employment: not_downloaded  # TLS-проблема 20.09
+  rosstat_employment:
+    status: downloaded_external_context_not_radar_asof_predictor
+    completed_use_receipt:
+      path: economic-atlas/runs/A8_wages2025_validation_20261005/provenance.json
+      sha256: bacabfb6bddc28e0816b2c0c039c1b4d5b6538c5a6468dedd6173a67e26d92ac
+    historical_asof_verified: false
 
 limitations:
-  - "24 точки → высокая неопределённость годовой сезонности"
-  - "Мобильность: 297 МО СЗФО, не общефедеральная"
-  - "published_at и available_at отсутствуют в parquet"
-  - "R0 h=1/2/3 — исходная гипотеза; R9 h=1/3/6/12 проверены только как технические baseline"
-  - "Единица поля spending_value/value не подтверждена источником; MAE не называть рублями"
-  - "Маски разных горизонтов различаются; межгоризонтное изменение MAE не является парным эффектом"
-  - "60 кандидатов новостей собраны 24.09.2026, включая 40 архивных карточек; исторический as-of корпус, география, topic, F06 и погодные признаки не готовы"
-  - "TLS-проблема блокирует ОКТМО и занятость Росстата"
+- 24 точки → высокая неопределённость годовой сезонности
+- 'Мобильность: 297 МО СЗФО, не общефедеральная'
+- published_at и available_at отсутствуют в parquet
+- R0 h=1/2/3 — исходная гипотеза; R9 h=1/3/6/12 проверены только как технические baseline
+- Единица поля spending_value/value не подтверждена источником; MAE не называть рублями
+- Маски разных горизонтов различаются; межгоризонтное изменение MAE не является парным эффектом
+- Historical news discovery intake is retained separately; N3 measured a fixed bounded ablation, strict0/6.
+  Zero eligibility does not prove historical news absence.
+- Chronos-2, TimesFM and real W01 are not executed; Tiny is a distinct model.
+- Already viewed2024 and unknown vintage cannot become an independent final test through contract revision.
+
+
+# Current audited computation; distinct from historical R0 assumptions.
+r9_paired_prophet:
+  status: executed_retrospective_with_explicit_exclusions
+  observation_lag_months: 0
+  cutoff: inputs<=origin; no historical release availability proven
+  source_panel_sha256: 9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61
+  predictions_sha256: b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44
+  expected_paired_rows: 294792
+  common_rows: 294570
+  excluded_insufficient_train: 222
+  evidence:
+  - path: shock-radar/runs/R9_prophet_full_20261001/audit.json
+    sha256: 13188f07c72b8ef583e089d63cf661fc91e791d4581ca46073e464d343559e04
+  - path: shock-radar/runs/R9_intervals_20261003/PROTOCOL.md
+    sha256: 1dd3f9ec1fa3b0ef68200a4fc8693a858952e517cf8acc44ce84f6076c290e7a
+  - path: shock-radar/runs/R9_intervals_20261003/metrics.json
+    sha256: fd39a328a823a493770bcbcf74e57705ad494f283e08e4cf6263baa827c19c46
+  results:
+  - horizon: 1
+    origins:
+    - 2024-06
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    n_origins: 6
+    test_targets:
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    - 2024-12
+    train_calendar_months_lag0:
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    train_calendar_months_assumed_lag2:
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    n_common: 73728
+    n_baseline_mask: 73728
+    excluded_insufficient_train: 0
+    mae_common:
+      prophet: 641.6996454066442
+      last_value: 625.6724175347222
+      seasonal_naive: 1287.501980251736
+      train_mean: 1306.6923303706676
+    benefit_prophet_vs_last_month_ci95:
+    - -128.04756959205253
+    - 118.31007104157383
+  - horizon: 3
+    origins:
+    - 2024-04
+    - 2024-05
+    - 2024-06
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    n_origins: 6
+    test_targets:
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    - 2024-12
+    train_calendar_months_lag0:
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    train_calendar_months_assumed_lag2:
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    n_common: 73656
+    n_baseline_mask: 73662
+    excluded_insufficient_train: 6
+    mae_common:
+      prophet: 719.9043597195983
+      last_value: 865.2184614966873
+      seasonal_naive: 1287.9150510481156
+      train_mean: 1408.7419897867426
+    benefit_prophet_vs_last_month_ci95:
+    - -42.99705815607896
+    - 429.43425185263646
+  - horizon: 6
+    origins:
+    - 2024-01
+    - 2024-02
+    - 2024-03
+    - 2024-04
+    - 2024-05
+    - 2024-06
+    n_origins: 6
+    test_targets:
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    - 2024-12
+    train_calendar_months_lag0:
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    train_calendar_months_assumed_lag2:
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    n_common: 73578
+    n_baseline_mask: 73578
+    excluded_insufficient_train: 0
+    mae_common:
+      prophet: 740.4359675427706
+      last_value: 1125.2783304792192
+      seasonal_naive: 1288.3963141156323
+      train_mean: 1577.1873061402703
+    benefit_prophet_vs_last_month_ci95:
+    - 45.77695236035606
+    - 766.1296072127843
+  - horizon: 12
+    origins:
+    - 2023-07
+    - 2023-08
+    - 2023-09
+    - 2023-10
+    - 2023-11
+    - 2023-12
+    n_origins: 6
+    test_targets:
+    - 2024-07
+    - 2024-08
+    - 2024-09
+    - 2024-10
+    - 2024-11
+    - 2024-12
+    train_calendar_months_lag0:
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    train_calendar_months_assumed_lag2:
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    n_common: 73608
+    n_baseline_mask: 73824
+    excluded_insufficient_train: 216
+    mae_common:
+      prophet: 1109.5225902290215
+      last_value: 1288.2514264753831
+      seasonal_naive: 1288.2514264753831
+      train_mean: 1874.3124877500336
+    benefit_prophet_vs_last_month_ci95:
+    - 13.418270948021728
+    - 351.93680313018075
+  historical_asof_verified: false
+  independent_holdout: false
+  scientific_pass: false
+calendar_feasibility:
+  window:
+  - 2023-01
+  - 2024-12
+  minimum_train_observations: 12
+  formula: origin-lag+1>=12 and origin+h<=23, Jan2023=0; target=origin+h
+  scope: Complete calendar upper bounds, not actual per-series coverage or publication assurance
+  availability_lag2: unverified conservative assumption, no lag2 R9 fits claimed
+  results:
+    1:
+      min12_lag0:
+        n_origins: 12
+        origins:
+        - 2023-12
+        - 2024-01
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+        - 2024-07
+        - 2024-08
+        - 2024-09
+        - 2024-10
+        - 2024-11
+      min12_lag2:
+        n_origins: 10
+        origins:
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+        - 2024-07
+        - 2024-08
+        - 2024-09
+        - 2024-10
+        - 2024-11
+    3:
+      min12_lag0:
+        n_origins: 10
+        origins:
+        - 2023-12
+        - 2024-01
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+        - 2024-07
+        - 2024-08
+        - 2024-09
+      min12_lag2:
+        n_origins: 8
+        origins:
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+        - 2024-07
+        - 2024-08
+        - 2024-09
+    6:
+      min12_lag0:
+        n_origins: 7
+        origins:
+        - 2023-12
+        - 2024-01
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+      min12_lag2:
+        n_origins: 5
+        origins:
+        - 2024-02
+        - 2024-03
+        - 2024-04
+        - 2024-05
+        - 2024-06
+    12:
+      min12_lag0:
+        n_origins: 1
+        origins:
+        - 2023-12
+      min12_lag2:
+        n_origins: 0
+        origins: []
+  unsupported:
+    h12_min12_assumed_lag2: zero calendar origins; not supported
+    future_targets_after_2024_12: unobserved; no MAE
+    independent_final_test: no new unseen release or confirmed vintage
+national_h12_pilots:
+  pool_masks_or_metrics: false
+  runs:
+  - run_id: National_equal_information_20261006
+    protocol:
+      path: shock-radar/runs/National_equal_information_20261006/protocol.json
+      sha256: c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976
+    metrics:
+      path: shock-radar/runs/National_equal_information_20261006/metrics.json
+      sha256: b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328
+    input_sha256:
+      raw: 9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61
+      r9: b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44
+      national: 940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030
+    horizon: 12
+    observation_cutoff: municipal<=origin; national<=origin-1
+    training_calendar_months:
+    - 7
+    - 12
+    historical_asof_verified: false
+    independent_holdout: false
+    scientific_pass: false
+    series_selection: 20 municipality IDs by SHA256(seed,id), among IDs with all6 categories and all6
+      R9 h12 targets; no selection by errors or values
+    rows: 720
+    n_series: 120
+    fits: 1452
+    future_national_path: logN(origin-1)+months_after_origin/12*log(N(origin-1)/N(origin-13)); no observed
+      future national values
+    results:
+    - model: national_prophet
+      reference: fresh_plain_prophet
+      rows: 720
+      mae_model: 946.1427947440353
+      mae_reference: 947.1822428382936
+      relative_improvement_percent: 0.10974108753808443
+      benefit_mae: 1.0394480942581092
+      benefit_ci95_month_blocks:
+      - -45.674902266357854
+      - 41.242608486560215
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: national_prophet
+      rows: 720
+      mae_model: 598.0916651328823
+      mae_reference: 946.1427947440353
+      relative_improvement_percent: 36.7863214246971
+      benefit_mae: 348.0511296111531
+      benefit_ci95_month_blocks:
+      - 166.50266495651934
+      - 518.8809205394148
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: fresh_plain_prophet
+      rows: 720
+      mae_model: 598.0916651328823
+      mae_reference: 947.1822428382936
+      relative_improvement_percent: 36.855692803038465
+      benefit_mae: 349.0905777054112
+      benefit_ci95_month_blocks:
+      - 194.5495934351028
+      - 493.8536432871072
+      month_blocks: 6
+  - run_id: R10_equal_information_h12_20261006
+    protocol:
+      path: shock-radar/runs/R10_equal_information_h12_20261006/protocol.json
+      sha256: ba72781b7fcad78f3ebd9db5e7313015cd1fb428768a92d225ab3f554f591c62
+    metrics:
+      path: shock-radar/runs/R10_equal_information_h12_20261006/metrics.json
+      sha256: c5d74a001ca19481a21e6ed92bdfd24a009db51ce967679201c531b8a7ca4274
+    input_sha256:
+      raw: 9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61
+      r9: b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44
+      national: 940efac0b7b0411ad4317d5126bd4006cf5a78a65861f2daeebc39bd7b59c030
+    horizon: 12
+    observation_cutoff: municipal<=origin; national<=origin-1
+    training_calendar_months:
+    - 7
+    - 12
+    historical_asof_verified: false
+    independent_holdout: false
+    scientific_pass: false
+    series_selection: 'Original R9 equal-information pilot: six categories × four 2023 mean quartiles
+      × five series. Complete frozen availability mask. No error-based selection.'
+    rows: 720
+    n_series: 120
+    municipalities: 114
+    fits: 2160
+    future_national_path: conditional scaling uses national path forecast from past, never actual future
+    results:
+    - model: national_yoy_lag1
+      reference: conditional_prophet_linear
+      rows: 720
+      mae_model: 679.7461352252822
+      mae_reference: 1707.2244025587302
+      benefit_mae: 1027.4782673334482
+      relative_improvement_percent: 60.184136648556475
+      benefit_ci95_target_months:
+      - 592.2813702562424
+      - 1467.0763054493814
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: conditional_prophet_yearly3
+      rows: 720
+      mae_model: 679.7461352252822
+      mae_reference: 27168.670947150662
+      benefit_mae: 26488.924811925375
+      relative_improvement_percent: 97.49805157363956
+      benefit_ci95_target_months:
+      - 4086.651263579274
+      - 57886.76905276445
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: own_prophet_linear
+      rows: 720
+      mae_model: 679.7461352252822
+      mae_reference: 1275.5723993369318
+      benefit_mae: 595.8262641116495
+      relative_improvement_percent: 46.710501451847975
+      benefit_ci95_target_months:
+      - 345.37832438529443
+      - 840.4279862763304
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: stored_prophet
+      rows: 720
+      mae_model: 679.7461352252822
+      mae_reference: 1263.5602865898586
+      benefit_mae: 583.8141513645764
+      relative_improvement_percent: 46.2039015914464
+      benefit_ci95_target_months:
+      - 338.0347255498633
+      - 824.2954790197632
+      month_blocks: 6
+    - model: national_yoy_lag1
+      reference: last_value
+      rows: 720
+      mae_model: 679.7461352252822
+      mae_reference: 1272.3111111111111
+      benefit_mae: 592.564975885829
+      relative_improvement_percent: 46.573905604608065
+      benefit_ci95_target_months:
+      - 470.4305616343068
+      - 716.3584748690084
+      month_blocks: 6
+    independent_numerical_audit:
+      path: shock-radar/runs/R10_equal_information_h12_20261006/independent-audit.json
+      sha256: 3462761009d6e088dd4b259a77921e0508f9015ceb7bff1e87dad8b5f9139f51
+unexecuted_methods:
+  real_W01:
+    status: not_executed
+    detection_is_not_warning: true
+  spectral_metastable_warning:
+    status: not_executed_24points_outside_declared_working_regime
+historical_r0_fields:
+  temporal_split:
+    train: 2023-01..origin-1
+    validation: origin..origin+h-1
+    test: CLOSED
+    embargo: 0
+    note: 'Препроцессинг (нормализация, лаги) обучается ТОЛЬКО на train каждого окна. Ревизии данных между
+      train/validation/test не смешиваются.
+
+      '
+  baseline_status_fields:
+    prophet: status_planned
+    global_boosting: status_planned
+    tsfm_chronos2: status_planned
