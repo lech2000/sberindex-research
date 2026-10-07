@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-07T10:15:10.379631+00:00",
+  "place": "joe/Incus aios2",
+  "changed_containers": [
+    "ai_os2-case-service-1",
+    "ai_os2-identity-service-1",
+    "ai_os2-public-gateway-1"
+  ],
+  "unchanged_containers": 25,
+  "image_checks": [
+    "case-service {\"checked\": 156, \"mismatches\": []}",
+    "identity-service {\"checked\": 169, \"mismatches\": []}",
+    "public-gateway {\"checked\": 125, \"mismatches\": []}"
+  ],
+  "paid_audit_still_paused": true,
+  "backend_commit": "a7ace3d5ca1f079f9ef0b982d66afdd7360603eb"
+}
