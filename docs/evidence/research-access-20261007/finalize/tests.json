@@ -1,0 +1,7 @@
+{
+  "checked_date": "2026-10-07",
+  "place": "Own isolated worktree on Mac, after combining current joe production commits",
+  "test_file": "tests/test_v2_asset_versions.py",
+  "passed": 7,
+  "production_mutations_by_tests": 0
+}
