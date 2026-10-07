@@ -1,0 +1,147 @@
+{
+  "checked_at": "2026-10-07T05:29:17Z",
+  "place": "HTTPS api.agrigate.pro, isolated in-memory guest cookie",
+  "guest_principal_sha256": "597e0d12091d4d09add671d6594eceae6f3d5250503a89ce3179dbfe9ca84922",
+  "cookie_flags_checked": true,
+  "initial_quota": 1,
+  "invalid_input_status": 422,
+  "first_status": 200,
+  "first_reply": {
+    "reply": "Последние проверки H5 подтвердили, что структура расходов (доли) и объём расходов должны рассматриваться раздельно. Добавление объёма к долям не улучшает прогнозы и приводит к изменению групп (ARI = 0,5980), но не обеспечивает значимой прибавки точности (MSE зарплаты ухудшается на 1,266%, занятости улучшается на 0,358%, оба интервала включают ноль). \n\nТаким образом, объём расходов рекомендуется отображать отдельно, чтобы сохранить чёткую структуру профиля расходов. Однако этот результат не подтверждает существование независимых экономических типов исключительно по долям расходов. Проверки проводились на панелях 2023–2024 годов, и полученные выводы применимы только к этим данным. [2]",
+    "sources": [
+      {
+        "title": "Атлас07.10: завершена проверка безразмерного масштаба",
+        "url": "https://agrigate.pro/sberindex-2026/reports/docs/ATLAS_FINDINGS_2026-10-07.html",
+        "corpus_id": 75,
+        "document_id": 17021
+      },
+      {
+        "title": "H5/M6: структура, масштаб, кодировка, пропуски и калибровка",
+        "url": "https://agrigate.pro/sberindex-2026/reports/economic-atlas/runs/H5_scale_encoding_audit_20261007/README.html",
+        "corpus_id": 75,
+        "document_id": 16979
+      },
+      {
+        "title": "Публичный источник RAG06.10: Атлас × Радар: измеренный вклад сезонной поправки",
+        "url": "https://agrigate.pro/sberindex-2026/reports/economic-atlas/runs/Atlas_Radar_ablation_20261006/README.html",
+        "corpus_id": 75,
+        "document_id": 16937
+      }
+    ],
+    "model": "gigachat-sber-max",
+    "checked_at": "2026-10-07T05:29:14.660122+00:00",
+    "receipt": {
+      "project": "atlas",
+      "message_sha256": "56daf3f6f5f6111fc8daa127d55f03f3247e1d19a011c5e0498883d8dc498b61",
+      "reply_sha256": "7b5d0b39c76052fd8cb0131be86ff2ac8e20900498806d44b9ff8305dd8684c0",
+      "model": "gigachat-sber-max",
+      "model_invocation_id": null,
+      "messages_sha256": "d78f98ad55e00c0770912c8f1bc0d3835f0b98a77c45b9bc274bb935efa44665",
+      "evidence": [
+        {
+          "source": 1,
+          "chunk_id": null,
+          "sha256": "be5cada3c7fd98b796f97461033acbe4d81e183aa04352426a11309e806b9ef2"
+        },
+        {
+          "source": 2,
+          "chunk_id": 837196,
+          "sha256": "8bb364d3822bca14578be92e0267bc00205431133ead21b25ef30e39bd90ac2a"
+        },
+        {
+          "source": 1,
+          "chunk_id": 837618,
+          "sha256": "10ebf815e492601ce0facdc7286a1eb1a4fbc3cf9bd7c90e85fd8da73348a973"
+        },
+        {
+          "source": 2,
+          "chunk_id": 837198,
+          "sha256": "423e8c34a5fe9255b592901e661db75e64168cf73f0cc1aaabf8ae84600ddbc5"
+        },
+        {
+          "source": 3,
+          "chunk_id": 836977,
+          "sha256": "b8b44fbe950d6d98caaac8352ee6b553ee4950695ee52ad45034787406ad1583"
+        },
+        {
+          "source": 1,
+          "chunk_id": 837621,
+          "sha256": "14a3e25494bc30f386884c9b5cfb7997b5c933309fd61308061668f49b0865e9"
+        },
+        {
+          "source": 2,
+          "chunk_id": 837204,
+          "sha256": "c6e37d8e59d74db6ed736182d1e9b6eae4f6b591175de498065d2c7e26c57f1b"
+        },
+        {
+          "source": 3,
+          "chunk_id": 836976,
+          "sha256": "93b0ea2fb5227df1f1641ae86a6f5e70c80d7479dbdddb9925178a15333b55ce"
+        }
+      ],
+      "checked_at": "2026-10-07T05:29:14.660122+00:00"
+    },
+    "receipt_sha256": "f28f25198444970f716a2d5da799ba822ab8a7b4e4d9b33ca9abfffaee0b754c",
+    "guest_preview": true,
+    "preview_remaining": 0,
+    "registration_url": "https://agrigate.pro/v2/"
+  },
+  "remaining_after_first": 0,
+  "second_status": 200,
+  "second_reply": {
+    "reply": "Для следующего вопроса зарегистрируйтесь в Фиксаре. Там можно продолжить углублённый чат и оставить заявку на доступ к проектам и материалам дел. Доступ предоставляется отдельно после рассмотрения заявки.",
+    "sources": [],
+    "registration_required": true,
+    "registration_url": "https://agrigate.pro/v2/",
+    "preview_remaining": 0
+  },
+  "private_chat_status": 403,
+  "model_journal_before": [],
+  "model_journal_after_first": [
+    {
+      "id": "inv_ea66b5a8e09f4486",
+      "model_id": "mimo-v2.5-pro",
+      "outcome": "blocked",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "id": "inv_864a9a740e694a56",
+      "model_id": "mimo-v2.5",
+      "outcome": "blocked",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "id": "inv_884c76c2971a4bea",
+      "model_id": "gigachat-sber-max",
+      "outcome": "ok",
+      "input_tokens": 4488,
+      "output_tokens": 152
+    }
+  ],
+  "model_journal_after_second": [
+    {
+      "id": "inv_ea66b5a8e09f4486",
+      "model_id": "mimo-v2.5-pro",
+      "outcome": "blocked",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "id": "inv_864a9a740e694a56",
+      "model_id": "mimo-v2.5",
+      "outcome": "blocked",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "id": "inv_884c76c2971a4bea",
+      "model_id": "gigachat-sber-max",
+      "outcome": "ok",
+      "input_tokens": 4488,
+      "output_tokens": 152
+    }
+  ],
+  "successful_paid_invocations": 1
+}

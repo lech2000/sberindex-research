@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-10-07",
+  "place": "joe, Incus aios2, git source and running Docker containers",
+  "backend_commit": "6186494c85e290a1c84521340b3d6d39defd0239",
+  "preserved_peer_commit": "d65aee38ff8c1f384b5ac87061e6ef9477dfc219",
+  "source_files_sha256_checked": {"public-gateway": 125, "dialog-service": 127},
+  "source_mismatches": [],
+  "changed_containers": ["dialog-service", "public-gateway"],
+  "other_running_containers_with_same_id": 26,
+  "images": {
+    "dialog-service": "sha256:033f37c2d9f0756e6fa2ba672b2b7ff73ef0575fd6289d13d79ab0603e5b04a2",
+    "public-gateway": "sha256:18d3e1250154b8ab7deed035eef7aaacaaef7f524d6199d403b2d13a3d2c86bf"
+  },
+  "model_configuration_changed": false,
+  "automatic_paid_cmd_audit_resumed": false,
+  "production_lock_released": true
+}
