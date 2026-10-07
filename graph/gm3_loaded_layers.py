@@ -75,7 +75,7 @@ def run(inventory,out):
   code=name.split('_')[0]; version='v20260928' if '_v' in name else 'v20250918';df=pd.read_parquet(sources[name]['path'],filters=[('year','in',[2023,2024])])
   source_meta=next(x for x in manifest['datasets'] if x['indicator_code']==code) if version=='v20250918' else next(x for x in receipt if x['indicator']==code)
   url=f'https://storage.yandexcloud.net/tochno-st-catalog/Rosstat/data_bdmo_118_{version}/indicators/section{41 if code=="Y48213002" else 32}/data_{code}_112_{version}.zip'
-  rid=release(name,url,'Rosstat BD PMO processed by Tochno',version,{'scope':'2023/2024','source_metadata':source_meta,'available_at':'unknown','expiry':'unknown','key_fields':['indicator_code','indicator_name','indicator_unit','oktmo','region_id','mun_level','okved2','year','indicator_period'],'period_semantics':'cumulative January-to-end; overlapping periods not summed'})
+  rid=release(name,url,'Rosstat BD PMO processed by Tochno',version,{'scope':'2023/2024','source_metadata':source_meta,'available_at':'unknown','expiry':'unknown','key_fields':['indicator_code','indicator_name','indicator_unit','oktmo','region_id','mun_level','okved2','year','indicator_period'],'period_semantics':('annual January-December; one annual period' if code=='Y48213002' else 'cumulative January-to-end; overlapping periods not summed')})
   unit='person' if code=='Y48423005' else 'RUB'; expected='Человек' if unit=='person' else 'Рубль'
   rows=[]
   for r in df.to_dict('records'):

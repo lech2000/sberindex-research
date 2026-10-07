@@ -44,6 +44,12 @@ class SyntheticEndToEndControls(unittest.TestCase):
    inv=r/'inventory.json';inv.write_text(json.dumps({'sources':sources}));out=r/'out';res=run(inv,out)
    self.assertTrue(res['checks']['base_sha_unchanged']);self.assertEqual(res['checks']['new_asof_2024_rows'],0)
    con=sqlite3.connect(out/'graph.sqlite')
+   release_periods=[json.loads(row[0]) for row in con.execute('select metadata_json from loaded_release where native_version is not null')]
+   annual=[r for r in release_periods if r.get('source_metadata',{}).get('indicator_code')=='Y48213002']
+   quarterly=[r for r in release_periods if r.get('source_metadata',{}).get('indicator_code') in ('Y48423005','Y48423007')]
+   self.assertEqual(len(annual),1)
+   self.assertEqual(annual[0]['period_semantics'],'annual January-December; one annual period')
+   self.assertTrue(all(r['period_semantics']=='cumulative January-to-end; overlapping periods not summed' for r in quarterly))
    self.assertEqual(con.execute("select count(*) from observation where value=0").fetchone()[0],3)
    self.assertEqual(con.execute('select count(*) from missing_value').fetchone()[0],5)
    self.assertEqual(con.execute("select count(*) from loaded_quarantine where reason='duplicate_conflict'").fetchone()[0],10)
