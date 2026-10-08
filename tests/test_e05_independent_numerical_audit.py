@@ -3,6 +3,9 @@ import unittest,sys,pathlib,copy,math,os
 sys.path.insert(0,str(pathlib.Path(__file__).parents[1]/'economic-atlas/src'))
 import e05_independent_numerical_audit as a
 B={'abrupt_missed_change_fraction_max':.2,'abrupt_median_delay_months_max':2.0,'stable_false_switch_fraction_max':.05,'seasonal_false_switch_fraction_max':.05}
+def protocol_file():
+ return pathlib.Path(os.environ.get('E05_REPAIRED_PROTOCOL', str(pathlib.Path(__file__).parents[1]/'economic-atlas/protocols/E05_FULL_REMAINING_V2.json')))
+
 class Audit(unittest.TestCase):
  def test_closed_form_silhouette_CH(self):
   r=a.quality([[0],[2],[10],[12]],[0,0,1,1],[[0,1,0,0],[1,0,0,0],[0,0,0,1],[0,0,1,0]])
@@ -61,7 +64,7 @@ class Audit(unittest.TestCase):
  def test_pair_union_overlap_differs_from_own_cluster(self):
   r=a.sdbw([[-1],[0],[1],[0],[1],[2]],[0,0,0,1,1,1]);self.assertAlmostEqual(r['S_Dbw'],30/11);self.assertEqual(r['pairs'][0]['centre_i_count'],2);self.assertEqual(r['pairs'][0]['midpoint_count'],4)
  def test_full225_metadata_callgraph_unattempted_not_numeric_PASS(self):
-  p=a.pinned_protocol(pathlib.Path(os.environ['E05_REPAIRED_PROTOCOL']).read_bytes());cells=a.planned(p);records=[{'key':i,'cell':c,'status':'NOT_ATTEMPTED_RESOURCE_STOP'}for i,c in enumerate(cells)]
+  p=a.pinned_protocol(protocol_file().read_bytes());cells=a.planned(p);records=[{'key':i,'cell':c,'status':'NOT_ATTEMPTED_RESOURCE_STOP'}for i,c in enumerate(cells)]
   def verify():return {'full_status_rows':10238400,'cells':225,'independent_full_file_readback':True}
   def load(*args):raise AssertionError('never load unavailable scientific tensor')
   def guard():pass
@@ -70,11 +73,11 @@ class Audit(unittest.TestCase):
   with self.assertRaises(ValueError):a.audit_bank(p,records[:-1],verify,load,guard)
   wrong=copy.deepcopy(records);wrong[0]['cell']['K']=9
   with self.assertRaises(ValueError):a.audit_bank(p,wrong,verify,load,guard)
- def frozen(self):return a.pinned_protocol(pathlib.Path(os.environ['E05_REPAIRED_PROTOCOL']).read_bytes())
+ def frozen(self):return a.pinned_protocol(protocol_file().read_bytes())
  def test_source_protocol_pin_and_all225_unique(self):
   p=self.frozen();cells=a.planned(p);self.assertEqual(len({a.canonical_sha(c)for c in cells}),225);self.assertEqual(p['K'],[2,5]);self.assertEqual(p['seeds'],[20261008,20261009,20261010,20261011,20261012]);self.assertEqual(p['controls']['seeds'],[30261008,30261009,30261010,30261011,30261012])
  def test_source_bytes_whitespace_duplicate_or_changed_refuse(self):
-  raw=pathlib.Path(os.environ['E05_REPAIRED_PROTOCOL']).read_bytes()
+  raw=protocol_file().read_bytes()
   for q in [raw+b' ',b'{}',b'{"a":1,"a":2}']:
    with self.assertRaises(ValueError):a.pinned_protocol(q)
  def test_duplicate_arm_K_seeds_world_gamma_false225_refuse(self):
