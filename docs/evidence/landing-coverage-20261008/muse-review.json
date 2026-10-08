@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-08",
+  "place": "Incus fixar-devops on joe, guarded foreground Muse only",
+  "base": "f3b7f49de9288ffc83882e857195fa781ca3a0b0",
+  "head": "3af2828461b84cbc5dc7dbd6ce167fa6da3263dd",
+  "model": "meta/muse-spark-1.3-contributor",
+  "mode": "enforce",
+  "exit_code": 0,
+  "verdict": "ok",
+  "kb_document_id": 17462,
+  "log": "muse-review-original.log",
+  "limitations": "Installed reviewer version writes the verdict to its log and KB, not to a separate result.json. No backend/model acceptance or scientific rerun is attested."
+}
