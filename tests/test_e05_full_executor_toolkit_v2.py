@@ -5,7 +5,7 @@ sys.path.insert(0,str(pathlib.Path(__file__).parents[1]/'economic-atlas/src'))
 import e05_full_guardian_toolkit_v2 as g
 import e05_full_receipt_adapter_v2 as a
 import e05_full_publication_validator_v2 as v
-P=json.loads(pathlib.Path(os.environ['E05_REPAIRED_PROTOCOL']).read_text())
+P=json.loads(pathlib.Path(os.environ.get('E05_REPAIRED_PROTOCOL', str(pathlib.Path(__file__).parents[1]/'economic-atlas/protocols/E05_FULL_REMAINING_V2.json'))).read_text())
 
 def spec():
  # SYNTHETIC mock bounds, not E05 execution policy or qualified estimates.
