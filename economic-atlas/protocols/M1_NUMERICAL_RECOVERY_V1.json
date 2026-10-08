@@ -1,0 +1,301 @@
+{
+  "version": "M1_NUMERICAL_RECOVERY_V1_FULL",
+  "frozen_before_new_numerical_results_UTC": "2026-10-07T23:37:46.143048+00:00",
+  "source_action": "act_4d0536caf3a546ac",
+  "base_root": "000cd621f932df0d86fd3887dec9d78e3908e895",
+  "original_start_UTC": "2026-10-07T15:47:45.854058+00:00",
+  "original_total_seconds": 77881,
+  "end_UTC": "2026-10-08T13:25:46.854058+00:00",
+  "final_reserve_seconds": 30,
+  "CPU_threads": 1,
+  "RSS_bytes": 1073741824,
+  "free_bytes": 1073741824,
+  "combined_output_bytes": 268435456,
+  "scope": {
+    "n": 1896,
+    "d": 5,
+    "calibration_records": 120,
+    "held_records": 240,
+    "known_ancestral_records": 334,
+    "remaining_held_records": 26,
+    "replay_rows": 72,
+    "nulls_per_new_held_and_replay": 99,
+    "full_spectrum_and_vectors": true,
+    "new_numerical_upper_decompositions": 9800,
+    "unchanged_main_K": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "dynamic_K": "union observed m without dropping original grid"
+  },
+  "base_source_SHA": "5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+  "base_protocol_SHA": "fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30",
+  "ancestral_progress": {
+    "10": {
+      "file": "/private/tmp/atlas-m1-full-baseline-20261007-v1/calibrate-v1/calibration-progress-k10.json",
+      "SHA": "167fbbebe22d1448058c856dcd5efc138f72c848d0d3228f05316c518cb9eb03",
+      "calibration": 40,
+      "held": 80,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      }
+    },
+    "20": {
+      "file": "/private/tmp/atlas-m1-full-baseline-20261007-v1/calibrate-v1/calibration-progress-k20.json",
+      "SHA": "001a54eb70ba4487585aebcf157834fce25e6f41b0bf73a300f775dce87f3ca8",
+      "calibration": 40,
+      "held": 80,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      }
+    },
+    "40": {
+      "file": "/private/tmp/atlas-m1-full-baseline-20261007-v1/calibrate-v1/calibration-progress-k40.json",
+      "SHA": "2acd337df4555b1b84da2284a38e6993b2198d0ce9bf070dbc5bca37d4a89144",
+      "calibration": 40,
+      "held": 54,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      }
+    }
+  },
+  "ancestral_fit_ALL": "Preserve all three INCONCLUSIVE_CALIBRATION fits exactly. Never refit or claim new positive calibration evidence",
+  "remaining_control_keys": [
+    [
+      "held",
+      40,
+      4,
+      20261122
+    ],
+    [
+      "held",
+      40,
+      4,
+      20261123
+    ],
+    [
+      "held",
+      40,
+      4,
+      20261124
+    ],
+    [
+      "held",
+      40,
+      4,
+      20261125
+    ],
+    [
+      "held",
+      40,
+      4,
+      20261126
+    ],
+    [
+      "held",
+      40,
+      4,
+      20261127
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261108
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261109
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261110
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261111
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261112
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261113
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261114
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261115
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261116
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261117
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261118
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261119
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261120
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261121
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261122
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261123
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261124
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261125
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261126
+    ],
+    [
+      "held",
+      40,
+      5,
+      20261127
+    ]
+  ],
+  "failed_block": {
+    "control": [
+      "held",
+      40,
+      4,
+      20261122
+    ],
+    "failed_null_seed": "UNKNOWN_UNJOURNALLED_ANCESTRAL_EXCEPTION",
+    "status": "EXPLICIT_ROOT_REVIEWED_NEW_NUMERICAL_DRIVER_ATTEMPT_REQUIRED",
+    "no_automatic_retry": true
+  },
+  "driver_amendment": {
+    "old_driver": "SciPy implicit evr for standard symmetric full spectrum",
+    "new_driver": "evd for EVERY new remaining-held observed/null and ALL72 replay observed/null; not a fallback",
+    "subset_by_index": null,
+    "subset_by_value": null,
+    "eigvals_only": false,
+    "source": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.eigh.html",
+    "root_cause": "UNKNOWN; traceback Internal Error does not diagnose cause",
+    "mixed_calibration": "334 original records plus26 new EVD records explicitly labeled mixed; originalfits negative, scientific/economicPASS false"
+  },
+  "journals": "all26controls/all99nulls and all72replay observed/all99nulls and bothfixedpreflightdrivers: immutable STARTED before calls, RESPONSE/ERROR after; UNKNOWN no retry. Global canonical originalprotocol+RECOVERY oneuse, no alternate output",
+  "authority": "base source SHA is ancestry only, final manifests MUST include actual engine/wrapper/amendment SHA, numerical driver and per-row origin; never label new EVD outputs old-source-only",
+  "future_preflight": {
+    "only_after_root_adoption_and_native_guard": true,
+    "n": 1896,
+    "d": 5,
+    "R": 1,
+    "seed": 999999,
+    "k": 20,
+    "graph": "exact originalR1/seed999999/k20, full1896. Zero-degree rows normalized using degree1 only for operational dense solver probe; scientific spectrum still abstains at isolates unchanged. No proxy/simpler matrix or graph tuning.",
+    "solvers": [
+      "evr",
+      "evd"
+    ],
+    "residual_relative_frobenius_max": 1e-10,
+    "orthogonality_relative_frobenius_max": 1e-10,
+    "lambda1_atol": 1e-10,
+    "no_science_acceptance": true,
+    "failure": "STOP/review, no driver fallback or automatic retry",
+    "solver_pair_eigenvalues_atol": 1e-10
+  },
+  "actual_launch_readiness": "PROSPECTIVE_CANDIDATE_ONLY_REQUIRES_F7B_ROOT_BINDING_NATIVE_NUMERICAL_PREFLIGHT",
+  "execution_now": false,
+  "lifecycle": "native known ownparent/child/grandchild accepted04b89 executor; only own Popen PG cleanup; irreversible lease before probes; originalUTC + monotonic inclusive anchor, native probe/solverprobe/science/publication all same total; sampled caps, receiptIO unmeasured",
+  "original_guard_SHA": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+  "final_pre_test_freeze_UTC": "2026-10-08T00:04:20.683080+00:00",
+  "operational_sampling": {
+    "parent_RSS_seconds": 0.25,
+    "parent_disk_seconds": 10,
+    "worker_validator_disk_seconds": 1,
+    "forced_disk": "before native probe, worker dispatch and final qualification; before worker numeric imports via first worker admission",
+    "continuous_resource_pass": false,
+    "last_receipt_IO": "not independently timed, explicitly disclosed"
+  },
+  "full_publication": {
+    "known334_preserved": true,
+    "calibration360": true,
+    "replay72": true,
+    "nulls99_each": true,
+    "journals_complete_keys": 9828,
+    "full_solver_upper_slots": 9802,
+    "fields": "literal typed finite schema, exact flagsfalse/state andactual compoundauthority, original settings/input/progress, everyK/label/mask/spectrum/full tail stats/fileSHA/universe anddispatch responses",
+    "old_NULL_start": "UNKNOWN, no missing ancestralnull inferred/reused",
+    "metric_status": "COMPUTED S_Dbw finite nonnegative; bothNA variants S_Dbw=null; same originalmethod statuses",
+    "spectrum": "lambda1 withrtol0/atol1e-10; entire1896 spectrum, exactm/tail/gap/sig, labels exactfrozenmask andKdomain"
+  },
+  "known_original_elapsed_floor_UTC": "2026-10-07T23:15:48+00:00",
+  "clock_policy": "Parententry historical=max(originalUTC elapsed, known23:15:48floor); each guard maxUTC,historical+monotonic. Original monotonic gap disclosed; no counter/deadline reset"
+}
