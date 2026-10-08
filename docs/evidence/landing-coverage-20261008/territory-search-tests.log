@@ -1,0 +1,15 @@
+✔ е and ё, case and punctuation match the same territory (18.594167ms)
+✔ name and region can be typed in either order (128.412ms)
+✔ same names remain separate; truncating suggestions never changes total (6.401916ms)
+✔ region browsing includes available and excluded territories in that region only (0.880042ms)
+✔ unknown names do not choose another territory; IDs can disambiguate (9.409167ms)
+✔ coverage agrees exactly with the frozen public Atlas; all dictionary IDs remain searchable (370.504042ms)
+✔ excluded places retain their recorded reason; historical codes retain dates (1.077958ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1272.92875

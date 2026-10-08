@@ -1,0 +1,4 @@
+date,territory_id,actual,forecast_simple,forecast_test
+2024-01-01,demo_a,100,100,98
+2024-02-01,demo_a,110,100,112
+2024-03-01,demo_a,120,100,117

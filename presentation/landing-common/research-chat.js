@@ -19,7 +19,7 @@
   const history = [];
   const notice = document.createElement('p');
   notice.className = 'chat-note';
-  notice.textContent = 'Один ответ исследователя доступен без регистрации. Служебная cookie сохраняет гостевую сессию. Для продолжения и заявки на доступ к материалам потребуется регистрация в Фиксаре.';
+  notice.textContent = 'Первый вопрос об исследовании можно задать без регистрации. Для расчёта своего файла и продолжения войдите в Фиксар. Сайт использует служебную cookie для гостевого ответа. Доступ к материалам исследования предоставляется отдельно по заявке.';
   root.querySelector('form').before(notice);
   function headers() {
     const h = {'Content-Type':'application/json', 'X-Fixar-Request':'1'};
@@ -82,11 +82,11 @@
   }
   const MAX_FILE=8*1024*1024;
   const fields=()=>[fileInput,refSelect,oldInput,root.querySelector('[data-chat-keys]')].filter(Boolean);
-  function fileLabel(){const file=fileInput?.files[0];root.querySelector('[data-chat-file-status]').textContent=file?file.name+' · '+(file.size/1024/1024).toFixed(2)+'МБ':'CSV, XLSX, Parquet · до8МБ';send.textContent=file?'Рассчитать ↗':'Спросить ↗';}
+  function fileLabel(){const file=fileInput?.files[0];root.querySelector('[data-chat-file-status]').textContent=file?file.name+' · '+(file.size/1024/1024).toFixed(2)+' МБ':'CSV, XLSX, Parquet · до 8 МБ';send.textContent=file?'Рассчитать ↗':'Спросить ↗';}
   fileInput?.addEventListener('change',()=>{fileLabel();if(fileInput.files[0]&&!input.value.trim())input.value=refSelect.value==='none'?'Проверь структуру, пропуски и посчитай сводную статистику числовых столбцов.':'Сравни новый выпуск с исходным: что добавлено, исчезло и пересмотрено?';});
   refSelect?.addEventListener('change',()=>{root.querySelector('[data-chat-reference-fields]').hidden=refSelect.value!=='uploaded';if(refSelect.value!=='none'&&!input.value.trim())input.value='Сравни новый выпуск с исходным: что добавлено, исчезло и пересмотрено?';});
   async function encode(file){
-    if(!file||file.size===0||file.size>MAX_FILE)throw new Error('Выберите непустой файл до8МБ.');
+    if(!file||file.size===0||file.size>MAX_FILE)throw new Error('Выберите CSV, XLSX или Parquet до 8 МБ. Файл должен содержать данные.');
     if(!/\.(csv|xlsx|parquet)$/i.test(file.name))throw new Error('Нужен CSV, XLSX или Parquet.');
     return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(new Error('Не удалось прочитать файл.'));reader.readAsDataURL(file);});
   }
@@ -98,13 +98,13 @@
   }
   function showCalculation(message,value){
     if(!value.calculation)return;const c=value.calculation,d=value.dataset,box=document.createElement('section');box.className='chat-result';
-    const title=document.createElement('h3');title.textContent='Результат вычислительного инструмента';box.append(title);
+    const title=document.createElement('h3');title.textContent='Что получилось в расчёте';box.append(title);
     const info=document.createElement('p');info.textContent=d.filename+' · '+d.rows.toLocaleString('ru-RU')+'строк · SHA '+d.sha256.slice(0,16);box.append(info);
     showTable(box,c.table);
     const formula=document.createElement('p');formula.textContent=c.formula;box.append(formula);
     if(c.version_comparison){const v=c.version_comparison,p=document.createElement('p');p.textContent='Сравнение выпусков: +'+v.added_rows+'строк, −'+v.removed_rows+'строк, пересмотрено'+v.revised_common_rows+'из'+v.common_rows+'общих строк. Прежний эталон сохранён. '+(v.same_file?'SHA идентичен.':'Для экспериментов на новом выпуске нужен отдельный прогон.');box.append(p);const details=document.createElement('details'),summary=document.createElement('summary'),pre=document.createElement('pre');summary.textContent='Период, охват и схема';pre.style.whiteSpace='pre-wrap';pre.textContent=JSON.stringify({keys:v.keys,periods:v.periods,coverage:v.coverage,added_columns:v.added_columns,removed_columns:v.removed_columns,type_changes:v.type_changes},null,2);details.append(summary,pre);box.append(details);}
     const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Структура, пропуски и дубли';details.append(summary);showTable(details,d.columns);const note=document.createElement('p');note.textContent='Полных дублей строк: '+d.duplicate_rows+'. '+d.note+' '+d.numeric_convention;details.append(note);box.append(details);
-    const download=document.createElement('button');download.type='button';download.textContent='Скачать расчёт и квитанцию';download.addEventListener('click',()=>{const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=value.run_id+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});box.append(download);message.append(box);
+    const download=document.createElement('button');download.type='button';download.textContent='Скачать расчёт (JSON)';download.addEventListener('click',()=>{const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=value.run_id+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});box.append(download);message.append(box);
   }
   root.querySelectorAll('[data-chat-prompt]').forEach(button=>button.addEventListener('click',()=>{input.value=button.textContent; input.focus();}));
   input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();root.querySelector('form').requestSubmit();}});
@@ -132,7 +132,7 @@
       showCalculation(message,value);
       if(value.sources?.length){const list=document.createElement('ol');list.className='chat-sources';value.sources.forEach((source,index)=>{const li=document.createElement('li'),a=document.createElement('a');try{const url=new URL(source.url);if(url.protocol!=='https:')return;a.href=url.href;}catch(_){return;}a.target='_blank';a.rel='noopener noreferrer';a.textContent='['+(index+1)+'] '+source.title;li.append(a);list.append(li);});message.append(list);}
       if(value.model){const receipt=document.createElement('div');receipt.className='chat-receipt';receipt.textContent=value.model+' · '+value.checked_at+(value.receipt_sha256?' · квитанция '+value.receipt_sha256.slice(0,12):'');message.append(receipt);}
-      history.push({role:'user',content:question},{role:'assistant',content:value.reply});status.textContent=value.calculation?'Расчёт готов; квитанция доступна':value.sources?.length?'Ответ с источниками':'Источников для ответа нет';
+      history.push({role:'user',content:question},{role:'assistant',content:value.reply});status.textContent=value.calculation?'Расчёт готов — можно скачать результат':value.sources?.length?'Ответ с источниками':'Источников для ответа нет';
       log.scrollTop=log.scrollHeight;
     } catch(e){input.value=question;const timedOut=e.name==='TimeoutError'||e.name==='AbortError';error.textContent=timedOut?'Подготовка ответа заняла слишком долго.':e.message;if(!signedIn)error.textContent+=' Гостевая попытка могла быть использована; для продолжения зарегистрируйтесь в Фиксаре.';error.hidden=false;status.textContent='Ответ не получен';}
     finally{busy=false;send.disabled=false;fields().forEach(x=>x.disabled=false);}

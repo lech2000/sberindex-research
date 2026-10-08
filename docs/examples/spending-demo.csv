@@ -1,0 +1,13 @@
+date,territory_id,category,value
+2024-01-01,demo_a,food,100
+2024-01-01,demo_a,marketplace,40
+2024-02-01,demo_a,food,110
+2024-02-01,demo_a,marketplace,50
+2024-03-01,demo_a,food,120
+2024-03-01,demo_a,marketplace,60
+2024-01-01,demo_b,food,80
+2024-01-01,demo_b,marketplace,30
+2024-02-01,demo_b,food,90
+2024-02-01,demo_b,marketplace,35
+2024-03-01,demo_b,food,100
+2024-03-01,demo_b,marketplace,45

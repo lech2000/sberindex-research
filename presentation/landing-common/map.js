@@ -41,7 +41,7 @@
     const status = root.querySelector('[data-map-status]');
     if (!svg || !paths || !results || !search || !detail || !legend || !tooltip || !status) return;
     if (!base.length) {
-      status.textContent = 'Геослой не загружен. Проверьте файл municipal-2021.js.';
+      status.textContent = 'Карта сейчас не загрузилась. Обновите страницу или откройте Атлас с расходами по ссылке выше.';
       return;
     }
 
@@ -81,7 +81,7 @@
     function showDetail(feature) {
       if (!feature) {
         detail.innerHTML = osmPreview
-          ? '<span class="detail-kicker">ВЫБОР ТЕРРИТОРИИ</span><h3>Нажмите на территорию</h3><p>Или найдите её по названию и субъекту. Это обзор границ OpenStreetMap, а не данные СберИндекса.</p>'
+          ? '<span class="detail-kicker">ВЫБОР ТЕРРИТОРИИ</span><h3>Какой город или район вас интересует?</h3><p>Введите название в поиске или выберите территорию на карте. Здесь показаны границы OpenStreetMap за 2021 год. Расходы и похожие территории доступны в отдельном Атласе по ссылке выше.</p>'
           : '<span class="detail-kicker">ВЫБОР ТЕРРИТОРИИ</span><h3>Нажмите на муниципалитет</h3><p>Или найдите его по названию, субъекту либо коду ОКТМО. Профиль исследования появится после проверки соответствия территорий данным СберИндекса.</p>';
         return;
       }
@@ -184,34 +184,15 @@
     svg.addEventListener('pointerleave', () => { tooltip.hidden = true; });
     svg.addEventListener('dblclick', event => { event.preventDefault(); const p=point(event); zoom(1.9,p.x,p.y); });
 
-    function matches(term) {
-      if (!term) return [];
-      return base.map((feature,index) => ({feature,index})).filter(({feature}) =>
-        `${feature.n} ${feature.r} ${feature.o}`.toLocaleLowerCase('ru').includes(term)).slice(0,7);
-    }
-    function renderResults() {
-      const term = search.value.trim().toLocaleLowerCase('ru');
-      const hits = matches(term);
-      results.hidden = !term;
-      results.innerHTML = hits.length ? hits.map(({feature,index}) => `<button type="button" data-result="${index}"><b>${escapeHtml(feature.n)}</b><small>${escapeHtml(feature.r)} · ${escapeHtml(feature.o)}</small></button>`).join('') : '<p>Совпадений нет</p>';
-    }
-    search.addEventListener('input',renderResults);
-    search.addEventListener('keydown', event => {
-      if (event.key === 'Escape') {results.hidden = true; search.blur();}
-      if (event.key === 'Enter') {
-        const first = matches(search.value.trim().toLocaleLowerCase('ru'))[0];
-        if (first) {event.preventDefault();select(first.index,true);results.hidden=true;search.value=first.feature.n;}
-      }
-    });
-    results.addEventListener('click', event => {
-      const button = event.target.closest('[data-result]');
-      if (!button) return;
-      const index = Number(button.dataset.result);
-      select(index,true);
-      results.hidden = true;
-      search.value = base[index].n;
-    });
-    document.addEventListener('pointerdown', event => {if (!root.contains(event.target)) results.hidden=true;});
+    if(window.SberTerritorySearch) {
+      window.SberTerritorySearch.bind({input:search,results,status:root.querySelector('[data-search-status]'),
+        items:base.map((feature,index)=>({feature,index})),name:item=>item.feature.n,meta:item=>item.feature.r,
+        id:item=>item.feature.o,onSelect:item=>select(item.index,true),
+        emptyText:'В карте 2021 года совпадений нет. Попробуйте часть названия или регион. Современные названия и границы могут отличаться.'});
+      root.querySelectorAll('[data-search-example]').forEach(button=>button.addEventListener('click',()=>{
+        search.value=button.textContent;search.dispatchEvent(new Event('input',{bubbles:true}));search.focus();
+      }));
+    } else {search.disabled=true;status.textContent='Поиск сейчас недоступен. Обновите страницу или выберите территорию на карте.';}
   }
 
   document.querySelectorAll('[data-map]').forEach(init);
