@@ -1,0 +1,9 @@
+2026-10-08T10:58:51+03:00 review f3b7f49de9288ffc83882e857195fa781ca3a0b0..3af2828461b84cbc5dc7dbd6ce167fa6da3263dd
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+2026-10-08T10:58:52+03:00 diff files=15 truncated=3 omitted=5
+2026-10-08T10:59:42+03:00 verdict=ok sha=3af2828 findings: Миграций в diff нет (только docs + presentation JS/CSS/HTML), отката не требуется, читающих не ломает; Секретов в открытом виде нет: совпадения grep только чтение localStorage токенов (fixar.token/aios_token) через Authorization Bearer, без значений; compose.yml в diff не тр
+{"added":true,"document_id":17462,"title":"DEPLOY_REVIEW 3af2828 f3b7f49de9288ffc83882e857195fa781ca3a0b0..3af2828461b84cbc5dc7dbd6ce167fa6da3263dd","corpus_id":62,"chunks":1,"vectors":1}

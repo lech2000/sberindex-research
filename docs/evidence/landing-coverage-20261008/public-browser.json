@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-08T08:24:51.241064+00:00",
+  "place": "Codex IAB Mac, public unversioned Radar #territories",
+  "checks": [
+    "Public 1896/72 coverage catalog and exact list of 13 absent Atlas regions rendered",
+    "Курганская Шадринск returns available Шадринск and excluded historical Шадринский",
+    "Enter without explicit selection leaves both results unselected",
+    "ArrowDown then Enter selects Шадринск and links to territory=1334",
+    "Северобайкальск is excluded; saved reasons show incomplete spending history and missing migration ID",
+    "Guest research access initialization completes; no question or file submitted"
+  ],
+  "screenshot": "sberindex-territory-coverage-20261008.jpg",
+  "limits": "No model call, file upload or new training run."
+}

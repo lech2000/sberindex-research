@@ -1,0 +1,13 @@
+Блокировка взята: Codex SberIndex landing RAG — Publish Muse-reviewed human copy, territory search and exact coverage only
+Published: economic-atlas/demo/atlas-territory-search.js
+Published: landing-common/hosted-run.js
+Published: landing-common/map.js
+Published: landing-common/research-chat.js
+Published: landing-common/territory-availability.js
+Published: landing-common/territory-coverage.js
+Published: landing-common/territory-search.css
+Published: landing-common/territory-search.js
+Published: economic-atlas/demo/index.html
+Published: economic-atlas/landing/index.html
+Published: shock-radar/landing/index.html
+{"scope": "/sberindex-2026/", "source_commit": "3af2828461b84cbc5dc7dbd6ce167fa6da3263dd", "checked_at": "2026-10-08T08:14:44.930045+00:00", "cas_verified": true, "backup": "/tmp/sberindex-human-before-20261008", "files": [{"path": "economic-atlas/demo/atlas-territory-search.js", "sha256": "8385dec9a420744a191d9460cc4b910dcf3733a4b3ad8f99f29280e00e81d482", "bytes": 1300}, {"path": "landing-common/hosted-run.js", "sha256": "70316cea3f0b18f50301f06b037ee46704105845f7c3c8fde1f5ba92c06785bf", "bytes": 12771}, {"path": "landing-common/map.js", "sha256": "adb0c6b34377b1e690f25e79c58ff11e1dcfbafff6df5d4ae6f3373af462061d", "bytes": 12769}, {"path": "landing-common/research-chat.js", "sha256": "113947f53309d6d8719bfe265a60df050cff107f325add05f562a92e9fe5641d", "bytes": 16293}, {"path": "landing-common/territory-availability.js", "sha256": "4803ff4be49d4c0d142227129e8917b91c40d4c22f9bc78963e957a94ed25243", "bytes": 5766}, {"path": "landing-common/territory-coverage.js", "sha256": "caed74445145dd3a645a66bc8eb4ac3e1cf7ceff0e1b3f3b5d6f4e1c751082d3", "bytes": 377278}, {"path": "landing-common/territory-search.css", "sha256": "94946798fe4f65efb4b2799f02b73834261743c9ee87281cf4c1eb5fc068f231", "bytes": 3167}, {"path": "landing-common/territory-search.js", "sha256": "d025203320760aa24e5f4cda3f5bf7ca617a53135529da0b4001f50eb6530038", "bytes": 6071}, {"path": "economic-atlas/demo/index.html", "sha256": "1ba2b275e4dc75b28f85b4af09b09e6e5c8c597f9f9d0bbc4c07b42a23f2647c", "bytes": 18080}, {"path": "economic-atlas/landing/index.html", "sha256": "a3a6c6b43aca6819efdbd91d52c5592745c89b55bcafc4fb827fda5efdb056a1", "bytes": 54346}, {"path": "shock-radar/landing/index.html", "sha256": "1a38ed83b2c4232f8a619e7c98405da3d438b989385033b77faf6cd1c710d6b8", "bytes": 61426}]}
