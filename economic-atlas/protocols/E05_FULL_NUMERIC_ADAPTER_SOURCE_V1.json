@@ -1,0 +1,129 @@
+{
+  "kind": "E05_FULL_NUMERICAL_IO_ADAPTER_SOURCE_ONLY_V2",
+  "execution_authorized": false,
+  "frozen_method_protocol": {
+    "path": "economic-atlas/protocols/E05_FULL_REMAINING_V2.json",
+    "SHA": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a"
+  },
+  "scope": {
+    "cells": 225,
+    "real": 180,
+    "controls": 45,
+    "entities": 1896,
+    "months": 24,
+    "status_rows_each": 45504,
+    "total_status_rows": 10238400,
+    "nominal_decompositions": 4110,
+    "nominal_native_calls": 8220,
+    "observed_native_calls": 0
+  },
+  "source_pins": {
+    "economic-atlas/src/e05_independent_numerical_audit.py": "d1232759428269eba5c720324695d91fda3917fdaca3ead4ae2bc2fdd1d04da8",
+    "economic-atlas/src/e05_full_publication_validator_v5.py": "dda073bc0bf223321b6af9f39d2ed57f1f39ad33e92ac633003f3777f9239193",
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/e05_numpy_quality_reference.py": "ffdb98abf3cf4adcf6c3f8badf50ebe46ff4cd431af3e88db7d75b3d2a42ad49"
+  },
+  "native_schemas": {
+    "panel": [
+      [
+        "date",
+        "string"
+      ],
+      [
+        "territory_id",
+        "int16"
+      ],
+      [
+        "category",
+        "string"
+      ],
+      [
+        "value",
+        "int32"
+      ],
+      [
+        "ym",
+        "string"
+      ]
+    ],
+    "edges": [
+      [
+        "u",
+        "int64"
+      ],
+      [
+        "v",
+        "int64"
+      ],
+      [
+        "distance",
+        "double"
+      ],
+      [
+        "weight",
+        "double"
+      ]
+    ]
+  },
+  "callgraph": [
+    "Admission(strict original monotonic floor, externally qualified guard)",
+    "Adapter.verify_publication(pinned V5 every file/key/status/journal)",
+    "publication_envelope(all225 exact masks/maps)",
+    "independent panel cube => frozen2023 shares/common metric coordinates",
+    "independent A5 edge symmetrization/degree normalization",
+    "load_verified_payload(rehash exact assignments/summary; baseline sameKseed)",
+    "audit_bank(all225 retained; unavailable cells typed)",
+    "quality(block32 independent Euclidean silhouette, CH, pair_union S_Dbw, AVI/AVU/NewmanQ)",
+    "temporal/pair/control(initial mapping ties abstain; independent fixed parity/mover truth)",
+    "rehash all manifested evidence at end"
+  ],
+  "truth_provenance": "INDEPENDENT_FIXED_SOURCE_LOGIC_NOT_LEGACY_CAPTURE: original method did not save raw X/truth tensors; seed governs noise, declared truth is deterministic parity/leading movers/shift12. No RNG/world generation or fits by adapter. Source/protocol/cell and derived truth SHA bound.",
+  "resources": {
+    "CPU_threads": 1,
+    "RSS_max_bytes": 1073741824,
+    "output_max_bytes": 134217728,
+    "minimum_free_bytes": 1073741824,
+    "whole_seconds": "UNKNOWN_UNQUALIFIED_REQUIRES_PROSPECTIVE_ROOT_FREEZE",
+    "original_monotonic_anchor_required": true,
+    "prior_elapsed_floor_required": true,
+    "receipt_reserve_required": true,
+    "external_guard_required": true,
+    "actual_fullsize_performance": "UNKNOWN",
+    "actual_resource_PASS": false,
+    "continuous_guard_claim": false,
+    "static_dense_graph_bytes": 28758528,
+    "static_SW_ordered_distances": 15018405600,
+    "block_rows": 32,
+    "static_sizes_exclude_python_arrow_workspace": true
+  },
+  "NA_policy": [
+    "retain every full key and225 cell status",
+    "no zero/nonfinite/unknown source fill",
+    "computed cell != numerical accepted",
+    "missing computed baseline => UNAVAILABLE_BASELINE",
+    "computed baseline/arm but no saved paired evidence => UNAVAILABLE_METRIC_EVIDENCE",
+    "initial mapping tie => UNVERIFIED abstention",
+    "no fabricated raw historical truth capture"
+  ],
+  "admission_limits": [
+    "public execute always refuses",
+    "trusted qualified-library callbacks are not a security capability",
+    "no actual bank exists/read in this task",
+    "full manifest count/SHA validation is not numerical acceptance",
+    "real future IO/performance qualification and root adopted source/one-use guardian required",
+    "no existing consumed actual key retry/reset"
+  ],
+  "scientific_pass": false,
+  "economic_identity": false,
+  "formal_promise_complete": false,
+  "MQ": "SPEC_UNRESOLVED_OWNER_EXCLUDED",
+  "revision_disclosure": {
+    "V1_preserved": true,
+    "fix_B1": "initial immutable publication manifest/registry/universe/pairs SHA+stat bound before validation, verified after callback and end; no namespace rebind",
+    "fix_B2": "S_Dbw uses accepted independent scalar fsum/centres/variance/radius/distance and inclusive count exactly; vector SW remains blocked",
+    "derived_tensor_proof": "actual_tensor_hashes_verified means derived values only; legacy_raw_tensor_capture_equality_verified=false"
+  }
+}

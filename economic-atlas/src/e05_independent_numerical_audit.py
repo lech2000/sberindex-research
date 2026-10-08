@@ -180,11 +180,12 @@ def planned(protocol):
     if len(cells)!=225 or len({canonical_sha(c)for c in cells})!=225 or len(cells[:180])!=180 or len(cells[180:])!=45:raise ValueError('entire225 cell scope')
     return cells
 
-def audit_verified_payload(cell,payload,reported,protocol,guard):
+def audit_verified_payload(cell,payload,reported,protocol,guard,quality_backend=None):
     """Trusted future reader supplies independently SHA-verified tensors/identities.
     No file IO/model imports here. Outer full publication validator is mandatory.
     """
     validate_frozen_protocol(protocol)
+    quality_evaluator=quality if quality_backend is None else quality_backend
     seq=payload['labels'];months=protocol['months']
     if len(seq)!=24 or len(months)!=24 or any(v is not None and len(v)!=1896 for v in seq):raise ValueError('full1896x24 saved labels')
     if cell['kind']=='real':
@@ -193,7 +194,7 @@ def audit_verified_payload(cell,payload,reported,protocol,guard):
             available=not((feat in ('growth_mom','shares_growth_mom')and t==0)or(feat=='growth_yoy'and t<12))
             if (seq[t]is not None)!=available:raise ValueError('exact frozen available month mask')
         if len(payload['common_spending_points'])!=24:raise ValueError('all24 common metric months')
-        for t in range(24):guard();compare(quality(payload['common_spending_points'][t],seq[t],payload['geo_reference'],guard),reported['quality_same_spending_space'][t],f'quality.month{t}')
+        for t in range(24):guard();compare(quality_evaluator(payload['common_spending_points'][t],seq[t],payload['geo_reference'],guard),reported['quality_same_spending_space'][t],f'quality.month{t}')
         compare(temporal(seq),reported['adjacent'],'temporal')
     else:
         compare(control(seq,payload['truth'],payload['movers'],protocol['controls']['shift_month_index']),reported['control_metrics'],'control')
@@ -202,7 +203,7 @@ def audit_verified_payload(cell,payload,reported,protocol,guard):
 
 def execute(*args,**kwargs):raise RuntimeError('NOT_EXECUTABLE: independent full SHA/row/truth IO and original budget/resource authority not admitted')
 
-def audit_bank(protocol,records,verify_publication,load_verified_payload,guard):
+def audit_bank(protocol,records,verify_publication,load_verified_payload,guard,quality_backend=None):
     """Future admitted full-bank callgraph; current packet grants no IO authority.
     verify_publication must independently use the pinned V5 full-file validator;
     reader must bind row keys, tensor bytes and independent truth provenance.
@@ -226,7 +227,7 @@ def audit_bank(protocol,records,verify_publication,load_verified_payload,guard):
         proof=payload.get('independent_input_receipt',{})
         if proof.get('input_source_pins')!=protocol['data_pins'] or proof.get('common_metric_train_year')!='2023' or proof.get('actual_tensor_hashes_verified')is not True:raise ValueError('frozen input/tensor/train-only provenance')
         if cell['kind']=='control' and(proof.get('truth_generator_source_SHA')!=METHOD_SHA or proof.get('truth_cell')!=cell or not isinstance(proof.get('truth_tensor_SHA'),str)or len(proof['truth_tensor_SHA'])!=64):raise ValueError('independent frozen truth tensor/source/cell binding')
-        result=audit_verified_payload(cell,payload,reported,protocol,guard)
+        result=audit_verified_payload(cell,payload,reported,protocol,guard,quality_backend=quality_backend)
         if cell['kind']=='real' and cell['arm']['id']!='shares':
             base=next(j for j,c in enumerate(cells[:180])if c['arm']['id']=='shares'and(c['K'],c['seed'])==(cell['K'],cell['seed']))
             saved=payload.get('saved_pair_metrics')
