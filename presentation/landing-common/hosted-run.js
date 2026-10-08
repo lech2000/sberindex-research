@@ -11,7 +11,7 @@
   const start = root.querySelector('[data-run-start]');
   const cancel = root.querySelector('[data-run-cancel]');
   let runId = '', owner = '', timer, pending, submitting = false;
-  const titles = {queued:'В очереди', running:'Выполняем исследование', completed:'Исследование готово', failed:'Нужны уточнения', cancelled:'Запуск отменён'};
+  const titles = {queued:'В очереди', running:'Выполняем расчёт', completed:'Расчёт готов', failed:'Расчёт не завершён', cancelled:'Запуск отменён'};
   function headers() {
     const h = {'Content-Type':'application/json', 'X-Fixar-Request':'1'};
     for (const key of ['fixar.token','fixar.start.token','aios_token']) {
@@ -39,8 +39,8 @@
     root.querySelectorAll('[data-run-forecast]').forEach(el=>el.hidden=!forecast);
     root.querySelectorAll('[data-run-cluster]').forEach(el=>el.hidden=forecast);
     root.querySelector('[data-run-requirements]').textContent=forecast
-      ? 'Для обучения: минимум 18 месяцев истории плюс проверочное окно; до 100 рядов территория × категория. Нужна полная месячная история.'
-      : 'Для кластеризации: одинаковые категории и месяцы во всех территориях, минимум две категории; до 3000 территорий для K-means и 1500 для Ward. Для смысла долей нужны сопоставимые единицы расходов; индексы в денежные суммы не переводятся.';
+      ? 'Для прогноза нужны минимум 18 месяцев истории до проверочного периода. История должна быть без пропусков по месяцам; до 100 сочетаний «территория × категория».'
+      : 'Для группировки нужны одинаковые месяцы и категории во всех территориях, минимум две категории. Можно взять до 3000 территорий для K-means или до 1500 для Ward. Расходы должны быть в сопоставимых единицах; индексы не пересчитываются в деньги.';
   }
   method.value = document.querySelector('[data-research-chat]')?.dataset.project==='atlas' ? 'kmeans':'forecast';
   method.addEventListener('change', refreshMethod); refreshMethod();
@@ -50,7 +50,7 @@
     const wrap=document.createElement('div');wrap.className='run-table';
     const element=document.createElement('table'), head=document.createElement('thead'), tr=document.createElement('tr');
     const keys=Object.keys(rows[0]);
-    const labels={model:'Модель',observations:'Проверочных точек',mae:'MAE',rmse:'RMSE',bias:'Средняя ошибка',cluster:'Кластер',territories:'Территорий',territory_id:'Территория',category:'Категория',month:'Месяц',prediction:'Прогноз'};
+    const labels={model:'Модель',observations:'Проверочных точек',mae:'Средняя абсолютная ошибка (MAE)',rmse:'Ошибка с усилением крупных отклонений (RMSE)',bias:'Средняя ошибка',cluster:'Кластер',territories:'Территорий',territory_id:'Территория',category:'Категория',month:'Месяц',prediction:'Прогноз'};
     const names={seasonal_trend:'Сезонность и тренд',ridge_ar:'Ridge с лагами',last_value:'Последнее значение',seasonal_naive:'Тот же месяц год назад'};
     keys.forEach(key=>{const th=document.createElement('th');th.textContent=labels[key] || key;tr.append(th);});head.append(tr);element.append(head);
     const body=document.createElement('tbody');
@@ -73,7 +73,7 @@
     const c=value.calculation;
     table(c.table,'Результат');
     if(c.training){const p=document.createElement('p');p.textContent='Обучение: '+c.training.first_month+' — '+c.training.last_month+'. Проверка: '+c.training.holdout_first+' — '+c.training.holdout_last+'. Рядов: '+c.training.series+'. Меньшие MAE и RMSE означают меньшую ошибку на этом окне.';output.append(p);}
-    table(c.future_predictions || c.labels,c.future_predictions ? 'Прогноз после конца файла':'Назначения территорий');
+    table(c.future_predictions || c.labels,c.future_predictions ? 'Прогноз после конца файла':'В какую группу вошла каждая территория');
     const formula=document.createElement('p');
     formula.textContent=value.parameters.method==='forecast'
       ? 'Для проверки модели обучены на ранней истории и предсказывают всё проверочное окно из одной даты. Для будущего прогноза они обучены заново на всей истории файла. Отрицательные прогнозы ограничены нулём. Эта проверка не подтверждает качество на независимых будущих данных.'
@@ -81,10 +81,10 @@
     output.append(formula);
     if(c.metrics){const p=document.createElement('p');p.textContent='Средний силуэт: '+Number(c.metrics.silhouette_mean).toFixed(3)+'. Территорий в оценке: '+c.metrics.silhouette_sample_size+'.';output.append(p);}
     const details=document.createElement('details'),summary=document.createElement('summary'),pre=document.createElement('pre');
-    summary.textContent='Проверка, ограничения и версия метода';
+    summary.textContent='Подробности расчёта, ограничения и версия метода';
     pre.textContent=JSON.stringify({training:c.training,period:c.period,metrics:c.metrics,formula:c.formula,limitations:c.limitations,engine:c.engine,receipt:c.execution_receipt},null,2);
     details.append(summary,pre);output.append(details);
-    const button=document.createElement('button');button.type='button';button.textContent='Скачать модели, результаты и квитанцию';
+    const button=document.createElement('button');button.type='button';button.textContent='Скачать модели и результаты (JSON)';
     button.addEventListener('click',()=>{const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),href=URL.createObjectURL(blob),a=document.createElement('a');a.href=href;a.download=value.run_id+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(href),1000);});output.append(button);
   }
   async function poll() {
@@ -94,7 +94,7 @@
       const value=await request('/research/sberindex/runs/'+encodeURIComponent(runId));
       error.hidden=true;render(value);
       if(['queued','running'].includes(value.status))timer=setTimeout(poll,2500);
-    } catch(e){sayError(e);status.textContent='Статус сейчас недоступен. Нажмите «Вернуться к последнему запуску». Не создавайте повторное задание.';}
+    } catch(e){sayError(e);status.textContent='Не удалось обновить статус. Нажмите «Вернуться к последнему запуску», чтобы проверить это задание без нового расчёта.';}
   }
   async function encode(file) {
     if(!file || !file.size || file.size>8*1024*1024 || !/\.(csv|xlsx|parquet)$/i.test(file.name))throw new Error('Нужен непустой CSV, XLSX или Parquet до 8 МБ.');
@@ -116,7 +116,7 @@
       runId=value.run_id;pending=null;
       try{localStorage.setItem(savedKey(),runId);}catch(_){}
       render(value);await poll();
-    } catch(e){sayError(e);status.textContent='Запрос запуска не подтверждён. Повтор с тем же файлом безопасен: ключ запроса сохраняется.';start.disabled=false;}
+    } catch(e){sayError(e);status.textContent='Пока неизвестно, принят ли запуск. Можно повторить запрос с тем же файлом и настройками: он использует прежний ключ запроса, чтобы не создать дубль.';start.disabled=false;}
     finally{submitting=false;}
   });
   root.querySelector('[data-run-restore]').addEventListener('click',async()=>{

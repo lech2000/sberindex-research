@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-08T07:44:19.763207+00:00",
+  "place": "Mac isolated science clone; Python HTMLParser, Node built-in tests and Codex IAB localhost",
+  "source_base": "f3b7f49de9288ffc83882e857195fa781ca3a0b0",
+  "pages": [
+    {
+      "path": "presentation/economic-atlas/landing/index.html",
+      "form_fields_attributes_preserved": true,
+      "inline_research_data_preserved": true,
+      "report_links_preserved": true,
+      "table_numeric_cells_preserved": true,
+      "sha256": "a3a6c6b43aca6819efdbd91d52c5592745c89b55bcafc4fb827fda5efdb056a1"
+    },
+    {
+      "path": "presentation/shock-radar/landing/index.html",
+      "form_fields_attributes_preserved": true,
+      "inline_research_data_preserved": true,
+      "report_links_preserved": true,
+      "table_numeric_cells_preserved": true,
+      "sha256": "1a38ed83b2c4232f8a619e7c98405da3d438b989385033b77faf6cd1c710d6b8"
+    }
+  ],
+  "immutable_files": [
+    {
+      "path": "presentation/economic-atlas/demo/atlas-demo-f2098ff9a110.js",
+      "sha256": "f2098ff9a110a7e093bbdd6c9a191c22fbcf61888b1f835b545d0f06b4a6227e"
+    },
+    {
+      "path": "presentation/landing-common/municipal-2021.js",
+      "sha256": "c0d7d2aa4c96350c5c9be5946b6fe89c1b2f891d769bcdcca9ddd0e463b04fcd"
+    },
+    {
+      "path": "presentation/landing-common/DATA_LICENSE.txt",
+      "sha256": "de86189067aa430c3645b31597350dcfcc8a07c1eaa37f4346e786ddacc8492b"
+    },
+    {
+      "path": "presentation/landing-common/landing.css",
+      "sha256": "2f094d0ab090ed19e8e03c9dd64d2c3123cc24bae517c3d2a5f4b656e602d72d"
+    },
+    {
+      "path": "presentation/shock-radar/assets/forecast-mae.png",
+      "sha256": "1a9e563e6ee958a8b92c05689be7bd8f7139a119242c2d6d77d6472f8f02c2fd"
+    }
+  ],
+  "limits": "No model request, user upload, real research rerun, new administrative registry or backend acceptance was performed.",
+  "api_routes_preserved": true
+}
