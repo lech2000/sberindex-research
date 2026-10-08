@@ -1,0 +1,53 @@
+{
+  "verdict": "ACTUAL_TIMEOUT_SOURCE_DIAGNOSIS_NOT_ROOT_CAUSE_PROOF",
+  "source_head": "cc3a2a5730c8742444f65afe810287c0cae766c5",
+  "review_failure": {
+    "nodeid": "tests/test_deploy_review_contract.py::test_wrapper_enforces_contract[reply2-0]",
+    "duration_seconds": 30.730829250009265,
+    "timeout_seconds": 25,
+    "exception": "subprocess.TimeoutExpired",
+    "stdout_seq": [],
+    "stderr_seq": [],
+    "longrepr_truncated": false
+  },
+  "actual_wrapper_metadata": {
+    "model-called": false,
+    "model-args": false,
+    "kb-request": false,
+    "raw_files": []
+  },
+  "bounded_stage": "After wrapper shell log/fetch activity, before stub cmd/raw-redirection. Exact last git/utility command UNKNOWN; artifact absence is post-timeout snapshot, not continuous trace",
+  "hypotheses": [
+    {
+      "hypothesis": "macOS process creation/CLI launch and repeated filesystem work dominates",
+      "status": "SUPPORTED_POSSIBILITY_NOT_PROVEN",
+      "reason": "both wrapper and dense real shell simulations wait on subprocesses; many real commands retained"
+    },
+    {
+      "hypothesis": "global Git hook/GPG signing caused failing wrapper wait",
+      "status": "UNKNOWN",
+      "reason": "timed subprocess begins after fixture commits; no git configuration/timing evidence; rev-parse/diff/cat-file do not themselves run commit signing hooks"
+    },
+    {
+      "hypothesis": "network fetch/paid Muse/model waiting",
+      "status": "NOT_SUPPORTED_FOR_MODEL; fetch exact timing UNKNOWN",
+      "reason": "repo lacks origin and stub model not entered; no model call observed"
+    },
+    {
+      "hypothesis": "heavy Python scientific imports caused wrapper pre-CMD wait",
+      "status": "NOT_SUPPORTED_BY_THIS_PATH",
+      "reason": "no evidence verify in failing call; no Python helper until after stub model"
+    }
+  ],
+  "actual_tests_process_probes_native_signals_models_paid_calls_by_audit": 0,
+  "old_actual_files_mutated": false,
+  "scientific_or_native_PASS": false,
+  "original_private_AUDIT_SHA256": "7b6811660bf5a47d29fc1755256da61f8e7def185a4e76d9b111867fb1115ba4",
+  "terminal_SHA256": "75bcee228ea7316b2b897da929ca485b80b97c65befd13398a9b559c6c165b3a",
+  "source_pins": {
+    "deploy_review.sh": "1effe6f45fc9de80c96748969c7daf858401fbc8d8359d839e1852aa502fc395",
+    "test_deploy_review_contract.py": "83518819688145c607c1d05638735941cd5afad640a7eca1ca9fc75f63cfc93f"
+  },
+  "privacy": "Private paths, fixtures, full traceback and source output intentionally omitted; summary pins original unchanged private audit",
+  "limitation": "Post-timeout artifact absence narrows observed stub-CMD interval; does not prove exact command, continuous process state, root cause, or provider failure."
+}
