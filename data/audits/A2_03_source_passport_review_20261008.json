@@ -1,0 +1,220 @@
+{
+  "checked_at": "2026-10-08T03:27:42.645795+00:00",
+  "source_actions": [
+    "act_fd3cbf9ca7c54554",
+    "act_0924fb12ebc44307"
+  ],
+  "status": "PARTIAL_SOURCE_AUDIT_COMPLETE_ACTIONS_OPEN",
+  "scientific_pass": false,
+  "source_head_observed": "7a894ed8cfd5f28319d7c40a35c63ac06913e1f0",
+  "source_proofs": [
+    {
+      "path": "data/audits/A2_official_snapshot_20261001.json",
+      "sha256": "b9a455187bfbaa639679d121706c3d80c2d488c48a9f526d251dba5b4b1ff320",
+      "bytes": 1963
+    },
+    {
+      "path": "economic-atlas/data/panel_passport.json",
+      "sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd",
+      "bytes": 1339
+    },
+    {
+      "path": "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "sha256": "962c0c20000e623e2411c2ddcecf5bd7125e66bb5ee8ef5043f35b9102607c8d",
+      "bytes": 5363
+    },
+    {
+      "path": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+      "sha256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+      "bytes": 8010
+    },
+    {
+      "path": "economic-atlas/src/mobility_ablation.py",
+      "sha256": "78f225c5cfea6325c99a8d91eff32b69ea612aa041f6384b8462565c2db3d2a6",
+      "bytes": 7039
+    },
+    {
+      "path": "data/manifest.json",
+      "sha256": "3c8e0def7ebec1a53098f1031a0d1b2a18869ef6eef625c9ee0dc36b02aaceee",
+      "bytes": 11242
+    },
+    {
+      "path": "data/REQUEST_SBERINDEX_VINTAGES_20260930.md",
+      "sha256": "fa860b8b1d774a157ec1cd57d0c35c2081f9a94fbd7808442bd7fe4e17c0bf65",
+      "bytes": 4416
+    }
+  ],
+  "kb_full_text_proofs": [
+    {
+      "corpus": 74,
+      "id": 14908,
+      "title": "СберИндекс: каталог и охват муниципальных датасетов, проверка 30.09.2026",
+      "text_chars": 1598,
+      "truncated": false,
+      "text_sha256": "a708fb9a87e2fa22eedf177a3d11f2fc73690f71c15639990753b908131e45a4"
+    },
+    {
+      "corpus": 77,
+      "id": 15890,
+      "title": "Мобильность — официальный REF_AREA297 nativecodes и cohort101,03.10.2026",
+      "text_chars": 4024,
+      "truncated": false,
+      "text_sha256": "961ee947cafc350396b33967eb081f7a83b8efcd8df781e8b28005e6d759af84"
+    },
+    {
+      "corpus": 77,
+      "id": 15905,
+      "title": "Graph supplemental: провереннаямиграция73430cellsиofficialmobilitycrosswalk297,03.10.2026",
+      "text_chars": 18477,
+      "truncated": false,
+      "text_sha256": "5c6b0c363e94bf613c34e1ed3d736ef939ac03a882b5404de28ca56fb1f76a28"
+    },
+    {
+      "corpus": 75,
+      "id": 15904,
+      "title": "Atlas mobility: фактическая абляция101МО,5seed иобщийmetricspace,03.10.2026",
+      "text_chars": 9894,
+      "truncated": false,
+      "text_sha256": "0e68b3015a10c5fe7f88aa53579a58e033e380e5489b31eb59b8ca56bb1e075a"
+    }
+  ],
+  "expense_counts": {
+    "no_name_join": true,
+    "independent_exact_full_series_multiset_equal": true,
+    "ambiguous_repeated_full_series": 0,
+    "series": 13140,
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "categories": [
+      "Все категории",
+      "Здоровье",
+      "Маркетплейсы",
+      "Общественное питание",
+      "Продовольствие",
+      "Транспорт"
+    ],
+    "territories": 2190,
+    "duplicate_territory_category_month_keys": 0,
+    "missing_full_cartesian_cells": 12234,
+    "missing_cells_by_month": {
+      "2023-01": 282,
+      "2023-02": 294,
+      "2023-03": 246,
+      "2023-04": 366,
+      "2023-05": 414,
+      "2023-06": 426,
+      "2023-07": 384,
+      "2023-08": 432,
+      "2023-09": 486,
+      "2023-10": 522,
+      "2023-11": 582,
+      "2023-12": 522,
+      "2024-01": 708,
+      "2024-02": 672,
+      "2024-03": 642,
+      "2024-04": 618,
+      "2024-05": 630,
+      "2024-06": 636,
+      "2024-07": 606,
+      "2024-08": 576,
+      "2024-09": 540,
+      "2024-10": 588,
+      "2024-11": 540,
+      "2024-12": 522
+    },
+    "stable24month6category_territories": 2016,
+    "dictionary_reused_oktmo_codes": 27,
+    "dictionary_rows_in_reused_oktmo_codes": 55,
+    "spending_ids_missing_dictionary": 0,
+    "interpretation": "missing != zero; source A status only available rows does not assign suppression reason to absent cells; repeating territory across categories/months is not duplicate key; current native code != historical legal equivalence"
+  },
+  "known_source_semantics": {
+    "spending": "Модельная оценка средних безналичных потребительских расходов жителей МО за текущий месяц, рубли; не средний чек/оборот местных предприятий; конкретный индивидуальный знаменатель и подробности модели не опубликованы в прочитанном DOCX.",
+    "territory_id": "В описании Data Sense — код МО в постоянных границах; это определение источника, не независимая юридическая верификация всех границ.",
+    "docx_sha256": "d2e462f22a2af8b0168eafef04d2fb554c902bea037a2d7ad92190201cb436d9",
+    "mobility": "Медианный радиус инерции покупок/расстояние перемещения жителей для покупок, км; среднемесячные значения янв–сен 2024/2025 по карточке KB74/14908;297МО СЗФО,2агрегата,не OD/не месячная общероссийская панель.",
+    "frequency_vs_time": "Год и метки31.12.2024/01.11.2025 не означают среднее за полный год.",
+    "missingness": "DOCX объясняет отсутствие около500МО порогом качества. На2190наблюдаемыхIDs декартова сетка имеет12234 отсутствующих ячейки; у имеющихся строк A/null0/zero0. Причина каждого отсутствия не установлена; nofillzero."
+  },
+  "mobility": {
+    "rows": 594,
+    "source_ids": 297,
+    "native_dictionary_name_type_agree": 215,
+    "name_type_disagree": 82,
+    "strict_half_open_year_2024_candidates": 215,
+    "frozen1896_intersection": 101,
+    "excluded_from_core": 114,
+    "ambiguous_frozen_identity": 25,
+    "historically_verified_mappings": 0,
+    "2025_admitted": 0,
+    "historical_asof_verified": false,
+    "future_new_holdout": false,
+    "source_sha256": "f7af1aa73e6a8b52909abaf130c26e2cdc4e697d1ac65d5548daa1a7d30ba837",
+    "metadata_sha256_saved": "b1d959944f426efc5b67b72477cdd97780fcd044648a284b80e058971271ef54"
+  },
+  "remaining": {
+    "A2": [
+      "Exact documented rights applying separately to dashboard expenses/mobility exports and DataSense pack, including redistribution; dictionary license claim cannot be transferred to these files.",
+      "Official semantic time-window/calculation metadata preserved as dated primary artifact beyond the saved browser/KB receipt; no fresh structured catalog/export was obtained today.",
+      "Historical legal boundary/OKTMO correspondence and endpoint meaning, all source/dictionary disagreements and code reuse explicitly resolved or excluded with complete accountable policy.",
+      "Historical release/available_at/vintage trail where as-of is needed; current2025release is not2023/2024available_at."
+    ],
+    "03": [
+      "Full temporal crosswalk for stated cohort with exact administrative version/interval semantics; currentdictionary and half-open assumption insufficient.",
+      "Complete absence/suppression ledger distinguishes missing keys, source quality exclusions, context intersection and conflicts; per-cell cause UNKNOWN retained.",
+      "Root-reviewed final data passport grounded in that evidence; no automatic source closure."
+    ]
+  },
+  "safe_applicability": {
+    "A6": "Frozen1896spending panel descriptive; two spending snapshots not independent economic validation; no boundary/asof certainty added.",
+    "E05": "Existing101MO mobility ablation finished; geography/features/time fullE05 remains OPEN; do not repeat ready fit.",
+    "Radar": "Mobility historical feature admission false until availability evidence.",
+    "publication": "No raw redistribution authorized by this audit; existing derived summaries with attribution only."
+  },
+  "correction_proposals": [
+    {
+      "file": "economic-atlas/data/panel_passport.json",
+      "old": "рубли среднего чека/траты",
+      "new": "модельная оценка средних месячных безналичных потребительских расходов жителей МО в рублях, по DOCX; подробный знаменатель не подтверждён"
+    },
+    {
+      "file": "data/manifest.json",
+      "old_field": "dictionary sha25632hex",
+      "new": "retain as legacy_unverified_hash, set actual_local_parquet_sha256=f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a; never claim32hex isSHA256"
+    },
+    {
+      "file": "economic-atlas/DATA_PASSPORT_RELEASE_2026-10-05.md",
+      "new": "Mobilitydate labels plus stated Jan–Sep aggregation; per-dataset licenses UNKNOWN unless primary terms attached."
+    }
+  ],
+  "current_official_access": "08Oct2026web502/timeout; PythonverifiedTLSfails; systemcurlverifiedTLSretrievesSPAonly2433B (not article contents); structuredmetadataGET20s timeout. No currentexport renewal claimed.",
+  "completed_actions_allowed": 0,
+  "model_calls": 0,
+  "fits": 0,
+  "fuzzy_joins": 0,
+  "mutations_shared_or_service": 0
+}
