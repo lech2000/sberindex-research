@@ -1,0 +1,269 @@
+{
+  "status": "retrospective_exploratory_not_typology_confirmation",
+  "base_eligible": 1510,
+  "education_deduction_feasibility": {
+    "both_codes_observed_n": 941,
+    "positive_n": 128,
+    "positive_fraction": 0.13602550478214664,
+    "coverage_by_group": {
+      "0": {
+        "n": 202,
+        "of": 359,
+        "fraction": 0.5626740947075209
+      },
+      "1": {
+        "n": 210,
+        "of": 362,
+        "fraction": 0.580110497237569
+      },
+      "2": {
+        "n": 200,
+        "of": 266,
+        "fraction": 0.7518796992481203
+      },
+      "3": {
+        "n": 183,
+        "of": 287,
+        "fraction": 0.6376306620209059
+      },
+      "4": {
+        "n": 146,
+        "of": 236,
+        "fraction": 0.6186440677966102
+      }
+    },
+    "passes_predefined_gate": false,
+    "regression_run": false
+  },
+  "npf_deduction": {
+    "n": 1116,
+    "regions": 67,
+    "base_mse": 9.335267839693286,
+    "group_mse": 8.78142327104788,
+    "mse_reduction": 0.059328192629939935,
+    "ci95_region_bootstrap": [
+      0.01049662518309286,
+      0.10241570672766018
+    ],
+    "positive_folds": 5,
+    "folds": [
+      {
+        "fold": 0,
+        "n": 224,
+        "regions": 12,
+        "base_mse": 14.34105947817042,
+        "group_mse": 12.35390220219442,
+        "mse_reduction": 0.13856418899878342
+      },
+      {
+        "fold": 1,
+        "n": 223,
+        "regions": 13,
+        "base_mse": 11.039670287909757,
+        "group_mse": 10.645502506505332,
+        "mse_reduction": 0.03570466971609676
+      },
+      {
+        "fold": 2,
+        "n": 223,
+        "regions": 13,
+        "base_mse": 4.841560496168809,
+        "group_mse": 4.778778369205943,
+        "mse_reduction": 0.012967332952370625
+      },
+      {
+        "fold": 3,
+        "n": 223,
+        "regions": 14,
+        "base_mse": 8.65122361029987,
+        "group_mse": 8.498871019790203,
+        "mse_reduction": 0.017610525097083385
+      },
+      {
+        "fold": 4,
+        "n": 223,
+        "regions": 15,
+        "base_mse": 7.780377829780899,
+        "group_mse": 7.614042172650469,
+        "mse_reduction": 0.0213788662671045
+      }
+    ],
+    "coverage_by_group": {
+      "0": {
+        "n": 267,
+        "of": 359,
+        "fraction": 0.7437325905292479
+      },
+      "1": {
+        "n": 239,
+        "of": 362,
+        "fraction": 0.6602209944751382
+      },
+      "2": {
+        "n": 205,
+        "of": 266,
+        "fraction": 0.7706766917293233
+      },
+      "3": {
+        "n": 192,
+        "of": 287,
+        "fraction": 0.6689895470383276
+      },
+      "4": {
+        "n": 213,
+        "of": 236,
+        "fraction": 0.902542372881356
+      }
+    },
+    "regions_with_multiple_groups": 63,
+    "noticeable_signal": false
+  },
+  "income_per_record": {
+    "n": 1094,
+    "regions": 65,
+    "base_mse": 0.32811030189750195,
+    "group_mse": 0.3443762713822957,
+    "mse_reduction": -0.04957469908968304,
+    "ci95_region_bootstrap": [
+      -0.11651347467523067,
+      0.014601233820956763
+    ],
+    "positive_folds": 2,
+    "folds": [
+      {
+        "fold": 0,
+        "n": 219,
+        "regions": 10,
+        "base_mse": 0.4680402855951287,
+        "group_mse": 0.5515263449019725,
+        "mse_reduction": -0.17837366114903652
+      },
+      {
+        "fold": 1,
+        "n": 219,
+        "regions": 13,
+        "base_mse": 0.07105959677775817,
+        "group_mse": 0.07783092960880311,
+        "mse_reduction": -0.09529089859913742
+      },
+      {
+        "fold": 2,
+        "n": 219,
+        "regions": 14,
+        "base_mse": 0.44076997994855877,
+        "group_mse": 0.4324373648038175,
+        "mse_reduction": 0.018904679365218446
+      },
+      {
+        "fold": 3,
+        "n": 219,
+        "regions": 14,
+        "base_mse": 0.5067673961103453,
+        "group_mse": 0.5079039293153228,
+        "mse_reduction": -0.002242711772108663
+      },
+      {
+        "fold": 4,
+        "n": 218,
+        "regions": 14,
+        "base_mse": 0.15311518660231616,
+        "group_mse": 0.15130116679944938,
+        "mse_reduction": 0.011847419208509291
+      }
+    ],
+    "coverage_by_group": {
+      "0": {
+        "n": 260,
+        "of": 359,
+        "fraction": 0.724233983286908
+      },
+      "1": {
+        "n": 241,
+        "of": 362,
+        "fraction": 0.6657458563535912
+      },
+      "2": {
+        "n": 197,
+        "of": 266,
+        "fraction": 0.7406015037593985
+      },
+      "3": {
+        "n": 179,
+        "of": 287,
+        "fraction": 0.6236933797909407
+      },
+      "4": {
+        "n": 217,
+        "of": 236,
+        "fraction": 0.9194915254237288
+      }
+    },
+    "regions_with_multiple_groups": 64,
+    "noticeable_signal": false
+  },
+  "exclusion_counts": {
+    "npf_missing_or_hidden": 394,
+    "income_missing_or_nonpositive": 416,
+    "education_either_code_missing_or_hidden": 569
+  },
+  "npf_income_adjusted": {
+    "not_run": "less_than_70_percent_overlap_in_at_least_one_group",
+    "coverage_by_group": {
+      "0": {
+        "n": 251,
+        "of": 359,
+        "fraction": 0.6991643454038997
+      },
+      "1": {
+        "n": 211,
+        "of": 362,
+        "fraction": 0.5828729281767956
+      },
+      "2": {
+        "n": 183,
+        "of": 266,
+        "fraction": 0.6879699248120301
+      },
+      "3": {
+        "n": 158,
+        "of": 287,
+        "fraction": 0.5505226480836237
+      },
+      "4": {
+        "n": 209,
+        "of": 236,
+        "fraction": 0.885593220338983
+      }
+    }
+  },
+  "base_audit": {
+    "frozen_assignments": 1896,
+    "base_eligible": 1510,
+    "base_excluded": 386,
+    "ambiguous_dictionary_oktmo8": 0,
+    "population_exact_duplicate_rows_removed": 8
+  },
+  "source_audit": {
+    "five_ndfl": {
+      "candidate_rows_after_history_filter": 6726,
+      "ambiguous_rows_excluded": 141,
+      "hidden_rows_after_deduplication": 464,
+      "municipalities_with_any_row": 2212
+    },
+    "seven_ndfl": {
+      "candidate_rows_after_history_filter": 4277,
+      "ambiguous_rows_excluded": 0,
+      "hidden_rows_after_deduplication": 0,
+      "municipalities_with_any_row": 2139
+    }
+  },
+  "input_sha256": {
+    "assignments": "5a0730830f70d1187e337b091592c0f29d63da95b73df0aa63eb6d042c2d3573",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "five_ndfl": "b45f51b61874d7049582b5eca1baaf83be02bc03f02d253b708e1a7581d0a8b3",
+    "seven_ndfl": "d4d2600e95826bd307d2dfee7c9d7ac481a0a7f18beddd57e645b3d05587400d",
+    "protocol": "49ba6b8e14aa804c9cc408dcf1afbcc542b4695459d671118ef1e1dcb076e535",
+    "code": "06bff3d45035450356244b983e7311faf01faebf05eb4b6c1adecfd917f7427b"
+  }
+}
