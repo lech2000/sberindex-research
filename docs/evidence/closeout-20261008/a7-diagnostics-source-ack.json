@@ -1,0 +1,38 @@
+{
+  "state": "SOURCE_ONLY_ACK",
+  "UTC": "2026-10-08T08:26:58.936683+00:00",
+  "base": "f299a6674c010d12ca371d479c741ceb319df1a9",
+  "patch_SHA": "70f32bbe8e17e355bec23a89639a1db2bf725f15e3760d2c82eedc3870fcb39d",
+  "paths_SHA": {
+    "tests/conftest.py": "7c0cb5b482ed97177420c01d3cfc75d8849cdb785692249af9d1b3abbe0cbaba",
+    "scripts/release_evidence.py": "6e04d9e2303dcb8712f8a30399f599a02ad04a73e6e76edb22e4fadaa89423d0",
+    "tests/test_release_immediate_diagnostics.py": "6eccddfd9fbf9fa96b9d0e8802e70fceb206a2d2322574ce44fadc4d2dc2664c"
+  },
+  "author_stdlib_tests_rerun": 25,
+  "independent_tests": 5,
+  "concrete_checks": [
+    "Full original conftest statements AST unchanged.",
+    "verify/junit_counts/clean/artifact and SUITES/SCHEMA/LIMITATIONS AST unchanged; subprocess.run argv/order/timeout1200 unchanged (author fixture rerun and read-only review).",
+    "Fresh private per-group namespace and exclusive token authority; symlink, hardlink, reused reports/group and replaced inode fail.",
+    "UTF8 emoji node/detail truncation remains disclosed and bounded4096/262144 encoded bytes; failed outcome remains failed.",
+    "Unencodable detail/storage fault raises sanitized RuntimeError; diagnostic summary remains DIAGNOSTIC_ERROR.",
+    "Saved boolean/nonfinite duration rejected; native_acceptance alwaysfalse; run raises on failed diagnostic integrity."
+  ],
+  "limitations": [
+    "Source/stdlib mock checks only; actual pytest hook discovery not executed.",
+    "Diagnostic counts are phase records rather than full test counts.",
+    "File+directory fsync and sampled safety are not continuous resource proof.",
+    "Helper hook.txt/producer_helpers.txt are older drafts; authoritative candidate source contains hardlink and suite guards and is the pinned reviewed source."
+  ],
+  "calls": {
+    "pytest": 0,
+    "native": 0,
+    "DB_browser_model": 0,
+    "realprocess": 0,
+    "remote": 0
+  },
+  "release_PASS": false,
+  "scientific_PASS": false,
+  "actions_closed": 0,
+  "author_and_root_mutated": false
+}
