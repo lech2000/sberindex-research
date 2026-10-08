@@ -1,0 +1,50 @@
+{
+  "checked_at_utc": "2026-10-07T14:31:30.960979+00:00",
+  "verification_site": "joe/serg; Incus aios2 authenticated case-service; PUT CAS followed fresh exact GET then POST/GET",
+  "materials": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_graph_science_parent_20261007_atlas",
+      "text_sha256": "2e822aeb9d8b78b1ead2d5c1fea9ee65ff2cad60c24edeb001669df98931c25f",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_graph_science_parent_20261007_radar",
+      "text_sha256": "92f9750ebaa2974910f59667031336a34621f6f9284884f066365dd214a87c1d",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_graph_science_parent_20261007_graph",
+      "text_sha256": "032d21101311954ac8ae42a3f73850bdb64a731b06c4aa2e7c85abafdbb1f932",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_graph_science_parent_20261007_curator",
+      "text_sha256": "317823697b315d2fccc0e450625824a4ec47fd1fb62d9ce6cad49159b10f66e4",
+      "full_readback_verified": true
+    }
+  ],
+  "actions": [
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "action_id": "act_9651a4c259e6441d",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "action_id": "act_0d7cb34d8a8c4aee",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    }
+  ],
+  "scientific_pass": false,
+  "contest_submitted": false
+}

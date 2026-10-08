@@ -1,0 +1,37 @@
+{
+  "version": "R13_ZERO_MODEL_REPORT_RECOVERY_V1",
+  "status": "PROSPECTIVE_ROOT_REVIEW_NO_EXECUTION",
+  "base": "71b092700b49ae8d366717f8153801a0b9853ab9",
+  "original_protocol_SHA": "9409ccf7e7ef608bb490eccd45aab22e1dc3dc731c883a2c38431084fbedea01",
+  "original_fingerprint": "4a91d68779da35469f3ed66472d631c35f90a19f502d84cb53e8c2d30e7220c9",
+  "out": "/private/tmp/radar-r13-full-actual-20261008-v1",
+  "prepared_registry_SHA": "14341a08856c3e1fa0ac1e50783d8fb283a3223e74dd87de7c3c104513bbdf97",
+  "scope": {
+    "requested": 294570,
+    "eligible": 282120,
+    "excluded": 12450,
+    "checkpoints": 44184,
+    "journal_attempts": 33319
+  },
+  "original_cumulative_seconds": 3893.441428624006,
+  "original_history_seconds": 961.611384207994,
+  "original_total_seconds": 108000,
+  "phase_max_seconds_including_startup": 600,
+  "work_seconds_with_30_finalization_reserve": 570,
+  "deadline_UTC": "2026-10-09T09:00:00+00:00",
+  "CPU_threads": 1,
+  "RSS_bytes": 2147483648,
+  "minimum_free_bytes": 1073741824,
+  "original_output_cap_bytes": 3221225472,
+  "phase_output_reserve_bytes": 134217728,
+  "one_use": "fixed UID-private0700 O_EXCL report-only phase per ORIGINAL9409 protocol; original model lease untouched",
+  "outputs": "same original namespace/zero-model-report-v1/{row-statuses.jsonl,terminal.json}; old row-statuses,completion,headers,journals,checkpoints remain byte-identical",
+  "method": "status-only: prepared exactkey registry; one-pass closed checkpoint index and journal digest; pending -> resourceNA; durable-uncommitted replies retain recovery-required; no stage commit or forecast output/MAE",
+  "deviations": [
+    "Prospective metadata recovery after DISK_STOP and historical600s reporting STOP, not untouched preregistration.",
+    "New report sidecar instead of replacing old prepared registry; original strictV3 INCONCLUSIVE/fullpopulation pairedrisk UNAVAILABLE.",
+    "Guard scans output tree once for reserved bytes; then resource/disk checks every1024 files/rows without repeated treewalk."
+  ],
+  "resource_limits_disclosure": "Sampled selfRSS and free disk, soft signal deadline. Final receipt IO cannot measure its own later fsync; no continuous resourcePASS.",
+  "science_models_native_process_calls": 0
+}

@@ -3,71 +3,506 @@
     "id": "E01",
     "question": "Атрибуты без графа",
     "method": "k-means",
-    "protocol": "Калибровочные признаки; одинаковые МО/месяцы",
-    "artifact": "Базовое разбиение и таблица метрик",
-    "status": "planned",
-    "metrics": null
+    "protocol": "A5: одна маска1896МО, пять z-долей; silhouette/CH/DB в одинаковом пространстве; K5 для E01/E03, naturalK для Louvain",
+    "artifact": "economic-atlas/runs/A5/metrics.json",
+    "status": "executed_descriptive",
+    "metrics": {
+      "calinski_harabasz": 672.9548993212047,
+      "davies_bouldin": 1.3836762181977402,
+      "modularity_geo": 0.3476891114305469,
+      "n_clusters": 5,
+      "silhouette": 0.20971898868646746,
+      "sizes": [
+        251,
+        449,
+        403,
+        402,
+        391
+      ],
+      "n_municipalities": 1896,
+      "seed": 20260921
+    },
+    "historical_plan": {
+      "method": "k-means",
+      "protocol": "Калибровочные признаки; одинаковые МО/месяцы",
+      "artifact": "Базовое разбиение и таблица метрик",
+      "status": "planned"
+    },
+    "limits": "Внутреннее разбиение не доказывает экономической типологии; A4 имеет другую маску и признаки.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A5/metrics.json",
+        "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+      }
+    ]
   },
   {
     "id": "E02",
     "question": "Граф без временной регуляризации",
-    "method": "Leiden или Louvain",
-    "protocol": "Один граф и раскрытый выбор resolution",
-    "artifact": "Метрики, компоненты, изоляты",
-    "status": "planned",
-    "metrics": null
+    "method": "Louvain (Leiden не выполнялся)",
+    "protocol": "A5: одна маска1896МО, пять z-долей; silhouette/CH/DB в одинаковом пространстве; K5 для E01/E03, naturalK для Louvain",
+    "artifact": "economic-atlas/runs/A5/metrics.json",
+    "status": "executed_descriptive",
+    "metrics": {
+      "calinski_harabasz": 54.1008763462953,
+      "davies_bouldin": 5.501406395747124,
+      "modularity_geo": 0.8884265919195125,
+      "n_clusters": 33,
+      "silhouette": -0.14027716475877464,
+      "sizes": [
+        9,
+        88,
+        108,
+        53,
+        13,
+        97,
+        15,
+        8,
+        5,
+        58,
+        103,
+        27,
+        74,
+        64,
+        78,
+        2,
+        18,
+        81,
+        30,
+        73,
+        44,
+        71,
+        55,
+        63,
+        67,
+        40,
+        122,
+        52,
+        99,
+        83,
+        101,
+        30,
+        65
+      ],
+      "n_municipalities": 1896,
+      "seed": 20260921,
+      "graph": {
+        "n_undirected_edges": 9372,
+        "components": [
+          1878,
+          18
+        ],
+        "isolated_tids_no_positive_edge": []
+      }
+    },
+    "historical_plan": {
+      "method": "Leiden или Louvain",
+      "protocol": "Один граф и раскрытый выбор resolution",
+      "artifact": "Метрики, компоненты, изоляты",
+      "status": "planned"
+    },
+    "limits": "Внутреннее разбиение не доказывает экономической типологии; A4 имеет другую маску и признаки. NaturalK33 не является same-K сравнением.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A5/metrics.json",
+        "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+      }
+    ]
   },
   {
     "id": "E03",
     "question": "Совместные признаки и сеть",
     "method": "spectral",
-    "protocol": "Те же данные, сопоставимое K",
-    "artifact": "Качество против E01/E02",
-    "status": "planned",
-    "metrics": null
+    "protocol": "A5: одна маска1896МО, пять z-долей; silhouette/CH/DB в одинаковом пространстве; K5 для E01/E03, naturalK для Louvain",
+    "artifact": "economic-atlas/runs/A5/metrics.json",
+    "status": "executed_descriptive",
+    "metrics": {
+      "calinski_harabasz": 220.2818886471492,
+      "davies_bouldin": 1.2357174058047158,
+      "modularity_geo": 0.3819242862317956,
+      "n_clusters": 5,
+      "silhouette": 0.19865336410600962,
+      "sizes": [
+        173,
+        1589,
+        13,
+        108,
+        13
+      ],
+      "n_municipalities": 1896,
+      "seed": 20260921,
+      "ablation": {
+        "E03_spectral_a0": {
+          "calinski_harabasz": 298.62910810046594,
+          "davies_bouldin": 0.7856588399103046,
+          "modularity_geo": 0.2726221494814249,
+          "n_clusters": 5,
+          "silhouette": 0.29275196268803794,
+          "sizes": [
+            1507,
+            2,
+            7,
+            60,
+            320
+          ]
+        },
+        "E03_spectral_a1": {
+          "calinski_harabasz": 37.08803794597303,
+          "davies_bouldin": 2.4105920177888964,
+          "modularity_geo": 0.05990226995540991,
+          "n_clusters": 5,
+          "silhouette": 0.1111601889312144,
+          "sizes": [
+            1742,
+            5,
+            130,
+            18,
+            1
+          ]
+        }
+      }
+    },
+    "historical_plan": {
+      "method": "spectral",
+      "protocol": "Те же данные, сопоставимое K",
+      "artifact": "Качество против E01/E02",
+      "status": "planned"
+    },
+    "limits": "Внутреннее разбиение не доказывает экономической типологии; A4 имеет другую маску и признаки. Статическая spectral смесь не означает выполнение динамического спектрального M1.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A5/metrics.json",
+        "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351"
+      }
+    ]
   },
   {
     "id": "E04",
     "question": "Временная связность",
-    "method": "multilayer_or_regularized",
-    "protocol": "Независимые слои против временной модели",
-    "artifact": "Устойчивость без подавления реальных переходов",
-    "status": "planned",
-    "metrics": null
+    "method": "per-month k-means + Hungarian alignment + fixed-centre post-assignment penalty; M2/M3 tracking",
+    "protocol": "A6: lambda0/0.5/2; центры не переобучаются общей временной целью. A6v2: пороги на реальной2023, variableK и отдельные синтетические контроли.",
+    "artifact": "economic-atlas/runs/A6/metrics.json",
+    "status": "partially_executed_fixed_centres",
+    "metrics": {
+      "n_municipalities": 1896,
+      "fixed_centre_penalty": {
+        "0.0": {
+          "switch_rate": 0.27256466703357185,
+          "silhouette_mean": 0.21047789415599458
+        },
+        "0.5": {
+          "switch_rate": 0.20597138139790863,
+          "silhouette_mean": 0.2057995652935268
+        },
+        "2.0": {
+          "switch_rate": 0.10975050449458815,
+          "silhouette_mean": 0.17068662205158577
+        }
+      },
+      "identity_counts": {
+        "ambiguous": 7,
+        "ambiguous_never_confirmed": true,
+        "birth": 0,
+        "birth_candidate": 0,
+        "confirmed_births": 0,
+        "conflict": 0,
+        "continuing": 36,
+        "disappearance": 0,
+        "dormant": 7,
+        "initial": 2,
+        "reemergence": 3
+      },
+      "merge_candidates": 0,
+      "split_candidates": 0
+    },
+    "historical_plan": {
+      "method": "multilayer_or_regularized",
+      "protocol": "Независимые слои против временной модели",
+      "artifact": "Устойчивость без подавления реальных переходов",
+      "status": "planned"
+    },
+    "limits": "Совместная multilayer/regularized модель не реализована. Нет подтверждённых экономических рождений/слияний; общая временная устойчивость не доказана. M2 использует изотропную сферу, эллипсоиды≥10не выполнены; M3 Euclidean sphere≤2.5r не равно Mahalanobis<2.5 иcontainment≥.6 не равно>.6. Исходные M2/M3OPEN, историческиеrunsне меняются.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A6/metrics.json",
+        "sha256": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204"
+      },
+      {
+        "path": "economic-atlas/runs/A6_v2/metrics.json",
+        "sha256": "a4cf2fd44a704f428106146bf33b2908c769abfb53dd66e316c390922c22a9ff"
+      }
+    ]
   },
   {
     "id": "E05",
     "question": "Абляции признаков и рёбер",
     "method": "ablation",
     "protocol": "Фиксированный протокол выбора",
-    "artifact": "Роль мобильности, масштаба, географии",
-    "status": "planned",
-    "metrics": null
+    "artifact": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+    "status": "executed_bounded_ablation",
+    "metrics": {
+      "mobility_n": 101,
+      "mobility_k": 2,
+      "mobility_arms": [
+        {
+          "weight": 0.0,
+          "silhouette_same_space": 0.3504920400073887,
+          "ari_vs_control": 1.0
+        },
+        {
+          "weight": 0.25,
+          "silhouette_same_space": 0.35804577127425996,
+          "ari_vs_control": 0.8439486083280504
+        },
+        {
+          "weight": 1.0,
+          "silhouette_same_space": 0.3409970947740285,
+          "ari_vs_control": 0.6652446194481235
+        }
+      ],
+      "economic_network_definitions": 12,
+      "economic_networks": 36,
+      "H5_oof_rows": 244608,
+      "dimensionless_scale_status": "DIMENSIONLESS_SCALE_DIAGNOSTIC_EXECUTED"
+    },
+    "historical_plan": {
+      "method": "ablation",
+      "protocol": "Фиксированный протокол выбора",
+      "artifact": "Роль мобильности, масштаба, географии",
+      "status": "planned"
+    },
+    "limits": "Мобильность: только101МО северо-запада, км не потоки. Сети из тех же расходных признаков не независимый экономический контроль; H5 не подтвердил внешнюю прибавку.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+        "sha256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b"
+      },
+      {
+        "path": "economic-atlas/runs/A9_economic_network_20261005/results.json",
+        "sha256": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1"
+      },
+      {
+        "path": "economic-atlas/runs/H5_scale_encoding_audit_20261007/results.json",
+        "sha256": "3aea1392f6abb7ec67561536b1bd60018b4ff685b6dd5da3250d0523b10b1c9a"
+      },
+      {
+        "path": "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json",
+        "sha256": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c"
+      }
+    ]
   },
   {
     "id": "E06",
     "question": "Устойчивость",
     "method": "robustness",
     "protocol": "5 seed, блоки времени, возмущения",
-    "artifact": "ARI/NMI, стабильность и слабые места",
-    "status": "planned",
-    "metrics": null
+    "artifact": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+    "status": "executed_bounded_robustness",
+    "metrics": {
+      "n_municipalities": 1896,
+      "fixed_k_methods": [
+        "kmeans",
+        "ward",
+        "average",
+        "gmm_diag",
+        "spectral",
+        "birch"
+      ],
+      "K_grid": [
+        3,
+        5,
+        8
+      ],
+      "seeds": [
+        20261005,
+        20261006,
+        20261007,
+        20261008,
+        20261009
+      ],
+      "n_subsamples": 20,
+      "n_stability_rows": 380,
+      "seed_audit_status": "MEASURED_ROBUSTNESS_NOT_ACCURACY",
+      "no_best_method_selected": true
+    },
+    "historical_plan": {
+      "method": "robustness",
+      "protocol": "5 seed, блоки времени, возмущения",
+      "artifact": "ARI/NMI, стабильность и слабые места",
+      "status": "planned"
+    },
+    "limits": "Seed/subsampling устойчивость измерена; межметодное согласие и устойчивость порогов не гарантированы. Синтетический F1 описательный, без заранее заданного бюджета ошибок.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+        "sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43"
+      },
+      {
+        "path": "economic-atlas/runs/A6_v2/robustness/manifest.json",
+        "sha256": "bd8d96430ce16c4d983d5aade8edcf9ef2ab6e3c95f356234ac9fe83b913010a"
+      }
+    ]
   },
   {
     "id": "E07",
     "question": "Экономическая проверка",
     "method": "external_validation",
     "protocol": "Показатели не использованы при обучении",
-    "artifact": "Профили типов, 3–5 МО и контрпримеры",
-    "status": "planned",
-    "metrics": null
+    "artifact": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+    "status": "executed_primary_negative",
+    "metrics": {
+      "primary": {
+        "wage": {
+          "S1": {
+            "n": 1248,
+            "n_group1": 433,
+            "n_regions": 70,
+            "coef_G": 0.033335767166461645,
+            "ci95_region_bootstrap": [
+              -0.014661770349131605,
+              0.07577975388807191
+            ],
+            "p_permutation_within_region": 0.01649175412293853,
+            "delta_adj_r2": 0.00037253883863686,
+            "cv_mse_reduction": {
+              "mean": -0.003095235164323684,
+              "min": -0.0038040375357273337,
+              "max": -0.002670389098352377
+            },
+            "p_holm_4_tests": 0.049475262368815595,
+            "criteria": {
+              "ci_excludes_zero": false,
+              "holm_p_below_0_05": true,
+              "cv_mse_reduction_positive": false
+            },
+            "positive_result": false
+          },
+          "S3": {
+            "n": 1248,
+            "n_group1": 433,
+            "n_regions": 70,
+            "coef_G": -0.0035875881786839097,
+            "ci95_region_bootstrap": [
+              -0.011462035294891003,
+              0.0051790614871948595
+            ],
+            "p_permutation_within_region": 0.33383308345827084,
+            "delta_adj_r2": -0.00035405347237071894,
+            "cv_mse_reduction": {
+              "mean": -0.0023631501060016103,
+              "min": -0.0035737075793753625,
+              "max": -0.0017033980281420114
+            },
+            "p_holm_4_tests": 0.33383308345827084,
+            "criteria": {
+              "ci_excludes_zero": false,
+              "holm_p_below_0_05": false,
+              "cv_mse_reduction_positive": false
+            },
+            "positive_result": false
+          }
+        },
+        "emp": {
+          "S1": {
+            "n": 1248,
+            "n_group1": 433,
+            "n_regions": 70,
+            "coef_G": 0.05234831956539852,
+            "ci95_region_bootstrap": [
+              -0.06825233006480241,
+              0.15472617563796875
+            ],
+            "p_permutation_within_region": 0.05847076461769116,
+            "delta_adj_r2": 1.3197499733497153e-05,
+            "cv_mse_reduction": {
+              "mean": -0.0009794120672152573,
+              "min": -0.00258189087045424,
+              "max": -5.212679241584084e-06
+            },
+            "p_holm_4_tests": 0.11694152923538231,
+            "criteria": {
+              "ci_excludes_zero": false,
+              "holm_p_below_0_05": false,
+              "cv_mse_reduction_positive": false
+            },
+            "positive_result": false
+          },
+          "S3": {
+            "n": 1248,
+            "n_group1": 433,
+            "n_regions": 70,
+            "coef_G": 0.028592118517114778,
+            "ci95_region_bootstrap": [
+              -0.0005045990205681711,
+              0.071578861982867
+            ],
+            "p_permutation_within_region": 0.0004997501249375312,
+            "delta_adj_r2": 0.003716789357793737,
+            "cv_mse_reduction": {
+              "mean": 0.003790849933456952,
+              "min": 0.0028366443423860632,
+              "max": 0.004499106903120276
+            },
+            "p_holm_4_tests": 0.001999000499750125,
+            "criteria": {
+              "ci_excludes_zero": false,
+              "holm_p_below_0_05": true,
+              "cv_mse_reduction_positive": true
+            },
+            "positive_result": false
+          }
+        }
+      },
+      "primary_positive_count": 0,
+      "joint_n_panel": 1896,
+      "joint_matching_rows": 30,
+      "joint_summary_rows": 36
+    },
+    "historical_plan": {
+      "method": "external_validation",
+      "protocol": "Показатели не использованы при обучении",
+      "artifact": "Профили типов, 3–5 МО и контрпримеры",
+      "status": "planned"
+    },
+    "limits": "Все четыре primary исхода отрицательны по протоколу. Три просмотренных паводковых города одного профиля; сопоставления описательные, причинность не установлена.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+        "sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502"
+      },
+      {
+        "path": "economic-atlas/runs/Atlas_Radar_joint_20261005/metrics.json",
+        "sha256": "68e451346bb5a98b740bfe25060a2e377f0f2adf4499554123a2d098a20d429d"
+      }
+    ]
   },
   {
     "id": "E00",
     "question": "Доли против объёма: нужен ли масштаб для типологии (H5)",
     "method": "kmeans primary; Ward sensitivity; canonical and legacy encoding audit",
     "protocol": "Frozen0a8a15c: K5/seed20260921 primary, K2 and six-seed sensitivity, GroupKFold by70regions; six feature arms",
-    "artifact": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+    "artifact": "economic-atlas/runs/H5_scale_encoding_audit_20261007/results.json",
     "status": "executed_inconclusive",
     "metrics": {
       "panel_tids": 1896,
@@ -78,7 +513,13 @@
       "primary_mixed_vs_shares_wage_reduction_percent": -1.266,
       "primary_mixed_vs_shares_employment_reduction_percent": 0.358,
       "primary_intervals_include_zero": true,
-      "scientific_pass": false
+      "scientific_pass": false,
+      "dimensionless_followup": {
+        "status": "DIMENSIONLESS_SCALE_DIAGNOSTIC_EXECUTED",
+        "artifact": "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json",
+        "scientific_pass": false,
+        "interpretation": "Формула устраняет денежную unit-зависимость; внешний экономический выигрыш не подтверждён. Отдельный опыт, не суммировать метрики с прежним log1p."
+      }
     },
     "previous_panel_counts": {
       "panel_tids": 1896,
@@ -88,15 +529,94 @@
       "spending_tids": 2190,
       "months": 24,
       "categories": 6
-    }
+    },
+    "historical_plan": {
+      "method": "kmeans primary; Ward sensitivity; canonical and legacy encoding audit",
+      "protocol": "Frozen0a8a15c: K5/seed20260921 primary, K2 and six-seed sensitivity, GroupKFold by70regions; six feature arms",
+      "artifact": "economic-atlas/runs/H5_scale_encoding_audit_20261007/README.md",
+      "status": "executed_inconclusive"
+    },
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/H5_scale_encoding_audit_20261007/results.json",
+        "sha256": "3aea1392f6abb7ec67561536b1bd60018b4ff685b6dd5da3250d0523b10b1c9a"
+      },
+      {
+        "path": "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json",
+        "sha256": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c"
+      }
+    ]
   },
   {
     "id": "E01b",
-    "question": "Цена пропусков: полные 2 016 МО против полной панели (H6)",
-    "method": "sberindex_cluster",
-    "protocol": "E01 на панели 2 016 полных МО vs все МО, тот же k/seed",
-    "artifact": "Дельта метрик + отчёт покрытия",
-    "status": "ready_to_run",
-    "metrics": null
+    "question": "Цена отбора: пропуски исходных2190МО и замороженная полная панель1896МО (H6/M6)",
+    "method": "descriptive size/missingness audit; исходная кластерная абляция не выполнена",
+    "protocol": "Отсутствующие ячейки отдельно от нулей; population-conflicts исключены; в1896МО индикатор пропусков постоянный0",
+    "artifact": "economic-atlas/runs/H5_scale_encoding_audit_20261007/missingness-size-audit.json",
+    "status": "partially_executed_descriptive_missingness",
+    "metrics": {
+      "source_municipalities": 2190,
+      "source_rows": 303126,
+      "expected_cells_among_source_municipalities": 315360,
+      "absent_cells": 12234,
+      "absent_cell_fraction": 0.03879375951293759,
+      "municipalities_complete_present": 2016,
+      "analysis_population_n": 2078,
+      "spearman_log_population_absent_fraction": -0.12312700875770462,
+      "descriptive_region_block_ci95": [
+        -0.19738299231785997,
+        -0.044813325450112226
+      ],
+      "panel_municipalities": 1896,
+      "panel_missing_cells": 0
+    },
+    "historical_plan": {
+      "method": "sberindex_cluster",
+      "protocol": "E01 на панели 2 016 полных МО vs все МО, тот же k/seed",
+      "artifact": "Дельта метрик + отчёт покрытия",
+      "status": "ready_to_run"
+    },
+    "limits": "2016 полных по наличию raw-сетки не равны1896 принятой панели. Первоначальное сравнение кластеризации2016vsall не выполнено; независимого вывода о механизме пропусков нет.",
+    "checked_at_utc": "2026-10-07T09:06:33.487471+00:00",
+    "verification": "07.10.2026, Mac: frozen run JSON and SHA; registry reconciliation only, no new fits",
+    "scientific_pass": false,
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/H5_scale_encoding_audit_20261007/missingness-size-audit.json",
+        "sha256": "67ede0649c654b83e8bb6267afc5076ef9e668728f5c09698a999cf1f1f8ae9e"
+      }
+    ]
+  },
+  {
+    "id": "E08",
+    "question": "Измеренный вклад профиля, сезонности и соседей в совместной модели",
+    "method": "Atlas/Radar OOF ablation + peer contribution",
+    "protocol": "Группы только2023; futuremutation/keyaudit, общий baseline. Общий выигрыш отделён от собственного вклада соседей",
+    "status": "executed_exploratory",
+    "metrics": {
+      "ablation_status": "COMPUTED_EXPLORATORY",
+      "mechanisms_status": "COMPUTED_EXPLORATORY",
+      "peer_increment_h1_percent": 0.129465,
+      "peer_increment_h3_percent": 0.595517,
+      "both_peer_intervals_include_zero": true
+    },
+    "artifact": "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+    "evidence": [
+      {
+        "path": "economic-atlas/runs/Atlas_Radar_ablation_20261006/results.json",
+        "sha256": "93bf18f89a593763cda5b9719994f78711273a340f9f09bdf44417a17adacc5d"
+      },
+      {
+        "path": "economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json",
+        "sha256": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6"
+      }
+    ],
+    "checked_at_utc": "2026-10-07T09:21:44.017340+00:00",
+    "verification": "07.10.2026, Mac: frozen JSON/SHA; no new fits",
+    "scientific_pass": false,
+    "limits": "Положительная вторичная K5находка не подтверждает основнойK2 или экономическую типологию. Вклад соседей мал и статистически неопределён, posthoc2024не независимый holdout."
   }
 ]

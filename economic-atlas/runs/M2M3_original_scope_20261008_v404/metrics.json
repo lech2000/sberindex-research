@@ -1,0 +1,320 @@
+{
+  "schema": "sberindex.public.aggregate.method-results.v1",
+  "geometry_version": "geometry-original-scope-v4.0.4",
+  "source_HEAD": "000cd621f932df0d86fd3887dec9d78e3908e895",
+  "scope": {
+    "municipalities": 1896,
+    "months": 24,
+    "assignments": 45504,
+    "configs": 210,
+    "worlds": 35,
+    "label_histories": 70,
+    "M3_sensitivity_records": 1260
+  },
+  "frozen_thresholds": {
+    "overlap_threshold": 0.6098991553065275,
+    "candidate_margin": 0.4965715855572934,
+    "resemblance_floor": 0.20941065778968296
+  },
+  "protocol_sha256": "728358b214a1a2c8b50cf35c6c197c6e36bf704c80c77d172c35f65d47050494",
+  "synthetic_seeds": [
+    20271001,
+    20271002,
+    20271003,
+    20271004,
+    20271005
+  ],
+  "worlds": [
+    "stable",
+    "drift",
+    "birth",
+    "death",
+    "split",
+    "merge",
+    "proximity"
+  ],
+  "fixed_error_budget": {
+    "applies_to": "primary Mfactor1 separately for oracle AND unsupervised; both must pass to report technical synthetic acceptance",
+    "recognition_FDR_max": 0.01,
+    "recognition_FNR_max": 0.05,
+    "coverage_min": 0.95,
+    "event_FDR_max": 0.05,
+    "event_FNR_max": 0.1,
+    "stable_drift_proximity_split_merge_false_events_max": 0,
+    "confidence": "pooled empirical counts for this fixed suite; report bootstrap intervals descriptively, not population control",
+    "sensitivity": "all factors reported; sensitivity failures prevent robustness claim but do not permit selecting alternateM",
+    "NA": "any primary rate denominator0 or missing configs yields INCONCLUSIVE, never PASS"
+  },
+  "summaries": [
+    {
+      "mode": "oracle",
+      "margin_factor": 0.75,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1850,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1870,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.0,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1850,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 0,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1870,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.0,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      }
+    },
+    {
+      "mode": "oracle",
+      "margin_factor": 1.25,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1806,
+        "fp_known": 0,
+        "fp_unknown": 0,
+        "fn": 44,
+        "tn": 2795,
+        "cluster_decisions": 1870,
+        "decided_clusters": 1826,
+        "abstentions": 44,
+        "birth_candidates": 0,
+        "ambiguous": 44,
+        "unmatchable_clusters": 0
+      },
+      "events": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.0,
+        "fnr_known_true_matches": 0.023783783783783784,
+        "cluster_decision_coverage": 0.9764705882352941,
+        "event_fdr": 0.0,
+        "event_fnr": 0.0
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 0.75,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1585,
+        "fp_known": 0,
+        "fp_unknown": 165,
+        "fn": 265,
+        "tn": 2795,
+        "cluster_decisions": 1755,
+        "decided_clusters": 1755,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 115
+      },
+      "events": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 40
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.09428571428571429,
+        "fnr_known_true_matches": 0.14324324324324325,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.8
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.0,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1585,
+        "fp_known": 0,
+        "fp_unknown": 165,
+        "fn": 265,
+        "tn": 2795,
+        "cluster_decisions": 1755,
+        "decided_clusters": 1755,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 115
+      },
+      "events": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 40
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.09428571428571429,
+        "fnr_known_true_matches": 0.14324324324324325,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.8
+      }
+    },
+    {
+      "mode": "unsupervised",
+      "margin_factor": 1.25,
+      "n_runs": 35,
+      "recognition": {
+        "tp": 1585,
+        "fp_known": 0,
+        "fp_unknown": 165,
+        "fn": 265,
+        "tn": 2795,
+        "cluster_decisions": 1755,
+        "decided_clusters": 1755,
+        "abstentions": 0,
+        "birth_candidates": 0,
+        "ambiguous": 0,
+        "unmatchable_clusters": 115
+      },
+      "events": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 40
+      },
+      "rates": {
+        "fpr_known_pairs": 0.0,
+        "fdr_all_predicted_matches": 0.09428571428571429,
+        "fnr_known_true_matches": 0.14324324324324325,
+        "cluster_decision_coverage": 1.0,
+        "event_fdr": 0.0,
+        "event_fnr": 0.8
+      }
+    }
+  ],
+  "acceptance": {
+    "status": "FAIL",
+    "scope": "fixed synthetic suite empirical error budget; not economic identity acceptance",
+    "scientific_pass": false,
+    "modes": [
+      {
+        "mode": "oracle",
+        "status": "PASS",
+        "rates": {
+          "fpr_known_pairs": 0.0,
+          "fdr_all_predicted_matches": 0.0,
+          "fnr_known_true_matches": 0.0,
+          "cluster_decision_coverage": 1.0,
+          "event_fdr": 0.0,
+          "event_fnr": 0.0
+        },
+        "negative_M3_false_events": 0,
+        "checks": {
+          "recognition_FDR": true,
+          "recognition_FNR": true,
+          "coverage": true,
+          "event_FDR": true,
+          "event_FNR": true,
+          "negative_M3_false_events": true
+        }
+      },
+      {
+        "mode": "unsupervised",
+        "status": "FAIL",
+        "rates": {
+          "fpr_known_pairs": 0.0,
+          "fdr_all_predicted_matches": 0.09428571428571429,
+          "fnr_known_true_matches": 0.14324324324324325,
+          "cluster_decision_coverage": 1.0,
+          "event_fdr": 0.0,
+          "event_fnr": 0.8
+        },
+        "negative_M3_false_events": 0,
+        "checks": {
+          "recognition_FDR": false,
+          "recognition_FNR": false,
+          "coverage": true,
+          "event_FDR": true,
+          "event_FNR": false,
+          "negative_M3_false_events": true
+        }
+      }
+    ],
+    "threshold_retuning_permitted": false
+  },
+  "real_algorithmic_candidate_counts": {
+    "continuing": 43,
+    "reemergence": 1,
+    "ambiguous": 2,
+    "split_candidates": 0,
+    "merge_candidates": 0
+  },
+  "real_counts_are_not_municipality_counts": true,
+  "real_window": {
+    "months": 24,
+    "period": "2023-01..2024-12",
+    "municipalities": 1896,
+    "assignment_keys": 45504,
+    "K_grid": "2..8",
+    "selected_K_all_months": 2,
+    "scaler_and_calibration_fit": "2023 only; 2023 outputs retrospective"
+  },
+  "independent_validation": {
+    "all18_source_artifact_sha_verified": true,
+    "configs": 210,
+    "monthly_scoring_rows": 4830,
+    "event_matching_rows": 180,
+    "sensitivity_records": 1260,
+    "geometry_primary_event_matches": 30,
+    "cube_and_truth_sha_pairs": 35,
+    "all35_cube_and_truth_sha_equal": true,
+    "split_merge_coordinate_constancy_verified": true,
+    "validation_new_fits": 0,
+    "validation_new_seed_worlds": 0,
+    "independent_holdout": false
+  },
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "case_complete": false
+}

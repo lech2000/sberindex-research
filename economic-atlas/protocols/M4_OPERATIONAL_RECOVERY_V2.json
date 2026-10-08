@@ -1,0 +1,78 @@
+{
+  "protocol_id": "M4_OPERATIONAL_RECOVERY_V2_2_DIRECTORY_DURABILITY_2026-10-08",
+  "base": "f20ea51f33a27ff8ab6be162b83ca8037d61e2b3",
+  "state": "SOURCE_ONLY_NOT_ADOPTED_NOT_LAUNCHED",
+  "key": "M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+  "prior_controller_charge_seconds": 49.224643,
+  "historical_seconds": 131.42791020799493,
+  "total_seconds": 93600,
+  "deadline": "2026-10-09T09:00:00+00:00",
+  "fullbank": {
+    "calibration": 360,
+    "held": 1620,
+    "nulls": 99,
+    "R": [
+      3,
+      4,
+      5
+    ]
+  },
+  "old_evidence_sha256": {
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime/entry.json": "d4fdd96a3e74a7c35fae199a9e52cab9a24fcab92f830cb7d6a0bfbba49a22ce",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/ROOT_FIRST_ACTUAL_STATUS.json": "1e949d38073b9cdd58af4d8ef1648fde62788cfd9225ba9b465e66c89e934174",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime/ROOT_BINDING.json": "0b81074c1bc126b29afa2deb53c30a3601f1c7e1fc0808baa216fe7d84cae687",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime/ROOT_M1_GONE.json": "4078615f47b7ef874e0ff1fe2a82102d31392918380f4ba08fadd24964980245",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/ROOT_FRESH_M1_GONE_BEFORE_ACTUAL.json": "9ca8875c51623bbf9fa17c29a05f06950f36a6b54e9d996204c4becdcb12f06d",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/ROOT_ACTUAL_HANDOFF_RECEIPT.json": "6d50ee6f9db09931b670132df710265dd1bc40acfefff0a70589f6929b3bb6ec",
+    "/private/tmp/atlas-m4-root-launch-controller-20261008/controller.py": "99f301768cbba1de0b92860a7f9604b591f751c5f956adc86af56f715f6f78fd",
+    "/private/tmp/sberindex-official-laws-20261007/economic-atlas/src/atlas_m4_durable.py": "bdb011a7ecc430476ba4a782695bb81f80fca0eb032155922cda3ea2fffa2f78",
+    "/private/tmp/atlas-m4-fullbank-actual-20261008-v1/M4-fullbank-launchd.stderr.log": "25b986984f7683246baa41fd33619c01925582103785bededc1d71327038acc1",
+    "/private/tmp/sberindex-one-use-ledger/502-M4-bootstrap-2074321a261589b4b83407f14aff4a513a7d6f722aea4288ac963e36bbe24013.json": "f14b7d9531b0633e6499de2b780f67396e0d827b55963c170ac01085c64f413a",
+    "/private/tmp/sberindex-one-use-ledger/502-M4-bootstrap-2074321a261589b4b83407f14aff4a513a7d6f722aea4288ac963e36bbe24013-terminal.json": "e97b0f3f584218925240cbc3e1a40e0d54cd697bf2b32627b2d936c1cc4ac928"
+  },
+  "scientific_lease_absent_at_read_only_preparation": "/private/tmp/sberindex-one-use-ledger/502-M4-2074321a261589b4b83407f14aff4a513a7d6f722aea4288ac963e36bbe24013.json",
+  "no_science_started_reason": "old launch failed in controller_anchor before numeric imports and canonical model reservation",
+  "science_pins": {
+    "economic-atlas/protocols/M4_WHOLE_ROOT_CONTROL_OPERATIONAL_V1.json": "44a247c920761710044da9233a38d164cdcc52b644f1b0c2ba3f95f649da40a9",
+    "economic-atlas/src/atlas_m4_mixed_dependency.py": "12eb13f3a6fb725d93a9c1f26a895649d1695abbf1f0b7b3e7a448e3e55db127",
+    "economic-atlas/protocols/M4_MIXED_NUMERICAL_DEPENDENCY_V1.json": "677ebde4c8a7a9cc30b0ebf4fd4ad0aa1d053b1bd0a1c922381e1e70d43f4d9c",
+    "economic-atlas/src/atlas_m4_channels.py": "c927600120fc18d8677c1de09bd6d045ba4415d1e6e5fb179915d1ba2a1cc9cd",
+    "economic-atlas/src/atlas_m4_executor.py": "76ae66aa2f11ce18060be0173a661d1db1214d38de0ccb95a910a8e6405db3a4",
+    "economic-atlas/src/atlas_m1_executor.py": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+    "economic-atlas/src/atlas_m1_spectral.py": "5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+    "economic-atlas/protocols/M4_PROSPECTIVE_V1.json": "6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+    "economic-atlas/protocols/M4_DEPENDENCY_AMENDMENT_V1.json": "e1c5b21b445c3ef408e9061ae023f706997abe5ebf397ffadeb39a74b0c7f163",
+    "economic-atlas/protocols/M4_OPERATIONAL_PREFLIGHT_V1.json": "eb772e7ff9bbf33048d5ae366024e98e591e05f5a744c04415848088e0863e1b",
+    "economic-atlas/protocols/M1_PROSPECTIVE_V1.json": "fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30"
+  },
+  "operational_phase": "M4-bootstrap-recovery-v2",
+  "controller_root": "/private/tmp/atlas-m4-operational-recovery-root-control-20261008-v2/runtime",
+  "actual_root": "/private/tmp/atlas-m4-fullbank-actual-20261008-v1",
+  "old_model_key_unchanged": true,
+  "old_scientific_source_untouched": true,
+  "raw_proof_copy": "read bytes once, SHA verify, xb write/fsync, SHA readback; no JSON reserialization",
+  "fresh_root_proofs_required": [
+    "M1 parents72250/72253 gone",
+    "old M4 launch label not running/runs1/exit1/processes empty, no science namespace"
+  ],
+  "resource": {
+    "threads": 1,
+    "RSS": 1073741824,
+    "free": 1073741824,
+    "total_output": 268435456,
+    "supervisory": 65536,
+    "final_reserve_seconds": 30,
+    "controller_handoff_seconds": 120
+  },
+  "limitations": [
+    "old launchd process transient resources not continuously observed; conservative wall charge49.224643",
+    "receipt final IO and sampled resource qualifications retained",
+    "OPERATIONAL FIRST SCIENTIFIC LAUNCH ONLY after explicit F7b adoption/root decision; no automatic retry or old job bootstrap"
+  ],
+  "scientific_namespace_unchanged": true,
+  "prior_charge_basis": "conservative UTC entry\u2192first authoritative postexit observation49.224643; original monotonic end unavailable; not continuous PASS",
+  "old_entry_end_monotonic_measured": false,
+  "no_bootstrap_contract_unchanged_claim": true,
+  "directory_durability": "Immutable file fsync\u2192parent directory fsync; each new directory name fsynced in its parent; plist file\u2192directory fsync before permanent bootstrap. Failed sync: no dispatch, permanent current one-use file and explicit UNKNOWN durability, no automatic retry.",
+  "old_candidate_patch_sha256": "6a97c85428b89ef1ecf7dfe38181235ff7777435ed1acfefaa2fd3f0d30a0009"
+}

@@ -1,0 +1,94 @@
+{
+  "kind": "E05_FULL_RESOURCE_PREFLIGHT_SOURCE_V1",
+  "status": "SOURCE_ONLY_NOT_ADOPTED_NOT_RUN",
+  "execution_authorized": false,
+  "operation_key": "E05-resource-preflight-fullshape-v1",
+  "source_pins": {
+    "economic-atlas/research-plan.md": "a084b0b7b523e45d39014c15d55f3665e02b8bbe4d74c00ba43abacf6798ccd7",
+    "economic-atlas/research-ladder.md": "e235b652d468cfd7e1e93a3861934add2873ba316b7f93c5ab9fa8e9b8d78a38",
+    "economic-atlas/features/spec.yaml": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "economic-atlas/src/a5_graph.py": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/runs/A5/graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "economic-atlas/runs/A6/metrics.json": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+    "economic-atlas/runs/Mobility_ablation_20261003/metrics.json": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "economic-atlas/runs/A9_economic_network_20261005/results.json": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+    "economic-atlas/runs/A6_final_review_20261008/CLOSEOUT_RECEIPT.json": "eb3d0851a38de60d299729d62a789ab538ec8c2159059a1cc5507280b059331b",
+    "economic-atlas/runs/A5/edges.parquet": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a",
+    "economic-atlas/src/e05_full_resource_preflight.py": "5f352958ce3dbffe6a9cf3e26eb262fd3ae63c3c9e1cabaa52b4d61a37ff97f9"
+  },
+  "profile": {
+    "n": 1896,
+    "T": 24,
+    "d": 5,
+    "K": 5,
+    "seed": 20261008,
+    "graphs": "all24 pinned raw five shares/separate All denominator, k20union, original normalization",
+    "pairs": [
+      {
+        "nodes": 1896,
+        "gamma": 0,
+        "month_index": 0
+      },
+      {
+        "nodes": 45504,
+        "gamma": 2,
+        "months": 24
+      }
+    ],
+    "native_pairs_max": 2,
+    "ARPACK": {
+      "tol": 1e-08,
+      "maxiter": 5000,
+      "which": "SA"
+    },
+    "KMeans_n_init": 20,
+    "parameter_correction": "Root corrected initial K4 typo to exact max frozen K5 BEFORE any result/native call; first frozen seed20261008. No K4 cell added."
+  },
+  "IO_fixture": {
+    "files": 225,
+    "rows_each": 45504,
+    "rows_total": 10238400,
+    "batches": 4096,
+    "nominal_native_receipt_files": 8220,
+    "label": null,
+    "status": "RESOURCE_FIXTURE_UNKNOWN_NOT_BANK",
+    "not_V5_actual_publication": true,
+    "no_shrink_if_cap_exceeded": true
+  },
+  "resources": {
+    "whole_seconds": null,
+    "final_reserve_seconds": null,
+    "cleanup_seconds": null,
+    "absolute_deadline_UTC": null,
+    "poll_seconds": null,
+    "receipt_reserve_bytes": null,
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "minimum_free_bytes": 1073741824,
+    "output_bytes": 134217728,
+    "whole_clock": "original supervisor anchor before importing worker; never reset; includes cleanup/result/receipt IO",
+    "guard": "sampled nonreentrant callback; blocking native calls MUST be bounded by separate root source-qualified owned-PG supervisor, not this library",
+    "actual_performance": "UNKNOWN",
+    "continuous_PASS": false
+  },
+  "closure": {
+    "scientific_pass": false,
+    "full225_resource_qualification": false,
+    "original_E05_bank_started": false,
+    "no_old_key_namespace_clock_reuse": true,
+    "no_retry_after_failed_profile": true
+  },
+  "future_admission_requirements": [
+    "Independent source ACK + F7b adoption, explicit root prospective numeric budgets/deadline and distinct one-use profile key.",
+    "Root controller own-process/PG ownership cleanup+reap, inherited CPU1, sampled aggregate RSS/free/IO and blocking-call hard deadline. No such actual controller exercised here.",
+    "A full metric-cost estimate still must include all4180 real quality months plus1080 control month slots; two native pairs +IO cannot bound unknown convergence/full science.",
+    "Final result fsync elapsed vs final outer receipt IO separately measured; lastreceipt cannot be called whole IO independently timed by this library."
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "state": "SAVED_PAIRED_NUMERIC_RECHECK_PASS",
+  "checked_at_UTC": "2026-10-08T14:28:19.513534+00:00",
+  "national": {
+    "full_rows": 720,
+    "unique_full_keys": 720,
+    "IDs": 20,
+    "categories": [
+      "Все категории",
+      "Здоровье",
+      "Маркетплейсы",
+      "Общественное питание",
+      "Продовольствие",
+      "Транспорт"
+    ],
+    "targets": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "horizons": [
+      12
+    ],
+    "origins": [
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12"
+    ],
+    "full_key_SHA": "c83346f98a0d12006dea6f598bcd288498f0430a9fec28a9266acc1b98671f6e",
+    "results": [
+      {
+        "category": "Все категории",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "1fd8406eea52263b53ce4e1a8636d1db50e921679b1ec6054872aa9e1e9512b2",
+        "mae": {
+          "national_prophet": 2669.127824242852,
+          "national_yoy_lag1": 1059.258674843924,
+          "fresh_plain_prophet": 2711.3349152835494
+        }
+      },
+      {
+        "category": "Здоровье",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "e9f5e5d34e0c662e2bc1680d85e64ea329103bd14420b117d27e26e2a43e9b3b",
+        "mae": {
+          "national_prophet": 446.52307490270084,
+          "national_yoy_lag1": 135.7474389970853,
+          "fresh_plain_prophet": 407.9241231378631
+        }
+      },
+      {
+        "category": "Маркетплейсы",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "15da5ba7e151bdd959d03c2d78c533fcdc9800d0d25de7e28ab4a90ca1c3c801",
+        "mae": {
+          "national_prophet": 702.1324696482498,
+          "national_yoy_lag1": 1074.5672451291264,
+          "fresh_plain_prophet": 644.5043290244862
+        }
+      },
+      {
+        "category": "Общественное питание",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "aa37f5319dde00916939e063a5e22c702b570f5c2b87ff5e6b290e5e2d8254ed",
+        "mae": {
+          "national_prophet": 235.55518334710106,
+          "national_yoy_lag1": 101.61559334612109,
+          "fresh_plain_prophet": 234.02500676737614
+        }
+      },
+      {
+        "category": "Продовольствие",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "641e4afc899ee8fb531970954bc94b4c9f655db4647349a3d41456817aa30aa8",
+        "mae": {
+          "national_prophet": 1143.0224183957648,
+          "national_yoy_lag1": 1100.5536778471271,
+          "fresh_plain_prophet": 1222.490585037123
+        }
+      },
+      {
+        "category": "Транспорт",
+        "horizon": 12,
+        "rows": 120,
+        "IDs": 20,
+        "mask_SHA": "4082a9e4ed7453715da6d619c5a562d6e8d278f52e096661f6378ad51d01be9d",
+        "mae": {
+          "national_prophet": 480.49579792754395,
+          "national_yoy_lag1": 116.80736063391032,
+          "fresh_plain_prophet": 462.81449777936285
+        }
+      }
+    ],
+    "pooled_mae": {
+      "national_prophet": 946.1427947440354,
+      "national_yoy_lag1": 598.0916651328823,
+      "fresh_plain_prophet": 947.1822428382935
+    },
+    "gain_percent": 36.78632142469711,
+    "marketplace_loss_percent": 53.04337736545026
+  },
+  "consumer_full_table_coverage": {
+    "closeout": {
+      "full_rows": 204768,
+      "unique_full_keys": 204768,
+      "IDs": 1896,
+      "categories": [
+        "Все категории",
+        "Здоровье",
+        "Маркетплейсы",
+        "Общественное питание",
+        "Продовольствие",
+        "Транспорт"
+      ],
+      "targets": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "horizons": [
+        1,
+        3,
+        6
+      ],
+      "origins": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "full_key_SHA": "f064a9b2c7a601e97193e8cc87ba16f719edaae65b79c44a44c3f764c5a21ca1",
+      "results": [
+        {
+          "category": "Все категории",
+          "horizon": 1,
+          "rows": 9234,
+          "IDs": 1539,
+          "mask_SHA": "5cc0f3442e4131fa2d890798134103b11db0db50e2060d1e4cfadf1631657a53",
+          "mae": {
+            "profile_ses": 686.416609985477,
+            "one_step_zero_own": 668.8167504103586,
+            "one_step_zero_peer": 667.9508693956427,
+            "direct_zero_own": 668.8167504103586,
+            "direct_zero_peer": 667.9508693956427
+          }
+        },
+        {
+          "category": "Все категории",
+          "horizon": 3,
+          "rows": 9234,
+          "IDs": 1539,
+          "mask_SHA": "3cc126aa29f61bf62e39eed2e184053dbbecb90708025a1d2cf34f0eb61c3db1",
+          "mae": {
+            "profile_ses": 884.6938823891489,
+            "one_step_zero_own": 859.0299652861498,
+            "one_step_zero_peer": 857.0600416092755,
+            "direct_zero_own": 856.2715899598511,
+            "direct_zero_peer": 851.1723482044649
+          }
+        }
+      ]
+    },
+    "mechanisms": {
+      "full_rows": 204768,
+      "unique_full_keys": 204768,
+      "IDs": 1896,
+      "categories": [
+        "Все категории",
+        "Здоровье",
+        "Маркетплейсы",
+        "Общественное питание",
+        "Продовольствие",
+        "Транспорт"
+      ],
+      "targets": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "horizons": [
+        1,
+        3,
+        6
+      ],
+      "origins": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "full_key_SHA": "f064a9b2c7a601e97193e8cc87ba16f719edaae65b79c44a44c3f764c5a21ca1",
+      "results": [
+        {
+          "category": "Все категории",
+          "horizon": 1,
+          "rows": 9234,
+          "IDs": 1539,
+          "mask_SHA": "5cc0f3442e4131fa2d890798134103b11db0db50e2060d1e4cfadf1631657a53",
+          "mae": {
+            "profile_ses": 686.416609985477,
+            "profile_ses__one_step_zero_own": 668.8167504103586,
+            "profile_ses__one_step_zero_peer": 667.9508693956427,
+            "profile_ses__direct_zero_own": 668.8167504103586,
+            "profile_ses__direct_zero_peer": 667.9508693956427
+          }
+        },
+        {
+          "category": "Все категории",
+          "horizon": 3,
+          "rows": 9234,
+          "IDs": 1539,
+          "mask_SHA": "3cc126aa29f61bf62e39eed2e184053dbbecb90708025a1d2cf34f0eb61c3db1",
+          "mae": {
+            "profile_ses": 884.6938823891489,
+            "profile_ses__one_step_zero_own": 859.0299652861498,
+            "profile_ses__one_step_zero_peer": 857.0600416092755,
+            "profile_ses__direct_zero_own": 856.2715899598511,
+            "profile_ses__direct_zero_peer": 851.1723482044649
+          }
+        }
+      ]
+    }
+  },
+  "consumer_claim_checks": [
+    {
+      "horizon": 1,
+      "mask_SHA": "5cc0f3442e4131fa2d890798134103b11db0db50e2060d1e4cfadf1631657a53",
+      "rows": 9234,
+      "base_mae": 686.416609985477,
+      "own_mae": 668.8167504103586,
+      "peer_mae": 667.9508693956427,
+      "total_correction_percent": 2.6901651739203882,
+      "incremental_peer_percent": 0.1294646125690843,
+      "saved_month_CI": [
+        -2.189903652347611,
+        3.7663374942643086
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    },
+    {
+      "horizon": 3,
+      "mask_SHA": "3cc126aa29f61bf62e39eed2e184053dbbecb90708025a1d2cf34f0eb61c3db1",
+      "rows": 9234,
+      "base_mae": 884.6938823891489,
+      "own_mae": 856.2715899598511,
+      "peer_mae": 851.1723482044649,
+      "total_correction_percent": 3.789054593003159,
+      "incremental_peer_percent": 0.5955168681498901,
+      "saved_month_CI": [
+        -0.2512891621508523,
+        10.272387602237034
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    }
+  ],
+  "national_saved_CIs": [
+    {
+      "model": "national_prophet",
+      "reference": "fresh_plain_prophet",
+      "rows": 720,
+      "mae_model": 946.1427947440353,
+      "mae_reference": 947.1822428382936,
+      "relative_improvement_percent": 0.10974108753808443,
+      "benefit_mae": 1.0394480942581092,
+      "benefit_ci95_month_blocks": [
+        -45.674902266357854,
+        41.242608486560215
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "national_prophet",
+      "rows": 720,
+      "mae_model": 598.0916651328823,
+      "mae_reference": 946.1427947440353,
+      "relative_improvement_percent": 36.7863214246971,
+      "benefit_mae": 348.0511296111531,
+      "benefit_ci95_month_blocks": [
+        166.50266495651934,
+        518.8809205394148
+      ],
+      "month_blocks": 6
+    },
+    {
+      "model": "national_yoy_lag1",
+      "reference": "fresh_plain_prophet",
+      "rows": 720,
+      "mae_model": 598.0916651328823,
+      "mae_reference": 947.1822428382936,
+      "relative_improvement_percent": 36.855692803038465,
+      "benefit_mae": 349.0905777054112,
+      "benefit_ci95_month_blocks": [
+        194.5495934351028,
+        493.8536432871072
+      ],
+      "month_blocks": 6
+    }
+  ],
+  "scientific_pass": false,
+  "new_models_fits_bootstrap_windows": 0,
+  "limits": "Retrospective Jul-Dec2024; nationalH12 selected120series not fullpanel; later national vintage/asof unverified. Saved CI coverage readback only, no new bootstrap. No independence/early-warning/causal claim.",
+  "submission": "Verified numerical claims may be retained as descriptive pilot results; filing requires owner identity/access/consents, not scientificPASS.",
+  "elapsed_from_original_anchor": 106.4534587500093,
+  "sampled_peak_RSS_bytes": 227573760,
+  "auditor_SHA": "7276bb1eff5be316d041389d29f45120ee38b52a1a0479b641e01e3e86cd3422",
+  "input_pins": {
+    "docs/CONTEST_SUBMISSIONS_2026-10-08.json": {
+      "SHA": "4b0d87e146f3bf8f2167320788952b46dac45552f2a93768be8598e91f0f784a",
+      "bytes": 6827
+    },
+    "shock-radar/runs/National_equal_information_20261006/predictions.parquet": {
+      "SHA": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+      "bytes": 38294
+    },
+    "shock-radar/runs/National_equal_information_20261006/metrics.json": {
+      "SHA": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+      "bytes": 9938
+    },
+    "shock-radar/runs/National_equal_information_20261006/protocol.json": {
+      "SHA": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+      "bytes": 2061
+    },
+    "shock-radar/runs/National_equal_information_20261006/manifest.json": {
+      "SHA": "92f92d862ed2a832dcbbbdee51ccd8bbba7a95d502d1bb95ed629a261b36e01a",
+      "bytes": 1062
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/predictions.parquet": {
+      "SHA": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+      "bytes": 15851492
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/metrics.json": {
+      "SHA": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+      "bytes": 121174
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/protocol.json": {
+      "SHA": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+      "bytes": 5709
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/manifest.json": {
+      "SHA": "670cd676349fbc55dc1981cf22d7892e6cd0a884e906f2d0060aed80b9956029",
+      "bytes": 1670
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/predictions.parquet": {
+      "SHA": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+      "bytes": 49800082
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json": {
+      "SHA": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+      "bytes": 640610
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/protocol.json": {
+      "SHA": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+      "bytes": 6346
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/manifest.json": {
+      "SHA": "ff0d599c1c5084e50b3f94588d243351cadc01aaddc3413205990f1823ae68a6",
+      "bytes": 1715
+    }
+  }
+}

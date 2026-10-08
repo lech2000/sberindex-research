@@ -1,0 +1,26 @@
+[
+  {
+    "source_only": true,
+    "tests": 25,
+    "exit_code": 0,
+    "log": "/private/tmp/a7-immediate-diagnostics-f7b-adoption-20261008/adopted-source-tests.log",
+    "SHA256": "2150b44abdf9fe1a5978d20b1370ed137231959644acdf7ed7ed5b9583e840cb",
+    "numerical_fits_native_groups_browser_DB_paid_calls": 0
+  },
+  {
+    "source_only": true,
+    "tests": 40,
+    "exit_code": 0,
+    "log": "/private/tmp/e05-finalizer-v5-f7b-adoption-20261008/adopted-test_e05_publication_finalizer_v5.py.log",
+    "SHA256": "0222b34b8b5a5d2afb9e6379cb7a44554bb4ef50eedbac4a6ce1222d1de893e1",
+    "numerical_fits_native_groups_browser_DB_paid_calls": 0
+  },
+  {
+    "source_only": true,
+    "tests": 67,
+    "exit_code": 0,
+    "log": "/private/tmp/e05-finalizer-v5-f7b-adoption-20261008/adopted-test_e05_full_executor_toolkit_v2.py.log",
+    "SHA256": "691db6cb34790e6ca6c5df436d614da52c151957b12cda2b10e9292006bee724",
+    "numerical_fits_native_groups_browser_DB_paid_calls": 0
+  }
+]

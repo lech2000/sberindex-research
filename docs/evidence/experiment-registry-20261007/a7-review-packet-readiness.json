@@ -1,0 +1,11 @@
+{
+  "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+  "head": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+  "dry_run_exit": 0,
+  "mandatory_bundle_verified": true,
+  "both_regression_modules_in_reviewer_prompt": true,
+  "evidence_directory_in_f7b": "/var/lib/fixar-cmd/jobs/sberindex-a7-curator-receipt-fix-20261007/ready-release-evidence",
+  "paid_model_called": false,
+  "production_lock_touched": false,
+  "prompt_bytes": 32338
+}

@@ -1,0 +1,87 @@
+{
+  "protocol_id": "E05_INDEPENDENT_NUMERICAL_AUDIT_V2_SOURCE_ONLY_20261008",
+  "state": "SOURCE_ONLY_NOT_EXECUTABLE",
+  "base_HEAD": "e91c62ea1ef9c18aa080164e7ef1b0295f4d9a2b",
+  "source_action": "act_a32a69fed5be431c",
+  "immutable_original_pins": {
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/e05_full_publication_validator_v5.py": "dda073bc0bf223321b6af9f39d2ed57f1f39ad33e92ac633003f3777f9239193",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a"
+  },
+  "auditor_source_SHA256": "758ca9a3c922e5964bbeb54b49c5562197d988de68c8cd903fb1a19fcbcf88a6",
+  "full_scope": {
+    "real": 180,
+    "control": 45,
+    "cells": 225,
+    "territories": 1896,
+    "months": 24,
+    "rows_per_cell": 45504,
+    "status_rows": 10238400,
+    "native_API_slots_nominal": 8220,
+    "decompositions_nominal": 4110,
+    "observed_cost": false
+  },
+  "float_tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-10,
+    "integer_status_None_exact": true
+  },
+  "S_Dbw_convention": "pair_union",
+  "MQ": "SPEC_UNRESOLVED_OWNER_EXCLUDED",
+  "original_budget": {
+    "stable_false_switch_fraction_max": 0.05,
+    "abrupt_missed_change_fraction_max": 0.2,
+    "abrupt_median_delay_months_max": 2.0,
+    "seasonal_false_switch_fraction_max": 0.05
+  },
+  "runtime_resources": "UNKNOWN_NOT_QUALIFIED",
+  "execution_allowed": false,
+  "scientific_pass": false,
+  "actual_full_truth_audit": "NOT_PERFORMED",
+  "old_anchors_leases_limits_immutable": true,
+  "no_retry_unknown": true,
+  "future_callgraph": [
+    "qualified original guard",
+    "pinned V5 actual full-file SHA/key/status validator",
+    "independently bound input/assignment/truth tensors",
+    "independent quality/temporal/control formulas for COMPUTED cells",
+    "exact sameKseed savedpair numeric check or explicit evidenceNA",
+    "all225 retained negative-qualified result"
+  ],
+  "input_reader_admission": "NOT_IMPLEMENTED_OR_ACTUAL_VERIFIED; callbacks trusted library interfaces only",
+  "frozen_protocol_byte_SHA256": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a",
+  "frozen_protocol_complete_canonical_SHA256": "f82e404e7e909c106777a5582f76f565c62a60bc388c6c2e19c6bbb4697fb1d3",
+  "frozen_structure": {
+    "K": [
+      2,
+      5
+    ],
+    "real_seeds": [
+      20261008,
+      20261009,
+      20261010,
+      20261011,
+      20261012
+    ],
+    "control_seeds": [
+      30261008,
+      30261009,
+      30261010,
+      30261011,
+      30261012
+    ],
+    "unique_cells": 225,
+    "all_semantics_and_order_pinned": true
+  },
+  "bound_domains": {
+    "fraction": "finite nonbool [0,1]",
+    "delay": "finite nonbool >=0",
+    "changed_finite_bound": "REJECT",
+    "raw_None": "INCONCLUSIVE_UNDEFINED"
+  },
+  "initial_mapping_tie": "ABSTAIN_UNVERIFIED_SciPy_EQUIVALENCE_NOT_CLAIMED",
+  "full_V5_IO_adapter": "NOT_IMPLEMENTED_PROSPECTIVE_ENVELOPE_ONLY"
+}

@@ -1,0 +1,193 @@
+{
+  "source_commit": "e1d0c996ee832af29a42adbbd0201058c1db619a",
+  "cases": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "source_commit": "e1d0c996ee832af29a42adbbd0201058c1db619a",
+      "checked_at_utc": "2026-10-07T11:42:56.040271+00:00",
+      "materials": [
+        {
+          "id": "mat_8411720ce6324e7c",
+          "vault_document_id": "doc_e04e441fd5174181",
+          "file": "docs/CONTEST_CHECKLIST.md",
+          "title": "Актуальная сверка7октября — CONTEST_CHECKLIST.md",
+          "bytes": 12308,
+          "sha256": "d29f5464b9e59620a65fa566e0d01c9a5c75dcb024d7724599059408f49ce6df",
+          "verified": true
+        },
+        {
+          "id": "mat_fcfdda9dd1bb4bb7",
+          "vault_document_id": "doc_3d55b0b0ec1b437e",
+          "file": "docs/REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "title": "Актуальная сверка7октября — REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "bytes": 9664,
+          "sha256": "fd196379358500ef3dec5ece31d8584a8a562e824715d3fe9263c8a95e1008bb",
+          "verified": true
+        },
+        {
+          "id": "mat_51f9ed2c437243dd",
+          "vault_document_id": "doc_cc981d619e794cc2",
+          "file": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "title": "Актуальная сверка7октября — RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "bytes": 11859,
+          "sha256": "cf8f4fb13f93ee702716e9ef5726ab23f59c4393bd850fbdb49a66d8643dc6ea",
+          "verified": true
+        },
+        {
+          "id": "mat_b2eb7885c0704948",
+          "vault_document_id": "doc_ea734fbf85354011",
+          "file": "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "title": "Актуальная сверка7октября — HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "bytes": 13911,
+          "sha256": "ab5539b7f6b588b7b333094e3ace673fb3cffb5520d7484cd26efded22009481",
+          "verified": true
+        },
+        {
+          "id": "mat_1aab92bd11954234",
+          "vault_document_id": "doc_7838f1f6d9dc4263",
+          "file": "docs/evidence/remaining-actions-20261007/atlas/METHOD_SCOPE_CORRECTION.md",
+          "title": "Актуальная сверка7октября — METHOD_SCOPE_CORRECTION.md",
+          "bytes": 4893,
+          "sha256": "e02e7f9e8f7f7c7adb1014fd094f98781a3b7a12c60da87c3771064968b42f88",
+          "verified": true
+        },
+        {
+          "id": "mat_40318fee483f45a4",
+          "vault_document_id": "doc_293c28568f9e4ff2",
+          "file": "docs/evidence/remaining-actions-20261007/radar/CORRECTION_NOTICE.md",
+          "title": "Актуальная сверка7октября — CORRECTION_NOTICE.md",
+          "bytes": 2157,
+          "sha256": "b6446100b1c712cd80559ce111eab23e0e3a2ebf9dcbd3f5d89a3eb1673cd357",
+          "verified": true
+        }
+      ],
+      "all_full_byte_sha_readback_verified": true
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "source_commit": "e1d0c996ee832af29a42adbbd0201058c1db619a",
+      "checked_at_utc": "2026-10-07T11:42:59.157822+00:00",
+      "materials": [
+        {
+          "id": "mat_259b040d8523431e",
+          "vault_document_id": "doc_e04e441fd5174181",
+          "file": "docs/CONTEST_CHECKLIST.md",
+          "title": "Актуальная сверка7октября — CONTEST_CHECKLIST.md",
+          "bytes": 12308,
+          "sha256": "d29f5464b9e59620a65fa566e0d01c9a5c75dcb024d7724599059408f49ce6df",
+          "verified": true
+        },
+        {
+          "id": "mat_5d620f30bb2744bb",
+          "vault_document_id": "doc_3d55b0b0ec1b437e",
+          "file": "docs/REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "title": "Актуальная сверка7октября — REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "bytes": 9664,
+          "sha256": "fd196379358500ef3dec5ece31d8584a8a562e824715d3fe9263c8a95e1008bb",
+          "verified": true
+        },
+        {
+          "id": "mat_ac4382a3fb314b9c",
+          "vault_document_id": "doc_cc981d619e794cc2",
+          "file": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "title": "Актуальная сверка7октября — RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "bytes": 11859,
+          "sha256": "cf8f4fb13f93ee702716e9ef5726ab23f59c4393bd850fbdb49a66d8643dc6ea",
+          "verified": true
+        },
+        {
+          "id": "mat_9117089d08274eb9",
+          "vault_document_id": "doc_ea734fbf85354011",
+          "file": "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "title": "Актуальная сверка7октября — HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "bytes": 13911,
+          "sha256": "ab5539b7f6b588b7b333094e3ace673fb3cffb5520d7484cd26efded22009481",
+          "verified": true
+        },
+        {
+          "id": "mat_b21f1a89500941e4",
+          "vault_document_id": "doc_7838f1f6d9dc4263",
+          "file": "docs/evidence/remaining-actions-20261007/atlas/METHOD_SCOPE_CORRECTION.md",
+          "title": "Актуальная сверка7октября — METHOD_SCOPE_CORRECTION.md",
+          "bytes": 4893,
+          "sha256": "e02e7f9e8f7f7c7adb1014fd094f98781a3b7a12c60da87c3771064968b42f88",
+          "verified": true
+        },
+        {
+          "id": "mat_37b89611bb264e59",
+          "vault_document_id": "doc_293c28568f9e4ff2",
+          "file": "docs/evidence/remaining-actions-20261007/radar/CORRECTION_NOTICE.md",
+          "title": "Актуальная сверка7октября — CORRECTION_NOTICE.md",
+          "bytes": 2157,
+          "sha256": "b6446100b1c712cd80559ce111eab23e0e3a2ebf9dcbd3f5d89a3eb1673cd357",
+          "verified": true
+        }
+      ],
+      "all_full_byte_sha_readback_verified": true
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "source_commit": "e1d0c996ee832af29a42adbbd0201058c1db619a",
+      "checked_at_utc": "2026-10-07T11:43:02.571014+00:00",
+      "materials": [
+        {
+          "id": "mat_af4853af87a74e78",
+          "vault_document_id": "doc_e04e441fd5174181",
+          "file": "docs/CONTEST_CHECKLIST.md",
+          "title": "Актуальная сверка7октября — CONTEST_CHECKLIST.md",
+          "bytes": 12308,
+          "sha256": "d29f5464b9e59620a65fa566e0d01c9a5c75dcb024d7724599059408f49ce6df",
+          "verified": true
+        },
+        {
+          "id": "mat_ec6eaade1aec4f67",
+          "vault_document_id": "doc_3d55b0b0ec1b437e",
+          "file": "docs/REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "title": "Актуальная сверка7октября — REMAINING_ACTIONS_EXECUTION_2026-10-07.md",
+          "bytes": 9664,
+          "sha256": "fd196379358500ef3dec5ece31d8584a8a562e824715d3fe9263c8a95e1008bb",
+          "verified": true
+        },
+        {
+          "id": "mat_0d22b18edf364d9c",
+          "vault_document_id": "doc_cc981d619e794cc2",
+          "file": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "title": "Актуальная сверка7октября — RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "bytes": 11859,
+          "sha256": "cf8f4fb13f93ee702716e9ef5726ab23f59c4393bd850fbdb49a66d8643dc6ea",
+          "verified": true
+        },
+        {
+          "id": "mat_5bc65c59f6224e2f",
+          "vault_document_id": "doc_ea734fbf85354011",
+          "file": "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "title": "Актуальная сверка7октября — HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "bytes": 13911,
+          "sha256": "ab5539b7f6b588b7b333094e3ace673fb3cffb5520d7484cd26efded22009481",
+          "verified": true
+        },
+        {
+          "id": "mat_c63592617a3c4953",
+          "vault_document_id": "doc_7838f1f6d9dc4263",
+          "file": "docs/evidence/remaining-actions-20261007/atlas/METHOD_SCOPE_CORRECTION.md",
+          "title": "Актуальная сверка7октября — METHOD_SCOPE_CORRECTION.md",
+          "bytes": 4893,
+          "sha256": "e02e7f9e8f7f7c7adb1014fd094f98781a3b7a12c60da87c3771064968b42f88",
+          "verified": true
+        },
+        {
+          "id": "mat_f4b529df597a4b16",
+          "vault_document_id": "doc_293c28568f9e4ff2",
+          "file": "docs/evidence/remaining-actions-20261007/radar/CORRECTION_NOTICE.md",
+          "title": "Актуальная сверка7октября — CORRECTION_NOTICE.md",
+          "bytes": 2157,
+          "sha256": "b6446100b1c712cd80559ce111eab23e0e3a2ebf9dcbd3f5d89a3eb1673cd357",
+          "verified": true
+        }
+      ],
+      "all_full_byte_sha_readback_verified": true
+    }
+  ],
+  "contest_submitted": false,
+  "platform_candidate_deployed": false
+}

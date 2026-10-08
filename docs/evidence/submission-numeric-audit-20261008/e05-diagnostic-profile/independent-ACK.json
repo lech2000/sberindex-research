@@ -1,0 +1,82 @@
+{
+  "verdict": "DIAGNOSTIC_RESOURCE_PROFILE_SAVED_ARTIFACT_ACK_NOT_FULL_QUALIFICATION",
+  "adopted_HEAD": "66cab2206d0606f7ad42ddfd7b07313208e395e8",
+  "operation_key": "E05-resource-profile-controller-v1",
+  "original_ENTRY": 167689.339565875,
+  "absolute_deadline_UTC": "2026-10-08T14:53:33.593257+00:00",
+  "whole_seconds": 900,
+  "elapsed_through_terminal_fsync_seconds": 178.37716108298628,
+  "final_POST_receipt_IO_independently_timed": false,
+  "controller_exit": 0,
+  "known_PIDs_absent": [
+    20770,
+    20780
+  ],
+  "reported_owned_group_survivors": 0,
+  "unknown_detached_absence_certified": false,
+  "native_diagnostic_pairs": 2,
+  "eigsh_KMeans_expected_shape_params_and_STARTED_RESPONSE_sequence_verified": true,
+  "status_fixture_files": 225,
+  "status_fixture_rows": 10238400,
+  "native_receipt_fixture_files": 8220,
+  "fixture_calls": 0,
+  "row_validation": "Full45504 representative Cartesian rows/null/status verified;225 byte-identical SHA equality and every schema/metadata rowcount verified. Not a scientific bank reread.",
+  "largest_reported_aggregate_RSS_bytes": 247283712,
+  "minimum_reported_free_bytes": 8768778240,
+  "physical_owned_roots_bytes": 19711778,
+  "monitor": "sampled, not continuous",
+  "source_pins": {
+    "economic-atlas/research-plan.md": "a084b0b7b523e45d39014c15d55f3665e02b8bbe4d74c00ba43abacf6798ccd7",
+    "economic-atlas/research-ladder.md": "e235b652d468cfd7e1e93a3861934add2873ba316b7f93c5ab9fa8e9b8d78a38",
+    "economic-atlas/features/spec.yaml": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "economic-atlas/src/a5_graph.py": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/runs/A5/graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "economic-atlas/runs/A6/metrics.json": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+    "economic-atlas/runs/Mobility_ablation_20261003/metrics.json": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "economic-atlas/runs/A9_economic_network_20261005/results.json": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+    "economic-atlas/runs/A6_final_review_20261008/CLOSEOUT_RECEIPT.json": "eb3d0851a38de60d299729d62a789ab538ec8c2159059a1cc5507280b059331b",
+    "economic-atlas/runs/A5/edges.parquet": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a",
+    "economic-atlas/src/e05_full_resource_preflight.py": "5f352958ce3dbffe6a9cf3e26eb262fd3ae63c3c9e1cabaa52b4d61a37ff97f9"
+  },
+  "cost_estimate": {
+    "nominal_calls": 8220,
+    "quality_month_slots": 4180,
+    "measured_pair_extrapolation_seconds": 27804.781743924832,
+    "fullbank_seconds": "UNKNOWN: variable convergence/control graphs, allqualitymetrics and225 bank serialization not bounded by two diagnostic pairs",
+    "extrapolation_is_bound": false
+  },
+  "scientific_bank_started": false,
+  "resource_PASS": false,
+  "full_E05_admission": false,
+  "quality_control_cost": "UNKNOWN",
+  "review_execution": "read-only saved IO fixtures, stdlib and Parquet inspection; no fits/scientificbank/processcontrol",
+  "actual_receipt_pins": {
+    "/private/tmp/e05-resource-profile-control-v1/controller-terminal.json": "bcfaff2f82371b2585f20b66de02b088a9721c9cfea6bde79875adbd9da3ef7e",
+    "/private/tmp/e05-resource-profile-control-v1/controller-post-IO.json": "72a6f86f4e804b98e61303920c03caed18a99de18a2ef2f5cadcee8f7fa0106f",
+    "/private/tmp/e05-resource-preflight-fullshape-v1-ledger/terminal.json": "49235d674a6be0e10e56091a0afa99f77ee2fa6cd615c6017bb7873d0343a387",
+    "/private/tmp/e05-resource-profile-control-v1/runtime.json": "490a90f015288c6550e4215cbb5d7cd0c27cb16f03082a2a7d404249afba7aaf",
+    "/private/tmp/e05-resource-profile-control-v1/source-ack.json": "b3b8ed64e0f282eb21a1de9e7de783528d6490deb7457aa14e20017a522551e7",
+    "/private/tmp/e05-resource-profile-control-v1/runtime-acceptance.json": "1890497142e94883a3728e42f2fe1ebf06fd3afcf5d8bb869e477aff63a87a01",
+    "/private/tmp/e05-resource-profile-control-v1/worker-binding.json": "d63bd4d44bcd30f59cc5f7752db0277d900bd40e81653c0e4229534a046e8a37"
+  },
+  "evidence_pins": {
+    "CHECK_RESULTS.json": "5a00fdb361ed669bc5356115a242ccaf12464fe39532fb632d6f67a56b3554db",
+    "PHYSICAL_FILE_INVENTORY.json": "0ce7bbe9cd830aed3de55f26949f0a6d6c9ccd75ada566050c2d3876fe4b11a7",
+    "KNOWN_PID_ABSENCE.json": "d1a04b92bd826bcc68a2f684dbe133ffc8aa77615d5eabd31c6a33151f2b154a",
+    "verify_saved_fixture.py": "bac9f9ea82bac9cf353809a1744b3cde762c50ff8a0644ed77690ae28dba33c9"
+  },
+  "limits": [
+    "Reported residuals/orthogonality checked finite but not independently numerically recomputed; fingerprints are not economic scientific assignments.",
+    "Original parent ENTRY includes imports/admission/setup/native/IO/cleanup through terminal fsync. Earlier runtime freeze is covered by fixed UTC deadline, not parent monotonic elapsed.",
+    "Final POST receipt IO not independently timed.",
+    "Own-group absence reported by controller; independent read-only known-PID check finds both absent. Detached unknown absence uncertified.",
+    "27804.781743924832s extrapolation explicitly not a bound; all quality/control/fullbank convergence UNKNOWN."
+  ]
+}

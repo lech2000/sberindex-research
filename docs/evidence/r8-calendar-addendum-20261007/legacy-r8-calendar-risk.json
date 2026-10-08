@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-07T13:48:25.248142+00:00",
+  "path": "/private/tmp/sberindex-official-laws-20261007/shock-radar/src/r8_tsfm_paired.py",
+  "sha256": "29f0b7209c9b1c25106b45100954947448b10c7cf6e6ca2f5a7647a7cb125c5c",
+  "source_anchors": [
+    {
+      "line": 242,
+      "text": "return sorted((m, v) for m, v in raw_series.items() if m <= cutoff)"
+    },
+    {
+      "line": 672,
+      "text": "context_vals = [float(v) for _, v in train]"
+    },
+    {
+      "line": 696,
+      "text": "val = yhat[h - 1] if (h - 1) < len(yhat) else None"
+    },
+    {
+      "line": 735,
+      "text": "context_vals = [float(v) for _, v in train]"
+    },
+    {
+      "line": 1243,
+      "text": "context_vals = [float(v) for _, v in train]"
+    },
+    {
+      "line": 1309,
+      "text": "val = yhat[h - 1] if (h - 1) < len(yhat) else None"
+    },
+    {
+      "line": 1566,
+      "text": "assert m <= cutoff, \\"
+    }
+  ],
+  "finding": "Runner context stops at origin-2 but maps forecast step h to target origin+h; without additional calendar convention this forecasts cutoff+h, two months early. Context collection also compresses missing month gaps. Future mutation invariance alone cannot prove target-date alignment.",
+  "claim_scope": "Static code finding, not numeric reconstruction of old cached forecasts; original artifacts unchanged",
+  "required_followup": "Separate F7b/scientific calendar audit; do not retroactively relabel Tiny outputs or alter frozen metricJSON. New Chronos2 uses dense calendar and step=h+2.",
+  "scientific_pass": false
+}

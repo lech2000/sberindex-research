@@ -1,0 +1,211 @@
+{
+  "state": "SAVED_NUMERIC_CLAIMS_VERIFIED_NOT_SCIENTIFIC_PASS",
+  "checked_at_UTC": "2026-10-08T14:28:19.513534+00:00",
+  "how": "One bounded Arrow row-batch read, independent stdlib abs/math.fsum arithmetic; no author metrics function imported; full table unique keys/calendar/finite predictions and paired supported masks verified; CI readback only",
+  "national": {
+    "scope": "20IDs ×6categories ×6targets =120series/720paired rows,H12,Jul-Dec2024 already viewed",
+    "prediction_SHA": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+    "full_key_SHA": "c83346f98a0d12006dea6f598bcd288498f0430a9fec28a9266acc1b98671f6e",
+    "mae": {
+      "national_prophet": 946.1427947440354,
+      "national_yoy_lag1": 598.0916651328823,
+      "fresh_plain_prophet": 947.1822428382935
+    },
+    "improvement_percent": 36.78632142469711,
+    "marketplaces_loss_percent": 53.04337736545026,
+    "winning_model": "national_yoy_lag1 simple model, not national_prophet regressor",
+    "vintage": "Frozen2026-10-05 national data; historic asof unknown; no new holdout"
+  },
+  "consumer": [
+    {
+      "horizon": 1,
+      "mask_SHA": "5cc0f3442e4131fa2d890798134103b11db0db50e2060d1e4cfadf1631657a53",
+      "rows": 9234,
+      "base_mae": 686.416609985477,
+      "own_mae": 668.8167504103586,
+      "peer_mae": 667.9508693956427,
+      "total_correction_percent": 2.6901651739203882,
+      "incremental_peer_percent": 0.1294646125690843,
+      "saved_month_CI": [
+        -2.189903652347611,
+        3.7663374942643086
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    },
+    {
+      "horizon": 3,
+      "mask_SHA": "3cc126aa29f61bf62e39eed2e184053dbbecb90708025a1d2cf34f0eb61c3db1",
+      "rows": 9234,
+      "base_mae": 884.6938823891489,
+      "own_mae": 856.2715899598511,
+      "peer_mae": 851.1723482044649,
+      "total_correction_percent": 3.789054593003159,
+      "incremental_peer_percent": 0.5955168681498901,
+      "saved_month_CI": [
+        -0.2512891621508523,
+        10.272387602237034
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    }
+  ],
+  "full_consumer_coverage": [
+    {
+      "table": "closeout",
+      "full_rows": 204768,
+      "unique_full_keys": 204768,
+      "IDs": 1896,
+      "categories": [
+        "Все категории",
+        "Здоровье",
+        "Маркетплейсы",
+        "Общественное питание",
+        "Продовольствие",
+        "Транспорт"
+      ],
+      "targets": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "horizons": [
+        1,
+        3,
+        6
+      ],
+      "origins": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "full_key_SHA": "f064a9b2c7a601e97193e8cc87ba16f719edaae65b79c44a44c3f764c5a21ca1"
+    },
+    {
+      "table": "mechanisms",
+      "full_rows": 204768,
+      "unique_full_keys": 204768,
+      "IDs": 1896,
+      "categories": [
+        "Все категории",
+        "Здоровье",
+        "Маркетплейсы",
+        "Общественное питание",
+        "Продовольствие",
+        "Транспорт"
+      ],
+      "targets": [
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "horizons": [
+        1,
+        3,
+        6
+      ],
+      "origins": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11"
+      ],
+      "full_key_SHA": "f064a9b2c7a601e97193e8cc87ba16f719edaae65b79c44a44c3f764c5a21ca1"
+    }
+  ],
+  "manifest_links": {
+    "shock-radar/runs/National_equal_information_20261006": {
+      "predictions.parquet": {
+        "actual_SHA": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+        "manifest_expected_SHA": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+        "verified": true
+      },
+      "metrics.json": {
+        "actual_SHA": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+        "manifest_expected_SHA": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+        "verified": true
+      },
+      "protocol.json": {
+        "actual_SHA": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+        "manifest_expected_SHA": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+        "verified": true
+      }
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006": {
+      "predictions.parquet": {
+        "actual_SHA": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+        "manifest_expected_SHA": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+        "verified": true
+      },
+      "metrics.json": {
+        "actual_SHA": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+        "manifest_expected_SHA": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+        "verified": true
+      },
+      "protocol.json": {
+        "actual_SHA": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+        "manifest_expected_SHA": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+        "verified": true
+      }
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007": {
+      "predictions.parquet": {
+        "actual_SHA": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+        "manifest_expected_SHA": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+        "verified": true
+      },
+      "metrics.json": {
+        "actual_SHA": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+        "manifest_expected_SHA": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+        "verified": true
+      },
+      "protocol.json": {
+        "actual_SHA": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+        "manifest_expected_SHA": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+        "verified": true
+      }
+    }
+  },
+  "findings": [
+    "Requested rounded numerical statements agree with saved paired rows.",
+    "Do not label598.09 as Prophet with a national regressor: that regressor model scored946.14; the winner is simple national_yoy_lag1.",
+    "2.69%/3.79% describe total correction relative ProfileSES, not neighbours alone.",
+    "Both saved incremental-peer intervals includezero; no new CI or significance test performed.",
+    "The720row pilot and integration viewed2024 do not establish independent scientificPASS, historical available_at, causal effect, fullChronos comparison or early warning.",
+    "D01 and other submission sentences outside this specified scope were not independently recalculated in this operation."
+  ],
+  "submission_readiness": "Numerical wording can support a qualified retrospective submission; no numerical blocker found in requested claims. Owner must submit with actual identity/contact/consents and jury code/input access; this audit does not prove those or all scientific tasks complete.",
+  "elapsed_seconds_including_freeze_schema_setup": 106.4534587500093,
+  "sampled_peak_RSS_bytes": 227573760,
+  "limits": {
+    "time300": true,
+    "RSS1GiB_sampled": true,
+    "output128MiB": true,
+    "CPU_env1": true,
+    "continuous_resource_PASS": false
+  },
+  "syntax_correction": "An initial syntax-only else-spacing error prevented any code execution; invalid code and log preserved, corrected code frozen before one actual arithmetic scan, original anchor unchanged.",
+  "scientific_pass": false,
+  "models_fits_bootstraps_newwindows": 0
+}

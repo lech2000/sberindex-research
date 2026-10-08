@@ -1,0 +1,1 @@
+{"API": "eigsh", "state": "STARTED", "shape": [1896, 1896], "input_CSR_SHA256": "a422cd1445784e57d2e54d5bc6e909c15ed82164658aed0154ddb18d1e4c7e30", "K": 5, "tol": 1e-08, "maxiter": 5000, "which": "SA", "v0_SHA256": "2d919f3b13a9e1fecd56c8bcfc9460d3da1ecb4a0893d776075280474af5dd32"}

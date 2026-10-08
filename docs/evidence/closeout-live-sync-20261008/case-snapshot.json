@@ -1,0 +1,136 @@
+{
+  "source": "authenticated case-service GET through existing container under host serg",
+  "original_full_snapshot_SHA256": "caa5d98e0d23cdbe535dc1ddc0842debc4e27f08e99da908082f27e23d3616cf",
+  "actions_changed_here": 0,
+  "cases": [
+    {
+      "case": "case_66cae4a89ba6473f",
+      "checked_at_utc": "2026-10-08T11:26:50.034052+00:00",
+      "total": 39,
+      "done": 30,
+      "open": 9,
+      "open_actions": [
+        {
+          "id": "act_0924fb12ebc44307",
+          "what": "03. Согласовать ОКТМО и версии границ, описать пропуски/подавления; утвердить паспорт данных.",
+          "waiting_for": "KB74/17417: source-balanced2016 vs research1896 disclosed; dictionary27reused OKTMO codes/55rows. Historic legal intervals/suppression reason unknown. Exact codes only; no namejoin/zero-fill.",
+          "done": false
+        },
+        {
+          "id": "act_a0d924d8af6548e2",
+          "what": "ATF-M4. К E05/H1: двойная дивергенция каналов (доли / динамика / мобильность СЗФО) — синтетический мир на каждый канал; канал должен строить структуру на своём мире и воздерживаться (m=1 по M1) на чужом. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB75/17416: M4 STOP/free-disk guard; saved166/1620 held cells, whole1103s. Original key consumed; no retry. Full1980 incomplete, scientificPASSfalse. Preserve raw artifacts and negative M1.",
+          "done": false
+        },
+        {
+          "id": "act_82e6846e4c3d42a4",
+          "what": "07. Принять SW, CH, S_Dbw, AVI, AVU и проверки определений; включить результаты в итоговый отчёт. MQ исключён из расчётов релиза решением владельца05.10: SPEC_UNRESOLVED, без запроса и ожидания; Newman Q отдельно.",
+          "waiting_for": "KB62/17510: cc3 full5 terminalNOT_ACCEPTED,439+78PASS,review124PASS+1child25sTIMEOUT,2native1200TIMEOUT. OperationalcleanupPASS/whole4359s. Bounded failuredetails saved; exactcauseUNKNOWN. NextF7b phasediagnostics; no retry/Muse/deploy/closure.",
+          "done": false
+        },
+        {
+          "id": "act_a32a69fed5be431c",
+          "what": "08. Выполнить E05: абляции признаков, мобильности, географии и временной связи.",
+          "waiting_for": "KB75/17505: independent numerical auditor0772+portabletests4ea3354 adoptedmanualF7b;39author+19independent+5portabilitysourcechecks;post-adopt39PASS withoutenv. Full225/10238400 NOTRUN; realIO/resources UNKNOWN; scientificPASSfalse.",
+          "done": false
+        },
+        {
+          "id": "act_64ac761e4e4945ca",
+          "what": "ATF-M5. После E04: биографический L2 — матрица совместного присутствия МО в идентичностях, спектральный разрыв против перемешивания с сохранением возраста; ноль — валидный ответ. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+          "waiting_for": "KB74/16260: M5 не подтверждён на МО; оставить в дальнейшей работе после подачи. Не заявлять найденные надтипы и не задерживать сборку новым L2-опытом. Действие остаётся открытым.",
+          "done": false
+        },
+        {
+          "id": "act_d08e9e8179c246a3",
+          "what": "MANUAL конкурс: уточнить у организатора, допускаются ли две отдельные заявки одной команды; точный час и часовой пояс закрытия09.10.2026. Запрос и ожидание MQ исключены решением владельца05.10 (KB75/16637). AVI/AVU публикуются с объявленной конвенцией. Не блокирует приёмку расчётов и отчёт.",
+          "waiting_for": "Owner08.10: Atlas/Кластеризация submits Лях Г.С., ITMO postgraduate; Radar/Прогнозирование submits ИП Лях С.Г. Separate declared entrants, not one two-direction application. Exactclosinghour stillunknown; MQexcluded.",
+          "done": false
+        },
+        {
+          "id": "act_fd3cbf9ca7c54554",
+          "what": "A2 source audit (KB74/14908): сверить уже скачанные SberIndex расходы МО и мобильность с официальными экспортами CSV/Parquet: URL, SHA256, схема, единицы, права использования, реальные N МО/месяцев/категорий/пропусков, ID и кроссволк. Мобильность только 297 МО СЗФО и агрегат янв–сен 2024/2025 до доказательства иного. Записать паспорт и применимость к A6/E05; GATE_REPORT с квитанцией. Не ждать MANUAL условий конкурса.",
+          "waiting_for": "KB74/17417: expenses mean monthly resident rubles, not average check/revenue;13140series matched,2190IDs/303126rows,12234missing cells. Units verified. Rights/historical asof/validity stillOPEN.",
+          "done": false
+        },
+        {
+          "id": "act_63eabe3fd8aa4770",
+          "what": "A6.3: при замороженных калибровках 2023 (T=0.2771627598, M=0.7187007761, Tc=0.1739547472) задать синтетические миры с известной истиной: стабильность, новое рождение, исчезновение, split, merge и близкие ложные события. До прогона зафиксировать состав миров и допуск ошибок; через fixar-devops/F7b посчитать false match, false miss, coverage/abstention и чувствительность M±25%. Сохранить код, seed, SHA, таблицу ошибок и GATE_REPORT; по реальным МО не объявлять истинные рождения.",
+          "waiting_for": "KB75/17416: A6.3 STOP/free-disk+RecursionError;19/35worlds,37/70histories. Key/1800s consumed,no retry. Watchdog sourcefix independentACK; formalfull210/4830 incomplete. Source repair is not execution authority.",
+          "done": false
+        },
+        {
+          "id": "act_5533c9a1b45646d1",
+          "what": "14. Владелец: проверить финальный комплект, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+          "waiting_for": "Atlas applicant declared08.10: Лях Г.С., аспирант ИТМО, Кластеризация. Separate draft prepared; initials not expanded. Stillneed fullformfields/consents/jury PRIVATE-code+input access and submissionreceipt. Not submitted.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "case": "case_008f37d03cf541e5",
+      "checked_at_utc": "2026-10-08T11:26:50.044913+00:00",
+      "total": 38,
+      "done": 31,
+      "open": 7,
+      "open_actions": [
+        {
+          "id": "act_0c71cedc50ad4508",
+          "what": "05. Выполнить F04 Chronos-2 с ревизией и замером ресурсов; F05 TimesFM только при запасе времени.",
+          "waiting_for": "KB76/17401:status-only294570 complete; independent audit STOP58.689s/native manifest inventory mismatch. Original DISK_STOP,V3INCONCLUSIVE/fullpairedriskUNAVAILABLE. Oldleases preserved,no retry. Full scientific source OPEN.",
+          "done": false
+        },
+        {
+          "id": "act_16ce6d42a8534f00",
+          "what": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
+          "waiting_for": "Owner08.10 selected Radar/Прогнозирование: ИП Лях С.Г.; Atlas separately Лях Г.С., ITMO postgraduate. One direction each retained. Exactclosinghour/timezone and officialbaseline availability stillunconfirmed.",
+          "done": false
+        },
+        {
+          "id": "act_af3ef33f2761488e",
+          "what": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
+          "waiting_for": "KB76/16980:N3выполнен136512rows/60fits,proxyh1+3.91%MAE;strict0/6. N1/N2DONE:480runs/freshmake/audit. RealW01/asofvintageOPEN;неповторятьэтиопыты. СледующийP0RAG/публикация/доступ.",
+          "done": false
+        },
+        {
+          "id": "act_febbbf8723e94197",
+          "what": "10. Зафиксировать выбор модели, затем однократно открыть финальный тест; сохранить все отрицательные результаты.",
+          "waiting_for": "KB76/17515 R11: Nov2026-Apr2027 H1 prereg frozen08Oct,model/PITgate sealed. 0/13140 commonforecasts; no newobservedfacts. REGISTERED_AWAITING_DATA; actualfinaltest NOTEXECUTED,currentcontest independentresult unavailable.",
+          "done": false
+        },
+        {
+          "id": "act_e9f99bf520984925",
+          "what": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция corpus76, кодовые задачи через F7b.",
+          "waiting_for": "KB76/17515 R11: Sep20/Oct08 snapshots303126 identical2023-24; retrievaldates/SHA verified,original historicalpublicdates/vintages UNKNOWN. No newMOmonths. Equalinfo2160fits/720keys pilot retained; R9gateOPEN,no repeats.",
+          "done": false
+        },
+        {
+          "id": "act_398bedb2669a4e2a",
+          "what": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+          "waiting_for": "Radar applicant declared08.10: ИП Лях С.Г., Прогнозирование. Separate draft prepared; initials not expanded. Stillneed fullformfields/consents/jury PRIVATE-code+input access and submissionreceipt. Not submitted.",
+          "done": false
+        },
+        {
+          "id": "act_906d8781db364e7b",
+          "what": "MANUAL R9: запросить у организаторов помесячные расходы МО за 2025–2026 (territory_id, месяц, категория, значение, единица, признак пропуска), исторические снимки и журнал выпусков (published_at/available_at с часовым поясом, revision/vintage/хеш), версии справочника territory_id→ОКТМО и правило лага. Готовый текст: GitHub data/REQUEST_SBERINDEX_VINTAGES_20260930.md. Если архива нет — письменное подтверждение и календарь будущих публикаций; начать проспективный архив. Не открывать R9 на старом тесте.",
+          "waiting_for": "Ответ/архив СберИндекса либо письменный отказ; приложить к делу Radar с источником, датой, условиями использования и SHA-256.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "case": "case_43de12a8dc2e4abd",
+      "checked_at_utc": "2026-10-08T11:26:50.051728+00:00",
+      "total": 23,
+      "done": 22,
+      "open": 1,
+      "open_actions": [
+        {
+          "id": "act_b231cd5eba674acb",
+          "what": "GM2.FLOOD6-20261005: По KB77/16478 найти официальную связь район→округ valid2024 для Белозерского,Звериноголовского,Кетовского,Куртамышского,Притобольного,Целинного. Старые candidate territory_id/ОКТМО в crosswalk.json. Нужны акт,номер,дата,границы,valid_from/to,successor; отсутствие отмечать UNKNOWN, по имени не соединять. Получить initial PDF/приложения актов103-ук04.04,6208.04,3608.04; regime zone отделить от реального затопления. Записать EVIDENCE_JSON и document_id integrate; частичное не закрывать. Соцсети не искать.",
+          "waiting_for": "FLOOD6:6transformation cards/PDF verified. Ketovsky4500202203050015 is law2, workinglocator5 corrected; boundarylaw3 distinct. Fullcrosswalk0/6; CRS/2024amendments/producergeography unknown. No namejoin.",
+          "done": false
+        }
+      ]
+    }
+  ]
+}

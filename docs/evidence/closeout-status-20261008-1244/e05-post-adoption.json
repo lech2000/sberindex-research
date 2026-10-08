@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-08T12:37:58.510488+00:00",
+  "head": "6f3be20a398fb30486e576fa483be360598b031a",
+  "files_sha256_exact": true,
+  "source_clean": true,
+  "test_selections": [
+    {
+      "test": "test_e05_full_numeric_adapter.py",
+      "exit": 0,
+      "log_sha256": "083cf39250b0d4e9b9c61114b4f19cd065009d7ab147a5f185c874070f57dfb3",
+      "tail": "..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.650s\n\nOK\n"
+    },
+    {
+      "test": "test_e05_independent_numerical_audit.py",
+      "exit": 0,
+      "log_sha256": "4933b794eae21d4c59733a0afe17046b43970bd1b5a051c2929114925b52ea40",
+      "tail": ".......................................\n----------------------------------------------------------------------\nRan 39 tests in 0.030s\n\nOK\n"
+    }
+  ],
+  "scope": "tiny fixtures only; no fullbank/fit/real numeric inputs/paid calls",
+  "scientific_pass": false,
+  "full225_executed": false
+}

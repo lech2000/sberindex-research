@@ -1,0 +1,31 @@
+{
+  "verdict": "SOURCE_ONLY_ACK_V2_REPAIRS",
+  "base": "e8b5ee0eaa24508d6caa9dc956870170a09179eb",
+  "patch_sha256": "e3a9887d088eda8ebb4ee32b4b52ad88af5b717d4a66059866fb7af1a678910c",
+  "exact_six_path_pins": {
+    "economic-atlas/protocols/E05_FULL_NUMERIC_ADAPTER_SOURCE_V1.json": "a09dc46c7c63dd9b28a91473319935d29cbfbfe9995482fe1c094c75a1b64455",
+    "economic-atlas/protocols/E05_FULL_NUMERIC_ADAPTER_SOURCE_V1.md": "73b43600c4638aa72c4732cf4ae3251003384b717f390b3ba0a67ffd90ea8125",
+    "economic-atlas/src/e05_full_numeric_adapter.py": "d4c3c1b2c01581e043c71b50bef39df1ba62376bf44da9251a08c78df4821802",
+    "economic-atlas/src/e05_independent_numerical_audit.py": "d1232759428269eba5c720324695d91fda3917fdaca3ead4ae2bc2fdd1d04da8",
+    "economic-atlas/src/e05_numpy_quality_reference.py": "ffdb98abf3cf4adcf6c3f8badf50ebe46ff4cd431af3e88db7d75b3d2a42ad49",
+    "tests/test_e05_full_numeric_adapter.py": "197c2e17f70be04a7fbc16963628ad1ee62265b246eaac7f8932a84c6f0a4f18"
+  },
+  "independent_tiny_fixtures": 12,
+  "all_PASS": true,
+  "B1": "All4 metadatafiles byteSHA+stat pinned before parsing/validation, verify again after fullreadback and audit; samebytesreplacement rejects; binding cannotreset; returned initialmanifestSHA",
+  "B2": "Exact accepted scalar sdbw reused, including centroid/variance/radius/distance/<= and integer counts; previous boundary fixture now exactequal1.6274509803921569/count2. SW/CH/network source arithmetic unchanged V1",
+  "truth_provenance": "Explicit independentlyDERIVED source/logic hashes; legacy capture equality false. No original rawX/truth capture comparison claimed",
+  "V1_six_files_and_patch_immutable": true,
+  "read_only_current_root_applycheck": "PASS",
+  "author_30_plus39_receipts": "Source fixture PASS reported; not rerun whole authorselection; no fullbank/IO/resource qualification inferred",
+  "scope": "225cells180real45control/full1896x24/45504keys; status10,238,400 only after actualV5 fullreadback, no count-only numerical acceptance; unavailable/unknown retained",
+  "limitations": [
+    "Tiny fixtures are not universal SW/CH/network floatingpoint equivalence proof",
+    "No actual fullbank/source-data/Parquet/fit/control-generation/native/model calls",
+    "Performance/fullsize resources UNKNOWN; publicexecute unconditionalrefusal remains",
+    "Library callbacks require trusted root admission, not publicsecurity capability",
+    "No economic/causal/scientific/formal promise PASS or closure authorized"
+  ],
+  "source_mutations_shared": 0,
+  "actual_bank_fits_Parquet_paid_calls": 0
+}

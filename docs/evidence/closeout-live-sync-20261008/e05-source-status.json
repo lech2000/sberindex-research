@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-10-08",
+  "source_revision": "4ea3354a31c478ecfe810cffae01ef8ac6ba1190",
+  "numerical_auditor_revision": "0772dcc8ebd3b854c2502388f139c7293c1ff116",
+  "portable_test_revision": "4ea3354a31c478ecfe810cffae01ef8ac6ba1190",
+  "source_checks": {
+    "author": 39,
+    "independent_formula": 19,
+    "independent_portability": 5,
+    "post_adoption_unittest_without_env": 39
+  },
+  "ACK_SHA256": [
+    "fcfc314c3c0a72db3cc29011959b34cea75c5ad5596c20a3693c46bb8db59348",
+    "9259c31bca39109dd8fae86b10db3f0b7d36f3e8ece716c984f7d4a516450da6"
+  ],
+  "post_adoption_log_SHA256": "71ad9670bee80deb6cf809721101bbe6ee147e6969f6500b08e04529894cf739",
+  "full_scope": {
+    "cells": 225,
+    "real_cells": 180,
+    "control_cells": 45,
+    "units": 1896,
+    "months": 24,
+    "rows_per_cell": 45504,
+    "total_status_rows": 10238400
+  },
+  "actual_full_bank_executed": false,
+  "actual_independent_full_bank_audit": false,
+  "real_io_and_resource_qualified": false,
+  "scientific_pass": false
+}

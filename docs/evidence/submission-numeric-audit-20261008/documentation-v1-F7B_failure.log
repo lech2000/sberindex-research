@@ -1,0 +1,12 @@
+Switched to a new branch 'codex/sberindex-numeric-submission-audit-20261008'
+Traceback (most recent call last):
+  File "<string>", line 22, in <module>
+    if p.endswith('.py'):ast.parse(raw.decode())
+                         ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "<unknown>", line 33
+    assert count==(720 if national else204768) and len(ids)==(20 if national else1896) and horizons==({12}if national else{1,3,6})
+                   ^^^^^^^^^^^^^^^
+SyntaxError: expected 'else' after 'if' expression

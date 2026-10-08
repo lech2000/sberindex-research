@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-10-07T05:55:31.903800+00:00",
+  "verification_site": "Mac, isolated scientific worktree: Git blob equality, credential scan, ZIP CRC and full member SHA readback",
+  "source_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+  "archive": "/private/tmp/sberindex-final-author-source-20261007/sberindex-final-author-source-20261007.zip",
+  "archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+  "archive_bytes": 11434219,
+  "author_members_verified": 885,
+  "total_archive_members": 887,
+  "raw_inputs_included": false,
+  "complete_standalone_inputs": false,
+  "publicly_distributed": false,
+  "critical_sources_present": [
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/README.md",
+    "shock-radar/runs/N1_N2_return_control_20261007/README.md",
+    "shock-radar/runs/N3_official_news_value_20261007/README.md",
+    "shock-radar/runs/Flood_identity_sources_20261007/source-manifest.json",
+    "docs/ATLAS_FINDINGS_2026-10-07.md",
+    "docs/RADAR_FINDINGS_2026-10-07.md",
+    "docs/CONTEST_SUBMISSION_DRAFT_2026-10-06.json",
+    "data/manifest.json"
+  ],
+  "excluded_large_author_files": [
+    "economic-atlas/site/atlas-20261005/data.json",
+    "economic-atlas/site/consumption-restructuring-20261005/index.html"
+  ]
+}

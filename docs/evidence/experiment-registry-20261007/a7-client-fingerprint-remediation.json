@@ -1,0 +1,10 @@
+{
+  "base": "12eb6aed30cad75ce847328e061e88c6395ed681",
+  "previous_candidate_head": "f03b428998091340d5e5688210a0e19f79b85fc8",
+  "head": "4f02416524653591a560cd625814c3282c3e2ef2",
+  "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-muse-repeat-current-base-20261007/work",
+  "changed_file": "infrastructure/agrigate-pro/site/v2/index.html",
+  "asset_and_client_fingerprint_check_exit": 0,
+  "new_paid_review_started": false,
+  "reason": "Case asset marker was correct; full HTML fixar-client-version needed recomputation after conflict resolution"
+}

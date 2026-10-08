@@ -1,0 +1,157 @@
+{
+  "id": "M4_DURABLE_OPERATIONAL_V1",
+  "frozen_UTC": "2026-10-07T22:50:31.458666+00:00",
+  "state": "CANDIDATE_NOT_ADOPTED_NOT_LAUNCHED",
+  "source_action": "act_a0d924d8af6548e2",
+  "accepted_science_base": "64518f03126dece4627ae41a50ec7ff22b4dbd3e",
+  "scientific_pins": {
+    "economic-atlas/src/atlas_m4_channels.py": "86553f9d4627fbdccd51ad3f1c6a6335cb1a4b22b6401150ae4a21dd606a1fd9",
+    "economic-atlas/src/atlas_m4_executor.py": "76ae66aa2f11ce18060be0173a661d1db1214d38de0ccb95a910a8e6405db3a4",
+    "economic-atlas/src/atlas_m1_executor.py": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+    "economic-atlas/src/atlas_m1_spectral.py": "5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+    "economic-atlas/protocols/M4_PROSPECTIVE_V1.json": "6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+    "economic-atlas/protocols/M4_DEPENDENCY_AMENDMENT_V1.json": "e1c5b21b445c3ef408e9061ae023f706997abe5ebf397ffadeb39a74b0c7f163",
+    "economic-atlas/protocols/M4_OPERATIONAL_PREFLIGHT_V1.json": "eb772e7ff9bbf33048d5ae366024e98e591e05f5a744c04415848088e0863e1b",
+    "economic-atlas/protocols/M1_PROSPECTIVE_V1.json": "fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30"
+  },
+  "scope": {
+    "calibration_graphs": 360,
+    "held_graphs": 1620,
+    "nulls_per_held_graph": 99,
+    "null_spectra": 160380,
+    "spectra_upper": 162360,
+    "successful_swap_targets": 5557167000,
+    "attempt_cap": 55571670000,
+    "n": 297,
+    "months": 24,
+    "R": [
+      3,
+      4,
+      5
+    ],
+    "k": [
+      10,
+      20,
+      40
+    ],
+    "channels": [
+      "A",
+      "B",
+      "C"
+    ],
+    "structured_worlds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "calibration_seeds": [
+      20262001,
+      20262002,
+      20262003,
+      20262004,
+      20262005,
+      20262006,
+      20262007,
+      20262008,
+      20262009,
+      20262010
+    ],
+    "held_seeds": [
+      20263001,
+      20263002,
+      20263003,
+      20263004,
+      20263005,
+      20263006,
+      20263007,
+      20263008,
+      20263009,
+      20263010,
+      20263011,
+      20263012,
+      20263013,
+      20263014,
+      20263015,
+      20263016,
+      20263017,
+      20263018,
+      20263019,
+      20263020
+    ],
+    "null_seeds_base": 20264001,
+    "null_seed_formula": "Unchanged literal complete(): offset=(R*100000+seed*1000+worldindex*300+channelindex*100+k)*100, then base+offset+0..98"
+  },
+  "unchanged": "All literal worldgenerators,3k/R/world/channel/seeds,exactdensity,M1operator.95/fulltailSTD,degree-null10E/max100E/all99failures,perchannel/k297 calibrationthresholds,cellcriteria and qualificationamendment. No borrowed1896 threshold,no subset/no ODflows/no retuning.",
+  "measurement_pins": {
+    "terminal": "5408951cbd528b768f733c49f54560596e558667563c4996e41af9d2f45bdb50",
+    "measurement": "b815baa05780f025c2c854f1cd74e5358403f5a47b1beb29e55bb30431df9365"
+  },
+  "operational_amendment": {
+    "old21600seconds": "Historical unmeasuredproposal untouched",
+    "total_seconds_including_completed_preflight": 93600,
+    "already_consumed_seconds": 82.20326720799494,
+    "future_executor_wall_seconds": 93487,
+    "absolute_deadline_UTC": "2026-10-09T09:00:00Z",
+    "latest_launch_with_full_allowance_UTC": "2026-10-08T07:01:22.203267+00:00",
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "minimum_free_disk_bytes": 1073741824,
+    "output_bytes": 268435456,
+    "RSS_sample_seconds": 0.25,
+    "disk_sample_seconds": 10,
+    "fullbank_attempts_max": 1,
+    "restart_resume_retry": "FORBIDDEN; globaloneusekey independentoutdir",
+    "budget_conservation": "Subtract82.203s completedpreflight+allfuturevalidation/startup/probe/worker/finalizationwall. Deadlinefixed. If entire frozen remainingallowance cannot fitdeadline: NO-GO, no silenttightercap orsmallerbank; a differentcap requiresprospective rootresourceamendment beforefirstfullbank.",
+    "finalization_reserve_seconds": 30,
+    "supervisory_output_reserve_bytes": 65536,
+    "science_worker_output_ceiling": 268369920,
+    "whole_remaining_before_startup_and_finalization_seconds": 93517.796732792
+  },
+  "dependency_gate": {
+    "actual_complete_M1_receipt": "NOT YET AVAILABLE; do not assert scientificPASS/FAIL",
+    "checks": "Originalcheck_dependency +standalone strictscalarprecheck +hashverified actualresult/manifest; full360 M1cal/heldrecords and99nullaccounting eachheld. Root binds actualresult/manifestSHA aftercompletion.",
+    "complete_qualityFAIL": "descriptiveM4 permitted; positivequalificationfalse regardlessM4cellresults",
+    "incomplete_malformed": "BLOCK",
+    "M1_replay": "Separate verifiedrootphase onexistingrun, no restartbyM4",
+    "original_process": "Parent reports nativePID53084 alive under local.sergey.sberindex.m1.adopt.original53084.v2; no probehere"
+  },
+  "durable_launcher": {
+    "trusted_boundary": "Exactroot-owned executor/guard/source only. channels.py is trusted internalCLI, not authenticatedpublicworkerAPI. No newworkerendpoint required.",
+    "global_oneuse_key": "M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+    "reservation": "Canonicalrootledger per sourceaction/protocol, O_EXCL+fsyncSTARTED beforepreflight/fullchild, boundUID/source/protocol/actualM1SHA/output/budget/deadline. Neverclear/reuse STARTED or choosealternateoutdir toreset.",
+    "launch_conditions": "Actualdependencycomplete, structural/scalarguardsPASS, fullfrozenremainingtime fitsdeadline, no outstandingM4executor, freshnativechild/grandchild resourcepreflightPASS.",
+    "durability": "Oneuser launchdjob RunAtLoadonce, KeepAlive=false, nointerval/autorestart; retain exactargv/UID/stdout/stderr/STARTED/terminal. Rootownslabel.",
+    "supervision": "Passremainingwall afterallstartupelapsed to acceptedexecutor, root-owned absolutedeadline guard coversschedulingdelay. Signalsonly newownedM4PG, neverM1/Radar/arbitraryPID. SampledRSS/disklimits are not kernelquotas.",
+    "completion": "All360cal+1620held/all99nulloutcomes retained, failedcells retained, originalqualification logic; independentscientificaudit; actionnotautomaticallyclosed.",
+    "implemented_source": "economic-atlas/src/atlas_m4_durable.py",
+    "canonical_ledger": "/private/tmp/sberindex-one-use-ledger/<UID>-M4-<sha256(one_use_key)>.json",
+    "invocation": "One-shot launchd invoking exact pinned root launcher; accepted executor in same process, new owned worker PG cleaned by its accepted guard",
+    "outer_deadline": "ITIMER_REAL conservative remaining total minus 30s finalization reserve; entire fixed allowance must fit absolute deadline before reservation; inclusive budget checked at terminal",
+    "combined_output": "Accepted worker guard ceiling reduced by exactly64KiB reserved for private supervisor receipts; full combined terminal verification",
+    "actual_binding": "Root must create after real M1 completion, exact result+manifest+launcher hashes; no fake fixture or timer acceptance",
+    "public_security_boundary": false,
+    "timing_evidence": "Observe elapsed AFTER supervisory receiptIO/outputscan; final immutable observation receipt cannot measure its own last fsync. Disclosed lastreceiptIOunmeasured, continuousresourcePASSfalse. Limits sampled, notkernel quotas."
+  },
+  "cost_projection": {
+    "swap_projection_seconds": 54720.80342225025,
+    "spectrum_projection_seconds": 7927.999440061394,
+    "total_base_projection_seconds": 62648.80286231164,
+    "total_base_projection_hours": 17.402445239531012,
+    "cap_to_base_ratio": 1.4940429142071927,
+    "projection_is_upper_bound": false,
+    "measured_wall_seconds": 82.20326720799494,
+    "measured_peak_RSS_bytes": 272498688,
+    "completed_nulls": 99,
+    "measured_successful_swaps": 5880600,
+    "limitations": [
+      "Only NONE/R1/B/k40 measured; structured topology/rewiring acceptance differ",
+      "Spectrum and IO differ byworld/k; system contention varies",
+      "Concurrent Radar may slowCPU/IO",
+      "No bound on overallruntime/outputbytes from representative cost"
+    ]
+  },
+  "new_science_model_process_calls_here": 0,
+  "economic_causal_OD_holdout_asof_claims": false,
+  "base": "08c9784b641c66e1dafed2c5e0254304558e00af",
+  "launcher_sha256": "9e86f946f3b2db03b73bdb64086da32e135916d1e4a9848931793f20c4570e5d"
+}

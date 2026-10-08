@@ -1,0 +1,11 @@
+# A6.3: finite watchdog source fix, no execution
+
+This source-only six-path toolkit preserves the old scientific protocol, five prospective seeds, 210 configurations, 4830 month rows, 6720 KMeans API calls, thresholds, budgets and original MODEL/controller one-use keys and output namespaces. It does not execute, resume or retry the stopped operation. Original source files and all failure evidence remain immutable.
+
+Controller and guardian copies pause their periodic timer before the unchanged guard, use a busy flag to reject pending reentry, and rearm only after success. Failure propagates with timer disabled. No anchor or elapsed allowance is reset. Monitoring remains sampled: scan duration and final immutable receipt IO cannot establish continuous resource PASS.
+
+The v2 operational protocol pins the new guardian and worker copies without a self-hash cycle. Controller embeds its new protocol SHA. Worker differs only in the operational protocol path; the numerical body is byte-identical after reversing that literal. New controller dispatches the new guardian, which identifies and dispatches the new worker. All other original scientific/native pins remain unchanged. Source-only controller and guardian gates explicitly reject execution; they cannot turn source review into scientific launch permission. The controller additionally refuses existing original output/control or consumed MODEL/controller keys before validation or dispatch.
+
+Four pure stdlib/mock tests exercise the actual new handler ASTs with slow scans, recurring and pending callbacks, unchanged elapsed limits, resource exceptions, consumed namespace/key rejection and exact protocol/source pin linkage. No actual timer, signal, native probe, subprocess, model, world generation, fit or live numerical artifact is used.
+
+F7b may review/version these new source inputs. Any later executable recovery needs an explicit new prospective specification, separate independent source review and root decision, retaining all prior elapsed time and failure evidence. This toolkit supplies none of that authority and creates no new scientific family, key, output alias or allowance. A6.3 remains scientifically INCONCLUSIVE after the reported resource STOP; full raw-error audit was not performed.

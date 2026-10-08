@@ -1,0 +1,104 @@
+{
+  "repository_base": "ce3ccd1226bdb76de68ae8bffdbfdbc9e8b5945a",
+  "sources": [
+    {
+      "repository_path": "economic-atlas/src/a6_identities.py",
+      "sha256": "6e1ade98208556e40ecd010a839559d7877d81508d1d159a9cb681581dee74d8",
+      "bytes": 58402
+    },
+    {
+      "repository_path": "economic-atlas/src/a6_margin_audit.py",
+      "sha256": "92c5da2f57d21395f2ed2543948ffa40ef6fd8fddeb346534ef58e0badb20427",
+      "bytes": 26244
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_v2/calibration.json",
+      "sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+      "bytes": 1190
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_threshold_review_20260927/README.md",
+      "sha256": "1496410caf8966d8a238664b316d05183fad942d69a9b3fb22ab740d3fab6598",
+      "bytes": 3302
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_threshold_review_20260927/manifest.json",
+      "sha256": "992a0f27d24b0423ce8a7accf24106ecac10bfedef724536f02be2b3498708e4",
+      "bytes": 2594
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_margin_audit_20260927/metrics.json",
+      "sha256": "ad7465a7a35579b7f7e4aa765f98b09e3c8114d53441862a44f2f20f37a987f0",
+      "bytes": 4982
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_margin_audit_20260927/manifest.json",
+      "sha256": "7ddbfe5f05a55a3925430bb3b69efe404892c36817d2b54d66074e2eb78cb89f",
+      "bytes": 2135
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_margin_audit_20260927/paired_draws.csv",
+      "sha256": "24a6c0f0a42ba849af56bbcf912f81998a5b6f57a9eab4d5c9863add33143cda",
+      "bytes": 372343
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_frozen_controls_20261003/README.md",
+      "sha256": "b72305b0ec6857ee39c1f7b40dcd4cca68578a03068a6dad2c12375468a6922f",
+      "bytes": 10644
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_frozen_controls_20261003/protocol.json",
+      "sha256": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0",
+      "bytes": 2355
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_employment_validation_20260930/README.md",
+      "sha256": "ecf86047019d7ef5160aaf47d519991bd8ad8b5c30d1a59202562b881e771463",
+      "bytes": 4020
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_employment_validation_20260930/PROTOCOL.md",
+      "sha256": "d17b6aab5db699d447e4dca153d7a824fcc7a5883e279ba41ae6851e248193bf",
+      "bytes": 4172
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_employment_validation_20260930/metrics.json",
+      "sha256": "eafaf3ae38a66333a3b1d8216b75469be21a2d5d096c3601bc86e96170784d31",
+      "bytes": 1986
+    },
+    {
+      "repository_path": "economic-atlas/runs/A6_employment_validation_20260930/manifest.json",
+      "sha256": "f85a3d2b8a7edf7bb6bd8d02602b5b776b57a7e87a98268266fe47b9ad86d431",
+      "bytes": 563
+    }
+  ],
+  "knowledge_documents": [
+    {
+      "corpus": 75,
+      "document": 15958,
+      "title": "A6.3: 210 frozen-controls, исправлен tracker status, 49/50 событий и чувствительность M — 03.10.2026",
+      "fulltext_readback_sha256": "8191f5c9744f3e92a3091295eb517ebdf03dc7bbdd3e34a63ff6e3ed33f2aded",
+      "text_sha256": "7272bf19be6e25086ad697acc56a740ee588c7b6c27ce11128336ff650225d09",
+      "truncated": false
+    },
+    {
+      "corpus": 75,
+      "document": 14108,
+      "title": "research:a6_threshold_20260927 — 9 T/M settings, K2 vs K5, margin-sensitive identities",
+      "fulltext_readback_sha256": "4981550f4c3517929428e6ad69c973cc4f713f78c778b18474b6e22d2bf56b56",
+      "text_sha256": "f23ea86721d4a85596f791a83bacccaea1a8bc114395b3ef958bee8d55afc7eb",
+      "truncated": false
+    },
+    {
+      "corpus": 74,
+      "document": 13365,
+      "title": "СберИндекс 2026 — методы, перенесённые из ATF (спектральный счёт кластеров, идентичность и переходы кластеров, абляция каналов)",
+      "fulltext_readback_sha256": "d83bdb49f3a5a6fa75897cbc876f3cfabf24d9e7bf46eacc0363716af7eccf26",
+      "text_sha256": "f950b5825038366646f7fd0abfbb506c3538477cb031df733b16a49f510b55a5",
+      "truncated": false
+    }
+  ],
+  "independent_full_original_210_audit_report_sha256": "b889bbabe99f1ac558216392cdb2ade64903544f6758288bb9d27665778e0d31",
+  "independent_finite_study_source_report_sha256": "b6fc3695b356ee14fc7fa7c99feedc45296b2312e7ef13d89ad2345e40de32f8",
+  "SHA_scope": "Full KB JSON readback SHA pins include retrieval metadata; textSHA pins exact document content. Repository artifacts contain detailed original input/code/seeds/report references. Public package copies no raw input rows."
+}

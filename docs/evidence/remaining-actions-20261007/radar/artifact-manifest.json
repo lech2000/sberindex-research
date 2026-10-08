@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-07T10:49:42.291662+00:00",
+  "checks": [
+    "34registry/protocolSHA matched",
+    "06journal6events/5sources/uniqueIDs/source-links/time-separation verified",
+    "horizons1/3/6/12 calendar arithmetic/exclusions294570+222 checked",
+    "frozen proposed contract assertions passed"
+  ],
+  "files": {
+    "CORRECTION_NOTICE.md": "c3968087fcaa3f2310c33adcd9ced3cdf4d277b51b1ffe82e522dc77245dffa7",
+    "F7B_FORECAST_CONTRACT_REQUEST.md": "e40441a6ed6c8db1e295ce20a6c69d71c5a859f1ddccf9e81c53f1185a9f9c99",
+    "GATE_REPORT.md": "1042039b103a0158237a121e91177b020b6c5439ddc511ec8e08c9c446a235fc",
+    "PROTOCOL.md": "9cdc0927ccd8b6036f136a5311608070bb7e6ad42154c87c21e3043e4cd57d21",
+    "action06-acceptance.json": "f215b2a737e649f4979517277aa3d5ce651a028558956f7cea6dea2dcefa49a6",
+    "audit.json": "70ce2fea6356948ed54ffff69868aaf0625f668a1c2acf6746fc71edbe245743",
+    "audit.py": "c8b96f6979fc2f12444847c9c6208faa30a450f23a9234976d67dcab7194d787",
+    "build_closeout.py": "96b9151376ec3fec7e8ad78c8c8660b36be3e1bb2d6b45d488c49bfcf53e76a1",
+    "closeout.json": "e977f9ec7d1a7e1ba12c528c8668d3d0be77a3fb2b8fe3ccea661bda8a17572d",
+    "forecast_contract.proposed.json": "753cfa8257843bf3e8cd97b448c91526d0954eaf12fd6427a1c66db3820ddb7e",
+    "freeze_acceptance.py": "7a7a7ad9fa862f25aeb70e4b6b40160b06d00184ca3b770f0688b5edab3d24c0"
+  },
+  "mutations_outside_output_directory": 0,
+  "live_actions_closed": 0,
+  "eligible_technical_closure_count": 2,
+  "scientific_pass": false
+}

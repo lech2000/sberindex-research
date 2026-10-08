@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-07T10:59:38.545664+00:00",
+  "verification_site": "joe/serg; Incus aios2 authenticated case-service; PUT CAS followed fresh exact GET then POST/GET",
+  "materials": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_subagent_closeout_20261007_atlas",
+      "text_sha256": "afc1bf5e185f5f4d2f0fb65d90ffa261248f9f2fb4fa6a9b686c5f94a1069f5d",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "material_id": "mat_subagent_closeout_20261007_radar",
+      "text_sha256": "c479f0507349f0a7dc015251c165deed1a6826ddf383bec9ff71a8d484d56235",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_subagent_closeout_20261007_graph",
+      "text_sha256": "a6c46c07ddafdde6c210ac58da1cb6d0fae13e0f277166f1e6e74e8e99544aa7",
+      "full_readback_verified": true
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_subagent_closeout_20261007_curator",
+      "text_sha256": "e06548e4106712daa4a4eab1cda9aefd3ea131b4bd8d2d2af26d8ef3ea7f6730",
+      "full_readback_verified": true
+    }
+  ],
+  "actions": [
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "action_id": "act_1b485908c3264584",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    },
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "action_id": "act_a3f272cfc5594ec7",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "action_id": "act_24f1b02785b349d7",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    },
+    {
+      "case_id": "case_008f37d03cf541e5",
+      "action_id": "act_8a0815d5461f4745",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    },
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "action_id": "act_0fd8ae3b4bf44287",
+      "scientific_pass": false,
+      "done": true,
+      "full_fields_readback_verified": true,
+      "transport_atomic_cas_completion": false
+    }
+  ],
+  "scientific_pass": false,
+  "contest_submitted": false
+}

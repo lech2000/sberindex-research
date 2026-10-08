@@ -1,0 +1,87 @@
+{
+  "state": "FULL_MANDATORY_NOT_ACCEPTED",
+  "anchor_utc": "2026-10-08T09:22:59.775154+00:00",
+  "continuation_utc": "2026-10-08T09:28:41.525418+00:00",
+  "preparation_receipt_SHA256": "51c27df8fc112e5f890b85ac5a4791c572007b3389520339ea24c497861bf55e",
+  "inclusive_elapsed_at_continuation_seconds": 342,
+  "original_clock_preserved_conservative_walltime": true,
+  "base": "ef6e240599993754b7acfd74e10c2ba24a92a1ed",
+  "parent": "f299a6674c010d12ca371d479c741ceb319df1a9",
+  "head": "cc3a2a5730c8742444f65afe810287c0cae766c5",
+  "tree": "f80341dd9c4f9c25066ee4442137c3cd4aaa08d0",
+  "old_f299_terminal_unchanged": true,
+  "automatic_retry": false,
+  "paid_calls": 0,
+  "production_calls": 0,
+  "actions_closed": 0,
+  "native_runs": [
+    {
+      "suite": "privacy-db",
+      "exit_code": 0,
+      "counts": {
+        "tests": 439,
+        "passed": 439,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "suite": "release-runner",
+      "exit_code": 124,
+      "counts": {}
+    },
+    {
+      "suite": "review-contract",
+      "exit_code": 1,
+      "counts": {
+        "tests": 125,
+        "passed": 124,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "suite": "frontend-agent-ux",
+      "exit_code": 124,
+      "counts": {}
+    },
+    {
+      "suite": "technical-documents",
+      "exit_code": 0,
+      "counts": {
+        "tests": 78,
+        "passed": 78,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "native_receipt_SHA256": "b6ddf6c7f71cb9d5db124a9d830c6e553517df8148ecdd58e18f68ae050ed12a",
+  "diagnostics_receipt_SHA256": "7a38fe1f2b737049e0614f63849e0ce0052b094534b51daf49ad421adddf6bc6",
+  "native_run_exit": 1,
+  "native_verify_exit": null,
+  "clean_after": true,
+  "old_f299_terminal_byte_preserved": true,
+  "release_authorized": false,
+  "pg_stop_exit": 0,
+  "postmaster_pid_file_absent": true,
+  "finished_at_utc": "2026-10-08T10:35:39.239880+00:00",
+  "whole_elapsed_seconds": 4359.762159332982,
+  "group_cleanup_failures": [],
+  "native_pass": false,
+  "operational_checks": {
+    "whole_limit_preserved": true,
+    "private_database_stop_succeeded": true,
+    "private_database_pid_file_absent": true,
+    "no_database_cleanup_error": true,
+    "all_required_group_cleanups_succeeded": true,
+    "source_clean_after": true,
+    "old_terminal_preserved": true
+  },
+  "operational_pass": true,
+  "full_mandatory_accepted": false,
+  "original_preparation_receipt_byte_preserved": true
+}

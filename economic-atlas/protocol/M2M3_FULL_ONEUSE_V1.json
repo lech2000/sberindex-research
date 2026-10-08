@@ -1,0 +1,38 @@
+{
+  "version": "M2M3_FULL_ONEUSE_OPERATIONAL_V1",
+  "base": "40c3c30b0a2343b805dbd33fa38c3fc69850cc5d",
+  "scientific_protocol_sha256": "728358b214a1a2c8b50cf35c6c197c6e36bf704c80c77d172c35f65d47050494",
+  "pins": {
+    "economic-atlas/src/a6_geometry_original_scope_v4.py": "72a0fabca502c2c14c249689956596d5cf0998eb46dc43d246f37b596ef6d41e",
+    "economic-atlas/src/a6_geometry_original_controls_v4.py": "a1f8a3b1f4a13d65dfcd2469245cca488ff43f194c15775439802a4c29b81bf5",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/atlas_m1_executor.py": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+    "economic-atlas/protocol/geometry-original-scope-v4-20261008.json": "728358b214a1a2c8b50cf35c6c197c6e36bf704c80c77d172c35f65d47050494",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/runs/A5/features.parquet": "12f40b15ee8f119cba7f386b5c9adf4babb5cff1bca2721dc04551d672f5e5d6"
+  },
+  "wall_seconds": 4200,
+  "finalization_reserve_seconds": 30,
+  "receipt_reserve_bytes": 65536,
+  "CPU_threads": 1,
+  "RSS_bytes": 1073741824,
+  "free_bytes": 1073741824,
+  "output_bytes": 268435456,
+  "seed": 20260926,
+  "full_scope": {
+    "real_rows": 45504,
+    "municipalities": 1896,
+    "months": 24,
+    "bootstrap_B": 200,
+    "bank_configs": 210,
+    "label_histories": 70,
+    "worlds": 35,
+    "M3_sensitivities": 6
+  },
+  "scientific_deviation": false,
+  "operational_change": "Adds one-use guardian only; unchanged v4.0.4 source/protocol; no prior scientific runtime baseline or completion guarantee",
+  "completion": "Negative or INCONCLUSIVE scientific outcome with all full artifacts is execution completion; no economic PASS or action closure",
+  "boundary": "Trusted root invokes exact guardian; public scientific source library access is not a security sandbox",
+  "resource_disclosure": "sampled own-tree RSS/disk, final immutable receipt fsync cannot time itself; no continuous/kernel quota PASS",
+  "retry": "No retry/resume/alternate-output reset after canonical STARTED"
+}

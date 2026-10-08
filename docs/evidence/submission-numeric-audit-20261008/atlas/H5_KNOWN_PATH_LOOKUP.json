@@ -1,0 +1,37 @@
+{
+  "state": "READ_ONLY_EXISTING_PRIMARY_RECEIPT_PATH_LOOKUP",
+  "actual_absolute_original_H5_runtime_path": "UNKNOWN_NOT_IN_SAVED_PROTOCOL_RECEIPTS",
+  "no_guessing_or_broad_home_scan": true,
+  "known_author_outputs_relative_to_actual_run": [
+    "oof_predictions.parquet",
+    "partitions.parquet",
+    "folds.json"
+  ],
+  "canonical_run_absolute": "/private/tmp/sberindex-official-laws-20261007/economic-atlas/runs/H5_dimensionless_scale_20261007",
+  "canonical_these_raw_outputs_present": false,
+  "known_reproduction_documented_paths": [
+    {
+      "path": "output/atlas-dimensionless",
+      "basis": "Makefile57 default; not proof actualoldinvocation used default"
+    },
+    {
+      "path": "output/dimensionless-fresh",
+      "basis": "README66 explicit reproduction example; not actualabsolute invocation receipt"
+    },
+    {
+      "path": "output/dimensionless-new",
+      "basis": "README50 example; not authoritativeactualrun"
+    }
+  ],
+  "historic_commit": "6696b84e5d98d6b26d25dd34cff0131f1124f832",
+  "historical_expected_OOF_SHA": "78ac6b40426fcb6e207205418d5c66b6f4ed74e2da1c682291651d2f393c90f5",
+  "folds_and_partition_rawSHA": "UNKNOWN_NOT_RECORDED_IN_CURRENT_RECEIPTS",
+  "read_source_pins": {
+    "Makefile": "da811ebecbad007fe762f85bc87e830696b060c07b00102d70eb18097e8e13c0",
+    "repository-tools/atlas_dimensionless_reproduce.py": "12c06903fd821088bf4f59d9d7c858fda0cdc131cfeac6e1399f0ec54c87e21d",
+    "economic-atlas/src/dimensionless_scale_audit.py": "8f1fecba298002f700c82a11db6ad206876b6aeae3dae64d805c594bed234eea",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/README.md": "b4ddfe8e8c426a99c7ef26849397dad41d5e52b6562821c307e297fa79098ede",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/reproduction-receipt.json": "187177af909c6f2b5981b5b7ba41601ba016f5f2307156865cc42442c2cfa936"
+  },
+  "root_next_retrieval": "Resolve originalactualworking-directory/invocation from preserved oldsession/job artifacts first; retrieve exactexisting rawfiles only, verify OOF78ac6...; do not runmake/author/auditorfitpipeline or guessunconfirmedJoe path."
+}

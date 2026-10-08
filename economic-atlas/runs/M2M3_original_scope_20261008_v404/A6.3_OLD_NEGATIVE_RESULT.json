@@ -1,0 +1,21 @@
+{
+  "action_id": "act_63eabe3fd8aa4770",
+  "scope": "Separate original 2026-10-03 frozen-calibration 210 controls, not new M2/M3",
+  "thresholds": {
+    "overlap_threshold": 0.27716275979336036,
+    "candidate_margin": 0.7187007760980421,
+    "resemblance_floor": 0.17395474720266485
+  },
+  "rows": 210,
+  "all210_rows_audited": true,
+  "monthly_rows": 4830,
+  "prediction_event_rows": 348,
+  "prior_error_budget_present": false,
+  "formal_verdict": "INCONCLUSIVE_NO_PRIOR_ERROR_BUDGET",
+  "scientific_pass": false,
+  "retrospective_pass_permitted": false,
+  "unchanged_original_action_fulfilled": false,
+  "original_protocol_sha256": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0",
+  "original_metrics_sha256": "04bee2028f9e4d10a65853eb035c5b64578a0f7200eb50da90304b58fbec3791",
+  "independent_readonly_report_sha256": "b889bbabe99f1ac558216392cdb2ade64903544f6758288bb9d27665778e0d31"
+}

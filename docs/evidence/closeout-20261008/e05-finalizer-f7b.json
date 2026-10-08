@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-08T08:45:29.662536+00:00",
+  "job": "/var/lib/fixar-cmd/jobs/sberindex-e05-finalizer-v5-source-20261008",
+  "executor": "manual isolated F7b artifact adoption under host serg; Incus filesystem API; unchanged existing lifecycle; never enqueued",
+  "execution_workspace": "/tmp/f7b-manual-offline-sberindex-e05-finalizer-v5-source-20261008/work",
+  "container_process_executed": false,
+  "initial_container_state": {
+    "status": "Stopped",
+    "pid": 0
+  },
+  "container_lifecycle_mutated": false,
+  "native_paid_task_enqueued": false,
+  "base": "9f2adf82b04bdce47ea87c10c9b652aae267e8ba",
+  "head": "5d3404333ad8ba19e068ba373a5b9db013f67950",
+  "tree": "b9a0d0fe433d340b7eade2e34f81c779f00fd7a1",
+  "files_sha256": {
+    "economic-atlas/protocols/E05_FULL_PUBLICATION_FINALIZER_V5_SOURCE_ONLY.json": "d4084935b2a7b0c7eade1d82938e5c3c5fe323556bd4b4b0e253b031862a5898",
+    "economic-atlas/protocols/E05_FULL_PUBLICATION_FINALIZER_V5_SOURCE_ONLY.md": "09dbbcb3509a38db870b75adfdedc60319ac9be37e4d74f473e0061cf631e586",
+    "economic-atlas/src/e05_full_publication_finalizer_v5.py": "5ca95919ff76568ad2efeffd924c99912cf5abe756a97027b45141667486f52a",
+    "economic-atlas/src/e05_full_publication_validator_v5.py": "dda073bc0bf223321b6af9f39d2ed57f1f39ad33e92ac633003f3777f9239193",
+    "economic-atlas/src/e05_full_receipt_adapter_v5.py": "2469ded330f7e2398848d4631b221f697458b344b1a32ee2c066d226efa342d8",
+    "tests/test_e05_full_executor_toolkit_v2.py": "ef759de2c4f8e1f7b81c63149af31aa2e0523c6128b1bd13c42f689a73038381",
+    "tests/test_e05_publication_finalizer_v5.py": "c29b26c76b9ed7b534d14f88d780743ecf8abf3caf4992b5cf7eabc104a4388a"
+  },
+  "patch_sha256": "a6f45db3f62a14a70dd04cdf6b98f7a0c355df6f76d1551f7471056d7ce8b11b",
+  "base_bundle_sha256": "a1d57506c230172f0d5a403798f39be48ce2f542ae73822ed4634318a7632fe8",
+  "candidate_bundle_sha256": "4b432cf72661b1f5eeb6e0e6aed2b5fa3fd267eeaa6efbdde1be3357d4a558be",
+  "source_actions_closed": 0,
+  "paid_calls": 0,
+  "production_mutated": false,
+  "scientific_pass": false,
+  "runtime_tests": "pending exact accepted Mac revision"
+}

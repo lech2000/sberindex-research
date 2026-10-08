@@ -1,0 +1,925 @@
+{
+  "checked_at_utc": "2026-10-07T10:51:41.347532+00:00",
+  "verification": "07.10.2026 Mac, stdlib byte/SHA and numeric conjunction audit; source scientific worktree read only",
+  "source_actions_sha256": "3582a5a48962f071cf509ed0f740daaaba874d5b957ea5c57f6ebb9c55c574b9",
+  "source_count": 39,
+  "source_done": 23,
+  "source_open": 16,
+  "scope_complete_ready_count": 2,
+  "live_actions_closed_by_this_audit": 0,
+  "scientific_pass": false,
+  "no_personal_decisions_required_for_ready_research_actions": true,
+  "protocol": "/private/tmp/atlas-remaining-closeout-20261007/PROTOCOL.md",
+  "protocol_sha256": "77f0bd4889d76a7b8b9424c54f1ae111253d9297f33128010d44c976344c8ea9",
+  "cas_transport_limit": "PUT edits are atomic CAS; complete endpoint has no CAS fields. Fresh GET and exact comparison before POST required, but GET/POST is not an atomic CAS and retains a concurrency window. If atomic completion is required, keep staged acceptance and add server CAS in a separate F7b; never pretend the current POST is CAS.",
+  "dependency_policy": "Parent confirmed07.10: numeric depends_on are historical prerequisites, not live DAG. Research execution09/10 can be accepted without declaring08/A6/A7 done. Execute09 then10.",
+  "checks": {
+    "provenance": [
+      {
+        "run": "A10_method_comparison_20261005",
+        "protocol_verified": true,
+        "output_hashes_verified": 65,
+        "result": {
+          "path": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+          "sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43",
+          "bytes": 40191
+        }
+      },
+      {
+        "run": "A11_icvi_table_20261005",
+        "protocol_verified": true,
+        "output_hashes_verified": 7,
+        "result": {
+          "path": "economic-atlas/runs/A11_icvi_table_20261005/results.json",
+          "sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+          "bytes": 26614
+        }
+      },
+      {
+        "run": "A8_wages2025_validation_20261005",
+        "protocol_verified": true,
+        "output_hashes_verified": 0,
+        "result": {
+          "path": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+          "sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+          "bytes": 10546
+        }
+      }
+    ],
+    "A8_primary_recomputed": [
+      {
+        "outcome": "wage",
+        "spec": "S1",
+        "ci95": [
+          -0.014661770349131605,
+          0.07577975388807191
+        ],
+        "criteria": {
+          "ci_excludes_zero": false,
+          "holm_p_below_0_05": true,
+          "cv_mse_reduction_positive": false
+        },
+        "positive": false
+      },
+      {
+        "outcome": "wage",
+        "spec": "S3",
+        "ci95": [
+          -0.011462035294891003,
+          0.0051790614871948595
+        ],
+        "criteria": {
+          "ci_excludes_zero": false,
+          "holm_p_below_0_05": false,
+          "cv_mse_reduction_positive": false
+        },
+        "positive": false
+      },
+      {
+        "outcome": "emp",
+        "spec": "S1",
+        "ci95": [
+          -0.06825233006480241,
+          0.15472617563796875
+        ],
+        "criteria": {
+          "ci_excludes_zero": false,
+          "holm_p_below_0_05": false,
+          "cv_mse_reduction_positive": false
+        },
+        "positive": false
+      },
+      {
+        "outcome": "emp",
+        "spec": "S3",
+        "ci95": [
+          -0.0005045990205681711,
+          0.071578861982867
+        ],
+        "criteria": {
+          "ci_excludes_zero": false,
+          "holm_p_below_0_05": true,
+          "cv_mse_reduction_positive": true
+        },
+        "positive": false
+      }
+    ],
+    "A10": {
+      "five_seeds": true,
+      "common_subsamples": 20,
+      "stability_rows": 380,
+      "n_nodes": 1896,
+      "invalid_fixed_K": 0
+    },
+    "frozen_control_count": 210,
+    "frozen_thresholds_equal": true,
+    "missing_prior_error_budget": true,
+    "five_city_stories_plus_control": true,
+    "registered_experiment_evidence_sha_verified": 10,
+    "story_release_rows_and_links": {
+      "checked_at_utc": "2026-10-07T10:50:34.095949+00:00",
+      "verification": "07.10.2026 Mac, standard-library release rows and local-link checks; not independent source extraction",
+      "protocol_sha256": "77f0bd4889d76a7b8b9424c54f1ae111253d9297f33128010d44c976344c8ea9",
+      "consumption_rows": [
+        {
+          "municipality": "Орск",
+          "printed": [
+            25758.0,
+            31635.0,
+            22.8
+          ],
+          "archived": [
+            25758.0,
+            31635.0,
+            22.82
+          ],
+          "pass": true
+        },
+        {
+          "municipality": "Курган",
+          "printed": [
+            27232.0,
+            33206.0,
+            21.9
+          ],
+          "archived": [
+            27232.0,
+            33206.0,
+            21.94
+          ],
+          "pass": true
+        },
+        {
+          "municipality": "Ишим",
+          "printed": [
+            27178.0,
+            31945.0,
+            17.5
+          ],
+          "archived": [
+            27178.0,
+            31945.0,
+            17.54
+          ],
+          "pass": true
+        },
+        {
+          "municipality": "Бузулук",
+          "printed": [
+            27217.0,
+            32480.0,
+            19.3
+          ],
+          "archived": [
+            27217.0,
+            32480.0,
+            19.34
+          ],
+          "pass": true
+        },
+        {
+          "municipality": "Тюмень",
+          "printed": [
+            38406.0,
+            44096.0,
+            14.8
+          ],
+          "archived": [
+            38406.0,
+            44096.0,
+            14.82
+          ],
+          "pass": true
+        },
+        {
+          "municipality": "Шадринск",
+          "printed": [
+            22892.0,
+            27486.0,
+            20.1
+          ],
+          "archived": [
+            22892.0,
+            27486.0,
+            20.07
+          ],
+          "pass": true
+        }
+      ],
+      "relative_links_verified": 18,
+      "relative_link_targets": [
+        "economic-atlas/runs/A7_stories_20261004/README.md",
+        "economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+        "economic-atlas/runs/A7_stories_20261004/timing_check.json"
+      ],
+      "scientific_pass": false
+    }
+  },
+  "action_matrix": [
+    {
+      "source_action_id": "act_0924fb12ebc44307",
+      "original_what": "03. Согласовать ОКТМО и версии границ, описать пропуски/подавления; утвердить паспорт данных.",
+      "historical_depends_on": [
+        "02"
+      ],
+      "label": "03: паспорт / ОКТМО",
+      "scope_completed": false,
+      "acceptance": "OPEN_INCOMPLETE",
+      "verified_result": "Панель1896МО/273024строк заморожена; действующий словарь не исторический кроссволк. Версии границ, подавления/права и historicalasof не утверждены.",
+      "remaining_or_next_action": "Получить versioned crosswalk valid2023/2024 и паспорт неизвестного; исключить конфликтные joins, не соединять по имени.",
+      "evidence": [
+        {
+          "path": "economic-atlas/data/panel_passport.json",
+          "sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd",
+          "bytes": 1339
+        },
+        {
+          "path": "economic-atlas/data-manifest.json",
+          "sha256": "cf9d871e3bfa77b379924208f6ba0f4af394dd15b18e23174085a4e73479f564",
+          "bytes": 793
+        },
+        {
+          "path": "graph/GM2_fns_crosswalk_2026-10-02.md",
+          "sha256": "b8df2d641576ad65563bf5d38c7e2e22b0a8c3c11d0270d2cb3f1124b78f9386",
+          "bytes": 3704
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_4d0536caf3a546ac",
+      "original_what": "ATF-M1. К E03/H4: число кластеров из спектра графа сходства месяца — m (собств. значения у 1), sig=gap_to_bulk/bulk_spread, shuffle-контроль по сырому разрыву (p95); sig* калибровать на синтетике pos/neg того же размера; m=1 фиксировать как «структуры нет». Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+      "historical_depends_on": [],
+      "label": "ATF-M1",
+      "scope_completed": false,
+      "acceptance": "DEFERRED_NOT_EXECUTED",
+      "verified_result": "Нет подтверждённого динамического eigenvalue m/sig/shuffle/p95 с same-size pos/neg calibration. K2 silhouette не заменяет M1.",
+      "remaining_or_next_action": "Оставить в отдельной дальнейшей работе; новый протокол и F7b после релиза.",
+      "evidence": [
+        {
+          "path": "economic-atlas/research-ladder.md",
+          "sha256": "e235b652d468cfd7e1e93a3861934add2873ba316b7f93c5ab9fa8e9b8d78a38",
+          "bytes": 10842
+        },
+        {
+          "path": "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md",
+          "sha256": "f50db1e7ee5409efef7c9dc02f710d25d74b66afab018aabcd7ff824a9fae016",
+          "bytes": 25737
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_b6659ef0c8e049b1",
+      "original_what": "ATF-M2. К E04: хранилище идентичностей кластеров — область (центр+радиус; эллипсоид при ≥10 членах), узнавание по перекрытию Бхаттачарии ≥θ_ov и отрыву от второго ≥spec_gap, дрейф, рождение, dormant/возвращение; θ_ov/spec_gap (старт 0.55/0.30) перекалибровать на бутстрепе; кластеризация месяца без перекрытия окон (ловушка плеча). Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+      "historical_depends_on": [],
+      "label": "ATF-M2",
+      "scope_completed": false,
+      "acceptance": "OPEN_METHOD_SCOPE_INCOMPLETE",
+      "verified_result": "Хранилище/overlap/margin/dormant реализованы; реальная2023 calibration4800self+4800other проверена.36continue/3return/7ambiguous,554МО безidentity. Области isotropic Gaussian с RMSрадиусом; обещанного ellipsoid≥10 нет.",
+      "remaining_or_next_action": "Не подменять sphere эллипсоидом. Отдельный F7b/protocol для обещанной геометрии, калибровки best-minus-second и ещё не просмотренной проверки; либо формальное amendment с сохранением original scope.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A6_v2/manifest.json",
+          "sha256": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de",
+          "bytes": 3105
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/calibration.json",
+          "sha256": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+          "bytes": 1190
+        },
+        {
+          "path": "economic-atlas/runs/H5_scale_encoding_audit_20261007/a6-calibration-source-audit.json",
+          "sha256": "d344b25de88f2174497aa1d7168e013a8d2a25f0ab4e019df3346fcb3df64828",
+          "bytes": 1847
+        },
+        {
+          "path": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+          "sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+          "bytes": 14187
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_a1e77e09fb854cca",
+      "original_what": "ATF-M3. К E04: split/merge через вложение (>60% членов внутри области, Махаланобис<2.5) вместо близости центров; контроль на мирах part-whole и proximity, чувствительность порогов. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+      "historical_depends_on": [],
+      "label": "ATF-M3",
+      "scope_completed": false,
+      "acceptance": "OPEN_METHOD_SCOPE_INCOMPLETE",
+      "verified_result": "Part-whole/proximity/wronggeometry controls и6thresholdsettings есть, realcandidate0. Реализована sphere(mu,kappa*r), а action обещает Mahalanobis<2.5; при variance=r²/d это разные пороги.",
+      "remaining_or_next_action": "Не объявлять0real кандидатов ошибкой или экономическим PASS. Проверить promised metric через F7b/новый протокол и sensitivity; исторические runs не переписывать.",
+      "evidence": [
+        {
+          "path": "economic-atlas/src/a6_identities.py",
+          "sha256": "6e1ade98208556e40ecd010a839559d7877d81508d1d159a9cb681581dee74d8",
+          "bytes": 58402
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/manifest.json",
+          "sha256": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de",
+          "bytes": 3105
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/metrics.json",
+          "sha256": "a4cf2fd44a704f428106146bf33b2908c769abfb53dd66e316c390922c22a9ff",
+          "bytes": 5736
+        },
+        {
+          "path": "economic-atlas/runs/A6_frozen_controls_20261003/metrics.json",
+          "sha256": "04bee2028f9e4d10a65853eb035c5b64578a0f7200eb50da90304b58fbec3791",
+          "bytes": 83543
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_a0d924d8af6548e2",
+      "original_what": "ATF-M4. К E05/H1: двойная дивергенция каналов (доли / динамика / мобильность СЗФО) — синтетический мир на каждый канал; канал должен строить структуру на своём мире и воздерживаться (m=1 по M1) на чужом. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+      "historical_depends_on": [],
+      "label": "ATF-M4",
+      "scope_completed": false,
+      "acceptance": "DEFERRED_NOT_EXECUTED",
+      "verified_result": "Нет double-dissociation channel worlds и чужого-channel abstention m=1;101МО mobility ablation не заменяет этот опыт.",
+      "remaining_or_next_action": "Оставить open; M1 prerequisites и отдельный prospective protocol после релиза.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+          "sha256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+          "bytes": 8010
+        },
+        {
+          "path": "docs/HYPOTHESIS_EXECUTION_LEDGER_2026-10-06.md",
+          "sha256": "fe9de52cd84479e29f8fc5e3aefa9888e17d790766d224a9195a910a296caead",
+          "bytes": 15623
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_82e6846e4c3d42a4",
+      "original_what": "07. Принять SW, CH, S_Dbw, AVI, AVU и проверки определений; включить результаты в итоговый отчёт. MQ исключён из расчётов релиза решением владельца05.10: SPEC_UNRESOLVED, без запроса и ожидания; Newman Q отдельно.",
+      "historical_depends_on": [
+        "05"
+      ],
+      "label": "07 / A7",
+      "scope_completed": false,
+      "acceptance": "OPEN_PARENT_DEPLOY_ACCEPTANCE",
+      "verified_result": "Метрики исполнены:19/228/76строк; MQ исключён владельцем, AVI/AVU конвенция объявлена. Родитель завершает точный F7b/live acceptance.",
+      "remaining_or_next_action": "Только родитель: проверка точного candidate,guard deployment, живое закрытие после ремонта data_boundary/materialpriority.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A11_icvi_table_20261005/results.json",
+          "sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+          "bytes": 26614
+        },
+        {
+          "path": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "sha256": "e29a9d581218c45bd8fa7c4121a739696bf8f2424ada3b98bed2b9c947abd3a2",
+          "bytes": 10953
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_a32a69fed5be431c",
+      "original_what": "08. Выполнить E05: абляции признаков, мобильности, географии и временной связи.",
+      "historical_depends_on": [
+        "06",
+        "07"
+      ],
+      "label": "08 / E05",
+      "scope_completed": false,
+      "acceptance": "OPEN_INCOMPLETE",
+      "verified_result": "Mobility101МО/5seed/K2/weights0,.25,1 выполнена; A5geo alpha0/1,12networkdefinitions, H5scale и fixed-centre time penalty существуют. Полная исходная feature/geography/time ablation одной временной модели не подтверждена; E01b2016vsall не исполнена, E04joint model отсутствует.",
+      "remaining_or_next_action": "Составить отдельный preregistered matched ablation для недостающего объёма через F7b; не повторять mobility и имеющиеся controls.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+          "sha256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+          "bytes": 8010
+        },
+        {
+          "path": "economic-atlas/runs/A5/metrics.json",
+          "sha256": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+          "bytes": 7510
+        },
+        {
+          "path": "economic-atlas/runs/A6/metrics.json",
+          "sha256": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+          "bytes": 39073
+        },
+        {
+          "path": "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json",
+          "sha256": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c",
+          "bytes": 9864
+        },
+        {
+          "path": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "sha256": "e29a9d581218c45bd8fa7c4121a739696bf8f2424ada3b98bed2b9c947abd3a2",
+          "bytes": 10953
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_64ac761e4e4945ca",
+      "original_what": "ATF-M5. После E04: биографический L2 — матрица совместного присутствия МО в идентичностях, спектральный разрыв против перемешивания с сохранением возраста; ноль — валидный ответ. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+      "historical_depends_on": [],
+      "label": "ATF-M5",
+      "scope_completed": false,
+      "acceptance": "DEFERRED_NOT_EXECUTED",
+      "verified_result": "Биографическая co-presence identity matrix + age-preserving shuffle spectral test не исполнены;554ambiguousМО не имеют требуемой identity.",
+      "remaining_or_next_action": "Оставитьopen вне текущей сборки; отсутствие найденных надтипов не подтверждено опытом.",
+      "evidence": [
+        {
+          "path": "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md",
+          "sha256": "f50db1e7ee5409efef7c9dc02f710d25d74b66afab018aabcd7ff824a9fae016",
+          "bytes": 25737
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/metrics.json",
+          "sha256": "a4cf2fd44a704f428106146bf33b2908c769abfb53dd66e316c390922c22a9ff",
+          "bytes": 5736
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_d08e9e8179c246a3",
+      "original_what": "MANUAL конкурс: уточнить у организатора, допускаются ли две отдельные заявки одной команды; точный час и часовой пояс закрытия09.10.2026. Запрос и ожидание MQ исключены решением владельца05.10 (KB75/16637). AVI/AVU публикуются с объявленной конвенцией. Не блокирует приёмку расчётов и отчёт.",
+      "historical_depends_on": [],
+      "label": "MANUAL конкурс",
+      "scope_completed": false,
+      "acceptance": "OPEN_MANUAL_EXTERNAL",
+      "verified_result": "ОфициальныйPDF уточнил одно направление и9.10включительно; точный час/часовой пояс не указан, ответ организатора отсутствует.",
+      "remaining_or_next_action": "Не закрывать unresolved manual scope. Владелец выбирает направление и проверяет время при подаче; MQнеждать.",
+      "evidence": [
+        {
+          "path": "docs/CONTEST_RULES_CLARIFICATION_2026-10-07.md",
+          "sha256": "0ea998ac5f99a3b1657b83169b7f46ba4fefee8bb848cdcb084a677faa03caf7",
+          "bytes": 1942
+        },
+        {
+          "path": "docs/CONTEST_CHECKLIST.md",
+          "sha256": "2505990d4951c0b6769d6bc5e3b8dc53a259023d40073c4c477b05310ca6c451",
+          "bytes": 12369
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_fd3cbf9ca7c54554",
+      "original_what": "A2 source audit (KB74/14908): сверить уже скачанные SberIndex расходы МО и мобильность с официальными экспортами CSV/Parquet: URL, SHA256, схема, единицы, права использования, реальные N МО/месяцев/категорий/пропусков, ID и кроссволк. Мобильность только 297 МО СЗФО и агрегат янв–сен 2024/2025 до доказательства иного. Записать паспорт и применимость к A6/E05; GATE_REPORT с квитанцией. Не ждать MANUAL условий конкурса.",
+      "historical_depends_on": [],
+      "label": "A2 source audit",
+      "scope_completed": false,
+      "acceptance": "OPEN_INCOMPLETE",
+      "verified_result": "Текущая binding и nativeREF_AREA297 подтверждены; mobility только NW и агрегаты Jan-Sep2024/2025.215name/typeagree,82mismatch; исторические права/asof/границы не подтверждены.",
+      "remaining_or_next_action": "Получить официальный versioned crosswalk/rights/sourcevintage; записать UNKNOWN без fuzzy повторов.",
+      "evidence": [
+        {
+          "path": "economic-atlas/data-manifest.json",
+          "sha256": "cf9d871e3bfa77b379924208f6ba0f4af394dd15b18e23174085a4e73479f564",
+          "bytes": 793
+        },
+        {
+          "path": "economic-atlas/data/panel_passport.json",
+          "sha256": "3022c4fc800931fad055357b91d58fd63b8edebe4458423e0398a149ef5f2fcd",
+          "bytes": 1339
+        },
+        {
+          "path": "docs/RELEASE_ACCEPTANCE_MATRIX_2026-10-05.md",
+          "sha256": "e29a9d581218c45bd8fa7c4121a739696bf8f2424ada3b98bed2b9c947abd3a2",
+          "bytes": 10953
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_1b485908c3264584",
+      "original_what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+      "historical_depends_on": [
+        "08"
+      ],
+      "label": "09 / E06+E07",
+      "scope_completed": true,
+      "acceptance": "READY_EXECUTION_NEGATIVE",
+      "verified_result": "E06:5seed/20common80%subsamples/380stabilityrows/6methods/K3,5,8; annual2023↔2024 fit and76crossyear metricrows; realthreshold perturbation and5seedA6. E07:1248МО/70regions,4primaryA8 outcomes all negative;1000regionbootstrap/2000permutations/10×5CV, multiple testing and exclusions documented.",
+      "remaining_or_next_action": "Закрыть исполнение09 с NEGATIVE/NO_SCIENTIFIC_PASS;08/A6/A7 остаютсяopen. Дополнительный независимый holdout — будущая отдельная работа, не повтор A8 до положительного исхода.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+          "sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+          "bytes": 4760
+        },
+        {
+          "path": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+          "sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43",
+          "bytes": 40191
+        },
+        {
+          "path": "economic-atlas/runs/A11_icvi_table_20261005/results.json",
+          "sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+          "bytes": 26614
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/robustness/manifest.json",
+          "sha256": "bd8d96430ce16c4d983d5aade8edcf9ef2ab6e3c95f356234ac9fe83b913010a",
+          "bytes": 3741
+        },
+        {
+          "path": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+          "sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+          "bytes": 14187
+        },
+        {
+          "path": "economic-atlas/runs/A8_wages2025_validation_20261005/PROTOCOL.md",
+          "sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069",
+          "bytes": 7427
+        },
+        {
+          "path": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+          "sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+          "bytes": 10546
+        },
+        {
+          "path": "economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+          "sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+          "bytes": 1195
+        }
+      ],
+      "scientific_pass": false,
+      "why_completion_is_valid": "Source09 requires performing robustness/external outcomes/uncertainty, not obtaining a positive result or completing identity gateA6. All promised execution axes have archived measurements and the negative criteria were fixed before A8. Completion does not accept a scientifically valid economic type, error budget or independent real-time vintage. Numeric08 dependency remains explicitly historical; no08 completion is inferred."
+    },
+    {
+      "source_action_id": "act_a3f272cfc5594ec7",
+      "original_what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+      "historical_depends_on": [
+        "09"
+      ],
+      "label": "10 / метод и 3–5 историй",
+      "scope_completed": true,
+      "acceptance": "READY_DESCRIPTIVE",
+      "verified_result": "Метод зафиксирован configversion2/spec/protocols;5fixedcitystories Орск/Курган/Ишим/Бузулук/Тюмень + Шадринскконтроль. Числа/периоды/source links/неоднозначность/seed/margin/counterexamples явны; Ишимнеобъяснён, БузулукH1, Тюменьбезгодовойбюджетнойпары.",
+      "remaining_or_next_action": "После09 закрыть описательное deliverable10; отсутствие причинного объяснения иunknownidentity сохранять в итоговом тезисе.",
+      "evidence": [
+        {
+          "path": "economic-atlas/config.json",
+          "sha256": "aef4be1d056ac0b20de2b7d5905ff8c4108fded6f40526ff49e687189c0ac895",
+          "bytes": 3305
+        },
+        {
+          "path": "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+          "sha256": "52628d21d43a7d0fb1d391047b4d515f344799154360eeb095a19f5f3864d74b",
+          "bytes": 29630
+        },
+        {
+          "path": "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+          "sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+          "bytes": 13618
+        },
+        {
+          "path": "economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+          "sha256": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+          "bytes": 35129
+        },
+        {
+          "path": "economic-atlas/runs/A7_stories_20261004/timing_check.json",
+          "sha256": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e",
+          "bytes": 55387
+        },
+        {
+          "path": "economic-atlas/runs/Municipal_stories_20261004/independent-story-audit.json",
+          "sha256": "7c94a5363298e97a2e453d7b6e49ea9bb72d87fdb9b2547d910691550cc4081d",
+          "bytes": 387
+        },
+        {
+          "path": "economic-atlas/runs/Municipal_budget_pilot_20261004/README.md",
+          "sha256": "38bad6ecd7967bba3c39bd3c6f45d3d35f3315c6e2465840429bda7b142b9eb1",
+          "bytes": 13797
+        },
+        {
+          "path": "economic-atlas/runs/Budget_owner_supplement_20261004/README.md",
+          "sha256": "196b1cf7eb28a6be50c9b90a8d46ff1b957b57e890b4a42364f1bcec62d59fe4",
+          "bytes": 8504
+        }
+      ],
+      "scientific_pass": false,
+      "why_completion_is_valid": "Source10 calls for fixed method and3–5 explained municipal stories linked to experiments. Five fixed stories plus a counterexample are delivered with traceable descriptive explanations and explicit non-explanation where evidence fails; this is consistent with the source waiting_for instruction to state limits/counterexample and avoid cherry-picked event confirmation. No historical boundaries, budget missingness, economic identity or causal explanation is manufactured."
+    },
+    {
+      "source_action_id": "act_63eabe3fd8aa4770",
+      "original_what": "A6.3: при замороженных калибровках 2023 (T=0.2771627598, M=0.7187007761, Tc=0.1739547472) задать синтетические миры с известной истиной: стабильность, новое рождение, исчезновение, split, merge и близкие ложные события. До прогона зафиксировать состав миров и допуск ошибок; через fixar-devops/F7b посчитать false match, false miss, coverage/abstention и чувствительность M±25%. Сохранить код, seed, SHA, таблицу ошибок и GATE_REPORT; по реальным МО не объявлять истинные рождения.",
+      "historical_depends_on": [],
+      "label": "A6.3 frozen controls",
+      "scope_completed": false,
+      "acceptance": "OPEN_MISSING_PRIOR_ERROR_BUDGET",
+      "verified_result": "210configurations executed with frozenT/M/Tc; baselineevent49TP/1FP/1FN,FDR/FNR2%;M+25%FDR37.84%. Worlds/matching/seeds recorded before; quantitative acceptance tolerance not recorded before calculation.",
+      "remaining_or_next_action": "Нельзя задним числом удовлетворить исходное до прогона допуск ошибок. Отдельный prospective unseen-control protocol/errorbudget для новой приёмки; сохранить эти descriptive outputs, не менятьM.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A6_frozen_controls_20261003/protocol.json",
+          "sha256": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0",
+          "bytes": 2355
+        },
+        {
+          "path": "economic-atlas/runs/A6_frozen_controls_20261003/metrics.json",
+          "sha256": "04bee2028f9e4d10a65853eb035c5b64578a0f7200eb50da90304b58fbec3791",
+          "bytes": 83543
+        },
+        {
+          "path": "economic-atlas/runs/A6_frozen_controls_20261003/README.md",
+          "sha256": "b72305b0ec6857ee39c1f7b40dcd4cca68578a03068a6dad2c12375468a6922f",
+          "bytes": 10644
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_c527b10e254147a6",
+      "original_what": "BUDGET-02: после GOV-B1 добавить три региональных бюджетных контекста 2025 в экономический раздел Атласа. Явно отделить их от МО и панели 2023–2024; не делать причинные выводы и не повторять расчёты.",
+      "historical_depends_on": [],
+      "label": "BUDGET-02 regional context",
+      "scope_completed": false,
+      "acceptance": "OPEN_DEPENDENCY_AND_REPORT_SCOPE",
+      "verified_result": "Три regional2025 контекста рассчитаны и названы вTreasuryREADME. GOV-B1 пятьgeo-passports остаётсяopen; три суммы не добавлены отдельным региональным разделом финальногоAtlasreport.",
+      "remaining_or_next_action": "СначалаGOV-B1 financialorgan/territory/level passports иconflicts; потом включить ужеcomputed три региональных контекста2025 отдельно отМО и2023–2024, безповтора расчётов.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/Treasury_2025_20261004/README.md",
+          "sha256": "93c127776c0ddd1adeef978091c5fff4a47480333078775c6a2ddf1670864024",
+          "bytes": 11027
+        },
+        {
+          "path": "economic-atlas/runs/Treasury_2025_20261004/books.json",
+          "sha256": "9ed4d44f8d675f64213bbad1b5f8730f94605aca1549e394863d8537b5f1fa8a",
+          "bytes": 73334
+        },
+        {
+          "path": "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+          "sha256": "52628d21d43a7d0fb1d391047b4d515f344799154360eeb095a19f5f3864d74b",
+          "bytes": 29630
+        },
+        {
+          "path": "docs/evidence/plan-sync-20261007/live-case-actions.json",
+          "sha256": "a4426786b68f73cd4ac7346db58cb6dc626a2c2b33da96ecef80264007f9005c",
+          "bytes": 92405
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_c475e17b2a584b9a",
+      "original_what": "06. 27.09.2026: A6threshold выполнен на1896МО×24месяца,45504назначения,9T/Msettings. Tcпостоянен. Baseline1,1точновоспроизвёлвсеID/status. T±25%не влияетвэтомдиапазоне; marginM−25%/base/+25%даёт1324/4438/36024ambiguousстроки, Jaccard.2983/1/.1067. Следовательноидентичностичувствительныкmargin,5seedне доказалиустойчивостьпорогов. K2vsK5:mean silhouette.3840vs.2098,ARI.2115,NMI.3703,168помесячныхrawshareпрофилей безпридуманныхтипов. Корпус75/14108,ключ research:a6_threshold_20260927; архив economic-atlas/runs/A6_threshold_review_20260927. КодF7b,SHA/контроли/независимаяпроверкасохранены. Следующее:проверитьобоснованностьcandidate_margin(bootstrapself/otherнеподменяетbest-minus-second),неопределённостьидентичностей,внешниеэкономическиепризнаки. PARTIAL_NOT_GATE_PASS:06ОТКРЫТ. Не повторятьA4,Балашиху,Раменское. K4/K5неподменяютthresholdT/M.",
+      "historical_depends_on": [
+        "05"
+      ],
+      "label": "06 / A6",
+      "scope_completed": false,
+      "acceptance": "OPEN_PARTIAL_NOT_GATE_PASS",
+      "verified_result": "45504assignments/9T-Msettings иfrozencontrols/externaldata выполнены; margin чувствителен,554МО безidentity, temporaljoint model/валидная errorbudget/economictruth не подтверждены.",
+      "remaining_or_next_action": "ОставитьA6OPEN, статические/описательные выводы использовать в10. Не переноситьM0.75 по красивому результату; отдельные новые formal criteria/method scope иunseenvalidation.",
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A6_v2/manifest.json",
+          "sha256": "fd7613dbc0fb28f018dfc63added27b280f0e9bbf35ee35805ba153a3ada97de",
+          "bytes": 3105
+        },
+        {
+          "path": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+          "sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+          "bytes": 14187
+        },
+        {
+          "path": "economic-atlas/runs/A6_frozen_controls_20261003/protocol.json",
+          "sha256": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0",
+          "bytes": 2355
+        },
+        {
+          "path": "docs/ATF_FINDINGS_AND_CLOSEOUT_2026-10-04.md",
+          "sha256": "f50db1e7ee5409efef7c9dc02f710d25d74b66afab018aabcd7ff824a9fae016",
+          "bytes": 25737
+        }
+      ],
+      "scientific_pass": false
+    },
+    {
+      "source_action_id": "act_5533c9a1b45646d1",
+      "original_what": "14. Владелец: проверить финальный комплект, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+      "historical_depends_on": [
+        "13"
+      ],
+      "label": "14 / подача",
+      "scope_completed": false,
+      "acceptance": "OPEN_OWNER_SUBMISSION",
+      "verified_result": "Авторская передачаsource12DONE,887uniquefiles; нет конкурсной submissionreceipt. Требуются направление,личныеполя,согласия,доступжюри.",
+      "remaining_or_next_action": "Только владелец проверяет комплект и отправляет; сохранитьreceipt. Не подменять загрузку вдело подачейконкурса.",
+      "evidence": [
+        {
+          "path": "docs/CLOSEOUT_DELIVERY_2026-10-06.md",
+          "sha256": "c80586cf489eaa1554a1b918591e2a813b704daa42a80d26287a530de773291d",
+          "bytes": 10630
+        },
+        {
+          "path": "docs/CONTEST_CHECKLIST.md",
+          "sha256": "2505990d4951c0b6769d6bc5e3b8dc53a259023d40073c4c477b05310ca6c451",
+          "bytes": 12369
+        }
+      ],
+      "scientific_pass": false
+    }
+  ],
+  "proposed_updates": [
+    {
+      "action_id": "act_1b485908c3264584",
+      "case_id": "case_66cae4a89ba6473f",
+      "why_completion_is_valid": "Source09 requires performing robustness/external outcomes/uncertainty, not obtaining a positive result or completing identity gateA6. All promised execution axes have archived measurements and the negative criteria were fixed before A8. Completion does not accept a scientifically valid economic type, error budget or independent real-time vintage. Numeric08 dependency remains explicitly historical; no08 completion is inferred.",
+      "scientific_pass": false,
+      "completion_outcome": "READY_EXECUTION_NEGATIVE",
+      "historical_depends_on": [
+        "08"
+      ],
+      "evidence": [
+        {
+          "path": "economic-atlas/runs/A10_method_comparison_20261005/PROTOCOL.md",
+          "sha256": "6856b981dbfb07d7b11402fb2a462ccd34de356e225e858713955c783b207f18",
+          "bytes": 4760
+        },
+        {
+          "path": "economic-atlas/runs/A10_method_comparison_20261005/results.json",
+          "sha256": "13b25e30f3bde6fed4f52d72151b4aaa4d960caf5c3392d91b1f82a38d37cb43",
+          "bytes": 40191
+        },
+        {
+          "path": "economic-atlas/runs/A11_icvi_table_20261005/results.json",
+          "sha256": "f679abb7ce286718ef05bd51281b8a1d43e578b652da9b922547bb27002fffb7",
+          "bytes": 26614
+        },
+        {
+          "path": "economic-atlas/runs/A6_v2/robustness/manifest.json",
+          "sha256": "bd8d96430ce16c4d983d5aade8edcf9ef2ab6e3c95f356234ac9fe83b913010a",
+          "bytes": 3741
+        },
+        {
+          "path": "economic-atlas/runs/A6_threshold_review_20260927/metrics.json",
+          "sha256": "62c80aefce77e50f7887a90940375801fbdaa74f5d394dd483d0d9d8f1646bc1",
+          "bytes": 14187
+        },
+        {
+          "path": "economic-atlas/runs/A8_wages2025_validation_20261005/PROTOCOL.md",
+          "sha256": "0369b1bf9fe8244aa645ed32103bf78583aa2d9bfb53daa4077c3a196f2ef069",
+          "bytes": 7427
+        },
+        {
+          "path": "economic-atlas/runs/A8_wages2025_validation_20261005/results.json",
+          "sha256": "00f6636616a95ac37eec8c320e7b20c8f63ec57887f253a70cb40a7540d9d502",
+          "bytes": 10546
+        },
+        {
+          "path": "economic-atlas/runs/A14_release_20261005/a8_population_audit.json",
+          "sha256": "2e266f8e20a9972d2538f27ff1e899adde78125184a6be83f1c18d3c53ee9c32",
+          "bytes": 1195
+        }
+      ],
+      "cas_edit": {
+        "method": "PUT",
+        "path": "/cases/case_66cae4a89ba6473f/actions/act_1b485908c3264584",
+        "body": {
+          "principal_id": "prn_fbab9aa00cd46169",
+          "what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+          "owner": "prn_fbab9aa00cd46169",
+          "due": "2026-10-01T15:00:00Z",
+          "waiting_for": "07.10 acceptance: E06/E07 executed; A8 4/4 negative, NO SCIENTIFIC PASS. SHA closeout; A6/08/A7 OPEN.",
+          "expected_what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+          "expected_owner": "prn_fbab9aa00cd46169",
+          "expected_due": "2026-10-01T15:00:00Z",
+          "expected_waiting_for": "После пунктов 08"
+        }
+      },
+      "post_edit_precondition": {
+        "done": false,
+        "what": "09. Выполнить E06/E07: устойчивость, независимые экономические показатели и неопределённость.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-01T15:00:00Z",
+        "waiting_for": "07.10 acceptance: E06/E07 executed; A8 4/4 negative, NO SCIENTIFIC PASS. SHA closeout; A6/08/A7 OPEN."
+      },
+      "complete": {
+        "method": "POST",
+        "path": "/cases/case_66cae4a89ba6473f/actions/act_1b485908c3264584/complete",
+        "body": {
+          "principal_id": "prn_fbab9aa00cd46169"
+        }
+      },
+      "postcondition": {
+        "id": "act_1b485908c3264584",
+        "done": true,
+        "waiting_for": "07.10 acceptance: E06/E07 executed; A8 4/4 negative, NO SCIENTIFIC PASS. SHA closeout; A6/08/A7 OPEN."
+      }
+    },
+    {
+      "action_id": "act_a3f272cfc5594ec7",
+      "case_id": "case_66cae4a89ba6473f",
+      "why_completion_is_valid": "Source10 calls for fixed method and3–5 explained municipal stories linked to experiments. Five fixed stories plus a counterexample are delivered with traceable descriptive explanations and explicit non-explanation where evidence fails; this is consistent with the source waiting_for instruction to state limits/counterexample and avoid cherry-picked event confirmation. No historical boundaries, budget missingness, economic identity or causal explanation is manufactured.",
+      "scientific_pass": false,
+      "completion_outcome": "READY_DESCRIPTIVE",
+      "historical_depends_on": [
+        "09"
+      ],
+      "evidence": [
+        {
+          "path": "economic-atlas/config.json",
+          "sha256": "aef4be1d056ac0b20de2b7d5905ff8c4108fded6f40526ff49e687189c0ac895",
+          "bytes": 3305
+        },
+        {
+          "path": "economic-atlas/FINAL_REPORT_RU_2026-10-05.md",
+          "sha256": "52628d21d43a7d0fb1d391047b4d515f344799154360eeb095a19f5f3864d74b",
+          "bytes": 29630
+        },
+        {
+          "path": "economic-atlas/MUNICIPAL_STORIES_RELEASE_2026-10-05.md",
+          "sha256": "ced46de048cbbaba529db90e20f0eefc95c4ceea5493aad31866d865bd2cdbde",
+          "bytes": 13618
+        },
+        {
+          "path": "economic-atlas/runs/A7_stories_20261004/story_inputs.json",
+          "sha256": "8ec372b15ca685e6cece9f8dc8feae2dc00f927812669d1bda4f301b45b2184d",
+          "bytes": 35129
+        },
+        {
+          "path": "economic-atlas/runs/A7_stories_20261004/timing_check.json",
+          "sha256": "11eb50f49755f41adc53a0fd2b72cba5ba096e18b6a05c5456c82fde31d3619e",
+          "bytes": 55387
+        },
+        {
+          "path": "economic-atlas/runs/Municipal_stories_20261004/independent-story-audit.json",
+          "sha256": "7c94a5363298e97a2e453d7b6e49ea9bb72d87fdb9b2547d910691550cc4081d",
+          "bytes": 387
+        },
+        {
+          "path": "economic-atlas/runs/Municipal_budget_pilot_20261004/README.md",
+          "sha256": "38bad6ecd7967bba3c39bd3c6f45d3d35f3315c6e2465840429bda7b142b9eb1",
+          "bytes": 13797
+        },
+        {
+          "path": "economic-atlas/runs/Budget_owner_supplement_20261004/README.md",
+          "sha256": "196b1cf7eb28a6be50c9b90a8d46ff1b957b57e890b4a42364f1bcec62d59fe4",
+          "bytes": 8504
+        }
+      ],
+      "cas_edit": {
+        "method": "PUT",
+        "path": "/cases/case_66cae4a89ba6473f/actions/act_a3f272cfc5594ec7",
+        "body": {
+          "principal_id": "prn_fbab9aa00cd46169",
+          "what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+          "owner": "prn_fbab9aa00cd46169",
+          "due": "2026-10-03T15:00:00Z",
+          "waiting_for": "07.10 acceptance: fixed method, 5 descriptive MO stories + control; source/period/limits checked. NO SCIENTIFIC PASS; budget gaps/identity UNKNOWN retained.",
+          "expected_what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+          "expected_owner": "prn_fbab9aa00cd46169",
+          "expected_due": "2026-10-03T15:00:00Z",
+          "expected_waiting_for": "KB75/16258: готовая сводка ATF и тезисов опубликована; использовать3истории и бюджетный контекст7/12+supplement. Формулировать ограничения/контрпример; не искать подтверждения типов по красивым событиям."
+        }
+      },
+      "post_edit_precondition": {
+        "done": false,
+        "what": "10. Зафиксировать метод и 3–5 объяснённых историй МО; связать каждый тезис с экспериментом.",
+        "owner": "prn_fbab9aa00cd46169",
+        "due": "2026-10-03T15:00:00Z",
+        "waiting_for": "07.10 acceptance: fixed method, 5 descriptive MO stories + control; source/period/limits checked. NO SCIENTIFIC PASS; budget gaps/identity UNKNOWN retained."
+      },
+      "complete": {
+        "method": "POST",
+        "path": "/cases/case_66cae4a89ba6473f/actions/act_a3f272cfc5594ec7/complete",
+        "body": {
+          "principal_id": "prn_fbab9aa00cd46169"
+        }
+      },
+      "postcondition": {
+        "id": "act_a3f272cfc5594ec7",
+        "done": true,
+        "waiting_for": "07.10 acceptance: fixed method, 5 descriptive MO stories + control; source/period/limits checked. NO SCIENTIFIC PASS; budget gaps/identity UNKNOWN retained."
+      }
+    }
+  ],
+  "method_scope_correction_notice": {
+    "path": "/private/tmp/atlas-remaining-closeout-20261007/METHOD_SCOPE_CORRECTION.md",
+    "sha256": "db94f630bd20597a98a80b311941f22de447bccf9912604eb714bdc8d08030a3"
+  },
+  "ready_actions_execution_sequence": [
+    "act_1b485908c3264584",
+    "act_a3f272cfc5594ec7"
+  ],
+  "completion_transport_sequence": [
+    "GET authenticated source actions; compare exact what/owner/due/waiting_for/done to expected source snapshot",
+    "PUT supplied CAS body; stop on non-200 or mismatched response",
+    "GET authenticated source actions again; compare exact post_edit_precondition",
+    "POST supplied complete body; stop on non-200",
+    "GET authenticated source actions; assert exact postcondition id/done/waiting_for; preserve receipt",
+    "No automatic retry or overwrite if any precondition differs; no assertion of atomic CAS completion"
+  ]
+}

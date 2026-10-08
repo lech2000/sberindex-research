@@ -1,0 +1,23 @@
+[
+  {
+    "corpus_id": 74,
+    "document_id": 17477,
+    "full_readback_verified": true,
+    "text_sha256": "b29b48a6a5ba023295699307b9d61af841b8629bc75d35171a9eb7f5686de5f9",
+    "checked_at": "2026-10-08T08:41:43.437738+00:00"
+  },
+  {
+    "corpus_id": 75,
+    "document_id": 17478,
+    "full_readback_verified": true,
+    "text_sha256": "b29b48a6a5ba023295699307b9d61af841b8629bc75d35171a9eb7f5686de5f9",
+    "checked_at": "2026-10-08T08:41:44.312731+00:00"
+  },
+  {
+    "corpus_id": 76,
+    "document_id": 17479,
+    "full_readback_verified": true,
+    "text_sha256": "b29b48a6a5ba023295699307b9d61af841b8629bc75d35171a9eb7f5686de5f9",
+    "checked_at": "2026-10-08T08:41:45.546180+00:00"
+  }
+]

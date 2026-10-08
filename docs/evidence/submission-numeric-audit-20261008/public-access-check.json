@@ -1,0 +1,62 @@
+{
+  "kind": "READONLY_PUBLIC_ACCESS_CHECK",
+  "code_inputs_jury_access_confirmed": false,
+  "repository_private": true,
+  "results": [
+    {
+      "url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/",
+      "final_url": "https://agrigate.pro/sberindex-2026/economic-atlas/landing/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 54346,
+      "SHA256": "a3a6c6b43aca6819efdbd91d52c5592745c89b55bcafc4fb827fda5efdb056a1",
+      "checked_at_utc": "2026-10-08T14:57:04.614412+00:00",
+      "authentication_sent": false,
+      "title": "Экономический атлас муниципалитетов · СберИндекс 2026"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/",
+      "final_url": "https://agrigate.pro/sberindex-2026/shock-radar/landing/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 61426,
+      "SHA256": "1a38ed83b2c4232f8a619e7c98405da3d438b989385033b77faf6cd1c710d6b8",
+      "checked_at_utc": "2026-10-08T14:57:04.524633+00:00",
+      "authentication_sent": false,
+      "title": "Радар потребительских сдвигов · СберИндекс 2026"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/reports/docs/ATLAS_FINDINGS_2026-10-07.html",
+      "final_url": "https://agrigate.pro/sberindex-2026/reports/docs/ATLAS_FINDINGS_2026-10-07.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 10921,
+      "SHA256": "c48e97b04507de842afadf895344d255043ab2848e73ddf245237537eb44939d",
+      "checked_at_utc": "2026-10-08T14:57:04.274347+00:00",
+      "authentication_sent": false,
+      "title": "Атлас: актуальные выводы07.10"
+    },
+    {
+      "url": "https://agrigate.pro/sberindex-2026/reports/docs/RADAR_FINDINGS_2026-10-07.html",
+      "final_url": "https://agrigate.pro/sberindex-2026/reports/docs/RADAR_FINDINGS_2026-10-07.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 12787,
+      "SHA256": "43b0dca4c9149750246395c56c43be8ddff6b86c68217638bf8d362efa2011a8",
+      "checked_at_utc": "2026-10-08T14:57:04.325956+00:00",
+      "authentication_sent": false,
+      "title": "Радар: актуальные выводы07.10"
+    },
+    {
+      "url": "https://sber.ru/common/assets/sber/sberindex_polozhenie_o_konkurse.pdf",
+      "final_url": "https://sber.ru/common/assets/sber/sberindex_polozhenie_o_konkurse.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 360440,
+      "SHA256": "2afee8b042ac0f16baa420a79a10663929a92950cd1b2c6f80a079088c71d0d3",
+      "checked_at_utc": "2026-10-08T14:57:02.510978+00:00",
+      "authentication_sent": false,
+      "official_pdf_stored": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "recorded_before_any_chronos2_inference_utc": "2026-10-07T13:45:03.051669+00:00",
+  "run_id": "Chronos2_causal_r9mask_20261007_v1",
+  "source_action": "act_0c71cedc50ad4508",
+  "model": {
+    "repo": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "weight_filename": "model.safetensors",
+    "weight_bytes": 477930472,
+    "weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "license": "Apache-2.0",
+    "mode": "zero-shot; no fit or fine tuning",
+    "device": "cpu",
+    "dtype": "float32",
+    "cross_learning": false,
+    "point_estimate": "median quantile0.5; not samplingmedianTiny"
+  },
+  "input_paths": {
+    "raw": "/Users/sergey/projects/ai_OS2/deliverables/sberindex-2026/data/raw/sberindex-data-sense-2025/8_consumption.parquet",
+    "paired": "/Users/sergey/projects/sberindex-research-jobs/R9_prophet_full_20261001/predictions.parquet"
+  },
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "paired": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  },
+  "paired_key_columns": [
+    "territory_id",
+    "category",
+    "origin",
+    "horizon",
+    "target"
+  ],
+  "expected_rows": 294570,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "context_cutoff": "origin-2 calendar months",
+  "release_lag_months": 2,
+  "minimum_nonmissing_context_points": 6,
+  "dense_calendar": "Jan2023 through exact cutoff, missing month representedNaN, no compression/zero fill",
+  "prediction_length": "target-cutoff=h+2; take median at step h+2, NOT h",
+  "context_length_limit": 24,
+  "baselines": "new causal lastavailable cutoff anchor, seasonal target-12 only if<=cutoff; cached R9 Prophet lag0 is descriptive not equal-information comparison",
+  "seed": 20261007,
+  "smoke": {
+    "n_primary_tasks": 4,
+    "selection": "For each horizon sort eligible task SHA256(seed,fullkey); first one. No performance-based selection",
+    "negative_controls": "repeat each of four forecasts once; mutate all postcutoff values and verify exactcontextbytes and one additional actual forecast perhorizon",
+    "max_model_calls": 12,
+    "max_wall_seconds": 180,
+    "rss_limit_bytes": 2147483648,
+    "torch_threads": 1,
+    "threads_env": [
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1"
+    ],
+    "no_GPU_MPS": true,
+    "network_during_inference": false
+  },
+  "resources_observed": {
+    "host_memory_bytes": 8589934592,
+    "logical_cpu": 8,
+    "chronos2_weights_cached": false,
+    "MPS_smoke_authorized": false
+  },
+  "scientific_pass": false,
+  "historical_asof_verified": false,
+  "independent_holdout": false,
+  "current_authorization": "metadata/preparation/dependencylightchecks only; weights download and actual inference NOT launched",
+  "weight_download_limit_plan": {
+    "max_total_bytes": 480000000,
+    "pinned_files_only": [
+      "config.json",
+      "model.safetensors"
+    ],
+    "expected_weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+  },
+  "evidence_urls": [
+    "https://huggingface.co/api/models/amazon/chronos-2?blobs=true",
+    "https://huggingface.co/amazon/chronos-2/resolve/29ec3766d36d6f73f0696f85560a422f50e8498c/README.md",
+    "https://huggingface.co/amazon/chronos-2/resolve/29ec3766d36d6f73f0696f85560a422f50e8498c/config.json"
+  ]
+}

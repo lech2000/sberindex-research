@@ -1,0 +1,252 @@
+{
+  "protocol_id": "Chronos2_fair_ownhistory_lag2_full_20261007_v3",
+  "recorded_utc": "2026-10-07T15:06:23.863100+00:00",
+  "status": "FROZEN_NOT_EXECUTED_REQUIRES_ROOT_REVIEW_AND_F7B_FULL_EXECUTOR",
+  "source_action": "act_0c71cedc50ad4508",
+  "model": {
+    "repo": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "weight_filename": "model.safetensors",
+    "weight_bytes": 477930472,
+    "weight_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "license": "Apache-2.0",
+    "mode": "zero-shot; no fit or fine tuning",
+    "device": "cpu",
+    "dtype": "float32",
+    "cross_learning": false,
+    "point_estimate": "median quantile0.5; not samplingmedianTiny"
+  },
+  "input_sha256": {
+    "raw": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "paired": "b9726b7971c55e5c9f32cdfe439694ffc96f66d7b0c180725a7ad2dff68afe44"
+  },
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "mask_receipt_sha256": "fadd9e1ef10a3941d0db8770c7c3db2e0a3b8283495186358beea043e27037df",
+  "primary_mask": {
+    "rows": 282120,
+    "canonical_keys_sha256": "7203ba39510f7723711d12d59cb797dd131b922ec8e199042f2c3e2e95fd9756",
+    "serialization": "lexicographically sorted all-string key tuple; compact UTF8JSON array plus LF per row; excludes predictions/errors"
+  },
+  "requested_mask": {
+    "rows": 294570,
+    "canonical_keys_sha256": "03fe017cfa71db45a5c28daba78c836a117a9e4fba6f8221ac7ef19f5236fcf2",
+    "serialization": "lexicographically sorted all-string key tuple; compact UTF8JSON array plus LF per row; excludes predictions/errors"
+  },
+  "exclusions": {
+    "insufficient_history": 12450,
+    "not_silently_discarded": "write status row for every requestedkey; primary reports282120denominator; freeze keys hash before output"
+  },
+  "same_information": {
+    "calendar_start": "2023-01",
+    "cutoff": "origin-2 calendar months, assumed release lag",
+    "minimum_nonmissing_points": 6,
+    "maximum_context_months": 24,
+    "allowed_information": "own territory/category consumption observations<=cutoff only; exact identical observed values and real dates for every arm",
+    "missing": "Chronos2 dense regular monthly NaN; Prophet omits missing y while retaining actual ds dates; missing baseline nullable; never gapcompress, zero-fill, interpolatefuture",
+    "disallowed": [
+      "otherterritory covariates",
+      "nationalfactor",
+      "news",
+      "categoryprofile",
+      "Atlaslabels",
+      "validation/test targets",
+      "cachedR9lag0 asfairProphet"
+    ],
+    "unknowns": [
+      "historical source available_at/vintage",
+      "Chronos2 pretraining overlap",
+      "independent heldoutperiod"
+    ]
+  },
+  "arms": {
+    "chronos2": {
+      "point": "quantile0.5 at step target-cutoff=h+2",
+      "context": "dense withNaN",
+      "batch_size": 16,
+      "cross_learning": false,
+      "zero_shot": true
+    },
+    "prophet_recomputed_lag2": {
+      "implementation_source": "shock-radar/src/r8_prophet_batch.py::prophet_fit_predict",
+      "code_sha256": "b9e7e993cf90e2e290001c7067fda36ed9684a900dee0ffa9d656e424ef97bf1",
+      "configuration": {
+        "growth": "linear",
+        "yearly_seasonality": false,
+        "weekly_seasonality": false,
+        "daily_seasonality": false,
+        "n_changepoints": 3,
+        "uncertainty_samples": 0
+      },
+      "target": "explicit timestamp origin+h; not h rows aftercontext",
+      "seed": 20260927,
+      "fit": "onefit perseriesorigin; all requiredtargetdates sharefit",
+      "reuse_audit_sha256": "108b0b28328f01ce1fb97eac7ffdc55ce1baceeaffb43c8c63086aead46539fe",
+      "cache_reuse": {
+        "exact_reused_prediction_rows": 109938,
+        "new_fit_groups": 135396,
+        "not_serialized_fit_reuse": true,
+        "input_source_config_seed_guards": true,
+        "use_cached_h1_h3_then_fit_once_per_series_cutoff_for_remaining_dates": true
+      }
+    },
+    "cutoff_anchor": {
+      "prediction": "exact value at cutoff if observed; otherwise NA; nozerofill",
+      "comparison_mask": {
+        "rows": 281736,
+        "canonical_keys_sha256": "4a4c0fceb3abbbaf63b1a83ab7ffdd6f52a155afe31b9bfcb077073fb87b6a58",
+        "serialization": "lexicographically sorted all-string key tuple; compact UTF8JSON array plus LF per row; excludes predictions/errors"
+      }
+    },
+    "observed_seasonal": {
+      "prediction": "value target-12 only when <=cutoff andobserved; otherwise NA",
+      "comparison_mask": {
+        "rows": 220932,
+        "canonical_keys_sha256": "88614d895a369f82c5e1f1d5f86ab3297424baa4a2b71d51cc0031e03767bdfb",
+        "serialization": "lexicographically sorted all-string key tuple; compact UTF8JSON array plus LF per row; excludes predictions/errors"
+      },
+      "h12": "not available because target-12=origin>cutoff; cannot rank this arm at h12"
+    },
+    "cachedR9Prophet": {
+      "status": "OPTIONAL_DESCRIPTIVE_UNEQUAL_INFORMATION",
+      "fair_pair": false,
+      "not_primary": true
+    }
+  },
+  "estimands": {
+    "primary": "MAE and paired absolute-error difference Chronos2 minus recomputedlag2Prophet byh; poolweightsrowcount frozen",
+    "secondary": "same-row pairs with cutoffanchor/observedseasonal on declaredintersections; baselinefailures explicitly counted; categorybreakdowns descriptive",
+    "min12_sensitivity": {
+      "mask": {
+        "rows": 207786,
+        "canonical_keys_sha256": "3429bb08d4385d26d7be6dea6f145e1afb4a4b8002011caa2d6ad36ddc3c20e5",
+        "serialization": "lexicographically sorted all-string key tuple; compact UTF8JSON array plus LF per row; excludes predictions/errors"
+      },
+      "purpose": "strict historylength sensitivity only; no choosingbestmask; h12 mayhave noeligibleorigins"
+    },
+    "uncertainty": {
+      "unit": "targetcalendar monthblock",
+      "method": "paired exact enumeration all6^6 blockresamples perh when6blocks present; otherwise enumerate m^m andreportm",
+      "CI": "percentiles2.5/97.5",
+      "independence": "blocks/territories not asserted independent; retrospective descriptive CI",
+      "no_bootstrap_selection": true
+    },
+    "no_new_holdout": true,
+    "scientific_pass": false
+  },
+  "controls": {
+    "frozen_four_examples": {
+      "12": {
+        "key": [
+          "7",
+          "Здоровье",
+          "2023-09",
+          "12",
+          "2024-09"
+        ],
+        "selection_hash": "0000af2d9405122566e1036552c88ff456e72d7cbe73269ddcb7bf0e2ab1b044",
+        "cutoff": "2023-07",
+        "context_sha256": "dcc1695549d684f84460acff3ee97473db7b8e5b3862e9c4b7cba86f8f96d819",
+        "forecast_step": 14
+      },
+      "6": {
+        "key": [
+          "404",
+          "Здоровье",
+          "2024-05",
+          "6",
+          "2024-11"
+        ],
+        "selection_hash": "000030bdbb1adcf01ed6eb308f4fe3f224ee1ec6f91000b272508616d8230678",
+        "cutoff": "2024-03",
+        "context_sha256": "dff3e33bcc85315c4047fd25410413cd2a01f63175d8614ecc8269fceeb0f0c7",
+        "forecast_step": 8
+      },
+      "3": {
+        "key": [
+          "2539",
+          "Транспорт",
+          "2024-07",
+          "3",
+          "2024-10"
+        ],
+        "selection_hash": "00005276d72607b44c2994c45fa95bc1221e97ac1602ff50fe660bc64f5d2df3",
+        "cutoff": "2024-05",
+        "context_sha256": "79789b7253aa5b0e7c52c1e2355ddf14b3cb2bf930dd552a63dff51fc9868998",
+        "forecast_step": 5
+      },
+      "1": {
+        "key": [
+          "1119",
+          "Маркетплейсы",
+          "2024-07",
+          "1",
+          "2024-08"
+        ],
+        "selection_hash": "00003fa2aa81d3bfebbd69f89e0407e22ac0f74968c5949dce392255a65fbcb0",
+        "cutoff": "2024-05",
+        "context_sha256": "fc1a68af72c70fe2ec03fd18531b091b8d521d9bbd48269dbea021ec1138357b",
+        "forecast_step": 3
+      }
+    },
+    "required": "repeat andpostcutoffmutation, exactcalendar oracle; bothmodels; all fulloutputkeys/actuals/sourcehash validated",
+    "new_model_controls": "max8extraChronos calls afterfull predictions; Prophetprefix/repeat controls4selectedcontexts; no highperformance selection"
+  },
+  "prospective_resources": {
+    "requires_root_review_before_any_fullfit": true,
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 1,
+    "rss_limit_bytes": 2147483648,
+    "wall_total_seconds_cap_proposal": 21600,
+    "per_invocation_wall_s_cap_proposal": 600,
+    "max_unique_tasks_per_invocation": 1000,
+    "maximum_unique_primary_series_origin_tasks": 196566,
+    "batch_size": 16,
+    "resume": "fingerprinted atomic checkpoints only, skip exactcompleted; keep fixedlexicographictaskorder; resource-stoppedpartial output INCONCLUSIVE notfullcompletion",
+    "model_call_cap_proposal": 196574,
+    "no_GPU_MPS": true,
+    "no_network": true,
+    "no_paid_API": true,
+    "no_retuning_after_fullprediction": true,
+    "maximum_prophet_primary_fits": 135396
+  },
+  "acceptance": {
+    "statuses": [
+      "EXECUTED_RETROSPECTIVE_NEGATIVE",
+      "EXECUTED_RETROSPECTIVE_POSITIVE",
+      "INCONCLUSIVE_PARTIAL_OR_FAILED"
+    ],
+    "positive_not_required": true,
+    "minimum": "allrequestedkey statuses, everyeligiblekeyfiniteprediction eachrequiredarm ordeclareINCONCLUSIVE, no hiddenmaskshrink, matchedinfo/calendar, realCPU/RSS/wall/modelidentity receipts",
+    "action05": "fulltechnical completionreview separate from smoke; no automaticclose",
+    "publish_private_inputs": false
+  },
+  "supersedes_unexecuted_v1": "V1 hadnew Prophet seed20261007; V2 fixes20260927 beforeanyfullfit topermit audited exactR8cache reuse. Smoke protocol/runner unchanged.",
+  "execution_stages": [
+    "validateeverykey/source/config/seed/cachehash; freeze fullmask hash",
+    "stream allstatus rows; attach exactR8cachedProphet predictions",
+    "fixedorder chunks<=1000seriescutoffgroups; Chronosmaxh+2 oncepergroup; Prophetfitoncepergroup onlyifuncachedtargetexists; predictallrequiredtargetdates",
+    "fingerprintedatomic checkpoint eachseriescutoff andmodel/target; resume skips verifiedsuccessfulwork; no retuning",
+    "calendar/repeat/futurecontrols and fullcoverage/finitecheck before MAE; outputINCONCLUSIVE ifresource/failure prevents requiredcoverage"
+  ],
+  "supersedes_unexecuted_v2": {
+    "reason": "Rootreview resource concern:196566batch1primarycalls likely exceed6h; batch16 chosen beforeanyfullprediction for throughput, notaccuracy selection. Scientificmask/context/seed/estimands unchanged. V2 retainedimmutable.",
+    "first_stage": "firstfixed1000seriescutoffgroups<=600s belongsfullcheckpoint run; no separate repeatedsmoke orbestmodelselection",
+    "full_inference_calls_before_v3": 0
+  },
+  "batching": {
+    "fixed_macrochunk_size": 1000,
+    "fixed_task_order": "lexicographically sorted stringterritory/category/origin tuples, then1000groups per macrochunk",
+    "within_chunk": "bucket by maximumrequiredcalendarstep thenfixedgroups of16; cross_learningFalse",
+    "resume": "samefullbatchmembership; skipbatch ifallChronosdone; ifpartial rerunwholeunchangedbatch andverify recordedpoints exactly; no re-fit successfulProphet",
+    "resource_tuning": "none afterfirstfullprediction; capfailureINCONCLUSIVE, no easierretry",
+    "call_counter": "allactualnativecalls includingpartialbatchreplay counted; separate fromgroup/row coverage",
+    "group_output": "forecast once tomaxstepperseriescutoff, selecteachreal targetindexh+2"
+  }
+}

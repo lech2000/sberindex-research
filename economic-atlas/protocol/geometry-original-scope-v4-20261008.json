@@ -1,0 +1,169 @@
+{
+  "id": "geometry-original-scope-v4.0-prospective",
+  "frozen_utc": "2026-10-07T22:40:31.151961+00:00",
+  "base": "08c9784",
+  "source_actions": [
+    "act_b6659ef0c8e049b1",
+    "act_a1e77e09fb854cca"
+  ],
+  "authority": {
+    "KB": "74/13365",
+    "path": "/private/tmp/atlas-m1-method-20261007/ORIGINAL_METHOD_SPEC.md",
+    "sha256": "f950b5825038366646f7fd0abfbb506c3538477cb031df733b16a49f510b55a5"
+  },
+  "status": "PROSPECTIVE_NO_FIT_CALIBRATION_OR_BANK_EXECUTED",
+  "known_previous_results": "geometry-v3.1 FAIL oracle and unsupervised; retained unchanged; method correction is not a search for PASS",
+  "geometry": {
+    "centre": "exact final member mean; fitted centre diagnostic only",
+    "ellipse_min_members": 10,
+    "sphere_covariance": "rms_radius_squared times I; floor1e-6 purely SPD safeguard",
+    "sphere_inside": "Euclidean distance strictly less than kappa times RMS radius",
+    "ellipse_inside": "Mahalanobis distance strictly less than kappa",
+    "recognition": "overlap>=T and best-minus-second>=M; deterministic greedy one-to-one remains explicit disclosed conflict policy",
+    "birth": "best overlap<T only when both T and M strictly separated; otherwise calibration_unknown without identity/birth/death claims",
+    "rolling_drift": {
+      "type": "EWMA",
+      "alpha": 0.5,
+      "centre": "(old+new)/2",
+      "radius": "(old+new)/2",
+      "ellipsoid_covariance": "(old+new)/2 SPD covariance; no data tuning",
+      "disclosure": "Original specifies sliding average but no width/alpha; fixed alpha=.5 is prospective implementation choice, not historically specified constant"
+    },
+    "dormant_months": 3
+  },
+  "m3": {
+    "split": ">=2 current clusters geometrically contained in previous cluster; no contained current cluster has member-Gaussian overlap>=frozen T with parent; veto independent M2 margin/conflict/dormancy/recognisedID",
+    "merge": "current cluster contains >=2 previous clusters; no composition or recognized-ID eligibility filter",
+    "primary_kappa": 2.5,
+    "primary_containment": 0.6,
+    "comparison": "strict containment>0.60; strict distance<2.5; M2 overlap/margin inclusive",
+    "sensitivity_kappa": [
+      1.5,
+      2,
+      2.5
+    ],
+    "sensitivity_containment": [
+      0.6,
+      0.75
+    ],
+    "truth_matching": "Evaluator matches previous/current cluster geometric events via fixed subject_map, not M2 recognised IDs; truth never enters detector"
+  },
+  "calibration": {
+    "months": "2023 only, unchanged B200/bootstrap/seed/K-grid/scaler",
+    "new_required": true,
+    "old_thresholds_for_new_method": "DO_NOT_USE",
+    "T": "midpoint(q05 self, q95 other) ONLY q05 self > q95 other",
+    "M": "midpoint(q05 positive gap, q95 negative gap) ONLY q05 positive > q95 negative",
+    "positive_gap": "own bootstrap BC - max competitor BC, true source identity excluded from competitors",
+    "negative_gap": "max competitor BC - second competitor BC; true source identity excluded; second=0 when exactly one competitor",
+    "missing_or_nonfinite": "INCONCLUSIVE; null affected threshold, no fallback or confident recognition/birth/death; full geometry/labels/mask and descriptive M3 retained",
+    "overlap_or_equality": "INCONCLUSIVE; null affected threshold; no threshold selection based on observed control quality",
+    "raw_output": "all self/other/positive/negative bootstrap scores; all quantiles/counts, individual strict-separation flags",
+    "gap_reference_disclosure": "positive/negative calibration competitor count excludes true source; recognition best-minus-second uses every eligible historical identity, including potential true identity; these are distinct reference universes, not equal statistics",
+    "Tc": "q50 other diagnostic only; null if missing; never a gate",
+    "quantile_choice": "q05/q95 and midpoint prospective implementation choice fixed before new calibration, not literally specified quantiles in KB74",
+    "independent_thresholds": "Each T/M midpoint exists only when its own two pools strictly separate; overall qualification requires BOTH. If M undefined but T valid, M2 remains unknown and M3 overlap>=T veto remains independent of margin. If T undefined, split/merge geometry saved as unqualified."
+  },
+  "controls": {
+    "seeds": [
+      20271001,
+      20271002,
+      20271003,
+      20271004,
+      20271005
+    ],
+    "worlds": [
+      "stable",
+      "drift",
+      "birth",
+      "death",
+      "split",
+      "merge",
+      "proximity"
+    ],
+    "n": 200,
+    "dimensions": 5,
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "modes": [
+      "oracle",
+      "unsupervised"
+    ],
+    "margin_factors": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "generator": "one fixed point bank per seed/world; literal union/repartition at month14 split/merge; fixed member IDs, no redraw; otherworld deterministic changes; same fixed anisotropic transform",
+    "point_conservation": "split and merge every point coordinate byte-exact across all months; labels alone repartition or union",
+    "truth_events_2024_only": true,
+    "required_history_outputs": [
+      "label-histories.json:70exactseed/world/mode full24x200labels",
+      "tracker-region-histories.json:210config/full24monthregion geometry/status/identity",
+      "tracker-events.json:210config fullM2+M3events with savedmargin/overlap",
+      "world-hashes.json:35fullpointcube and truth ontology hashes"
+    ]
+  },
+  "error_budget": {
+    "applies_to": "primary Mfactor1 separately for oracle AND unsupervised; both must pass to report technical synthetic acceptance",
+    "recognition_FDR_max": 0.01,
+    "recognition_FNR_max": 0.05,
+    "coverage_min": 0.95,
+    "event_FDR_max": 0.05,
+    "event_FNR_max": 0.1,
+    "stable_drift_proximity_split_merge_false_events_max": 0,
+    "confidence": "pooled empirical counts for this fixed suite; report bootstrap intervals descriptively, not population control",
+    "sensitivity": "all factors reported; sensitivity failures prevent robustness claim but do not permit selecting alternateM",
+    "NA": "any primary rate denominator0 or missing configs yields INCONCLUSIVE, never PASS"
+  },
+  "report_rules": {
+    "ARI_NMI": "saved exact territory join adjacent months; no new clustering",
+    "recognition_fraction": "recognised continuing+reemergence region decisions / all postinitial region decisions; separate MOweighted ratio",
+    "lifespan": "observed span + occupied months + censored flags; unidentified ambiguous clusters excluded explicitly",
+    "spec_gap": "classify saved events overlap>=T AND margin<=M for previous strict tracker; conflicts explicit, missing fields UNKNOWN",
+    "M3": "separate M3-only from combined birth/death events; sensitivity matched rates UNKNOWN if absent",
+    "unqualified": "All full mask remains calibration_unknown; raw geometric M3 candidates separately unqualified, never economic/scientific PASS; event truth misses retained and no-prediction FDR null"
+  },
+  "execution_plan": {
+    "none_now": true,
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "output_bytes": 268435456,
+    "free_bytes": 1073741824,
+    "future_stages": [
+      "component fixtures after protocol freeze",
+      "F7b adoption and independent code review",
+      "single full1896x24 monthly fit/calibration/replay with changed method new namespace",
+      "single complete210config point-conserving bank both modes with new calibration"
+    ],
+    "wall_budget": "4200s conserved across startup/probe/fullreal/full210bank/finalization; proposed, requires independent accepted operational guard; no run now",
+    "no_retargeting_or_repeat_until_PASS": true,
+    "scientific_pass": false
+  },
+  "implementation_revision": "v4.0.4-prospective",
+  "final_pre_test_freeze_utc": "2026-10-07T23:14:01.378653+00:00"
+}

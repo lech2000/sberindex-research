@@ -1,0 +1,135 @@
+{
+  "status": "SANITIZED_PUBLIC_RECEIPTS_NOT_RAW_PRIVATE_ARCHIVES",
+  "BASE": "6f3be20a398fb30486e576fa483be360598b031a",
+  "scope": "SOURCE/mock/one-synthetic-benchmark/operational recovery only; actual full225/scientific/resource PASS false",
+  "artifacts": [
+    {
+      "artifact": "e05-source-ack.json",
+      "raw_artifact_id": "e05-full-numeric-adapter-v2-atlas-review-20261008/SOURCE_ACK.json",
+      "raw_SHA256": "2171b26259df9f0b31e011e55310c711a99fcbe6ee255fde354d038d242044f8",
+      "published_SHA256": "2171b26259df9f0b31e011e55310c711a99fcbe6ee255fde354d038d242044f8",
+      "raw_bytes": 2562,
+      "published_bytes": 2562,
+      "transformation": "ParsedJSON reserialization; no fields removed"
+    },
+    {
+      "artifact": "e05-post-adoption.json",
+      "raw_artifact_id": "e05-full-numeric-adapter-v2-post-adoption-20261008/POST_ADOPTION.json",
+      "raw_SHA256": "7229eac21cd11c9d2f061adcd65807532051d6d66c4d976bc2cafdcd65ac33d2",
+      "published_SHA256": "7229eac21cd11c9d2f061adcd65807532051d6d66c4d976bc2cafdcd65ac33d2",
+      "raw_bytes": 986,
+      "published_bytes": 986,
+      "transformation": "ParsedJSON reserialization; no fields removed"
+    },
+    {
+      "artifact": "e05-sw-benchmark-result.json",
+      "raw_artifact_id": "e05-v2-one-synthetic-sw-profile-20261008/RESULT.json",
+      "raw_SHA256": "5649c286fef1ebf7485a9df9bebeed80ddcc1b3d3fc95de432ce97dc3bcf0e72",
+      "published_SHA256": "475952521a4b44c1a25ed5da12944bd7a4825e903a1f75244c298379694cad3d",
+      "raw_bytes": 1328,
+      "published_bytes": 1269,
+      "transformation": "ParsedJSON reserialization; remove_runtime_process_ids"
+    },
+    {
+      "artifact": "e05-sw-benchmark-receipt.json",
+      "raw_artifact_id": "e05-v2-one-synthetic-sw-profile-20261008/POST_RECEIPT.json",
+      "raw_SHA256": "8a526c15a5ae3c351f02b290ef50d321b1301e962f689b8b0e850f3378cdbd48",
+      "published_SHA256": "2734fd4bb422775d761db4a7433e8431e4c72b1faaf423bafff32c2294f652a0",
+      "raw_bytes": 204,
+      "published_bytes": 214,
+      "transformation": "ParsedJSON reserialization; no fields removed"
+    },
+    {
+      "artifact": "a7-stage-post-adoption.json",
+      "raw_artifact_id": "a7-shell-stage-diagnostics-f7b-adoption-20261008/POST_ADOPTION.json",
+      "raw_SHA256": "c72e996e206416340d268cc573ef8e16fb2fd5db8a6037d602904da3482fee8c",
+      "published_SHA256": "c72e996e206416340d268cc573ef8e16fb2fd5db8a6037d602904da3482fee8c",
+      "raw_bytes": 328,
+      "published_bytes": 328,
+      "transformation": "ParsedJSON reserialization; no fields removed"
+    },
+    {
+      "artifact": "a7-wrapper-result.json",
+      "raw_artifact_id": "a7-one-wrapper-stage-observation-20261008/RESULT.json",
+      "raw_SHA256": "d0a3d2405bb2a5eb0e6959725b8ef3a229e51cfe5bdee33b14ac992dedd6ad11",
+      "published_SHA256": "86b45a5d6311885a31156cf96684b9c0e4cf6a52dba0e53047720ced6f342790",
+      "raw_bytes": 6559,
+      "published_bytes": 6369,
+      "transformation": "ParsedJSON reserialization; remove_runtime_process_ids"
+    },
+    {
+      "artifact": "a7-wrapper-receipt.json",
+      "raw_artifact_id": "a7-one-wrapper-stage-observation-20261008/POST_RECEIPT.json",
+      "raw_SHA256": "5b9d14d94e0a87fb0149dda92108a2fe54aae79e36ad5d77dd79097b5bbed2f4",
+      "published_SHA256": "877e41de7032cadf94a387875da668b591e0912deb136f356508bd0decf68b7c",
+      "raw_bytes": 198,
+      "published_bytes": 208,
+      "transformation": "ParsedJSON reserialization; no fields removed"
+    },
+    {
+      "artifact": "case-counts.json",
+      "raw_artifact_id": "sberindex-database-recovery-actual-20261008/CASE_SUMMARY.json",
+      "raw_SHA256": "6a3f6da1ae48389b471de0db1f7a4272a89e83d517faca342e0a70b9b56e53ba",
+      "published_SHA256": "da377781d973cd5c811c1918e106d5c2807ed797283e9e4dc05604f90bd7f824",
+      "raw_bytes": 456,
+      "published_bytes": 417,
+      "transformation": "ParsedJSON reserialization; counts_only"
+    },
+    {
+      "artifact": "database-recovery.json",
+      "raw_artifact_id": "sberindex-database-recovery-actual-20261008/RECOVERY_PROBES.json",
+      "raw_SHA256": "2cc512e53bedefd8eb527ae36ed7549cf3d1a18d0985952338e0082b3c9d6018",
+      "published_SHA256": "7e553b4516759d26b217b473a3fa82240098d0d35bf9653876c70439a46bec90",
+      "raw_bytes": 824,
+      "published_bytes": 434,
+      "transformation": "ParsedJSON reserialization; recovery_status_only"
+    },
+    {
+      "artifact": "e05-adoption-source-pins.json",
+      "raw_artifact_id": "e05-full-numeric-adapter-v2-f7b-adoption-20261008/candidate.json",
+      "raw_SHA256": "024d4dadde1d5ba895bcef9b2730dff4ef51674d9c83cfa0eefca547ec4dc634",
+      "published_SHA256": "9f12ba6abc720e88eb058a1c53b821b8aa9be3478f362928fb5fc3dd8086559c",
+      "raw_bytes": 1971,
+      "published_bytes": 1207,
+      "transformation": "ParsedJSON reserialization; source_pins_only"
+    },
+    {
+      "artifact": "a7-adoption-source-pins.json",
+      "raw_artifact_id": "a7-shell-stage-diagnostics-f7b-adoption-20261008/candidate.json",
+      "raw_SHA256": "4716e7ba4c86a5e2b861e7509ddfa6fe8709703c281a3c049b0824e6d22f4d98",
+      "published_SHA256": "5d9dcdc764197ff3cb9d8b54567971794a9de17843c847bb6f6e76d70fe83d39",
+      "raw_bytes": 1526,
+      "published_bytes": 764,
+      "transformation": "ParsedJSON reserialization; source_pins_only"
+    },
+    {
+      "artifact": "progress-baseline-20261007.json",
+      "raw_artifact_id": "Git BASE:agents/progress.json",
+      "raw_SHA256": "fc9c050e88aafc3176af7de9a0124264ee30d03a097739a9e9f01bd879c1eb44",
+      "published_SHA256": "024ece2c97538b0abd649fe899e612bb8b6c298dfddc91beab083216f8bbb36f",
+      "raw_bytes": 17453,
+      "published_bytes": 17453,
+      "transformation": "Parsed historical JSON; host operational paths redacted; all scientific/runtime values and current-count history otherwise retained. Raw original preserved in Git BASE."
+    }
+  ],
+  "later_KB_receipts": [
+    {
+      "KB": [
+        "74/17537",
+        "77/17538"
+      ],
+      "fulltext_readback_SHA256": "dc3dea4276e0462cbd00f17bbf1ee78437670bf17ba275eaf6d347428ccf0125",
+      "checked_at_utc": "2026-10-08T12:51:00Z",
+      "authority": "Root readback supplied; not independently re-read by this docs-only task."
+    },
+    {
+      "KB": [
+        "75/17539",
+        "74/17540",
+        "77/17541"
+      ],
+      "fulltext_SHA256": "d93a9a96b40b98a124cf68437a543b968648ce5f1e2fb09d433ef3ecc6f6209a",
+      "authority": "Root clarification supplied; not independently re-read by this docs-only task."
+    }
+  ]
+}

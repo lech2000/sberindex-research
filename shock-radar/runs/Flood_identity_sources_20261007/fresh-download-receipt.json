@@ -1,0 +1,42 @@
+{
+  "status": "ORIGINAL_ACT_HASHES_VERIFIED",
+  "files": [
+    {
+      "id": "4500202105140001",
+      "sha256": "962e9c6f14ff9c319b9cb34a9eb90a99c8db15a41a47d6435e0953791d7aca22",
+      "bytes": 353270,
+      "reused": false
+    },
+    {
+      "id": "4500202106290003",
+      "sha256": "38db83dc79024d0178a315a1e95e8ac123442bbd5ebebae2f4063a078530bb42",
+      "bytes": 309066,
+      "reused": false
+    },
+    {
+      "id": "4500202112140004",
+      "sha256": "0939ab8517c3bd175a0a1daa0321980409fba43498e0992aa2b2069d7d051c8f",
+      "bytes": 237914,
+      "reused": false
+    },
+    {
+      "id": "4500202112300016",
+      "sha256": "268dccee833af5f18983b16d965ee9f49fa5fc591d8df4222daeb2104b445cba",
+      "bytes": 317574,
+      "reused": false
+    },
+    {
+      "id": "4500202203050015",
+      "sha256": "4d671d10867e04716825d7bac5bb15971f17a35235b4809d9c6da6063fb8eac2",
+      "bytes": 369506,
+      "reused": false
+    },
+    {
+      "id": "4500202212300011",
+      "sha256": "6496cae0d63f0030ed5c9576182fa3f48e25683b2fdfbf6a382c8b4e9d07ae78",
+      "bytes": 264097,
+      "reused": false
+    }
+  ],
+  "crosswalk_approved": false
+}

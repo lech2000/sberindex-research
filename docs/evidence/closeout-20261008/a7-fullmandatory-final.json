@@ -1,0 +1,65 @@
+{
+  "state": "FULL_MANDATORY_NOT_ACCEPTED",
+  "anchor_utc": "2026-10-08T06:33:41.773029+00:00",
+  "original_terminal_SHA256": "149aa9fef72db21720e11d49b58a247a70c98aa7dff9a241086a248493245331",
+  "base": "ef6e240599993754b7acfd74e10c2ba24a92a1ed",
+  "head": "f299a6674c010d12ca371d479c741ceb319df1a9",
+  "tree": "214cd0aa87be86ef6e1687971d5f677e3b44c398",
+  "native_runs": [
+    {
+      "suite": "privacy-db",
+      "exit_code": 0,
+      "counts": {
+        "tests": 439,
+        "passed": 439,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "suite": "release-runner",
+      "exit_code": 124,
+      "counts": {}
+    },
+    {
+      "suite": "review-contract",
+      "exit_code": 0,
+      "counts": {
+        "tests": 125,
+        "passed": 125,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "suite": "frontend-agent-ux",
+      "exit_code": 124,
+      "counts": {}
+    },
+    {
+      "suite": "technical-documents",
+      "exit_code": 0,
+      "counts": {
+        "tests": 78,
+        "passed": 78,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "native_receipt_SHA256": "14573b3e13eb0df5fd5c14b5d89c13228aec55ca06c8d1a71427d6b79a66b94d",
+  "native_run_exit": 1,
+  "native_verify_exit": null,
+  "clean_after": true,
+  "source_checkout_clean_after": true,
+  "paid_Muse_model_prod_calls": 0,
+  "release_authorized": false,
+  "actions_closed": 0,
+  "pg_stop_exit": 0,
+  "postmaster_pid_file_absent": true,
+  "finished_at_utc": "2026-10-08T07:31:00.025405+00:00",
+  "whole_elapsed_s": 3438.266012874985
+}

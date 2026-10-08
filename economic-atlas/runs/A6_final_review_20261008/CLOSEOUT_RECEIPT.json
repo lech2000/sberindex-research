@@ -1,0 +1,36 @@
+{
+  "source_action": "act_c475e17b2a584b9a",
+  "case_id": "case_66cae4a89ba6473f",
+  "done": true,
+  "checked_at_UTC": "2026-10-08T02:50:45.270942+00:00",
+  "technical_status": "COMPLETED_FINITE_INVESTIGATION_ROOT_ACCEPTED_CASE_CLOSED",
+  "method_result": "DESCRIPTIVE_NEGATIVE_LIMITED",
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "causal_pass": false,
+  "material_id": "mat_a6_final_review_20261008_v1",
+  "full_material_readback": true,
+  "material_text_SHA": "537ceaecc744e0142766f577c63ea89ca8a6024d12ae867bde39c5600a1034ee",
+  "registered_GATE_SHA": "a7f93ba15c3d7fceb11a0d527718ffda1750c8735fcea41d04ed0a4a363a4df1",
+  "KB": {
+    "corpus": 75,
+    "document_id": 17400
+  },
+  "case_counts_asof_actual_readback": {
+    "total": 39,
+    "done": 30,
+    "open": 9
+  },
+  "source_what_SHA": "1eacd9a14f93532ee5eb37af15f6f9622e51a5b346930c6b027e0429f6bfd93c",
+  "source_scope_SHA": "3b8e244b49b97a44c923292551edbe5055d6fd5a00eec39a7b270c9ea65660a8",
+  "root_reviewed_at_UTC": "2026-10-08T02:48:23.333313+00:00",
+  "public_evidence_commit": "f20ea51f33a27ff8ab6be162b83ca8037d61e2b3",
+  "F7b_artifact_receipt_SHA": "cd656c1d37abd8d42585ff460d740e4bfc0fa5cc0b69e4a2a18b02616d698924",
+  "actual_closure_receipt_SHA": "11ae23fc34e369eb978d8afe0964287611e186a9ad8538a44c82f534d0f6fb36",
+  "independent_source_review_REPORT_SHA": "b6fc3695b356ee14fc7fa7c99feedc45296b2312e7ef13d89ad2345e40de32f8",
+  "independent_source_review_MANIFEST_SHA": "460f2adc3a58acd74b1b062f32b76e21144bb5b3752c2c0e178f19f81d130b80",
+  "public_metrics_SHA": "50b6f025462c452b1b62df747c029d4207dcf693f60b3dc00d65201b177f3f6a",
+  "A6_3_OPEN": true,
+  "E05_OPEN": true,
+  "supersedes": "Only earlier proposed/not-applied source-closeout status. Frozen method conclusions, old PARTIAL history, scientific results and all original files remain unchanged. Registered pre-close GATE retained its then-current source_action_closed=false; this fresh actual case readback records DONE."
+}

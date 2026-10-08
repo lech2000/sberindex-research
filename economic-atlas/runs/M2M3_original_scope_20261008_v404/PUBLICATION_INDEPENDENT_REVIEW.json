@@ -1,0 +1,75 @@
+{
+  "verdict": "SCIENTIFIC_EDITORIAL_PUBLISHABILITY_PASS_WITH_DISCLOSED_NEGATIVE_RESULT",
+  "reviewed_at_UTC": "2026-10-08T00:43:30.520767+00:00",
+  "publication_manifest_SHA": "de70c6d616583e36067219632c7f937f836821bdceb9446a2b141490518b1d69",
+  "seven_manifest_payloads_SHA_bytes_match": {
+    "A6.3_OLD_NEGATIVE_RESULT.json": true,
+    "CLOSEOUT_STATUS.json": true,
+    "GATE_REPORT.json": true,
+    "INDEPENDENT_REVIEW.md": true,
+    "README.md": true,
+    "SOURCE_SHA_INVENTORY.json": true,
+    "metrics.json": true
+  },
+  "payload_bytes": 28270,
+  "actual18_SHA_match": {
+    "bank/world-hashes.json": true,
+    "bank/metrics.json": true,
+    "bank/label-histories.json": true,
+    "bank/events.json": true,
+    "bank/months.json": true,
+    "bank/tracker-events.json": true,
+    "bank/protocol.json": true,
+    "bank/k-grid.json": true,
+    "bank/tracker-region-histories.json": true,
+    "bank/truth.json": true,
+    "bank/runs.json": true,
+    "real/metrics.json": true,
+    "real/regions.csv": true,
+    "real/calibration.json": true,
+    "real/k_grid.csv": true,
+    "real/manifest.json": true,
+    "real/assignments.parquet": true,
+    "real/events.csv": true
+  },
+  "six_summaries_and_acceptance_match_actual": true,
+  "all_thresholds_exact_and_separate_oldA63": true,
+  "real_counts_exact_43_1_2_M3zero": true,
+  "saved_geometry_constancy_records": 10,
+  "oracle_primary": {
+    "recognition": 1850,
+    "events_TP": 50,
+    "events_FP": 0,
+    "events_FN": 0
+  },
+  "unsupervised_primary": {
+    "recognition_TP": 1585,
+    "recognition_FP_unknown": 165,
+    "recognition_FN": 265,
+    "events_TP": 10,
+    "events_FP": 0,
+    "events_FN": 40
+  },
+  "scientific_budget": "FAIL",
+  "technical_source_actions_done": true,
+  "atlas_asof_readback": {
+    "done": 28,
+    "total": 39,
+    "UTC": "2026-10-08T00:31:32.828986+00:00"
+  },
+  "economic_identity_pass": false,
+  "independent_economic_holdout": false,
+  "publication_performed": false,
+  "new_experiment_model_native_process_fit_calls": 0,
+  "candidate_files_changed": false,
+  "nonblocking_editorial_note": "Public CLOSEOUT_STATUS omits overall28/39 although its referenced immutable source CASE_CLOSEOUT records it. If included, label historical00:31:32UTC, never imply wholecase complete.",
+  "limits": [
+    "Oracle truth-assisted input; 50 events include births/disappearances, only30 geometry M3 primary matches",
+    "FDR9.4286% FNR14.3243% eventFNR80% fixed unsupervised FAIL; no alternativeM selection",
+    "Same observed-input counterfactual proves conditional nonidentifiability; does not prove fixedbank stableworld coordinates identical or universal clustering failure",
+    "Latent split/merge10 cubes constant across24months; no real locale economic birth/death assertion",
+    "2023 pooled fit/calibration retrospective;2024 not independent economic holdout",
+    "No retrospective A6.3 PASS or threshold improvement",
+    "Rights/distribution approval and actual publication remain parent separate gate"
+  ]
+}

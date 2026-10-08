@@ -1,0 +1,15 @@
+# E05 independent full-bank numeric adapter — source candidate, 2026-10-08
+
+This candidate supplies the missing concrete read-only I/O bridge. The frozen E05 method, generator, arms, K, seeds, thresholds and 225-cell scope remain unchanged. It checks all 10,238,400 full status rows through the pinned V5 validator, then independently reconstructs shared spending coordinates, normalized A5 geography and fixed control truth. Each computed cell binds verified assignment/summary bytes and full keys. Missing and unknown evidence remains explicit.
+
+The independent scalar auditor remains the formula reference. Only two coordination functions receive an explicit quality backend argument. The new lazy NumPy backend computes the same formulas in blocks of 32, including the frozen pair_union density convention. It calls no author metrics, sklearn, model or generator. Tiny numerical fixtures are not a full-bank acceptance receipt.
+
+Control truth is independently derived from the exact frozen parity/mover/shift definition. The original executor did not persist raw X/truth tensors. Derived truth hashes establish the independent reconstruction, **not** equality to a nonexistent historical capture. The seed/noise/separation/protocol/source bindings remain required. Initial assignment ties abstain; SciPy tie equivalence is unverified.
+
+Actual full-size time, memory and I/O cost are UNKNOWN. The 15,018,405,600 ordered distance evaluations are a structural workload count, not an elapsed-time prediction. One dense float64 geography is 28,758,528 bytes; Python/Arrow/workspace and temporary arrays are additional and unmeasured. Admission must bind an independently qualified original clock/guard and prospective resource freeze. No actual bank evaluation, calibration, fits, lease or process is performed by this package. Public execution always refuses. Library callbacks require trusted root qualification and provide no standalone security authority.
+
+The adapter writes no bank files and rehashes manifested inputs after evaluation. Outer lifecycle, one-use authority, source registration, independent full-size resource qualification and final receipt/output enforcement belong to a future accepted guardian. They cannot be inferred from tiny tests. No source action closes from this source packet; scientific, economic and formal-promise PASS remain false. Existing M4/A63/A7/R13 keys and evidence remain untouched.
+
+## V2 correction after independent V1 NO_GO
+
+The initial manifest, registry, territory universe and paired-comparison bytes and immutable stat are pinned before validation; all four must remain identical after validation and numerical callbacks. Results return that original manifest hash. No rebinding is allowed. S_Dbw now uses the already accepted independent scalar implementation, preserving fsum and the exact inclusive-radius boundary count. This is not the author metric implementation. Blocked NumPy SW remains. Derived tensor hashes explicitly do not verify nonexistent legacy raw captures. Original V1 packet and independent NO_GO remain preserved.

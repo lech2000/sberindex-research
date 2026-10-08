@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-08T11:11:54+00:00",
+  "source": "readonly CLI source/artifact and full KB text readbacks; original receipt retained separately",
+  "cli_revision": "96d1fa3ff4d258390cfb702c9b69c0f5a9a70507",
+  "kb_readbacks": [
+    {
+      "checked_at_utc": "2026-10-08T11:11:54.493443+00:00",
+      "corpus_id": 74,
+      "document_id": 17513,
+      "full_readback": true,
+      "SHA256": "91bf2b26a323c02eb8fbd043bb4a22f1924c3e41a7647e02c032e9b2a4cb5aac"
+    },
+    {
+      "checked_at_utc": "2026-10-08T11:11:54.539639+00:00",
+      "corpus_id": 75,
+      "document_id": 17514,
+      "full_readback": true,
+      "SHA256": "91bf2b26a323c02eb8fbd043bb4a22f1924c3e41a7647e02c032e9b2a4cb5aac"
+    },
+    {
+      "checked_at_utc": "2026-10-08T11:11:54.583710+00:00",
+      "corpus_id": 76,
+      "document_id": 17515,
+      "full_readback": true,
+      "SHA256": "91bf2b26a323c02eb8fbd043bb4a22f1924c3e41a7647e02c032e9b2a4cb5aac"
+    },
+    {
+      "checked_at_utc": "2026-10-08T11:11:54.631295+00:00",
+      "corpus_id": 77,
+      "document_id": 17516,
+      "full_readback": true,
+      "SHA256": "91bf2b26a323c02eb8fbd043bb4a22f1924c3e41a7647e02c032e9b2a4cb5aac"
+    }
+  ],
+  "api_snapshots": {
+    "dates": [
+      "2026-09-20",
+      "2026-10-08"
+    ],
+    "rows": 303126,
+    "series": 13140,
+    "categories": 6,
+    "first_month": "2023-01",
+    "last_month": "2024-12",
+    "identical_after_key_sort": true,
+    "new_months": 0,
+    "current_retrieval_available_at": "2026-10-08T10:23:54.010314+00:00",
+    "original_historical_published_at_confirmed": false
+  },
+  "availability_audit_SHA256": "1ac7dac65b31b2a4e2338af847039304d94f80e600a39f76102ea3baa5babcab",
+  "prospective": {
+    "protocol_SHA256": "9a0483acb55e9c3433e6fa449374c61c42523b76d9254e9a3af699b139b126ec",
+    "sealed_at_utc": "2026-10-08T10:29:34.739445+00:00",
+    "status": "PREREGISTERED_AWAITING_DATA",
+    "horizon": 1,
+    "target_months": [
+      "2026-11",
+      "2026-12",
+      "2027-01",
+      "2027-02",
+      "2027-03",
+      "2027-04"
+    ],
+    "initial_common_forecasts": 0,
+    "eligible_series_maximum": 13140,
+    "window_executed": false,
+    "collection_timer_configured": false,
+    "current_contest_independent_result_available": false
+  },
+  "scientific_pass": false,
+  "native_scientific_actions_closed": 0,
+  "raw_source_rows_published_here": false,
+  "CLI_branch_merged_here": false
+}

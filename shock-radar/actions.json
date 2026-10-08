@@ -1,144 +1,525 @@
 [
   {
-    "what": "01. Проверить условия двух заявок, участников, время закрытия и наличие точного baseline организатора.",
-    "due": "2026-09-21T18:00:00+03:00",
-    "depends_on": [],
-    "done": false,
-    "status": "skipped",
-    "user_action": "Пропущено по решению владельца 21.09: baseline организатора не запрашиваем; собственный Prophet за эталон не выдаём."
-  },
-  {
-    "what": "02. Получить расходы и паспорт данных; зафиксировать частоту, даты публикации, vintage и географию.",
-    "due": "2026-09-22T18:00:00+03:00",
-    "depends_on": [
-      "01"
-    ],
-    "done": true,
-    "status": "completed",
-    "user_action": null
-  },
-  {
-    "what": "03. Утвердить as-of протокол, train/validation/test, горизонты и маски; выполнить F01/F02 с MAE.",
-    "due": "2026-09-23T18:00:00+03:00",
-    "depends_on": [
-      "02"
-    ],
-    "done": true,
-    "status": "completed",
-    "user_action": null
-  },
-  {
-    "what": "04. Реализовать F03 и общий evaluator: одинаковые окна, MAE/R², разрезы МО и горизонтов.",
-    "due": "2026-09-25T18:00:00+03:00",
-    "depends_on": [
-      "03"
-    ],
-    "done": true,
-    "status": "completed",
-    "user_action": null
-  },
-  {
+    "id": "act_0c71cedc50ad4508",
     "what": "05. Выполнить F04 Chronos-2 с ревизией и замером ресурсов; F05 TimesFM только при запасе времени.",
-    "due": "2026-09-27T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-27T15:00:00Z",
+    "waiting_for": "После пунктов 04",
+    "done": false,
     "depends_on": [
       "04"
     ],
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_16ce6d42a8534f00",
+    "what": "MANUAL конкурс: уточнить у организатора две заявки одной команды, точный час/часовой пояс закрытия 09.10.2026 и наличие опубликованных baseline-кода/прогнозов. Остальные условия проверены по официальной странице, KB74/14906. Не блокирует R9/аудит данных.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-01T15:00:00Z",
+    "waiting_for": "Письменный ответ организатора или опубликованный URL; указать дату и источник.",
     "done": false,
-    "status": "planned",
-    "user_action": null
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
-    "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
-    "due": "2026-09-28T18:00:00+03:00",
-    "depends_on": [
-      "03"
-    ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
-  },
-  {
-    "what": "07. Сравнить D01–D03: порог, CUSUM/Page-Hinkley и Bayesian online; измерить ложные тревоги и задержку.",
-    "due": "2026-09-28T18:00:00+03:00",
-    "depends_on": [
-      "06"
-    ],
-    "done": true,
-    "status": "completed",
-    "user_action": null
-  },
-  {
-    "what": "08. R8 исследование завершено INCONCLUSIVE / NO SCIENTIFIC PASS: 171150 парных прогнозов; Prophet MAE 731.386, Chronos 939.062, lastavailable 880.213. Временные интервалы включают ноль, новости as-of 0/64, historical available_at неизвестен. Без заявлений prospective win / historical as-of / early warning. Доказательства: runs/R8_closeout_20260929, PR #4, KB76/14696, дело Radar mat_2d253279ee6740c0; исходный act_70e2fe4a16ac4e3d done=true.",
-    "due": "2026-09-30T18:00:00+03:00",
-    "depends_on": [
-      "04"
-    ],
-    "done": true,
-    "status": "completed",
-    "user_action": null,
-    "waiting_for": "R9: новый независимый временной holdout и подтверждённый historical available_at/vintage; прежние тестовые месяцы не считать закрытым тестом."
-  },
-  {
+    "id": "act_af3ef33f2761488e",
     "what": "09. Выполнить W01 и A01: ранние предупреждения, отрицательные контроли, bootstrap и консервативные лаги публикаций.",
-    "due": "2026-10-02T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-02T15:00:00Z",
+    "waiting_for": "KB76/16980:N3выполнен136512rows/60fits,proxyh1+3.91%MAE;strict0/6. N1/N2DONE:480runs/freshmake/audit. RealW01/asofvintageOPEN;неповторятьэтиопыты. СледующийP0RAG/публикация/доступ.",
+    "done": false,
     "depends_on": [
       "05",
       "07",
       "08"
     ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
+    "id": "act_febbbf8723e94197",
     "what": "10. Зафиксировать выбор модели, затем однократно открыть финальный тест; сохранить все отрицательные результаты.",
-    "due": "2026-10-03T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-03T15:00:00Z",
+    "waiting_for": "После пункта 09 И только при новом независимом временном holdout и подтверждённом историческом available_at/vintage; R8 завершён inconclusive, прежние месяцы не считать закрытым тестом.",
+    "done": false,
     "depends_on": [
       "09"
     ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
+    "id": "act_e9f99bf520984925",
+    "what": "R9.NATIONAL-CONTROL-20261005: Проверить исторические выпуски consumer-spending к origins2023-07..12 и контроль Prophet с той же national information. До расчётов заморозить протокол; future national regressor прогнозировать из past, не брать actual future. Сохранить все категории, включая отрицательные маркетплейсы. Без historic vintage сообщить NO_HISTORICAL_ASOF, не закрывать научный шлюз. Результат — GATE_REPORT и квитанция corpus76, кодовые задачи через F7b.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-06T12:00:00Z",
+    "waiting_for": "Equalinfoпилотготов06.10:2160fits/720keys,MAE679,746vs1707,224;KB76/16936,publicreport. Историческийavailable_at/vintageНЕподтверждён: NO_HISTORICAL_ASOF;остаётсяэтачасть,неповторятьfits. НаучныйPASSfalse.",
+    "done": false,
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_398bedb2669a4e2a",
+    "what": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-09T09:00:00Z",
+    "waiting_for": "KB76/17087:source12DONE;885файлов вделе. Владелец выбирает одно направление, доступжюри кPRIVATE-коду,личные поля/согласия иотправляет. PDF:9.10включительно,точныйчаснеуказан. Квитанцииподачинет.",
+    "done": false,
+    "depends_on": [
+      "13"
+    ],
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_906d8781db364e7b",
+    "what": "MANUAL R9: запросить у организаторов помесячные расходы МО за 2025–2026 (territory_id, месяц, категория, значение, единица, признак пропуска), исторические снимки и журнал выпусков (published_at/available_at с часовым поясом, revision/vintage/хеш), версии справочника territory_id→ОКТМО и правило лага. Готовый текст: GitHub data/REQUEST_SBERINDEX_VINTAGES_20260930.md. Если архива нет — письменное подтверждение и календарь будущих публикаций; начать проспективный архив. Не открывать R9 на старом тесте.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "Ответ/архив СберИндекса либо письменный отказ; приложить к делу Radar с источником, датой, условиями использования и SHA-256.",
+    "done": false,
+    "depends_on": [],
+    "status": "open",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_bdea61c257a743a1",
+    "what": "02. Получить расходы и паспорт данных; зафиксировать частоту, даты публикации, vintage и географию.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-22T15:00:00Z",
+    "waiting_for": "После пунктов 01",
+    "done": true,
+    "depends_on": [
+      "01"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_c1330f9689714465",
+    "what": "03. Утвердить as-of протокол, train/validation/test, горизонты и маски; выполнить F01/F02 с MAE.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-23T15:00:00Z",
+    "waiting_for": "После пунктов 02",
+    "done": true,
+    "depends_on": [
+      "02"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_bdb1c7173f384a95",
+    "what": "04. Реализовать F03 и общий evaluator: одинаковые окна, MAE/R², разрезы МО и горизонтов.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-25T15:00:00Z",
+    "waiting_for": "После пунктов 03",
+    "done": true,
+    "depends_on": [
+      "03"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_3216c90520cf485a",
+    "what": "ATF-M6. Проверка утечек кодом: assert available_at ≤ origin на каждом join признаков (лаги, rolling, календарь, новости) в F03 и детекторах; скачущие связи — искать общий источник в коде признаков. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+    "owner": "",
+    "due": "2026-09-26T15:00:00Z",
+    "waiting_for": "",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_24f1b02785b349d7",
+    "what": "06. Подготовить независимый журнал событий, правила matching/cooldown и синтетические проверки.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-28T15:00:00Z",
+    "waiting_for": "KB76/17163: 06 выполнен: журнал6событий/5источников, matching/cooldown3 и синтетические проверки. Историческийasof0/6; W01 отдельно OPEN.",
+    "done": true,
+    "depends_on": [
+      "03"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_75836e1bc8f94869",
+    "what": "07. Сравнить D01–D03: порог, CUSUM/Page-Hinkley и Bayesian online; измерить ложные тревоги и задержку.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-09-28T15:00:00Z",
+    "waiting_for": "После пунктов 06",
+    "done": true,
+    "depends_on": [
+      "06"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_dd090deaf69340b0",
+    "what": "ATF-N1/N2. К H4: спектральное/метастабильное раннее предупреждение не делать (24 точки — вне рабочего режима); оставить порог/CUSUM/BOCPD. Добавить синтетический ряд «режим 1→2→1» как положительный контроль задержки детекторов. Метод: корпус 74, документ 13365 («СберИндекс 2026 — методы, перенесённые из ATF»).",
+    "owner": "",
+    "due": "2026-09-29T15:00:00Z",
+    "waiting_for": "KB76/17001:07.10N1/N2контроль1→2→1исполнен:480runs,entry82–92%,return1.5–3.5%;14400independentcredits/108CI;freshmake36metricsmatch. Oldparams/cooldown/cap;notrealearlywarning,scientificPASSfalse.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_70e2fe4a16ac4e3d",
+    "what": "08. R8 исследование завершено с итогом INCONCLUSIVE / NO SCIENTIFIC PASS: общая маска 171150; MAE Prophet 731.386, Chronos 939.062, lastavailable 880.213. Временные интервалы выигрыша включают 0; новости as-of 0/64, эффект NA; исторический available_at/vintage не подтверждён. Исключены claims prospective win, historical as-of и early warning. Доказательства: PR #4 (3f85724), corpus 76/14696, материал mat_2d253279ee6740c0. R9 только с новым независимым holdout и проверенным vintage.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-09-30T15:00:00Z",
+    "waiting_for": "R8 завершён как inconclusive, не PASS. R9: новый независимый временной holdout + подтверждённый historical available_at/vintage; прежние тестовые месяцы не переиспользовать как закрытый тест.",
+    "done": true,
+    "depends_on": [
+      "04"
+    ],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_880616ddfab644fb",
+    "what": "R9.4 ACCEL-20261003: выполнить ретроспективные парные month-block интервалы Prophet/last на полной общей маске 294570 строк, h1/3/6/12; self-check, исключения и фактический контракт. Ограничение: не новый holdout, scientific PASS false.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-03T00:00:00Z",
+    "waiting_for": "KB76/15845, self-check PASS, полный расчёт exit0. 222 exclusions. Новый независимый период здесь не проверяется.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_64b761f70c814f62",
+    "what": "INTEGRATION-20261003 ЦБ: отдельная ретроспективная USD/M2 абляция h1/h3 lag2/3 на одинаковых масках; сохранить отрицательный результат, не новый holdout.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-03T00:00:00Z",
+    "waiting_for": "KB76/15889: self-check/actualrunexit0; MAE +1.793%/+7.714% primary; historicalasof false.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_f284d635c6904e68",
+    "what": "R9.S1: точная проверка сезонной гипотезы категории, интервалы, без декабря и fixed ensemble; исходное окно exploratory.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-03T00:00:00Z",
+    "waiting_for": "KB76/16010;220962 exactpairs, MAE309.611/449.459/618.092, ensemblefixed;notindependentPASS.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_ef56ce4d8a454f57",
+    "what": "R9.E1: первичный официальный реестр 6 событий, 3 реальные истории, unchanged R7 bank на raw без инжектов и раздельный охват.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-03T00:00:00Z",
+    "waiting_for": "KB76/16011 и77/16013:completeddescriptive;negativebank;available/vintageNULL.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_bcc3ea5fde7c4a9d",
+    "what": "R9.S2: один сильный сезонный benchmark на точной подмаске R9; заранее задать отбор и регуляризацию короткой истории. Максимум 300 рядов и 3600 новых fits; использовать сохранённый Prophet.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-04T00:00:00Z",
+    "waiting_for": "KB76/16284: расчёт S2 выполнен120рядов/2640fits/errors0. Общая информация категории; R9h1/h3 лучше conditional yearly Prophet, h6CI через0; median3 почти равен. Оба окна, протокол и код508a83e. Exploratory, не full R9 PASS.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_e54f303e680649f2",
+    "what": "D04.C1 COMP-20261004: выполнить оригинальное сравнение covariance/energy/max/Stouffer/GLR на разнонаправленной синтетике; отдельная независимая калибровка и matched-null3%, реальные описательные случаи без scientific PASS.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-04T21:00:00Z",
+    "waiting_for": "KB76/16330:20seed×2families,allforms;matchedt5 .95375 vs .87675,max тоже Орск. Audits PASS; exploratory,не полный R9.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_dd0061431bb24c11",
+    "what": "R9.B1 COMP-20261004: сильные Growth1/Growth1–3/Conditional SES/Profile SES на сохранённых R9 ключах; общий120-рядный Prophet pilot и раннее окно, маски/CI/самопроверки без scientific PASS.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-04T21:00:00Z",
+    "waiting_for": "KB76/16331:common218202/220962,Profile299.96/408.88/591.97;pilot120 vs conditional yearly -26.08/-27.17/-17.51%;2340scalar/future,holdoutfalse.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_83638f26dd1e4fa5",
+    "what": "Совместный расчёт pre2023 сезонных отклонений и независимая численная сверка завершены",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-05T00:00:00Z",
+    "waiting_for": "KB75/16597, KB76/16599, KB77/16600; COMPUTED_EXPLORATORY,36строк,makeповторPASS; scientificPASS=false",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_b0fb2a4894954801",
     "what": "11. Наполнить шаблон реальными прогнозами, тревогами и 3–5 разборами, включая неудачи; разделить warning и detection.",
-    "due": "2026-10-05T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-05T15:00:00Z",
+    "waiting_for": "Публичная редакционная приёмка06.10 выполнена: source3af57bb,8URL HTTP200+exactSHA, карта/профили/3истории и переключатели проверены вбраузере; KB74/16757,75/16758,76/16759,77/16760. RAG/upload ещё отдельная приёмка, scientificPASS нет.",
+    "done": true,
     "depends_on": [
       "10"
     ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
+    "id": "act_d68aea4a7c6840d8",
+    "what": "Включить сезонные отклонения и плацебо совместного эксперимента в отчёт Радара",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-06T00:00:00Z",
+    "waiting_for": "KB75/16597, KB76/16599, KB77/16600; origin03.2024,профили2023. Разрывс10сопоставлениями описательный; все3города одного профиля. Только сборка/сверка,без новогоProphet.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_8a0815d5461f4745",
+    "what": "R9/Horizon audit по официальному конкурсу (KB74/14906, 14908): проверить выполнимость горизонтов 1/3/6/12 месяцев на фактическом окне муниципальных расходов янв 2023–дек 2024; для каждого h указать число rolling origins, train/test, MAE, baseline Prophet и невозможные оценки. Не переиспользовать данные R8 как независимый тест. Подготовить конкретный F7b запрос для обновления forecast_contract.yaml (сейчас proposed 1/2/3) и отчёт GATE_REPORT; код через fixar-devops.",
+    "owner": "sberindex_radar_researcher",
+    "due": "2026-10-07T00:00:00Z",
+    "waiting_for": "KB76/17163: Horizon audit h1/3/6/12 выполнен; маски/MAE/222exclusions проверены. F7b forecast_contract request и GATE_REPORT приняты. Vintage/holdout OPEN.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_e346385f69e54019",
     "what": "12. Подготовить русский отчёт, архитектуру, README, конфиги, ревизии весов и релиз-кандидат GitHub.",
-    "due": "2026-10-07T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-07T15:00:00Z",
+    "waiting_for": "KB76/17087:885 авторских файлов,4сводки/черновика вделе; полныйSHA/readback. PR24,код/README/конфиги/матрица собраны. source12технически DONE; scientificPASSfalse,доступжюри/подача14OPEN.",
+    "done": true,
     "depends_on": [
       "10",
       "11"
     ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
+    "id": "act_d0c376d044354f2e",
     "what": "13. Провести чистое воспроизведение и аудит утечек; проверить все ссылки и комплект по весам жюри.",
-    "due": "2026-10-08T18:00:00+03:00",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": "2026-10-08T15:00:00Z",
+    "waiting_for": "Выполнено06.10: свежийclone/2env,3make,SHA/эталоны/futureaudit,108HTTP/SHA; права/доступ проверены с оговорками. KB76/16899, mat_findings_closeout_20261006_radar. TechnicalPASS; научныйPASS/подача отдельно.",
+    "done": true,
     "depends_on": [
       "12"
     ],
-    "done": false,
-    "status": "planned",
-    "user_action": null
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   },
   {
-    "what": "14. Владелец: проверить итоговый пакет, отправить заявку и сохранить подтверждение до уточнённого времени закрытия.",
-    "due": "2026-10-09T12:00:00+03:00",
-    "depends_on": [
-      "13"
-    ],
-    "done": false,
-    "status": "planned",
-    "user_action": "Подача заявки — только владелец, до уточнённого времени закрытия; сохранить подтверждение отправки."
+    "id": "act_55a3701000d64d78",
+    "what": "R8.1 NEXT-20260927: построитьr8_prophet_batch.py сdurablecheckpointseries/origin,12366серий171150pairedточек; immutableinputs,rawhardcheck,available_at<=origin,lag2assumption,identicalmask,negativeoutcomeвалиден. F7bMiMoPro sber-r8-batch-next-20260927.service. Послеselfcheck—dryrun/resource estimate, затемboundedrealbatch; полныйR8OPEN.",
+    "owner": "",
+    "due": null,
+    "waiting_for": "F7b/code review и квитанция данных; безусловногоPASSнет",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_c1a737b389404635",
+    "what": "R8.2 NEXT: выполнить resumable Prophet batch1000 на фиксированной171150маске, проверить checkpoint/causality и сохранить фактическое покрытие. После — следующие батчи, полныйR8 не закрывать по частичному результату.",
+    "owner": "",
+    "due": null,
+    "waiting_for": "Batch1000 реально запущен27Sep17:08UTC наMac. R8.1инструментпроверен76/14188. Проверить batch1000-job.json/exit+metrics иactualforecastcount; потомresume. ПолныйR8OPEN.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_b8c32ef28bc34c59",
+    "what": "R8.3 NEXT: завершить полный resumable Prophet расчёт после1020fits, оставшиеся72504; проверить171150фактическихпрогнозов,контроли иfailures. НаучныйR8 не закрывать только по окончанию вычислений.",
+    "owner": "",
+    "due": null,
+    "waiting_for": "Полныйresume реально запущен27Sep17:13UTC наMac; full-resume-job.json вR8_batch_live_20260927. Проверитьexit,coverage,failures,independentMAE. Материалmat_sber_r8_batch1000_20260927.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_bc8df73f7c7244fb",
+    "what": "R9.TECH-20261005: Codex повторил R9/D04/R10/Floodpartial/D05 одним make radar; SHA пяти inputs, immutable snapshots, frozen references и future-invariance сверены; Prophet cache без refit. Квитанция Reproduction_20261005, KB76/16475. Scientific PASS false, большие R8/R9 остаются открыты.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_53b7a55d224f4607",
+    "what": "D01.JOINT-20261005: Codex проверил Stouffer/GLR в совместном многомерном банке при общем3% TESTnull FA и отдельной calibration. D05: t5 ramp44,525→72,40%; opposed91,65→71,30%. Все формы опубликованы, универсального улучшения нет. KB76/16476.",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_c89a633e1ec24761",
+    "what": "R8.4: проверить сезонные own-series контроли на точной171150маске, опубликовать5моделей/3h и ограниченный научный исход без изменения архивногоPASS.",
+    "owner": "",
+    "due": null,
+    "waiting_for": "Выполнено06.10:KB76/16819; owncommon170682,MAE518.16vs731.35, h3CIcross0; future852288/scalar341658; MiMo@5 finalv2accepted. СтарыйR8gatefalseunchanged.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_145b105e336548c5",
+    "what": "Дополнительное измерение06.10: вклад Радара в группы Атласа, одинаковые данные/маски/K, внешние зарплаты и занятость2025, протокол/все сравнения/аудит",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "Измерено на Mac:1248МО/70регионов;K2нет подтверждённого выигрыша;K5vsraw1,40/1,86%,ARI0,953vs0,517.8тестов/68256scalar/119808OOF. KB76/16922; новый makePASS. НаучныйPASSfalse; следующий шаг приёмка.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_8191987bc13a4341",
+    "what": "H12 equal-information pilot06.10: новый протокол,2160Prophetfits/720ключей,все категории и независимый численный аудит",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "Выполнено:protocol1e693afдоfits;0errors;MAE679,746vs1707,224;114МО/120рядов.8pytest/3600scalar/5MAE-CI. KB76/16936 и H12report. Marketplace−37,42%;NO_HISTORICAL_ASOF;SciencePASSfalse.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_6865953e56d84ec0",
+    "what": "Проверить зависимость результата H12 от агрегата и номинального масштаба рядов",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "Выполнено07.10:600ключей без агрегата, MAE−37,32%, normalized−44,12%;80/100wins;3новыхтеста. scale-sensitivity.json и публичный отчёт; post hoc, NO_HISTORICAL_ASOF.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
+  },
+  {
+    "id": "act_d25702a9a40f43c8",
+    "what": "Измерить ограниченную новостную абляцию на общей маске: строгая доступность, publication-proxy и поздние события",
+    "owner": "prn_fbab9aa00cd46169",
+    "due": null,
+    "waiting_for": "KB76/16980:N3выполнен07.10,60fits/136512rows,h1proxy+3.91%MAE,h3equal;strict0/6;futuretest/auditpassed. scientificfalse; realearlywarningOPEN.",
+    "done": true,
+    "depends_on": [],
+    "status": "completed",
+    "case_id": "case_008f37d03cf541e5",
+    "source_checked_at": "2026-10-07T14:34:03.234224+00:00",
+    "dependency_metadata": "Historical numeric-plan dependencies only; case-service does not expose a structured dependency DAG. Empty depends_on does not certify independence."
   }
 ]

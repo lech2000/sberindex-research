@@ -1,0 +1,34 @@
+{
+  "kind": "ONE_EXISTING_ATLAS_SUBMISSION_ARITHMETIC_AUDIT",
+  "recorded_before_arithmetic_utc": "2026-10-08T14:31:06.150372+00:00",
+  "entry_monotonic": 166923.193261416,
+  "wall_seconds": 300,
+  "RSS_limit_bytes": 1073741824,
+  "output_limit_bytes": 134217728,
+  "source_SHA": "0eab38289b92d84d51e211e7ec6e30bfb02a275d89088beab442f2f68cf7363d",
+  "input_pins": {
+    "docs/CONTEST_SUBMISSIONS_2026-10-08.json": "4b0d87e146f3bf8f2167320788952b46dac45552f2a93768be8598e91f0f784a",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.py": "2b7ba4d1f28ffedcebb720352aaa9bfab39267279c79984c8467df06d27626a7",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-municipalities.csv": "76fbc414582702a5ee09771473476e47275aafe57ab28f311c4930a34f6651bf",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-grid.csv": "8d4710427050d7c02239e831754d0708bb50eff123b1b972856cf013da7e17ed",
+    "economic-atlas/runs/Consumer_closeout_20261006/protocol.json": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/full-partitions.json": "2395f6dafbff470d334203d2ceb69e1124cf63ffdfc4431104eb066ebab7c15a",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/metrics.json": "e9be09c6933a4b6984a7ea314ed8eb107faf8c42f7e3c04c16e57625e46fce64",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/independent-audit.json": "c87f0b484a90d42f957c300f2180d5d84237b1ef891f35062e0e43931052f6b4",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/reproduction-receipt.json": "187177af909c6f2b5981b5b7ba41601ba016f5f2307156865cc42442c2cfa936",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/protocol.json": "b4f23bb321d7b24d8632e37e7aee7fc3127bef4868ef97b7408e5d24034f1125",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c"
+  },
+  "scope": [
+    "full1896x24x6 exactkeys positivefinite shares/separateAll, meanmonthly2023vs2024 marketplace/food claims",
+    "25original/9core at>=.8/45savedconfiguration table arithmetic; no rules recalibration",
+    "14unitinvariant partition and34944forecast claim rawread ifavailable elseUNVERIFIED_CURRENT_RAW"
+  ],
+  "no_retry": true,
+  "no_models_fits_recluster_worlds_bootstrap": true,
+  "no_subprocesses": true,
+  "tolerance": "raw counts exact; descriptive scalar medians abs1e-10; no lowered thresholds",
+  "scientific_pass": false
+}

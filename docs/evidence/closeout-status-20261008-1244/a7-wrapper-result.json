@@ -1,0 +1,280 @@
+{
+  "state": "ONE_WRAPPER_ASSERTIONS_PASS_DIAGNOSTIC_ONLY",
+  "model_provider_calls": 0,
+  "native_fullsuite_calls": 0,
+  "automatic_retry": false,
+  "continuous_resource_pass": false,
+  "detached_tree_absence_claim": false,
+  "stub_file_SHA": {
+    "cmd": "41a718b0fca4fc66a22ead7332a042f9b283967f5dec3500886232c30bc8b652",
+    "curl": "110fd781505f0140de3013dc8dc18d46ed762a446141389645ff3a6ffee0339f",
+    "timeout": "e1b9ee537fa1e5454a07f59d4ac3fc9a6d8b6dba35017bf43c37665b8f5b2156"
+  },
+  "own_process_reaps": [
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    },
+    {
+      "reaped": true,
+      "signals": [],
+      "only_created_PG": true
+    }
+  ],
+  "call_timings": [
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 0.4435317499737721,
+      "elapsed_seconds": 2.2257093750231434
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 2.6733234159764834,
+      "elapsed_seconds": 1.3680768340127543
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 4.041740749991732,
+      "elapsed_seconds": 0.446682082983898
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 4.509201124979882,
+      "elapsed_seconds": 0.3429709160118364
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 4.852389957988635,
+      "elapsed_seconds": 0.30853824998484924
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 5.160997415980091,
+      "elapsed_seconds": 0.11688566699740477
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 5.279020457994193,
+      "elapsed_seconds": 0.12446304198238067
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 5.403559915983351,
+      "elapsed_seconds": 0.17806408400065266
+    },
+    {
+      "kind": "fixture-git",
+      "timeout_seconds": null,
+      "elapsed_start_s": 5.581681749987183,
+      "elapsed_seconds": 0.14748433299246244
+    },
+    {
+      "kind": "bash-wrapper",
+      "timeout_seconds": 25,
+      "elapsed_start_s": 5.7323119579814374,
+      "elapsed_seconds": 13.282051207992481
+    }
+  ],
+  "old_cc3_terminal_unchanged": true,
+  "stage_file_SHA": "571e1d768df868b8862054345ec50729156e46656f805fc4b85709d5b25b6cf1",
+  "stage_records": [
+    {
+      "sequence": 1,
+      "shell_elapsed_seconds": 1,
+      "stage": "diagnostics_ready"
+    },
+    {
+      "sequence": 2,
+      "shell_elapsed_seconds": 1,
+      "stage": "fetch_begin"
+    },
+    {
+      "sequence": 3,
+      "shell_elapsed_seconds": 1,
+      "stage": "fetch_end"
+    },
+    {
+      "sequence": 4,
+      "shell_elapsed_seconds": 1,
+      "stage": "base_resolve_begin"
+    },
+    {
+      "sequence": 5,
+      "shell_elapsed_seconds": 1,
+      "stage": "base_resolve_end"
+    },
+    {
+      "sequence": 6,
+      "shell_elapsed_seconds": 1,
+      "stage": "head_resolve_begin"
+    },
+    {
+      "sequence": 7,
+      "shell_elapsed_seconds": 1,
+      "stage": "head_resolve_end"
+    },
+    {
+      "sequence": 8,
+      "shell_elapsed_seconds": 1,
+      "stage": "changed_files_begin"
+    },
+    {
+      "sequence": 9,
+      "shell_elapsed_seconds": 2,
+      "stage": "changed_files_end"
+    },
+    {
+      "sequence": 10,
+      "shell_elapsed_seconds": 2,
+      "stage": "file_diff_begin"
+    },
+    {
+      "sequence": 11,
+      "shell_elapsed_seconds": 2,
+      "stage": "file_diff_end"
+    },
+    {
+      "sequence": 12,
+      "shell_elapsed_seconds": 2,
+      "stage": "diff_stat_begin"
+    },
+    {
+      "sequence": 13,
+      "shell_elapsed_seconds": 2,
+      "stage": "diff_stat_end"
+    },
+    {
+      "sequence": 14,
+      "shell_elapsed_seconds": 2,
+      "stage": "short_head_begin"
+    },
+    {
+      "sequence": 15,
+      "shell_elapsed_seconds": 2,
+      "stage": "short_head_end"
+    },
+    {
+      "sequence": 16,
+      "shell_elapsed_seconds": 2,
+      "stage": "evidence_policy_begin"
+    },
+    {
+      "sequence": 17,
+      "shell_elapsed_seconds": 2,
+      "stage": "evidence_policy_end"
+    },
+    {
+      "sequence": 18,
+      "shell_elapsed_seconds": 2,
+      "stage": "catalog_mkdir_begin"
+    },
+    {
+      "sequence": 19,
+      "shell_elapsed_seconds": 2,
+      "stage": "catalog_mkdir_end"
+    },
+    {
+      "sequence": 20,
+      "shell_elapsed_seconds": 2,
+      "stage": "catalog_materialize_begin"
+    },
+    {
+      "sequence": 21,
+      "shell_elapsed_seconds": 4,
+      "stage": "catalog_copy_begin"
+    },
+    {
+      "sequence": 22,
+      "shell_elapsed_seconds": 4,
+      "stage": "catalog_copy_end"
+    },
+    {
+      "sequence": 23,
+      "shell_elapsed_seconds": 4,
+      "stage": "catalog_materialize_end"
+    },
+    {
+      "sequence": 24,
+      "shell_elapsed_seconds": 4,
+      "stage": "context_materialize_begin"
+    },
+    {
+      "sequence": 25,
+      "shell_elapsed_seconds": 4,
+      "stage": "context_copy_begin"
+    },
+    {
+      "sequence": 26,
+      "shell_elapsed_seconds": 5,
+      "stage": "context_copy_end"
+    },
+    {
+      "sequence": 27,
+      "shell_elapsed_seconds": 8,
+      "stage": "context_materialize_end"
+    },
+    {
+      "sequence": 28,
+      "shell_elapsed_seconds": 8,
+      "stage": "model_dispatch_boundary"
+    }
+  ],
+  "stub_markers": {
+    "model-called": true,
+    "model-args": true,
+    "kb-request": true
+  },
+  "elapsed_before_final_io_seconds": 19.03281220799545,
+  "execution_limit_seconds": 120,
+  "last_receipt_io_independently_timed": false,
+  "scientific_or_full_native_pass": false
+}

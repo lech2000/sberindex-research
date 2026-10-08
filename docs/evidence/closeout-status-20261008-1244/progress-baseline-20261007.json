@@ -1,0 +1,386 @@
+{
+  "updated_at": "2026-10-07T14:34:03.234224+00:00",
+  "policy_version": 2,
+  "projects": {
+    "economic-atlas": {
+      "case_id": "case_66cae4a89ba6473f",
+      "agent": "software:sberindex_atlas_researcher@5",
+      "current_gate": "A6",
+      "status": "in_progress",
+      "last_artifact": "docs/ATLAS_FINDINGS_2026-10-07.md",
+      "last_dialog": "2026-09-26T06:35:59Z",
+      "next_action": "A7: F7b3832fc7f на3a12a3f2 прошёл1443mandatory+64extra и единственный повторMuse VALID/OK без retries. Разрешение израсходовано, новых платных прогонов нет. KB62/17212. Live acceptance/actA7OPEN: сначала сохранить соседние Kev/UX ветки, затем guarded release; собственный замок отпущен, фоновые очереди paused. geometry-v3.1 принято через F7b77a4731e: полная covariance≥10, сфера<10, Gaussian Bhattacharyya, Mahalanobis<2.5 и containment>0.60;14тестов. Fresh monthly fit1896МО×24,45504назначения/48covariances/168K-grid проверен.210анизотропных контролей FAIL в обоих режимах; без ретюнинга. Старые результаты, пороги и476legacySHA сохранены. A6/M2/M3 quality не PASS; старое отсутствие заранее заданного бюджета не исправлено задним числом. KB75/17216.",
+      "last_gate": {
+        "gate": "A5",
+        "status": "PASS",
+        "checked_at": "2026-09-26T06:36:50.712167+00:00",
+        "source_action": "act_3791c1939bd8452d",
+        "source_action_done": true,
+        "kb_corpus": 75,
+        "kb_document_id": 13776,
+        "commit": "ed378e9f7"
+      },
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
+      "last_dialog_attempt": {
+        "checked_at": "2026-09-26T07:08:40.194479+00:00",
+        "client_message_id": "research-a6-progress-20260926-0956",
+        "status": "timed_out",
+        "gate_changed": false
+      },
+      "last_scientific_run": "2026-09-27T11:45:00Z",
+      "scientific_summary": {
+        "n_assignments": 45504,
+        "selected_k": 2,
+        "n_months": 24,
+        "continuing": 36,
+        "reemergence": 3,
+        "ambiguous": 7,
+        "split": 0,
+        "merge": 0,
+        "birth": 0,
+        "kb_document_id": 13875
+      },
+      "robustness": {
+        "seeds": [
+          20260921,
+          20260922,
+          20260923,
+          20260924,
+          20260925
+        ],
+        "ari_mean_range": [
+          0.9985416441441014,
+          0.9997233190562037
+        ],
+        "ambiguity_unit": "cluster-month matching; 4438 territory-month assignments in base",
+        "jaccard_range": [
+          0.997751798561151,
+          1.0
+        ]
+      },
+      "threshold_review": {
+        "settings": 9,
+        "rows": 45504,
+        "baseline_exact": true,
+        "ambiguous_rows_by_margin": [
+          1324,
+          4438,
+          36024
+        ],
+        "margin_factors": [
+          0.75,
+          1,
+          1.25
+        ],
+        "T_changes_no_effect_in_grid": true,
+        "silhouette_k2_mean": 0.384,
+        "silhouette_k5_mean": 0.2098,
+        "kb_document_id": 14108,
+        "gate_closed": false
+      },
+      "completed_followups_20261003": {
+        "synthetic_configurations": 210,
+        "migration_municipalities": 1040,
+        "mobility_municipalities": 101,
+        "descriptive_municipal_stories": 3,
+        "economic_pass": false
+      },
+      "competitive_experiments_20261004": {
+        "status": "EXPLORATORY_NOT_GATE_PASS",
+        "executed_by": "local scientific runner",
+        "new_agent_dialog": false,
+        "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_c5ab2585bf8146b8",
+        "source_action_done": true,
+        "kb_corpus": 75,
+        "kb_document_id": 17086,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "fresh_fit_verified": true,
+        "synthetic_quality": "FAIL",
+        "scientific_pass": false,
+        "industrymap_v2_identity_gate": "INCONCLUSIVE_NOT_COMPUTED",
+        "kb_documents": [
+          17211,
+          17216
+        ]
+      }
+    },
+    "shock-radar": {
+      "case_id": "case_008f37d03cf541e5",
+      "agent": "software:sberindex_radar_researcher@5",
+      "current_gate": "R9",
+      "status": "in_progress_exploratory_positive_seasonal",
+      "last_artifact": "docs/RADAR_FINDINGS_2026-10-07.md",
+      "last_dialog": "2026-09-29T20:41:21.592079Z",
+      "next_action": "Forecast_contract.yaml применён через F7b77a4731e;7тестов и полный YAML parse, прежниеR0consumers сохранены. Датированное Tiny дополнение доказало несовпадение даты у actualdeterministicR8; ранжирование отозвано, исправленныйscore не посчитан. Chronos-2 runner/readiness принят, но веса/инференция не запускались; action05OPEN. KB76/17217. Остальныеscientific/vintage/finaltest sourceactionsOPEN.",
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
+      "last_gate": {
+        "gate": "R8",
+        "status": "INCONCLUSIVE_NO_SCIENTIFIC_PASS",
+        "checked_at": "2026-09-29T20:42:54.022365Z",
+        "source_action": "act_70e2fe4a16ac4e3d",
+        "source_action_done": true,
+        "kb_corpus": 76,
+        "kb_document_id": 14696,
+        "commit": "3f85724",
+        "quality_claim": "Нет доказанного prospective выигрыша, historical as-of или early warning; полный вычислительный парный архив сохранён."
+      },
+      "last_scientific_run": "2026-10-03T19:10:35.628460+00:00",
+      "scientific_summary": {
+        "paired_n_h1_h3_h6": 220962,
+        "horizons": [
+          1,
+          3,
+          6
+        ],
+        "mae_category_seasonal": [
+          309.6112470488324,
+          449.4587396988097,
+          618.0917250243157
+        ],
+        "mae_prophet": [
+          641.6996454066442,
+          719.9043597195983,
+          740.4359675427706
+        ],
+        "mae_half_ensemble": [
+          381.4306161967624,
+          470.46625004030835,
+          543.1376235299642
+        ],
+        "official_dated_events": 6,
+        "official_sources": 5,
+        "independent_new_holdout": false,
+        "historical_asof_verified": false,
+        "scientific_pass": false
+      },
+      "prophet_pilot": {
+        "n_series": 32,
+        "paired_n": 438,
+        "fit_count": 189,
+        "mae_prophet": 755.8246452421645,
+        "mae_lastavailable": 892.4360730593608,
+        "mae_seasonal": 1358.9657534246576,
+        "failures": 0,
+        "kb_document_id": 14104,
+        "status": "PILOT_PARTIAL_NOT_GATE_PASS",
+        "gate_closed": false
+      },
+      "previous_scientific_summary_r8": {
+        "paired_n": 171150,
+        "cells": 14,
+        "mae_lastavailable": 880.2129593923459,
+        "mae_seasonal_naive": 1280.4203856266433,
+        "mae_nonews_boost": 961.1042974419819,
+        "mae_calendar_boost": 1000.793644775331,
+        "historical_news_eligible": 0,
+        "kb_document_id": 14696,
+        "mae_prophet": 731.3863030799444,
+        "mae_chronos": 939.0617606977953
+      },
+      "competitive_experiments_20261004": {
+        "status": "EXPLORATORY_NOT_GATE_PASS",
+        "executed_by": "local scientific runner",
+        "new_agent_dialog": false,
+        "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_e346385f69e54019",
+        "source_action_done": true,
+        "kb_corpus": 76,
+        "kb_document_id": 17087,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "tiny_cached_ranking_invalid": true,
+        "corrected_tiny_MAE_measured": false,
+        "chronos2_weights_downloaded": false,
+        "chronos2_inference_executed": false,
+        "kb_document": 17217,
+        "scientific_pass": false
+      }
+    },
+    "municipality-graph": {
+      "case_id": "case_43de12a8dc2e4abd",
+      "agent": "software:sberindex_graph_steward@3",
+      "open_actions": "5/9",
+      "status": "in_progress_candidate_verification",
+      "last_evidence": "Майкоп discovery-only:77/14092,14096,14100;candidate t.me/maikop_adm;operator direct official page fetch timed out, no verified entity.",
+      "next_action": "Майкоп discovery принят77/14092–14102. Независимо подтвердить обратнуюофициальнуюссылку/геотеги/ОКТМО,потомpublic_channelнормализатор. Покаentitiesпусты,необъявлятьverified. Nativechecked_atчастично будущий—нужноперепроверить. Балашиху иРаменское не повторять. Автоматическиеhourlyпроходывсёещёлучше проверять:ошибкаentitytype429reportsнеисчезла.",
+      "current_gate": "G2",
+      "last_dialog": "2026-09-27T11:40:00Z",
+      "last_failures": [
+        {
+          "run_key": "research-graph-next-20260926-1618",
+          "problem_report": "rep_9fd0251dd0f94c97",
+          "kb_corpus": 62,
+          "document_id": 13865,
+          "reason": "invalidpublic_channelentity_type; curatorignoredRamen exclusion"
+        },
+        {
+          "run_key": "research-graph-discovery-kolomna-20260926-1625",
+          "problem_report": "rep_d5c4d60e3f56439f",
+          "kb_corpus": 62,
+          "document_id": 13867,
+          "reason": "GraphStewarddialogtimeout; noEVIDENCE_JSON"
+        }
+      ],
+      "dispatches_today": [
+        "research-graph-maikop-discovery-only-20260927",
+        "research-graph-maikop-contacts-discovery-20260927",
+        "research-graph-maikop-independent-site-20260927"
+      ]
+    },
+    "research-curator": {
+      "case_id": "case_d058db85c48a487c",
+      "agent": "software:sberindex_research_curator@3",
+      "status": "dispatching",
+      "note": "0 собственных actions — по замыслу, работает с чужих open_actions",
+      "last_dispatch": {
+        "accepted": true,
+        "workflow": "sberindex-curator-dispatch",
+        "graph_case_id": "case_43de12a8dc2e4abd",
+        "curator_case_id": "case_d058db85c48a487c",
+        "corpus_id": 77,
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "plan_ref": "A6",
+        "source_case_id": "case_66cae4a89ba6473f",
+        "source_action_id": "act_c475e17b2a584b9a",
+        "topic": "A6: адресная проверка исследования устойчивости кластеров к margin",
+        "status": "verified",
+        "source_url": "https://agrigate.pro/v2/#case/case_43de12a8dc2e4abd",
+        "curator_verdict": "accept",
+        "next_action": "A6.1: Исследовать candidate_margin/uncertainty и внешние экономические данные для обоснования выбора порогов кластеризации.",
+        "next_topic": "A6.1: Исследование candidate_margin/uncertainty и внешних экономических данных",
+        "graph_kb_receipt": {
+          "added": true,
+          "document_id": 14110,
+          "title": "Graph evidence research-atlas-margin-result-review-20260927: A6: адресная проверка исследования устойчивости кластеров к margin",
+          "corpus_id": 77,
+          "chunks": 4,
+          "vectors": 4
+        },
+        "curator_kb_receipt": {
+          "added": true,
+          "document_id": 14111,
+          "title": "Curator decision research-atlas-margin-result-review-20260927: accept",
+          "corpus_id": 77,
+          "chunks": 1,
+          "vectors": 1
+        },
+        "execution_id": 3281542,
+        "gate_closed": false
+      },
+      "routing": "Адресный webhook связан с открытым source_action_id. Через F7b выложены native KB fix 2e4f26219 и curator message budget 492bcf856. Валидный live accept 26.09: execution3278702, evidence77/13894, decision77/13895; R8 source action открыт.",
+      "previous_dispatch": {
+        "run_key": "research-r8-v2-exact-key-20260926-1640",
+        "source_case_id": "case_008f37d03cf541e5",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "verdict": "blocked",
+        "evidence_document_id": 13879,
+        "decision_document_id": 13880,
+        "operator_diagnosis": "Обрезка native tool результата до4000 исправлена и выложена (2e4f26219). Следующий end-to-end запуск прочитал76/13876 и ingested77/13885, но остановился на n8n message>4000. Прямой компактный review MiMo дал accept и следующий Prophet/TSFM; framing/indexes этого ручного ответа не прошли workflow validation, поэтому это не квитанция полного контура."
+      },
+      "native_kb_fix": {
+        "deployed": true,
+        "prod_commit": "2e4f26219",
+        "verified_payload_chars": 2868,
+        "primary_corpus": 76,
+        "primary_document_id": 13876,
+        "kb_document_id": 13888
+      },
+      "last_workflow_attempt": {
+        "run_key": "research-atlas-margin-result-review-20260927",
+        "execution_id": 3281542,
+        "status": "accepted",
+        "loop_pass": true,
+        "evidence_document_id": 14110,
+        "decision_document_id": 14111
+      },
+      "curator_message_fix": {
+        "deployed": true,
+        "prod_commit": "492bcf856",
+        "real_fixture_chars": 2798,
+        "claims_preserved": "3/3",
+        "kb_document_id": 13892
+      },
+      "atlas_dispatch_correction": "77/14089 предложил k4/seed5 как threshold. Исправлено исследователем: K≠T/M, выполнен реальный9T/M, затем2vs5. Следующееmarginобоснование, не повтор k4/5.",
+      "last_dispatch_radar": {
+        "run_key": "research-radar-prophet-pilot-review-20260927",
+        "source_case_id": "case_008f37d03cf541e5",
+        "source_action_id": "act_70e2fe4a16ac4e3d",
+        "verdict": "accept",
+        "evidence_document_id": 14106,
+        "decision_document_id": 14107,
+        "checked_at": "2026-09-27T11:49:25.429145+00:00",
+        "next_action": "Полное причинное сравнение Prophet/TSFM на R8_v2;news-vintage/review22флагов отдельно.",
+        "gate_closed": false
+      }
+    }
+  },
+  "runtime_sync": {
+    "research_commit": "e724d9c",
+    "files": 61,
+    "date": "2026-09-27",
+    "closed_gates": false,
+    "containers": [
+      "aios2",
+      "fixar-devops"
+    ],
+    "drive_commit": "3c85652cc",
+    "installed_script": "[historical operational path redacted]",
+    "installed_sha256": "7a13f9dc958a074475a5d1d07bce021b726e5443f50eb95273e305b752ba56b5",
+    "timer": "fixar-cmd-research-drive.timer",
+    "timer_active": false,
+    "next_tick": "2026-09-26T22:30:00+03:00",
+    "partial_gates_still_stop_chain": true,
+    "new_scientific_scope": [
+      "A6_threshold_review_20260927",
+      "R8_prophet_pilot_20260927"
+    ],
+    "new_files": 20,
+    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops.",
+    "historical_snapshot": true,
+    "current_state": "PAUSED_COST_HOLD; checked07.10.2026 during manualMuse; no background resume",
+    "checked_current_state_at": "2026-10-07T14:02:11.102448+00:00"
+  },
+  "latest_scientific_snapshot": "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
+  "research_snapshot_note": "07.10: exact F7b code/SQL/SHA and case/KB/Vault readback. Legacy scientific summaries/runs are historical; latest geometry/calendar addenda override current claims. Models/vintage/holdout are not silently relabelled.",
+  "case_actions_snapshot": "docs/evidence/plan-sync-20261007/live-case-actions.json",
+  "initial_plan_is_historical": true,
+  "latest_case_counts": {
+    "checked_at_utc": "2026-10-07T14:34:03.234224+00:00",
+    "atlas": [
+      26,
+      39
+    ],
+    "radar": [
+      31,
+      38
+    ],
+    "graph": [
+      21,
+      23
+    ]
+  }
+}

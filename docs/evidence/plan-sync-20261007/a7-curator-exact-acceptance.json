@@ -1,0 +1,127 @@
+{
+  "checked_at_utc": "2026-10-07T06:51:08.498283+00:00",
+  "candidate": {
+    "base": "d625166a945ebf647a688eaa7075b3b112375243",
+    "head": "1493b230b7b6ce1401e2babc5363c9af753fa6da",
+    "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-curator-current-20261007/work",
+    "changed_files": [
+      "infrastructure/agrigate-pro/site/v2/cases.js",
+      "infrastructure/agrigate-pro/site/v2/index.html",
+      "services/case_service/app.py",
+      "services/dialog_service/app.py",
+      "tests/test_data_boundary_action_classification.py",
+      "tests/test_research_material_id_priority.py"
+    ],
+    "five_fix_blobs_equal_old_tested_candidate": true,
+    "production_changed": false,
+    "patch_sha256": "9f006f46caf972016c8b6eaa97da0a3b17af0d88cca83d88ed688c66db758477",
+    "patch_bytes": 13849,
+    "tree": "15042565eeb99764f6fcea10dc41ca32b69d8c65",
+    "muse_started": false,
+    "live_acceptance_completed": false,
+    "full_tests": "COMPLETE1321mandatoryPASS+25focusedPASS; exactproducerverify0",
+    "receipt_sha256": "5269fb494c912d6e40048efe8c26b51c2548f0e6281a7e536363633826906665",
+    "release_evidence_archive_sha256": "ca77952cdf64d5c89e5bbb08b97069cea26789b3956e9885c2ccfd3ba91d38dc",
+    "paid_review_authorized": false,
+    "review_started": false,
+    "checked_at_utc": "2026-10-07T06:51:08.498283+00:00"
+  },
+  "tests": {
+    "archive_sha256": "ca77952cdf64d5c89e5bbb08b97069cea26789b3956e9885c2ccfd3ba91d38dc",
+    "receipt_sha256": "5269fb494c912d6e40048efe8c26b51c2548f0e6281a7e536363633826906665",
+    "base": "d625166a945ebf647a688eaa7075b3b112375243",
+    "head": "1493b230b7b6ce1401e2babc5363c9af753fa6da",
+    "prod_head_at_collection": "d625166a945ebf647a688eaa7075b3b112375243",
+    "bundle_verifier_exit": 0,
+    "required_suites": {
+      "privacy-db": {
+        "tests": 296,
+        "passed": 296,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "release-runner": {
+        "tests": 187,
+        "passed": 187,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "review-contract": {
+        "tests": 123,
+        "passed": 123,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "frontend-agent-ux": {
+        "tests": 645,
+        "passed": 645,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "technical-documents": {
+        "tests": 70,
+        "passed": 70,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "focused_passed": 25,
+    "focused_sha256": "e66fe114666e8f444a81d8de5f18295f1a26103921060726ac51ee149b741460",
+    "total_required_passed": 1321,
+    "production_code_changed_by_candidate": false,
+    "muse_started": false,
+    "live_acceptance_completed": false
+  },
+  "kb": [
+    {
+      "corpus_id": 62,
+      "document_id": 17106,
+      "full_readback_verified": true,
+      "text_sha256": "d79bc1816d25e4098f151f694324d7c9f2a82cc732eec27ba07ffeda37c75055",
+      "checked_at": "2026-10-07T06:51:11.410465+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17107,
+      "full_readback_verified": true,
+      "text_sha256": "d79bc1816d25e4098f151f694324d7c9f2a82cc732eec27ba07ffeda37c75055",
+      "checked_at": "2026-10-07T06:51:13.602194+00:00"
+    }
+  ],
+  "cases": {
+    "checked_at": "2026-10-07T06:51:18.244571+00:00",
+    "materials": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "material_id": "mat_a7_curator_exact_acceptance_20261007_atlas",
+        "full_readback_verified": true
+      },
+      {
+        "case_id": "case_d058db85c48a487c",
+        "material_id": "mat_a7_curator_exact_acceptance_20261007_curator",
+        "full_readback_verified": true
+      }
+    ],
+    "completed_actions": [],
+    "updated_actions": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "action_id": "act_82e6846e4c3d42a4",
+        "done": false,
+        "waiting_for_readback_verified": true
+      }
+    ],
+    "scientific_gates_closed": [],
+    "contest_submitted": false
+  },
+  "live_validator_sha256": "477a5a70529f2839e045545e6148bf5c6c16e705d54efc9268cdebc50fd71478",
+  "review_started": false,
+  "paid_review_authorized": false,
+  "scientific_pass": false,
+  "contest_submitted": false
+}

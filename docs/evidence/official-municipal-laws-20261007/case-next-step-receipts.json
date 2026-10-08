@@ -1,0 +1,32 @@
+{
+  "repair_kb": {
+    "corpus_id": 62,
+    "document_id": 17065,
+    "full_readback_verified": true,
+    "text_sha256": "b9157e75c7950a7d0f2d6f18be65d94163cc87c5db01783fc390d1274e8b0462",
+    "checked_at": "2026-10-07T04:46:12.885051+00:00"
+  },
+  "cases": [
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "material_id": "mat_flood6_primary_acts_20261007_graph",
+      "full_readback_verified": true,
+      "completed_actions": [],
+      "checked_at": "2026-10-07T04:46:15.474266+00:00"
+    },
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "material_id": "mat_flood6_primary_acts_20261007_atlas",
+      "full_readback_verified": true,
+      "completed_actions": [],
+      "checked_at": "2026-10-07T04:46:15.770341+00:00"
+    },
+    {
+      "case_id": "case_d058db85c48a487c",
+      "material_id": "mat_flood6_primary_acts_20261007_curator",
+      "full_readback_verified": true,
+      "completed_actions": [],
+      "checked_at": "2026-10-07T04:46:15.912948+00:00"
+    }
+  ]
+}

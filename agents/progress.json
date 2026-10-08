@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T20:51:26.427303+00:00",
+  "updated_at": "2026-10-08T12:44:08.364073+00:00",
   "policy_version": 2,
   "projects": {
     "economic-atlas": {
@@ -7,9 +7,9 @@
       "agent": "software:sberindex_atlas_researcher@5",
       "current_gate": "A6",
       "status": "in_progress",
-      "last_artifact": "economic-atlas/runs/Municipal_stories_20261004/README.md",
+      "last_artifact": "docs/ATLAS_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-26T06:35:59Z",
-      "next_action": "Собрать отчёт: три бюджета/миграция/траты и threshold/seed limitations, S_Dbw; AVI/AVU отдельно измерить после аудита, MQ convention unresolved; A6/A7 не объявлять PASS.",
+      "next_action": "A7: F7b3832fc7f на3a12a3f2 прошёл1443mandatory+64extra и единственный повторMuse VALID/OK без retries. Разрешение израсходовано, новых платных прогонов нет. KB62/17212. Live acceptance/actA7OPEN: сначала сохранить соседние Kev/UX ветки, затем guarded release; собственный замок отпущен, фоновые очереди paused. geometry-v3.1 принято через F7b77a4731e: полная covariance≥10, сфера<10, Gaussian Bhattacharyya, Mahalanobis<2.5 и containment>0.60;14тестов. Fresh monthly fit1896МО×24,45504назначения/48covariances/168K-grid проверен.210анизотропных контролей FAIL в обоих режимах; без ретюнинга. Старые результаты, пороги и476legacySHA сохранены. A6/M2/M3 quality не PASS; старое отсутствие заранее заданного бюджета не исправлено задним числом. KB75/17216.",
       "last_gate": {
         "gate": "A5",
         "status": "PASS",
@@ -20,7 +20,7 @@
         "kb_document_id": 13776,
         "commit": "ed378e9f7"
       },
-      "current_artifact_status": "PARTIAL_NOT_GATE_PASS",
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
       "last_dialog_attempt": {
         "checked_at": "2026-09-26T07:08:40.194479+00:00",
         "client_message_id": "research-a6-progress-20260926-0956",
@@ -90,6 +90,31 @@
         "executed_by": "local scientific runner",
         "new_agent_dialog": false,
         "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_c5ab2585bf8146b8",
+        "source_action_done": true,
+        "kb_corpus": 75,
+        "kb_document_id": 17086,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "fresh_fit_verified": true,
+        "synthetic_quality": "FAIL",
+        "scientific_pass": false,
+        "industrymap_v2_identity_gate": "INCONCLUSIVE_NOT_COMPUTED",
+        "kb_documents": [
+          17211,
+          17216
+        ]
       }
     },
     "shock-radar": {
@@ -97,10 +122,10 @@
       "agent": "software:sberindex_radar_researcher@5",
       "current_gate": "R9",
       "status": "in_progress_exploratory_positive_seasonal",
-      "last_artifact": "shock-radar/runs/R9_strong_baselines_20261004/README.md",
+      "last_artifact": "docs/RADAR_FINDINGS_2026-10-07.md",
       "last_dialog": "2026-09-29T20:41:21.592079Z",
-      "next_action": "Собрать отчёт с сильными baseline и двумя окнами, D04 covariance как дополнение; h12/as-of/новый holdout unresolved. Не повторять Prophet fits и D04.",
-      "current_artifact_status": "COMPUTED_EXPLORATORY_NOT_INDEPENDENT_PASS",
+      "next_action": "Forecast_contract.yaml применён через F7b77a4731e;7тестов и полный YAML parse, прежниеR0consumers сохранены. Датированное Tiny дополнение доказало несовпадение даты у actualdeterministicR8; ранжирование отозвано, исправленныйscore не посчитан. Chronos-2 runner/readiness принят, но веса/инференция не запускались; action05OPEN. KB76/17217. Остальныеscientific/vintage/finaltest sourceactionsOPEN.",
+      "current_artifact_status": "REPORTED_EXPLORATORY_NOT_SCIENTIFIC_PASS",
       "last_gate": {
         "gate": "R8",
         "status": "INCONCLUSIVE_NO_SCIENTIFIC_PASS",
@@ -170,6 +195,29 @@
         "executed_by": "local scientific runner",
         "new_agent_dialog": false,
         "report": "docs/COMPETITIVE_EXPERIMENTS_2026-10-04.md"
+      },
+      "closeout_delivery": {
+        "checked_at_utc": "2026-10-07T06:07:38.279292+00:00",
+        "source_action": "act_e346385f69e54019",
+        "source_action_done": true,
+        "kb_corpus": 76,
+        "kb_document_id": 17087,
+        "archive_author_files": 885,
+        "source_archive_commit": "2edcb34c52b255e203f870c70195e167703a41c5",
+        "source_archive_sha256": "38d69517deb94b06b0e1abb8465ce04d9af26b78a21534f2f0214ac116c20c71",
+        "scientific_pass": false,
+        "contest_submitted": false,
+        "raw_inputs_included": false,
+        "complete_standalone_inputs": false
+      },
+      "latest_technical_followup_20261007": {
+        "code_head": "77a4731e",
+        "tiny_cached_ranking_invalid": true,
+        "corrected_tiny_MAE_measured": false,
+        "chronos2_weights_downloaded": false,
+        "chronos2_inference_executed": false,
+        "kb_document": 17217,
+        "scientific_pass": false
       }
     },
     "municipality-graph": {
@@ -303,7 +351,7 @@
     "installed_script": "/usr/local/bin/fixar_research_drive.sh",
     "installed_sha256": "7a13f9dc958a074475a5d1d07bce021b726e5443f50eb95273e305b752ba56b5",
     "timer": "fixar-cmd-research-drive.timer",
-    "timer_active": true,
+    "timer_active": false,
     "next_tick": "2026-09-26T22:30:00+03:00",
     "partial_gates_still_stop_chain": true,
     "new_scientific_scope": [
@@ -311,8 +359,66 @@
       "R8_prophet_pilot_20260927"
     ],
     "new_files": 20,
-    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops."
+    "compute_environment_note": "Actual new runs executed on operator Mac; copying code is not proof Prophet is installed in devops.",
+    "historical_snapshot": true,
+    "current_state": "PAUSED_COST_HOLD; checked07.10.2026 during manualMuse; no background resume",
+    "checked_current_state_at": "2026-10-07T14:02:11.102448+00:00"
   },
   "latest_scientific_snapshot": "docs/ACCELERATED_SEASONAL_PLAN_2026-10-03.md",
-  "research_snapshot_note": "Operator computations and saved artifacts verified 03.10.2026; prior September timer/deployment descriptions below are historical, not a fresh platform audit."
+  "research_snapshot_note": "07.10: exact F7b code/SQL/SHA and case/KB/Vault readback. Legacy scientific summaries/runs are historical; latest geometry/calendar addenda override current claims. Models/vintage/holdout are not silently relabelled.",
+  "case_actions_snapshot": "docs/evidence/plan-sync-20261007/live-case-actions.json",
+  "initial_plan_is_historical": true,
+  "latest_case_counts": {
+    "checked_at_utc": "2026-10-08T12:44:08.364073+00:00",
+    "atlas": [
+      30,
+      39
+    ],
+    "radar": [
+      31,
+      38
+    ],
+    "graph": [
+      22,
+      23
+    ]
+  },
+  "previous_current_case_counts": {
+    "checked_at_utc": "2026-10-07T14:34:03.234224+00:00",
+    "atlas": [
+      26,
+      39
+    ],
+    "radar": [
+      31,
+      38
+    ],
+    "graph": [
+      21,
+      23
+    ]
+  },
+  "latest_actual_progress": {
+    "checked_at_utc": "2026-10-08T12:44:08.364073+00:00",
+    "evidence": "docs/evidence/closeout-status-20261008-1244/README.md",
+    "case_counts_evidence": "docs/evidence/closeout-status-20261008-1244/case-counts.json",
+    "open_actions": 17,
+    "scientific_pass": false,
+    "source_actions_closed_by_this_update": 0,
+    "A7_actual_full_native_acceptance": "NOT_ACCEPTED; historical cc3 terminal unchanged",
+    "E05_full_225_scientific_execution": false,
+    "E05_source_tests_post_adoption": 69,
+    "E05_independent_fixtures": 12,
+    "KB_receipts": [
+      "62/17528",
+      "62/17534",
+      "75/17535",
+      "74/17537",
+      "77/17538",
+      "75/17539",
+      "74/17540",
+      "77/17541"
+    ],
+    "runtime_state_scope": "Existing runtime_sync is historical, not a fresh lifecycle assertion; no restart or resume performed."
+  }
 }

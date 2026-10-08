@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-08T12:44:09.560457+00:00",
+  "KB_POSTGRES_accepting_connections": true,
+  "AIOS_POSTGRES_accepting_connections": true,
+  "KB_document_17528_GET_HTTP": 200,
+  "actual_case_API_GET_verified_by": "case-counts.json",
+  "actual_database_data_volume_available_bytes": 13403648000,
+  "operational_restart": false,
+  "source_mutations": 0,
+  "KB_recovery_receipt": "62/17534",
+  "deployment_authority": false
+}

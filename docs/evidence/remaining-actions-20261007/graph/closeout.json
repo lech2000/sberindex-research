@@ -1,0 +1,253 @@
+{
+  "checked_at": "2026-10-07T10:55:06.704355+00:00",
+  "verification_site": "Mac read-only scientificrepo, authenticated-freeSSHKBdocumentread, boundedprimaryofficialURLdownloads",
+  "case_id": "case_43de12a8dc2e4abd",
+  "baseline_counts": {
+    "total": 23,
+    "done": 17,
+    "open": 6
+  },
+  "repo_mutations": false,
+  "case_mutations": false,
+  "kb_mutations": false,
+  "production_mutations": false,
+  "paid_calls": 0,
+  "historical_crosswalks_accepted": 0,
+  "actions": [
+    {
+      "action_id": "act_41a1db5fbc0b442f",
+      "original_what": "GM2. На 2024 панели расходов СберИндекса построить версионированный territory_id↔ОКТМО: действующий словарь, 326 истёкших записей из аудита PR#3, официальные акты реорганизаций и явные unknown successor. Отчёт: matched/unmatched/conflict по году и контроль отсутствия соединения по одному имени. Не искать соцсети.",
+      "original_waiting_for": "KB77/16478:1/7 exactmatch,6 район→округ unresolved. Приоритет GM2.FLOOD6:official acts/границы/validity,не join по имени; остальное UNKNOWN. Источники и candidateIDs в материале дела.",
+      "result_status": "OPEN_PARTIAL",
+      "close_allowed_after_review": false,
+      "done_mutated": false,
+      "measured_evidence": [
+        "495 finite-year dictionary rows; expired326 means2024 inclusive unmatched IDs, not number of finite records",
+        "0/6 flood historicalcrosswalks accepted"
+      ],
+      "missing_acceptance_evidence": [
+        "year_to semantic official passport",
+        "dated boundary equality and successor codes",
+        "467 no adjacent samecode successor candidates;171 missing2024 current codes"
+      ],
+      "next_bounded_step": "Preserve proposed identities; review official jurisdiction/boundaries before code-to-source binding.",
+      "owner_request_required": false
+    },
+    {
+      "action_id": "act_9651a4c259e6441d",
+      "original_what": "GM3. Добавить узлы выпусков и наблюдений из доступных данных: СберИндекс расходы, население, мобильность как индекс (не потоки МО→МО), Tochno/БДМО занятость и зарплата. Каждое ребро к МО имеет год, единицу, источник, версию и маску покрытия. Не смешивать 2025 derivative vintage с исторической доступностью 2024; не искать соцсети.",
+      "original_waiting_for": "KB75 №16332, KB77 №16333: бюджеты готовы в локальном графе, истории собраны. Проверить lineage; не повторять загрузки и поиск соцсетей. Даты доступности неизвестны, production ingest не подтверждён. GM3 открыт.",
+      "result_status": "OPEN_PARTIAL",
+      "close_allowed_after_review": false,
+      "done_mutated": false,
+      "measured_evidence": [
+        "312876 local observations with9 releases; spend,total-age population,71primarybudget+77supplement",
+        "FK/duplicates/orphans0 in existing receipts; historical availability unknown"
+      ],
+      "missing_acceptance_evidence": [
+        "mobility index,employment,wages missing in GM3original snapshot",
+        "GM3offline graph observations external temporalidentities not legalverified"
+      ],
+      "next_bounded_step": "In NEWlocal graph version ingest existing source releases mobility/employment/wages with native units, masks, version and nullavailability; no download repetition.",
+      "owner_request_required": false
+    },
+    {
+      "action_id": "act_0fd8ae3b4bf44287",
+      "original_what": "GOV-E1: скачать два официальных отчёта Кургана или Тюмени о паводках/экономике 2024. Нормализовать событие, ОКТМО, единицы, даты публикации и first_seen, SHA. Не повторять готовые три истории и не искать соцсети.",
+      "original_waiting_for": "KB77/16013: 5 источников и 6 событий уже проверены. Новые отчёты выбирать независимо от расходов; неизвестные available_at/vintage оставить null. Apify — для сложного разбора.",
+      "result_status": "READY_FOR_ACCEPTANCE",
+      "close_allowed_after_review": true,
+      "done_mutated": false,
+      "measured_evidence": [
+        "2original official economic2024 reports+HTML acquired; SHA,date,firstseen,units,municipal scope normalized",
+        "6bounded actual2024 observations; housing overlap and wage-definition difference preserved"
+      ],
+      "missing_acceptance_evidence": [],
+      "next_bounded_step": "Parent may integrate passport evidence+readback, review scope and then close this acquisition action; no scientificPASS.",
+      "owner_request_required": false
+    },
+    {
+      "action_id": "act_aa129ecf4e4643d4",
+      "original_what": "GOV-B1: по бюджетному источнику 77/16128 проверить пять геопаспортов файлов 36/42/43/53/67: финансовый орган, отчётная территория и уровень. Связать с официальным справочником, сохранить конфликты шапок; никаких сумм отдельных МО или соцсетей.",
+      "original_waiting_for": "Паспорта77/16128 готовы к review. Dispatch scope-v3 HTTP500; report rep_ffb1bab11bba4941, F7b62/16137. Данных хватает; ждёт repair orchestration, не владельца. 5 геопаспортов после accepted; 92 XLS не повторять.",
+      "result_status": "OPEN_REVIEW_PARTIAL",
+      "close_allowed_after_review": false,
+      "done_mutated": false,
+      "measured_evidence": [
+        "5source-header passports reviewed against fullKB77/16128",
+        "3consistent regional candidateheaders;2conflictheaders retained,municipal edges0"
+      ],
+      "missing_acceptance_evidence": [
+        "officialregiondictionary/financialauthority binding for5files",
+        "reporting scope contradiction36 andheader42 remainsunknown"
+      ],
+      "next_bounded_step": "Use reviewed5records to complete officialdictionary reference bindings; conflict records remain exclusion/proposed rather than guessed.",
+      "owner_request_required": false
+    },
+    {
+      "action_id": "act_0d7cb34d8a8c4aee",
+      "original_what": "GM4. Ввести инкрементальную проверку графа: конфликтующие ОКТМО и годы, дубли наблюдений, пропуски, истёкшие источники, as-of запросы и разделение synthetic/observed. Выдать воспроизводимые SQL/graph queries и отчёт различий между двумя выпусками; нерешённое оставить proposed. Не искать соцсети.",
+      "original_waiting_for": "KB77/16186: real incremental copy+77; base preserved, typed money/units/period, rounded provenance. GM4OPEN: further revision & synth separation; primary7/12 unchanged, unknown export excluded, productionfalse.",
+      "result_status": "OPEN_PARTIAL",
+      "close_allowed_after_review": false,
+      "done_mutated": false,
+      "measured_evidence": [
+        "real312799→312876 incremental+77receipt and14SQLchecks",
+        "base unchanged,originalprimary71cells and7/12coverage preserved"
+      ],
+      "missing_acceptance_evidence": [
+        "real revised vintage diff not demonstrated",
+        "synthetic/observed exclusion positive/negative control not executed on realfilledgraph",
+        "expired-source and intervalconflict real checks not demonstrated"
+      ],
+      "next_bounded_step": "NEW boundedGM4run on immutablecopies: two releases revisiondiff, observed-only view, explicit synthetic fixture excluded, expiry/missing/asof/intervalqueries; archiveSHA.",
+      "owner_request_required": false
+    },
+    {
+      "action_id": "act_b231cd5eba674acb",
+      "original_what": "GM2.FLOOD6-20261005: По KB77/16478 найти официальную связь район→округ valid2024 для Белозерского,Звериноголовского,Кетовского,Куртамышского,Притобольного,Целинного. Старые candidate territory_id/ОКТМО в crosswalk.json. Нужны акт,номер,дата,границы,valid_from/to,successor; отсутствие отмечать UNKNOWN, по имени не соединять. Получить initial PDF/приложения актов103-ук04.04,6208.04,3608.04; regime zone отделить от реального затопления. Записать EVIDENCE_JSON и document_id integrate; частичное не закрывать. Соцсети не искать.",
+      "original_waiting_for": "KB77/17098:6законовготовы; crosswalk0/6. Найдены551_22_OKTMO.doc итом6Урал2026вкаталогеРосстата; GETсMac/joe timeout. Далееоригинал551/2022+граница/код2024. Не повторять6законов/соцсети; поимени неjoin.",
+      "result_status": "OPEN_PARTIAL_EXTERNAL_ACCESS",
+      "close_allowed_after_review": false,
+      "done_mutated": false,
+      "measured_evidence": [
+        "6primary transformationlaws52pages already acquired",
+        "twoRosstatURL2attempts each thisrun; originbytesnotacquired;2026volume wouldnotprove2024"
+      ],
+      "missing_acceptance_evidence": [
+        "original551/2022 changefile",
+        "dated2024 successorcode+boundaries+validfrom/to/source territorialfootprint for6",
+        "initialfloodregimeacts103-ук/62/36andappendices stillneedsourcecompleteness"
+      ],
+      "next_bounded_step": "No furtherrepeattheseURLs; obtain archivedofficial2024release/code changes and originalboundaryacts, retain0/6; regimezone≠actualflood.",
+      "owner_request_required": false
+    }
+  ],
+  "allowed_closure_proposals": [
+    "act_0fd8ae3b4bf44287 after evidence integrate+readback and scope review"
+  ],
+  "owner_request": null,
+  "owner_request_if_official_access_remains_unavailable": "Only if release cannot wait: provide originalofficial551_22_OKTMO.doc plus dated2024classifier/boundaryfiles fromexistingarchive; their receipt stillrequires legal-territorialreview,not automaticcrosswalk. Do not ask owner to search full corpus or repeat6laws.",
+  "artifacts": [
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/README.md",
+      "sha256": "d01fb00ecbcd3568034fc75bc47996718dbaa7b2cb3e40d894f3e35957e37b1c",
+      "bytes": 2377,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/build_closeout.py",
+      "sha256": "db37b2cb694c1d858d557df9931352ce640d62d57eab2d8bd97287c33acc7963",
+      "bytes": 11505,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/download-attempts.json",
+      "sha256": "89e039b28ecc199c2cdff61b57dd784172437afe11d7e55bad59a09175a28c12",
+      "bytes": 1110,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/gov-b1-five-passports-review.json",
+      "sha256": "5e3c917aa77bf1c262d255d77c7b696067be6cca2ae4b9aa996c68b5872c2426",
+      "bytes": 7101,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/gov-e1-downloads.json",
+      "sha256": "02563062dfd96cafc19fa7811f46dde1c2a4297cb5b06aa3f7b0dcbca2ab1cab",
+      "bytes": 980,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/gov-e1-integration-proposal.json",
+      "sha256": "320501806f3a48bcbc9ebe77ece9bebf0e6a0940606ddca14d9bae6c51ee2815",
+      "bytes": 11206,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/gov-e1-original-downloads.json",
+      "sha256": "77e7ea6c55e933988b7fc967ad52e1c60d957aa8724637ad12f5dea9459e04bd",
+      "bytes": 1362,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/gov-e1-source-passports.json",
+      "sha256": "9807bdc8d9610229eb3311a6f988f8c6dbc04131b109342eecc0d85b51c9357c",
+      "bytes": 9679,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kb77-16128-fulltext.json",
+      "sha256": "9cb386a8550b2485645e3b0317af8ad414928c318dcb5d46cdc2becd02eb3f21",
+      "bytes": 27400,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kb77-16128-read-receipt.json",
+      "sha256": "e39f62e231c94ffc514d0760b1c16ac509087a2d90e1327c4e10551f84a9c144",
+      "bytes": 406,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-efficiency-2024.html",
+      "sha256": "7663af23dc3b6ec89261bd60e678c4c5b4eeadb876a8cb7f8730570a00f27cdd",
+      "bytes": 139797,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-efficiency-2024.txt",
+      "sha256": "d840e59872f5f6487a008153f848e6ce287c70891870790d436b74b34dc1ff03",
+      "bytes": 86777,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-efficiency-original.doc",
+      "sha256": "d5a78e2711e16f2196ef8b726f804c9192c98d3504945da31dd0463b1a4dc367",
+      "bytes": 165376,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-efficiency-original.txt",
+      "sha256": "4af864ec98ef62c26b205655a3e4289f5de697f7a9ab6a79eff41f2875030c20",
+      "bytes": 21105,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-identity-2024.html",
+      "sha256": "db967b071aedc484f827b228b663307764afa5b6446fd6357167b4386a2a2bee",
+      "bytes": 116155,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-identity-source.json",
+      "sha256": "efe1c95f27aeebfc9a97a04785f3d4673aecf9bfa4ad8df0aed459ba77f3da97",
+      "bytes": 247,
+      "private_raw": false
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-strategy-2024.html",
+      "sha256": "9a14f78c3c6baf7ade7a69075c4a16e37b1489f9f8b6b4ce4d192101ddc58d48",
+      "bytes": 525587,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-strategy-2024.txt",
+      "sha256": "9bceb3e311644eb324033bed191d5b93230015e12f7311720a42d61a8507df4f",
+      "bytes": 369499,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-strategy-original.doc",
+      "sha256": "309c4a403dd7e22e5db3124ca37c1d7ebc3e3cc3f9c3ceabc6a27afeea818f6e",
+      "bytes": 985600,
+      "private_raw": true
+    },
+    {
+      "path": "/private/tmp/graph-remaining-closeout-20261007/kurgan-strategy-original.txt",
+      "sha256": "3fc35dc40c2e0d00557787079631e9d779e58f7d8f0d49fe800e5b757c817964",
+      "bytes": 325820,
+      "private_raw": true
+    }
+  ]
+}

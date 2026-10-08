@@ -119,7 +119,7 @@
         "shock-radar"
       ],
       "local_path": "data/raw/sberindex-municipal-dictionary/municipal_dictionary.parquet",
-      "sha256": "0f111bb2369f9a40488e039ab2a32b2b",
+      "sha256": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
       "manual_verified_on": "2026-09-23",
       "rows": 2660,
       "columns": [
@@ -147,7 +147,10 @@
         74
       ],
       "coords": "2660/2660 s lat/lon: 2393 tochki slovarya + 267 centroidov iz gpkg-poligonov (t_dict_municipal_districts_poly.gpkg, EPSG:4326, centroid cherez EPSG:3857)",
-      "source_archive": "t_dict_municipal.rar (md5 e2f6ed1bb315670bed5cbcaa548716dc): xlsx 3101 strok s istoriei izmenenii + gpkg 2660 geometrii"
+      "source_archive": "t_dict_municipal.rar (md5 e2f6ed1bb315670bed5cbcaa548716dc): xlsx 3101 strok s istoriei izmenenii + gpkg 2660 geometrii",
+      "md5": "0f111bb2369f9a40488e039ab2a32b2b",
+      "hash_verified_on": "2026-10-07",
+      "hash_verification": "157847-byte parquet: both source and frozen analysis copy match SHA256; previous 32-character sha256 was MD5, no data changed"
     },
     {
       "id": "rosstat_oktmo_2026_09_01",

@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-08T08:41:46.584931+00:00",
+  "job": "/var/lib/fixar-cmd/jobs/sberindex-a7-immediate-diagnostics-source-20261008",
+  "executor": "manual isolated F7b artifact adoption under host serg; Incus filesystem API; unchanged existing lifecycle; never enqueued",
+  "execution_workspace": "/tmp/f7b-manual-offline-sberindex-a7-immediate-diagnostics-source-20261008/work",
+  "container_process_executed": false,
+  "initial_container_state": {
+    "status": "Stopped",
+    "pid": 0
+  },
+  "container_lifecycle_mutated": false,
+  "native_paid_task_enqueued": false,
+  "base": "f299a6674c010d12ca371d479c741ceb319df1a9",
+  "head": "cc3a2a5730c8742444f65afe810287c0cae766c5",
+  "tree": "f80341dd9c4f9c25066ee4442137c3cd4aaa08d0",
+  "files_sha256": {
+    "tests/conftest.py": "7c0cb5b482ed97177420c01d3cfc75d8849cdb785692249af9d1b3abbe0cbaba",
+    "scripts/release_evidence.py": "6e04d9e2303dcb8712f8a30399f599a02ad04a73e6e76edb22e4fadaa89423d0",
+    "tests/test_release_immediate_diagnostics.py": "6eccddfd9fbf9fa96b9d0e8802e70fceb206a2d2322574ce44fadc4d2dc2664c"
+  },
+  "patch_sha256": "70f32bbe8e17e355bec23a89639a1db2bf725f15e3760d2c82eedc3870fcb39d",
+  "base_bundle_sha256": "92dc99fa28b2d960e91540fe2042ed829c91efbd0c5fd495833a877bded6c305",
+  "candidate_bundle_sha256": "d30c346f4b3b9cb70029b4a573bc08a2d656547b52f7f59462343318f6e73159",
+  "source_actions_closed": 0,
+  "paid_calls": 0,
+  "production_mutated": false,
+  "scientific_pass": false,
+  "runtime_tests": "pending exact accepted Mac revision"
+}

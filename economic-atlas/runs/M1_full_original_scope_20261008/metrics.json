@@ -1,0 +1,77 @@
+{
+  "derivation": "Counts and frozen fit decisions from saved artifacts only; no new scientific calculation",
+  "n": 1896,
+  "d": 5,
+  "months": 24,
+  "month_range": [
+    "2023-01",
+    "2024-12"
+  ],
+  "calibration_records": 360,
+  "monthly_records": 72,
+  "null_design_per_held_or_month": 99,
+  "null_design_note": "99 prescribed null slots; invalid/abstaining nulls remain recorded and are not all valid numerical statistics.",
+  "journals": 9828,
+  "by_k": {
+    "10": {
+      "calibration_records": 40,
+      "held_records": 80,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      },
+      "method_quality": "FAIL_OR_INCONCLUSIVE_FIXED_CONTROLS",
+      "monthly_records": 24,
+      "monthly_status_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_verdict_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_metric_status_counts": {
+        "NA_GRAPH_OR_K_DOMAIN": 168
+      }
+    },
+    "20": {
+      "calibration_records": 40,
+      "held_records": 80,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      },
+      "method_quality": "FAIL_OR_INCONCLUSIVE_FIXED_CONTROLS",
+      "monthly_records": 24,
+      "monthly_status_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_verdict_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_metric_status_counts": {
+        "NA_GRAPH_OR_K_DOMAIN": 168
+      }
+    },
+    "40": {
+      "calibration_records": 40,
+      "held_records": 80,
+      "fit": {
+        "status": "INCONCLUSIVE_CALIBRATION",
+        "sig_star": null,
+        "reason": "positive_R_not_recovered"
+      },
+      "method_quality": "FAIL_OR_INCONCLUSIVE_FIXED_CONTROLS",
+      "monthly_records": 24,
+      "monthly_status_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_verdict_counts": {
+        "INCONCLUSIVE_GRAPH_ISOLATE": 24
+      },
+      "monthly_metric_status_counts": {
+        "NA_GRAPH_OR_K_DOMAIN": 168
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": "M4_MIXED_NUMERICAL_DEPENDENCY_V1",
+  "status": "PROSPECTIVE_BEFORE_ACTUAL_M1_COMPLETE_AND_M4_RUN",
+  "source_action": "act_a0d924d8af6548e2",
+  "require_actual_full_M1": "Complete strict360/all99 AND72monthly/all99/allK/spectra/labels via adopted validator; exact old334/new26, actual guardian owned cleanup and root independent actual artifact acceptance SHA mandatory; missing/incomplete/unknown refuses before probe",
+  "active_M1_authority": {
+    "engine": "e69c9a79653fd11c6a5a6866fbf5a251c50acdb60cc6b5cdbe3120998a07f74d",
+    "recovery": "fff84fa7adcc51490430fb3fdd06cd98842463fdf39be57c39ddef6f8474b079",
+    "guardian": "2d984dbf8c48e297307ca479dcda597c591d12a2848cd96a1bba4e437e2d16a4",
+    "validator": "ea104f461512ecfffac5e82ce42f1135c1bf65762032b80f21611eb1216a3b9d",
+    "amendment": "516ca1cf068dd420ddbd560a8329c27ca9ab4cc9f582375a770e02bc93ff302e"
+  },
+  "M4_bank_method": "UNCHANGED old5ad spectral.py EVR; EVD applies dependency only",
+  "qualification": "M1 FAIL/INCONCLUSIVE permits entire descriptive M4 bank; positive/economic/causal PASS false unconditionally for mixed authority",
+  "unchanged": {
+    "calibration": 360,
+    "held": 1620,
+    "nulls": 99,
+    "R": [
+      3,
+      4,
+      5
+    ],
+    "worlds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "channels": [
+      "A",
+      "B",
+      "C"
+    ],
+    "total_seconds": 93600,
+    "historical_seconds": 82.20326720799494,
+    "finalization_seconds": 30,
+    "deadline_UTC": "2026-10-09T09:00:00+00:00",
+    "one_use_key": "M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969"
+  },
+  "binding": "Root M4 binding mixed_dependency_binding path and SHA. Descriptor root actual acceptance+terminal+result+manifest SHA/compound authority, bankEVR vs dependencyEVD explicit. Durable parent SHA-checks before probe, then inherited M4_MIXED_DEPENDENCY_BINDING/SHA to same pinned executor and science child; no automatic discovery/guessed receipt",
+  "latest_full_window_start_UTC": "2026-10-08T07:01:22.203267+00:00",
+  "independent_acceptance_schema": {
+    "state": "M1_FULL_RECOVERY_INDEPENDENTLY_VERIFIED",
+    "authority": "exact active compound authority",
+    "scientific_pass": false,
+    "calibration_records": 360,
+    "monthly_records": 72,
+    "nulls_per_held_or_month": 99,
+    "calibration_result_sha256": "actual SHA",
+    "replay_result_sha256": "actual SHA",
+    "terminal_sha256": "actual SHA"
+  },
+  "binding_revision": "binding2",
+  "whole_root_binding": "terminal budget_record.out == exact canonical recovery_root; calibration_result is root/calibration/result.json, replay root/replay/result.json. Exact global_result/global_manifest/calibration_manifest/replay_manifest SHA in binding AND independent actual acceptance. Never pair a different same-authority terminal/root.",
+  "actual_calls": 0
+}

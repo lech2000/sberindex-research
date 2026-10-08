@@ -1,0 +1,59 @@
+{
+  "recorded_at_utc": "2026-10-08T00:15:34.172060+00:00",
+  "source_actions": [
+    "act_b6659ef0c8e049b1",
+    "act_a1e77e09fb854cca"
+  ],
+  "technical_status": "COMPLETED_FULL_ORIGINAL_METHOD_SCOPE",
+  "scientific_gate_status": "FAIL_UNSUPERVISED_FIXED_SYNTHETIC_ERROR_BUDGET",
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "case06_completed": false,
+  "independent_holdout": false,
+  "source_HEAD": "000cd621f932df0d86fd3887dec9d78e3908e895",
+  "full_scope": {
+    "municipalities": 1896,
+    "months": 24,
+    "assignments": 45504,
+    "configs": 210,
+    "worlds": 35,
+    "label_histories": 70,
+    "M3_sensitivity_records": 1260
+  },
+  "real_identity_counts": {
+    "continuing": 43,
+    "reemergence": 1,
+    "ambiguous": 2,
+    "split_candidates": 0,
+    "merge_candidates": 0
+  },
+  "frozen_2023_thresholds": {
+    "T": 0.6098991553065275,
+    "M": 0.4965715855572934,
+    "Tc": 0.20941065778968296
+  },
+  "oracle_primary": {
+    "recognition_TP": 1850,
+    "FP": 0,
+    "FN": 0,
+    "event_TP": 50,
+    "event_FP": 0,
+    "event_FN": 0
+  },
+  "unsupervised_primary": {
+    "recognition_TP": 1585,
+    "FP_unknown": 165,
+    "FN": 265,
+    "event_TP": 10,
+    "event_FP": 0,
+    "event_FN": 40,
+    "recognition_FDR": 0.09428571428571429,
+    "recognition_FNR": 0.14324324324324325,
+    "event_FNR": 0.8
+  },
+  "independent_numerical_audit_SHA": "b6618a8ebf8e893ddbe484047ffd3c3eedfbfe1f07231016a8874f25ad61bb11",
+  "independent_geometry_v2_SHA": "c4273283b1c3ab35a8606e0a258f017059d45e32a9b981179741e03d5d91ca9e",
+  "independent_manifest_v2_SHA": "7ca28c93d05a5f4427e22e38b37466588b84659fc200dcb59fd58a4daaf97abe",
+  "old_outputs_unchanged": true,
+  "conclusion": "Geometry/identity method implemented and evaluated fully; positive oracle control does not establish unsupervised/economic validity. Fixed generator split/merge changes latent memberships while all coordinates remain constant, so those events are observationally unidentified in feature-only input. No universal clustering error or real economic split/merge claim."
+}

@@ -1,0 +1,56 @@
+{
+  "archive_sha256": "941f6bb0a1f8a9165581a0df2f31ac052701de4438576a79daefb97c1b7ae379",
+  "receipt_sha256": "a45d53e3af05c69ea62bc0155817032fdd0315d389f47da62603b5f0aafd75ae",
+  "base": "035a5a5131a7beea004c45aae7b27f93e45b0eda",
+  "head": "9adeef7b44ae4aa5d6b085e70289735ee15478c6",
+  "prod_head_at_collection": "e957c9e717361a771088709f37b739c53b024a0b",
+  "bundle_verifier_exit": 0,
+  "focused_origin": "derived exact17+8 testcase records from mandatory JUnit",
+  "mandatory_regression_groups": {
+    "test_data_boundary_action_classification": 17,
+    "test_research_material_id_priority": 8
+  },
+  "required_suites": {
+    "privacy-db": {
+      "tests": 313,
+      "passed": 313,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release-runner": {
+      "tests": 187,
+      "passed": 187,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "review-contract": {
+      "tests": 125,
+      "passed": 125,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "frontend-agent-ux": {
+      "tests": 690,
+      "passed": 690,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "technical-documents": {
+      "tests": 78,
+      "passed": 78,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "focused_passed": 25,
+  "focused_sha256": "4163f3ac789212399a2acf6210fa92fadbb0a99616c34ec30520976a85de606f",
+  "total_required_passed": 1393,
+  "production_code_changed_by_candidate": false,
+  "muse_started": false,
+  "live_acceptance_completed": false
+}

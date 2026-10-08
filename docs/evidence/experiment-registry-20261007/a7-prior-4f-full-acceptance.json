@@ -1,0 +1,51 @@
+{
+  "archive_sha256": "ecd9c1398dd197f522346a4523928b194143a7f1c352c5366d66ccaf4614a712",
+  "receipt_sha256": "c726ea8d575478b52b0052a7b9679b7a3d3349150292476d1bf83d06b19306e9",
+  "base": "12eb6aed30cad75ce847328e061e88c6395ed681",
+  "head": "4f02416524653591a560cd625814c3282c3e2ef2",
+  "prod_head_at_collection": "035a5a5131a7beea004c45aae7b27f93e45b0eda",
+  "bundle_verifier_exit": 0,
+  "required_suites": {
+    "privacy-db": {
+      "tests": 313,
+      "passed": 313,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release-runner": {
+      "tests": 187,
+      "passed": 187,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "review-contract": {
+      "tests": 125,
+      "passed": 125,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "frontend-agent-ux": {
+      "tests": 690,
+      "passed": 690,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "technical-documents": {
+      "tests": 78,
+      "passed": 78,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "focused_passed": 25,
+  "focused_sha256": "566770016dd07d55cf65a29e6af4969d7f7ea686713439780725fe6be920207d",
+  "total_required_passed": 1393,
+  "production_code_changed_by_candidate": false,
+  "muse_started": false,
+  "live_acceptance_completed": false
+}

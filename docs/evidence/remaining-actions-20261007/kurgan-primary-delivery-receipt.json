@@ -1,0 +1,70 @@
+{
+  "checked_at_utc": "2026-10-07T11:41:39.497584+00:00",
+  "cases": [
+    {
+      "case_id": "case_43de12a8dc2e4abd",
+      "materials": [
+        {
+          "id": "mat_f71ed8ca2e204ed1",
+          "vault_document_id": "doc_d3dce3a6990a43a1",
+          "file": "kurgan-strategy-original.doc",
+          "title": "Курган: отчёт об экономике2024, постановление4377 от28.04.2025",
+          "bytes": 985600,
+          "sha256": "309c4a403dd7e22e5db3124ca37c1d7ebc3e3cc3f9c3ceabc6a27afeea818f6e",
+          "verified": true
+        },
+        {
+          "id": "mat_54846c30e9aa4b62",
+          "vault_document_id": "doc_abd9bf1e95b249f4",
+          "file": "kurgan-efficiency-original.doc",
+          "title": "Курган: показатели эффективности2024, доклад25.04.2025",
+          "bytes": 165376,
+          "sha256": "d5a78e2711e16f2196ef8b726f804c9192c98d3504945da31dd0463b1a4dc367",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_66cae4a89ba6473f",
+      "materials": [
+        {
+          "id": "mat_b5bc3630dabf4a3d",
+          "vault_document_id": "doc_d3dce3a6990a43a1",
+          "file": "kurgan-strategy-original.doc",
+          "title": "Курган: отчёт об экономике2024, постановление4377 от28.04.2025",
+          "bytes": 985600,
+          "sha256": "309c4a403dd7e22e5db3124ca37c1d7ebc3e3cc3f9c3ceabc6a27afeea818f6e",
+          "verified": true
+        },
+        {
+          "id": "mat_9e33ba0387544c50",
+          "vault_document_id": "doc_abd9bf1e95b249f4",
+          "file": "kurgan-efficiency-original.doc",
+          "title": "Курган: показатели эффективности2024, доклад25.04.2025",
+          "bytes": 165376,
+          "sha256": "d5a78e2711e16f2196ef8b726f804c9192c98d3504945da31dd0463b1a4dc367",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "kb": [
+    {
+      "corpus_id": 77,
+      "document_id": 17173,
+      "full_readback_verified": true,
+      "text_sha256": "67e8aa6dd555aa73623334046c8f2b6cf83522d4fde7b4b8a8d5be6eb7933485",
+      "checked_at": "2026-10-07T11:41:35.809994+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17175,
+      "full_readback_verified": true,
+      "text_sha256": "e800eeb2d5584e8b93a7946df4588d62d6d1bb92d1c8dfb158d289d850dcae9b",
+      "checked_at": "2026-10-07T11:41:39.481831+00:00"
+    }
+  ],
+  "raw_sources_publicly_republished": false,
+  "historical_asof_verified": false,
+  "scientific_pass": false
+}

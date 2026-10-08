@@ -1,0 +1,46 @@
+{
+  "state": "SAVED_PAIRED_NUMERIC_RECHECK_PASS",
+  "national_mae": {
+    "national_prophet": 946.1427947440354,
+    "national_yoy_lag1": 598.0916651328823,
+    "fresh_plain_prophet": 947.1822428382935
+  },
+  "national_gain": 36.78632142469711,
+  "marketplace_loss": 53.04337736545026,
+  "consumer": [
+    {
+      "horizon": 1,
+      "mask_SHA": "5cc0f3442e4131fa2d890798134103b11db0db50e2060d1e4cfadf1631657a53",
+      "rows": 9234,
+      "base_mae": 686.416609985477,
+      "own_mae": 668.8167504103586,
+      "peer_mae": 667.9508693956427,
+      "total_correction_percent": 2.6901651739203882,
+      "incremental_peer_percent": 0.1294646125690843,
+      "saved_month_CI": [
+        -2.189903652347611,
+        3.7663374942643086
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    },
+    {
+      "horizon": 3,
+      "mask_SHA": "3cc126aa29f61bf62e39eed2e184053dbbecb90708025a1d2cf34f0eb61c3db1",
+      "rows": 9234,
+      "base_mae": 884.6938823891489,
+      "own_mae": 856.2715899598511,
+      "peer_mae": 851.1723482044649,
+      "total_correction_percent": 3.789054593003159,
+      "incremental_peer_percent": 0.5955168681498901,
+      "saved_month_CI": [
+        -0.2512891621508523,
+        10.272387602237034
+      ],
+      "saved_CI_includes_zero": true,
+      "CI_recomputed": false
+    }
+  ],
+  "elapsed": 106.4534587500093,
+  "RSS": 227573760
+}

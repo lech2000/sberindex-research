@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-07T14:22:58.290205+00:00",
+  "private_durable_snapshot": "/Users/sergey/projects/sberindex-research-jobs/Graph_loaded_layers_20261007/graph.sqlite",
+  "graph_sha256": "f385d7d963f3c22d2af62a04c4e5e55affc0c1bcd8aa9353c43c4d89fbaaad2a",
+  "file_bytes": 2300686336,
+  "mode": "0400",
+  "directory_mode": "0700",
+  "copy_method": "APFS cp -c immutable clone; destination bytes independently hashed",
+  "public_distribution": false,
+  "production_ingest": false
+}

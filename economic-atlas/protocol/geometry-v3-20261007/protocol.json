@@ -1,0 +1,89 @@
+{
+  "version": "geometry-v3.1",
+  "recorded_before_new_geometry_computation": "2026-10-07T12:25:46.571504+00:00",
+  "base_commit": "3bc0f36c4fdae32980ad49fdf307c9b9aafde805",
+  "source_action_ids": [
+    "act_b6659ef0c8e049b1",
+    "act_a1e77e09fb854cca",
+    "act_63eabe3fd8aa4770"
+  ],
+  "scope": "prospective algorithmic geometry/control acceptance only; no economic scientific PASS; legacy sphere outputs remain byte-identical",
+  "known_results": "Legacy sphere runs and their F1=.98/error sensitivities already inspected. New seeds are not an external economic holdout. This registration is local Git chronology only.",
+  "geometry": {
+    "ellipsoid_min_members": 10,
+    "covariance": "sample centred covariance ddof=1 for n>=10; eigenvalues floored at max(1e-6, trace(raw covariance)/F*1e-8), all repairs recorded; no data-dependent tuning",
+    "small_cluster": "n<10 isotropic covariance RMS^2/F floored at1e-6; sphere explicitly tagged",
+    "overlap": "full-covariance Gaussian Bhattacharyya coefficient using slogdet and linear solve",
+    "M3": "member Mahalanobis distance strictly<kappa; geometric AND member-composition fraction strictly>containment; main kappa2.5/containment.60; sensitivity kappa1.5/2/2.5 and containment.60/.75",
+    "nonfinite": "reject; never zero impute"
+  },
+  "calibration": {
+    "fit_year": 2023,
+    "bootstrap_B": 200,
+    "seed": 20260926,
+    "T": "q95 boot-vs-other full-covariance overlap",
+    "M": "max(0,q05 paired own-overlap minus maximum other-overlap); calibration gap is own-minus-best-competitor, tracker uses best-minus-second; preserve this distinction",
+    "Tc": "q50 boot-vs-other",
+    "calibration_fallback": "fail controls acceptance if fallback or incomplete2023 coverage; do not substitute legacy thresholds",
+    "threshold_transfer": "new frozen real2023 geometry-v3 thresholds used unmodified on controls and2024; do not claim exact old T/M/Tc"
+  },
+  "controls": {
+    "seeds": [
+      20271001,
+      20271002,
+      20271003,
+      20271004,
+      20271005
+    ],
+    "worlds": [
+      "stable",
+      "drift",
+      "birth",
+      "death",
+      "split",
+      "merge",
+      "proximity"
+    ],
+    "generator": "legacy declared seven structural ontologies with fresh seeds, deterministic fixed full-rank affine transform diag(2,.8,.4,.2,.1) rotated45deg in dimensions0/1; anisotropic coordinates, exact truth inherited; no adaptation after viewing",
+    "n": 200,
+    "dimensions": 5,
+    "months": 24,
+    "modes": [
+      "oracle",
+      "unsupervised"
+    ],
+    "margin_factors": [
+      0.75,
+      1,
+      1.25
+    ],
+    "primary_margin_factor": 1,
+    "matching": "reuse frozen one-to-one exact month/kind/subject/set evaluator; purity AND coverage>=.8; no retrospective remapping; retirement4misses; FDR not event FPR"
+  },
+  "error_budget": {
+    "applies_to": "primary Mfactor1 separately for oracle AND unsupervised; both must pass to report technical synthetic acceptance",
+    "recognition_FDR_max": 0.01,
+    "recognition_FNR_max": 0.05,
+    "coverage_min": 0.95,
+    "event_FDR_max": 0.05,
+    "event_FNR_max": 0.1,
+    "stable_drift_proximity_split_merge_false_events_max": 0,
+    "confidence": "pooled empirical counts for this fixed suite; report bootstrap intervals descriptively, not population control",
+    "sensitivity": "all factors reported; sensitivity failures prevent robustness claim but do not permit selecting alternateM",
+    "NA": "any primary rate denominator0 or missing configs yields INCONCLUSIVE, never PASS"
+  },
+  "technical_acceptance": [
+    "all component tests pass",
+    "full2023 calibration uses actual real inputs and verified keys/SHA",
+    "210controls complete, budgets checked separately both modes",
+    "full real replay outputs assignments/regions/events/calibration/provenance with covariance and repair audit",
+    "future2024 mutations cannot change frozen2023 calibration or earlier assignments",
+    "all legacy source/run hashes unchanged"
+  ],
+  "not_accepted": [
+    "true economic identity/birth/split/merge",
+    "independent holdout/vintage",
+    "full scientific A6",
+    "case closure before F7b review and recorded new-run acceptance"
+  ]
+}

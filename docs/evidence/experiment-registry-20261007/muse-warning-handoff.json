@@ -1,0 +1,208 @@
+{
+  "checked_at_utc": "2026-10-07T09:31:47.223264+00:00",
+  "paid_review_count": 1,
+  "previous_result": {
+    "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+    "head": "3259851a6ed48b9babdac38ed509c1f027d8ee27",
+    "model": "meta/muse-spark-1.3-contributor",
+    "mode": "enforce",
+    "review_exit_code": 1,
+    "status": "valid",
+    "verdict": "warn",
+    "findings": [
+      {
+        "id": "MIGR-01",
+        "check": "migrations",
+        "status": "informational",
+        "summary": "Новых миграций в диапазоне нет; privacy-tightening ограничения ru/own и сброшенные согласия не затрагиваются",
+        "evidence": "_review_diff/index.txt:2, scripts/case_migrations.json:1389",
+        "resolution": "Не блокирует: схема не меняется, DOWN/recovery и требования сохранения NEW неприменимы к данному diff"
+      },
+      {
+        "id": "SEC-01",
+        "check": "secrets",
+        "status": "resolved",
+        "summary": "Ключей, токенов и паролей в diff нет; совпадение Secret только синтетический текст фикстур",
+        "evidence": "_review_diff/001.diff:1, tests/test_research_material_id_priority.py:47",
+        "resolution": "Риск закрыт проверкой всех 6 patches из _review_diff/index.txt:2: секретов нет; Secret в tests/test_research_material_id_priority.py:47 это вымышленные title/text медицинских фикстур, не credential"
+      },
+      {
+        "id": "COMP-01",
+        "check": "compose",
+        "status": "informational",
+        "summary": "compose.yml не тронут; новых открытых портов и синтаксических поломок в diff нет",
+        "evidence": "compose.yml:57, _review_diff/index.txt:2",
+        "resolution": "Не блокирует: compose вне статистики изменений; петли 127.0.0.1/[::1] сохранены, публичные 8020/8024 задокументированы как публичные службы"
+      },
+      {
+        "id": "TEST-01",
+        "check": "tests",
+        "status": "blocking",
+        "summary": "Изменённое поведение покрыто двумя новыми файлами, но проверенный протокол их не запускал: selection всех 5 suites не содержит новых тестов",
+        "evidence": "scripts/release_evidence.py:25, _release_evidence/receipt.json:25, tests/test_data_boundary_action_classification.py:13",
+        "reproduction": "Отсутствующее доказательство: в _release_evidence/receipt.json:25 selection privacy-db/release-runner/review-contract/frontend-agent-ux/technical-documents нет tests/test_data_boundary_action_classification.py и tests/test_research_material_id_priority.py; воспроизведение: PYTHONPATH=. python -m pytest tests/test_data_boundary_action_classification.py tests/test_research_material_id_priority.py -v -p no:cacheprovider",
+        "resolution": "Включить оба файла в SUITES scripts/release_evidence.py и собрать новый полный bundle BASE..HEAD с verify exit 0, 0 failures/errors/skipped и SHA256 логов/JUnit; принять по receipt с новым head и наличию обоих модулей в JUnit classname"
+      }
+    ],
+    "background_units_paused": [
+      "fixar-cmd-builder.service",
+      "fixar-cmd-codex.service",
+      "fixar-cmd-gateway.service",
+      "fixar-cmd-golden.service",
+      "fixar-cmd-health.service",
+      "fixar-cmd-lessons.service",
+      "fixar-cmd-research-drive.service",
+      "fixar-cmd-research-review.service",
+      "fixar-cmd-tune.service",
+      "fixar-selfdiag-signals.service",
+      "fixar-selfdiag.service",
+      "fixar-cmd-codex.timer",
+      "fixar-cmd-golden.timer",
+      "fixar-cmd-health.timer",
+      "fixar-cmd-lessons.timer",
+      "fixar-cmd-research-drive.timer",
+      "fixar-cmd-research-review.timer",
+      "fixar-cmd-tune.timer",
+      "fixar-selfdiag-signals.timer",
+      "fixar-selfdiag.timer"
+    ],
+    "boot_autostart": false,
+    "automatic_retry_performed": false,
+    "review_started": true,
+    "authorization": {
+      "authorized_by": "Sergey",
+      "authorization_source": "Direct human message in current Codex conversation",
+      "authorization_text": "разрешаю один ручной платный прогон Muse",
+      "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+      "head": "3259851a6ed48b9babdac38ed509c1f027d8ee27",
+      "scope": "Six-file A7 false data-boundary classification and explicit case material priority repair",
+      "model": "meta/muse-spark-1.3-contributor",
+      "single_enforced_review": true,
+      "automatic_retries_authorized": false,
+      "resume_background_queues": false,
+      "remove_cost_pause_markers": false,
+      "receipt_sha256": "019ec1965114fc9e70b555e2ab1e788d5dc60ee23b4bb0147336d93a7b2f2704",
+      "approved_at_utc": "2026-10-07T09:18:39.233943+00:00"
+    },
+    "diagnostics": {
+      "status": "valid",
+      "cli_exit": 0,
+      "api_retries": 0,
+      "network_retries": 0,
+      "stream_restarts": 0,
+      "permission_blocks": 0,
+      "final_records": 1,
+      "result": {
+        "verdict": "warn",
+        "findings": [
+          {
+            "id": "MIGR-01",
+            "check": "migrations",
+            "status": "informational",
+            "summary": "Новых миграций в диапазоне нет; privacy-tightening ограничения ru/own и сброшенные согласия не затрагиваются",
+            "evidence": "_review_diff/index.txt:2, scripts/case_migrations.json:1389",
+            "resolution": "Не блокирует: схема не меняется, DOWN/recovery и требования сохранения NEW неприменимы к данному diff"
+          },
+          {
+            "id": "SEC-01",
+            "check": "secrets",
+            "status": "resolved",
+            "summary": "Ключей, токенов и паролей в diff нет; совпадение Secret только синтетический текст фикстур",
+            "evidence": "_review_diff/001.diff:1, tests/test_research_material_id_priority.py:47",
+            "resolution": "Риск закрыт проверкой всех 6 patches из _review_diff/index.txt:2: секретов нет; Secret в tests/test_research_material_id_priority.py:47 это вымышленные title/text медицинских фикстур, не credential"
+          },
+          {
+            "id": "COMP-01",
+            "check": "compose",
+            "status": "informational",
+            "summary": "compose.yml не тронут; новых открытых портов и синтаксических поломок в diff нет",
+            "evidence": "compose.yml:57, _review_diff/index.txt:2",
+            "resolution": "Не блокирует: compose вне статистики изменений; петли 127.0.0.1/[::1] сохранены, публичные 8020/8024 задокументированы как публичные службы"
+          },
+          {
+            "id": "TEST-01",
+            "check": "tests",
+            "status": "blocking",
+            "summary": "Изменённое поведение покрыто двумя новыми файлами, но проверенный протокол их не запускал: selection всех 5 suites не содержит новых тестов",
+            "evidence": "scripts/release_evidence.py:25, _release_evidence/receipt.json:25, tests/test_data_boundary_action_classification.py:13",
+            "reproduction": "Отсутствующее доказательство: в _release_evidence/receipt.json:25 selection privacy-db/release-runner/review-contract/frontend-agent-ux/technical-documents нет tests/test_data_boundary_action_classification.py и tests/test_research_material_id_priority.py; воспроизведение: PYTHONPATH=. python -m pytest tests/test_data_boundary_action_classification.py tests/test_research_material_id_priority.py -v -p no:cacheprovider",
+            "resolution": "Включить оба файла в SUITES scripts/release_evidence.py и собрать новый полный bundle BASE..HEAD с verify exit 0, 0 failures/errors/skipped и SHA256 логов/JUnit; принять по receipt с новым head и наличию обоих модулей в JUnit classname"
+          }
+        ],
+        "migrations": false,
+        "secrets_found": false
+      }
+    },
+    "log_path": "/var/lib/fixar-cmd/jobs/sberindex-a7-curator-approved-20261007/manual-muse-review.log",
+    "checked_at_utc": "2026-10-07T09:25:30.853459+00:00",
+    "stderr_tail": "deploy-review: выкладка остановлена (verdict=warn)\n[{\"id\":\"MIGR-01\",\"check\":\"migrations\",\"status\":\"informational\",\"summary\":\"Новых миграций в диапазоне нет; privacy-tightening ограничения ru/own и сброшенные согласия не затрагиваются\",\"evidence\":\"_review_diff/index.txt:2, scripts/case_migrations.json:1389\",\"resolution\":\"Не блокирует: схема не меняется, DOWN/recovery и требования сохранения NEW неприменимы к данному diff\"},{\"id\":\"SEC-01\",\"check\":\"secrets\",\"status\":\"resolved\",\"summary\":\"Ключей, токенов и паролей в diff нет; совпадение Secret только синтетический текст фикстур\",\"evidence\":\"_review_diff/001.diff:1, tests/test_research_material_id_priority.py:47\",\"resolution\":\"Риск закрыт проверкой всех 6 patches из _review_diff/index.txt:2: секретов нет; Secret в tests/test_research_material_id_priority.py:47 это вымышленные title/text медицинских фикстур, не credential\"},{\"id\":\"COMP-01\",\"check\":\"compose\",\"status\":\"informational\",\"summary\":\"compose.yml не тронут; новых открытых портов и синтаксических поломок в diff нет\",\"evidence\":\"compose.yml:57, _review_diff/index.txt:2\",\"resolution\":\"Не блокирует: compose вне статистики изменений; петли 127.0.0.1/[::1] сохранены, публичные 8020/8024 задокументированы как публичные службы\"},{\"id\":\"TEST-01\",\"check\":\"tests\",\"status\":\"blocking\",\"summary\":\"Изменённое поведение покрыто двумя новыми файлами, но проверенный протокол их не запускал: selection всех 5 suites не содержит новых тестов\",\"evidence\":\"scripts/release_evidence.py:25, _release_evidence/receipt.json:25, tests/test_data_boundary_action_classification.py:13\",\"reproduction\":\"Отсутствующее доказательство: в _release_evidence/receipt.json:25 selection privacy-db/release-runner/review-contract/frontend-agent-ux/technical-documents нет tests/test_data_boundary_action_classification.py и tests/test_research_material_id_priority.py; воспроизведение: PYTHONPATH=. python -m pytest tests/test_data_boundary_action_classification.py tests/test_research_material_id_priority.py -v -p no:cacheprovider\",\"resolution\":\"Включить оба файла в SUITES scripts/release_evidence.py и собрать новый полный bundle BASE..HEAD с verify exit 0, 0 failures/errors/skipped и SHA256 логов/JUnit; принять по receipt с новым head и наличию обоих модулей в JUnit classname\"}]\n",
+    "production_head_after_review": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+    "production_lock_touched": false
+  },
+  "replacement": {
+    "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+    "head": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+    "previous_review_head": "3259851a6ed48b9babdac38ed509c1f027d8ee27",
+    "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-curator-receipt-fix-20261007/work",
+    "changed_files": [
+      "infrastructure/agrigate-pro/site/v2/cases.js",
+      "infrastructure/agrigate-pro/site/v2/index.html",
+      "scripts/release_evidence.py",
+      "services/case_service/app.py",
+      "services/dialog_service/app.py",
+      "tests/test_data_boundary_action_classification.py",
+      "tests/test_research_material_id_priority.py"
+    ],
+    "muse_started": false,
+    "paid_review_authorized": false,
+    "previous_single_paid_review_consumed": true,
+    "previous_verdict": "warn",
+    "fixes_review_finding": "TEST-01",
+    "production_changed": false
+  },
+  "kb": [
+    {
+      "corpus_id": 62,
+      "document_id": 17137,
+      "full_readback_verified": true,
+      "text_sha256": "44bc255c0ab4122a43936c64daa36b9ae7f658796ae06fa930fe95e434372f1d",
+      "checked_at": "2026-10-07T09:31:49.232244+00:00"
+    },
+    {
+      "corpus_id": 77,
+      "document_id": 17138,
+      "full_readback_verified": true,
+      "text_sha256": "44bc255c0ab4122a43936c64daa36b9ae7f658796ae06fa930fe95e434372f1d",
+      "checked_at": "2026-10-07T09:31:50.715299+00:00"
+    }
+  ],
+  "cases": {
+    "checked_at": "2026-10-07T09:31:53.961894+00:00",
+    "materials": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "material_id": "mat_a7_single_muse_warning_20261007_atlas",
+        "full_readback_verified": true
+      },
+      {
+        "case_id": "case_d058db85c48a487c",
+        "material_id": "mat_a7_single_muse_warning_20261007_curator",
+        "full_readback_verified": true
+      }
+    ],
+    "completed_actions": [],
+    "updated_actions": [
+      {
+        "case_id": "case_66cae4a89ba6473f",
+        "action_id": "act_82e6846e4c3d42a4",
+        "done": false,
+        "waiting_for_readback_verified": true
+      }
+    ],
+    "scientific_gates_closed": [],
+    "contest_submitted": false
+  },
+  "production_changed": false,
+  "new_review_authorized": false,
+  "scientific_pass": false
+}

@@ -1,0 +1,9 @@
+{
+  "parent_verification": "Mac read-only original final copy; all manifest byte SHA, SQL totals/FK/available/boundary, UTC view",
+  "graph_sha256": "f385d7d963f3c22d2af62a04c4e5e55affc0c1bcd8aa9353c43c4d89fbaaad2a",
+  "observations": 1037459,
+  "added": 724583,
+  "new_releases": 7,
+  "all_manifest_entries_verified": true,
+  "scientific_pass": false
+}

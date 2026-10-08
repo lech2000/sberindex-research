@@ -1,0 +1,9 @@
+{
+  "elapsed_through_RESULT_fsync_seconds": 5.055689959001029,
+  "within_original300s": true,
+  "result_SHA": "3052c7343902dce897f437bda5b23c409b681e910bce5fa4f0cfe42dce525cd6",
+  "own_peak_RSS_bytes": 277069824,
+  "output_bytes_before_post": 16298,
+  "last_POST_IO_write_independently_timed": false,
+  "scientific_pass": false
+}

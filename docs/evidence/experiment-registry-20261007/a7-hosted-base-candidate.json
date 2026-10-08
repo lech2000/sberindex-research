@@ -1,0 +1,27 @@
+{
+  "base": "035a5a5131a7beea004c45aae7b27f93e45b0eda",
+  "head": "9adeef7b44ae4aa5d6b085e70289735ee15478c6",
+  "previous_candidate_head": "4f02416524653591a560cd625814c3282c3e2ef2",
+  "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-muse-repeat-hosted-base-20261007/work",
+  "changed_files": [
+    "infrastructure/agrigate-pro/site/v2/cases.js",
+    "infrastructure/agrigate-pro/site/v2/index.html",
+    "scripts/release_evidence.py",
+    "services/case_service/app.py",
+    "services/dialog_service/app.py",
+    "tests/test_data_boundary_action_classification.py",
+    "tests/test_research_material_id_priority.py"
+  ],
+  "neighbor_research_access_preserved": true,
+  "neighbor_hosted_execution_preserved": true,
+  "production_code_changed": false,
+  "new_paid_review_started": false,
+  "remaining_authorized_paid_reviews": 1,
+  "authorization_text": "\u0420\u0430\u0437\u0440\u0435\u0448\u0430\u044e \u043e\u0434\u0438\u043d \u043f\u043e\u0432\u0442\u043e\u0440\u043d\u044b\u0439 \u043f\u0440\u043e\u0433\u043e\u043d",
+  "full_tests": "RUNNING exact current base; earlier1393PASS does not certify this new head",
+  "patch_sha256": "f89552c00a8c06306686f89a0bcdbbd3bb18fbe3c1492d0a60acff8b4429c84f",
+  "patch_bytes": 14584,
+  "tree": "28ebfeb2bd625d3337513b9fd4ffacd1d4e86a16",
+  "muse_started": false,
+  "live_acceptance_completed": false
+}

@@ -18,7 +18,7 @@ CREATE TABLE observation(id TEXT PRIMARY KEY,release_id TEXT REFERENCES dataset_
 CREATE TABLE missing_value(release_id TEXT REFERENCES dataset_release(id),tid INTEGER REFERENCES municipality(tid),indicator_id TEXT REFERENCES indicator(id),period TEXT,dimensions TEXT,reason TEXT);
 CREATE TABLE code_presence(release_id TEXT REFERENCES dataset_release(id),code TEXT,effective_date TEXT,source_status TEXT,PRIMARY KEY(release_id,code));
 CREATE INDEX obs_tid ON observation(tid);
-CREATE VIEW asof_2024 AS SELECT * FROM observation WHERE available_at IS NOT NULL AND available_at<='2024-12-31T23:59:59+00:00' AND provenance_class IN ('observed','source_estimate');
+CREATE VIEW asof_2024 AS SELECT * FROM observation WHERE available_at IS NOT NULL AND julianday(available_at)<=julianday('2024-12-31T23:59:59+00:00') AND provenance_class IN ('observed','source_estimate');
 '''
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def oid(*parts):return hashlib.sha256('|'.join(str(x) for x in parts).encode()).hexdigest()

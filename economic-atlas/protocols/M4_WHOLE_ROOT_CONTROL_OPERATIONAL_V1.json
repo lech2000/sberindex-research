@@ -1,0 +1,53 @@
+{
+  "version": "M4_WHOLE_ROOT_CONTROL_OPERATIONAL_V1",
+  "status": "PROSPECTIVE_F7B_REVIEW_NO_NATIVE_SCIENCE_BOOTSTRAP",
+  "source_action": "act_a0d924d8af6548e2",
+  "base": "16aef1721ad45a9e799e3af772e93429571760e9",
+  "old_durable_source_SHA": "ccb970ac3a89a79de983696f02ed110a300534875e93401f23fe3ead1ebe84a3",
+  "method": "operational only; original5adEVR bank/worlds/channels/seeds/99nulls/executor04b89native guard/all360cal+1620held unchanged; dependencyEVD negative/descriptive qualificationfalse",
+  "whole_time": {
+    "seconds": 93600,
+    "historical_seconds": 82.20326720799494,
+    "entry": "rootcontroller first monotonic stamp BEFOREmajorimports/prepare/bootstrap; samehostUID clock starts all admission/alarm/terminal elapsed",
+    "proof_origin": "M4_ROOT_CONTROLLER_V1",
+    "anchor_age_seconds_max": 120,
+    "UTC_monotonic_skew_seconds_max": 5,
+    "final_receipt_reserve_seconds": 30,
+    "deadline_UTC": "2026-10-09T09:00:00+00:00",
+    "latest_entry_UTC": "2026-10-08T07:01:22.203267+00:00"
+  },
+  "resources": {
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "whole_output_bytes": 268435456,
+    "supervisory_reserved_bytes": 65536,
+    "pre_finalization_supervisory_cap_bytes": 32768,
+    "minimum_free_bytes": 1073741824,
+    "outer_whole_guard_sample_seconds": 1,
+    "continuous_resource_PASS": false,
+    "last_immutable_receipt_IO_measured": false
+  },
+  "paths": {
+    "actual": "/private/tmp/atlas-m4-fullbank-actual-20261008-v1",
+    "science": "/private/tmp/atlas-m4-fullbank-actual-20261008-v1/science",
+    "receipts": "/private/tmp/atlas-m4-fullbank-actual-20261008-v1/receipts",
+    "controller_live_outputs": "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime",
+    "binding": "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime/ROOT_BINDING.json",
+    "capsule": "/private/tmp/atlas-m4-root-launch-controller-20261008/runtime/entry.json"
+  },
+  "accounting_roots": [
+    "science",
+    "receipts",
+    "controllerruntime",
+    "canonicalmodellease+terminal",
+    "canonicalUIDM4bootstraplease+terminal",
+    "M4fullbanklaunchdstdout+stderr"
+  ],
+  "accounting": "canonical-path dedup once; all controller capsule/bindings/descriptor/plist/control receipts include64KiBsupervisoryreserve within256MiB; source/F7breviewpacket is immutable input not liveoutput",
+  "global_oneuse_key": "M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969",
+  "launch": "one launchctl bootstrap only; RunAtLoadtrue/KeepAlivefalse/nointerval/no kickstart; canonicalO_EXCL UIDprivate0700bootstrap and modelleases permanent; source/proof/binding mismatches beforeprobe/model/reservation",
+  "independent_acceptance_SHA": "94c366e4fefe3857ac0ccd4719a7912b859d56018327c684209ca51cd58e5649",
+  "dependencies": "exactfullM1actual360/72/99/9828/global/phase/hashrootacceptance plus strong adoptedmixedgate, rootactualfreshps known72250/72253 gone beforeprobe",
+  "scientific_pass": false,
+  "actual_calls": 0
+}

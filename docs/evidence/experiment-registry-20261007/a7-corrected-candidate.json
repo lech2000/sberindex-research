@@ -1,0 +1,27 @@
+{
+  "base": "579bdb88771d1bcb5f06e47cf071cc4cac51a40a",
+  "head": "6f19842ff858b1c42d4f82650ed7362ff6b3be6d",
+  "previous_review_head": "3259851a6ed48b9babdac38ed509c1f027d8ee27",
+  "worktree": "/var/lib/fixar-cmd/jobs/sberindex-a7-curator-receipt-fix-20261007/work",
+  "changed_files": [
+    "infrastructure/agrigate-pro/site/v2/cases.js",
+    "infrastructure/agrigate-pro/site/v2/index.html",
+    "scripts/release_evidence.py",
+    "services/case_service/app.py",
+    "services/dialog_service/app.py",
+    "tests/test_data_boundary_action_classification.py",
+    "tests/test_research_material_id_priority.py"
+  ],
+  "muse_started": false,
+  "paid_review_authorized": false,
+  "previous_single_paid_review_consumed": true,
+  "previous_verdict": "warn",
+  "fixes_review_finding": "TEST-01",
+  "production_changed": false,
+  "patch_sha256": "cf2c96449e5f3aae92c344e5b6f03ec8bbc7ea0ef827da5b5ee98531d0ca5ef7",
+  "patch_bytes": 14584,
+  "tree": "dc6cd8b762a80a5fb81531705a1a67b76a937000",
+  "live_acceptance_completed": false,
+  "full_tests": "COMPLETE1393mandatoryPASS includes17classifier+8material_priority; exactproducerverify0",
+  "receipt_sha256": "fb9fabbeeb0edef8e152db2566dbe4bab7499ce92dc13690ebf4fb56514314f6"
+}
