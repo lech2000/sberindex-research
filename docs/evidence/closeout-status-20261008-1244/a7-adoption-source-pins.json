@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-08T11:38:33.498201+00:00",
+  "base": "cc3a2a5730c8742444f65afe810287c0cae766c5",
+  "head": "001fb84b5267b20bc41abfdc37558bdc75ff6f4f",
+  "tree": "205b099e198109adb244be16ad62f20b8cc37986",
+  "files_sha256": {
+    "scripts/deploy_review.sh": "a2630554983fd2b02541d751c23dfc52d56694cd4d91aec1a0af7ec1b966e15f",
+    "scripts/review_stage_diagnostics.py": "12f0cd8dd67b709068c8aadab62a3c9be1614026cdeb493f86011295855561d8",
+    "tests/test_review_stage_diagnostics.py": "e8f74f900e446379e395a4147adcf2383ac4acb7cd6a9e79afed20e5b2e0c1f7"
+  },
+  "patch_sha256": "fc8db0b2096d3b02c2c9d6c8de0d6ffb338a14f9aaad33c13ccb43ebbf01f0e0",
+  "source_actions_closed": 0,
+  "paid_calls": 0,
+  "production_mutated": false,
+  "scientific_pass": false
+}

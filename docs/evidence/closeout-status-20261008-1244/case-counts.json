@@ -1,0 +1,23 @@
+[
+  {
+    "project": "Atlas",
+    "done": 30,
+    "open": 9,
+    "total": 39,
+    "checked_at_utc": "2026-10-08T12:44:08.347176+00:00"
+  },
+  {
+    "project": "Radar",
+    "done": 31,
+    "open": 7,
+    "total": 38,
+    "checked_at_utc": "2026-10-08T12:44:08.356139+00:00"
+  },
+  {
+    "project": "Graph",
+    "done": 22,
+    "open": 1,
+    "total": 23,
+    "checked_at_utc": "2026-10-08T12:44:08.364073+00:00"
+  }
+]

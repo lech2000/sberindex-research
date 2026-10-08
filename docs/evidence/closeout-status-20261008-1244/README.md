@@ -1,0 +1,13 @@
+# Подтверждённый срез 08.10.2026 · 12:44 UTC
+
+[Счётчики дел](case-counts.json): Атлас 30/39, Радар 31/38, граф 22/23; 17 действий OPEN. [Восстановление БД/API](database-recovery.json): обе БД принимают подключения, фактические чтения KB и дел работают; на томе данных БД доступно 13 403 648 000 байт (12:44:09 UTC). KB62/17534.
+
+[A7 source pins](a7-adoption-source-pins.json), [post-adoption](a7-stage-post-adoption.json): диагностика этапов 001fb84, 11 авторских / 9 независимых source/mock и 11 после принятия PASS. [Один offline wrapper](a7-wrapper-result.json) прошёл исходные assertions за 13,282 с при лимите 25 с, сохранил 28 marker-записей; [квитанция](a7-wrapper-receipt.json). Provider заменён явными заглушками: actual provider / native full suite — 0. Причина прежнего cc3 timeout UNKNOWN; старый terminal NOT_ACCEPTED не изменён. KB62/17528.
+
+[E05 полный независимый SOURCE_ACK](e05-source-ack.json), [69 post-adoption tests](e05-post-adoption.json), [source pins](e05-adoption-source-pins.json): V2 исправляет перепривязку метаданных и точную границу scalar SDbw, принят в 6f3be20; 12 независимых fixtures PASS. KB75/17535. Область 180 real + 45 control = 225, 1896×24 = 45504 строк на ячейку, 10 238 400 status rows / 8220 номинальных native slots сохраняется; actual full bank не выполнен.
+
+[Один фиксированный синтетический SW benchmark](e05-sw-benchmark-result.json): 1896×5, scalar 7,849 с / NumPy 0,233736 с, 33,58×; absolute difference 3,33e−16 при ATOL/RTOL 1e−10. [Время до fsync RESULT](e05-sw-benchmark-receipt.json) — 8,403698 с < 60; IO финальной POST_RECEIPT отдельно не измерен. Консервативная сумма пиков RSS родителя и ребёнка — 149 897 216 байт. Это одна синтетическая метрика; полной ресурсной квалификации, численного аудита 225 ячеек и научного PASS нет.
+
+R11: историческая monthly publication availability UNKNOWN; будущая prereg Nov 2026–Apr 2027 NOT evaluated. CLI ведёт её отдельно. M4/A6.3/R13: прежние STOP/unknown и запреты consumed phases сохранены. Маски, keys и пороги сохранены, остаток Muse — 0, прод и сайт не менялись; 17 действий не закрыты этими квитанциями. CAS-заметки в 12:49:51 не изменили счётчики. Куратор: KB74/17537 и KB77/17538 (12:51); общая оговорка границ: KB75/17539, KB74/17540, KB77/17541.
+
+[Исторический progress baseline](progress-baseline-20261007.json) содержит прежние поля и счётчики; операционные host paths в публичной копии редактированы. Точные исходные байты остаются в Git BASE и частном пакете. [Sanitization/source SHA provenance](SANITIZATION_PROVENANCE.json) различает исходные частные байты и опубликованную JSON-копию. Здесь нет raw research данных, секретов или private paths.

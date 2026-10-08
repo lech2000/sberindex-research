@@ -1,0 +1,11 @@
+{
+  "head": "001fb84b5267b20bc41abfdc37558bdc75ff6f4f",
+  "post_adoption_tests": 11,
+  "tests_exit": 0,
+  "test_log_SHA256": "eaceb4f66468cc0b65372c6e91c35ab2b737637e4d6ff24a77bdb6fc08a8e3d7",
+  "source_sha_readback": true,
+  "clean_after": true,
+  "actual_full_native_acceptance": false,
+  "paid_calls": 0,
+  "prod_calls": 0
+}

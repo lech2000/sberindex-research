@@ -1,0 +1,35 @@
+{
+  "state": "ONE_SYNTHETIC_SW_COMPARISON_MATCH",
+  "whole_limit_seconds": 60,
+  "paid_model_bank_calls": 0,
+  "fullbank_resource_qualified": false,
+  "automatic_retry": false,
+  "worker_exit": 0,
+  "worker_reaped": true,
+  "worker_result": {
+    "state": "ONE_SYNTHETIC_SW_COMPARISON_MATCH",
+    "metric_seconds": {
+      "scalar_SW": 7.849165040999651,
+      "blocked_numpy_SW": 0.23373591699055396
+    },
+    "values": {
+      "scalar_SW": 0.5508824195535731,
+      "blocked_numpy_SW": 0.5508824195535728
+    },
+    "actual_panel_bank_models_fits": 0,
+    "numerical_or_full_resource_pass": false,
+    "extracted_AST_SHA": "007e85ab2cc39163a4034fa37d0a7ab98a817dc71a8370da6b9021b02fee876f",
+    "input_SHA": "1add52f0c8d71f49f7258a36cd56af2ee18c058d797fa55c87b34d82034ab546",
+    "n": 1896,
+    "dimensions": 5,
+    "absolute_difference": 3.3306690738754696e-16,
+    "RTOL": 1e-10,
+    "ATOL": 1e-10,
+    "worker_elapsed_seconds": 8.288410792010836,
+    "worker_peak_RSS_bytes": 132153344,
+    "RSS_units": "Darwin native ru_maxrss bytes"
+  },
+  "peak_RSS_conservative_sum_bytes": 149897216,
+  "RSS_scope": "sum parent and one child lifetimepeaks, conservative not simultaneoussample; no other children",
+  "whole_elapsed_before_receipt_seconds": 8.40316183300456
+}
