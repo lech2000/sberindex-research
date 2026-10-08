@@ -1,0 +1,95 @@
+{
+  "verdict": "SAVED_AGGREGATE_ARITHMETIC_ACK_POSTHOC_NOT_SCIENTIFIC_PASS",
+  "checked_at_UTC": "2026-10-08T16:32:23.081088+00:00",
+  "scope": "Only savedJSON and source text/hash; no inputParquet read or originalscript import/run",
+  "n": 720,
+  "series": 120,
+  "territories": 20,
+  "categories": [
+    "Все категории",
+    "Здоровье",
+    "Маркетплейсы",
+    "Общественное питание",
+    "Продовольствие",
+    "Транспорт"
+  ],
+  "R2_formula_checks": 381,
+  "all_series_SSE_and_MAE_reconcile_pooled_and_category": true,
+  "mean_median_within_series_recomputed": true,
+  "candidate_better": 85,
+  "ties": 0,
+  "worse": 35,
+  "candidate_better_by_category": {
+    "Все категории": 16,
+    "Здоровье": 19,
+    "Маркетплейсы": 2,
+    "Общественное питание": 18,
+    "Продовольствие": 10,
+    "Транспорт": 20
+  },
+  "macro_series": {
+    "national_prophet": {
+      "defined_series": 120,
+      "undefined_constant_series": 0,
+      "mean_series_r2": -11.030076453217674,
+      "median_series_r2": -1.79721820593762,
+      "within_series_centered_r2": -0.669095168315929
+    },
+    "national_yoy_lag1": {
+      "defined_series": 120,
+      "undefined_constant_series": 0,
+      "mean_series_r2": -1.2638569114199167,
+      "median_series_r2": -0.09123107919127926,
+      "within_series_centered_r2": 0.41360585801088656
+    },
+    "fresh_plain_prophet": {
+      "defined_series": 120,
+      "undefined_constant_series": 0,
+      "mean_series_r2": -9.926732807263773,
+      "median_series_r2": -1.5505388781854943,
+      "within_series_centered_r2": -0.7326330145599043
+    }
+  },
+  "pooled": {
+    "national_prophet": {
+      "n": 720,
+      "mae": 946.1427947440354,
+      "sse": 1701340664.3423443,
+      "sst": 98318786029.19444,
+      "r2": 0.9826956705523484
+    },
+    "national_yoy_lag1": {
+      "n": 720,
+      "mae": 598.0916651328823,
+      "sse": 597722777.0090694,
+      "sst": 98318786029.19444,
+      "r2": 0.9939205639008645
+    },
+    "fresh_plain_prophet": {
+      "n": 720,
+      "mae": 947.1822428382935,
+      "sse": 1766106007.620329,
+      "sst": 98318786029.19444,
+      "r2": 0.982036942491378
+    }
+  },
+  "sum_within_series_SST": 1019319147.6666666,
+  "pooled_SST": 98318786029.19444,
+  "within_fraction_of_pooled_SST": 0.010367491186923254,
+  "source_and_saved_input_fullkey_pins_agree": true,
+  "artifact_pins": {
+    "PROTOCOL.json": "5c7f26b16a8344dfc234664f6436a3c7feafbaac3bdf30a47f20ee5562e15444",
+    "RESULT.json": "0787e69134df4809cc7aaf2def0c0f967edf6dad0926555a7f1e2ff7aa810abd",
+    "CONSUMED_ONE_USE.json": "f7cdeb52d159f3b5f55469e8259dea06a1882912751625315a509a1c22cb2ea1",
+    "sberindex-r2-requirement-audit-20261008.py": "6b9455d4446f0eea11e3c1f2d4011f7cc39ca1e4db0f6dd2c4fe8275bfaaf498"
+  },
+  "limitations": [
+    "Rawactual/predictions/key coverage are saved-source claims; this review deliberately does not rereadParquet.",
+    "SSTs at pooled/category level cannot be reconstructed from per-series SSE/SST alone without series actualmeans; individual formulas and common denominators checked, not rawgroundtruth.",
+    "Pooled .9939206 strongly reflects across-series/category scale; candidate meanseriesR2 -1.2638569 and median -.0912311 do not establish generally good local dynamics.",
+    "OwnProphet is not verifiedorganizer baseline; six targets/series, posthocmetric/no newindependentwindow; before-shock warning nottested.",
+    "Elapsed189.0946s is savedpre-resultIO metric, not independently inclusivefinalIOresourcequalification."
+  ],
+  "scientific_pass": false,
+  "new_scan_fit_provider_calls": 0
+}
