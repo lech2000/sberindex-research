@@ -1,0 +1,321 @@
+{
+  "checked_at": "2026-10-06T23:12:48.478374+00:00",
+  "status": "DIMENSIONLESS_SCALE_DIAGNOSTIC_EXECUTED",
+  "scientific_pass": false,
+  "cluster_fits_including_unit_replays": 168,
+  "full_partitions": 14,
+  "external_oof_rows": 34944,
+  "all_full_unit_ARI1": true,
+  "input_sha256": {
+    "panel": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "dictionary": "f25088539a896cdc834d77c8792d0e6ac909d8649b06d65f69215ce12a8eaf4a",
+    "population": "4b69d43dd113591c12cee61df39d318200ff42b83e52a28593930e7ee0b34dbf",
+    "market": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1",
+    "wages": "6c350c9356f8def9d190b56e2bacaa55960ae2c2aa0eda8d25720db44bfadbe3",
+    "employment": "f643b394c11758f5d28e465380e263943c5e5e9e312a468daedca95b7e2f87d7"
+  },
+  "protocol_sha256": "b4f23bb321d7b24d8632e37e7aee7fc3127bef4868ef97b7408e5d24034f1125",
+  "code_sha256": "8f1fecba298002f700c82a11db6ad206876b6aeae3dae64d805c594bed234eea",
+  "reference_predictions_sha256": "b812991a81b9bad5d8f93642423832d4179c517ac1f569443cc3e30d3aad487d",
+  "comparisons": [
+    {
+      "method": "kmeans",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": 3.839464248412692e-05,
+      "relative_mse_reduction_percent": 0.27001314088285894,
+      "descriptive_region_bootstrap95": [
+        -7.912666932145964e-05,
+        0.0001541557638147045
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": -5.227591350729906e-06,
+      "relative_mse_reduction_percent": -0.17459246378275173,
+      "descriptive_region_bootstrap95": [
+        -2.2428401437888647e-05,
+        1.3613325793987787e-05
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": 5.0794156378467354e-05,
+      "relative_mse_reduction_percent": 0.35826367666072806,
+      "descriptive_region_bootstrap95": [
+        -9.042463428345094e-05,
+        0.0002121407342461433
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": -3.8051810485262114e-05,
+      "relative_mse_reduction_percent": -1.2657530765534777,
+      "descriptive_region_bootstrap95": [
+        -8.096354570942108e-05,
+        2.2724948494527714e-06
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "kmeans",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": 1.7111486160795756e-05,
+      "relative_mse_reduction_percent": 0.1204813719715975,
+      "descriptive_region_bootstrap95": [
+        -0.00013646516641472507,
+        0.00016177822221878502
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": 1.9344880288713606e-05,
+      "relative_mse_reduction_percent": 0.6428991192605207,
+      "descriptive_region_bootstrap95": [
+        -7.361347741883837e-06,
+        5.316615275108095e-05
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 2,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": -0.0007376432675326277,
+      "relative_mse_reduction_percent": -5.031079732061261,
+      "descriptive_region_bootstrap95": [
+        -0.0015125457056777275,
+        -0.0001985924254397897
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "employment",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares",
+      "delta_mse_reference_minus_arm": -9.265848539289604e-05,
+      "relative_mse_reduction_percent": -3.037730480084495,
+      "descriptive_region_bootstrap95": [
+        -0.00017958855492751163,
+        -1.6440105268147808e-05
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    },
+    {
+      "method": "ward",
+      "k": 5,
+      "seed": 20260921,
+      "endpoint": "wage",
+      "arm": "shares_log_relative_volume",
+      "reference": "shares_log_volume",
+      "delta_mse_reference_minus_arm": 0.0,
+      "relative_mse_reduction_percent": 0.0,
+      "descriptive_region_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n": 1248,
+      "regions": 70,
+      "bootstrap": 2000,
+      "conditional_on_fitted_OOF": true
+    }
+  ],
+  "limits": [
+    "Already viewed panel and external release; frozen before this calculation does not make an independent holdout",
+    "Cannot establish welfare, economic truth, causality, or absent historical revisions",
+    "Default z-score gives each feature equal coordinate weight; adding volume changes geometry",
+    "log1p is fixed-ruble convention and is not invariant to unit conversion; unit-induced label ARI measured separately",
+    "Missing and duplicate observations rejected; no zero fill",
+    "Ward transfer is explicit nearest fitted training centroid and not native hierarchical prediction",
+    "Descriptive conditional bootstrap intervals and sensitivity variants are not a familywise-confirmatory test",
+    "Normalization median is train-only. It removes physical-unit dependence; this does not establish a better economic typology.",
+    "Same already viewed2025 endpoints and strict1248MO/70region sample; descriptive comparison, no new holdout."
+  ]
+}

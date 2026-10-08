@@ -1,0 +1,13 @@
+{
+  "status": "FRESH_MAKE_DIMENSIONLESS_REFERENCE_PASS",
+  "source_commit": "6696b84e5d98d6b26d25dd34cff0131f1124f832",
+  "checked_at": "2026-10-06T23:20:09+00:00",
+  "checked_where": "Mac isolated worktree, full make atlas-dimensionless fresh168fits + independent audit",
+  "fits": 168,
+  "oof_rows": 34944,
+  "oof_parquet_sha256_identical": "78ac6b40426fcb6e207205418d5c66b6f4ed74e2da1c682291651d2f393c90f5",
+  "mse_values_match": 28,
+  "all_unit_invariant_full_partitions": 14,
+  "train_only_folds_checked": 70,
+  "scientific_pass": false
+}

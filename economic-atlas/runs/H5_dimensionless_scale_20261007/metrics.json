@@ -1,0 +1,226 @@
+[
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20260921,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014181151250204053
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20260921,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.002999395402187447
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261007,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014181906251477963
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261007,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0029995548356353354
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261008,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014181239260372177
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261008,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.002999626539186218
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261009,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014164907918789944
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261009,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.002999628327612722
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261010,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014181151250204093
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261010,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0029993954021872303
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261011,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014164152917515901
+  },
+  {
+    "method": "kmeans",
+    "k": 2,
+    "seed": 20261011,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0029994688941648797
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20260921,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.0141270752977356
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20260921,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0030443103920463274
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261007,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014135161296283182
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261007,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0030205299232278623
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261008,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014137160044109311
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261008,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0030329131340223314
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261009,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014132659737905616
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261009,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.003037792109750588
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261010,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014151518040958492
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261010,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0030262944233861657
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261011,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014134726975684258
+  },
+  {
+    "method": "kmeans",
+    "k": 5,
+    "seed": 20261011,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0030351588313500873
+  },
+  {
+    "method": "ward",
+    "k": 2,
+    "seed": 20260921,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.014185487538715557
+  },
+  {
+    "method": "ward",
+    "k": 2,
+    "seed": 20260921,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.002989662242160698
+  },
+  {
+    "method": "ward",
+    "k": 5,
+    "seed": 20260921,
+    "endpoint": "employment",
+    "n": 1248,
+    "mse": 0.015399372097467338
+  },
+  {
+    "method": "ward",
+    "k": 5,
+    "seed": 20260921,
+    "endpoint": "wage",
+    "n": 1248,
+    "mse": 0.0031429121533983187
+  }
+]
