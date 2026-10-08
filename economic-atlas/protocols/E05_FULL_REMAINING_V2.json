@@ -1,0 +1,352 @@
+{
+  "protocol_id": "E05_FULL_REMAINING_V2_EVENT_SCORING_REPAIR_2026-10-08",
+  "status": "PROSPECTIVE_SOURCE_ONLY_REPAIR_NOT_ADOPTED_NOT_RUN",
+  "source_action": {
+    "id": "act_a32a69fed5be431c",
+    "what": "08. Выполнить E05: абляции признаков, мобильности, географии и временной связи.",
+    "waiting_for": "Часть E05mobility выполнена75/15904: same101МО,5seed,K2,weights0/.25/1,общийspendingmetricspace. Remaining geography/features/time и зависимости A6 остаются. Не повторять уже измеренную mobilityчасть."
+  },
+  "original_promise": "scale/shares/dynamics; mobility on/off; geography; same-MO interlayer-strength sensitivity; paired comparable K/common mask/metrics; train-only scaling; synthetic known-change and no-change preservation controls",
+  "source_pins": {
+    "economic-atlas/research-plan.md": "a084b0b7b523e45d39014c15d55f3665e02b8bbe4d74c00ba43abacf6798ccd7",
+    "economic-atlas/research-ladder.md": "e235b652d468cfd7e1e93a3861934add2873ba316b7f93c5ab9fa8e9b8d78a38",
+    "economic-atlas/features/spec.yaml": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "economic-atlas/src/a5_graph.py": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/runs/A5/graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "economic-atlas/runs/A6/metrics.json": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+    "economic-atlas/runs/Mobility_ablation_20261003/metrics.json": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "economic-atlas/runs/A9_economic_network_20261005/results.json": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+    "economic-atlas/runs/A6_final_review_20261008/CLOSEOUT_RECEIPT.json": "eb3d0851a38de60d299729d62a789ab538ec8c2159059a1cc5507280b059331b",
+    "economic-atlas/runs/A5/edges.parquet": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4"
+  },
+  "data_pins": {
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93"
+  },
+  "input_panel_hash_verified_here": false,
+  "panel_expected_shape": [
+    1896,
+    24,
+    6
+  ],
+  "months": [
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "mobility_reuse_only": {
+    "evidence": "economic-atlas/runs/Mobility_ablation_20261003/metrics.json",
+    "SHA256": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "n": 101,
+    "K": 2,
+    "seeds": [
+      20261003,
+      20261004,
+      20261005,
+      20261006,
+      20261007
+    ],
+    "weights": [
+      0,
+      0.25,
+      1
+    ],
+    "no_new_fits": true,
+    "not_OD": true
+  },
+  "K": [
+    2,
+    5
+  ],
+  "seeds": [
+    20261008,
+    20261009,
+    20261010,
+    20261011,
+    20261012
+  ],
+  "arms": [
+    {
+      "id": "shares",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "volume",
+      "feature": "volume",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "log_volume",
+      "feature": "log_volume",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "shares_log_volume",
+      "feature": "shares_log_volume",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "growth_mom",
+      "feature": "growth_mom",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "shares_growth_mom",
+      "feature": "shares_growth_mom",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "growth_yoy",
+      "feature": "growth_yoy",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "geography_0.5",
+      "feature": "shares",
+      "alpha_geo": 0.5,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "geography_1.0",
+      "feature": "shares",
+      "alpha_geo": 1.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "temporal_0.5",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.5,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "temporal_2.0",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 2.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "edge_10_union",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 10,
+      "sym": "union"
+    },
+    {
+      "id": "edge_10_mutual",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 10,
+      "sym": "mutual"
+    },
+    {
+      "id": "edge_20_mutual",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "mutual"
+    },
+    {
+      "id": "edge_40_union",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 40,
+      "sym": "union"
+    },
+    {
+      "id": "edge_40_mutual",
+      "feature": "shares",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 40,
+      "sym": "mutual"
+    },
+    {
+      "id": "shares_scaled",
+      "feature": "shares_scaled",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    },
+    {
+      "id": "shares_logratio",
+      "feature": "shares_logratio",
+      "alpha_geo": 0.0,
+      "gamma": 0.0,
+      "knn": 20,
+      "sym": "union"
+    }
+  ],
+  "design": "Prospective one-factor paired ablation, not an unstated full factorial; each factor requested by original scope varied, all cells retained. Feature→baseline, geography→baseline, true interlayer→independent layers. Original k10/20/40 mutual/union grid included, no selection on outcomes.",
+  "features": {
+    "shares": "five categories divided by separate All categories; never renormalize sum5 to1",
+    "volume": "six raw levels, pooled2023 feature z-score",
+    "log_volume": "log1p six levels, pooled2023 z-score",
+    "shares_log_volume": "five standardized shares + standardized log1p separate All categories",
+    "growth_mom": "six backward lag1 ratios minus1, pooled2023-02..12 z-score; 2023-01 unavailable",
+    "shares_growth_mom": "shares + growth_mom, same NA first month",
+    "growth_yoy": "six backward lag12 ratios minus1, no available2023 fitting distribution; identity transform (dimensionless) prospectively declared, descriptive supplementary, all2023 records INPUT_UNAVAILABLE. Never fit scaler on2024.",
+    "shares_scaled": "five separate-total shares, pooled2023 z-score",
+    "shares_logratio": "five log(value_category/value_All_categories), pooled2023 z-score; all inputs must be strictly positive, no pseudocount or sum-to-one compositional closure"
+  },
+  "graph": "Primary shares cosine on raw five separate-total ratios p, literal candidateA; other recipes positive cosine of their explicitly transformed vectors; retain only positive edges, no shifting or artificial bridges. k10/20/40 union=max/mutual=min. Symmetric affinities degree-normalized before mixing alpha_geo Ageo+(1-alpha_geo)Afeature. Saved A5 static k8 road affinity is retrospective modern geography.",
+  "temporal": "genuine sparse supra-adjacency: diagonal monthly graphs; same-MO adjacent-month edges gamma={0,.5,2}; normalized Laplacian eigenembedding fixedK, global KMeans labels for gamma>0. gamma0 independent monthly normalized Laplacian embeddings. Never substitute fixed-centre A6 postpenalty. Entire sequence is retrospective; future months may change earlier joint labels, no online detection/no future-data claim.",
+  "comparability": "Full1896 universe and all24 status rows. Mathematical missing MOM Jan/Yoy2023 explicitly retained; paired comparisons only shared available keys with denominators reported, unmatched months never hidden; temporal primary shares has full24. All quality metrics evaluated in SAME frozen2023-standardized spending-share space and same saved geography reference graph, alongside arm-native diagnostics.",
+  "controls": {
+    "n": 1896,
+    "months": 24,
+    "d": 5,
+    "K": 2,
+    "seeds": [
+      30261008,
+      30261009,
+      30261010,
+      30261011,
+      30261012
+    ],
+    "worlds": [
+      "stable",
+      "abrupt_shift",
+      "seasonal_no_identity_change"
+    ],
+    "gammas": [
+      0.0,
+      0.5,
+      2.0
+    ],
+    "shift_month_index": 12,
+    "shift_fraction": 0.2,
+    "separation": 2.0,
+    "noise_std": 0.2,
+    "seasonal_amplitude": 0.5,
+    "truth_only_evaluation": "initial-month one-to-one mapping learned ONCE; truth never supplied to graph/eigen/clustering",
+    "full_requested_cells": 45,
+    "error_budget": {
+      "stable_false_switch_fraction_max": 0.05,
+      "abrupt_missed_change_fraction_max": 0.2,
+      "abrupt_median_delay_months_max": 2.0,
+      "seasonal_false_switch_fraction_max": 0.05
+    },
+    "no_repeats_or_tuning_after_fail": true,
+    "control_budget_is_new_internal_policy_not_original_competition_rule": true,
+    "raw_feature_positive_base": 5.0,
+    "algorithm": "same primary cosine+normalized-Laplacian spectral as real shares; synthetic feature vectors base5 plus group±separation2, noise.2; assumption-bound toy only",
+    "scoring": {
+      "mapping": "same initial-month Hungarian mapping, never fitted per month",
+      "event": "observed before-to-after transition after a correct pre-event baseline",
+      "recall_month": "frozen shift month, not eventual assignment accuracy",
+      "miss_denominator": "all true changed entities, including never detected and incorrect baseline",
+      "delays": "first qualifying observed transition at/after shift; None if absent",
+      "eventual_recall": "supplementary only; cannot replace immediate recall in budget",
+      "post_shift_state_accuracy": "supplementary state classification; cannot qualify event detection",
+      "online": false,
+      "numeric_error_budgets_unchanged": true
+    }
+  },
+  "metrics_required": [
+    "SW",
+    "CH",
+    "S_Dbw_pair_union",
+    "AVI_reference_convention",
+    "AVU_reference_convention",
+    "Newman_Q_separate_not_MQ",
+    "cluster_sizes",
+    "isolates",
+    "components",
+    "adjacent_ARI",
+    "adjacent_NMI",
+    "transition_contingency",
+    "switch_fraction",
+    "synthetic_recall",
+    "synthetic_delay",
+    "synthetic_false_switch_fraction",
+    "runtime",
+    "input_and_output_SHA"
+  ],
+  "MQ": "excluded owner decision05Oct, SPEC_UNRESOLVED; not NewmanQ alias",
+  "interpretation": {
+    "positive_scientific_pass_allowed": false,
+    "M1_calibration_negative": true,
+    "economic_identity": false,
+    "causal": false,
+    "independent_holdout": false,
+    "historical_asof": false,
+    "2025_road_vintage_historical_identity_verified": false
+  },
+  "hard_dependencies": [
+    "Root-review/new F7b adoption required before numerical execution.",
+    "No approved E05 operational guardian/time budget yet; fullsize resource preflight required after source adoption, then honest cost estimate before full run.",
+    "Historical municipal crosswalk/road vintage absent: descriptive retrospective analysis only, not historical geographical truth.",
+    "M4 actual full1980 pending; keep separately referenced as E05 channel double-dissociation dependency; no fake results/labels or duplicate M4 runs.",
+    "Administrative/population confounding table must have explicit territory-id binding or output UNKNOWN; never join by names."
+  ],
+  "scope_complete_now": false,
+  "source_actions_closed": 0,
+  "numerical_imports_fits_worlds_executed": 0,
+  "input_unavailability_is_not_success": "Every missing month/metric status retained; unavailable required confounding/M4/identity dependencies explicitly prevent blanket promise completion. No data subset may be described as full scientific acceptance.",
+  "per_capita": "NOT_REQUESTED_PRIMARY: conditional original only if compatible denominator; absent compatible denominator => UNKNOWN, no population normalization invented.",
+  "source_scoring_repair": {
+    "original_source_SHA256": "136be54f8fba01ef5ecad5bff321f65c484611dbe5cb4f2b5aa166a6de9f9347",
+    "new_source_SHA256": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "counterexample_SHA256": "2ef88a253c47bed2c5bd116254c6177e0ed2b96b07da579c7566f89b62d1bb81",
+    "no_scientific_execution": true
+  }
+}
