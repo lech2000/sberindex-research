@@ -27,7 +27,9 @@ DEADLINE = datetime.datetime(2026, 10, 9, 9, tzinfo=datetime.timezone.utc)
 KEY = 'M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969'
 LEDGER_ROOT = Path('/private/tmp/sberindex-one-use-ledger')
 PINS = {
-    'economic-atlas/src/atlas_m4_channels.py': '86553f9d4627fbdccd51ad3f1c6a6335cb1a4b22b6401150ae4a21dd606a1fd9',
+    'economic-atlas/src/atlas_m4_mixed_dependency.py': '12eb13f3a6fb725d93a9c1f26a895649d1695abbf1f0b7b3e7a448e3e55db127',
+    'economic-atlas/protocols/M4_MIXED_NUMERICAL_DEPENDENCY_V1.json': '677ebde4c8a7a9cc30b0ebf4fd4ad0aa1d053b1bd0a1c922381e1e70d43f4d9c',
+    'economic-atlas/src/atlas_m4_channels.py': 'c927600120fc18d8677c1de09bd6d045ba4415d1e6e5fb179915d1ba2a1cc9cd',
     'economic-atlas/src/atlas_m4_executor.py': '76ae66aa2f11ce18060be0173a661d1db1214d38de0ccb95a910a8e6405db3a4',
     'economic-atlas/src/atlas_m1_executor.py': '04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c',
     'economic-atlas/src/atlas_m1_spectral.py': '5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b',
@@ -104,6 +106,16 @@ def verify_dependency_files(resultpath, binding):
     if binding.get('result_sha256') != sha(resultpath) or binding.get('manifest_sha256') != sha(manifestpath):
         raise ValueError('actual completed M1 root binding mismatch')
     manifest = json.loads(manifestpath.read_text())
+    if 'authority' in manifest:
+        descriptor = Path(binding['mixed_dependency_binding'])
+        digest = binding['mixed_dependency_binding_sha256']
+        if sha(descriptor) != digest:
+            raise ValueError('explicit mixed dependency descriptor SHA mismatch')
+        gate = load(Path(__file__).with_name('atlas_m4_mixed_dependency.py'), 'parent_mixed_dependency_gate')
+        gate.check(resultpath, json.loads(descriptor.read_text()))
+        os.environ['M4_MIXED_DEPENDENCY_BINDING'] = str(descriptor.resolve())
+        os.environ['M4_MIXED_DEPENDENCY_BINDING_SHA'] = digest
+        return json.loads(resultpath.read_text())
     for name, digest in manifest['files_sha256'].items():
         if Path(name).name != name or name in ('.', '..') or sha(resultpath.parent / name) != digest:
             raise ValueError('M1 completed manifest file mismatch')

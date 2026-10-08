@@ -181,6 +181,11 @@ def complete(p,calibration,m1,out):
 
 def check_dependency(path):
  path=Path(path);m=json.loads((path.parent/'manifest.json').read_text());r=json.loads(path.read_text())
+ if 'authority' in m:
+  gatepath=Path(__file__).with_name('atlas_m4_mixed_dependency.py')
+  if sha(gatepath)!='12eb13f3a6fb725d93a9c1f26a895649d1695abbf1f0b7b3e7a448e3e55db127':raise ValueError('mixed dependency gate source mismatch')
+  spec=importlib.util.spec_from_file_location('explicit_mixed_dependency',gatepath);gate=importlib.util.module_from_spec(spec);spec.loader.exec_module(gate)
+  return gate.check(path)
  if m['code_sha256']!=M1_SHA or m['protocol_sha256']!=M1_PROTOCOL_SHA:raise ValueError('M1 receipt source/protocol mismatch')
  if m.get('files_sha256',{}).get('result.json')!=sha(path):raise ValueError('actual M1 calibration output hash not verified')
  if r['n']!=1896 or r['d']!=5 or set(r['results'])!={'10','20','40'}:raise ValueError('full baseline dependency scope mismatch')
