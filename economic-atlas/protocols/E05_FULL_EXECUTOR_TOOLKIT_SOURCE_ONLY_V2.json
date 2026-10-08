@@ -1,0 +1,71 @@
+{
+  "id": "E05_FULL_EXECUTOR_TOOLKIT_SOURCE_ONLY_V2",
+  "status": "NOT_EXECUTABLE_NOT_ADOPTED",
+  "source_action": "act_a32a69fed5be431c",
+  "base": "46c8e802ae804d8282ad058b628db48c67129ccc",
+  "repaired_source_pins": {
+    "tests/test_e05_remaining_v2.py": "00547af78835565cb04ed74fac859c59738f45e00b5dbccbc35fa65bce1a75f6",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a",
+    "economic-atlas/protocols/E05_EVENT_CONTROL_REPAIR_20261008.md": "7b73ef265422cd608d17b35eece7e98db4a7e06665502d24241de4194f4e4f0e",
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b"
+  },
+  "source_ACK_SHA": "9c418c1f37284cbd6250bca1335753591fc2d2e6151c0f2cfd24d98e740395ef",
+  "scope": {
+    "real_cells": 180,
+    "control_cells": 45,
+    "cells": 225,
+    "IDs_per_cell": 1896,
+    "months_per_cell": 24,
+    "rows_per_cell": 45504,
+    "status_rows": 10238400,
+    "nominal_eigendecompositions": 4110,
+    "nominal_native_API_entries": 8220,
+    "nominal_not_runtime_estimate": true,
+    "native_n_init_unchanged": 20,
+    "mathematical_unavailability_retained": true,
+    "completed_mobility_reused_only": true
+  },
+  "resource_cost": "UNKNOWN",
+  "operational_spec": {
+    "whole_seconds": null,
+    "final_receipt_reserve_seconds": null,
+    "RSS_bytes": null,
+    "minimum_free_bytes": null,
+    "output_bytes": null,
+    "receipt_reserve_bytes": null,
+    "poll_seconds": null,
+    "cleanup_seconds": null,
+    "absolute_deadline_UTC": null
+  },
+  "CPU_threads": 1,
+  "actual_fullsize_preflight_accepted": false,
+  "resource_spec_independently_accepted": false,
+  "independent_source_review_accepted": false,
+  "actual_execution_allowed": false,
+  "numerical_imports_calls_worlds": 0,
+  "sampled_resource_monitor_not_continuous": true,
+  "automatic_retry": false,
+  "old_study_namespaces_keys_clocks_never_reused": true,
+  "scientific_pass": false,
+  "formal_promise_complete": false,
+  "M4_dependency": "PENDING_SEPARATE_ACTUAL_ACCEPTANCE",
+  "unknown_admin_population_confounds": true,
+  "M1_calibration_negative": true,
+  "qualifications": [
+    "Modern road/geography has no historical legal identity proof.",
+    "Whole retrospective interlayer partition is not online or causal.",
+    "File schema and budget arithmetic do not independently reproduce numerical metrics/event truth.",
+    "Public execution refuses unconditionally even if a fabricated budget is supplied.",
+    "Future production worker/source/interpreter/dependency binding + safe sampled process RSS/IO observers + admitted fullsize resource preflight need separate reviewed F7b operational wiring.",
+    "Interrupted operation cannot be made full by omitting unknown/unattempted cells. A future accepted finalizer must preserve all45504 explicit status rows for each225 cell; no actual finalizer executed here."
+  ],
+  "previous_toolkit_patch_SHA": "baddb7181d39c7fa8b12d47fe94208d8abb6bff89df90ced2bd7c716a25da444",
+  "repair_scope": [
+    "B1 unsuccessful baseline comparison rejected",
+    "B2 cell/status row conservation",
+    "B3 known-own group cleanup independent of leader exit"
+  ],
+  "previous_independent_NO_GO_REPORT_SHA256": "019aba6b4e76c52dc254e15ffe73317458df8606ffc5e1884a8919d4429408c5",
+  "source_tests_PASS": 67,
+  "full_interruption_finalizer_implemented": false
+}
