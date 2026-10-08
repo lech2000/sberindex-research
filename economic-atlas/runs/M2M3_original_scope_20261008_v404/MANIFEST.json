@@ -1,0 +1,45 @@
+{
+  "schema": "sberindex.publication-candidate.v1",
+  "created_at_utc": "2026-10-08T00:36:12.717185+00:00",
+  "publication_executed": false,
+  "raw_private_copies": 0,
+  "preparation_new_experiments": 0,
+  "preparation_model_paid_calls": 0,
+  "files": [
+    {
+      "file": "A6.3_OLD_NEGATIVE_RESULT.json",
+      "bytes": 909,
+      "sha256": "6bc6911602a2989a2ba2345eeaf788aee78f5fe4e88df51450f9b48828b1fbb1"
+    },
+    {
+      "file": "CLOSEOUT_STATUS.json",
+      "bytes": 654,
+      "sha256": "17d68caf3a95bfc73dcd068de773cb61196561fd1adfbc9235b06504f221d253"
+    },
+    {
+      "file": "GATE_REPORT.json",
+      "bytes": 2064,
+      "sha256": "933d05fa3eacef2d57df21de2fe07f2f308c7ac2dda6667ac119e5bc20737bd6"
+    },
+    {
+      "file": "INDEPENDENT_REVIEW.md",
+      "bytes": 3040,
+      "sha256": "1b9dddfc13f840ef17d4db9d2c765a59f9fc995b9175858080206d4e8c4effe0"
+    },
+    {
+      "file": "README.md",
+      "bytes": 8368,
+      "sha256": "e66d1ccb5c69b7e3f9f9f3335b31654e0688efe20b5c4ed06c7d22fb96403e80"
+    },
+    {
+      "file": "SOURCE_SHA_INVENTORY.json",
+      "bytes": 4702,
+      "sha256": "2aa0b5a3fd8467b2a58e95c4f6f4cfd1a399e9faf597ef762a6b10be5ea688f8"
+    },
+    {
+      "file": "metrics.json",
+      "bytes": 8533,
+      "sha256": "d4f32b6cff90a8131c6e89f15a65fc0b6204e7f3bbfa59f7e1a1bdf1ef841801"
+    }
+  ]
+}

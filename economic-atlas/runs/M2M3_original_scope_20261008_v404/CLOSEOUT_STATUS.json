@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-08T00:31:32.828986+00:00",
+  "source_actions": [
+    {
+      "action_id": "act_b6659ef0c8e049b1",
+      "done": true,
+      "fresh_case_service_readback": true
+    },
+    {
+      "action_id": "act_a1e77e09fb854cca",
+      "done": true,
+      "fresh_case_service_readback": true
+    }
+  ],
+  "KB_reference": "KB75/17351",
+  "case_material_id": "mat_m2m3_full_20261008_v404",
+  "material_full_readback_verified": true,
+  "closure_means": "method implementation and specified evaluation completed; negative scientific result retained",
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "case_complete": false
+}

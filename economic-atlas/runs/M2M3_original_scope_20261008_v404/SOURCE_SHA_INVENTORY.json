@@ -1,0 +1,156 @@
+{
+  "checked_at_utc": "2026-10-08T00:36:12.715066+00:00",
+  "all18_actual_sha_match": true,
+  "sources": [
+    {
+      "artifact": "bank/world-hashes.json",
+      "bytes": 11508,
+      "sha256": "4781197e4c89600f740aeeeaa4e51b16c07a54633e52a62311ff2f069c5ace60",
+      "copied": false
+    },
+    {
+      "artifact": "bank/metrics.json",
+      "bytes": 83613,
+      "sha256": "07a88de7cfbbf6ceff97036090f392675261334d4a12be5bb917cac737b1383a",
+      "copied": false
+    },
+    {
+      "artifact": "bank/label-histories.json",
+      "bytes": 3908083,
+      "sha256": "1d09b83fcc9470cd3f38f9b8404c458ab42ea97eb32be584b90a8be4f461304a",
+      "copied": false
+    },
+    {
+      "artifact": "bank/events.json",
+      "bytes": 39903,
+      "sha256": "cdbac022c91ce92fa0ca868e3187a6baee3301d7439ea12e23dbf4bb89a8c36e",
+      "copied": false
+    },
+    {
+      "artifact": "bank/months.json",
+      "bytes": 1392973,
+      "sha256": "0599684a2487e369c9905cd294dda54f4764a87db06acfdcb6deb6f97222531d",
+      "copied": false
+    },
+    {
+      "artifact": "bank/tracker-events.json",
+      "bytes": 4225082,
+      "sha256": "bb386678776d0e82f29cceedcbfd59def1e55324d48c9b65bdb5bea3fd3c1b3b",
+      "copied": false
+    },
+    {
+      "artifact": "bank/protocol.json",
+      "bytes": 3432,
+      "sha256": "4e01b0218a4824af4282b09c555e8b9bbd1645d1cb9a1fc9aa3934b796aac6bd",
+      "copied": false
+    },
+    {
+      "artifact": "bank/k-grid.json",
+      "bytes": 1033567,
+      "sha256": "b102ec4ff3633a404e474aab051a05192457ee48937fb9abeddc2667e47eea1a",
+      "copied": false
+    },
+    {
+      "artifact": "bank/tracker-region-histories.json",
+      "bytes": 19249826,
+      "sha256": "0476e39e0b34e13f48522b1ad1ab412172c3335b989ceadaf8af0e3b186e9948",
+      "copied": false
+    },
+    {
+      "artifact": "bank/truth.json",
+      "bytes": 6808,
+      "sha256": "bc7bbd2665e1f7878eaa09b34f070689ee535a082a34399c37cccf89529df389",
+      "copied": false
+    },
+    {
+      "artifact": "bank/runs.json",
+      "bytes": 441803,
+      "sha256": "ab54e493bde33b7c8ba48906ef987505ca7deb769c72edba3fdbddf0262457ad",
+      "copied": false
+    },
+    {
+      "artifact": "real/metrics.json",
+      "bytes": 6589,
+      "sha256": "5539e504b0168f3cf5b35efcd335bbbbe0d72b8e8d19074bbd5055d82fd9e66c",
+      "copied": false
+    },
+    {
+      "artifact": "real/regions.csv",
+      "bytes": 35576,
+      "sha256": "3515d997ab1077f1dfab418a5d9252c097829b4a7e619bb2e8be30252c5f64d3",
+      "copied": false
+    },
+    {
+      "artifact": "real/calibration.json",
+      "bytes": 507184,
+      "sha256": "496b172a5c5c73f7485ab0d585235d0e6ad526f6fc17b97f475689f0fbb20c77",
+      "copied": false
+    },
+    {
+      "artifact": "real/k_grid.csv",
+      "bytes": 6660,
+      "sha256": "2571d278aceb019b510e61f8045df3cacf505727b750b1271d20388f26b8f5b3",
+      "copied": false
+    },
+    {
+      "artifact": "real/manifest.json",
+      "bytes": 3672,
+      "sha256": "3ba27e175ac87cde369ba2ea7f725fac48c3e8f4b1665d2d310cd528bf97bdb9",
+      "copied": false
+    },
+    {
+      "artifact": "real/assignments.parquet",
+      "bytes": 74552,
+      "sha256": "4d547973eb9e713e04d1e3381815c498d2cf0ffa30d216ff96f195016a9ce062",
+      "copied": false
+    },
+    {
+      "artifact": "real/events.csv",
+      "bytes": 6132,
+      "sha256": "9f0d74eba884d74b8b7c96bfa5cb9da0e5a5d4e04a9d0475e4955fddf50ade12",
+      "copied": false
+    },
+    {
+      "artifact": "independent/AUDIT.json",
+      "bytes": 10647,
+      "sha256": "b6618a8ebf8e893ddbe484047ffd3c3eedfbfe1f07231016a8874f25ad61bb11",
+      "copied": false
+    },
+    {
+      "artifact": "independent/GEOMETRY_V2.json",
+      "bytes": 311016,
+      "sha256": "c4273283b1c3ab35a8606e0a258f017059d45e32a9b981179741e03d5d91ca9e",
+      "copied": false
+    },
+    {
+      "artifact": "independent/MANIFEST_V2.json",
+      "bytes": 1083,
+      "sha256": "7ca28c93d05a5f4427e22e38b37466588b84659fc200dcb59fd58a4daaf97abe",
+      "copied": false
+    },
+    {
+      "artifact": "independent/REPORT_V2.md",
+      "bytes": 2039,
+      "sha256": "9019b33def1fd15b33b3004d523b564d863e5ecd2f49daf44ea6dc8dfa1d3b02",
+      "copied": false
+    },
+    {
+      "artifact": "closeout/GATE_REPORT.json",
+      "bytes": 2064,
+      "sha256": "933d05fa3eacef2d57df21de2fe07f2f308c7ac2dda6667ac119e5bc20737bd6",
+      "copied": false
+    },
+    {
+      "artifact": "closeout/CASE_CLOSEOUT.json",
+      "bytes": 761,
+      "sha256": "194d14772266bb7ec83427e831d3b99ced76b7e161500283950fed0ae8b4a709",
+      "copied": false
+    },
+    {
+      "artifact": "A6.3/REPORT.json",
+      "bytes": 8175,
+      "sha256": "b889bbabe99f1ac558216392cdb2ade64903544f6758288bb9d27665778e0d31",
+      "copied": false
+    }
+  ]
+}
