@@ -1,0 +1,106 @@
+{
+  "schema": "A63_PROSPECTIVE_DESIGN_V1",
+  "source_action": "act_63eabe3fd8aa4770",
+  "status": "DESIGN_ONLY_NO_SCIENCE_EXECUTED",
+  "historical_verdict": "INCONCLUSIVE_NO_PRIOR_ERROR_BUDGET",
+  "historical_preregistration_repaired": false,
+  "new_confirmation": "Fresh random realizations from already seen seven world classes; limited Monte Carlo confirmation, not independent economic/causal validation",
+  "thresholds": {
+    "T": 0.27716275979336036,
+    "M": 0.7187007760980421,
+    "Tc": 0.17395474720266485
+  },
+  "seed_derivation": "1000000000+uint32(first8hex SHA256(A6.3/prospective/original-generator/v1/2026-10-08/seed/i)) mod1000000000;i=0..4; chosen before any future generation/fits; no rejection/resampling",
+  "seeds": [
+    1632643743,
+    1565406931,
+    1933679697,
+    1228750436,
+    1885231245
+  ],
+  "worlds": [
+    "stable",
+    "drift",
+    "birth",
+    "death",
+    "split",
+    "merge",
+    "proximity"
+  ],
+  "modes": [
+    "oracle",
+    "unsupervised"
+  ],
+  "margin_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "n": 200,
+  "d": 5,
+  "months": 24,
+  "configuration_count": 210,
+  "postinitial_month_count": 4830,
+  "world_cube_count": 35,
+  "label_history_count": 70,
+  "truth_events_per_35_worlds": 50,
+  "truth_event_expectations_over210configs": 300,
+  "old_predicted_events348": "Historical count only; new predicted event count is unconstrained and must be fully reported",
+  "purity_and_coverage": 0.8,
+  "ontology": "Exact original world(), score(), one-time identity binding, four-miss disappearance, exact month/kind/subject/parent-child matching; no new geometry-v3/v404 substitution",
+  "error_budget": {
+    "scope": "Each of all six mode x M-factor cells separately, all seven worlds combined; all six required; negative variants fully reported, no chosen M",
+    "recognition_FDR_max": 0.05,
+    "recognition_FNR_max": 0.05,
+    "known_pair_FPR_max": 0.01,
+    "cluster_decision_coverage_min": 0.95,
+    "event_FDR_max": 0.1,
+    "event_FNR_max": 0.1,
+    "stable_drift_proximity_false_split_merge_max": 0,
+    "undefined_denominator": "INCONCLUSIVE never zero/pass",
+    "failed_missing_or_abstained": "Missing computation INCONCLUSIVE; abstention retained in coverage and FN as original scoring"
+  },
+  "tolerance_rationale": "Prospective engineering tolerances for limited synthetic validation, not estimated from held results; old sensitivity failures are already known. Cannot retrospectively justify old run or assert economic validity. No selection of a passing factor.",
+  "uncertainty": {
+    "method": "10000 seed-block bootstrap, same five seeds paired across worlds/modes/factors",
+    "bootstrap_seed": 2026100813,
+    "decision": "Fixed empirical rates only; intervals descriptive, no population zero-error claim"
+  },
+  "source_SHA": {
+    "economic-atlas/src/a6_frozen_controls.py": "41e19cadcb43e1a73675e6903579de5d574f48ae27419904cd52e0c1647d6f93",
+    "economic-atlas/src/a6_identities.py": "6e1ade98208556e40ecd010a839559d7877d81508d1d159a9cb681581dee74d8",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/runs/A6_v2/calibration.json": "9cdfe55bbac67d01653374de18e465421f3d9fff4c14b5b499665aebdc287346",
+    "economic-atlas/runs/A6_frozen_controls_20261003/protocol.json": "f4d158cdc6679c25f0ec93b37bd6a0ef766a1db29aec171e3c5db197a75a0dd0",
+    "economic-atlas/runs/A6_frozen_controls_20261003/metrics.json": "04bee2028f9e4d10a65853eb035c5b64578a0f7200eb50da90304b58fbec3791",
+    "economic-atlas/runs/A6_frozen_controls_20261003/runs.json": "b12f98cd49d088d46357357208994ae5064c0f00d0a5f138a02c3d941de936a8",
+    "economic-atlas/runs/A6_frozen_controls_20261003/months.csv": "72f952dc61dbc7aca67fe959d3414fb290cc3a7d08c55ff398c92a2497bca460",
+    "economic-atlas/runs/A6_frozen_controls_20261003/events.json": "e7c4915e56b7e4df6e1cece72f487df01a69c218f5c3be16f13d6cf65734b460"
+  },
+  "resource": {
+    "CPU_threads": 1,
+    "RSS_bytes": 1073741824,
+    "seconds_inclusive": 1800,
+    "receipt_reserve_seconds": 30,
+    "output_bytes": 134217728,
+    "free_bytes": 1073741824,
+    "actual_preflight": "Future accepted native own-process preflight only; not performed in this design",
+    "no_resume_or_retry": true
+  },
+  "workload": {
+    "k_selection_fits": 5880,
+    "selected_k_fits": 840,
+    "kmeans_n_init": 10,
+    "identity_tracking_calls": 210,
+    "M3_full_sensitivity_calls": 210,
+    "geometry_cells": 1260,
+    "cost_evidence": "Historical protocol-to-metrics timestamps ~86.56s for old210 controls; not reliable upper bound. 1800s is resource allowance, STOP keeps full requested registry and INCONCLUSIVE; no smaller pass."
+  },
+  "scientific_pass": false,
+  "future_requirements": [
+    "Implement prospective runner and one-use guardian after review; no launch entrypoint in this design",
+    "Verify no saved use of actual derived seed keys prior to execution and root freeze receipt",
+    "Hash-cube/truth/labels, full saved assignments/regions/210run counts/4830monthly keys/all events and six M3 sensitivities; publish complete exclusions/nulls",
+    "Independent saved-artifact audit before gate; source closure only by root case-service and explicit amendment acknowledgment"
+  ]
+}
