@@ -6,6 +6,7 @@ import json
 import plistlib
 from pathlib import Path
 import tempfile
+import time
 import unittest
 from unittest import mock
 from types import SimpleNamespace
@@ -107,16 +108,16 @@ class Authority(unittest.TestCase):
         repo=root/'repo';repo.mkdir();cal=root/'cal';cal.mkdir()
         path=cal/'result.json';path.write_text(json.dumps(result()))
         manifest=cal/'manifest.json';manifest.write_text(json.dumps({'files_sha256':{'result.json':m.sha(path)}}))
-        binding=root/'binding.json';binding.write_text(json.dumps({'one_use_key':m.KEY,
+        binding=root/'ROOT_BINDING.json';binding.write_text(json.dumps({'one_use_key':m.KEY,
             'historical_seconds':m.HISTORICAL_SECONDS,'source_action':'act_a0d924d8af6548e2',
-            'launcher_sha256':m.sha(SOURCE),'result_sha256':m.sha(path),'manifest_sha256':m.sha(manifest)}))
+            'launcher_sha256':m.sha(SOURCE),'controller_entry_sha256':'fixture','bootstrap_reservation':str(root/'bootstrap.json'),'result_sha256':m.sha(path),'manifest_sha256':m.sha(manifest)}))
         return ['launcher','--repo',str(repo),'--m1-calibration',str(path),'--binding',str(binding),
-                '--binding-sha',m.sha(binding),'--receipt-dir',str(root/'receipts'),'--outdir',str(root/'full')]
+                '--binding-sha',m.sha(binding),'--receipt-dir',str(root/'receipts'),'--outdir',str(root/'science')]
 
     def test_disk_before_import_probe_or_science(self):
         with tempfile.TemporaryDirectory() as d:
-            root=Path(d);argv=self.fixture_command(root)
-            with mock.patch.object(m.sys,'argv',argv), mock.patch.object(m,'PINS',{}), \
+            root=Path(d).resolve();argv=self.fixture_command(root)
+            with mock.patch.object(m.sys,'argv',argv), mock.patch.object(m,'CONTROLLER_ROOT',root), mock.patch.object(m,'ACTUAL_ROOT',root), mock.patch.object(m,'controller_anchor',return_value=time.monotonic()-1), mock.patch.object(m,'PINS',{}), \
                  mock.patch.object(m.shutil,'disk_usage',return_value=SimpleNamespace(free=1073741823)), \
                  mock.patch.object(m,'load') as imported:
                 with self.assertRaisesRegex(ValueError,'before any probe'):m.main()
@@ -124,11 +125,11 @@ class Authority(unittest.TestCase):
 
     def test_reserved_failure_always_terminal_no_native_calls(self):
         with tempfile.TemporaryDirectory() as d:
-            root=Path(d);argv=self.fixture_command(root);ledger=root/'ledger'
+            root=Path(d).resolve();argv=self.fixture_command(root);ledger=root/'ledger';ledger.mkdir(mode=0o700)
             fake_science=SimpleNamespace(check_dependency=lambda _: {'positive_scientific_qualification_allowed':False})
             def fail():raise RuntimeError('synthetic executor failure; no native/model calls')
             fake_executor=SimpleNamespace(load=lambda *a: None,main=fail)
-            with mock.patch.object(m.sys,'argv',argv), mock.patch.object(m,'PINS',{}), \
+            with mock.patch.object(m.sys,'argv',argv), mock.patch.object(m,'CONTROLLER_ROOT',root), mock.patch.object(m,'ACTUAL_ROOT',root), mock.patch.object(m,'controller_anchor',return_value=time.monotonic()-1), mock.patch.object(m,'PINS',{}), \
                  mock.patch.object(m,'LEDGER_ROOT',ledger), \
                  mock.patch.object(m.shutil,'disk_usage',return_value=SimpleNamespace(free=3*1073741824)), \
                  mock.patch.object(m,'load',side_effect=[fake_science,fake_executor]), \

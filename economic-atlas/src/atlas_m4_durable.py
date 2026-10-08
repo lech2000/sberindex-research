@@ -17,6 +17,7 @@ import shutil
 import signal
 import sys
 import time
+import socket
 
 sys.dont_write_bytecode = True
 TOTAL_SECONDS = 93600
@@ -26,7 +27,11 @@ SUPERVISORY_OUTPUT_RESERVE = 65536
 DEADLINE = datetime.datetime(2026, 10, 9, 9, tzinfo=datetime.timezone.utc)
 KEY = 'M4fullbank:6220a61fcaefe60ecc872f5c930023bb6453d0c60059c3f66721199882330969'
 LEDGER_ROOT = Path('/private/tmp/sberindex-one-use-ledger')
+CONTROLLER_ROOT = Path('/private/tmp/atlas-m4-root-launch-controller-20261008/runtime')
+CONTROLLER_ORIGIN = 'M4_ROOT_CONTROLLER_V1'
+ACTUAL_ROOT = Path('/private/tmp/atlas-m4-fullbank-actual-20261008-v1')
 PINS = {
+    'economic-atlas/protocols/M4_WHOLE_ROOT_CONTROL_OPERATIONAL_V1.json': '44a247c920761710044da9233a38d164cdcc52b644f1b0c2ba3f95f649da40a9',
     'economic-atlas/src/atlas_m4_mixed_dependency.py': '12eb13f3a6fb725d93a9c1f26a895649d1695abbf1f0b7b3e7a448e3e55db127',
     'economic-atlas/protocols/M4_MIXED_NUMERICAL_DEPENDENCY_V1.json': '677ebde4c8a7a9cc30b0ebf4fd4ad0aa1d053b1bd0a1c922381e1e70d43f4d9c',
     'economic-atlas/src/atlas_m4_channels.py': 'c927600120fc18d8677c1de09bd6d045ba4415d1e6e5fb179915d1ba2a1cc9cd',
@@ -52,6 +57,74 @@ def finite(value, label):
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
         raise ValueError('finite numeric ' + label + ' required')
     return value
+
+
+def controller_anchor(binding, now_monotonic=None, now_utc=None):
+    mono = time.monotonic() if now_monotonic is None else now_monotonic
+    utc = utcnow() if now_utc is None else now_utc
+    anchor = finite(binding.get('controller_monotonic_entry'), 'controller anchor')
+    age = mono - anchor
+    if age < 0 or age > 120:
+        raise ValueError('controller anchor future/older than120s')
+    capsule = CONTROLLER_ROOT / 'entry.json'
+    if binding.get('controller_entry_sha256') != sha(capsule):
+        raise ValueError('exact controller entry SHA')
+    entry = json.loads(capsule.read_text())
+    if entry.get('origin') != CONTROLLER_ORIGIN or type(entry.get('uid')) is not int or entry['uid'] != os.getuid() or entry.get('host') != socket.gethostname() or finite(entry.get('monotonic_entry'), 'capsule anchor') != anchor:
+        raise ValueError('controller samehost/UID/origin/start mismatch')
+    controller = CONTROLLER_ROOT.parent/'controller.py'
+    if sha(controller) != entry.get('controller_source_sha256') or sha(controller) != binding.get('controller_source_sha256'):
+        raise ValueError('root approved controller source SHA')
+    stamp = datetime.datetime.fromisoformat(entry['utc_entry'])
+    if stamp.tzinfo is None or stamp.utcoffset() != datetime.timedelta(0) or stamp.isoformat() != binding.get('controller_utc_entry'):
+        raise ValueError('explicit UTC entry match required')
+    utc_age = (utc-stamp).total_seconds()
+    if utc_age < 0 or abs(utc_age-age) > 5:
+        raise ValueError('UTC/monotonic handoff mismatch')
+    proof_path = CONTROLLER_ROOT/'ROOT_M1_GONE.json'
+    if sha(proof_path) != entry.get('quiescence_sha256') or sha(proof_path) != binding.get('quiescence_sha256'):
+        raise ValueError('controller root quiescence proof SHA')
+    proof=json.loads(proof_path.read_text())
+    if proof.get('state') != 'AUTHORITATIVE_M1_OWNED_PARENTS_GONE' or proof.get('signals') != 0 or set(proof.get('known_pids',{})) != {'72250','72253'} or any(r.get('ps_exit') != 1 or r.get('stdout') != '' or r.get('stderr') != '' for r in proof['known_pids'].values()):
+        raise ValueError('actual M1 parent/worker gone required before probe')
+    checked=datetime.datetime.fromisoformat(proof['checked_at_UTC'])
+    if checked.tzinfo is None or not 0 <= (utc-checked).total_seconds() <= 120:
+        raise ValueError('fresh actual root M1 quiescence before probe')
+    expected = LEDGER_ROOT / (str(os.getuid())+'-M4-bootstrap-'+hashlib.sha256(KEY.encode()).hexdigest()+'.json')
+    if Path(binding['bootstrap_reservation']).resolve() != expected or not expected.is_file():
+        raise ValueError('root canonical bootstrap reservation required')
+    launch = json.loads(expected.read_text())
+    if launch.get('controller_entry_sha256') != binding['controller_entry_sha256'] or launch.get('one_use_key') != KEY or launch.get('binding_sha256') != sha(CONTROLLER_ROOT/'ROOT_BINDING.json') or launch.get('outdir') != str(ACTUAL_ROOT/'science') or launch.get('receipt_dir') != str(ACTUAL_ROOT/'receipts'):
+        raise ValueError('bootstrap handoff/namespace mismatch')
+    return anchor
+
+
+def combined_output(science, receipts, model_lease):
+    roots = [Path(science), Path(receipts), CONTROLLER_ROOT, model_lease,
+             model_lease.with_name(model_lease.stem+'-terminal.json'),
+             LEDGER_ROOT/(str(os.getuid())+'-M4-bootstrap-'+hashlib.sha256(KEY.encode()).hexdigest()+'.json'),
+             LEDGER_ROOT/(str(os.getuid())+'-M4-bootstrap-'+hashlib.sha256(KEY.encode()).hexdigest()+'-terminal.json')]
+    roots += [Path(science).parent/n for n in ('M4-fullbank-launchd.stdout.log','M4-fullbank-launchd.stderr.log')]
+    seen = set(); total = 0; supervisory = 0
+    science = Path(science).resolve()
+    for root in roots:
+        files = [root] if root.is_file() else root.rglob('*') if root.is_dir() else []
+        for file in files:
+            if file.is_symlink(): raise ValueError('owned output symlink refused')
+            if file.is_file() and file.resolve() not in seen:
+                seen.add(file.resolve()); size=file.stat().st_size; total += size
+                if science not in file.resolve().parents: supervisory += size
+    return total, supervisory
+
+
+def whole_guard(started, science, receipts, lease):
+    if HISTORICAL_SECONDS+time.monotonic()-started > TOTAL_SECONDS-FINALIZATION_SECONDS or utcnow() > DEADLINE:
+        raise InterruptedError('whole-run controller-inclusive wall/deadline guard')
+    total, supervisory = combined_output(science, receipts, lease)
+    if total > 268435456-SUPERVISORY_OUTPUT_RESERVE or supervisory > SUPERVISORY_OUTPUT_RESERVE//2:
+        raise InterruptedError('whole-run metadata/science output reserve guard')
+    if shutil.disk_usage(Path(science).parent).free < 1073741824:
+        raise InterruptedError('whole-run1GiB minimum free guard')
 
 
 def admission(now, historical=HISTORICAL_SECONDS, startup=0., reserved=False):
@@ -185,6 +258,11 @@ def main():
     if sha(args.binding) != args.binding_sha:
         raise ValueError('root binding SHA mismatch')
     binding = json.loads(args.binding.read_text())
+    if args.binding.resolve() != CONTROLLER_ROOT/'ROOT_BINDING.json':
+        raise ValueError('fixed controller binding path required')
+    started = controller_anchor(binding)
+    if args.outdir.resolve() != ACTUAL_ROOT/'science' or args.receipt_dir.resolve() != ACTUAL_ROOT/'receipts':
+        raise ValueError('fixed full-bank namespace required')
     if binding.get('one_use_key') != KEY or binding.get('historical_seconds') != HISTORICAL_SECONDS:
         raise ValueError('fixed one-use key/history mismatch')
     if binding.get('source_action') != 'act_a0d924d8af6548e2' or binding.get('launcher_sha256') != sha(__file__):
@@ -238,6 +316,8 @@ def main():
               'absolute_deadline_UTC': DEADLINE.isoformat(), 'outdir': str(args.outdir),
               'receipt_dir': str(args.receipt_dir), 'automatic_restart': False,
               'source_actions_closed': 0, 'scientific_pass': False}
+    record.update(controller_monotonic_entry=started, controller_entry_sha256=binding['controller_entry_sha256'], controller_root=str(CONTROLLER_ROOT), bootstrap_reservation=binding['bootstrap_reservation'])
+    whole_guard(started, args.outdir, args.receipt_dir, reservation)
     reserve(reservation, record)
     previous_argv = sys.argv
     previous_alarm = signal.getsignal(signal.SIGALRM)
@@ -248,8 +328,10 @@ def main():
         wall = admission(utcnow(), startup=time.monotonic() - started)
         if shutil.disk_usage(args.outdir.parent).free < 1073741824:
             raise ValueError('disk admission changed before native preflight')
-        signal.signal(signal.SIGALRM, alarm)
-        signal.setitimer(signal.ITIMER_REAL, wall)
+        def controller_watchdog(*unused):
+            whole_guard(started, args.outdir, args.receipt_dir, reservation)
+        signal.signal(signal.SIGALRM, controller_watchdog)
+        signal.setitimer(signal.ITIMER_REAL, 1, 1)
         sys.argv = [str(args.repo / 'economic-atlas/src/atlas_m4_executor.py'),
                     '--repo', str(args.repo), '--m1-calibration', str(args.m1_calibration),
                     '--outdir', str(args.outdir), '--wall-seconds', str(wall)]
@@ -272,13 +354,8 @@ def main():
         atomic(canonical_terminal, record)
         if args.receipt_dir.is_dir():
             atomic(args.receipt_dir / 'terminal.json', record)
-        supervisor_size = sum(p.stat().st_size for p in args.receipt_dir.rglob('*') if p.is_file()) if args.receipt_dir.is_dir() else 0
-        supervisor_size += reservation.stat().st_size + canonical_terminal.stat().st_size
-        for name in ('M4-fullbank-launchd.stdout.log', 'M4-fullbank-launchd.stderr.log'):
-            log = args.outdir.parent / name
-            if log.is_file():
-                supervisor_size += log.stat().st_size
-        science_size = sum(p.stat().st_size for p in args.outdir.rglob('*') if p.is_file()) if args.outdir.exists() else 0
+        combined_size, supervisor_size = combined_output(args.outdir, args.receipt_dir, reservation)
+        science_size = combined_size-supervisor_size
         if supervisor_size > SUPERVISORY_OUTPUT_RESERVE or supervisor_size + science_size > 268435456:
             record.update(state='INCONCLUSIVE_COMBINED_OUTPUT_CAP', positive_scientific_qualification=False)
             atomic(canonical_terminal, record)
