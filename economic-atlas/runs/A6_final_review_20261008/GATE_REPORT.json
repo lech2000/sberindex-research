@@ -1,0 +1,35 @@
+{
+  "gate": "A6/06",
+  "source_action": "act_c475e17b2a584b9a",
+  "study_status": "COMPLETED_FINITE_INVESTIGATION_DESCRIPTIVE_NEGATIVE_LIMITED",
+  "three_requirements_studied": [
+    "candidate_margin rationale",
+    "identity uncertainty",
+    "independent economic features"
+  ],
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "margin_transfer_justified": false,
+  "identity_external_contrast": "NA_NOT_ZERO",
+  "source_action_closure": "PROPOSED_ROOT_CLOSEOUT_NOT_APPLIED_BY_PUBLICATION_PACKET",
+  "A6_3": {
+    "source_action": "act_63eabe3fd8aa4770",
+    "status": "OPEN_UNFULFILLED_PRIOR_ERROR_BUDGET",
+    "retrospective_pass": false,
+    "new_M2M3_calibration_substituted": false
+  },
+  "E05": {
+    "status": "OPEN",
+    "remaining": [
+      "geography",
+      "feature independence",
+      "temporal validation"
+    ]
+  },
+  "claims_not_established": [
+    "real economic births or disappearances",
+    "ISL",
+    "local death"
+  ],
+  "new_experiments_models_rethreshold": 0
+}

@@ -1,0 +1,30 @@
+{
+  "base": "ce3ccd1226bdb76de68ae8bffdbfdbc9e8b5945a",
+  "files": {
+    "metrics.json": {
+      "sha256": "50b6f025462c452b1b62df747c029d4207dcf693f60b3dc00d65201b177f3f6a",
+      "bytes": 5878
+    },
+    "SOURCE_REFERENCES.json": {
+      "sha256": "c4afd6aa5f7c42efcd71272c57a9692c88683b32b5cfb502429e3eae67fcda3a",
+      "bytes": 4765
+    },
+    "INDEPENDENT_REVIEW.md": {
+      "sha256": "8bef60081dc6236698cc4172b90e1148a6a1c3e01998e646b8cfbd5b7f0f37b0",
+      "bytes": 2412
+    },
+    "GATE_REPORT.json": {
+      "sha256": "0ffa671705090395c5642272c8252db9114df4973eacc62d67c489ba7fbe878b",
+      "bytes": 1005
+    },
+    "REQUIREMENTS_MATRIX.json": {
+      "sha256": "b4e9a025f9c9e700a8803312c1a46e1df61b82a52e8dd65f2e8cb5fb350971fb",
+      "bytes": 2564
+    },
+    "README.md": {
+      "sha256": "c1200e65272e99181f807e6289d8b0b22d16de08a5abdce12a2305f2b242ca17",
+      "bytes": 4589
+    }
+  },
+  "self_hash": "Defined by outer F7b acceptance; no circular self-hash."
+}

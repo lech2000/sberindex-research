@@ -1,0 +1,229 @@
+{
+  "old_frozen_thresholds": {
+    "T": 0.27716275979336036,
+    "M": 0.7187007760980421,
+    "Tc": 0.17395474720266485
+  },
+  "stored_margin_audit": {
+    "rows": 4800,
+    "groups": 24,
+    "draws_each_group": [
+      200
+    ],
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12"
+    ],
+    "gap_le_old_M_count": 203,
+    "gap_le_old_M_fraction": 0.042291666666666665,
+    "gap_q05": 0.7214357356621658,
+    "gap_q95": 0.8809728124117177,
+    "old_M": 0.7187007760980421,
+    "marginal_q05_self_minus_q95_other": 0.7187007760980421
+  },
+  "threshold_review": {
+    "municipalities": 1896,
+    "months": 24,
+    "assignments": 45504,
+    "settings": 9,
+    "margin_factors": [
+      0.75,
+      1,
+      1.25
+    ],
+    "ambiguous_rows": [
+      1324,
+      4438,
+      36024
+    ],
+    "ambiguity_jaccard_vs_base": [
+      0.2983,
+      1,
+      0.1067
+    ],
+    "T_range_effect": "NONE_IN_TESTED_RANGE",
+    "K2_K5": {
+      "mean_silhouette": [
+        0.384,
+        0.2098
+      ],
+      "ARI": 0.21145,
+      "NMI": 0.37032,
+      "interpretation": "geometry only; no economic truth proof"
+    }
+  },
+  "old_controls": {
+    "configurations": 210,
+    "worlds": 7,
+    "seeds": [
+      20261003,
+      20261004,
+      20261005,
+      20261006,
+      20261007
+    ],
+    "modes": [
+      "oracle",
+      "unsupervised"
+    ],
+    "margin_factors": [
+      0.75,
+      1,
+      1.25
+    ],
+    "monthly_rows": 4830,
+    "stored_event_rows": 348,
+    "primary_by_mode": [
+      {
+        "mode": "oracle",
+        "margin_factor": 1.0,
+        "n_runs": 35,
+        "recognition": {
+          "tp": 1837,
+          "fp_known": 0,
+          "fp_unknown": 0,
+          "fn": 13,
+          "tn": 2795,
+          "cluster_decisions": 1870,
+          "decided_clusters": 1857,
+          "abstentions": 13,
+          "birth_candidates": 0,
+          "ambiguous": 13,
+          "unmatchable_clusters": 0
+        },
+        "events": {
+          "tp": 49,
+          "fp": 1,
+          "fn": 1
+        },
+        "rates": {
+          "fpr_known_pairs": 0.0,
+          "fdr_all_predicted_matches": 0.0,
+          "fnr_known_true_matches": 0.007027027027027027,
+          "cluster_decision_coverage": 0.993048128342246,
+          "event_fdr": 0.02,
+          "event_fnr": 0.02
+        },
+        "recomputed_sums_equal_metrics": true
+      },
+      {
+        "mode": "unsupervised",
+        "margin_factor": 1.0,
+        "n_runs": 35,
+        "recognition": {
+          "tp": 1838,
+          "fp_known": 0,
+          "fp_unknown": 0,
+          "fn": 12,
+          "tn": 2795,
+          "cluster_decisions": 1870,
+          "decided_clusters": 1858,
+          "abstentions": 12,
+          "birth_candidates": 0,
+          "ambiguous": 12,
+          "unmatchable_clusters": 2
+        },
+        "events": {
+          "tp": 49,
+          "fp": 1,
+          "fn": 1
+        },
+        "rates": {
+          "fpr_known_pairs": 0.0,
+          "fdr_all_predicted_matches": 0.0,
+          "fnr_known_true_matches": 0.006486486486486486,
+          "cluster_decision_coverage": 0.9935828877005347,
+          "event_fdr": 0.02,
+          "event_fnr": 0.02
+        },
+        "recomputed_sums_equal_metrics": true
+      }
+    ],
+    "unsupervised_plus25_events": {
+      "tp": 46,
+      "fp": 28,
+      "fn": 4,
+      "event_FDR": 0.3783783783783784,
+      "event_FNR": 0.08
+    },
+    "event_FPR": null,
+    "event_FPR_reason": "no predefined event TN universe"
+  },
+  "external_employment": {
+    "gate": "A6",
+    "status": "EXPLORATORY_EXTERNAL_CHECK_A6_OPEN",
+    "month": "2024-12",
+    "panel_assignments": 1896,
+    "analysis_eligible": 1415,
+    "exclusions": {
+      "no_active_2023_2024_dictionary": 310,
+      "no_both_employment_years_after_dictionary": 171,
+      "no_population_after_other_checks": 0
+    },
+    "coverage_by_label": [
+      {
+        "label": 0,
+        "assignments": 1342,
+        "active_dictionary": 1070,
+        "both_employment_years": 931,
+        "population_2024": 1342,
+        "analysis_eligible": 931,
+        "eligible_stable_identity": 931,
+        "stable_identity_ids": 1,
+        "median_employment_2024": 3074.0,
+        "median_employment_ratio_24_23": 0.9835164835164835
+      },
+      {
+        "label": 1,
+        "assignments": 554,
+        "active_dictionary": 516,
+        "both_employment_years": 484,
+        "population_2024": 554,
+        "analysis_eligible": 484,
+        "eligible_stable_identity": 0,
+        "stable_identity_ids": 0,
+        "median_employment_2024": 14832.0,
+        "median_employment_ratio_24_23": 1.0026834638664401
+      }
+    ],
+    "identity_contrast": "NA",
+    "monthly_label_association": {
+      "specification": "log(E24) ~ label + log(E23) + log(P24) + region FE",
+      "n": 1415,
+      "regions": 67,
+      "beta_label": 0.016233283259665134,
+      "relative_difference": 0.01636575886962563,
+      "bootstrap": {
+        "unit": "region",
+        "repetitions": 1000,
+        "seed": 20260930,
+        "beta_95pct": [
+          0.0028483703908377235,
+          0.029824716585257646
+        ],
+        "relative_difference_95pct": [
+          0.0028524308520966974,
+          0.03027392819312836
+        ]
+      }
+    },
+    "limitations": [
+      "Monthly A6 labels are not confirmed longitudinal identities.",
+      "Employment excludes small enterprises and is not total employment.",
+      "The derivative source has no independently verified historical availability timestamp.",
+      "Labels and hypothesis were inspected before this protocol; inference is exploratory."
+    ],
+    "gate_pass": false
+  },
+  "new_calibration_comparison": "No causal improvement comparison with newer M2/M3; thresholds/world scopes differ."
+}

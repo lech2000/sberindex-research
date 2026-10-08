@@ -1,0 +1,39 @@
+{
+  "gate": "ATF-M1",
+  "source_actions": [
+    "act_4d0536caf3a546ac"
+  ],
+  "technical_status": "COMPLETED_FULL_SCOPE_WITH_INDEPENDENT_SAVED_ARTIFACT_ACCEPTANCE",
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "continuous_resource_pass": false,
+  "result": "All three frozen calibrations INCONCLUSIVE_CALIBRATION: positive_R_not_recovered, sig_star=null. No positive structure threshold established.",
+  "calibration_records": 360,
+  "monthly_records": 72,
+  "journals": 9828,
+  "nulls_per_record": 99,
+  "old334_SHA_unchanged": true,
+  "remaining26_complete": true,
+  "mixed_original_EVR_explicit_recovery_EVD": true,
+  "original_unknown_exit_and_supervision_gap_retained": true,
+  "artifact_SHA": {
+    "calibration/result.json": "cec05922e9f659175b964046c202ab7c4cffd514c66f234a025758bff11ec29b",
+    "calibration/manifest.json": "57903307da096e5d880006f9ab87a67e0738c6d84858163b2234eca185c6ee82",
+    "replay/result.json": "ca47d40973264072a3b9fcb2a8cf3b6a50499bcc586ebb375ac53025701fa23e",
+    "replay/manifest.json": "61ccc4729632a53125c5142d29f6960d2235d40f446d8f7d6947b9c85fc88eb8",
+    "result.json": "5242c68d20b168d0b40850c47f094c154fe133feafe39b702ac13f620356432f",
+    "manifest.json": "cf53b763e71686286ec0a112a2a21bee7974239d52d0ebffcf07b3066b1d990e"
+  },
+  "terminal_SHA": "e146ecc72bdf02146d0078eed4f25b6d3434f4729eebc0a1098b7906e415bdb4",
+  "original_start_UTC": "2026-10-07T15:47:45.854058+00:00",
+  "original_total_seconds": 77881,
+  "original_cumulative_wall_s": 35795.693406708975,
+  "independent_audit_seconds": 11.457240500007174,
+  "root_quiescence_SHA": "a451ed98d64c45fec9240524183e13cba48ba87a25f765e844b0fe29b09e2958",
+  "checked_at_utc": "2026-10-08T02:00:51.344723+00:00",
+  "checked_by": "root metadata SHA readback + independent full9828 journals verifier, Mac",
+  "M4_dependency": "Completed full saved-artifact scope can admit M4; negative M1 quality remains false and must not become scientific PASS.",
+  "independent_acceptance_source_SHA": "94c366e4fefe3857ac0ccd4719a7912b859d56018327c684209ca51cd58e5649",
+  "original_budget_end_UTC": "2026-10-08T13:25:46.854058+00:00",
+  "publication_note": "Sanitized public projection of private GATE_REPORT; source SHA in SHA_INVENTORY.json. No raw observations or territorial identifiers."
+}

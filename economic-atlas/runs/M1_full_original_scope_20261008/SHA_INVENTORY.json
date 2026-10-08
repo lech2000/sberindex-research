@@ -1,0 +1,32 @@
+{
+  "source_evidence_SHA": {
+    "independent_acceptance": "94c366e4fefe3857ac0ccd4719a7912b859d56018327c684209ca51cd58e5649",
+    "source_action_closeout": "f133f2e8fb6f9937f51ad2831eafd6a2e5fe0d86d4ae58b97aae5bc2f77ff33c",
+    "original_GATE_REPORT": "5bbf0b09213605584ae298ca80fb4dbc198a9f1169d1a804b9b974d049d740ff"
+  },
+  "saved_science_artifact_SHA": {
+    "calibration/result.json": "cec05922e9f659175b964046c202ab7c4cffd514c66f234a025758bff11ec29b",
+    "calibration/manifest.json": "57903307da096e5d880006f9ab87a67e0738c6d84858163b2234eca185c6ee82",
+    "replay/result.json": "ca47d40973264072a3b9fcb2a8cf3b6a50499bcc586ebb375ac53025701fa23e",
+    "replay/manifest.json": "61ccc4729632a53125c5142d29f6960d2235d40f446d8f7d6947b9c85fc88eb8",
+    "result.json": "5242c68d20b168d0b40850c47f094c154fe133feafe39b702ac13f620356432f",
+    "manifest.json": "cf53b763e71686286ec0a112a2a21bee7974239d52d0ebffcf07b3066b1d990e"
+  },
+  "terminal_SHA": "e146ecc72bdf02146d0078eed4f25b6d3434f4729eebc0a1098b7906e415bdb4",
+  "authority_SHA": {
+    "engine": "e69c9a79653fd11c6a5a6866fbf5a251c50acdb60cc6b5cdbe3120998a07f74d",
+    "recovery": "fff84fa7adcc51490430fb3fdd06cd98842463fdf39be57c39ddef6f8474b079",
+    "guardian": "2d984dbf8c48e297307ca479dcda597c591d12a2848cd96a1bba4e437e2d16a4",
+    "validator": "ea104f461512ecfffac5e82ce42f1135c1bf65762032b80f21611eb1216a3b9d",
+    "amendment": "516ca1cf068dd420ddbd560a8329c27ca9ab4cc9f582375a770e02bc93ff302e",
+    "base_source": "5ad14f6e2df75ac89d2285e3a09c304e7894ce6c42a363334a1d568115c1758b",
+    "base_protocol": "fd3133bbda35fb7183908e4c3bd4697f5651962adaf8c0cccf74eb4b15c0dc30"
+  },
+  "public_file_SHA": {
+    "GATE_REPORT.json": "4ebdea56e1851e00852fcb012ce7f5dddf5055728fbf736119891801d4b73754",
+    "INDEPENDENT_REPORT.md": "2d0b73f0f529b43a6ede6ee2b729a65c2350ddfdbe120cfd124f79fee472e305",
+    "README.md": "052a96491ae471dd17496c0538849e2f3ce1337e983dd855e659d024d480aea8",
+    "metrics.json": "d284de25e3205a30c4053743346677569f4adcabf2157b9e0025e2548a940976",
+    "status.json": "070730d90c4e60036f45da15262019bf2063c53b3550fee04dcf6f7ea56ef8d9"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "requirement": "06:9 T/M settings and K2/K5",
+    "status": "DONE_DESCRIPTIVE",
+    "evidence": "1896*24=45504 assignments; M ambiguity1324/4438/36024, T range unchanged; geometric K comparison not economic validity",
+    "missing_for_positive_science": "Transfer stability is refuted within tested margin range; more seeds do not repair this"
+  },
+  {
+    "requirement": "06:candidate_margin rationale vs best-minus-second",
+    "status": "DONE_NEGATIVE_METHOD_AUDIT",
+    "evidence": "Actual source gate mismatch identified; existing4800paired draws independently arithmetic checked;203/4800=4.229% gap<=oldM, q05gap.7214357 vsoldM.7187008",
+    "missing_for_positive_science": "No original prospective negative competitor-gap false-match/abstention budget or real longitudinal validation; paired bootstrap alone cannot prove spec_gap calibrated"
+  },
+  {
+    "requirement": "06:identity uncertainty",
+    "status": "DONE_DESCRIPTIVE_NEGATIVE",
+    "evidence": "7 ambiguous group transitions=4438 municipalmonth rows; 210 controls allseeds/modes/M±25%; oldbase events49TP1FP1FN; M+25events46TP28FP4FN FDR37.838%",
+    "missing_for_positive_science": "Economic event truth absent; known pairsFPR0 is not eventFPR; no selectedlowerM from viewedresults"
+  },
+  {
+    "requirement": "06:independent economic features",
+    "status": "DONE_EXPLORATORY_LIMITED_NEGATIVE",
+    "evidence": "Existing employment evaluation1415/1896=74.63%,67regions;310no activecode+171missingbothyears; labels931/484; stable identities931/0, identity_contrastNA; adjusted monthly label association+1.6366% exploratory",
+    "missing_for_positive_science": "Stable identity contrast is unidentifiable in covered oldDecember slice; not zero effect. Employment excludesSME; no causal/economicbirth inference"
+  },
+  {
+    "requirement": "A6.3:original frozen210worlds/code/seeds/errors/M±25",
+    "status": "DONE_DESCRIPTIVE_EXISTING_RESULTS",
+    "evidence": "Priorindependentall210audit,4830months348events, frozenT.2771627598/M.7187007761/Tc.1739547472",
+    "missing_for_positive_science": "Originalgeneratedtensor SHA absent; preservedgenerator/cal/tracker SHA scope explicit"
+  },
+  {
+    "requirement": "A6.3:fix scientific error tolerance BEFORE run",
+    "status": "UNFULFILLED_IRREPARABLE_RETROSPECTIVELY",
+    "evidence": "Originalprotocolhas no error budget; purity.8 istruthmatchingrule. Numericresultsvisiblealready",
+    "missing_for_positive_science": "Do notretroPASS/rethreshold; only explicitowneramendment/cancellation canterminalaccount unmetpromise"
+  }
+]

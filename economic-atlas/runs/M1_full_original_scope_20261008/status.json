@@ -1,0 +1,20 @@
+{
+  "technical_status": "COMPLETED_FULL_SCOPE_WITH_INDEPENDENT_SAVED_ARTIFACT_ACCEPTANCE",
+  "source_action": "act_4d0536caf3a546ac",
+  "source_action_closed": true,
+  "case_service_readback_UTC": "2026-10-08T02:02:24.309211+00:00",
+  "KB_document": {
+    "corpus": 75,
+    "document_id": 17387
+  },
+  "scientific_pass": false,
+  "economic_identity_pass": false,
+  "continuous_resource_pass": false,
+  "independent_holdout_confirmed": false,
+  "negative_result": "positive_R_not_recovered; all sig_star=null",
+  "ancestral_records_preserved": 334,
+  "recovery_records_completed": 26,
+  "method_history": "Original EVR plus explicitly adopted EVD recovery; mixed numerical history, original unknown exit and supervision gap retained.",
+  "M4": "Full-bank descriptive testing may proceed with negative M1 quality retained; no upstream positive qualification.",
+  "M5": "Not confirmed; a future independent confirmatory window after the submission deadline remains separate work."
+}
