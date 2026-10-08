@@ -1,0 +1,40 @@
+{
+  "registered_at_utc": "2026-10-08T16:23:22.618692+00:00",
+  "original_monotonic_anchor": 173659.663479666,
+  "input_path": "/private/tmp/sberindex-official-laws-20261007/shock-radar/runs/National_equal_information_20261006/predictions.parquet",
+  "input_sha256": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+  "source_sha256": "6b9455d4446f0eea11e3c1f2d4011f7cc39ca1e4db0f6dd2c4fe8275bfaaf498",
+  "expected_full_key_sha256": "c83346f98a0d12006dea6f598bcd288498f0430a9fec28a9266acc1b98671f6e",
+  "scope": "Existing National_equal_information_20261006: exactly 20MO/120series/720 H12 predictions Jul-Dec2024; add R2 to saved predictions only",
+  "models": [
+    "national_prophet",
+    "national_yoy_lag1",
+    "fresh_plain_prophet"
+  ],
+  "metrics_fixed_before_scan": [
+    "pooled MAE/R2",
+    "by-category MAE/R2",
+    "all individual-series R2",
+    "mean and median of defined series R2",
+    "within-series centered R2",
+    "number candidate better individual-series R2"
+  ],
+  "undefined_constant_policy": "null, count/report; no forced zero/one; all paired rows retained",
+  "limitations": [
+    "Post-hoc additional metric, no new independent temporal window or confidence interval",
+    "Stored baseline is own configured Prophet, not a verified organizer implementation",
+    "Pooled R2 can be dominated by between-series/category scale; report macro and within-series metrics together",
+    "Six target months per series; series-level R2 can be unstable",
+    "No evidence of historical as-of availability or real early warning",
+    "Previous consumed audit/run keys unchanged; no repeated model fitting, threshold changes or search"
+  ],
+  "limits": {
+    "whole_seconds_from_original_anchor": 300,
+    "sampled_rss_bytes": 1073741824,
+    "output_max_bytes": 2097152,
+    "CPU_threads": 1,
+    "new_model_calls": 0
+  },
+  "python": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "metric_reference": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html"
+}

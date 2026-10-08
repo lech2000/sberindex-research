@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-08T16:37:32.127179+00:00",
+  "input_unchanged": true,
+  "output_total_bytes": 103553,
+  "output_limit_bytes": 2097152,
+  "output_limit_verified_after_completion": true,
+  "continuous_resource_qualification": false,
+  "result_sha256": "0787e69134df4809cc7aaf2def0c0f967edf6dad0926555a7f1e2ff7aa810abd",
+  "report_sha256": "855832eb3eb4ec8811bf1fb3980ff25e7a4966d90860fa64273cc03c41f14283",
+  "independent_ack_sha256": "41e54963ea1ecfbdee3fda177cd80ca921e0fef98262f59dc4f7e1e2ec4f6b1d",
+  "source_ack": "Independent read-only source/protocol ACK before execution; caveat output cap not continuous byteguard disclosed; no formula/scope blocker",
+  "source_actions_closed": 0
+}
