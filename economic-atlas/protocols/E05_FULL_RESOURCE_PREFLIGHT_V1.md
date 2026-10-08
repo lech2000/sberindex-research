@@ -1,0 +1,13 @@
+# E05 full-size resource preflight · SOURCE ONLY
+
+This packet is NOT_ADOPTED / NOT_EXECUTABLE and runs no panel computation now. Public execute always refuses. A future source-reviewed root controller must freeze an explicit whole allowance, UTC deadline, receipt/cleanup reserve and distinct one-use key before importing this module. None of the old consumed scientific keys, clocks or outputs can be resumed.
+
+The corrected diagnostic scope is max frozen K=5, first real seed20261008,1896 monthly nodes and45504 supra nodes at gamma2, original ARPACK tol1e-8/maxiter5000 and KMeans n_init20. K4 in the request was a typo corrected before results. Exactly two eigsh/fit_predict pairs; no world generation, model selection, labels publication or scientific quality claims. Pinned original method builds the five raw separate-total shares,24 k20union graphs and saved A5 reference; original partition numeric calls are forwarded unchanged by observational wrappers.
+
+IO physically writes225 separate full45504 synthetic/schema files in batches and rereads every key/status, plus8220 explicitly NOT_ATTEMPTED native receipt fixtures. Those labels are null UNKNOWN and never accepted as actual bank evidence. Files are retained and counted with all profile ledgers/logs under128MiB; cap failure means STOP, not subset. Source tests verify one full45504 key universe and cardinality225×45504 without performing10m actual writes.
+
+The library guard is sampled and nonreentrant; it cannot interrupt a blocking native call. Future external controller qualification MUST prove hard original deadline, known-own aggregate RSS, exact owned-PG TERM/KILL/reap including normal exit and final IO. The cleanup callback is a trusted future supervisor primitive, not implemented arbitrary-PID access here. Callback capability is not a security boundary. This source preparation authorizes no actual probe.
+
+Measured stage timings, CSR/tensor fingerprints, native STARTED/RESPONSE and residual/orthogonality, sampled RSS/free/output and dependency/CPU versions are prospective outputs only. Failure preserves one-use STARTED and terminal UNKNOWN/STOP; no hidden retry. A nominal4110×measured maxpair extrapolation is descriptive, never a bound: varying convergence, controls, all metrics and bank-specific serialization remain UNKNOWN. Full225 science, resources, M4 dependency and negative M1 are not qualified by this profile.
+
+A root adoption may only prepare a future controller/spec; it must not flip these source-only fields and silently run the existing old namespace. ROOT independent review and explicit prospective permission govern any subsequent one profile.

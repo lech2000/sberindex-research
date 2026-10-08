@@ -1,0 +1,194 @@
+{
+  "kind": "E05_FULL_EXECUTION_BRIDGE_SOURCE_V4",
+  "source_runtime": false,
+  "actual_execution_in_this_packet": false,
+  "BASE": "b55339d4736a70b6e6dc5346c8cc2d9cfeecbc2e",
+  "new_source_pins": {
+    "economic-atlas/src/e05_full_execution_controller.py": "d7dccdec890416a34e4324295615b65286031c5ec77511d353cef89903b79184",
+    "economic-atlas/src/e05_full_execution_worker.py": "44ba1a824120bb3052f279ac97f7a25a5a791ad3399f851862581710069aed1a"
+  },
+  "unchanged_source_pins": {
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b",
+    "economic-atlas/src/e05_full_receipt_adapter_v5.py": "2469ded330f7e2398848d4631b221f697458b344b1a32ee2c066d226efa342d8",
+    "economic-atlas/src/e05_full_guardian_toolkit_v2.py": "3246aa3c7378846119561aa89a7536d5ed500ac87c8d96698f6bfe494afe8e50",
+    "economic-atlas/src/atlas_m1_executor.py": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+    "economic-atlas/src/e05_full_publication_finalizer_v5.py": "5ca95919ff76568ad2efeffd924c99912cf5abe756a97027b45141667486f52a",
+    "economic-atlas/src/e05_full_publication_validator_v5.py": "dda073bc0bf223321b6af9f39d2ed57f1f39ad33e92ac633003f3777f9239193",
+    "economic-atlas/src/e05_full_numeric_adapter.py": "d4c3c1b2c01581e043c71b50bef39df1ba62376bf44da9251a08c78df4821802",
+    "economic-atlas/src/e05_independent_numerical_audit.py": "d1232759428269eba5c720324695d91fda3917fdaca3ead4ae2bc2fdd1d04da8",
+    "economic-atlas/src/e05_numpy_quality_reference.py": "ffdb98abf3cf4adcf6c3f8badf50ebe46ff4cd431af3e88db7d75b3d2a42ad49",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a"
+  },
+  "required_future_publication_bridge": "economic-atlas/src/e05_full_real_publication_bridge.py SHA from future reviewed source registration",
+  "scope": {
+    "cells": 225,
+    "real": 180,
+    "controls": 45,
+    "IDs": 1896,
+    "months": 24,
+    "keys_each": 45504,
+    "full_status_rows": 10238400,
+    "nominal_native_entries": 8220,
+    "nominal_decompositions": 4110,
+    "nominal_not_actual": true,
+    "mobility101_reused_only": true
+  },
+  "KEY": "E05-full-event-repaired-225cells-v1",
+  "paths": {
+    "out": "/private/tmp/e05-full-event-repaired-actual",
+    "control": "/private/tmp/e05-full-event-repaired-control",
+    "ledger": "/private/tmp/e05-full-event-repaired-operation-ledger"
+  },
+  "spec_template": {
+    "whole_seconds": null,
+    "finalization_reserve_seconds": null,
+    "audit_receipt_reserve_seconds": null,
+    "metadata_bytes_limit": null,
+    "RSS_bytes": null,
+    "minimum_free_bytes": null,
+    "output_bytes": null,
+    "receipt_reserve_bytes": null,
+    "poll_seconds": null,
+    "cleanup_seconds": null,
+    "absolute_deadline_UTC": null
+  },
+  "CPU_threads": 1,
+  "original_clock": "controller ENTRY monotonic and UTCepoch before major imports; all import/validation/admission/setup/lease/worker/raw/journals/logs/publication/audit/reap/terminal costs same anchor; no new phase allowance",
+  "root_binding_required": [
+    "private UID-owned metadata file <=2MiB",
+    "same host/UID fixedpaths",
+    "exact full source inventory including future real publication bridge",
+    "Python canonical binary path+SHA and exact five dependencyversions",
+    "real_IO_resource_report_path+SHA",
+    "independent_source_ACK_SHA",
+    "spec all explicit and source_binding frozen"
+  ],
+  "resource_report_schema": {
+    "state": "INDEPENDENTLY_ACCEPTED_REAL_E05_IO_RESOURCE",
+    "scope": {
+      "n": 1896,
+      "months": 24,
+      "cells": 225,
+      "status_rows": 10238400
+    },
+    "source_pins": "exact rootbindingsource_pins",
+    "spec": "exact rootbindingspec",
+    "proofs": {
+      "native_owned_tree_preflight": {
+        "path": "canonical regular saved receipt",
+        "SHA": "root reviewed receipt byteSHA",
+        "linked_doc_required": {
+          "actual": true,
+          "source_only_mock": false,
+          "state": "PASS or ACCEPTED",
+          "source_pins": "exact binding inventory"
+        }
+      },
+      "monthly1896_K5_native_pair": {
+        "path": "canonical regular saved receipt",
+        "SHA": "root reviewed receipt byteSHA",
+        "linked_doc_required": {
+          "actual": true,
+          "source_only_mock": false,
+          "state": "PASS or ACCEPTED",
+          "source_pins": "exact binding inventory"
+        }
+      },
+      "supra45504_K5_native_pair": {
+        "path": "canonical regular saved receipt",
+        "SHA": "root reviewed receipt byteSHA",
+        "linked_doc_required": {
+          "actual": true,
+          "source_only_mock": false,
+          "state": "PASS or ACCEPTED",
+          "source_pins": "exact binding inventory"
+        }
+      },
+      "full225_status_and8220_journal_IO": {
+        "path": "canonical regular saved receipt",
+        "SHA": "root reviewed receipt byteSHA",
+        "linked_doc_required": {
+          "actual": true,
+          "source_only_mock": false,
+          "state": "PASS or ACCEPTED",
+          "source_pins": "exact binding inventory"
+        }
+      },
+      "independent_review": {
+        "path": "canonical regular saved receipt",
+        "SHA": "root reviewed receipt byteSHA",
+        "linked_doc_required": {
+          "actual": true,
+          "source_only_mock": false,
+          "state": "PASS or ACCEPTED",
+          "source_pins": "exact binding inventory"
+        }
+      }
+    },
+    "monthly_native_shape": [
+      1896,
+      5
+    ],
+    "supra_native_shape": [
+      45504,
+      5
+    ],
+    "full_status_IO_rows": 10238400,
+    "typed_journal_IO_entries": 8220,
+    "measured_profile_wall_seconds": "finitepositive measured",
+    "measured_profile_peak_RSS_bytes": "finitepositive measured",
+    "remaining_quality_control_cost_state": "INDEPENDENTLY_ADMITTED required; UNKNOWN refuses actualfullbank"
+  },
+  "publication_API": {
+    "call": "complete_and_audit",
+    "arguments": [
+      "repo",
+      "raw_root",
+      "publication_root",
+      "stage_root",
+      "journal_root",
+      "territory_file",
+      "guard",
+      "original_operation",
+      "admission",
+      "finalization_lease"
+    ],
+    "after": "owned worker reaped and all registered own groups gone",
+    "no_mock_flags": true,
+    "shared_resource_validator": "controller.validate_resource_report(binding)->validated report",
+    "original_operation": "canonical permanent STARTED plus separate durable universe-bound receipt links original lease SHA/native IDs SHA",
+    "guard_attrs": [
+      "anchor",
+      "whole_seconds",
+      "finalization_reserve_seconds",
+      "source_binding",
+      "roots",
+      "resource_admission_SHA",
+      "qualified_e05_audit_io"
+    ]
+  },
+  "journal_policy": "reuse accepted toolkit Journal and V5 observe/cell_callback; same8220 nominal keys; unknown failed cells never retried; workertoken STARTED/consumed O_EXCL fsync file+directory",
+  "solver_numerical_audit": "UNKNOWN_FINGERPRINTS_ONLY_NOT_RESIDUALS; fingerprints are not residual/orthogonality proof; no numerical solver PASS claim",
+  "limits_disclosure": [
+    "native own tree RSS+combined disk/output sampled, never continuous resource PASS",
+    "SIGALRM enforces parent original whole reserve without recursive scan callback; scope SIGTERM/INT raises cleanup path",
+    "terminal receipt reports elapsed before final IO; returncode checks final elapsed/output afterwards; last receipt cannot time its own later fsync",
+    "trusted same-UID reviewed root binding, not hostile-user capability boundary",
+    "no actual profile or fullscience run; original null budgets deliberately refuse",
+    "source_report shapes/cost are not bank numerical acceptance, finish prediction or scientificPASS"
+  ],
+  "source_tests": 35,
+  "scientific_pass": false,
+  "formal_promise_complete": false,
+  "unknown_confounds": "admin/pop/historical geography/onlinecausal retained",
+  "revision_disclosure": {
+    "V1_preserved": true,
+    "output_cap": "integer0<output<=128MiB checked before lease, compatible numericAdmission",
+    "cleanup": "primary failure triggers independent known-owned fallback TERM/wait/KILL/reap/gone proof within remaining original allowance; unknown blocks publication",
+    "root_binding": "initial SHA+inode/stat snapshot before first parse; exact rechecks before namespace/lease/worker/publication and through parent/worker guarded loops; no late rebinding",
+    "terminal_failure": "write/fsync failure sets INCONCLUSIVE_TERMINAL_DURABILITY and returns nonzero even if bridge callback completed",
+    "V2_preserved": true,
+    "exact_whole_boundary": "FULL exit0 requires durable terminal_written; remaining<=0 or elapsed>=whole STOP/nonzero. No skipped terminal success."
+  },
+  "revision_V4": "Prospective resource-only correction: earliest original monotonic/absolute UTC allowance bounds startup, supervisor reap, cleanup and terminal alarm. Inclusive UTC/mono deadline forbids FULL success; expired allowance never replenished to write terminal. Permanent lease/target retained. No science or numerical changes."
+}

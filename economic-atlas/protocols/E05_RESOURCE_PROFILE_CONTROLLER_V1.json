@@ -1,0 +1,97 @@
+{
+  "kind": "E05_OWNED_DIAGNOSTIC_PROFILE_CONTROLLER_SOURCE_V3",
+  "status": "NOT_ADOPTED_NOT_RUN",
+  "source_pins": {
+    "economic-atlas/src/e05_full_resource_preflight.py": "5f352958ce3dbffe6a9cf3e26eb262fd3ae63c3c9e1cabaa52b4d61a37ff97f9",
+    "economic-atlas/tests/test_e05_full_resource_preflight.py": "b6526d79943cade75b0c991bf48d43db51273fd5deb79046499df93eee207624",
+    "economic-atlas/protocols/E05_FULL_RESOURCE_PREFLIGHT_V1.json": "bc4cb453cb7ac48db3d81ce6cb4379da8d4b5abe280625c81592aa82b8b1b504",
+    "economic-atlas/protocols/E05_FULL_RESOURCE_PREFLIGHT_V1.md": "e94e290b54e35dc421c9d9cc8785d8c465f8e80a092da180958d0db8b72c7ead",
+    "economic-atlas/research-plan.md": "a084b0b7b523e45d39014c15d55f3665e02b8bbe4d74c00ba43abacf6798ccd7",
+    "economic-atlas/research-ladder.md": "e235b652d468cfd7e1e93a3861934add2873ba316b7f93c5ab9fa8e9b8d78a38",
+    "economic-atlas/features/spec.yaml": "4fe77f75b5bea5d7216420c0c5fb35a276784c7c2f6ffe091c90b381bb7343b1",
+    "economic-atlas/src/a5_graph.py": "837a7934ddb7cc73626ea0bc863abacaee6ca8df6660c053464f954e51198759",
+    "economic-atlas/src/a6_temporal.py": "c498d5a7d145264e0182e589a7dedb2b733fb9854cb5c167227e42f2eb3c9474",
+    "economic-atlas/src/atlas_sdbw.py": "fc9a83fc430028452a8a88622337df605574518baf2044f0ab068f142edfd9fa",
+    "economic-atlas/src/network_icvi.py": "acea75f3faa87a625cab54d9a52fe65a91a824031947a3a4e8b251bb0b4ef404",
+    "economic-atlas/runs/A5/graph_manifest.json": "53c4ce0c4fef949d4e58efd1809988fb5433424f242303976801846295cdd615",
+    "economic-atlas/runs/A5/metrics.json": "3e65ec4d036c0c927335a4ec315c6b773009aef06fc22455db6d60df9ef8e351",
+    "economic-atlas/runs/A6/metrics.json": "91fae9d44cf04b4165780e2347492a539ff79262c96f83f26c9863ec56684204",
+    "economic-atlas/runs/Mobility_ablation_20261003/metrics.json": "459bc80433c390cd3b83231602757f835baee20f3295e1ac4a5d30c3bab8447b",
+    "economic-atlas/runs/A9_economic_network_20261005/results.json": "cc259370fabedd9d926f0f528a2c528b56e71e1ffc91542fee535560e551ece1",
+    "economic-atlas/runs/A6_final_review_20261008/CLOSEOUT_RECEIPT.json": "eb3d0851a38de60d299729d62a789ab538ec8c2159059a1cc5507280b059331b",
+    "economic-atlas/runs/A5/edges.parquet": "98ad776c9589084ec7ab4f31555a19c9ebf096d5bc168e20efd5f76218a2bdc4",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/protocols/E05_FULL_REMAINING_V2.json": "b1b15d99a8094690ba532d89846206ebbf60b653f7b7bb7873307f9a5cfa931a",
+    "economic-atlas/src/atlas_m1_executor.py": "04b89b778bd3f1f3e5beb83edc0786c39086b249f9b74658219922958c4db93c",
+    "economic-atlas/src/atlas_e05_remaining_v2.py": "e5db7ad379bf2c6bcb261d05563bdb88c433a4178baec48399e3e9e0ef2ea21b"
+  },
+  "operation_key": "E05-resource-profile-controller-v1",
+  "fixed_paths": {
+    "CONTROL": "/private/tmp/e05-resource-profile-control-v1",
+    "OUT": "/private/tmp/e05-resource-preflight-fullshape-v1",
+    "LEDGER": "/private/tmp/e05-resource-preflight-fullshape-v1-ledger"
+  },
+  "scope": {
+    "native_pairs": 2,
+    "n": 1896,
+    "T": 24,
+    "d": 5,
+    "K": 5,
+    "seed": 20261008,
+    "gamma": [
+      0,
+      2
+    ],
+    "supra_nodes": 45504,
+    "IO_fixture_cells": 225,
+    "IO_fixture_rows": 10238400,
+    "IO_receipt_fixtures": 8220,
+    "original_scientific_bank_started": false
+  },
+  "private_root_runtime_required": {
+    "runtime_json": "mode600 sameUID fixed CONTROL/runtime.json; all numeric budgets explicit, no defaults",
+    "runtime_acceptance": "mode600 fixed runtime-acceptance.json exact runtime SHA +source ACK SHA kind ROOT_SOURCE_QUALIFIED_FROZEN_RUNTIME; trusted root approval file",
+    "independent_source_ack": "mode600 source-ack.json SOURCE_ONLY_ACK/scientific_executionFalse and exact source_pins for toolkit+controller+worker+thisprotocol",
+    "python": "absolute resolved path+byteSHA",
+    "dependency_versions": [
+      "numpy",
+      "pandas",
+      "scipy",
+      "scikit-learn",
+      "pyarrow",
+      "psutil"
+    ],
+    "rootbinding": [
+      "repo",
+      "host",
+      "UID",
+      "key",
+      "protocol_SHA256",
+      "source_pins"
+    ],
+    "budget_fields": [
+      "whole_seconds",
+      "final_reserve_seconds",
+      "cleanup_seconds",
+      "poll_seconds",
+      "receipt_reserve_bytes",
+      "absolute_deadline_UTC"
+    ],
+    "fixed_limits": {
+      "CPU_threads": 1,
+      "RSS_bytes": 1073741824,
+      "minimum_free_bytes": 1073741824,
+      "output_bytes": 134217728,
+      "poll_seconds_max": 1,
+      "stdout_stderr_each_max": 8192
+    }
+  },
+  "watchdog": "Parent external sampled process loop bounds blocking worker at original ENTRY workdeadline; no reentrant SIGALRM resource scans. Signal handler only sets stop; cleanup uses remaining original mono+UTC budget, no fresh allowance. Kernel-blocked parent IO/uninterruptible process cannot be certified hard real-time; unknown cleanup/overrun must stop, not admit bank.",
+  "sampling": "Worker wrapper checks originalclock/deadline EVERYcall; actual root RSS/free/output scan only explicit frozenpoll cadence; postscan originaltime check. Parent polls same actual owned roots. Cached samples never continuous/current resource proof.",
+  "cleanup": "PID/create_time UID records and fixed new workerPG; owned members only. After normal/nonzero leader exit still TERM/KILL/reap and reject zombie/surviving group. Unknown detached process absence never certified.",
+  "authorization": "Public worker direct entry requires private600 parentPID/create_time/UID/nonce/commandSHA/workerSHA/runtimeSHA token with45s bound and O_EXCL consumed receipt. Controller operation lease fsyncfile+parent before Popen, exactruntime/ACK bytebindings prevent rebind. Trusted owned filesystem authority, not cryptographic remote authentication.",
+  "future_report": "RESOURCE_PROFILE_MEASURED_NOT_FULL_QUALIFICATION; cost extrapolation4110 pairs not bound, allquality/controlcost UNKNOWN, no scientific/full225resourcePASS. Last terminal receiptIO not independently timed; future root may read OSexit into separate receipt using originalanchor.",
+  "actual_execution_now": false,
+  "source_science_models_calls": 0,
+  "old_consumed_keys_clocks_outputs_reused": false
+}

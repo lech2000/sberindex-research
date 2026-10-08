@@ -1,0 +1,26 @@
+{
+  "kind": "E05_FULL_REAL_PUBLICATION_SOURCE_V1",
+  "base": "b55339d4736a70b6e6dc5346c8cc2d9cfeecbc2e",
+  "legacy_finalizer_SHA": "5ca95919ff76568ad2efeffd924c99912cf5abe756a97027b45141667486f52a",
+  "bridge_SHA": "16841bc1b8e52f87ac41f09af81d943f9deb6047cb5aced5e9e8ec5fc24670cf",
+  "scope": {
+    "cells": 225,
+    "status_rows": 10238400,
+    "native_nominal_slots": 8220
+  },
+  "original_operation_only": true,
+  "atomic_publish": "Darwin renamex_np RENAME_EXCL or Linux renameat2 RENAME_NOREPLACE; no unsafe fallback",
+  "real_execution_authorized_now": false,
+  "admission": "actual independently reviewed source+fullsize resource proof, original parent whole monotonic clock; after own worker reaped",
+  "finalizer_algorithm": "static exact preserved AST statements after only three mock-interface entry statements; original helper unchanged",
+  "solver_numeric_audit": "UNKNOWN_FINGERPRINTS_ONLY_NOT_RESIDUALS",
+  "scientific_pass": false,
+  "formal_promise_complete": false,
+  "paid_calls": 0,
+  "actual_scientific_fits": 0,
+  "review_corrections": [
+    "Absent raw namespace after durable worker ID production retained as empty view; no fabricated cell attempts.",
+    "Final outer manifest receipt must match the immutable manifest SHA validated by numeric audit; replacement rejected.",
+    "One bounded exact terminal raw/journal path-set plus inode/stat reconciliation; late unknown evidence cannot be silently omitted."
+  ]
+}
