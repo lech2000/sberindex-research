@@ -276,7 +276,8 @@ MAE в единицах исходного показателя, меньше л
 Файлы: [протокол](protocol.json), [метрики всех категорий и вариантов](metrics.json),
 [история выбора](selection-trace.json), [SHA-реестр](manifest.json),
 [независимая квитанция](../Consumer_mechanisms_independent_audit_20261007/independent-validation.json),
-[свежий полный запуск](../Consumer_mechanisms_independent_audit_20261007/reproduction-validation.json).
+[свежий полный запуск](../Consumer_mechanisms_independent_audit_20261007/reproduction-validation.json),
+[отдельный скалярный пересчёт вклада соседей](independent-peer-contribution-audit.json).
 Тяжёлые Parquet и параметры fits находятся в репозитории с доступом и в
 материалах дел; публикация отчёта не означает публикацию исходных датасетов.
 
@@ -291,3 +292,12 @@ python economic-atlas/src/consumer_mechanisms.py --data-dir /path/to/frozen-inpu
 нужен исходный8_consumption.parquet и сохранённый старый run. Команды полного
 повтора приведены вMakefile. Старые исследования и их отрицательные исходы
 сохранены; новый вывод не заменяет их независимым PASS.
+
+Отдельная проверка вклада соседей не импортирует модели обучения: `math.fsum`
+пересчитывает MAE на9234 одинаковых ключах каждого горизонта, затем заново
+считает10000 парных выборок по шести месяцам. Оба интервала включают ноль.
+Её можно повторить без новых fits:
+
+```sh
+python repository-tools/audit_peer_contribution_scalar.py --out output/peer-scalar-audit.json
+```
