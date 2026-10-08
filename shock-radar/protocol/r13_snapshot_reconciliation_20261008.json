@@ -1,0 +1,66 @@
+{
+  "version": "R13_SNAPSHOT_EVIDENCE_RECONCILIATION_V1",
+  "status": "PROSPECTIVE_EXPLICIT_LOGICAL_OPERATION_ROOT_REVIEW_NO_EXECUTION",
+  "base": "16aef1721ad45a9e799e3af772e93429571760e9",
+  "source_action": "act_0c71cedc50ad4508",
+  "out": "/private/tmp/radar-r13-full-actual-20261008-v1",
+  "new_sidecar": "snapshot-reconciliation-v1",
+  "old_model_and_report_phases": "unchanged permanent leases + NO_RETRY terminals; no repeat/rename/recoverycommit",
+  "scope": {
+    "requested": 294570,
+    "eligible": 282120,
+    "excluded": 12450,
+    "published_checkpoints": 44184,
+    "model_journal_attempts": 33319
+  },
+  "orphan": {
+    "relative_path": "checkpoints/999ee42521cea71b26867fd99f199bd13aab3ec60b488b8ee3162e443e9d454b.json.tmp",
+    "size": 0,
+    "SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "preserved unpublished crash-temp, never response, no deleting/renaming/headerchange",
+    "association": "1594/Общественное питание/2023-11 target2024-11; STARTEDprophet durableBrokenPipeError; explicit pinned publishedcheckpoint association"
+  },
+  "allowed_checkpoint_universe": "exact published44184 SHA snapshot PLUS this exact one empty orphan; all other extras,nonzero/missing/changedSHA STOP",
+  "budget": {
+    "original_closed_cumulative_seconds": 3893.441428624006,
+    "first_report_seconds": 41.714114749993314,
+    "first_report_recorded_cumulative_seconds": 3935.1555434990005,
+    "diagnosis_seconds": 12.459174667004845,
+    "new_phase_base_floor_seconds": 3947.6147181660053,
+    "remaining_family_seconds": 545.8267105830018,
+    "reconciliation_inclusive_seconds": 425.8267105830018,
+    "work_seconds": 395.8267105830018,
+    "receipt_reserve_seconds": 30,
+    "future_independent_audit_reserved_seconds": 120,
+    "whole_new_reporting_family_seconds": 600,
+    "original_total_seconds": 108000,
+    "deadline_UTC": "2026-10-09T09:00:00+00:00",
+    "rounding": "newfloor uses actualpriorrecordedcumulative+diagnosis, conservatively125ns above original+reportedelapsed sum; no reset"
+  },
+  "resource": {
+    "CPU_threads": 1,
+    "RSS_bytes": 2147483648,
+    "minimum_free_bytes": 1073741824,
+    "report_family_output_bytes": 134217728,
+    "original_output_bytes": 3221225472,
+    "final_receipt_reserve_bytes": 65536
+  },
+  "family_roots": [
+    "/private/tmp/radar-r13-full-actual-20261008-v1/zero-model-report-v1",
+    "/private/tmp/radar-r13-full-actual-20261008-v1/snapshot-reconciliation-v1",
+    "/private/tmp/radar-r13-checkpoint-mismatch-audit-20261008",
+    "/private/tmp/radar-r13-reportonly-root-control-20261008",
+    "/private/tmp/radar-r13-snapshot-reconciliation-root-control-20261008",
+    "/private/tmp/radar-r13-snapshot-reconciliation-independent-audit-20261008",
+    "/private/tmp/sberindex-one-use-ledger/502-R13-ZERO_MODEL_REPORT-9409ccf7e7ef608bb490eccd45aab22e1dc3dc731c883a2c38431084fbedea01.json",
+    "/private/tmp/sberindex-one-use-ledger/502-R13-ZERO_MODEL_REPORT-9409ccf7e7ef608bb490eccd45aab22e1dc3dc731c883a2c38431084fbedea01-terminal.json",
+    "/private/tmp/sberindex-one-use-ledger/502-R13-SNAPSHOT_RECONCILIATION_V1-9409ccf7e7ef608bb490eccd45aab22e1dc3dc731c883a2c38431084fbedea01.json",
+    "/private/tmp/sberindex-one-use-ledger/502-R13-SNAPSHOT_RECONCILIATION_V1-9409ccf7e7ef608bb490eccd45aab22e1dc3dc731c883a2c38431084fbedea01-terminal.json"
+  ],
+  "accounting": "all listed familyoutputs/receipts/controls/rootbindings counted, canonical-path deduplicated; original33319modeljournals/checkpoints/prepared are retained baseline within3GiB, not NEWfamily doublecharge; subtract nestedfamilyalreadyinsideorigout before128MiBreservation",
+  "method": "pinned old stdlib helper APIs only (sha/read/conservation/select_status/group_id), own exact index/materialize; no monkeypatch/ASTexec/modelnative/subprocess/accuracy imports; onepasspublished/journals/fullpreparedkeys",
+  "root_binding": "fixed /private/tmp/radar-r13-snapshot-reconciliation-root-control-20261008/ROOT_BINDING.json with exact source+protocolSHA, originalclosedfiles, consumedlease+terminal/rootbinding, AUDIT/ASSOCIATIONSHA, oldsources, authoritativeprocessgone",
+  "independent_audit": "120s reserved inclstartup/readback/receiptIO; elapsed/output add to same600family+originalcumulative, no solvers. Metadatafullproof pending untilactualindependentreview",
+  "qualification": "originalV3 INCONCLUSIVE; fullpopulationpairedriskUNAVAILABLE; scientific/economicPASSfalse; INDEPENDENT_AUDIT_PENDING",
+  "actual_calls": 0
+}
