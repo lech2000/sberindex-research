@@ -1,0 +1,52 @@
+import time
+ENTRY=time.monotonic()
+import pathlib,json,math,hashlib,datetime,signal,resource,os
+D=pathlib.Path(__file__).parent;R=pathlib.Path('/private/tmp/sberindex-official-laws-20261007');P=json.loads((D/'PROTOCOL.json').read_text());ANCHOR=P['original_monotonic_anchor']
+def stop(*args):raise TimeoutError('one operation300s no retry')
+signal.signal(signal.SIGALRM,stop);left=300-(time.monotonic()-ANCHOR)
+if left<=0:raise TimeoutError('budget consumed before numeric entry')
+signal.setitimer(signal.ITIMER_REAL,left)
+def h(p):
+ q=hashlib.sha256()
+ with p.open('rb')as f:
+  for b in iter(lambda:f.read(1048576),b''):q.update(b)
+ return q.hexdigest()
+def guard():
+ if time.monotonic()-ANCHOR>=300:raise TimeoutError('operation300s')
+ if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>2**30:raise MemoryError('sampledRSS1GiB')
+ if sum(x.stat().st_size for x in D.rglob('*')if x.is_file())>128*2**20:raise OSError('output128MiB')
+for n,p in P['inputs'].items():assert h(R/n)==p['SHA'];guard()
+import pyarrow.parquet as pq
+CATS={'Все категории','Здоровье','Маркетплейсы','Общественное питание','Продовольствие','Транспорт'};TARGETS={f'2024-{m:02}'for m in range(7,13)}
+def mid(s):return int(s[:4])*12+int(s[5:7])
+def scan(rel,models,national=False):
+ keys=set();ids=set();cats=set();months=set();horizons=set();origins=set();loss={};groups={};count=0;supportedcounts={};support_ids={};mask_keys={}
+ pf=pq.ParquetFile(R/rel);columns=['territory_id','category','horizon','origin','target','actual']+models+([]if national else ['supported'])
+ for batch in pf.iter_batches(batch_size=2048,columns=columns,use_threads=False):
+  for row in batch.to_pylist():
+   key=tuple(str(row[n])for n in ['territory_id','category','horizon','origin','target']);assert key not in keys;keys.add(key);count+=1;ids.add(str(row['territory_id']));cats.add(row['category']);months.add(row['target']);horizons.add(row['horizon']);origins.add(row['origin']);assert mid(row['target'])-mid(row['origin'])==row['horizon'];assert all(type(row[m])in(int,float)and math.isfinite(row[m])for m in ['actual']+models)
+   if national or(row['supported']and row['category']=='Все категории'and row['horizon']in(1,3)):
+    g=(row['category'],row['horizon'])if national else('Все категории',row['horizon']);supportedcounts[g]=supportedcounts.get(g,0)+1;support_ids.setdefault(g,set()).add(str(row['territory_id']));mask_keys.setdefault(g,[]).append(key)
+    for model in models:loss.setdefault((g,model),[]).append(abs(row['actual']-row[model]))
+  guard()
+ assert cats==CATS and months==TARGETS
+ assert count==(720 if national else204768) and len(ids)==(20 if national else1896) and horizons==({12}if national else{1,3,6})
+ results=[]
+ for g,n in supportedcounts.items():
+  assert n==(120 if national else9234) and len(support_ids[g])==(20 if national else1539)
+  maes={m:math.fsum(loss[(g,m)])/n for m in models};results.append({'category':g[0],'horizon':g[1],'rows':n,'IDs':len(support_ids[g]),'mask_SHA':hashlib.sha256(json.dumps(sorted(mask_keys[g]),separators=(',',':')).encode()).hexdigest(),'mae':maes})
+ return {'full_rows':count,'unique_full_keys':len(keys),'IDs':len(ids),'categories':sorted(cats),'targets':sorted(months),'horizons':sorted(horizons),'origins':sorted(origins),'full_key_SHA':hashlib.sha256(json.dumps(sorted(keys),separators=(',',':')).encode()).hexdigest(),'results':results}
+nat=scan('shock-radar/runs/National_equal_information_20261006/predictions.parquet',['national_prophet','national_yoy_lag1','fresh_plain_prophet'],True)
+# Pooled national MAE across all six equally sized categories, using all720 saved rows.
+pool={m:math.fsum(x['mae'][m]*x['rows']for x in nat['results'])/720 for m in ['national_prophet','national_yoy_lag1','fresh_plain_prophet']};nat['pooled_mae']=pool;nat['gain_percent']=100*(pool['national_prophet']-pool['national_yoy_lag1'])/pool['national_prophet'];market=next(x for x in nat['results']if x['category']=='Маркетплейсы')['mae'];nat['marketplace_loss_percent']=100*(market['national_yoy_lag1']-market['national_prophet'])/market['national_prophet']
+close=scan('economic-atlas/runs/Consumer_closeout_20261006/predictions.parquet',['profile_ses','one_step_zero_own','one_step_zero_peer','direct_zero_own','direct_zero_peer'])
+mech=scan('economic-atlas/runs/Consumer_mechanisms_20261007/predictions.parquet',['profile_ses','profile_ses__one_step_zero_own','profile_ses__one_step_zero_peer','profile_ses__direct_zero_own','profile_ses__direct_zero_peer'])
+checks=[]
+for x in mech['results']:
+ horizon=x['horizon'];variant='one_step'if horizon==1 else'direct';own='profile_ses__'+variant+'_zero_own';peer='profile_ses__'+variant+'_zero_peer';saved=json.loads((R/'economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json').read_text());sv=next(v for v in saved['results']if v['category']=='Все категории'and v['horizon']==horizon);comparison=next(v for v in sv['comparisons']if v['reference']==own and v['model']==peer);ci=comparison['ci95_target_month_blocks'];m=x['mae'];old=next(v for v in close['results']if v['horizon']==horizon);assert x['mask_SHA']==old['mask_SHA'];assert math.isclose(m[peer],old['mae'][variant+'_zero_peer'],rel_tol=1e-12)
+ for name,value in m.items():assert math.isclose(value,sv['mae'][name],rel_tol=1e-12,abs_tol=1e-10)
+ checks.append({'horizon':horizon,'mask_SHA':x['mask_SHA'],'rows':x['rows'],'base_mae':m['profile_ses'],'own_mae':m[own],'peer_mae':m[peer],'total_correction_percent':100*(m['profile_ses']-m[peer])/m['profile_ses'],'incremental_peer_percent':100*(m[own]-m[peer])/m[own],'saved_month_CI':ci,'saved_CI_includes_zero':ci[0]<=0<=ci[1],'CI_recomputed':False})
+sv=json.loads((R/'shock-radar/runs/National_equal_information_20261006/metrics.json').read_text());assert all(math.isclose(pool[m],sv['mae'][m],rel_tol=1e-12)for m in pool)
+for n,p in P['inputs'].items():assert h(R/n)==p['SHA'];guard()
+result={'state':'SAVED_PAIRED_NUMERIC_RECHECK_PASS','checked_at_UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'national':nat,'consumer_full_table_coverage':{'closeout':close,'mechanisms':mech},'consumer_claim_checks':checks,'national_saved_CIs':sv['comparisons'],'scientific_pass':False,'new_models_fits_bootstrap_windows':0,'limits':'Retrospective Jul-Dec2024; nationalH12 selected120series not fullpanel; later national vintage/asof unverified. Saved CI coverage readback only, no new bootstrap. No independence/early-warning/causal claim.','submission':'Verified numerical claims may be retained as descriptive pilot results; filing requires owner identity/access/consents, not scientificPASS.','elapsed_from_original_anchor':time.monotonic()-ANCHOR,'sampled_peak_RSS_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'auditor_SHA':h(pathlib.Path(__file__)),'input_pins':P['inputs']}
+(D/'RESULT.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');guard();signal.setitimer(signal.ITIMER_REAL,0);print(json.dumps({'state':result['state'],'national_mae':pool,'national_gain':nat['gain_percent'],'marketplace_loss':nat['marketplace_loss_percent'],'consumer':checks,'elapsed':result['elapsed_from_original_anchor'],'RSS':result['sampled_peak_RSS_bytes']},ensure_ascii=False,indent=2))

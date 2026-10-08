@@ -1,0 +1,50 @@
+{
+  "REPORT.json": {
+    "SHA": "33d5c5763e9c42eeccbd53103ad1e161b91c66a04af1c17150c8abedc531fcbc",
+    "bytes": 8023
+  },
+  "audit.py": {
+    "SHA": "7276bb1eff5be316d041389d29f45120ee38b52a1a0479b641e01e3e86cd3422",
+    "bytes": 7315
+  },
+  "RESULT.json": {
+    "SHA": "db38750802d20179e6fdd2d86bb5b9c2eb3234b6663b674433d21962d3037cdb",
+    "bytes": 12807
+  },
+  "execution.log": {
+    "SHA": "52c5a1b6e662f9be3159b3936fb9e04ab17b154f1d09428fbb766db29e5740a4",
+    "bytes": 1386
+  },
+  "NUMERIC_CODE_FREEZE.json": {
+    "SHA": "a337848575c71fa1d077436cdf9d89b20b3adebe38426c9596f4d2cf511590b7",
+    "bytes": 382
+  },
+  "PROTOCOL.json": {
+    "SHA": "ab0ea6f4b5561bea44588af94dc6c23c552aada8c12ed8f8c0d24885c0ec80eb",
+    "bytes": 2921
+  },
+  "freeze.py": {
+    "SHA": "1e8d8513f941c9064a23c3eeadb337e5c40b3fb4bf16fe5963266bd03f5e24b4",
+    "bytes": 1162
+  },
+  "SCHEMAS.json": {
+    "SHA": "af6e80942a940046d68a4b0e8dbc6ab189be1d73fcc68c5aa83655633b13a61d",
+    "bytes": 2242
+  },
+  "NUMERIC_CODE_FREEZE_CORRECTION.json": {
+    "SHA": "e29a9abd3c6c8b19dcce53e4e16fc4aa10ceab4dfa7e8998defe9e8a22b372ff",
+    "bytes": 334
+  },
+  "audit-syntax-failure.py": {
+    "SHA": "27faec60695054218d985b285b494aeef783136858e33f290427b7b542f2ab16",
+    "bytes": 7311
+  },
+  "finish.py": {
+    "SHA": "2bbfe912c918ae27072b0b2499ea7a9ec1bcb0b05b3c50585c0d874dccede651",
+    "bytes": 3807
+  },
+  "syntax-failure.log": {
+    "SHA": "747357aadf1f6b2d55b72366142289439ac587c0d97b8dc2c00af133a9b5d87c",
+    "bytes": 297
+  }
+}

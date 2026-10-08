@@ -1,0 +1,12 @@
+{
+  "kind": "METADATA_ONLY_FILENAME_CORRECTION_NO_NUMERIC_REPEAT",
+  "original_RESULT_immutable_SHA": "3052c7343902dce897f437bda5b23c409b681e910bce5fa4f0cfe42dce525cd6",
+  "original_execution_source_SHA": "8f1fecba298002f700c82a11db6ad206876b6aeae3dae64d805c594bed234eea",
+  "correction": "full-labels.parquet in RESULT missing_paths was an exploratory candidate filename, not a declared author output. Author source line62 writes partitions.parquet. Correct actual missing output list below; numerical findings and raw abstention unchanged.",
+  "author_output_availability": {
+    "oof_predictions.parquet": false,
+    "partitions.parquet": false,
+    "folds.json": false
+  },
+  "new_science_or_full_scan": false
+}

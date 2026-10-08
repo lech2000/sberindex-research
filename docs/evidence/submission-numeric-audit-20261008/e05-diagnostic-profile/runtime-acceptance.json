@@ -1,0 +1,9 @@
+{
+  "kind": "ROOT_SOURCE_QUALIFIED_FROZEN_RUNTIME",
+  "runtime_SHA256": "490a90f015288c6550e4215cbb5d7cd0c27cb16f03082a2a7d404249afba7aaf",
+  "source_ACK_SHA256": "b3b8ed64e0f282eb21a1de9e7de783528d6490deb7457aa14e20017a522551e7",
+  "accepted_at_UTC": "2026-10-08T14:38:33.593257+00:00",
+  "physical_diagnostic_profile_only": true,
+  "scientific_full_scope_PASS": false,
+  "whole_clock_begins_original_controller_module_ENTRY_before_imports_admission": true
+}

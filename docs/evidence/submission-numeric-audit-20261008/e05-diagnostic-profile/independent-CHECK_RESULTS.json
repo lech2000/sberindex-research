@@ -1,0 +1,190 @@
+{
+  "observed_UTC": "2026-10-08T14:55:00.546528+00:00",
+  "fixture_parquet_files": 225,
+  "full_metadata_status_rows": 10238400,
+  "representative_rows_validated": 45504,
+  "all225_bytes_identical": true,
+  "row_validation_method": "One complete Cartesian fixture is read; identical SHA256 proves same bytes for all225. All225 Parquet schemas and rowcount metadata independently read. This is not a reread of scientific bank rows.",
+  "native_fixture_files": 8220,
+  "native_fixture_calls": 0,
+  "actual_native_journal_files": 8,
+  "actual_diagnostic_pairs": 2,
+  "schema": "fixture_unit: int32\nfixture_month: int8\nlabel: int32\nstatus: string",
+  "physical_owned_bytes": 19711778,
+  "controller_terminal": {
+    "state": "RESOURCE_PROFILE_CHILD_EXITED_NOT_FULL_QUALIFICATION",
+    "scientific_bank_started": false,
+    "resource_PASS": false,
+    "exit": 0,
+    "samples": {
+      "peak_aggregate_RSS": 240648192,
+      "min_free_bytes": 8768778240,
+      "peak_combined_bytes": 19710865,
+      "count": 325
+    },
+    "cleanup": {
+      "worker_reaped": true,
+      "known_owned_survivors": 0,
+      "registered_owned_PG_survivors": 0,
+      "unknown_detached_process_absence_certified": false
+    },
+    "ENTRY": 167689.339565875,
+    "elapsed_before_terminal_fsync": 178.17548149998765,
+    "final_controller_receipt_IO_independently_timed": false,
+    "monitor": "sampled; blocking call bounded by outer process loop",
+    "whole_seconds": 900,
+    "absolute_deadline_UTC": "2026-10-08T14:53:33.593257+00:00"
+  },
+  "controller_post_IO": {
+    "state": "RESOURCE_PROFILE_CHILD_EXITED_NOT_FULL_QUALIFICATION",
+    "terminal_written": true,
+    "post_IO_gate": true,
+    "elapsed_through_terminal_fsync": 178.37716108298628,
+    "last_receipt_IO_independently_timed": false
+  },
+  "worker_native": [
+    {
+      "API": "eigsh",
+      "state": "STARTED",
+      "shape": [
+        1896,
+        1896
+      ],
+      "input_CSR_SHA256": "a422cd1445784e57d2e54d5bc6e909c15ed82164658aed0154ddb18d1e4c7e30",
+      "K": 5,
+      "tol": 1e-08,
+      "maxiter": 5000,
+      "which": "SA",
+      "v0_SHA256": "2d919f3b13a9e1fecd56c8bcfc9460d3da1ecb4a0893d776075280474af5dd32"
+    },
+    {
+      "API": "eigsh",
+      "state": "RESPONSE",
+      "seconds": 1.0214543750043958,
+      "eigen_residuals": [
+        5.360192965868952e-16,
+        7.108556126755061e-16,
+        7.322570184342009e-16,
+        6.790062584892123e-16,
+        7.005886784814293e-16
+      ],
+      "orthogonality_error": 4.708969824222947e-15,
+      "output_SHA256": "50e1025f5d3bdb4f26078165cbd90706957a32a839d15634d876564d3e7ced42:731e8069d8ab04ff7cb09f91ec3a02ea18db5171c45f3707f32f27cea2064f31"
+    },
+    {
+      "API": "KMeans.fit_predict",
+      "state": "STARTED",
+      "shape": [
+        1896,
+        5
+      ],
+      "input_SHA256": "0e26b655a68eb1585a0be0f823fb039c9eba2f4df30a7d38da178c7ca2873849",
+      "params": {
+        "n_clusters": 5,
+        "n_init": 20,
+        "random_state": 20261008
+      }
+    },
+    {
+      "API": "KMeans.fit_predict",
+      "state": "RESPONSE",
+      "seconds": 3.2974799159856047,
+      "labels_count": 1896,
+      "labels_SHA256": "53e5d055e05559ea80b31c230925d666cf23ed756a84cf8a3446351f8c1248c2",
+      "centres_SHA256": "c17b7b6779b6694ba5df01c5e5aea5920dff2380b8b680b92709550a2587564f"
+    },
+    {
+      "API": "eigsh",
+      "state": "STARTED",
+      "shape": [
+        45504,
+        45504
+      ],
+      "input_CSR_SHA256": "c3d21756fed8c6d9656573b772a151d5cba996284d131394d337d38f2d7d07ea",
+      "K": 5,
+      "tol": 1e-08,
+      "maxiter": 5000,
+      "which": "SA",
+      "v0_SHA256": "5c38a2221349dc8749c42bf42d9d51761f7601f548b9fca4cbda8dcc1cf70793"
+    },
+    {
+      "API": "eigsh",
+      "state": "RESPONSE",
+      "seconds": 4.207380959007423,
+      "eigen_residuals": [
+        1.168063674316274e-15,
+        1.617980128172775e-15,
+        1.6429311662104976e-15,
+        1.5163013733882358e-15,
+        1.2695403780492425e-15
+      ],
+      "orthogonality_error": 1.0742916835749351e-14,
+      "output_SHA256": "854472362adbd47b768be5b9a2674165f13c19f5ac844c84877b47bc3b735d64:57d3ad0c6a5348245bfddb54b335ff6a68a8b43572562afbf2265f3057910ca7"
+    },
+    {
+      "API": "KMeans.fit_predict",
+      "state": "STARTED",
+      "shape": [
+        45504,
+        5
+      ],
+      "input_SHA256": "d6f8c9071ede97ff4a6a6596f7cdf47515f4576d5ec121fe93971edcf6d2d392",
+      "params": {
+        "n_clusters": 5,
+        "n_init": 20,
+        "random_state": 20261008
+      }
+    },
+    {
+      "API": "KMeans.fit_predict",
+      "state": "RESPONSE",
+      "seconds": 1.7070346669934224,
+      "labels_count": 45504,
+      "labels_SHA256": "b0b1fa514cc77f207e85429fcdcf5661aa47a63724959f866450b2def6437c30",
+      "centres_SHA256": "29d21398af91eeebf019d222a1995b910b6118d6d1d3f8a3c97ead88dd44f6dd"
+    }
+  ],
+  "worker_stage_results": [
+    {
+      "phase": "imports_panel_cube_A5",
+      "seconds": 74.92264000000432,
+      "common_shape": [
+        1896,
+        24,
+        5
+      ],
+      "geo_nnz": 18744
+    },
+    {
+      "phase": "all24_raw_shares_k20_union_graphs",
+      "seconds": 35.812555541982874
+    },
+    {
+      "phase": "monthly1896_gamma0",
+      "seconds": 4.393920791015262,
+      "nodes": 1896,
+      "K": 5,
+      "seed": 20261008,
+      "label_count": 1896,
+      "scientific_labels_saved": false
+    },
+    {
+      "phase": "supra45504_gamma2",
+      "seconds": 6.765153708984144,
+      "nodes": 45504,
+      "K": 5,
+      "seed": 20261008,
+      "label_count": 45504,
+      "scientific_labels_saved": false
+    }
+  ],
+  "cost_estimate": {
+    "nominal_calls": 8220,
+    "quality_month_slots": 4180,
+    "measured_pair_extrapolation_seconds": 27804.781743924832,
+    "fullbank_seconds": "UNKNOWN: variable convergence/control graphs, allqualitymetrics and225 bank serialization not bounded by two diagnostic pairs",
+    "extrapolation_is_bound": false
+  },
+  "scientific_bank_false": true,
+  "full_resource_qualification": false
+}

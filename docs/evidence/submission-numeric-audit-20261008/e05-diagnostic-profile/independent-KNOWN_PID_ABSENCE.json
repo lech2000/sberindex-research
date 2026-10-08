@@ -1,0 +1,11 @@
+{
+  "PIDs": [
+    20770,
+    20780
+  ],
+  "observed_UTC": "2026-10-08T14:56:45.638436+00:00",
+  "read_only_command": "ps -p 20770,20780 -o pid=,ppid=,pgid=,stat=",
+  "exit_code": 1,
+  "stdout": "",
+  "meaning": "Neither known PID present at observation. No global scan/signals/process control. Group-survivor zero additionally reported by actual controller cleanup; detached unknown absence not certified."
+}

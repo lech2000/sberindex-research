@@ -1,0 +1,79 @@
+{
+  "state": "EXISTING_CLAIMS_ARITHMETIC_VERIFIED_WITH_RAW_EVIDENCE_ABSTENTION",
+  "scientific_pass": false,
+  "models_fits_worlds_providers": 0,
+  "panel": {
+    "n": 1896,
+    "months": 24,
+    "category_count": 6,
+    "rows": 273024,
+    "unique_full_keys": 273024,
+    "positive_finite": true,
+    "marketplace_increase_count": 1896,
+    "marketplace_median_delta_pp": 4.1727192546821925,
+    "marketplace_round3_pp": 4.173,
+    "food_share_decrease_count": 1834,
+    "food_nominal_increase_count": 1864,
+    "food_share_down_and_nominal_up": 1803,
+    "unweighted_meanmonthly_ratio_not_annualratio_or_nationalpopulationmean": true
+  },
+  "histories": {
+    "saved_municipality_rows": 114,
+    "original_histories": 25,
+    "core80_histories": 9,
+    "configurations": 45,
+    "minimum_original_retained": 7,
+    "maximum_original_retained": 25,
+    "core_IDs": [
+      9,
+      556,
+      708,
+      1206,
+      1305,
+      1454,
+      1483,
+      1662,
+      2037
+    ],
+    "raw_rule_membership_matrix_verified": false,
+    "limit": "saved frequency/grid arithmetic; rules not rerun and per-rule full membership not persisted in these tables"
+  },
+  "unit_invariance": {
+    "current_raw_status": "UNVERIFIED_CURRENT_RAW",
+    "missing_paths": [
+      "economic-atlas/runs/H5_dimensionless_scale_20261007/oof_predictions.parquet",
+      "economic-atlas/runs/H5_dimensionless_scale_20261007/folds.json",
+      "economic-atlas/runs/H5_dimensionless_scale_20261007/full-labels.parquet"
+    ],
+    "saved_partition_summary_rows": 14,
+    "saved_ARI1_rows": 14,
+    "historical_rowwise_audit_count": 34944,
+    "historical_prediction_SHA": "78ac6b40426fcb6e207205418d5c66b6f4ed74e2da1c682291651d2f393c90f5",
+    "not_a_new34944_row_or14_label_numeric_verification": true
+  },
+  "input_pins": {
+    "docs/CONTEST_SUBMISSIONS_2026-10-08.json": "4b0d87e146f3bf8f2167320788952b46dac45552f2a93768be8598e91f0f784a",
+    "economic-atlas/data/panel_v1.parquet": "8716a802fb6e25ef4103406cca927de80ce3693a7ff243411cda765b732bcd93",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.json": "7c45af6c1e1f911b7404b246ae20409a2cb4433f743c9be0872b6c1a7b2199b2",
+    "economic-atlas/runs/consumption_restructuring_20261005/descriptive_probe.py": "2b7ba4d1f28ffedcebb720352aaa9bfab39267279c79984c8467df06d27626a7",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-municipalities.csv": "76fbc414582702a5ee09771473476e47275aafe57ab28f311c4930a34f6651bf",
+    "economic-atlas/runs/Consumer_closeout_20261006/robustness-grid.csv": "8d4710427050d7c02239e831754d0708bb50eff123b1b972856cf013da7e17ed",
+    "economic-atlas/runs/Consumer_closeout_20261006/protocol.json": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/full-partitions.json": "2395f6dafbff470d334203d2ceb69e1124cf63ffdfc4431104eb066ebab7c15a",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/metrics.json": "e9be09c6933a4b6984a7ea314ed8eb107faf8c42f7e3c04c16e57625e46fce64",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/independent-audit.json": "c87f0b484a90d42f957c300f2180d5d84237b1ef891f35062e0e43931052f6b4",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/reproduction-receipt.json": "187177af909c6f2b5981b5b7ba41601ba016f5f2307156865cc42442c2cfa936",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/protocol.json": "b4f23bb321d7b24d8632e37e7aee7fc3127bef4868ef97b7408e5d24034f1125",
+    "economic-atlas/runs/H5_dimensionless_scale_20261007/results.json": "07a27b7342a9fd7b8c0d7da5899b78b871bc8ef7f3195244bf0ffe8aed3aa22c"
+  },
+  "source_SHA": "0eab38289b92d84d51e211e7ec6e30bfb02a275d89088beab442f2f68cf7363d",
+  "quality_full225_pass": false,
+  "E05_full_actual": "NOT_RUN",
+  "M4_full": "STOP_NOT_FULL_1980",
+  "R11_future": "UNEXECUTED",
+  "no_new_holdout_causal_or_economic_identity": true,
+  "elapsed_before_result_fsync": 5.054716750018997,
+  "own_peak_RSS_bytes": 277069824,
+  "child_processes_created": 0,
+  "last_receipt_IO_independently_timed": false
+}

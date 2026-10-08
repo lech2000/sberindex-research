@@ -1,0 +1,69 @@
+{
+  "frozen_at_UTC": "2026-10-08T14:26:33.059104+00:00",
+  "original_monotonic_anchor": 166650.185263208,
+  "scope": "Saved national h12 pilot720 rows/120series and saved consumer headline h1/h3 supported9234 exact keys each; FULL table key/row coverage audited; no new CI/bootstrap/model/window",
+  "limits": {
+    "whole_seconds": 300,
+    "RSS_bytes": 1073741824,
+    "output_bytes": 134217728,
+    "CPU_threads": 1
+  },
+  "inputs": {
+    "docs/CONTEST_SUBMISSIONS_2026-10-08.json": {
+      "SHA": "4b0d87e146f3bf8f2167320788952b46dac45552f2a93768be8598e91f0f784a",
+      "bytes": 6827
+    },
+    "shock-radar/runs/National_equal_information_20261006/predictions.parquet": {
+      "SHA": "995bc212b3acb87d91ddb8a8dbfc470db6db1d4d3d01850f75b4b17dd1436ca8",
+      "bytes": 38294
+    },
+    "shock-radar/runs/National_equal_information_20261006/metrics.json": {
+      "SHA": "b3a0fd2c9b01726c2c3aeef6d43cfecf571014408cc0760105f8eaa705b93328",
+      "bytes": 9938
+    },
+    "shock-radar/runs/National_equal_information_20261006/protocol.json": {
+      "SHA": "c3c9f5af899a055a9cfacff3c293840471d6c885efddf36c9542f7e541d1e976",
+      "bytes": 2061
+    },
+    "shock-radar/runs/National_equal_information_20261006/manifest.json": {
+      "SHA": "92f92d862ed2a832dcbbbdee51ccd8bbba7a95d502d1bb95ed629a261b36e01a",
+      "bytes": 1062
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/predictions.parquet": {
+      "SHA": "0b9e1d8e7c595827cc1e32aa6cb2d3b460fd301bad3397b0927e605666b01a01",
+      "bytes": 15851492
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/metrics.json": {
+      "SHA": "694a793f9a9225a77668b0a24be34f2ce670be173f53ab542dc13c433716c1a2",
+      "bytes": 121174
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/protocol.json": {
+      "SHA": "d19792b57424d24f7f2eecf7eb62a49d3abd6251545718e2802eaed27c322b64",
+      "bytes": 5709
+    },
+    "economic-atlas/runs/Consumer_closeout_20261006/manifest.json": {
+      "SHA": "670cd676349fbc55dc1981cf22d7892e6cd0a884e906f2d0060aed80b9956029",
+      "bytes": 1670
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/predictions.parquet": {
+      "SHA": "940fb9630b7a5fafa1c851b334820f74ad915aa84c1eb925cf8d8623bd2f6a9a",
+      "bytes": 49800082
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/metrics.json": {
+      "SHA": "19b30c186eb09a1dc482b7b72428401889125830d8eef158e50aad233aae05b6",
+      "bytes": 640610
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/protocol.json": {
+      "SHA": "57ba4667ae431e027ce7ca90551d054e36908ef77116c87ce6457f55d61a279b",
+      "bytes": 6346
+    },
+    "economic-atlas/runs/Consumer_mechanisms_20261007/manifest.json": {
+      "SHA": "ff0d599c1c5084e50b3f94588d243351cadc01aaddc3413205990f1823ae68a6",
+      "bytes": 1715
+    }
+  },
+  "schema_only_before_numeric_code_freeze": true,
+  "scientific_pass": false,
+  "resume": false,
+  "actual_model_calls": 0
+}

@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-08T15:07:37.183078+00:00",
+  "previous_patch_SHA256": "dbf05659bb768f96689e87c94a5f725d86688240e07f9acaa7e864cf10244c60",
+  "previous_F7b": "FAILED_BEFORE_COMMIT due syntactically invalid archived initial draft .py; no calculation/deployment/provider performed",
+  "correction": "Preserve same failing original bytes as archival .py.txt; executable final audit.py and original syntax-failure log unchanged",
+  "archive_original_filename": "docs/evidence/submission-numeric-audit-20261008/radar/audit-syntax-failure.py",
+  "archive_stored_filename": "docs/evidence/submission-numeric-audit-20261008/radar/audit-syntax-failure.py.txt",
+  "same_bytes_SHA256": "27faec60695054218d985b285b494aeef783136858e33f290427b7b542f2ab16",
+  "new_science_execution": false,
+  "audit_keys_reset": false,
+  "new_calculations": 0,
+  "live_access": "Four public landing/report HTTP200 without auth; official PDF sameSHA; private Git/code/input view unconfirmed",
+  "independent_profile_review": "d8a21a12823f6ea7148a132a2165ed0172d79a99490b46ec0d71375f6bfcd3a9 diagnosticACK only, fullE05NOTRUN"
+}

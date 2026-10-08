@@ -1,0 +1,1 @@
+{"API": "KMeans.fit_predict", "state": "STARTED", "shape": [1896, 5], "input_SHA256": "0e26b655a68eb1585a0be0f823fb039c9eba2f4df30a7d38da178c7ca2873849", "params": {"n_clusters": 5, "n_init": 20, "random_state": 20261008}}

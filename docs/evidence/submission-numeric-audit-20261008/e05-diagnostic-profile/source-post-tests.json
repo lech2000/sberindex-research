@@ -1,0 +1,47 @@
+{
+  "head": "66cab2206d0606f7ad42ddfd7b07313208e395e8",
+  "isolated_checks": 186,
+  "groups": [
+    {
+      "folder": "tests",
+      "pattern": "test_e05_full_execution_controller.py",
+      "checks": 35,
+      "PASS": true
+    },
+    {
+      "folder": "economic-atlas/tests",
+      "pattern": "test_e05_full_real_publication_bridge.py",
+      "checks": 24,
+      "PASS": true
+    },
+    {
+      "folder": "economic-atlas/tests",
+      "pattern": "test_e05_full_resource_preflight.py",
+      "checks": 22,
+      "PASS": true
+    },
+    {
+      "folder": "economic-atlas/tests",
+      "pattern": "test_e05_resource_profile_controller.py",
+      "checks": 36,
+      "PASS": true
+    },
+    {
+      "folder": "tests",
+      "pattern": "test_e05_full_numeric_adapter.py",
+      "checks": 30,
+      "PASS": true
+    },
+    {
+      "folder": "tests",
+      "pattern": "test_e05_independent_numerical_audit.py",
+      "checks": 39,
+      "PASS": true
+    }
+  ],
+  "PASS": true,
+  "single_interpreter_combined_test_failure": "guard import test asserts clean sys.modules, but previous unrelated numeric fixture already imported NumPy/Arrow/pandas; original failure log preserved. Each suite in fresh Python validates cold-import contract. No scientific source change.",
+  "scientific_native_models_fits": 0,
+  "parent_and_interpreter_children": "six bounded owned check interpreters returned/reaped",
+  "source_files_exact": 18
+}

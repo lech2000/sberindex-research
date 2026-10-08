@@ -1,0 +1,5 @@
+{
+  "frozen_at_UTC": "2026-10-08T14:28:08.561732+00:00",
+  "audit_code_SHA": "7276bb1eff5be316d041389d29f45120ee38b52a1a0479b641e01e3e86cd3422",
+  "reason": "Syntax-only else spacing repair before any numeric code executed. Old invalid source/log preserved; original300s anchor unchanged, no model/metric execution/retry occurred."
+}
